@@ -1,578 +1,566 @@
 {
-    "_meta": {
-        "version": "1.0.0",
-        "last_updated": "2026-02-25",
-        "purpose": "Canonical vertical profiles for the State Licensing Reference pSEO engine. Each profile contains the YMYL-safe copy, routing slugs, exam/board/accrediting metadata, and verification hooks needed to render a fully compliant landing page.",
-        "verification_status": "PENDING = needs VA/researcher to confirm with primary source. VERIFIED = confirmed via official board URL.",
-        "deployed_verticals": [
-            "dietitian",
-            "ot",
-            "pt",
-            "rrt",
-            "slp",
-            "aud",
-            "pharm",
-            "pharmacist"
-        ],
-        "expansion_candidates": [
-            "rn",
-            "lpn",
-            "pta",
-            "cota"
-        ]
+  "_meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-02-25",
+    "purpose": "Canonical vertical profiles for the State Licensing Reference pSEO engine. Each profile contains the YMYL-safe copy, routing slugs, exam/board/accrediting metadata, and verification hooks needed to render a fully compliant landing page.",
+    "verification_status": "PENDING = needs VA/researcher to confirm with primary source. VERIFIED = confirmed via official board URL.",
+    "deployed_verticals": [
+      "dietitian",
+      "ot",
+      "pt",
+      "rrt",
+      "slp",
+      "aud",
+      "pharm",
+      "pharmacist"
+    ],
+    "expansion_candidates": [
+      "rn",
+      "lpn",
+      "pta",
+      "cota"
+    ]
+  },
+  "verticals": {
+    "ot": {
+      "slug": "ot",
+      "dir": "ot-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "OT",
+        "title_full": "Occupational Therapist",
+        "title_plural": "Occupational Therapists",
+        "primary_acronym": "OT/OTR",
+        "credential": "OTR (Occupational Therapist Registered)",
+        "specific_pain_point": "Fieldwork verification routing"
+      },
+      "regulatory": {
+        "national_exam": "NBCOT\u00ae OTR Exam",
+        "exam_board": "NBCOT (National Board for Certification in Occupational Therapy)",
+        "accrediting_body": "ACOTE\u00ae (Accreditation Council for Occupational Therapy Education)",
+        "compact_name": "OT Licensure Compact",
+        "compact_status_safe": "Compact privileges depend on state participation status, which is actively changing. Always verify with your target state board.",
+        "compact_live_count": null,
+        "compact_verification_hook": "PENDING",
+        "compact_source_url": "PENDING"
+      },
+      "copy": {
+        "hero_h1_line1": "OT License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Occupational therapists",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "temporary OT permit",
+        "new_grad_card": "Taking your boards soon? Navigate the tricky sequence of ACOTE\u00ae graduation, NBCOT\u00ae testing, and temporary OT permits so you can start your first job on time\u2014without overlapping application errors.",
+        "travel_card": "Crossing state lines? Cut through the 'reciprocity' confusion. Avoid the provisional license trap, get exact endorsement requirements, and secure your next 13-week contract weeks faster.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "OT License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to occupational therapist (OT/OTR) licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "OT license by state, occupational therapy license requirements, OTR license requirements, state occupational therapy board, OT license cost, occupational therapist licensure",
+        "og_title": "Occupational Therapist License Requirements by State (2026)",
+        "og_desc": "Compare OT licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for occupational therapists (OT/OTR) across the United States.",
+        "disclaimer_entity": "the NBCOT, ACOTE, or any state or federal licensing board"
+      }
     },
-    "verticals": {
-        "ot": {
-            "slug": "ot",
-            "dir": "ot-pseo",
-            "status": "DEPLOYED",
-            "identity": {
-                "title_short": "OT",
-                "title_full": "Occupational Therapist",
-                "title_plural": "Occupational Therapists",
-                "primary_acronym": "OT/OTR",
-                "credential": "OTR (Occupational Therapist Registered)",
-                "specific_pain_point": "Fieldwork verification routing"
-            },
-            "regulatory": {
-                "national_exam": "NBCOT® OTR Exam",
-                "exam_board": "NBCOT (National Board for Certification in Occupational Therapy)",
-                "accrediting_body": "ACOTE® (Accreditation Council for Occupational Therapy Education)",
-                "compact_name": "OT Licensure Compact",
-                "compact_status_safe": "Compact privileges depend on state participation status, which is actively changing. Always verify with your target state board.",
-                "compact_live_count": null,
-                "compact_verification_hook": "PENDING",
-                "compact_source_url": "PENDING"
-            },
-            "copy": {
-                "hero_h1_line1": "OT License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 OT/OTR licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "Occupational therapists",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "temporary OT permit",
-                "new_grad_card": "Taking your boards soon? Navigate the tricky sequence of ACOTE® graduation, NBCOT® testing, and temporary OT permits so you can start your first job on time—without overlapping application errors.",
-                "travel_card": "Crossing state lines? Cut through the 'reciprocity' confusion. Avoid the provisional license trap, get exact endorsement requirements, and secure your next 13-week contract weeks faster.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "OT License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to occupational therapist (OT/OTR) licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "OT license by state, occupational therapy license requirements, OTR license requirements, state occupational therapy board, OT license cost, occupational therapist licensure",
-                "og_title": "Occupational Therapist License Requirements by State (2026)",
-                "og_desc": "Compare OT licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for occupational therapists (OT/OTR) across the United States.",
-                "disclaimer_entity": "the NBCOT, ACOTE, or any state or federal licensing board"
-            }
-        },
-        "pt": {
-            "slug": "pt",
-            "dir": "pt-pseo",
-            "status": "DEPLOYED",
-            "identity": {
-                "title_short": "PT",
-                "title_full": "Physical Therapist",
-                "title_plural": "Physical Therapists",
-                "primary_acronym": "PT/DPT",
-                "credential": "PT (Licensed Physical Therapist)",
-                "specific_pain_point": "NPTE score transfer timing"
-            },
-            "regulatory": {
-                "national_exam": "NPTE (National Physical Therapy Examination)",
-                "exam_board": "FSBPT (Federation of State Boards of Physical Therapy)",
-                "accrediting_body": "CAPTE (Commission on Accreditation in Physical Therapy Education)",
-                "compact_name": "Physical Therapy Licensure Compact",
-                "compact_status_safe": "The PT Compact allows eligible PTs to practice in member states. Compact privilege availability varies by state and changes regularly. Verify current status with your target state board.",
-                "compact_live_count": null,
-                "compact_verification_hook": "PENDING",
-                "compact_source_url": "PENDING"
-            },
-            "copy": {
-                "hero_h1_line1": "PT License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 physical therapy licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "Physical therapists",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "temporary PT permit",
-                "new_grad_card": "Taking your boards soon? Navigate the tricky sequence of CAPTE graduation, NPTE scheduling, and temporary PT permits so you can start your first job on time—without overlapping application errors.",
-                "travel_card": "Crossing state lines? The PT Compact helps, but not every state is live yet. Get exact endorsement requirements and avoid the provisional license trap to secure your next contract faster.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "Physical Therapist License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to physical therapist (PT) licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "PT license by state, physical therapy license requirements, physical therapist licensure, state PT board, PT license cost, how to become a physical therapist",
-                "og_title": "Physical Therapist License Requirements by State (2026)",
-                "og_desc": "Compare PT licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for physical therapists across the United States.",
-                "disclaimer_entity": "the FSBPT, CAPTE, or any state or federal licensing board"
-            }
-        },
-        "slp": {
-            "slug": "slp",
-            "dir": "slp-pseo",
-            "status": "DEPLOYED",
-            "identity": {
-                "title_short": "SLP",
-                "title_full": "Speech-Language Pathologist",
-                "title_plural": "Speech-Language Pathologists",
-                "primary_acronym": "SLP/CCC-SLP",
-                "credential": "CCC-SLP (Certificate of Clinical Competence)",
-                "specific_pain_point": "Clinical Fellowship (CF) supervision requirements"
-            },
-            "regulatory": {
-                "national_exam": "Praxis® Examination in Speech-Language Pathology",
-                "exam_board": "ASHA (American Speech-Language-Hearing Association)",
-                "accrediting_body": "CAA (Council on Academic Accreditation in Audiology and Speech-Language Pathology)",
-                "compact_name": "Audiology & Speech-Language Pathology Interstate Compact (ASLP-IC)",
-                "compact_status_safe": "The ASLP-IC compact is in the early stages of state adoption. Compact privilege availability varies by state and may not yet be actively issuing privileges. Always verify with your target state board.",
-                "compact_live_count": null,
-                "compact_verification_hook": "PENDING",
-                "compact_source_url": "PENDING"
-            },
-            "copy": {
-                "hero_h1_line1": "SLP License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 SLP licensing requirements, telepractice rules, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "Speech-language pathologists",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "Clinical Fellowship (CF) placement",
-                "new_grad_card": "Finishing your CF soon? Navigate the tricky sequence of CAA graduation, Praxis® testing, and Clinical Fellowship supervision requirements so you can earn your CCC-SLP and start your career—without overlapping application errors.",
-                "travel_card": "Crossing state lines or starting telepractice? Cut through the reciprocity confusion. Get exact endorsement requirements and telepractice rules so you can serve clients across state borders compliantly.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "SLP License Requirements by State — Fees, Telepractice Rules & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to speech-language pathologist (SLP) licensing requirements, telepractice rules, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "SLP license by state, speech-language pathology license requirements, SLP telepractice rules, state SLP board, SLP license cost, how to become an SLP",
-                "og_title": "SLP License Requirements by State (2026)",
-                "og_desc": "Compare SLP licensing fees, telepractice rules, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for speech-language pathologists across the United States.",
-                "disclaimer_entity": "ASHA, CAA, or any state or federal licensing board"
-            }
-        },
-        "rrt": {
-            "slug": "rrt",
-            "dir": "rrt-pseo",
-            "status": "DEPLOYED",
-            "identity": {
-                "title_short": "Respiratory Therapist",
-                "title_full": "Respiratory Therapist",
-                "title_plural": "Respiratory Therapists",
-                "primary_acronym": "RRT/CRT",
-                "credential": "RRT (Registered Respiratory Therapist)",
-                "specific_pain_point": "TMC vs CSE exam pathway confusion"
-            },
-            "regulatory": {
-                "national_exam": "TMC (Therapist Multiple-Choice) & CSE (Clinical Simulation Exam)",
-                "exam_board": "NBRC (National Board for Respiratory Care)",
-                "accrediting_body": "CoARC (Commission on Accreditation for Respiratory Care)",
-                "compact_name": null,
-                "compact_status_safe": "Respiratory therapy does not currently have a multistate licensure compact. Each state requires a separate license application.",
-                "compact_live_count": null,
-                "compact_verification_hook": "VERIFIED",
-                "compact_source_url": null
-            },
-            "copy": {
-                "hero_h1_line1": "RRT License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 respiratory therapy licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "Respiratory therapists",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "temporary RT permit",
-                "new_grad_card": "Taking your boards soon? Navigate the tricky sequence of CoARC graduation, the TMC exam, and the CSE pathway so you can earn your RRT credential and start your first job—without overlapping application errors.",
-                "travel_card": "Crossing state lines? Without a compact, each state requires a separate license. Get exact endorsement requirements and typical processing times to plan your next travel contract accurately.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "Respiratory Therapist License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to respiratory therapist (RRT) licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "RRT license by state, respiratory therapy license requirements, respiratory therapist licensure, state RT board, RRT license cost, how to become a respiratory therapist",
-                "og_title": "Respiratory Therapist License Requirements by State (2026)",
-                "og_desc": "Compare respiratory therapist licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for respiratory therapists across the United States.",
-                "disclaimer_entity": "the NBRC, CoARC, or any state or federal licensing board"
-            }
-        },
-        "dietitian": {
-            "slug": "dietitian",
-            "dir": "dietitian-pseo",
-            "status": "DEPLOYED",
-            "identity": {
-                "title_short": "Dietitian",
-                "title_full": "Dietitian & Nutritionist",
-                "title_plural": "Dietitians",
-                "primary_acronym": "RD/RDN",
-                "credential": "RDN (Registered Dietitian Nutritionist)",
-                "specific_pain_point": "Supervised practice program (SPP) matching and verification"
-            },
-            "regulatory": {
-                "national_exam": "CDR Registration Examination for Dietitians",
-                "exam_board": "CDR (Commission on Dietetic Registration)",
-                "accrediting_body": "ACEND® (Accreditation Council for Education in Nutrition and Dietetics)",
-                "compact_name": "Dietetics Licensure Compact",
-                "compact_status_safe": "A dietetics licensure compact is in varying stages of state adoption. Compact privilege availability may not yet be active in your target state. Always verify with the specific state board.",
-                "compact_live_count": null,
-                "compact_verification_hook": "PENDING",
-                "compact_source_url": "PENDING"
-            },
-            "copy": {
-                "hero_h1_line1": "Dietitian License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 dietitian licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "Dietitians and nutritionists",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "supervised practice verification",
-                "new_grad_card": "Finishing your dietetic internship? Navigate the tricky sequence of ACEND® program completion, CDR exam scheduling, and supervised practice verification so you can earn your RDN and start your first job—without overlapping application errors.",
-                "travel_card": "Relocating or doing telehealth across state lines? Cut through the licensing confusion. Some states require licensure, others only certification or registration. Get exact requirements for your target state.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "Dietitian License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to dietitian and nutritionist licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "dietitian license by state, dietitian license requirements, nutritionist license requirements, state dietitian board, dietitian license cost, how to become a dietitian",
-                "og_title": "Dietitian License Requirements by State (2026)",
-                "og_desc": "Compare dietitian licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for dietitians and nutritionists across the United States.",
-                "disclaimer_entity": "the CDR, ACEND, or any state or federal dietetics licensing board"
-            }
-        },
-        "aud": {
-            "slug": "aud",
-            "dir": "aud-pseo",
-            "status": "DEPLOYED",
-            "identity": {
-                "title_short": "Audiologist",
-                "title_full": "Audiologist",
-                "title_plural": "Audiologists",
-                "primary_acronym": "AuD",
-                "credential": "AuD (Doctor of Audiology)",
-                "specific_pain_point": "Fourth-year externship verification and hearing aid dispensing permits"
-            },
-            "regulatory": {
-                "national_exam": "Praxis® Examination in Audiology",
-                "exam_board": "ASHA (American Speech-Language-Hearing Association)",
-                "accrediting_body": "CAA (Council on Academic Accreditation in Audiology and Speech-Language Pathology)",
-                "compact_name": "Audiology & Speech-Language Pathology Interstate Compact (ASLP-IC)",
-                "compact_status_safe": "The ASLP-IC compact is in the early stages of state adoption. Compact privilege availability varies by state and may not yet be actively issuing privileges. Always verify with your target state board.",
-                "compact_live_count": null,
-                "compact_verification_hook": "PENDING",
-                "compact_source_url": "PENDING"
-            },
-            "copy": {
-                "hero_h1_line1": "Audiologist License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 audiology licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "Audiologists",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "fourth-year externship completion",
-                "new_grad_card": "Finishing your AuD externship? Navigate the tricky sequence of CAA graduation, Praxis® testing, and fourth-year externship verification so you can earn your license and start your first clinical position—without overlapping application errors.",
-                "travel_card": "Relocating or expanding your practice? Some states require separate hearing aid dispensing permits in addition to your audiology license. Get exact endorsement requirements to avoid duplicate applications.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "Audiologist License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to audiologist (AuD) licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "audiologist license by state, audiology license requirements, AuD licensure, state audiology board, audiologist license cost, how to become an audiologist",
-                "og_title": "Audiologist License Requirements by State (2026)",
-                "og_desc": "Compare audiologist licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for audiologists across the United States.",
-                "disclaimer_entity": "ASHA, AAA, or any state or federal licensing board"
-            }
-        },
-        "pharm": {
-            "slug": "pharm",
-            "dir": "pharm-pseo",
-            "status": "DEPLOYED",
-            "identity": {
-                "title_short": "Pharmacy Technician",
-                "title_full": "Pharmacy Technician",
-                "title_plural": "Pharmacy Technicians",
-                "primary_acronym": "CPhT",
-                "credential": "CPhT (Certified Pharmacy Technician)",
-                "specific_pain_point": "State-specific training hour requirements and IV certification"
-            },
-            "regulatory": {
-                "national_exam": "PTCE (Pharmacy Technician Certification Exam)",
-                "exam_board": "PTCB (Pharmacy Technician Certification Board)",
-                "accrediting_body": "ASHP/ACPE (accredited pharmacy technician training programs)",
-                "compact_name": null,
-                "compact_status_safe": "Pharmacy technician licensing does not currently have a multistate compact. Each state sets its own registration, certification, or licensure requirements independently.",
-                "compact_live_count": null,
-                "compact_verification_hook": "VERIFIED",
-                "compact_source_url": null
-            },
-            "copy": {
-                "hero_h1_line1": "Pharmacy Tech License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 pharmacy technician licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "Pharmacy technicians",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "PTCB certification",
-                "new_grad_card": "Just completed your training program? Navigate the tricky sequence of ASHP/ACPE training hour verification, PTCE scheduling, and state registration so you can start working behind the counter—without overlapping application errors.",
-                "travel_card": "Moving to a new state? Pharmacy tech requirements vary wildly—some states only require registration, others require full licensure plus IV certification. Get exact requirements before you relocate.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "Pharmacy Technician License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to pharmacy technician licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "pharmacy technician license by state, pharmacy tech license requirements, CPhT licensure, state board of pharmacy, pharmacy tech license cost",
-                "og_title": "Pharmacy Technician License Requirements by State (2026)",
-                "og_desc": "Compare pharmacy technician licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for pharmacy technicians across the United States.",
-                "disclaimer_entity": "the PTCB, any state board of pharmacy, or any federal agency"
-            }
-        },
-        "pharmacist": {
-            "slug": "pharmacist",
-            "dir": "pharmacist-pseo",
-            "status": "DEPLOYED",
-            "identity": {
-                "title_short": "Pharmacist",
-                "title_full": "Pharmacist",
-                "title_plural": "Pharmacists",
-                "primary_acronym": "RPh/PharmD",
-                "credential": "RPh (Registered Pharmacist)",
-                "specific_pain_point": "NAPLEX/MPJE score transfer and intern hour verification"
-            },
-            "regulatory": {
-                "national_exam": "NAPLEX (North American Pharmacist Licensure Examination) & MPJE",
-                "exam_board": "NABP (National Association of Boards of Pharmacy)",
-                "accrediting_body": "ACPE (Accreditation Council for Pharmacy Education)",
-                "compact_name": null,
-                "compact_status_safe": "Pharmacist licensing does not currently have a multistate compact. The NABP provides score transfer services, but each state requires a separate license application and state-specific jurisprudence exam (MPJE).",
-                "compact_live_count": null,
-                "compact_verification_hook": "VERIFIED",
-                "compact_source_url": null
-            },
-            "copy": {
-                "hero_h1_line1": "Pharmacist License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 pharmacist licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "Pharmacists",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "intern hour verification",
-                "new_grad_card": "Graduating from pharmacy school? Navigate the tricky sequence of ACPE graduation, NAPLEX scheduling, MPJE prep for your target state, and intern hour verification so you can earn your RPh and start practicing—without overlapping application errors.",
-                "travel_card": "Relocating? Each state requires its own MPJE jurisprudence exam plus a separate license application. Get exact NAPLEX score transfer timelines and state-specific requirements before you commit to a new position.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "Pharmacist License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to pharmacist (RPh) licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "pharmacist license by state, pharmacist license requirements, RPh licensure, state board of pharmacy, pharmacist license cost, NAPLEX requirements",
-                "og_title": "Pharmacist License Requirements by State (2026)",
-                "og_desc": "Compare pharmacist licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for pharmacists across the United States.",
-                "disclaimer_entity": "the NABP, ACPE, any state board of pharmacy, or any federal agency"
-            }
-        },
-        "rn": {
-            "slug": "rn",
-            "dir": "rn-pseo",
-            "status": "EXPANSION",
-            "identity": {
-                "title_short": "RN",
-                "title_full": "Registered Nurse",
-                "title_plural": "Registered Nurses",
-                "primary_acronym": "RN/BSN",
-                "credential": "RN (Registered Nurse)",
-                "specific_pain_point": "ATT (Authorization to Test) timing and Nursys verification"
-            },
-            "regulatory": {
-                "national_exam": "NCLEX-RN (National Council Licensure Examination for Registered Nurses)",
-                "exam_board": "NCSBN (National Council of State Boards of Nursing)",
-                "accrediting_body": "ACEN / CCNE (Commission on Collegiate Nursing Education)",
-                "compact_name": "Nurse Licensure Compact (NLC)",
-                "compact_status_safe": "The NLC allows RNs to hold one multistate license. Compact membership varies by state and changes as new legislation is enacted. Always verify with your target state board of nursing.",
-                "compact_live_count": null,
-                "compact_verification_hook": "PENDING",
-                "compact_source_url": "PENDING"
-            },
-            "copy": {
-                "hero_h1_line1": "RN License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 registered nurse licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "Registered nurses",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "ATT (Authorization to Test)",
-                "new_grad_card": "Graduating nursing school? Navigate the tricky sequence of ACEN/CCNE program completion, ATT timing, NCLEX-RN scheduling, and temporary practice permits so you can start your first nursing job on time—without overlapping application errors.",
-                "travel_card": "Going travel nursing? The NLC compact helps, but not every state is a member—and some have pending legislation. Get exact endorsement requirements and avoid the walk-through state trap to lock your next 13-week contract faster.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "RN License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to registered nurse (RN) licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "RN license by state, registered nurse license requirements, NCLEX-RN requirements, state board of nursing, nurse licensure compact, RN license cost",
-                "og_title": "Registered Nurse License Requirements by State (2026)",
-                "og_desc": "Compare RN licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for registered nurses across the United States.",
-                "disclaimer_entity": "the NCSBN, any state board of nursing, or any federal agency"
-            }
-        },
-        "lpn": {
-            "slug": "lpn",
-            "dir": "lpn-pseo",
-            "status": "EXPANSION",
-            "identity": {
-                "title_short": "LPN/LVN",
-                "title_full": "Licensed Practical / Vocational Nurse",
-                "title_plural": "LPNs/LVNs",
-                "primary_acronym": "LPN/LVN",
-                "credential": "LPN (Licensed Practical Nurse) / LVN (Licensed Vocational Nurse)",
-                "specific_pain_point": "LPN vs LVN title confusion and IV certification scope"
-            },
-            "regulatory": {
-                "national_exam": "NCLEX-PN (National Council Licensure Examination for Practical Nurses)",
-                "exam_board": "NCSBN (National Council of State Boards of Nursing)",
-                "accrediting_body": "ACEN (Accreditation Commission for Education in Nursing)",
-                "compact_name": "Nurse Licensure Compact (NLC)",
-                "compact_status_safe": "The NLC includes LPN/LVN multistate licenses in member states. Compact membership varies and changes as new legislation is enacted. Always verify with your target state board.",
-                "compact_live_count": null,
-                "compact_verification_hook": "PENDING",
-                "compact_source_url": "PENDING"
-            },
-            "copy": {
-                "hero_h1_line1": "LPN / LVN License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 LPN/LVN licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
-                "hero_audience_text": "LPNs and LVNs",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "ATT (Authorization to Test)",
-                "new_grad_card": "Finishing your practical nursing program? Navigate the tricky sequence of ACEN program completion, ATT timing, and NCLEX-PN scheduling so you can start your first LPN/LVN job on time—without overlapping application errors.",
-                "travel_card": "Crossing state lines? Some states call it LPN, others call it LVN—and scope of practice varies significantly. Get exact endorsement requirements, IV certification rules, and NLC compact status for your target state.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "LPN/LVN License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to LPN and LVN licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "LPN license by state, LVN license requirements, NCLEX-PN requirements, state board of nursing, LPN license cost, LPN vs LVN",
-                "og_title": "LPN/LVN License Requirements by State (2026)",
-                "og_desc": "Compare LPN/LVN licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for licensed practical and vocational nurses across the United States.",
-                "disclaimer_entity": "the NCSBN, any state board of nursing, or any federal agency"
-            }
-        },
-        "pta": {
-            "slug": "pta",
-            "dir": "pta-pseo",
-            "status": "EXPANSION",
-            "identity": {
-                "title_short": "PTA",
-                "title_full": "Physical Therapist Assistant",
-                "title_plural": "Physical Therapist Assistants",
-                "primary_acronym": "PTA",
-                "credential": "PTA (Licensed Physical Therapist Assistant)",
-                "specific_pain_point": "PT supervision ratio requirements and direct-access limits"
-            },
-            "regulatory": {
-                "national_exam": "NPTE-PTA (National Physical Therapy Examination for PTAs)",
-                "exam_board": "FSBPT (Federation of State Boards of Physical Therapy)",
-                "accrediting_body": "CAPTE (Commission on Accreditation in Physical Therapy Education)",
-                "compact_name": "Physical Therapy Licensure Compact",
-                "compact_status_safe": "The PT Compact includes PTAs in member states. Compact privilege availability varies by state. Verify current PTA eligibility with your target state board.",
-                "compact_live_count": null,
-                "compact_verification_hook": "PENDING",
-                "compact_source_url": "PENDING"
-            },
-            "copy": {
-                "hero_h1_line1": "PTA License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 PTA licensing requirements, supervision ratios, fees, and step-by-step application roadmaps.",
-                "hero_audience_text": "Physical therapist assistants",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "clinical affiliation completion",
-                "new_grad_card": "Finishing your PTA program? Navigate the tricky sequence of CAPTE graduation, NPTE-PTA scheduling, and clinical affiliation verification so you can start your first position under a supervising PT—without overlapping application errors.",
-                "travel_card": "Going travel PTA? Supervision ratios and scope of practice vary dramatically by state. Get exact requirements, compact eligibility, and endorsement timelines before committing to a new contract.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "PTA License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to physical therapist assistant (PTA) licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "PTA license by state, physical therapist assistant license requirements, PTA licensure, NPTE-PTA, PTA compact, PTA license cost",
-                "og_title": "PTA License Requirements by State (2026)",
-                "og_desc": "Compare PTA licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for physical therapist assistants across the United States.",
-                "disclaimer_entity": "the FSBPT, CAPTE, or any state or federal licensing board"
-            }
-        },
-        "cota": {
-            "slug": "cota",
-            "dir": "cota-pseo",
-            "status": "EXPANSION",
-            "identity": {
-                "title_short": "COTA",
-                "title_full": "Certified Occupational Therapy Assistant",
-                "title_plural": "COTAs",
-                "primary_acronym": "COTA/OTA",
-                "credential": "COTA (Certified Occupational Therapy Assistant)",
-                "specific_pain_point": "OTR supervision requirements and state title protection"
-            },
-            "regulatory": {
-                "national_exam": "NBCOT® COTA Exam",
-                "exam_board": "NBCOT (National Board for Certification in Occupational Therapy)",
-                "accrediting_body": "ACOTE® (Accreditation Council for Occupational Therapy Education)",
-                "compact_name": "OT Licensure Compact",
-                "compact_status_safe": "The OT Compact includes COTAs/OTAs in some member states. Compact privilege availability varies. Verify current COTA eligibility with your target state board.",
-                "compact_live_count": null,
-                "compact_verification_hook": "PENDING",
-                "compact_source_url": "PENDING"
-            },
-            "copy": {
-                "hero_h1_line1": "COTA License",
-                "hero_h1_line2": "State Directory",
-                "hero_sub": "Stop decoding state board websites. Find your state's 2026 COTA/OTA licensing requirements, supervision rules, fees, and step-by-step application roadmaps.",
-                "hero_audience_text": "Occupational therapy assistants",
-                "overline": "Board-Sourced Licensing Intelligence",
-                "new_grad_milestone": "Level II fieldwork completion",
-                "new_grad_card": "Finishing your OTA program? Navigate the tricky sequence of ACOTE® graduation, NBCOT® COTA exam scheduling, and Level II fieldwork verification so you can earn your COTA and start your first clinical position—without overlapping application errors.",
-                "travel_card": "Crossing state lines? OTR supervision ratios and COTA scope of practice vary significantly by state. Get exact endorsement requirements and compact eligibility before committing to a new travel contract.",
-                "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-                "boundaries_what_isnt": "We don't file your application for you."
-            },
-            "seo": {
-                "meta_title": "COTA License Requirements by State — Fees, Board Contacts & How to Apply (2026)",
-                "meta_desc": "Complete 2026 guide to COTA/OTA licensing requirements, fees, and board contacts for all 50 US states and DC.",
-                "meta_kw": "COTA license by state, occupational therapy assistant license requirements, OTA licensure, NBCOT COTA, COTA license cost",
-                "og_title": "COTA License Requirements by State (2026)",
-                "og_desc": "Compare COTA licensing fees, board contacts, and application steps across all 50 states."
-            },
-            "footer": {
-                "tagline": "Independent, YMYL-compliant licensing guides for certified occupational therapy assistants across the United States.",
-                "disclaimer_entity": "the NBCOT, ACOTE, or any state or federal licensing board"
-            }
-        }
+    "pt": {
+      "slug": "pt",
+      "dir": "pt-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "PT",
+        "title_full": "Physical Therapist",
+        "title_plural": "Physical Therapists",
+        "primary_acronym": "PT/DPT",
+        "credential": "PT (Licensed Physical Therapist)",
+        "specific_pain_point": "NPTE score transfer timing"
+      },
+      "regulatory": {
+        "national_exam": "NPTE (National Physical Therapy Examination)",
+        "exam_board": "FSBPT (Federation of State Boards of Physical Therapy)",
+        "accrediting_body": "CAPTE (Commission on Accreditation in Physical Therapy Education)",
+        "compact_name": "Physical Therapy Licensure Compact",
+        "compact_status_safe": "The PT Compact allows eligible PTs to practice in member states. Compact privilege availability varies by state and changes regularly. Verify current status with your target state board.",
+        "compact_live_count": null,
+        "compact_verification_hook": "PENDING",
+        "compact_source_url": "PENDING"
+      },
+      "copy": {
+        "hero_h1_line1": "PT License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Physical therapists",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "temporary PT permit",
+        "new_grad_card": "Taking your boards soon? Navigate the tricky sequence of CAPTE graduation, NPTE scheduling, and temporary PT permits so you can start your first job on time\u2014without overlapping application errors.",
+        "travel_card": "Crossing state lines? The PT Compact helps, but not every state is live yet. Get exact endorsement requirements and avoid the provisional license trap to secure your next contract faster.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "Physical Therapist License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to physical therapist (PT) licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "PT license by state, physical therapy license requirements, physical therapist licensure, state PT board, PT license cost, how to become a physical therapist",
+        "og_title": "Physical Therapist License Requirements by State (2026)",
+        "og_desc": "Compare PT licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for physical therapists across the United States.",
+        "disclaimer_entity": "the FSBPT, CAPTE, or any state or federal licensing board"
+      }
+    },
+    "slp": {
+      "slug": "slp",
+      "dir": "slp-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "SLP",
+        "title_full": "Speech-Language Pathologist",
+        "title_plural": "Speech-Language Pathologists",
+        "primary_acronym": "SLP/CCC-SLP",
+        "credential": "CCC-SLP (Certificate of Clinical Competence)",
+        "specific_pain_point": "Clinical Fellowship (CF) supervision requirements"
+      },
+      "regulatory": {
+        "national_exam": "Praxis\u00ae Examination in Speech-Language Pathology",
+        "exam_board": "ASHA (American Speech-Language-Hearing Association)",
+        "accrediting_body": "CAA (Council on Academic Accreditation in Audiology and Speech-Language Pathology)",
+        "compact_name": "Audiology & Speech-Language Pathology Interstate Compact (ASLP-IC)",
+        "compact_status_safe": "The ASLP-IC compact is in the early stages of state adoption. Compact privilege availability varies by state and may not yet be actively issuing privileges. Always verify with your target state board.",
+        "compact_live_count": null,
+        "compact_verification_hook": "PENDING",
+        "compact_source_url": "PENDING"
+      },
+      "copy": {
+        "hero_h1_line1": "SLP License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Speech-language pathologists",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "Clinical Fellowship (CF) placement",
+        "new_grad_card": "Finishing your CF soon? Navigate the tricky sequence of CAA graduation, Praxis\u00ae testing, and Clinical Fellowship supervision requirements so you can earn your CCC-SLP and start your career\u2014without overlapping application errors.",
+        "travel_card": "Crossing state lines or starting telepractice? Cut through the reciprocity confusion. Get exact endorsement requirements and telepractice rules so you can serve clients across state borders compliantly.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "SLP License Requirements by State \u2014 Fees, Telepractice Rules & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to speech-language pathologist (SLP) licensing requirements, telepractice rules, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "SLP license by state, speech-language pathology license requirements, SLP telepractice rules, state SLP board, SLP license cost, how to become an SLP",
+        "og_title": "SLP License Requirements by State (2026)",
+        "og_desc": "Compare SLP licensing fees, telepractice rules, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for speech-language pathologists across the United States.",
+        "disclaimer_entity": "ASHA, CAA, or any state or federal licensing board"
+      }
+    },
+    "rrt": {
+      "slug": "rrt",
+      "dir": "rrt-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "Respiratory Therapist",
+        "title_full": "Respiratory Therapist",
+        "title_plural": "Respiratory Therapists",
+        "primary_acronym": "RRT/CRT",
+        "credential": "RRT (Registered Respiratory Therapist)",
+        "specific_pain_point": "TMC vs CSE exam pathway confusion"
+      },
+      "regulatory": {
+        "national_exam": "TMC (Therapist Multiple-Choice) & CSE (Clinical Simulation Exam)",
+        "exam_board": "NBRC (National Board for Respiratory Care)",
+        "accrediting_body": "CoARC (Commission on Accreditation for Respiratory Care)",
+        "compact_name": null,
+        "compact_status_safe": "Respiratory therapy does not currently have a multistate licensure compact. Each state requires a separate license application.",
+        "compact_live_count": null,
+        "compact_verification_hook": "VERIFIED",
+        "compact_source_url": null
+      },
+      "copy": {
+        "hero_h1_line1": "RRT License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Respiratory therapists",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "temporary RT permit",
+        "new_grad_card": "Taking your boards soon? Navigate the tricky sequence of CoARC graduation, the TMC exam, and the CSE pathway so you can earn your RRT credential and start your first job\u2014without overlapping application errors.",
+        "travel_card": "Crossing state lines? Without a compact, each state requires a separate license. Get exact endorsement requirements and typical processing times to plan your next travel contract accurately.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "Respiratory Therapist License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to respiratory therapist (RRT) licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "RRT license by state, respiratory therapy license requirements, respiratory therapist licensure, state RT board, RRT license cost, how to become a respiratory therapist",
+        "og_title": "Respiratory Therapist License Requirements by State (2026)",
+        "og_desc": "Compare respiratory therapist licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for respiratory therapists across the United States.",
+        "disclaimer_entity": "the NBRC, CoARC, or any state or federal licensing board"
+      }
+    },
+    "dietitian": {
+      "slug": "dietitian",
+      "dir": "dietitian-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "Dietitian",
+        "title_full": "Dietitian & Nutritionist",
+        "title_plural": "Dietitians",
+        "primary_acronym": "RD/RDN",
+        "credential": "RDN (Registered Dietitian Nutritionist)",
+        "specific_pain_point": "Supervised practice program (SPP) matching and verification"
+      },
+      "regulatory": {
+        "national_exam": "CDR Registration Examination for Dietitians",
+        "exam_board": "CDR (Commission on Dietetic Registration)",
+        "accrediting_body": "ACEND\u00ae (Accreditation Council for Education in Nutrition and Dietetics)",
+        "compact_name": "Dietetics Licensure Compact",
+        "compact_status_safe": "A dietetics licensure compact is in varying stages of state adoption. Compact privilege availability may not yet be active in your target state. Always verify with the specific state board.",
+        "compact_live_count": null,
+        "compact_verification_hook": "PENDING",
+        "compact_source_url": "PENDING"
+      },
+      "copy": {
+        "hero_h1_line1": "Dietitian License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Dietitians and nutritionists",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "supervised practice verification",
+        "new_grad_card": "Finishing your dietetic internship? Navigate the tricky sequence of ACEND\u00ae program completion, CDR exam scheduling, and supervised practice verification so you can earn your RDN and start your first job\u2014without overlapping application errors.",
+        "travel_card": "Relocating or doing telehealth across state lines? Cut through the licensing confusion. Some states require licensure, others only certification or registration. Get exact requirements for your target state.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "Dietitian License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to dietitian and nutritionist licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "dietitian license by state, dietitian license requirements, nutritionist license requirements, state dietitian board, dietitian license cost, how to become a dietitian",
+        "og_title": "Dietitian License Requirements by State (2026)",
+        "og_desc": "Compare dietitian licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for dietitians and nutritionists across the United States.",
+        "disclaimer_entity": "the CDR, ACEND, or any state or federal dietetics licensing board"
+      }
+    },
+    "aud": {
+      "slug": "aud",
+      "dir": "aud-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "Audiologist",
+        "title_full": "Audiologist",
+        "title_plural": "Audiologists",
+        "primary_acronym": "AuD",
+        "credential": "AuD (Doctor of Audiology)",
+        "specific_pain_point": "Fourth-year externship verification and hearing aid dispensing permits"
+      },
+      "regulatory": {
+        "national_exam": "Praxis\u00ae Examination in Audiology",
+        "exam_board": "ASHA (American Speech-Language-Hearing Association)",
+        "accrediting_body": "CAA (Council on Academic Accreditation in Audiology and Speech-Language Pathology)",
+        "compact_name": "Audiology & Speech-Language Pathology Interstate Compact (ASLP-IC)",
+        "compact_status_safe": "The ASLP-IC compact is in the early stages of state adoption. Compact privilege availability varies by state and may not yet be actively issuing privileges. Always verify with your target state board.",
+        "compact_live_count": null,
+        "compact_verification_hook": "PENDING",
+        "compact_source_url": "PENDING"
+      },
+      "copy": {
+        "hero_h1_line1": "Audiologist License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Audiologists",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "fourth-year externship completion",
+        "new_grad_card": "Finishing your AuD externship? Navigate the tricky sequence of CAA graduation, Praxis\u00ae testing, and fourth-year externship verification so you can earn your license and start your first clinical position\u2014without overlapping application errors.",
+        "travel_card": "Relocating or expanding your practice? Some states require separate hearing aid dispensing permits in addition to your audiology license. Get exact endorsement requirements to avoid duplicate applications.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "Audiologist License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to audiologist (AuD) licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "audiologist license by state, audiology license requirements, AuD licensure, state audiology board, audiologist license cost, how to become an audiologist",
+        "og_title": "Audiologist License Requirements by State (2026)",
+        "og_desc": "Compare audiologist licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for audiologists across the United States.",
+        "disclaimer_entity": "ASHA, AAA, or any state or federal licensing board"
+      }
+    },
+    "pharm": {
+      "slug": "pharm",
+      "dir": "pharm-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "Pharmacy Technician",
+        "title_full": "Pharmacy Technician",
+        "title_plural": "Pharmacy Technicians",
+        "primary_acronym": "CPhT",
+        "credential": "CPhT (Certified Pharmacy Technician)",
+        "specific_pain_point": "State-specific training hour requirements and IV certification"
+      },
+      "regulatory": {
+        "national_exam": "PTCE (Pharmacy Technician Certification Exam)",
+        "exam_board": "PTCB (Pharmacy Technician Certification Board)",
+        "accrediting_body": "ASHP/ACPE (accredited pharmacy technician training programs)",
+        "compact_name": null,
+        "compact_status_safe": "Pharmacy technician licensing does not currently have a multistate compact. Each state sets its own registration, certification, or licensure requirements independently.",
+        "compact_live_count": null,
+        "compact_verification_hook": "VERIFIED",
+        "compact_source_url": null
+      },
+      "copy": {
+        "hero_h1_line1": "Pharmacy Tech License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Pharmacy technicians",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "PTCB certification",
+        "new_grad_card": "Just completed your training program? Navigate the tricky sequence of ASHP/ACPE training hour verification, PTCE scheduling, and state registration so you can start working behind the counter\u2014without overlapping application errors.",
+        "travel_card": "Moving to a new state? Pharmacy tech requirements vary wildly\u2014some states only require registration, others require full licensure plus IV certification. Get exact requirements before you relocate.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "Pharmacy Technician License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to pharmacy technician licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "pharmacy technician license by state, pharmacy tech license requirements, CPhT licensure, state board of pharmacy, pharmacy tech license cost",
+        "og_title": "Pharmacy Technician License Requirements by State (2026)",
+        "og_desc": "Compare pharmacy technician licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for pharmacy technicians across the United States.",
+        "disclaimer_entity": "the PTCB, any state board of pharmacy, or any federal agency"
+      }
+    },
+    "pharmacist": {
+      "slug": "pharmacist",
+      "dir": "pharmacist-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "Pharmacist",
+        "title_full": "Pharmacist",
+        "title_plural": "Pharmacists",
+        "primary_acronym": "RPh/PharmD",
+        "credential": "RPh (Registered Pharmacist)",
+        "specific_pain_point": "NAPLEX/MPJE score transfer and intern hour verification"
+      },
+      "regulatory": {
+        "national_exam": "NAPLEX (North American Pharmacist Licensure Examination) & MPJE",
+        "exam_board": "NABP (National Association of Boards of Pharmacy)",
+        "accrediting_body": "ACPE (Accreditation Council for Pharmacy Education)",
+        "compact_name": null,
+        "compact_status_safe": "Pharmacist licensing does not currently have a multistate compact. The NABP provides score transfer services, but each state requires a separate license application and state-specific jurisprudence exam (MPJE).",
+        "compact_live_count": null,
+        "compact_verification_hook": "VERIFIED",
+        "compact_source_url": null
+      },
+      "copy": {
+        "hero_h1_line1": "Pharmacist License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Pharmacists",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "intern hour verification",
+        "new_grad_card": "Graduating from pharmacy school? Navigate the tricky sequence of ACPE graduation, NAPLEX scheduling, MPJE prep for your target state, and intern hour verification so you can earn your RPh and start practicing\u2014without overlapping application errors.",
+        "travel_card": "Relocating? Each state requires its own MPJE jurisprudence exam plus a separate license application. Get exact NAPLEX score transfer timelines and state-specific requirements before you commit to a new position.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "Pharmacist License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to pharmacist (RPh) licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "pharmacist license by state, pharmacist license requirements, RPh licensure, state board of pharmacy, pharmacist license cost, NAPLEX requirements",
+        "og_title": "Pharmacist License Requirements by State (2026)",
+        "og_desc": "Compare pharmacist licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for pharmacists across the United States.",
+        "disclaimer_entity": "the NABP, ACPE, any state board of pharmacy, or any federal agency"
+      }
+    },
+    "rn": {
+      "slug": "rn",
+      "dir": "rn-pseo",
+      "status": "EXPANSION",
+      "identity": {
+        "title_short": "RN",
+        "title_full": "Registered Nurse",
+        "title_plural": "Registered Nurses",
+        "primary_acronym": "RN/BSN",
+        "credential": "RN (Registered Nurse)",
+        "specific_pain_point": "ATT (Authorization to Test) timing and Nursys verification"
+      },
+      "regulatory": {
+        "national_exam": "NCLEX-RN (National Council Licensure Examination for Registered Nurses)",
+        "exam_board": "NCSBN (National Council of State Boards of Nursing)",
+        "accrediting_body": "ACEN / CCNE (Commission on Collegiate Nursing Education)",
+        "compact_name": "Nurse Licensure Compact (NLC)",
+        "compact_status_safe": "The NLC allows RNs to hold one multistate license. Compact membership varies by state and changes as new legislation is enacted. Always verify with your target state board of nursing.",
+        "compact_live_count": null,
+        "compact_verification_hook": "PENDING",
+        "compact_source_url": "PENDING"
+      },
+      "copy": {
+        "hero_h1_line1": "RN License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Registered nurses",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "ATT (Authorization to Test)",
+        "new_grad_card": "Graduating nursing school? Navigate the tricky sequence of ACEN/CCNE program completion, ATT timing, NCLEX-RN scheduling, and temporary practice permits so you can start your first nursing job on time\u2014without overlapping application errors.",
+        "travel_card": "Going travel nursing? The NLC compact helps, but not every state is a member\u2014and some have pending legislation. Get exact endorsement requirements and avoid the walk-through state trap to lock your next 13-week contract faster.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "RN License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to registered nurse (RN) licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "RN license by state, registered nurse license requirements, NCLEX-RN requirements, state board of nursing, nurse licensure compact, RN license cost",
+        "og_title": "Registered Nurse License Requirements by State (2026)",
+        "og_desc": "Compare RN licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for registered nurses across the United States.",
+        "disclaimer_entity": "the NCSBN, any state board of nursing, or any federal agency"
+      }
+    },
+    "lpn": {
+      "slug": "lpn",
+      "dir": "lpn-pseo",
+      "status": "EXPANSION",
+      "identity": {
+        "title_short": "LPN/LVN",
+        "title_full": "Licensed Practical / Vocational Nurse",
+        "title_plural": "LPNs/LVNs",
+        "primary_acronym": "LPN/LVN",
+        "credential": "LPN (Licensed Practical Nurse) / LVN (Licensed Vocational Nurse)",
+        "specific_pain_point": "LPN vs LVN title confusion and IV certification scope"
+      },
+      "regulatory": {
+        "national_exam": "NCLEX-PN (National Council Licensure Examination for Practical Nurses)",
+        "exam_board": "NCSBN (National Council of State Boards of Nursing)",
+        "accrediting_body": "ACEN (Accreditation Commission for Education in Nursing)",
+        "compact_name": "Nurse Licensure Compact (NLC)",
+        "compact_status_safe": "The NLC includes LPN/LVN multistate licenses in member states. Compact membership varies and changes as new legislation is enacted. Always verify with your target state board.",
+        "compact_live_count": null,
+        "compact_verification_hook": "PENDING",
+        "compact_source_url": "PENDING"
+      },
+      "copy": {
+        "hero_h1_line1": "LPN / LVN License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "LPNs and LVNs",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "ATT (Authorization to Test)",
+        "new_grad_card": "Finishing your practical nursing program? Navigate the tricky sequence of ACEN program completion, ATT timing, and NCLEX-PN scheduling so you can start your first LPN/LVN job on time\u2014without overlapping application errors.",
+        "travel_card": "Crossing state lines? Some states call it LPN, others call it LVN\u2014and scope of practice varies significantly. Get exact endorsement requirements, IV certification rules, and NLC compact status for your target state.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "LPN/LVN License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to LPN and LVN licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "LPN license by state, LVN license requirements, NCLEX-PN requirements, state board of nursing, LPN license cost, LPN vs LVN",
+        "og_title": "LPN/LVN License Requirements by State (2026)",
+        "og_desc": "Compare LPN/LVN licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for licensed practical and vocational nurses across the United States.",
+        "disclaimer_entity": "the NCSBN, any state board of nursing, or any federal agency"
+      }
+    },
+    "pta": {
+      "slug": "pta",
+      "dir": "pta-pseo",
+      "status": "EXPANSION",
+      "identity": {
+        "title_short": "PTA",
+        "title_full": "Physical Therapist Assistant",
+        "title_plural": "Physical Therapist Assistants",
+        "primary_acronym": "PTA",
+        "credential": "PTA (Licensed Physical Therapist Assistant)",
+        "specific_pain_point": "PT supervision ratio requirements and direct-access limits"
+      },
+      "regulatory": {
+        "national_exam": "NPTE-PTA (National Physical Therapy Examination for PTAs)",
+        "exam_board": "FSBPT (Federation of State Boards of Physical Therapy)",
+        "accrediting_body": "CAPTE (Commission on Accreditation in Physical Therapy Education)",
+        "compact_name": "Physical Therapy Licensure Compact",
+        "compact_status_safe": "The PT Compact includes PTAs in member states. Compact privilege availability varies by state. Verify current PTA eligibility with your target state board.",
+        "compact_live_count": null,
+        "compact_verification_hook": "PENDING",
+        "compact_source_url": "PENDING"
+      },
+      "copy": {
+        "hero_h1_line1": "PTA License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Physical therapist assistants",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "clinical affiliation completion",
+        "new_grad_card": "Finishing your PTA program? Navigate the tricky sequence of CAPTE graduation, NPTE-PTA scheduling, and clinical affiliation verification so you can start your first position under a supervising PT\u2014without overlapping application errors.",
+        "travel_card": "Going travel PTA? Supervision ratios and scope of practice vary dramatically by state. Get exact requirements, compact eligibility, and endorsement timelines before committing to a new contract.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "PTA License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to physical therapist assistant (PTA) licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "PTA license by state, physical therapist assistant license requirements, PTA licensure, NPTE-PTA, PTA compact, PTA license cost",
+        "og_title": "PTA License Requirements by State (2026)",
+        "og_desc": "Compare PTA licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for physical therapist assistants across the United States.",
+        "disclaimer_entity": "the FSBPT, CAPTE, or any state or federal licensing board"
+      }
+    },
+    "cota": {
+      "slug": "cota",
+      "dir": "cota-pseo",
+      "status": "EXPANSION",
+      "identity": {
+        "title_short": "COTA",
+        "title_full": "Certified Occupational Therapy Assistant",
+        "title_plural": "COTAs",
+        "primary_acronym": "COTA/OTA",
+        "credential": "COTA (Certified Occupational Therapy Assistant)",
+        "specific_pain_point": "OTR supervision requirements and state title protection"
+      },
+      "regulatory": {
+        "national_exam": "NBCOT\u00ae COTA Exam",
+        "exam_board": "NBCOT (National Board for Certification in Occupational Therapy)",
+        "accrediting_body": "ACOTE\u00ae (Accreditation Council for Occupational Therapy Education)",
+        "compact_name": "OT Licensure Compact",
+        "compact_status_safe": "The OT Compact includes COTAs/OTAs in some member states. Compact privilege availability varies. Verify current COTA eligibility with your target state board.",
+        "compact_live_count": null,
+        "compact_verification_hook": "PENDING",
+        "compact_source_url": "PENDING"
+      },
+      "copy": {
+        "hero_h1_line1": "COTA License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_audience_text": "Occupational therapy assistants",
+        "overline": "Built for Travel Clinicians",
+        "new_grad_milestone": "Level II fieldwork completion",
+        "new_grad_card": "Finishing your OTA program? Navigate the tricky sequence of ACOTE\u00ae graduation, NBCOT\u00ae COTA exam scheduling, and Level II fieldwork verification so you can earn your COTA and start your first clinical position\u2014without overlapping application errors.",
+        "travel_card": "Crossing state lines? OTR supervision ratios and COTA scope of practice vary significantly by state. Get exact endorsement requirements and compact eligibility before committing to a new travel contract.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "COTA License Requirements by State \u2014 Fees, Board Contacts & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to COTA/OTA licensing requirements, fees, and board contacts for all 50 US states and DC.",
+        "meta_kw": "COTA license by state, occupational therapy assistant license requirements, OTA licensure, NBCOT COTA, COTA license cost",
+        "og_title": "COTA License Requirements by State (2026)",
+        "og_desc": "Compare COTA licensing fees, board contacts, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for certified occupational therapy assistants across the United States.",
+        "disclaimer_entity": "the NBCOT, ACOTE, or any state or federal licensing board"
+      }
     }
+  }
 }
