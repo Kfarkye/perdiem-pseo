@@ -216,14 +216,13 @@ index_html = f"""<!DOCTYPE html>
 <link rel="stylesheet" href="/css/styles.css?v={CSS_HASH}">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
 <style>
-.hub-header {{ background: var(--sand-900); color: var(--sand-100); padding: var(--space-9) var(--space-7) var(--space-10); text-align: center; position: relative; overflow: hidden; }}
+.hub-header {{ background: var(--sand-900); color: var(--sand-100); padding: var(--space-9) var(--space-7) var(--space-7); text-align: center; position: relative; overflow: hidden; }}
 .hub-header::before {{ content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 20% 80%, hsla(180,50%,26%,.07) 0%, transparent 70%), radial-gradient(ellipse 60% 50% at 80% 20%, hsla(18,52%,47%,.05) 0%, transparent 70%); pointer-events: none; }}
-.hub-header h1 {{ color: #fff; font-family: var(--serif); font-size: clamp(1.85rem, 4.5vw, 2.65rem); margin-bottom: var(--space-4); font-weight: 400; letter-spacing: -.025em; position: relative; }}
+.hub-header h1 {{ color: #fff; font-family: var(--serif); font-size: clamp(1.85rem, 4.5vw, 2.65rem); margin-bottom: var(--space-4); font-weight: 400; letter-spacing: -.025em; position: relative; animation: heroFadeUp 700ms cubic-bezier(.16,1,.3,1) both; }}
 .hub-header em {{ color: var(--terracotta-light); font-style: italic; font-weight: 300; }}
-.hub-header p {{ color: var(--sand-400); font-size: 0.88rem; max-width: 520px; margin: 0 auto; line-height: 1.6; position: relative; }}
-.hub-header .overline {{ font-family: var(--sans); font-size: .58rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--sand-400); margin-bottom: var(--space-3); display: block; position: relative; }}
-.hub-header .freshness {{ font-family: var(--sans); font-size: .68rem; color: var(--sand-400); margin-top: var(--space-5); display: flex; align-items: center; justify-content: center; gap: var(--space-3); flex-wrap: wrap; position: relative; }}
-.hub-header .freshness span {{ display: inline-flex; align-items: center; gap: .3rem; }}
+.hub-header p {{ color: var(--sand-300); font-size: 0.95rem; font-weight: 300; max-width: 540px; margin: 0 auto; line-height: 1.7; position: relative; animation: heroFadeUp 700ms 120ms cubic-bezier(.16,1,.3,1) both; }}
+.hub-header p::after {{ content: ''; display: block; width: 48px; height: 2px; margin: var(--space-5) auto 0; background: linear-gradient(90deg, transparent, var(--terracotta-light), transparent); border-radius: 1px; animation: heroFadeUp 700ms 250ms cubic-bezier(.16,1,.3,1) both; }}
+@keyframes heroFadeUp {{ from {{ opacity: 0; transform: translateY(14px); }} to {{ opacity: 1; transform: translateY(0); }} }}
 
 /* ── Filter Toolbar — contained card ── */
 .filter-toolbar {{ max-width: 1000px; margin: -2.5rem auto var(--space-6); padding: var(--space-5) var(--space-6); position: relative; z-index: 2; background: #fff; border: var(--border-subtle); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }}
