@@ -1,0 +1,114 @@
+{
+    "state_slug": "new-hampshire",
+    "state_name": "New Hampshire",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian (LD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "New Hampshire Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
+        "description": "Apply for a New Hampshire Licensed Dietitian credential through OPLC. $110 application fee. Master's degree, 900+ hours practical experience, and CDR exam required.",
+        "keywords": "New Hampshire dietitian license, NH licensed dietitian requirements, New Hampshire OPLC Board of Licensed Dietitians, New Hampshire dietitian application fee"
+    },
+    "board": {
+        "name": "Board of Licensed Dietitians",
+        "parent_dept": "New Hampshire Office of Professional Licensure and Certification (OPLC)",
+        "mailing_address": "7 Eagle Square<br>Concord, NH 03301",
+        "physical_address": "7 Eagle Square<br>Concord, NH 03301",
+        "phone": "(603) 271-2152",
+        "fax": "(603) 271-6702",
+        "email": "mailto:customersupport@oplc.nh.gov",
+        "url": "https://www.oplc.nh.gov/board-licensed-dietitians"
+    },
+    "quick_facts": {
+        "total_fee": "$110",
+        "fee_breakdown": "$110 initial license application fee",
+        "renewal_fee": "$110",
+        "renewal_cycle": "Every 2 years + 20 CE hours",
+        "processing_time": "2 to 4 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian (LD)",
+            "description": "The standard credential to practice dietetics in New Hampshire, overseen by the OPLC Board of Licensed Dietitians."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a bachelor's or master's degree (a master's is now required by CDR). Complete a dietetic internship of no less than 900 hours under the supervision of a licensed/registered dietitian."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. A letter verifying your RD status must be sent directly from the CDR."
+        },
+        {
+            "title": "Submit the Online Application via OPLC",
+            "description": "Create an account on the New Hampshire OPLC online portal, complete the initial application, and pay the $110 fee."
+        },
+        {
+            "title": "Provide Verification Documents",
+            "description": "Ensure the CDR sends your verification. Additionally, if you received your RD card on or after January 1, 2001, you must provide official transcripts and verification of internship hours directly from your supervisor."
+        }
+    ],
+    "documents": [
+        {
+            "item": "CDR Registration Verification",
+            "detail": "A letter verifying RD status sent directly from the Commission on Dietetic Registration to the Board."
+        },
+        {
+            "item": "Official College Transcripts",
+            "detail": "Required if RD card was obtained on or after 1/1/2001. Must be sent from the degree-granting institution."
+        },
+        {
+            "item": "Verification of Internship Hours",
+            "detail": "Required if RD card was obtained on or after 1/1/2001. Sent directly from the internship supervisor."
+        }
+    ],
+    "provisional_text": "New Hampshire regulations generally require the completion of the CDR examination prior to issuing a license. There is no standard provision for a temporary dietitian license.",
+    "reciprocity_text": "New Hampshire may grant a license to any applicant who presents proof of current licensure, registration, or certification as a dietitian in a state or territory whose requirements are substantially equivalent to New Hampshire's, alongside the standard application and fee.",
+    "faqs": [
+        {
+            "question": "How much does a New Hampshire dietitian license cost?",
+            "answer": "The initial license application fee is $110."
+        },
+        {
+            "question": "When does the New Hampshire license need to be renewed?",
+            "answer": "New Hampshire dietitian licenses must be renewed biennially (every two years). The renewal fee is $110. A $150 reinstatement fee applies to late submissions."
+        },
+        {
+            "question": "What are the continuing education requirements for New Hampshire?",
+            "answer": "Licensees must complete 20 hours of approved continuing education within the preceding two years to qualify for license renewal."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$110",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$110"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.oplc.nh.gov/board-licensed-dietitians",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

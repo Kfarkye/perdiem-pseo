@@ -1,0 +1,110 @@
+{
+    "state_slug": "vermont",
+    "state_name": "Vermont",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Certified Dietitian (CD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Vermont Certified Dietitian Application — Requirements & Fees (2026)",
+        "description": "Apply for a Vermont Certified Dietitian credential through OPR. $100 application fee. Master's degree, 1,000+ hours practical experience, and CDR exam required.",
+        "keywords": "Vermont dietitian certification, VT certified dietitian requirements, Vermont OPR Dietitians, Vermont dietitian application fee"
+    },
+    "board": {
+        "name": "Dietitians",
+        "parent_dept": "Vermont Office of Professional Regulation (OPR)",
+        "mailing_address": "89 Main Street, 3rd Floor<br>Montpelier, VT 05620-3402",
+        "physical_address": "89 Main Street, 3rd Floor<br>Montpelier, VT 05620-3402",
+        "phone": "(802) 828-1505",
+        "fax": "(802) 828-2465",
+        "email": "mailto:sos.opr.professions@vermont.gov",
+        "url": "https://sos.vermont.gov/dietitians/"
+    },
+    "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "$100 non-refundable initial application fee",
+        "renewal_fee": "$100",
+        "renewal_cycle": "Every 2 years + 30 CE hours",
+        "processing_time": "2 to 4 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Certified Dietitian (CD)",
+            "description": "Vermont operates under a certification model rather than strict licensure for dietitians. The 'Certified Dietitian' title is protected."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree from an ACEND-accredited program. Complete a minimum of 1,000 hours of supervised dietetics practice within the program."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this."
+        },
+        {
+            "title": "Submit the Online Application via OPR",
+            "description": "Create an account on the Vermont OPR Online Services Platform, select the Dietitian application, and pay the $100 fee."
+        },
+        {
+            "title": "Provide Verification Documents",
+            "description": "Upload a copy of your active CDR card or ensure verification is requested from the CDR during the online application process."
+        }
+    ],
+    "documents": [
+        {
+            "item": "OPR Online Application",
+            "detail": "Application submitted electronically with the required fee."
+        },
+        {
+            "item": "CDR Registration Card",
+            "detail": "Proof of active registration with the Commission on Dietetic Registration."
+        }
+    ],
+    "provisional_text": "Vermont does not explicitly mandate full licensure for all nutrition service providers but does protect the 'Certified Dietitian' title, which requires the CDR components to be met first.",
+    "reciprocity_text": "Applicants currently certified or licensed as a dietitian in good standing in another jurisdiction can apply for certification in Vermont via the online system if their jurisdiction's requirements are substantially equivalent to Vermont's (typically demonstrated by active CDR registration).",
+    "faqs": [
+        {
+            "question": "How much does a Vermont dietitian certification cost?",
+            "answer": "The initial cost is a $100 application fee."
+        },
+        {
+            "question": "When does the Vermont certification need to be renewed?",
+            "answer": "Vermont dietitian certifications must be renewed every two years. The renewal fee is $100."
+        },
+        {
+            "question": "Is a license required to practice dietetics in Vermont?",
+            "answer": "Vermont uses a certification model, protecting the title 'Certified Dietitian'. While individuals can provide certain nutrition services without certification, only those meeting state standards and obtaining certification can use the CD title."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$100",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$100"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://sos.vermont.gov/dietitians/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

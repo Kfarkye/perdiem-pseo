@@ -1,0 +1,110 @@
+{
+    "state_slug": "south-dakota",
+    "state_name": "South Dakota",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Nutritionist (LN) / Licensed Dietitian",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "South Dakota Licensed Dietitian/Nutritionist — Requirements & Fees (2026)",
+        "description": "Apply for a South Dakota Licensed Dietitian or Nutritionist credential. $70 application fee. Master's degree, 1,200 hours supervised practice, and CDR exam required.",
+        "keywords": "South Dakota dietitian license, SD licensed nutritionist requirements, South Dakota Board of Medical and Osteopathic Examiners Dietitians, South Dakota dietitian application fee"
+    },
+    "board": {
+        "name": "South Dakota Board of Medical and Osteopathic Examiners (SDBMOE)",
+        "parent_dept": "Department of Health",
+        "mailing_address": "101 N. Main Ave., Suite 301<br>Sioux Falls, SD 57104",
+        "physical_address": "101 N. Main Ave., Suite 301<br>Sioux Falls, SD 57104",
+        "phone": "(605) 367-7781",
+        "fax": "(605) 367-7786",
+        "email": "mailto:sdbmoe@state.sd.us",
+        "url": "https://www.sdbmoe.gov/nutritionist-dietitian/"
+    },
+    "quick_facts": {
+        "total_fee": "$70",
+        "fee_breakdown": "$70 initial application fee",
+        "renewal_fee": "$100",
+        "renewal_cycle": "Every 2 years (expires May 31 of odd years)",
+        "processing_time": "3 to 4 Weeks",
+        "license_duration": "Up to 2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Nutritionist / Dietitian",
+            "description": "The credential to practice dietetics in South Dakota, regulated by the Board of Medical and Osteopathic Examiners. The state law primarily licenses under the 'Nutritionist' title but requires qualifications identical to dietetics."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree from an ACEND-accredited program. Complete a minimum of 1,200 hours of board-approved supervised practice through a dietetic internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies the state's exam requirement."
+        },
+        {
+            "title": "Submit the Application via SDBMOE",
+            "description": "Apply online through the South Dakota Board of Medical and Osteopathic Examiners portal and pay the $70 application fee."
+        },
+        {
+            "title": "Provide Verification Documents",
+            "description": "Submit a copy of your active CDR registration to verify that you meet the educational, examination, and supervised practice requirements."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official Online Application",
+            "detail": "Application submitted via the SDBMOE portal."
+        },
+        {
+            "item": "CDR Registration Verification",
+            "detail": "Proof of active registration with the Commission on Dietetic Registration. Usually submitted directly or verified online by the Board."
+        }
+    ],
+    "provisional_text": "South Dakota regulations require passing the national examination before full licensure. Check directly with the SDBMOE regarding temporary permits while awaiting examination results.",
+    "reciprocity_text": "Applicants licensed in another state may be granted reciprocity if they hold an active license in good standing and can verify their Commission on Dietetic Registration status, demonstrating compliance with South Dakota's requirements.",
+    "faqs": [
+        {
+            "question": "How much does a South Dakota dietitian license cost?",
+            "answer": "The initial license application fee is $70."
+        },
+        {
+            "question": "When does the South Dakota license need to be renewed?",
+            "answer": "South Dakota dietitian licenses expire biennially on May 31st of odd-numbered years. The renewal fee is $100."
+        },
+        {
+            "question": "Why does South Dakota use the 'Nutritionist' title for Dietitians?",
+            "answer": "South Dakota codified its practice act using the term 'Licensed Nutritionist' for professionals providing medical nutrition therapy, but the requirements parallel those for Registered Dietitians nationally."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$70",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$70"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.sdbmoe.gov/nutritionist-dietitian/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

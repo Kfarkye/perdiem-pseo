@@ -1,0 +1,118 @@
+{
+    "state_slug": "montana",
+    "state_name": "Montana",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian / Nutritionist",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Montana Licensed Dietitian Application — Requirements & Fees (2026)",
+        "description": "Apply for a Montana Licensed Dietitian credential through the Board of Medical Examiners. $75 application fee. Master's degree and CDR exam required.",
+        "keywords": "Montana dietitian license, MT licensed dietitian requirements, Montana Board of Medical Examiners Dietitians, Montana dietitian application fee"
+    },
+    "board": {
+        "name": "Montana Board of Medical Examiners",
+        "parent_dept": "Department of Labor & Industry",
+        "mailing_address": "PO Box 200513<br>Helena, MT 59620-0513",
+        "physical_address": "301 S. Park Ave., 4th Floor<br>Helena, MT 59601",
+        "phone": "(406) 444-6880",
+        "fax": "(406) 841-2305",
+        "email": "mailto:dlibsdmed@mt.gov",
+        "url": "https://boards.bsd.dli.mt.gov/medical-examiners/"
+    },
+    "quick_facts": {
+        "total_fee": "$75",
+        "fee_breakdown": "$75 non-refundable application fee",
+        "renewal_fee": "$100",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "3 to 5 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian",
+            "description": "Regulated by the Montana Board of Medical Examiners. Recently defined distinctly through 2025 legislative sessions separating it from the generic 'Nutritionist' title."
+        },
+        {
+            "title": "Licensed Nutritionist",
+            "description": "Montana has historically licensed 'Nutritionists', a title which fully incorporates the credentials and scope of a Registered Dietitian."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree from an ACEND-accredited program in dietetics or nutrition. Complete a dietetic internship of at least 1,200 hours."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Active RD or RDN status is required."
+        },
+        {
+            "title": "Perform an NPDB Self-Query",
+            "description": "Applicants must complete a self-query of the National Practitioner Data Bank (NPDB) and provide the results to the Montana Board."
+        },
+        {
+            "title": "Submit the Application to the Board",
+            "description": "Apply online or via paper application through the Montana Board of Medical Examiners, pay the $75 fee, and submit primary source verification of your CDR credentials."
+        }
+    ],
+    "documents": [
+        {
+            "item": "NPDB Self-Query Report",
+            "detail": "Required for all applicants. Conducted via the National Practitioner Data Bank."
+        },
+        {
+            "item": "CDR Registration Verification",
+            "detail": "Must be sent directly from the Commission on Dietetic Registration."
+        },
+        {
+            "item": "Verification of Out-of-State Licenses",
+            "detail": "If licensed in other jurisdictions, you must arrange for official verifications to be sent to Montana."
+        }
+    ],
+    "provisional_text": "Montana does not issue a temporary or provisional license for dietitians or nutritionists. You must fully meet the CDR examination requirement before being granted a license.",
+    "reciprocity_text": "Out-of-state applicants with active CDR registration may readily obtain a Montana license by successfully completing the application packet, submitting the NPDB self-query, and ensuring their current state licenses are verified.",
+    "faqs": [
+        {
+            "question": "How much does a Montana dietitian license cost?",
+            "answer": "The initial cost is a $75 application fee."
+        },
+        {
+            "question": "When does the Montana license need to be renewed?",
+            "answer": "Montana dietitian and nutritionist licenses expire biennially. The renewal fee is $100."
+        },
+        {
+            "question": "Why is it through the Board of Medical Examiners?",
+            "answer": "In Montana, the regulation of dietitians and nutritionists is structured under the Board of Medical Examiners, which oversees various allied health professions to ensure public safety in medical nutrition therapy."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$75",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$75"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://boards.bsd.dli.mt.gov/medical-examiners/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

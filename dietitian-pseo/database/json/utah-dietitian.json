@@ -1,0 +1,110 @@
+{
+    "state_slug": "utah",
+    "state_name": "Utah",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Certified Dietitian (CD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Utah Certified Dietitian (CD) Application — Requirements & Fees (2026)",
+        "description": "Apply for a Utah Certified Dietitian credential through DOPL. $60 application fee. Master's degree, CDR exam, and active registration required.",
+        "keywords": "Utah dietitian license, UT certified dietitian requirements, Utah DOPL Dietitians, Utah dietitian application fee"
+    },
+    "board": {
+        "name": "Utah Division of Occupational and Professional Licensing (DOPL)",
+        "parent_dept": "Department of Commerce",
+        "mailing_address": "PO Box 146741<br>Salt Lake City, UT 84114",
+        "physical_address": "160 East 300 South, 1st Floor<br>Salt Lake City, UT 84111",
+        "phone": "(801) 530-6628",
+        "fax": "(801) 530-6511",
+        "email": "mailto:doplbureau3@utah.gov",
+        "url": "https://dopl.utah.gov/dietitian/"
+    },
+    "quick_facts": {
+        "total_fee": "$60",
+        "fee_breakdown": "$60 nonrefundable initial application fee",
+        "renewal_fee": "$37",
+        "renewal_cycle": "Every 2 years (expires Sept 30 of even-numbered years)",
+        "processing_time": "2 to 4 Weeks",
+        "license_duration": "Up to 2 Years (depending on issue date relative to Sept 30 even-year cycle)"
+    },
+    "license_types": [
+        {
+            "title": "Certified Dietitian (CD)",
+            "description": "Utah's state-recognized credential to practice dietetics. It is commonly referred to as certification rather than licensure in Utah state law."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree or higher from an accredited institution. Complete a minimum of 1,200 hours of board-approved supervised practice through an ACEND-accredited program."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Utah requires you to hold active CDR registration."
+        },
+        {
+            "title": "Submit the Application via DOPL",
+            "description": "Apply online through the Utah DOPL eGov portal or submit a paper application. Pay the $60 nonrefundable application fee."
+        },
+        {
+            "title": "Provide Verification",
+            "description": "Submit a copy of your current active CDR Registration Card along with your application. Utah relies heavily on CDR registration to verify you have met the education and exam requirements."
+        }
+    ],
+    "documents": [
+        {
+            "item": "CDR Registration Card",
+            "detail": "Provide a copy of your current, active Commission on Dietetic Registration wallet card."
+        },
+        {
+            "item": "Official Application",
+            "detail": "Completed application form with the $60 fee."
+        }
+    ],
+    "provisional_text": "Utah does not offer a temporary or provisional certification for dietitians. You must possess the CDR Registered Dietitian credential before applying.",
+    "reciprocity_text": "Utah offers licensure by endorsement. Out-of-state applicants with active CDR registration may apply by completing the standard application and submitting a copy of their active CDR card, which proves they meet the national standards required by Utah.",
+    "faqs": [
+        {
+            "question": "How much does a Utah dietitian certification cost?",
+            "answer": "The initial cost is a $60 application fee."
+        },
+        {
+            "question": "When does the Utah certification need to be renewed?",
+            "answer": "Utah Certified Dietitian credentials expire on September 30 of all even-numbered years. The renewal fee is $37."
+        },
+        {
+            "question": "What are the continuing education requirements for Utah?",
+            "answer": "Utah accepts the continuing education completed for the maintenance of your national CDR registration (75 hours every five years) to satisfy state renewal requirements."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$60",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$60"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://dopl.utah.gov/dietitian/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

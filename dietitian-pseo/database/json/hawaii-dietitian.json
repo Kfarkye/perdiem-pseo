@@ -1,0 +1,114 @@
+{
+    "state_slug": "hawaii",
+    "state_name": "Hawaii",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian (LD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Hawaii Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
+        "description": "Apply for a Hawaii Licensed Dietitian credential. $225 initial fee. Master's degree, 900 hours supervised practice, and CDR exam required.",
+        "keywords": "Hawaii dietitian license, HI licensed dietitian requirements, Hawaii Department of Health Dietitians, Hawaii dietitian application fee"
+    },
+    "board": {
+        "name": "State Licensing Section - Dietitians",
+        "parent_dept": "Hawaii Department of Health (DOH) Office of Health Care Assurance",
+        "mailing_address": "601 Kamokila Blvd., Room 361<br>Kapolei, HI 96707",
+        "physical_address": "601 Kamokila Blvd., Room 361<br>Kapolei, HI 96707",
+        "phone": "(808) 692-7400",
+        "fax": "(808) 692-7447",
+        "email": "mailto:doh.ohca@doh.hawaii.gov",
+        "url": "https://health.hawaii.gov/ohca/"
+    },
+    "quick_facts": {
+        "total_fee": "$225",
+        "fee_breakdown": "$225 initial license fee (non-refundable)",
+        "renewal_fee": "Varies (Contact DOH)",
+        "renewal_cycle": "Every 3 years (Must maintain active CDR)",
+        "processing_time": "4 to 6 Weeks",
+        "license_duration": "3 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian (LD)",
+            "description": "The credential to practice dietetics in Hawaii, overseen by the Department of Health. The application process is primarily paper-based."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree or higher. Complete an ACEND-approved supervised practice experience of not less than 900 hours."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+        },
+        {
+            "title": "Request Application Packet",
+            "description": "Contact the Hawaii DOH State Licensing Section directly at (808) 692-7400 to request an application packet, as it is not generally available online."
+        },
+        {
+            "title": "Submit Application and Fee",
+            "description": "Return the completed application along with the $225 non-refundable fee and required verification documents by mail."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Paper Application",
+            "detail": "Obtained by calling the DOH and completed accurately."
+        },
+        {
+            "item": "CDR Registration Card",
+            "detail": "A copy of your active Commission on Dietetic Registration card."
+        },
+        {
+            "item": "Official College Transcripts",
+            "detail": "Proof of the required accredited degree (foreign degrees require validation)."
+        }
+    ],
+    "provisional_text": "Hawaii does not explicitly offer a temporary or provisional license according to current state licensing regulations. Passing the CDR exam is required prior to applying for a license.",
+    "reciprocity_text": "Hawaii allows for licensure by endorsement. Individuals holding a valid dietitian certification or license from another state, territory, or jurisdiction may be eligible if the requirements are equal to or greater than Hawaii's (maintaining an active CDR typically qualifies).",
+    "faqs": [
+        {
+            "question": "How much does a Hawaii dietitian license cost?",
+            "answer": "The initial non-refundable fee for a Hawaii Dietitian License is $225."
+        },
+        {
+            "question": "When does the Hawaii license need to be renewed?",
+            "answer": "Hawaii dietitian licenses are valid for three years from the date of issue and must be renewed triennially. You should contact the DOH to confirm current renewal fees."
+        },
+        {
+            "question": "Can I apply for a Hawaii dietitian license online?",
+            "answer": "No. You must contact the State Licensing Section directly at (808) 692-7400 to request the application packet."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$225",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$225"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://health.hawaii.gov/ohca/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

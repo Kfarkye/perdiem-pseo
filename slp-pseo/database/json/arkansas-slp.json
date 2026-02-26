@@ -1,0 +1,123 @@
+{
+    "state_slug": "arkansas-slp",
+    "state_name": "Arkansas",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Arkansas SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to Arkansas speech-language pathologist licensing. ABESPA application fees, Praxis requirements, and telepractice rules for 2026.",
+        "keywords": "Arkansas SLP license, speech-language pathologist Arkansas, Arkansas speech therapy license"
+    },
+    "board": {
+        "name": "Arkansas Board of Examiners in Speech-Language Pathology and Audiology",
+        "parent_dept": "ABESPA",
+        "mailing_address": "101 E. Capitol Ave., Suite 211, Little Rock, AR 72201",
+        "physical_address": "101 E. Capitol Ave., Suite 211, Little Rock, AR 72201",
+        "phone": "(501) 682-9180",
+        "fax": "(501) 682-9181",
+        "email": "mailto:abespa@arkansas.gov",
+        "url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology"
+    },
+    "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "$75 application + $25 license fee",
+        "renewal_fee": "$75",
+        "renewal_cycle": "Every year",
+        "processing_time": "2 to 4 weeks",
+        "license_duration": "1 year"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "The full credential to independently practice speech-language pathology in Arkansas."
+        },
+        {
+            "title": "Provisional SLP License",
+            "description": "Issued to SLP graduates completing their Clinical Fellowship under supervision."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331, score 162)."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "Complete 36 weeks of full-time supervised clinical practice (1,260 hours)."
+        },
+        {
+            "title": "Submit Application to the Board",
+            "description": "Submit application with $75 fee plus $25 license fee. Include transcripts, Praxis scores, and CF verification."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher on test 5331."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "Criminal background check as required."
+        }
+    ],
+    "telepractice_text": "Arkansas permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+    "provisional_text": "Arkansas issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "Arkansas is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Arkansas through a compact privilege.",
+    "faqs": [
+        {
+            "question": "How much does an Arkansas SLP license cost?",
+            "answer": "The total initial cost is approximately $100. Annual renewal is $75. Note that Arkansas requires annual rather than biennial renewal."
+        },
+        {
+            "question": "Is Arkansas part of the ASLP Interstate Compact?",
+            "answer": "Yes. Arkansas has enacted ASLP-IC legislation."
+        },
+        {
+            "question": "Does Arkansas allow telepractice for SLPs?",
+            "answer": "Yes. Arkansas permits telepractice for licensed SLPs and compact privilege holders."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$75",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$100"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

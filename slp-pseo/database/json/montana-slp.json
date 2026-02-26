@@ -1,0 +1,123 @@
+{
+    "state_slug": "montana-slp",
+    "state_name": "Montana",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Montana SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to Montana speech-language pathologist licensing. Board fees, Praxis requirements, and telepractice rules for 2026.",
+        "keywords": "Montana SLP license, speech-language pathologist Montana, Montana speech therapy license"
+    },
+    "board": {
+        "name": "Board of Speech-Language Pathologists and Audiologists",
+        "parent_dept": "Montana Department of Labor and Industry",
+        "mailing_address": "301 S. Park Ave., P.O. Box 200513, Helena, MT 59620-0513",
+        "physical_address": "301 S. Park Ave., Helena, MT 59601",
+        "phone": "(406) 841-2394",
+        "fax": "(406) 841-2305",
+        "email": "mailto:dlibsdslp@mt.gov",
+        "url": "https://boards.bsd.dli.mt.gov/speech-language-pathologists-audiologists"
+    },
+    "quick_facts": {
+        "total_fee": "$200",
+        "fee_breakdown": "$100 application + $100 license fee",
+        "renewal_fee": "$150",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "4 to 6 weeks",
+        "license_duration": "2 years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "The full credential to independently practice speech-language pathology in Montana."
+        },
+        {
+            "title": "Provisional SLP License",
+            "description": "Issued to SLP graduates completing their Clinical Fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "Complete a master's degree from a CAA-accredited program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Achieve a passing score on Praxis (test code 5331, score 162)."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "Complete 36 weeks of supervised clinical practice (1,260 hours)."
+        },
+        {
+            "title": "Submit Application",
+            "description": "Submit application with fees to the Board."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "Criminal background check."
+        }
+    ],
+    "telepractice_text": "Montana permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+    "provisional_text": "Montana issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "Montana is a member of the ASLP Interstate Compact.",
+    "faqs": [
+        {
+            "question": "How much does a Montana SLP license cost?",
+            "answer": "$200 initial. $150 biennial renewal."
+        },
+        {
+            "question": "Is Montana part of the ASLP Interstate Compact?",
+            "answer": "Yes."
+        },
+        {
+            "question": "Does Montana allow telepractice for SLPs?",
+            "answer": "Yes."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$100",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$200"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://boards.bsd.dli.mt.gov/speech-language-pathologists-audiologists",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

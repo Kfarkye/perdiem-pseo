@@ -1,0 +1,114 @@
+{
+    "state_slug": "delaware",
+    "state_name": "Delaware",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian/Nutritionist (LDN)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Delaware Licensed Dietitian/Nutritionist (LDN) — Requirements & Fees (2026)",
+        "description": "Apply for a Delaware Dietitian/Nutritionist credential. $235 application fee. Master's degree, 1,200 hours supervised practice, and CDR exam required.",
+        "keywords": "Delaware dietitian license, DE licensed dietitian requirements, Delaware Board of Dietetics Nutrition, Delaware dietitian application fee"
+    },
+    "board": {
+        "name": "Board of Dietetics/Nutrition",
+        "parent_dept": "Delaware Division of Professional Regulation",
+        "mailing_address": "Cannon Building, 861 Silver Lake Blvd, Suite 203<br>Dover, DE 19904",
+        "physical_address": "Cannon Building, 861 Silver Lake Blvd, Suite 203<br>Dover, DE 19904",
+        "phone": "(302) 744-4500",
+        "fax": "(302) 739-2711",
+        "email": "mailto:customerservice.dpr@delaware.gov",
+        "url": "https://dpr.delaware.gov/boards/dietetics/"
+    },
+    "quick_facts": {
+        "total_fee": "$235",
+        "fee_breakdown": "$235 initial application processing fee",
+        "renewal_fee": "Varies (Prorated)",
+        "renewal_cycle": "Every 2 years (expires May 31 of odd years) + 30 CE hours",
+        "processing_time": "3 to 5 Weeks",
+        "license_duration": "Up to 2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian/Nutritionist (LDN)",
+            "description": "The credential to practice dietetics or nutrition in Delaware, regulated by the Board of Dietetics/Nutrition under the Division of Professional Regulation."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,200 hours of board-approved supervised practice through a dietetic internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians (or the CNS exam for Nutritionists). Verification of current RD/CNS status is required."
+        },
+        {
+            "title": "Submit the Application via DELPROS",
+            "description": "Create an account in the Delaware Professional Regulation Online Services (DELPROS) system, complete the application, and pay the $235 fee."
+        },
+        {
+            "title": "Provide Verification Documents",
+            "description": "Upload or have primary source verification sent for your active CDR card or CNS certification. Any existing out-of-state licenses must be verified as well."
+        }
+    ],
+    "documents": [
+        {
+            "item": "DELPROS Online Application",
+            "detail": "Completed application submitted electronically with the $235 fee."
+        },
+        {
+            "item": "CDR Registration Verification",
+            "detail": "Proof of active registration with the Commission on Dietetic Registration."
+        },
+        {
+            "item": "Official College Transcripts",
+            "detail": "Verification of your accredited degree, usually requested directly through DELPROS processing."
+        }
+    ],
+    "provisional_text": "Delaware may issue a temporary license to an applicant who has completed the educational and experience requirements and is awaiting the results of the next scheduled examination. Practice must be supervised.",
+    "reciprocity_text": "Delaware offers licensure by reciprocity. Out-of-state applicants with an active license in good standing from a jurisdiction with substantially equivalent standards (or those holding active CDR/CNS credentials) can apply via the DELPROS reciprocity application.",
+    "faqs": [
+        {
+            "question": "How much does a Delaware dietitian license cost?",
+            "answer": "The initial cost is a $235 application processing fee."
+        },
+        {
+            "question": "When does the Delaware license need to be renewed?",
+            "answer": "Delaware dietitian licenses expire biennially on May 31 of odd-numbered years. Renewal fees are determined dynamically based on administrative costs."
+        },
+        {
+            "question": "Does Delaware license Nutritionists distinct from Dietitians?",
+            "answer": "Delaware uses the combined title of Licensed Dietitian/Nutritionist. Applicants can qualify via either the Registered Dietitian (CDR) pathway or the Certified Nutrition Specialist (CNS) pathway."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$235",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$235"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://dpr.delaware.gov/boards/dietetics/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

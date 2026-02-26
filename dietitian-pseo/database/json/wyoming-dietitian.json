@@ -1,0 +1,110 @@
+{
+    "state_slug": "wyoming",
+    "state_name": "Wyoming",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Wyoming Licensed Dietitian Application — Requirements & Fees (2026)",
+        "description": "Apply for a Wyoming Licensed Dietitian credential. $200 application fee. Master's degree, 1,000 hours supervised practice, and CDR exam required.",
+        "keywords": "Wyoming dietitian license, WY licensed dietitian requirements, Wyoming Dietetics Licensing Board, Wyoming dietitian application fee"
+    },
+    "board": {
+        "name": "Wyoming Dietetics Licensing Board",
+        "parent_dept": "Wyoming Department of Administration & Information",
+        "mailing_address": "2001 Capitol Ave, Room 104<br>Cheyenne, WY 82002",
+        "physical_address": "2001 Capitol Ave, Room 104<br>Cheyenne, WY 82002",
+        "phone": "(307) 777-7788",
+        "fax": "(307) 777-3508",
+        "email": "mailto:wyeboard@wyo.gov",
+        "url": "https://dietetics.wyo.gov/"
+    },
+    "quick_facts": {
+        "total_fee": "$200",
+        "fee_breakdown": "$200 initial application fee",
+        "renewal_fee": "$200",
+        "renewal_cycle": "Every 2 years + CE hours",
+        "processing_time": "1 to 2 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian",
+            "description": "The credential required to practice dietetics in Wyoming. Wyoming is a 'Practice Act and Title Protection state', meaning you must hold this license to provide dietetic services."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree and complete coursework from an ACEND-accredited program. Finish a minimum of 1,000 hours of supervised dietetics practice."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this."
+        },
+        {
+            "title": "Submit the Application to the Board",
+            "description": "Complete the application form, gather required proof of citizenship, and submit the packet along with the $200 fee to the Wyoming Dietetics Licensing Board."
+        },
+        {
+            "title": "Provide Verification Documents",
+            "description": "Ensure that the Commission on Dietetic Registration sends official verification of your active RD status directly to the Board."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official Application Packet",
+            "detail": "Application accurately filled out along with proof of U.S. citizenship or lawful presence."
+        },
+        {
+            "item": "CDR Registration Verification",
+            "detail": "Proof of active registration sent directly from the CDR."
+        }
+    ],
+    "provisional_text": "Wyoming regulations do not feature a standard provisional or temporary state license. You must complete the CDR examination before applying.",
+    "reciprocity_text": "Wyoming offers licensure by endorsement. Applicants holding a valid and unrestricted license in another state with equivalent requirements, or holding active CDR registration, can apply using the standard application method by demonstrating out-of-state verification.",
+    "faqs": [
+        {
+            "question": "How much does a Wyoming dietitian license cost?",
+            "answer": "The initial license application fee is $200."
+        },
+        {
+            "question": "When does the Wyoming license need to be renewed?",
+            "answer": "Wyoming dietitian licenses expire biennially. The renewal fee is $200."
+        },
+        {
+            "question": "Is licensure required to practice in Wyoming?",
+            "answer": "Yes, Wyoming has a Practice Act that legally mandates obtaining a state license to practice dietetics and to use the protected title of Dietitian."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$200",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$200"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://dietetics.wyo.gov/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

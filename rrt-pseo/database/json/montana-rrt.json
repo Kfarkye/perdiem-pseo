@@ -1,0 +1,102 @@
+{
+    "state_slug": "montana",
+    "state_name": "Montana",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Respiratory Therapist",
+    "credential_nomenclature": "Registered Respiratory Therapist (RRT)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Montana Registered Respiratory Therapist (RRT) Application — Requirements & Fees (2026)",
+        "description": "Apply for a Montana Respiratory Therapist credential. Learn about the requirements, NBRC (National Board for Respiratory Care) TMC Exam, and state fees.",
+        "keywords": "Montana respiratory therapist license, Respiratory therapist license by state, RRT license requirements, respiratory care board, RRT license cost"
+    },
+    "board": {
+        "name": "Montana Board of Respiratory Care Practitioners",
+        "parent_dept": "Department of Labor & Industry",
+        "mailing_address": "See board website",
+        "physical_address": "See board website",
+        "phone": "(406) 444-6880",
+        "fax": "N/A (contact by phone)",
+        "email": "See board website",
+        "url": "https://boards.bsd.dli.mt.gov/"
+    },
+    "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "$100 application/license fee",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "4 to 6 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Registered Respiratory Therapist (RRT)",
+            "description": "The standard credential to practice as a respiratory therapist in Montana."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education Requirements",
+            "description": "Complete a CoARC-accredited respiratory care program and any required clinical practicum or fieldwork."
+        },
+        {
+            "title": "Pass the NBRC",
+            "description": "Successfully pass the required NBRC (National Board for Respiratory Care) TMC Exam."
+        },
+        {
+            "title": "Submit Application and Fees",
+            "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official Transcripts",
+            "detail": "Sent directly from your educational institution."
+        },
+        {
+            "item": "Exam Score Report",
+            "detail": "Official verification of passing the NBRC (National Board for Respiratory Care) TMC Exam."
+        }
+    ],
+    "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NBRC. Check specific board rules for supervisory requirements.",
+    "reciprocity_text": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "faqs": [
+        {
+            "question": "How much does a Montana respiratory therapist license cost?",
+            "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+        },
+        {
+            "question": "Is national certification required?",
+            "answer": "Yes, passing the NBRC (National Board for Respiratory Care) TMC Exam is a standard requirement for initial licensure across almost all states."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$100",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$100"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://boards.bsd.dli.mt.gov/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

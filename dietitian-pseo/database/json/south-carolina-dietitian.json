@@ -1,0 +1,126 @@
+{
+    "state_slug": "south-carolina",
+    "state_name": "South Carolina",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian (LD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "South Carolina Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
+        "description": "Apply for South Carolina Licensed Dietitian through the Panel for Dietetics under LLR. $175 application fee, $100 biennial renewal. CDR registration, transcripts, and background check required.",
+        "keywords": "South Carolina dietitian license, SC licensed dietitian requirements, South Carolina LLR Panel for Dietetics, South Carolina dietitian application fee"
+    },
+    "board": {
+        "name": "Panel for Dietetics",
+        "parent_dept": "South Carolina Department of Labor, Licensing and Regulation (LLR)",
+        "mailing_address": "110 Centerview Dr<br>Columbia, SC 29210",
+        "physical_address": "110 Centerview Dr<br>Columbia, SC 29210",
+        "phone": "(803) 896-4651",
+        "fax": "",
+        "email": "mailto:Contact.Dietetics@llr.sc.gov",
+        "url": "https://llr.sc.gov/diet/"
+    },
+    "quick_facts": {
+        "total_fee": "$175",
+        "fee_breakdown": "$175 application fee (non-refundable)",
+        "renewal_fee": "$100",
+        "renewal_cycle": "Every 2 years (by May 31, odd years) + 30 CE hours",
+        "processing_time": "4 to 6 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian (LD) — Licensure by Registration",
+            "description": "For applicants currently registered with the Commission on Dietetic Registration (CDR). The most common pathway."
+        },
+        {
+            "title": "Licensed Dietitian (LD) — Licensure by Examination",
+            "description": "For applicants who have passed a Panel-approved examination and hold a baccalaureate or master's degree in an approved nutrition field from a regionally accredited institution."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a bachelor's or master's degree from an ACEND-accredited program in human nutrition, dietetics, or a related field. Complete at least 1,200 hours of supervised practice through an ACEND-accredited dietetic internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the CDR Registration Examination for Dietitians ($200 fee). Obtain current CDR registration."
+        },
+        {
+            "title": "Submit the Application",
+            "description": "Complete and submit the licensure application to the South Carolina Panel for Dietetics. Pay the non-refundable $175 application fee. Include all required supporting documents."
+        },
+        {
+            "title": "Provide Supporting Documentation",
+            "description": "Submit a copy of your current signed CDR card, valid photo ID, signed Social Security card, official transcripts (sent directly from the university), notarized Verification of Lawful Presence, and any name-change documentation if applicable."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Current Signed CDR Card",
+            "detail": "Copy of your signed, active Commission on Dietetic Registration credential (for licensure by registration)."
+        },
+        {
+            "item": "Official College Transcripts",
+            "detail": "Sent directly to the Panel office from the degree-granting institution."
+        },
+        {
+            "item": "Valid Photo ID",
+            "detail": "Copy of a driver's license, state-issued ID, or passport."
+        },
+        {
+            "item": "Signed Social Security Card",
+            "detail": "Copy of your signed Social Security card."
+        },
+        {
+            "item": "Notarized Verification of Lawful Presence",
+            "detail": "Required by South Carolina law for professional licensing."
+        }
+    ],
+    "provisional_text": "South Carolina does not currently offer a provisional or temporary dietitian license. Applicants must complete all requirements, including CDR registration, before licensure is granted.",
+    "reciprocity_text": "Out-of-state dietitians applying for South Carolina licensure must submit a license verification from their current state board, in addition to the standard application materials. South Carolina is considering a Dietitian Licensure Compact (Bill 160) that would enable interstate practice. If previously licensed in another state, the Panel may consider your credentials under the existing application framework. Applicants with foreign education must have credentials independently validated.",
+    "faqs": [
+        {
+            "question": "How much does a South Carolina dietitian license cost?",
+            "answer": "The initial application fee is $175 (non-refundable). The biennial renewal fee is $100, due by May 31 of odd-numbered years. Late renewal incurs a $50 fee, and reinstatement costs an additional $50."
+        },
+        {
+            "question": "What continuing education does South Carolina require?",
+            "answer": "South Carolina requires 30 hours of continuing professional education per biennial renewal period. Additionally, maintaining CDR registration requires 75 CE hours every five years."
+        },
+        {
+            "question": "Does South Carolina require tele-dietetics practitioners to be licensed?",
+            "answer": "Yes. South Carolina requires all individuals practicing dietetics or tele-dietetics within the state to hold a valid South Carolina dietitian license, regardless of where they are physically located."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$175",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$175"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://llr.sc.gov/diet/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

@@ -1,0 +1,114 @@
+{
+    "state_slug": "rhode-island",
+    "state_name": "Rhode Island",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian/Nutritionist (LDN)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Rhode Island Licensed Dietitian/Nutritionist (LDN) — Requirements & Fees (2026)",
+        "description": "Apply for a Rhode Island LDN credential. $75 application fee. Master's degree, 900+ hours supervised practice, and CDR exam required.",
+        "keywords": "Rhode Island dietitian license, RI LDN requirements, Rhode Island Department of Health Board of Dietetics, Rhode Island dietitian application fee"
+    },
+    "board": {
+        "name": "Board of Dietetics Practice",
+        "parent_dept": "Rhode Island Department of Health",
+        "mailing_address": "Center for Professional Licensing, Room 104, 3 Capitol Hill<br>Providence, RI 02908",
+        "physical_address": "3 Capitol Hill<br>Providence, RI 02908",
+        "phone": "(401) 222-2828",
+        "fax": "(401) 222-1272",
+        "email": "mailto:doh.licensing@health.ri.gov",
+        "url": "https://health.ri.gov/licenses/detail.php?id=223"
+    },
+    "quick_facts": {
+        "total_fee": "$75",
+        "fee_breakdown": "$75 non-refundable application fee",
+        "renewal_fee": "$170",
+        "renewal_cycle": "Every 2 years (expires Nov 1 of odd years) + 20 CE hours",
+        "processing_time": "3 to 5 Weeks",
+        "license_duration": "Up to 2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian/Nutritionist (LDN)",
+            "description": "The credential to practice and provide medical nutrition therapy in Rhode Island, overseen by the Board of Dietetics Practice."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree from an ACEND-accredited program. Complete a minimum of 900 hours of board-approved supervised dietetic experience (most accredited programs exceed this with 1,000+ hours)."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status is required."
+        },
+        {
+            "title": "Submit the Application and Fee",
+            "description": "Complete, sign, and notarize the official application. Submit it to the Department of Health with the $75 fee (payable to the RI General Treasurer) and a 2x3 portrait photograph."
+        },
+        {
+            "title": "Complete Background Check & Verifications",
+            "description": "Obtain an original Bureau of Criminal Identification (BCI) report from the Attorney General's Office. Ensure CDR verification is sent directly to the Board."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Notarized Application & Photo",
+            "detail": "Application form with a notarized signature and a recent 2x3 head-and-shoulders photograph."
+        },
+        {
+            "item": "CDR Registration Verification",
+            "detail": "Proof of active registration sent directly from the CDR to the Board."
+        },
+        {
+            "item": "Criminal Background Check",
+            "detail": "An original BCI report from the Rhode Island Attorney General's Office."
+        }
+    ],
+    "provisional_text": "Rhode Island offers a temporary permit for individuals who have completed their education and supervised practice but are awaiting the results of the CDR exam. A temporary permit holder may practice under supervision for 90 days and use the title 'graduate dietitian/nutritionist'.",
+    "reciprocity_text": "Rhode Island offers licensure by endorsement for dietitians/nutritionists actively licensed in other states, provided the requirements of the other state are equivalent to Rhode Island's. Applying via endorsement requires submitting the application, fee, and verification of all out-of-state licenses.",
+    "faqs": [
+        {
+            "question": "How much does a Rhode Island dietitian license cost?",
+            "answer": "The initial cost is a $75 application fee, which does not include the cost of the BCI background check."
+        },
+        {
+            "question": "When does the Rhode Island license need to be renewed?",
+            "answer": "Rhode Island LDN licenses expire on November 1st of odd-numbered years. The biennial renewal fee is $170."
+        },
+        {
+            "question": "Does Rhode Island use the title 'Nutritionist'?",
+            "answer": "Yes, Rhode Island uses the combined title of Licensed Dietitian/Nutritionist (LDN) to license both professionals under one standard for medical nutrition therapy."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$75",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$75"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://health.ri.gov/licenses/detail.php?id=223",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

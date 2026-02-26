@@ -1,0 +1,106 @@
+{
+    "state_slug": "arizona",
+    "state_name": "Arizona",
+    "fingerprints": {
+        "required": false,
+        "method_in_state": "N/A",
+        "method_out_of_state": "N/A",
+        "vendor": "N/A",
+        "fee": "N/A",
+        "delay_out_of_state_weeks": "N/A",
+        "vendor_url": "N/A"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Registered Dietitian (RD/RDN) — No State License Required",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Arizona Dietitian Requirements — No State License Needed (2026)",
+        "description": "Arizona does not require a state-specific dietitian license. Learn about Arizona's CDR-only credential pathway, national exam costs, and CE requirements.",
+        "keywords": "Arizona dietitian license, AZ dietitian requirements, Arizona RD RDN no state license, Arizona dietitian CDR"
+    },
+    "board": {
+        "name": "No Dedicated State Licensing Board",
+        "parent_dept": "Arizona does not mandate state dietitian licensure. The national CDR credential is the recognized standard.",
+        "mailing_address": "N/A",
+        "physical_address": "N/A",
+        "phone": "N/A",
+        "fax": "",
+        "email": "",
+        "url": "https://www.cdrnet.org/"
+    },
+    "quick_facts": {
+        "total_fee": "$0 (State Fee)",
+        "fee_breakdown": "No state application fee. CDR exam fee is $200 nationally.",
+        "renewal_fee": "$0 (State Fee)",
+        "renewal_cycle": "No state renewal. CDR registration renews every 5 years with 75 CPE hours.",
+        "processing_time": "N/A (No state application)",
+        "license_duration": "N/A"
+    },
+    "license_types": [
+        {
+            "title": "Registered Dietitian / Registered Dietitian Nutritionist (RD/RDN)",
+            "description": "Arizona does not issue a state-level dietitian license. Instead, practicing dietitians use the national Registered Dietitian (RD) or Registered Dietitian Nutritionist (RDN) credential issued by the Commission on Dietetic Registration (CDR)."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete 1,000 to 1,200 hours of supervised practice through a dietetic internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians ($200 fee)."
+        },
+        {
+            "title": "Maintain CDR Registration",
+            "description": "Maintain your CDR credential by completing 75 hours of continuing professional education (CPE) every five years and paying the CDR annual maintenance fee."
+        }
+    ],
+    "documents": [
+        {
+            "item": "CDR Registration Card",
+            "detail": "Your active CDR card serves as your primary credential in Arizona."
+        },
+        {
+            "item": "ACEND Verification Statement",
+            "detail": "Proof of completion of your accredited degree program and supervised practice."
+        }
+    ],
+    "provisional_text": "Because Arizona does not require a state license, there is no provisional or temporary state license available.",
+    "reciprocity_text": "Arizona has no state licensing requirements to transfer. Your national CDR credential (RD/RDN) is recognized directly. No state endorsement process exists.",
+    "faqs": [
+        {
+            "question": "Does Arizona require a state dietitian license?",
+            "answer": "No. Arizona does not mandate state-specific licensure for dietitians. Your national CDR registration as a Registered Dietitian (RD) or Registered Dietitian Nutritionist (RDN) is the recognized credential."
+        },
+        {
+            "question": "What does it cost to practice as a dietitian in Arizona?",
+            "answer": "There is no state application or renewal fee. The CDR national exam costs $200, and the annual CDR maintenance fee is $80 (increasing to $90 in 2027)."
+        },
+        {
+            "question": "Is there pending legislation to require state licensure in Arizona?",
+            "answer": "As of 2026, Arizona does not have an active, enacted state licensure law for dietitians. Legislative efforts (such as H.B. 2820 from 2021) have been introduced in the past."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$200",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$0 (State Fee)"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.cdrnet.org/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

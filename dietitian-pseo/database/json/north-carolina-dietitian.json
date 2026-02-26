@@ -1,0 +1,126 @@
+{
+    "state_slug": "north-carolina",
+    "state_name": "North Carolina",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO / SBI",
+        "fee": "$38.00",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://www.identogo.com/locations/north-carolina"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian/Nutritionist (LDN)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "North Carolina Licensed Dietitian/Nutritionist (LDN) Application — Requirements & Fees (2026)",
+        "description": "Apply for a North Carolina LDN through the NC Board of Dietetics/Nutrition (NCBDN). $248 total initial fee. CDR exam, background check, and supervised practice required.",
+        "keywords": "North Carolina dietitian license, NCBDN dietitian requirements, NC licensed dietitian nutritionist, North Carolina dietitian application"
+    },
+    "board": {
+        "name": "North Carolina Board of Dietetics/Nutrition (NCBDN)",
+        "parent_dept": "Independent State Board",
+        "mailing_address": "1135 Kildaire Farm Rd, Suite 200<br>Cary, NC 27511",
+        "physical_address": "1135 Kildaire Farm Rd, Suite 200<br>Cary, NC 27511",
+        "phone": "(919) 388-1931",
+        "fax": "",
+        "email": "mailto:info@ncbdn.org",
+        "url": "https://www.ncbdn.org/"
+    },
+    "quick_facts": {
+        "total_fee": "$248",
+        "fee_breakdown": "$60 application + $150 issuance + $38 background check",
+        "renewal_fee": "$95",
+        "renewal_cycle": "Annual (by March 31) + 30 CE hours per 2 years",
+        "processing_time": "2 to 3 Business Days",
+        "license_duration": "1 Year (expires March 31)"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian/Nutritionist (LDN) — Category A",
+            "description": "Full licensure for individuals currently registered with the Commission on Dietetic Registration (CDR) as an RDN. The primary credential for practicing dietetics in North Carolina."
+        },
+        {
+            "title": "Provisional Licensed Dietitian/Nutritionist (PLDN) — Category B",
+            "description": "A 12-month provisional license for individuals who have completed an ACEND-accredited program and supervised practice and are preparing to take the CDR exam. Initial fee is $133. Cannot be renewed."
+        },
+        {
+            "title": "Licensed Nutritionist (LN) — Category F",
+            "description": "For individuals holding a Certified Nutrition Specialist (CNS) or Diplomate of the American Clinical Board of Nutrition (DACBN) credential."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Create an Account on the NCBDN Gateway",
+            "description": "Register for an account on the NCBDN Gateway online portal, which is used for all application submissions and document uploads."
+        },
+        {
+            "title": "Complete the Online Application",
+            "description": "Select the appropriate licensure category (e.g., Category A for RDNs) and fill out the online application. Pay the non-refundable fees: $60 application, $150 issuance, and $38 background check ($248 total)."
+        },
+        {
+            "title": "Upload Required Documents",
+            "description": "After submitting the application, you will receive an email checklist. Upload official transcripts, CDR registration verification, government-issued photo ID, and any other required documents through the Gateway."
+        },
+        {
+            "title": "Complete the Criminal Background Check",
+            "description": "Authorization for a criminal background check is mandatory. The $38 fee covers this check, which is processed through the NCBDN."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official College Transcripts",
+            "detail": "Must show a master's or doctoral degree in nutrition or a related field from a regionally accredited institution."
+        },
+        {
+            "item": "CDR Registration Verification",
+            "detail": "Proof of current, active registration with the Commission on Dietetic Registration (for Category A applicants)."
+        },
+        {
+            "item": "Government-Issued Photo ID",
+            "detail": "A clear copy of a valid, government-issued identification."
+        },
+        {
+            "item": "Criminal Background Check Authorization",
+            "detail": "Completed authorization form and associated $38 fee."
+        }
+    ],
+    "provisional_text": "North Carolina offers a Provisional Licensed Dietitian/Nutritionist (PLDN) credential under Category B. This is for individuals who have completed an ACEND-accredited academic program and supervised practice and have received an 'Authorization to Test' email from CDR. The provisional license is valid for 12 months, costs $133, and cannot be renewed. The applicant must pass the CDR exam within that period to upgrade to a full LDN license.",
+    "reciprocity_text": "North Carolina offers licensure by reciprocity under Category D for applicants currently licensed in another state whose qualifications do not fit into other categories (non-RD, non-CNS). Category D does not have an online application; applicants must contact the NCBDN directly. All RD/RDNs applying from out of state should apply under Category A, the standard pathway. The Board may grant a license if the other state's requirements are substantially the same as North Carolina's.",
+    "faqs": [
+        {
+            "question": "How much does a North Carolina dietitian license cost?",
+            "answer": "The total initial cost for a Category A (RDN) license is $248, which comprises a $60 application fee, a $150 issuance fee, and a $38 criminal background check fee. Annual renewal is $95."
+        },
+        {
+            "question": "When does the North Carolina dietitian license expire?",
+            "answer": "All North Carolina dietitian/nutritionist licenses expire on March 31st each year, regardless of when they were issued. Annual renewal must be submitted between January 1st and March 31st."
+        },
+        {
+            "question": "What are the continuing education requirements for NC dietitians?",
+            "answer": "Licensees must complete 30 hours of continuing education every two years. For RDNs (Category A), meeting the CDR's continuing education standards (75 hours per 5-year cycle) fulfills the state requirement."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$60",
+        "background_check_fee": "$38",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$248"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "$133,",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.ncbdn.org/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

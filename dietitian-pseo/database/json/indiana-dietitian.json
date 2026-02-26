@@ -1,0 +1,118 @@
+{
+    "state_slug": "indiana",
+    "state_name": "Indiana",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO / State Police",
+        "fee": "$28.00",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://www.identogo.com/locations/indiana"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Certified Dietitian (CD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Indiana Certified Dietitian (CD) Application — Requirements & Fees (2026)",
+        "description": "Apply for Indiana Certified Dietitian (CD) credential through IPLA. Only $20 application fee. CDR exam, fingerprint background check, 30 CE hours per biennium.",
+        "keywords": "Indiana dietitian license, IN certified dietitian requirements, Indiana IPLA dietitian, Indiana dietitian application fee"
+    },
+    "board": {
+        "name": "Dietitians Certification Board",
+        "parent_dept": "Indiana Professional Licensing Agency (IPLA)",
+        "mailing_address": "402 West Washington Street, Room W072<br>Indianapolis, IN 46204",
+        "physical_address": "402 West Washington Street, Room W072<br>Indianapolis, IN 46204",
+        "phone": "(317) 234-2060",
+        "fax": "",
+        "email": "mailto:pla3@pla.in.gov",
+        "url": "https://www.in.gov/pla/professions/dietitians/"
+    },
+    "quick_facts": {
+        "total_fee": "$20",
+        "fee_breakdown": "$20 application fee (fingerprint fees additional)",
+        "renewal_fee": "$20",
+        "renewal_cycle": "Every 2 years (by Dec 31, even years) + 30 CE hours",
+        "processing_time": "2 to 4 Weeks",
+        "license_duration": "2 Years (expires Dec 31, even years)"
+    },
+    "license_types": [
+        {
+            "title": "Certified Dietitian (CD)",
+            "description": "Indiana's state certification for dietitians. While optional for use of the 'Registered Dietitian' title, most employers require both the national RD credential and the state CD certification. Allows use of the 'Certified Dietitian' title."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a bachelor's degree or higher from an ACEND-accredited program in dietetics, human nutrition, or a related field. Complete 900–1,000 hours of supervised dietetics practice through an accredited internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+        },
+        {
+            "title": "Submit the Online Application",
+            "description": "Apply online through the IPLA licensing portal. Pay the $20 non-refundable application fee. Include two passport-style photographs and a copy of your current CDR registration card."
+        },
+        {
+            "title": "Complete Fingerprint Background Check",
+            "description": "Submit to a mandatory fingerprint-based criminal background check. The fingerprinting fee is paid separately to the designated vendor."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official College Transcripts",
+            "detail": "Sent directly from the university, showing degree in an approved field and date awarded."
+        },
+        {
+            "item": "CDR Registration Card",
+            "detail": "Copy of your current, active Commission on Dietetic Registration credential."
+        },
+        {
+            "item": "Two Passport-Style Photographs",
+            "detail": "Recent photographs meeting standard passport specifications."
+        },
+        {
+            "item": "Fingerprint Background Check",
+            "detail": "Mandatory fingerprint-based criminal background screening."
+        }
+    ],
+    "provisional_text": "Indiana does not offer a provisional or temporary dietitian certification. Applicants must hold active CDR registration and complete all requirements before certification is issued.",
+    "reciprocity_text": "Indiana does not have a formal endorsement or reciprocity pathway. Out-of-state dietitians apply through the standard application process. Holding current CDR registration satisfies the education and examination requirements. You must still submit the application, $20 fee, transcripts, and complete the Indiana fingerprint background check.",
+    "faqs": [
+        {
+            "question": "How much does an Indiana dietitian certification cost?",
+            "answer": "The initial application fee is only $20 — one of the lowest in the country. The biennial renewal is also $20 (plus a $10 late fee if submitted after December 31). Fingerprint background check fees are paid separately to the vendor."
+        },
+        {
+            "question": "Is Indiana dietitian certification required to practice?",
+            "answer": "Indiana's Certified Dietitian (CD) credential is technically optional for practicing as a Registered Dietitian (RD). However, most employers in Indiana require both the national RD credential and the state CD certification."
+        },
+        {
+            "question": "What continuing education is required in Indiana?",
+            "answer": "Indiana requires 30 hours of continuing education during each two-year licensure period for active renewal. Continuing education is not required for inactive renewal."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$20",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$20"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.in.gov/pla/professions/dietitians/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

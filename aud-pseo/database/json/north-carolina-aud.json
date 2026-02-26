@@ -1,0 +1,102 @@
+{
+    "state_slug": "north-carolina",
+    "state_name": "North Carolina",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO / SBI",
+        "fee": "$38.00",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://www.identogo.com/locations/north-carolina"
+    },
+    "profession_name": "Audiologist",
+    "credential_nomenclature": "AuD, CCC-A",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "North Carolina AuD, CCC-A Application — Requirements & Fees (2026)",
+        "description": "Apply for a North Carolina Audiologist credential. Learn about the requirements, Praxis Exam in Audiology, and state fees.",
+        "keywords": "North Carolina audiologist license, Audiologist license by state, audiology license requirements, AuD license requirements, state audiology board, audiologist license cost"
+    },
+    "board": {
+        "name": "Board of Examiners for Speech-Language Pathologists and Audiologists",
+        "parent_dept": "NC Board of Examiners for SLP and Audiology",
+        "mailing_address": "P.O. Box 16885, Greensboro, NC 27416",
+        "physical_address": "2222-C Wrightsville Ave., Wilmington, NC 28403",
+        "phone": "(336) 272-1828",
+        "fax": "(336) 272-1829",
+        "email": "mailto:info@ncboeslpa.org",
+        "url": "https://www.ncboeslpa.org/"
+    },
+    "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "$100 application/license fee",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "4 to 6 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "AuD, CCC-A",
+            "description": "The standard credential to practice as a audiologist in North Carolina."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education Requirements",
+            "description": "Complete a CAA or ACAE-accredited Doctor of Audiology (AuD) program and any required clinical practicum or fieldwork."
+        },
+        {
+            "title": "Pass the Praxis",
+            "description": "Successfully pass the required Praxis Exam in Audiology."
+        },
+        {
+            "title": "Submit Application and Fees",
+            "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official Transcripts",
+            "detail": "Sent directly from your educational institution."
+        },
+        {
+            "item": "Exam Score Report",
+            "detail": "Official verification of passing the Praxis Exam in Audiology."
+        }
+    ],
+    "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the Praxis. Check specific board rules for supervisory requirements.",
+    "reciprocity_text": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "faqs": [
+        {
+            "question": "How much does a North Carolina audiologist license cost?",
+            "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+        },
+        {
+            "question": "Is national certification required?",
+            "answer": "Yes, passing the Praxis Exam in Audiology is a standard requirement for initial licensure across almost all states."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$100",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$100"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.ncboeslpa.org/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

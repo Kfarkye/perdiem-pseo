@@ -1,0 +1,123 @@
+{
+    "state_slug": "wyoming-slp",
+    "state_name": "Wyoming",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Wyoming SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to Wyoming speech-language pathologist licensing.",
+        "keywords": "Wyoming SLP license, speech-language pathologist Wyoming"
+    },
+    "board": {
+        "name": "Board of Speech Pathology and Audiology",
+        "parent_dept": "Wyoming Mental Health Professions Licensing Board",
+        "mailing_address": "2001 Capitol Ave., Cheyenne, WY 82002",
+        "physical_address": "2001 Capitol Ave., Cheyenne, WY 82002",
+        "phone": "(307) 777-3507",
+        "fax": "(307) 777-3508",
+        "email": "mailto:mentalhealth@wyo.gov",
+        "url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology"
+    },
+    "quick_facts": {
+        "total_fee": "$150",
+        "fee_breakdown": "$100 application + $50 license fee",
+        "renewal_fee": "$100",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "2 to 4 weeks",
+        "license_duration": "2 years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "Full credential for independent SLP practice in Wyoming."
+        },
+        {
+            "title": "Provisional SLP License",
+            "description": "For SLP graduates completing their Clinical Fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "From a CAA-accredited program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Test code 5331, score 162."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "36 weeks supervised clinical practice."
+        },
+        {
+            "title": "Submit Application",
+            "description": "Submit with fees to the Board."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "DCI and FBI background check."
+        }
+    ],
+    "telepractice_text": "Wyoming permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+    "provisional_text": "Wyoming issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "Wyoming is a member of the ASLP Interstate Compact.",
+    "faqs": [
+        {
+            "question": "How much does a Wyoming SLP license cost?",
+            "answer": "$150 initial. $100 biennial renewal."
+        },
+        {
+            "question": "Is Wyoming part of the ASLP Interstate Compact?",
+            "answer": "Yes."
+        },
+        {
+            "question": "Does Wyoming allow telepractice for SLPs?",
+            "answer": "Yes."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$100",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$150"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

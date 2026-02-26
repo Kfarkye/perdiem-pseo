@@ -1,0 +1,146 @@
+{
+    "state_slug": "dc",
+    "state_name": "District of Columbia",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "DC Licensed Dietitian Application — Requirements & Fees (2026)",
+        "description": "Apply for a District of Columbia Licensed Dietitian credential through DC Health's Board of Dietetics & Nutrition. $229 estimated total fee. CBC fingerprinting, CDR registration required.",
+        "keywords": "DC dietitian license, District of Columbia dietitian license, DC Health dietetics board, DC dietitian requirements, DC dietitian license cost, CDR registration Washington DC, DC nutritionist license"
+    },
+    "board": {
+        "name": "Board of Dietetics & Nutrition",
+        "parent_dept": "DC Department of Health, Health Regulation and Licensing Administration (HRLA)",
+        "mailing_address": "P.O. Box 37802<br>Washington, DC 20013",
+        "physical_address": "2201 Shannon Place SE<br>Washington, DC 20020",
+        "phone": "1 (877) 672-2174",
+        "fax": "(202) 442-4795",
+        "email": "mailto:dcbodn@dc.gov",
+        "url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-licensing"
+    },
+    "quick_facts": {
+        "total_fee": "$229",
+        "fee_breakdown": "$85 application + $144 initial license",
+        "renewal_fee": "$144",
+        "renewal_cycle": "Every 2 years + 30 CEUs (incl. 2 LGBTQ Cultural Competency)",
+        "processing_time": "~3–5 Weeks",
+        "license_duration": "2 Years (expires Nov 1, odd years)"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian",
+            "description": "Requires current CDR registration (RD/RDN credential), including passage of the CDR examination and completion of an ACEND-accredited program and supervised practice. As of January 1, 2024, CDR requires a minimum master's degree for all new registrants. Fee: $229."
+        },
+        {
+            "title": "Licensed Nutritionist",
+            "description": "Requires a bachelor's degree minimum in human nutrition, foods and nutrition, dietetics, or food systems management from an accredited institution, plus 900 hours of supervised practice. Must pass the CDR Registration Examination. DC also accepts CNS certification. Fee: $264 (includes $26 exam fee)."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Create Account & Apply Online",
+            "description": "Register and submit your application through the DC Health Licensing Portal at doh.force.com/dchealthrenewals. Paper applications have not been accepted since June 14, 2021."
+        },
+        {
+            "title": "Upload Required Documents",
+            "description": "Submit all supporting documentation through the portal: government-issued photo ID, two passport-type photos, CDR registration card, Supplemental Information Form, Moral Character Reference Form, Supervision Verification Form, and official transcripts."
+        },
+        {
+            "title": "Pay Application & License Fees",
+            "description": "Pay the $229 total fee ($85 application + $144 license) through the portal. The $144 license portion is refundable if your application is denied or withdrawn."
+        },
+        {
+            "title": "Complete Criminal Background Check",
+            "description": "Pay the CBC fee through the portal. You will receive a 6-letter code to schedule fingerprinting through FieldPrint, DC Health's vendor. International applicants use the FBI FD-258 fingerprint card process."
+        },
+        {
+            "title": "Board Review & License Issuance",
+            "description": "After all documents and CBC results are received, the Board reviews your application (~3 weeks). Call (202) 934-3848 to request license issuance. License is sent via email."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Government-issued photo ID",
+            "detail": "Driver's license, passport, or equivalent."
+        },
+        {
+            "item": "Two passport-type photographs (2\" × 2\")",
+            "detail": "Original photos with applicant's name on back."
+        },
+        {
+            "item": "Current CDR registration card",
+            "detail": "Showing active RD/RDN status."
+        },
+        {
+            "item": "Supplemental Information Form",
+            "detail": "Available in the DC Health initial license application package."
+        },
+        {
+            "item": "Moral Character Reference Form",
+            "detail": "Available in the DC Health initial license application package."
+        },
+        {
+            "item": "Supervision Verification Form",
+            "detail": "Supervisor verifies at least satisfactory performance."
+        },
+        {
+            "item": "Official transcripts (sealed)",
+            "detail": "From each accredited institution."
+        },
+        {
+            "item": "Letter(s) of good standing",
+            "detail": "From each jurisdiction where you hold or held a license — required for endorsement applicants."
+        },
+        {
+            "item": "Criminal background check & fingerprinting",
+            "detail": "FBI fingerprinting via FieldPrint, initiated through the online portal."
+        }
+    ],
+    "provisional_text": "The District of Columbia does not issue temporary practice permits for dietitians. You cannot practice or use protected titles until your license has been formally issued by the Board.",
+    "reciprocity_text": "DC issues dietitian licenses by endorsement for those licensed in other jurisdictions at the same $229 fee. Applicants must still meet all DC requirements, submit a full application, provide letter(s) of good standing from each jurisdiction, and maintain current CDR registration.",
+    "faqs": [
+        {
+            "question": "How much does a DC dietitian license cost?",
+            "answer": "The total initial fee is $229, consisting of an $85 application fee and a $144 license fee. The license fee is refundable if denied or withdrawn. A separate criminal background check fee is paid through the portal. Nutritionist applicants pay $264 (includes $26 exam fee). Duplicate licenses cost $34 each."
+        },
+        {
+            "question": "Is a criminal background check required for a DC dietitian license?",
+            "answer": "Yes. Per D.C. Code § 3-1205.22 and 17 DCMR 85, a criminal background check with FBI fingerprinting is required for all initial license applicants. U.S.-based applicants schedule through FieldPrint via the online portal. International applicants use FBI FD-258 fingerprint cards."
+        },
+        {
+            "question": "What are the continuing education requirements for DC dietitians?",
+            "answer": "DC requires 30 CEUs per biennial renewal cycle, including a mandatory 2 CEUs in LGBTQ Cultural Competency. Licenses expire November 1 of odd-numbered years. First-time renewals are exempt from CE requirements. CDR registration requires 75 CPEUs every five years separately."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$85",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$229"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-licensing",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

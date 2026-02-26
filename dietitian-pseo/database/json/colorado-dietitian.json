@@ -1,0 +1,118 @@
+{
+    "state_slug": "colorado",
+    "state_name": "Colorado",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO / CBI",
+        "fee": "$39.50",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://www.identogo.com/locations/colorado"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian (LD) — Effective September 1, 2026",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Colorado Dietitian Licensure — New Law Effective Sept 1, 2026 (Requirements & Fees)",
+        "description": "Colorado will require state dietitian licensure starting September 1, 2026 via DORA. Estimated $200 initial fee. Master's degree, CDR, and CBI background check required.",
+        "keywords": "Colorado dietitian license, CO dietitian requirements 2026, Colorado DORA Board of Dietetics and Nutrition, Colorado dietitian application fee"
+    },
+    "board": {
+        "name": "State Board of Dietetics and Nutrition (New)",
+        "parent_dept": "Colorado Department of Regulatory Agencies (DORA), Division of Professions and Occupations",
+        "mailing_address": "1560 Broadway Suite 1350<br>Denver, CO 80202",
+        "physical_address": "1560 Broadway Suite 1350<br>Denver, CO 80202",
+        "phone": "(303) 894-7800",
+        "fax": "(303) 894-7693",
+        "email": "mailto:dora_dpo@state.co.us",
+        "url": "https://dpo.colorado.gov/"
+    },
+    "quick_facts": {
+        "total_fee": "~$239.50 (Estimated)",
+        "fee_breakdown": "~$200 initial registration fee + $39.50 CBI background check (Estimated for FY 2026-27)",
+        "renewal_fee": "~$125–$180 (Estimated)",
+        "renewal_cycle": "Annual (Estimated) + 75 CPE hours per 5-year CDR cycle",
+        "processing_time": "TBD (New program launching Sept 2026)",
+        "license_duration": "1 Year (Estimated)"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian (LD)",
+            "description": "Starting September 1, 2026, Colorado will require a state license to practice or offer medical nutrition therapy. Licensed Dietitians must hold current CDR registration or meet equivalent examination and education requirements."
+        },
+        {
+            "title": "Licensed Nutritionist (LN)",
+            "description": "Colorado's new law also creates a Licensed Nutritionist pathway, which will have a separate examination option (with a waiver period until September 1, 2028 for qualifying candidates)."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete at least 1,000 hours of supervised practice in clinical, community, or foodservice settings."
+        },
+        {
+            "title": "Pass the CDR Examination (or Provide Active RD Status)",
+            "description": "Successfully pass the CDR Registration Examination for Dietitians and obtain active registration, OR provide proof of holding valid, current CDR registration."
+        },
+        {
+            "title": "Complete CBI Background Check",
+            "description": "Submit to a Colorado Bureau of Investigation (CBI) fingerprint-based background check ($39.50 fee), required at initial registration."
+        },
+        {
+            "title": "File Application with DORA",
+            "description": "Submit the application to the Director of the Division of Professions and Occupations with proof of education, supervised practice, examination/CDR status, and the estimated $200 registration fee."
+        }
+    ],
+    "documents": [
+        {
+            "item": "CDR Registration Verification",
+            "detail": "Proof of active registration with the Commission on Dietetic Registration."
+        },
+        {
+            "item": "CBI Background Check Fingerprints",
+            "detail": "Colorado Bureau of Investigation background check, processed at a DORA-approved provider."
+        },
+        {
+            "item": "Proof of Supervised Practice",
+            "detail": "Verification of at least 1,000 hours of supervised practice from an ACEND-accredited program."
+        }
+    ],
+    "provisional_text": "Colorado's new Board of Dietetics and Nutrition may establish provisions for temporary practice during the transition period. Check the DORA website as regulations are finalized.",
+    "reciprocity_text": "Details on reciprocity or endorsement will be established by the new Board of Dietetics and Nutrition under DORA regulations. Active CDR registration will serve as the primary qualification for state licensure.",
+    "faqs": [
+        {
+            "question": "When does Colorado's dietitian license requirement take effect?",
+            "answer": "The new licensure requirement takes effect on September 1, 2026. After this date, no person may practice or offer medical nutrition therapy without a state license."
+        },
+        {
+            "question": "How much will a Colorado dietitian license cost?",
+            "answer": "The estimated initial registration fee is approximately $200 for FY 2026-27, plus a $39.50 CBI background check. Annual renewal is estimated between $125 and $180."
+        },
+        {
+            "question": "Do I need a license before September 1, 2026?",
+            "answer": "No. Before September 1, 2026, Colorado does not mandate state licensure. The CDR credential (RD/RDN) remains the recognized standard until the new law takes effect."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$200",
+        "background_check_fee": "$39.50",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "~$239.50 (Estimated)"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://dpo.colorado.gov/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

@@ -1,0 +1,123 @@
+{
+    "state_slug": "south-dakota-slp",
+    "state_name": "South Dakota",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "South Dakota SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to South Dakota speech-language pathologist licensing.",
+        "keywords": "South Dakota SLP license, speech-language pathologist South Dakota"
+    },
+    "board": {
+        "name": "Board of Hearing Aid Dispensers and Audiologists",
+        "parent_dept": "South Dakota Department of Health",
+        "mailing_address": "600 E. Capitol Ave., Pierre, SD 57501",
+        "physical_address": "600 E. Capitol Ave., Pierre, SD 57501",
+        "phone": "(605) 773-3101",
+        "fax": "(605) 773-6667",
+        "email": "mailto:doh.info@state.sd.us",
+        "url": "https://doh.sd.gov/boards/audiology/"
+    },
+    "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "$100 application and license fee",
+        "renewal_fee": "$75",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "2 to 4 weeks",
+        "license_duration": "2 years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "Full credential for independent SLP practice in South Dakota."
+        },
+        {
+            "title": "Provisional SLP License",
+            "description": "For SLP graduates completing their Clinical Fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "From a CAA-accredited program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Test code 5331, score 162."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "36 weeks supervised clinical practice."
+        },
+        {
+            "title": "Submit Application",
+            "description": "Submit with $100 fee."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "Criminal background check."
+        }
+    ],
+    "telepractice_text": "South Dakota permits telepractice for licensed SLPs. South Dakota is not currently a member of the ASLP Interstate Compact.",
+    "provisional_text": "South Dakota issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "South Dakota does not participate in the ASLP Interstate Compact.",
+    "faqs": [
+        {
+            "question": "How much does a South Dakota SLP license cost?",
+            "answer": "$100 initial. $75 biennial renewal."
+        },
+        {
+            "question": "Is South Dakota part of the ASLP Interstate Compact?",
+            "answer": "No."
+        },
+        {
+            "question": "Does South Dakota allow telepractice for SLPs?",
+            "answer": "Yes, with a valid SD license."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$100",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$100"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://doh.sd.gov/boards/audiology/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

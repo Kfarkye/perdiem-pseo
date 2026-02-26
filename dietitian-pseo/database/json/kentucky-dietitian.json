@@ -1,0 +1,114 @@
+{
+    "state_slug": "kentucky",
+    "state_name": "Kentucky",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian (LD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Kentucky Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
+        "description": "Apply for a Kentucky Licensed Dietitian (LD) credential. $50 application fee. Master's degree, CDR exam, and 1,000 hours of supervised practice required.",
+        "keywords": "Kentucky dietitian license, KY licensed dietitian requirements, Kentucky Board of Licensure Dietitians, Kentucky dietitian application fee"
+    },
+    "board": {
+        "name": "Kentucky Board of Licensure and Certification for Dietitians and Nutritionists",
+        "parent_dept": "Department of Professional Licensing (DPL)",
+        "mailing_address": "P.O. Box 1360<br>Frankfort, KY 40602",
+        "physical_address": "500 Mero St, 2nd Floor, SC<br>Frankfort, KY 40601",
+        "phone": "(502) 892-4254",
+        "fax": "(502) 564-4818",
+        "email": "mailto:diet@ky.gov",
+        "url": "https://bldn.ky.gov/"
+    },
+    "quick_facts": {
+        "total_fee": "$50",
+        "fee_breakdown": "$50 initial application fee",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Annual (by Oct 31st) + 15 CE hours",
+        "processing_time": "2 to 4 Weeks",
+        "license_duration": "1 Year"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian (LD)",
+            "description": "The credential to practice dietetics in Kentucky. Dual licensure as a Dietitian and Nutritionist is also an option for the same $50 application fee."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,000 hours of supervised practice."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+        },
+        {
+            "title": "Submit the Application via eServices",
+            "description": "Create an account on the Kentucky DPL eServices portal, submit the online application, and pay the $50 application fee."
+        },
+        {
+            "title": "Provide Documentation",
+            "description": "Upload or mail a copy of your current active CDR registration card, official transcripts, and proof of supervised practice."
+        }
+    ],
+    "documents": [
+        {
+            "item": "CDR Registration Card",
+            "detail": "Proof of active registration with the Commission on Dietetic Registration."
+        },
+        {
+            "item": "Official College Transcripts",
+            "detail": "Must show your conferred master's degree. Can be sent securely via Clearinghouse to the board."
+        },
+        {
+            "item": "Supervised Practice Verification",
+            "detail": "Documentation showing completion of at least 1,000 hours."
+        }
+    ],
+    "provisional_text": "Kentucky does not offer a temporary or provisional license. Applicants must have passed the CDR examination prior to applying for licensure.",
+    "reciprocity_text": "Kentucky allows licensure by endorsement. Applicants actively licensed in another state must provide verification of licensure and proof that they meet the same educational, supervised practice, and examination requirements (active CDR registration typically satisfies this).",
+    "faqs": [
+        {
+            "question": "How much does a Kentucky dietitian license cost?",
+            "answer": "The application fee for initial licensure as a dietitian (or dual licensure as a dietitian/nutritionist) is $50."
+        },
+        {
+            "question": "When does the Kentucky license need to be renewed?",
+            "answer": "Kentucky dietitian licenses expire annually on October 31st. The renewal fee is $50. There is a 60-day grace period (until Dec 31st) with late fees applied."
+        },
+        {
+            "question": "What are the continuing education requirements?",
+            "answer": "Licensees must complete at least 15 hours of approved continuing education every year prior to the October 31st renewal deadline."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$50",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$50"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://bldn.ky.gov/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

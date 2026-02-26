@@ -1,0 +1,118 @@
+{
+    "state_slug": "kansas",
+    "state_name": "Kansas",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian (LD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Kansas Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
+        "description": "Apply for a Kansas Licensed Dietitian credential through KDADS. $140 application fee. Master's degree, 1,200 hours supervised practice, and CDR exam required.",
+        "keywords": "Kansas dietitian license, KS licensed dietitian requirements, KDADS Health Occupations Credentialing Dietitians, Kansas dietitian application fee"
+    },
+    "board": {
+        "name": "Health Occupations Credentialing",
+        "parent_dept": "Kansas Department for Aging and Disability Services (KDADS)",
+        "mailing_address": "503 S. Kansas Ave.<br>Topeka, KS 66603",
+        "physical_address": "503 S. Kansas Ave.<br>Topeka, KS 66603",
+        "phone": "(785) 296-0061",
+        "fax": "(785) 296-3075",
+        "email": "mailto:kdads.licensure@ks.gov",
+        "url": "https://kdads.ks.gov/kdads-commissions/survey-certification-and-credentialing-commission/health-occupations-credentialing"
+    },
+    "quick_facts": {
+        "total_fee": "$140",
+        "fee_breakdown": "$140 initial application fee",
+        "renewal_fee": "$135",
+        "renewal_cycle": "Every 2 years + 15 CE hours",
+        "processing_time": "3 to 4 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian (LD)",
+            "description": "The credential to practice dietetics in Kansas, regulated by the KDADS Health Occupations Credentialing division."
+        },
+        {
+            "title": "Temporary Licensed Dietitian",
+            "description": "Available for applicants who have met all requirements except passing the exam. Valid for six months and can be renewed once. Temporary fee is $70."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,200 hours of board-approved supervised practice through an ACEND-accredited dietitian internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status is required."
+        },
+        {
+            "title": "Submit the Application to KDADS",
+            "description": "Download and complete the application form. Have it notarized, and mail it with the $140 fee to KDADS in Topeka."
+        },
+        {
+            "title": "Provide Verification Documents",
+            "description": "Ensure your official transcripts are sent directly from the issuing institution. Include a copy of your CDR card as proof of examination and supervised training."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Notarized Application",
+            "detail": "The original downloaded application form with a notarized signature."
+        },
+        {
+            "item": "CDR Registration Card",
+            "detail": "A copy of your active CDR card to document exam and training completion."
+        },
+        {
+            "item": "Official College Transcripts",
+            "detail": "Sent directly from the university showing your conferred degree."
+        }
+    ],
+    "provisional_text": "Kansas offers a Temporary License for $70 for individuals who have fulfilled the educational and supervised practice requirements but have not yet passed the CDR exam. A temporary license allows the individual to practice under supervision for six months and may be renewed one time.",
+    "reciprocity_text": "Kansas allows for licensure by reciprocity. Out-of-state applicants with a current, valid license from a state with equivalent or stricter standards, or holding active CDR registration, can apply using the standard application process to establish Kansas credentials.",
+    "faqs": [
+        {
+            "question": "How much does a Kansas dietitian license cost?",
+            "answer": "The initial license application fee is $140. A temporary license costs $70."
+        },
+        {
+            "question": "When does the Kansas license need to be renewed?",
+            "answer": "Kansas regular dietitian licenses are renewed biennially (every two years). The online renewal system opens annually on January 15th for those due. The renewal fee is $135."
+        },
+        {
+            "question": "What are the continuing education requirements for Kansas?",
+            "answer": "Kansas requires a minimum of 15 hours of Continuing Professional Education (CPE) every two years. Holding current CDR registration (which requires 75 CPEs every 5 years) generally satisfies this requirement."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$140",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$140"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "$70",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://kdads.ks.gov/kdads-commissions/survey-certification-and-credentialing-commission/health-occupations-credentialing",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

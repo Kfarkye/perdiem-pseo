@@ -1,0 +1,123 @@
+{
+    "state_slug": "vermont-slp",
+    "state_name": "Vermont",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Vermont SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to Vermont speech-language pathologist licensing.",
+        "keywords": "Vermont SLP license, speech-language pathologist Vermont"
+    },
+    "board": {
+        "name": "Office of Professional Regulation — Speech-Language Pathology",
+        "parent_dept": "Vermont Secretary of State, Office of Professional Regulation",
+        "mailing_address": "89 Main St., 3rd Floor, Montpelier, VT 05620-3402",
+        "physical_address": "89 Main St., 3rd Floor, Montpelier, VT 05620",
+        "phone": "(802) 828-1505",
+        "fax": "(802) 828-2465",
+        "email": "mailto:sos.opr@vermont.gov",
+        "url": "https://sos.vermont.gov/speech-language-pathologists/"
+    },
+    "quick_facts": {
+        "total_fee": "$150",
+        "fee_breakdown": "$75 application + $75 license fee",
+        "renewal_fee": "$150",
+        "renewal_cycle": "Every 2 years (March 31)",
+        "processing_time": "4 to 6 weeks",
+        "license_duration": "2 years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "Full credential for independent SLP practice in Vermont."
+        },
+        {
+            "title": "Provisional SLP License",
+            "description": "For SLP graduates completing their Clinical Fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "From a CAA-accredited program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Test code 5331, score 162."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "36 weeks supervised clinical practice."
+        },
+        {
+            "title": "Submit Application",
+            "description": "Submit with fees to OPR."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "Criminal background check."
+        }
+    ],
+    "telepractice_text": "Vermont permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+    "provisional_text": "Vermont issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "Vermont is a member of the ASLP Interstate Compact.",
+    "faqs": [
+        {
+            "question": "How much does a Vermont SLP license cost?",
+            "answer": "$150 initial. $150 biennial renewal."
+        },
+        {
+            "question": "Is Vermont part of the ASLP Interstate Compact?",
+            "answer": "Yes."
+        },
+        {
+            "question": "Does Vermont allow telepractice for SLPs?",
+            "answer": "Yes."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$75",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$150"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://sos.vermont.gov/speech-language-pathologists/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

@@ -1,0 +1,110 @@
+{
+    "state_slug": "new-mexico",
+    "state_name": "New Mexico",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "New Mexico Licensed Dietitian Application — Requirements, Fees & How to Apply (2026)",
+        "description": "Apply for a New Mexico dietitian or nutritionist license through the NM Nutrition and Dietetics Practice Board. $200 total fee, CDR registration required.",
+        "keywords": "New Mexico dietitian license, NM nutritionist license, New Mexico RLD nutrition board, NM dietitian license cost"
+    },
+    "board": {
+        "name": "Nutrition and Dietetics Practice Board",
+        "parent_dept": "New Mexico Regulation and Licensing Department",
+        "mailing_address": "P.O. Box 25101<br>Santa Fe, NM 87504",
+        "physical_address": "2550 Cerrillos Road, 2nd Floor<br>Santa Fe, NM 87505",
+        "phone": "(505) 476-4622",
+        "fax": "(505) 476-4565",
+        "email": "mailto:nutritiondieteticsbd@rld.nm.gov",
+        "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/"
+    },
+    "quick_facts": {
+        "total_fee": "$200",
+        "fee_breakdown": "$50 application + $150 license",
+        "renewal_fee": "$75",
+        "renewal_cycle": "Every 1 year + 15 CE hours or active CDR",
+        "processing_time": "Varies (~2 Weeks)",
+        "license_duration": "1 Year"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian",
+            "description": "Requires current CDR registration (RD/RDN credential), including passage of the CDR examination. As of 2024, CDR requires a minimum master's degree from an ACEND-accredited program."
+        },
+        {
+            "title": "Licensed Nutritionist",
+            "description": "Requires a master's or doctorate in a nutrition-related field from an accredited institution, OR current membership in the ACBN or ASN."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Register & Apply Online",
+            "description": "Create an account and submit your application through the NM RLD Boards & Commissions portal."
+        },
+        {
+            "title": "Submit Required Documents",
+            "description": "Upload or arrange delivery of your CDR card, official transcripts, and complete the mandatory background check."
+        },
+        {
+            "title": "Pay Fees",
+            "description": "Submit the $50 non-refundable application fee. Upon board approval, you will be prompted to pay the $150 initial license fee to activate your license."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Copy of current CDR registration card",
+            "detail": "Required for all dietitian applicants."
+        },
+        {
+            "item": "Background check",
+            "detail": "Must be conducted within the past 90 days per 16.14.3.8 NMAC."
+        },
+        {
+            "item": "Official academic transcript",
+            "detail": "Must be sent directly from the college or university to the Board."
+        }
+    ],
+    "provisional_text": "Dietitians and nutritionists who have completed all education and supervised experience requirements but have not yet passed the CDR examination may apply for a provisional permit. This allows practice while awaiting exam results.",
+    "reciprocity_text": "New Mexico recognizes licensure from other states with standards at least as stringent as its own. Applicants must provide copies of all licenses and arrange for official verification to be sent directly to the Board.",
+    "faqs": [
+        {
+            "question": "How much does a New Mexico dietitian license cost?",
+            "answer": "The total initial cost for a New Mexico dietitian license is $200, broken down as a $50 non-refundable application fee plus a $150 initial license fee. Annual renewal costs $75."
+        },
+        {
+            "question": "Is a background check required for a New Mexico dietitian license?",
+            "answer": "Yes. Per current NMAC regulations, a background check conducted within the past 90 days is required for initial dietitian and nutritionist licensure."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$50",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$200"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

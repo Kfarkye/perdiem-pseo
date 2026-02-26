@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Backups from migration scripts
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.swp
+
+# QA reports (regenerable)
+qa_*.csv
+
+# IDE
+.vscode/
+.idea/

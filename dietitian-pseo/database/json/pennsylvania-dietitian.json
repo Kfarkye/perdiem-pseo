@@ -1,0 +1,114 @@
+{
+    "state_slug": "pennsylvania",
+    "state_name": "Pennsylvania",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO / PA State Police",
+        "fee": "$22.60",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://www.identogo.com/locations/pennsylvania"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian-Nutritionist (LDN)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Pennsylvania Licensed Dietitian-Nutritionist (LDN) Application — Requirements & Fees (2026)",
+        "description": "Apply for a Pennsylvania Licensed Dietitian-Nutritionist (LDN) credential through the State Board of Nursing. $95 application fee. Complete requirements, processing times, and official links.",
+        "keywords": "Pennsylvania dietitian license, PA LDN requirements, Board of Nursing dietitian Pennsylvania, dietitian application fees PA, cost of nutritionist license Pennsylvania"
+    },
+    "board": {
+        "name": "Pennsylvania State Board of Nursing",
+        "parent_dept": "Pennsylvania Department of State",
+        "mailing_address": "State Board of Nursing<br>P.O. Box 2649<br>Harrisburg, PA 17105-2649",
+        "physical_address": "One Penn Center<br>2601 N. 3rd Street<br>Harrisburg, PA 17110",
+        "phone": "(717) 783-7142",
+        "fax": "(717) 783-0822",
+        "email": "mailto:ST-NURSE@pa.gov",
+        "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Nursing"
+    },
+    "quick_facts": {
+        "total_fee": "$95",
+        "fee_breakdown": "$95 Application Fee",
+        "renewal_fee": "$71",
+        "renewal_cycle": "Biennial (Every 2 years)",
+        "processing_time": "4 to 8 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian-Nutritionist (LDN)",
+            "description": "The standard credential for practicing dietetics or serving as a nutritionist in Pennsylvania. Administered through the State Board of Nursing."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Fulfill Education & Experience Standards",
+            "description": "Complete a Bachelor's degree (or higher) from a regionally accredited institution with a major in human nutrition, food and nutrition, dietetics, or food systems management, and complete a minimum of 900 hours of continuous supervised preprofessional experience."
+        },
+        {
+            "title": "Pass Written Examination",
+            "description": "Pass a Board-approved examination, such as the Commission on Dietetic Registration (CDR) or the Board for Certification of Nutrition Specialists (BCNS) examination."
+        },
+        {
+            "title": "Take the Child Abuse Recognition Course",
+            "description": "Pennsylvania law mandates that all health-related licensees complete 3 hours of Board-approved training in child abuse recognition and reporting before applying for an initial license."
+        },
+        {
+            "title": "Submit the Online Application",
+            "description": "Create an account on the Pennsylvania Licensing System (PALS), complete the LDN application, upload your child abuse training certificate, and pay the non-refundable $95 fee."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official College Transcripts",
+            "detail": "Must be sent directly from your degree-granting university to the State Board of Nursing."
+        },
+        {
+            "item": "Examination Verification",
+            "detail": "Verification of a passing score on the CDR or BCNS exam, sent directly from the testing agency."
+        },
+        {
+            "item": "Child Abuse CE Certificate",
+            "detail": "A certificate proving completion of the mandatory 3-hour Pennsylvania child abuse recognition and reporting course."
+        }
+    ],
+    "provisional_text": "Pennsylvania does not grant temporary permits, but Act 41 allows the Board to issue provisional licenses to practitioners coming from other jurisdictions who need time to fulfill specific PA requirements.",
+    "reciprocity_text": "Pennsylvania does not currently participate in interstate licensure compacts for nutritionists. Out-of-state applicants must apply via endorsement through the PALS system and provide verification of their active, good-standing license from their home state, along with proof of passing a Board-approved exam.",
+    "faqs": [
+        {
+            "question": "How much does it cost to get an LDN license in Pennsylvania?",
+            "answer": "The initial application fee for a Licensed Dietitian-Nutritionist in Pennsylvania is $95. After issuance, it costs $71 to renew the license biennially."
+        },
+        {
+            "question": "Which Pennsylvania board issues the dietitian license?",
+            "answer": "Unlike many states with dedicated dietetics boards, Pennsylvania regulates Licensed Dietitian-Nutritionists under the State Board of Nursing within the broader Department of State."
+        },
+        {
+            "question": "What are the continuing education requirements for Pennsylvania dietitians?",
+            "answer": "To renew biennially, you must complete 30 hours of continuing professional education. Of those 30 hours, 2 hours must strictly be a Board-approved course in child abuse recognition and reporting."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$95",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$95"
+    },
+    "temp_license": {
+        "available": false,
+        "fee": "N/A",
+        "processing_time": "N/A",
+        "duration": "N/A"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Nursing",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

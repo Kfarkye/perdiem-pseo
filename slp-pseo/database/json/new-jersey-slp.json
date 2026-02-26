@@ -1,0 +1,123 @@
+{
+    "state_slug": "new-jersey-slp",
+    "state_name": "New Jersey",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "New Jersey SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to New Jersey speech-language pathologist licensing.",
+        "keywords": "New Jersey SLP license, speech-language pathologist New Jersey, NJ speech therapy license"
+    },
+    "board": {
+        "name": "Audiology and Speech-Language Pathology Advisory Committee",
+        "parent_dept": "New Jersey Division of Consumer Affairs",
+        "mailing_address": "P.O. Box 45020, Newark, NJ 07101",
+        "physical_address": "124 Halsey St., Newark, NJ 07102",
+        "phone": "(973) 504-6430",
+        "fax": "(973) 648-3355",
+        "email": "mailto:askconsumeraffairs@dca.lps.state.nj.us",
+        "url": "https://www.njconsumeraffairs.gov/aud/"
+    },
+    "quick_facts": {
+        "total_fee": "$120",
+        "fee_breakdown": "$120 application and license fee",
+        "renewal_fee": "$120",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "4 to 8 weeks",
+        "license_duration": "2 years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "Full credential for independent SLP practice in New Jersey."
+        },
+        {
+            "title": "Temporary SLP Permit",
+            "description": "For SLP graduates completing their Clinical Fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "From a CAA-accredited program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Test code 5331, score 162."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "36 weeks supervised clinical practice."
+        },
+        {
+            "title": "Submit Application",
+            "description": "Submit to Division of Consumer Affairs with fees."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "Criminal background check and fingerprinting."
+        }
+    ],
+    "telepractice_text": "New Jersey permits telepractice for licensed SLPs. New Jersey is not currently a member of the ASLP Interstate Compact.",
+    "provisional_text": "New Jersey issues a Temporary SLP Permit for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "New Jersey does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full New Jersey licensure.",
+    "faqs": [
+        {
+            "question": "How much does a New Jersey SLP license cost?",
+            "answer": "$120 initial. $120 biennial renewal."
+        },
+        {
+            "question": "Is New Jersey part of the ASLP Interstate Compact?",
+            "answer": "No."
+        },
+        {
+            "question": "Does New Jersey allow telepractice for SLPs?",
+            "answer": "Yes, with a valid NJ license."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$120",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$120"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.njconsumeraffairs.gov/aud/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

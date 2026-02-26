@@ -1,0 +1,118 @@
+{
+    "state_slug": "north-dakota",
+    "state_name": "North Dakota",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Registered Dietitian (LRD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "North Dakota Licensed Registered Dietitian (LRD) — Requirements & Fees (2026)",
+        "description": "Apply for a North Dakota LRD credential through the NDBODP. $75 application fee. Master's degree, 1,200 hours supervised practice, and CDR exam required.",
+        "keywords": "North Dakota dietitian license, ND LRD requirements, North Dakota Board of Dietetic Practice NDBODP, ND dietitian application fee"
+    },
+    "board": {
+        "name": "North Dakota Board of Dietetic Practice (NDBODP)",
+        "parent_dept": "Independent State Board",
+        "mailing_address": "810 4th Ave S Ste 1<br>Moorhead, MN 56560",
+        "physical_address": "810 4th Ave S Ste 1<br>Moorhead, MN 56560",
+        "phone": "(701) 852-2103",
+        "fax": "(701) 852-2103",
+        "email": "mailto:execsec@ndbodp.com",
+        "url": "https://www.ndbodp.com/"
+    },
+    "quick_facts": {
+        "total_fee": "$75",
+        "fee_breakdown": "$75 initial application fee",
+        "renewal_fee": "$45",
+        "renewal_cycle": "Every 5 years (matches CDR cycle)",
+        "processing_time": "2 to 4 Weeks",
+        "license_duration": "Up to 5 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Registered Dietitian (LRD)",
+            "description": "The credential for Registered Dietitians in North Dakota allowing the full scope of medical nutrition therapy."
+        },
+        {
+            "title": "Licensed Nutritionist (LN)",
+            "description": "An alternative pathway for those without CDR registration, requiring a degree, 1000 hours of supervised practice, and an alternative approved exam like the CNS."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a graduate degree from an ACEND-accredited program. Complete a minimum of 1,200 hours of board-approved supervised practice through a dietetic internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Active RD or RDN status is required for the LRD credential."
+        },
+        {
+            "title": "Submit the Application to NDBODP",
+            "description": "Complete the application form provided by the NDBODP, have it notarized if required, and submit it with the $75 fee."
+        },
+        {
+            "title": "Provide Verification Documents",
+            "description": "Include a copy of your active CDR card or ensure verification is sent directly. A background check may be requested by the board."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official Application",
+            "detail": "Application form accurately and completely filled out."
+        },
+        {
+            "item": "CDR Registration Card",
+            "detail": "Proof of active registration with the Commission on Dietetic Registration (for LRDs)."
+        },
+        {
+            "item": "Official College Transcripts",
+            "detail": "Required, especially if applying via the Licensed Nutritionist pathway."
+        }
+    ],
+    "provisional_text": "North Dakota offers a provisional license for $25. This is typically for applicants who have completed all the educational and supervised practice requirements but have not yet passed the CDR exam and are practicing under supervision.",
+    "reciprocity_text": "Out-of-state applicants with active CDR registration or a current license in another state with equivalent standards can easily apply by submitting the standard application, fee ($75), and proof of their active credential.",
+    "faqs": [
+        {
+            "question": "How much does a North Dakota dietitian license cost?",
+            "answer": "The initial cost is a $75 application fee for both LRDs and LNs. A provisional license is $25."
+        },
+        {
+            "question": "When does the North Dakota license need to be renewed?",
+            "answer": "North Dakota has a 5-year renewal cycle that typically matches your CDR registration cycle, ensuring continuing education hours align. The renewal fee is $45."
+        },
+        {
+            "question": "Does North Dakota have a temporary license for non-residents?",
+            "answer": "Yes, North Dakota offers a 'Limited Practice Without a License' option for $25. This is intended for dietitians practicing in the state for fewer than 30 days per year."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$75",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$75"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "$25.",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.ndbodp.com/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

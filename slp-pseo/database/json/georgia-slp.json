@@ -1,0 +1,127 @@
+{
+    "state_slug": "georgia-slp",
+    "state_name": "Georgia",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Georgia SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to Georgia speech-language pathologist licensing. Board application fees, Praxis requirements, PCE license, and telepractice rules for 2026.",
+        "keywords": "Georgia SLP license, Georgia speech pathologist, Georgia speech therapy license, SLP license GA, PCE Georgia SLP"
+    },
+    "board": {
+        "name": "Board of Examiners for Speech-Language Pathology and Audiology",
+        "parent_dept": "Professional Licensing Boards Division, Office of the Secretary of State",
+        "mailing_address": "237 Coliseum Drive, Macon, GA 31217",
+        "physical_address": "237 Coliseum Drive, Macon, GA 31217",
+        "phone": "(844) 753-7825",
+        "fax": "(478) 207-1363",
+        "email": "mailto:slpa@sos.ga.gov",
+        "url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology"
+    },
+    "quick_facts": {
+        "total_fee": "$120",
+        "fee_breakdown": "$120 application fee (includes $10 mail-in processing)",
+        "renewal_fee": "$70",
+        "renewal_cycle": "Every 2 years (March 31, odd years)",
+        "processing_time": "4 to 8 weeks",
+        "license_duration": "2 years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "The full credential to independently practice speech-language pathology in Georgia. Requires a master's degree, completed professional experience, passing Praxis score, and background check."
+        },
+        {
+            "title": "PCE/RPE License",
+            "description": "Issued to SLP graduates completing their Paid Clinical Experience (PCE) or Required Professional Experience (RPE). Application fee: $40. Allows supervised practice while completing the clinical fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "Complete a master's or higher degree with a major emphasis in speech-language pathology from an accredited program. Must incorporate the academic coursework and supervised training hours established by the Board."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology, as approved by the Board. The current passing score is 162."
+        },
+        {
+            "title": "Complete Professional Experience (PCE/RPE)",
+            "description": "Complete the required Paid Clinical Experience (PCE) or Required Professional Experience (RPE) under supervision. Obtain the PCE/RPE license ($40) first to practice during this period."
+        },
+        {
+            "title": "Submit Full License Application",
+            "description": "Submit the SLP application ($120) to the Board. Include official transcripts, Praxis scores, professional experience verification, and criminal background check with fingerprinting."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From an accredited speech-language pathology program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher, as approved by the Board."
+        },
+        {
+            "item": "Professional experience verification",
+            "detail": "Documentation of completed PCE/RPE signed by supervising licensed SLP."
+        },
+        {
+            "item": "Criminal background check",
+            "detail": "Fingerprinting through Georgia Crime Information Center (GCIC) and FBI. Applicant is responsible for associated fees."
+        },
+        {
+            "item": "Out-of-state license verification",
+            "detail": "If previously licensed in another state, verification sent directly from the issuing board to Georgia."
+        }
+    ],
+    "telepractice_text": "Georgia permits telepractice for licensed SLPs. The practitioner must hold a valid Georgia SLP license to provide services to clients located in Georgia. All telepractice services must comply with Georgia telehealth regulations and meet the same standard of care as in-person services.",
+    "provisional_text": "Georgia issues a PCE/RPE License for graduates completing their clinical fellowship. The license costs $40 and allows supervised practice. The Board reviews applications monthly, so processing time depends on the Board's meeting schedule.",
+    "reciprocity_text": "Georgia offers licensure by endorsement for SLPs licensed in other states, as well as for ASHA CCC-SLP holders. The endorsement application fee is $120 (same as by examination). Out-of-state applicants must have their existing license verified directly by the issuing state board.",
+    "faqs": [
+        {
+            "question": "How much does a Georgia SLP license cost?",
+            "answer": "The initial application fee is $120 (includes $10 mail-in processing). A PCE/RPE license for the clinical fellowship costs $40. Biennial renewal is $70, due by March 31 of odd-numbered years."
+        },
+        {
+            "question": "What are the CE requirements for Georgia SLP renewal?",
+            "answer": "Georgia requires 2.0 CEUs (equivalent to 20 clock hours) every two years. A maximum of 2 hours per cycle can be in ethics/documentation topics. No more than 10 clock hours can be acquired in any one 24-hour period. Requirements are pro-rated for new licensees."
+        },
+        {
+            "question": "How long does the Georgia SLP application take?",
+            "answer": "Application processing takes 4 to 8 weeks. The Board meets monthly to review applications, so timing depends on when your complete application is received relative to the next Board meeting."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$120",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$120"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "$40",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

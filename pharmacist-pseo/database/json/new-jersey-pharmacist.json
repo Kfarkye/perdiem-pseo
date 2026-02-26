@@ -1,0 +1,106 @@
+{
+    "state_slug": "new-jersey",
+    "state_name": "New Jersey",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Pharmacist",
+    "credential_nomenclature": "RPh, PharmD",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "New Jersey RPh, PharmD Application — Requirements & Fees (2026)",
+        "description": "Apply for a New Jersey Pharmacist license. Learn about the requirements, NAPLEX and MPJE exams, and state fees.",
+        "keywords": "New Jersey pharmacist license, Pharmacist license by state, PharmD license requirements, RPh license requirements, state board of pharmacy, pharmacist license cost"
+    },
+    "board": {
+        "name": "New Jersey Board of Pharmacy",
+        "parent_dept": "New Jersey Division of Consumer Affairs",
+        "mailing_address": "See board website",
+        "physical_address": "See board website",
+        "phone": "(973) 504-6450",
+        "fax": "N/A (contact by phone)",
+        "email": "See board website",
+        "url": "https://www.njconsumeraffairs.gov/phar"
+    },
+    "quick_facts": {
+        "total_fee": "$250",
+        "fee_breakdown": "$250 application/license fee",
+        "renewal_fee": "$150",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "4 to 6 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "RPh, PharmD",
+            "description": "The standard credential to practice as a pharmacist in New Jersey."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education Requirements",
+            "description": "Complete an ACPE-accredited Doctor of Pharmacy (PharmD) program and required pharmacy internship hours."
+        },
+        {
+            "title": "Pass the Board Exams",
+            "description": "Successfully pass the expected board examinations, typically the NAPLEX and MPJE."
+        },
+        {
+            "title": "Submit Application and Fees",
+            "description": "Complete the state application, undergo a background check, and submit the necessary licensing fees."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official Transcripts",
+            "detail": "Sent directly from your educational institution."
+        },
+        {
+            "item": "Exam Score Reports",
+            "detail": "Official verification of passing the NAPLEX and MPJE."
+        }
+    ],
+    "provisional_text": "Some states offer an intern or provisional license for graduates actively accumulating required hours or waiting to take the NAPLEX.",
+    "reciprocity_text": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE.",
+    "faqs": [
+        {
+            "question": "How much does a New Jersey pharmacist license cost?",
+            "answer": "The initial application and licensing fee varies by state. Check the specific fee breakdown above."
+        },
+        {
+            "question": "Is the MPJE required in all states?",
+            "answer": "Almost all states require passing their state-specific Multistate Pharmacy Jurisprudence Examination (MPJE) to verify knowledge of local pharmacy laws."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$250",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$250"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.njconsumeraffairs.gov/phar",
+    "license_pathway": "endorsement",
+    "profession_overrides": {
+        "pharmacy": {
+            "mpje_required": true
+        }
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "state_slug": "north-dakota-slp",
+    "state_name": "North Dakota",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "North Dakota SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to North Dakota speech-language pathologist licensing.",
+        "keywords": "North Dakota SLP license, speech-language pathologist North Dakota"
+    },
+    "board": {
+        "name": "Board of Examiners on Audiology and Speech-Language Pathology",
+        "parent_dept": "North Dakota Board of Examiners on Audiology and SLP",
+        "mailing_address": "3100 S. Columbia Rd., Suite 218, Grand Forks, ND 58201",
+        "physical_address": "3100 S. Columbia Rd., Suite 218, Grand Forks, ND 58201",
+        "phone": "(701) 777-3232",
+        "fax": "(701) 777-4365",
+        "email": "mailto:ndboeaslp@gmail.com",
+        "url": "https://www.ndboeaslp.org/"
+    },
+    "quick_facts": {
+        "total_fee": "$75",
+        "fee_breakdown": "$50 application + $25 license fee",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every year (December 31)",
+        "processing_time": "2 to 4 weeks",
+        "license_duration": "1 year"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "Full credential for independent SLP practice in North Dakota."
+        },
+        {
+            "title": "Provisional SLP License",
+            "description": "For SLP graduates completing their Clinical Fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "From a CAA-accredited program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Test code 5331, score 162."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "36 weeks supervised clinical practice."
+        },
+        {
+            "title": "Submit Application",
+            "description": "Submit with fees to the Board."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "Criminal background check."
+        }
+    ],
+    "telepractice_text": "North Dakota permits telepractice for licensed SLPs. North Dakota is not currently a member of the ASLP Interstate Compact.",
+    "provisional_text": "North Dakota issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "North Dakota does not participate in the ASLP Interstate Compact.",
+    "faqs": [
+        {
+            "question": "How much does a North Dakota SLP license cost?",
+            "answer": "$75 initial. $50 annual renewal."
+        },
+        {
+            "question": "Is North Dakota part of the ASLP Interstate Compact?",
+            "answer": "No."
+        },
+        {
+            "question": "Does North Dakota allow telepractice for SLPs?",
+            "answer": "Yes, with a valid ND license."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$50",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$75"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.ndboeaslp.org/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

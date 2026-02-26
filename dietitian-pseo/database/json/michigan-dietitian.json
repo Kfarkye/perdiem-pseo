@@ -1,0 +1,114 @@
+{
+    "state_slug": "michigan",
+    "state_name": "Michigan",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian Nutritionist",
+    "credential_nomenclature": "Licensed Dietitian Nutritionist (LDN) — Application Process Pending",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Michigan Licensed Dietitian Nutritionist (LDN) — New Law & Requirements (2026)",
+        "description": "Michigan reinstated dietitian licensure via Public Act 39 of 2024. $130 estimated initial cost. Applications pending through LARA Board of Dietetics and Nutrition.",
+        "keywords": "Michigan dietitian license, MI licensed dietitian nutritionist requirements, LARA Board of Dietetics and Nutrition, Michigan dietitian application fee"
+    },
+    "board": {
+        "name": "Board of Dietetics and Nutrition",
+        "parent_dept": "Michigan Department of Licensing and Regulatory Affairs (LARA)",
+        "mailing_address": "PO Box 30670<br>Lansing, MI 48909",
+        "physical_address": "611 W. Ottawa St.<br>Lansing, MI 48909",
+        "phone": "(517) 335-0918",
+        "fax": "(517) 241-2760",
+        "email": "mailto:bplhelp@michigan.gov",
+        "url": "https://www.michigan.gov/lara/bureau-list/bpl"
+    },
+    "quick_facts": {
+        "total_fee": "$130 (Estimated)",
+        "fee_breakdown": "$75 application processing fee + $55 license fee (per year)",
+        "renewal_fee": "$55",
+        "renewal_cycle": "Annual (Estimated based on fee schedule)",
+        "processing_time": "TBD (Application process not yet open in early 2026)",
+        "license_duration": "1 Year (Estimated)"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian Nutritionist (LDN)",
+            "description": "Michigan reinstated state licensure for dietitian nutritionists through Public Act 39 of 2024, signed April 30, 2024. The Board of Dietetics and Nutrition was appointed and approved administrative rules in October 2025, but the application process is expected to open 18 months after rules are promulgated."
+        },
+        {
+            "title": "Temporary Licensed Dietitian Nutritionist",
+            "description": "A temporary license will be available for $55 once the application process opens."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree from an ACEND-accredited program. Complete at least 1,200 hours of supervised practice through an accredited dietetic internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the CDR Registration Examination for Dietitians and obtain active RD/RDN status. This is the primary qualification."
+        },
+        {
+            "title": "Await Application Opening",
+            "description": "As of early 2026, the state application process is not yet open. Monitor the LARA website and the Michigan Academy of Nutrition and Dietetics for announcements."
+        },
+        {
+            "title": "Submit Application via LARA (When Available)",
+            "description": "Once open, submit your application to LARA with the $75 processing fee and $55 license fee, along with proof of CDR registration."
+        }
+    ],
+    "documents": [
+        {
+            "item": "CDR Registration Card",
+            "detail": "Proof of active registration with the Commission on Dietetic Registration (RD/RDN)."
+        },
+        {
+            "item": "LARA Application (Pending)",
+            "detail": "Application form will be available through the LARA online licensing portal."
+        }
+    ],
+    "provisional_text": "Michigan's new Board of Dietetics and Nutrition will offer a temporary license for $55 once the application process is fully operational.",
+    "reciprocity_text": "Reciprocity provisions will be defined by the newly formed Board. Active CDR registration will be the primary qualifying credential, making the transition straightforward for out-of-state licensees.",
+    "faqs": [
+        {
+            "question": "Is Michigan currently accepting dietitian license applications?",
+            "answer": "Not yet. Although Public Act 39 of 2024 reinstated licensure and the Board approved administrative rules in October 2025, applications are expected to open approximately 18 months after the rules are formally promulgated."
+        },
+        {
+            "question": "How much will a Michigan dietitian license cost?",
+            "answer": "The established fees are a $75 application processing fee and a $55 annual license fee, for a total initial cost of $130."
+        },
+        {
+            "question": "Can I practice in Michigan without a state license right now?",
+            "answer": "Yes. Until the application process opens and the law is fully enforced, practicing with a CDR credential in Michigan remains the standard. Most employers require the RD/RDN credential."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$75",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$130 (Estimated)"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "$55",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.michigan.gov/lara/bureau-list/bpl",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

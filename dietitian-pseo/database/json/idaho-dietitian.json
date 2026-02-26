@@ -1,0 +1,118 @@
+{
+    "state_slug": "idaho",
+    "state_name": "Idaho",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian (LD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Idaho Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
+        "description": "Apply for an Idaho Licensed Dietitian credential through DOPL. $100 application fee. Master's degree, 1,000 hours supervised practice, and CDR exam required.",
+        "keywords": "Idaho dietitian license, ID licensed dietitian requirements, Idaho DOPL Board of Medicine Dietitians, Idaho dietitian application fee"
+    },
+    "board": {
+        "name": "Dietetic Licensure Board",
+        "parent_dept": "Idaho Division of Occupational and Professional Licenses (DOPL)",
+        "mailing_address": "P.O. Box 83720<br>Boise, ID 83720-0063",
+        "physical_address": "11341 W Chinden Blvd, Bldg 4<br>Boise, ID 83714",
+        "phone": "(208) 334-3233",
+        "fax": "(208) 327-7005",
+        "email": "mailto:doplinfo@dopl.idaho.gov",
+        "url": "https://dopl.idaho.gov/boe/"
+    },
+    "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "$100 initial application fee",
+        "renewal_fee": "$120",
+        "renewal_cycle": "Every 2 years (transitions from annual $60 to biennial $120 starting mid-2025)",
+        "processing_time": "3 to 4 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian (LD)",
+            "description": "The credential to practice dietetics in Idaho, regulated by the Idaho Dietetic Licensure Board under DOPL's Board of Medicine."
+        },
+        {
+            "title": "Provisional Dietitian",
+            "description": "Available for applicants who have completed their education and supervised practice but have not yet passed the CDR exam. Valid for one year, costs $50, and allows practice under the supervision of a Licensed Dietitian."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,000 hours of board-approved supervised practice through an accredited dietitian internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies exam requirements."
+        },
+        {
+            "title": "Submit the Application to DOPL",
+            "description": "Complete the application form online or via paper. Have it notarized, and submit it with the $100 fee to DOPL."
+        },
+        {
+            "title": "Provide Verification Documents",
+            "description": "Submit a copy of your active CDR card or ensure verification is sent directly. A current CDR card generally confirms both education and examination completion."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Notarized Application",
+            "detail": "Application form with your notarized signature (if using paper form)."
+        },
+        {
+            "item": "CDR Registration Card",
+            "detail": "Proof of active registration with the Commission on Dietetic Registration."
+        },
+        {
+            "item": "Official College Transcripts",
+            "detail": "Sent directly from the university showing your conferred degree (if not using CDR as sole verification)."
+        }
+    ],
+    "provisional_text": "Idaho offers a Provisional License for $50 for individuals who have fulfilled the educational and supervised practice requirements but have not yet passed the CDR exam. A Provisional Licensed Dietitian must practice under the direction and supervision of an Idaho Licensed Dietitian. The provisional license is valid for one year.",
+    "reciprocity_text": "Idaho allows for licensure by endorsement. Out-of-state applicants with a current, valid license from a state with equivalent standards or those holding active CDR registration can apply by submitting the standard application, fee, and proof of out-of-state licensure.",
+    "faqs": [
+        {
+            "question": "How much does an Idaho dietitian license cost?",
+            "answer": "The initial license application fee is $100. A provisional license costs $50."
+        },
+        {
+            "question": "When does the Idaho license need to be renewed?",
+            "answer": "Starting in mid-2025, Idaho dietitian licenses transition to a biennial (two-year) renewal cycle based on the licensee's birth year. The biennial renewal fee is $120."
+        },
+        {
+            "question": "Is the Dietitian Licensure Compact active in Idaho?",
+            "answer": "As of early 2026, Idaho has pending legislation (S1284) to adopt the Dietitian Licensure Compact. If enacted, it would allow eligible dietitians to practice across state lines with compact privilege."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$100",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$100"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "$50",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://dopl.idaho.gov/boe/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

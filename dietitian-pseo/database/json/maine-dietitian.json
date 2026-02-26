@@ -1,0 +1,118 @@
+{
+    "state_slug": "maine",
+    "state_name": "Maine",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO / State Police",
+        "fee": "$21.00",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://www.identogo.com/locations/maine"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Maine Licensed Dietitian Application — Requirements & Fees (2026)",
+        "description": "Apply for a Maine Licensed Dietitian credential through OPOR. $171 initial cost. Master's degree, 1,000+ hours supervised practice, and CDR exam required.",
+        "keywords": "Maine dietitian license, ME licensed dietitian requirements, Maine OPOR Board of Dietetic Practice, Maine dietitian application fee"
+    },
+    "board": {
+        "name": "Board of Licensing of Dietetic Practice",
+        "parent_dept": "Maine Office of Professional and Occupational Regulation (OPOR)",
+        "mailing_address": "35 State House Station<br>Augusta, ME 04333-0035",
+        "physical_address": "76 Northern Ave.<br>Gardiner, ME 04345",
+        "phone": "(207) 624-8626",
+        "fax": "(207) 624-8637",
+        "email": "mailto:dietitians.board@maine.gov",
+        "url": "https://www.maine.gov/pfr/professionallicensing/professions/board-licensing-dietetic-practice"
+    },
+    "quick_facts": {
+        "total_fee": "$171",
+        "fee_breakdown": "$150 license fee + $21 criminal history records check fee",
+        "renewal_fee": "$150",
+        "renewal_cycle": "Annual (by Dec 31st) + 15 CE hours",
+        "processing_time": "3 to 5 Weeks",
+        "license_duration": "1 Year"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian",
+            "description": "The standard credential to practice dietetics in Maine, overseen by the Board of Licensing of Dietetic Practice."
+        },
+        {
+            "title": "Temporary Licensed Dietitian",
+            "description": "Maine offers a temporary license for applicants awaiting the CDR examination. It requires a supervised practice plan."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Complete Education & Supervised Practice",
+            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,000 hours of board-approved supervised practice through an accredited dietitian internship."
+        },
+        {
+            "title": "Pass the CDR Examination",
+            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this."
+        },
+        {
+            "title": "Submit the Application via Maine OPOR",
+            "description": "Create an account on the Maine OPOR online portal, complete the initial application, and pay the required fees ($150 license + $21 background check)."
+        },
+        {
+            "title": "Provide Verification Documents",
+            "description": "Submit a copy of your active CDR card or ensure verification is sent directly. A criminal history records check is conducted automatically with the submission of your application and fee."
+        }
+    ],
+    "documents": [
+        {
+            "item": "CDR Registration Card",
+            "detail": "Proof of active registration with the Commission on Dietetic Registration."
+        },
+        {
+            "item": "Criminal History Records Check",
+            "detail": "Processed internally by the Board upon receipt of the $21 fee with an application."
+        },
+        {
+            "item": "Official College Transcripts",
+            "detail": "May be required if not submitting primary source verification via the CDR."
+        }
+    ],
+    "provisional_text": "Maine offers a temporary dietitian license for applicants who have met the educational and experience requirements but have not yet passed the examination. Temporary licensees must practice under the supervision of a Maine Licensed Dietitian.",
+    "reciprocity_text": "Maine provides licensure by endorsement for applicants holding a substantially equivalent license in another state or holding active registration as a Registered Dietitian with the CDR. A verification of licensure from the other state(s) must be provided.",
+    "faqs": [
+        {
+            "question": "How much does a Maine dietitian license cost?",
+            "answer": "The initial cost is $171, which includes a $150 license fee and a $21 criminal history records check fee."
+        },
+        {
+            "question": "When does the Maine license need to be renewed?",
+            "answer": "Maine dietitian licenses expire annually on December 31st. The renewal fee is $150. A $50 late fee is added if renewed after the expiration date."
+        },
+        {
+            "question": "What are the continuing education requirements for Maine?",
+            "answer": "Licensees must complete 15 hours of approved continuing education annually. At least 4 of these hours must be from approved Category 1 programs."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$150",
+        "background_check_fee": "$21",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$171"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.maine.gov/pfr/professionallicensing/professions/board-licensing-dietetic-practice",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

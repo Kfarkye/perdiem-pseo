@@ -1,0 +1,123 @@
+{
+    "state_slug": "idaho-slp",
+    "state_name": "Idaho",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Idaho SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to Idaho speech-language pathologist licensing. Bureau of Occupational Licenses fees, Praxis requirements, and telepractice rules for 2026.",
+        "keywords": "Idaho SLP license, speech-language pathologist Idaho, Idaho speech therapy license"
+    },
+    "board": {
+        "name": "Bureau of Occupational Licenses — Speech and Hearing Services",
+        "parent_dept": "Idaho Bureau of Occupational Licenses",
+        "mailing_address": "P.O. Box 83720, Boise, ID 83720-0063",
+        "physical_address": "700 W. State St., Boise, ID 83702",
+        "phone": "(208) 334-3233",
+        "fax": "(208) 334-3945",
+        "email": "mailto:ibol@ibol.idaho.gov",
+        "url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS"
+    },
+    "quick_facts": {
+        "total_fee": "$75",
+        "fee_breakdown": "$75 application and license fee",
+        "renewal_fee": "$75",
+        "renewal_cycle": "Every year",
+        "processing_time": "2 to 4 weeks",
+        "license_duration": "1 year"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "The full credential to independently practice speech-language pathology in Idaho."
+        },
+        {
+            "title": "Provisional SLP License",
+            "description": "Issued to SLP graduates completing their Clinical Fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Achieve a passing score on the Praxis Examination (test code 5331, score 162)."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "Complete 36 weeks of supervised clinical practice (1,260 hours)."
+        },
+        {
+            "title": "Submit Application",
+            "description": "Submit application with $75 fee to Bureau of Occupational Licenses."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher on test 5331."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "Criminal background check."
+        }
+    ],
+    "telepractice_text": "Idaho permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+    "provisional_text": "Idaho issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "Idaho is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Idaho through a compact privilege.",
+    "faqs": [
+        {
+            "question": "How much does an Idaho SLP license cost?",
+            "answer": "The application and license fee is $75. Idaho has among the lowest SLP licensing fees. Annual renewal is $75."
+        },
+        {
+            "question": "Is Idaho part of the ASLP Interstate Compact?",
+            "answer": "Yes. Idaho has enacted ASLP-IC legislation."
+        },
+        {
+            "question": "Does Idaho allow telepractice for SLPs?",
+            "answer": "Yes. Idaho permits telepractice for licensed SLPs and compact privilege holders."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$75",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$75"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

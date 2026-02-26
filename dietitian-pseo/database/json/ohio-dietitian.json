@@ -1,0 +1,118 @@
+{
+    "state_slug": "ohio",
+    "state_name": "Ohio",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Dietitian",
+    "credential_nomenclature": "Licensed Dietitian (LD)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Ohio Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
+        "description": "Apply for an Ohio Licensed Dietitian credential through the State Medical Board of Ohio. $228.50 application fee. Complete requirements and processing times.",
+        "keywords": "Ohio dietitian license, OH LD requirements, Medical Board of Ohio dietitian, dietitian application fees Ohio, nutritionist license Ohio"
+    },
+    "board": {
+        "name": "State Medical Board of Ohio",
+        "parent_dept": "State Medical Board of Ohio",
+        "mailing_address": "State Medical Board of Ohio<br>30 E. Broad Street, 3rd Floor<br>Columbus, OH 43215",
+        "physical_address": "30 E. Broad Street, 3rd Floor<br>Columbus, OH 43215",
+        "phone": "(614) 466-3934",
+        "fax": "(614) 728-5946",
+        "email": "mailto:license@med.ohio.gov",
+        "url": "https://med.ohio.gov/publications/dietitian"
+    },
+    "quick_facts": {
+        "total_fee": "$228.50",
+        "fee_breakdown": "$225 Application Fee + $3.50 eLicense Transaction Fee",
+        "renewal_fee": "$183.50",
+        "renewal_cycle": "Biennial (Every 2 years)",
+        "processing_time": "~2 Weeks",
+        "license_duration": "2 Years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Dietitian",
+            "description": "Standard independent credential regulated by the State Medical Board of Ohio for the practice of dietetics."
+        },
+        {
+            "title": "Limited Permit",
+            "description": "A permit for individuals who have met academic and pre-professional requirements and are awaiting examination. Costs $68.50 including transaction fees."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Satisfy Education & Supervised Practice",
+            "description": "Earn a degree (Master's level required by CDR as of 2024) from an ACEND-accredited program, and complete a minimum of 1,000 hours of monitored dietetic experience such as a Dietetic Internship (DI)."
+        },
+        {
+            "title": "Pass the Registration Examination",
+            "description": "Score a passing grade on the Commission on Dietetic Registration (CDR) national Registration Examination for Dietitians."
+        },
+        {
+            "title": "Submit Background Checks",
+            "description": "Complete fingerprinting for state (BCI) and federal (FBI) criminal records checks. Background check results must be routed directly to the Medical Board."
+        },
+        {
+            "title": "Apply via eLicense Ohio",
+            "description": "Create an account in the comprehensive eLicense portal to submit the full application, documentation, and non-refundable $228.50 fee."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official Educational Transcripts",
+            "detail": "Directly submitted transcripts denoting the awarding of your degree."
+        },
+        {
+            "item": "Verification of Registration",
+            "detail": "Proof of active status with the Commission on Dietetic Registration (CDR)."
+        },
+        {
+            "item": "Criminal Records Check",
+            "detail": "FBI and Ohio BCI background check reports transmitted directly from the fingerprinting agency to the Board."
+        }
+    ],
+    "provisional_text": "Ohio offers a Limited Permit for prospective licensees who have finished their education and internship hours but are waiting to take the CDR exam.",
+    "reciprocity_text": "Under Ohio's Universal Recognition path, out-of-state dietitians can apply for reciprocity if they have held a substantially similar, active, and good-standing license in another jurisdiction for at least one year immediately preceding the application.",
+    "faqs": [
+        {
+            "question": "How much does the Ohio Licensed Dietitian application cost?",
+            "answer": "The initial license costs $228.50 ($225 base fee plus a $3.50 transaction fee levied by the eLicense system)."
+        },
+        {
+            "question": "Which Ohio agency regulates dietitians?",
+            "answer": "Unlike many states with specialized dietetics boards, dietitians in Ohio are licensed and regulated by the State Medical Board of Ohio."
+        },
+        {
+            "question": "What continuing education is required in Ohio?",
+            "answer": "You must maintain the CDR's requirement of 75 hours per five-year cycle. Additionally, Ohio dictates that 1 hour of CE during every two-year state renewal cycle must specifically cover ethics, laws, and rules governing practice in Ohio."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "N/A",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$225",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$228.50"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://med.ohio.gov/publications/dietitian",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

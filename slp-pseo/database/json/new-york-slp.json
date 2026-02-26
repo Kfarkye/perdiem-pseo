@@ -1,0 +1,123 @@
+{
+    "state_slug": "new-york-slp",
+    "state_name": "New York",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "New York SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to New York speech-language pathologist licensing. NYSED application fees, Praxis requirements, TSSLD credential, and telepractice rules for 2026.",
+        "keywords": "New York SLP license, NYSED speech pathologist, New York speech therapy license, SLP license NY, TSSLD New York"
+    },
+    "board": {
+        "name": "State Board for Speech-Language Pathology and Audiology",
+        "parent_dept": "New York State Education Department (NYSED), Office of the Professions",
+        "mailing_address": "89 Washington Avenue, Albany, NY 12234",
+        "physical_address": "89 Washington Avenue, Albany, NY 12234",
+        "phone": "(518) 474-3817 x340",
+        "fax": "(518) 486-4846",
+        "email": "mailto:slpbd@nysed.gov",
+        "url": "http://www.op.nysed.gov/prof/slpa/"
+    },
+    "quick_facts": {
+        "total_fee": "$294",
+        "fee_breakdown": "$294 application + initial registration fee",
+        "renewal_fee": "$155",
+        "renewal_cycle": "Every 3 years",
+        "processing_time": "6 to 8 weeks",
+        "license_duration": "3 years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "The full credential to independently practice speech-language pathology in New York. Requires a master's degree, completion of 36 weeks supervised experience, and a passing Praxis score. Applicants must be at least 21 years old."
+        },
+        {
+            "title": "Limited License (SLP)",
+            "description": "Issued to SLP graduates completing their supervised professional experience. Allows practice under supervision while fulfilling the 36-week experience requirement. Fee: $70."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "Complete a master's degree or equivalent in speech-language pathology from a CAA-accredited program. Must include coursework in human communication processes and professional practice, plus 400 hours of supervised clinical practicum."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331, score 162). Send scores directly to the board using agency code R7747."
+        },
+        {
+            "title": "Complete Supervised Professional Experience",
+            "description": "Complete 36 weeks of supervised professional experience after degree completion. May be completed full-time or part-time within a four-year window. A Limited License ($70) is available for this period."
+        },
+        {
+            "title": "Submit Application to NYSED",
+            "description": "Submit Form 1 (Application for Licensure), Form 2 (Certification of Professional Education), and Forms 4A/4B (Supervised Experience) with the $294 fee. Must also complete mandated training in child abuse identification and harassment prevention."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts (Form 2)",
+            "detail": "Certification of Professional Education from a CAA-accredited program. May incur an additional institutional fee."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher on test 5331. Sent directly to NYSED using agency code R7747."
+        },
+        {
+            "item": "Supervised experience forms (4A/4B)",
+            "detail": "Verification of 36 weeks of supervised professional experience signed by supervisor."
+        },
+        {
+            "item": "Child abuse and harassment training",
+            "detail": "Completion certificates for mandated New York coursework in child abuse identification and harassment prevention."
+        }
+    ],
+    "telepractice_text": "New York permits telepractice for licensed SLPs. The practitioner must hold a valid New York SLP license to provide services to clients located in New York State. New York does not currently participate in the ASLP Interstate Compact, so out-of-state SLPs must obtain New York licensure before providing telepractice services to New York residents.",
+    "provisional_text": "New York issues a Limited License for SLP graduates completing their supervised professional experience. The Limited License costs $70 and allows practice under supervision while fulfilling the 36-week experience requirement. The supervising SLP must hold a current New York license.",
+    "reciprocity_text": "New York does not have formal reciprocity agreements or participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full New York licensure and meet all state-specific requirements. ASHA CCC-SLP holders must still submit all required forms and documentation to NYSED.",
+    "faqs": [
+        {
+            "question": "How much does a New York SLP license cost?",
+            "answer": "The total initial licensure and registration fee is $294, submitted with Form 1 to NYSED. A Limited License for supervised practice costs an additional $70. Triennial renewal is $155."
+        },
+        {
+            "question": "Do I need a TSSLD to work in New York schools?",
+            "answer": "Yes. To work as an SLP in a New York school setting, you need the Teacher of Students with Speech and Language Disability (TSSLD) credential in addition to your state SLP license. The TSSLD is issued by NYSED and has separate application requirements."
+        },
+        {
+            "question": "How long does the New York SLP application take?",
+            "answer": "Processing time is approximately six to eight weeks once all documents are received by NYSED. Incomplete applications will cause significant delays. Submit all forms and fees together to avoid processing issues."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$294",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$294"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "$70",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "http://www.op.nysed.gov/prof/slpa/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

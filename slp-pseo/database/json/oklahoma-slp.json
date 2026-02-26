@@ -1,0 +1,123 @@
+{
+    "state_slug": "oklahoma-slp",
+    "state_name": "Oklahoma",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Oklahoma SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to Oklahoma speech-language pathologist licensing.",
+        "keywords": "Oklahoma SLP license, speech-language pathologist Oklahoma"
+    },
+    "board": {
+        "name": "Board of Examiners for Speech-Language Pathology and Audiology",
+        "parent_dept": "Oklahoma Board of Examiners for SLP and Audiology",
+        "mailing_address": "3700 N. Classen Blvd., Suite 248, Oklahoma City, OK 73118",
+        "physical_address": "3700 N. Classen Blvd., Suite 248, Oklahoma City, OK 73118",
+        "phone": "(405) 524-4955",
+        "fax": "(405) 524-4957",
+        "email": "mailto:obespa@okbespa.org",
+        "url": "https://www.okbespa.org/"
+    },
+    "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "$50 application + $50 license fee",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every year",
+        "processing_time": "2 to 4 weeks",
+        "license_duration": "1 year"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "Full credential for independent SLP practice in Oklahoma."
+        },
+        {
+            "title": "Provisional SLP License",
+            "description": "For SLP graduates completing their Clinical Fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "From a CAA-accredited program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Test code 5331, score 162."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "36 weeks supervised clinical practice."
+        },
+        {
+            "title": "Submit Application",
+            "description": "Submit with fees to the Board."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "OSBI background check."
+        }
+    ],
+    "telepractice_text": "Oklahoma permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+    "provisional_text": "Oklahoma issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "Oklahoma is a member of the ASLP Interstate Compact.",
+    "faqs": [
+        {
+            "question": "How much does an Oklahoma SLP license cost?",
+            "answer": "$100 initial. $50 annual renewal."
+        },
+        {
+            "question": "Is Oklahoma part of the ASLP Interstate Compact?",
+            "answer": "Yes."
+        },
+        {
+            "question": "Does Oklahoma allow telepractice for SLPs?",
+            "answer": "Yes."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$50",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$100"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://www.okbespa.org/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

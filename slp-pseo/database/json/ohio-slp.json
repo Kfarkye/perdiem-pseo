@@ -1,0 +1,123 @@
+{
+    "state_slug": "ohio-slp",
+    "state_name": "Ohio",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Ohio SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to Ohio speech-language pathologist licensing. SHPB application fees, Praxis requirements, conditional license, and telepractice rules for 2026.",
+        "keywords": "Ohio SLP license, SHPB speech pathologist, Ohio speech therapy license, SLP license OH, conditional SLP Ohio"
+    },
+    "board": {
+        "name": "Ohio Board of Speech-Language Pathology and Audiology",
+        "parent_dept": "Ohio Speech and Hearing Professionals Board (SHPB)",
+        "mailing_address": "77 S. High St., Suite 1659, Columbus, OH 43215",
+        "physical_address": "77 S. High St., Suite 1659, Columbus, OH 43215",
+        "phone": "(614) 466-3145",
+        "fax": "(614) 995-2286",
+        "email": "mailto:board@shp.ohio.gov",
+        "url": "https://shp.ohio.gov/"
+    },
+    "quick_facts": {
+        "total_fee": "$200",
+        "fee_breakdown": "$200 initial SLP license application",
+        "renewal_fee": "$120",
+        "renewal_cycle": "Every 2 years (December 31, even years)",
+        "processing_time": "4 to 6 weeks",
+        "license_duration": "2 years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "The full credential to independently practice speech-language pathology in Ohio. Requires a master's degree, completed clinical fellowship, passing Praxis score, and background check."
+        },
+        {
+            "title": "Conditional SLP License",
+            "description": "Issued to SLP graduates completing their clinical fellowship (postgraduate professional experience). Application and license fee: $210. Allows supervised practice for 9 months full-time or 18 months part-time."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "Complete a master's degree from a CAA-accredited program. Must include 375 hours of supervised clinical practicum, including 25 hours of clinical observation. At least 250 hours must be at the graduate level."
+        },
+        {
+            "title": "Obtain a Conditional SLP License",
+            "description": "Apply for the Conditional SLP License ($210) to begin your clinical fellowship. Complete 9 months full-time or 18 months part-time of supervised clinical practice under an experienced SLP."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331). The current passing score is 162. Exam fee: $165."
+        },
+        {
+            "title": "Apply for Full SLP Licensure",
+            "description": "Submit the full SLP license application ($200) via the eLicense Ohio portal. Include official transcripts, Praxis scores, clinical fellowship verification, headshot photograph, and background check results."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited speech-language pathology program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher on test 5331."
+        },
+        {
+            "item": "Clinical fellowship verification",
+            "detail": "Documentation of completed 9-month full-time or 18-month part-time supervised professional experience."
+        },
+        {
+            "item": "Background check and headshot",
+            "detail": "Criminal background check and passport-style headshot photograph."
+        }
+    ],
+    "telepractice_text": "Ohio permits telepractice for licensed SLPs. The practitioner must hold a valid Ohio SLP license to provide services to clients located in Ohio. Telepractice services must comply with Ohio's telehealth regulations and meet the same standard of care as in-person services.",
+    "provisional_text": "Ohio issues a Conditional SLP License for graduates completing their clinical fellowship. The conditional license costs $210 and allows supervised practice for 9 months full-time or 18 months part-time. The supervising SLP must hold a current Ohio license and meet the Board's supervision requirements.",
+    "reciprocity_text": "Ohio does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Ohio license and meet all state-specific requirements. Applicants holding the ASHA CCC-SLP may qualify for the endorsement pathway. CE hours are tracked through CE Broker.",
+    "faqs": [
+        {
+            "question": "How much does an Ohio SLP license cost?",
+            "answer": "The initial SLP license application fee is $200, plus an additional $3.50 eLicense Ohio maintenance fee. A Conditional SLP License for the clinical fellowship costs $210. Biennial renewal is $120."
+        },
+        {
+            "question": "How many CE hours are required for Ohio SLP renewal?",
+            "answer": "Ohio requires 20 hours of continuing education every two years, with at least 2 hours in ethics and 10 hours directly related to clinical speech-language pathology practice. CE hours for the first renewal period are not required."
+        },
+        {
+            "question": "When does my Ohio SLP license expire?",
+            "answer": "Ohio SLP licenses for the 2025-2026 biennium are valid until December 31, 2026. Renewal notifications are sent via email starting October of the expiration year."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$200",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$200"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "$210",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://shp.ohio.gov/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}

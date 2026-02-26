@@ -1,0 +1,123 @@
+{
+    "state_slug": "delaware-slp",
+    "state_name": "Delaware",
+    "fingerprints": {
+        "required": true,
+        "method_in_state": "LiveScan (IdentoGO)",
+        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+        "vendor": "IdentoGO (IDEMIA)",
+        "fee": "$35-$50 (varies by state)",
+        "delay_out_of_state_weeks": "2-4",
+        "vendor_url": "https://uenroll.identogo.com/"
+    },
+    "profession_name": "Speech-Language Pathologist",
+    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+    "last_updated": "2026-02-25",
+    "seo": {
+        "title": "Delaware SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
+        "description": "Complete guide to Delaware speech-language pathologist licensing. Board application fees, Praxis requirements, and telepractice rules for 2026.",
+        "keywords": "Delaware SLP license, speech-language pathologist Delaware, Delaware speech therapy license"
+    },
+    "board": {
+        "name": "Board of Speech/Language Pathologists, Audiologists and Hearing Aid Dispensers",
+        "parent_dept": "Delaware Division of Professional Regulation",
+        "mailing_address": "861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
+        "physical_address": "861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
+        "phone": "(302) 744-4500",
+        "fax": "(302) 739-2711",
+        "email": "mailto:customerservice.dpr@delaware.gov",
+        "url": "https://dpr.delaware.gov/boards/speechpath/"
+    },
+    "quick_facts": {
+        "total_fee": "$141",
+        "fee_breakdown": "$91 application + $50 license fee",
+        "renewal_fee": "$111",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "4 to 6 weeks",
+        "license_duration": "2 years"
+    },
+    "license_types": [
+        {
+            "title": "Licensed Speech-Language Pathologist",
+            "description": "The full credential to independently practice speech-language pathology in Delaware."
+        },
+        {
+            "title": "Provisional SLP License",
+            "description": "Issued to SLP graduates completing their Clinical Fellowship."
+        }
+    ],
+    "steps": [
+        {
+            "title": "Earn a Master's Degree in SLP",
+            "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
+        },
+        {
+            "title": "Pass the Praxis Examination",
+            "description": "Achieve a passing score on the Praxis Examination (test code 5331, score 162)."
+        },
+        {
+            "title": "Complete Clinical Fellowship",
+            "description": "Complete 36 weeks of supervised clinical practice (1,260 hours)."
+        },
+        {
+            "title": "Submit Application",
+            "description": "Submit application with fees to the Delaware Division of Professional Regulation."
+        }
+    ],
+    "documents": [
+        {
+            "item": "Official graduate transcripts",
+            "detail": "From a CAA-accredited program."
+        },
+        {
+            "item": "Praxis exam score report",
+            "detail": "Score of 162 or higher on test 5331."
+        },
+        {
+            "item": "Clinical Fellowship verification",
+            "detail": "CF completion documentation."
+        },
+        {
+            "item": "Background check",
+            "detail": "Criminal background check."
+        }
+    ],
+    "telepractice_text": "Delaware permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+    "provisional_text": "Delaware issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+    "reciprocity_text": "Delaware is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Delaware through a compact privilege.",
+    "faqs": [
+        {
+            "question": "How much does a Delaware SLP license cost?",
+            "answer": "The total initial cost is approximately $141. Biennial renewal is $111."
+        },
+        {
+            "question": "Is Delaware part of the ASLP Interstate Compact?",
+            "answer": "Yes. Delaware has enacted ASLP-IC legislation."
+        },
+        {
+            "question": "Does Delaware allow telepractice for SLPs?",
+            "answer": "Yes. Delaware permits telepractice for licensed SLPs and compact privilege holders."
+        }
+    ],
+    "compact": {
+        "is_compact_member": false,
+        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
+        "compact_privilege_fee": "N/A"
+    },
+    "fees_endorsement": {
+        "app_fee": "$91",
+        "background_check_fee": "$0 (included in application)",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$141"
+    },
+    "temp_license": {
+        "available": true,
+        "fee": "See board",
+        "processing_time": "See board",
+        "duration": "See board"
+    },
+    "last_verified_date": "2026-02-25",
+    "board_source_url": "https://dpr.delaware.gov/boards/speechpath/",
+    "license_pathway": "endorsement",
+    "profession_overrides": {}
+}
