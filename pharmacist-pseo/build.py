@@ -1,5 +1,5 @@
 """
-Programmatic SEO Compiler — Dietitian State Licensing Reference
+Programmatic SEO Compiler — Pharmacist State Licensing Reference
 Merges JSON data + Jinja2 template → flat HTML in dist/
 
 Key feature: Tier 2 hand-crafted overrides in content/ always win
@@ -270,7 +270,7 @@ index_html = f"""<!DOCTYPE html>
 </nav>
 
 <header class="hub-header">
-  <h1>Dietitian License<br><em>State Directory</em></h1>
+  <h1>Pharmacist License<br><em>State Directory</em></h1>
   <p>Find your state’s 2026 requirements, fees, and board contacts.</p>
 </header>
 <main id="main-content">
