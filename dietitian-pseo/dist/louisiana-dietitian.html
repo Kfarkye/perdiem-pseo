@@ -147,12 +147,12 @@
     <article>
 
       <div id="quick-facts" class="quick-facts" role="region" aria-label="Key facts at a glance">
-        <div class="quick-fact">
+        <div class="quick-fact reveal">
           <div class="quick-fact-label">Total Initial Fee</div>
           <div class="quick-fact-value">$100</div>
           <div class="quick-fact-note">~$100 application fee (exact amount set by LBEDN; fingerprint fees additional)</div>
         </div>
-        <div class="quick-fact">
+        <div class="quick-fact reveal">
           <div class="quick-fact-label">Renewal</div>
           <div class="quick-fact-value">$83</div>
           <div class="quick-fact-note">Annual (by June 30) + 15 CE hours per year</div>
@@ -172,7 +172,7 @@
       <section id="contact">
         <div class="section-label">Board Contact</div>
         <h2>Louisiana Board of Examiners in Dietetics and Nutrition (LBEDN)</h2>
-        <div class="contact-grid">
+        <div class="contact-grid reveal">
           <address class="contact-card" style="font-style:normal">
             <div class="contact-card-label">Mailing Address</div>
             <p>18435 Highland Road, Suite B<br>Baton Rouge, LA 70809</p>
@@ -196,7 +196,7 @@
       <section id="license-types">
         <div class="section-label">Credential Categories</div>
         <h2>Louisiana Dietitian License Types</h2>
-        <div class="req-grid">
+        <div class="req-grid reveal">
           
           <div class="req-cell">
             <h3>Licensed Dietitian-Nutritionist (LDN)</h3>
@@ -209,7 +209,7 @@
       <section id="how-to-apply">
         <div class="section-label">Application Process</div>
         <h2>How to Apply for a Louisiana Licensed Dietitian-Nutritionist (LDN)</h2>
-        <div class="steps">
+        <div class="steps reveal">
           
           <div class="step">
             <h3>Complete Education & Supervised Practice</h3>
@@ -237,7 +237,7 @@
       <section id="documents">
         <div class="section-label">Required Documents</div>
         <h2>Application Document Checklist</h2>
-        <ul class="checklist">
+        <ul class="checklist reveal">
           
           <li>CDR Registration Verification<span class="detail">Proof of current, active registration with the Commission on Dietetic Registration.</span></li>
           
@@ -325,13 +325,31 @@
   </footer>
 
   <script>
-    // Back-to-top button visibility
+    // Back-to-top
     (function () {
       var btn = document.querySelector('.back-to-top');
       if (!btn) return;
       window.addEventListener('scroll', function () {
         btn.classList.toggle('visible', window.scrollY > 600);
       }, { passive: true });
+    })();
+
+    // Intersection Observer — earned entrance animations
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!els.length || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function (el) { io.observe(el); });
     })();
   </script>
 </body>

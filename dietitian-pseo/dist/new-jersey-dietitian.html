@@ -147,12 +147,12 @@
     <article>
 
       <div id="quick-facts" class="quick-facts" role="region" aria-label="Key facts at a glance">
-        <div class="quick-fact">
+        <div class="quick-fact reveal">
           <div class="quick-fact-label">Total Initial Fee</div>
           <div class="quick-fact-value">TBD (Regulations Pending)</div>
           <div class="quick-fact-note">State fees have not yet been finalized. CDR exam fee is $200 nationally.</div>
         </div>
-        <div class="quick-fact">
+        <div class="quick-fact reveal">
           <div class="quick-fact-label">Renewal</div>
           <div class="quick-fact-value">TBD</div>
           <div class="quick-fact-note">TBD (Regulations Pending)</div>
@@ -172,7 +172,7 @@
       <section id="contact">
         <div class="section-label">Board Contact</div>
         <h2>State Board of Dietetics and Nutrition</h2>
-        <div class="contact-grid">
+        <div class="contact-grid reveal">
           <address class="contact-card" style="font-style:normal">
             <div class="contact-card-label">Mailing Address</div>
             <p>PO Box 45012<br>Newark, NJ 07101</p>
@@ -196,7 +196,7 @@
       <section id="license-types">
         <div class="section-label">Credential Categories</div>
         <h2>New Jersey Dietitian License Types</h2>
-        <div class="req-grid">
+        <div class="req-grid reveal">
           
           <div class="req-cell">
             <h3>Licensed Dietitian/Nutritionist (Pending)</h3>
@@ -209,7 +209,7 @@
       <section id="how-to-apply">
         <div class="section-label">Application Process</div>
         <h2>How to Apply for a New Jersey Licensed Dietitian/Nutritionist — Regulations Pending</h2>
-        <div class="steps">
+        <div class="steps reveal">
           
           <div class="step">
             <h3>Complete Education & Supervised Practice</h3>
@@ -237,7 +237,7 @@
       <section id="documents">
         <div class="section-label">Required Documents</div>
         <h2>Application Document Checklist</h2>
-        <ul class="checklist">
+        <ul class="checklist reveal">
           
           <li>CDR Registration Card<span class="detail">Active CDR registration as an RD/RDN will be the primary qualifying credential.</span></li>
           
@@ -321,13 +321,31 @@
   </footer>
 
   <script>
-    // Back-to-top button visibility
+    // Back-to-top
     (function () {
       var btn = document.querySelector('.back-to-top');
       if (!btn) return;
       window.addEventListener('scroll', function () {
         btn.classList.toggle('visible', window.scrollY > 600);
       }, { passive: true });
+    })();
+
+    // Intersection Observer — earned entrance animations
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!els.length || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function (el) { io.observe(el); });
     })();
   </script>
 </body>
