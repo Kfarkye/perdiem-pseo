@@ -28,10 +28,9 @@
 
 /* ── Filter Toolbar — contained card ── */
 .filter-toolbar { max-width: 1000px; margin: -2.5rem auto var(--space-6); padding: var(--space-5) var(--space-6); position: relative; z-index: 2; background: #fff; border: var(--border-subtle); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
-.filter-search { width: 100%; padding: .8rem 1rem .8rem 2.6rem; border: var(--border-default); border-radius: var(--radius-md); background: var(--sand-50); font-family: var(--sans); font-size: .86rem; color: var(--sand-900); outline: none; box-shadow: var(--shadow-xs); transition: border-color 120ms cubic-bezier(.2,0,0,1), box-shadow 180ms cubic-bezier(.2,0,0,1); }
+.filter-search { width: 100%; padding: .8rem 1rem; border: var(--border-default); border-radius: var(--radius-md); background: var(--sand-50); font-family: var(--sans); font-size: .86rem; color: var(--sand-900); outline: none; box-shadow: var(--shadow-xs); transition: border-color 120ms cubic-bezier(.2,0,0,1), box-shadow 180ms cubic-bezier(.2,0,0,1); }
 .filter-search:focus { border-color: var(--teal); box-shadow: 0 0 0 3px hsla(180,50%,26%,.1), var(--shadow-xs); }
 .filter-search-wrap { position: relative; }
-.filter-search-wrap svg { position: absolute; left: .85rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--sand-400); pointer-events: none; }
 .filter-row { display: flex; align-items: center; gap: .75rem; margin-top: var(--space-3); }
 .filter-label { font-family: var(--sans); font-size: .62rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--sand-400); min-width: 56px; flex-shrink: 0; }
 .filter-pills { display: flex; flex-wrap: wrap; gap: var(--space-2); }
@@ -86,25 +85,24 @@
 </nav>
 
 <header class="hub-header">
-  <span class="overline">Board-Sourced Licensing Intelligence</span>
+  <span class="overline">Built for Travel Clinicians</span>
   <h1>Audiologist License<br><em>State Directory</em></h1>
-  <p>Stop decoding state board websites. Find your state's 2026 audiology licensing requirements, fees, board contacts, and step-by-step application roadmaps.</p>
+  <p>State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.</p>
   <div class="freshness">
-    <span>&#128197; Updated weekly</span>
+    <span>Updated weekly</span>
     <span>&middot;</span>
     <span>Last verified: <strong>February 2026</strong></span>
     <span>&middot;</span>
-    <span>&#127963; Board sources cited per state</span>
+    <span>Linked directly to official state boards</span>
   </div>
 </header>
 <main id="main-content">
   <div class="filter-toolbar">
     <div class="filter-search-wrap">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
-      <input type="text" class="filter-search" id="stateSearch" placeholder="Search by state name…" autocomplete="off" />
+      <input type="text" class="filter-search" id="stateSearch" placeholder="Search for your next state..." autocomplete="off" />
     </div>
     <div class="filter-row">
-      <span class="filter-label">Timeline</span>
+      <span class="filter-label">Processing Time</span>
       <div class="filter-pills" data-group="time">
         <button class="filter-pill" data-filter="fastest">≤2 Weeks</button>
         <button class="filter-pill" data-filter="2-4wk">2–4 Weeks</button>
@@ -113,7 +111,7 @@
       </div>
     </div>
     <div class="filter-row">
-      <span class="filter-label">Fee</span>
+      <span class="filter-label">Total Cost</span>
       <div class="filter-pills" data-group="fee">
         <button class="filter-pill" data-filter="no-fee">No Fee</button>
         <button class="filter-pill" data-filter="under-100">Under $100</button>
@@ -125,8 +123,7 @@
   </div>
 
   <div class="scope-block">
-    <div class="scope-item"><span class="scope-icon">✅</span> <strong>What this is:</strong> We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.</div>
-    <div class="scope-item"><span class="scope-icon">🚫</span> <strong>Not a filing service.</strong> We don't file your application for you.</div>
+    <div class="scope-item"><strong>What this is:</strong> We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.</div>
   </div>
 
   <div class="hub-grid" id="hubGrid">

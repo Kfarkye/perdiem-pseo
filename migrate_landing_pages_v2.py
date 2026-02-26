@@ -27,7 +27,7 @@ VERTICALS = {
         "title_abbr": "RD/RDN",
         "hero_h1_line1": "Dietitian License",
         "hero_h1_line2": "State Directory",
-        "hero_sub": "Stop decoding state board websites. Find your state\\'s 2026 dietitian licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
         "meta_title": "Dietitian License Requirements by State &mdash; Fees, Board Contacts &amp; How to Apply (2026)",
         "meta_desc": "Complete 2026 guide to dietitian and nutritionist licensing requirements, fees, and board contacts for all 50 US states and DC.",
         "meta_kw": "dietitian license by state, dietitian license requirements, nutritionist license requirements, state dietitian board, dietitian license cost, how to become a dietitian",
@@ -35,8 +35,7 @@ VERTICALS = {
         "og_desc": "Compare dietitian licensing fees, board contacts, and application steps across all 50 states.",
         "footer_tagline": "Independent, YMYL-compliant licensing guides for dietitians and nutritionists across the United States.",
         "disclaimer_entity": "any state or federal dietetics licensing board",
-        "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-        "boundaries_what_isnt": "We don\\'t file your application for you.",
+        "boundaries_what_is": "We don\\'t file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.",
     },
     "ot-pseo": {
         "slug_suffix": "ot",
@@ -45,7 +44,7 @@ VERTICALS = {
         "title_abbr": "OT/OTR",
         "hero_h1_line1": "OT License",
         "hero_h1_line2": "State Directory",
-        "hero_sub": "Stop decoding state board websites. Find your state\\'s 2026 OT/OTR licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
         "meta_title": "OT License Requirements by State &mdash; Fees, Board Contacts &amp; How to Apply (2026)",
         "meta_desc": "Complete 2026 guide to occupational therapist (OT/OTR) licensing requirements, fees, and board contacts for all 50 US states and DC.",
         "meta_kw": "OT license by state, occupational therapy license requirements, OTR license requirements, state occupational therapy board, OT license cost, occupational therapist licensure",
@@ -53,8 +52,7 @@ VERTICALS = {
         "og_desc": "Compare OT licensing fees, board contacts, and application steps across all 50 states.",
         "footer_tagline": "Independent, YMYL-compliant licensing guides for occupational therapists (OT/OTR) across the United States.",
         "disclaimer_entity": "the NBCOT, ACOTE, or any state or federal licensing board",
-        "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-        "boundaries_what_isnt": "We don\\'t file your application for you.",
+        "boundaries_what_is": "We don\\'t file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.",
     },
     "pt-pseo": {
         "slug_suffix": "pt",
@@ -63,7 +61,7 @@ VERTICALS = {
         "title_abbr": "PT/DPT",
         "hero_h1_line1": "PT License",
         "hero_h1_line2": "State Directory",
-        "hero_sub": "Stop decoding state board websites. Find your state\\'s 2026 physical therapy licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
         "meta_title": "Physical Therapist License Requirements by State &mdash; Fees, Board Contacts &amp; How to Apply (2026)",
         "meta_desc": "Complete 2026 guide to physical therapist (PT) licensing requirements, fees, and board contacts for all 50 US states and DC.",
         "meta_kw": "PT license by state, physical therapy license requirements, physical therapist licensure, state PT board, PT license cost, how to become a physical therapist",
@@ -71,8 +69,7 @@ VERTICALS = {
         "og_desc": "Compare PT licensing fees, board contacts, and application steps across all 50 states.",
         "footer_tagline": "Independent, YMYL-compliant licensing guides for physical therapists across the United States.",
         "disclaimer_entity": "the FSBPT, CAPTE, or any state or federal licensing board",
-        "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-        "boundaries_what_isnt": "We don\\'t file your application for you.",
+        "boundaries_what_is": "We don\\'t file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.",
     },
     "rrt-pseo": {
         "slug_suffix": "rrt",
@@ -81,7 +78,7 @@ VERTICALS = {
         "title_abbr": "RRT/CRT",
         "hero_h1_line1": "RRT License",
         "hero_h1_line2": "State Directory",
-        "hero_sub": "Stop decoding state board websites. Find your state\\'s 2026 respiratory therapy licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
         "meta_title": "Respiratory Therapist License Requirements by State &mdash; Fees, Board Contacts &amp; How to Apply (2026)",
         "meta_desc": "Complete 2026 guide to respiratory therapist (RRT) licensing requirements, fees, and board contacts for all 50 US states and DC.",
         "meta_kw": "RRT license by state, respiratory therapy license requirements, respiratory therapist licensure, state RT board, RRT license cost, how to become a respiratory therapist",
@@ -89,8 +86,7 @@ VERTICALS = {
         "og_desc": "Compare respiratory therapist licensing fees, board contacts, and application steps across all 50 states.",
         "footer_tagline": "Independent, YMYL-compliant licensing guides for respiratory therapists across the United States.",
         "disclaimer_entity": "the NBRC, CoARC, or any state or federal licensing board",
-        "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-        "boundaries_what_isnt": "We don\\'t file your application for you.",
+        "boundaries_what_is": "We don\\'t file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.",
     },
     "slp-pseo": {
         "slug_suffix": "slp",
@@ -99,7 +95,7 @@ VERTICALS = {
         "title_abbr": "SLP/CCC-SLP",
         "hero_h1_line1": "SLP License",
         "hero_h1_line2": "State Directory",
-        "hero_sub": "Stop decoding state board websites. Find your state\\'s 2026 SLP licensing requirements, telepractice rules, board contacts, and step-by-step application roadmaps.",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
         "meta_title": "SLP License Requirements by State &mdash; Fees, Telepractice Rules &amp; How to Apply (2026)",
         "meta_desc": "Complete 2026 guide to speech-language pathologist (SLP) licensing requirements, telepractice rules, fees, and board contacts for all 50 US states and DC.",
         "meta_kw": "SLP license by state, speech-language pathology license requirements, SLP telepractice rules, state SLP board, SLP license cost, how to become an SLP",
@@ -107,8 +103,7 @@ VERTICALS = {
         "og_desc": "Compare SLP licensing fees, telepractice rules, and application steps across all 50 states.",
         "footer_tagline": "Independent, YMYL-compliant licensing guides for speech-language pathologists across the United States.",
         "disclaimer_entity": "ASHA, CAA, or any state or federal licensing board",
-        "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-        "boundaries_what_isnt": "We don\\'t file your application for you.",
+        "boundaries_what_is": "We don\\'t file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.",
     },
     "aud-pseo": {
         "slug_suffix": "aud",
@@ -117,7 +112,7 @@ VERTICALS = {
         "title_abbr": "AuD",
         "hero_h1_line1": "Audiologist License",
         "hero_h1_line2": "State Directory",
-        "hero_sub": "Stop decoding state board websites. Find your state\\'s 2026 audiology licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
         "meta_title": "Audiologist License Requirements by State &mdash; Fees, Board Contacts &amp; How to Apply (2026)",
         "meta_desc": "Complete 2026 guide to audiologist (AuD) licensing requirements, fees, and board contacts for all 50 US states and DC.",
         "meta_kw": "audiologist license by state, audiology license requirements, AuD licensure, state audiology board, audiologist license cost, how to become an audiologist",
@@ -125,8 +120,7 @@ VERTICALS = {
         "og_desc": "Compare audiologist licensing fees, board contacts, and application steps across all 50 states.",
         "footer_tagline": "Independent, YMYL-compliant licensing guides for audiologists across the United States.",
         "disclaimer_entity": "ASHA, AAA, or any state or federal licensing board",
-        "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-        "boundaries_what_isnt": "We don\\'t file your application for you.",
+        "boundaries_what_is": "We don\\'t file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.",
     },
     "pharm-pseo": {
         "slug_suffix": "pharm",
@@ -135,7 +129,7 @@ VERTICALS = {
         "title_abbr": "CPhT",
         "hero_h1_line1": "Pharmacy Tech License",
         "hero_h1_line2": "State Directory",
-        "hero_sub": "Stop decoding state board websites. Find your state\\'s 2026 pharmacy technician licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
         "meta_title": "Pharmacy Technician License Requirements by State &mdash; Fees, Board Contacts &amp; How to Apply (2026)",
         "meta_desc": "Complete 2026 guide to pharmacy technician licensing requirements, fees, and board contacts for all 50 US states and DC.",
         "meta_kw": "pharmacy technician license by state, pharmacy tech license requirements, CPhT licensure, state board of pharmacy, pharmacy tech license cost",
@@ -143,8 +137,7 @@ VERTICALS = {
         "og_desc": "Compare pharmacy technician licensing fees, board contacts, and application steps across all 50 states.",
         "footer_tagline": "Independent, YMYL-compliant licensing guides for pharmacy technicians across the United States.",
         "disclaimer_entity": "the PTCB, any state board of pharmacy, or any federal agency",
-        "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-        "boundaries_what_isnt": "We don\\'t file your application for you.",
+        "boundaries_what_is": "We don\\'t file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.",
     },
     "pharmacist-pseo": {
         "slug_suffix": "pharmacist",
@@ -153,7 +146,7 @@ VERTICALS = {
         "title_abbr": "RPh/PharmD",
         "hero_h1_line1": "Pharmacist License",
         "hero_h1_line2": "State Directory",
-        "hero_sub": "Stop decoding state board websites. Find your state\\'s 2026 pharmacist licensing requirements, fees, board contacts, and step-by-step application roadmaps.",
+        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
         "meta_title": "Pharmacist License Requirements by State &mdash; Fees, Board Contacts &amp; How to Apply (2026)",
         "meta_desc": "Complete 2026 guide to pharmacist (RPh) licensing requirements, fees, and board contacts for all 50 US states and DC.",
         "meta_kw": "pharmacist license by state, pharmacist license requirements, RPh licensure, state board of pharmacy, pharmacist license cost, NAPLEX requirements",
@@ -161,8 +154,7 @@ VERTICALS = {
         "og_desc": "Compare pharmacist licensing fees, board contacts, and application steps across all 50 states.",
         "footer_tagline": "Independent, YMYL-compliant licensing guides for pharmacists across the United States.",
         "disclaimer_entity": "the NABP, ACPE, any state board of pharmacy, or any federal agency",
-        "boundaries_what_is": "We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.",
-        "boundaries_what_isnt": "We don\\'t file your application for you.",
+        "boundaries_what_is": "We don\\'t file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.",
     },
 }
 
@@ -200,10 +192,9 @@ def get_v2_index_template(v):
 
 /* ── Filter Toolbar — contained card ── */
 .filter-toolbar {{{{ max-width: 1000px; margin: -2.5rem auto var(--space-6); padding: var(--space-5) var(--space-6); position: relative; z-index: 2; background: #fff; border: var(--border-subtle); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }}}}
-.filter-search {{{{ width: 100%; padding: .8rem 1rem .8rem 2.6rem; border: var(--border-default); border-radius: var(--radius-md); background: var(--sand-50); font-family: var(--sans); font-size: .86rem; color: var(--sand-900); outline: none; box-shadow: var(--shadow-xs); transition: border-color 120ms cubic-bezier(.2,0,0,1), box-shadow 180ms cubic-bezier(.2,0,0,1); }}}}
+.filter-search {{{{ width: 100%; padding: .8rem 1rem; border: var(--border-default); border-radius: var(--radius-md); background: var(--sand-50); font-family: var(--sans); font-size: .86rem; color: var(--sand-900); outline: none; box-shadow: var(--shadow-xs); transition: border-color 120ms cubic-bezier(.2,0,0,1), box-shadow 180ms cubic-bezier(.2,0,0,1); }}}}
 .filter-search:focus {{{{ border-color: var(--teal); box-shadow: 0 0 0 3px hsla(180,50%,26%,.1), var(--shadow-xs); }}}}
 .filter-search-wrap {{{{ position: relative; }}}}
-.filter-search-wrap svg {{{{ position: absolute; left: .85rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--sand-400); pointer-events: none; }}}}
 .filter-row {{{{ display: flex; align-items: center; gap: .75rem; margin-top: var(--space-3); }}}}
 .filter-label {{{{ font-family: var(--sans); font-size: .62rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--sand-400); min-width: 56px; flex-shrink: 0; }}}}
 .filter-pills {{{{ display: flex; flex-wrap: wrap; gap: var(--space-2); }}}}
@@ -258,25 +249,24 @@ def get_v2_index_template(v):
 </nav>
 
 <header class="hub-header">
-  <span class="overline">Board-Sourced Licensing Intelligence</span>
+  <span class="overline">Built for Travel Clinicians</span>
   <h1>{v["hero_h1_line1"]}<br><em>{v["hero_h1_line2"]}</em></h1>
   <p>{v["hero_sub"]}</p>
   <div class="freshness">
-    <span>&#128197; Updated weekly</span>
+    <span>Updated weekly</span>
     <span>&middot;</span>
     <span>Last verified: <strong>February 2026</strong></span>
     <span>&middot;</span>
-    <span>&#127963; Board sources cited per state</span>
+    <span>Linked directly to official state boards</span>
   </div>
 </header>
 <main id="main-content">
   <div class="filter-toolbar">
     <div class="filter-search-wrap">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
-      <input type="text" class="filter-search" id="stateSearch" placeholder="Search by state name\\u2026" autocomplete="off" />
+      <input type="text" class="filter-search" id="stateSearch" placeholder="Search for your next state..." autocomplete="off" />
     </div>
     <div class="filter-row">
-      <span class="filter-label">Timeline</span>
+      <span class="filter-label">Processing Time</span>
       <div class="filter-pills" data-group="time">
         <button class="filter-pill" data-filter="fastest">\\u22642 Weeks</button>
         <button class="filter-pill" data-filter="2-4wk">2\\u20134 Weeks</button>
@@ -285,7 +275,7 @@ def get_v2_index_template(v):
       </div>
     </div>
     <div class="filter-row">
-      <span class="filter-label">Fee</span>
+      <span class="filter-label">Total Cost</span>
       <div class="filter-pills" data-group="fee">
         <button class="filter-pill" data-filter="no-fee">No Fee</button>
         <button class="filter-pill" data-filter="under-100">Under $100</button>
@@ -297,8 +287,7 @@ def get_v2_index_template(v):
   </div>
 
   <div class="scope-block">
-    <div class="scope-item"><span class="scope-icon">\\u2705</span> <strong>What this is:</strong> {v["boundaries_what_is"]}</div>
-    <div class="scope-item"><span class="scope-icon">\\U0001f6ab</span> <strong>Not a filing service.</strong> {v["boundaries_what_isnt"]}</div>
+    <div class="scope-item"><strong>What this is:</strong> {v["boundaries_what_is"]}</div>
   </div>
 
   <div class="hub-grid" id="hubGrid">
