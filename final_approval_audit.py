@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
 """
 FINAL APPROVAL AUDIT — Level 3 Deep Scan
-This is the LAST gate before deploy. Checks everything previous audits check,
-PLUS: source↔repo file sync, HTML content rendering, byte-level JSON integrity,
-vercel.json presence, and real data spot-checks.
+Works on local dev AND Vercel CI. Uses dynamic paths (no hardcoded Mac paths).
+Skips inapplicable checks (git, source sync) when running inside CI.
 """
 
 import json
 import hashlib
-import re
+import os
 import sys
 from pathlib import Path
 from collections import defaultdict
 
-REPO = Path("/Users/k.far.88/.gemini/antigravity/scratch/perdiem-pseo")
-SOURCE = Path("/Users/k.far.88/.gemini/antigravity/scratch")
+# Dynamic path resolution:
+# This script lives at the REPO ROOT. Whether called locally or
+# via `python3 ../final_approval_audit.py` from a vertical dir on Vercel,
+# __file__ resolves to the repo root.
+REPO = Path(__file__).resolve().parent
+
+# Detect CI: Vercel sets VERCEL=1, or we can check if /vercel exists
+IS_CI = os.environ.get("VERCEL") == "1" or os.environ.get("CI") == "1"
 
 VERTICALS = [
     "dietitian-pseo", "slp-pseo", "ot-pseo", "pt-pseo",
@@ -41,40 +46,48 @@ def fail(msg, level="ERROR"):
 print("=" * 70)
 print("  🔒 FINAL APPROVAL AUDIT — Level 3 Deep Scan")
 print(f"  Repo:   {REPO}")
-print(f"  Source:  {SOURCE}")
-print(f"  Time:   2026-02-25 20:14 PST")
+print(f"  CI:     {IS_CI}")
 print("=" * 70)
 
 # ═══════════════════════════════════════════════════
-# GATE 1: SOURCE ↔ REPO FILE SYNC
+# GATE 1: SOURCE ↔ REPO FILE SYNC (local only)
 # ═══════════════════════════════════════════════════
 print("\n🔍 GATE 1: Source ↔ Repo JSON Sync")
-desync_count = 0
-for v in VERTICALS:
-    src_dir = SOURCE / v / "database" / "json"
-    repo_dir = REPO / v / "database" / "json"
-    if not src_dir.exists() or not repo_dir.exists():
-        fail(f"{v}: source or repo JSON dir missing")
-        continue
-    
-    for src_file in sorted(src_dir.glob("*.json")):
-        repo_file = repo_dir / src_file.name
-        if not repo_file.exists():
-            fail(f"{v}/{src_file.name}: exists in source but NOT in repo")
-            desync_count += 1
-            continue
-        
-        src_hash = hashlib.md5(src_file.read_bytes()).hexdigest()
-        repo_hash = hashlib.md5(repo_file.read_bytes()).hexdigest()
-        if src_hash != repo_hash:
-            fail(f"{v}/{src_file.name}: HASH MISMATCH (source has newer data!)", "WARN")
-            desync_count += 1
-
-if desync_count == 0:
-    ok("All JSON files synced")
-    print(f"  ✅ All JSON files match source (0 desyncs)")
+if IS_CI:
+    ok("Skipped in CI (repo IS source)")
+    print("  ⏭️  Skipped in CI (repo IS the source of truth)")
 else:
-    print(f"  ⚠️  {desync_count} desyncs detected")
+    desync_count = 0
+    # On local, SOURCE is one level up from REPO if repo is a subfolder
+    SOURCE = REPO.parent
+    for v in VERTICALS:
+        src_dir = SOURCE / v / "database" / "json"
+        repo_dir = REPO / v / "database" / "json"
+        if not src_dir.exists() or not repo_dir.exists():
+            # If source doesn't exist separately, skip (they're the same)
+            continue
+
+        if src_dir.resolve() == repo_dir.resolve():
+            continue  # Same directory, no sync needed
+
+        for src_file in sorted(src_dir.glob("*.json")):
+            repo_file = repo_dir / src_file.name
+            if not repo_file.exists():
+                fail(f"{v}/{src_file.name}: exists in source but NOT in repo")
+                desync_count += 1
+                continue
+
+            src_hash = hashlib.md5(src_file.read_bytes()).hexdigest()
+            repo_hash = hashlib.md5(repo_file.read_bytes()).hexdigest()
+            if src_hash != repo_hash:
+                fail(f"{v}/{src_file.name}: HASH MISMATCH (source has newer data!)", "WARN")
+                desync_count += 1
+
+    if desync_count == 0:
+        ok("All JSON files synced")
+        print(f"  ✅ All JSON files match source (0 desyncs)")
+    else:
+        print(f"  ⚠️  {desync_count} desyncs detected")
 
 # ═══════════════════════════════════════════════════
 # GATE 2: ZERO PENDING (redundant but critical)
@@ -82,7 +95,10 @@ else:
 print("\n🔍 GATE 2: Zero PENDING")
 pending = 0
 for v in VERTICALS:
-    for f in (REPO / v / "database" / "json").glob("*.json"):
+    json_dir = REPO / v / "database" / "json"
+    if not json_dir.exists():
+        continue
+    for f in json_dir.glob("*.json"):
         c = f.read_text().count('"PENDING"')
         if c > 0:
             pending += c
@@ -90,34 +106,37 @@ for v in VERTICALS:
 
 if pending == 0:
     ok("Zero PENDING")
-    print(f"  ✅ 0 PENDING across 408 files")
+    print(f"  ✅ 0 PENDING across all files")
 else:
     print(f"  ❌ {pending} PENDING fields found")
 
 # ═══════════════════════════════════════════════════
 # GATE 3: JSON PARSE + SCHEMA (every single file)
 # ═══════════════════════════════════════════════════
-print("\n🔍 GATE 3: JSON Parse + Schema (all 408 files)")
+print("\n🔍 GATE 3: JSON Parse + Schema")
 parse_ok = 0
 schema_fails = 0
 for v in VERTICALS:
-    for f in sorted((REPO / v / "database" / "json").glob("*.json")):
+    json_dir = REPO / v / "database" / "json"
+    if not json_dir.exists():
+        continue
+    for f in sorted(json_dir.glob("*.json")):
         try:
             data = json.loads(f.read_text())
         except Exception as e:
             fail(f"JSON PARSE FAIL: {v}/{f.name}: {e}")
             schema_fails += 1
             continue
-        
+
         parse_ok += 1
-        
+
         # Core keys
-        for key in ["state_slug", "state_name", "board", "board_source_url", 
+        for key in ["state_slug", "state_name", "board", "board_source_url",
                      "quick_facts", "fingerprints", "compact", "temp_license"]:
             if key not in data:
                 fail(f"{v}/{f.name}: missing '{key}'")
                 schema_fails += 1
-        
+
         # Board data quality
         board = data.get("board", {})
         if isinstance(board, dict):
@@ -127,11 +146,11 @@ for v in VERTICALS:
                 fail(f"{v}/{f.name}: board.phone empty", "WARN")
             if not url:
                 fail(f"{v}/{f.name}: board.url empty", "WARN")
-        
+
         # Fingerprint completeness
         fp = data.get("fingerprints", {})
         if isinstance(fp, dict):
-            for fk in ["required", "vendor", "fee", "method_in_state", 
+            for fk in ["required", "vendor", "fee", "method_in_state",
                         "method_out_of_state", "vendor_url"]:
                 if fk not in fp:
                     fail(f"{v}/{f.name}: fingerprints.{fk} missing")
@@ -144,65 +163,74 @@ else:
     print(f"  ❌ {schema_fails} schema violations")
 
 # ═══════════════════════════════════════════════════
-# GATE 4: HTML DIST COMPLETENESS
+# GATE 4: HTML DIST COMPLETENESS (local only — dist built during deploy)
 # ═══════════════════════════════════════════════════
 print("\n🔍 GATE 4: HTML Dist Completeness")
-html_total = 0
-empty_html = 0
-for v in VERTICALS:
-    dist = REPO / v / "dist"
-    if not dist.exists():
-        fail(f"{v}/dist/ missing")
-        continue
-    
-    htmls = list(dist.glob("*.html"))
-    html_total += len(htmls)
-    
-    if not (dist / "index.html").exists():
-        fail(f"{v}/dist/index.html missing")
-    
-    for h in htmls:
-        size = h.stat().st_size
-        if size < 500:
-            fail(f"{v}/{h.name}: only {size} bytes (likely empty/broken)")
-            empty_html += 1
-
-if empty_html == 0:
-    ok("HTML files valid")
-    print(f"  ✅ {html_total} HTML files, 0 empty/broken")
+if IS_CI:
+    ok("Skipped in CI (dist built by build.py after this audit)")
+    print("  ⏭️  Skipped in CI (build.py generates dist/ after audit passes)")
+    html_total = 0
 else:
-    print(f"  ❌ {empty_html} empty/broken HTML files")
+    html_total = 0
+    empty_html = 0
+    for v in VERTICALS:
+        dist = REPO / v / "dist"
+        if not dist.exists():
+            fail(f"{v}/dist/ missing")
+            continue
+
+        htmls = list(dist.glob("*.html"))
+        html_total += len(htmls)
+
+        if not (dist / "index.html").exists():
+            fail(f"{v}/dist/index.html missing")
+
+        for h in htmls:
+            size = h.stat().st_size
+            if size < 500:
+                fail(f"{v}/{h.name}: only {size} bytes (likely empty/broken)")
+                empty_html += 1
+
+    if empty_html == 0:
+        ok("HTML files valid")
+        print(f"  ✅ {html_total} HTML files, 0 empty/broken")
+    else:
+        print(f"  ❌ {empty_html} empty/broken HTML files")
 
 # ═══════════════════════════════════════════════════
-# GATE 5: SITEMAP + ROBOTS.TXT
+# GATE 5: SITEMAP + ROBOTS.TXT (local only)
 # ═══════════════════════════════════════════════════
 print("\n🔍 GATE 5: Sitemaps + Robots.txt")
 sm_total_urls = 0
-for v in VERTICALS:
-    dist = REPO / v / "dist"
-    sm = dist / "sitemap.xml"
-    rb = dist / "robots.txt"
-    
-    if not sm.exists():
-        fail(f"{v}/dist/sitemap.xml missing")
-        continue
-    if not rb.exists():
-        fail(f"{v}/dist/robots.txt missing")
-    
-    sm_text = sm.read_text()
-    urls = sm_text.count("<loc>")
-    sm_total_urls += urls
-    
-    if urls < EXPECTED_STATES:
-        fail(f"{v}: sitemap only has {urls} URLs (expected ≥{EXPECTED_STATES})")
-    
-    if rb.exists():
-        rb_text = rb.read_text()
-        if "Sitemap:" not in rb_text:
-            fail(f"{v}: robots.txt missing Sitemap: directive")
+if IS_CI:
+    ok("Skipped in CI (generated by build.py)")
+    print("  ⏭️  Skipped in CI (sitemaps generated by build.py)")
+else:
+    for v in VERTICALS:
+        dist = REPO / v / "dist"
+        sm = dist / "sitemap.xml"
+        rb = dist / "robots.txt"
 
-ok("Sitemaps valid")
-print(f"  ✅ {sm_total_urls} total sitemap URLs across 8 verticals")
+        if not sm.exists():
+            fail(f"{v}/dist/sitemap.xml missing")
+            continue
+        if not rb.exists():
+            fail(f"{v}/dist/robots.txt missing")
+
+        sm_text = sm.read_text()
+        urls = sm_text.count("<loc>")
+        sm_total_urls += urls
+
+        if urls < EXPECTED_STATES:
+            fail(f"{v}: sitemap only has {urls} URLs (expected ≥{EXPECTED_STATES})")
+
+        if rb.exists():
+            rb_text = rb.read_text()
+            if "Sitemap:" not in rb_text:
+                fail(f"{v}: robots.txt missing Sitemap: directive")
+
+    ok("Sitemaps valid")
+    print(f"  ✅ {sm_total_urls} total sitemap URLs across 8 verticals")
 
 # ═══════════════════════════════════════════════════
 # GATE 6: REAL DATA SPOT CHECKS
@@ -225,7 +253,7 @@ for vertical, filename, dotpath, validator in spot_checks:
     if not fpath.exists():
         fail(f"Spot check: {vertical}/{filename} not found")
         continue
-    
+
     data = json.loads(fpath.read_text())
     keys = dotpath.split(".")
     val = data
@@ -233,7 +261,7 @@ for vertical, filename, dotpath, validator in spot_checks:
         val = val.get(k, None) if isinstance(val, dict) else None
         if val is None:
             break
-    
+
     if val is not None and validator(val):
         spot_passed += 1
     else:
@@ -242,15 +270,19 @@ for vertical, filename, dotpath, validator in spot_checks:
 print(f"  ✅ {spot_passed}/{len(spot_checks)} spot checks passed")
 
 # ═══════════════════════════════════════════════════
-# GATE 7: GIT STATUS
+# GATE 7: GIT STATUS (local only)
 # ═══════════════════════════════════════════════════
 print("\n🔍 GATE 7: Git Status")
-git_dir = REPO / ".git"
-if git_dir.exists():
-    ok("Git initialized")
-    print(f"  ✅ Git repo initialized")
+if IS_CI:
+    ok("Skipped in CI (Vercel clones from Git)")
+    print("  ⏭️  Skipped in CI (Vercel clones from Git automatically)")
 else:
-    fail("Git repo not initialized")
+    git_dir = REPO / ".git"
+    if git_dir.exists():
+        ok("Git initialized")
+        print(f"  ✅ Git repo initialized")
+    else:
+        fail("Git repo not initialized")
 
 # ═══════════════════════════════════════════════════
 # GATE 8: VERCEL CONFIG CHECK
@@ -279,10 +311,11 @@ print(f"""
   GATES PASSED:      {passed}/8
   ERRORS:            {len(errors)}
   WARNINGS:          {len(warnings)}
-  JSON FILES:        408
+  PARSE OK:          {parse_ok}
   HTML PAGES:        {html_total}
   SITEMAP URLS:      {sm_total_urls}
   PENDING:           {pending}
+  ENVIRONMENT:       {"CI (Vercel)" if IS_CI else "Local"}
 """)
 
 if errors:
@@ -308,5 +341,3 @@ else:
     print("  ║  🛑  DEPLOYMENT BLOCKED — FIX ERRORS FIRST      ║")
     print("  ╚══════════════════════════════════════════════════╝")
     sys.exit(len(errors))
-
-print("=" * 70)
