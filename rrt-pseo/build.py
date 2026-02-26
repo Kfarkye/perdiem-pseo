@@ -296,13 +296,6 @@ index_html = f"""<!DOCTYPE html>
 <header class="hub-header">
   <h1>RRT License<br><em>State Directory</em></h1>
   <p>State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.</p>
-  <div class="freshness">
-    <span>Updated weekly</span>
-    <span>&middot;</span>
-    <span>Last verified: <strong>February 2026</strong></span>
-    <span>&middot;</span>
-    <span>Linked directly to official state boards</span>
-  </div>
 </header>
 <main id="main-content">
   <div class="filter-toolbar">
@@ -378,6 +371,13 @@ index_html = f"""<!DOCTYPE html>
       </div>
     </div>
     <div class="footer-bottom">
+      <div class="freshness" style="justify-content: center; margin-bottom: var(--space-4);">
+        <span>Updated weekly</span>
+        <span>&middot;</span>
+        <span>Last verified: <strong>February 2026</strong></span>
+        <span>&middot;</span>
+        <span>Linked directly to official state boards</span>
+      </div>
       <p class="footer-disclaimer"><strong>Disclaimer:</strong> State Licensing Reference is an independent software tool and workflow resource. We are not a law firm, and we are not affiliated with the NBRC, CoARC, or any state or federal licensing board. While our roadmaps are board-sourced and statute-aligned, state laws change frequently. Users must always verify final regulatory requirements directly with their specific state board prior to submitting applications or fees.</p>
       <p class="footer-copyright">&copy; 2026 State Licensing Reference</p>
     </div>

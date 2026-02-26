@@ -251,13 +251,6 @@ def get_v2_index_template(v):
 <header class="hub-header">
   <h1>{v["hero_h1_line1"]}<br><em>{v["hero_h1_line2"]}</em></h1>
   <p>{v["hero_sub"]}</p>
-  <div class="freshness">
-    <span>Updated weekly</span>
-    <span>&middot;</span>
-    <span>Last verified: <strong>February 2026</strong></span>
-    <span>&middot;</span>
-    <span>Linked directly to official state boards</span>
-  </div>
 </header>
 <main id="main-content">
   <div class="filter-toolbar">
@@ -333,6 +326,13 @@ def get_v2_index_template(v):
       </div>
     </div>
     <div class="footer-bottom">
+      <div class="freshness" style="justify-content: center; margin-bottom: var(--space-4);">
+        <span>Updated weekly</span>
+        <span>&middot;</span>
+        <span>Last verified: <strong>February 2026</strong></span>
+        <span>&middot;</span>
+        <span>Linked directly to official state boards</span>
+      </div>
       <p class="footer-disclaimer"><strong>Disclaimer:</strong> State Licensing Reference is an independent software tool and workflow resource. We are not a law firm, and we are not affiliated with {v["disclaimer_entity"]}. While our roadmaps are board-sourced and statute-aligned, state laws change frequently. Users must always verify final regulatory requirements directly with their specific state board prior to submitting applications or fees.</p>
       <p class="footer-copyright">&copy; 2026 State Licensing Reference</p>
     </div>
