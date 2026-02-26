@@ -23,6 +23,10 @@ CONTENT_DIR = Path("content")
 DOMAIN = "https://statelicensingreference.com"
 TODAY = datetime.now().strftime("%Y-%m-%d")
 
+# CSS cache-bust hash
+import hashlib as _hashlib
+CSS_HASH = _hashlib.md5(CSS_SRC.read_bytes()).hexdigest()[:8] if CSS_SRC.exists() else "0"
+
 DIST_DIR.mkdir(exist_ok=True)
 
 # ── 1. COPY MASTER CSS ──────────────────────────────────
@@ -210,50 +214,71 @@ index_html = f"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Physical Therapist License Requirements by State &mdash; Fees, Board Contacts &amp; How to Apply (2026)</title>
 <meta name="description" content="Complete 2026 guide to physical therapist (PT) licensing requirements, fees, and board contacts for all 50 US states and DC.">
-<meta name="keywords" content="PT license by state, physical therapy license requirements, DPT license requirements, state physical therapy board, PT license cost">
+<meta name="keywords" content="PT license by state, physical therapy license requirements, physical therapist licensure, state PT board, PT license cost, how to become a physical therapist">
 <link rel="canonical" href="{DOMAIN}/">
 <meta property="og:title" content="Physical Therapist License Requirements by State (2026)">
-<meta property="og:description" content="Compare physical therapist licensing fees, board contacts, and application steps across all 50 states.">
+<meta property="og:description" content="Compare PT licensing fees, board contacts, and application steps across all 50 states.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{DOMAIN}/">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="State Licensing Reference">
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/styles.css?v={CSS_HASH}">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
 <style>
-.hub-header {{ background: var(--sand-900); color: var(--sand-100); padding: 2.5rem 2rem 5rem; text-align: center; position: relative; overflow: hidden; }}
-.hub-header::before {{ content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 20% 80%, rgba(46,139,139,.08) 0%, transparent 70%), radial-gradient(ellipse 60% 50% at 80% 20%, rgba(184,92,56,.06) 0%, transparent 70%); pointer-events: none; }}
-.hub-header h1 {{ color: #fff; font-family: var(--serif); font-size: clamp(2rem, 5vw, 2.8rem); margin-bottom: 1rem; font-weight: 400; letter-spacing: -.02em; position: relative; }}
+.hub-header {{ background: var(--sand-900); color: var(--sand-100); padding: var(--space-9) var(--space-7) var(--space-10); text-align: center; position: relative; overflow: hidden; }}
+.hub-header::before {{ content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 20% 80%, hsla(180,50%,26%,.07) 0%, transparent 70%), radial-gradient(ellipse 60% 50% at 80% 20%, hsla(18,52%,47%,.05) 0%, transparent 70%); pointer-events: none; }}
+.hub-header h1 {{ color: #fff; font-family: var(--serif); font-size: clamp(1.85rem, 4.5vw, 2.65rem); margin-bottom: var(--space-4); font-weight: 400; letter-spacing: -.025em; position: relative; }}
 .hub-header em {{ color: var(--terracotta-light); font-style: italic; font-weight: 300; }}
-.hub-header p {{ color: var(--sand-400); font-size: 0.92rem; max-width: 560px; margin: 0 auto; line-height: 1.6; position: relative; }}
-.hub-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1px; background: var(--sand-200); border: 1px solid var(--sand-200); max-width: 1000px; margin: -2rem auto 4rem; position: relative; }}
-.hub-grid .link-card {{ background: var(--sand-50); border: none; padding: 1.1rem 1.25rem; transition: all 0.25s ease; min-height: 56px; display: flex; flex-direction: column; justify-content: center; }}
-.hub-grid .link-card:hover {{ background: var(--turquoise-light); }}
-.hub-grid .link-card h3 {{ font-family: var(--serif); font-size: 1.05rem; font-weight: 500; color: var(--sand-900); margin: 0; transition: margin .25s ease; }}
-.hub-grid .link-card:hover h3 {{ margin-bottom: .35rem; }}
-/* Progressive disclosure — reveal on hover */
-.hub-grid .link-card .link-card-reveal {{ max-height: 0; opacity: 0; overflow: hidden; transition: max-height .3s ease, opacity .25s ease; }}
+.hub-header p {{ color: var(--sand-400); font-size: 0.88rem; max-width: 520px; margin: 0 auto; line-height: 1.6; position: relative; }}
+.hub-header .overline {{ font-family: var(--sans); font-size: .58rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--sand-400); margin-bottom: var(--space-3); display: block; position: relative; }}
+.hub-header .freshness {{ font-family: var(--sans); font-size: .68rem; color: var(--sand-400); margin-top: var(--space-5); display: flex; align-items: center; justify-content: center; gap: var(--space-3); flex-wrap: wrap; position: relative; }}
+.hub-header .freshness span {{ display: inline-flex; align-items: center; gap: .3rem; }}
+
+/* ── Filter Toolbar — contained card ── */
+.filter-toolbar {{ max-width: 1000px; margin: -2.5rem auto var(--space-6); padding: var(--space-5) var(--space-6); position: relative; z-index: 2; background: #fff; border: var(--border-subtle); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }}
+.filter-search {{ width: 100%; padding: .8rem 1rem .8rem 2.6rem; border: var(--border-default); border-radius: var(--radius-md); background: var(--sand-50); font-family: var(--sans); font-size: .86rem; color: var(--sand-900); outline: none; box-shadow: var(--shadow-xs); transition: border-color 120ms cubic-bezier(.2,0,0,1), box-shadow 180ms cubic-bezier(.2,0,0,1); }}
+.filter-search:focus {{ border-color: var(--teal); box-shadow: 0 0 0 3px hsla(180,50%,26%,.1), var(--shadow-xs); }}
+.filter-search-wrap {{ position: relative; }}
+.filter-search-wrap svg {{ position: absolute; left: .85rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--sand-400); pointer-events: none; }}
+.filter-row {{ display: flex; align-items: center; gap: .75rem; margin-top: var(--space-3); }}
+.filter-label {{ font-family: var(--sans); font-size: .62rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--sand-400); min-width: 56px; flex-shrink: 0; }}
+.filter-pills {{ display: flex; flex-wrap: wrap; gap: var(--space-2); }}
+.filter-pill {{ font-family: var(--sans); font-size: .7rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; padding: .35rem .8rem; border: var(--border-default); border-radius: var(--radius-full); background: var(--sand-50); color: var(--sand-500); cursor: pointer; user-select: none; transition: border-color 120ms cubic-bezier(.2,0,0,1), color 120ms cubic-bezier(.2,0,0,1), background 120ms cubic-bezier(.2,0,0,1); }}
+.filter-pill:hover {{ border-color: var(--teal); color: var(--teal); }}
+.filter-pill.active {{ background: var(--teal); border-color: var(--teal); color: #fff; }}
+.filter-count {{ font-family: var(--sans); font-size: .68rem; color: var(--sand-400); margin-top: var(--space-2); text-align: right; }}
+.filter-empty {{ display: none; text-align: center; padding: var(--space-8) var(--space-4); color: var(--sand-400); font-family: var(--sans); font-size: .88rem; max-width: 1000px; margin: 0 auto; }}
+.filter-empty.visible {{ display: block; }}
+
+/* ── Boundaries micro-block ── */
+.scope-block {{ max-width: 1000px; margin: 0 auto var(--space-6); padding: 0 var(--space-4); display: flex; gap: var(--space-6); justify-content: center; flex-wrap: wrap; }}
+.scope-item {{ font-family: var(--sans); font-size: .78rem; color: var(--sand-500); display: flex; align-items: baseline; gap: .4rem; }}
+.scope-item .scope-icon {{ font-size: .85rem; flex-shrink: 0; }}
+.scope-item strong {{ color: var(--sand-700); font-weight: 600; }}
+
+/* ── State Grid ── */
+.hub-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--space-3); max-width: 1000px; margin: 0 auto var(--space-9); padding: 0 var(--space-4); position: relative; }}
+.hub-grid .link-card {{ background: #fff; border: var(--border-subtle); border-radius: var(--radius-lg); padding: var(--space-4) var(--space-5); box-shadow: var(--shadow-xs); min-height: 56px; display: flex; flex-direction: column; justify-content: center; will-change: transform; transition: transform 120ms cubic-bezier(.2,0,0,1), box-shadow 180ms cubic-bezier(.2,0,0,1), border-color 120ms cubic-bezier(.2,0,0,1); }}
+.hub-grid .link-card:hover {{ transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: hsla(180,50%,26%,.15); }}
+.hub-grid .link-card h3 {{ font-family: var(--serif); font-size: 1.02rem; font-weight: 500; color: var(--sand-900); margin: 0; transition: margin 180ms cubic-bezier(.2,0,0,1); }}
+.hub-grid .link-card:hover h3 {{ margin-bottom: .3rem; }}
+.hub-grid .link-card .link-card-reveal {{ max-height: 0; opacity: 0; overflow: hidden; transition: max-height 280ms cubic-bezier(.2,0,0,1), opacity 180ms cubic-bezier(.2,0,0,1); }}
 .hub-grid .link-card:hover .link-card-reveal {{ max-height: 60px; opacity: 1; }}
-.hub-grid .link-card .link-card-desc {{ font-size: 0.75rem; color: var(--sand-500); margin-bottom: .2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
-.hub-grid .link-card .link-card-meta {{ font-size: 0.7rem; color: var(--turquoise); font-weight: 500; display: block; }}
+.hub-grid .link-card .link-card-desc {{ font-size: 0.73rem; color: var(--sand-500); margin-bottom: .15rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+.hub-grid .link-card .link-card-meta {{ font-size: 0.68rem; color: var(--teal); font-weight: 500; display: block; }}
 .hub-grid .link-card[data-hidden="true"] {{ display: none; }}
 
-/* ── Filter Toolbar ── */
-.filter-toolbar {{ max-width: 1000px; margin: -1rem auto 0; padding: 0 1rem; position: relative; z-index: 2; }}
-.filter-search {{ width: 100%; padding: .85rem 1.15rem .85rem 2.75rem; border: 1px solid var(--sand-200); background: var(--sand-50); font-family: var(--sans); font-size: .88rem; color: var(--sand-900); outline: none; transition: border-color .2s, box-shadow .2s; }}
-.filter-search:focus {{ border-color: var(--turquoise); box-shadow: 0 0 0 3px rgba(46,139,139,.12); }}
-.filter-search-wrap {{ position: relative; }}
-.filter-search-wrap svg {{ position: absolute; left: .9rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--sand-400); pointer-events: none; }}
-.filter-row {{ display: flex; align-items: center; gap: .65rem; margin-top: .65rem; }}
-.filter-label {{ font-family: var(--sans); font-size: .68rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--sand-400); min-width: 52px; flex-shrink: 0; }}
-.filter-pills {{ display: flex; flex-wrap: wrap; gap: .5rem; }}
-.filter-pill {{ font-family: var(--sans); font-size: .72rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; padding: .4rem .85rem; border: 1px solid var(--sand-200); background: var(--sand-50); color: var(--sand-500); cursor: pointer; transition: all .2s; user-select: none; }}
-.filter-pill:hover {{ border-color: var(--turquoise); color: var(--turquoise); }}
-.filter-pill.active {{ background: var(--turquoise); border-color: var(--turquoise); color: #fff; }}
-.filter-empty {{ display: none; text-align: center; padding: 3rem 1rem; color: var(--sand-400); font-family: var(--sans); font-size: .92rem; max-width: 1000px; margin: 0 auto; }}
-.filter-empty.visible {{ display: block; }}
-.filter-count {{ font-family: var(--sans); font-size: .72rem; color: var(--sand-400); margin-top: .5rem; text-align: right; }}
+/* ── Bottom CTA ── */
+.bottom-cta {{ background: var(--sand-900); padding: var(--space-9) var(--space-7); text-align: center; position: relative; overflow: hidden; }}
+.bottom-cta::before {{ content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 50% 100%, hsla(180,50%,26%,.06) 0%, transparent 70%); pointer-events: none; }}
+.bottom-cta h2 {{ color: #fff; font-family: var(--serif); font-size: clamp(1.35rem, 3vw, 1.8rem); font-weight: 400; letter-spacing: -.02em; margin-bottom: var(--space-3); position: relative; }}
+.bottom-cta p {{ color: var(--sand-400); font-size: .84rem; max-width: 480px; margin: 0 auto var(--space-5); line-height: 1.55; position: relative; }}
+.bottom-cta .cta-select-wrap {{ max-width: 420px; margin: 0 auto; display: flex; gap: var(--space-2); position: relative; }}
+.bottom-cta select {{ flex: 1; padding: .75rem 1rem; border: 1px solid hsla(0,0%,100%,.12); border-radius: var(--radius-md); background: hsla(0,0%,100%,.06); color: var(--sand-200); font-family: var(--sans); font-size: .84rem; outline: none; appearance: none; cursor: pointer; transition: border-color 120ms cubic-bezier(.2,0,0,1); }}
+.bottom-cta select:focus {{ border-color: var(--teal); }}
+.bottom-cta .cta-go {{ padding: .75rem 1.5rem; background: var(--teal); color: #fff; border: none; border-radius: var(--radius-md); font-family: var(--sans); font-size: .82rem; font-weight: 500; cursor: pointer; transition: background 120ms cubic-bezier(.2,0,0,1), transform 120ms cubic-bezier(.2,0,0,1); }}
+.bottom-cta .cta-go:hover {{ background: var(--teal-hover); transform: translateY(-1px); }}
 </style>
 </head>
 <body>
@@ -270,21 +295,29 @@ index_html = f"""<!DOCTYPE html>
 </nav>
 
 <header class="hub-header">
+  <span class="overline">Board-Sourced Licensing Intelligence</span>
   <h1>PT License<br><em>State Directory</em></h1>
-  <p>Find your state’s 2026 requirements, fees, and board contacts.</p>
+  <p>Stop decoding state board websites. Find your state\'s 2026 physical therapy licensing requirements, fees, board contacts, and step-by-step application roadmaps.</p>
+  <div class="freshness">
+    <span>&#128197; Updated weekly</span>
+    <span>&middot;</span>
+    <span>Last verified: <strong>February 2026</strong></span>
+    <span>&middot;</span>
+    <span>&#127963; Board sources cited per state</span>
+  </div>
 </header>
 <main id="main-content">
   <div class="filter-toolbar">
     <div class="filter-search-wrap">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
-      <input type="text" class="filter-search" id="stateSearch" placeholder="Search by state name…" autocomplete="off" />
+      <input type="text" class="filter-search" id="stateSearch" placeholder="Search by state name\u2026" autocomplete="off" />
     </div>
     <div class="filter-row">
       <span class="filter-label">Timeline</span>
       <div class="filter-pills" data-group="time">
-        <button class="filter-pill" data-filter="fastest">≤2 Weeks</button>
-        <button class="filter-pill" data-filter="2-4wk">2–4 Weeks</button>
-        <button class="filter-pill" data-filter="4-6wk">4–6 Weeks</button>
+        <button class="filter-pill" data-filter="fastest">\u22642 Weeks</button>
+        <button class="filter-pill" data-filter="2-4wk">2\u20134 Weeks</button>
+        <button class="filter-pill" data-filter="4-6wk">4\u20136 Weeks</button>
         <button class="filter-pill" data-filter="6-plus">6+ Weeks</button>
       </div>
     </div>
@@ -293,17 +326,35 @@ index_html = f"""<!DOCTYPE html>
       <div class="filter-pills" data-group="fee">
         <button class="filter-pill" data-filter="no-fee">No Fee</button>
         <button class="filter-pill" data-filter="under-100">Under $100</button>
-        <button class="filter-pill" data-filter="100-200">$100–$200</button>
+        <button class="filter-pill" data-filter="100-200">$100\u2013$200</button>
         <button class="filter-pill" data-filter="over-200">Over $200</button>
       </div>
     </div>
     <div class="filter-count" id="filterCount"></div>
   </div>
+
+  <div class="scope-block">
+    <div class="scope-item"><span class="scope-icon">\u2705</span> <strong>What this is:</strong> We provide the operational intelligence—board-sourced, statute-aligned roadmaps—so you submit a clean application on the first try.</div>
+    <div class="scope-item"><span class="scope-icon">\U0001f6ab</span> <strong>Not a filing service.</strong> We don\'t file your application for you.</div>
+  </div>
+
   <div class="hub-grid" id="hubGrid">
 {cards_html}
   </div>
   <div class="filter-empty" id="filterEmpty">No states match your search. Try a different name or clear the filter.</div>
 </main>
+
+<section class="bottom-cta" aria-label="Get started">
+  <h2>Don\u2019t let bad paperwork delay your first paycheck.</h2>
+  <p>Select your target state to see board-sourced requirements, exact fees, and a step-by-step application roadmap.</p>
+  <div class="cta-select-wrap">
+    <select id="bottomStateSelect" aria-label="Select a state">
+      <option value="">Select target state\u2026</option>
+    </select>
+    <button class="cta-go" id="bottomCtaGo">Continue \u2794</button>
+  </div>
+</section>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
@@ -331,7 +382,7 @@ index_html = f"""<!DOCTYPE html>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-disclaimer"><strong>Disclaimer:</strong> State Licensing Reference is an independent informational portal and is not affiliated with any government agency. Requirements and fees are subject to change. Always verify current regulations directly with the official state board.</p>
+      <p class="footer-disclaimer"><strong>Disclaimer:</strong> State Licensing Reference is an independent software tool and workflow resource. We are not a law firm, and we are not affiliated with the FSBPT, CAPTE, or any state or federal licensing board. While our roadmaps are board-sourced and statute-aligned, state laws change frequently. Users must always verify final regulatory requirements directly with their specific state board prior to submitting applications or fees.</p>
       <p class="footer-copyright">&copy; 2026 State Licensing Reference</p>
     </div>
   </div>
@@ -387,6 +438,22 @@ index_html = f"""<!DOCTYPE html>
         applyFilters();
       }});
     }});
+  }});
+
+  /* Bottom CTA — populate select from state cards */
+  const bottomSelect = document.getElementById('bottomStateSelect');
+  const bottomGo = document.getElementById('bottomCtaGo');
+  cards.forEach(c => {{
+    const opt = document.createElement('option');
+    opt.value = c.href;
+    opt.textContent = c.querySelector('h3').textContent;
+    bottomSelect.appendChild(opt);
+  }});
+  bottomGo.addEventListener('click', function() {{
+    if (bottomSelect.value) window.location.href = bottomSelect.value;
+  }});
+  bottomSelect.addEventListener('change', function() {{
+    if (this.value) window.location.href = this.value;
   }});
 }})();
 </script>
