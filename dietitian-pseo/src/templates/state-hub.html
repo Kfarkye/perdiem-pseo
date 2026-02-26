@@ -129,12 +129,12 @@
     <article>
 
       <div id="quick-facts" class="quick-facts" role="region" aria-label="Key facts at a glance">
-        <div class="quick-fact">
+        <div class="quick-fact reveal">
           <div class="quick-fact-label">Total Initial Fee</div>
           <div class="quick-fact-value">{{ quick_facts.total_fee }}</div>
           <div class="quick-fact-note">{{ quick_facts.fee_breakdown }}</div>
         </div>
-        <div class="quick-fact">
+        <div class="quick-fact reveal">
           <div class="quick-fact-label">Renewal</div>
           <div class="quick-fact-value">{{ quick_facts.renewal_fee }}</div>
           <div class="quick-fact-note">{{ quick_facts.renewal_cycle }}</div>
@@ -154,7 +154,7 @@
       <section id="contact">
         <div class="section-label">Board Contact</div>
         <h2>{{ board.name }}</h2>
-        <div class="contact-grid">
+        <div class="contact-grid reveal">
           <address class="contact-card" style="font-style:normal">
             <div class="contact-card-label">Mailing Address</div>
             <p>{{ board.mailing_address | safe }}</p>
@@ -178,7 +178,7 @@
       <section id="license-types">
         <div class="section-label">Credential Categories</div>
         <h2>{{ state_name }} {{ profession_name }} License Types</h2>
-        <div class="req-grid">
+        <div class="req-grid reveal">
           {% for type in license_types %}
           <div class="req-cell">
             <h3>{{ type.title }}</h3>
@@ -191,7 +191,7 @@
       <section id="how-to-apply">
         <div class="section-label">Application Process</div>
         <h2>How to Apply for a {{ state_name }} {{ credential_nomenclature }}</h2>
-        <div class="steps">
+        <div class="steps reveal">
           {% for step in steps %}
           <div class="step">
             <h3>{{ step.title }}</h3>
@@ -204,7 +204,7 @@
       <section id="documents">
         <div class="section-label">Required Documents</div>
         <h2>Application Document Checklist</h2>
-        <ul class="checklist">
+        <ul class="checklist reveal">
           {% for doc in documents %}
           <li>{{ doc.item }}<span class="detail">{{ doc.detail }}</span></li>
           {% endfor %}
@@ -276,13 +276,31 @@
   </footer>
 
   <script>
-    // Back-to-top button visibility
+    // Back-to-top
     (function () {
       var btn = document.querySelector('.back-to-top');
       if (!btn) return;
       window.addEventListener('scroll', function () {
         btn.classList.toggle('visible', window.scrollY > 600);
       }, { passive: true });
+    })();
+
+    // Intersection Observer — earned entrance animations
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!els.length || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function (el) { io.observe(el); });
     })();
   </script>
 </body>
