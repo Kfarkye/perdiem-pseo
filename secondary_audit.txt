@@ -1,0 +1,45 @@
+======================================================================
+  PRE-DEPLOY AUDIT — perdiem-pseo
+======================================================================
+
+[1/8] REPO STRUCTURE...
+  ✓ Repo structure checks complete
+
+[2/8] JSON FILE COUNTS...
+  Total JSON files: 408
+
+[3/8] PENDING FIELD CHECK...
+  PENDING strings: 0
+
+[4/8] JSON SCHEMA INTEGRITY...
+  Schema issues: 0
+
+[5/8] HTML DIST FILES...
+  Total HTML pages: 417
+
+[6/8] SITEMAP & ROBOTS.TXT...
+  ✓ Sitemap/robots checks complete
+
+[7/8] SEO META TAG SPOT CHECK...
+  Spot-checked 8 files
+
+[8/8] CROSS-VERTICAL CONSISTENCY...
+  ✓ Cross-vertical checks complete
+
+======================================================================
+  AUDIT RESULTS
+======================================================================
+
+  Verticals:         8
+  JSON files:        408
+  HTML pages:        417
+  PENDING fields:    0
+  Schema issues:     0
+
+  ✅ ZERO ERRORS
+
+  ⚠️  1 WARNINGS:
+     • slp-pseo: state slug mismatch with dietitian: {'texas-slp', 'north-carolina-slp', 'kentucky', 'colorado', 'south-dakota-slp', 'new-mexico-slp', 'vermont-slp', 'tennessee-slp', 'maryland-slp', 'alabama', 'indiana', 'colorado-slp', 'louisiana-slp', 'kansas-slp', 'west-virginia', 'florida', 'north-dakota', 'tennessee', 'hawaii', 'georgia', 'dc-slp', 'dc', 'iowa-slp', 'washington-slp', 'arizona-slp', 'oregon', 'north-carolina', 'texas', 'new-hampshire', 'virginia', 'utah', 'utah-slp', 'illinois-slp', 'alaska-slp', 'vermont', 'wisconsin', 'florida-slp', 'wyoming-slp', 'new-jersey-slp', 'south-dakota', 'kentucky-slp', 'hawaii-slp', 'ohio-slp', 'michigan-slp', 'massachusetts', 'illinois', 'new-york', 'north-dakota-slp', 'rhode-island-slp', 'montana-slp', 'nevada-slp', 'pennsylvania-slp', 'idaho-slp', 'new-york-slp', 'virginia-slp', 'california', 'alabama-slp', 'michigan', 'kansas', 'iowa', 'south-carolina-slp', 'indiana-slp', 'nevada', 'arizona', 'maine', 'massachusetts-slp', 'south-carolina', 'washington', 'pennsylvania', 'mississippi-slp', 'missouri', 'new-mexico', 'louisiana', 'montana', 'west-virginia-slp', 'maryland', 'missouri-slp', 'oklahoma-slp', 'new-jersey', 'maine-slp', 'minnesota-slp', 'oregon-slp', 'idaho', 'nebraska-slp', 'wisconsin-slp', 'new-hampshire-slp', 'arkansas', 'ohio', 'alaska', 'oklahoma', 'connecticut-slp', 'california-slp', 'minnesota', 'nebraska', 'wyoming', 'arkansas-slp', 'delaware', 'delaware-slp', 'mississippi', 'rhode-island', 'georgia-slp', 'connecticut'}
+
+  🟡 DEPLOY OK (warnings only, no blockers)
+======================================================================
