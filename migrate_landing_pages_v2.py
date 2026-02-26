@@ -27,7 +27,7 @@ VERTICALS = {
         "title_abbr": "RD/RDN",
         "hero_h1_line1": "Dietitian License",
         "hero_h1_line2": "State Directory",
-        "hero_sub": "State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.",
+        "hero_sub": "Real processing times, true costs, and step-by-step board instructions for every state.",
         "meta_title": "Dietitian License Requirements by State &mdash; Fees, Board Contacts &amp; How to Apply (2026)",
         "meta_desc": "Complete 2026 guide to dietitian and nutritionist licensing requirements, fees, and board contacts for all 50 US states and DC.",
         "meta_kw": "dietitian license by state, dietitian license requirements, nutritionist license requirements, state dietitian board, dietitian license cost, how to become a dietitian",
@@ -249,7 +249,6 @@ def get_v2_index_template(v):
 </nav>
 
 <header class="hub-header">
-  <span class="overline">Built for Travel Clinicians</span>
   <h1>{v["hero_h1_line1"]}<br><em>{v["hero_h1_line2"]}</em></h1>
   <p>{v["hero_sub"]}</p>
   <div class="freshness">

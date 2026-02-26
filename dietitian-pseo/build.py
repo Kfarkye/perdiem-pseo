@@ -321,9 +321,8 @@ index_html = f"""<!DOCTYPE html>
 </nav>
 
 <header class="hub-header">
-  <span class="overline">Built for Travel Clinicians</span>
   <h1>Dietitian License<br><em>State Directory</em></h1>
-  <p>State board websites are a mess. Get the real processing times, true out-of-pocket costs, and the exact instructions you need to clear compliance and lock in your next contract.</p>
+  <p>Real processing times, true costs, and step-by-step board instructions for every state.</p>
   <div class="freshness">
     <span>Updated weekly</span>
     <span>&middot;</span>
