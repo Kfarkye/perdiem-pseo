@@ -235,18 +235,21 @@ index_html = f"""<!DOCTYPE html>
 @keyframes heroFadeUp {{ from {{ opacity: 0; transform: translateY(14px); }} to {{ opacity: 1; transform: translateY(0); }} }}
 
 /* ── Filter Toolbar — contained card ── */
-.filter-toolbar {{ max-width: 1000px; margin: -2.5rem auto var(--space-6); padding: var(--space-5) var(--space-6); position: relative; z-index: 2; background: #fff; border: var(--border-subtle); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }}
-.filter-search {{ width: 100%; padding: .8rem 1rem; border: var(--border-default); border-radius: var(--radius-md); background: var(--sand-50); font-family: var(--sans); font-size: .86rem; color: var(--sand-900); outline: none; box-shadow: var(--shadow-xs); transition: border-color 120ms cubic-bezier(.2,0,0,1), box-shadow 180ms cubic-bezier(.2,0,0,1); }}
+.filter-toolbar {{ max-width: 960px; margin: -2.5rem auto var(--space-6); padding: var(--space-5) var(--space-6); position: relative; z-index: 2; background: #fff; border: var(--border-subtle); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); animation: heroFadeUp 700ms 350ms cubic-bezier(.16,1,.3,1) both; }}
+.filter-search {{ width: 100%; padding: .75rem 1rem; border: var(--border-default); border-radius: var(--radius-md); background: var(--sand-50); font-family: var(--sans); font-size: .88rem; color: var(--sand-900); outline: none; box-shadow: var(--shadow-xs); transition: border-color 120ms cubic-bezier(.2,0,0,1), box-shadow 180ms cubic-bezier(.2,0,0,1); }}
+.filter-search::placeholder {{ color: var(--sand-400); }}
 .filter-search:focus {{ border-color: var(--teal); box-shadow: 0 0 0 3px hsla(180,50%,26%,.1), var(--shadow-xs); }}
-.filter-search-wrap {{ position: relative; }}
-.filter-row {{ display: flex; align-items: center; gap: .75rem; margin-top: var(--space-3); }}
-.filter-label {{ font-family: var(--sans); font-size: .62rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--sand-400); min-width: 56px; flex-shrink: 0; }}
-.filter-pills {{ display: flex; flex-wrap: wrap; gap: var(--space-2); }}
-.filter-pill {{ font-family: var(--sans); font-size: .7rem; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; padding: .35rem .8rem; border: var(--border-default); border-radius: var(--radius-full); background: var(--sand-50); color: var(--sand-500); cursor: pointer; user-select: none; transition: border-color 120ms cubic-bezier(.2,0,0,1), color 120ms cubic-bezier(.2,0,0,1), background 120ms cubic-bezier(.2,0,0,1); }}
-.filter-pill:hover {{ border-color: var(--teal); color: var(--teal); }}
-.filter-pill.active {{ background: var(--teal); border-color: var(--teal); color: #fff; }}
-.filter-count {{ font-family: var(--sans); font-size: .68rem; color: var(--sand-400); margin-top: var(--space-2); text-align: right; }}
-.filter-empty {{ display: none; text-align: center; padding: var(--space-8) var(--space-4); color: var(--sand-400); font-family: var(--sans); font-size: .88rem; max-width: 1000px; margin: 0 auto; }}
+.filter-search-wrap {{ position: relative; margin-bottom: var(--space-4); }}
+.filter-groups {{ display: flex; gap: var(--space-5); }}
+.filter-group {{ flex: 1; }}
+.filter-group + .filter-group {{ border-left: 1px solid var(--sand-200); padding-left: var(--space-5); }}
+.filter-label {{ display: block; font-family: var(--sans); font-size: .6rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--sand-400); margin-bottom: var(--space-2); }}
+.filter-pills {{ display: flex; flex-wrap: wrap; gap: 6px; }}
+.filter-pill {{ font-family: var(--sans); font-size: .68rem; font-weight: 500; letter-spacing: .03em; text-transform: uppercase; padding: .3rem .7rem; border: 1px solid var(--sand-200); border-radius: var(--radius-full); background: #fff; color: var(--sand-500); cursor: pointer; user-select: none; white-space: nowrap; transition: border-color 120ms cubic-bezier(.2,0,0,1), color 120ms cubic-bezier(.2,0,0,1), background 120ms cubic-bezier(.2,0,0,1), box-shadow 120ms cubic-bezier(.2,0,0,1); }}
+.filter-pill:hover {{ border-color: var(--teal); color: var(--teal); box-shadow: 0 1px 3px hsla(180,50%,26%,.08); }}
+.filter-pill.active {{ background: var(--teal); border-color: var(--teal); color: #fff; box-shadow: 0 1px 4px hsla(180,50%,26%,.18); }}
+.filter-count {{ font-family: var(--sans); font-size: .68rem; color: var(--sand-400); margin-top: var(--space-3); text-align: right; }}
+.filter-empty {{ display: none; text-align: center; padding: var(--space-8) var(--space-4); color: var(--sand-400); font-family: var(--sans); font-size: .88rem; max-width: 960px; margin: 0 auto; }}
 .filter-empty.visible {{ display: block; }}
 
 /* ── Boundaries micro-block ── */
@@ -278,6 +281,21 @@ index_html = f"""<!DOCTYPE html>
 .bottom-cta .cta-go {{ padding: .75rem 1.5rem; background: var(--teal); color: #fff; border: none; border-radius: var(--radius-md); font-family: var(--sans); font-size: .82rem; font-weight: 500; cursor: pointer; transition: background 120ms cubic-bezier(.2,0,0,1), transform 120ms cubic-bezier(.2,0,0,1); }}
 .bottom-cta .cta-go:hover {{ background: var(--teal-hover); transform: translateY(-1px); }}
 </style>
+<style>
+/* ── Responsive ── */
+@media (max-width: 640px) {{
+  .hub-header {{ padding: var(--space-7) var(--space-4) var(--space-6); }}
+  .hub-header h1 {{ font-size: 1.6rem; }}
+  .hub-header p {{ font-size: .88rem; }}
+  .filter-toolbar {{ margin: -1.5rem var(--space-3) var(--space-5); padding: var(--space-4); }}
+  .filter-groups {{ flex-direction: column; gap: var(--space-4); }}
+  .filter-group + .filter-group {{ border-left: none; padding-left: 0; border-top: 1px solid var(--sand-200); padding-top: var(--space-4); }}
+  .hub-grid {{ grid-template-columns: 1fr; padding: 0 var(--space-3); }}
+  .scope-block {{ padding: 0 var(--space-3); }}
+  .bottom-cta {{ padding: var(--space-7) var(--space-4); }}
+  .footer-grid {{ grid-template-columns: 1fr !important; gap: var(--space-5) !important; }}
+}}
+</style>
 </head>
 <body>
 
@@ -301,22 +319,24 @@ index_html = f"""<!DOCTYPE html>
     <div class="filter-search-wrap">
       <input type="text" class="filter-search" id="stateSearch" placeholder="Search for your next state..." autocomplete="off" />
     </div>
-    <div class="filter-row">
-      <span class="filter-label">Processing Time</span>
-      <div class="filter-pills" data-group="time">
-        <button class="filter-pill" data-filter="fastest">\u22642 Weeks</button>
-        <button class="filter-pill" data-filter="2-4wk">2\u20134 Weeks</button>
-        <button class="filter-pill" data-filter="4-6wk">4\u20136 Weeks</button>
-        <button class="filter-pill" data-filter="6-plus">6+ Weeks</button>
+    <div class="filter-groups">
+      <div class="filter-group">
+        <span class="filter-label">Processing Time</span>
+        <div class="filter-pills" data-group="time">
+          <button class="filter-pill" data-filter="fastest">\u22642 Weeks</button>
+          <button class="filter-pill" data-filter="2-4wk">2\u20134 Weeks</button>
+          <button class="filter-pill" data-filter="4-6wk">4\u20136 Weeks</button>
+          <button class="filter-pill" data-filter="6-plus">6+ Weeks</button>
+        </div>
       </div>
-    </div>
-    <div class="filter-row">
-      <span class="filter-label">Total Cost</span>
-      <div class="filter-pills" data-group="fee">
-        <button class="filter-pill" data-filter="no-fee">No Fee</button>
-        <button class="filter-pill" data-filter="under-100">Under $100</button>
-        <button class="filter-pill" data-filter="100-200">$100\u2013$200</button>
-        <button class="filter-pill" data-filter="over-200">Over $200</button>
+      <div class="filter-group">
+        <span class="filter-label">Total Cost</span>
+        <div class="filter-pills" data-group="fee">
+          <button class="filter-pill" data-filter="no-fee">No Fee</button>
+          <button class="filter-pill" data-filter="under-100">Under $100</button>
+          <button class="filter-pill" data-filter="100-200">$100\u2013$200</button>
+          <button class="filter-pill" data-filter="over-200">Over $200</button>
+        </div>
       </div>
     </div>
     <div class="filter-count" id="filterCount"></div>
