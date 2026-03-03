@@ -233,6 +233,16 @@ for s in sorted_states:
         f"      </a>"
     )
 cards_html = "\n".join(cards)
+parsed_last_updates = []
+for s in states_manifest:
+    try:
+        parsed_last_updates.append(datetime.strptime(s["last_updated"], "%Y-%m-%d"))
+    except Exception:
+        continue
+if parsed_last_updates:
+    latest_verified_label = max(parsed_last_updates).strftime("%B %Y")
+else:
+    latest_verified_label = datetime.strptime(TODAY, "%Y-%m-%d").strftime("%B %Y")
 
 index_html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -279,12 +289,6 @@ index_html = f"""<!DOCTYPE html>
 .filter-empty {{ display: none; text-align: center; padding: var(--space-8) var(--space-4); color: var(--sand-400); font-family: var(--sans); font-size: .88rem; max-width: 960px; margin: 0 auto; }}
 .filter-empty.visible {{ display: block; }}
 
-/* ── Boundaries micro-block ── */
-.scope-block {{ max-width: 1000px; margin: 0 auto var(--space-6); padding: 0 var(--space-4); display: flex; gap: var(--space-6); justify-content: center; flex-wrap: wrap; }}
-.scope-item {{ font-family: var(--sans); font-size: .78rem; color: var(--sand-500); display: flex; align-items: baseline; gap: .4rem; }}
-.scope-item .scope-icon {{ font-size: .85rem; flex-shrink: 0; }}
-.scope-item strong {{ color: var(--sand-700); font-weight: 600; }}
-
 /* ── State Grid ── */
 .hub-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--space-3); max-width: 1000px; margin: 0 auto var(--space-9); padding: 0 var(--space-4); position: relative; }}
 .hub-grid .link-card {{ background: #fff; border: var(--border-subtle); border-radius: var(--radius-lg); padding: var(--space-4) var(--space-5); box-shadow: var(--shadow-xs); min-height: 56px; display: flex; flex-direction: column; justify-content: center; will-change: transform; transition: transform 120ms cubic-bezier(.2,0,0,1), box-shadow 180ms cubic-bezier(.2,0,0,1), border-color 120ms cubic-bezier(.2,0,0,1); }}
@@ -300,13 +304,14 @@ index_html = f"""<!DOCTYPE html>
 /* ── Bottom CTA ── */
 .bottom-cta {{ background: var(--sand-900); padding: var(--space-9) var(--space-7); text-align: center; position: relative; overflow: hidden; }}
 .bottom-cta::before {{ content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 50% 100%, hsla(180,50%,26%,.06) 0%, transparent 70%); pointer-events: none; }}
-.bottom-cta h2 {{ color: #fff; font-family: var(--serif); font-size: clamp(1.35rem, 3vw, 1.8rem); font-weight: 400; letter-spacing: -.02em; margin-bottom: var(--space-3); position: relative; }}
-.bottom-cta p {{ color: var(--sand-400); font-size: .84rem; max-width: 480px; margin: 0 auto var(--space-5); line-height: 1.55; position: relative; }}
-.bottom-cta .cta-select-wrap {{ max-width: 420px; margin: 0 auto; display: flex; gap: var(--space-2); position: relative; }}
+.bottom-cta h2 {{ color: #fff; font-family: var(--serif); font-size: clamp(1.3rem, 3vw, 1.65rem); font-weight: 400; letter-spacing: -.02em; margin-bottom: var(--space-2); position: relative; }}
+.bottom-cta p {{ color: var(--sand-400); font-size: .82rem; max-width: 520px; margin: 0 auto var(--space-4); line-height: 1.5; position: relative; }}
+.bottom-cta .cta-select-wrap {{ max-width: 520px; margin: 0 auto; display: flex; gap: var(--space-2); position: relative; }}
 .bottom-cta select {{ flex: 1; padding: .75rem 1rem; border: 1px solid hsla(0,0%,100%,.12); border-radius: var(--radius-md); background: hsla(0,0%,100%,.06); color: var(--sand-200); font-family: var(--sans); font-size: .84rem; outline: none; appearance: none; cursor: pointer; transition: border-color 120ms cubic-bezier(.2,0,0,1); }}
 .bottom-cta select:focus {{ border-color: var(--teal); }}
-.bottom-cta .cta-go {{ padding: .75rem 1.5rem; background: var(--teal); color: #fff; border: none; border-radius: var(--radius-md); font-family: var(--sans); font-size: .82rem; font-weight: 500; cursor: pointer; transition: background 120ms cubic-bezier(.2,0,0,1), transform 120ms cubic-bezier(.2,0,0,1); }}
+.bottom-cta .cta-go {{ min-width: 190px; padding: .75rem 1.5rem; background: var(--teal); color: #fff; border: none; border-radius: var(--radius-md); font-family: var(--sans); font-size: .82rem; font-weight: 500; cursor: pointer; transition: background 120ms cubic-bezier(.2,0,0,1), transform 120ms cubic-bezier(.2,0,0,1); }}
 .bottom-cta .cta-go:hover {{ background: var(--teal-hover); transform: translateY(-1px); }}
+.bottom-cta .cta-go:disabled {{ opacity: .55; cursor: not-allowed; transform: none; background: var(--sand-500); }}
 </style>
 <style>
 /* ── Responsive ── */
@@ -318,9 +323,10 @@ index_html = f"""<!DOCTYPE html>
   .filter-groups {{ flex-direction: column; gap: var(--space-4); }}
   .filter-group + .filter-group {{ border-left: none; padding-left: 0; border-top: 1px solid var(--sand-200); padding-top: var(--space-4); }}
   .hub-grid {{ grid-template-columns: 1fr; padding: 0 var(--space-3); }}
-  .scope-block {{ padding: 0 var(--space-3); }}
   .bottom-cta {{ padding: var(--space-7) var(--space-4); }}
-  .footer-grid {{ grid-template-columns: 1fr !important; gap: var(--space-5) !important; }}
+  .bottom-cta .cta-select-wrap {{ max-width: 100%; flex-direction: column; }}
+  .bottom-cta .cta-go {{ min-width: 0; width: 100%; }}
+  .footer-grid {{ grid-template-columns: 1fr; gap: var(--space-5); }}
 }}
 </style>
 </head>
@@ -344,33 +350,29 @@ index_html = f"""<!DOCTYPE html>
 <main id="main-content">
   <div class="filter-toolbar">
     <div class="filter-search-wrap">
-      <input type="text" class="filter-search" id="stateSearch" placeholder="Search for your next state..." autocomplete="off" />
+      <input type="text" class="filter-search" id="stateSearch" placeholder="Search by state name..." autocomplete="off" />
     </div>
     <div class="filter-groups">
       <div class="filter-group">
         <span class="filter-label">Processing Time</span>
         <div class="filter-pills" data-group="time">
-          <button class="filter-pill" data-filter="fastest">\u22642 Weeks</button>
-          <button class="filter-pill" data-filter="2-4wk">2\u20134 Weeks</button>
-          <button class="filter-pill" data-filter="4-6wk">4\u20136 Weeks</button>
-          <button class="filter-pill" data-filter="6-plus">6+ Weeks</button>
+          <button type="button" class="filter-pill" data-filter="fastest">\u22642 Weeks</button>
+          <button type="button" class="filter-pill" data-filter="2-4wk">2\u20134 Weeks</button>
+          <button type="button" class="filter-pill" data-filter="4-6wk">4\u20136 Weeks</button>
+          <button type="button" class="filter-pill" data-filter="6-plus">6+ Weeks</button>
         </div>
       </div>
       <div class="filter-group">
         <span class="filter-label">Total Cost</span>
         <div class="filter-pills" data-group="fee">
-          <button class="filter-pill" data-filter="no-fee">No Fee</button>
-          <button class="filter-pill" data-filter="under-100">Under $100</button>
-          <button class="filter-pill" data-filter="100-200">$100\u2013$200</button>
-          <button class="filter-pill" data-filter="over-200">Over $200</button>
+          <button type="button" class="filter-pill" data-filter="no-fee">No Fee</button>
+          <button type="button" class="filter-pill" data-filter="under-100">Under $100</button>
+          <button type="button" class="filter-pill" data-filter="100-200">$100\u2013$200</button>
+          <button type="button" class="filter-pill" data-filter="over-200">Over $200</button>
         </div>
       </div>
     </div>
-    <div class="filter-count" id="filterCount"></div>
-  </div>
-
-  <div class="scope-block">
-    <div class="scope-item"><strong>What this is:</strong> We don\'t file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time.</div>
+    <div class="filter-count" id="filterCount" role="status" aria-live="polite"></div>
   </div>
 
   <div class="hub-grid" id="hubGrid">
@@ -380,13 +382,13 @@ index_html = f"""<!DOCTYPE html>
 </main>
 
 <section class="bottom-cta" aria-label="Get started">
-  <h2>Don\u2019t let bad paperwork delay your first paycheck.</h2>
-  <p>Select your target state to see board-sourced requirements, exact fees, and a step-by-step application roadmap.</p>
+  <h2>Find your state, then apply with confidence.</h2>
+  <p>Choose a state to get current fees, processing times, and board-approved application steps.</p>
   <div class="cta-select-wrap">
     <select id="bottomStateSelect" aria-label="Select a state">
-      <option value="">Select target state\u2026</option>
+      <option value="">Choose your target state\u2026</option>
     </select>
-    <button class="cta-go" id="bottomCtaGo">Continue \u2794</button>
+    <button type="button" class="cta-go" id="bottomCtaGo" disabled aria-disabled="true">Continue \u2794</button>
   </div>
 </section>
 
@@ -420,7 +422,7 @@ index_html = f"""<!DOCTYPE html>
       <div class="freshness" style="justify-content: center; margin-bottom: var(--space-4);">
         <span>Updated weekly</span>
         <span>&middot;</span>
-        <span>Last verified: <strong>February 2026</strong></span>
+        <span>Last verified: <strong>{latest_verified_label}</strong></span>
         <span>&middot;</span>
         <span>Linked directly to official state boards</span>
       </div>
@@ -461,6 +463,12 @@ index_html = f"""<!DOCTYPE html>
   }}
 
   search.addEventListener('input', applyFilters);
+  search.addEventListener('keydown', function(e) {{
+    if (e.key === 'Escape' && search.value) {{
+      search.value = '';
+      applyFilters();
+    }}
+  }});
 
   document.querySelectorAll('.filter-pills').forEach(group => {{
     const groupName = group.getAttribute('data-group');
@@ -485,6 +493,11 @@ index_html = f"""<!DOCTYPE html>
   /* Bottom CTA — populate select from state cards */
   const bottomSelect = document.getElementById('bottomStateSelect');
   const bottomGo = document.getElementById('bottomCtaGo');
+  function syncBottomCtaState() {{
+    const hasChoice = Boolean(bottomSelect.value);
+    bottomGo.disabled = !hasChoice;
+    bottomGo.setAttribute('aria-disabled', String(!hasChoice));
+  }}
   cards.forEach(c => {{
     const opt = document.createElement('option');
     opt.value = c.href;
@@ -492,11 +505,16 @@ index_html = f"""<!DOCTYPE html>
     bottomSelect.appendChild(opt);
   }});
   bottomGo.addEventListener('click', function() {{
-    if (bottomSelect.value) window.location.href = bottomSelect.value;
+    if (!bottomSelect.value) {{
+      bottomSelect.focus();
+      return;
+    }}
+    window.location.href = bottomSelect.value;
   }});
   bottomSelect.addEventListener('change', function() {{
-    if (this.value) window.location.href = this.value;
+    syncBottomCtaState();
   }});
+  syncBottomCtaState();
 }})();
 </script>
 </body>
