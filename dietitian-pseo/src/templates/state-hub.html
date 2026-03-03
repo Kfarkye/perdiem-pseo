@@ -1,308 +1,590 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" /> {# PROD: Match this to your brand color #}
 
-  <title>{{ seo.title }}</title>
-  <meta name="description" content="{{ seo.description }}">
-  <meta name="keywords" content="{{ seo.keywords }}">
-  <link rel="canonical"
-    href="https://statelicensingreference.com/{{ state_slug }}-{{ profession_name | lower | replace(' ', '-') }}-license">
+  <title>{{ seo.title | default(state_name ~ ' ' ~ profession_name ~ ' License', true) }}</title>
+  <meta name="description" content="{{ seo.description | default('', true) }}" />
+  {% if seo.keywords is defined and seo.keywords %}
+  <meta name="keywords" content="{{ seo.keywords }}" />
+  {% endif %}
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-  <meta property="og:title" content="{{ seo.title }}">
-  <meta property="og:description" content="{{ seo.description }}">
-  <meta property="og:type" content="article">
-  <meta property="og:url"
-    content="https://statelicensingreference.com/{{ state_slug }}-{{ profession_name | lower | replace(' ', '-') }}-license">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="State Licensing Reference">
-  <meta property="article:modified_time" content="{{ last_updated }}">
+  {# ---------------------------
+     URL NORMALIZATION (Zero Regression Fallbacks)
+     --------------------------- #}
+  {% set _state_slug = state_slug | default((state_name | default('state', true) | string | lower | replace(' ', '-')), true) %}
+  {% set _profession_slug = profession_slug | default((profession_name | default('license', true) | string | lower | replace(' ', '-')), true) %}
+  {% set canonical_url = "https://statelicensingreference.com/" ~ _state_slug ~ "-" ~ _profession_slug ~ "-license" %}
 
+  <link rel="canonical" href="{{ canonical_url }}" />
+
+  {# ---------------------------
+     SOCIAL GRAPH (Open Graph & Twitter Cards)
+     --------------------------- #}
+  <meta property="og:title" content="{{ seo.title | default(state_name ~ ' ' ~ profession_name ~ ' License', true) }}" />
+  <meta property="og:description" content="{{ seo.description | default('', true) }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ canonical_url }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="State Licensing Reference" />
+  {% if seo.og_image is defined and seo.og_image %}
+  <meta property="og:image" content="{{ seo.og_image }}" />
+  <meta name="twitter:image" content="{{ seo.og_image }}" />
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ seo.title | default(state_name ~ ' ' ~ profession_name ~ ' License', true) }}" />
+  <meta name="twitter:description" content="{{ seo.description | default('', true) }}" />
+
+  {# ---------------------------
+     DATE NORMALIZATION
+     --------------------------- #}
+  {% set _last_updated_iso = last_updated_iso | default(last_updated | default('', true), true) %}
+  {% if _last_updated_iso %}
+  <meta property="article:modified_time" content="{{ _last_updated_iso }}" />
+  {% endif %}
+
+  {# ---------------------------
+     STRUCTURED DATA
+     --------------------------- #}
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "name": "{{ seo.title }}",
-      "description": "{{ seo.description }}",
-      "url": "https://statelicensingreference.com/{{ state_slug }}-{{ profession_name | lower | replace(' ', '-') }}-license",
-      "dateModified": "{{ last_updated }}",
-      "inLanguage": "en-US",
-      "about": {
-        "@type": "GovernmentService",
-        "name": "{{ state_name }} {{ profession_name }} Licensure",
-        "serviceType": "Professional Licensing",
-        "provider": {
-          "@type": "GovernmentOrganization",
-          "name": "{{ board.name }}",
-          "parentOrganization": {
-            "@type": "GovernmentOrganization",
-            "name": "{{ board.parent_dept }}"
-          },
-          "telephone": "{{ board.phone }}",
-          "email": "{{ board.email | replace('mailto:', '') }}",
-          "url": "{{ board.url }}"
-        },
-        "areaServed": {
-          "@type": "State",
-          "name": "{{ state_name }}"
-        },
-        "offers": [
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://statelicensingreference.com/#website",
+        "name": "State Licensing Reference",
+        "url": "https://statelicensingreference.com/"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://statelicensingreference.com/#org",
+        "name": "State Licensing Reference",
+        "url": "https://statelicensingreference.com/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": {{ (canonical_url ~ "#breadcrumb") | tojson }},
+        "itemListElement": [
           {
-            "@type": "Offer",
-            "name": "Total Initial Fee",
-            "price": "{{ quick_facts.total_fee | replace('$', '') | replace(',', '') | replace('No state fees', '0') | default('0', true) }}",
-            "priceCurrency": "USD"
+            "@type": "ListItem",
+            "position": 1,
+            "name": "All States",
+            "item": "https://statelicensingreference.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ state_name | default('State', true) | tojson }},
+            "item": {{ ("https://statelicensingreference.com/" ~ _state_slug ~ "-licenses") | tojson }}
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": {{ (profession_name ~ " License") | default('License', true) | tojson }},
+            "item": {{ canonical_url | tojson }}
           }
         ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": {{ (canonical_url ~ "#webpage") | tojson }},
+        "url": {{ canonical_url | tojson }},
+        "name": {{ seo.title | default('', true) | tojson }},
+        "description": {{ seo.description | default('', true) | tojson }},
+        "inLanguage": "en-US",
+        "isPartOf": { "@id": "https://statelicensingreference.com/#website" },
+        "breadcrumb": { "@id": {{ (canonical_url ~ "#breadcrumb") | tojson }} },
+        "about": {
+          "@type": "GovernmentService",
+          "name": {{ (state_name ~ " " ~ profession_name ~ " Licensure") | tojson }},
+          "serviceType": "Professional Licensing",
+          "areaServed": { "@type": "State", "name": {{ state_name | default('', true) | tojson }} },
+          "provider": {
+            "@type": "GovernmentOrganization",
+            "name": {{ board.name | default('State Licensing Board', true) | tojson }},
+            "parentOrganization": {
+              "@type": "GovernmentOrganization",
+              "name": {{ board.parent_dept | default('State Department', true) | tojson }}
+            },
+            {% if board is defined and board.phone %}
+            "telephone": {{ board.phone | string | tojson }},
+            {% endif %}
+            {% if board is defined and board.email %}
+            "email": {{ (board.email | string | replace("mailto:", "")) | tojson }},
+            {% endif %}
+            "url": {{ board.url | default('https://statelicensingreference.com/', true) | tojson }}
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Total Initial Fee",
+              "price": {{ quick_facts.total_fee | default("0", true) | string | replace('$', '') | replace(',', '') | tojson }},
+              "priceCurrency": "USD"
+            }
+          ]
+        },
+        {% if _last_updated_iso %}
+        "dateModified": {{ _last_updated_iso | string | tojson }},
+        {% endif %}
+        "publisher": { "@id": "https://statelicensingreference.com/#org" }
       }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {% for faq in faqs %}
-        {
-          "@type": "Question",
-          "name": "{{ faq.question | replace('"', '\"') }}",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "{{ faq.answer | replace('"', '\"') }}"
-          }
-        }{% if not loop.last %},{% endif %}
-        {% endfor %}
-      ]
-    }
-  ]
-}
-</script>
+      {% if faqs is defined and faqs | length > 0 %}
+      ,{
+        "@type": "FAQPage",
+        "@id": {{ (canonical_url ~ "#faq") | tojson }},
+        "mainEntity": [
+          {% for faq in faqs %}
+          {
+            "@type": "Question",
+            "name": {{ (faq.question | string | striptags | trim) | tojson }},
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": {{ (faq.answer | string | striptags | trim) | tojson }}
+            }
+          }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ]
+      }
+      {% endif %}
+    ]
+  }
+  </script>
 
-  <link rel="stylesheet" href="/css/styles.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap"
-    rel="stylesheet">
+  <style>
+    /* Paste-and-go guarantee for Screen Reader visibility and Layout preservation */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    .facts-grid dd, .board-grid dd {
+      margin-inline-start: 0; /* Prevents the new semantic <dd> tags from breaking your grid spacing */
+    }
+  </style>
+
+  <link rel="preload" href="/css/styles.css" as="style" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=DM+Mono:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet" />
 </head>
 
-<body>
-
+<body id="top">
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <nav class="site-nav" aria-label="Site navigation">
-    <div class="site-nav-inner">
-      <a href="/" class="site-nav-brand">State Licensing Reference</a>
-      <ul class="site-nav-links">
-        <li><a href="/">All States</a></li>
-        <li><a href="#contact">Board</a></li>
-        <li><a href="#how-to-apply">Apply</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <header>
-    <div class="hero-inner">
-      <nav class="hero-jurisdiction" aria-label="Breadcrumb">{{ state_name }} · State Licensing Reference</nav>
-      <h1>{{ profession_name }}<br><em>{{ credential_nomenclature }} Guide</em></h1>
-      <p class="hero-meta">Issued by the <a href="{{ board.url }}" target="_blank" rel="noopener">{{ board.name }}</a>
-        under the {{ board.parent_dept }}. Data verified for {{ last_updated[:4] }}.</p>
-      <div class="hero-actions">
-        <a href="{{ board.url }}" target="_blank" rel="noopener" class="cta-primary">Visit Official Board Portal</a>
+  <header role="banner">
+    <nav class="site-nav" aria-label="Primary site navigation">
+      <div class="site-nav-inner">
+        <a href="/" class="site-nav-brand">State Licensing Reference</a>
+        <ul class="site-nav-links">
+          <li><a href="/">All States</a></li>
+          {% if steps is defined and steps | length > 0 %}<li><a href="#how-to-apply">Apply</a></li>{% endif %}
+          <li><a href="#contact">Board</a></li>
+          {% if faqs is defined and faqs | length > 0 %}<li><a href="#faq">FAQ</a></li>{% endif %}
+        </ul>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <nav class="page-nav" aria-label="Page sections">
-    <div class="page-nav-inner">
-      <a href="#quick-facts">Fees</a>
-      <a href="#contact">Board Contact</a>
-      <a href="#license-types">License Types</a>
-      <a href="#how-to-apply">How to Apply</a>
-      <a href="#documents">Documents</a>
-      <a href="#provisional-reciprocity">Reciprocity</a>
-      <a href="#faq">FAQ</a>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">All States</a> <span class="bc-sep" aria-hidden="true">·</span> {{ state_name | default('State') }}
+      </nav>
+
+      <h1 id="hero-title">{{ state_name | default('State') }} {{ profession_name | default('Professional') }} <em>License</em></h1>
+
+      <p class="hero-sub">
+        {{ board.name | default('State Board') }}. {{ quick_facts.total_fee | default('Variable fee') }} application.
+        {{ quick_facts.processing_time | default('Variable') }} processing.
+      </p>
+
+      <div class="hero-meta">
+        {% if last_updated is defined and last_updated %}
+        <span>Last verified <time datetime="{{ _last_updated_iso }}">{{ last_updated }}</time></span>
+        <span class="meta-dot" aria-hidden="true">·</span>
+        {% endif %}
+        <span>Board-sourced data</span>
+      </div>
+
+      <div class="cta-bar">
+        {% if apply_url is defined and apply_url %}
+          <a href="{{ apply_url }}" target="_blank" rel="noopener noreferrer" class="cta-primary">
+            <span class="cta-arrow" aria-hidden="true">↗</span> Apply Online <span class="sr-only">(opens in a new tab)</span>
+          </a>
+          {% if board is defined and board.url %}
+          <a href="{{ board.url }}" target="_blank" rel="noopener noreferrer" class="cta-secondary">
+            <span class="cta-arrow" aria-hidden="true">⊡</span> Official Board Portal <span class="sr-only">(opens in a new tab)</span>
+          </a>
+          {% endif %}
+        {% else %}
+          {% if board is defined and board.url %}
+          <a href="{{ board.url }}" target="_blank" rel="noopener noreferrer" class="cta-primary">
+            <span class="cta-arrow" aria-hidden="true">↗</span> Official Board Portal <span class="sr-only">(opens in a new tab)</span>
+          </a>
+          {% endif %}
+        {% endif %}
+      </div>
     </div>
-  </nav>
+  </section>
 
   <main id="main-content">
     <article>
 
-      <div id="quick-facts" class="quick-facts" role="region" aria-label="Key facts at a glance">
-        <div class="quick-fact reveal">
-          <div class="quick-fact-label">Total Initial Fee</div>
-          <div class="quick-fact-value">{{ quick_facts.total_fee }}</div>
-          <div class="quick-fact-note">{{ quick_facts.fee_breakdown }}</div>
-        </div>
-        <div class="quick-fact reveal">
-          <div class="quick-fact-label">Renewal</div>
-          <div class="quick-fact-value">{{ quick_facts.renewal_fee }}</div>
-          <div class="quick-fact-note">{{ quick_facts.renewal_cycle }}</div>
-        </div>
-        <div class="quick-fact">
-          <div class="quick-fact-label">Processing Time</div>
-          <div class="quick-fact-value">{{ quick_facts.processing_time }}</div>
-          <div class="quick-fact-note">Subject to board volume</div>
-        </div>
-        <div class="quick-fact">
-          <div class="quick-fact-label">License Duration</div>
-          <div class="quick-fact-value">{{ quick_facts.license_duration }}</div>
-          <div class="quick-fact-note">From date of issuance</div>
-        </div>
-      </div>
+      <section aria-labelledby="quick-facts-heading">
+        <h2 id="quick-facts-heading" class="sr-only">Quick Facts at a Glance</h2>
+        <dl id="quick-facts" class="facts-grid" role="region" aria-label="Key facts at a glance">
+          <div class="fact">
+            <dt class="fact-label">Application Fee</dt>
+            <dd class="fact-value">{{ quick_facts.total_fee | default('TBD') }}</dd>
+            {% if quick_facts.fee_breakdown is defined and quick_facts.fee_breakdown %}
+            <dd class="fact-note">{{ quick_facts.fee_breakdown }}</dd>
+            {% endif %}
+          </div>
+          <div class="fact">
+            <dt class="fact-label">Processing</dt>
+            <dd class="fact-value">{{ quick_facts.processing_time | default('Varies') }}</dd>
+            <dd class="fact-note">Subject to board volume</dd>
+          </div>
+          <div class="fact">
+            <dt class="fact-label">Renewal</dt>
+            <dd class="fact-value">{{ quick_facts.renewal_fee | default('TBD') }}</dd>
+            {% if quick_facts.renewal_cycle is defined and quick_facts.renewal_cycle %}
+            <dd class="fact-note">{{ quick_facts.renewal_cycle }}</dd>
+            {% endif %}
+          </div>
+          <div class="fact">
+            <dt class="fact-label">License Duration</dt>
+            <dd class="fact-value">{{ quick_facts.license_duration | default('Varies') }}</dd>
+            <dd class="fact-note">From date of issuance</dd>
+          </div>
+        </dl>
+      </section>
 
-      <section id="contact">
-        <div class="section-label">Board Contact</div>
-        <h2>{{ board.name }}</h2>
-        <div class="contact-grid reveal">
-          <address class="contact-card" style="font-style:normal">
-            <div class="contact-card-label">Mailing Address</div>
-            <p>{{ board.mailing_address | safe }}</p>
+      {% if alerts is defined and alerts | length > 0 %}
+        <section aria-label="Important Alerts">
+          {% for alert in alerts %}
+            <div class="callout callout-{{ alert.type | default('info') }}" role="alert">
+              <strong>{{ alert.title | default('Notice') }}</strong><br />
+              {{ alert.text | safe }}
+            </div>
+            {% if alert.source_url is defined and alert.source_url %}
+              <div class="source-bar">
+                Source:
+                <a href="{{ alert.source_url }}" target="_blank" rel="noopener noreferrer">
+                  {{ alert.source_label | default('Official Source') }} <span class="sr-only">(opens in a new tab)</span>
+                </a>
+                {% if alert.verified_date is defined and alert.verified_date %} 
+                  <span aria-hidden="true">·</span> Verified <time datetime="{{ alert.verified_date }}">{{ alert.verified_date }}</time>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </section>
+      {% endif %}
+
+      <section id="contact" class="section" aria-labelledby="contact-heading">
+        <div class="section-label" aria-hidden="true">Licensing Authority</div>
+        <div class="board-card">
+          <header class="board-card-header">
+            <h2 id="contact-heading">{{ board.name | default('State Board') }}</h2>
+            {% if board is defined and board.parent_dept %}
+            <span class="board-badge">{{ board.parent_dept }}</span>
+            {% endif %}
+          </header>
+
+          <address class="board-grid" style="font-style: normal;">
+            <dl style="display: contents;">
+              {% if board is defined and board.phone %}
+              <div class="board-field">
+                <dt class="board-field-label">Phone</dt>
+                <dd class="board-field-value">
+                  <a href="tel:{{ board.phone | string | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}" class="phone-link">
+                    {{ board.phone }}
+                  </a>
+                </dd>
+              </div>
+              {% endif %}
+
+              {% if board is defined and board.email %}
+              <div class="board-field">
+                <dt class="board-field-label">Email</dt>
+                <dd class="board-field-value">
+                  <a href="mailto:{{ board.email | string | replace('mailto:', '') }}">{{ board.email | string | replace('mailto:', '') }}</a>
+                </dd>
+              </div>
+              {% endif %}
+
+              {% if board is defined and board.mailing_address %}
+              <div class="board-field">
+                <dt class="board-field-label">Mailing Address</dt>
+                <dd class="board-field-value">{{ board.mailing_address | safe }}</dd>
+              </div>
+              {% endif %}
+
+              {% if board is defined and board.physical_address %}
+              <div class="board-field">
+                <dt class="board-field-label">Physical Address</dt>
+                <dd class="board-field-value">{{ board.physical_address | safe }}</dd>
+              </div>
+              {% endif %}
+
+              {% if apply_url is defined and apply_url %}
+                <div class="board-field">
+                  <dt class="board-field-label">Application Portal</dt>
+                  <dd class="board-field-value">
+                    <a href="{{ apply_url }}" target="_blank" rel="noopener noreferrer" title="{{ apply_url }}">
+                      {{ apply_url | string | replace('https://', '') | replace('http://', '') | replace('www.', '') | truncate(40, true, '...') }}
+                      <span class="sr-only">(opens in a new tab)</span>
+                    </a>
+                  </dd>
+                </div>
+              {% endif %}
+
+              {% if license_verification_url is defined and license_verification_url %}
+                <div class="board-field">
+                  <dt class="board-field-label">License Verification</dt>
+                  <dd class="board-field-value">
+                    <a href="{{ license_verification_url }}" target="_blank" rel="noopener noreferrer">
+                      Licensee Lookup <span class="sr-only">(opens in a new tab)</span>
+                    </a>
+                  </dd>
+                </div>
+              {% endif %}
+            </dl>
           </address>
-          <address class="contact-card" style="font-style:normal">
-            <div class="contact-card-label">Physical Address</div>
-            <p>{{ board.physical_address | safe }}</p>
-          </address>
-          <div class="contact-card">
-            <div class="contact-card-label">Phone &amp; Fax</div>
-            <p>Phone: <strong>{{ board.phone }}</strong></p>
-            <p>Fax: <strong>{{ board.fax }}</strong></p>
-          </div>
-          <div class="contact-card">
-            <div class="contact-card-label">Email</div>
-            <p><a href="{{ board.email }}">{{ board.email | replace('mailto:', '') }}</a></p>
-          </div>
         </div>
       </section>
 
-      <section id="license-types">
-        <div class="section-label">Credential Categories</div>
-        <h2>{{ state_name }} {{ profession_name }} License Types</h2>
-        <div class="req-grid reveal">
+      {% if license_types is defined and license_types | length > 0 %}
+      <section id="license-types" class="section" aria-labelledby="types-heading">
+        <div class="section-label" aria-hidden="true">Credential Categories</div>
+        <h2 id="types-heading">{{ state_name | default('State') }} {{ profession_name | default('Professional') }} License Types</h2>
+        <div class="types-grid">
           {% for type in license_types %}
-          <div class="req-cell">
-            <h3>{{ type.title }}</h3>
-            <p>{{ type.description }}</p>
-          </div>
+            <div class="type-card">
+              <h3>{{ type.title }}</h3>
+              <p>{{ type.description | safe }}</p>
+            </div>
           {% endfor %}
         </div>
       </section>
+      {% endif %}
 
-      <section id="how-to-apply">
-        <div class="section-label">Application Process</div>
-        <h2>How to Apply for a {{ state_name }} {{ credential_nomenclature }}</h2>
-        <div class="steps reveal">
+      {% if steps is defined and steps | length > 0 %}
+      <section id="how-to-apply" class="section" aria-labelledby="apply-heading">
+        <div class="section-label" aria-hidden="true">Application Process</div>
+        <h2 id="apply-heading">How to Get Licensed in {{ state_name | default('State') }}</h2>
+        <div class="steps">
           {% for step in steps %}
-          <div class="step">
-            <h3>{{ step.title }}</h3>
-            <p>{{ step.description }}</p>
-          </div>
+            <div class="step">
+              <div class="step-marker" aria-hidden="true"></div>
+              <div class="step-body">
+                <h3>{{ step.title }}</h3>
+                <p>{{ step.description | safe }}</p>
+              </div>
+            </div>
           {% endfor %}
         </div>
       </section>
+      {% endif %}
 
-      <section id="documents">
-        <div class="section-label">Required Documents</div>
-        <h2>Application Document Checklist</h2>
-        <ul class="checklist reveal">
+      {% if documents is defined and documents | length > 0 %}
+      <section id="documents" class="section" aria-labelledby="docs-heading">
+        <div class="section-label" aria-hidden="true">Required Documents</div>
+        <h2 id="docs-heading">Application Checklist</h2>
+        <ul class="checklist">
           {% for doc in documents %}
-          <li>{{ doc.item }}<span class="detail">{{ doc.detail }}</span></li>
+            <li>
+              <span class="check-icon" aria-hidden="true">✓</span>
+              <div class="check-text">
+                <strong>{{ doc.item }}</strong>
+                {% if doc.detail is defined and doc.detail %}
+                <span>{{ doc.detail | safe }}</span>
+                {% endif %}
+              </div>
+            </li>
           {% endfor %}
         </ul>
       </section>
+      {% endif %}
 
-      <section id="provisional-reciprocity">
-        <div class="section-label">Practice Laws</div>
-        <h2>Provisional Practice & Reciprocity</h2>
-        <div class="callout callout-warm" style="margin-bottom: 1rem;">
-          <h3>Provisional Rules</h3>
-          <p>{{ provisional_text }}</p>
+      {% if military_spouse is defined and military_spouse %}
+        <section class="section" aria-labelledby="military-heading">
+          <div class="section-label" aria-hidden="true">Expedited Path</div>
+          <h2 id="military-heading">Military Spouse &amp; Active Duty</h2>
+          <div class="callout callout-success">
+            <strong>{{ military_spouse.title | default('Expedited Licensing') }}</strong><br />
+            {{ military_spouse.text | safe }}
+          </div>
+          {% if military_spouse.source_url is defined and military_spouse.source_url %}
+            <div class="source-bar">
+              Source:
+              <a href="{{ military_spouse.source_url }}" target="_blank" rel="noopener noreferrer">
+                {{ military_spouse.source_label | default('Official Board Page') }}
+                <span class="sr-only">(opens in a new tab)</span>
+              </a>
+            </div>
+          {% endif %}
+        </section>
+      {% endif %}
+
+      {% if (provisional_text is defined and provisional_text) or (reciprocity_text is defined and reciprocity_text) %}
+      <section id="provisional-reciprocity" class="section" aria-labelledby="laws-heading">
+        <div class="section-label" aria-hidden="true">Practice Laws</div>
+        <h2 id="laws-heading">Provisional Practice &amp; Reciprocity</h2>
+        
+        {% if provisional_text is defined and provisional_text %}
+        <div class="callout callout-warm">
+          <strong>Provisional Rules</strong><br />
+          {{ provisional_text | safe }}
         </div>
-        <div class="callout">
-          <h3>Reciprocity & Endorsement</h3>
-          <p>{{ reciprocity_text }}</p>
+        {% endif %}
+
+        {% if reciprocity_text is defined and reciprocity_text %}
+        <div class="callout callout-default" style="margin-top: .75rem;">
+          <strong>Reciprocity &amp; Endorsement</strong><br />
+          {{ reciprocity_text | safe }}
         </div>
+        {% endif %}
+
+        {% if quick_facts is defined and quick_facts.processing_time is defined and quick_facts.processing_time not in ['N/A', 'TBD', 'Unknown', ''] %}
+          <div class="callout callout-warn" style="margin-top: .75rem;">
+            <strong>Travel {{ profession_name | default('Professional') }} Timeline</strong><br />
+            If your assignment start date is within 5 weeks, apply immediately and call the board 
+            {% if board is defined and board.phone %}
+            at <a href="tel:{{ board.phone | string | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ board.phone }}</a>
+            {% endif %}
+            to confirm current processing times.
+            {% if temp_license is defined and temp_license.available is defined and not temp_license.available %}
+              <br/><br/><em>Note:</em> {{ state_name | default('The state') }} does not offer a standard provisional license, so your license must be issued before your first day.
+            {% endif %}
+          </div>
+        {% endif %}
+      </section>
+      {% endif %}
+
+      <section class="section" aria-labelledby="renewal-heading">
+        <div class="section-label" aria-hidden="true">Maintenance</div>
+        <h2 id="renewal-heading">Renewal Requirements</h2>
+        <p class="body-text">
+          {{ state_name | default('State') }} {{ profession_name | default('professional') | string | lower }} licenses renew {{ quick_facts.renewal_cycle | default('periodically') | string | lower }}.
+          Renewal fee is {{ quick_facts.renewal_fee | default('TBD') }}.
+          {% if state_ce is defined and state_ce %}{{ state_ce | safe }}{% endif %}
+        </p>
       </section>
 
-      <section id="faq">
-        <div class="section-label">Frequently Asked Questions</div>
-        <h2>{{ state_name }} {{ profession_name }} FAQ</h2>
+      {% if faqs is defined and faqs | length > 0 %}
+      <section id="faq" class="section" aria-labelledby="faq-heading">
+        <div class="section-label" aria-hidden="true">Frequently Asked Questions</div>
+        <h2 id="faq-heading">{{ state_name | default('State') }} {{ profession_name | default('Professional') }} FAQ</h2>
         {% for faq in faqs %}
-        <div class="faq-item">
-          <h3>{{ faq.question }}</h3>
-          <p>{{ faq.answer }}</p>
-        </div>
+          <div class="faq-item">
+            <h3>{{ faq.question }}</h3>
+            <p>{{ faq.answer | safe }}</p>
+          </div>
         {% endfor %}
       </section>
+      {% endif %}
+
+      <div class="cta-bar cta-bar-bottom">
+        {% if apply_url is defined and apply_url %}
+          <a href="{{ apply_url }}" target="_blank" rel="noopener noreferrer" class="cta-primary">
+            <span class="cta-arrow" aria-hidden="true">↗</span> Apply Online <span class="sr-only">(opens in a new tab)</span>
+          </a>
+        {% endif %}
+        <a href="/" class="cta-secondary">
+          <span class="cta-arrow" aria-hidden="true">←</span> All States Directory
+        </a>
+      </div>
 
     </article>
   </main>
 
-  <a href="#" class="back-to-top" aria-label="Back to top" title="Back to top">↑</a>
+  <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <span aria-hidden="true">↑</span>
+  </a>
 
-  <footer>
+  <footer role="contentinfo">
     <div class="footer-inner">
       <div class="footer-grid">
         <div>
           <div class="footer-brand">State Licensing Reference</div>
-          <p class="footer-tagline">Independent, YMYL-compliant licensing guides for dietitians and nutritionists across
-            the United States.</p>
+          <p class="footer-tagline">
+            Independent, YMYL-compliant licensing guides for {{ profession_name | default('professionals') | string | lower }}s and nutritionists across the United States.
+          </p>
         </div>
         <div>
           <div class="footer-col-title">This Page</div>
           <ul class="footer-links">
-            <li><a href="#quick-facts">Fees & Quick Facts</a></li>
+            <li><a href="#quick-facts">Fees &amp; Quick Facts</a></li>
             <li><a href="#contact">Board Contact</a></li>
-            <li><a href="#how-to-apply">How to Apply</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            {% if steps is defined and steps | length > 0 %}<li><a href="#how-to-apply">How to Apply</a></li>{% endif %}
+            {% if faqs is defined and faqs | length > 0 %}<li><a href="#faq">FAQ</a></li>{% endif %}
           </ul>
         </div>
         <div>
           <div class="footer-col-title">Explore</div>
           <ul class="footer-links">
             <li><a href="/">All States Directory</a></li>
-            <li><a href="{{ board.url }}" target="_blank" rel="noopener">Official Board Site</a></li>
+            {% if board is defined and board.url %}
+            <li><a href="{{ board.url }}" target="_blank" rel="noopener noreferrer">Official Board Site <span class="sr-only">(opens in a new tab)</span></a></li>
+            {% endif %}
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p class="footer-disclaimer"><strong>Disclaimer:</strong> State Licensing Reference is an independent
-          informational portal and is not affiliated with the {{ board.parent_dept }} or any government agency.
-          Requirements and fees are subject to change. Always verify current regulations directly with the official
-          state board.</p>
-        <p class="footer-copyright">&copy; {{ last_updated[:4] }} State Licensing Reference</p>
+        <p class="footer-disclaimer">
+          <strong>Disclaimer:</strong> State Licensing Reference is an independent informational portal and is not affiliated with the {{ board.parent_dept | default('state government') }} or any government agency. Requirements and fees are subject to change. Always verify current regulations directly with the official state board.
+        </p>
+        
+        {# Safely fallback to 2026 if last_updated is missing or too short #}
+        {% set _current_year = (last_updated | string)[:4] if (last_updated is defined and last_updated and (last_updated | string)|length >= 4) else "2026" %}
+        <p class="footer-copyright">&copy; {{ _current_year }} State Licensing Reference</p>
       </div>
     </div>
   </footer>
 
   <script>
-    // Back-to-top
-    (function () {
+    document.addEventListener("DOMContentLoaded", function () {
       var btn = document.querySelector('.back-to-top');
       if (!btn) return;
-      window.addEventListener('scroll', function () {
-        btn.classList.toggle('visible', window.scrollY > 600);
-      }, { passive: true });
-    })();
 
-    // Intersection Observer — earned entrance animations
-    (function () {
-      var els = document.querySelectorAll('.reveal');
-      if (!els.length || !('IntersectionObserver' in window)) {
-        els.forEach(function (el) { el.classList.add('visible'); });
-        return;
-      }
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            io.unobserve(e.target);
+      var isScrolling = false;
+      window.addEventListener('scroll', function () {
+        if (!isScrolling) {
+          window.requestAnimationFrame(function () {
+            btn.classList.toggle('visible', window.scrollY > 600);
+            isScrolling = false;
+          });
+          isScrolling = true;
+        }
+      }, { passive: true });
+
+      // True A11y programmatic focus routing
+      btn.addEventListener('click', function(e) {
+        if (this.getAttribute('href') === '#top') {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          
+          var topTarget = document.getElementById('top');
+          if (topTarget) {
+            topTarget.setAttribute('tabindex', '-1');
+            topTarget.focus({ preventScroll: true });
+            
+            // Remove tabindex on blur so we don't pollute the DOM
+            topTarget.addEventListener('blur', function() {
+              topTarget.removeAttribute('tabindex');
+            }, { once: true });
           }
-        });
-      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-      els.forEach(function (el) { io.observe(el); });
-    })();
+        }
+      });
+    });
   </script>
 </body>
-
 </html>
