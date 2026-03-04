@@ -394,7 +394,11 @@ main {
   letter-spacing: .04em; text-transform: uppercase;
   padding: .3rem .65rem; border-radius: var(--radius-full);
   background: var(--teal-light); color: var(--teal);
-  white-space: nowrap;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.35;
 }
 
 .board-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); }
@@ -615,6 +619,8 @@ footer {
   main { padding: 0 var(--space-5) var(--space-7); }
   .facts-grid { grid-template-columns: repeat(2, 1fr); }
   .board-grid { grid-template-columns: 1fr; }
+  .board-card-header { align-items: flex-start; }
+  .board-badge { margin-top: .2rem; }
   .footer-grid { grid-template-columns: 1fr; gap: var(--space-5); }
   .cta-bar { flex-direction: column; }
   .cta-primary, .cta-secondary { justify-content: center; width: 100%; }
@@ -627,6 +633,8 @@ footer {
   .fact-value { font-size: 1.1rem; }
   .facts-grid { grid-template-columns: 1fr; } /* Stack completely on tiny phones */
   .board-card { padding: var(--space-4); }
+  .board-badge { font-size: .55rem; letter-spacing: .03em; }
+  .section h2 { font-size: 1.12rem; }
   .back-to-top { bottom: var(--space-5); right: var(--space-5); }
 }
 
