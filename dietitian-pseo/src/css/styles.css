@@ -617,11 +617,14 @@ footer {
   .hero { padding: var(--space-6) var(--space-5) var(--space-5); }
   .hero h1 { font-size: 1.6rem; }
   main { padding: 0 var(--space-5) var(--space-7); }
+  .section { margin-top: var(--space-7); }
+  .section h2 { margin-bottom: var(--space-4); }
   .facts-grid { grid-template-columns: repeat(2, 1fr); }
   .board-grid { grid-template-columns: 1fr; }
   .board-card-header { align-items: flex-start; }
   .board-badge { margin-top: .2rem; }
-  .footer-grid { grid-template-columns: 1fr; gap: var(--space-5); }
+  footer { padding: var(--space-8) var(--space-5) var(--space-6); margin-top: var(--space-8); }
+  .footer-grid { grid-template-columns: 1fr; gap: var(--space-4); padding-bottom: var(--space-5); }
   .cta-bar { flex-direction: column; }
   .cta-primary, .cta-secondary { justify-content: center; width: 100%; }
   .site-nav { padding: 0 var(--space-4); }
@@ -630,11 +633,20 @@ footer {
 
 @media (max-width: 480px) {
   .hero h1 { font-size: 1.35rem; }
+  main { padding: 0 var(--space-4) var(--space-6); }
+  .section { margin-top: var(--space-6); }
   .fact-value { font-size: 1.1rem; }
-  .facts-grid { grid-template-columns: 1fr; } /* Stack completely on tiny phones */
+  .facts-grid { grid-template-columns: 1fr; margin: var(--space-6) 0 var(--space-5); } /* Stack completely on tiny phones */
+  .fact { padding: var(--space-4); }
+  .fact-note { font-size: .7rem; }
   .board-card { padding: var(--space-4); }
   .board-badge { font-size: .55rem; letter-spacing: .03em; }
-  .section h2 { font-size: 1.12rem; }
+  .section h2 { font-size: 1.08rem; margin-bottom: var(--space-4); }
+  footer { padding: var(--space-7) var(--space-4) var(--space-5); margin-top: var(--space-7); }
+  .footer-tagline { font-size: .74rem; line-height: 1.5; }
+  .footer-links li { margin-bottom: var(--space-1); }
+  .footer-bottom { padding-top: var(--space-4); }
+  .footer-disclaimer { font-size: .68rem; line-height: 1.55; margin-bottom: var(--space-2); }
   .back-to-top { bottom: var(--space-5); right: var(--space-5); }
 }
 
