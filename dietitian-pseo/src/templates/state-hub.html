@@ -43,6 +43,20 @@
      DATE NORMALIZATION
      --------------------------- #}
   {% set _last_updated_iso = last_updated_iso | default(last_updated | default('', true), true) %}
+  {# ---------------------------
+     SAFE EXTERNAL URL GUARDS
+     --------------------------- #}
+  {% set _board_url = board.url | default('', true) | string | trim %}
+  {% set _apply_url = apply_url | default('', true) | string | trim %}
+  {% set _license_verification_url = license_verification_url | default('', true) | string | trim %}
+  {% set _board_phone = board.phone | default('', true) | string | trim %}
+  {% set _board_email = board.email | default('', true) | string | replace('mailto:', '') | trim %}
+  {% set _invalid_contact_values = ['n/a', 'na', 'not applicable', 'none', 'null', 'unknown', 'tbd', 'pending', '-'] %}
+  {% set _has_board_phone = _board_phone and ((_board_phone | lower) not in _invalid_contact_values) %}
+  {% set _has_board_email = _board_email and ((_board_email | lower) not in _invalid_contact_values) %}
+  {% set _has_board_url = _board_url.startswith('http://') or _board_url.startswith('https://') %}
+  {% set _has_apply_url = _apply_url.startswith('http://') or _apply_url.startswith('https://') %}
+  {% set _has_license_verification_url = _license_verification_url.startswith('http://') or _license_verification_url.startswith('https://') %}
   {% if _last_updated_iso %}
   <meta property="article:modified_time" content="{{ _last_updated_iso }}" />
   {% endif %}
@@ -111,13 +125,13 @@
               "@type": "GovernmentOrganization",
               "name": {{ board.parent_dept | default('State Department', true) | tojson }}
             },
-            {% if board is defined and board.phone %}
-            "telephone": {{ board.phone | string | tojson }},
+            {% if _has_board_phone %}
+            "telephone": {{ _board_phone | tojson }},
             {% endif %}
-            {% if board is defined and board.email %}
-            "email": {{ (board.email | string | replace("mailto:", "")) | tojson }},
+            {% if _has_board_email %}
+            "email": {{ _board_email | tojson }},
             {% endif %}
-            "url": {{ board.url | default('https://statelicensingreference.com/', true) | tojson }}
+            "url": {{ (_board_url if _has_board_url else 'https://statelicensingreference.com/') | tojson }}
           },
           "offers": [
             {
@@ -212,18 +226,18 @@
       </div>
 
       <div class="cta-bar">
-        {% if apply_url is defined and apply_url %}
-          <a href="{{ apply_url }}" target="_blank" rel="noopener noreferrer" class="cta-primary">
+        {% if _has_apply_url %}
+          <a href="{{ _apply_url }}" target="_blank" rel="noopener noreferrer" class="cta-primary">
             <span class="cta-arrow" aria-hidden="true">↗</span> Apply Online <span class="sr-only">(opens in a new tab)</span>
           </a>
-          {% if board is defined and board.url %}
-          <a href="{{ board.url }}" target="_blank" rel="noopener noreferrer" class="cta-secondary">
+          {% if _has_board_url %}
+          <a href="{{ _board_url }}" target="_blank" rel="noopener noreferrer" class="cta-secondary">
             <span class="cta-arrow" aria-hidden="true">⊡</span> Official Board Portal <span class="sr-only">(opens in a new tab)</span>
           </a>
           {% endif %}
         {% else %}
-          {% if board is defined and board.url %}
-          <a href="{{ board.url }}" target="_blank" rel="noopener noreferrer" class="cta-primary">
+          {% if _has_board_url %}
+          <a href="{{ _board_url }}" target="_blank" rel="noopener noreferrer" class="cta-primary">
             <span class="cta-arrow" aria-hidden="true">↗</span> Official Board Portal <span class="sr-only">(opens in a new tab)</span>
           </a>
           {% endif %}
@@ -303,9 +317,13 @@
               <div class="board-field">
                 <dt class="board-field-label">Phone</dt>
                 <dd class="board-field-value">
+                  {% if _has_board_phone %}
                   <a href="tel:{{ board.phone | string | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}" class="phone-link">
                     {{ board.phone }}
                   </a>
+                  {% else %}
+                  {{ board.phone }}
+                  {% endif %}
                 </dd>
               </div>
               {% endif %}
@@ -314,7 +332,11 @@
               <div class="board-field">
                 <dt class="board-field-label">Email</dt>
                 <dd class="board-field-value">
-                  <a href="mailto:{{ board.email | string | replace('mailto:', '') }}">{{ board.email | string | replace('mailto:', '') }}</a>
+                  {% if _has_board_email %}
+                  <a href="mailto:{{ _board_email }}">{{ _board_email }}</a>
+                  {% else %}
+                  {{ board.email | string | replace('mailto:', '') }}
+                  {% endif %}
                 </dd>
               </div>
               {% endif %}
@@ -333,23 +355,23 @@
               </div>
               {% endif %}
 
-              {% if apply_url is defined and apply_url %}
+              {% if _has_apply_url %}
                 <div class="board-field">
                   <dt class="board-field-label">Application Portal</dt>
                   <dd class="board-field-value">
-                    <a href="{{ apply_url }}" target="_blank" rel="noopener noreferrer" title="{{ apply_url }}">
-                      {{ apply_url | string | replace('https://', '') | replace('http://', '') | replace('www.', '') | truncate(40, true, '...') }}
+                    <a href="{{ _apply_url }}" target="_blank" rel="noopener noreferrer" title="{{ _apply_url }}">
+                      {{ _apply_url | string | replace('https://', '') | replace('http://', '') | replace('www.', '') | truncate(40, true, '...') }}
                       <span class="sr-only">(opens in a new tab)</span>
                     </a>
                   </dd>
                 </div>
               {% endif %}
 
-              {% if license_verification_url is defined and license_verification_url %}
+              {% if _has_license_verification_url %}
                 <div class="board-field">
                   <dt class="board-field-label">License Verification</dt>
                   <dd class="board-field-value">
-                    <a href="{{ license_verification_url }}" target="_blank" rel="noopener noreferrer">
+                    <a href="{{ _license_verification_url }}" target="_blank" rel="noopener noreferrer">
                       Licensee Lookup <span class="sr-only">(opens in a new tab)</span>
                     </a>
                   </dd>
@@ -456,7 +478,7 @@
           <div class="callout callout-warn" style="margin-top: .75rem;">
             <strong>Travel {{ profession_name | default('Professional') }} Timeline</strong><br />
             If your assignment start date is within 5 weeks, apply immediately and call the board 
-            {% if board is defined and board.phone %}
+            {% if _has_board_phone %}
             at <a href="tel:{{ board.phone | string | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ board.phone }}</a>
             {% endif %}
             to confirm current processing times.
@@ -492,8 +514,8 @@
       {% endif %}
 
       <div class="cta-bar cta-bar-bottom">
-        {% if apply_url is defined and apply_url %}
-          <a href="{{ apply_url }}" target="_blank" rel="noopener noreferrer" class="cta-primary">
+        {% if _has_apply_url %}
+          <a href="{{ _apply_url }}" target="_blank" rel="noopener noreferrer" class="cta-primary">
             <span class="cta-arrow" aria-hidden="true">↗</span> Apply Online <span class="sr-only">(opens in a new tab)</span>
           </a>
         {% endif %}
@@ -531,8 +553,8 @@
           <div class="footer-col-title">Explore</div>
           <ul class="footer-links">
             <li><a href="/">All States Directory</a></li>
-            {% if board is defined and board.url %}
-            <li><a href="{{ board.url }}" target="_blank" rel="noopener noreferrer">Official Board Site <span class="sr-only">(opens in a new tab)</span></a></li>
+            {% if _has_board_url %}
+            <li><a href="{{ _board_url }}" target="_blank" rel="noopener noreferrer">Official Board Site <span class="sr-only">(opens in a new tab)</span></a></li>
             {% endif %}
           </ul>
         </div>
