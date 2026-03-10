@@ -1,123 +1,155 @@
 {
-    "state_slug": "utah-slp",
-    "state_name": "Utah",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "utah-slp",
+  "state_name": "Utah",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Speech-Language Pathologist",
+  "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Utah Speech-Language Pathologist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Utah - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "speech-language pathologist license reciprocity utah, how to transfer speech-language pathologist license to utah, speech-language pathologist compact utah, utah speech-language pathologist endorsement application"
+  },
+  "board": {
+    "name": "Division of Professional Licensing \u2014 Speech-Language Pathology",
+    "parent_dept": "Utah Department of Commerce, Division of Professional Licensing (DOPL)",
+    "mailing_address": "P.O. Box 146741, Salt Lake City, UT 84114-6741",
+    "physical_address": "160 E. 300 South, Salt Lake City, UT 84111",
+    "phone": "(801) 530-6628",
+    "fax": "(801) 530-6511",
+    "email": "mailto:dopl@utah.gov",
+    "url": "https://dopl.utah.gov/slp/"
+  },
+  "quick_facts": {
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application and license fee",
+    "renewal_fee": "$52",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "2 to 4 weeks",
+    "license_duration": "2 years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Speech-Language Pathologist",
+      "description": "Full credential for independent SLP practice in Utah."
     },
-    "profession_name": "Speech-Language Pathologist",
-    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Utah SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
-        "description": "Complete guide to Utah speech-language pathologist licensing.",
-        "keywords": "Utah SLP license, speech-language pathologist Utah"
+    {
+      "title": "Provisional SLP License",
+      "description": "For SLP graduates completing their Clinical Fellowship."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Earn a Master's Degree in SLP",
+      "description": "From a CAA-accredited program."
     },
-    "board": {
-        "name": "Division of Professional Licensing — Speech-Language Pathology",
-        "parent_dept": "Utah Department of Commerce, Division of Professional Licensing (DOPL)",
-        "mailing_address": "P.O. Box 146741, Salt Lake City, UT 84114-6741",
-        "physical_address": "160 E. 300 South, Salt Lake City, UT 84111",
-        "phone": "(801) 530-6628",
-        "fax": "(801) 530-6511",
-        "email": "mailto:dopl@utah.gov",
-        "url": "https://dopl.utah.gov/slp/"
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Test code 5331, score 162."
     },
-    "quick_facts": {
-        "total_fee": "$100",
-        "fee_breakdown": "$100 application and license fee",
-        "renewal_fee": "$52",
-        "renewal_cycle": "Every 2 years",
-        "processing_time": "2 to 4 weeks",
-        "license_duration": "2 years"
+    {
+      "title": "Complete Clinical Fellowship",
+      "description": "36 weeks supervised clinical practice."
     },
-    "license_types": [
-        {
-            "title": "Licensed Speech-Language Pathologist",
-            "description": "Full credential for independent SLP practice in Utah."
-        },
-        {
-            "title": "Provisional SLP License",
-            "description": "For SLP graduates completing their Clinical Fellowship."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Earn a Master's Degree in SLP",
-            "description": "From a CAA-accredited program."
-        },
-        {
-            "title": "Pass the Praxis Examination",
-            "description": "Test code 5331, score 162."
-        },
-        {
-            "title": "Complete Clinical Fellowship",
-            "description": "36 weeks supervised clinical practice."
-        },
-        {
-            "title": "Submit Application to DOPL",
-            "description": "Submit with $100 fee through DOPL."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official graduate transcripts",
-            "detail": "From a CAA-accredited program."
-        },
-        {
-            "item": "Praxis exam score report",
-            "detail": "Score of 162 or higher."
-        },
-        {
-            "item": "Clinical Fellowship verification",
-            "detail": "CF completion documentation."
-        },
-        {
-            "item": "Background check",
-            "detail": "BCI and FBI background check."
-        }
-    ],
-    "telepractice_text": "Utah permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
-    "provisional_text": "Utah issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
-    "reciprocity_text": "Utah is a member of the ASLP Interstate Compact.",
-    "faqs": [
-        {
-            "question": "How much does a Utah SLP license cost?",
-            "answer": "$100 initial. $52 biennial renewal — one of the lowest renewal fees in the country."
-        },
-        {
-            "question": "Is Utah part of the ASLP Interstate Compact?",
-            "answer": "Yes."
-        },
-        {
-            "question": "Does Utah allow telepractice for SLPs?",
-            "answer": "Yes."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Submit Application to DOPL",
+      "description": "Submit with $100 fee through DOPL."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official graduate transcripts",
+      "detail": "From a CAA-accredited program."
     },
-    "fees_endorsement": {
-        "app_fee": "$100",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$100"
+    {
+      "item": "Praxis exam score report",
+      "detail": "Score of 162 or higher."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Clinical Fellowship verification",
+      "detail": "CF completion documentation."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://dopl.utah.gov/slp/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Background check",
+      "detail": "BCI and FBI background check."
+    }
+  ],
+  "telepractice_text": "Utah permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+  "provisional_text": "Utah issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+  "reciprocity_text": "Utah is a member of the ASLP Interstate Compact.",
+  "faqs": [
+    {
+      "question": "How much does a Utah SLP license cost?",
+      "answer": "$100 initial. $52 biennial renewal \u2014 one of the lowest renewal fees in the country."
+    },
+    {
+      "question": "Is Utah part of the ASLP Interstate Compact?",
+      "answer": "Yes."
+    },
+    {
+      "question": "Does Utah allow telepractice for SLPs?",
+      "answer": "Yes."
+    },
+    {
+      "question": "Does Utah have reciprocity for speech-language pathologists?",
+      "answer": "Yes. Utah participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Utah without a separate endorsement application."
+    },
+    {
+      "question": "How long does it take to transfer my speech-language pathologist license to Utah?",
+      "answer": "Most endorsement applications take 2 to 4 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Utah while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "ASLP-IC",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://aslpcompact.com/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$100",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$100"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://dopl.utah.gov/slp/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "ASLP-IC",
+    "compact_status": "active",
+    "state_is_member": true,
+    "compact_url": "https://aslpcompact.com/",
+    "compact_portal_url": "https://aslpcompact.com/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 100,
+    "processing_time": "2 to 4 weeks",
+    "processing_tier": "fast",
+    "board_url": "https://dopl.utah.gov/slp/",
+    "endorsement_url": "https://dopl.utah.gov/slp/",
+    "notes": "Utah is a member of the ASLP Interstate Compact."
+  },
+  "slug": "utah-slp-slp",
+  "specialty": "slp"
 }

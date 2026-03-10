@@ -1,118 +1,150 @@
 {
-    "state_slug": "west-virginia",
-    "state_name": "West Virginia",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "west-virginia",
+  "state_name": "West Virginia",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian (LD)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "West Virginia Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to West Virginia - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity west virginia, how to transfer dietitian license to west virginia, dietitian compact west virginia, west virginia dietitian endorsement application"
+  },
+  "board": {
+    "name": "West Virginia Board of Licensed Dietitians (WVBOLD)",
+    "parent_dept": "Independent State Board",
+    "mailing_address": "722 Kanawha Blvd E<br>Charleston, WV 25301",
+    "physical_address": "722 Kanawha Blvd E<br>Charleston, WV 25301",
+    "phone": "(304) 558-1024",
+    "fax": "(304) 558-1025",
+    "email": "mailto:wvbold@wv.gov",
+    "url": "https://www.wvbold.com/"
+  },
+  "quick_facts": {
+    "total_fee": "$69",
+    "fee_breakdown": "$69 initial application fee",
+    "renewal_fee": "$69",
+    "renewal_cycle": "Annual + 20 CE hours every two years",
+    "processing_time": "2 to 4 Weeks",
+    "license_duration": "1 Year"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian (LD)",
+      "description": "The credential to practice and provide medical nutrition therapy in West Virginia, regulated by WVBOLD."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian (LD)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "West Virginia Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
-        "description": "Apply for a West Virginia Licensed Dietitian credential through WVBOLD. $69 application fee. Master's degree, 1,000 hours supervised practice, and CDR exam required.",
-        "keywords": "West Virginia dietitian license, WV licensed dietitian requirements, West Virginia Board of Licensed Dietitians WVBOLD, West Virginia dietitian application fee"
+    {
+      "title": "Provisional Dietitian Permit",
+      "description": "Available for applicants who have completed their education and supervised practice but have not yet passed the CDR exam. Valid while awaiting examination and allows practice under supervision. Costs $46."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,000 hours of board-approved supervised dietetic experience."
     },
-    "board": {
-        "name": "West Virginia Board of Licensed Dietitians (WVBOLD)",
-        "parent_dept": "Independent State Board",
-        "mailing_address": "722 Kanawha Blvd E<br>Charleston, WV 25301",
-        "physical_address": "722 Kanawha Blvd E<br>Charleston, WV 25301",
-        "phone": "(304) 558-1024",
-        "fax": "(304) 558-1025",
-        "email": "mailto:wvbold@wv.gov",
-        "url": "https://www.wvbold.com/"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this."
     },
-    "quick_facts": {
-        "total_fee": "$69",
-        "fee_breakdown": "$69 initial application fee",
-        "renewal_fee": "$69",
-        "renewal_cycle": "Annual + 20 CE hours every two years",
-        "processing_time": "2 to 4 Weeks",
-        "license_duration": "1 Year"
+    {
+      "title": "Submit the Application to WVBOLD",
+      "description": "Download and complete the application form from the WVBOLD website. Submit it with the $69 fee."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian (LD)",
-            "description": "The credential to practice and provide medical nutrition therapy in West Virginia, regulated by WVBOLD."
-        },
-        {
-            "title": "Provisional Dietitian Permit",
-            "description": "Available for applicants who have completed their education and supervised practice but have not yet passed the CDR exam. Valid while awaiting examination and allows practice under supervision. Costs $46."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,000 hours of board-approved supervised dietetic experience."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this."
-        },
-        {
-            "title": "Submit the Application to WVBOLD",
-            "description": "Download and complete the application form from the WVBOLD website. Submit it with the $69 fee."
-        },
-        {
-            "title": "Provide Verification Documents",
-            "description": "Submit a copy of your active CDR card or have verification sent directly to the board. Ensure you meet the age (18+) and citizenship or legal alien requirements."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official Application",
-            "detail": "Application form filled out accurately and completely, confirming age and citizenship."
-        },
-        {
-            "item": "CDR Registration Card",
-            "detail": "Proof of active registration with the Commission on Dietetic Registration."
-        },
-        {
-            "item": "Official College Transcripts",
-            "detail": "Sent directly from the university showing your conferred degree (may be satisfied by CDR card, check with board)."
-        }
-    ],
-    "provisional_text": "West Virginia offers a provisional permit for $46 for individuals who possess a degree and have completed the supervised practice requirements but have not yet passed the CDR exam. This permit allows the applicant to practice under the supervision of a licensed dietitian while preparing for the exam.",
-    "reciprocity_text": "Out-of-state applicants with active CDR registration or a current license in another state with equivalent standards may apply by submitting the standard application, fee, and proof of their active credential/license.",
-    "faqs": [
-        {
-            "question": "How much does a West Virginia dietitian license cost?",
-            "answer": "The initial license application fee is $69. A provisional permit application costs $46."
-        },
-        {
-            "question": "When does the West Virginia license need to be renewed?",
-            "answer": "West Virginia dietitian licenses are renewed annually. The renewal fee is $69."
-        },
-        {
-            "question": "What are the continuing education requirements for West Virginia?",
-            "answer": "To maintain licensure, West Virginia requires 20 hours of continuing professional education (CPE) every two years."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Provide Verification Documents",
+      "description": "Submit a copy of your active CDR card or have verification sent directly to the board. Ensure you meet the age (18+) and citizenship or legal alien requirements."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official Application",
+      "detail": "Application form filled out accurately and completely, confirming age and citizenship."
     },
-    "fees_endorsement": {
-        "app_fee": "$69",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$69"
+    {
+      "item": "CDR Registration Card",
+      "detail": "Proof of active registration with the Commission on Dietetic Registration."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "$46",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Official College Transcripts",
+      "detail": "Sent directly from the university showing your conferred degree (may be satisfied by CDR card, check with board)."
+    }
+  ],
+  "provisional_text": "West Virginia offers a provisional permit for $46 for individuals who possess a degree and have completed the supervised practice requirements but have not yet passed the CDR exam. This permit allows the applicant to practice under the supervision of a licensed dietitian while preparing for the exam.",
+  "reciprocity_text": "Out-of-state applicants with active CDR registration or a current license in another state with equivalent standards may apply by submitting the standard application, fee, and proof of their active credential/license.",
+  "faqs": [
+    {
+      "question": "How much does a West Virginia dietitian license cost?",
+      "answer": "The initial license application fee is $69. A provisional permit application costs $46."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.wvbold.com/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "When does the West Virginia license need to be renewed?",
+      "answer": "West Virginia dietitian licenses are renewed annually. The renewal fee is $69."
+    },
+    {
+      "question": "What are the continuing education requirements for West Virginia?",
+      "answer": "To maintain licensure, West Virginia requires 20 hours of continuing professional education (CPE) every two years."
+    },
+    {
+      "question": "Does West Virginia have reciprocity for dietitians?",
+      "answer": "West Virginia has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to West Virginia?",
+      "answer": "Most endorsement applications take 2 to 4 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in West Virginia while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$69",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$69"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "$46",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.wvbold.com/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "enacted",
+    "state_is_member": true,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 69,
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
+    "board_url": "https://www.wvbold.com/",
+    "endorsement_url": "https://www.wvbold.com/",
+    "notes": "Out-of-state applicants with active CDR registration or a current license in another state with equivalent standards may apply by submitting the standard application, fee, and proof of their active credential/license."
+  },
+  "slug": "west-virginia-dietitian",
+  "specialty": "dietitian"
 }

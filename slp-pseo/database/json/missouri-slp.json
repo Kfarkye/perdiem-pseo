@@ -1,123 +1,155 @@
 {
-    "state_slug": "missouri-slp",
-    "state_name": "Missouri",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "missouri-slp",
+  "state_name": "Missouri",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Speech-Language Pathologist",
+  "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Missouri Speech-Language Pathologist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Missouri - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "speech-language pathologist license reciprocity missouri, how to transfer speech-language pathologist license to missouri, speech-language pathologist compact missouri, missouri speech-language pathologist endorsement application"
+  },
+  "board": {
+    "name": "Advisory Commission for Speech-Language Pathologists and Audiologists",
+    "parent_dept": "Missouri Division of Professional Registration",
+    "mailing_address": "P.O. Box 1335, Jefferson City, MO 65102-1335",
+    "physical_address": "3605 Missouri Blvd., Jefferson City, MO 65109",
+    "phone": "(573) 751-0240",
+    "fax": "(573) 751-3166",
+    "email": "mailto:speechaud@pr.mo.gov",
+    "url": "https://pr.mo.gov/speechaudiology.asp"
+  },
+  "quick_facts": {
+    "total_fee": "$75",
+    "fee_breakdown": "$75 application fee",
+    "renewal_fee": "$60",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "2 to 4 weeks",
+    "license_duration": "2 years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Speech-Language Pathologist",
+      "description": "The full credential to independently practice speech-language pathology in Missouri."
     },
-    "profession_name": "Speech-Language Pathologist",
-    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Missouri SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
-        "description": "Complete guide to Missouri speech-language pathologist licensing. Board fees, Praxis requirements, and telepractice rules for 2026.",
-        "keywords": "Missouri SLP license, speech-language pathologist Missouri, Missouri speech therapy license"
+    {
+      "title": "Provisional SLP License",
+      "description": "Issued to SLP graduates completing their Clinical Fellowship."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Earn a Master's Degree in SLP",
+      "description": "Complete a master's degree from a CAA-accredited program."
     },
-    "board": {
-        "name": "Advisory Commission for Speech-Language Pathologists and Audiologists",
-        "parent_dept": "Missouri Division of Professional Registration",
-        "mailing_address": "P.O. Box 1335, Jefferson City, MO 65102-1335",
-        "physical_address": "3605 Missouri Blvd., Jefferson City, MO 65109",
-        "phone": "(573) 751-0240",
-        "fax": "(573) 751-3166",
-        "email": "mailto:speechaud@pr.mo.gov",
-        "url": "https://pr.mo.gov/speechaudiology.asp"
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on Praxis (test code 5331, score 162)."
     },
-    "quick_facts": {
-        "total_fee": "$75",
-        "fee_breakdown": "$75 application fee",
-        "renewal_fee": "$60",
-        "renewal_cycle": "Every 2 years",
-        "processing_time": "2 to 4 weeks",
-        "license_duration": "2 years"
+    {
+      "title": "Complete Clinical Fellowship",
+      "description": "Complete 36 weeks of supervised clinical practice (1,260 hours)."
     },
-    "license_types": [
-        {
-            "title": "Licensed Speech-Language Pathologist",
-            "description": "The full credential to independently practice speech-language pathology in Missouri."
-        },
-        {
-            "title": "Provisional SLP License",
-            "description": "Issued to SLP graduates completing their Clinical Fellowship."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Earn a Master's Degree in SLP",
-            "description": "Complete a master's degree from a CAA-accredited program."
-        },
-        {
-            "title": "Pass the Praxis Examination",
-            "description": "Achieve a passing score on Praxis (test code 5331, score 162)."
-        },
-        {
-            "title": "Complete Clinical Fellowship",
-            "description": "Complete 36 weeks of supervised clinical practice (1,260 hours)."
-        },
-        {
-            "title": "Submit Application",
-            "description": "Submit application with $75 fee to the Division of Professional Registration."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official graduate transcripts",
-            "detail": "From a CAA-accredited program."
-        },
-        {
-            "item": "Praxis exam score report",
-            "detail": "Score of 162 or higher."
-        },
-        {
-            "item": "Clinical Fellowship verification",
-            "detail": "CF completion documentation."
-        },
-        {
-            "item": "Background check",
-            "detail": "Criminal background check."
-        }
-    ],
-    "telepractice_text": "Missouri permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
-    "provisional_text": "Missouri issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
-    "reciprocity_text": "Missouri is a member of the ASLP Interstate Compact.",
-    "faqs": [
-        {
-            "question": "How much does a Missouri SLP license cost?",
-            "answer": "$75 initial. $60 biennial renewal."
-        },
-        {
-            "question": "Is Missouri part of the ASLP Interstate Compact?",
-            "answer": "Yes."
-        },
-        {
-            "question": "Does Missouri allow telepractice for SLPs?",
-            "answer": "Yes."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Submit Application",
+      "description": "Submit application with $75 fee to the Division of Professional Registration."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official graduate transcripts",
+      "detail": "From a CAA-accredited program."
     },
-    "fees_endorsement": {
-        "app_fee": "$75",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$75"
+    {
+      "item": "Praxis exam score report",
+      "detail": "Score of 162 or higher."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Clinical Fellowship verification",
+      "detail": "CF completion documentation."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://pr.mo.gov/speechaudiology.asp",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Background check",
+      "detail": "Criminal background check."
+    }
+  ],
+  "telepractice_text": "Missouri permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+  "provisional_text": "Missouri issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+  "reciprocity_text": "Missouri is a member of the ASLP Interstate Compact.",
+  "faqs": [
+    {
+      "question": "How much does a Missouri SLP license cost?",
+      "answer": "$75 initial. $60 biennial renewal."
+    },
+    {
+      "question": "Is Missouri part of the ASLP Interstate Compact?",
+      "answer": "Yes."
+    },
+    {
+      "question": "Does Missouri allow telepractice for SLPs?",
+      "answer": "Yes."
+    },
+    {
+      "question": "Does Missouri have reciprocity for speech-language pathologists?",
+      "answer": "Yes. Missouri participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Missouri without a separate endorsement application."
+    },
+    {
+      "question": "How long does it take to transfer my speech-language pathologist license to Missouri?",
+      "answer": "Most endorsement applications take 2 to 4 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Missouri while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "ASLP-IC",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://aslpcompact.com/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$75",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$75"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://pr.mo.gov/speechaudiology.asp",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "ASLP-IC",
+    "compact_status": "active",
+    "state_is_member": true,
+    "compact_url": "https://aslpcompact.com/",
+    "compact_portal_url": "https://aslpcompact.com/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 75,
+    "processing_time": "2 to 4 weeks",
+    "processing_tier": "fast",
+    "board_url": "https://pr.mo.gov/speechaudiology.asp",
+    "endorsement_url": "https://pr.mo.gov/speechaudiology.asp",
+    "notes": "Missouri is a member of the ASLP Interstate Compact."
+  },
+  "slug": "missouri-slp-slp",
+  "specialty": "slp"
 }

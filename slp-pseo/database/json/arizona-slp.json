@@ -1,123 +1,155 @@
 {
-    "state_slug": "arizona-slp",
-    "state_name": "Arizona",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "arizona-slp",
+  "state_name": "Arizona",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Speech-Language Pathologist",
+  "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Arizona Speech-Language Pathologist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Arizona - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "speech-language pathologist license reciprocity arizona, how to transfer speech-language pathologist license to arizona, speech-language pathologist compact arizona, arizona speech-language pathologist endorsement application"
+  },
+  "board": {
+    "name": "Department of Health Services \u2014 Speech-Language Pathology",
+    "parent_dept": "Arizona Department of Health Services (ADHS)",
+    "mailing_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
+    "physical_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
+    "phone": "(602) 364-2079",
+    "fax": "(602) 364-4769",
+    "email": "mailto:speechpathology@azdhs.gov",
+    "url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/"
+  },
+  "quick_facts": {
+    "total_fee": "$150",
+    "fee_breakdown": "$100 application + $50 license fee",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "2 to 4 weeks",
+    "license_duration": "2 years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Speech-Language Pathologist",
+      "description": "The full credential to independently practice speech-language pathology in Arizona."
     },
-    "profession_name": "Speech-Language Pathologist",
-    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Arizona SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
-        "description": "Complete guide to Arizona speech-language pathologist licensing. ADHS application fees, Praxis requirements, and telepractice rules for 2026.",
-        "keywords": "Arizona SLP license, speech-language pathologist Arizona, Arizona speech therapy license"
+    {
+      "title": "Temporary SLP License",
+      "description": "Issued to SLP graduates completing their Clinical Fellowship. Allows supervised practice in Arizona."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Earn a Master's Degree in SLP",
+      "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
     },
-    "board": {
-        "name": "Department of Health Services — Speech-Language Pathology",
-        "parent_dept": "Arizona Department of Health Services (ADHS)",
-        "mailing_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
-        "physical_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
-        "phone": "(602) 364-2079",
-        "fax": "(602) 364-4769",
-        "email": "mailto:speechpathology@azdhs.gov",
-        "url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/"
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331, score 162)."
     },
-    "quick_facts": {
-        "total_fee": "$150",
-        "fee_breakdown": "$100 application + $50 license fee",
-        "renewal_fee": "$100",
-        "renewal_cycle": "Every 2 years",
-        "processing_time": "2 to 4 weeks",
-        "license_duration": "2 years"
+    {
+      "title": "Complete Clinical Fellowship",
+      "description": "Complete 36 weeks of full-time supervised clinical practice (1,260 hours) under an ASHA-certified SLP."
     },
-    "license_types": [
-        {
-            "title": "Licensed Speech-Language Pathologist",
-            "description": "The full credential to independently practice speech-language pathology in Arizona."
-        },
-        {
-            "title": "Temporary SLP License",
-            "description": "Issued to SLP graduates completing their Clinical Fellowship. Allows supervised practice in Arizona."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Earn a Master's Degree in SLP",
-            "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
-        },
-        {
-            "title": "Pass the Praxis Examination",
-            "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331, score 162)."
-        },
-        {
-            "title": "Complete Clinical Fellowship",
-            "description": "Complete 36 weeks of full-time supervised clinical practice (1,260 hours) under an ASHA-certified SLP."
-        },
-        {
-            "title": "Submit Application to ADHS",
-            "description": "Submit the application with the $100 fee plus $50 license fee. Include transcripts, Praxis scores, and CF verification."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official graduate transcripts",
-            "detail": "From a CAA-accredited program."
-        },
-        {
-            "item": "Praxis exam score report",
-            "detail": "Score of 162 or higher on test 5331."
-        },
-        {
-            "item": "Clinical Fellowship verification",
-            "detail": "CF completion documentation."
-        },
-        {
-            "item": "Fingerprint clearance card",
-            "detail": "Arizona DPS fingerprint clearance card required."
-        }
-    ],
-    "telepractice_text": "Arizona permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact. The compact allows SLPs licensed in member states to practice across state lines through a compact privilege.",
-    "provisional_text": "Arizona issues a Temporary SLP License for graduates completing their Clinical Fellowship, allowing supervised practice.",
-    "reciprocity_text": "Arizona is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Arizona through a compact privilege. Traditional endorsement pathways are also available for non-compact applicants.",
-    "faqs": [
-        {
-            "question": "How much does an Arizona SLP license cost?",
-            "answer": "The total initial cost is approximately $150. Biennial renewal is $100."
-        },
-        {
-            "question": "Is Arizona part of the ASLP Interstate Compact?",
-            "answer": "Yes. Arizona has enacted ASLP-IC legislation."
-        },
-        {
-            "question": "Does Arizona allow telepractice for SLPs?",
-            "answer": "Yes. Arizona permits telepractice for licensed SLPs and compact privilege holders."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Submit Application to ADHS",
+      "description": "Submit the application with the $100 fee plus $50 license fee. Include transcripts, Praxis scores, and CF verification."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official graduate transcripts",
+      "detail": "From a CAA-accredited program."
     },
-    "fees_endorsement": {
-        "app_fee": "$100",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$150"
+    {
+      "item": "Praxis exam score report",
+      "detail": "Score of 162 or higher on test 5331."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Clinical Fellowship verification",
+      "detail": "CF completion documentation."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Fingerprint clearance card",
+      "detail": "Arizona DPS fingerprint clearance card required."
+    }
+  ],
+  "telepractice_text": "Arizona permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact. The compact allows SLPs licensed in member states to practice across state lines through a compact privilege.",
+  "provisional_text": "Arizona issues a Temporary SLP License for graduates completing their Clinical Fellowship, allowing supervised practice.",
+  "reciprocity_text": "Arizona is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Arizona through a compact privilege. Traditional endorsement pathways are also available for non-compact applicants.",
+  "faqs": [
+    {
+      "question": "How much does an Arizona SLP license cost?",
+      "answer": "The total initial cost is approximately $150. Biennial renewal is $100."
+    },
+    {
+      "question": "Is Arizona part of the ASLP Interstate Compact?",
+      "answer": "Yes. Arizona has enacted ASLP-IC legislation."
+    },
+    {
+      "question": "Does Arizona allow telepractice for SLPs?",
+      "answer": "Yes. Arizona permits telepractice for licensed SLPs and compact privilege holders."
+    },
+    {
+      "question": "Does Arizona have reciprocity for speech-language pathologists?",
+      "answer": "No interstate compact currently covers speech-language pathologist practice in Arizona. To work in Arizona, apply for licensure by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my speech-language pathologist license to Arizona?",
+      "answer": "Most endorsement applications take 2 to 4 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Arizona while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "ASLP-IC",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://aslpcompact.com/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$100",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$150"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "ASLP-IC",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://aslpcompact.com/",
+    "compact_portal_url": "https://aslpcompact.com/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 150,
+    "processing_time": "2 to 4 weeks",
+    "processing_tier": "fast",
+    "board_url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
+    "endorsement_url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
+    "notes": "Arizona is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Arizona through a compact privilege. Traditional endorsement pathways are also available for non-compact applicants."
+  },
+  "slug": "arizona-slp-slp",
+  "specialty": "slp"
 }

@@ -1,114 +1,146 @@
 {
-    "state_slug": "nebraska",
-    "state_name": "Nebraska",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "nebraska",
+  "state_name": "Nebraska",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Medical Nutrition Therapist",
+  "credential_nomenclature": "Licensed Medical Nutrition Therapist (LMNT)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Nebraska Medical Nutrition Therapist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a medical nutrition therapist? Here's whether your license transfers to Nebraska - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "medical nutrition therapist license reciprocity nebraska, how to transfer medical nutrition therapist license to nebraska, medical nutrition therapist compact nebraska, nebraska medical nutrition therapist endorsement application"
+  },
+  "board": {
+    "name": "Medical Nutrition Therapy Licensure",
+    "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
+    "mailing_address": "P.O. Box 94986<br>Lincoln, NE 68509-4986",
+    "physical_address": "301 Centennial Mall South, 1st Floor<br>Lincoln, NE 68508",
+    "phone": "(402) 471-2115",
+    "fax": "(402) 742-1106",
+    "email": "mailto:dhhs.licensure2117@nebraska.gov",
+    "url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx"
+  },
+  "quick_facts": {
+    "total_fee": "$114",
+    "fee_breakdown": "$114 initial application fee",
+    "renewal_fee": "$114",
+    "renewal_cycle": "Every 2 years (by Sept 1 of odd years) + 30 CE hours",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Medical Nutrition Therapist (LMNT)",
+      "description": "In Nebraska, dietitians are licensed as LMNTs. An LMNT license is required specifically to provide medical nutrition therapy (MNT), which involves treating diseases or medical conditions."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 900 hours of board-approved supervised practice through an accredited dietitian internship."
     },
-    "profession_name": "Medical Nutrition Therapist",
-    "credential_nomenclature": "Licensed Medical Nutrition Therapist (LMNT)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Nebraska Licensed Medical Nutrition Therapist (LMNT) — Requirements & Fees (2026)",
-        "description": "Apply for a Nebraska LMNT credential via DHHS. $114 application fee. Master's degree, 900+ hours supervised practice, and CDR exam required.",
-        "keywords": "Nebraska dietitian license, NE LMNT requirements, Nebraska DHHS Medical Nutrition Therapist, Nebraska LMNT application fee"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD or RDN status satisfies this and the education requirements."
     },
-    "board": {
-        "name": "Medical Nutrition Therapy Licensure",
-        "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
-        "mailing_address": "P.O. Box 94986<br>Lincoln, NE 68509-4986",
-        "physical_address": "301 Centennial Mall South, 1st Floor<br>Lincoln, NE 68508",
-        "phone": "(402) 471-2115",
-        "fax": "(402) 742-1106",
-        "email": "mailto:dhhs.licensure2117@nebraska.gov",
-        "url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx"
+    {
+      "title": "Submit the Application to DHHS",
+      "description": "Complete the application form for Medical Nutrition Therapy Licensure and submit it with the $114 fee, proof of age (minimum 19), and proof of U.S. citizenship or lawful presence."
     },
-    "quick_facts": {
-        "total_fee": "$114",
-        "fee_breakdown": "$114 initial application fee",
-        "renewal_fee": "$114",
-        "renewal_cycle": "Every 2 years (by Sept 1 of odd years) + 30 CE hours",
-        "processing_time": "4 to 6 Weeks",
-        "license_duration": "2 Years"
+    {
+      "title": "Provide Verification & Fingerprints",
+      "description": "Send a copy of your active CDR card or have primary source verification sent. Starting January 1, 2026, all DHHS applicants must undergo a fingerprint-based criminal background check."
+    }
+  ],
+  "documents": [
+    {
+      "item": "CDR Registration Verification",
+      "detail": "Verification of active registration with the Commission on Dietetic Registration."
     },
-    "license_types": [
-        {
-            "title": "Licensed Medical Nutrition Therapist (LMNT)",
-            "description": "In Nebraska, dietitians are licensed as LMNTs. An LMNT license is required specifically to provide medical nutrition therapy (MNT), which involves treating diseases or medical conditions."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 900 hours of board-approved supervised practice through an accredited dietitian internship."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD or RDN status satisfies this and the education requirements."
-        },
-        {
-            "title": "Submit the Application to DHHS",
-            "description": "Complete the application form for Medical Nutrition Therapy Licensure and submit it with the $114 fee, proof of age (minimum 19), and proof of U.S. citizenship or lawful presence."
-        },
-        {
-            "title": "Provide Verification & Fingerprints",
-            "description": "Send a copy of your active CDR card or have primary source verification sent. Starting January 1, 2026, all DHHS applicants must undergo a fingerprint-based criminal background check."
-        }
-    ],
-    "documents": [
-        {
-            "item": "CDR Registration Verification",
-            "detail": "Verification of active registration with the Commission on Dietetic Registration."
-        },
-        {
-            "item": "Proof of Age & Legal Presence",
-            "detail": "A copy of a birth certificate, driver's license, passport, or similar documentation."
-        },
-        {
-            "item": "Fingerprint Background check",
-            "detail": "Required for all new applications starting in 2026."
-        }
-    ],
-    "provisional_text": "Nebraska does not specify a provisional LMNT license option. An applicant must meet all qualifications including examination prior to licensure.",
-    "reciprocity_text": "Licensure by reciprocity is available for an applicant currently licensed in another state. The requirements of that state must be substantially equivalent to Nebraska's. Verification of all held licenses and active CDR registration is required, along with the $114 application fee.",
-    "faqs": [
-        {
-            "question": "How much does a Nebraska LMNT license cost?",
-            "answer": "The initial license application fee is $114."
-        },
-        {
-            "question": "When does the Nebraska license need to be renewed?",
-            "answer": "Nebraska LMNT licenses expire on September 1 of all odd-numbered years. The renewal fee is $114."
-        },
-        {
-            "question": "Is the title 'Dietitian' licensed in Nebraska?",
-            "answer": "No, Nebraska licenses the specific practice of Medical Nutrition Therapy, granting the title Licensed Medical Nutrition Therapist (LMNT). General nutrition services may not require a license, but only an LMNT can provide medical nutrition therapy."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "item": "Proof of Age & Legal Presence",
+      "detail": "A copy of a birth certificate, driver's license, passport, or similar documentation."
     },
-    "fees_endorsement": {
-        "app_fee": "$114",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$114"
+    {
+      "item": "Fingerprint Background check",
+      "detail": "Required for all new applications starting in 2026."
+    }
+  ],
+  "provisional_text": "Nebraska does not specify a provisional LMNT license option. An applicant must meet all qualifications including examination prior to licensure.",
+  "reciprocity_text": "Licensure by reciprocity is available for an applicant currently licensed in another state. The requirements of that state must be substantially equivalent to Nebraska's. Verification of all held licenses and active CDR registration is required, along with the $114 application fee.",
+  "faqs": [
+    {
+      "question": "How much does a Nebraska LMNT license cost?",
+      "answer": "The initial license application fee is $114."
     },
-    "temp_license": {
-        "available": false,
-        "fee": "N/A",
-        "processing_time": "N/A",
-        "duration": "N/A"
+    {
+      "question": "When does the Nebraska license need to be renewed?",
+      "answer": "Nebraska LMNT licenses expire on September 1 of all odd-numbered years. The renewal fee is $114."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "Is the title 'Dietitian' licensed in Nebraska?",
+      "answer": "No, Nebraska licenses the specific practice of Medical Nutrition Therapy, granting the title Licensed Medical Nutrition Therapist (LMNT). General nutrition services may not require a license, but only an LMNT can provide medical nutrition therapy."
+    },
+    {
+      "question": "Does Nebraska have reciprocity for medical nutrition therapists?",
+      "answer": "Nebraska has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, medical nutrition therapists still apply by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my medical nutrition therapist license to Nebraska?",
+      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Nebraska while my endorsement application is processing?",
+      "answer": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$114",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$114"
+  },
+  "temp_license": {
+    "available": false,
+    "fee": "N/A",
+    "processing_time": "N/A",
+    "duration": "N/A"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "enacted",
+    "state_is_member": true,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": false,
+    "jurisprudence_required": false,
+    "endorsement_fee": 114,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx",
+    "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx",
+    "notes": "Licensure by reciprocity is available for an applicant currently licensed in another state. The requirements of that state must be substantially equivalent to Nebraska's. Verification of all held licenses and active CDR registration is required, along with the $114 application fee."
+  },
+  "slug": "nebraska-dietitian",
+  "specialty": "dietitian"
 }

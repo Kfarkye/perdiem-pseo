@@ -1,114 +1,146 @@
 {
-    "state_slug": "alaska",
-    "state_name": "Alaska",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "alaska",
+  "state_name": "Alaska",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Alaska Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Alaska - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity alaska, how to transfer dietitian license to alaska, dietitian compact alaska, alaska dietitian endorsement application"
+  },
+  "board": {
+    "name": "Dietitians and Nutritionists Program",
+    "parent_dept": "Division of Corporations, Business and Professional Licensing",
+    "mailing_address": "PO Box 110806<br>Juneau, AK 99811",
+    "physical_address": "State Office Building, 333 Willoughby Ave., 9th Fl.<br>Juneau, AK 99801",
+    "phone": "(907) 465-2550",
+    "fax": "(907) 465-2974",
+    "email": "mailto:DietitiansandNutritionists@Alaska.Gov",
+    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx"
+  },
+  "quick_facts": {
+    "total_fee": "$150",
+    "fee_breakdown": "$100 nonrefundable application fee + $50 initial license fee",
+    "renewal_fee": "$125",
+    "renewal_cycle": "Every 2 years (expires Dec 31 of odd-numbered years)",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "Up to 2 Years (depending on issue date relative to the cycle)"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian",
+      "description": "The credential required to practice dietetics in Alaska, overseen by the Division of Corporations, Business and Professional Licensing. The state also separately licenses 'Nutritionists'."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,000 hours of supervised dietetic internship."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Alaska Licensed Dietitian Application — Requirements & Fees (2026)",
-        "description": "Apply for an Alaska Licensed Dietitian credential. $150 initial cost. Master's degree, 1,000+ hours supervised practice, and CDR exam required.",
-        "keywords": "Alaska dietitian license, AK licensed dietitian requirements, Alaska Division of Corporations Business and Professional Licensing, Alaska dietitian application fee"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
     },
-    "board": {
-        "name": "Dietitians and Nutritionists Program",
-        "parent_dept": "Division of Corporations, Business and Professional Licensing",
-        "mailing_address": "PO Box 110806<br>Juneau, AK 99811",
-        "physical_address": "State Office Building, 333 Willoughby Ave., 9th Fl.<br>Juneau, AK 99801",
-        "phone": "(907) 465-2550",
-        "fax": "(907) 465-2974",
-        "email": "mailto:DietitiansandNutritionists@Alaska.Gov",
-        "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx"
+    {
+      "title": "Submit the Application via MY LICENSE",
+      "description": "Complete the 'Application for Dietitian License' (Form #08-4400) online through the MY LICENSE self-service portal or via mail. Ensure your signature is notarized if applying via paper, and pay the $150 fee."
     },
-    "quick_facts": {
-        "total_fee": "$150",
-        "fee_breakdown": "$100 nonrefundable application fee + $50 initial license fee",
-        "renewal_fee": "$125",
-        "renewal_cycle": "Every 2 years (expires Dec 31 of odd-numbered years)",
-        "processing_time": "4 to 6 Weeks",
-        "license_duration": "Up to 2 Years (depending on issue date relative to the cycle)"
+    {
+      "title": "Provide Verification Documents",
+      "description": "Arrange for the CDR to send official registration verification directly to the Alaska licensing office. Provide a recent passport-style photograph."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official Application & Photo",
+      "detail": "Application with notarized signature and a recent passport-style photograph."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian",
-            "description": "The credential required to practice dietetics in Alaska, overseen by the Division of Corporations, Business and Professional Licensing. The state also separately licenses 'Nutritionists'."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,000 hours of supervised dietetic internship."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
-        },
-        {
-            "title": "Submit the Application via MY LICENSE",
-            "description": "Complete the 'Application for Dietitian License' (Form #08-4400) online through the MY LICENSE self-service portal or via mail. Ensure your signature is notarized if applying via paper, and pay the $150 fee."
-        },
-        {
-            "title": "Provide Verification Documents",
-            "description": "Arrange for the CDR to send official registration verification directly to the Alaska licensing office. Provide a recent passport-style photograph."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official Application & Photo",
-            "detail": "Application with notarized signature and a recent passport-style photograph."
-        },
-        {
-            "item": "CDR Registration Verification",
-            "detail": "Must be sent directly from the Commission on Dietetic Registration."
-        },
-        {
-            "item": "Verification of Out-of-State Licenses",
-            "detail": "If applying with existing licenses, verification from all other states must be submitted."
-        }
-    ],
-    "provisional_text": "Alaska does not explicitly outline a temporary or provisional license for dietitians. You must complete the CDR exam and obtain full registration prior to licensure.",
-    "reciprocity_text": "Alaska offers licensure by endorsement for those already licensed in another state. Applicants must demonstrate that their current state's requirements are substantially equivalent to Alaska's and must submit verifications for all current and past licenses.",
-    "faqs": [
-        {
-            "question": "How much does an Alaska dietitian license cost?",
-            "answer": "The total initial cost is $150, which includes a $100 application fee and a $50 initial license fee."
-        },
-        {
-            "question": "When does the Alaska license need to be renewed?",
-            "answer": "Alaska dietitian licenses renew biennially and expire on December 31st of odd-numbered years. The renewal period requires a $125 fee. There is no grace period for practicing on a lapsed license."
-        },
-        {
-            "question": "Does Alaska require a background check?",
-            "answer": "While an extensive FBI fingerprint check is not centrally required for all applicants in this program, individuals must answer professional fitness questions and may need to provide court documents if they have a disciplinary history."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "item": "CDR Registration Verification",
+      "detail": "Must be sent directly from the Commission on Dietetic Registration."
     },
-    "fees_endorsement": {
-        "app_fee": "$100",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$150"
+    {
+      "item": "Verification of Out-of-State Licenses",
+      "detail": "If applying with existing licenses, verification from all other states must be submitted."
+    }
+  ],
+  "provisional_text": "Alaska does not explicitly outline a temporary or provisional license for dietitians. You must complete the CDR exam and obtain full registration prior to licensure.",
+  "reciprocity_text": "Alaska offers licensure by endorsement for those already licensed in another state. Applicants must demonstrate that their current state's requirements are substantially equivalent to Alaska's and must submit verifications for all current and past licenses.",
+  "faqs": [
+    {
+      "question": "How much does an Alaska dietitian license cost?",
+      "answer": "The total initial cost is $150, which includes a $100 application fee and a $50 initial license fee."
     },
-    "temp_license": {
-        "available": false,
-        "fee": "N/A",
-        "processing_time": "N/A",
-        "duration": "N/A"
+    {
+      "question": "When does the Alaska license need to be renewed?",
+      "answer": "Alaska dietitian licenses renew biennially and expire on December 31st of odd-numbered years. The renewal period requires a $125 fee. There is no grace period for practicing on a lapsed license."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "Does Alaska require a background check?",
+      "answer": "While an extensive FBI fingerprint check is not centrally required for all applicants in this program, individuals must answer professional fitness questions and may need to provide court documents if they have a disciplinary history."
+    },
+    {
+      "question": "Does Alaska have reciprocity for dietitians?",
+      "answer": "No interstate compact currently covers dietitian practice in Alaska. To work in Alaska, apply for licensure by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to Alaska?",
+      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Alaska while my endorsement application is processing?",
+      "answer": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$100",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$150"
+  },
+  "temp_license": {
+    "available": false,
+    "fee": "N/A",
+    "processing_time": "N/A",
+    "duration": "N/A"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": false,
+    "jurisprudence_required": false,
+    "endorsement_fee": 150,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx",
+    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx",
+    "notes": "Alaska offers licensure by endorsement for those already licensed in another state. Applicants must demonstrate that their current state's requirements are substantially equivalent to Alaska's and must submit verifications for all current and past licenses."
+  },
+  "slug": "alaska-dietitian",
+  "specialty": "dietitian"
 }

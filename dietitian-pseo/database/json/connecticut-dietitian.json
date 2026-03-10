@@ -1,110 +1,142 @@
 {
-    "state_slug": "connecticut",
-    "state_name": "Connecticut",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "connecticut",
+  "state_name": "Connecticut",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Certified Dietitian-Nutritionist (CDN)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Connecticut Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Connecticut - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity connecticut, how to transfer dietitian license to connecticut, dietitian compact connecticut, connecticut dietitian endorsement application"
+  },
+  "board": {
+    "name": "Department of Public Health \u2014 Dietitian-Nutritionist Certification",
+    "parent_dept": "Connecticut Department of Public Health (DPH)",
+    "mailing_address": "410 Capitol Avenue, MS#12APP<br>Hartford, CT 06134",
+    "physical_address": "410 Capitol Avenue<br>Hartford, CT 06134",
+    "phone": "(860) 509-7603",
+    "fax": "",
+    "email": "",
+    "url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist"
+  },
+  "quick_facts": {
+    "total_fee": "$190",
+    "fee_breakdown": "$190 initial certification fee",
+    "renewal_fee": "$105",
+    "renewal_cycle": "Annual + CDR 75 CPEUs per 5 years (no state-level CE mandate)",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "1 Year"
+  },
+  "license_types": [
+    {
+      "title": "Certified Dietitian-Nutritionist (CDN)",
+      "description": "Connecticut's credential for practicing dietitians and nutritionists. Issued by the Department of Public Health. Requires active CDR registration. As of April 2025, CDNs are eligible to enroll in Connecticut Medicaid (CMAP) and HUSKY Health."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree or higher from an ACEND-accredited program (DPD, CP, or GP pathway). Complete at least 1,000\u20131,200 hours of ACEND-accredited supervised practice."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Certified Dietitian-Nutritionist (CDN)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Connecticut Certified Dietitian-Nutritionist (CDN) Application — Requirements & Fees (2026)",
-        "description": "Apply for Connecticut Certified Dietitian-Nutritionist through the DPH. $190 initial certification fee, $105 annual renewal. CDR registration required. Now eligible for Medicaid enrollment.",
-        "keywords": "Connecticut dietitian license, CT certified dietitian nutritionist, Connecticut DPH dietitian, Connecticut dietitian certification fee"
+    {
+      "title": "Pass the CDR Examination & Obtain Registration",
+      "description": "Successfully pass the CDR Registration Examination for Dietitians ($200 fee). Obtain active CDR registration (RD/RDN credential)."
     },
-    "board": {
-        "name": "Department of Public Health — Dietitian-Nutritionist Certification",
-        "parent_dept": "Connecticut Department of Public Health (DPH)",
-        "mailing_address": "410 Capitol Avenue, MS#12APP<br>Hartford, CT 06134",
-        "physical_address": "410 Capitol Avenue<br>Hartford, CT 06134",
-        "phone": "(860) 509-7603",
-        "fax": "",
-        "email": "",
-        "url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist"
+    {
+      "title": "Apply via the eLicense Portal",
+      "description": "Submit your application online through the Connecticut eLicense system. Pay the $190 initial certification fee."
     },
-    "quick_facts": {
-        "total_fee": "$190",
-        "fee_breakdown": "$190 initial certification fee",
-        "renewal_fee": "$105",
-        "renewal_cycle": "Annual + CDR 75 CPEUs per 5 years (no state-level CE mandate)",
-        "processing_time": "4 to 6 Weeks",
-        "license_duration": "1 Year"
+    {
+      "title": "Request CDR Verification",
+      "description": "Have the CDR send verification of your current registration directly to the Connecticut Department of Public Health. DPH will not accept self-reported verification."
+    }
+  ],
+  "documents": [
+    {
+      "item": "CDR Registration Verification",
+      "detail": "Must be sent directly from CDR to the Connecticut DPH \u2014 self-reported copies are not accepted."
     },
-    "license_types": [
-        {
-            "title": "Certified Dietitian-Nutritionist (CDN)",
-            "description": "Connecticut's credential for practicing dietitians and nutritionists. Issued by the Department of Public Health. Requires active CDR registration. As of April 2025, CDNs are eligible to enroll in Connecticut Medicaid (CMAP) and HUSKY Health."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree or higher from an ACEND-accredited program (DPD, CP, or GP pathway). Complete at least 1,000–1,200 hours of ACEND-accredited supervised practice."
-        },
-        {
-            "title": "Pass the CDR Examination & Obtain Registration",
-            "description": "Successfully pass the CDR Registration Examination for Dietitians ($200 fee). Obtain active CDR registration (RD/RDN credential)."
-        },
-        {
-            "title": "Apply via the eLicense Portal",
-            "description": "Submit your application online through the Connecticut eLicense system. Pay the $190 initial certification fee."
-        },
-        {
-            "title": "Request CDR Verification",
-            "description": "Have the CDR send verification of your current registration directly to the Connecticut Department of Public Health. DPH will not accept self-reported verification."
-        }
-    ],
-    "documents": [
-        {
-            "item": "CDR Registration Verification",
-            "detail": "Must be sent directly from CDR to the Connecticut DPH — self-reported copies are not accepted."
-        },
-        {
-            "item": "Completed eLicense Application",
-            "detail": "Submitted through the Connecticut eLicense online portal with the $190 fee."
-        }
-    ],
-    "provisional_text": "Connecticut does not offer a provisional or temporary dietitian-nutritionist certification. Applicants must hold current CDR registration before applying. The CDR must send verification directly to DPH.",
-    "reciprocity_text": "Connecticut does not have a formal endorsement or reciprocity process. Out-of-state dietitians with active CDR registration apply through the standard online process. Since Connecticut's certification is tied to CDR registration rather than state-specific exams, the process is straightforward for anyone holding an RD/RDN credential.",
-    "faqs": [
-        {
-            "question": "How much does a Connecticut dietitian certification cost?",
-            "answer": "The initial certification fee is $190 through the eLicense portal. Annual renewal is $105. There is no state-mandated continuing education beyond maintaining your CDR registration."
-        },
-        {
-            "question": "Does Connecticut require state-level continuing education?",
-            "answer": "No. Connecticut does not mandate state-specific continuing education for annual certification renewal. However, you must maintain active CDR registration, which requires 75 CPEUs every five years, including at least one CPEU in ethics or health equity."
-        },
-        {
-            "question": "Can Connecticut CDNs enroll in Medicaid?",
-            "answer": "Yes. Effective April 1, 2025, certified dietitian-nutritionists can enroll in Connecticut's Medicaid program (CMAP) and HUSKY Health. Reimbursement for services began on July 1, 2025."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "item": "Completed eLicense Application",
+      "detail": "Submitted through the Connecticut eLicense online portal with the $190 fee."
+    }
+  ],
+  "provisional_text": "Connecticut does not offer a provisional or temporary dietitian-nutritionist certification. Applicants must hold current CDR registration before applying. The CDR must send verification directly to DPH.",
+  "reciprocity_text": "Connecticut does not have a formal endorsement or reciprocity process. Out-of-state dietitians with active CDR registration apply through the standard online process. Since Connecticut's certification is tied to CDR registration rather than state-specific exams, the process is straightforward for anyone holding an RD/RDN credential.",
+  "faqs": [
+    {
+      "question": "How much does a Connecticut dietitian certification cost?",
+      "answer": "The initial certification fee is $190 through the eLicense portal. Annual renewal is $105. There is no state-mandated continuing education beyond maintaining your CDR registration."
     },
-    "fees_endorsement": {
-        "app_fee": "$190",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$190"
+    {
+      "question": "Does Connecticut require state-level continuing education?",
+      "answer": "No. Connecticut does not mandate state-specific continuing education for annual certification renewal. However, you must maintain active CDR registration, which requires 75 CPEUs every five years, including at least one CPEU in ethics or health equity."
     },
-    "temp_license": {
-        "available": false,
-        "fee": "N/A",
-        "processing_time": "N/A",
-        "duration": "N/A"
+    {
+      "question": "Can Connecticut CDNs enroll in Medicaid?",
+      "answer": "Yes. Effective April 1, 2025, certified dietitian-nutritionists can enroll in Connecticut's Medicaid program (CMAP) and HUSKY Health. Reimbursement for services began on July 1, 2025."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "Does Connecticut have reciprocity for dietitians?",
+      "answer": "No interstate compact currently covers dietitian practice in Connecticut. To work in Connecticut, apply for licensure by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to Connecticut?",
+      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Connecticut while my endorsement application is processing?",
+      "answer": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$190",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$190"
+  },
+  "temp_license": {
+    "available": false,
+    "fee": "N/A",
+    "processing_time": "N/A",
+    "duration": "N/A"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": false,
+    "jurisprudence_required": false,
+    "endorsement_fee": 190,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist",
+    "endorsement_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist",
+    "notes": "Connecticut does not have a formal endorsement or reciprocity process. Out-of-state dietitians with active CDR registration apply through the standard online process. Since Connecticut's certification is tied to CDR registration rather than state-specific exams, the process is straightforward for anyone holding an RD/RDN credential."
+  },
+  "slug": "connecticut-dietitian",
+  "specialty": "dietitian"
 }

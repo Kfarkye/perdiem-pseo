@@ -38,11 +38,12 @@
         "national_exam": "NBCOT\u00ae OTR Exam",
         "exam_board": "NBCOT (National Board for Certification in Occupational Therapy)",
         "accrediting_body": "ACOTE\u00ae (Accreditation Council for Occupational Therapy Education)",
-        "compact_name": "OT Licensure Compact",
+        "compact_name": "OT Compact",
         "compact_status_safe": "Compact privileges depend on state participation status, which is actively changing. Always verify with your target state board.",
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
-        "compact_source_url": "PENDING"
+        "compact_source_url": "https://otcompact.org/",
+        "compact_status": "enacted"
       },
       "copy": {
         "hero_h1_line1": "OT License",
@@ -83,11 +84,12 @@
         "national_exam": "NPTE (National Physical Therapy Examination)",
         "exam_board": "FSBPT (Federation of State Boards of Physical Therapy)",
         "accrediting_body": "CAPTE (Commission on Accreditation in Physical Therapy Education)",
-        "compact_name": "Physical Therapy Licensure Compact",
+        "compact_name": "PT Compact",
         "compact_status_safe": "The PT Compact allows eligible PTs to practice in member states. Compact privilege availability varies by state and changes regularly. Verify current status with your target state board.",
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
-        "compact_source_url": "PENDING"
+        "compact_source_url": "https://ptcompact.org/ptc-states/",
+        "compact_status": "active"
       },
       "copy": {
         "hero_h1_line1": "PT License",
@@ -128,11 +130,12 @@
         "national_exam": "Praxis\u00ae Examination in Speech-Language Pathology",
         "exam_board": "ASHA (American Speech-Language-Hearing Association)",
         "accrediting_body": "CAA (Council on Academic Accreditation in Audiology and Speech-Language Pathology)",
-        "compact_name": "Audiology & Speech-Language Pathology Interstate Compact (ASLP-IC)",
+        "compact_name": "ASLP-IC",
         "compact_status_safe": "The ASLP-IC compact is in the early stages of state adoption. Compact privilege availability varies by state and may not yet be actively issuing privileges. Always verify with your target state board.",
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
-        "compact_source_url": "PENDING"
+        "compact_source_url": "https://aslpcompact.com/",
+        "compact_status": "active"
       },
       "copy": {
         "hero_h1_line1": "SLP License",
@@ -173,11 +176,12 @@
         "national_exam": "TMC (Therapist Multiple-Choice) & CSE (Clinical Simulation Exam)",
         "exam_board": "NBRC (National Board for Respiratory Care)",
         "accrediting_body": "CoARC (Commission on Accreditation for Respiratory Care)",
-        "compact_name": null,
+        "compact_name": "None",
         "compact_status_safe": "Respiratory therapy does not currently have a multistate licensure compact. Each state requires a separate license application.",
         "compact_live_count": null,
         "compact_verification_hook": "VERIFIED",
-        "compact_source_url": null
+        "compact_source_url": "",
+        "compact_status": "none"
       },
       "copy": {
         "hero_h1_line1": "RRT License",
@@ -218,11 +222,12 @@
         "national_exam": "CDR Registration Examination for Dietitians",
         "exam_board": "CDR (Commission on Dietetic Registration)",
         "accrediting_body": "ACEND\u00ae (Accreditation Council for Education in Nutrition and Dietetics)",
-        "compact_name": "Dietetics Licensure Compact",
+        "compact_name": "Dietitian Compact",
         "compact_status_safe": "A dietetics licensure compact is in varying stages of state adoption. Compact privilege availability may not yet be active in your target state. Always verify with the specific state board.",
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
-        "compact_source_url": "PENDING"
+        "compact_source_url": "https://dietitianscompact.org/",
+        "compact_status": "enacted"
       },
       "copy": {
         "hero_h1_line1": "Dietitian License",
@@ -263,11 +268,12 @@
         "national_exam": "Praxis\u00ae Examination in Audiology",
         "exam_board": "ASHA (American Speech-Language-Hearing Association)",
         "accrediting_body": "CAA (Council on Academic Accreditation in Audiology and Speech-Language Pathology)",
-        "compact_name": "Audiology & Speech-Language Pathology Interstate Compact (ASLP-IC)",
+        "compact_name": "ASLP-IC",
         "compact_status_safe": "The ASLP-IC compact is in the early stages of state adoption. Compact privilege availability varies by state and may not yet be actively issuing privileges. Always verify with your target state board.",
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
-        "compact_source_url": "PENDING"
+        "compact_source_url": "https://aslpcompact.com/",
+        "compact_status": "active"
       },
       "copy": {
         "hero_h1_line1": "Audiologist License",
@@ -308,11 +314,12 @@
         "national_exam": "PTCE (Pharmacy Technician Certification Exam)",
         "exam_board": "PTCB (Pharmacy Technician Certification Board)",
         "accrediting_body": "ASHP/ACPE (accredited pharmacy technician training programs)",
-        "compact_name": null,
+        "compact_name": "None",
         "compact_status_safe": "Pharmacy technician licensing does not currently have a multistate compact. Each state sets its own registration, certification, or licensure requirements independently.",
         "compact_live_count": null,
         "compact_verification_hook": "VERIFIED",
-        "compact_source_url": null
+        "compact_source_url": "",
+        "compact_status": "none"
       },
       "copy": {
         "hero_h1_line1": "Pharmacy Tech License",
@@ -353,11 +360,12 @@
         "national_exam": "NAPLEX (North American Pharmacist Licensure Examination) & MPJE",
         "exam_board": "NABP (National Association of Boards of Pharmacy)",
         "accrediting_body": "ACPE (Accreditation Council for Pharmacy Education)",
-        "compact_name": null,
+        "compact_name": "None",
         "compact_status_safe": "Pharmacist licensing does not currently have a multistate compact. The NABP provides score transfer services, but each state requires a separate license application and state-specific jurisprudence exam (MPJE).",
         "compact_live_count": null,
         "compact_verification_hook": "VERIFIED",
-        "compact_source_url": null
+        "compact_source_url": "",
+        "compact_status": "none"
       },
       "copy": {
         "hero_h1_line1": "Pharmacist License",

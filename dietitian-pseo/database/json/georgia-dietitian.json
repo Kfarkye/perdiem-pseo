@@ -1,122 +1,154 @@
 {
-    "state_slug": "georgia",
-    "state_name": "Georgia",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO / GCIC",
-        "fee": "$35.00",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://www.identogo.com/locations/georgia"
+  "state_slug": "georgia",
+  "state_name": "Georgia",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / GCIC",
+    "fee": "$35.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/georgia"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian (LD)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Georgia Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Georgia - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity georgia, how to transfer dietitian license to georgia, dietitian compact georgia, georgia dietitian endorsement application"
+  },
+  "board": {
+    "name": "Board of Examiners of Licensed Dietitians",
+    "parent_dept": "Georgia Secretary of State",
+    "mailing_address": "237 Coliseum Drive<br>Macon, GA 31217",
+    "physical_address": "237 Coliseum Drive<br>Macon, GA 31217",
+    "phone": "(404) 424-9966",
+    "fax": "",
+    "email": "",
+    "url": "https://sos.ga.gov/dietitians"
+  },
+  "quick_facts": {
+    "total_fee": "$85",
+    "fee_breakdown": "$75 application + $10 processing fee",
+    "renewal_fee": "$60",
+    "renewal_cycle": "Every 2 years (by March 31, even years) + 30 CE hours",
+    "processing_time": "15 to 20 Business Days",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian (LD)",
+      "description": "The standard credential to practice dietetics in Georgia, regulated by the Board of Examiners of Licensed Dietitians under the Secretary of State."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian (LD)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Georgia Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
-        "description": "Apply for a Georgia Licensed Dietitian (LD) credential through the Board of Examiners of Licensed Dietitians. $85 application fee, CDR exam required, provisional permit available.",
-        "keywords": "Georgia dietitian license, GA licensed dietitian requirements, Georgia Board of Examiners Licensed Dietitians, Georgia dietitian application fee"
+    {
+      "title": "Provisional Permit",
+      "description": "Allows practice under supervision of a Georgia-licensed dietitian for applicants who are eligible to take the CDR exam but have not yet passed it. Valid for one year and may be renewed at Board discretion. Additional $25 fee."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a baccalaureate or higher degree with a major in dietetics, human nutrition, or a related field from a regionally accredited institution. Complete at least 900 hours of supervised practice through an ACEND-accredited program."
     },
-    "board": {
-        "name": "Board of Examiners of Licensed Dietitians",
-        "parent_dept": "Georgia Secretary of State",
-        "mailing_address": "237 Coliseum Drive<br>Macon, GA 31217",
-        "physical_address": "237 Coliseum Drive<br>Macon, GA 31217",
-        "phone": "(404) 424-9966",
-        "fax": "",
-        "email": "",
-        "url": "https://sos.ga.gov/dietitians"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) national Registration Examination for Dietitians."
     },
-    "quick_facts": {
-        "total_fee": "$85",
-        "fee_breakdown": "$75 application + $10 processing fee",
-        "renewal_fee": "$60",
-        "renewal_cycle": "Every 2 years (by March 31, even years) + 30 CE hours",
-        "processing_time": "15 to 20 Business Days",
-        "license_duration": "2 Years"
+    {
+      "title": "Submit the Online Application",
+      "description": "Create an account on the Georgia Secretary of State's online licensing portal and submit the completed application with the non-refundable $85 fee (includes $10 processing fee)."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian (LD)",
-            "description": "The standard credential to practice dietetics in Georgia, regulated by the Board of Examiners of Licensed Dietitians under the Secretary of State."
-        },
-        {
-            "title": "Provisional Permit",
-            "description": "Allows practice under supervision of a Georgia-licensed dietitian for applicants who are eligible to take the CDR exam but have not yet passed it. Valid for one year and may be renewed at Board discretion. Additional $25 fee."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a baccalaureate or higher degree with a major in dietetics, human nutrition, or a related field from a regionally accredited institution. Complete at least 900 hours of supervised practice through an ACEND-accredited program."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) national Registration Examination for Dietitians."
-        },
-        {
-            "title": "Submit the Online Application",
-            "description": "Create an account on the Georgia Secretary of State's online licensing portal and submit the completed application with the non-refundable $85 fee (includes $10 processing fee)."
-        },
-        {
-            "title": "Provide Supporting Documentation",
-            "description": "Upload official transcripts, a copy of your current CDR registration card or award letter, and your ACEND Verification Statement. If applying by endorsement, include license verification from all other states."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official College Transcripts",
-            "detail": "Must be sent directly from the degree-granting institution, showing degree and date awarded."
-        },
-        {
-            "item": "CDR Registration Card or Award Letter",
-            "detail": "Copy of your current, active Commission on Dietetic Registration credential."
-        },
-        {
-            "item": "ACEND Verification Statement",
-            "detail": "Verifying completion of supervised practice experience."
-        },
-        {
-            "item": "Secure & Verifiable Document and Affidavit of Citizenship",
-            "detail": "As required by Georgia law for professional licensing."
-        }
-    ],
-    "provisional_text": "Georgia offers a provisional permit for applicants who have completed all academic and supervised practice requirements and are eligible for but have not yet passed the CDR examination. The permit costs an additional $25, is valid for one year, and requires practice under the direct supervision of a Georgia-licensed dietitian. The Board may renew it at its discretion.",
-    "reciprocity_text": "Georgia offers licensure by endorsement for dietitians holding a valid, active, and unencumbered license in another state, provided that state's requirements are substantially equal to or greater than Georgia's. Applicants must submit their application, fee, verification of the out-of-state license sent directly from the issuing board, and proof of passing the CDR exam.",
-    "faqs": [
-        {
-            "question": "How much does a Georgia dietitian license cost?",
-            "answer": "The initial application fee is $85 (including a $10 processing fee). If you also request a provisional permit, add $25 for a total of $110. The biennial renewal fee is $60, due by March 31st of even-numbered years."
-        },
-        {
-            "question": "Which Georgia agency regulates dietitians?",
-            "answer": "The Georgia Board of Examiners of Licensed Dietitians, which operates under the Georgia Secretary of State, is the regulatory body for dietitian licensure in the state."
-        },
-        {
-            "question": "What are the continuing education requirements for Georgia dietitians?",
-            "answer": "You must complete 30 clock hours of continuing education during each two-year renewal cycle. As of 2026, all CE must be tracked and reported through CE Broker."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Provide Supporting Documentation",
+      "description": "Upload official transcripts, a copy of your current CDR registration card or award letter, and your ACEND Verification Statement. If applying by endorsement, include license verification from all other states."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official College Transcripts",
+      "detail": "Must be sent directly from the degree-granting institution, showing degree and date awarded."
     },
-    "fees_endorsement": {
-        "app_fee": "$75",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$85"
+    {
+      "item": "CDR Registration Card or Award Letter",
+      "detail": "Copy of your current, active Commission on Dietetic Registration credential."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "$25,",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "ACEND Verification Statement",
+      "detail": "Verifying completion of supervised practice experience."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://sos.ga.gov/dietitians",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Secure & Verifiable Document and Affidavit of Citizenship",
+      "detail": "As required by Georgia law for professional licensing."
+    }
+  ],
+  "provisional_text": "Georgia offers a provisional permit for applicants who have completed all academic and supervised practice requirements and are eligible for but have not yet passed the CDR examination. The permit costs an additional $25, is valid for one year, and requires practice under the direct supervision of a Georgia-licensed dietitian. The Board may renew it at its discretion.",
+  "reciprocity_text": "Georgia offers licensure by endorsement for dietitians holding a valid, active, and unencumbered license in another state, provided that state's requirements are substantially equal to or greater than Georgia's. Applicants must submit their application, fee, verification of the out-of-state license sent directly from the issuing board, and proof of passing the CDR exam.",
+  "faqs": [
+    {
+      "question": "How much does a Georgia dietitian license cost?",
+      "answer": "The initial application fee is $85 (including a $10 processing fee). If you also request a provisional permit, add $25 for a total of $110. The biennial renewal fee is $60, due by March 31st of even-numbered years."
+    },
+    {
+      "question": "Which Georgia agency regulates dietitians?",
+      "answer": "The Georgia Board of Examiners of Licensed Dietitians, which operates under the Georgia Secretary of State, is the regulatory body for dietitian licensure in the state."
+    },
+    {
+      "question": "What are the continuing education requirements for Georgia dietitians?",
+      "answer": "You must complete 30 clock hours of continuing education during each two-year renewal cycle. As of 2026, all CE must be tracked and reported through CE Broker."
+    },
+    {
+      "question": "Does Georgia have reciprocity for dietitians?",
+      "answer": "Georgia has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to Georgia?",
+      "answer": "Most endorsement applications take 15 to 20 Business Days. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Georgia while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$75",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$85"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "$25,",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://sos.ga.gov/dietitians",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "enacted",
+    "state_is_member": true,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 85,
+    "processing_time": "15 to 20 Business Days",
+    "processing_tier": "slow",
+    "board_url": "https://sos.ga.gov/dietitians",
+    "endorsement_url": "https://sos.ga.gov/dietitians",
+    "notes": "Georgia offers licensure by endorsement for dietitians holding a valid, active, and unencumbered license in another state, provided that state's requirements are substantially equal to or greater than Georgia's. Applicants must submit their application, fee, verification of the out-of-state license sent directly from the issuing board, and proof of passing the CDR exam."
+  },
+  "slug": "georgia-dietitian",
+  "specialty": "dietitian"
 }

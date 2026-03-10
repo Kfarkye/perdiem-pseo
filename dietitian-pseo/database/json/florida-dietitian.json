@@ -1,106 +1,138 @@
 {
-    "state_slug": "florida",
-    "state_name": "Florida",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "FDLE / Cogent Systems",
-        "fee": "$37.25",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://www.fdle.state.fl.us/Criminal-History-Records/Obtaining-Criminal-History-Records/Submitting-Fingerprints.aspx"
+  "state_slug": "florida",
+  "state_name": "Florida",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "FDLE / Cogent Systems",
+    "fee": "$37.25",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.fdle.state.fl.us/Criminal-History-Records/Obtaining-Criminal-History-Records/Submitting-Fingerprints.aspx"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian/Nutritionist",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Florida Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Florida - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity florida, how to transfer dietitian license to florida, dietitian compact florida, florida dietitian endorsement application"
+  },
+  "board": {
+    "name": "Dietetics and Nutrition Practice Council",
+    "parent_dept": "Florida Department of Health, Board of Medicine",
+    "mailing_address": "P.O. Box 6330<br>Tallahassee, FL 32314-6330",
+    "physical_address": "4052 Bald Cypress Way, Bin C-05<br>Tallahassee, FL 32399-3255",
+    "phone": "(850) 245-4373",
+    "fax": "(850) 414-6860",
+    "email": "mailto:mqa.dieteticsnutrition@flhealth.gov",
+    "url": "https://floridasdieteticsnutrition.gov/"
+  },
+  "quick_facts": {
+    "total_fee": "$165",
+    "fee_breakdown": "$80 application + $80 license + $5 unlicensed activity fee",
+    "renewal_fee": "$95",
+    "renewal_cycle": "Every 2 years + 30 CE hours",
+    "processing_time": "30 days (initial review)",
+    "license_duration": "Up to 2 Years (expires May 31 odd years)"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian/Nutritionist",
+      "description": "Florida issues a combined credential. Requires minimum bachelor's degree, 900 hours of supervised practice, and passing a licensing examination (typically the CDR)."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian/Nutritionist",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Florida Licensed Dietitian/Nutritionist Application — Requirements & Fees (2026)",
-        "description": "Apply for a Florida Licensed Dietitian/Nutritionist credential through the Dietetics and Nutrition Practice Council. $165 estimated total fee. Complete requirements, CE info, and official links.",
-        "keywords": "Florida dietitian license, FL licensed dietitian/nutritionist, Florida dietetics council, FL nutrition board, Florida dietitian application"
+    {
+      "title": "Licensed Nutrition Counselor",
+      "description": "An alternative credential path in Florida; requirements vary."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Registration and Education",
+      "description": "Complete your degree and supervised practice. Most applicants use their active CDR registration as proof of passing a recognized examination."
     },
-    "board": {
-        "name": "Dietetics and Nutrition Practice Council",
-        "parent_dept": "Florida Department of Health, Board of Medicine",
-        "mailing_address": "P.O. Box 6330<br>Tallahassee, FL 32314-6330",
-        "physical_address": "4052 Bald Cypress Way, Bin C-05<br>Tallahassee, FL 32399-3255",
-        "phone": "(850) 245-4373",
-        "fax": "(850) 414-6860",
-        "email": "mailto:mqa.dieteticsnutrition@flhealth.gov",
-        "url": "https://floridasdieteticsnutrition.gov/"
+    {
+      "title": "Apply Online",
+      "description": "Submit your application for Licensure by Endorsement or Examination through the Florida Department of Health MQA Services portal and pay the $165 total fee."
     },
-    "quick_facts": {
-        "total_fee": "$165",
-        "fee_breakdown": "$80 application + $80 license + $5 unlicensed activity fee",
-        "renewal_fee": "$95",
-        "renewal_cycle": "Every 2 years + 30 CE hours",
-        "processing_time": "30 days (initial review)",
-        "license_duration": "Up to 2 Years (expires May 31 odd years)"
+    {
+      "title": "Background Screening",
+      "description": "Undergo fingerprinting for a criminal history background check through a Livescan service provider."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official transcripts",
+      "detail": "Must be sent directly from the educational institution."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian/Nutritionist",
-            "description": "Florida issues a combined credential. Requires minimum bachelor's degree, 900 hours of supervised practice, and passing a licensing examination (typically the CDR)."
-        },
-        {
-            "title": "Licensed Nutrition Counselor",
-            "description": "An alternative credential path in Florida; requirements vary."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Registration and Education",
-            "description": "Complete your degree and supervised practice. Most applicants use their active CDR registration as proof of passing a recognized examination."
-        },
-        {
-            "title": "Apply Online",
-            "description": "Submit your application for Licensure by Endorsement or Examination through the Florida Department of Health MQA Services portal and pay the $165 total fee."
-        },
-        {
-            "title": "Background Screening",
-            "description": "Undergo fingerprinting for a criminal history background check through a Livescan service provider."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official transcripts",
-            "detail": "Must be sent directly from the educational institution."
-        },
-        {
-            "item": "Proof of Examination or CDR",
-            "detail": "Verification sent directly to the Board."
-        }
-    ],
-    "provisional_text": "Florida offers a temporary permit for applicants who have completed their education and supervised practice but have not yet passed the examination. It requires an additional fee and direct supervision.",
-    "reciprocity_text": "Florida allows Licensure by Endorsement for professionals who hold a current, active license in another state with equivalent or more stringent requirements.",
-    "faqs": [
-        {
-            "question": "How much does a Florida dietitian license cost?",
-            "answer": "The Florida Dietetics and Nutrition Practice Council charges a total initial fee of $165. This includes a $50 application fee, $110 license fee, and $5 unlicensed activity fee."
-        },
-        {
-            "question": "Is a background check required for a Florida dietitian license?",
-            "answer": "Yes. All applicants must undergo a Livescan fingerprint background check as part of the application process with the Florida Department of Health."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "item": "Proof of Examination or CDR",
+      "detail": "Verification sent directly to the Board."
+    }
+  ],
+  "provisional_text": "Florida offers a temporary permit for applicants who have completed their education and supervised practice but have not yet passed the examination. It requires an additional fee and direct supervision.",
+  "reciprocity_text": "Florida allows Licensure by Endorsement for professionals who hold a current, active license in another state with equivalent or more stringent requirements.",
+  "faqs": [
+    {
+      "question": "How much does a Florida dietitian license cost?",
+      "answer": "The Florida Dietetics and Nutrition Practice Council charges a total initial fee of $165. This includes a $50 application fee, $110 license fee, and $5 unlicensed activity fee."
     },
-    "fees_endorsement": {
-        "app_fee": "$80",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$165"
+    {
+      "question": "Is a background check required for a Florida dietitian license?",
+      "answer": "Yes. All applicants must undergo a Livescan fingerprint background check as part of the application process with the Florida Department of Health."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "question": "Does Florida have reciprocity for dietitians?",
+      "answer": "No interstate compact currently covers dietitian practice in Florida. To work in Florida, apply for licensure by endorsement through the state board."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://floridasdieteticsnutrition.gov/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "How long does it take to transfer my dietitian license to Florida?",
+      "answer": "Most endorsement applications take 30 days (initial review). If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Florida while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$80",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$165"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://floridasdieteticsnutrition.gov/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 165,
+    "processing_time": "30 days (initial review)",
+    "processing_tier": "slow",
+    "board_url": "https://floridasdieteticsnutrition.gov/",
+    "endorsement_url": "https://floridasdieteticsnutrition.gov/",
+    "notes": "Florida allows Licensure by Endorsement for professionals who hold a current, active license in another state with equivalent or more stringent requirements."
+  },
+  "slug": "florida-dietitian",
+  "specialty": "dietitian"
 }

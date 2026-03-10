@@ -1,114 +1,146 @@
 {
-    "state_slug": "iowa",
-    "state_name": "Iowa",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "iowa",
+  "state_name": "Iowa",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian (LD)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Iowa Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Iowa - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity iowa, how to transfer dietitian license to iowa, dietitian compact iowa, iowa dietitian endorsement application"
+  },
+  "board": {
+    "name": "Iowa Board of Dietetics",
+    "parent_dept": "Department of Inspections, Appeals, and Licensing (DIAL)",
+    "mailing_address": "6200 Park Ave., Ste. 100<br>Des Moines, IA 50321",
+    "physical_address": "6200 Park Ave., Ste. 100<br>Des Moines, IA 50321",
+    "phone": "(515) 281-0254",
+    "fax": "(515) 281-3121",
+    "email": "mailto:PLPublic@idph.iowa.gov",
+    "url": "https://dial.iowa.gov/licenses/medical/dietitian"
+  },
+  "quick_facts": {
+    "total_fee": "$120",
+    "fee_breakdown": "$120 initial application fee (nonrefundable)",
+    "renewal_fee": "$120",
+    "renewal_cycle": "Every 2 years + 30 CE hours",
+    "processing_time": "3 to 4 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian (LD)",
+      "description": "The credential required to practice dietetics in Iowa, regulated by the Iowa Board of Dietetics under DIAL."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 900 hours of board-approved supervised practice or an accredited dietetic internship."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian (LD)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Iowa Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
-        "description": "Apply for an Iowa Licensed Dietitian credential through the Board of Dietetics (DIAL). $120 application fee. Master's degree and CDR exam required.",
-        "keywords": "Iowa dietitian license, IA licensed dietitian requirements, Iowa Board of Dietetics DIAL, Iowa dietitian application fee"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Iowa requires you to hold active CDR registration."
     },
-    "board": {
-        "name": "Iowa Board of Dietetics",
-        "parent_dept": "Department of Inspections, Appeals, and Licensing (DIAL)",
-        "mailing_address": "6200 Park Ave., Ste. 100<br>Des Moines, IA 50321",
-        "physical_address": "6200 Park Ave., Ste. 100<br>Des Moines, IA 50321",
-        "phone": "(515) 281-0254",
-        "fax": "(515) 281-3121",
-        "email": "mailto:PLPublic@idph.iowa.gov",
-        "url": "https://dial.iowa.gov/licenses/medical/dietitian"
+    {
+      "title": "Submit the Online Application",
+      "description": "Create an account on the DIAL online licensing portal, complete the dietitian application, and pay the $120 application fee."
     },
-    "quick_facts": {
-        "total_fee": "$120",
-        "fee_breakdown": "$120 initial application fee (nonrefundable)",
-        "renewal_fee": "$120",
-        "renewal_cycle": "Every 2 years + 30 CE hours",
-        "processing_time": "3 to 4 Weeks",
-        "license_duration": "2 Years"
+    {
+      "title": "Provide Verification and Training",
+      "description": "Provide proof of your active CDR registration and complete verification of U.S. citizenship or lawful presence (SAVE program). Additionally, Iowa dietitians must complete Mandatory Reporter Training."
+    }
+  ],
+  "documents": [
+    {
+      "item": "CDR Registration Verification",
+      "detail": "Proof of active registration with the Commission on Dietetic Registration."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian (LD)",
-            "description": "The credential required to practice dietetics in Iowa, regulated by the Iowa Board of Dietetics under DIAL."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 900 hours of board-approved supervised practice or an accredited dietetic internship."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Iowa requires you to hold active CDR registration."
-        },
-        {
-            "title": "Submit the Online Application",
-            "description": "Create an account on the DIAL online licensing portal, complete the dietitian application, and pay the $120 application fee."
-        },
-        {
-            "title": "Provide Verification and Training",
-            "description": "Provide proof of your active CDR registration and complete verification of U.S. citizenship or lawful presence (SAVE program). Additionally, Iowa dietitians must complete Mandatory Reporter Training."
-        }
-    ],
-    "documents": [
-        {
-            "item": "CDR Registration Verification",
-            "detail": "Proof of active registration with the Commission on Dietetic Registration."
-        },
-        {
-            "item": "Official Transcripts",
-            "detail": "Sent directly to the Board showing your conferred degree."
-        },
-        {
-            "item": "Verification of Lawful Presence",
-            "detail": "Documentation satisfying the SAVE program requirements for state licensure."
-        }
-    ],
-    "provisional_text": "Iowa does not offer a temporary or provisional license for dietitians. You must complete the CDR examination before a license will be issued.",
-    "reciprocity_text": "Out-of-state applicants with active CDR registration may apply via endorsement. Verification of licensure from any state where you hold or have held a license is required, along with proof of your CDR credential.",
-    "faqs": [
-        {
-            "question": "How much does an Iowa dietitian license cost?",
-            "answer": "The initial cost is a nonrefundable $120 application fee."
-        },
-        {
-            "question": "When does the Iowa license need to be renewed?",
-            "answer": "The Iowa dietitian license is renewed biennially (every two years). The renewal fee is $120. A late fee of $60 is applied if renewed after the expiration date."
-        },
-        {
-            "question": "What are the continuing education requirements for Iowa?",
-            "answer": "Iowa requires 30 hours of dietetics-related continuing education (CE) during each two-year renewal cycle. First-time licensees are exempt from this requirement for their initial renewal."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "item": "Official Transcripts",
+      "detail": "Sent directly to the Board showing your conferred degree."
     },
-    "fees_endorsement": {
-        "app_fee": "$120",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$120"
+    {
+      "item": "Verification of Lawful Presence",
+      "detail": "Documentation satisfying the SAVE program requirements for state licensure."
+    }
+  ],
+  "provisional_text": "Iowa does not offer a temporary or provisional license for dietitians. You must complete the CDR examination before a license will be issued.",
+  "reciprocity_text": "Out-of-state applicants with active CDR registration may apply via endorsement. Verification of licensure from any state where you hold or have held a license is required, along with proof of your CDR credential.",
+  "faqs": [
+    {
+      "question": "How much does an Iowa dietitian license cost?",
+      "answer": "The initial cost is a nonrefundable $120 application fee."
     },
-    "temp_license": {
-        "available": false,
-        "fee": "N/A",
-        "processing_time": "N/A",
-        "duration": "N/A"
+    {
+      "question": "When does the Iowa license need to be renewed?",
+      "answer": "The Iowa dietitian license is renewed biennially (every two years). The renewal fee is $120. A late fee of $60 is applied if renewed after the expiration date."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://dial.iowa.gov/licenses/medical/dietitian",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "What are the continuing education requirements for Iowa?",
+      "answer": "Iowa requires 30 hours of dietetics-related continuing education (CE) during each two-year renewal cycle. First-time licensees are exempt from this requirement for their initial renewal."
+    },
+    {
+      "question": "Does Iowa have reciprocity for dietitians?",
+      "answer": "Iowa has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to Iowa?",
+      "answer": "Most endorsement applications take 3 to 4 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Iowa while my endorsement application is processing?",
+      "answer": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$120",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$120"
+  },
+  "temp_license": {
+    "available": false,
+    "fee": "N/A",
+    "processing_time": "N/A",
+    "duration": "N/A"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://dial.iowa.gov/licenses/medical/dietitian",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "enacted",
+    "state_is_member": true,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": false,
+    "jurisprudence_required": false,
+    "endorsement_fee": 120,
+    "processing_time": "3 to 4 Weeks",
+    "processing_tier": "slow",
+    "board_url": "https://dial.iowa.gov/licenses/medical/dietitian",
+    "endorsement_url": "https://dial.iowa.gov/licenses/medical/dietitian",
+    "notes": "Out-of-state applicants with active CDR registration may apply via endorsement. Verification of licensure from any state where you hold or have held a license is required, along with proof of your CDR credential."
+  },
+  "slug": "iowa-dietitian",
+  "specialty": "dietitian"
 }

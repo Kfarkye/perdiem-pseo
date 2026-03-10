@@ -1,123 +1,155 @@
 {
-    "state_slug": "alabama-slp",
-    "state_name": "Alabama",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "alabama-slp",
+  "state_name": "Alabama",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Speech-Language Pathologist",
+  "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Alabama Speech-Language Pathologist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Alabama - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "speech-language pathologist license reciprocity alabama, how to transfer speech-language pathologist license to alabama, speech-language pathologist compact alabama, alabama speech-language pathologist endorsement application"
+  },
+  "board": {
+    "name": "Alabama Board of Examiners for Speech-Language Pathology and Audiology",
+    "parent_dept": "ABESPA",
+    "mailing_address": "P.O. Box 304760, Montgomery, AL 36130-4760",
+    "physical_address": "100 N. Union St., Suite 724, Montgomery, AL 36130",
+    "phone": "(334) 269-1434",
+    "fax": "(334) 834-9618",
+    "email": "mailto:abespa@abespa.org",
+    "url": "https://www.abespa.alabama.gov/"
+  },
+  "quick_facts": {
+    "total_fee": "$150",
+    "fee_breakdown": "$100 application + $50 license fee",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 weeks",
+    "license_duration": "2 years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Speech-Language Pathologist",
+      "description": "The full credential to independently practice speech-language pathology in Alabama. Requires a master's degree, clinical fellowship, and passing Praxis score."
     },
-    "profession_name": "Speech-Language Pathologist",
-    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Alabama SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
-        "description": "Complete guide to Alabama speech-language pathologist licensing. ABESPA application fees, Praxis requirements, and telepractice rules for 2026.",
-        "keywords": "Alabama SLP license, ABESPA, speech-language pathologist Alabama, Alabama speech therapy license"
+    {
+      "title": "Provisional SLP License",
+      "description": "Issued to SLP graduates completing their Clinical Fellowship. Allows supervised practice while fulfilling post-graduate experience requirements."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Earn a Master's Degree in SLP",
+      "description": "Complete a master's or doctoral degree in speech-language pathology from a CAA-accredited program."
     },
-    "board": {
-        "name": "Alabama Board of Examiners for Speech-Language Pathology and Audiology",
-        "parent_dept": "ABESPA",
-        "mailing_address": "P.O. Box 304760, Montgomery, AL 36130-4760",
-        "physical_address": "100 N. Union St., Suite 724, Montgomery, AL 36130",
-        "phone": "(334) 269-1434",
-        "fax": "(334) 834-9618",
-        "email": "mailto:abespa@abespa.org",
-        "url": "https://www.abespa.alabama.gov/"
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331). The current passing score is 162."
     },
-    "quick_facts": {
-        "total_fee": "$150",
-        "fee_breakdown": "$100 application + $50 license fee",
-        "renewal_fee": "$100",
-        "renewal_cycle": "Every 2 years",
-        "processing_time": "4 to 6 weeks",
-        "license_duration": "2 years"
+    {
+      "title": "Complete Clinical Fellowship",
+      "description": "Complete a minimum of 36 weeks of full-time supervised clinical practice (1,260 hours) under an ASHA-certified SLP."
     },
-    "license_types": [
-        {
-            "title": "Licensed Speech-Language Pathologist",
-            "description": "The full credential to independently practice speech-language pathology in Alabama. Requires a master's degree, clinical fellowship, and passing Praxis score."
-        },
-        {
-            "title": "Provisional SLP License",
-            "description": "Issued to SLP graduates completing their Clinical Fellowship. Allows supervised practice while fulfilling post-graduate experience requirements."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Earn a Master's Degree in SLP",
-            "description": "Complete a master's or doctoral degree in speech-language pathology from a CAA-accredited program."
-        },
-        {
-            "title": "Pass the Praxis Examination",
-            "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331). The current passing score is 162."
-        },
-        {
-            "title": "Complete Clinical Fellowship",
-            "description": "Complete a minimum of 36 weeks of full-time supervised clinical practice (1,260 hours) under an ASHA-certified SLP."
-        },
-        {
-            "title": "Submit Application to ABESPA",
-            "description": "Submit the application with the $100 fee plus $50 license fee. Include official transcripts, Praxis scores, CF verification, and background check."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official graduate transcripts",
-            "detail": "From a CAA-accredited speech-language pathology program."
-        },
-        {
-            "item": "Praxis exam score report",
-            "detail": "Score of 162 or higher on test 5331."
-        },
-        {
-            "item": "Clinical Fellowship verification",
-            "detail": "CF supervisor attestation or ASHA CCC-SLP certificate."
-        },
-        {
-            "item": "Background check",
-            "detail": "Criminal background check as required by ABESPA."
-        }
-    ],
-    "telepractice_text": "Alabama permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact. The compact allows SLPs licensed in member states to practice across state lines through a compact privilege. Alabama-licensed SLPs must comply with state telehealth regulations.",
-    "provisional_text": "Alabama issues a Provisional SLP License for graduates completing their Clinical Fellowship. This allows supervised practice while fulfilling the 36-week post-graduate experience requirement.",
-    "reciprocity_text": "Alabama is a member of the ASLP Interstate Compact, which allows SLPs licensed in other compact member states to obtain a compact privilege to practice in Alabama. Traditional endorsement pathways are also available for non-compact applicants.",
-    "faqs": [
-        {
-            "question": "How much does an Alabama SLP license cost?",
-            "answer": "The total initial cost is approximately $150, including a $100 application fee and $50 license fee. Biennial renewal is $100."
-        },
-        {
-            "question": "Is Alabama part of the ASLP Interstate Compact?",
-            "answer": "Yes. Alabama has enacted ASLP-IC legislation. SLPs from other compact member states can practice in Alabama through a compact privilege once the system is fully operational."
-        },
-        {
-            "question": "Does Alabama allow telepractice for SLPs?",
-            "answer": "Yes. Alabama permits telepractice for licensed SLPs. The practitioner must hold a valid Alabama license or ASLP compact privilege."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Submit Application to ABESPA",
+      "description": "Submit the application with the $100 fee plus $50 license fee. Include official transcripts, Praxis scores, CF verification, and background check."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official graduate transcripts",
+      "detail": "From a CAA-accredited speech-language pathology program."
     },
-    "fees_endorsement": {
-        "app_fee": "$100",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$150"
+    {
+      "item": "Praxis exam score report",
+      "detail": "Score of 162 or higher on test 5331."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Clinical Fellowship verification",
+      "detail": "CF supervisor attestation or ASHA CCC-SLP certificate."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.abespa.alabama.gov/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Background check",
+      "detail": "Criminal background check as required by ABESPA."
+    }
+  ],
+  "telepractice_text": "Alabama permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact. The compact allows SLPs licensed in member states to practice across state lines through a compact privilege. Alabama-licensed SLPs must comply with state telehealth regulations.",
+  "provisional_text": "Alabama issues a Provisional SLP License for graduates completing their Clinical Fellowship. This allows supervised practice while fulfilling the 36-week post-graduate experience requirement.",
+  "reciprocity_text": "Alabama is a member of the ASLP Interstate Compact, which allows SLPs licensed in other compact member states to obtain a compact privilege to practice in Alabama. Traditional endorsement pathways are also available for non-compact applicants.",
+  "faqs": [
+    {
+      "question": "How much does an Alabama SLP license cost?",
+      "answer": "The total initial cost is approximately $150, including a $100 application fee and $50 license fee. Biennial renewal is $100."
+    },
+    {
+      "question": "Is Alabama part of the ASLP Interstate Compact?",
+      "answer": "Yes. Alabama has enacted ASLP-IC legislation. SLPs from other compact member states can practice in Alabama through a compact privilege once the system is fully operational."
+    },
+    {
+      "question": "Does Alabama allow telepractice for SLPs?",
+      "answer": "Yes. Alabama permits telepractice for licensed SLPs. The practitioner must hold a valid Alabama license or ASLP compact privilege."
+    },
+    {
+      "question": "Does Alabama have reciprocity for speech-language pathologists?",
+      "answer": "Yes. Alabama participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Alabama without a separate endorsement application."
+    },
+    {
+      "question": "How long does it take to transfer my speech-language pathologist license to Alabama?",
+      "answer": "Most endorsement applications take 4 to 6 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Alabama while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "ASLP-IC",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://aslpcompact.com/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$100",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$150"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.abespa.alabama.gov/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "ASLP-IC",
+    "compact_status": "active",
+    "state_is_member": true,
+    "compact_url": "https://aslpcompact.com/",
+    "compact_portal_url": "https://aslpcompact.com/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 150,
+    "processing_time": "4 to 6 weeks",
+    "processing_tier": "mid",
+    "board_url": "https://www.abespa.alabama.gov/",
+    "endorsement_url": "https://www.abespa.alabama.gov/",
+    "notes": "Alabama is a member of the ASLP Interstate Compact, which allows SLPs licensed in other compact member states to obtain a compact privilege to practice in Alabama. Traditional endorsement pathways are also available for non-compact applicants."
+  },
+  "slug": "alabama-slp-slp",
+  "specialty": "slp"
 }

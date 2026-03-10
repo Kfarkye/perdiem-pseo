@@ -1,102 +1,134 @@
 {
-    "state_slug": "texas",
-    "state_name": "Texas",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (FAST Pass via DPS)",
-        "fee": "$38.25",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://www.identogo.com/locations/texas"
+  "state_slug": "texas",
+  "state_name": "Texas",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (FAST Pass via DPS)",
+    "fee": "$38.25",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/texas"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian (LD)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Texas Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Texas - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity texas, how to transfer dietitian license to texas, dietitian compact texas, texas dietitian endorsement application"
+  },
+  "board": {
+    "name": "Dietitians Program",
+    "parent_dept": "Texas Department of Licensing and Regulation (TDLR)",
+    "mailing_address": "P.O. Box 12157<br>Austin, TX 78711",
+    "physical_address": "920 Colorado St.<br>Austin, TX 78701",
+    "phone": "(800) 803-9202",
+    "fax": "(512) 463-9468",
+    "email": "mailto:cs.dietitians@tdlr.texas.gov",
+    "url": "https://www.tdlr.texas.gov/diet/"
+  },
+  "quick_facts": {
+    "total_fee": "$142",
+    "fee_breakdown": "$108 application + $34 Jurisprudence Exam",
+    "renewal_fee": "$90",
+    "renewal_cycle": "Every 2 years + 12 CE hours",
+    "processing_time": "2 to 4 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian (LD)",
+      "description": "The standard credential to practice dietetics in Texas. Requires current CDR registration and successful completion of the Texas Jurisprudence Examination."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pass the Texas Jurisprudence Exam",
+      "description": "Before applying, you must take and pass the online Texas Jurisprudence Exam covering state laws. You will pay a $34 fee to the third-party provider."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian (LD)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Texas Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
-        "description": "Apply for a Texas Licensed Dietitian (LD) credential through the TDLR. $142 estimated total fee. TX Jurisprudence Exam, background check, and CDR registration required.",
-        "keywords": "Texas dietitian license, TDLR nutrition board, TX licensed dietitian requirements, Texas Jurisprudence Exam dietetics"
+    {
+      "title": "Apply Online via TDLR",
+      "description": "Create an account in the TDLR Online Licensing System. Submit your application for a new Dietitian License and pay the $108 fee."
     },
-    "board": {
-        "name": "Dietitians Program",
-        "parent_dept": "Texas Department of Licensing and Regulation (TDLR)",
-        "mailing_address": "P.O. Box 12157<br>Austin, TX 78711",
-        "physical_address": "920 Colorado St.<br>Austin, TX 78701",
-        "phone": "(800) 803-9202",
-        "fax": "(512) 463-9468",
-        "email": "mailto:cs.dietitians@tdlr.texas.gov",
-        "url": "https://www.tdlr.texas.gov/diet/"
+    {
+      "title": "Pass the DPS Background Check",
+      "description": "TDLR conducts a criminal background check through the Texas Department of Public Safety (DPS). You will be sent a 'FAST Pass' to complete fingerprinting."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Copy of current CDR registration card",
+      "detail": "Must be in active status."
     },
-    "quick_facts": {
-        "total_fee": "$142",
-        "fee_breakdown": "$108 application + $34 Jurisprudence Exam",
-        "renewal_fee": "$90",
-        "renewal_cycle": "Every 2 years + 12 CE hours",
-        "processing_time": "2 to 4 Weeks",
-        "license_duration": "2 Years"
+    {
+      "item": "Texas Jurisprudence Exam Certificate",
+      "detail": "Proof of successful completion."
+    }
+  ],
+  "provisional_text": "Texas no longer offers a provisional license. The TDLR formally removed the provisional license designation from state law.",
+  "reciprocity_text": "Texas utilizes licensure by equivalence. If you hold a current CDR registration, you have met the core educational requirements. Out-of-state applicants apply for a new license, submit their active CDR card, pass the Texas Jurisprudence Exam, and undergo the background check.",
+  "faqs": [
+    {
+      "question": "How much does a Texas dietitian license cost?",
+      "answer": "The initial license application fee is $108, paid to TDLR. You must also pay a $34 fee to a third-party vendor to take the mandatory Texas Jurisprudence Examination, bringing the total to $142."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian (LD)",
-            "description": "The standard credential to practice dietetics in Texas. Requires current CDR registration and successful completion of the Texas Jurisprudence Examination."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Pass the Texas Jurisprudence Exam",
-            "description": "Before applying, you must take and pass the online Texas Jurisprudence Exam covering state laws. You will pay a $34 fee to the third-party provider."
-        },
-        {
-            "title": "Apply Online via TDLR",
-            "description": "Create an account in the TDLR Online Licensing System. Submit your application for a new Dietitian License and pay the $108 fee."
-        },
-        {
-            "title": "Pass the DPS Background Check",
-            "description": "TDLR conducts a criminal background check through the Texas Department of Public Safety (DPS). You will be sent a 'FAST Pass' to complete fingerprinting."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Copy of current CDR registration card",
-            "detail": "Must be in active status."
-        },
-        {
-            "item": "Texas Jurisprudence Exam Certificate",
-            "detail": "Proof of successful completion."
-        }
-    ],
-    "provisional_text": "Texas no longer offers a provisional license. The TDLR formally removed the provisional license designation from state law.",
-    "reciprocity_text": "Texas utilizes licensure by equivalence. If you hold a current CDR registration, you have met the core educational requirements. Out-of-state applicants apply for a new license, submit their active CDR card, pass the Texas Jurisprudence Exam, and undergo the background check.",
-    "faqs": [
-        {
-            "question": "How much does a Texas dietitian license cost?",
-            "answer": "The initial license application fee is $108, paid to TDLR. You must also pay a $34 fee to a third-party vendor to take the mandatory Texas Jurisprudence Examination, bringing the total to $142."
-        },
-        {
-            "question": "What is the Texas Jurisprudence Exam for Dietitians?",
-            "answer": "It is a mandatory, online examination covering state laws, rules, and regulations relating to the practice of dietetics in Texas. All initial applicants must pass it."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "question": "What is the Texas Jurisprudence Exam for Dietitians?",
+      "answer": "It is a mandatory, online examination covering state laws, rules, and regulations relating to the practice of dietetics in Texas. All initial applicants must pass it."
     },
-    "fees_endorsement": {
-        "app_fee": "$108",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$34",
-        "total_estimated_cost": "$142"
+    {
+      "question": "Does Texas have reciprocity for dietitians?",
+      "answer": "No interstate compact currently covers dietitian practice in Texas. To work in Texas, apply for licensure by endorsement through the state board."
     },
-    "temp_license": {
-        "available": false,
-        "fee": "N/A",
-        "processing_time": "N/A",
-        "duration": "N/A"
+    {
+      "question": "How long does it take to transfer my dietitian license to Texas?",
+      "answer": "Most endorsement applications take 2 to 4 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.tdlr.texas.gov/diet/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "Can I start working in Texas while my endorsement application is processing?",
+      "answer": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$108",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$34",
+    "total_estimated_cost": "$142"
+  },
+  "temp_license": {
+    "available": false,
+    "fee": "N/A",
+    "processing_time": "N/A",
+    "duration": "N/A"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.tdlr.texas.gov/diet/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": false,
+    "jurisprudence_required": true,
+    "endorsement_fee": 142,
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
+    "board_url": "https://www.tdlr.texas.gov/diet/",
+    "endorsement_url": "https://www.tdlr.texas.gov/diet/",
+    "notes": "Texas utilizes licensure by equivalence. If you hold a current CDR registration, you have met the core educational requirements. Out-of-state applicants apply for a new license, submit their active CDR card, pass the Texas Jurisprudence Exam, and undergo the background check."
+  },
+  "slug": "texas-dietitian",
+  "specialty": "dietitian"
 }

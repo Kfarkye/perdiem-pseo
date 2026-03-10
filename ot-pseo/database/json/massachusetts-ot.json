@@ -1,106 +1,138 @@
 {
-    "state_slug": "massachusetts",
-    "state_name": "Massachusetts",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "massachusetts",
+  "state_name": "Massachusetts",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Occupational Therapist",
+  "credential_nomenclature": "Occupational Therapist Registered (OTR)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Massachusetts Occupational Therapist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a occupational therapist? Here's whether your license transfers to Massachusetts - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "occupational therapist license reciprocity massachusetts, how to transfer occupational therapist license to massachusetts, occupational therapist compact massachusetts, massachusetts occupational therapist endorsement application"
+  },
+  "board": {
+    "name": "Massachusetts Board of Allied Health \u2014 OT",
+    "parent_dept": "Massachusetts Department of Public Health (DPH)",
+    "mailing_address": "See board website",
+    "physical_address": "See board website",
+    "phone": "(800) 414-0168",
+    "fax": "N/A (contact by phone)",
+    "email": "See board website",
+    "url": "https://www.mass.gov/orgs/board-of-registration-of-allied-health-professionals"
+  },
+  "quick_facts": {
+    "total_fee": "",
+    "fee_breakdown": " application/license fee",
+    "renewal_fee": "",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Occupational Therapist Registered (OTR)",
+      "description": "The standard credential to practice occupational therapy independently in Massachusetts."
     },
-    "profession_name": "Occupational Therapist",
-    "credential_nomenclature": "Occupational Therapist Registered (OTR)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Massachusetts Occupational Therapist (OTR) Application — Requirements & Fees (2026)",
-        "description": "Apply for a Massachusetts Occupational Therapist credential. Learn about the master's degree requirement, NBCOT exam, and state fees.",
-        "keywords": "Massachusetts OT license, Massachusetts occupational therapist requirements, Massachusetts Board of Occupational Therapy, Massachusetts OT application fee"
+    {
+      "title": "Certified Occupational Therapy Assistant (COTA)",
+      "description": "Requires an associate degree and practicing under the supervision of a licensed OTR."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Fieldwork",
+      "description": "Earn a master's or doctoral degree in occupational therapy from an ACOTE-accredited program and complete specific fieldwork requirements."
     },
-    "board": {
-        "name": "Massachusetts Board of Allied Health — OT",
-        "parent_dept": "Massachusetts Department of Public Health (DPH)",
-        "mailing_address": "See board website",
-        "physical_address": "See board website",
-        "phone": "(800) 414-0168",
-        "fax": "N/A (contact by phone)",
-        "email": "See board website",
-        "url": "https://www.mass.gov/orgs/board-of-registration-of-allied-health-professionals"
+    {
+      "title": "Pass the NBCOT Examination",
+      "description": "Pass the National Board for Certification in Occupational Therapy (NBCOT) exam for OTRs."
     },
-    "quick_facts": {
-        "total_fee": "",
-        "fee_breakdown": " application/license fee",
-        "renewal_fee": "",
-        "renewal_cycle": "Every 2 years",
-        "processing_time": "4 to 6 Weeks",
-        "license_duration": "2 Years"
+    {
+      "title": "Submit Application and Fees",
+      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official Transcripts",
+      "detail": "Sent directly from your educational institution."
     },
-    "license_types": [
-        {
-            "title": "Occupational Therapist Registered (OTR)",
-            "description": "The standard credential to practice occupational therapy independently in Massachusetts."
-        },
-        {
-            "title": "Certified Occupational Therapy Assistant (COTA)",
-            "description": "Requires an associate degree and practicing under the supervision of a licensed OTR."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Fieldwork",
-            "description": "Earn a master's or doctoral degree in occupational therapy from an ACOTE-accredited program and complete specific fieldwork requirements."
-        },
-        {
-            "title": "Pass the NBCOT Examination",
-            "description": "Pass the National Board for Certification in Occupational Therapy (NBCOT) exam for OTRs."
-        },
-        {
-            "title": "Submit Application and Fees",
-            "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official Transcripts",
-            "detail": "Sent directly from your educational institution."
-        },
-        {
-            "item": "NBCOT Score Report",
-            "detail": "Official verification of passing the NBCOT exam."
-        }
-    ],
-    "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NBCOT exam. Check specific board rules for supervisory requirements.",
-    "reciprocity_text": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
-    "faqs": [
-        {
-            "question": "How much does a Massachusetts OT license cost?",
-            "answer": "The initial application and licensing fee varies, often around  to . Check the specific fee breakdown."
-        },
-        {
-            "question": "Is NBCOT certification required?",
-            "answer": "Yes, passing the NBCOT exam is a standard requirement for initial licensure across all states."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "OT Compact (Occupational Therapy Licensure Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "item": "NBCOT Score Report",
+      "detail": "Official verification of passing the NBCOT exam."
+    }
+  ],
+  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NBCOT exam. Check specific board rules for supervisory requirements.",
+  "reciprocity_text": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+  "faqs": [
+    {
+      "question": "How much does a Massachusetts OT license cost?",
+      "answer": "The initial application and licensing fee varies, often around  to . Check the specific fee breakdown."
     },
-    "fees_endorsement": {
-        "app_fee": "N/A",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": ""
+    {
+      "question": "Is NBCOT certification required?",
+      "answer": "Yes, passing the NBCOT exam is a standard requirement for initial licensure across all states."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "question": "Does Massachusetts have reciprocity for occupational therapists?",
+      "answer": "No interstate compact currently covers occupational therapist practice in Massachusetts. To work in Massachusetts, apply for licensure by endorsement through the state board."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.mass.gov/orgs/board-of-registration-of-allied-health-professionals",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "How long does it take to transfer my occupational therapist license to Massachusetts?",
+      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Massachusetts while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "OT Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://otcompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "N/A",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": ""
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.mass.gov/orgs/board-of-registration-of-allied-health-professionals",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "OT Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://otcompact.org/",
+    "compact_portal_url": "https://otcompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 0,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://www.mass.gov/orgs/board-of-registration-of-allied-health-professionals",
+    "endorsement_url": "https://www.mass.gov/orgs/board-of-registration-of-allied-health-professionals",
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+  },
+  "slug": "massachusetts-ot",
+  "specialty": "ot"
 }

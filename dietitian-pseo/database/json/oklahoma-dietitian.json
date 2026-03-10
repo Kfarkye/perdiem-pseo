@@ -1,122 +1,154 @@
 {
-    "state_slug": "oklahoma",
-    "state_name": "Oklahoma",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "oklahoma",
+  "state_name": "Oklahoma",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian (LD)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Oklahoma Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Oklahoma - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity oklahoma, how to transfer dietitian license to oklahoma, dietitian compact oklahoma, oklahoma dietitian endorsement application"
+  },
+  "board": {
+    "name": "Oklahoma Licensed Dietitians Committee",
+    "parent_dept": "Oklahoma State Board of Medical Licensure and Supervision",
+    "mailing_address": "P.O. Box 18256<br>Oklahoma City, OK 73154",
+    "physical_address": "101 NE 51st Street<br>Oklahoma City, OK 73105",
+    "phone": "(405) 962-1400",
+    "fax": "(405) 962-1499",
+    "email": "mailto:licensing@okmedicalboard.org",
+    "url": "https://www.okmedicalboard.org/dietitians"
+  },
+  "quick_facts": {
+    "total_fee": "$120",
+    "fee_breakdown": "$120 initial application fee (background check fees extra)",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Annual (by Oct 31st)",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "1 Year"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian (LD)",
+      "description": "The credential required to practice dietetics in the state of Oklahoma. Supervised by the Licensed Dietitians Committee under the Medical Board. Note: Oklahoma does not license the title 'Nutritionist'."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian (LD)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Oklahoma Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
-        "description": "Apply for an Oklahoma Licensed Dietitian credential through the Medical Board. $120 initial application fee. Background check and active CDR registration required.",
-        "keywords": "Oklahoma dietitian license, OK licensed dietitian requirements, Oklahoma Board of Medical Licensure Dietitians, Oklahoma dietitian application fee"
+    {
+      "title": "Provisional Licensed Dietitian (PLD)",
+      "description": "Available for applicants who have completed the academic and supervised practice requirements but have not yet passed the CDR examination. Must practice under the supervision of a Licensed Dietitian. Valid for one year."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete between 1,000 and 1,200 hours of board-approved supervised practice or an accredited dietetic internship."
     },
-    "board": {
-        "name": "Oklahoma Licensed Dietitians Committee",
-        "parent_dept": "Oklahoma State Board of Medical Licensure and Supervision",
-        "mailing_address": "P.O. Box 18256<br>Oklahoma City, OK 73154",
-        "physical_address": "101 NE 51st Street<br>Oklahoma City, OK 73105",
-        "phone": "(405) 962-1400",
-        "fax": "(405) 962-1499",
-        "email": "mailto:licensing@okmedicalboard.org",
-        "url": "https://www.okmedicalboard.org/dietitians"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) national examination."
     },
-    "quick_facts": {
-        "total_fee": "$120",
-        "fee_breakdown": "$120 initial application fee (background check fees extra)",
-        "renewal_fee": "$100",
-        "renewal_cycle": "Annual (by Oct 31st)",
-        "processing_time": "4 to 6 Weeks",
-        "license_duration": "1 Year"
+    {
+      "title": "Submit the Online Application",
+      "description": "Apply through the Oklahoma State Board of Medical Licensure online portal and pay the $120 application fee."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian (LD)",
-            "description": "The credential required to practice dietetics in the state of Oklahoma. Supervised by the Licensed Dietitians Committee under the Medical Board. Note: Oklahoma does not license the title 'Nutritionist'."
-        },
-        {
-            "title": "Provisional Licensed Dietitian (PLD)",
-            "description": "Available for applicants who have completed the academic and supervised practice requirements but have not yet passed the CDR examination. Must practice under the supervision of a Licensed Dietitian. Valid for one year."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete between 1,000 and 1,200 hours of board-approved supervised practice or an accredited dietetic internship."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) national examination."
-        },
-        {
-            "title": "Submit the Online Application",
-            "description": "Apply through the Oklahoma State Board of Medical Licensure online portal and pay the $120 application fee."
-        },
-        {
-            "title": "Complete Background Check & Provide Documents",
-            "description": "All applicants must submit to an Extended Background Check. You must also submit primary source verification of your education and passing CDR exam score."
-        }
-    ],
-    "documents": [
-        {
-            "item": "CDR Registration Verification",
-            "detail": "Proof of active registration with the Commission on Dietetic Registration sent directly to the Board."
-        },
-        {
-            "item": "Official College Transcripts",
-            "detail": "Sent directly from the university showing your conferred degree."
-        },
-        {
-            "item": "Extended Background Check",
-            "detail": "Processed through the Oklahoma State Bureau of Investigation (OSBI)."
-        },
-        {
-            "item": "Evidence of Legal Status",
-            "detail": "Form documenting your citizenship or qualified alien status."
-        }
-    ],
-    "provisional_text": "Oklahoma offers a Provisional Licensed Dietitian (PLD) distinct credential for applicants who have met the education and supervised practice requirements and are preparing for the CDR exam. A Provisional Licensed Dietitian must practice under the direct supervision of an Oklahoma Licensed Dietitian. The provisional license is valid for one year.",
-    "reciprocity_text": "Applicants currently licensed in another state may apply via endorsement if the other state's licensing requirements are substantially equivalent to or stricter than Oklahoma's. The standard application, fee, and verification of all out-of-state licenses are required.",
-    "faqs": [
-        {
-            "question": "How much does an Oklahoma dietitian license cost?",
-            "answer": "The initial license application fee is $120. Additional fees apply for the required background check."
-        },
-        {
-            "question": "When does the Oklahoma license need to be renewed?",
-            "answer": "The Oklahoma licensed dietitian credential expires annually on October 31st. The renewal fee is $100."
-        },
-        {
-            "question": "Does Oklahoma license Nutritionists?",
-            "answer": "No, Oklahoma only issues licenses for Dietitians (Licensed Dietitian). There are no specific licensing requirements or title protections for individuals claiming to be 'nutritionists' in the state."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Complete Background Check & Provide Documents",
+      "description": "All applicants must submit to an Extended Background Check. You must also submit primary source verification of your education and passing CDR exam score."
+    }
+  ],
+  "documents": [
+    {
+      "item": "CDR Registration Verification",
+      "detail": "Proof of active registration with the Commission on Dietetic Registration sent directly to the Board."
     },
-    "fees_endorsement": {
-        "app_fee": "$120",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$120"
+    {
+      "item": "Official College Transcripts",
+      "detail": "Sent directly from the university showing your conferred degree."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Extended Background Check",
+      "detail": "Processed through the Oklahoma State Bureau of Investigation (OSBI)."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.okmedicalboard.org/dietitians",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Evidence of Legal Status",
+      "detail": "Form documenting your citizenship or qualified alien status."
+    }
+  ],
+  "provisional_text": "Oklahoma offers a Provisional Licensed Dietitian (PLD) distinct credential for applicants who have met the education and supervised practice requirements and are preparing for the CDR exam. A Provisional Licensed Dietitian must practice under the direct supervision of an Oklahoma Licensed Dietitian. The provisional license is valid for one year.",
+  "reciprocity_text": "Applicants currently licensed in another state may apply via endorsement if the other state's licensing requirements are substantially equivalent to or stricter than Oklahoma's. The standard application, fee, and verification of all out-of-state licenses are required.",
+  "faqs": [
+    {
+      "question": "How much does an Oklahoma dietitian license cost?",
+      "answer": "The initial license application fee is $120. Additional fees apply for the required background check."
+    },
+    {
+      "question": "When does the Oklahoma license need to be renewed?",
+      "answer": "The Oklahoma licensed dietitian credential expires annually on October 31st. The renewal fee is $100."
+    },
+    {
+      "question": "Does Oklahoma license Nutritionists?",
+      "answer": "No, Oklahoma only issues licenses for Dietitians (Licensed Dietitian). There are no specific licensing requirements or title protections for individuals claiming to be 'nutritionists' in the state."
+    },
+    {
+      "question": "Does Oklahoma have reciprocity for dietitians?",
+      "answer": "Oklahoma has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to Oklahoma?",
+      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Oklahoma while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$120",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$120"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.okmedicalboard.org/dietitians",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "enacted",
+    "state_is_member": true,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 120,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://www.okmedicalboard.org/dietitians",
+    "endorsement_url": "https://www.okmedicalboard.org/dietitians",
+    "notes": "Applicants currently licensed in another state may apply via endorsement if the other state's licensing requirements are substantially equivalent to or stricter than Oklahoma's. The standard application, fee, and verification of all out-of-state licenses are required."
+  },
+  "slug": "oklahoma-dietitian",
+  "specialty": "dietitian"
 }

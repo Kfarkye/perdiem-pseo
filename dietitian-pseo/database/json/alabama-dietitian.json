@@ -1,118 +1,150 @@
 {
-    "state_slug": "alabama",
-    "state_name": "Alabama",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "alabama",
+  "state_name": "Alabama",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian (LD)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Alabama Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Alabama - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity alabama, how to transfer dietitian license to alabama, dietitian compact alabama, alabama dietitian endorsement application"
+  },
+  "board": {
+    "name": "Alabama Board of Examiners for Dietetics/Nutrition Practice",
+    "parent_dept": "Independent State Board",
+    "mailing_address": "P.O. Box 300500<br>Montgomery, AL 36130",
+    "physical_address": "400 South Union Street, Suite 445<br>Montgomery, AL 36104",
+    "phone": "(334) 242-4505",
+    "fax": "",
+    "email": "",
+    "url": "http://www.boed.alabama.gov/"
+  },
+  "quick_facts": {
+    "total_fee": "$250",
+    "fee_breakdown": "$100 application fee + $150 initial license fee",
+    "renewal_fee": "$200",
+    "renewal_cycle": "Every 2 years + 30 CE hours",
+    "processing_time": "2 to 4 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian (LD) / Licensed Nutritionist (LN)",
+      "description": "The standard credential to practice dietetics in Alabama. Alabama law protects both the 'Dietitian' and 'Nutritionist' titles."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian (LD)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Alabama Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
-        "description": "Apply for an Alabama Licensed Dietitian (LD) credential. $250 initial licensure cost. Background check, CDR exam, and 1,200 hours of supervised practice required.",
-        "keywords": "Alabama dietitian license, AL licensed dietitian requirements, Alabama Board of Examiners for Dietetics, Alabama dietitian application fee"
+    {
+      "title": "Temporary License",
+      "description": "Available for applicants who have met the educational and supervised practice requirements and are preparing to take the CDR exam. Valid for one year. Fee is $175."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,200 hours of supervised practice."
     },
-    "board": {
-        "name": "Alabama Board of Examiners for Dietetics/Nutrition Practice",
-        "parent_dept": "Independent State Board",
-        "mailing_address": "P.O. Box 300500<br>Montgomery, AL 36130",
-        "physical_address": "400 South Union Street, Suite 445<br>Montgomery, AL 36104",
-        "phone": "(334) 242-4505",
-        "fax": "",
-        "email": "",
-        "url": "http://www.boed.alabama.gov/"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) national examination."
     },
-    "quick_facts": {
-        "total_fee": "$250",
-        "fee_breakdown": "$100 application fee + $150 initial license fee",
-        "renewal_fee": "$200",
-        "renewal_cycle": "Every 2 years + 30 CE hours",
-        "processing_time": "2 to 4 Weeks",
-        "license_duration": "2 Years"
+    {
+      "title": "Submit the Application",
+      "description": "Complete the licensure application and submit it to the Board with the $100 application fee and $150 initial license fee ($250 total)."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian (LD) / Licensed Nutritionist (LN)",
-            "description": "The standard credential to practice dietetics in Alabama. Alabama law protects both the 'Dietitian' and 'Nutritionist' titles."
-        },
-        {
-            "title": "Temporary License",
-            "description": "Available for applicants who have met the educational and supervised practice requirements and are preparing to take the CDR exam. Valid for one year. Fee is $175."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,200 hours of supervised practice."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) national examination."
-        },
-        {
-            "title": "Submit the Application",
-            "description": "Complete the licensure application and submit it to the Board with the $100 application fee and $150 initial license fee ($250 total)."
-        },
-        {
-            "title": "Provide Verification",
-            "description": "Submit a copy of your current, active CDR registration card or verification letter directly from CDR."
-        }
-    ],
-    "documents": [
-        {
-            "item": "CDR Registration Verification",
-            "detail": "Proof of active registration with the Commission on Dietetic Registration."
-        },
-        {
-            "item": "Driver's License or Government ID",
-            "detail": "Verification of identity and legal presence in the U.S."
-        },
-        {
-            "item": "Official Transcripts",
-            "detail": "Sent directly from the university showing your conferred degree."
-        }
-    ],
-    "provisional_text": "Alabama offers a temporary license for $175 for individuals who have completed their education and supervised practice but have not yet passed the CDR exam. It is valid for one year.",
-    "reciprocity_text": "Alabama allows licensure by endorsement for dietitians who hold a current, valid license in another state with requirements equivalent to or stricter than Alabama's, provided the applicant holds active CDR registration.",
-    "faqs": [
-        {
-            "question": "How much does an Alabama dietitian license cost?",
-            "answer": "The initial cost is $250, which includes a non-refundable $100 application fee and a $150 license fee. The temporary license costs $175."
-        },
-        {
-            "question": "When does the Alabama license need to be renewed?",
-            "answer": "The license is renewed biennially (every two years). The renewal fee is $200."
-        },
-        {
-            "question": "What are the continuing education requirements?",
-            "answer": "Alabama requires 30 hours of continuing professional education (CPE) during each two-year renewal cycle."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Provide Verification",
+      "description": "Submit a copy of your current, active CDR registration card or verification letter directly from CDR."
+    }
+  ],
+  "documents": [
+    {
+      "item": "CDR Registration Verification",
+      "detail": "Proof of active registration with the Commission on Dietetic Registration."
     },
-    "fees_endorsement": {
-        "app_fee": "$100",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$250"
+    {
+      "item": "Driver's License or Government ID",
+      "detail": "Verification of identity and legal presence in the U.S."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "$175",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Official Transcripts",
+      "detail": "Sent directly from the university showing your conferred degree."
+    }
+  ],
+  "provisional_text": "Alabama offers a temporary license for $175 for individuals who have completed their education and supervised practice but have not yet passed the CDR exam. It is valid for one year.",
+  "reciprocity_text": "Alabama allows licensure by endorsement for dietitians who hold a current, valid license in another state with requirements equivalent to or stricter than Alabama's, provided the applicant holds active CDR registration.",
+  "faqs": [
+    {
+      "question": "How much does an Alabama dietitian license cost?",
+      "answer": "The initial cost is $250, which includes a non-refundable $100 application fee and a $150 license fee. The temporary license costs $175."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "http://www.boed.alabama.gov/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "When does the Alabama license need to be renewed?",
+      "answer": "The license is renewed biennially (every two years). The renewal fee is $200."
+    },
+    {
+      "question": "What are the continuing education requirements?",
+      "answer": "Alabama requires 30 hours of continuing professional education (CPE) during each two-year renewal cycle."
+    },
+    {
+      "question": "Does Alabama have reciprocity for dietitians?",
+      "answer": "No interstate compact currently covers dietitian practice in Alabama. To work in Alabama, apply for licensure by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to Alabama?",
+      "answer": "Most endorsement applications take 2 to 4 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Alabama while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$100",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$250"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "$175",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "http://www.boed.alabama.gov/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 250,
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
+    "board_url": "http://www.boed.alabama.gov/",
+    "endorsement_url": "http://www.boed.alabama.gov/",
+    "notes": "Alabama allows licensure by endorsement for dietitians who hold a current, valid license in another state with requirements equivalent to or stricter than Alabama's, provided the applicant holds active CDR registration."
+  },
+  "slug": "alabama-dietitian",
+  "specialty": "dietitian"
 }

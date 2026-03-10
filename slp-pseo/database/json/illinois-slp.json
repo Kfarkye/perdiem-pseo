@@ -1,123 +1,155 @@
 {
-    "state_slug": "illinois-slp",
-    "state_name": "Illinois",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "illinois-slp",
+  "state_name": "Illinois",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Speech-Language Pathologist",
+  "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Illinois Speech-Language Pathologist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Illinois - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "speech-language pathologist license reciprocity illinois, how to transfer speech-language pathologist license to illinois, speech-language pathologist compact illinois, illinois speech-language pathologist endorsement application"
+  },
+  "board": {
+    "name": "Division of Professional Regulation \u2014 Speech-Language Pathology",
+    "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
+    "mailing_address": "320 W. Washington St., 3rd Floor, Springfield, IL 62786",
+    "physical_address": "320 W. Washington St., 3rd Floor, Springfield, IL 62786",
+    "phone": "(217) 785-0800",
+    "fax": "(217) 782-7645",
+    "email": "mailto:FPR.COREHelp@illinois.gov",
+    "url": "https://idfpr.illinois.gov/"
+  },
+  "quick_facts": {
+    "total_fee": "$90",
+    "fee_breakdown": "$90 application fee (by examination)",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years (October 31, odd years)",
+    "processing_time": "4 to 6 weeks",
+    "license_duration": "2 years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Speech-Language Pathologist",
+      "description": "The full credential to independently practice speech-language pathology in Illinois. Requires a master's degree, completion of the Clinical Fellowship Year (CFY), and a passing Praxis score."
     },
-    "profession_name": "Speech-Language Pathologist",
-    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Illinois SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
-        "description": "Complete guide to Illinois speech-language pathologist licensing. IDFPR application fees, Praxis requirements, temporary license, and telepractice rules for 2026.",
-        "keywords": "Illinois SLP license, IDFPR speech pathologist, Illinois speech therapy license, SLP license IL, CFY Illinois"
+    {
+      "title": "Temporary SLP License",
+      "description": "Issued to SLP graduates completing their Clinical Fellowship Year (CFY) or to out-of-state SLPs awaiting Illinois licensure. Application fee: $75. Allows supervised practice while completing remaining requirements."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Earn a Master's Degree in SLP",
+      "description": "Complete a master's or doctoral degree in speech pathology from an IDFPR-approved and/or ASHA-accredited program."
     },
-    "board": {
-        "name": "Division of Professional Regulation — Speech-Language Pathology",
-        "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
-        "mailing_address": "320 W. Washington St., 3rd Floor, Springfield, IL 62786",
-        "physical_address": "320 W. Washington St., 3rd Floor, Springfield, IL 62786",
-        "phone": "(217) 785-0800",
-        "fax": "(217) 782-7645",
-        "email": "mailto:FPR.COREHelp@illinois.gov",
-        "url": "https://idfpr.illinois.gov/"
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331). The current passing score is 162."
     },
-    "quick_facts": {
-        "total_fee": "$90",
-        "fee_breakdown": "$90 application fee (by examination)",
-        "renewal_fee": "$100",
-        "renewal_cycle": "Every 2 years (October 31, odd years)",
-        "processing_time": "4 to 6 weeks",
-        "license_duration": "2 years"
+    {
+      "title": "Complete the Clinical Fellowship Year (CFY)",
+      "description": "Complete a supervised Clinical Fellowship Year under a licensed SLP. A Temporary SLP License ($75) must be obtained first to practice during the CFY in Illinois."
     },
-    "license_types": [
-        {
-            "title": "Licensed Speech-Language Pathologist",
-            "description": "The full credential to independently practice speech-language pathology in Illinois. Requires a master's degree, completion of the Clinical Fellowship Year (CFY), and a passing Praxis score."
-        },
-        {
-            "title": "Temporary SLP License",
-            "description": "Issued to SLP graduates completing their Clinical Fellowship Year (CFY) or to out-of-state SLPs awaiting Illinois licensure. Application fee: $75. Allows supervised practice while completing remaining requirements."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Earn a Master's Degree in SLP",
-            "description": "Complete a master's or doctoral degree in speech pathology from an IDFPR-approved and/or ASHA-accredited program."
-        },
-        {
-            "title": "Pass the Praxis Examination",
-            "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331). The current passing score is 162."
-        },
-        {
-            "title": "Complete the Clinical Fellowship Year (CFY)",
-            "description": "Complete a supervised Clinical Fellowship Year under a licensed SLP. A Temporary SLP License ($75) must be obtained first to practice during the CFY in Illinois."
-        },
-        {
-            "title": "Apply through IDFPR CORE Portal",
-            "description": "Submit the application through the IDFPR CORE online licensing system. Pay the $90 application fee. Include official transcripts, Praxis scores, CFY verification, and background check."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official graduate transcripts",
-            "detail": "From an IDFPR-approved or ASHA-accredited speech-language pathology program."
-        },
-        {
-            "item": "Praxis exam score report",
-            "detail": "Score of 162 or higher on test 5331."
-        },
-        {
-            "item": "Clinical Fellowship verification",
-            "detail": "Documentation of completed CFY signed by supervising licensed SLP."
-        },
-        {
-            "item": "Background check",
-            "detail": "Criminal background check as required by IDFPR."
-        }
-    ],
-    "telepractice_text": "Illinois permits telepractice for licensed SLPs. The practitioner must hold a valid Illinois SLP license to provide services to clients located in Illinois. Illinois does not currently participate in the ASLP Interstate Compact. All telepractice services must meet the same standard of care as in-person services.",
-    "provisional_text": "Illinois issues a Temporary SLP License for graduates completing their Clinical Fellowship Year (CFY). The temporary license costs $75 and permits supervised practice while the CFY is being completed. Out-of-state SLPs awaiting Illinois licensure may also apply for the temporary license.",
-    "reciprocity_text": "Illinois offers licensure by endorsement for SLPs licensed in other states. The endorsement application fee is $100. Applicants must demonstrate equivalent education, examination, and experience. ASHA CCC-SLP holders may have the review process streamlined but must still submit a full Illinois application.",
-    "faqs": [
-        {
-            "question": "How much does an Illinois SLP license cost?",
-            "answer": "The initial application fee is $90 (by examination) or $100 (by endorsement). A Temporary SLP License costs $75. Biennial renewal is $100, due by October 31 of odd-numbered years."
-        },
-        {
-            "question": "Do I need a PEL to work as an SLP in Illinois schools?",
-            "answer": "Yes. SLPs working in Illinois public schools must hold a Professional Educator License (PEL) from the Illinois State Board of Education in addition to the IDFPR professional SLP license."
-        },
-        {
-            "question": "What continuing education is required for Illinois SLP renewal?",
-            "answer": "Illinois requires 20 hours of CE every two years, including 1 hour of ethics, 1 hour of sexual harassment training, 1 hour of implicit bias awareness, 1 hour of dementia recognition training (every 6 years), and 1 hour of cultural competency training (effective January 1, 2025)."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Apply through IDFPR CORE Portal",
+      "description": "Submit the application through the IDFPR CORE online licensing system. Pay the $90 application fee. Include official transcripts, Praxis scores, CFY verification, and background check."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official graduate transcripts",
+      "detail": "From an IDFPR-approved or ASHA-accredited speech-language pathology program."
     },
-    "fees_endorsement": {
-        "app_fee": "$90",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$90"
+    {
+      "item": "Praxis exam score report",
+      "detail": "Score of 162 or higher on test 5331."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "$75",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Clinical Fellowship verification",
+      "detail": "Documentation of completed CFY signed by supervising licensed SLP."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://idfpr.illinois.gov/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Background check",
+      "detail": "Criminal background check as required by IDFPR."
+    }
+  ],
+  "telepractice_text": "Illinois permits telepractice for licensed SLPs. The practitioner must hold a valid Illinois SLP license to provide services to clients located in Illinois. Illinois does not currently participate in the ASLP Interstate Compact. All telepractice services must meet the same standard of care as in-person services.",
+  "provisional_text": "Illinois issues a Temporary SLP License for graduates completing their Clinical Fellowship Year (CFY). The temporary license costs $75 and permits supervised practice while the CFY is being completed. Out-of-state SLPs awaiting Illinois licensure may also apply for the temporary license.",
+  "reciprocity_text": "Illinois offers licensure by endorsement for SLPs licensed in other states. The endorsement application fee is $100. Applicants must demonstrate equivalent education, examination, and experience. ASHA CCC-SLP holders may have the review process streamlined but must still submit a full Illinois application.",
+  "faqs": [
+    {
+      "question": "How much does an Illinois SLP license cost?",
+      "answer": "The initial application fee is $90 (by examination) or $100 (by endorsement). A Temporary SLP License costs $75. Biennial renewal is $100, due by October 31 of odd-numbered years."
+    },
+    {
+      "question": "Do I need a PEL to work as an SLP in Illinois schools?",
+      "answer": "Yes. SLPs working in Illinois public schools must hold a Professional Educator License (PEL) from the Illinois State Board of Education in addition to the IDFPR professional SLP license."
+    },
+    {
+      "question": "What continuing education is required for Illinois SLP renewal?",
+      "answer": "Illinois requires 20 hours of CE every two years, including 1 hour of ethics, 1 hour of sexual harassment training, 1 hour of implicit bias awareness, 1 hour of dementia recognition training (every 6 years), and 1 hour of cultural competency training (effective January 1, 2025)."
+    },
+    {
+      "question": "Does Illinois have reciprocity for speech-language pathologists?",
+      "answer": "No interstate compact currently covers speech-language pathologist practice in Illinois. To work in Illinois, apply for licensure by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my speech-language pathologist license to Illinois?",
+      "answer": "Most endorsement applications take 4 to 6 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Illinois while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "ASLP-IC",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://aslpcompact.com/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$90",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$90"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "$75",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://idfpr.illinois.gov/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "ASLP-IC",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://aslpcompact.com/",
+    "compact_portal_url": "https://aslpcompact.com/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 90,
+    "processing_time": "4 to 6 weeks",
+    "processing_tier": "mid",
+    "board_url": "https://idfpr.illinois.gov/",
+    "endorsement_url": "https://idfpr.illinois.gov/",
+    "notes": "Illinois offers licensure by endorsement for SLPs licensed in other states. The endorsement application fee is $100. Applicants must demonstrate equivalent education, examination, and experience. ASHA CCC-SLP holders may have the review process streamlined but must still submit a full Illinois application."
+  },
+  "slug": "illinois-slp-slp",
+  "specialty": "slp"
 }

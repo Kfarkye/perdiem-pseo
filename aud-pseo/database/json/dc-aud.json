@@ -1,102 +1,134 @@
 {
-    "state_slug": "dc",
-    "state_name": "District of Columbia",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "dc",
+  "state_name": "District of Columbia",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Audiologist",
+  "credential_nomenclature": "AuD, CCC-A",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "District of Columbia Audiologist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a audiologist? Here's whether your license transfers to District of Columbia - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "audiologist license reciprocity district of columbia, how to transfer audiologist license to district of columbia, audiologist compact district of columbia, district of columbia audiologist endorsement application"
+  },
+  "board": {
+    "name": "Board of Audiology and Speech-Language Pathology",
+    "parent_dept": "DC Department of Health (DOH), Health Regulation and Licensing Administration",
+    "mailing_address": "899 North Capitol St. NE, Washington, DC 20002",
+    "physical_address": "899 North Capitol St. NE, Washington, DC 20002",
+    "phone": "(202) 724-8800",
+    "fax": "(202) 724-8677",
+    "email": "mailto:doh.hpla@dc.gov",
+    "url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing"
+  },
+  "quick_facts": {
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "AuD, CCC-A",
+      "description": "The standard credential to practice as a audiologist in District of Columbia."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education Requirements",
+      "description": "Complete a CAA or ACAE-accredited Doctor of Audiology (AuD) program and any required clinical practicum or fieldwork."
     },
-    "profession_name": "Audiologist",
-    "credential_nomenclature": "AuD, CCC-A",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "District of Columbia AuD, CCC-A Application — Requirements & Fees (2026)",
-        "description": "Apply for a District of Columbia Audiologist credential. Learn about the requirements, Praxis Exam in Audiology, and state fees.",
-        "keywords": "District of Columbia audiologist license, Audiologist license by state, audiology license requirements, AuD license requirements, state audiology board, audiologist license cost"
+    {
+      "title": "Pass the Praxis",
+      "description": "Successfully pass the required Praxis Exam in Audiology."
     },
-    "board": {
-        "name": "Board of Audiology and Speech-Language Pathology",
-        "parent_dept": "DC Department of Health (DOH), Health Regulation and Licensing Administration",
-        "mailing_address": "899 North Capitol St. NE, Washington, DC 20002",
-        "physical_address": "899 North Capitol St. NE, Washington, DC 20002",
-        "phone": "(202) 724-8800",
-        "fax": "(202) 724-8677",
-        "email": "mailto:doh.hpla@dc.gov",
-        "url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing"
+    {
+      "title": "Submit Application and Fees",
+      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official Transcripts",
+      "detail": "Sent directly from your educational institution."
     },
-    "quick_facts": {
-        "total_fee": "$100",
-        "fee_breakdown": "$100 application/license fee",
-        "renewal_fee": "$50",
-        "renewal_cycle": "Every 2 years",
-        "processing_time": "4 to 6 Weeks",
-        "license_duration": "2 Years"
+    {
+      "item": "Exam Score Report",
+      "detail": "Official verification of passing the Praxis Exam in Audiology."
+    }
+  ],
+  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the Praxis. Check specific board rules for supervisory requirements.",
+  "reciprocity_text": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "faqs": [
+    {
+      "question": "How much does a District of Columbia audiologist license cost?",
+      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
     },
-    "license_types": [
-        {
-            "title": "AuD, CCC-A",
-            "description": "The standard credential to practice as a audiologist in District of Columbia."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education Requirements",
-            "description": "Complete a CAA or ACAE-accredited Doctor of Audiology (AuD) program and any required clinical practicum or fieldwork."
-        },
-        {
-            "title": "Pass the Praxis",
-            "description": "Successfully pass the required Praxis Exam in Audiology."
-        },
-        {
-            "title": "Submit Application and Fees",
-            "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official Transcripts",
-            "detail": "Sent directly from your educational institution."
-        },
-        {
-            "item": "Exam Score Report",
-            "detail": "Official verification of passing the Praxis Exam in Audiology."
-        }
-    ],
-    "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the Praxis. Check specific board rules for supervisory requirements.",
-    "reciprocity_text": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "faqs": [
-        {
-            "question": "How much does a District of Columbia audiologist license cost?",
-            "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
-        },
-        {
-            "question": "Is national certification required?",
-            "answer": "Yes, passing the Praxis Exam in Audiology is a standard requirement for initial licensure across almost all states."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "question": "Is national certification required?",
+      "answer": "Yes, passing the Praxis Exam in Audiology is a standard requirement for initial licensure across almost all states."
     },
-    "fees_endorsement": {
-        "app_fee": "$100",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$100"
+    {
+      "question": "Does District of Columbia have reciprocity for audiologists?",
+      "answer": "No interstate compact currently covers audiologist practice in District of Columbia. To work in District of Columbia, apply for licensure by endorsement through the state board."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "question": "How long does it take to transfer my audiologist license to District of Columbia?",
+      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "Can I start working in District of Columbia while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "ASLP-IC",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://aslpcompact.com/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$100",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$100"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "ASLP-IC",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://aslpcompact.com/",
+    "compact_portal_url": "https://aslpcompact.com/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+    "endorsement_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+    "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
+  },
+  "slug": "dc-aud",
+  "specialty": "aud"
 }

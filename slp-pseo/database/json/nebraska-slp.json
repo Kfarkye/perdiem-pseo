@@ -1,123 +1,155 @@
 {
-    "state_slug": "nebraska-slp",
-    "state_name": "Nebraska",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "nebraska-slp",
+  "state_name": "Nebraska",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Speech-Language Pathologist",
+  "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Nebraska Speech-Language Pathologist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Nebraska - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "speech-language pathologist license reciprocity nebraska, how to transfer speech-language pathologist license to nebraska, speech-language pathologist compact nebraska, nebraska speech-language pathologist endorsement application"
+  },
+  "board": {
+    "name": "Board of Audiology and Speech-Language Pathology",
+    "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
+    "mailing_address": "P.O. Box 94986, Lincoln, NE 68509-4986",
+    "physical_address": "301 Centennial Mall South, Lincoln, NE 68509",
+    "phone": "(402) 471-2117",
+    "fax": "(402) 471-3577",
+    "email": "mailto:dhhs.licensure@nebraska.gov",
+    "url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx"
+  },
+  "quick_facts": {
+    "total_fee": "$175",
+    "fee_breakdown": "$75 application + $100 license fee",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years (October 31)",
+    "processing_time": "2 to 4 weeks",
+    "license_duration": "2 years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Speech-Language Pathologist",
+      "description": "The full credential to independently practice speech-language pathology in Nebraska."
     },
-    "profession_name": "Speech-Language Pathologist",
-    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Nebraska SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
-        "description": "Complete guide to Nebraska speech-language pathologist licensing. HHS application fees, Praxis requirements, and telepractice rules for 2026.",
-        "keywords": "Nebraska SLP license, speech-language pathologist Nebraska, Nebraska speech therapy license"
+    {
+      "title": "Provisional SLP License",
+      "description": "Issued to SLP graduates completing their Clinical Fellowship."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Earn a Master's Degree in SLP",
+      "description": "Complete a master's degree from a CAA-accredited program."
     },
-    "board": {
-        "name": "Board of Audiology and Speech-Language Pathology",
-        "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
-        "mailing_address": "P.O. Box 94986, Lincoln, NE 68509-4986",
-        "physical_address": "301 Centennial Mall South, Lincoln, NE 68509",
-        "phone": "(402) 471-2117",
-        "fax": "(402) 471-3577",
-        "email": "mailto:dhhs.licensure@nebraska.gov",
-        "url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx"
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on Praxis (test code 5331, score 162)."
     },
-    "quick_facts": {
-        "total_fee": "$175",
-        "fee_breakdown": "$75 application + $100 license fee",
-        "renewal_fee": "$100",
-        "renewal_cycle": "Every 2 years (October 31)",
-        "processing_time": "2 to 4 weeks",
-        "license_duration": "2 years"
+    {
+      "title": "Complete Clinical Fellowship",
+      "description": "Complete 36 weeks of supervised clinical practice."
     },
-    "license_types": [
-        {
-            "title": "Licensed Speech-Language Pathologist",
-            "description": "The full credential to independently practice speech-language pathology in Nebraska."
-        },
-        {
-            "title": "Provisional SLP License",
-            "description": "Issued to SLP graduates completing their Clinical Fellowship."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Earn a Master's Degree in SLP",
-            "description": "Complete a master's degree from a CAA-accredited program."
-        },
-        {
-            "title": "Pass the Praxis Examination",
-            "description": "Achieve a passing score on Praxis (test code 5331, score 162)."
-        },
-        {
-            "title": "Complete Clinical Fellowship",
-            "description": "Complete 36 weeks of supervised clinical practice."
-        },
-        {
-            "title": "Submit Application to DHHS",
-            "description": "Submit application with fees."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official graduate transcripts",
-            "detail": "From a CAA-accredited program."
-        },
-        {
-            "item": "Praxis exam score report",
-            "detail": "Score of 162 or higher."
-        },
-        {
-            "item": "Clinical Fellowship verification",
-            "detail": "CF completion documentation."
-        },
-        {
-            "item": "Background check",
-            "detail": "Criminal background check."
-        }
-    ],
-    "telepractice_text": "Nebraska permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
-    "provisional_text": "Nebraska issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
-    "reciprocity_text": "Nebraska is a member of the ASLP Interstate Compact.",
-    "faqs": [
-        {
-            "question": "How much does a Nebraska SLP license cost?",
-            "answer": "$175 initial. $100 biennial renewal."
-        },
-        {
-            "question": "Is Nebraska part of the ASLP Interstate Compact?",
-            "answer": "Yes."
-        },
-        {
-            "question": "Does Nebraska allow telepractice for SLPs?",
-            "answer": "Yes."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Submit Application to DHHS",
+      "description": "Submit application with fees."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official graduate transcripts",
+      "detail": "From a CAA-accredited program."
     },
-    "fees_endorsement": {
-        "app_fee": "$75",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$175"
+    {
+      "item": "Praxis exam score report",
+      "detail": "Score of 162 or higher."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Clinical Fellowship verification",
+      "detail": "CF completion documentation."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Background check",
+      "detail": "Criminal background check."
+    }
+  ],
+  "telepractice_text": "Nebraska permits telepractice for licensed SLPs and is a member of the ASLP Interstate Compact.",
+  "provisional_text": "Nebraska issues a Provisional SLP License for graduates completing their Clinical Fellowship.",
+  "reciprocity_text": "Nebraska is a member of the ASLP Interstate Compact.",
+  "faqs": [
+    {
+      "question": "How much does a Nebraska SLP license cost?",
+      "answer": "$175 initial. $100 biennial renewal."
+    },
+    {
+      "question": "Is Nebraska part of the ASLP Interstate Compact?",
+      "answer": "Yes."
+    },
+    {
+      "question": "Does Nebraska allow telepractice for SLPs?",
+      "answer": "Yes."
+    },
+    {
+      "question": "Does Nebraska have reciprocity for speech-language pathologists?",
+      "answer": "Yes. Nebraska participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Nebraska without a separate endorsement application."
+    },
+    {
+      "question": "How long does it take to transfer my speech-language pathologist license to Nebraska?",
+      "answer": "Most endorsement applications take 2 to 4 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Nebraska while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "ASLP-IC",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://aslpcompact.com/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$75",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$175"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "ASLP-IC",
+    "compact_status": "active",
+    "state_is_member": true,
+    "compact_url": "https://aslpcompact.com/",
+    "compact_portal_url": "https://aslpcompact.com/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 175,
+    "processing_time": "2 to 4 weeks",
+    "processing_tier": "fast",
+    "board_url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
+    "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
+    "notes": "Nebraska is a member of the ASLP Interstate Compact."
+  },
+  "slug": "nebraska-slp-slp",
+  "specialty": "slp"
 }

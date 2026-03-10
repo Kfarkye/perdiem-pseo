@@ -1,102 +1,134 @@
 {
-    "state_slug": "indiana",
-    "state_name": "Indiana",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO / State Police",
-        "fee": "$28.00",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://www.identogo.com/locations/indiana"
+  "state_slug": "indiana",
+  "state_name": "Indiana",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / State Police",
+    "fee": "$28.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/indiana"
+  },
+  "profession_name": "Physical Therapist",
+  "credential_nomenclature": "PT, DPT",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Indiana Physical Therapist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a physical therapist? Here's whether your license transfers to Indiana - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "physical therapist license reciprocity indiana, how to transfer physical therapist license to indiana, physical therapist compact indiana, indiana physical therapist endorsement application"
+  },
+  "board": {
+    "name": "Indiana PLA \u2014 Physical Therapy Committee",
+    "parent_dept": "Indiana Professional Licensing Agency (IPLA)",
+    "mailing_address": "See board website",
+    "physical_address": "See board website",
+    "phone": "(317) 232-2960",
+    "fax": "N/A (contact by phone)",
+    "email": "See board website",
+    "url": "https://www.in.gov/pla/professions/physical-therapy/"
+  },
+  "quick_facts": {
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "PT, DPT",
+      "description": "The standard credential to practice as a physical therapist in Indiana."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education Requirements",
+      "description": "Complete a CAPTE-accredited Doctor of Physical Therapy (DPT) program and any required clinical practicum or fieldwork."
     },
-    "profession_name": "Physical Therapist",
-    "credential_nomenclature": "PT, DPT",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Indiana PT, DPT Application — Requirements & Fees (2026)",
-        "description": "Apply for a Indiana Physical Therapist credential. Learn about the requirements, NPTE (National Physical Therapy Examination), and state fees.",
-        "keywords": "Indiana physical therapist license, PT license by state, physical therapy license requirements, DPT license requirements, state physical therapy board, PT license cost"
+    {
+      "title": "Pass the NPTE",
+      "description": "Successfully pass the required NPTE (National Physical Therapy Examination)."
     },
-    "board": {
-        "name": "Indiana PLA — Physical Therapy Committee",
-        "parent_dept": "Indiana Professional Licensing Agency (IPLA)",
-        "mailing_address": "See board website",
-        "physical_address": "See board website",
-        "phone": "(317) 232-2960",
-        "fax": "N/A (contact by phone)",
-        "email": "See board website",
-        "url": "https://www.in.gov/pla/professions/physical-therapy/"
+    {
+      "title": "Submit Application and Fees",
+      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official Transcripts",
+      "detail": "Sent directly from your educational institution."
     },
-    "quick_facts": {
-        "total_fee": "$100",
-        "fee_breakdown": "$100 application/license fee",
-        "renewal_fee": "$50",
-        "renewal_cycle": "Every 2 years",
-        "processing_time": "4 to 6 Weeks",
-        "license_duration": "2 Years"
+    {
+      "item": "Exam Score Report",
+      "detail": "Official verification of passing the NPTE (National Physical Therapy Examination)."
+    }
+  ],
+  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NPTE. Check specific board rules for supervisory requirements.",
+  "reciprocity_text": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "faqs": [
+    {
+      "question": "How much does a Indiana physical therapist license cost?",
+      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
     },
-    "license_types": [
-        {
-            "title": "PT, DPT",
-            "description": "The standard credential to practice as a physical therapist in Indiana."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education Requirements",
-            "description": "Complete a CAPTE-accredited Doctor of Physical Therapy (DPT) program and any required clinical practicum or fieldwork."
-        },
-        {
-            "title": "Pass the NPTE",
-            "description": "Successfully pass the required NPTE (National Physical Therapy Examination)."
-        },
-        {
-            "title": "Submit Application and Fees",
-            "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official Transcripts",
-            "detail": "Sent directly from your educational institution."
-        },
-        {
-            "item": "Exam Score Report",
-            "detail": "Official verification of passing the NPTE (National Physical Therapy Examination)."
-        }
-    ],
-    "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NPTE. Check specific board rules for supervisory requirements.",
-    "reciprocity_text": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "faqs": [
-        {
-            "question": "How much does a Indiana physical therapist license cost?",
-            "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
-        },
-        {
-            "question": "Is national certification required?",
-            "answer": "Yes, passing the NPTE (National Physical Therapy Examination) is a standard requirement for initial licensure across almost all states."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "PT Compact (Physical Therapy Licensure Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "question": "Is national certification required?",
+      "answer": "Yes, passing the NPTE (National Physical Therapy Examination) is a standard requirement for initial licensure across almost all states."
     },
-    "fees_endorsement": {
-        "app_fee": "$100",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$100"
+    {
+      "question": "Does Indiana have reciprocity for physical therapists?",
+      "answer": "Yes. Indiana participates in the PT Compact. If your home state and license qualify for compact privilege, you can typically practice in Indiana without a separate endorsement application."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "question": "How long does it take to transfer my physical therapist license to Indiana?",
+      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.in.gov/pla/professions/physical-therapy/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "Can I start working in Indiana while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "PT Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://ptcompact.org/ptc-states/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$100",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$100"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.in.gov/pla/professions/physical-therapy/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "PT Compact",
+    "compact_status": "active",
+    "state_is_member": true,
+    "compact_url": "https://ptcompact.org/ptc-states/",
+    "compact_portal_url": "https://ptcompact.org/ptc-states/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://www.in.gov/pla/professions/physical-therapy/",
+    "endorsement_url": "https://www.in.gov/pla/professions/physical-therapy/",
+    "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+  },
+  "slug": "indiana-pt",
+  "specialty": "pt"
 }

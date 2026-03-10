@@ -1,118 +1,150 @@
 {
-    "state_slug": "arkansas",
-    "state_name": "Arkansas",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "arkansas",
+  "state_name": "Arkansas",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian (LD)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Arkansas Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Arkansas - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity arkansas, how to transfer dietitian license to arkansas, dietitian compact arkansas, arkansas dietitian endorsement application"
+  },
+  "board": {
+    "name": "Arkansas Dietetics Licensing Board",
+    "parent_dept": "Arkansas Department of Health",
+    "mailing_address": "4815 West Markham Street, Slot 73<br>Little Rock, AR 72205",
+    "physical_address": "4815 West Markham Street, Slot 73<br>Little Rock, AR 72205",
+    "phone": "(501) 683-1126",
+    "fax": "(501) 682-1596",
+    "email": null,
+    "url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board"
+  },
+  "quick_facts": {
+    "total_fee": "$110",
+    "fee_breakdown": "$110 standard initial application fee (temporarily reduced through June 30, 2026)",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Annual + 12 CE hours (*Renewal fee temporarily reduced to $3.00 for 2025-2026*)",
+    "processing_time": "2 to 4 Weeks",
+    "license_duration": "1 Year"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian (LD)",
+      "description": "The standard credential to practice dietetics in Arkansas, overseen by the Arkansas Dietetics Licensing Board."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian (LD)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Arkansas Licensed Dietitian (LD) Application — Requirements & Fees (2026)",
-        "description": "Apply for an Arkansas Licensed Dietitian credential through the ADLB. Learn about the master's degree requirement, CDR exam, and recent fee reductions.",
-        "keywords": "Arkansas dietitian license, AR licensed dietitian requirements, Arkansas Dietetics Licensing Board, Arkansas dietitian application fee"
+    {
+      "title": "Provisional Licensed Dietitian (PLD)",
+      "description": "Available for applicants who have completed all education and supervised practice requirements and are eligible to take the CDR exam but have not yet passed it. Valid for 18 months and allows practice under the supervision of a Licensed Dietitian. Standard fee is $150 (temporarily reduced to $8 for 2025-2026)."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree or higher from a regionally accredited institution. Complete an ACEND-accredited supervised practice program (typically 1,000 to 1,200 hours)."
     },
-    "board": {
-        "name": "Arkansas Dietetics Licensing Board",
-        "parent_dept": "Arkansas Department of Health",
-        "mailing_address": "4815 West Markham Street, Slot 73<br>Little Rock, AR 72205",
-        "physical_address": "4815 West Markham Street, Slot 73<br>Little Rock, AR 72205",
-        "phone": "(501) 683-1126",
-        "fax": "(501) 682-1596",
-        "email": null,
-        "url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians (for full LD licensure)."
     },
-    "quick_facts": {
-        "total_fee": "$110",
-        "fee_breakdown": "$110 standard initial application fee (temporarily reduced through June 30, 2026)",
-        "renewal_fee": "$50",
-        "renewal_cycle": "Annual + 12 CE hours (*Renewal fee temporarily reduced to $3.00 for 2025-2026*)",
-        "processing_time": "2 to 4 Weeks",
-        "license_duration": "1 Year"
+    {
+      "title": "Submit the Application and Fee",
+      "description": "Complete, sign, and date the application form. Your signature must be notarized. Mail the completed application with the appropriate fee (check or money order) to the ADLB."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian (LD)",
-            "description": "The standard credential to practice dietetics in Arkansas, overseen by the Arkansas Dietetics Licensing Board."
-        },
-        {
-            "title": "Provisional Licensed Dietitian (PLD)",
-            "description": "Available for applicants who have completed all education and supervised practice requirements and are eligible to take the CDR exam but have not yet passed it. Valid for 18 months and allows practice under the supervision of a Licensed Dietitian. Standard fee is $150 (temporarily reduced to $8 for 2025-2026)."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree or higher from a regionally accredited institution. Complete an ACEND-accredited supervised practice program (typically 1,000 to 1,200 hours)."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians (for full LD licensure)."
-        },
-        {
-            "title": "Submit the Application and Fee",
-            "description": "Complete, sign, and date the application form. Your signature must be notarized. Mail the completed application with the appropriate fee (check or money order) to the ADLB."
-        },
-        {
-            "title": "Provide Documentation",
-            "description": "Include a copy of your current CDR registration card. If applying for a provisional license, include verification of internship completion and a letter from your employment supervisor."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Notarized Application",
-            "detail": "Application form with your notarized signature."
-        },
-        {
-            "item": "CDR Registration Card",
-            "detail": "Copy of your current, active CDR registration card (for full licensure)."
-        },
-        {
-            "item": "Check or Money Order",
-            "detail": "Made payable to the Arkansas Dietetics Practice Fund."
-        }
-    ],
-    "provisional_text": "Arkansas offers a Provisional Licensed Dietitian (PLD) credential for individuals who have completed their education and internship but have not yet passed the CDR exam. It allows the individual to work under the supervision of an Arkansas Licensed Dietitian. The PLD license is valid for 18 months and can be renewed once. An application for a provisional license requires verification of internship completion and a letter from your prospective employment supervisor.",
-    "reciprocity_text": "Dietitians applying for licensure in Arkansas who are currently licensed in another state must follow the standard application process and submit a copy of their active CDR registration card, which serves as proof of meeting the national standards recognized by the Arkansas board.",
-    "faqs": [
-        {
-            "question": "How much does an Arkansas dietitian license cost?",
-            "answer": "The standard initial license fee is $110. However, the Arkansas Dietetics Licensing Board has announced a temporary fee reduction down to $6.00 for the period from July 1, 2025, to June 30, 2026."
-        },
-        {
-            "question": "When does the Arkansas license need to be renewed?",
-            "answer": "The Arkansas dietitian license is renewed annually. The standard renewal fee is $50 (temporarily reduced to $3.00 for the 2025-2026 cycle)."
-        },
-        {
-            "question": "What are the continuing education requirements for Arkansas?",
-            "answer": "Arkansas requires 12 continuing education units (CEUs) annually to maintain state licensure. For your CDR registration, 75 CEUs are required every five years."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Provide Documentation",
+      "description": "Include a copy of your current CDR registration card. If applying for a provisional license, include verification of internship completion and a letter from your employment supervisor."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Notarized Application",
+      "detail": "Application form with your notarized signature."
     },
-    "fees_endorsement": {
-        "app_fee": "$110",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$110"
+    {
+      "item": "CDR Registration Card",
+      "detail": "Copy of your current, active CDR registration card (for full licensure)."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Check or Money Order",
+      "detail": "Made payable to the Arkansas Dietetics Practice Fund."
+    }
+  ],
+  "provisional_text": "Arkansas offers a Provisional Licensed Dietitian (PLD) credential for individuals who have completed their education and internship but have not yet passed the CDR exam. It allows the individual to work under the supervision of an Arkansas Licensed Dietitian. The PLD license is valid for 18 months and can be renewed once. An application for a provisional license requires verification of internship completion and a letter from your prospective employment supervisor.",
+  "reciprocity_text": "Dietitians applying for licensure in Arkansas who are currently licensed in another state must follow the standard application process and submit a copy of their active CDR registration card, which serves as proof of meeting the national standards recognized by the Arkansas board.",
+  "faqs": [
+    {
+      "question": "How much does an Arkansas dietitian license cost?",
+      "answer": "The standard initial license fee is $110. However, the Arkansas Dietetics Licensing Board has announced a temporary fee reduction down to $6.00 for the period from July 1, 2025, to June 30, 2026."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "When does the Arkansas license need to be renewed?",
+      "answer": "The Arkansas dietitian license is renewed annually. The standard renewal fee is $50 (temporarily reduced to $3.00 for the 2025-2026 cycle)."
+    },
+    {
+      "question": "What are the continuing education requirements for Arkansas?",
+      "answer": "Arkansas requires 12 continuing education units (CEUs) annually to maintain state licensure. For your CDR registration, 75 CEUs are required every five years."
+    },
+    {
+      "question": "Does Arkansas have reciprocity for dietitians?",
+      "answer": "No interstate compact currently covers dietitian practice in Arkansas. To work in Arkansas, apply for licensure by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to Arkansas?",
+      "answer": "Most endorsement applications take 2 to 4 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Arkansas while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$110",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$110"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 110,
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
+    "board_url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board",
+    "endorsement_url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board",
+    "notes": "Dietitians applying for licensure in Arkansas who are currently licensed in another state must follow the standard application process and submit a copy of their active CDR registration card, which serves as proof of meeting the national standards recognized by the Arkansas board."
+  },
+  "slug": "arkansas-dietitian",
+  "specialty": "dietitian"
 }

@@ -1,305 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>{{ seo.title }}</title>
-    <meta name="description" content="{{ seo.description }}">
-    <meta name="keywords" content="{{ seo.keywords }}">
-    <link rel="canonical"
-        href="https://statelicensingreference.com/{{ state_slug }}-{{ profession_name | lower | replace(' ', '-') }}-license">
-
-    <meta property="og:title" content="{{ seo.title }}">
-    <meta property="og:description" content="{{ seo.description }}">
-    <meta property="og:type" content="article">
-    <meta property="og:url"
-        content="https://statelicensingreference.com/{{ state_slug }}-{{ profession_name | lower | replace(' ', '-') }}-license">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="State Licensing Reference">
-    <meta property="article:modified_time" content="{{ last_updated }}">
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "name": "{{ seo.title }}",
-      "description": "{{ seo.description }}",
-      "url": "https://statelicensingreference.com/{{ state_slug }}-{{ profession_name | lower | replace(' ', '-') }}-license",
-      "dateModified": "{{ last_updated }}",
-      "inLanguage": "en-US",
-      "about": {
-        "@type": "GovernmentService",
-        "name": "{{ state_name }} {{ profession_name }} Licensure",
-        "serviceType": "Professional Licensing",
-        "provider": {
-          "@type": "GovernmentOrganization",
-          "name": "{{ board.name }}",
-          "parentOrganization": {
-            "@type": "GovernmentOrganization",
-            "name": "{{ board.parent_dept }}"
-          },
-          "telephone": "{{ board.phone }}",
-          "email": "{{ board.email | replace('mailto:', '') }}",
-          "url": "{{ board.url }}"
-        },
-        "areaServed": {
-          "@type": "State",
-          "name": "{{ state_name }}"
-        },
-        "offers": [
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>{{ seo.title }}</title>
+  <meta name="description" content="{{ seo.description }}" />
+  <meta name="keywords" content="{{ seo.keywords | default('', true) }}" />
+  {% set canonical_url = 'https://statelicensingreference.com/' ~ slug %}
+  <link rel="canonical" href="{{ canonical_url }}" />
+  <meta property="og:title" content="{{ seo.title }}" />
+  <meta property="og:description" content="{{ seo.description }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ canonical_url }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ seo.title }}" />
+  <meta name="twitter:description" content="{{ seo.description }}" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    .reciprocity-lead { background: linear-gradient(180deg, #fff9f0 0%, #f4efe6 100%); border: 1px solid #e6dac8; border-radius: 22px; padding: 1.5rem; }
+    .badge { display: inline-flex; padding: .3rem .65rem; border-radius: 999px; font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+    .badge-green { background: #d8f4df; color: #14532d; }
+    .badge-yellow { background: #fff3cd; color: #8a5a00; }
+    .badge-gray { background: #eceff1; color: #37474f; }
+    .action-box { margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,.75); border-radius: 16px; border: 1px solid #e8dfd0; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
+    .mini-facts { display: grid; grid-template-columns: repeat(auto-fit,minmax(170px,1fr)); gap: .75rem; margin-top: 1rem; }
+    .mini-facts div { background: #fff; border-radius: 14px; border: 1px solid #eadfce; padding: .9rem; }
+    .crawl-links { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .crawl-links a { text-decoration: none; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "All States", "item": "https://statelicensingreference.com/"},
+          {"@type": "ListItem", "position": 2, "name": {{ state_name | tojson }}, "item": {{ canonical_url | tojson }}}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {% for faq in faqs %}
           {
-            "@type": "Offer",
-            "name": "Total Initial Fee",
-            "price": "{{ quick_facts.total_fee | replace('$', '') | replace(',', '') | replace('No state fees', '0') | default('0', true) }}",
-            "priceCurrency": "USD"
-          }
+            "@type": "Question",
+            "name": {{ faq.question | striptags | trim | tojson }},
+            "acceptedAnswer": {"@type": "Answer", "text": {{ faq.answer | striptags | trim | tojson }}}
+          }{% if not loop.last %},{% endif %}
+          {% endfor %}
         ]
       }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {% for faq in faqs %}
-        {
-          "@type": "Question",
-          "name": "{{ faq.question | replace('"', '\"') }}",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "{{ faq.answer | replace('"', '\"') }}"
-          }
-        }{% if not loop.last %},{% endif %}
-        {% endfor %}
-      ]
-    }
-  ]
-}
-</script>
-
-    <link rel="stylesheet" href="/css/styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap"
-        rel="stylesheet">
+    ]
+  }
+  </script>
 </head>
-
-<body>
-
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <nav class="site-nav" aria-label="Site navigation">
-        <div class="site-nav-inner">
-            <a href="/" class="site-nav-brand">State Licensing Reference</a>
-            <ul class="site-nav-links">
-                <li><a href="/">All States</a></li>
-                <li><a href="#contact">Board</a></li>
-                <li><a href="#how-to-apply">Apply</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav class="site-nav" aria-label="Primary site navigation"><div class="site-nav-inner"><a href="/" class="site-nav-brand">State Licensing Reference</a></div></nav>
+  <header class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <nav class="hero-breadcrumb" aria-label="Breadcrumb"><a href="/">All States</a> <span class="bc-sep" aria-hidden="true">·</span> {{ state_name }}</nav>
+      <h1 id="hero-title">{{ state_name }} {{ profession_name }} License <em>Reciprocity &amp; How to Apply</em></h1>
+      <p class="hero-sub">Already licensed elsewhere? Start with compact status, endorsement requirements, fees, and your likely transfer timeline.</p>
+      <div class="hero-meta"><span class="hero-pill">Last verified {{ last_verified_date | default(last_updated, true) }}</span></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <div class="page-shell">
+      <section id="reciprocity" class="section reciprocity-lead" aria-labelledby="reciprocity-heading">
+        {% if reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
+          <span class="badge badge-green">Compact State</span>
+          <h2 id="reciprocity-heading">Your {{ profession_name }} License May Already Cover {{ state_name }}</h2>
+          <p>{{ state_name }} is a member of the {{ reciprocity.compact_name }}. If your home state and license qualify for compact privilege, you may be able to practice in {{ state_name }} without a separate endorsement application.</p>
+          <div class="action-box">
+            <strong>Check your status</strong>
+            <ol>
+              <li>Confirm your home state also participates in the {{ reciprocity.compact_name }}.</li>
+              <li>Verify your license is active and unencumbered.</li>
+              {% if reciprocity.jurisprudence_required %}<li>Complete the jurisprudence requirement before starting work.</li>{% endif %}
+            </ol>
+            <a href="{{ reciprocity.compact_portal_url or reciprocity.compact_url }}" target="_blank" rel="noopener">Open {{ reciprocity.compact_name }} portal</a>
+          </div>
+          <p><strong>Not using compact privilege?</strong> Apply by endorsement below.</p>
+        {% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}
+          <span class="badge badge-yellow">Compact Enacted - Not Yet Active</span>
+          <h2 id="reciprocity-heading">Reciprocity in {{ state_name }} for {{ profession_name }}s</h2>
+          <p>{{ state_name }} has enacted the {{ reciprocity.compact_name }}, but compact privileges are not yet issuing. Until implementation goes live, apply by endorsement through the state board.</p>
+          <p>Once active, compact participation should reduce or eliminate the need for a separate transfer application.</p>
+        {% else %}
+          <span class="badge badge-gray">No Interstate Compact</span>
+          <h2 id="reciprocity-heading">How to Transfer Your {{ profession_name }} License to {{ state_name }}</h2>
+          <p>There is no active interstate compact covering {{ profession_name.lower() }} practice in {{ state_name }}. To work in {{ state_name }}, apply for licensure by endorsement through {{ board.name }}.</p>
+        {% endif %}
+        <div class="mini-facts">
+          <div><strong>Endorsement fee</strong><br>${{ reciprocity.endorsement_fee }}</div>
+          <div><strong>Processing time</strong><br>{{ reciprocity.processing_time }}</div>
+          <div><strong>Fingerprinting</strong><br>{{ 'Required' if reciprocity.fingerprint_required else 'Not clearly required' }}</div>
+          <div><strong>Temporary license</strong><br>{{ 'Available' if reciprocity.temp_license_available else 'Not listed' }}</div>
         </div>
-    </nav>
-
-    <header>
-        <div class="hero-inner">
-            <nav class="hero-jurisdiction" aria-label="Breadcrumb">{{ state_name }} · State Licensing Reference</nav>
-            <h1>Speech-Language Pathologist<br><em>{{ credential_nomenclature }} Guide</em></h1>
-            <p class="hero-meta">Issued by the <a href="{{ board.url }}" target="_blank" rel="noopener">{{ board.name
-                    }}</a>
-                under the {{ board.parent_dept }}. Data verified for {{ last_updated[:4] }}.</p>
-            <div class="hero-actions">
-                <a href="{{ board.url }}" target="_blank" rel="noopener" class="cta-primary">Visit Official Board
-                    Portal</a>
-            </div>
+        <div class="cta-row">
+          <a href="#endorsement">See endorsement steps</a>
+          <a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">Official board portal</a>
         </div>
-    </header>
+      </section>
 
-    <nav class="page-nav" aria-label="Page sections">
-        <div class="page-nav-inner">
-            <a href="#quick-facts">Fees</a>
-            <a href="#contact">Board Contact</a>
-            <a href="#license-types">License Types</a>
-            <a href="#how-to-apply">How to Apply</a>
-            <a href="#documents">Documents</a>
-            <a href="#telepractice">Telepractice</a>
-            <a href="#provisional-reciprocity">Reciprocity</a>
-            <a href="#faq">FAQ</a>
+      <section id="endorsement" class="section" aria-labelledby="apply-heading">
+        <h2 id="apply-heading">Endorsement Application Steps</h2>
+        <ol class="steps-list">
+          {% for step in steps %}
+          <li>
+            <strong>{{ step.title }}</strong>
+            <p>{{ step.description }}</p>
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+
+      <section id="quick-facts" class="section" aria-labelledby="quick-facts-heading">
+        <h2 id="quick-facts-heading">Quick Facts</h2>
+        <dl class="facts-grid">
+          <div><dt>Total fee</dt><dd>{{ quick_facts.total_fee }}</dd></div>
+          <div><dt>Processing time</dt><dd>{{ quick_facts.processing_time }}</dd></div>
+          <div><dt>Renewal fee</dt><dd>{{ quick_facts.renewal_fee }}</dd></div>
+          <div><dt>Renewal cycle</dt><dd>{{ quick_facts.renewal_cycle }}</dd></div>
+        </dl>
+      </section>
+
+      <section id="documents" class="section" aria-labelledby="docs-heading">
+        <h2 id="docs-heading">Required Documents</h2>
+        <ul class="checklist">
+          {% for doc in documents %}
+          <li><strong>{{ doc.item }}</strong>{% if doc.detail %}: {{ doc.detail }}{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Board Contact</h2>
+        <dl class="board-grid">
+          <div><dt>Board</dt><dd>{{ board.name }}</dd></div>
+          <div><dt>Department</dt><dd>{{ board.parent_dept }}</dd></div>
+          <div><dt>Phone</dt><dd>{{ board.phone }}</dd></div>
+          <div><dt>Email</dt><dd>{{ board.email | replace('mailto:', '') }}</dd></div>
+        </dl>
+        <p><a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">Visit official board portal</a></p>
+      </section>
+
+      <section id="renewal" class="section" aria-labelledby="renewal-heading">
+        <h2 id="renewal-heading">Renewal</h2>
+        <p>Renewal fee is {{ quick_facts.renewal_fee }}. Renewal cycle: {{ quick_facts.renewal_cycle }}.</p>
+      </section>
+
+      <section id="faq" class="section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">{{ state_name }} {{ profession_name }} Reciprocity FAQ</h2>
+        <div class="faq-list">
+          {% for faq in faqs %}
+          <article class="faq-item">
+            <h3>{{ faq.question }}</h3>
+            <p>{{ faq.answer }}</p>
+          </article>
+          {% endfor %}
         </div>
-    </nav>
+      </section>
 
-    <main id="main-content">
-        <article>
-
-            <div id="quick-facts" class="quick-facts" role="region" aria-label="Key facts at a glance">
-                <div class="quick-fact">
-                    <div class="quick-fact-label">Total Initial Fee</div>
-                    <div class="quick-fact-value">{{ quick_facts.total_fee }}</div>
-                    <div class="quick-fact-note">{{ quick_facts.fee_breakdown }}</div>
-                </div>
-                <div class="quick-fact">
-                    <div class="quick-fact-label">Renewal</div>
-                    <div class="quick-fact-value">{{ quick_facts.renewal_fee }}</div>
-                    <div class="quick-fact-note">{{ quick_facts.renewal_cycle }}</div>
-                </div>
-                <div class="quick-fact">
-                    <div class="quick-fact-label">Processing Time</div>
-                    <div class="quick-fact-value">{{ quick_facts.processing_time }}</div>
-                    <div class="quick-fact-note">Subject to board volume</div>
-                </div>
-                <div class="quick-fact">
-                    <div class="quick-fact-label">License Duration</div>
-                    <div class="quick-fact-value">{{ quick_facts.license_duration }}</div>
-                    <div class="quick-fact-note">From date of issuance</div>
-                </div>
-            </div>
-
-            <section id="contact">
-                <div class="section-label">Board Contact</div>
-                <h2>{{ board.name }}</h2>
-                <div class="contact-grid">
-                    <address class="contact-card" style="font-style:normal">
-                        <div class="contact-card-label">Mailing Address</div>
-                        <p>{{ board.mailing_address | safe }}</p>
-                    </address>
-                    <address class="contact-card" style="font-style:normal">
-                        <div class="contact-card-label">Physical Address</div>
-                        <p>{{ board.physical_address | safe }}</p>
-                    </address>
-                    <div class="contact-card">
-                        <div class="contact-card-label">Phone &amp; Fax</div>
-                        <p>Phone: <strong>{{ board.phone }}</strong></p>
-                        <p>Fax: <strong>{{ board.fax }}</strong></p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-card-label">Email</div>
-                        <p><a href="{{ board.email }}">{{ board.email | replace('mailto:', '') }}</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="license-types">
-                <div class="section-label">Credential Categories</div>
-                <h2>{{ state_name }} SLP License Types</h2>
-                <div class="req-grid">
-                    {% for type in license_types %}
-                    <div class="req-cell">
-                        <h3>{{ type.title }}</h3>
-                        <p>{{ type.description }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-            </section>
-
-            <section id="how-to-apply">
-                <div class="section-label">Application Process</div>
-                <h2>How to Apply for a {{ state_name }} {{ credential_nomenclature }}</h2>
-                <div class="steps">
-                    {% for step in steps %}
-                    <div class="step">
-                        <h3>{{ step.title }}</h3>
-                        <p>{{ step.description }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-            </section>
-
-            <section id="documents">
-                <div class="section-label">Required Documents</div>
-                <h2>Application Document Checklist</h2>
-                <ul class="checklist">
-                    {% for doc in documents %}
-                    <li>{{ doc.item }}<span class="detail">{{ doc.detail }}</span></li>
-                    {% endfor %}
-                </ul>
-            </section>
-
-            <section id="telepractice">
-                <div class="section-label">Telepractice</div>
-                <h2>{{ state_name }} Telepractice Rules for SLPs</h2>
-                <div class="callout">
-                    <h3>Telehealth Practice</h3>
-                    <p>{{ telepractice_text }}</p>
-                </div>
-            </section>
-
-            <section id="provisional-reciprocity">
-                <div class="section-label">Practice Laws</div>
-                <h2>Provisional Practice & Reciprocity</h2>
-                <div class="callout callout-warm" style="margin-bottom: 1rem;">
-                    <h3>Clinical Fellowship & Provisional Rules</h3>
-                    <p>{{ provisional_text }}</p>
-                </div>
-                <div class="callout">
-                    <h3>Reciprocity & Endorsement</h3>
-                    <p>{{ reciprocity_text }}</p>
-                </div>
-            </section>
-
-            <section id="faq">
-                <div class="section-label">Frequently Asked Questions</div>
-                <h2>{{ state_name }} SLP FAQ</h2>
-                {% for faq in faqs %}
-                <div class="faq-item">
-                    <h3>{{ faq.question }}</h3>
-                    <p>{{ faq.answer }}</p>
-                </div>
-                {% endfor %}
-            </section>
-
-        </article>
-    </main>
-
-    <a href="#" class="back-to-top" aria-label="Back to top" title="Back to top">↑</a>
-
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-brand">State Licensing Reference</div>
-                    <p class="footer-tagline">Independent, YMYL-compliant licensing guides for speech-language
-                        pathologists across
-                        the United States.</p>
-                </div>
-                <div>
-                    <div class="footer-col-title">This Page</div>
-                    <ul class="footer-links">
-                        <li><a href="#quick-facts">Fees & Quick Facts</a></li>
-                        <li><a href="#contact">Board Contact</a></li>
-                        <li><a href="#how-to-apply">How to Apply</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="footer-col-title">Explore</div>
-                    <ul class="footer-links">
-                        <li><a href="/">All States Directory</a></li>
-                        <li><a href="{{ board.url }}" target="_blank" rel="noopener">Official Board Site</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-disclaimer"><strong>Disclaimer:</strong> State Licensing Reference is an independent
-                    informational portal and is not affiliated with the {{ board.parent_dept }} or any government
-                    agency.
-                    Requirements and fees are subject to change. Always verify current regulations directly with the
-                    official
-                    state board.</p>
-                <p class="footer-copyright">&copy; {{ last_updated[:4] }} State Licensing Reference</p>
-            </div>
+      <section class="section" aria-labelledby="crawl-heading">
+        <h2 id="crawl-heading">Explore More Paths</h2>
+        <div class="crawl-links">
+          <a href="/">All {{ profession_name }} reciprocity states</a>
+          <a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">{{ state_name }} board portal</a>
+          <a href="#endorsement">{{ state_name }} endorsement steps</a>
         </div>
-    </footer>
-
-    <script>
-        // Back-to-top button visibility
-        (function () {
-            var btn = document.querySelector('.back-to-top');
-            if (!btn) return;
-            window.addEventListener('scroll', function () {
-                btn.classList.toggle('visible', window.scrollY > 600);
-            }, { passive: true });
-        })();
-    </script>
+      </section>
+    </div>
+  </main>
 </body>
-
 </html>

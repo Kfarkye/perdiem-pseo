@@ -1,126 +1,158 @@
 {
-    "state_slug": "tennessee",
-    "state_name": "Tennessee",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "tennessee",
+  "state_name": "Tennessee",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian/Nutritionist (LDN)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Tennessee Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Tennessee - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity tennessee, how to transfer dietitian license to tennessee, dietitian compact tennessee, tennessee dietitian endorsement application"
+  },
+  "board": {
+    "name": "Board of Dietitian/Nutritionist Examiners",
+    "parent_dept": "Tennessee Department of Health",
+    "mailing_address": "665 Mainstream Drive<br>Nashville, TN 37243",
+    "physical_address": "665 Mainstream Drive<br>Nashville, TN 37243",
+    "phone": "(615) 532-3202",
+    "fax": "",
+    "email": "",
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html"
+  },
+  "quick_facts": {
+    "total_fee": "$140",
+    "fee_breakdown": "$140 application fee (includes state regulatory fee)",
+    "renewal_fee": "$90",
+    "renewal_cycle": "Every 2 years (by birth month) \u2014 no CE required for state renewal",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian/Nutritionist (LDN)",
+      "description": "The standard credential required to practice dietetics or nutrition in Tennessee, regulated by the Board of Dietitian/Nutritionist Examiners under the Department of Health."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian/Nutritionist (LDN)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Tennessee Licensed Dietitian/Nutritionist (LDN) Application — Requirements & Fees (2026)",
-        "description": "Apply for a Tennessee LDN through the Board of Dietitian/Nutritionist Examiners. $140 application fee, CDR exam, background check required. Temporary permit available.",
-        "keywords": "Tennessee dietitian license, TN licensed dietitian nutritionist, Tennessee Board of Dietitian Examiners, Tennessee dietitian application fee"
+    {
+      "title": "Temporary Permit",
+      "description": "Available for applicants who have been approved by CDR to sit for the registration exam but have not yet passed it. Costs $5 and is valid until exam results are received. Requires a complete application on file."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree or higher from an ACEND-accredited program in dietetics, human nutrition, or a related field. Complete at least 1,200 hours of ACEND-accredited supervised practice."
     },
-    "board": {
-        "name": "Board of Dietitian/Nutritionist Examiners",
-        "parent_dept": "Tennessee Department of Health",
-        "mailing_address": "665 Mainstream Drive<br>Nashville, TN 37243",
-        "physical_address": "665 Mainstream Drive<br>Nashville, TN 37243",
-        "phone": "(615) 532-3202",
-        "fax": "",
-        "email": "",
-        "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. The CDR exam fee is $200."
     },
-    "quick_facts": {
-        "total_fee": "$140",
-        "fee_breakdown": "$140 application fee (includes state regulatory fee)",
-        "renewal_fee": "$90",
-        "renewal_cycle": "Every 2 years (by birth month) — no CE required for state renewal",
-        "processing_time": "4 to 6 Weeks",
-        "license_duration": "2 Years"
+    {
+      "title": "Submit the Online Application",
+      "description": "Apply through the Tennessee Online Application system. Pay the non-refundable $140 application fee. Include a passport-style photo and declaration of citizenship form."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian/Nutritionist (LDN)",
-            "description": "The standard credential required to practice dietetics or nutrition in Tennessee, regulated by the Board of Dietitian/Nutritionist Examiners under the Department of Health."
-        },
-        {
-            "title": "Temporary Permit",
-            "description": "Available for applicants who have been approved by CDR to sit for the registration exam but have not yet passed it. Costs $5 and is valid until exam results are received. Requires a complete application on file."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree or higher from an ACEND-accredited program in dietetics, human nutrition, or a related field. Complete at least 1,200 hours of ACEND-accredited supervised practice."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. The CDR exam fee is $200."
-        },
-        {
-            "title": "Submit the Online Application",
-            "description": "Apply through the Tennessee Online Application system. Pay the non-refundable $140 application fee. Include a passport-style photo and declaration of citizenship form."
-        },
-        {
-            "title": "Complete Background Check & Provide Documentation",
-            "description": "Authorize and complete a criminal background check. Submit official transcripts, proof of CDR registration, verification of supervised practice completion, and a letter of recommendation."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official College Transcripts",
-            "detail": "Sent directly from the degree-granting institution, showing degree and date awarded."
-        },
-        {
-            "item": "CDR Registration Card",
-            "detail": "Copy of your current, active Commission on Dietetic Registration credential."
-        },
-        {
-            "item": "Supervised Practice Verification",
-            "detail": "Documentation verifying completion of ACEND-accredited supervised practice hours."
-        },
-        {
-            "item": "Passport-Style Photograph",
-            "detail": "Recent photo meeting standard passport specifications."
-        },
-        {
-            "item": "Criminal Background Check Authorization",
-            "detail": "Mandatory background screening as part of the application process."
-        }
-    ],
-    "provisional_text": "Tennessee offers a temporary permit for $5 to applicants who have completed all requirements except passing the CDR exam. The permit holder must have CDR authorization to test and a complete application on file with the Board. The permit is valid until exam results are received and does not require supervision.",
-    "reciprocity_text": "Tennessee does not offer formal licensure by endorsement or reciprocity. Out-of-state dietitians must apply for a new Tennessee license through the standard application process, which requires current CDR registration, a complete application, and a background check. Holding an active CDR credential satisfies the education and examination requirements.",
-    "faqs": [
-        {
-            "question": "How much does a Tennessee dietitian license cost?",
-            "answer": "The initial application fee is $140, which includes the state regulatory fee. The CDR exam costs an additional $200. The biennial renewal fee is $90, due by the last day of your birth month."
-        },
-        {
-            "question": "Does Tennessee require continuing education for dietitians?",
-            "answer": "Tennessee does not mandate state-level continuing education for license renewal. However, to maintain your CDR registration — which is required for state licensure — you must complete 75 continuing professional education units every five years."
-        },
-        {
-            "question": "Can I practice in Tennessee while waiting for my license?",
-            "answer": "Tennessee offers a temporary permit for $5 for applicants who have CDR authorization to test. This permit allows practice while you await your exam results, provided your application is complete and on file with the Board."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Complete Background Check & Provide Documentation",
+      "description": "Authorize and complete a criminal background check. Submit official transcripts, proof of CDR registration, verification of supervised practice completion, and a letter of recommendation."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official College Transcripts",
+      "detail": "Sent directly from the degree-granting institution, showing degree and date awarded."
     },
-    "fees_endorsement": {
-        "app_fee": "$140",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$140"
+    {
+      "item": "CDR Registration Card",
+      "detail": "Copy of your current, active Commission on Dietetic Registration credential."
     },
-    "temp_license": {
-        "available": false,
-        "fee": "N/A",
-        "processing_time": "N/A",
-        "duration": "N/A"
+    {
+      "item": "Supervised Practice Verification",
+      "detail": "Documentation verifying completion of ACEND-accredited supervised practice hours."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Passport-Style Photograph",
+      "detail": "Recent photo meeting standard passport specifications."
+    },
+    {
+      "item": "Criminal Background Check Authorization",
+      "detail": "Mandatory background screening as part of the application process."
+    }
+  ],
+  "provisional_text": "Tennessee offers a temporary permit for $5 to applicants who have completed all requirements except passing the CDR exam. The permit holder must have CDR authorization to test and a complete application on file with the Board. The permit is valid until exam results are received and does not require supervision.",
+  "reciprocity_text": "Tennessee does not offer formal licensure by endorsement or reciprocity. Out-of-state dietitians must apply for a new Tennessee license through the standard application process, which requires current CDR registration, a complete application, and a background check. Holding an active CDR credential satisfies the education and examination requirements.",
+  "faqs": [
+    {
+      "question": "How much does a Tennessee dietitian license cost?",
+      "answer": "The initial application fee is $140, which includes the state regulatory fee. The CDR exam costs an additional $200. The biennial renewal fee is $90, due by the last day of your birth month."
+    },
+    {
+      "question": "Does Tennessee require continuing education for dietitians?",
+      "answer": "Tennessee does not mandate state-level continuing education for license renewal. However, to maintain your CDR registration \u2014 which is required for state licensure \u2014 you must complete 75 continuing professional education units every five years."
+    },
+    {
+      "question": "Can I practice in Tennessee while waiting for my license?",
+      "answer": "Tennessee offers a temporary permit for $5 for applicants who have CDR authorization to test. This permit allows practice while you await your exam results, provided your application is complete and on file with the Board."
+    },
+    {
+      "question": "Does Tennessee have reciprocity for dietitians?",
+      "answer": "Tennessee has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to Tennessee?",
+      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Tennessee while my endorsement application is processing?",
+      "answer": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+    }
+  ],
+  "compact": {
+    "is_compact_member": true,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$140",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$140"
+  },
+  "temp_license": {
+    "available": false,
+    "fee": "N/A",
+    "processing_time": "N/A",
+    "duration": "N/A"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "enacted",
+    "state_is_member": true,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": false,
+    "jurisprudence_required": false,
+    "endorsement_fee": 140,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
+    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
+    "notes": "Tennessee does not offer formal licensure by endorsement or reciprocity. Out-of-state dietitians must apply for a new Tennessee license through the standard application process, which requires current CDR registration, a complete application, and a background check. Holding an active CDR credential satisfies the education and examination requirements."
+  },
+  "slug": "tennessee-dietitian",
+  "specialty": "dietitian"
 }

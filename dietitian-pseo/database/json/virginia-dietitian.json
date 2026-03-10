@@ -1,106 +1,138 @@
 {
-    "state_slug": "virginia",
-    "state_name": "Virginia",
-    "fingerprints": {
-        "required": false,
-        "method_in_state": "N/A",
-        "method_out_of_state": "N/A",
-        "vendor": "N/A",
-        "fee": "N/A",
-        "delay_out_of_state_weeks": "N/A",
-        "vendor_url": "N/A"
+  "state_slug": "virginia",
+  "state_name": "Virginia",
+  "fingerprints": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": "N/A"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Certified Dietitian/Nutritionist (Title Protection Only)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Virginia Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Virginia - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity virginia, how to transfer dietitian license to virginia, dietitian compact virginia, virginia dietitian endorsement application"
+  },
+  "board": {
+    "name": "Board of Health Professions (Title Protection)",
+    "parent_dept": "Virginia Department of Health Professions (DHP)",
+    "mailing_address": "9960 Mayland Drive, Suite 300<br>Henrico, VA 23233-1463",
+    "physical_address": "9960 Mayland Drive, Suite 300<br>Henrico, VA 23233-1463",
+    "phone": "(804) 367-4400",
+    "fax": "(804) 527-4475",
+    "email": "mailto:bhp@dhp.virginia.gov",
+    "url": "https://www.dhp.virginia.gov/bhp/"
+  },
+  "quick_facts": {
+    "total_fee": "$0 (No State License Fee)",
+    "fee_breakdown": "No state application fee. CDR exam fee is $200 nationally.",
+    "renewal_fee": "$0 (No State Renewal)",
+    "renewal_cycle": "No state renewal. CDR registration renews every 5 years with 75 CPE hours.",
+    "processing_time": "N/A (No state application)",
+    "license_duration": "N/A"
+  },
+  "license_types": [
+    {
+      "title": "Title Protection \u2014 Dietitian / Nutritionist",
+      "description": "Virginia does not mandate state licensure for dietitians. However, the DHP Board of Health Professions establishes minimum qualifications for using the protected titles 'dietitian' or 'nutritionist'. Meeting CDR registration standards or equivalent qualifications allows use of the title."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education & Supervised Practice",
+      "description": "Earn a master's degree from an ACEND-accredited program. Complete 1,200 hours of supervised practice through a CDR-approved dietetic internship."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Certified Dietitian/Nutritionist (Title Protection Only)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Virginia Dietitian/Nutritionist Requirements — Title Protection (2026)",
-        "description": "Virginia does not require a state-specific dietitian license. Title protection is managed through DHP qualifications. CDR registration is the primary credential.",
-        "keywords": "Virginia dietitian license, VA dietitian requirements, Virginia Department of Health Professions DHP, Virginia dietitian title protection"
+    {
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the CDR Registration Examination for Dietitians and obtain active RD/RDN status."
     },
-    "board": {
-        "name": "Board of Health Professions (Title Protection)",
-        "parent_dept": "Virginia Department of Health Professions (DHP)",
-        "mailing_address": "9960 Mayland Drive, Suite 300<br>Henrico, VA 23233-1463",
-        "physical_address": "9960 Mayland Drive, Suite 300<br>Henrico, VA 23233-1463",
-        "phone": "(804) 367-4400",
-        "fax": "(804) 527-4475",
-        "email": "mailto:bhp@dhp.virginia.gov",
-        "url": "https://www.dhp.virginia.gov/bhp/"
+    {
+      "title": "Use the Protected Title",
+      "description": "With active CDR registration, you are qualified to use the legally protected titles 'dietitian' or 'nutritionist' in Virginia. No separate state application is needed."
+    }
+  ],
+  "documents": [
+    {
+      "item": "CDR Registration Card",
+      "detail": "Your active CDR card serves as the primary credential in Virginia."
     },
-    "quick_facts": {
-        "total_fee": "$0 (No State License Fee)",
-        "fee_breakdown": "No state application fee. CDR exam fee is $200 nationally.",
-        "renewal_fee": "$0 (No State Renewal)",
-        "renewal_cycle": "No state renewal. CDR registration renews every 5 years with 75 CPE hours.",
-        "processing_time": "N/A (No state application)",
-        "license_duration": "N/A"
+    {
+      "item": "ACEND Verification Statement",
+      "detail": "Proof of your accredited degree program and supervised practice completion."
+    }
+  ],
+  "provisional_text": "Because Virginia does not issue a state license, there is no provisional or temporary state credential.",
+  "reciprocity_text": "Virginia has no state license to transfer. Title protection eligibility is demonstrated by holding a valid CDR credential, or a current dietitian/nutritionist license or certificate from another state.",
+  "faqs": [
+    {
+      "question": "Does Virginia require a state dietitian license?",
+      "answer": "No. Virginia operates under a title-protection model. To use the title 'dietitian' or 'nutritionist', you must meet the qualifications set by the DHP Board of Health Professions, most commonly by holding active CDR registration."
     },
-    "license_types": [
-        {
-            "title": "Title Protection — Dietitian / Nutritionist",
-            "description": "Virginia does not mandate state licensure for dietitians. However, the DHP Board of Health Professions establishes minimum qualifications for using the protected titles 'dietitian' or 'nutritionist'. Meeting CDR registration standards or equivalent qualifications allows use of the title."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Complete Education & Supervised Practice",
-            "description": "Earn a master's degree from an ACEND-accredited program. Complete 1,200 hours of supervised practice through a CDR-approved dietetic internship."
-        },
-        {
-            "title": "Pass the CDR Examination",
-            "description": "Successfully pass the CDR Registration Examination for Dietitians and obtain active RD/RDN status."
-        },
-        {
-            "title": "Use the Protected Title",
-            "description": "With active CDR registration, you are qualified to use the legally protected titles 'dietitian' or 'nutritionist' in Virginia. No separate state application is needed."
-        }
-    ],
-    "documents": [
-        {
-            "item": "CDR Registration Card",
-            "detail": "Your active CDR card serves as the primary credential in Virginia."
-        },
-        {
-            "item": "ACEND Verification Statement",
-            "detail": "Proof of your accredited degree program and supervised practice completion."
-        }
-    ],
-    "provisional_text": "Because Virginia does not issue a state license, there is no provisional or temporary state credential.",
-    "reciprocity_text": "Virginia has no state license to transfer. Title protection eligibility is demonstrated by holding a valid CDR credential, or a current dietitian/nutritionist license or certificate from another state.",
-    "faqs": [
-        {
-            "question": "Does Virginia require a state dietitian license?",
-            "answer": "No. Virginia operates under a title-protection model. To use the title 'dietitian' or 'nutritionist', you must meet the qualifications set by the DHP Board of Health Professions, most commonly by holding active CDR registration."
-        },
-        {
-            "question": "What does it cost to practice as a dietitian in Virginia?",
-            "answer": "There is no state fee. The CDR national exam costs $200, and the CDR annual maintenance fee is $80 (increasing to $90 in 2027)."
-        },
-        {
-            "question": "Is Virginia moving towards formal state licensure?",
-            "answer": "House Bill 576 was introduced in 2026 to enable Virginia to join the Dietitian Licensure Compact, but the bill was left in committee as of February 2026. Virginia does not currently have an active licensure pathway."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "question": "What does it cost to practice as a dietitian in Virginia?",
+      "answer": "There is no state fee. The CDR national exam costs $200, and the CDR annual maintenance fee is $80 (increasing to $90 in 2027)."
     },
-    "fees_endorsement": {
-        "app_fee": "$200",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$0 (No State License Fee)"
+    {
+      "question": "Is Virginia moving towards formal state licensure?",
+      "answer": "House Bill 576 was introduced in 2026 to enable Virginia to join the Dietitian Licensure Compact, but the bill was left in committee as of February 2026. Virginia does not currently have an active licensure pathway."
     },
-    "temp_license": {
-        "available": false,
-        "fee": "N/A",
-        "processing_time": "N/A",
-        "duration": "N/A"
+    {
+      "question": "Does Virginia have reciprocity for dietitians?",
+      "answer": "No interstate compact currently covers dietitian practice in Virginia. To work in Virginia, apply for licensure by endorsement through the state board."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.dhp.virginia.gov/bhp/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "How long does it take to transfer my dietitian license to Virginia?",
+      "answer": "Most endorsement applications take N/A (No state application). If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Virginia while my endorsement application is processing?",
+      "answer": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$200",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$0 (No State License Fee)"
+  },
+  "temp_license": {
+    "available": false,
+    "fee": "N/A",
+    "processing_time": "N/A",
+    "duration": "N/A"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.dhp.virginia.gov/bhp/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": false,
+    "fingerprint_required": false,
+    "temp_license_available": false,
+    "jurisprudence_required": false,
+    "endorsement_fee": 0,
+    "processing_time": "N/A (No state application)",
+    "processing_tier": "slow",
+    "board_url": "https://www.dhp.virginia.gov/bhp/",
+    "endorsement_url": "https://www.dhp.virginia.gov/bhp/",
+    "notes": "Virginia has no state license to transfer. Title protection eligibility is demonstrated by holding a valid CDR credential, or a current dietitian/nutritionist license or certificate from another state."
+  },
+  "slug": "virginia-dietitian",
+  "specialty": "dietitian"
 }

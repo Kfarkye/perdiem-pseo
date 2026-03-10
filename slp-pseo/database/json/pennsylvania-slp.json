@@ -1,127 +1,159 @@
 {
-    "state_slug": "pennsylvania-slp",
-    "state_name": "Pennsylvania",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "pennsylvania-slp",
+  "state_name": "Pennsylvania",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Speech-Language Pathologist",
+  "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Pennsylvania Speech-Language Pathologist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Pennsylvania - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "speech-language pathologist license reciprocity pennsylvania, how to transfer speech-language pathologist license to pennsylvania, speech-language pathologist compact pennsylvania, pennsylvania speech-language pathologist endorsement application"
+  },
+  "board": {
+    "name": "State Board of Examiners in Speech-Language Pathology and Audiology",
+    "parent_dept": "Pennsylvania Department of State, Bureau of Professional and Occupational Affairs",
+    "mailing_address": "P.O. Box 2649, Harrisburg, PA 17105-2649",
+    "physical_address": "2601 North Third St., Harrisburg, PA 17110",
+    "phone": "(717) 783-1389",
+    "fax": "(717) 787-7769",
+    "email": "mailto:st-speech@pa.gov",
+    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/"
+  },
+  "quick_facts": {
+    "total_fee": "$50",
+    "fee_breakdown": "$50 initial application fee",
+    "renewal_fee": "$65",
+    "renewal_cycle": "Every 2 years (July 31, odd years)",
+    "processing_time": "4 to 6 weeks",
+    "license_duration": "2 years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Speech-Language Pathologist",
+      "description": "The full credential to independently practice speech-language pathology in Pennsylvania. Requires a master's degree, completed clinical fellowship (1,260+ hours), and a passing Praxis score."
     },
-    "profession_name": "Speech-Language Pathologist",
-    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Pennsylvania SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
-        "description": "Complete guide to Pennsylvania speech-language pathologist licensing. Board application fees, Praxis requirements, clinical fellowship, and telepractice rules for 2026.",
-        "keywords": "Pennsylvania SLP license, PA speech pathologist, Pennsylvania speech therapy license, SLP license PA, PALS SLP"
+    {
+      "title": "Provisional SLP License",
+      "description": "Issued to SLP graduates completing their clinical fellowship. Allows supervised clinical practice while fulfilling the 1,260-hour experience requirement within two years."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Earn a Master's Degree in SLP",
+      "description": "Complete a master's or higher degree in speech-language pathology from an ASHA-accredited program. Must include 375+ hours of supervised clinical practicum."
     },
-    "board": {
-        "name": "State Board of Examiners in Speech-Language Pathology and Audiology",
-        "parent_dept": "Pennsylvania Department of State, Bureau of Professional and Occupational Affairs",
-        "mailing_address": "P.O. Box 2649, Harrisburg, PA 17105-2649",
-        "physical_address": "2601 North Third St., Harrisburg, PA 17110",
-        "phone": "(717) 783-1389",
-        "fax": "(717) 787-7769",
-        "email": "mailto:st-speech@pa.gov",
-        "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/"
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331). The current passing score is 162. Separate $30 registration fee paid to ETS."
     },
-    "quick_facts": {
-        "total_fee": "$50",
-        "fee_breakdown": "$50 initial application fee",
-        "renewal_fee": "$65",
-        "renewal_cycle": "Every 2 years (July 31, odd years)",
-        "processing_time": "4 to 6 weeks",
-        "license_duration": "2 years"
+    {
+      "title": "Complete Clinical Fellowship",
+      "description": "Complete at least 1,260 hours of supervised professional experience within a maximum of two years. At least 80% must be direct client contact in assessment and treatment."
     },
-    "license_types": [
-        {
-            "title": "Licensed Speech-Language Pathologist",
-            "description": "The full credential to independently practice speech-language pathology in Pennsylvania. Requires a master's degree, completed clinical fellowship (1,260+ hours), and a passing Praxis score."
-        },
-        {
-            "title": "Provisional SLP License",
-            "description": "Issued to SLP graduates completing their clinical fellowship. Allows supervised clinical practice while fulfilling the 1,260-hour experience requirement within two years."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Earn a Master's Degree in SLP",
-            "description": "Complete a master's or higher degree in speech-language pathology from an ASHA-accredited program. Must include 375+ hours of supervised clinical practicum."
-        },
-        {
-            "title": "Pass the Praxis Examination",
-            "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331). The current passing score is 162. Separate $30 registration fee paid to ETS."
-        },
-        {
-            "title": "Complete Clinical Fellowship",
-            "description": "Complete at least 1,260 hours of supervised professional experience within a maximum of two years. At least 80% must be direct client contact in assessment and treatment."
-        },
-        {
-            "title": "Apply through PALS Portal",
-            "description": "Submit the application through the Pennsylvania Licensing System (PALS). Pay the $50 application fee. Include official transcripts, Praxis scores, clinical fellowship verification, child abuse training certificate, and FBI fingerprint background check (effective July 7, 2025)."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official graduate transcripts",
-            "detail": "From an ASHA-accredited speech-language pathology program."
-        },
-        {
-            "item": "Praxis exam score report",
-            "detail": "Score of 162 or higher on test 5331."
-        },
-        {
-            "item": "Clinical fellowship verification",
-            "detail": "Documentation of 1,260+ hours of supervised professional experience with 80% direct client contact."
-        },
-        {
-            "item": "Child abuse recognition training",
-            "detail": "3 hours of Board-approved CE in child abuse recognition and reporting (required for initial licensure)."
-        },
-        {
-            "item": "FBI fingerprint background check",
-            "detail": "Required for new applicants effective July 7, 2025. Pre-register through IdentoGO with service code provided during application."
-        }
-    ],
-    "telepractice_text": "Pennsylvania permits telepractice for licensed SLPs. The practitioner must hold a valid Pennsylvania SLP license to provide services to clients located in Pennsylvania. All telepractice services must meet the same standard of care as in-person services.",
-    "provisional_text": "Pennsylvania issues a Provisional SLP License for graduates completing their clinical fellowship. This allows supervised practice while fulfilling the 1,260-hour experience requirement. The supervising SLP must hold a current Pennsylvania license.",
-    "reciprocity_text": "Pennsylvania does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Pennsylvania license through the PALS portal. ASHA CCC-SLP holders must still submit all required documentation, including transcripts, Praxis scores, and fellowship verification.",
-    "faqs": [
-        {
-            "question": "How much does a Pennsylvania SLP license cost?",
-            "answer": "Pennsylvania has one of the lowest SLP licensing fees in the country. The initial application fee is $50. Biennial renewal is $65, due by July 31 of odd-numbered years."
-        },
-        {
-            "question": "What is the new fingerprinting requirement for Pennsylvania SLPs?",
-            "answer": "Effective July 7, 2025, new health care practitioner applicants, including SLPs, must obtain a fingerprint-based FBI background check. Pre-register through IdentoGO using the service code provided during your application. This does not apply to renewals."
-        },
-        {
-            "question": "How many CE hours are required for Pennsylvania SLP renewal?",
-            "answer": "Pennsylvania requires 20 hours of continuing education every two years, including 2 hours of mandated child abuse reporter training. CE credits must be through ASHA or ASHA-approved entities."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Apply through PALS Portal",
+      "description": "Submit the application through the Pennsylvania Licensing System (PALS). Pay the $50 application fee. Include official transcripts, Praxis scores, clinical fellowship verification, child abuse training certificate, and FBI fingerprint background check (effective July 7, 2025)."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official graduate transcripts",
+      "detail": "From an ASHA-accredited speech-language pathology program."
     },
-    "fees_endorsement": {
-        "app_fee": "$50",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$50"
+    {
+      "item": "Praxis exam score report",
+      "detail": "Score of 162 or higher on test 5331."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Clinical fellowship verification",
+      "detail": "Documentation of 1,260+ hours of supervised professional experience with 80% direct client contact."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Child abuse recognition training",
+      "detail": "3 hours of Board-approved CE in child abuse recognition and reporting (required for initial licensure)."
+    },
+    {
+      "item": "FBI fingerprint background check",
+      "detail": "Required for new applicants effective July 7, 2025. Pre-register through IdentoGO with service code provided during application."
+    }
+  ],
+  "telepractice_text": "Pennsylvania permits telepractice for licensed SLPs. The practitioner must hold a valid Pennsylvania SLP license to provide services to clients located in Pennsylvania. All telepractice services must meet the same standard of care as in-person services.",
+  "provisional_text": "Pennsylvania issues a Provisional SLP License for graduates completing their clinical fellowship. This allows supervised practice while fulfilling the 1,260-hour experience requirement. The supervising SLP must hold a current Pennsylvania license.",
+  "reciprocity_text": "Pennsylvania does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Pennsylvania license through the PALS portal. ASHA CCC-SLP holders must still submit all required documentation, including transcripts, Praxis scores, and fellowship verification.",
+  "faqs": [
+    {
+      "question": "How much does a Pennsylvania SLP license cost?",
+      "answer": "Pennsylvania has one of the lowest SLP licensing fees in the country. The initial application fee is $50. Biennial renewal is $65, due by July 31 of odd-numbered years."
+    },
+    {
+      "question": "What is the new fingerprinting requirement for Pennsylvania SLPs?",
+      "answer": "Effective July 7, 2025, new health care practitioner applicants, including SLPs, must obtain a fingerprint-based FBI background check. Pre-register through IdentoGO using the service code provided during your application. This does not apply to renewals."
+    },
+    {
+      "question": "How many CE hours are required for Pennsylvania SLP renewal?",
+      "answer": "Pennsylvania requires 20 hours of continuing education every two years, including 2 hours of mandated child abuse reporter training. CE credits must be through ASHA or ASHA-approved entities."
+    },
+    {
+      "question": "Does Pennsylvania have reciprocity for speech-language pathologists?",
+      "answer": "No interstate compact currently covers speech-language pathologist practice in Pennsylvania. To work in Pennsylvania, apply for licensure by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my speech-language pathologist license to Pennsylvania?",
+      "answer": "Most endorsement applications take 4 to 6 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Pennsylvania while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "ASLP-IC",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://aslpcompact.com/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$50",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$50"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "ASLP-IC",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://aslpcompact.com/",
+    "compact_portal_url": "https://aslpcompact.com/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 50,
+    "processing_time": "4 to 6 weeks",
+    "processing_tier": "mid",
+    "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
+    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
+    "notes": "Pennsylvania does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Pennsylvania license through the PALS portal. ASHA CCC-SLP holders must still submit all required documentation, including transcripts, Praxis scores, and fellowship verification."
+  },
+  "slug": "pennsylvania-slp-slp",
+  "specialty": "slp"
 }

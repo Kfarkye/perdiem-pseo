@@ -1,90 +1,122 @@
 {
-    "state_slug": "california",
-    "state_name": "California",
-    "fingerprints": {
-        "required": false,
-        "method_in_state": "N/A",
-        "method_out_of_state": "N/A",
-        "vendor": "N/A",
-        "fee": "N/A",
-        "delay_out_of_state_weeks": "N/A",
-        "vendor_url": "N/A"
+  "state_slug": "california",
+  "state_name": "California",
+  "fingerprints": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": "N/A"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Registered Dietitian (RD)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "California Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to California - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity california, how to transfer dietitian license to california, dietitian compact california, california dietitian endorsement application"
+  },
+  "board": {
+    "name": "No State Licensing Board",
+    "parent_dept": "Title Protection Only (Business and Professions Code Section 2585)",
+    "mailing_address": "Not Applicable",
+    "physical_address": "Not Applicable",
+    "phone": "Not Applicable",
+    "fax": "Not Applicable",
+    "email": "Not Applicable",
+    "url": "Not Applicable"
+  },
+  "quick_facts": {
+    "total_fee": "$0",
+    "fee_breakdown": "No state fees (CDR national fees apply)",
+    "renewal_fee": "$0",
+    "renewal_cycle": "No state renewal required",
+    "processing_time": "Not Applicable",
+    "license_duration": "Not Applicable"
+  },
+  "license_types": [
+    {
+      "title": "Registered Dietitian (RD) / Registered Dietitian Nutritionist (RDN)",
+      "description": "California does not license dietitians. However, under state law, you cannot use the title 'Registered Dietitian' unless you hold current, active registration with the Commission on Dietetic Registration (CDR)."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Obtain CDR Registration",
+      "description": "Because California does not have a state application, you only need to complete your ACEND-accredited master's program, finish your internship, and pass the national CDR exam."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Proof of CDR Registration",
+      "detail": "Employers will require proof of your active CDR credential."
+    }
+  ],
+  "provisional_text": "Because there is no state licensing board, there are no state-issued provisional permits in California.",
+  "reciprocity_text": "If you are a licensed dietitian moving to California from another state, you do not need to transfer your license. As long as your national CDR registration is active, you are legally permitted to practice.",
+  "faqs": [
+    {
+      "question": "How much does a California dietitian license cost?",
+      "answer": "California does not charge a state licensing fee because the state does not issue dietitian licenses. You only pay your standard national registration and exam fees directly to the CDR."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Registered Dietitian (RD)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "California Registered Dietitian (RD) Requirements & Practice Laws (2026)",
-        "description": "California does not issue state dietitian licenses, but strictly protects the Registered Dietitian (RD) title. Learn about CDR requirements and CA practice laws.",
-        "keywords": "California dietitian license, CA licensed dietitian, California dietetics board, registered dietitian California requirements, practice nutrition in California"
+    {
+      "question": "What are the continuing education requirements for a California Dietitian?",
+      "answer": "Because there is no state board, there are no state-mandated CE hours. You simply follow the national CDR requirement of completing 75 CPEUs every five years to maintain your credential."
     },
-    "board": {
-        "name": "No State Licensing Board",
-        "parent_dept": "Title Protection Only (Business and Professions Code Section 2585)",
-        "mailing_address": "Not Applicable",
-        "physical_address": "Not Applicable",
-        "phone": "Not Applicable",
-        "fax": "Not Applicable",
-        "email": "Not Applicable",
-        "url": "Not Applicable"
+    {
+      "question": "Does California have reciprocity for dietitians?",
+      "answer": "No interstate compact currently covers dietitian practice in California. To work in California, apply for licensure by endorsement through the state board."
     },
-    "quick_facts": {
-        "total_fee": "$0",
-        "fee_breakdown": "No state fees (CDR national fees apply)",
-        "renewal_fee": "$0",
-        "renewal_cycle": "No state renewal required",
-        "processing_time": "Not Applicable",
-        "license_duration": "Not Applicable"
+    {
+      "question": "How long does it take to transfer my dietitian license to California?",
+      "answer": "Most endorsement applications take Not Applicable. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
     },
-    "license_types": [
-        {
-            "title": "Registered Dietitian (RD) / Registered Dietitian Nutritionist (RDN)",
-            "description": "California does not license dietitians. However, under state law, you cannot use the title 'Registered Dietitian' unless you hold current, active registration with the Commission on Dietetic Registration (CDR)."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Obtain CDR Registration",
-            "description": "Because California does not have a state application, you only need to complete your ACEND-accredited master's program, finish your internship, and pass the national CDR exam."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Proof of CDR Registration",
-            "detail": "Employers will require proof of your active CDR credential."
-        }
-    ],
-    "provisional_text": "Because there is no state licensing board, there are no state-issued provisional permits in California.",
-    "reciprocity_text": "If you are a licensed dietitian moving to California from another state, you do not need to transfer your license. As long as your national CDR registration is active, you are legally permitted to practice.",
-    "faqs": [
-        {
-            "question": "How much does a California dietitian license cost?",
-            "answer": "California does not charge a state licensing fee because the state does not issue dietitian licenses. You only pay your standard national registration and exam fees directly to the CDR."
-        },
-        {
-            "question": "What are the continuing education requirements for a California Dietitian?",
-            "answer": "Because there is no state board, there are no state-mandated CE hours. You simply follow the national CDR requirement of completing 75 CPEUs every five years to maintain your credential."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
-    },
-    "fees_endorsement": {
-        "app_fee": "$0",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$0"
-    },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
-    },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "N/A",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "Can I start working in California while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$0",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$0"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "N/A",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": false,
+    "fingerprint_required": false,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 0,
+    "processing_time": "Not Applicable",
+    "processing_tier": "slow",
+    "board_url": "Not Applicable",
+    "endorsement_url": "Not Applicable",
+    "notes": "If you are a licensed dietitian moving to California from another state, you do not need to transfer your license. As long as your national CDR registration is active, you are legally permitted to practice."
+  },
+  "slug": "california-dietitian",
+  "specialty": "dietitian"
 }

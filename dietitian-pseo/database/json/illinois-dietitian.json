@@ -1,110 +1,142 @@
 {
-    "state_slug": "illinois",
-    "state_name": "Illinois",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO / Illinois State Police",
-        "fee": "$60.00",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://www.identogo.com/locations/illinois"
+  "state_slug": "illinois",
+  "state_name": "Illinois",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / Illinois State Police",
+    "fee": "$60.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/illinois"
+  },
+  "profession_name": "Dietitian",
+  "credential_nomenclature": "Licensed Dietitian Nutritionist (LDN)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "Illinois Dietitian License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a dietitian? Here's whether your license transfers to Illinois - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "dietitian license reciprocity illinois, how to transfer dietitian license to illinois, dietitian compact illinois, illinois dietitian endorsement application"
+  },
+  "board": {
+    "name": "Dietetic and Nutrition Services Practice Board",
+    "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
+    "mailing_address": "IDFPR<br>ATTN: Dietetic and Nutrition Services<br>P.O. Box 7007<br>Springfield, IL 62791",
+    "physical_address": "IDFPR Chicago Office<br>555 West Monroe Street, 5th Floor<br>Chicago, IL 60661",
+    "phone": "(800) 560-6420",
+    "fax": "Not provided",
+    "email": "mailto:FPR.LMFT@illinois.gov",
+    "url": "https://idfpr.illinois.gov/profs/dietnutrition.html"
+  },
+  "quick_facts": {
+    "total_fee": "$100",
+    "fee_breakdown": "$100 Application Fee",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Biennial (Expires October 31 of odd-numbered years)",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Dietitian Nutritionist (LDN)",
+      "description": "The unified credential to provide dietetic and nutrition services in the state of Illinois. Overseen by the IDFPR Dietetic and Nutrition Services Practice Board."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Meet Educational & Experience Prerequisites",
+      "description": "Complete a baccalaureate or higher degree (Master's required for CDR exam as of 2024), alongside a documented 900 hours of continuous supervised practice experience."
     },
-    "profession_name": "Dietitian",
-    "credential_nomenclature": "Licensed Dietitian Nutritionist (LDN)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "Illinois Licensed Dietitian Nutritionist (LDN) Application — Requirements & Fees (2026)",
-        "description": "Apply for an Illinois Licensed Dietitian Nutritionist (LDN) credential through the IDFPR. $100 application fee. Complete requirements, processing times, and official links.",
-        "keywords": "Illinois dietitian license, IL LDN requirements, IDFPR dietitian Illinois, nutritionist license Illinois, dietitian application fees IL"
+    {
+      "title": "Pass National Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registered Dietitian Nutritionist examination."
     },
-    "board": {
-        "name": "Dietetic and Nutrition Services Practice Board",
-        "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
-        "mailing_address": "IDFPR<br>ATTN: Dietetic and Nutrition Services<br>P.O. Box 7007<br>Springfield, IL 62791",
-        "physical_address": "IDFPR Chicago Office<br>555 West Monroe Street, 5th Floor<br>Chicago, IL 60661",
-        "phone": "(800) 560-6420",
-        "fax": "Not provided",
-        "email": "mailto:FPR.LMFT@illinois.gov",
-        "url": "https://idfpr.illinois.gov/profs/dietnutrition.html"
+    {
+      "title": "Submit the IDFPR Application via CORE",
+      "description": "Submit a new licensure application online using the state's new CORE licensing portal, and pay the non-refundable $100 application fee."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official College Transcripts",
+      "detail": "Degree-granting institution transcripts must be sent directly to the IDFPR or uploaded securely through the CORE portal."
     },
-    "quick_facts": {
-        "total_fee": "$100",
-        "fee_breakdown": "$100 Application Fee",
-        "renewal_fee": "$100",
-        "renewal_cycle": "Biennial (Expires October 31 of odd-numbered years)",
-        "processing_time": "4 to 6 Weeks",
-        "license_duration": "2 Years"
+    {
+      "item": "Proof of Examination",
+      "detail": "Primary source verification of your CDR exam score, typically routed electronically by the credentialing agency."
     },
-    "license_types": [
-        {
-            "title": "Licensed Dietitian Nutritionist (LDN)",
-            "description": "The unified credential to provide dietetic and nutrition services in the state of Illinois. Overseen by the IDFPR Dietetic and Nutrition Services Practice Board."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Meet Educational & Experience Prerequisites",
-            "description": "Complete a baccalaureate or higher degree (Master's required for CDR exam as of 2024), alongside a documented 900 hours of continuous supervised practice experience."
-        },
-        {
-            "title": "Pass National Examination",
-            "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registered Dietitian Nutritionist examination."
-        },
-        {
-            "title": "Submit the IDFPR Application via CORE",
-            "description": "Submit a new licensure application online using the state's new CORE licensing portal, and pay the non-refundable $100 application fee."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official College Transcripts",
-            "detail": "Degree-granting institution transcripts must be sent directly to the IDFPR or uploaded securely through the CORE portal."
-        },
-        {
-            "item": "Proof of Examination",
-            "detail": "Primary source verification of your CDR exam score, typically routed electronically by the credentialing agency."
-        },
-        {
-            "item": "Verification of Supervised Practice",
-            "detail": "Documentation proving the completion of the mandatory 900-hour supervised practice requirement."
-        }
-    ],
-    "provisional_text": "Illinois allows candidates who have submitted a completed application to be authorized to practice for up to six months while their application is pending final approval by the IDFPR.",
-    "reciprocity_text": "Applicants licensed in other jurisdictions may file an Endorsement application through the IDFPR, provided the requirements of the other state were substantially equivalent to Illinois' requirements at the time of original licensure, and the license remains in active and good standing.",
-    "faqs": [
-        {
-            "question": "What is the fee for an Illinois LDN license?",
-            "answer": "The IDFPR requires a flat $100 fee for the initial application."
-        },
-        {
-            "question": "When does the Illinois LDN license expire?",
-            "answer": "All individual dietitian nutritionist licenses expire simultaneously on October 31 of every odd-numbered year."
-        },
-        {
-            "question": "How many continuing education hours are required to renew my IL license?",
-            "answer": "You must complete 30 hours of continuing education (CE) during each two-year renewal cycle prior to the October 31 expiration date."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "N/A",
-        "compact_privilege_fee": "N/A"
+    {
+      "item": "Verification of Supervised Practice",
+      "detail": "Documentation proving the completion of the mandatory 900-hour supervised practice requirement."
+    }
+  ],
+  "provisional_text": "Illinois allows candidates who have submitted a completed application to be authorized to practice for up to six months while their application is pending final approval by the IDFPR.",
+  "reciprocity_text": "Applicants licensed in other jurisdictions may file an Endorsement application through the IDFPR, provided the requirements of the other state were substantially equivalent to Illinois' requirements at the time of original licensure, and the license remains in active and good standing.",
+  "faqs": [
+    {
+      "question": "What is the fee for an Illinois LDN license?",
+      "answer": "The IDFPR requires a flat $100 fee for the initial application."
     },
-    "fees_endorsement": {
-        "app_fee": "$100",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$100"
+    {
+      "question": "When does the Illinois LDN license expire?",
+      "answer": "All individual dietitian nutritionist licenses expire simultaneously on October 31 of every odd-numbered year."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "question": "How many continuing education hours are required to renew my IL license?",
+      "answer": "You must complete 30 hours of continuing education (CE) during each two-year renewal cycle prior to the October 31 expiration date."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://idfpr.illinois.gov/profs/dietnutrition.html",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "question": "Does Illinois have reciprocity for dietitians?",
+      "answer": "No interstate compact currently covers dietitian practice in Illinois. To work in Illinois, apply for licensure by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my dietitian license to Illinois?",
+      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in Illinois while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Dietitian Compact",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://dietitianscompact.org/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$100",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$100"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://idfpr.illinois.gov/profs/dietnutrition.html",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "Dietitian Compact",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://dietitianscompact.org/",
+    "compact_portal_url": "https://dietitianscompact.org/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://idfpr.illinois.gov/profs/dietnutrition.html",
+    "endorsement_url": "https://idfpr.illinois.gov/profs/dietnutrition.html",
+    "notes": "Applicants licensed in other jurisdictions may file an Endorsement application through the IDFPR, provided the requirements of the other state were substantially equivalent to Illinois' requirements at the time of original licensure, and the license remains in active and good standing."
+  },
+  "slug": "illinois-dietitian",
+  "specialty": "dietitian"
 }

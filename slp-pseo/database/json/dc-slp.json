@@ -1,123 +1,155 @@
 {
-    "state_slug": "dc-slp",
-    "state_name": "District of Columbia",
-    "fingerprints": {
-        "required": true,
-        "method_in_state": "LiveScan (IdentoGO)",
-        "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
-        "vendor": "IdentoGO (IDEMIA)",
-        "fee": "$35-$50 (varies by state)",
-        "delay_out_of_state_weeks": "2-4",
-        "vendor_url": "https://uenroll.identogo.com/"
+  "state_slug": "dc-slp",
+  "state_name": "District of Columbia",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Speech-Language Pathologist",
+  "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
+  "last_updated": "2026-02-25",
+  "seo": {
+    "title": "District of Columbia Speech-Language Pathologist License Reciprocity - How to Transfer Your License (2026)",
+    "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to District of Columbia - compact status, endorsement steps, fees, and processing time.",
+    "keywords": "speech-language pathologist license reciprocity district of columbia, how to transfer speech-language pathologist license to district of columbia, speech-language pathologist compact district of columbia, district of columbia speech-language pathologist endorsement application"
+  },
+  "board": {
+    "name": "Board of Audiology and Speech-Language Pathology",
+    "parent_dept": "DC Department of Health (DOH), Health Regulation and Licensing Administration",
+    "mailing_address": "899 North Capitol St. NE, Washington, DC 20002",
+    "physical_address": "899 North Capitol St. NE, Washington, DC 20002",
+    "phone": "(202) 724-8800",
+    "fax": "(202) 724-8677",
+    "email": "mailto:doh.hpla@dc.gov",
+    "url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing"
+  },
+  "quick_facts": {
+    "total_fee": "$187",
+    "fee_breakdown": "$85 application + $102 license fee",
+    "renewal_fee": "$164",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 8 weeks",
+    "license_duration": "2 years"
+  },
+  "license_types": [
+    {
+      "title": "Licensed Speech-Language Pathologist",
+      "description": "The full credential to independently practice speech-language pathology in the District of Columbia."
     },
-    "profession_name": "Speech-Language Pathologist",
-    "credential_nomenclature": "Licensed Speech-Language Pathologist (SLP)",
-    "last_updated": "2026-02-25",
-    "seo": {
-        "title": "DC SLP License Requirements — Fees, Board Contact & How to Apply (2026)",
-        "description": "Complete guide to District of Columbia speech-language pathologist licensing. DOH application fees, Praxis requirements, and telepractice rules for 2026.",
-        "keywords": "DC SLP license, Washington DC speech pathologist, District of Columbia speech therapy license"
+    {
+      "title": "Supervised Practice Registration",
+      "description": "For SLP graduates completing their Clinical Fellowship under supervision in DC."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Earn a Master's Degree in SLP",
+      "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
     },
-    "board": {
-        "name": "Board of Audiology and Speech-Language Pathology",
-        "parent_dept": "DC Department of Health (DOH), Health Regulation and Licensing Administration",
-        "mailing_address": "899 North Capitol St. NE, Washington, DC 20002",
-        "physical_address": "899 North Capitol St. NE, Washington, DC 20002",
-        "phone": "(202) 724-8800",
-        "fax": "(202) 724-8677",
-        "email": "mailto:doh.hpla@dc.gov",
-        "url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing"
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination (test code 5331, score 162)."
     },
-    "quick_facts": {
-        "total_fee": "$187",
-        "fee_breakdown": "$85 application + $102 license fee",
-        "renewal_fee": "$164",
-        "renewal_cycle": "Every 2 years",
-        "processing_time": "4 to 8 weeks",
-        "license_duration": "2 years"
+    {
+      "title": "Complete Clinical Fellowship",
+      "description": "Complete 36 weeks of supervised clinical practice (1,260 hours)."
     },
-    "license_types": [
-        {
-            "title": "Licensed Speech-Language Pathologist",
-            "description": "The full credential to independently practice speech-language pathology in the District of Columbia."
-        },
-        {
-            "title": "Supervised Practice Registration",
-            "description": "For SLP graduates completing their Clinical Fellowship under supervision in DC."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Earn a Master's Degree in SLP",
-            "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
-        },
-        {
-            "title": "Pass the Praxis Examination",
-            "description": "Achieve a passing score on the Praxis Examination (test code 5331, score 162)."
-        },
-        {
-            "title": "Complete Clinical Fellowship",
-            "description": "Complete 36 weeks of supervised clinical practice (1,260 hours)."
-        },
-        {
-            "title": "Submit Application to DC DOH",
-            "description": "Submit application with fees to DC Health."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Official graduate transcripts",
-            "detail": "From a CAA-accredited program."
-        },
-        {
-            "item": "Praxis exam score report",
-            "detail": "Score of 162 or higher on test 5331."
-        },
-        {
-            "item": "Clinical Fellowship verification",
-            "detail": "CF completion documentation."
-        },
-        {
-            "item": "Background check",
-            "detail": "Criminal background check."
-        }
-    ],
-    "telepractice_text": "DC permits telepractice for licensed SLPs. DC is not currently a member of the ASLP Interstate Compact. A valid DC SLP license is required to treat clients in the District.",
-    "provisional_text": "DC offers a Supervised Practice Registration for graduates completing their Clinical Fellowship.",
-    "reciprocity_text": "DC does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full DC licensure.",
-    "faqs": [
-        {
-            "question": "How much does a DC SLP license cost?",
-            "answer": "The total initial cost is approximately $187. Biennial renewal is $164."
-        },
-        {
-            "question": "Is DC part of the ASLP Interstate Compact?",
-            "answer": "No. DC has not enacted ASLP-IC legislation as of 2026."
-        },
-        {
-            "question": "Does DC allow telepractice for SLPs?",
-            "answer": "Yes. DC permits telepractice but requires a valid DC SLP license."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "ASLP-IC (Audiology & Speech-Language Pathology Interstate Compact)",
-        "compact_privilege_fee": "N/A"
+    {
+      "title": "Submit Application to DC DOH",
+      "description": "Submit application with fees to DC Health."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Official graduate transcripts",
+      "detail": "From a CAA-accredited program."
     },
-    "fees_endorsement": {
-        "app_fee": "$85",
-        "background_check_fee": "$0 (included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "total_estimated_cost": "$187"
+    {
+      "item": "Praxis exam score report",
+      "detail": "Score of 162 or higher on test 5331."
     },
-    "temp_license": {
-        "available": true,
-        "fee": "See board",
-        "processing_time": "See board",
-        "duration": "See board"
+    {
+      "item": "Clinical Fellowship verification",
+      "detail": "CF completion documentation."
     },
-    "last_verified_date": "2026-02-25",
-    "board_source_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "Background check",
+      "detail": "Criminal background check."
+    }
+  ],
+  "telepractice_text": "DC permits telepractice for licensed SLPs. DC is not currently a member of the ASLP Interstate Compact. A valid DC SLP license is required to treat clients in the District.",
+  "provisional_text": "DC offers a Supervised Practice Registration for graduates completing their Clinical Fellowship.",
+  "reciprocity_text": "DC does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full DC licensure.",
+  "faqs": [
+    {
+      "question": "How much does a DC SLP license cost?",
+      "answer": "The total initial cost is approximately $187. Biennial renewal is $164."
+    },
+    {
+      "question": "Is DC part of the ASLP Interstate Compact?",
+      "answer": "No. DC has not enacted ASLP-IC legislation as of 2026."
+    },
+    {
+      "question": "Does DC allow telepractice for SLPs?",
+      "answer": "Yes. DC permits telepractice but requires a valid DC SLP license."
+    },
+    {
+      "question": "Does District of Columbia have reciprocity for speech-language pathologists?",
+      "answer": "No interstate compact currently covers speech-language pathologist practice in District of Columbia. To work in District of Columbia, apply for licensure by endorsement through the state board."
+    },
+    {
+      "question": "How long does it take to transfer my speech-language pathologist license to District of Columbia?",
+      "answer": "Most endorsement applications take 4 to 8 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+    },
+    {
+      "question": "Can I start working in District of Columbia while my endorsement application is processing?",
+      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "ASLP-IC",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": "https://aslpcompact.com/"
+  },
+  "fees_endorsement": {
+    "app_fee": "$85",
+    "background_check_fee": "$0 (included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$187"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-02-25",
+  "board_source_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "ASLP-IC",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "https://aslpcompact.com/",
+    "compact_portal_url": "https://aslpcompact.com/",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 187,
+    "processing_time": "4 to 8 weeks",
+    "processing_tier": "slow",
+    "board_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+    "endorsement_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+    "notes": "DC does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full DC licensure."
+  },
+  "slug": "dc-slp-slp",
+  "specialty": "slp"
 }
