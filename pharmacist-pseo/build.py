@@ -38,7 +38,8 @@ states_manifest = []
 urls = []
 for json_file in sorted(JSON_DIR.glob("*.json")):
     data = json.loads(json_file.read_text(encoding="utf-8"))
-    slug_value = data.get("slug") or f"{data['state_slug']}-{VERTICAL_SLUG}"
+    default_slug = data['state_slug'] if data['state_slug'].endswith(f'-{VERTICAL_SLUG}') else f"{data['state_slug']}-{VERTICAL_SLUG}"
+    slug_value = data.get("slug") or default_slug
     out_name = f"{slug_value}.html"
     out_path = DIST_DIR / out_name
     if out_name in tier2_files:

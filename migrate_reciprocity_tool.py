@@ -194,7 +194,8 @@ def update_seo(data: dict, suffix: str) -> None:
     data['seo']['title'] = title
     data['seo']['description'] = desc
     data['seo']['keywords'] = ', '.join(keywords)
-    data['slug'] = f"{data['state_slug']}-{suffix}"
+    state_slug = data['state_slug']
+    data['slug'] = state_slug if state_slug.endswith(f'-{suffix}') else f"{state_slug}-{suffix}"
     data['specialty'] = suffix
 
 
