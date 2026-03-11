@@ -1,7 +1,10 @@
 """Build the profession portal front page directory.
 
-Reads vertical_profiles.json and generates a static landing page
-that links to all 8 deployed verticals on their respective Vercel deployments.
+Reads vertical_profiles.json and generates portal dist assets:
+- dist/index.html
+- dist/robots.txt
+- dist/sitemap.xml
+- dist/favicon.svg
 """
 from __future__ import annotations
 
@@ -10,25 +13,17 @@ import shutil
 from datetime import datetime
 from pathlib import Path
 
+from jinja2 import Environment, FileSystemLoader, StrictUndefined
+
 ROOT = Path(__file__).resolve().parent
 PROFILES_PATH = ROOT.parent / "vertical_profiles.json"
 DIST_DIR = ROOT / "dist"
-DOMAIN = "https://statelicensingreference.com"
+TEMPLATE_DIR = ROOT / "src" / "templates"
+ASSET_DIR = ROOT / "src" / "assets"
+TEMPLATE_NAME = "index.html.j2"
 TODAY = datetime.now().strftime("%Y-%m-%d")
 
-# Vercel deployment URLs for each vertical
-VERTICAL_URLS = {
-    "dietitian": "https://statelicensingreference.com",
-    "ot": "https://perdiem-ot.vercel.app",
-    "pt": "https://perdiem-pt.vercel.app",
-    "rrt": "https://perdiem-rrt.vercel.app",
-    "slp": "https://perdiem-slp.vercel.app",
-    "aud": "https://perdiem-aud.vercel.app",
-    "pharm": "https://perdiem-pharm.vercel.app",
-    "pharmacist": "https://perdiem-pharmacist.vercel.app",
-}
-
-# Icons (SF Symbol-style SVG paths) for each profession
+# Icons (SF Symbol-style SVG paths) for each profession.
 VERTICAL_ICONS = {
     "dietitian": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c1.5 0 3-.3 4.3-.9"/><path d="M7 12.5c0-2.8 2.2-5 5-5s5 2.2 5 5"/><path d="M12 7.5V2"/><path d="M14.5 14.5l3-3"/><path d="M20 8l2 2-4 4"/></svg>',
     "ot": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/><rect x="2" y="20" width="20" height="0" rx="0"/></svg>',
@@ -40,7 +35,7 @@ VERTICAL_ICONS = {
     "pharmacist": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 6H4z"/><path d="M12 8v14"/><path d="M4 8h16"/><path d="M7 22h10"/><path d="M9 12h6"/><path d="M9 16h6"/></svg>',
 }
 
-# Accent colors per vertical (used for hover/active tint)
+# Accent colors per vertical (used for hover/active tint).
 VERTICAL_COLORS = {
     "dietitian": "#34C759",
     "ot": "#FF9F0A",
@@ -53,731 +48,102 @@ VERTICAL_COLORS = {
 }
 
 
+def compact_badge(status: str) -> dict[str, str]:
+    if status == "active":
+        return {"label": "Compact Active", "variant": "active"}
+    if status == "enacted":
+        return {"label": "Compact Enacted", "variant": "enacted"}
+    return {"label": "No Compact", "variant": "none"}
+
+
+def resolve_portal_domain(meta: dict) -> str:
+    return meta.get("portal_domain") or "https://perdiem-portal.vercel.app"
+
+
+def resolve_vertical_url(slug: str, meta: dict) -> str:
+    overrides = meta.get("vertical_domain_overrides") or {}
+    if slug in overrides:
+        return overrides[slug]
+
+    pattern = meta.get("vertical_domain_pattern") or "https://perdiem-{slug}.vercel.app"
+    try:
+        return pattern.format(slug=slug)
+    except KeyError as exc:
+        raise ValueError(f"vertical_domain_pattern missing placeholder: {exc}") from exc
+
+
 def build() -> None:
     profiles = json.loads(PROFILES_PATH.read_text(encoding="utf-8"))
-    deployed = profiles["_meta"]["deployed_verticals"]
-    verticals = profiles["verticals"]
+    meta = profiles.get("_meta", {})
+    deployed = meta.get("deployed_verticals", [])
+    verticals = profiles.get("verticals", {})
 
-    cards_html = []
-    sitemap_urls = []
+    domain = resolve_portal_domain(meta)
+
+    cards: list[dict] = []
+    sitemap_urls: list[str] = []
 
     for slug in deployed:
-        v = verticals[slug]
-        url = VERTICAL_URLS.get(slug, f"https://perdiem-{slug}.vercel.app")
-        icon = VERTICAL_ICONS.get(slug, "")
-        color = VERTICAL_COLORS.get(slug, "#007AFF")
-        identity = v["identity"]
-        regulatory = v["regulatory"]
-        seo = v["seo"]
+        vertical = verticals[slug]
+        identity = vertical["identity"]
+        regulatory = vertical["regulatory"]
+        url = resolve_vertical_url(slug, meta)
 
-        title_short = identity["title_short"]
-        title_full = identity["title_full"]
-        credential = identity["credential"]
-        exam = regulatory["national_exam"]
-        compact = regulatory.get("compact_name") or "None"
-        compact_status = regulatory.get("compact_status", "none")
+        cards.append(
+            {
+                "slug": slug,
+                "url": url,
+                "color": VERTICAL_COLORS.get(slug, "#007AFF"),
+                "icon": VERTICAL_ICONS.get(slug, ""),
+                "title_full": identity["title_full"],
+                "title_plural": identity.get("title_plural", f"{identity['title_full']}s"),
+                "credential": identity["credential"],
+                "exam": regulatory["national_exam"],
+                "badge": compact_badge(regulatory.get("compact_status", "none")),
+            }
+        )
+        sitemap_urls.append(
+            f"  <url><loc>{url}/</loc><lastmod>{TODAY}</lastmod><priority>0.9</priority></url>"
+        )
 
-        # Compact badge
-        if compact_status == "active":
-            badge_html = '<span class="compact-badge active">Compact Active</span>'
-        elif compact_status == "enacted":
-            badge_html = '<span class="compact-badge enacted">Compact Enacted</span>'
-        else:
-            badge_html = '<span class="compact-badge none">No Compact</span>'
+    env = Environment(
+        loader=FileSystemLoader(TEMPLATE_DIR),
+        undefined=StrictUndefined,
+        autoescape=True,
+        trim_blocks=True,
+        lstrip_blocks=True,
+    )
+    template = env.get_template(TEMPLATE_NAME)
+    html = template.render(
+        domain=domain,
+        today=TODAY,
+        cards=cards,
+        deployed_count=len(deployed),
+        foot_cards=cards,
+    )
 
-        card = f'''    <a class="profession-card" href="{url}" style="--card-accent: {color}" data-profession="{title_full.lower()}">
-      <div class="card-icon" aria-hidden="true">{icon}</div>
-      <div class="card-body">
-        <h2 class="card-title">{title_full}</h2>
-        <p class="card-credential">{credential}</p>
-        <div class="card-meta">
-          <span class="card-exam">{exam}</span>
-          {badge_html}
-        </div>
-      </div>
-      <span class="card-chevron" aria-hidden="true">
-        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2L8 8L2 14"/></svg>
-      </span>
-    </a>'''
-        cards_html.append(card)
-        sitemap_urls.append(f'  <url><loc>{url}/</loc><lastmod>{TODAY}</lastmod><priority>0.9</priority></url>')
-
-    cards_block = "\n".join(cards_html)
-
-    html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0">
-<title>State Licensing Reference — Healthcare License Requirements by State (2026)</title>
-<meta name="description" content="Compare healthcare license reciprocity, compact status, endorsement fees, and processing timelines for {len(deployed)} professions across all 50 US states and DC.">
-<link rel="canonical" href="{DOMAIN}/">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F2F2F7">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
-<meta property="og:title" content="State Licensing Reference — Healthcare License Requirements by State (2026)">
-<meta property="og:description" content="Compare licensing requirements, compact status, and endorsement timelines for healthcare professionals across all 50 states.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="{DOMAIN}/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<style>
-/* ── APPLE HIG DESIGN SYSTEM (PORTAL) ─────── */
-:root {{
-  color-scheme: light dark;
-  --bg-system: #F2F2F7;
-  --bg-surface: #FFFFFF;
-  --bg-surface-active: #E5E5EA;
-  --bg-elevated: #FFFFFF;
-  --label-primary: #000000;
-  --label-secondary: rgba(60, 60, 67, 0.6);
-  --label-tertiary: rgba(60, 60, 67, 0.3);
-  --tint: #007AFF;
-  --focus-ring: rgba(0, 122, 255, 0.4);
-  --ambient-glow: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 122, 255, 0.08), transparent);
-  --separator: rgba(60, 60, 67, 0.18);
-  --fill-tertiary: rgba(118, 118, 128, 0.12);
-  --toolbar-bg: rgba(255, 255, 255, 0.72);
-  --toolbar-border: rgba(0, 0, 0, 0.06);
-  --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04);
-  --shadow-card-hover: 0 8px 32px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
-  --shadow-float: 0 12px 32px rgba(0,0,0,0.1), 0 2px 6px rgba(0,0,0,0.04);
-  --radius-card: 20px;
-  --radius-badge: 8px;
-  --compact-active-bg: #E4F4E9; --compact-active-txt: #1E823D;
-  --compact-enacted-bg: #FFF3E0; --compact-enacted-txt: #B25000;
-  --compact-none-bg: #F2F2F7;   --compact-none-txt: rgba(60, 60, 67, 0.6);
-}}
-
-@media (prefers-color-scheme: dark) {{
-  :root {{
-    --bg-system: #000000;
-    --bg-surface: #1C1C1E;
-    --bg-surface-active: #2C2C2E;
-    --bg-elevated: #2C2C2E;
-    --label-primary: #FFFFFF;
-    --label-secondary: rgba(235, 235, 245, 0.6);
-    --label-tertiary: rgba(235, 235, 245, 0.3);
-    --tint: #0A84FF;
-    --focus-ring: rgba(10, 132, 255, 0.5);
-    --ambient-glow: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(10, 132, 255, 0.15), transparent);
-    --separator: rgba(84, 84, 88, 0.65);
-    --fill-tertiary: rgba(118, 118, 128, 0.24);
-    --toolbar-bg: rgba(28, 28, 30, 0.72);
-    --toolbar-border: rgba(255, 255, 255, 0.08);
-    --shadow-card: 0 1px 3px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2);
-    --shadow-card-hover: 0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06);
-    --shadow-float: 0 16px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08);
-    --compact-active-bg: #1B3320; --compact-active-txt: #32D74B;
-    --compact-enacted-bg: #332100; --compact-enacted-txt: #FF9F0A;
-    --compact-none-bg: #2C2C2E;   --compact-none-txt: rgba(235, 235, 245, 0.6);
-  }}
-}}
-
-/* ── BASE ──────────────────────────────────── */
-*, *::before, *::after {{ box-sizing: border-box; }}
-body {{ margin: 0; padding: 0; }}
-a {{ text-decoration: none; color: inherit; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }}
-button {{ font-family: inherit; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; border: none; background: none; }}
-
-html {{ scroll-behavior: smooth; }}
-body {{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-feature-settings: "cv11" 1, "cv04" 1;
-  background: var(--bg-system);
-  color: var(--label-primary);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
-  line-height: 1.5;
-  position: relative;
-}}
-
-/* Ambient glow */
-body::before {{
-  content: '';
-  position: fixed;
-  top: 0; left: 0; right: 0; height: 80vh;
-  background: var(--ambient-glow);
-  pointer-events: none;
-  z-index: -1;
-}}
-
-h1, h2, h3 {{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}}
-
-a:focus-visible, button:focus-visible, input:focus-visible {{
-  outline: none;
-  box-shadow: 0 0 0 3px var(--focus-ring);
-  border-radius: 8px;
-}}
-
-/* ── ANIMATIONS ────────────────────────────── */
-@keyframes fadeScaleIn {{
-  0% {{ opacity: 0; transform: scale(0.97) translateY(12px); }}
-  100% {{ opacity: 1; transform: scale(1) translateY(0); }}
-}}
-@keyframes shimmer {{
-  0% {{ background-position: -200% 0; }}
-  100% {{ background-position: 200% 0; }}
-}}
-.animate-in {{
-  animation: fadeScaleIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
-}}
-
-/* ── NAV ───────────────────────────────────── */
-.nav {{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1.25rem 1.5rem;
-}}
-.nav-brand {{
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--label-primary);
-}}
-.nav-links {{ display: flex; gap: 1.5rem; }}
-.nav-links a {{
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--label-secondary);
-  transition: color 0.2s;
-}}
-.nav-links a:hover {{ color: var(--label-primary); }}
-
-/* ── HERO ──────────────────────────────────── */
-.hero {{
-  padding: 4rem 1.5rem 3rem;
-  max-width: 760px;
-  margin: 0 auto;
-  text-align: center;
-}}
-.hero h1 {{
-  font-size: clamp(2.5rem, 6vw, 3.75rem);
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  line-height: 1.05;
-  margin: 0 0 1.25rem;
-  background: linear-gradient(135deg, var(--label-primary) 0%, var(--label-secondary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}}
-.hero-sub {{
-  font-size: 1.2rem;
-  color: var(--label-secondary);
-  line-height: 1.45;
-  margin: 0 auto;
-  max-width: 540px;
-  font-weight: 400;
-}}
-
-/* Stats banner */
-.stats-banner {{
-  display: inline-flex;
-  background: var(--bg-surface);
-  border-radius: 20px;
-  padding: 1rem 2rem;
-  margin-top: 2.5rem;
-  box-shadow: var(--shadow-card);
-  gap: 2rem;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}}
-.stat {{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}}
-.stat-value {{
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
-  font-variant-numeric: tabular-nums;
-  color: var(--tint);
-}}
-.stat-label {{
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: var(--label-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 2px;
-}}
-.stat-divider {{
-  width: 1px;
-  height: 32px;
-  background: var(--separator);
-}}
-
-/* ── SEARCH ────────────────────────────────── */
-.search-container {{
-  max-width: 600px;
-  margin: 2.5rem auto 0;
-  padding: 0 1.5rem;
-}}
-.search-wrap {{
-  position: relative;
-  display: flex;
-  align-items: center;
-}}
-.search-icon {{
-  position: absolute;
-  left: 16px;
-  color: var(--label-secondary);
-  pointer-events: none;
-}}
-.search-input {{
-  width: 100%;
-  height: 48px;
-  padding: 0 48px 0 44px;
-  background: var(--bg-surface);
-  border: 1px solid var(--toolbar-border);
-  border-radius: 14px;
-  color: var(--label-primary);
-  font-size: 16px;
-  font-family: inherit;
-  box-shadow: var(--shadow-card);
-  transition: border-color 0.2s, box-shadow 0.2s;
-}}
-.search-input::placeholder {{ color: var(--label-tertiary); font-weight: 400; }}
-.search-input:focus {{
-  border-color: var(--tint);
-  box-shadow: 0 0 0 3px var(--focus-ring), var(--shadow-card);
-  outline: none;
-}}
-.search-clear {{
-  position: absolute;
-  right: 12px;
-  width: 22px;
-  height: 22px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background: var(--label-tertiary);
-  color: var(--bg-surface);
-  border-radius: 50%;
-  padding: 5px;
-  cursor: pointer;
-}}
-.search-clear:hover {{ background: var(--label-secondary); }}
-
-/* ── CARD GRID ─────────────────────────────── */
-.grid-container {{
-  max-width: 960px;
-  margin: 3rem auto 0;
-  padding: 0 1.5rem 5rem;
-}}
-.grid-title {{
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--label-secondary);
-  margin: 0 0 1rem 4px;
-}}
-.profession-grid {{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1px;
-  background: var(--separator);
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-}}
-
-/* ── PROFESSION CARD (Settings row style) ─── */
-.profession-card {{
-  display: grid;
-  grid-template-columns: 56px 1fr 28px;
-  align-items: center;
-  gap: 16px;
-  padding: 20px 24px;
-  background: var(--bg-surface);
-  position: relative;
-  transition: background-color 0.15s ease, transform 0.15s cubic-bezier(0.2, 0, 0, 1);
-  transform-origin: center;
-}}
-
-@media (hover: hover) {{
-  .profession-card:hover {{
-    background-color: var(--bg-surface-active);
-  }}
-  .profession-card:hover .card-chevron {{
-    transform: translateX(3px);
-    color: var(--label-secondary);
-  }}
-  .profession-card:hover .card-icon {{
-    transform: scale(1.05);
-    background: color-mix(in srgb, var(--card-accent) 15%, transparent);
-  }}
-}}
-.profession-card:active {{
-  background-color: var(--bg-surface-active);
-  transform: scale(0.995);
-}}
-
-/* ── Card Icon ─────────────────────────────── */
-.card-icon {{
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 14px;
-  background: var(--fill-tertiary);
-  color: var(--card-accent, var(--tint));
-  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.25s;
-  flex-shrink: 0;
-}}
-
-/* ── Card Body ─────────────────────────────── */
-.card-body {{
-  min-width: 0;
-}}
-.card-title {{
-  font-size: 17px;
-  font-weight: 500;
-  letter-spacing: -0.022em;
-  margin: 0;
-  color: var(--label-primary);
-  line-height: 1.3;
-}}
-.card-credential {{
-  font-size: 14px;
-  color: var(--label-secondary);
-  margin: 2px 0 0;
-  line-height: 1.3;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}}
-.card-meta {{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 6px;
-  flex-wrap: wrap;
-}}
-.card-exam {{
-  font-size: 12px;
-  color: var(--label-tertiary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 260px;
-}}
-
-/* ── Compact Badge ─────────────────────────── */
-.compact-badge {{
-  display: inline-flex;
-  align-items: center;
-  padding: 2px 8px;
-  border-radius: 6px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
-  flex-shrink: 0;
-}}
-.compact-badge.active {{
-  background: var(--compact-active-bg);
-  color: var(--compact-active-txt);
-}}
-.compact-badge.enacted {{
-  background: var(--compact-enacted-bg);
-  color: var(--compact-enacted-txt);
-}}
-.compact-badge.none {{
-  background: var(--compact-none-bg);
-  color: var(--compact-none-txt);
-}}
-
-/* ── Card Chevron ──────────────────────────── */
-.card-chevron {{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--label-tertiary);
-  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.2s;
-  flex-shrink: 0;
-}}
-
-/* ── EMPTY STATE ───────────────────────────── */
-.empty-state {{
-  display: none;
-  text-align: center;
-  padding: 4rem 2rem;
-  background: var(--bg-surface);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
-}}
-.empty-state h3 {{ font-size: 19px; font-weight: 600; margin: 0 0 8px; color: var(--label-primary); }}
-.empty-state p {{ font-size: 15px; color: var(--label-secondary); margin: 0; }}
-
-/* ── FEATURES SECTION ──────────────────────── */
-.features {{
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
-}}
-.features-title {{
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--label-secondary);
-  margin: 0 0 1rem 4px;
-}}
-.features-grid {{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}}
-.feature-card {{
-  background: var(--bg-surface);
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: var(--shadow-card);
-}}
-.feature-icon {{
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: var(--fill-tertiary);
-  color: var(--tint);
-  margin-bottom: 16px;
-}}
-.feature-card h3 {{
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  margin: 0 0 6px;
-}}
-.feature-card p {{
-  font-size: 14px;
-  color: var(--label-secondary);
-  line-height: 1.5;
-  margin: 0;
-}}
-
-/* ── FOOTER ────────────────────────────────── */
-.foot-wrapper {{
-  padding: 3rem 1.5rem;
-  border-top: 1px solid var(--toolbar-border);
-}}
-.foot {{
-  max-width: 960px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 4rem;
-}}
-.foot h2 {{ font-size: 15px; font-weight: 600; color: var(--label-primary); margin: 0 0 12px; }}
-.foot p {{ font-size: 14px; color: var(--label-secondary); line-height: 1.6; margin: 0; }}
-.foot-disclaimer {{
-  font-size: 12px;
-  color: var(--label-tertiary);
-  margin-top: 1.5rem;
-  line-height: 1.5;
-}}
-.foot-links {{ display: grid; gap: 10px; list-style: none; margin: 0; padding: 0; }}
-.foot-links a {{ font-size: 14px; color: var(--tint); transition: opacity 0.2s; }}
-.foot-links a:hover {{ opacity: 0.8; }}
-.foot-meta {{ font-size: 12px; color: var(--label-tertiary); margin-top: 1.5rem; }}
-
-/* ── RESPONSIVE ────────────────────────────── */
-@media (max-width: 768px) {{
-  .hero {{ padding: 2.5rem 1rem 2rem; }}
-  .stats-banner {{ flex-direction: column; gap: 1rem; padding: 1.5rem; border-radius: 16px; }}
-  .stat-divider {{ width: 100%; height: 1px; }}
-  .features-grid {{ grid-template-columns: 1fr; }}
-  .profession-card {{ grid-template-columns: 44px 1fr 24px; gap: 12px; padding: 16px 16px; }}
-  .card-icon {{ width: 40px; height: 40px; border-radius: 12px; }}
-  .card-icon svg {{ width: 22px; height: 22px; }}
-  .card-exam {{ max-width: 180px; }}
-  .foot {{ grid-template-columns: 1fr; gap: 2.5rem; }}
-}}
-
-@media (max-width: 480px) {{
-  .card-meta {{ flex-direction: column; align-items: flex-start; gap: 4px; }}
-}}
-
-@media (prefers-reduced-motion: reduce) {{
-  *, *::before, *::after {{ transition: none !important; animation: none !important; }}
-}}
-</style>
-</head>
-<body>
-
-<nav class="nav animate-in" aria-label="Site navigation">
-  <div class="nav-brand">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-    State Licensing Reference
-  </div>
-  <div class="nav-links">
-    <a href="#professions">Professions</a>
-    <a href="#about">About</a>
-  </div>
-</nav>
-
-<header class="hero animate-in" style="animation-delay: 0.05s">
-  <h1>Healthcare License<br>Requirements by State</h1>
-  <p class="hero-sub">Board-verified reciprocity guides, compact status, endorsement fees, and processing timelines for every profession and every state.</p>
-
-  <div class="stats-banner">
-    <div class="stat">
-      <span class="stat-value">{len(deployed)}</span>
-      <span class="stat-label">Professions</span>
-    </div>
-    <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat">
-      <span class="stat-value">51</span>
-      <span class="stat-label">Jurisdictions</span>
-    </div>
-    <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat">
-      <span class="stat-value">400+</span>
-      <span class="stat-label">State Guides</span>
-    </div>
-  </div>
-</header>
-
-<div class="search-container animate-in" style="animation-delay: 0.1s">
-  <div class="search-wrap">
-    <svg class="search-icon" width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
-    <input id="professionSearch" class="search-input" type="text" placeholder="Search professions..." aria-label="Search professions" autocomplete="off" spellcheck="false">
-    <button class="search-clear" id="searchClear" aria-label="Clear search">
-      <svg viewBox="0 0 14 14" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
-    </button>
-  </div>
-</div>
-
-<div class="grid-container animate-in" style="animation-delay: 0.15s" id="professions">
-  <p class="grid-title">Select Your Profession</p>
-  <div class="profession-grid" id="professionGrid">
-{cards_block}
-  </div>
-  <div class="empty-state" id="emptyState" aria-live="polite">
-    <h3>No Matches Found</h3>
-    <p>Try adjusting your search term.</p>
-  </div>
-</div>
-
-<section class="features animate-in" style="animation-delay: 0.2s" id="about">
-  <p class="features-title">Why Use This Directory</p>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      </div>
-      <h3>Board-Verified Data</h3>
-      <p>Every fee, timeline, and requirement is sourced directly from official state licensing boards — not scraped from outdated third-party sites.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
-      </div>
-      <h3>Real Processing Times</h3>
-      <p>No vague "4–6 weeks" guesses. See actual board turnaround windows so you can plan your start date with confidence.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
-      </div>
-      <h3>Compact Status Tracking</h3>
-      <p>Instantly see which states participate in your profession's compact — and which require a separate endorsement application.</p>
-    </div>
-  </div>
-</section>
-
-<div class="foot-wrapper">
-  <footer class="foot animate-in" style="animation-delay: 0.25s">
-    <div>
-      <h2>About This Directory</h2>
-      <p>State Licensing Reference is an independent resource providing YMYL-compliant licensing guides for healthcare professionals across the United States. We are not affiliated with any licensing board, compact commission, or government agency.</p>
-      <p class="foot-disclaimer">The information presented is for educational purposes only and does not constitute legal or professional advice. Always verify requirements directly with your target state licensing board before making application decisions.</p>
-    </div>
-    <div>
-      <h2>Professions</h2>
-      <ul class="foot-links">
-        <li><a href="{VERTICAL_URLS.get('dietitian', '#')}">Dietitians</a></li>
-        <li><a href="{VERTICAL_URLS.get('ot', '#')}">Occupational Therapists</a></li>
-        <li><a href="{VERTICAL_URLS.get('pt', '#')}">Physical Therapists</a></li>
-        <li><a href="{VERTICAL_URLS.get('rrt', '#')}">Respiratory Therapists</a></li>
-        <li><a href="{VERTICAL_URLS.get('slp', '#')}">Speech-Language Pathologists</a></li>
-        <li><a href="{VERTICAL_URLS.get('aud', '#')}">Audiologists</a></li>
-        <li><a href="{VERTICAL_URLS.get('pharm', '#')}">Pharmacy Technicians</a></li>
-        <li><a href="{VERTICAL_URLS.get('pharmacist', '#')}">Pharmacists</a></li>
-      </ul>
-      <span class="foot-meta">Last updated &bull; {TODAY}</span>
-    </div>
-  </footer>
-</div>
-
-<script>
-const input = document.getElementById('professionSearch');
-const clearBtn = document.getElementById('searchClear');
-const cards = [...document.querySelectorAll('.profession-card')];
-const grid = document.getElementById('professionGrid');
-const emptyState = document.getElementById('emptyState');
-
-function applyFilter() {{
-  const q = input.value.toLowerCase().trim();
-  clearBtn.style.display = q ? 'flex' : 'none';
-  let shown = 0;
-  for (const card of cards) {{
-    const match = card.dataset.profession.includes(q);
-    card.style.display = match ? '' : 'none';
-    if (match) shown++;
-  }}
-  grid.style.display = shown > 0 ? '' : 'none';
-  emptyState.style.display = shown === 0 ? 'block' : 'none';
-}}
-
-input.addEventListener('input', () => requestAnimationFrame(applyFilter));
-clearBtn.addEventListener('click', () => {{
-  input.value = '';
-  input.focus();
-  requestAnimationFrame(applyFilter);
-}});
-</script>
-</body>
-</html>'''
-
-    # Write output
     DIST_DIR.mkdir(exist_ok=True)
     (DIST_DIR / "index.html").write_text(html, encoding="utf-8")
 
-    # robots.txt
-    robots = "User-agent: *\nAllow: /\n\nSitemap: https://perdiem-portal.vercel.app/sitemap.xml\n"
+    # favicon
+    favicon_src = ASSET_DIR / "favicon.svg"
+    if favicon_src.exists():
+        shutil.copy2(favicon_src, DIST_DIR / "favicon.svg")
+
+    # robots.txt + sitemap use the same canonical domain
+    robots = f"User-agent: *\nAllow: /\n\nSitemap: {domain}/sitemap.xml\n"
     (DIST_DIR / "robots.txt").write_text(robots, encoding="utf-8")
 
-    # sitemap.xml
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f'  <url><loc>https://perdiem-portal.vercel.app/</loc><lastmod>{TODAY}</lastmod><priority>1.0</priority></url>\n'
-        + "\n".join(sitemap_urls) + "\n"
-        "</urlset>\n"
+        f"  <url><loc>{domain}/</loc><lastmod>{TODAY}</lastmod><priority>1.0</priority></url>\n"
+        + "\n".join(sitemap_urls)
+        + "\n</urlset>\n"
     )
     (DIST_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
 
-    print(f"✅ Portal built: {len(deployed)} profession cards → {DIST_DIR / 'index.html'}")
+    print(f"Portal built: {len(cards)} profession cards -> {DIST_DIR / 'index.html'}")
 
 
 if __name__ == "__main__":

@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0">
 <title>State Licensing Reference — Healthcare License Requirements by State (2026)</title>
-<meta name="description" content="Compare healthcare license reciprocity, compact status, endorsement fees, and processing timelines for 8 professions across all 50 US states and DC.">
-<link rel="canonical" href="https://perdiem-portal.vercel.app/">
+<meta name="description" content="Compare healthcare license reciprocity, compact status, endorsement fees, and processing timelines for {{ deployed_count }} professions across all 50 US states and DC.">
+<link rel="canonical" href="{{ domain }}/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F2F2F7">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
 <meta property="og:title" content="State Licensing Reference — Healthcare License Requirements by State (2026)">
 <meta property="og:description" content="Compare licensing requirements, compact status, and endorsement timelines for healthcare professionals across all 50 states.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://perdiem-portal.vercel.app/">
+<meta property="og:url" content="{{ domain }}/">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -536,7 +536,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
   <div class="stats-banner">
     <div class="stat">
-      <span class="stat-value">8</span>
+      <span class="stat-value">{{ deployed_count }}</span>
       <span class="stat-label">Professions</span>
     </div>
     <div class="stat-divider" aria-hidden="true"></div>
@@ -565,118 +565,22 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 <div class="grid-container animate-in" style="animation-delay: 0.15s" id="professions">
   <p class="grid-title">Select Your Profession</p>
   <div class="profession-grid" id="professionGrid">
-    <a class="profession-card" href="https://statelicensingreference.com" style="--card-accent: #34C759" data-profession="dietitian &amp; nutritionist">
-      <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c1.5 0 3-.3 4.3-.9"/><path d="M7 12.5c0-2.8 2.2-5 5-5s5 2.2 5 5"/><path d="M12 7.5V2"/><path d="M14.5 14.5l3-3"/><path d="M20 8l2 2-4 4"/></svg></div>
+    {% for card in cards %}
+    <a class="profession-card" href="{{ card.url }}" style="--card-accent: {{ card.color }}" data-profession="{{ card.title_full | lower }}">
+      <div class="card-icon" aria-hidden="true">{{ card.icon | safe }}</div>
       <div class="card-body">
-        <h2 class="card-title">Dietitian &amp; Nutritionist</h2>
-        <p class="card-credential">RDN (Registered Dietitian Nutritionist)</p>
+        <h2 class="card-title">{{ card.title_full }}</h2>
+        <p class="card-credential">{{ card.credential }}</p>
         <div class="card-meta">
-          <span class="card-exam">CDR Registration Examination for Dietitians</span>
-          <span class="compact-badge enacted">Compact Enacted</span>
+          <span class="card-exam">{{ card.exam }}</span>
+          <span class="compact-badge {{ card.badge.variant }}">{{ card.badge.label }}</span>
         </div>
       </div>
       <span class="card-chevron" aria-hidden="true">
         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2L8 8L2 14"/></svg>
       </span>
     </a>
-    <a class="profession-card" href="https://perdiem-ot.vercel.app" style="--card-accent: #FF9F0A" data-profession="occupational therapist">
-      <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/><rect x="2" y="20" width="20" height="0" rx="0"/></svg></div>
-      <div class="card-body">
-        <h2 class="card-title">Occupational Therapist</h2>
-        <p class="card-credential">OTR (Occupational Therapist Registered)</p>
-        <div class="card-meta">
-          <span class="card-exam">NBCOT® OTR Exam</span>
-          <span class="compact-badge enacted">Compact Enacted</span>
-        </div>
-      </div>
-      <span class="card-chevron" aria-hidden="true">
-        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2L8 8L2 14"/></svg>
-      </span>
-    </a>
-    <a class="profession-card" href="https://perdiem-pt.vercel.app" style="--card-accent: #007AFF" data-profession="physical therapist">
-      <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M6.5 8a4 4 0 0 1 11 0"/><path d="M12 12v5"/><path d="M8 22l4-5 4 5"/></svg></div>
-      <div class="card-body">
-        <h2 class="card-title">Physical Therapist</h2>
-        <p class="card-credential">PT (Licensed Physical Therapist)</p>
-        <div class="card-meta">
-          <span class="card-exam">NPTE (National Physical Therapy Examination)</span>
-          <span class="compact-badge active">Compact Active</span>
-        </div>
-      </div>
-      <span class="card-chevron" aria-hidden="true">
-        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2L8 8L2 14"/></svg>
-      </span>
-    </a>
-    <a class="profession-card" href="https://perdiem-rrt.vercel.app" style="--card-accent: #5856D6" data-profession="respiratory therapist">
-      <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg></div>
-      <div class="card-body">
-        <h2 class="card-title">Respiratory Therapist</h2>
-        <p class="card-credential">RRT (Registered Respiratory Therapist)</p>
-        <div class="card-meta">
-          <span class="card-exam">TMC (Therapist Multiple-Choice) &amp; CSE (Clinical Simulation Exam)</span>
-          <span class="compact-badge none">No Compact</span>
-        </div>
-      </div>
-      <span class="card-chevron" aria-hidden="true">
-        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2L8 8L2 14"/></svg>
-      </span>
-    </a>
-    <a class="profession-card" href="https://perdiem-slp.vercel.app" style="--card-accent: #FF2D55" data-profession="speech-language pathologist">
-      <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13z"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M5 12H2"/><path d="M22 12h-3"/></svg></div>
-      <div class="card-body">
-        <h2 class="card-title">Speech-Language Pathologist</h2>
-        <p class="card-credential">CCC-SLP (Certificate of Clinical Competence)</p>
-        <div class="card-meta">
-          <span class="card-exam">Praxis® Examination in Speech-Language Pathology</span>
-          <span class="compact-badge active">Compact Active</span>
-        </div>
-      </div>
-      <span class="card-chevron" aria-hidden="true">
-        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2L8 8L2 14"/></svg>
-      </span>
-    </a>
-    <a class="profession-card" href="https://perdiem-aud.vercel.app" style="--card-accent: #AF52DE" data-profession="audiologist">
-      <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
-      <div class="card-body">
-        <h2 class="card-title">Audiologist</h2>
-        <p class="card-credential">AuD (Doctor of Audiology)</p>
-        <div class="card-meta">
-          <span class="card-exam">Praxis® Examination in Audiology</span>
-          <span class="compact-badge active">Compact Active</span>
-        </div>
-      </div>
-      <span class="card-chevron" aria-hidden="true">
-        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2L8 8L2 14"/></svg>
-      </span>
-    </a>
-    <a class="profession-card" href="https://perdiem-pharm.vercel.app" style="--card-accent: #00C7BE" data-profession="pharmacy technician">
-      <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.54.8a2 2 0 0 0 1.66.9H20a2 2 0 0 1 2 2v2"/><circle cx="17" cy="17" r="3"/><path d="M17 14v6"/><path d="M14 17h6"/></svg></div>
-      <div class="card-body">
-        <h2 class="card-title">Pharmacy Technician</h2>
-        <p class="card-credential">CPhT (Certified Pharmacy Technician)</p>
-        <div class="card-meta">
-          <span class="card-exam">PTCE (Pharmacy Technician Certification Exam)</span>
-          <span class="compact-badge none">No Compact</span>
-        </div>
-      </div>
-      <span class="card-chevron" aria-hidden="true">
-        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2L8 8L2 14"/></svg>
-      </span>
-    </a>
-    <a class="profession-card" href="https://perdiem-pharmacist.vercel.app" style="--card-accent: #FF6B35" data-profession="pharmacist">
-      <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 6H4z"/><path d="M12 8v14"/><path d="M4 8h16"/><path d="M7 22h10"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></div>
-      <div class="card-body">
-        <h2 class="card-title">Pharmacist</h2>
-        <p class="card-credential">RPh (Registered Pharmacist)</p>
-        <div class="card-meta">
-          <span class="card-exam">NAPLEX (North American Pharmacist Licensure Examination) &amp; MPJE</span>
-          <span class="compact-badge none">No Compact</span>
-        </div>
-      </div>
-      <span class="card-chevron" aria-hidden="true">
-        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2L8 8L2 14"/></svg>
-      </span>
-    </a>
+    {% endfor %}
   </div>
   <div class="empty-state" id="emptyState" aria-live="polite">
     <h3>No Matches Found</h3>
@@ -721,16 +625,11 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <div>
       <h2>Professions</h2>
       <ul class="foot-links">
-        <li><a href="https://statelicensingreference.com">Dietitians</a></li>
-        <li><a href="https://perdiem-ot.vercel.app">Occupational Therapists</a></li>
-        <li><a href="https://perdiem-pt.vercel.app">Physical Therapists</a></li>
-        <li><a href="https://perdiem-rrt.vercel.app">Respiratory Therapists</a></li>
-        <li><a href="https://perdiem-slp.vercel.app">Speech-Language Pathologists</a></li>
-        <li><a href="https://perdiem-aud.vercel.app">Audiologists</a></li>
-        <li><a href="https://perdiem-pharm.vercel.app">Pharmacy Technicians</a></li>
-        <li><a href="https://perdiem-pharmacist.vercel.app">Pharmacists</a></li>
+        {% for card in foot_cards %}
+        <li><a href="{{ card.url }}">{{ card.title_plural }}</a></li>
+        {% endfor %}
       </ul>
-      <span class="foot-meta">Last updated &bull; 2026-03-11</span>
+      <span class="foot-meta">Last updated &bull; {{ today }}</span>
     </div>
   </footer>
 </div>
