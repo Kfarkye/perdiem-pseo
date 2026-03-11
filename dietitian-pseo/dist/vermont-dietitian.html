@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -15,591 +16,722 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Vermont Dietitian License Reciprocity - How to Transfer Your License (2026)" />
   <meta name="twitter:description" content="Already licensed as a dietitian? Here's whether your license transfers to Vermont - compact status, endorsement steps, fees, and processing time." />
-  <meta name="theme-color" content="#122522" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <meta name="theme-color" content="#ffffff" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --ui-ink: #101820;
-      --ui-forest: #163c3a;
-      --ui-forest-soft: #214f4d;
-      --ui-cream: #fbf7ef;
-      --ui-card: rgba(255, 255, 255, 0.9);
-      --ui-border: rgba(16, 24, 32, 0.1);
-      --ui-shadow: 0 22px 52px rgba(16, 24, 32, 0.09);
-      --ui-shadow-soft: 0 12px 28px rgba(16, 24, 32, 0.05);
-      --ui-green-bg: #ddf3e5;
-      --ui-green-fg: #155b35;
-      --ui-yellow-bg: #fff1c7;
-      --ui-yellow-fg: #8a5b00;
-      --ui-gray-bg: #e9eef1;
-      --ui-gray-fg: #41535f;
-      --ui-accent: #bd5f37;
-      --ui-focus: #2f7d89;
+    /* ── RESET ─────────────────────────────────── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
     }
-    * { box-sizing: border-box; }
+
     body {
-      background:
-        radial-gradient(circle at top left, rgba(189, 95, 55, 0.08), transparent 24%),
-        radial-gradient(circle at top right, rgba(22, 60, 58, 0.08), transparent 28%),
-        var(--ui-cream);
+      margin: 0;
     }
+
+    a {
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    /* ── TOKENS (from PerDiem theme.ts) ────────── */
+    :root {
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --bg: #F9FAFB;
+      --surface: #FFFFFF;
+      --surface-raised: #F3F4F6;
+      --surface-inset: #E5E7EB;
+      --border: #E5E7EB;
+      --border-subtle: #F3F4F6;
+      --border-focus: #1A8A6E;
+      --text: #111827;
+      --text-2: #4B5563;
+      --text-3: #6B7280;
+      --primary: #1A8A6E;
+      --primary-hover: #157A60;
+      --primary-muted: #E8F5F0;
+      --primary-border: #B8DDD0;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --radius-xs: 6px;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, .04);
+      --shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .04);
+      --shadow-card: 0 1px 3px rgba(0, 0, 0, .08);
+      --transition: 150ms ease;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.55;
+    }
+
     a:focus-visible,
     button:focus-visible,
     input:focus-visible {
-      outline: 3px solid var(--ui-focus);
+      outline: 2px solid var(--primary);
       outline-offset: 2px;
-      border-radius: 10px;
+      border-radius: var(--radius-xs);
     }
-    .site-nav {
+
+    /* ── NAV ───────────────────────────────────── */
+    .nav {
       position: sticky;
       top: 0;
-      z-index: 20;
-      backdrop-filter: blur(14px);
-      background: rgba(16, 24, 32, 0.84);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      z-index: 50;
+      background: rgba(255, 255, 255, .72);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border);
     }
-    .site-nav-inner {
-      max-width: 980px;
+
+    .nav-inner {
+      max-width: 600px;
       margin: 0 auto;
-      padding: 0.65rem 1rem;
+      padding: .65rem 1.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 0.8rem;
     }
-    .site-nav-links {
+
+    .nav-brand {
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: -.01em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-links {
       display: flex;
-      align-items: center;
-      gap: 0.4rem;
+      gap: .15rem;
+      list-style: none;
       margin: 0;
       padding: 0;
-      list-style: none;
     }
-    .site-nav-links a {
+
+    .nav-links a {
+      font-size: .78rem;
+      font-weight: 500;
+      color: var(--text-2);
       text-decoration: none;
-      color: rgba(255, 250, 245, 0.86);
-      font-size: 0.73rem;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      border: 1px solid transparent;
-      border-radius: 999px;
-      padding: 0.34rem 0.62rem;
-      transition: background 0.15s ease, border-color 0.15s ease;
+      padding: .35rem .6rem;
+      border-radius: 6px;
+      transition: color var(--transition), background var(--transition);
     }
-    .site-nav-links a:hover {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.12);
+
+    .nav-links a:hover {
+      color: var(--text);
+      background: rgba(0, 0, 0, .04);
     }
-    .scroll-progress {
+
+    /* ── SCROLL PROGRESS ──────────────────────── */
+    .progress {
       position: sticky;
-      top: 47px;
-      z-index: 19;
+      top: 45px;
+      z-index: 49;
       height: 2px;
-      background: rgba(255, 255, 255, 0.08);
+      background: var(--border);
     }
-    .scroll-progress-bar {
+
+    .progress-bar {
       width: 0%;
       height: 100%;
-      background: linear-gradient(90deg, #2f7d89, #bc5e36);
-      transition: width 0.08s linear;
+      background: var(--text);
+      transition: width 60ms linear;
     }
+
+    /* ── HERO ──────────────────────────────────── */
     .hero {
-      padding-bottom: 4.65rem;
-      background:
-        radial-gradient(circle at 15% 20%, rgba(244, 219, 198, 0.18), transparent 30%),
-        radial-gradient(circle at 85% 25%, rgba(64, 130, 109, 0.18), transparent 28%),
-        linear-gradient(180deg, #132622 0%, #101820 100%);
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
     }
-    .hero-inner {
-      max-width: 980px;
+
+    .hero-breadcrumb {
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: .85rem;
+    }
+
+    .hero-breadcrumb a {
+      color: var(--text-2);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    .hero-breadcrumb a:hover {
+      color: var(--text);
+    }
+
+    .hero-breadcrumb .sep {
+      margin: 0 .35rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.45rem, 3vw, 1.75rem);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.15;
+      margin: 0 0 .65rem;
+      color: var(--text);
+    }
+
+    .hero-sub {
+      font-size: .9rem;
+      color: var(--text-2);
+      line-height: 1.6;
+      max-width: 48ch;
       margin: 0 auto;
     }
-    .hero-breadcrumb {
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: rgba(255, 250, 245, 0.72);
-      margin-bottom: 1rem;
-    }
-    .hero-breadcrumb a {
-      color: rgba(255, 250, 245, 0.92);
-      text-decoration: none;
-    }
-    .hero-copy {
-      max-width: 760px;
-    }
-    .hero-sub {
-      max-width: 640px;
-      color: rgba(255, 250, 245, 0.82);
-      font-size: 1rem;
-      line-height: 1.7;
-      margin-bottom: 1.25rem;
-    }
+
     .hero-meta {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.25rem;
+      gap: .5rem;
+      margin-top: 1.15rem;
     }
-    .trust-pill {
+
+    .meta-pill {
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
-      background: rgba(255, 255, 255, 0.12);
-      color: #fff5ef;
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      gap: .3rem;
+      font-size: .72rem;
+      font-weight: 500;
+      color: var(--text-2);
+      background: var(--surface);
+      border: 1px solid var(--border);
       border-radius: 999px;
-      padding: 0.55rem 0.9rem;
-      font-size: 0.78rem;
-      backdrop-filter: blur(12px);
+      padding: .3rem .65rem;
     }
-    .trust-pill strong {
-      color: #fff;
+
+    .meta-pill strong {
+      color: var(--text);
       font-weight: 600;
     }
+
+    /* ── MAIN ──────────────────────────────────── */
     main {
-      max-width: 980px;
-      margin: -2.9rem auto 0;
-      padding: 0 1rem 4rem;
-      position: relative;
-      z-index: 2;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
     }
-    .page-shell {
-      display: grid;
-      gap: 1.2rem;
-    }
-    .section {
-      background: var(--ui-card);
-      border: 1px solid var(--ui-border);
-      border-radius: 24px;
-      box-shadow: var(--ui-shadow-soft);
-      padding: 1.4rem;
-      backdrop-filter: blur(12px);
-      animation: riseIn 360ms ease both;
-    }
-    .section:nth-of-type(2) { animation-delay: 40ms; }
-    .section:nth-of-type(3) { animation-delay: 80ms; }
-    .section:nth-of-type(4) { animation-delay: 120ms; }
-    .section:nth-of-type(5) { animation-delay: 160ms; }
-    .section h2 {
-      margin-bottom: 0.9rem;
-      font-size: clamp(1.35rem, 2.2vw, 1.7rem);
-      letter-spacing: -0.03em;
-    }
-    .section-intro {
-      color: rgba(16, 24, 32, 0.78);
-      max-width: 62ch;
-    }
-    .reciprocity-lead {
-      background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(251, 247, 239, 0.98)),
-        var(--ui-cream);
-      border: 1px solid rgba(22, 60, 58, 0.12);
-      box-shadow: var(--ui-shadow);
-      padding: 1.65rem;
-    }
-    .reciprocity-topline {
+
+    /* ── SECTION NAV ──────────────────────────── */
+    .section-nav {
+      position: sticky;
+      top: 47px;
+      z-index: 45;
       display: flex;
+      gap: .25rem;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.85rem;
+      background: rgba(255, 255, 255, .72);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .35rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-nav a {
+      text-decoration: none;
+      font-size: .72rem;
+      font-weight: 500;
+      color: var(--text-3);
+      padding: .3rem .55rem;
+      border-radius: 6px;
+      transition: color var(--transition), background var(--transition);
+    }
+
+    .section-nav a:hover {
+      color: var(--text-2);
+      background: rgba(0, 0, 0, .03);
+    }
+
+    .section-nav a.is-active {
+      color: var(--text);
+      background: rgba(0, 0, 0, .05);
+    }
+
+    /* ── FACT STRIP ────────────────────────────── */
+    .fact-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .65rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .fact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .85rem .9rem;
+      transition: border-color var(--transition);
+    }
+
+    .fact-card:hover {
+      border-color: var(--border-hover);
+    }
+
+    .fact-label {
+      display: block;
+      font-size: .64rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--text-3);
+      margin-bottom: .3rem;
+    }
+
+    .fact-value {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .fact-note {
+      display: block;
+      margin-top: .2rem;
+      font-size: .72rem;
+      color: var(--text-3);
+    }
+
+    /* ── SECTIONS ──────────────────────────────── */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.35rem;
       margin-bottom: 1rem;
+      box-shadow: var(--shadow-sm);
     }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.42rem 0.9rem;
-      border-radius: 999px;
-      font-size: 0.72rem;
+
+    .section h2 {
+      font-size: 1.1rem;
       font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.02);
+      letter-spacing: -.02em;
+      margin: 0 0 .5rem;
+      color: var(--text);
     }
-    .badge-green { background: var(--ui-green-bg); color: var(--ui-green-fg); }
-    .badge-yellow { background: var(--ui-yellow-bg); color: var(--ui-yellow-fg); }
-    .badge-gray { background: var(--ui-gray-bg); color: var(--ui-gray-fg); }
-    .badge-blue { background: #0f4f87; color: #eef7ff; }
-    .trust-inline {
-      color: rgba(16, 24, 32, 0.58);
-      font-size: 0.8rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+
+    .section-intro {
+      color: var(--text-2);
+      font-size: .88rem;
+      line-height: 1.6;
+      max-width: 60ch;
+      margin: 0 0 1rem;
     }
-    .tier-pill {
-      display: inline-flex;
-      align-items: center;
-      border-radius: 999px;
-      padding: 0.32rem 0.75rem;
-      font-size: 0.7rem;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .tier-fast { background: #def5ec; color: #0f5f43; }
-    .tier-mid { background: #fff1cf; color: #7e5d12; }
-    .tier-slow { background: #f6e7df; color: #8f4d2a; }
-    .tier-na { background: #e8f2fb; color: #0f4f87; }
+
+    /* ── RECIPROCITY LEAD ─────────────────────── */
     .lead-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.95fr);
+      grid-template-columns: 1.4fr .95fr;
       gap: 1rem;
       align-items: start;
     }
-    .reciprocity-copy p:last-child { margin-bottom: 0; }
+
     .decision-panel {
-      background: rgba(22, 60, 58, 0.05);
-      border: 1px solid rgba(22, 60, 58, 0.1);
-      border-radius: 20px;
-      padding: 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .9rem;
     }
+
     .decision-panel h3 {
-      font-size: 0.92rem;
-      font-family: var(--sans);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--ui-forest);
-      margin-bottom: 0.75rem;
-    }
-    .decision-panel ol {
-      padding-left: 1.1rem;
-      color: rgba(16, 24, 32, 0.78);
-      display: grid;
-      gap: 0.55rem;
-      margin-bottom: 1rem;
-      font-size: 0.92rem;
-    }
-    .fact-strip {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 0.85rem;
-      margin-top: 1.25rem;
-    }
-    .fact-card {
-      background: rgba(255, 255, 255, 0.88);
-      border: 1px solid rgba(16, 24, 32, 0.08);
-      border-radius: 18px;
-      padding: 0.95rem 1rem;
-      min-height: 112px;
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
-    }
-    .fact-card:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 12px 24px rgba(16, 24, 32, 0.08);
-    }
-    .fact-label {
-      display: block;
-      margin-bottom: 0.45rem;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: rgba(16, 24, 32, 0.54);
-    }
-    .fact-value {
-      display: block;
-      font-family: var(--serif);
-      font-size: 1.08rem;
-      line-height: 1.25;
-      color: var(--ui-ink);
-    }
-    .fact-note {
-      display: block;
-      margin-top: 0.35rem;
-      font-size: 0.82rem;
-      color: rgba(16, 24, 32, 0.66);
-    }
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.2rem;
-    }
-    .action-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.55rem;
-      min-height: 48px;
-      padding: 0.78rem 1rem;
-      border-radius: 14px;
-      text-decoration: none;
+      font-size: .72rem;
       font-weight: 600;
-      font-size: 0.92rem;
-      transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background 0.16s ease;
-    }
-    .action-link::after {
-      content: '>';
-      font-size: 0.85rem;
-      transition: transform 0.16s ease;
-    }
-    .action-link:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 12px 24px rgba(16, 24, 32, 0.08);
-    }
-    .action-link:hover::after {
-      transform: translateX(2px);
-    }
-    .action-link-primary {
-      background: var(--ui-forest);
-      color: #fff;
-      border: 1px solid var(--ui-forest);
-    }
-    .action-link-secondary {
-      background: #fff;
-      color: var(--ui-forest);
-      border: 1px solid rgba(22, 60, 58, 0.18);
-    }
-    .action-link-tertiary {
-      background: rgba(189, 95, 55, 0.08);
-      color: #8f4d2a;
-      border: 1px solid rgba(189, 95, 55, 0.15);
-    }
-    .section-nav {
-      position: sticky;
-      top: 58px;
-      z-index: 9;
-      display: flex;
-      gap: 0.55rem;
-      flex-wrap: wrap;
-      background: rgba(251, 247, 239, 0.8);
-      border: 1px solid rgba(16, 24, 32, 0.08);
-      border-radius: 14px;
-      padding: 0.55rem;
-      backdrop-filter: blur(10px);
-    }
-    .section-nav a {
-      text-decoration: none;
-      font-size: 0.76rem;
-      letter-spacing: 0.05em;
       text-transform: uppercase;
-      color: rgba(16, 24, 32, 0.72);
-      background: rgba(255, 255, 255, 0.74);
-      border: 1px solid rgba(16, 24, 32, 0.08);
-      border-radius: 999px;
-      padding: 0.4rem 0.7rem;
-      transition: background 0.15s ease, color 0.15s ease;
+      letter-spacing: .06em;
+      color: var(--text-2);
+      margin: 0 0 .6rem;
     }
-    .section-nav a:hover {
-      background: rgba(22, 60, 58, 0.08);
-      color: var(--ui-forest);
-    }
-    .section-nav a.is-active {
-      background: rgba(22, 60, 58, 0.15);
-      color: var(--ui-forest);
-      border-color: rgba(22, 60, 58, 0.25);
-    }
-    .steps-list {
+
+    .decision-panel ol {
+      padding-left: 1rem;
+      margin: 0 0 .75rem;
       display: grid;
-      gap: 0.85rem;
+      gap: .4rem;
+      font-size: .85rem;
+      color: var(--text-2);
+      line-height: 1.5;
+    }
+
+    /* ── STEPS ─────────────────────────────────── */
+    .steps-list {
       list-style: none;
-      counter-reset: endorsement-steps;
+      counter-reset: steps;
       padding: 0;
       margin: 0;
+      display: grid;
+      gap: .55rem;
     }
+
     .steps-list li {
-      counter-increment: endorsement-steps;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(16, 24, 32, 0.08);
-      border-radius: 18px;
-      padding: 1rem 1rem 1rem 4rem;
+      counter-increment: steps;
       position: relative;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .85rem .9rem .85rem 3.5rem;
+      transition: border-color var(--transition);
     }
+
+    .steps-list li:hover {
+      border-color: var(--border-hover);
+    }
+
     .steps-list li::before {
-      content: counter(endorsement-steps);
+      content: counter(steps);
       position: absolute;
-      left: 1rem;
-      top: 1rem;
-      width: 2.1rem;
-      height: 2.1rem;
+      left: .9rem;
+      top: .85rem;
+      width: 1.65rem;
+      height: 1.65rem;
       border-radius: 999px;
       display: grid;
       place-items: center;
-      background: var(--ui-forest);
+      background: var(--text);
       color: #fff;
       font-weight: 700;
-      font-size: 0.9rem;
-      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+      font-size: .75rem;
     }
+
     .steps-list strong {
       display: block;
-      margin-bottom: 0.4rem;
-      color: var(--ui-ink);
-      font-size: 1rem;
+      margin-bottom: .25rem;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--text);
     }
-    .steps-list p,
-    .faq-item p,
-    .checklist li,
-    .board-grid dd,
-    .facts-grid dd {
-      margin-bottom: 0;
-      color: rgba(16, 24, 32, 0.78);
+
+    .steps-list p {
+      margin: 0;
+      font-size: .84rem;
+      color: var(--text-2);
+      line-height: 1.55;
     }
-    .facts-grid,
-    .board-grid {
+
+    /* ── FACTS & BOARD GRIDS ──────────────────── */
+    .data-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.85rem;
+      grid-template-columns: 1fr 1fr;
+      gap: .55rem;
     }
-    .facts-grid > div,
-    .board-grid > div {
-      background: rgba(255,255,255,0.74);
-      border: 1px solid rgba(16, 24, 32, 0.08);
-      border-radius: 18px;
-      padding: 0.95rem 1rem;
+
+    .data-grid>div {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .75rem .85rem;
     }
-    .facts-grid dt,
-    .board-grid dt {
-      margin-bottom: 0.35rem;
-      font-size: 0.72rem;
+
+    .data-grid dt {
+      font-size: .64rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: rgba(16, 24, 32, 0.54);
+      letter-spacing: .07em;
+      color: var(--text-3);
+      margin-bottom: .2rem;
     }
-    .facts-grid dd,
-    .board-grid dd {
-      font-family: var(--serif);
-      font-size: 1rem;
-      color: var(--ui-ink);
+
+    .data-grid dd {
+      margin: 0;
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--text);
       line-height: 1.35;
     }
+
+    /* ── CHECKLIST ─────────────────────────────── */
     .checklist {
       display: grid;
-      gap: 0.75rem;
+      gap: .45rem;
       list-style: none;
       padding: 0;
     }
+
     .checklist li {
-      background: rgba(255,255,255,0.74);
-      border: 1px solid rgba(16, 24, 32, 0.08);
-      border-radius: 18px;
-      padding: 0.95rem 1rem 0.95rem 2.85rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .75rem .85rem .75rem 2.5rem;
       position: relative;
+      font-size: .85rem;
+      color: var(--text-2);
+      line-height: 1.5;
     }
+
     .checklist li::before {
-      content: '\2022';
+      content: '';
       position: absolute;
-      left: 1rem;
-      top: 0.75rem;
-      font-size: 1.6rem;
-      color: var(--ui-accent);
-      line-height: 1;
+      left: .9rem;
+      top: .92rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--text-3);
     }
-    .board-link-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1rem;
+
+    .checklist li strong {
+      color: var(--text);
+      font-weight: 600;
     }
+
+    /* ── FAQ ACCORDION ─────────────────────────── */
     .faq-list {
       display: grid;
-      gap: 0.8rem;
+      gap: .45rem;
     }
+
     .faq-item {
-      background: rgba(255,255,255,0.74);
-      border: 1px solid rgba(16, 24, 32, 0.08);
-      border-radius: 18px;
-      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color var(--transition);
     }
-    .faq-item h3 {
-      margin-bottom: 0.45rem;
+
+    .faq-item:hover {
+      border-color: var(--border-hover);
+    }
+
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .75rem;
+      width: 100%;
+      background: var(--surface);
+      border: none;
+      padding: .85rem .9rem;
+      text-align: left;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .faq-q::after {
+      content: '+';
+      flex-shrink: 0;
       font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-3);
+      transition: transform var(--transition);
     }
+
+    .faq-item.open .faq-q::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-a {
+      display: none;
+      padding: 0 .9rem .85rem;
+      font-size: .84rem;
+      color: var(--text-2);
+      line-height: 1.6;
+    }
+
+    .faq-item.open .faq-a {
+      display: block;
+    }
+
+    /* ── ACTION LINKS ─────────────────────────── */
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 1rem;
+    }
+
+    .action-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      min-height: 40px;
+      padding: .55rem .85rem;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .82rem;
+      transition: all var(--transition);
+    }
+
+    .action-link::after {
+      content: '→';
+      font-size: .82rem;
+      transition: transform var(--transition);
+    }
+
+    .action-link:hover::after {
+      transform: translateX(2px);
+    }
+
+    .action-link-primary {
+      background: var(--text);
+      color: #fff;
+      border: 1px solid var(--text);
+    }
+
+    .action-link-primary:hover {
+      background: #404040;
+      border-color: #404040;
+    }
+
+    .action-link-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .action-link-secondary:hover {
+      border-color: var(--border-hover);
+      background: var(--bg);
+    }
+
+    /* ── CRAWL LINKS ──────────────────────────── */
     .crawl-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
+      gap: .5rem;
     }
+
     .crawl-links a {
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
+      gap: .35rem;
       text-decoration: none;
-      padding: 0.75rem 0.95rem;
-      border-radius: 14px;
-      color: var(--ui-forest);
-      background: rgba(22, 60, 58, 0.06);
-      border: 1px solid rgba(22, 60, 58, 0.12);
+      padding: .55rem .75rem;
+      border-radius: var(--radius-sm);
+      font-size: .82rem;
       font-weight: 500;
+      color: var(--text-2);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      transition: all var(--transition);
     }
+
     .crawl-links a:hover {
-      background: rgba(22, 60, 58, 0.1);
+      border-color: var(--border-hover);
+      color: var(--text);
     }
-    @keyframes riseIn {
+
+    /* ── ANIMATIONS ────────────────────────────── */
+    @keyframes fadeUp {
       from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(8px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-    @media (prefers-reduced-motion: reduce) {
-      .section,
-      .fact-card,
-      .action-link,
-      .action-link::after {
-        animation: none !important;
-        transition: none !important;
-        transform: none !important;
-      }
+
+    .section {
+      animation: fadeUp 400ms ease both;
     }
-    @media (max-width: 860px) {
-      .lead-grid,
-      .fact-strip,
-      .facts-grid,
-      .board-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .section-nav {
-        position: static;
-      }
+
+    .section:nth-of-type(2) {
+      animation-delay: 40ms;
     }
+
+    .section:nth-of-type(3) {
+      animation-delay: 80ms;
+    }
+
+    .section:nth-of-type(4) {
+      animation-delay: 120ms;
+    }
+
+    .section:nth-of-type(5) {
+      animation-delay: 160ms;
+    }
+
+    /* ── RESPONSIVE ────────────────────────────── */
     @media (max-width: 720px) {
-      .site-nav-links {
+      .hero {
+        padding: 1.75rem 1rem 1.25rem;
+      }
+
+      main {
+        padding: 0 1rem 3rem;
+      }
+
+      .nav-links {
         display: none;
       }
-      .scroll-progress {
-        top: 44px;
+
+      .progress {
+        top: 40px;
       }
-      .hero {
-        padding-bottom: 3.7rem;
+
+      .section-nav {
+        position: static;
+        margin-bottom: 1rem;
       }
-      main {
-        margin-top: -2rem;
-        padding-inline: 0.75rem;
+
+      .fact-strip {
+        grid-template-columns: 1fr 1fr;
       }
-      .section,
-      .reciprocity-lead {
-        padding: 1.1rem;
-        border-radius: 20px;
-      }
-      .lead-grid,
-      .fact-strip,
-      .facts-grid,
-      .board-grid {
+
+      .lead-grid {
         grid-template-columns: 1fr;
       }
+
+      .data-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 1rem;
+        border-radius: var(--radius);
+      }
+
       .steps-list li {
         padding-left: 1rem;
-        padding-top: 3.65rem;
+        padding-top: 3.2rem;
       }
+
       .steps-list li::before {
-        top: 1rem;
+        top: .85rem;
       }
-      .cta-row,
-      .board-link-row,
-      .crawl-links {
+
+      .cta-row {
         flex-direction: column;
       }
+
       .action-link,
       .crawl-links a {
         width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
@@ -660,12 +792,15 @@
   }
   </script>
 </head>
+
 <body id="top">
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <nav class="site-nav" aria-label="Primary site navigation">
-    <div class="site-nav-inner">
-      <a href="/" class="site-nav-brand">State Licensing Reference</a>
-      <ul class="site-nav-links">
+  <a href="#main-content" class="skip-link"
+    style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;padding:.5rem;background:#fff;color:#000;z-index:100;">Skip
+    to main content</a>
+  <nav class="nav" aria-label="Primary site navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">State Licensing Reference</a>
+      <ul class="nav-links">
         <li><a href="/">All States</a></li>
         <li><a href="#reciprocity">Reciprocity</a></li>
         <li><a href="#endorsement">Steps</a></li>
@@ -673,222 +808,259 @@
       </ul>
     </div>
   </nav>
-  <div class="scroll-progress" aria-hidden="true"><div id="scrollProgressBar" class="scroll-progress-bar"></div></div>
-  <header class="hero" aria-labelledby="hero-title">
-    <div class="hero-inner">
-      <nav class="hero-breadcrumb" aria-label="Breadcrumb">
-        <a href="/">All States</a> <span class="bc-sep" aria-hidden="true">-</span> Vermont
-      </nav>
-      <div class="hero-copy">
-        <h1 id="hero-title">Vermont Dietitian License <em>Reciprocity &amp; How to Apply</em></h1>
-        <p class="hero-sub">Start with the only questions that matter for travelers: does your current license already cover Vermont, what does endorsement cost, and how quickly can you get cleared to work?</p>
-        <div class="hero-meta">
-          <span class="trust-pill"><strong>Last verified</strong> 2026-02-25</span>
-          <span class="trust-pill"><strong>Official board</strong> Dietitians</span>
-          
-            <span class="tier-pill tier-fast">fast tier</span>
-          
-        </div>
-      </div>
+
+  <div class="progress" aria-hidden="true">
+    <div id="scrollProgressBar" class="progress-bar"></div>
+  </div>
+
+  <header class="hero">
+    <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">All States</a><span class="sep" aria-hidden="true">/</span>Vermont
+    </nav>
+    <h1>Vermont Dietitian License</h1>
+    <p class="hero-sub">Start with the only questions that matter: does your current license already cover Vermont, what does endorsement cost, and how quickly can you get cleared to work?</p>
+    <div class="hero-meta">
+      <span class="meta-pill"><strong>Verified</strong> 2026-02-25</span>
+      <span class="meta-pill"><strong>Board</strong> Dietitians</span>
+      
+      <span class="meta-pill"><strong>Speed</strong> Fast</span>
+      
     </div>
   </header>
+
   <main id="main-content">
-    <div class="page-shell">
-      <section id="reciprocity" class="section reciprocity-lead" aria-labelledby="reciprocity-heading">
-        <div class="reciprocity-topline">
-          
-            <span class="badge badge-gray">No Interstate Compact</span>
-          
-          <span class="trust-inline">Decision point for travel-ready licensing</span>
-        </div>
-        <div class="lead-grid">
-          <div class="reciprocity-copy">
-            
-              <h2 id="reciprocity-heading">How to Transfer Your Dietitian License to Vermont</h2>
-              <p class="section-intro">There is no active interstate compact covering dietitian practice in Vermont. To work here, plan on a full endorsement or transfer application through Dietitians.</p>
-              <p><strong>Good news:</strong> the exact cost, documentation, and board path are laid out below so there is no guesswork.</p>
-            
-          </div>
-          <aside class="decision-panel" aria-label="Reciprocity checklist">
-            <h3>Before You Start</h3>
-            <ol>
-              
-                <li>Open the official board portal before gathering documents.</li>
-                <li>Budget the endorsement fee and expected processing window below.</li>
-                <li>Assume you need full approval before starting work unless the board says otherwise.</li>
-              
-            </ol>
-            
-          </aside>
-        </div>
-        <div class="fact-strip" aria-label="Reciprocity quick facts">
-          <article class="fact-card">
-            <span class="fact-label">Endorsement Fee</span>
-            <span class="fact-value">$100</span>
-            <span class="fact-note">State-level transfer cost</span>
-          </article>
-          <article class="fact-card">
-            <span class="fact-label">Processing Time</span>
-            <span class="fact-value">2 to 4 Weeks</span>
-            <span class="fact-note">Best estimate from current board data</span>
-          </article>
-          <article class="fact-card">
-            <span class="fact-label">Fingerprinting</span>
-            <span class="fact-value">Required</span>
-            <span class="fact-note">Background screening expectation</span>
-          </article>
-          <article class="fact-card">
-            <span class="fact-label">Temporary License</span>
-            <span class="fact-value">Not listed</span>
-            <span class="fact-note">Useful if you need a faster start date</span>
-          </article>
-        </div>
-        <div class="cta-row">
-          <a class="action-link action-link-primary" href="#endorsement">See Endorsement Steps</a>
-          <a class="action-link action-link-secondary" href="https://sos.vermont.gov/dietitians/" target="_blank" rel="noopener">Official Board Portal</a>
-        </div>
-      </section>
-
-      <nav class="section-nav" aria-label="Jump to section">
-        <a class="section-link" href="#endorsement">Steps</a>
-        <a class="section-link" href="#quick-facts">Quick Facts</a>
-        <a class="section-link" href="#documents">Documents</a>
-        <a class="section-link" href="#contact">Board</a>
-        <a class="section-link" href="#renewal">Renewal</a>
-        <a class="section-link" href="#faq">FAQ</a>
-      </nav>
-
-      <section id="endorsement" class="section" aria-labelledby="apply-heading">
-        <h2 id="apply-heading">Endorsement Application Steps</h2>
-        <p class="section-intro">Work through these in order. This sequence is the fastest way to move from out-of-state license to a board-cleared application in Vermont.</p>
-        <ol class="steps-list">
-          
-          <li>
-            <strong>Complete Education & Supervised Practice</strong>
-            <p>Earn a master's degree from an ACEND-accredited program. Complete a minimum of 1,000 hours of supervised dietetics practice within the program.</p>
-          </li>
-          
-          <li>
-            <strong>Pass the CDR Examination</strong>
-            <p>Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this.</p>
-          </li>
-          
-          <li>
-            <strong>Submit the Online Application via OPR</strong>
-            <p>Create an account on the Vermont OPR Online Services Platform, select the Dietitian application, and pay the $100 fee.</p>
-          </li>
-          
-          <li>
-            <strong>Provide Verification Documents</strong>
-            <p>Upload a copy of your active CDR card or ensure verification is requested from the CDR during the online application process.</p>
-          </li>
-          
-        </ol>
-      </section>
-
-      <section id="quick-facts" class="section" aria-labelledby="quick-facts-heading">
-        <h2 id="quick-facts-heading">Quick Facts</h2>
-        <dl class="facts-grid">
-          <div><dt>Total fee</dt><dd>$100</dd></div>
-          <div><dt>Processing time</dt><dd>2 to 4 Weeks</dd></div>
-          <div><dt>Renewal fee</dt><dd>$100</dd></div>
-          <div><dt>Renewal cycle</dt><dd>Every 2 years + 30 CE hours</dd></div>
-        </dl>
-      </section>
-
-      <section id="documents" class="section" aria-labelledby="docs-heading">
-        <h2 id="docs-heading">Required Documents</h2>
-        <ul class="checklist">
-          
-          <li><strong>OPR Online Application</strong>: Application submitted electronically with the required fee.</li>
-          
-          <li><strong>CDR Registration Card</strong>: Proof of active registration with the Commission on Dietetic Registration.</li>
-          
-        </ul>
-      </section>
-
-      <section id="contact" class="section" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Board Contact</h2>
-        <dl class="board-grid">
-          <div><dt>Board</dt><dd>Dietitians</dd></div>
-          <div><dt>Department</dt><dd>Vermont Office of Professional Regulation (OPR)</dd></div>
-          <div><dt>Phone</dt><dd>(802) 828-1505</dd></div>
-          <div><dt>Email</dt><dd>sos.opr.professions@vermont.gov</dd></div>
-        </dl>
-        <div class="board-link-row">
-          <a class="action-link action-link-secondary" href="https://sos.vermont.gov/dietitians/" target="_blank" rel="noopener">Visit Official Board Portal</a>
-        </div>
-      </section>
-
-      <section id="renewal" class="section" aria-labelledby="renewal-heading">
-        <h2 id="renewal-heading">Renewal</h2>
-        <p>Renewal fee is $100. Renewal cycle: Every 2 years + 30 CE hours.</p>
-      </section>
-
-      <section id="faq" class="section" aria-labelledby="faq-heading">
-        <h2 id="faq-heading">Vermont Dietitian Reciprocity FAQ</h2>
-        <div class="faq-list">
-          
-          <article class="faq-item">
-            <h3>How much does a Vermont dietitian certification cost?</h3>
-            <p>The initial cost is a $100 application fee.</p>
-          </article>
-          
-          <article class="faq-item">
-            <h3>When does the Vermont certification need to be renewed?</h3>
-            <p>Vermont dietitian certifications must be renewed every two years. The renewal fee is $100.</p>
-          </article>
-          
-          <article class="faq-item">
-            <h3>Is a license required to practice dietetics in Vermont?</h3>
-            <p>Vermont uses a certification model, protecting the title 'Certified Dietitian'. While individuals can provide certain nutrition services without certification, only those meeting state standards and obtaining certification can use the CD title.</p>
-          </article>
-          
-          <article class="faq-item">
-            <h3>Does Vermont have reciprocity for dietitians?</h3>
-            <p>No interstate compact currently covers dietitian practice in Vermont. To work in Vermont, apply for licensure by endorsement through the state board.</p>
-          </article>
-          
-          <article class="faq-item">
-            <h3>How long does it take to transfer my dietitian license to Vermont?</h3>
-            <p>Most endorsement applications take 2 to 4 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing.</p>
-          </article>
-          
-          <article class="faq-item">
-            <h3>Can I start working in Vermont while my endorsement application is processing?</h3>
-            <p>Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential.</p>
-          </article>
-          
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="crawl-heading">
-        <h2 id="crawl-heading">Explore More Paths</h2>
-        <div class="crawl-links">
-          <a href="/">All Dietitian reciprocity states</a>
-          <a href="https://sos.vermont.gov/dietitians/" target="_blank" rel="noopener">Vermont board portal</a>
-          <a href="#endorsement">Vermont endorsement steps</a>
-        </div>
-      </section>
+    <div class="fact-strip" aria-label="Quick facts">
+      <article class="fact-card">
+        <span class="fact-label">Fee</span>
+        <span class="fact-value">$100</span>
+        <span class="fact-note">State transfer cost</span>
+      </article>
+      <article class="fact-card">
+        <span class="fact-label">Timeline</span>
+        <span class="fact-value">2 to 4 Weeks</span>
+        <span class="fact-note">Current board estimate</span>
+      </article>
+      <article class="fact-card">
+        <span class="fact-label">Fingerprinting</span>
+        <span class="fact-value">Required</span>
+        <span class="fact-note">Background check</span>
+      </article>
+      <article class="fact-card">
+        <span class="fact-label">Temp License</span>
+        <span class="fact-value">Not listed</span>
+        <span class="fact-note">Faster start option</span>
+      </article>
     </div>
-  </main>
-  <script>
-    const progress = document.getElementById('scrollProgressBar');
-    const sectionLinks = [...document.querySelectorAll('.section-link')];
-    const linkedSections = sectionLinks
-      .map((link) => document.querySelector(link.getAttribute('href')))
-      .filter(Boolean);
 
+    <nav class="section-nav" aria-label="Jump to section">
+      <a class="section-link" href="#reciprocity">Reciprocity</a>
+      <a class="section-link" href="#endorsement">Steps</a>
+      <a class="section-link" href="#quick-facts">Quick Facts</a>
+      <a class="section-link" href="#documents">Documents</a>
+      <a class="section-link" href="#contact">Board</a>
+      <a class="section-link" href="#faq">FAQ</a>
+    </nav>
+
+    <section id="reciprocity" class="section" aria-labelledby="reciprocity-heading">
+      <div class="lead-grid">
+        <div>
+          
+          <h2 id="reciprocity-heading">How to Transfer Your License to Vermont</h2>
+          <p class="section-intro">No active interstate compact covers dietitian practice in Vermont. Plan on a full endorsement application through Dietitians.</p>
+          <p style="font-size:.88rem;color:var(--text-2)"><strong>Good news:</strong> the exact cost, documentation, and
+            board path are laid out below.</p>
+          
+        </div>
+        <aside class="decision-panel" aria-label="Checklist">
+          <h3>Before You Start</h3>
+          <ol>
+            
+            <li>Open the official board portal before gathering documents.</li>
+            <li>Budget the endorsement fee and expected processing window.</li>
+            <li>Assume you need full approval before starting work.</li>
+            
+          </ol>
+          
+        </aside>
+      </div>
+      <div class="cta-row">
+        <a class="action-link action-link-primary" href="#endorsement">See
+          Endorsement Steps</a>
+        <a class="action-link action-link-secondary" href="https://sos.vermont.gov/dietitians/" target="_blank"
+          rel="noopener">Official Board Portal</a>
+      </div>
+    </section>
+
+    <section id="endorsement" class="section" aria-labelledby="apply-heading">
+      <h2 id="apply-heading">Endorsement Steps</h2>
+      <p class="section-intro">Work through these in order for the fastest path to
+        board clearance in Vermont.</p>
+      <ol class="steps-list">
+        
+        <li>
+          <strong>Complete Education & Supervised Practice</strong>
+          <p>Earn a master's degree from an ACEND-accredited program. Complete a minimum of 1,000 hours of supervised dietetics practice within the program.</p>
+        </li>
+        
+        <li>
+          <strong>Pass the CDR Examination</strong>
+          <p>Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this.</p>
+        </li>
+        
+        <li>
+          <strong>Submit the Online Application via OPR</strong>
+          <p>Create an account on the Vermont OPR Online Services Platform, select the Dietitian application, and pay the $100 fee.</p>
+        </li>
+        
+        <li>
+          <strong>Provide Verification Documents</strong>
+          <p>Upload a copy of your active CDR card or ensure verification is requested from the CDR during the online application process.</p>
+        </li>
+        
+      </ol>
+    </section>
+
+    <section id="quick-facts" class="section" aria-labelledby="qf-heading">
+      <h2 id="qf-heading">Quick Facts</h2>
+      <dl class="data-grid">
+        <div>
+          <dt>Total fee</dt>
+          <dd>$100</dd>
+        </div>
+        <div>
+          <dt>Processing time</dt>
+          <dd>2 to 4 Weeks</dd>
+        </div>
+        <div>
+          <dt>Renewal fee</dt>
+          <dd>$100</dd>
+        </div>
+        <div>
+          <dt>Renewal cycle</dt>
+          <dd>Every 2 years + 30 CE hours</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="documents" class="section" aria-labelledby="docs-heading">
+      <h2 id="docs-heading">Required Documents</h2>
+      <ul class="checklist">
+        
+        <li><strong>OPR Online Application</strong> — Application submitted electronically with the required fee.</li>
+        
+        <li><strong>CDR Registration Card</strong> — Proof of active registration with the Commission on Dietetic Registration.</li>
+        
+      </ul>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Board Contact</h2>
+      <dl class="data-grid">
+        <div>
+          <dt>Board</dt>
+          <dd>Dietitians</dd>
+        </div>
+        <div>
+          <dt>Department</dt>
+          <dd>Vermont Office of Professional Regulation (OPR)</dd>
+        </div>
+        <div>
+          <dt>Phone</dt>
+          <dd>(802) 828-1505</dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd>sos.opr.professions@vermont.gov</dd>
+        </div>
+      </dl>
+      <div class="cta-row">
+        <a class="action-link action-link-secondary" href="https://sos.vermont.gov/dietitians/" target="_blank"
+          rel="noopener">Visit Official Board</a>
+      </div>
+    </section>
+
+    <section id="renewal" class="section" aria-labelledby="renewal-heading">
+      <h2 id="renewal-heading">Renewal</h2>
+      <p style="font-size:.88rem;color:var(--text-2);line-height:1.55;margin:0">Renewal fee is $100. Renewal cycle: Every 2 years + 30 CE hours.</p>
+    </section>
+
+    <section id="faq" class="section" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">How much does a Vermont dietitian certification cost?</button>
+          <div class="faq-a">
+            <p style="margin:0">The initial cost is a $100 application fee.</p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">When does the Vermont certification need to be renewed?</button>
+          <div class="faq-a">
+            <p style="margin:0">Vermont dietitian certifications must be renewed every two years. The renewal fee is $100.</p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Is a license required to practice dietetics in Vermont?</button>
+          <div class="faq-a">
+            <p style="margin:0">Vermont uses a certification model, protecting the title 'Certified Dietitian'. While individuals can provide certain nutrition services without certification, only those meeting state standards and obtaining certification can use the CD title.</p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Does Vermont have reciprocity for dietitians?</button>
+          <div class="faq-a">
+            <p style="margin:0">No interstate compact currently covers dietitian practice in Vermont. To work in Vermont, apply for licensure by endorsement through the state board.</p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">How long does it take to transfer my dietitian license to Vermont?</button>
+          <div class="faq-a">
+            <p style="margin:0">Most endorsement applications take 2 to 4 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing.</p>
+          </div>
+        </article>
+        
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Can I start working in Vermont while my endorsement application is processing?</button>
+          <div class="faq-a">
+            <p style="margin:0">Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential.</p>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="crawl-heading">
+      <h2 id="crawl-heading">Explore More</h2>
+      <div class="crawl-links">
+        <a href="/">All Dietitian states</a>
+        <a href="https://sos.vermont.gov/dietitians/" target="_blank" rel="noopener">Vermont board</a>
+        <a href="#endorsement">Vermont steps</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Scroll progress
+    const progress = document.getElementById('scrollProgressBar');
     function updateProgress() {
       const scrollTop = window.scrollY;
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
-      progress.style.width = `${pct}%`;
+      progress.style.width = `${maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0}%`;
     }
 
-    const observer = new IntersectionObserver((entries) => {
+    // Section nav active state
+    const sectionLinks = [...document.querySelectorAll('.section-link')];
+    const linkedSections = sectionLinks
+      .map(link => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver(entries => {
       const visible = entries
-        .filter((entry) => entry.isIntersecting)
+        .filter(e => e.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (!visible) return;
       const activeId = `#${visible.target.id}`;
@@ -900,6 +1072,25 @@
     for (const section of linkedSections) observer.observe(section);
     window.addEventListener('scroll', updateProgress, { passive: true });
     updateProgress();
+
+    // FAQ accordion
+    for (const item of document.querySelectorAll('.faq-item')) {
+      const btn = item.querySelector('.faq-q');
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        // Close all
+        for (const other of document.querySelectorAll('.faq-item.open')) {
+          other.classList.remove('open');
+          other.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        }
+        // Toggle clicked
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
   </script>
 </body>
+
 </html>
