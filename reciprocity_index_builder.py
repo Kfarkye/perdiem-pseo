@@ -19,7 +19,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         member = bool(s.get('state_is_member'))
         license_required = bool(s.get('license_required', True))
         fee_value = s.get('endorsement_fee')
-        fee = int(fee_value) if isinstance(fee_value, (int, float)) else 0
+        fee_raw = s.get('endorsement_fee', 0)
         processing_time = s.get('processing_time') or 'TBD'
         
         # Calculate administrative difficulty
@@ -40,7 +40,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         entry = {
             'name': name,
             'slug': slug,
-            'fee': fee,
+            'fee_raw': fee_raw,
             'processing_time': processing_time,
             'tier': tier,
             'member': member,
@@ -62,12 +62,11 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     cdr_state_count = len(cdr_states)
     endorsement_count = len(endorsement_states)
 
-    def render_row(s):
+    def render_row(s: dict) -> str:
         tier = s['tier']
-
         tier_label = {
-            'fast': 'Low\u00A0',
-            'mid': 'Med\u00A0',
+            'fast': 'Low',
+            'mid': 'Med',
             'slow': 'High',
             'none': 'None',
         }.get(tier, 'High')
@@ -75,8 +74,18 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         if not s['license_required']:
             fee_display = '\u2014'
             time_display = 'No state app'
+            s['fee'] = 0
         else:
-            fee_display = f"${s['fee']}"
+            fee_val = s['fee_raw']
+            if isinstance(fee_val, (int, float)):
+                fee_display = f"${int(fee_val)}"
+                s['fee'] = int(fee_val)
+            elif isinstance(fee_val, str) and fee_val.replace('$', '').replace(',', '').isdigit():
+                s['fee'] = int(fee_val.replace('$', '').replace(',', ''))
+                fee_display = f"${s['fee']}"
+            else:
+                fee_display = str(fee_val) if fee_val else "TBD"
+                s['fee'] = 0 if fee_display in ["TBD", "N/A", "Varies"] else 9999
             time_display = s['processing_time']
 
         return (

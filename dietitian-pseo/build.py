@@ -46,19 +46,32 @@ for json_file in sorted(JSON_DIR.glob("*.json")):
         shutil.copy2(tier2_files[out_name], out_path)
     else:
         out_path.write_text(template.render(**data), encoding="utf-8")
+    processing_time = data['reciprocity'].get('processing_time', 'TBD')
+    requires_psv = data['reciprocity'].get('requires_psv', False)
+    fee = data['reciprocity'].get('endorsement_fee', 0)
+    
+    if data['reciprocity'].get('state_is_member'):
+        processing_time = '1 to 3 Days'
+        requires_psv = False
+        comp_fee = data.get('compact', {}).get('compact_privilege_fee')
+        if comp_fee and str(comp_fee).lower() not in ['n/a', 'none', 'tbd']:
+            fee = comp_fee
+        else:
+            fee = 'N/A'
+
     states_manifest.append({
         'name': data['state_name'],
         'slug': slug_value,
         'last_updated': data.get('last_updated', TODAY),
         'compact_label': data['reciprocity'].get('compact_name') or 'Endorsement only',
         'state_is_member': data['reciprocity']['state_is_member'],
-        'endorsement_fee': data['reciprocity']['endorsement_fee'],
-        'processing_time': data['reciprocity']['processing_time'],
+        'endorsement_fee': fee,
+        'processing_time': processing_time,
         'processing_tier': data['reciprocity']['processing_tier'],
         'license_required': data['reciprocity'].get('license_required', True),
         'fingerprint_required': data['reciprocity'].get('fingerprint_required', False),
         'jurisprudence_required': data['reciprocity'].get('jurisprudence_required', False),
-        'requires_psv': data['reciprocity'].get('requires_psv', False),
+        'requires_psv': requires_psv,
     })
     urls.append(f"  <url><loc>{DOMAIN}/{slug_value}</loc><lastmod>{data.get('last_updated', TODAY)}</lastmod><priority>0.8</priority></url>")
 
