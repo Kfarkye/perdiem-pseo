@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://boards.bsd.dli.mt.gov/occupational-therapists",
     "endorsement_url": "https://boards.bsd.dli.mt.gov/occupational-therapists",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "montana-ot",
   "specialty": "ot"

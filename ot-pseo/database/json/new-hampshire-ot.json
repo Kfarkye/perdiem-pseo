@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.oplc.nh.gov/occupational-therapy",
     "endorsement_url": "https://www.oplc.nh.gov/occupational-therapy",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "new-hampshire-ot",
   "specialty": "ot"

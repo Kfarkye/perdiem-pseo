@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://dopl.utah.gov/ot/",
     "endorsement_url": "https://dopl.utah.gov/ot/",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "utah-ot",
   "specialty": "ot"

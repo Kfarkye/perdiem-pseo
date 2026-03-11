@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://dsps.wi.gov/",
     "endorsement_url": "https://dsps.wi.gov/",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "wisconsin-ot",
   "specialty": "ot"

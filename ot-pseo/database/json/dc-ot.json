@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://dchealth.dc.gov/service/occupational-therapy-licensing",
     "endorsement_url": "https://dchealth.dc.gov/service/occupational-therapy-licensing",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "dc-ot",
   "specialty": "ot"

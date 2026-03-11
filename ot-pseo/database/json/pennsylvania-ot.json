@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/OccupationalTherapy/Pages/default.aspx",
     "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/OccupationalTherapy/Pages/default.aspx",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "pennsylvania-ot",
   "specialty": "ot"

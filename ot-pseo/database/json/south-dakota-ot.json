@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
     "endorsement_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "south-dakota-ot",
   "specialty": "ot"

@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://pr.mo.gov/occtherp.asp",
     "endorsement_url": "https://pr.mo.gov/occtherp.asp",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "missouri-ot",
   "specialty": "ot"

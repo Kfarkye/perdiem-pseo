@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/ot-board.html",
     "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/ot-board.html",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "tennessee-ot",
   "specialty": "ot"

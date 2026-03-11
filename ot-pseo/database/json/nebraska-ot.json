@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
     "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "nebraska-ot",
   "specialty": "ot"

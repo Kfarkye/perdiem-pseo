@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "http://ot.az.gov",
     "endorsement_url": "http://ot.az.gov",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "arizona-ot",
   "specialty": "ot"

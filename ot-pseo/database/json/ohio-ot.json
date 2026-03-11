@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://otptat.ohio.gov/",
     "endorsement_url": "https://otptat.ohio.gov/",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "ohio-ot",
   "specialty": "ot"

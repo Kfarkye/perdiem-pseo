@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://sos.ga.gov/PLB/acrobat/Forms/38%20Reference%20-%20Occupational%20Therapy.pdf",
     "endorsement_url": "https://sos.ga.gov/PLB/acrobat/Forms/38%20Reference%20-%20Occupational%20Therapy.pdf",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "georgia-ot",
   "specialty": "ot"

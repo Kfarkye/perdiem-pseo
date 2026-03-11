@@ -2,985 +2,1050 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0">
 <title>Occupational Therapist License Reciprocity by State - Compact Status, Fees and Transfer Timelines (2026)</title>
 <meta name="description" content="Compare occupational therapists license reciprocity rules by state, including compact participation, endorsement fees, and processing timelines.">
 <link rel="canonical" href="https://statelicensingreference.com/">
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="/css/styles.css?v=5d9c21d5">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F2F2F7">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
 <style>
+/* ── APPLE HIG DESIGN SYSTEM ────────────────── */
 :root {
-  --bg: #f5f5f2;
-  --surface: #ffffff;
-  --ink: #101316;
-  --muted: #5f676f;
-  --line: #d9dde1;
-  --accent: #12212f;
-  --compact: #0f5a3a;
-  --endorsement: #36495b;
-  --cdr: #0f4f87;
+  color-scheme: light dark;
+  
+  /* Light Mode Tokens */
+  --bg-system: #F2F2F7;
+  --bg-surface: #FFFFFF;
+  --bg-surface-active: #E5E5EA;
+  
+  --label-primary: #000000;
+  --label-secondary: rgba(60, 60, 67, 0.6);
+  --label-tertiary: rgba(60, 60, 67, 0.3);
+  
+  --tint: #007AFF;
+  --focus-ring: rgba(0, 122, 255, 0.4);
+  --ambient-glow: radial-gradient(circle at 50% 0%, rgba(0, 122, 255, 0.05), transparent 60%);
+  
+  --separator: rgba(60, 60, 67, 0.29);
+  --fill-tertiary: rgba(118, 118, 128, 0.12);
+  
+  --toolbar-bg: rgba(255, 255, 255, 0.75);
+  --toolbar-border: rgba(0, 0, 0, 0.08);
+  --seg-active: #FFFFFF;
+  
+  --badge-fast-bg: #E4F4E9; --badge-fast-txt: #1E823D;
+  --badge-mid-bg: #FFF3E0;  --badge-mid-txt: #B25000;
+  --badge-slow-bg: #FDECEC; --badge-slow-txt: #C92A2A;
+  --badge-none-bg: #F2F2F7; --badge-none-txt: rgba(60, 60, 67, 0.6);
+  
+  --shadow-card: 0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02);
+  --shadow-float: 0 12px 32px rgba(0,0,0,0.1), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-seg: 0 3px 8px rgba(0,0,0,0.12), 0 3px 1px rgba(0,0,0,0.04);
 }
-* { box-sizing: border-box; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-system: #000000;
+    --bg-surface: #1C1C1E;
+    --bg-surface-active: #2C2C2E;
+    
+    --label-primary: #FFFFFF;
+    --label-secondary: rgba(235, 235, 245, 0.6);
+    --label-tertiary: rgba(235, 235, 245, 0.3);
+    
+    --tint: #0A84FF;
+    --focus-ring: rgba(10, 132, 255, 0.5);
+    --ambient-glow: radial-gradient(circle at 50% 0%, rgba(10, 132, 255, 0.12), transparent 60%);
+    
+    --separator: rgba(84, 84, 88, 0.65);
+    --fill-tertiary: rgba(118, 118, 128, 0.24);
+    
+    --toolbar-bg: rgba(28, 28, 30, 0.75);
+    --toolbar-border: rgba(255, 255, 255, 0.15);
+    --seg-active: #636366;
+    
+    --badge-fast-bg: #1B3320; --badge-fast-txt: #32D74B;
+    --badge-mid-bg: #332100;  --badge-mid-txt: #FF9F0A;
+    --badge-slow-bg: #331515; --badge-slow-txt: #FF453A;
+    --badge-none-bg: #2C2C2E; --badge-none-txt: rgba(235, 235, 245, 0.6);
+    
+    --shadow-card: 0 4px 20px rgba(0,0,0,0.4);
+    --shadow-float: 0 16px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08);
+    --shadow-seg: 0 3px 8px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.1);
+  }
+}
+
+/* ── BASE & RESET ───────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+button { font-family: inherit; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; border: none; background: none; }
+ul { list-style: none; margin: 0; padding: 0; }
+
+html { 
+  scroll-behavior: smooth; 
+  scroll-padding-top: 100px;
+}
+
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-feature-settings: "cv11" 1, "cv04" 1;
+  background: var(--bg-system);
+  color: var(--label-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  line-height: 1.5;
+  position: relative;
 }
-a { color: inherit; }
+
+/* Ambient Background Glow */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 70vh;
+  background: var(--ambient-glow);
+  pointer-events: none;
+  z-index: -1;
+}
+
+h1, h2, h3, .stat-value { 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
-  outline: 3px solid #2f7d89;
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 3px var(--focus-ring);
+  border-radius: 8px;
 }
-.site-nav {
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  background: rgba(245,245,242,.96);
-  border-bottom: 1px solid var(--line);
-  backdrop-filter: blur(10px);
+
+/* ── ANIMATIONS ─────────────────────────────── */
+@keyframes fadeScaleIn {
+  0% { opacity: 0; transform: scale(0.985) translateY(8px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
 }
-.site-nav-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: .85rem 1rem;
+.animate-in {
+  animation: fadeScaleIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ── NAV ────────────────────────────────────── */
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
 }
-.site-nav-brand {
-  font-size: .84rem;
-  letter-spacing: .03em;
-  text-decoration: none;
-  color: var(--muted);
-}
-.site-nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.nav-brand {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
   display: flex;
-  gap: .7rem;
+  align-items: center;
+  gap: 8px;
+  color: var(--label-primary);
 }
-.site-nav-links a {
-  text-decoration: none;
-  font-size: .74rem;
-  letter-spacing: .07em;
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--label-secondary);
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--label-primary); }
+
+/* ── HERO ───────────────────────────────────── */
+.hero-wrapper {
+  padding: 3rem 1.5rem 3rem;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero-wrapper h1 {
+  font-size: clamp(2.25rem, 5.5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+  margin: 0 0 1rem;
+}
+.hero-sub {
+  font-size: 1.15rem;
+  color: var(--label-secondary);
+  line-height: 1.4;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.stats-container {
+  display: inline-flex;
+  background: var(--bg-surface);
+  border-radius: 20px;
+  padding: 1rem 1.75rem;
+  margin-top: 2.5rem;
+  box-shadow: var(--shadow-card);
+  gap: 1.5rem;
+  align-items: center;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--label-secondary);
   text-transform: uppercase;
-  color: #3d4650;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
 }
-.hero {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.2rem 1rem 1.2rem;
+.stat-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--separator);
 }
-.hero h1 {
-  margin: 0 0 .55rem;
-  font-size: clamp(1.55rem, 2.8vw, 2.15rem);
-  letter-spacing: -.02em;
-}
-.hero p {
-  margin: 0;
-  max-width: 72ch;
-  color: var(--muted);
-  line-height: 1.55;
-}
-.hero-stats {
-  margin-top: .95rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: .8rem;
-  color: #49525b;
-  font-size: .8rem;
-}
-.hero-stats span {
-  padding-right: .8rem;
-  border-right: 1px solid var(--line);
-}
-.hero-stats span:last-child { border-right: 0; padding-right: 0; }
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem 2.4rem;
+
+/* ── FLOATING TOOLBAR ───────────────────────── */
+.toolbar-wrap {
+  position: sticky;
+  top: 1.5rem;
+  z-index: 50;
+  max-width: 900px;
+  margin: 0 auto 3.5rem;
+  padding: 0 1.5rem;
+  pointer-events: none;
 }
 .toolbar {
-  position: sticky;
-  top: 58px;
-  z-index: 20;
-  background: rgba(245,245,242,.96);
-  border: 1px solid var(--line);
+  background: var(--toolbar-bg);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid var(--toolbar-border);
   border-radius: 16px;
-  padding: .9rem;
-  backdrop-filter: blur(8px);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-float);
+  pointer-events: auto;
+  transition: box-shadow 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-.toolbar-top {
-  display: grid;
-  grid-template-columns: minmax(0,1fr) auto auto;
-  gap: .65rem;
+/* On desktop, let children flow directly into toolbar flex */
+.toolbar-bottom-row { display: contents; }
+
+.search-wrap {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+  display: flex;
   align-items: center;
 }
-.toolbar input, .toolbar select {
-  min-height: 42px;
-  border: 1px solid var(--line);
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: var(--label-secondary);
+  pointer-events: none;
+}
+.search-input {
+  width: 100%;
+  height: 36px;
+  padding: 0 36px 0 36px;
+  background: var(--fill-tertiary);
+  border: none;
   border-radius: 10px;
-  padding: .65rem .78rem;
-  background: var(--surface);
-  color: var(--ink);
+  color: var(--label-primary);
+  font-size: 15px;
+  font-family: inherit;
+  transition: background 0.2s, box-shadow 0.2s;
 }
-.result-count {
-  font-size: .8rem;
-  color: var(--muted);
-  text-align: right;
-}
-.filters {
-  margin-top: .7rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: .65rem;
-}
-.filter-box {
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface);
-  padding: .6rem;
-}
-.filter-label {
-  display: block;
-  margin-bottom: .45rem;
-  font-size: .67rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: #6a737d;
-}
-.pill-row { display: flex; flex-wrap: wrap; gap: .4rem; }
-.pill {
-  border: 1px solid var(--line);
-  background: #fff;
-  color: #3f4852;
-  border-radius: 999px;
-  font-size: .72rem;
-  padding: .28rem .6rem;
-  cursor: pointer;
-}
-.pill.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-.grid {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  gap: .75rem;
-}
-.card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: .88rem;
-  transition: border-color .15s ease, transform .15s ease;
-}
-.card:hover {
-  transform: translateY(-1px);
-  border-color: #aeb6be;
-}
-.card-head {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: .55rem;
-}
-.card h3 {
-  margin: 0;
-  font-size: 1.04rem;
-}
-.path {
-  display: inline-flex;
+.search-input::placeholder { color: var(--label-secondary); font-weight: 400; }
+.search-input:focus { background: var(--bg-surface); box-shadow: 0 0 0 2px var(--focus-ring); outline: none; }
+.search-clear {
+  position: absolute;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  display: none;
   align-items: center;
   justify-content: center;
-  padding: .2rem .52rem;
-  border-radius: 999px;
-  font-size: .64rem;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  font-weight: 700;
-  color: #fff;
-  background: var(--endorsement);
+  background: var(--label-tertiary);
+  color: var(--bg-surface);
+  border-radius: 50%;
+  padding: 4px;
 }
-.card[data-path="member"] .path { background: var(--compact); }
-.card[data-path="cdr-only"] .path { background: var(--cdr); }
-.sub {
-  margin: .38rem 0 .55rem;
-  font-size: .78rem;
-  color: var(--muted);
-}
-.card-meta {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: .5rem;
-}
-.card-meta span {
-  border: 1px solid var(--line);
+.search-clear svg { width: 10px; height: 10px; }
+.search-clear:hover { background: var(--label-secondary); }
+
+.seg-group {
+  display: flex;
+  background: var(--fill-tertiary);
   border-radius: 10px;
-  padding: .54rem .62rem;
-  background: #fff;
+  padding: 2px;
+  gap: 2px;
 }
-.card-meta small {
-  display: block;
-  font-size: .64rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: #6e7781;
-  margin-bottom: .15rem;
+.seg-btn {
+  height: 32px;
+  padding: 0 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--label-secondary);
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  white-space: nowrap;
 }
-.card-meta strong {
-  font-size: .94rem;
-  color: var(--ink);
+.seg-btn:hover:not(.active) { color: var(--label-primary); }
+.seg-btn.active {
+  background: var(--seg-active);
+  color: var(--label-primary);
+  font-weight: 600;
+  box-shadow: var(--shadow-seg);
 }
-.card-meta-cdr { grid-template-columns: 1fr 1fr; }
-.card-meta-cdr span {
-  font-size: .75rem;
-  color: #1f4f78;
-  border-color: #c7d9ea;
-  background: #f3f8fd;
+
+.sort-select {
+  height: 36px;
+  padding: 0 32px 0 16px;
+  background: var(--fill-tertiary);
+  border: none;
+  border-radius: 10px;
+  color: var(--label-primary);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%2386868B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  transition: background 0.2s, box-shadow 0.2s;
 }
-.card-foot {
-  margin-top: .62rem;
+.sort-select:focus { background: var(--bg-surface); box-shadow: 0 0 0 2px var(--focus-ring); outline: none; }
+
+/* ── LIST VIEWS (SETTINGS CARDS) ────────────── */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+.group { margin-bottom: 3.5rem; }
+.group-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: .5rem;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 0 16px;
 }
-.tier {
+.group-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+.group-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--label-secondary);
+  background: var(--fill-tertiary);
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-variant-numeric: tabular-nums;
+}
+.group-desc {
+  font-size: 14px;
+  color: var(--label-secondary);
+  margin: 0 0 16px 16px;
+}
+
+.group-head-row {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) 100px 80px 24px;
+  padding: 0 24px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--label-secondary);
+}
+.align-right { text-align: right; }
+
+.group-rows {
+  background: var(--bg-surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) 100px 80px 24px;
+  align-items: center;
+  padding: 14px 24px;
+  position: relative;
+  transition: background-color 0.15s, transform 0.15s cubic-bezier(0.2, 0, 0, 1);
+  transform-origin: center;
+}
+/* True 0.5px Inset Retina Hairline */
+.row::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 24px; right: 0; height: 1px;
+  background: var(--separator);
+  transform: scaleY(0.5);
+  transform-origin: bottom;
+}
+.row.no-border::after { display: none; }
+@media (hover: hover) { 
+  .row:hover { background-color: var(--bg-surface-active); } 
+  .row:hover .r-chevron { transform: translateX(3px); color: var(--label-secondary); }
+}
+.row:active { 
+  background-color: var(--bg-surface-active); 
+  transform: scale(0.995); 
+  z-index: 1; 
+}
+
+.r-name { 
+  font-size: 17px; 
+  font-weight: 500; 
+  letter-spacing: -0.022em; 
+  color: var(--label-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 12px;
+}
+.r-time { 
+  font-size: 15px; 
+  color: var(--label-secondary); 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  padding-right: 12px; 
+}
+.r-speed { display: flex; justify-content: flex-end; }
+.r-fee { font-size: 17px; font-weight: 400; color: var(--label-secondary); text-align: right; font-variant-numeric: tabular-nums; }
+.r-chevron {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--label-tertiary);
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.2s;
+}
+
+/* ── SEMANTIC BADGES ────────────────────────── */
+.badge {
   display: inline-flex;
   align-items: center;
-  font-size: .72rem;
-  color: #4f5861;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
-.tier::before {
-  content: '';
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
-  margin-right: .35rem;
-  background: #8b949e;
-}
-.tier-fast::before { background: #0f6b4a; }
-.tier-mid::before { background: #8a6512; }
-.tier-slow::before { background: #8f4d2a; }
-.tier-none::before { background: #0f4f87; }
-.open {
-  font-size: .68rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
+.badge-fast { background: var(--badge-fast-bg); color: var(--badge-fast-txt); }
+.badge-mid  { background: var(--badge-mid-bg); color: var(--badge-mid-txt); }
+.badge-slow { background: var(--badge-slow-bg); color: var(--badge-slow-txt); }
+.badge-none { background: var(--badge-none-bg); color: var(--badge-none-txt); }
+
+/* ── EMPTY STATE ────────────────────────────── */
 .empty {
   display: none;
-  margin-top: 1rem;
-  border: 1px dashed #b9c0c7;
-  border-radius: 12px;
-  padding: .9rem;
-  color: var(--muted);
-  background: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+  background: var(--bg-surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
 }
-.footer {
-  margin-top: 1.1rem;
+.empty svg { width: 44px; height: 44px; color: var(--label-tertiary); margin-bottom: 16px; }
+.empty h3 { font-size: 19px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.015em; color: var(--label-primary); }
+.empty p { font-size: 15px; color: var(--label-secondary); margin: 0; }
+
+/* ── FOOTER ─────────────────────────────────── */
+.foot-wrapper {
+  padding: 3rem 1.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--toolbar-border);
+}
+.foot {
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: .7rem;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
 }
-.footer section {
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: #fff;
-  padding: .9rem;
-}
-.footer h2, .footer h3 { margin: 0 0 .45rem; font-size: 1rem; }
-.footer p { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.5; }
-.footer ul { margin: 0; padding-left: 1.1rem; display: grid; gap: .35rem; }
+.foot h2, .foot h3 { font-size: 15px; font-weight: 600; color: var(--label-primary); margin: 0 0 12px; }
+.foot p { font-size: 14px; color: var(--label-secondary); line-height: 1.6; margin: 0; }
+.foot ul { display: grid; gap: 10px; }
+.foot li a { font-size: 14px; color: var(--tint); font-weight: 400; transition: opacity 0.2s; }
+.foot li a:hover { opacity: 0.8; }
+.foot-meta { font-size: 12px; color: var(--label-tertiary); margin-top: 1.5rem !important; display: block; }
+
+/* ── RESPONSIVE ─────────────────────────────── */
 @media (max-width: 860px) {
-  .toolbar-top { grid-template-columns: 1fr; }
-  .result-count { text-align: left; }
-  .filters, .footer { grid-template-columns: 1fr; }
+  .toolbar-wrap { top: 1rem; }
+  .toolbar { flex-direction: column; padding: 12px; border-radius: 16px; gap: 12px; }
+  .search-wrap { width: 100%; }
+  .search-input { height: 40px; }
+  
+  .toolbar-bottom-row { display: flex; gap: 12px; width: 100%; }
+  
+  .seg-group { 
+    flex: 1;
+    justify-content: space-between; 
+    padding: 3px; 
+    border-radius: 10px; 
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+  }
+  .seg-group::-webkit-scrollbar { display: none; }
+  .seg-btn { flex-shrink: 0; height: 36px; padding: 0 16px; text-align: center; }
+  
+  .sort-select { flex: 1; height: 42px; min-width: 120px; }
 }
-@media (max-width: 720px) {
-  .site-nav-inner { flex-wrap: wrap; }
-  .toolbar { top: 54px; }
+
+@media (max-width: 640px) {
+  .hero-wrapper { padding: 2rem 1rem 1rem; }
+  .stats-container { display: flex; flex-direction: column; width: 100%; align-items: stretch; padding: 1.5rem; gap: 1rem; border-radius: 16px; }
+  .stat-divider { width: 100%; height: 1px; transform: scaleY(0.5); }
+  
+  .group-head-row { display: none; }
+  .group-header, .group-desc { padding-left: 8px; }
+  
+  /* Mobile 2-line Wallet-Style Row */
+  .row {
+    grid-template-columns: minmax(0, 1fr) auto 20px;
+    grid-template-areas:
+      "name fee chevron"
+      "time speed chevron";
+    gap: 4px 12px;
+    padding: 14px 16px;
+  }
+  .row::after { left: 16px; }
+  .r-name { grid-area: name; font-size: 17px; padding-right: 0; }
+  .r-time { grid-area: time; font-size: 14px; padding-right: 0; }
+  .r-fee { grid-area: fee; text-align: right; font-weight: 500; color: var(--label-primary); }
+  .r-speed { grid-area: speed; justify-content: flex-end; padding-right: 0; }
+  .badge { font-size: 12px; padding: 2px 8px; }
+  .r-chevron { grid-area: chevron; align-self: center; }
+  
+  .foot { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 </style>
 </head>
 <body>
-<nav class="site-nav" aria-label="Site navigation">
-  <div class="site-nav-inner">
-    <a href="/" class="site-nav-brand">State Licensing Reference</a>
-    <ul class="site-nav-links">
-      <li><a href="/">Directory</a></li>
-      <li><a href="#main-content">Tool</a></li>
-      <li><a href="#how-to-use">How It Works</a></li>
-    </ul>
+<nav class="nav animate-in" aria-label="Site navigation">
+  <div class="nav-brand">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    State Licensing Reference
+  </div>
+  <div class="nav-links">
+    <a href="/">Directory</a>
+    <a href="#how-to-use">How It Works</a>
   </div>
 </nav>
-<header class="hero">
-  <h1>Occupational Therapist License Reciprocity by State</h1>
-  <p>Find your fastest path to practice: compact privilege, endorsement, or CDR State route.</p>
-  <div class="hero-stats">
-    <span>States <strong>51</strong></span>
-    <span>Compact states <strong>35</strong></span>
-    
-    <span>Updated <strong>2026-03-10</strong></span>
+
+<header class="hero-wrapper animate-in" style="animation-delay: 0.05s">
+  <h1>Occupational Therapist License<br>Reciprocity by State</h1>
+  <p class="hero-sub">Compare compact privileges, endorsement fees, and processing timelines across all 51 states and DC.</p>
+  
+  <div class="stats-container">
+    <div class="stat">
+      <span class="stat-value">51</span>
+      <span class="stat-label">Jurisdictions</span>
+    </div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat">
+      <span class="stat-value">35</span>
+      <span class="stat-label">Compact States</span>
+    </div>
   </div>
 </header>
-<main id="main-content">
-  <section class="toolbar" aria-label="Reciprocity filters">
-    <div class="toolbar-top">
-      <input id="stateSearch" type="search" placeholder="Search state" aria-label="Search states">
-      <select id="sortSelect" aria-label="Sort states">
-        <option value="fee">Sort: Fee (Low to High)</option>
-        <option value="speed">Sort: Timeline (Fast to Slow)</option>
-        <option value="state">Sort: State</option>
-      </select>
-      <div id="resultCount" class="result-count"></div>
+
+<div class="toolbar-wrap animate-in" style="animation-delay: 0.1s">
+  <search class="toolbar" role="search">
+    <div class="search-wrap">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
+      <input id="stateSearch" class="search-input" type="text" placeholder="Search states..." aria-label="Search states by name" autocomplete="off" spellcheck="false">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
+      </button>
     </div>
-    <div class="filters">
-      <div class="filter-box">
-        <span class="filter-label">Path</span>
-        <div class="pill-row" data-filter-group="path">
-          <button type="button" class="pill active" data-value="all">All</button>
-          <button type="button" class="pill" data-value="member">Compact</button>
-          <button type="button" class="pill" data-value="non-member">Endorsement</button>
-          
-        </div>
+    <div class="toolbar-bottom-row">
+      <div class="seg-group" data-filter-group="path" role="group" aria-label="Filter by reciprocity path">
+        <button type="button" class="seg-btn active" data-value="all" aria-pressed="true">All</button>
+        <button type="button" class="seg-btn" data-value="member" aria-pressed="false">Compact</button>
+        <button type="button" class="seg-btn" data-value="non-member" aria-pressed="false">Endorsement</button>
+        
       </div>
-      <div class="filter-box">
-        <span class="filter-label">Timeline</span>
-        <div class="pill-row" data-filter-group="tier">
-          <button type="button" class="pill active" data-value="all">All</button>
-          <button type="button" class="pill" data-value="fast">Fast</button>
-          <button type="button" class="pill" data-value="mid">Mid</button>
-          <button type="button" class="pill" data-value="slow">Slow</button>
-          
-        </div>
-      </div>
+      <select id="sortSelect" class="sort-select" aria-label="Sort states">
+        <option value="state">Sort: A &ndash; Z</option>
+        <option value="fee">Sort: Fee</option>
+        <option value="difficulty">Sort: Difficulty</option>
+      </select>
+    </div>
+  </search>
+</div>
+
+<main class="content" id="main-content">
+  <section class="group animate-in" style="animation-delay: 0.15s" id="group-compact" aria-labelledby="heading-compact">
+    <div class="group-header">
+      <h2 id="heading-compact">Compact States</h2>
+      <span class="group-count" aria-label="35 states">35</span>
+    </div>
+    <p class="group-desc">Your home-state license may already cover these states via compact privilege.</p>
+    <div class="group-head-row" aria-hidden="true">
+      <span>State</span>
+      <span>Timeline</span>
+      <span class="align-right">Difficulty</span>
+      <span class="align-right">Fee</span>
+      <span></span>
+    </div>
+    <div class="group-rows" data-group="member" role="list">
+<a class="row" href="/alabama-ot" data-state="alabama" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Alabama">Alabama</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/arizona-ot" data-state="arizona" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Arizona">Arizona</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/arkansas-ot" data-state="arkansas" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Arkansas">Arkansas</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/colorado-ot" data-state="colorado" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Colorado">Colorado</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/delaware-ot" data-state="delaware" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Delaware">Delaware</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/georgia-ot" data-state="georgia" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Georgia">Georgia</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/idaho-ot" data-state="idaho" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Idaho">Idaho</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/indiana-ot" data-state="indiana" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Indiana">Indiana</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/iowa-ot" data-state="iowa" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Iowa">Iowa</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/kansas-ot" data-state="kansas" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Kansas">Kansas</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/kentucky-ot" data-state="kentucky" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Kentucky">Kentucky</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/louisiana-ot" data-state="louisiana" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Louisiana">Louisiana</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/maine-ot" data-state="maine" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Maine">Maine</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/maryland-ot" data-state="maryland" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Maryland">Maryland</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/minnesota-ot" data-state="minnesota" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Minnesota">Minnesota</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/mississippi-ot" data-state="mississippi" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Mississippi">Mississippi</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/missouri-ot" data-state="missouri" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Missouri">Missouri</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/montana-ot" data-state="montana" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Montana">Montana</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/nebraska-ot" data-state="nebraska" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Nebraska">Nebraska</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/new-hampshire-ot" data-state="new hampshire" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="New Hampshire">New Hampshire</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/north-carolina-ot" data-state="north carolina" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="North Carolina">North Carolina</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/north-dakota-ot" data-state="north dakota" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="North Dakota">North Dakota</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/ohio-ot" data-state="ohio" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Ohio">Ohio</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/oklahoma-ot" data-state="oklahoma" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Oklahoma">Oklahoma</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/south-carolina-ot" data-state="south carolina" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="South Carolina">South Carolina</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/south-dakota-ot" data-state="south dakota" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="South Dakota">South Dakota</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/tennessee-ot" data-state="tennessee" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Tennessee">Tennessee</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/texas-ot" data-state="texas" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Texas">Texas</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/utah-ot" data-state="utah" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Utah">Utah</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/vermont-ot" data-state="vermont" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Vermont">Vermont</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/virginia-ot" data-state="virginia" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Virginia">Virginia</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/washington-ot" data-state="washington" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Washington">Washington</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/west-virginia-ot" data-state="west virginia" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="West Virginia">West Virginia</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/wisconsin-ot" data-state="wisconsin" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Wisconsin">Wisconsin</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/wyoming-ot" data-state="wyoming" data-fee="0" data-tier="mid" data-path="member">
+  <span class="r-name" title="Wyoming">Wyoming</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
     </div>
   </section>
 
-  <section class="grid" id="reciprocityGrid">
-      <a class="card" href="/alabama-ot" data-state="alabama" data-name="alabama" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Alabama</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/alaska-ot" data-state="alaska" data-name="alaska" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Alaska</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/arizona-ot" data-state="arizona" data-name="arizona" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Arizona</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/arkansas-ot" data-state="arkansas" data-name="arkansas" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Arkansas</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/california-ot" data-state="california" data-name="california" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>California</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/colorado-ot" data-state="colorado" data-name="colorado" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Colorado</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/connecticut-ot" data-state="connecticut" data-name="connecticut" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Connecticut</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/delaware-ot" data-state="delaware" data-name="delaware" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Delaware</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/dc-ot" data-state="district of columbia" data-name="district of columbia" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>District of Columbia</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/florida-ot" data-state="florida" data-name="florida" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Florida</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/georgia-ot" data-state="georgia" data-name="georgia" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Georgia</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/hawaii-ot" data-state="hawaii" data-name="hawaii" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Hawaii</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/idaho-ot" data-state="idaho" data-name="idaho" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Idaho</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/illinois-ot" data-state="illinois" data-name="illinois" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Illinois</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/indiana-ot" data-state="indiana" data-name="indiana" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Indiana</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/iowa-ot" data-state="iowa" data-name="iowa" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Iowa</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/kansas-ot" data-state="kansas" data-name="kansas" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Kansas</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/kentucky-ot" data-state="kentucky" data-name="kentucky" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Kentucky</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/louisiana-ot" data-state="louisiana" data-name="louisiana" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Louisiana</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/maine-ot" data-state="maine" data-name="maine" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Maine</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/maryland-ot" data-state="maryland" data-name="maryland" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Maryland</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/massachusetts-ot" data-state="massachusetts" data-name="massachusetts" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Massachusetts</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/michigan-ot" data-state="michigan" data-name="michigan" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Michigan</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/minnesota-ot" data-state="minnesota" data-name="minnesota" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Minnesota</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/mississippi-ot" data-state="mississippi" data-name="mississippi" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Mississippi</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/missouri-ot" data-state="missouri" data-name="missouri" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Missouri</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/montana-ot" data-state="montana" data-name="montana" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Montana</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/nebraska-ot" data-state="nebraska" data-name="nebraska" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Nebraska</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/nevada-ot" data-state="nevada" data-name="nevada" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Nevada</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/new-hampshire-ot" data-state="new hampshire" data-name="new hampshire" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>New Hampshire</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/new-jersey-ot" data-state="new jersey" data-name="new jersey" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>New Jersey</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/new-mexico-ot" data-state="new mexico" data-name="new mexico" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>New Mexico</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/new-york-ot" data-state="new york" data-name="new york" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>New York</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/north-carolina-ot" data-state="north carolina" data-name="north carolina" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>North Carolina</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/north-dakota-ot" data-state="north dakota" data-name="north dakota" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>North Dakota</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/ohio-ot" data-state="ohio" data-name="ohio" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Ohio</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/oklahoma-ot" data-state="oklahoma" data-name="oklahoma" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Oklahoma</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/oregon-ot" data-state="oregon" data-name="oregon" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Oregon</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/pennsylvania-ot" data-state="pennsylvania" data-name="pennsylvania" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Pennsylvania</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/rhode-island-ot" data-state="rhode island" data-name="rhode island" data-fee="0" data-path="non-member" data-tier="mid">
-        <div class="card-head">
-          <h3>Rhode Island</h3>
-          <span class="path">Endorsement</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/south-carolina-ot" data-state="south carolina" data-name="south carolina" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>South Carolina</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/south-dakota-ot" data-state="south dakota" data-name="south dakota" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>South Dakota</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/tennessee-ot" data-state="tennessee" data-name="tennessee" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Tennessee</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/texas-ot" data-state="texas" data-name="texas" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Texas</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/utah-ot" data-state="utah" data-name="utah" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Utah</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/vermont-ot" data-state="vermont" data-name="vermont" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Vermont</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/virginia-ot" data-state="virginia" data-name="virginia" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Virginia</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/washington-ot" data-state="washington" data-name="washington" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Washington</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/west-virginia-ot" data-state="west virginia" data-name="west virginia" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>West Virginia</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/wisconsin-ot" data-state="wisconsin" data-name="wisconsin" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Wisconsin</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
-      <a class="card" href="/wyoming-ot" data-state="wyoming" data-name="wyoming" data-fee="0" data-path="member" data-tier="mid">
-        <div class="card-head">
-          <h3>Wyoming</h3>
-          <span class="path">Compact</span>
-        </div>
-        <div class="card-meta"><span><small>Fee</small><strong>$0</strong></span><span><small>Timeline</small><strong>4 to 6 Weeks</strong></span></div>
-        <div class="card-foot">
-          <span class="tier tier-mid">Moderate</span>
-          <span class="open">Open guide</span>
-        </div>
-      </a>
+  <section class="group animate-in" style="animation-delay: 0.2s" id="group-endorsement" aria-labelledby="heading-endorsement">
+    <div class="group-header">
+      <h2 id="heading-endorsement">Endorsement States</h2>
+      <span class="group-count" aria-label="16 states">16</span>
+    </div>
+    <p class="group-desc">Requires a separate board application with fee and processing time.</p>
+    <div class="group-head-row" aria-hidden="true">
+      <span>State</span>
+      <span>Timeline</span>
+      <span class="align-right">Difficulty</span>
+      <span class="align-right">Fee</span>
+      <span></span>
+    </div>
+    <div class="group-rows" data-group="non-member" role="list">
+<a class="row" href="/alaska-ot" data-state="alaska" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Alaska">Alaska</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/california-ot" data-state="california" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="California">California</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/connecticut-ot" data-state="connecticut" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Connecticut">Connecticut</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/dc-ot" data-state="district of columbia" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="District of Columbia">District of Columbia</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/florida-ot" data-state="florida" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Florida">Florida</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/hawaii-ot" data-state="hawaii" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Hawaii">Hawaii</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/illinois-ot" data-state="illinois" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Illinois">Illinois</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/massachusetts-ot" data-state="massachusetts" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Massachusetts">Massachusetts</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/michigan-ot" data-state="michigan" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Michigan">Michigan</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/nevada-ot" data-state="nevada" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Nevada">Nevada</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/new-jersey-ot" data-state="new jersey" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="New Jersey">New Jersey</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/new-mexico-ot" data-state="new mexico" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="New Mexico">New Mexico</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/new-york-ot" data-state="new york" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="New York">New York</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/oregon-ot" data-state="oregon" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Oregon">Oregon</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/pennsylvania-ot" data-state="pennsylvania" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Pennsylvania">Pennsylvania</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+<a class="row" href="/rhode-island-ot" data-state="rhode island" data-fee="0" data-tier="mid" data-path="non-member">
+  <span class="r-name" title="Rhode Island">Rhode Island</span>
+  <span class="r-time">4 to 6 Weeks</span>
+  <span class="r-speed"><span class="badge badge-mid">Med </span></span>
+  <span class="r-fee">$0</span>
+  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
+</a>
+    </div>
   </section>
+
 
   <section class="empty" id="emptyState" aria-live="polite">
-    No states match your filters. Clear one filter and try again.
-  </section>
-
-  <section class="footer">
-    <section id="how-to-use">
-      <h2>How to use this directory</h2>
-      <p>Filter by path first, then sort by fee or speed. Open a state guide to confirm board steps, documents, and renewal requirements.</p>
-    </section>
-    <section>
-      <h3>Popular states</h3>
-      <ul><li><a href="/alabama-ot">Alabama</a></li>
-<li><a href="/alaska-ot">Alaska</a></li>
-<li><a href="/arizona-ot">Arizona</a></li>
-<li><a href="/arkansas-ot">Arkansas</a></li></ul>
-      <p>Last refreshed 2026-03-10.</p>
-    </section>
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+    </svg>
+    <h3>No Matches Found</h3>
+    <p>Try adjusting your search or clearing your filters.</p>
   </section>
 </main>
 
+<div class="foot-wrapper">
+  <footer class="foot animate-in" id="how-to-use" style="animation-delay: 0.25s">
+    <div>
+      <h2>How to use this directory</h2>
+      <p>Start with the path filter to narrow by compact, endorsement, or CDR. Sort by fee or speed to find your fastest or cheapest route. Open any state to see the full board-verified guide with steps, documents, and renewal info.</p>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <ul>
+        <li><a href="#group-compact">Compact states</a></li>
+        <li><a href="#group-endorsement">Endorsement states</a></li>
+      </ul>
+      <span class="foot-meta">Verified updated &bull; 2026-03-10</span>
+    </div>
+  </footer>
+</div>
+
 <script>
 const input = document.getElementById('stateSearch');
-const cards = [...document.querySelectorAll('.card')];
-const grid = document.getElementById('reciprocityGrid');
+const searchClear = document.getElementById('searchClear');
+const allRows = [...document.querySelectorAll('.row')];
+const groups = [...document.querySelectorAll('.group')];
 const sortSelect = document.getElementById('sortSelect');
-const resultCount = document.getElementById('resultCount');
 const emptyState = document.getElementById('emptyState');
-const pathPills = [...document.querySelectorAll('[data-filter-group="path"] .pill')];
-const tierPills = [...document.querySelectorAll('[data-filter-group="tier"] .pill')];
+const pathBtns = [...document.querySelectorAll('[data-filter-group="path"] .seg-btn')];
 
 let pathFilter = 'all';
-let tierFilter = 'all';
 
-function tierRank(value) {
-  if (value === 'none') return 0;
-  if (value === 'fast') return 1;
-  if (value === 'mid') return 2;
+function tierRank(v) {
+  if (v === 'none') return 0;
+  if (v === 'fast') return 1;
+  if (v === 'mid') return 2;
   return 3;
 }
 
-function sortVisible(list) {
+function sortRows(rows) {
   const mode = sortSelect.value;
-  return [...list].sort((a, b) => {
+  return [...rows].sort((a, b) => {
     if (mode === 'fee') return Number(a.dataset.fee) - Number(b.dataset.fee);
-    if (mode === 'speed') {
-      const tierDelta = tierRank(a.dataset.tier) - tierRank(b.dataset.tier);
-      if (tierDelta !== 0) return tierDelta;
+    if (mode === 'difficulty') {
+      const d = tierRank(a.dataset.tier) - tierRank(b.dataset.tier);
+      if (d !== 0) return d;
       return Number(a.dataset.fee) - Number(b.dataset.fee);
     }
-    return a.dataset.name.localeCompare(b.dataset.name);
+    return a.dataset.state.localeCompare(b.dataset.state);
   });
 }
 
@@ -989,72 +1054,91 @@ function syncUrl() {
   const q = input.value.trim();
   if (q) params.set('q', q); else params.delete('q');
   if (pathFilter !== 'all') params.set('path', pathFilter); else params.delete('path');
-  if (tierFilter !== 'all') params.set('tier', tierFilter); else params.delete('tier');
-  if (sortSelect.value !== 'fee') params.set('sort', sortSelect.value); else params.delete('sort');
+  if (sortSelect.value !== 'state') params.set('sort', sortSelect.value); else params.delete('sort');
   const next = params.toString();
   const target = next ? `${window.location.pathname}?${next}` : window.location.pathname;
   window.history.replaceState(null, '', target);
 }
 
-function setActive(pills, value) {
-  for (const pill of pills) {
-    pill.classList.toggle('active', pill.dataset.value === value);
-  }
-}
-
 function applyFilters() {
   const q = input.value.toLowerCase().trim();
-  const visibleCards = [];
+  searchClear.style.display = q ? 'flex' : 'none';
   let shown = 0;
 
-  for (const card of cards) {
-    const matchesSearch = card.dataset.state.includes(q);
-    const matchesPath = pathFilter === 'all' || card.dataset.path === pathFilter;
-    const matchesTier = tierFilter === 'all' || card.dataset.tier === tierFilter;
-    const visible = matchesSearch && matchesPath && matchesTier;
-    card.style.display = visible ? '' : 'none';
-    if (visible) visibleCards.push(card);
-    if (visible) shown += 1;
+  for (const row of allRows) {
+    const matchQ = row.dataset.state.includes(q);
+    const matchP = pathFilter === 'all' || row.dataset.path === pathFilter;
+    const visible = matchQ && matchP;
+    row.style.display = visible ? '' : 'none';
+    if (visible) shown++;
   }
 
-  for (const card of sortVisible(visibleCards)) {
-    grid.appendChild(card);
+  document.querySelectorAll('.group-rows').forEach(container => {
+    const fragment = document.createDocumentFragment();
+    const visible = [...container.querySelectorAll('.row')].filter(r => r.style.display !== 'none');
+    const hidden = [...container.querySelectorAll('.row')].filter(r => r.style.display === 'none');
+    
+    const sortedVisible = sortRows(visible);
+    
+    for (const r of sortedVisible) {
+      r.classList.remove('no-border');
+      fragment.appendChild(r);
+    }
+    if (sortedVisible.length > 0) {
+      sortedVisible[sortedVisible.length - 1].classList.add('no-border');
+    }
+    
+    for (const r of hidden) {
+      r.classList.remove('no-border');
+      fragment.appendChild(r);
+    }
+    
+    container.appendChild(fragment);
+  });
+
+  for (const g of groups) {
+    const container = g.querySelector('.group-rows');
+    if (!container) continue;
+    const hasVisible = [...container.querySelectorAll('.row')].some(r => r.style.display !== 'none');
+    g.style.display = hasVisible ? '' : 'none';
   }
 
-  resultCount.textContent = `${shown} of ${cards.length} states`;
-  emptyState.style.display = shown === 0 ? '' : 'none';
+  emptyState.style.display = shown === 0 ? 'block' : 'none';
   syncUrl();
 }
 
-input.addEventListener('input', applyFilters);
-sortSelect.addEventListener('change', applyFilters);
-for (const pill of pathPills) {
-  pill.addEventListener('click', () => {
-    pathFilter = pill.dataset.value;
-    setActive(pathPills, pathFilter);
-    applyFilters();
-  });
-}
-for (const pill of tierPills) {
-  pill.addEventListener('click', () => {
-    tierFilter = pill.dataset.value;
-    setActive(tierPills, tierFilter);
-    applyFilters();
+input.addEventListener('input', () => requestAnimationFrame(applyFilters));
+searchClear.addEventListener('click', () => {
+  input.value = '';
+  input.focus();
+  requestAnimationFrame(applyFilters);
+});
+sortSelect.addEventListener('change', () => requestAnimationFrame(applyFilters));
+
+for (const btn of pathBtns) {
+  btn.addEventListener('click', () => {
+    pathFilter = btn.dataset.value;
+    for (const b of pathBtns) {
+      const isActive = b.dataset.value === pathFilter;
+      b.classList.toggle('active', isActive);
+      b.setAttribute('aria-pressed', isActive.toString());
+    }
+    requestAnimationFrame(applyFilters);
   });
 }
 
 const params = new URLSearchParams(window.location.search);
-const qParam = params.get('q');
-const pathParam = params.get('path');
-const tierParam = params.get('tier');
-const sortParam = params.get('sort');
-if (qParam) input.value = qParam;
-if (pathParam && ['all', 'member', 'non-member', 'cdr-only'].includes(pathParam)) pathFilter = pathParam;
-if (tierParam && ['all', 'fast', 'mid', 'slow', 'none'].includes(tierParam)) tierFilter = tierParam;
-if (sortParam && ['state', 'fee', 'speed'].includes(sortParam)) sortSelect.value = sortParam;
-setActive(pathPills, pathFilter);
-setActive(tierPills, tierFilter);
-applyFilters();
+if (params.get('q')) input.value = params.get('q');
+if (params.get('path') && ['all','member','non-member','cdr-only'].includes(params.get('path'))) pathFilter = params.get('path');
+if (params.get('sort') && ['state','fee','difficulty'].includes(params.get('sort'))) sortSelect.value = params.get('sort');
+
+for (const b of pathBtns) {
+  const isActive = b.dataset.value === pathFilter;
+  b.classList.toggle('active', isActive);
+  b.setAttribute('aria-pressed', isActive.toString());
+}
+
+requestAnimationFrame(applyFilters);
 </script>
 </body>
 </html>

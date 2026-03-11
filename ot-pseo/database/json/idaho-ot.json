@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://dopl.idaho.gov/",
     "endorsement_url": "https://dopl.idaho.gov/",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "idaho-ot",
   "specialty": "ot"

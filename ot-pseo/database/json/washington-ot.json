@@ -131,7 +131,8 @@
     "processing_tier": "mid",
     "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702",
     "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification."
+    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "requires_psv": true
   },
   "slug": "washington-ot",
   "specialty": "ot"
