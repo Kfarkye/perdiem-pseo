@@ -69,11 +69,11 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
             f'<a class="row" href="/{s["slug"]}" data-state="{s["name"].lower()}" '
             f'data-fee="{s["fee"]}" data-tier="{tier}" '
             f'data-path="{"cdr-only" if not s["license_required"] else "member" if s["member"] else "non-member"}">\n'
-            f'  <span class="r-name">{s["name"]}</span>\n'
+            f'  <span class="r-name" title="{s["name"]}">{s["name"]}</span>\n'
             f'  <span class="r-time">{time_display}</span>\n'
             f'  <span class="r-speed"><span class="badge badge-{tier}">{tier_label}</span></span>\n'
             f'  <span class="r-fee">{fee_display}</span>\n'
-            f'  <span class="r-chevron"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>\n'
+            f'  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>\n'
             f'</a>'
         )
 
@@ -92,26 +92,26 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     cdr_stat_block = ''
     if cdr_state_count:
         cdr_section = f'''
-  <section class="group animate-in" style="animation-delay: 0.15s" id="group-cdr">
+  <section class="group animate-in" style="animation-delay: 0.15s" id="group-cdr" aria-labelledby="heading-cdr">
     <div class="group-header">
-      <h2>CDR States</h2>
+      <h2 id="heading-cdr">CDR States</h2>
       <span class="group-count">{cdr_state_count}</span>
     </div>
     <p class="group-desc">No state license required \u2014 national CDR credential only.</p>
-    <div class="group-head-row">
+    <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
       <span class="align-right">Speed</span>
       <span class="align-right">Fee</span>
       <span></span>
     </div>
-    <div class="group-rows" data-group="cdr-only">
+    <div class="group-rows" data-group="cdr-only" role="list">
 {cdr_rows}
     </div>
   </section>'''
-        cdr_filter_pill = '<button type="button" class="seg-btn" data-value="cdr-only">CDR</button>'
+        cdr_filter_pill = '<button type="button" class="seg-btn" data-value="cdr-only" aria-pressed="false">CDR</button>'
         cdr_stat_block = f'''
-      <div class="stat-divider"></div>
+      <div class="stat-divider" aria-hidden="true"></div>
       <div class="stat">
         <span class="stat-value">{cdr_state_count}</span>
         <span class="stat-label">CDR States</span>
@@ -121,7 +121,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0">
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{domain}/">
@@ -144,11 +144,12 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
   
   --tint: #007AFF;
   --focus-ring: rgba(0, 122, 255, 0.4);
+  --ambient-glow: radial-gradient(circle at 50% 0%, rgba(0, 122, 255, 0.05), transparent 60%);
   
   --separator: rgba(60, 60, 67, 0.29);
   --fill-tertiary: rgba(118, 118, 128, 0.12);
   
-  --toolbar-bg: rgba(255, 255, 255, 0.72);
+  --toolbar-bg: rgba(255, 255, 255, 0.75);
   --toolbar-border: rgba(0, 0, 0, 0.08);
   --seg-active: #FFFFFF;
   
@@ -174,11 +175,12 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     
     --tint: #0A84FF;
     --focus-ring: rgba(10, 132, 255, 0.5);
+    --ambient-glow: radial-gradient(circle at 50% 0%, rgba(10, 132, 255, 0.12), transparent 60%);
     
     --separator: rgba(84, 84, 88, 0.65);
     --fill-tertiary: rgba(118, 118, 128, 0.24);
     
-    --toolbar-bg: rgba(28, 28, 30, 0.72);
+    --toolbar-bg: rgba(28, 28, 30, 0.75);
     --toolbar-border: rgba(255, 255, 255, 0.15);
     --seg-active: #636366;
     
@@ -188,27 +190,43 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     --badge-none-bg: #2C2C2E; --badge-none-txt: rgba(235, 235, 245, 0.6);
     
     --shadow-card: 0 4px 20px rgba(0,0,0,0.4);
-    --shadow-float: 0 12px 32px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08);
+    --shadow-float: 0 16px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08);
     --shadow-seg: 0 3px 8px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.1);
   }}
 }}
 
+/* ── BASE & RESET ───────────────────────────── */
 *, *::before, *::after {{ box-sizing: border-box; }}
 body {{ margin: 0; padding: 0; }}
-a {{ text-decoration: none; color: inherit; -webkit-tap-highlight-color: transparent; }}
-button {{ font-family: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; border: none; background: none; }}
+a {{ text-decoration: none; color: inherit; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }}
+button {{ font-family: inherit; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; border: none; background: none; }}
 ul {{ list-style: none; margin: 0; padding: 0; }}
 
-html {{ scroll-behavior: smooth; }}
+html {{ 
+  scroll-behavior: smooth; 
+  scroll-padding-top: 100px;
+}}
 
 body {{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-feature-settings: "cv11" 1, "cv04" 1;
   background: var(--bg-system);
   color: var(--label-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   line-height: 1.5;
+  position: relative;
+}}
+
+/* Ambient Background Glow */
+body::before {{
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 70vh;
+  background: var(--ambient-glow);
+  pointer-events: none;
+  z-index: -1;
 }}
 
 h1, h2, h3, .stat-value {{ 
@@ -216,18 +234,18 @@ h1, h2, h3, .stat-value {{
 }}
 
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {{
-  outline: 2px solid var(--tint);
-  outline-offset: 2px;
-  border-radius: 6px;
+  outline: none;
+  box-shadow: 0 0 0 3px var(--focus-ring);
+  border-radius: 8px;
 }}
 
 /* ── ANIMATIONS ─────────────────────────────── */
 @keyframes fadeScaleIn {{
-  0% {{ opacity: 0; transform: scale(0.98) translateY(10px); }}
+  0% {{ opacity: 0; transform: scale(0.985) translateY(8px); }}
   100% {{ opacity: 1; transform: scale(1) translateY(0); }}
 }}
 .animate-in {{
-  animation: fadeScaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fadeScaleIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
 }}
 
 /* ── NAV ────────────────────────────────────── */
@@ -265,10 +283,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   text-align: center;
 }}
 .hero-wrapper h1 {{
-  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-size: clamp(2.25rem, 5.5vw, 3.5rem);
   font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
   margin: 0 0 1rem;
 }}
 .hero-sub {{
@@ -283,7 +301,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   display: inline-flex;
   background: var(--bg-surface);
   border-radius: 20px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.75rem;
   margin-top: 2.5rem;
   box-shadow: var(--shadow-card);
   gap: 1.5rem;
@@ -338,34 +356,53 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   gap: 8px;
   box-shadow: var(--shadow-float);
   pointer-events: auto;
+  transition: box-shadow 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }}
+/* On desktop, let children flow directly into toolbar flex */
+.toolbar-bottom-row {{ display: contents; }}
+
 .search-wrap {{
   flex: 1;
   min-width: 200px;
   position: relative;
+  display: flex;
+  align-items: center;
 }}
 .search-icon {{
   position: absolute;
   left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
   color: var(--label-secondary);
   pointer-events: none;
 }}
 .search-input {{
   width: 100%;
   height: 36px;
-  padding: 0 12px 0 36px;
+  padding: 0 36px 0 36px;
   background: var(--fill-tertiary);
   border: none;
   border-radius: 10px;
   color: var(--label-primary);
   font-size: 15px;
   font-family: inherit;
-  transition: all 0.2s;
+  transition: background 0.2s, box-shadow 0.2s;
 }}
 .search-input::placeholder {{ color: var(--label-secondary); font-weight: 400; }}
 .search-input:focus {{ background: var(--bg-surface); box-shadow: 0 0 0 2px var(--focus-ring); outline: none; }}
+.search-clear {{
+  position: absolute;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: var(--label-tertiary);
+  color: var(--bg-surface);
+  border-radius: 50%;
+  padding: 4px;
+}}
+.search-clear svg {{ width: 10px; height: 10px; }}
+.search-clear:hover {{ background: var(--label-secondary); }}
 
 .seg-group {{
   display: flex;
@@ -408,7 +445,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%2386868B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
-  transition: all 0.2s;
+  transition: background 0.2s, box-shadow 0.2s;
 }}
 .sort-select:focus {{ background: var(--bg-surface); box-shadow: 0 0 0 2px var(--focus-ring); outline: none; }}
 
@@ -449,7 +486,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 .group-head-row {{
   display: grid;
-  grid-template-columns: 2fr 1.5fr 100px 80px 24px;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) 100px 80px 24px;
   padding: 0 24px 8px;
   font-size: 12px;
   font-weight: 600;
@@ -468,20 +505,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 .row {{
   display: grid;
-  grid-template-columns: 2fr 1.5fr 100px 80px 24px;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) 100px 80px 24px;
   align-items: center;
   padding: 14px 24px;
   position: relative;
-  transition: background-color 0.15s;
+  transition: background-color 0.15s, transform 0.15s cubic-bezier(0.2, 0, 0, 1);
+  transform-origin: center;
 }}
 /* True 0.5px Inset Retina Hairline */
 .row::after {{
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 24px;
-  right: 0;
-  height: 1px;
+  bottom: 0; left: 24px; right: 0; height: 1px;
   background: var(--separator);
   transform: scaleY(0.5);
   transform-origin: bottom;
@@ -489,22 +524,39 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .row.no-border::after {{ display: none; }}
 @media (hover: hover) {{ 
   .row:hover {{ background-color: var(--bg-surface-active); }} 
+  .row:hover .r-chevron {{ transform: translateX(3px); color: var(--label-secondary); }}
 }}
 .row:active {{ 
   background-color: var(--bg-surface-active); 
   transform: scale(0.995); 
   z-index: 1; 
-  transition: transform 0.1s; 
 }}
 
-.r-name {{ font-size: 17px; font-weight: 500; letter-spacing: -0.022em; color: var(--label-primary); }}
-.r-time {{ font-size: 15px; color: var(--label-secondary); }}
+.r-name {{ 
+  font-size: 17px; 
+  font-weight: 500; 
+  letter-spacing: -0.022em; 
+  color: var(--label-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 12px;
+}}
+.r-time {{ 
+  font-size: 15px; 
+  color: var(--label-secondary); 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  padding-right: 12px; 
+}}
 .r-speed {{ display: flex; justify-content: flex-end; }}
 .r-fee {{ font-size: 17px; font-weight: 400; color: var(--label-secondary); text-align: right; font-variant-numeric: tabular-nums; }}
 .r-chevron {{
   display: flex;
   justify-content: flex-end;
   color: var(--label-tertiary);
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.2s;
 }}
 
 /* ── SEMANTIC BADGES ────────────────────────── */
@@ -539,7 +591,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .foot-wrapper {{
   padding: 3rem 1.5rem;
   margin-top: 2rem;
-  border-top: 1px solid var(--separator);
+  border-top: 1px solid var(--toolbar-border);
 }}
 .foot {{
   max-width: 900px;
@@ -558,23 +610,38 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 /* ── RESPONSIVE ─────────────────────────────── */
 @media (max-width: 860px) {{
   .toolbar-wrap {{ top: 1rem; }}
-  .toolbar {{ flex-wrap: wrap; padding: 12px; border-radius: 16px; }}
-  .search-wrap {{ width: 100%; flex: none; order: 1; }}
-  .seg-group {{ flex: 1; justify-content: space-between; order: 2; }}
-  .seg-btn {{ flex: 1; padding: 0; text-align: center; }}
-  .sort-select {{ flex: 1; order: 3; }}
+  .toolbar {{ flex-direction: column; padding: 12px; border-radius: 16px; gap: 12px; }}
+  .search-wrap {{ width: 100%; }}
+  .search-input {{ height: 40px; }}
+  
+  .toolbar-bottom-row {{ display: flex; gap: 12px; width: 100%; }}
+  
+  .seg-group {{ 
+    flex: 1;
+    justify-content: space-between; 
+    padding: 3px; 
+    border-radius: 10px; 
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+  }}
+  .seg-group::-webkit-scrollbar {{ display: none; }}
+  .seg-btn {{ flex-shrink: 0; height: 36px; padding: 0 16px; text-align: center; }}
+  
+  .sort-select {{ flex: 1; height: 42px; min-width: 120px; }}
 }}
 
 @media (max-width: 640px) {{
   .hero-wrapper {{ padding: 2rem 1rem 1rem; }}
   .stats-container {{ display: flex; flex-direction: column; width: 100%; align-items: stretch; padding: 1.5rem; gap: 1rem; border-radius: 16px; }}
-  .stat-divider {{ width: 100%; height: 1px; }}
+  .stat-divider {{ width: 100%; height: 1px; transform: scaleY(0.5); }}
   
   .group-head-row {{ display: none; }}
   .group-header, .group-desc {{ padding-left: 8px; }}
   
+  /* Mobile 2-line Wallet-Style Row */
   .row {{
-    grid-template-columns: 1fr auto 20px;
+    grid-template-columns: minmax(0, 1fr) auto 20px;
     grid-template-areas:
       "name fee chevron"
       "time speed chevron";
@@ -582,9 +649,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     padding: 14px 16px;
   }}
   .row::after {{ left: 16px; }}
-  .r-name {{ grid-area: name; font-size: 17px; }}
-  .r-time {{ grid-area: time; font-size: 14px; }}
-  .r-fee {{ grid-area: fee; text-align: right; }}
+  .r-name {{ grid-area: name; font-size: 17px; padding-right: 0; }}
+  .r-time {{ grid-area: time; font-size: 14px; padding-right: 0; }}
+  .r-fee {{ grid-area: fee; text-align: right; font-weight: 500; color: var(--label-primary); }}
   .r-speed {{ grid-area: speed; justify-content: flex-end; padding-right: 0; }}
   .badge {{ font-size: 12px; padding: 2px 8px; }}
   .r-chevron {{ grid-area: chevron; align-self: center; }}
@@ -600,7 +667,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 <body>
 <nav class="nav animate-in" aria-label="Site navigation">
   <div class="nav-brand">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
     State Licensing Reference
   </div>
   <div class="nav-links">
@@ -618,7 +685,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       <span class="stat-value">{total_states}</span>
       <span class="stat-label">Jurisdictions</span>
     </div>
-    <div class="stat-divider"></div>
+    <div class="stat-divider" aria-hidden="true"></div>
     <div class="stat">
       <span class="stat-value">{member_count}</span>
       <span class="stat-label">Compact States</span>
@@ -627,65 +694,70 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 </header>
 
 <div class="toolbar-wrap animate-in" style="animation-delay: 0.1s">
-  <div class="toolbar" role="search">
+  <search class="toolbar" role="search">
     <div class="search-wrap">
-      <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
-      <input id="stateSearch" class="search-input" type="search" placeholder="Search states..." aria-label="Search states">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
+      <input id="stateSearch" class="search-input" type="text" placeholder="Search states..." aria-label="Search states by name" autocomplete="off" spellcheck="false">
+      <button class="search-clear" id="searchClear" aria-label="Clear search">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
+      </button>
     </div>
-    <div class="seg-group" data-filter-group="path" role="group" aria-label="Filter by path">
-      <button type="button" class="seg-btn active" data-value="all">All</button>
-      <button type="button" class="seg-btn" data-value="member">Compact</button>
-      <button type="button" class="seg-btn" data-value="non-member">Endorsement</button>
-      {cdr_filter_pill}
+    <div class="toolbar-bottom-row">
+      <div class="seg-group" data-filter-group="path" role="group" aria-label="Filter by reciprocity path">
+        <button type="button" class="seg-btn active" data-value="all" aria-pressed="true">All</button>
+        <button type="button" class="seg-btn" data-value="member" aria-pressed="false">Compact</button>
+        <button type="button" class="seg-btn" data-value="non-member" aria-pressed="false">Endorsement</button>
+        {cdr_filter_pill}
+      </div>
+      <select id="sortSelect" class="sort-select" aria-label="Sort states">
+        <option value="state">Sort: A &ndash; Z</option>
+        <option value="fee">Sort: Fee</option>
+        <option value="speed">Sort: Speed</option>
+      </select>
     </div>
-    <select id="sortSelect" class="sort-select" aria-label="Sort states">
-      <option value="state">Sort: A &ndash; Z</option>
-      <option value="fee">Sort: Fee</option>
-      <option value="speed">Sort: Speed</option>
-    </select>
-  </div>
+  </search>
 </div>
 
 <main class="content" id="main-content">
-  <section class="group animate-in" style="animation-delay: 0.15s" id="group-compact">
+  <section class="group animate-in" style="animation-delay: 0.15s" id="group-compact" aria-labelledby="heading-compact">
     <div class="group-header">
-      <h2>Compact States</h2>
-      <span class="group-count">{member_count}</span>
+      <h2 id="heading-compact">Compact States</h2>
+      <span class="group-count" aria-label="{member_count} states">{member_count}</span>
     </div>
     <p class="group-desc">Your home-state license may already cover these states via compact privilege.</p>
-    <div class="group-head-row">
+    <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
       <span class="align-right">Speed</span>
       <span class="align-right">Fee</span>
       <span></span>
     </div>
-    <div class="group-rows" data-group="member">
+    <div class="group-rows" data-group="member" role="list">
 {compact_rows}
     </div>
   </section>
 
-  <section class="group animate-in" style="animation-delay: 0.2s" id="group-endorsement">
+  <section class="group animate-in" style="animation-delay: 0.2s" id="group-endorsement" aria-labelledby="heading-endorsement">
     <div class="group-header">
-      <h2>Endorsement States</h2>
-      <span class="group-count">{endorsement_count}</span>
+      <h2 id="heading-endorsement">Endorsement States</h2>
+      <span class="group-count" aria-label="{endorsement_count} states">{endorsement_count}</span>
     </div>
     <p class="group-desc">Requires a separate board application with fee and processing time.</p>
-    <div class="group-head-row">
+    <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
       <span class="align-right">Speed</span>
       <span class="align-right">Fee</span>
       <span></span>
     </div>
-    <div class="group-rows" data-group="non-member">
+    <div class="group-rows" data-group="non-member" role="list">
 {endorsement_rows}
     </div>
   </section>
 {cdr_section}
 
   <section class="empty" id="emptyState" aria-live="polite">
-    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
       <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
     </svg>
     <h3>No Matches Found</h3>
@@ -694,7 +766,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 </main>
 
 <div class="foot-wrapper">
-  <section class="foot animate-in" id="how-to-use" style="animation-delay: 0.25s">
+  <footer class="foot animate-in" id="how-to-use" style="animation-delay: 0.25s">
     <div>
       <h2>How to use this directory</h2>
       <p>Start with the path filter to narrow by compact, endorsement, or CDR. Sort by fee or speed to find your fastest or cheapest route. Open any state to see the full board-verified guide with steps, documents, and renewal info.</p>
@@ -707,11 +779,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       </ul>
       <span class="foot-meta">Verified updated &bull; {latest_verified}</span>
     </div>
-  </section>
+  </footer>
 </div>
 
 <script>
 const input = document.getElementById('stateSearch');
+const searchClear = document.getElementById('searchClear');
 const allRows = [...document.querySelectorAll('.row')];
 const groups = [...document.querySelectorAll('.group')];
 const sortSelect = document.getElementById('sortSelect');
@@ -753,6 +826,7 @@ function syncUrl() {{
 
 function applyFilters() {{
   const q = input.value.toLowerCase().trim();
+  searchClear.style.display = q ? 'flex' : 'none';
   let shown = 0;
 
   for (const row of allRows) {{
@@ -764,25 +838,26 @@ function applyFilters() {{
   }}
 
   document.querySelectorAll('.group-rows').forEach(container => {{
+    const fragment = document.createDocumentFragment();
     const visible = [...container.querySelectorAll('.row')].filter(r => r.style.display !== 'none');
     const hidden = [...container.querySelectorAll('.row')].filter(r => r.style.display === 'none');
     
     const sortedVisible = sortRows(visible);
     
-    // Automatically manages the hidden bottom border rule for the last visible element
     for (const r of sortedVisible) {{
       r.classList.remove('no-border');
-      container.appendChild(r);
+      fragment.appendChild(r);
     }}
     if (sortedVisible.length > 0) {{
       sortedVisible[sortedVisible.length - 1].classList.add('no-border');
     }}
     
-    // Keep hidden rows out of the way to preserve the structural flex/grid flow
     for (const r of hidden) {{
       r.classList.remove('no-border');
-      container.appendChild(r);
+      fragment.appendChild(r);
     }}
+    
+    container.appendChild(fragment);
   }});
 
   for (const g of groups) {{
@@ -796,14 +871,23 @@ function applyFilters() {{
   syncUrl();
 }}
 
-input.addEventListener('input', applyFilters);
-sortSelect.addEventListener('change', applyFilters);
+input.addEventListener('input', () => requestAnimationFrame(applyFilters));
+searchClear.addEventListener('click', () => {{
+  input.value = '';
+  input.focus();
+  requestAnimationFrame(applyFilters);
+}});
+sortSelect.addEventListener('change', () => requestAnimationFrame(applyFilters));
 
 for (const btn of pathBtns) {{
   btn.addEventListener('click', () => {{
     pathFilter = btn.dataset.value;
-    for (const b of pathBtns) b.classList.toggle('active', b.dataset.value === pathFilter);
-    applyFilters();
+    for (const b of pathBtns) {{
+      const isActive = b.dataset.value === pathFilter;
+      b.classList.toggle('active', isActive);
+      b.setAttribute('aria-pressed', isActive.toString());
+    }}
+    requestAnimationFrame(applyFilters);
   }});
 }}
 
@@ -811,10 +895,14 @@ const params = new URLSearchParams(window.location.search);
 if (params.get('q')) input.value = params.get('q');
 if (params.get('path') && ['all','member','non-member','cdr-only'].includes(params.get('path'))) pathFilter = params.get('path');
 if (params.get('sort') && ['state','fee','speed'].includes(params.get('sort'))) sortSelect.value = params.get('sort');
-for (const b of pathBtns) b.classList.toggle('active', b.dataset.value === pathFilter);
 
-// Trigger initial filter to process borders
-applyFilters();
+for (const b of pathBtns) {{
+  const isActive = b.dataset.value === pathFilter;
+  b.classList.toggle('active', isActive);
+  b.setAttribute('aria-pressed', isActive.toString());
+}}
+
+requestAnimationFrame(applyFilters);
 </script>
 </body>
 </html>'''
