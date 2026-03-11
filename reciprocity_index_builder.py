@@ -16,7 +16,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         tier = s['processing_tier']
         tier_label = {'fast': 'Fast', 'mid': 'Mid', 'slow': 'Slow'}.get(tier, 'Slow')
         cards.append(
-            f'''      <a class="link-card" href="/{s['slug']}" data-state="{s['name'].lower()}" data-compact="{'member' if member else 'non-member'}" data-tier="{tier}">\n'''
+            f'''      <a class="link-card" href="/{s['slug']}" data-state="{s['name'].lower()}" data-name="{s['name'].lower()}" data-fee="{s['endorsement_fee']}" data-compact="{'member' if member else 'non-member'}" data-tier="{tier}">\n'''
             f'''        <div class="card-top">\n'''
             f'''          <div class="card-head">\n'''
             f'''            <h3>{s['name']}</h3>\n'''
@@ -86,8 +86,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {{
 .hero-stat {{ display:inline-flex; align-items:center; gap:.4rem; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.1); border-radius:999px; padding:.4rem .8rem; font-size:.74rem; color:#fff9f4; }}
 .reciprocity-toolbar {{ max-width: 1040px; margin: -1.8rem auto 1.4rem; padding: 1rem; background: rgba(255,255,255,.86); border-radius: 22px; box-shadow: 0 22px 48px rgba(16,24,32,.08); border: 1px solid rgba(16,24,32,.08); position: relative; z-index: 3; backdrop-filter: blur(12px); }}
 .toolbar-grid {{ display:grid; grid-template-columns: minmax(0,1fr); gap:.85rem; }}
-.toolbar-top {{ display:grid; grid-template-columns: minmax(0,1.4fr) auto; gap:.8rem; align-items:center; }}
+.toolbar-top {{ display:grid; grid-template-columns: minmax(0,1fr) auto auto; gap:.8rem; align-items:center; }}
 .reciprocity-toolbar input {{ width: 100%; padding: .95rem 1rem; border-radius: 14px; border: 1px solid rgba(16,24,32,.12); background: #fff; }}
+.sort-select {{ min-height: 44px; border: 1px solid rgba(16,24,32,.14); border-radius: 12px; background:#fff; color:rgba(16,24,32,.78); font-size:.82rem; padding: .55rem .75rem; }}
 .result-count {{ font-size:.83rem; color:rgba(16,24,32,.66); text-align:right; }}
 .filters {{ display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:.75rem; }}
 .filter-group {{ border:1px solid rgba(16,24,32,.08); border-radius:14px; background:rgba(255,255,255,.68); padding:.68rem; }}
@@ -131,7 +132,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {{
 </style>
 </head>
 <body>
-<nav class="site-nav" aria-label="Site navigation"><div class="site-nav-inner"><a href="/" class="site-nav-brand">State Licensing Reference</a></div></nav>
+<nav class="site-nav" aria-label="Site navigation"><div class="site-nav-inner"><a href="/" class="site-nav-brand">State Licensing Reference</a><ul class="site-nav-links"><li><a href="/">Directory</a></li><li><a href="#main-content">Tool</a></li><li><a href="#how-to-use">How It Works</a></li></ul></div></nav>
 <header class="reciprocity-hero">
   <div class="reciprocity-hero-inner">
     <span class="eyebrow">License Transfer Tool</span>
@@ -149,6 +150,11 @@ a:focus-visible, button:focus-visible, input:focus-visible {{
     <div class="toolbar-grid">
       <div class="toolbar-top">
         <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
+        <select id="sortSelect" class="sort-select" aria-label="Sort states">
+          <option value="state">Sort: State</option>
+          <option value="fee">Sort: Fee (Low to High)</option>
+          <option value="speed">Sort: Timeline (Fast to Slow)</option>
+        </select>
         <div id="resultCount" class="result-count"></div>
       </div>
       <div class="filters">
@@ -179,7 +185,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {{
     <div class="empty-card">No states match your current filters. Clear one filter or search term and try again.</div>
   </section>
   <section class="reciprocity-footer">
-    <article class="footer-card">
+    <article id="how-to-use" class="footer-card">
       <h2>How to use this directory</h2>
       <p>Open your target state first. The lead section on each page answers the practical question up front: compact privilege or endorsement, total fee, fingerprinting, and how fast the board usually moves.</p>
     </article>
@@ -193,6 +199,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {{
 <script>
 const input = document.getElementById('stateSearch');
 const cards = [...document.querySelectorAll('.link-card')];
+const grid = document.getElementById('reciprocityGrid');
+const sortSelect = document.getElementById('sortSelect');
 const resultCount = document.getElementById('resultCount');
 const emptyState = document.getElementById('emptyState');
 const compactPills = [...document.querySelectorAll('[data-filter-group="compact"] .filter-pill')];
@@ -200,6 +208,37 @@ const tierPills = [...document.querySelectorAll('[data-filter-group="tier"] .fil
 
 let compactFilter = 'all';
 let tierFilter = 'all';
+
+function tierRank(value) {{
+  if (value === 'fast') return 0;
+  if (value === 'mid') return 1;
+  return 2;
+}}
+
+function sortVisible(list) {{
+  const mode = sortSelect.value;
+  return [...list].sort((a, b) => {{
+    if (mode === 'fee') return Number(a.dataset.fee) - Number(b.dataset.fee);
+    if (mode === 'speed') {{
+      const tierDelta = tierRank(a.dataset.tier) - tierRank(b.dataset.tier);
+      if (tierDelta !== 0) return tierDelta;
+      return Number(a.dataset.fee) - Number(b.dataset.fee);
+    }}
+    return a.dataset.name.localeCompare(b.dataset.name);
+  }});
+}}
+
+function syncUrl() {{
+  const params = new URLSearchParams(window.location.search);
+  const q = input.value.trim();
+  if (q) params.set('q', q); else params.delete('q');
+  if (compactFilter !== 'all') params.set('compact', compactFilter); else params.delete('compact');
+  if (tierFilter !== 'all') params.set('tier', tierFilter); else params.delete('tier');
+  if (sortSelect.value !== 'state') params.set('sort', sortSelect.value); else params.delete('sort');
+  const next = params.toString();
+  const target = next ? `${{window.location.pathname}}?${{next}}` : window.location.pathname;
+  window.history.replaceState(null, '', target);
+}}
 
 function setActive(pills, value) {{
   for (const pill of pills) {{
@@ -210,19 +249,26 @@ function setActive(pills, value) {{
 function applyFilters() {{
   const q = input.value.toLowerCase().trim();
   let shown = 0;
+  const visibleCards = [];
   for (const card of cards) {{
     const matchesSearch = card.dataset.state.includes(q);
     const matchesCompact = compactFilter === 'all' || card.dataset.compact === compactFilter;
     const matchesTier = tierFilter === 'all' || card.dataset.tier === tierFilter;
     const visible = matchesSearch && matchesCompact && matchesTier;
     card.style.display = visible ? '' : 'none';
+    if (visible) visibleCards.push(card);
     shown += visible ? 1 : 0;
+  }}
+  for (const card of sortVisible(visibleCards)) {{
+    grid.appendChild(card);
   }}
   resultCount.textContent = `${{shown}} of ${{cards.length}} states`;
   emptyState.style.display = shown === 0 ? '' : 'none';
+  syncUrl();
 }}
 
 input.addEventListener('input', applyFilters);
+sortSelect.addEventListener('change', applyFilters);
 for (const pill of compactPills) {{
   pill.addEventListener('click', () => {{
     compactFilter = pill.dataset.value;
@@ -238,6 +284,17 @@ for (const pill of tierPills) {{
   }});
 }}
 
+const params = new URLSearchParams(window.location.search);
+const qParam = params.get('q');
+const compactParam = params.get('compact');
+const tierParam = params.get('tier');
+const sortParam = params.get('sort');
+if (qParam) input.value = qParam;
+if (compactParam && ['all', 'member', 'non-member'].includes(compactParam)) compactFilter = compactParam;
+if (tierParam && ['all', 'fast', 'mid', 'slow'].includes(tierParam)) tierFilter = tierParam;
+if (sortParam && ['state', 'fee', 'speed'].includes(sortParam)) sortSelect.value = sortParam;
+setActive(compactPills, compactFilter);
+setActive(tierPills, tierFilter);
 applyFilters();
 </script>
 </body>

@@ -53,6 +53,59 @@
       outline-offset: 2px;
       border-radius: 10px;
     }
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(16, 24, 32, 0.84);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .site-nav-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0.65rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
+    .site-nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .site-nav-links a {
+      text-decoration: none;
+      color: rgba(255, 250, 245, 0.86);
+      font-size: 0.73rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 0.34rem 0.62rem;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .site-nav-links a:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+    .scroll-progress {
+      position: sticky;
+      top: 47px;
+      z-index: 19;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .scroll-progress-bar {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #2f7d89, #bc5e36);
+      transition: width 0.08s linear;
+    }
     .hero {
       padding-bottom: 4.65rem;
       background:
@@ -333,6 +386,11 @@
       background: rgba(22, 60, 58, 0.08);
       color: var(--ui-forest);
     }
+    .section-nav a.is-active {
+      background: rgba(22, 60, 58, 0.15);
+      color: var(--ui-forest);
+      border-color: rgba(22, 60, 58, 0.25);
+    }
     .steps-list {
       display: grid;
       gap: 0.85rem;
@@ -501,6 +559,12 @@
       }
     }
     @media (max-width: 720px) {
+      .site-nav-links {
+        display: none;
+      }
+      .scroll-progress {
+        top: 44px;
+      }
       .hero {
         padding-bottom: 3.7rem;
       }
@@ -599,8 +663,15 @@
   <nav class="site-nav" aria-label="Primary site navigation">
     <div class="site-nav-inner">
       <a href="/" class="site-nav-brand">State Licensing Reference</a>
+      <ul class="site-nav-links">
+        <li><a href="/">All States</a></li>
+        <li><a href="#reciprocity">Reciprocity</a></li>
+        <li><a href="#endorsement">Steps</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
     </div>
   </nav>
+  <div class="scroll-progress" aria-hidden="true"><div id="scrollProgressBar" class="scroll-progress-bar"></div></div>
   <header class="hero" aria-labelledby="hero-title">
     <div class="hero-inner">
       <nav class="hero-breadcrumb" aria-label="Breadcrumb">
@@ -677,12 +748,12 @@
       </section>
 
       <nav class="section-nav" aria-label="Jump to section">
-        <a href="#endorsement">Steps</a>
-        <a href="#quick-facts">Quick Facts</a>
-        <a href="#documents">Documents</a>
-        <a href="#contact">Board</a>
-        <a href="#renewal">Renewal</a>
-        <a href="#faq">FAQ</a>
+        <a class="section-link" href="#endorsement">Steps</a>
+        <a class="section-link" href="#quick-facts">Quick Facts</a>
+        <a class="section-link" href="#documents">Documents</a>
+        <a class="section-link" href="#contact">Board</a>
+        <a class="section-link" href="#renewal">Renewal</a>
+        <a class="section-link" href="#faq">FAQ</a>
       </nav>
 
       <section id="endorsement" class="section" aria-labelledby="apply-heading">
@@ -805,5 +876,34 @@
       </section>
     </div>
   </main>
+  <script>
+    const progress = document.getElementById('scrollProgressBar');
+    const sectionLinks = [...document.querySelectorAll('.section-link')];
+    const linkedSections = sectionLinks
+      .map((link) => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    function updateProgress() {
+      const scrollTop = window.scrollY;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
+      progress.style.width = `${pct}%`;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!visible) return;
+      const activeId = `#${visible.target.id}`;
+      for (const link of sectionLinks) {
+        link.classList.toggle('is-active', link.getAttribute('href') === activeId);
+      }
+    }, { rootMargin: '-35% 0px -55% 0px', threshold: [0.2, 0.35, 0.5] });
+
+    for (const section of linkedSections) observer.observe(section);
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  </script>
 </body>
 </html>

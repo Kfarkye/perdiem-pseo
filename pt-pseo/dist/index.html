@@ -42,8 +42,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .hero-stat { display:inline-flex; align-items:center; gap:.4rem; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.1); border-radius:999px; padding:.4rem .8rem; font-size:.74rem; color:#fff9f4; }
 .reciprocity-toolbar { max-width: 1040px; margin: -1.8rem auto 1.4rem; padding: 1rem; background: rgba(255,255,255,.86); border-radius: 22px; box-shadow: 0 22px 48px rgba(16,24,32,.08); border: 1px solid rgba(16,24,32,.08); position: relative; z-index: 3; backdrop-filter: blur(12px); }
 .toolbar-grid { display:grid; grid-template-columns: minmax(0,1fr); gap:.85rem; }
-.toolbar-top { display:grid; grid-template-columns: minmax(0,1.4fr) auto; gap:.8rem; align-items:center; }
+.toolbar-top { display:grid; grid-template-columns: minmax(0,1fr) auto auto; gap:.8rem; align-items:center; }
 .reciprocity-toolbar input { width: 100%; padding: .95rem 1rem; border-radius: 14px; border: 1px solid rgba(16,24,32,.12); background: #fff; }
+.sort-select { min-height: 44px; border: 1px solid rgba(16,24,32,.14); border-radius: 12px; background:#fff; color:rgba(16,24,32,.78); font-size:.82rem; padding: .55rem .75rem; }
 .result-count { font-size:.83rem; color:rgba(16,24,32,.66); text-align:right; }
 .filters { display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:.75rem; }
 .filter-group { border:1px solid rgba(16,24,32,.08); border-radius:14px; background:rgba(255,255,255,.68); padding:.68rem; }
@@ -87,7 +88,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 </style>
 </head>
 <body>
-<nav class="site-nav" aria-label="Site navigation"><div class="site-nav-inner"><a href="/" class="site-nav-brand">State Licensing Reference</a></div></nav>
+<nav class="site-nav" aria-label="Site navigation"><div class="site-nav-inner"><a href="/" class="site-nav-brand">State Licensing Reference</a><ul class="site-nav-links"><li><a href="/">Directory</a></li><li><a href="#main-content">Tool</a></li><li><a href="#how-to-use">How It Works</a></li></ul></div></nav>
 <header class="reciprocity-hero">
   <div class="reciprocity-hero-inner">
     <span class="eyebrow">License Transfer Tool</span>
@@ -105,6 +106,11 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <div class="toolbar-grid">
       <div class="toolbar-top">
         <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
+        <select id="sortSelect" class="sort-select" aria-label="Sort states">
+          <option value="state">Sort: State</option>
+          <option value="fee">Sort: Fee (Low to High)</option>
+          <option value="speed">Sort: Timeline (Fast to Slow)</option>
+        </select>
         <div id="resultCount" class="result-count"></div>
       </div>
       <div class="filters">
@@ -129,7 +135,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     </div>
   </section>
   <section class="reciprocity-grid" id="reciprocityGrid">
-      <a class="link-card" href="/alabama-pt" data-state="alabama" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/alabama-pt" data-state="alabama" data-name="alabama" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Alabama</h3>
@@ -146,7 +152,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/alaska-pt" data-state="alaska" data-compact="non-member" data-tier="mid">
+      <a class="link-card" href="/alaska-pt" data-state="alaska" data-name="alaska" data-fee="100" data-compact="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Alaska</h3>
@@ -163,7 +169,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/arizona-pt" data-state="arizona" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/arizona-pt" data-state="arizona" data-name="arizona" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Arizona</h3>
@@ -180,7 +186,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/arkansas-pt" data-state="arkansas" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/arkansas-pt" data-state="arkansas" data-name="arkansas" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Arkansas</h3>
@@ -197,7 +203,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/california-pt" data-state="california" data-compact="non-member" data-tier="mid">
+      <a class="link-card" href="/california-pt" data-state="california" data-name="california" data-fee="100" data-compact="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>California</h3>
@@ -214,7 +220,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/colorado-pt" data-state="colorado" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/colorado-pt" data-state="colorado" data-name="colorado" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Colorado</h3>
@@ -231,7 +237,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/connecticut-pt" data-state="connecticut" data-compact="non-member" data-tier="mid">
+      <a class="link-card" href="/connecticut-pt" data-state="connecticut" data-name="connecticut" data-fee="100" data-compact="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Connecticut</h3>
@@ -248,7 +254,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/delaware-pt" data-state="delaware" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/delaware-pt" data-state="delaware" data-name="delaware" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Delaware</h3>
@@ -265,7 +271,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/dc-pt" data-state="district of columbia" data-compact="non-member" data-tier="mid">
+      <a class="link-card" href="/dc-pt" data-state="district of columbia" data-name="district of columbia" data-fee="100" data-compact="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>District of Columbia</h3>
@@ -282,7 +288,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/florida-pt" data-state="florida" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/florida-pt" data-state="florida" data-name="florida" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Florida</h3>
@@ -299,7 +305,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/georgia-pt" data-state="georgia" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/georgia-pt" data-state="georgia" data-name="georgia" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Georgia</h3>
@@ -316,7 +322,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/hawaii-pt" data-state="hawaii" data-compact="non-member" data-tier="mid">
+      <a class="link-card" href="/hawaii-pt" data-state="hawaii" data-name="hawaii" data-fee="100" data-compact="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Hawaii</h3>
@@ -333,7 +339,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/idaho-pt" data-state="idaho" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/idaho-pt" data-state="idaho" data-name="idaho" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Idaho</h3>
@@ -350,7 +356,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/illinois-pt" data-state="illinois" data-compact="non-member" data-tier="mid">
+      <a class="link-card" href="/illinois-pt" data-state="illinois" data-name="illinois" data-fee="100" data-compact="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Illinois</h3>
@@ -367,7 +373,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/indiana-pt" data-state="indiana" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/indiana-pt" data-state="indiana" data-name="indiana" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Indiana</h3>
@@ -384,7 +390,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/iowa-pt" data-state="iowa" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/iowa-pt" data-state="iowa" data-name="iowa" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Iowa</h3>
@@ -401,7 +407,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/kansas-pt" data-state="kansas" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/kansas-pt" data-state="kansas" data-name="kansas" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Kansas</h3>
@@ -418,7 +424,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/kentucky-pt" data-state="kentucky" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/kentucky-pt" data-state="kentucky" data-name="kentucky" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Kentucky</h3>
@@ -435,7 +441,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/louisiana-pt" data-state="louisiana" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/louisiana-pt" data-state="louisiana" data-name="louisiana" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Louisiana</h3>
@@ -452,7 +458,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/maine-pt" data-state="maine" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/maine-pt" data-state="maine" data-name="maine" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Maine</h3>
@@ -469,7 +475,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/maryland-pt" data-state="maryland" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/maryland-pt" data-state="maryland" data-name="maryland" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Maryland</h3>
@@ -486,7 +492,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/massachusetts-pt" data-state="massachusetts" data-compact="non-member" data-tier="mid">
+      <a class="link-card" href="/massachusetts-pt" data-state="massachusetts" data-name="massachusetts" data-fee="100" data-compact="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Massachusetts</h3>
@@ -503,7 +509,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/michigan-pt" data-state="michigan" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/michigan-pt" data-state="michigan" data-name="michigan" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Michigan</h3>
@@ -520,7 +526,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/minnesota-pt" data-state="minnesota" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/minnesota-pt" data-state="minnesota" data-name="minnesota" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Minnesota</h3>
@@ -537,7 +543,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/mississippi-pt" data-state="mississippi" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/mississippi-pt" data-state="mississippi" data-name="mississippi" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Mississippi</h3>
@@ -554,7 +560,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/missouri-pt" data-state="missouri" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/missouri-pt" data-state="missouri" data-name="missouri" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Missouri</h3>
@@ -571,7 +577,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/montana-pt" data-state="montana" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/montana-pt" data-state="montana" data-name="montana" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Montana</h3>
@@ -588,7 +594,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/nebraska-pt" data-state="nebraska" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/nebraska-pt" data-state="nebraska" data-name="nebraska" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Nebraska</h3>
@@ -605,7 +611,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/nevada-pt" data-state="nevada" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/nevada-pt" data-state="nevada" data-name="nevada" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Nevada</h3>
@@ -622,7 +628,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/new-hampshire-pt" data-state="new hampshire" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/new-hampshire-pt" data-state="new hampshire" data-name="new hampshire" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>New Hampshire</h3>
@@ -639,7 +645,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/new-jersey-pt" data-state="new jersey" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/new-jersey-pt" data-state="new jersey" data-name="new jersey" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>New Jersey</h3>
@@ -656,7 +662,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/new-mexico-pt" data-state="new mexico" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/new-mexico-pt" data-state="new mexico" data-name="new mexico" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>New Mexico</h3>
@@ -673,7 +679,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/new-york-pt" data-state="new york" data-compact="non-member" data-tier="mid">
+      <a class="link-card" href="/new-york-pt" data-state="new york" data-name="new york" data-fee="100" data-compact="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>New York</h3>
@@ -690,7 +696,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/north-carolina-pt" data-state="north carolina" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/north-carolina-pt" data-state="north carolina" data-name="north carolina" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>North Carolina</h3>
@@ -707,7 +713,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/north-dakota-pt" data-state="north dakota" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/north-dakota-pt" data-state="north dakota" data-name="north dakota" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>North Dakota</h3>
@@ -724,7 +730,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/ohio-pt" data-state="ohio" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/ohio-pt" data-state="ohio" data-name="ohio" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Ohio</h3>
@@ -741,7 +747,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/oklahoma-pt" data-state="oklahoma" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/oklahoma-pt" data-state="oklahoma" data-name="oklahoma" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Oklahoma</h3>
@@ -758,7 +764,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/oregon-pt" data-state="oregon" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/oregon-pt" data-state="oregon" data-name="oregon" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Oregon</h3>
@@ -775,7 +781,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/pennsylvania-pt" data-state="pennsylvania" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/pennsylvania-pt" data-state="pennsylvania" data-name="pennsylvania" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Pennsylvania</h3>
@@ -792,7 +798,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/rhode-island-pt" data-state="rhode island" data-compact="non-member" data-tier="mid">
+      <a class="link-card" href="/rhode-island-pt" data-state="rhode island" data-name="rhode island" data-fee="100" data-compact="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Rhode Island</h3>
@@ -809,7 +815,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/south-carolina-pt" data-state="south carolina" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/south-carolina-pt" data-state="south carolina" data-name="south carolina" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>South Carolina</h3>
@@ -826,7 +832,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/south-dakota-pt" data-state="south dakota" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/south-dakota-pt" data-state="south dakota" data-name="south dakota" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>South Dakota</h3>
@@ -843,7 +849,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/tennessee-pt" data-state="tennessee" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/tennessee-pt" data-state="tennessee" data-name="tennessee" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Tennessee</h3>
@@ -860,7 +866,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/texas-pt" data-state="texas" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/texas-pt" data-state="texas" data-name="texas" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Texas</h3>
@@ -877,7 +883,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/utah-pt" data-state="utah" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/utah-pt" data-state="utah" data-name="utah" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Utah</h3>
@@ -894,7 +900,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/vermont-pt" data-state="vermont" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/vermont-pt" data-state="vermont" data-name="vermont" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Vermont</h3>
@@ -911,7 +917,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/virginia-pt" data-state="virginia" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/virginia-pt" data-state="virginia" data-name="virginia" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Virginia</h3>
@@ -928,7 +934,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/washington-pt" data-state="washington" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/washington-pt" data-state="washington" data-name="washington" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Washington</h3>
@@ -945,7 +951,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/west-virginia-pt" data-state="west virginia" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/west-virginia-pt" data-state="west virginia" data-name="west virginia" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>West Virginia</h3>
@@ -962,7 +968,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/wisconsin-pt" data-state="wisconsin" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/wisconsin-pt" data-state="wisconsin" data-name="wisconsin" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Wisconsin</h3>
@@ -979,7 +985,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <span class="card-link">Open State Guide ></span>
         </div>
       </a>
-      <a class="link-card" href="/wyoming-pt" data-state="wyoming" data-compact="member" data-tier="mid">
+      <a class="link-card" href="/wyoming-pt" data-state="wyoming" data-name="wyoming" data-fee="100" data-compact="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Wyoming</h3>
@@ -1001,7 +1007,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <div class="empty-card">No states match your current filters. Clear one filter or search term and try again.</div>
   </section>
   <section class="reciprocity-footer">
-    <article class="footer-card">
+    <article id="how-to-use" class="footer-card">
       <h2>How to use this directory</h2>
       <p>Open your target state first. The lead section on each page answers the practical question up front: compact privilege or endorsement, total fee, fingerprinting, and how fast the board usually moves.</p>
     </article>
@@ -1018,6 +1024,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 <script>
 const input = document.getElementById('stateSearch');
 const cards = [...document.querySelectorAll('.link-card')];
+const grid = document.getElementById('reciprocityGrid');
+const sortSelect = document.getElementById('sortSelect');
 const resultCount = document.getElementById('resultCount');
 const emptyState = document.getElementById('emptyState');
 const compactPills = [...document.querySelectorAll('[data-filter-group="compact"] .filter-pill')];
@@ -1025,6 +1033,37 @@ const tierPills = [...document.querySelectorAll('[data-filter-group="tier"] .fil
 
 let compactFilter = 'all';
 let tierFilter = 'all';
+
+function tierRank(value) {
+  if (value === 'fast') return 0;
+  if (value === 'mid') return 1;
+  return 2;
+}
+
+function sortVisible(list) {
+  const mode = sortSelect.value;
+  return [...list].sort((a, b) => {
+    if (mode === 'fee') return Number(a.dataset.fee) - Number(b.dataset.fee);
+    if (mode === 'speed') {
+      const tierDelta = tierRank(a.dataset.tier) - tierRank(b.dataset.tier);
+      if (tierDelta !== 0) return tierDelta;
+      return Number(a.dataset.fee) - Number(b.dataset.fee);
+    }
+    return a.dataset.name.localeCompare(b.dataset.name);
+  });
+}
+
+function syncUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const q = input.value.trim();
+  if (q) params.set('q', q); else params.delete('q');
+  if (compactFilter !== 'all') params.set('compact', compactFilter); else params.delete('compact');
+  if (tierFilter !== 'all') params.set('tier', tierFilter); else params.delete('tier');
+  if (sortSelect.value !== 'state') params.set('sort', sortSelect.value); else params.delete('sort');
+  const next = params.toString();
+  const target = next ? `${window.location.pathname}?${next}` : window.location.pathname;
+  window.history.replaceState(null, '', target);
+}
 
 function setActive(pills, value) {
   for (const pill of pills) {
@@ -1035,19 +1074,26 @@ function setActive(pills, value) {
 function applyFilters() {
   const q = input.value.toLowerCase().trim();
   let shown = 0;
+  const visibleCards = [];
   for (const card of cards) {
     const matchesSearch = card.dataset.state.includes(q);
     const matchesCompact = compactFilter === 'all' || card.dataset.compact === compactFilter;
     const matchesTier = tierFilter === 'all' || card.dataset.tier === tierFilter;
     const visible = matchesSearch && matchesCompact && matchesTier;
     card.style.display = visible ? '' : 'none';
+    if (visible) visibleCards.push(card);
     shown += visible ? 1 : 0;
+  }
+  for (const card of sortVisible(visibleCards)) {
+    grid.appendChild(card);
   }
   resultCount.textContent = `${shown} of ${cards.length} states`;
   emptyState.style.display = shown === 0 ? '' : 'none';
+  syncUrl();
 }
 
 input.addEventListener('input', applyFilters);
+sortSelect.addEventListener('change', applyFilters);
 for (const pill of compactPills) {
   pill.addEventListener('click', () => {
     compactFilter = pill.dataset.value;
@@ -1063,6 +1109,17 @@ for (const pill of tierPills) {
   });
 }
 
+const params = new URLSearchParams(window.location.search);
+const qParam = params.get('q');
+const compactParam = params.get('compact');
+const tierParam = params.get('tier');
+const sortParam = params.get('sort');
+if (qParam) input.value = qParam;
+if (compactParam && ['all', 'member', 'non-member'].includes(compactParam)) compactFilter = compactParam;
+if (tierParam && ['all', 'fast', 'mid', 'slow'].includes(tierParam)) tierFilter = tierParam;
+if (sortParam && ['state', 'fee', 'speed'].includes(sortParam)) sortSelect.value = sortParam;
+setActive(compactPills, compactFilter);
+setActive(tierPills, tierFilter);
 applyFilters();
 </script>
 </body>
