@@ -22,17 +22,18 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         fee = int(fee_value) if isinstance(fee_value, (int, float)) else 0
         processing_time = s.get('processing_time') or 'TBD'
         
-        # Calculate administrative friction (difficulty tier)
+        # Calculate administrative difficulty
         fp = bool(s.get('fingerprint_required'))
         exam = bool(s.get('jurisprudence_required'))
         psv = bool(s.get('requires_psv'))
         
-        if exam or (fp and psv):
-            tier = 'slow'  # High friction
-        elif fp or psv:
-            tier = 'mid'   # Medium friction
+        # New distribution to ensure realistic bucketing
+        if exam:
+            tier = 'slow'  # High difficulty (State-specific exam required)
+        elif fp and psv:
+            tier = 'mid'   # Medium difficulty (Both Fingerprints and Transcripts)
         else:
-            tier = 'fast'  # Low friction
+            tier = 'fast'  # Low difficulty (One or neither required)
 
         latest_verified = max(latest_verified, s.get('last_updated') or today)
 
@@ -114,7 +115,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
-      <span class="align-right">Friction</span>
+      <span class="align-right">Difficulty</span>
       <span class="align-right">Fee</span>
       <span></span>
     </div>
@@ -725,7 +726,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       <select id="sortSelect" class="sort-select" aria-label="Sort states">
         <option value="state">Sort: A &ndash; Z</option>
         <option value="fee">Sort: Fee</option>
-        <option value="friction">Sort: Friction</option>
+        <option value="difficulty">Sort: Difficulty</option>
       </select>
     </div>
   </search>
@@ -741,7 +742,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
-      <span class="align-right">Friction</span>
+      <span class="align-right">Difficulty</span>
       <span class="align-right">Fee</span>
       <span></span>
     </div>
@@ -759,7 +760,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
-      <span class="align-right">Friction</span>
+      <span class="align-right">Difficulty</span>
       <span class="align-right">Fee</span>
       <span></span>
     </div>
@@ -817,7 +818,7 @@ function sortRows(rows) {{
   const mode = sortSelect.value;
   return [...rows].sort((a, b) => {{
     if (mode === 'fee') return Number(a.dataset.fee) - Number(b.dataset.fee);
-    if (mode === 'friction') {{
+    if (mode === 'difficulty') {{
       const d = tierRank(a.dataset.tier) - tierRank(b.dataset.tier);
       if (d !== 0) return d;
       return Number(a.dataset.fee) - Number(b.dataset.fee);
@@ -907,7 +908,7 @@ for (const btn of pathBtns) {{
 const params = new URLSearchParams(window.location.search);
 if (params.get('q')) input.value = params.get('q');
 if (params.get('path') && ['all','member','non-member','cdr-only'].includes(params.get('path'))) pathFilter = params.get('path');
-if (params.get('sort') && ['state','fee','speed'].includes(params.get('sort'))) sortSelect.value = params.get('sort');
+if (params.get('sort') && ['state','fee','difficulty'].includes(params.get('sort'))) sortSelect.value = params.get('sort');
 
 for (const b of pathBtns) {{
   const isActive = b.dataset.value === pathFilter;
