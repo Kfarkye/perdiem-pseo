@@ -143,7 +143,8 @@
     "processing_tier": "fast",
     "board_url": "https://www.wvbold.com/",
     "endorsement_url": "https://www.wvbold.com/",
-    "notes": "Out-of-state applicants with active CDR registration or a current license in another state with equivalent standards may apply by submitting the standard application, fee, and proof of their active credential/license."
+    "notes": "Out-of-state applicants with active CDR registration or a current license in another state with equivalent standards may apply by submitting the standard application, fee, and proof of their active credential/license.",
+    "requires_psv": true
   },
   "slug": "west-virginia-dietitian",
   "specialty": "dietitian"

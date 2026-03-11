@@ -15,14 +15,24 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     for s in sorted_states:
         name = s['name']
         slug = s['slug']
+        tier = 'slow'
         member = bool(s.get('state_is_member'))
         license_required = bool(s.get('license_required', True))
         fee_value = s.get('endorsement_fee')
         fee = int(fee_value) if isinstance(fee_value, (int, float)) else 0
         processing_time = s.get('processing_time') or 'TBD'
-        tier = (s.get('processing_tier') or 'slow').lower()
-        if tier not in {'fast', 'mid', 'slow', 'none'}:
-            tier = 'slow'
+        
+        # Calculate administrative friction (difficulty tier)
+        fp = bool(s.get('fingerprint_required'))
+        exam = bool(s.get('jurisprudence_required'))
+        psv = bool(s.get('requires_psv'))
+        
+        if exam or (fp and psv):
+            tier = 'slow'  # High friction
+        elif fp or psv:
+            tier = 'mid'   # Medium friction
+        else:
+            tier = 'fast'  # Low friction
 
         latest_verified = max(latest_verified, s.get('last_updated') or today)
 
@@ -34,6 +44,9 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
             'tier': tier,
             'member': member,
             'license_required': license_required,
+            'fp': fp,
+            'exam': exam,
+            'psv': psv
         }
 
         if not license_required:
@@ -52,11 +65,11 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         tier = s['tier']
 
         tier_label = {
-            'fast': 'Fast',
-            'mid': 'Moderate',
-            'slow': 'Long',
+            'fast': 'Low\u00A0',
+            'mid': 'Med\u00A0',
+            'slow': 'High',
             'none': 'None',
-        }.get(tier, 'Long')
+        }.get(tier, 'High')
 
         if not s['license_required']:
             fee_display = '\u2014'
@@ -101,7 +114,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
-      <span class="align-right">Speed</span>
+      <span class="align-right">Friction</span>
       <span class="align-right">Fee</span>
       <span></span>
     </div>
@@ -712,7 +725,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       <select id="sortSelect" class="sort-select" aria-label="Sort states">
         <option value="state">Sort: A &ndash; Z</option>
         <option value="fee">Sort: Fee</option>
-        <option value="speed">Sort: Speed</option>
+        <option value="friction">Sort: Friction</option>
       </select>
     </div>
   </search>
@@ -804,7 +817,7 @@ function sortRows(rows) {{
   const mode = sortSelect.value;
   return [...rows].sort((a, b) => {{
     if (mode === 'fee') return Number(a.dataset.fee) - Number(b.dataset.fee);
-    if (mode === 'speed') {{
+    if (mode === 'friction') {{
       const d = tierRank(a.dataset.tier) - tierRank(b.dataset.tier);
       if (d !== 0) return d;
       return Number(a.dataset.fee) - Number(b.dataset.fee);

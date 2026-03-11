@@ -135,7 +135,8 @@
     "processing_tier": "fast",
     "board_url": "https://sos.vermont.gov/dietitians/",
     "endorsement_url": "https://sos.vermont.gov/dietitians/",
-    "notes": "Applicants currently certified or licensed as a dietitian in good standing in another jurisdiction can apply for certification in Vermont via the online system if their jurisdiction's requirements are substantially equivalent to Vermont's (typically demonstrated by active CDR registration)."
+    "notes": "Applicants currently certified or licensed as a dietitian in good standing in another jurisdiction can apply for certification in Vermont via the online system if their jurisdiction's requirements are substantially equivalent to Vermont's (typically demonstrated by active CDR registration).",
+    "requires_psv": false
   },
   "slug": "vermont-dietitian",
   "specialty": "dietitian"

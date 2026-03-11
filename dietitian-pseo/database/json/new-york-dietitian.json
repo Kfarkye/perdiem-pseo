@@ -135,7 +135,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.op.nysed.gov/professions/dietetics-and-nutrition",
     "endorsement_url": "https://www.op.nysed.gov/professions/dietetics-and-nutrition",
-    "notes": "New York does not maintain automatic reciprocity agreements with other states. Out-of-state applicants must apply for a new license by equivalence, providing direct verification of their out-of-state license, CDR registration, and proof they meet all New York education and experience standards."
+    "notes": "New York does not maintain automatic reciprocity agreements with other states. Out-of-state applicants must apply for a new license by equivalence, providing direct verification of their out-of-state license, CDR registration, and proof they meet all New York education and experience standards.",
+    "requires_psv": true
   },
   "slug": "new-york-dietitian",
   "specialty": "dietitian"

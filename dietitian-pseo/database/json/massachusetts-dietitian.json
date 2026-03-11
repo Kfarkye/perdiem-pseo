@@ -147,7 +147,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.mass.gov/orgs/board-of-registration-of-dietitians-and-nutritionists",
     "endorsement_url": "https://www.mass.gov/orgs/board-of-registration-of-dietitians-and-nutritionists",
-    "notes": "The Massachusetts Board may grant reciprocal recognition to dietitians/nutritionists licensed in other jurisdictions, provided the standards of registration, certification, and licensure in the other state are 'reasonably equivalent' to Massachusetts requirements. Applicants must submit license verifications from all states where they hold or have held credentials."
+    "notes": "The Massachusetts Board may grant reciprocal recognition to dietitians/nutritionists licensed in other jurisdictions, provided the standards of registration, certification, and licensure in the other state are 'reasonably equivalent' to Massachusetts requirements. Applicants must submit license verifications from all states where they hold or have held credentials.",
+    "requires_psv": true
   },
   "slug": "massachusetts-dietitian",
   "specialty": "dietitian"

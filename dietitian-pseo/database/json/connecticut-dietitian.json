@@ -135,7 +135,8 @@
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist",
     "endorsement_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist",
-    "notes": "Connecticut does not have a formal endorsement or reciprocity process. Out-of-state dietitians with active CDR registration apply through the standard online process. Since Connecticut's certification is tied to CDR registration rather than state-specific exams, the process is straightforward for anyone holding an RD/RDN credential."
+    "notes": "Connecticut does not have a formal endorsement or reciprocity process. Out-of-state dietitians with active CDR registration apply through the standard online process. Since Connecticut's certification is tied to CDR registration rather than state-specific exams, the process is straightforward for anyone holding an RD/RDN credential.",
+    "requires_psv": false
   },
   "slug": "connecticut-dietitian",
   "specialty": "dietitian"

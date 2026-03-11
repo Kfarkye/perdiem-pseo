@@ -139,7 +139,8 @@
     "processing_tier": "fast",
     "board_url": "https://dsps.wi.gov/pages/Professions/Dietitian/Default.aspx",
     "endorsement_url": "https://dsps.wi.gov/pages/Professions/Dietitian/Default.aspx",
-    "notes": "Wisconsin does not offer formal licensure by reciprocity. Out-of-state dietitians must apply through the standard process via the DSPS LicensE portal. Holding current CDR registration typically satisfies the education and examination requirements. Wisconsin's supervised practice hour requirements (900 hours with specific clinical/food service/community breakdowns) may differ from other states."
+    "notes": "Wisconsin does not offer formal licensure by reciprocity. Out-of-state dietitians must apply through the standard process via the DSPS LicensE portal. Holding current CDR registration typically satisfies the education and examination requirements. Wisconsin's supervised practice hour requirements (900 hours with specific clinical/food service/community breakdowns) may differ from other states.",
+    "requires_psv": true
   },
   "slug": "wisconsin-dietitian",
   "specialty": "dietitian"

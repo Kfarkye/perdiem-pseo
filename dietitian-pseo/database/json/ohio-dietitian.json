@@ -143,7 +143,8 @@
     "processing_tier": "fast",
     "board_url": "https://med.ohio.gov/publications/dietitian",
     "endorsement_url": "https://med.ohio.gov/publications/dietitian",
-    "notes": "Under Ohio's Universal Recognition path, out-of-state dietitians can apply for reciprocity if they have held a substantially similar, active, and good-standing license in another jurisdiction for at least one year immediately preceding the application."
+    "notes": "Under Ohio's Universal Recognition path, out-of-state dietitians can apply for reciprocity if they have held a substantially similar, active, and good-standing license in another jurisdiction for at least one year immediately preceding the application.",
+    "requires_psv": true
   },
   "slug": "ohio-dietitian",
   "specialty": "dietitian"

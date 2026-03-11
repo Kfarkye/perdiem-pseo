@@ -135,7 +135,8 @@
     "processing_tier": "fast",
     "board_url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/",
     "endorsement_url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/",
-    "notes": "New Mexico recognizes licensure from other states with standards at least as stringent as its own. Applicants must provide copies of all licenses and arrange for official verification to be sent directly to the Board."
+    "notes": "New Mexico recognizes licensure from other states with standards at least as stringent as its own. Applicants must provide copies of all licenses and arrange for official verification to be sent directly to the Board.",
+    "requires_psv": true
   },
   "slug": "new-mexico-dietitian",
   "specialty": "dietitian"

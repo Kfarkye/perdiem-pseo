@@ -135,7 +135,8 @@
     "processing_tier": "fast",
     "board_url": "https://dietetics.wyo.gov/",
     "endorsement_url": "https://dietetics.wyo.gov/",
-    "notes": "Wyoming offers licensure by endorsement. Applicants holding a valid and unrestricted license in another state with equivalent requirements, or holding active CDR registration, can apply using the standard application method by demonstrating out-of-state verification."
+    "notes": "Wyoming offers licensure by endorsement. Applicants holding a valid and unrestricted license in another state with equivalent requirements, or holding active CDR registration, can apply using the standard application method by demonstrating out-of-state verification.",
+    "requires_psv": false
   },
   "slug": "wyoming-dietitian",
   "specialty": "dietitian"

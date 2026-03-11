@@ -143,7 +143,8 @@
     "processing_tier": "mid",
     "board_url": "https://health.maryland.gov/boardofdietetics/",
     "endorsement_url": "https://health.maryland.gov/boardofdietetics/",
-    "notes": "Maryland requires state-specific licensure to practice, even if you are licensed in another state. However, the process is streamlined for Registered Dietitians who already hold CDR registration. Out-of-state licensees apply through the standard application process and can transfer their CDR registration. Contact the Board directly for specific reciprocity guidance."
+    "notes": "Maryland requires state-specific licensure to practice, even if you are licensed in another state. However, the process is streamlined for Registered Dietitians who already hold CDR registration. Out-of-state licensees apply through the standard application process and can transfer their CDR registration. Contact the Board directly for specific reciprocity guidance.",
+    "requires_psv": true
   },
   "slug": "maryland-dietitian",
   "specialty": "dietitian"

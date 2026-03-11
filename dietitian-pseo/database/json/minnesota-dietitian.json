@@ -147,7 +147,8 @@
     "processing_tier": "fast",
     "board_url": "https://mn.gov/boards/dietetics-and-nutrition/",
     "endorsement_url": "https://mn.gov/boards/dietetics-and-nutrition/",
-    "notes": "Minnesota does not have a formal reciprocity agreement with other states. Out-of-state dietitians must apply through the standard online application process. Holding current CDR registration satisfies the education and examination requirements. All applicants must complete the Minnesota background check regardless of prior state licensure."
+    "notes": "Minnesota does not have a formal reciprocity agreement with other states. Out-of-state dietitians must apply through the standard online application process. Holding current CDR registration satisfies the education and examination requirements. All applicants must complete the Minnesota background check regardless of prior state licensure.",
+    "requires_psv": true
   },
   "slug": "minnesota-dietitian",
   "specialty": "dietitian"

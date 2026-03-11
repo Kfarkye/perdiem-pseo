@@ -139,7 +139,8 @@
     "processing_tier": "mid",
     "board_url": "https://health.hawaii.gov/ohca/",
     "endorsement_url": "https://health.hawaii.gov/ohca/",
-    "notes": "Hawaii allows for licensure by endorsement. Individuals holding a valid dietitian certification or license from another state, territory, or jurisdiction may be eligible if the requirements are equal to or greater than Hawaii's (maintaining an active CDR typically qualifies)."
+    "notes": "Hawaii allows for licensure by endorsement. Individuals holding a valid dietitian certification or license from another state, territory, or jurisdiction may be eligible if the requirements are equal to or greater than Hawaii's (maintaining an active CDR typically qualifies).",
+    "requires_psv": true
   },
   "slug": "hawaii-dietitian",
   "specialty": "dietitian"

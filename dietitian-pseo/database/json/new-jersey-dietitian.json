@@ -135,7 +135,8 @@
     "processing_tier": "slow",
     "board_url": "https://www.njconsumeraffairs.gov/dn/",
     "endorsement_url": "https://www.njconsumeraffairs.gov/dn/",
-    "notes": "Reciprocity provisions will be defined in the final regulations. Active CDR registration is expected to serve as the primary qualifying credential for licensure by endorsement."
+    "notes": "Reciprocity provisions will be defined in the final regulations. Active CDR registration is expected to serve as the primary qualifying credential for licensure by endorsement.",
+    "requires_psv": false
   },
   "slug": "new-jersey-dietitian",
   "specialty": "dietitian"

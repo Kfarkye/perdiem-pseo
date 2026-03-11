@@ -139,7 +139,8 @@
     "processing_tier": "slow",
     "board_url": "https://dial.iowa.gov/licenses/medical/dietitian",
     "endorsement_url": "https://dial.iowa.gov/licenses/medical/dietitian",
-    "notes": "Out-of-state applicants with active CDR registration may apply via endorsement. Verification of licensure from any state where you hold or have held a license is required, along with proof of your CDR credential."
+    "notes": "Out-of-state applicants with active CDR registration may apply via endorsement. Verification of licensure from any state where you hold or have held a license is required, along with proof of your CDR credential.",
+    "requires_psv": true
   },
   "slug": "iowa-dietitian",
   "specialty": "dietitian"

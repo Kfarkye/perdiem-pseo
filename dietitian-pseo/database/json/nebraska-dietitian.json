@@ -139,7 +139,8 @@
     "processing_tier": "mid",
     "board_url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx",
     "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx",
-    "notes": "Licensure by reciprocity is available for an applicant currently licensed in another state. The requirements of that state must be substantially equivalent to Nebraska's. Verification of all held licenses and active CDR registration is required, along with the $114 application fee."
+    "notes": "Licensure by reciprocity is available for an applicant currently licensed in another state. The requirements of that state must be substantially equivalent to Nebraska's. Verification of all held licenses and active CDR registration is required, along with the $114 application fee.",
+    "requires_psv": false
   },
   "slug": "nebraska-dietitian",
   "specialty": "dietitian"

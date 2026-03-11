@@ -127,7 +127,8 @@
     "processing_tier": "fast",
     "board_url": "https://www.tdlr.texas.gov/diet/",
     "endorsement_url": "https://www.tdlr.texas.gov/diet/",
-    "notes": "Texas utilizes licensure by equivalence. If you hold a current CDR registration, you have met the core educational requirements. Out-of-state applicants apply for a new license, submit their active CDR card, pass the Texas Jurisprudence Exam, and undergo the background check."
+    "notes": "Texas utilizes licensure by equivalence. If you hold a current CDR registration, you have met the core educational requirements. Out-of-state applicants apply for a new license, submit their active CDR card, pass the Texas Jurisprudence Exam, and undergo the background check.",
+    "requires_psv": false
   },
   "slug": "texas-dietitian",
   "specialty": "dietitian"

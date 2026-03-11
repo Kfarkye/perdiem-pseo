@@ -143,7 +143,8 @@
     "processing_tier": "fast",
     "board_url": "https://pr.mo.gov/dietitians.asp",
     "endorsement_url": "https://pr.mo.gov/dietitians.asp",
-    "notes": "Missouri does not have a formal reciprocity agreement with other states. Out-of-state dietitians must apply for a new Missouri license through the standard application process. Holding current CDR registration (RD/RDN) satisfies the core requirements. Note: Missouri is actively pursuing the Dietitian Licensure Compact (Senate Bill 412/1339), which would enable interstate practice without additional licenses if enacted."
+    "notes": "Missouri does not have a formal reciprocity agreement with other states. Out-of-state dietitians must apply for a new Missouri license through the standard application process. Holding current CDR registration (RD/RDN) satisfies the core requirements. Note: Missouri is actively pursuing the Dietitian Licensure Compact (Senate Bill 412/1339), which would enable interstate practice without additional licenses if enacted.",
+    "requires_psv": true
   },
   "slug": "missouri-dietitian",
   "specialty": "dietitian"

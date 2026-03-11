@@ -139,7 +139,8 @@
     "processing_tier": "slow",
     "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Nursing",
     "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Nursing",
-    "notes": "Pennsylvania does not currently participate in interstate licensure compacts for nutritionists. Out-of-state applicants must apply via endorsement through the PALS system and provide verification of their active, good-standing license from their home state, along with proof of passing a Board-approved exam."
+    "notes": "Pennsylvania does not currently participate in interstate licensure compacts for nutritionists. Out-of-state applicants must apply via endorsement through the PALS system and provide verification of their active, good-standing license from their home state, along with proof of passing a Board-approved exam.",
+    "requires_psv": true
   },
   "slug": "pennsylvania-dietitian",
   "specialty": "dietitian"

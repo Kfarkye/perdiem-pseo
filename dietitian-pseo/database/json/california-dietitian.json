@@ -115,7 +115,8 @@
     "processing_tier": "none",
     "board_url": "https://www.cdrnet.org/",
     "endorsement_url": "Not Applicable",
-    "notes": "If you are a licensed dietitian moving to California from another state, you do not need to transfer your license. As long as your national CDR registration is active, you are legally permitted to practice."
+    "notes": "If you are a licensed dietitian moving to California from another state, you do not need to transfer your license. As long as your national CDR registration is active, you are legally permitted to practice.",
+    "requires_psv": false
   },
   "slug": "california-dietitian",
   "specialty": "dietitian"

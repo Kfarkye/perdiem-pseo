@@ -135,7 +135,8 @@
     "processing_tier": "slow",
     "board_url": "https://www.sdbmoe.gov/nutritionist-dietitian/",
     "endorsement_url": "https://www.sdbmoe.gov/nutritionist-dietitian/",
-    "notes": "Applicants licensed in another state may be granted reciprocity if they hold an active license in good standing and can verify their Commission on Dietetic Registration status, demonstrating compliance with South Dakota's requirements."
+    "notes": "Applicants licensed in another state may be granted reciprocity if they hold an active license in good standing and can verify their Commission on Dietetic Registration status, demonstrating compliance with South Dakota's requirements.",
+    "requires_psv": false
   },
   "slug": "south-dakota-dietitian",
   "specialty": "dietitian"

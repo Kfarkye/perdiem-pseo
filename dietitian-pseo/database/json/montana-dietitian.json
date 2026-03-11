@@ -143,7 +143,8 @@
     "processing_tier": "slow",
     "board_url": "https://boards.bsd.dli.mt.gov/medical-examiners/",
     "endorsement_url": "https://boards.bsd.dli.mt.gov/medical-examiners/",
-    "notes": "Out-of-state applicants with active CDR registration may readily obtain a Montana license by successfully completing the application packet, submitting the NPDB self-query, and ensuring their current state licenses are verified."
+    "notes": "Out-of-state applicants with active CDR registration may readily obtain a Montana license by successfully completing the application packet, submitting the NPDB self-query, and ensuring their current state licenses are verified.",
+    "requires_psv": false
   },
   "slug": "montana-dietitian",
   "specialty": "dietitian"

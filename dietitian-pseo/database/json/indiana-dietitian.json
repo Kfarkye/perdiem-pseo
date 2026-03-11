@@ -143,7 +143,8 @@
     "processing_tier": "fast",
     "board_url": "https://www.in.gov/pla/professions/dietitians/",
     "endorsement_url": "https://www.in.gov/pla/professions/dietitians/",
-    "notes": "Indiana does not have a formal endorsement or reciprocity pathway. Out-of-state dietitians apply through the standard application process. Holding current CDR registration satisfies the education and examination requirements. You must still submit the application, $20 fee, transcripts, and complete the Indiana fingerprint background check."
+    "notes": "Indiana does not have a formal endorsement or reciprocity pathway. Out-of-state dietitians apply through the standard application process. Holding current CDR registration satisfies the education and examination requirements. You must still submit the application, $20 fee, transcripts, and complete the Indiana fingerprint background check.",
+    "requires_psv": true
   },
   "slug": "indiana-dietitian",
   "specialty": "dietitian"

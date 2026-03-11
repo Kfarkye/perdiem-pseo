@@ -143,7 +143,8 @@
     "processing_tier": "fast",
     "board_url": "http://www.boed.alabama.gov/",
     "endorsement_url": "http://www.boed.alabama.gov/",
-    "notes": "Alabama allows licensure by endorsement for dietitians who hold a current, valid license in another state with requirements equivalent to or stricter than Alabama's, provided the applicant holds active CDR registration."
+    "notes": "Alabama allows licensure by endorsement for dietitians who hold a current, valid license in another state with requirements equivalent to or stricter than Alabama's, provided the applicant holds active CDR registration.",
+    "requires_psv": true
   },
   "slug": "alabama-dietitian",
   "specialty": "dietitian"

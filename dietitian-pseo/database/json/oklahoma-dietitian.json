@@ -147,7 +147,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.okmedicalboard.org/dietitians",
     "endorsement_url": "https://www.okmedicalboard.org/dietitians",
-    "notes": "Applicants currently licensed in another state may apply via endorsement if the other state's licensing requirements are substantially equivalent to or stricter than Oklahoma's. The standard application, fee, and verification of all out-of-state licenses are required."
+    "notes": "Applicants currently licensed in another state may apply via endorsement if the other state's licensing requirements are substantially equivalent to or stricter than Oklahoma's. The standard application, fee, and verification of all out-of-state licenses are required.",
+    "requires_psv": true
   },
   "slug": "oklahoma-dietitian",
   "specialty": "dietitian"

@@ -151,7 +151,8 @@
     "processing_tier": "slow",
     "board_url": "https://www.ncbdn.org/",
     "endorsement_url": "https://www.ncbdn.org/",
-    "notes": "North Carolina offers licensure by reciprocity under Category D for applicants currently licensed in another state whose qualifications do not fit into other categories (non-RD, non-CNS). Category D does not have an online application; applicants must contact the NCBDN directly. All RD/RDNs applying from out of state should apply under Category A, the standard pathway. The Board may grant a license if the other state's requirements are substantially the same as North Carolina's."
+    "notes": "North Carolina offers licensure by reciprocity under Category D for applicants currently licensed in another state whose qualifications do not fit into other categories (non-RD, non-CNS). Category D does not have an online application; applicants must contact the NCBDN directly. All RD/RDNs applying from out of state should apply under Category A, the standard pathway. The Board may grant a license if the other state's requirements are substantially the same as North Carolina's.",
+    "requires_psv": true
   },
   "slug": "north-carolina-dietitian",
   "specialty": "dietitian"

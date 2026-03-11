@@ -143,7 +143,8 @@
     "processing_tier": "fast",
     "board_url": "https://www.ndbodp.com/",
     "endorsement_url": "https://www.ndbodp.com/",
-    "notes": "Out-of-state applicants with active CDR registration or a current license in another state with equivalent standards can easily apply by submitting the standard application, fee ($75), and proof of their active credential."
+    "notes": "Out-of-state applicants with active CDR registration or a current license in another state with equivalent standards can easily apply by submitting the standard application, fee ($75), and proof of their active credential.",
+    "requires_psv": true
   },
   "slug": "north-dakota-dietitian",
   "specialty": "dietitian"

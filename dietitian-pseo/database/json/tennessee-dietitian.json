@@ -151,7 +151,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
     "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
-    "notes": "Tennessee does not offer formal licensure by endorsement or reciprocity. Out-of-state dietitians must apply for a new Tennessee license through the standard application process, which requires current CDR registration, a complete application, and a background check. Holding an active CDR credential satisfies the education and examination requirements."
+    "notes": "Tennessee does not offer formal licensure by endorsement or reciprocity. Out-of-state dietitians must apply for a new Tennessee license through the standard application process, which requires current CDR registration, a complete application, and a background check. Holding an active CDR credential satisfies the education and examination requirements.",
+    "requires_psv": true
   },
   "slug": "tennessee-dietitian",
   "specialty": "dietitian"

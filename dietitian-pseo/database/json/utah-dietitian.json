@@ -135,7 +135,8 @@
     "processing_tier": "fast",
     "board_url": "https://dopl.utah.gov/dietitian/",
     "endorsement_url": "https://dopl.utah.gov/dietitian/",
-    "notes": "Utah offers licensure by endorsement. Out-of-state applicants with active CDR registration may apply by completing the standard application and submitting a copy of their active CDR card, which proves they meet the national standards required by Utah."
+    "notes": "Utah offers licensure by endorsement. Out-of-state applicants with active CDR registration may apply by completing the standard application and submitting a copy of their active CDR card, which proves they meet the national standards required by Utah.",
+    "requires_psv": false
   },
   "slug": "utah-dietitian",
   "specialty": "dietitian"

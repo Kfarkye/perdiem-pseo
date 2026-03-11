@@ -139,7 +139,8 @@
     "processing_tier": "fast",
     "board_url": "https://www.oplc.nh.gov/board-licensed-dietitians",
     "endorsement_url": "https://www.oplc.nh.gov/board-licensed-dietitians",
-    "notes": "New Hampshire may grant a license to any applicant who presents proof of current licensure, registration, or certification as a dietitian in a state or territory whose requirements are substantially equivalent to New Hampshire's, alongside the standard application and fee."
+    "notes": "New Hampshire may grant a license to any applicant who presents proof of current licensure, registration, or certification as a dietitian in a state or territory whose requirements are substantially equivalent to New Hampshire's, alongside the standard application and fee.",
+    "requires_psv": true
   },
   "slug": "new-hampshire-dietitian",
   "specialty": "dietitian"

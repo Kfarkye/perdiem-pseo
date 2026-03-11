@@ -171,7 +171,8 @@
     "processing_tier": "slow",
     "board_url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-licensing",
     "endorsement_url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-licensing",
-    "notes": "DC issues dietitian licenses by endorsement for those licensed in other jurisdictions at the same $229 fee. Applicants must still meet all DC requirements, submit a full application, provide letter(s) of good standing from each jurisdiction, and maintain current CDR registration."
+    "notes": "DC issues dietitian licenses by endorsement for those licensed in other jurisdictions at the same $229 fee. Applicants must still meet all DC requirements, submit a full application, provide letter(s) of good standing from each jurisdiction, and maintain current CDR registration.",
+    "requires_psv": true
   },
   "slug": "dc-dietitian",
   "specialty": "dietitian"

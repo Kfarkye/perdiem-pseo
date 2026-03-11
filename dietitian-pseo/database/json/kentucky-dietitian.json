@@ -139,7 +139,8 @@
     "processing_tier": "fast",
     "board_url": "https://bldn.ky.gov/",
     "endorsement_url": "https://bldn.ky.gov/",
-    "notes": "Kentucky allows licensure by endorsement. Applicants actively licensed in another state must provide verification of licensure and proof that they meet the same educational, supervised practice, and examination requirements (active CDR registration typically satisfies this)."
+    "notes": "Kentucky allows licensure by endorsement. Applicants actively licensed in another state must provide verification of licensure and proof that they meet the same educational, supervised practice, and examination requirements (active CDR registration typically satisfies this).",
+    "requires_psv": true
   },
   "slug": "kentucky-dietitian",
   "specialty": "dietitian"

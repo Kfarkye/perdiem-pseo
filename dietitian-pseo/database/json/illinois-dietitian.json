@@ -135,7 +135,8 @@
     "processing_tier": "mid",
     "board_url": "https://idfpr.illinois.gov/profs/dietnutrition.html",
     "endorsement_url": "https://idfpr.illinois.gov/profs/dietnutrition.html",
-    "notes": "Applicants licensed in other jurisdictions may file an Endorsement application through the IDFPR, provided the requirements of the other state were substantially equivalent to Illinois' requirements at the time of original licensure, and the license remains in active and good standing."
+    "notes": "Applicants licensed in other jurisdictions may file an Endorsement application through the IDFPR, provided the requirements of the other state were substantially equivalent to Illinois' requirements at the time of original licensure, and the license remains in active and good standing.",
+    "requires_psv": true
   },
   "slug": "illinois-dietitian",
   "specialty": "dietitian"

@@ -151,7 +151,8 @@
     "processing_tier": "mid",
     "board_url": "https://dpbh.nv.gov/",
     "endorsement_url": "https://dpbh.nv.gov/",
-    "notes": "Applicants actively licensed in another state can easily apply for Nevada endorsement by providing verification of their current active license, submitting the standard application, paying the $200 fee, and completing the fingerprint background check."
+    "notes": "Applicants actively licensed in another state can easily apply for Nevada endorsement by providing verification of their current active license, submitting the standard application, paying the $200 fee, and completing the fingerprint background check.",
+    "requires_psv": true
   },
   "slug": "nevada-dietitian",
   "specialty": "dietitian"

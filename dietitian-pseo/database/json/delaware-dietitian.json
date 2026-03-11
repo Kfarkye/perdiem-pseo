@@ -139,7 +139,8 @@
     "processing_tier": "slow",
     "board_url": "https://dpr.delaware.gov/boards/dietetics/",
     "endorsement_url": "https://dpr.delaware.gov/boards/dietetics/",
-    "notes": "Delaware offers licensure by reciprocity. Out-of-state applicants with an active license in good standing from a jurisdiction with substantially equivalent standards (or those holding active CDR/CNS credentials) can apply via the DELPROS reciprocity application."
+    "notes": "Delaware offers licensure by reciprocity. Out-of-state applicants with an active license in good standing from a jurisdiction with substantially equivalent standards (or those holding active CDR/CNS credentials) can apply via the DELPROS reciprocity application.",
+    "requires_psv": true
   },
   "slug": "delaware-dietitian",
   "specialty": "dietitian"

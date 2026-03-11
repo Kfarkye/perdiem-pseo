@@ -139,7 +139,8 @@
     "processing_tier": "slow",
     "board_url": "https://health.ri.gov/licenses/detail.php?id=223",
     "endorsement_url": "https://health.ri.gov/licenses/detail.php?id=223",
-    "notes": "Rhode Island offers licensure by endorsement for dietitians/nutritionists actively licensed in other states, provided the requirements of the other state are equivalent to Rhode Island's. Applying via endorsement requires submitting the application, fee, and verification of all out-of-state licenses."
+    "notes": "Rhode Island offers licensure by endorsement for dietitians/nutritionists actively licensed in other states, provided the requirements of the other state are equivalent to Rhode Island's. Applying via endorsement requires submitting the application, fee, and verification of all out-of-state licenses.",
+    "requires_psv": false
   },
   "slug": "rhode-island-dietitian",
   "specialty": "dietitian"

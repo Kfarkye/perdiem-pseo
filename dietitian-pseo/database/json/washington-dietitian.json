@@ -147,7 +147,8 @@
     "processing_tier": "mid",
     "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renewal/dietitian-and-nutritionist",
     "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renewal/dietitian-and-nutritionist",
-    "notes": "Washington allows certification without examination for dietitians licensed or certified in another jurisdiction, provided the DOH determines that the other state's requirements are equivalent to or exceed Washington's. Applicants must provide a letter from their previous state confirming no outstanding disciplinary orders, plus verification of current CDR registration status."
+    "notes": "Washington allows certification without examination for dietitians licensed or certified in another jurisdiction, provided the DOH determines that the other state's requirements are equivalent to or exceed Washington's. Applicants must provide a letter from their previous state confirming no outstanding disciplinary orders, plus verification of current CDR registration status.",
+    "requires_psv": true
   },
   "slug": "washington-dietitian",
   "specialty": "dietitian"

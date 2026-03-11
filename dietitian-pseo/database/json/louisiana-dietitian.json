@@ -143,7 +143,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.lbedn.org/",
     "endorsement_url": "https://www.lbedn.org/",
-    "notes": "Louisiana does not have a formal reciprocity agreement for out-of-state dietitians. Applicants licensed in other states must apply for a new Louisiana LDN through the standard process. Louisiana is actively monitoring the Dietitian Licensure Compact initiative, which could enable interstate practice if adopted."
+    "notes": "Louisiana does not have a formal reciprocity agreement for out-of-state dietitians. Applicants licensed in other states must apply for a new Louisiana LDN through the standard process. Louisiana is actively monitoring the Dietitian Licensure Compact initiative, which could enable interstate practice if adopted.",
+    "requires_psv": true
   },
   "slug": "louisiana-dietitian",
   "specialty": "dietitian"

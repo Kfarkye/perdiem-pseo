@@ -139,7 +139,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx",
     "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx",
-    "notes": "Alaska offers licensure by endorsement for those already licensed in another state. Applicants must demonstrate that their current state's requirements are substantially equivalent to Alaska's and must submit verifications for all current and past licenses."
+    "notes": "Alaska offers licensure by endorsement for those already licensed in another state. Applicants must demonstrate that their current state's requirements are substantially equivalent to Alaska's and must submit verifications for all current and past licenses.",
+    "requires_psv": false
   },
   "slug": "alaska-dietitian",
   "specialty": "dietitian"

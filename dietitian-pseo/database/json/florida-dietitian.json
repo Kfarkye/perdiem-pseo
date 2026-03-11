@@ -131,7 +131,8 @@
     "processing_tier": "slow",
     "board_url": "https://www.floridahealth.gov/licensing-regulations/regulated-professions/dietitian-nutritionist/",
     "endorsement_url": "https://floridasdieteticsnutrition.gov/",
-    "notes": "Florida allows Licensure by Endorsement for professionals who hold a current, active license in another state with equivalent or more stringent requirements."
+    "notes": "Florida allows Licensure by Endorsement for professionals who hold a current, active license in another state with equivalent or more stringent requirements.",
+    "requires_psv": true
   },
   "slug": "florida-dietitian",
   "specialty": "dietitian"

@@ -139,7 +139,8 @@
     "processing_tier": "slow",
     "board_url": "https://www.oregon.gov/oha/ph/hlo/pages/board-licensed-dietitians.aspx",
     "endorsement_url": "https://www.oregon.gov/oha/ph/hlo/pages/board-licensed-dietitians.aspx",
-    "notes": "Applicants currently licensed in another state may apply via reciprocity by submitting the standard application, fee, and an official Verification of Licensure from their current state board. The applicant must still have active CDR registration."
+    "notes": "Applicants currently licensed in another state may apply via reciprocity by submitting the standard application, fee, and an official Verification of Licensure from their current state board. The applicant must still have active CDR registration.",
+    "requires_psv": true
   },
   "slug": "oregon-dietitian",
   "specialty": "dietitian"

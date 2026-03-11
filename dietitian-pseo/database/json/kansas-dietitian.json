@@ -143,7 +143,8 @@
     "processing_tier": "slow",
     "board_url": "https://kdads.ks.gov/kdads-commissions/survey-certification-and-credentialing-commission/health-occupations-credentialing",
     "endorsement_url": "https://kdads.ks.gov/kdads-commissions/survey-certification-and-credentialing-commission/health-occupations-credentialing",
-    "notes": "Kansas allows for licensure by reciprocity. Out-of-state applicants with a current, valid license from a state with equivalent or stricter standards, or holding active CDR registration, can apply using the standard application process to establish Kansas credentials."
+    "notes": "Kansas allows for licensure by reciprocity. Out-of-state applicants with a current, valid license from a state with equivalent or stricter standards, or holding active CDR registration, can apply using the standard application process to establish Kansas credentials.",
+    "requires_psv": true
   },
   "slug": "kansas-dietitian",
   "specialty": "dietitian"

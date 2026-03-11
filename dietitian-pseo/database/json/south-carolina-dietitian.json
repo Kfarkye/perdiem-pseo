@@ -151,7 +151,8 @@
     "processing_tier": "mid",
     "board_url": "https://llr.sc.gov/diet/",
     "endorsement_url": "https://llr.sc.gov/diet/",
-    "notes": "Out-of-state dietitians applying for South Carolina licensure must submit a license verification from their current state board, in addition to the standard application materials. South Carolina is considering a Dietitian Licensure Compact (Bill 160) that would enable interstate practice. If previously licensed in another state, the Panel may consider your credentials under the existing application framework. Applicants with foreign education must have credentials independently validated."
+    "notes": "Out-of-state dietitians applying for South Carolina licensure must submit a license verification from their current state board, in addition to the standard application materials. South Carolina is considering a Dietitian Licensure Compact (Bill 160) that would enable interstate practice. If previously licensed in another state, the Panel may consider your credentials under the existing application framework. Applicants with foreign education must have credentials independently validated.",
+    "requires_psv": true
   },
   "slug": "south-carolina-dietitian",
   "specialty": "dietitian"

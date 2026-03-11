@@ -147,7 +147,8 @@
     "processing_tier": "slow",
     "board_url": "https://sos.ga.gov/dietitians",
     "endorsement_url": "https://sos.ga.gov/dietitians",
-    "notes": "Georgia offers licensure by endorsement for dietitians holding a valid, active, and unencumbered license in another state, provided that state's requirements are substantially equal to or greater than Georgia's. Applicants must submit their application, fee, verification of the out-of-state license sent directly from the issuing board, and proof of passing the CDR exam."
+    "notes": "Georgia offers licensure by endorsement for dietitians holding a valid, active, and unencumbered license in another state, provided that state's requirements are substantially equal to or greater than Georgia's. Applicants must submit their application, fee, verification of the out-of-state license sent directly from the issuing board, and proof of passing the CDR exam.",
+    "requires_psv": true
   },
   "slug": "georgia-dietitian",
   "specialty": "dietitian"
