@@ -25,7 +25,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         processing_time = s.get('processing_time') or 'TBD'
 
         if not license_required:
-            path_label = 'CDR Only'
+            path_label = 'CDR State'
             path_class = 'badge-blue'
             path_filter = 'cdr-only'
             support_line = 'No state transfer application'
@@ -96,7 +96,9 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     popular_links = '\n'.join(f'<li><a href="/{s["slug"]}">{s["name"]}</a></li>' for s in popular)
     total_states = len(sorted_states)
 
-    cdr_stat = f'<span class="hero-stat">CDR-only states <strong>{cdr_only_count}</strong></span>' if cdr_only_count else ''
+    cdr_stat = f'<span class="hero-stat">CDR states <strong>{cdr_only_count}</strong></span>' if cdr_only_count else ''
+    cdr_path_filter_button = '<button type="button" class="filter-pill" data-value="cdr-only">CDR State</button>' if cdr_only_count else ''
+    cdr_tier_filter_button = '<button type="button" class="filter-pill" data-value="none">CDR State</button>' if cdr_only_count else ''
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -290,7 +292,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
             <button type="button" class="filter-pill active" data-value="all">All</button>
             <button type="button" class="filter-pill" data-value="member">Compact</button>
             <button type="button" class="filter-pill" data-value="non-member">Endorsement</button>
-            <button type="button" class="filter-pill" data-value="cdr-only">CDR only</button>
+            {cdr_path_filter_button}
           </div>
         </div>
         <div class="filter-group">
@@ -300,7 +302,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
             <button type="button" class="filter-pill" data-value="fast">Fast</button>
             <button type="button" class="filter-pill" data-value="mid">Mid</button>
             <button type="button" class="filter-pill" data-value="slow">Slow</button>
-            <button type="button" class="filter-pill" data-value="none">CDR only</button>
+            {cdr_tier_filter_button}
           </div>
         </div>
       </div>

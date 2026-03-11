@@ -658,7 +658,7 @@
           {% if reciprocity.license_required %}
             <span class="tier-pill tier-{{ reciprocity.processing_tier | default('slow') }}">{{ reciprocity.processing_tier | default('slow') }} tier</span>
           {% else %}
-            <span class="tier-pill tier-na">CDR only</span>
+            <span class="tier-pill tier-na">CDR State</span>
           {% endif %}
         </div>
       </div>
@@ -669,7 +669,7 @@
       <section id="reciprocity" class="section reciprocity-lead" aria-labelledby="reciprocity-heading">
         <div class="reciprocity-topline">
           {% if not reciprocity.license_required %}
-            <span class="badge badge-blue">No State License Needed</span>
+            <span class="badge badge-blue">CDR State</span>
           {% elif reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
             <span class="badge badge-green">Compact State</span>
           {% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}
