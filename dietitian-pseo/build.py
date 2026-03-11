@@ -56,6 +56,9 @@ for json_file in sorted(JSON_DIR.glob("*.json")):
         'processing_time': data['reciprocity']['processing_time'],
         'processing_tier': data['reciprocity']['processing_tier'],
         'license_required': data['reciprocity'].get('license_required', True),
+        'fingerprint_required': data['reciprocity'].get('fingerprint_required', False),
+        'jurisprudence_required': data['reciprocity'].get('jurisprudence_required', False),
+        'requires_psv': data['reciprocity'].get('requires_psv', False),
     })
     urls.append(f"  <url><loc>{DOMAIN}/{slug_value}</loc><lastmod>{data.get('last_updated', TODAY)}</lastmod><priority>0.8</priority></url>")
 

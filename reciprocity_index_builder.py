@@ -741,7 +741,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
-      <span class="align-right">Speed</span>
+      <span class="align-right">Friction</span>
       <span class="align-right">Fee</span>
       <span></span>
     </div>
@@ -759,7 +759,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
-      <span class="align-right">Speed</span>
+      <span class="align-right">Friction</span>
       <span class="align-right">Fee</span>
       <span></span>
     </div>
