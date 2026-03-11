@@ -114,7 +114,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .metric-fee { border-color: rgba(188,94,54,.32); background: rgba(255,248,242,.92); }
 .metric-label { display:block; font-size:.69rem; letter-spacing:.07em; text-transform:uppercase; color:rgba(16,24,32,.56); margin-bottom:.2rem; }
 .metric strong { color:var(--idx-ink); font-family: var(--serif); font-size:1rem; line-height:1.3; }
+.link-card-cdr { border-color: rgba(15,79,135,.22); background: linear-gradient(180deg, rgba(247,252,255,.95), rgba(255,255,255,.92)); }
+.cdr-kicker { margin:.9rem 0 .7rem; color:rgba(16,24,32,.72); font-size:.84rem; line-height:1.45; }
+.cdr-chips { display:flex; flex-wrap:wrap; gap:.45rem; }
+.cdr-chip { display:inline-flex; align-items:center; border-radius:999px; border:1px solid rgba(15,79,135,.25); background:rgba(15,79,135,.07); color:#0f4f87; font-size:.73rem; font-weight:600; padding:.28rem .62rem; }
 .card-foot { margin-top:.85rem; display:flex; align-items:center; justify-content:space-between; gap:.6rem; }
+.card-foot-cdr { justify-content:flex-end; margin-top:.72rem; }
 .speed-indicator { display:inline-flex; align-items:center; gap:.42rem; font-size:.76rem; color:rgba(16,24,32,.72); }
 .speed-dot { width:8px; height:8px; border-radius:999px; display:inline-block; }
 .speed-fast .speed-dot { background:#0f6b4a; }
@@ -131,7 +136,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   border-radius: 999px;
   padding: .34rem .65rem;
 }
-.card-note { margin:.6rem 0 0; font-size:.77rem; color:rgba(16,24,32,.64); }
 .badge { display:inline-flex; padding:.34rem .72rem; border-radius:999px; font-size:.69rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; white-space:nowrap; }
 .badge-green { background:#14532d; color:#f4fff7; }
 .badge-gray { background:#334155; color:#f8fafc; }
@@ -200,7 +204,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
             <button type="button" class="filter-pill" data-value="fast">Fast</button>
             <button type="button" class="filter-pill" data-value="mid">Mid</button>
             <button type="button" class="filter-pill" data-value="slow">Slow</button>
-            <button type="button" class="filter-pill" data-value="none">CDR State</button>
+            
           </div>
         </div>
       </div>
@@ -211,7 +215,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Alabama</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -228,7 +231,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Alaska</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -241,29 +243,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
           <span class="card-link">Open guide</span>
         </div>
       </a>
-      <a class="link-card" href="/arizona-dietitian" data-state="arizona" data-name="arizona" data-fee="0" data-path="cdr-only" data-tier="none">
+      <a class="link-card link-card-cdr" href="/arizona-dietitian" data-state="arizona" data-name="arizona" data-fee="0" data-path="cdr-only" data-tier="none">
         <div class="card-top">
           <div class="card-head">
             <h3>Arizona</h3>
-            <p>No state transfer application</p>
+            <p>CDR credential route</p>
           </div>
           <span class="badge badge-blue">CDR State</span>
         </div>
-        <div class="card-meta">
-          <span class="metric metric-fee"><span class="metric-label">Fee</span><strong>$0</strong></span>
-          <span class="metric"><span class="metric-label">Timeline</span><strong>N/A (No state application)</strong></span>
+        <p class="cdr-kicker">No state transfer application. Keep an active CDR credential.</p>
+        <div class="cdr-chips">
+          <span class="cdr-chip">$0 state fee</span>
+          <span class="cdr-chip">No state wait</span>
         </div>
-        <div class="card-foot">
-          <span class="speed-indicator speed-none"><span class="speed-dot" aria-hidden="true"></span>No state wait</span>
+        <div class="card-foot card-foot-cdr">
           <span class="card-link">Open guide</span>
         </div>
-        <p class="card-note">Use an active CDR credential to practice.</p>
       </a>
       <a class="link-card" href="/arkansas-dietitian" data-state="arkansas" data-name="arkansas" data-fee="110" data-path="non-member" data-tier="fast">
         <div class="card-top">
           <div class="card-head">
             <h3>Arkansas</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -276,47 +276,44 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
           <span class="card-link">Open guide</span>
         </div>
       </a>
-      <a class="link-card" href="/california-dietitian" data-state="california" data-name="california" data-fee="0" data-path="cdr-only" data-tier="none">
+      <a class="link-card link-card-cdr" href="/california-dietitian" data-state="california" data-name="california" data-fee="0" data-path="cdr-only" data-tier="none">
         <div class="card-top">
           <div class="card-head">
             <h3>California</h3>
-            <p>No state transfer application</p>
+            <p>CDR credential route</p>
           </div>
           <span class="badge badge-blue">CDR State</span>
         </div>
-        <div class="card-meta">
-          <span class="metric metric-fee"><span class="metric-label">Fee</span><strong>$0</strong></span>
-          <span class="metric"><span class="metric-label">Timeline</span><strong>N/A (No state application)</strong></span>
+        <p class="cdr-kicker">No state transfer application. Keep an active CDR credential.</p>
+        <div class="cdr-chips">
+          <span class="cdr-chip">$0 state fee</span>
+          <span class="cdr-chip">No state wait</span>
         </div>
-        <div class="card-foot">
-          <span class="speed-indicator speed-none"><span class="speed-dot" aria-hidden="true"></span>No state wait</span>
+        <div class="card-foot card-foot-cdr">
           <span class="card-link">Open guide</span>
         </div>
-        <p class="card-note">Use an active CDR credential to practice.</p>
       </a>
-      <a class="link-card" href="/colorado-dietitian" data-state="colorado" data-name="colorado" data-fee="0" data-path="cdr-only" data-tier="none">
+      <a class="link-card link-card-cdr" href="/colorado-dietitian" data-state="colorado" data-name="colorado" data-fee="0" data-path="cdr-only" data-tier="none">
         <div class="card-top">
           <div class="card-head">
             <h3>Colorado</h3>
-            <p>No state transfer application</p>
+            <p>CDR credential route</p>
           </div>
           <span class="badge badge-blue">CDR State</span>
         </div>
-        <div class="card-meta">
-          <span class="metric metric-fee"><span class="metric-label">Fee</span><strong>$0</strong></span>
-          <span class="metric"><span class="metric-label">Timeline</span><strong>N/A (No state application currently)</strong></span>
+        <p class="cdr-kicker">No state transfer application. Keep an active CDR credential.</p>
+        <div class="cdr-chips">
+          <span class="cdr-chip">$0 state fee</span>
+          <span class="cdr-chip">No state wait</span>
         </div>
-        <div class="card-foot">
-          <span class="speed-indicator speed-none"><span class="speed-dot" aria-hidden="true"></span>No state wait</span>
+        <div class="card-foot card-foot-cdr">
           <span class="card-link">Open guide</span>
         </div>
-        <p class="card-note">Use an active CDR credential to practice.</p>
       </a>
       <a class="link-card" href="/connecticut-dietitian" data-state="connecticut" data-name="connecticut" data-fee="190" data-path="non-member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Connecticut</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -333,7 +330,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Delaware</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -350,7 +346,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>District of Columbia</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -367,7 +362,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Florida</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -384,7 +378,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Georgia</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -401,7 +395,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Hawaii</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -418,7 +411,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Idaho</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -435,7 +427,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Illinois</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -452,7 +443,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Indiana</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -469,7 +459,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Iowa</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -486,7 +476,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Kansas</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -503,7 +492,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Kentucky</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -520,7 +508,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Louisiana</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -537,7 +524,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Maine</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -554,7 +540,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Maryland</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -571,7 +556,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Massachusetts</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -584,29 +568,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
           <span class="card-link">Open guide</span>
         </div>
       </a>
-      <a class="link-card" href="/michigan-dietitian" data-state="michigan" data-name="michigan" data-fee="0" data-path="cdr-only" data-tier="none">
+      <a class="link-card link-card-cdr" href="/michigan-dietitian" data-state="michigan" data-name="michigan" data-fee="0" data-path="cdr-only" data-tier="none">
         <div class="card-top">
           <div class="card-head">
             <h3>Michigan</h3>
-            <p>No state transfer application</p>
+            <p>CDR credential route</p>
           </div>
           <span class="badge badge-blue">CDR State</span>
         </div>
-        <div class="card-meta">
-          <span class="metric metric-fee"><span class="metric-label">Fee</span><strong>$0</strong></span>
-          <span class="metric"><span class="metric-label">Timeline</span><strong>N/A (No state application currently)</strong></span>
+        <p class="cdr-kicker">No state transfer application. Keep an active CDR credential.</p>
+        <div class="cdr-chips">
+          <span class="cdr-chip">$0 state fee</span>
+          <span class="cdr-chip">No state wait</span>
         </div>
-        <div class="card-foot">
-          <span class="speed-indicator speed-none"><span class="speed-dot" aria-hidden="true"></span>No state wait</span>
+        <div class="card-foot card-foot-cdr">
           <span class="card-link">Open guide</span>
         </div>
-        <p class="card-note">Use an active CDR credential to practice.</p>
       </a>
       <a class="link-card" href="/minnesota-dietitian" data-state="minnesota" data-name="minnesota" data-fee="282" data-path="non-member" data-tier="fast">
         <div class="card-top">
           <div class="card-head">
             <h3>Minnesota</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -623,7 +605,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Mississippi</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -640,7 +621,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Missouri</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -657,7 +637,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Montana</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -674,7 +653,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Nebraska</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -691,7 +670,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Nevada</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -708,7 +686,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>New Hampshire</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -725,7 +703,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>New Jersey</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -742,7 +719,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>New Mexico</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -759,7 +735,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>New York</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -776,7 +751,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>North Carolina</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -793,7 +767,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>North Dakota</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -810,7 +783,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Ohio</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -827,7 +800,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Oklahoma</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -844,7 +817,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Oregon</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -861,7 +833,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Pennsylvania</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -878,7 +849,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Rhode Island</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -895,7 +865,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>South Carolina</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -912,7 +881,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>South Dakota</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -929,7 +898,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Tennessee</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -946,7 +915,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Texas</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -963,7 +931,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Utah</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -980,7 +948,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Vermont</h3>
-            <p>State endorsement required</p>
           </div>
           <span class="badge badge-gray">Endorsement</span>
         </div>
@@ -993,29 +960,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
           <span class="card-link">Open guide</span>
         </div>
       </a>
-      <a class="link-card" href="/virginia-dietitian" data-state="virginia" data-name="virginia" data-fee="0" data-path="cdr-only" data-tier="none">
+      <a class="link-card link-card-cdr" href="/virginia-dietitian" data-state="virginia" data-name="virginia" data-fee="0" data-path="cdr-only" data-tier="none">
         <div class="card-top">
           <div class="card-head">
             <h3>Virginia</h3>
-            <p>No state transfer application</p>
+            <p>CDR credential route</p>
           </div>
           <span class="badge badge-blue">CDR State</span>
         </div>
-        <div class="card-meta">
-          <span class="metric metric-fee"><span class="metric-label">Fee</span><strong>$0</strong></span>
-          <span class="metric"><span class="metric-label">Timeline</span><strong>N/A (No state application)</strong></span>
+        <p class="cdr-kicker">No state transfer application. Keep an active CDR credential.</p>
+        <div class="cdr-chips">
+          <span class="cdr-chip">$0 state fee</span>
+          <span class="cdr-chip">No state wait</span>
         </div>
-        <div class="card-foot">
-          <span class="speed-indicator speed-none"><span class="speed-dot" aria-hidden="true"></span>No state wait</span>
+        <div class="card-foot card-foot-cdr">
           <span class="card-link">Open guide</span>
         </div>
-        <p class="card-note">Use an active CDR credential to practice.</p>
       </a>
       <a class="link-card" href="/washington-dietitian" data-state="washington" data-name="washington" data-fee="81" data-path="member" data-tier="mid">
         <div class="card-top">
           <div class="card-head">
             <h3>Washington</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -1032,7 +998,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>West Virginia</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -1049,7 +1015,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Wisconsin</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -1066,7 +1032,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <div class="card-top">
           <div class="card-head">
             <h3>Wyoming</h3>
-            <p>Compact privilege path</p>
+            <p>Dietitian Compact</p>
           </div>
           <span class="badge badge-green">Compact</span>
         </div>
@@ -1086,7 +1052,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   <section class="reciprocity-footer">
     <article id="how-to-use" class="footer-card">
       <h2>How to use this directory</h2>
-      <p>Start with path type first: compact, endorsement, or CDR-only. Then sort by fee and timeline to shortlist states with the fastest path to your next assignment.</p>
+      <p>Start with path type first: compact, endorsement, or CDR State. Then sort by fee and timeline to shortlist states with the fastest path to your next assignment.</p>
     </article>
     <article class="footer-card">
       <h3>Popular reciprocity pages</h3>

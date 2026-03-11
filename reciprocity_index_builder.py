@@ -28,32 +28,37 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
             path_label = 'CDR State'
             path_class = 'badge-blue'
             path_filter = 'cdr-only'
-            support_line = 'No state transfer application'
             tier = 'none'
-            speed_label = 'No state wait'
-            speed_class = 'speed-none'
-            card_note = 'Use an active CDR credential to practice.'
-        elif member:
-            path_label = 'Compact'
-            path_class = 'badge-green'
-            path_filter = 'member'
-            support_line = 'Compact privilege path'
-            speed_label = {
-                'fast': 'Fast timeline',
-                'mid': 'Moderate timeline',
-                'slow': 'Longer timeline',
-            }.get(tier, 'Longer timeline')
-            speed_class = {
-                'fast': 'speed-fast',
-                'mid': 'speed-mid',
-                'slow': 'speed-slow',
-            }.get(tier, 'speed-slow')
-            card_note = ''
+            cards.append(
+                f'''      <a class="link-card link-card-cdr" href="/{s['slug']}" data-state="{s['name'].lower()}" data-name="{s['name'].lower()}" data-fee="{fee}" data-path="{path_filter}" data-tier="{tier}">\n'''
+                f'''        <div class="card-top">\n'''
+                f'''          <div class="card-head">\n'''
+                f'''            <h3>{s['name']}</h3>\n'''
+                f'''            <p>CDR credential route</p>\n'''
+                f'''          </div>\n'''
+                f'''          <span class="badge {path_class}">{path_label}</span>\n'''
+                f'''        </div>\n'''
+                f'''        <p class="cdr-kicker">No state transfer application. Keep an active CDR credential.</p>\n'''
+                f'''        <div class="cdr-chips">\n'''
+                f'''          <span class="cdr-chip">$0 state fee</span>\n'''
+                f'''          <span class="cdr-chip">No state wait</span>\n'''
+                f'''        </div>\n'''
+                f'''        <div class="card-foot card-foot-cdr">\n'''
+                f'''          <span class="card-link">Open guide</span>\n'''
+                f'''        </div>\n'''
+                f'''      </a>'''
+            )
         else:
-            path_label = 'Endorsement'
-            path_class = 'badge-gray'
-            path_filter = 'non-member'
-            support_line = 'State endorsement required'
+            if member:
+                path_label = 'Compact'
+                path_class = 'badge-green'
+                path_filter = 'member'
+                support_line = s.get('compact_label') or 'Compact route'
+            else:
+                path_label = 'Endorsement'
+                path_class = 'badge-gray'
+                path_filter = 'non-member'
+                support_line = ''
             speed_label = {
                 'fast': 'Fast timeline',
                 'mid': 'Moderate timeline',
@@ -64,29 +69,26 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
                 'mid': 'speed-mid',
                 'slow': 'speed-slow',
             }.get(tier, 'speed-slow')
-            card_note = ''
-
-        note_html = f'''\n        <p class="card-note">{card_note}</p>''' if card_note else ''
-
-        cards.append(
-            f'''      <a class="link-card" href="/{s['slug']}" data-state="{s['name'].lower()}" data-name="{s['name'].lower()}" data-fee="{fee}" data-path="{path_filter}" data-tier="{tier}">\n'''
-            f'''        <div class="card-top">\n'''
-            f'''          <div class="card-head">\n'''
-            f'''            <h3>{s['name']}</h3>\n'''
-            f'''            <p>{support_line}</p>\n'''
-            f'''          </div>\n'''
-            f'''          <span class="badge {path_class}">{path_label}</span>\n'''
-            f'''        </div>\n'''
-            f'''        <div class="card-meta">\n'''
-            f'''          <span class="metric metric-fee"><span class="metric-label">Fee</span><strong>${fee}</strong></span>\n'''
-            f'''          <span class="metric"><span class="metric-label">Timeline</span><strong>{processing_time}</strong></span>\n'''
-            f'''        </div>\n'''
-            f'''        <div class="card-foot">\n'''
-            f'''          <span class="speed-indicator {speed_class}"><span class="speed-dot" aria-hidden="true"></span>{speed_label}</span>\n'''
-            f'''          <span class="card-link">Open guide</span>\n'''
-            f'''        </div>{note_html}\n'''
-            f'''      </a>'''
-        )
+            support_html = f'''            <p>{support_line}</p>\n''' if support_line else ''
+            cards.append(
+                f'''      <a class="link-card" href="/{s['slug']}" data-state="{s['name'].lower()}" data-name="{s['name'].lower()}" data-fee="{fee}" data-path="{path_filter}" data-tier="{tier}">\n'''
+                f'''        <div class="card-top">\n'''
+                f'''          <div class="card-head">\n'''
+                f'''            <h3>{s['name']}</h3>\n'''
+                f'''{support_html}'''
+                f'''          </div>\n'''
+                f'''          <span class="badge {path_class}">{path_label}</span>\n'''
+                f'''        </div>\n'''
+                f'''        <div class="card-meta">\n'''
+                f'''          <span class="metric metric-fee"><span class="metric-label">Fee</span><strong>${fee}</strong></span>\n'''
+                f'''          <span class="metric"><span class="metric-label">Timeline</span><strong>{processing_time}</strong></span>\n'''
+                f'''        </div>\n'''
+                f'''        <div class="card-foot">\n'''
+                f'''          <span class="speed-indicator {speed_class}"><span class="speed-dot" aria-hidden="true"></span>{speed_label}</span>\n'''
+                f'''          <span class="card-link">Open guide</span>\n'''
+                f'''        </div>\n'''
+                f'''      </a>'''
+            )
         latest_verified = max(latest_verified, s.get('last_updated') or today)
 
     cards_html = '\n'.join(cards)
@@ -98,7 +100,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
 
     cdr_stat = f'<span class="hero-stat">CDR states <strong>{cdr_only_count}</strong></span>' if cdr_only_count else ''
     cdr_path_filter_button = '<button type="button" class="filter-pill" data-value="cdr-only">CDR State</button>' if cdr_only_count else ''
-    cdr_tier_filter_button = '<button type="button" class="filter-pill" data-value="none">CDR State</button>' if cdr_only_count else ''
+    cdr_tier_filter_button = ''
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -216,7 +218,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .metric-fee {{ border-color: rgba(188,94,54,.32); background: rgba(255,248,242,.92); }}
 .metric-label {{ display:block; font-size:.69rem; letter-spacing:.07em; text-transform:uppercase; color:rgba(16,24,32,.56); margin-bottom:.2rem; }}
 .metric strong {{ color:var(--idx-ink); font-family: var(--serif); font-size:1rem; line-height:1.3; }}
+.link-card-cdr {{ border-color: rgba(15,79,135,.22); background: linear-gradient(180deg, rgba(247,252,255,.95), rgba(255,255,255,.92)); }}
+.cdr-kicker {{ margin:.9rem 0 .7rem; color:rgba(16,24,32,.72); font-size:.84rem; line-height:1.45; }}
+.cdr-chips {{ display:flex; flex-wrap:wrap; gap:.45rem; }}
+.cdr-chip {{ display:inline-flex; align-items:center; border-radius:999px; border:1px solid rgba(15,79,135,.25); background:rgba(15,79,135,.07); color:#0f4f87; font-size:.73rem; font-weight:600; padding:.28rem .62rem; }}
 .card-foot {{ margin-top:.85rem; display:flex; align-items:center; justify-content:space-between; gap:.6rem; }}
+.card-foot-cdr {{ justify-content:flex-end; margin-top:.72rem; }}
 .speed-indicator {{ display:inline-flex; align-items:center; gap:.42rem; font-size:.76rem; color:rgba(16,24,32,.72); }}
 .speed-dot {{ width:8px; height:8px; border-radius:999px; display:inline-block; }}
 .speed-fast .speed-dot {{ background:#0f6b4a; }}
@@ -233,7 +240,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   border-radius: 999px;
   padding: .34rem .65rem;
 }}
-.card-note {{ margin:.6rem 0 0; font-size:.77rem; color:rgba(16,24,32,.64); }}
 .badge {{ display:inline-flex; padding:.34rem .72rem; border-radius:999px; font-size:.69rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; white-space:nowrap; }}
 .badge-green {{ background:#14532d; color:#f4fff7; }}
 .badge-gray {{ background:#334155; color:#f8fafc; }}
@@ -317,7 +323,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   <section class="reciprocity-footer">
     <article id="how-to-use" class="footer-card">
       <h2>How to use this directory</h2>
-      <p>Start with path type first: compact, endorsement, or CDR-only. Then sort by fee and timeline to shortlist states with the fastest path to your next assignment.</p>
+      <p>Start with path type first: compact, endorsement, or CDR State. Then sort by fee and timeline to shortlist states with the fastest path to your next assignment.</p>
     </article>
     <article class="footer-card">
       <h3>Popular reciprocity pages</h3>
