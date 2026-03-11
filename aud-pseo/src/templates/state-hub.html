@@ -15,6 +15,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ seo.title }}" />
   <meta name="twitter:description" content="{{ seo.description }}" />
+  <meta name="theme-color" content="#122522" />
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,10 +26,10 @@
       --ui-forest: #163c3a;
       --ui-forest-soft: #214f4d;
       --ui-cream: #fbf7ef;
-      --ui-card: rgba(255, 255, 255, 0.88);
+      --ui-card: rgba(255, 255, 255, 0.9);
       --ui-border: rgba(16, 24, 32, 0.1);
-      --ui-shadow: 0 20px 48px rgba(16, 24, 32, 0.08);
-      --ui-shadow-soft: 0 10px 24px rgba(16, 24, 32, 0.05);
+      --ui-shadow: 0 22px 52px rgba(16, 24, 32, 0.09);
+      --ui-shadow-soft: 0 12px 28px rgba(16, 24, 32, 0.05);
       --ui-green-bg: #ddf3e5;
       --ui-green-fg: #155b35;
       --ui-yellow-bg: #fff1c7;
@@ -36,16 +37,24 @@
       --ui-gray-bg: #e9eef1;
       --ui-gray-fg: #41535f;
       --ui-accent: #bd5f37;
-      --ui-accent-soft: #f2dfd5;
+      --ui-focus: #2f7d89;
     }
+    * { box-sizing: border-box; }
     body {
       background:
         radial-gradient(circle at top left, rgba(189, 95, 55, 0.08), transparent 24%),
         radial-gradient(circle at top right, rgba(22, 60, 58, 0.08), transparent 28%),
         var(--ui-cream);
     }
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible {
+      outline: 3px solid var(--ui-focus);
+      outline-offset: 2px;
+      border-radius: 10px;
+    }
     .hero {
-      padding-bottom: 4.5rem;
+      padding-bottom: 4.65rem;
       background:
         radial-gradient(circle at 15% 20%, rgba(244, 219, 198, 0.18), transparent 30%),
         radial-gradient(circle at 85% 25%, rgba(64, 130, 109, 0.18), transparent 28%),
@@ -116,7 +125,12 @@
       box-shadow: var(--ui-shadow-soft);
       padding: 1.4rem;
       backdrop-filter: blur(12px);
+      animation: riseIn 360ms ease both;
     }
+    .section:nth-of-type(2) { animation-delay: 40ms; }
+    .section:nth-of-type(3) { animation-delay: 80ms; }
+    .section:nth-of-type(4) { animation-delay: 120ms; }
+    .section:nth-of-type(5) { animation-delay: 160ms; }
     .section h2 {
       margin-bottom: 0.9rem;
       font-size: clamp(1.35rem, 2.2vw, 1.7rem);
@@ -163,6 +177,19 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
+    .tier-pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 0.32rem 0.75rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .tier-fast { background: #def5ec; color: #0f5f43; }
+    .tier-mid { background: #fff1cf; color: #7e5d12; }
+    .tier-slow { background: #f6e7df; color: #8f4d2a; }
     .lead-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.95fr);
@@ -204,6 +231,11 @@
       border-radius: 18px;
       padding: 0.95rem 1rem;
       min-height: 112px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .fact-card:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px rgba(16, 24, 32, 0.08);
     }
     .fact-label {
       display: block;
@@ -245,9 +277,17 @@
       font-size: 0.92rem;
       transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background 0.16s ease;
     }
+    .action-link::after {
+      content: '>';
+      font-size: 0.85rem;
+      transition: transform 0.16s ease;
+    }
     .action-link:hover {
       transform: translateY(-1px);
       box-shadow: 0 12px 24px rgba(16, 24, 32, 0.08);
+    }
+    .action-link:hover::after {
+      transform: translateX(2px);
     }
     .action-link-primary {
       background: var(--ui-forest);
@@ -264,9 +304,34 @@
       color: #8f4d2a;
       border: 1px solid rgba(189, 95, 55, 0.15);
     }
-    .section-stack {
-      display: grid;
-      gap: 1rem;
+    .section-nav {
+      position: sticky;
+      top: 58px;
+      z-index: 9;
+      display: flex;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+      background: rgba(251, 247, 239, 0.8);
+      border: 1px solid rgba(16, 24, 32, 0.08);
+      border-radius: 14px;
+      padding: 0.55rem;
+      backdrop-filter: blur(10px);
+    }
+    .section-nav a {
+      text-decoration: none;
+      font-size: 0.76rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: rgba(16, 24, 32, 0.72);
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(16, 24, 32, 0.08);
+      border-radius: 999px;
+      padding: 0.4rem 0.7rem;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .section-nav a:hover {
+      background: rgba(22, 60, 58, 0.08);
+      color: var(--ui-forest);
     }
     .steps-list {
       display: grid;
@@ -322,7 +387,7 @@
     }
     .facts-grid > div,
     .board-grid > div {
-      background: rgba(255,255,255,0.7);
+      background: rgba(255,255,255,0.74);
       border: 1px solid rgba(16, 24, 32, 0.08);
       border-radius: 18px;
       padding: 0.95rem 1rem;
@@ -349,14 +414,14 @@
       padding: 0;
     }
     .checklist li {
-      background: rgba(255,255,255,0.72);
+      background: rgba(255,255,255,0.74);
       border: 1px solid rgba(16, 24, 32, 0.08);
       border-radius: 18px;
       padding: 0.95rem 1rem 0.95rem 2.85rem;
       position: relative;
     }
     .checklist li::before {
-      content: '•';
+      content: '\2022';
       position: absolute;
       left: 1rem;
       top: 0.75rem;
@@ -404,6 +469,26 @@
     .crawl-links a:hover {
       background: rgba(22, 60, 58, 0.1);
     }
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .section,
+      .fact-card,
+      .action-link,
+      .action-link::after {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+      }
+    }
     @media (max-width: 860px) {
       .lead-grid,
       .fact-strip,
@@ -411,10 +496,13 @@
       .board-grid {
         grid-template-columns: 1fr 1fr;
       }
+      .section-nav {
+        position: static;
+      }
     }
     @media (max-width: 720px) {
       .hero {
-        padding-bottom: 3.6rem;
+        padding-bottom: 3.7rem;
       }
       main {
         margin-top: -2rem;
@@ -467,7 +555,7 @@
           {
             "@type": "Question",
             "name": {{ faq.question | striptags | trim | tojson }},
-            "acceptedAnswer": {"@type": "Answer", "text": {{ faq.answer | striptags | trim | tojson }}}
+            "acceptedAnswer": {"@type": "Answer", "text": {{ faq.answer | striptags | trim | tojson }} }
           }{% if not loop.last %},{% endif %}
           {% endfor %}
         ]
@@ -486,7 +574,7 @@
   <header class="hero" aria-labelledby="hero-title">
     <div class="hero-inner">
       <nav class="hero-breadcrumb" aria-label="Breadcrumb">
-        <a href="/">All States</a> <span class="bc-sep" aria-hidden="true">·</span> {{ state_name }}
+        <a href="/">All States</a> <span class="bc-sep" aria-hidden="true">-</span> {{ state_name }}
       </nav>
       <div class="hero-copy">
         <h1 id="hero-title">{{ state_name }} {{ profession_name }} License <em>Reciprocity &amp; How to Apply</em></h1>
@@ -494,6 +582,7 @@
         <div class="hero-meta">
           <span class="trust-pill"><strong>Last verified</strong> {{ last_verified_date | default(last_updated, true) }}</span>
           <span class="trust-pill"><strong>Official board</strong> {{ board.name }}</span>
+          <span class="tier-pill tier-{{ reciprocity.processing_tier | default('slow') }}">{{ reciprocity.processing_tier | default('slow') }} tier</span>
         </div>
       </div>
     </div>
@@ -573,6 +662,15 @@
         </div>
       </section>
 
+      <nav class="section-nav" aria-label="Jump to section">
+        <a href="#endorsement">Steps</a>
+        <a href="#quick-facts">Quick Facts</a>
+        <a href="#documents">Documents</a>
+        <a href="#contact">Board</a>
+        <a href="#renewal">Renewal</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
       <section id="endorsement" class="section" aria-labelledby="apply-heading">
         <h2 id="apply-heading">Endorsement Application Steps</h2>
         <p class="section-intro">Work through these in order. This sequence is the fastest way to move from out-of-state license to a board-cleared application in {{ state_name }}.</p>
@@ -610,8 +708,8 @@
         <dl class="board-grid">
           <div><dt>Board</dt><dd>{{ board.name }}</dd></div>
           <div><dt>Department</dt><dd>{{ board.parent_dept }}</dd></div>
-          <div><dt>Phone</dt><dd>{{ board.phone }}</dd></div>
-          <div><dt>Email</dt><dd>{{ board.email | replace('mailto:', '') }}</dd></div>
+          <div><dt>Phone</dt><dd>{{ board.phone if board.phone else 'See board portal' }}</dd></div>
+          <div><dt>Email</dt><dd>{{ board.email | replace('mailto:', '') if board.email else 'See board portal' }}</dd></div>
         </dl>
         <div class="board-link-row">
           <a class="action-link action-link-secondary" href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">Visit Official Board Portal</a>

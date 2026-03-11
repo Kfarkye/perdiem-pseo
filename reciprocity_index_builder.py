@@ -4,17 +4,34 @@ from __future__ import annotations
 def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css_hash: str, today: str) -> str:
     profession = profile['identity']['title_full']
     plural = profile['identity'].get('title_plural', profession + 's')
-    latest_verified = today
-    cards = []
     sorted_states = sorted(states_manifest, key=lambda item: item['name'])
+    latest_verified = today
+    member_count = 0
+    cards = []
     for s in sorted_states:
         member = s['state_is_member']
+        member_count += 1 if member else 0
         badge_label = 'Compact' if member else 'Endorsement'
         badge_class = 'badge-green' if member else 'badge-gray'
+        tier = s['processing_tier']
+        tier_label = {'fast': 'Fast', 'mid': 'Mid', 'slow': 'Slow'}.get(tier, 'Slow')
         cards.append(
-            f'''      <a class="link-card" href="/{s['slug']}" data-state="{s['name'].lower()}" data-compact="{'member' if member else 'non-member'}" data-tier="{s['processing_tier']}">\n'''
-            f'''        <div class="card-top"><div><h3>{s['name']}</h3><p>{s['compact_label']}</p></div><span class="badge {badge_class}">{badge_label}</span></div>\n'''
-            f'''        <div class="card-meta"><span>Fee <strong>${s['endorsement_fee']}</strong></span><span>Timeline <strong>{s['processing_time']}</strong></span></div>\n'''
+            f'''      <a class="link-card" href="/{s['slug']}" data-state="{s['name'].lower()}" data-compact="{'member' if member else 'non-member'}" data-tier="{tier}">\n'''
+            f'''        <div class="card-top">\n'''
+            f'''          <div class="card-head">\n'''
+            f'''            <h3>{s['name']}</h3>\n'''
+            f'''            <p>{s['compact_label']}</p>\n'''
+            f'''          </div>\n'''
+            f'''          <span class="badge {badge_class}">{badge_label}</span>\n'''
+            f'''        </div>\n'''
+            f'''        <div class="card-meta">\n'''
+            f'''          <span>Fee <strong>${s['endorsement_fee']}</strong></span>\n'''
+            f'''          <span>Timeline <strong>{s['processing_time']}</strong></span>\n'''
+            f'''        </div>\n'''
+            f'''        <div class="card-foot">\n'''
+            f'''          <span class="tier tier-{tier}">{tier_label} tier</span>\n'''
+            f'''          <span class="card-link">Open State Guide ></span>\n'''
+            f'''        </div>\n'''
             f'''      </a>'''
         )
         latest_verified = max(latest_verified, s.get('last_updated') or today)
@@ -23,6 +40,8 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     desc = f"Compare {plural.lower()} license reciprocity rules by state, including compact membership, endorsement fees, temporary license availability, and processing times."
     popular = sorted_states[:4]
     popular_links = '\n'.join(f'<li><a href="/{s["slug"]}">{s["name"]}</a></li>' for s in popular)
+    total_states = len(sorted_states)
+
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,14 +57,18 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
   --idx-ink: #101820;
   --idx-forest: #173b39;
   --idx-accent: #bc5e36;
-  --idx-card: rgba(255,255,255,0.86);
-  --idx-border: rgba(16,24,32,0.09);
+  --idx-card: rgba(255,255,255,0.88);
+  --idx-border: rgba(16,24,32,0.1);
 }}
 body {{
   background:
     radial-gradient(circle at top left, rgba(188,94,54,.08), transparent 28%),
     radial-gradient(circle at top right, rgba(23,59,57,.08), transparent 32%),
     #fbf7ef;
+}}
+a:focus-visible, button:focus-visible, input:focus-visible {{
+  outline: 3px solid #2f7d89;
+  outline-offset: 2px;
 }}
 .reciprocity-hero {{
   padding: 5.5rem 1.5rem 4rem;
@@ -57,24 +80,42 @@ body {{
 }}
 .reciprocity-hero-inner {{ max-width: 1040px; margin: 0 auto; }}
 .eyebrow {{ display:inline-flex; padding:.38rem .8rem; border-radius:999px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.12); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:#fff5ef; margin-bottom:1rem; }}
-.reciprocity-hero h1 {{ color: #fff; max-width: 720px; margin-bottom: .9rem; }}
-.reciprocity-hero p {{ max-width: 720px; color: rgba(255, 250, 245, 0.84); }}
-.reciprocity-toolbar {{ max-width: 1040px; margin: -1.8rem auto 1.4rem; padding: 1rem; background: rgba(255,255,255,.84); border-radius: 22px; box-shadow: 0 22px 48px rgba(16,24,32,.08); border: 1px solid rgba(16,24,32,.08); position: relative; z-index: 3; backdrop-filter: blur(12px); }}
-.toolbar-grid {{ display:grid; grid-template-columns: minmax(0,1.5fr) auto; gap: .85rem; align-items:center; }}
+.reciprocity-hero h1 {{ color: #fff; max-width: 760px; margin-bottom: .9rem; }}
+.reciprocity-hero p {{ max-width: 760px; color: rgba(255, 250, 245, 0.84); }}
+.hero-stats {{ margin-top: 1rem; display:flex; flex-wrap:wrap; gap:.6rem; }}
+.hero-stat {{ display:inline-flex; align-items:center; gap:.4rem; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.1); border-radius:999px; padding:.4rem .8rem; font-size:.74rem; color:#fff9f4; }}
+.reciprocity-toolbar {{ max-width: 1040px; margin: -1.8rem auto 1.4rem; padding: 1rem; background: rgba(255,255,255,.86); border-radius: 22px; box-shadow: 0 22px 48px rgba(16,24,32,.08); border: 1px solid rgba(16,24,32,.08); position: relative; z-index: 3; backdrop-filter: blur(12px); }}
+.toolbar-grid {{ display:grid; grid-template-columns: minmax(0,1fr); gap:.85rem; }}
+.toolbar-top {{ display:grid; grid-template-columns: minmax(0,1.4fr) auto; gap:.8rem; align-items:center; }}
 .reciprocity-toolbar input {{ width: 100%; padding: .95rem 1rem; border-radius: 14px; border: 1px solid rgba(16,24,32,.12); background: #fff; }}
-.toolbar-note {{ color: rgba(16,24,32,.62); font-size: .84rem; }}
-.reciprocity-grid {{ max-width: 1040px; margin: 0 auto 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; padding: 0 1rem; }}
+.result-count {{ font-size:.83rem; color:rgba(16,24,32,.66); text-align:right; }}
+.filters {{ display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:.75rem; }}
+.filter-group {{ border:1px solid rgba(16,24,32,.08); border-radius:14px; background:rgba(255,255,255,.68); padding:.68rem; }}
+.filter-label {{ display:block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:rgba(16,24,32,.56); margin-bottom:.45rem; }}
+.pill-row {{ display:flex; flex-wrap:wrap; gap:.45rem; }}
+.filter-pill {{ border:1px solid rgba(16,24,32,.14); background:#fff; color:rgba(16,24,32,.75); border-radius:999px; font-size:.74rem; padding:.34rem .68rem; cursor:pointer; transition: all .15s ease; }}
+.filter-pill:hover {{ border-color:rgba(23,59,57,.4); color:var(--idx-forest); }}
+.filter-pill.active {{ background:var(--idx-forest); color:#fff; border-color:var(--idx-forest); }}
+.reciprocity-grid {{ max-width: 1040px; margin: 0 auto 2.6rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; padding: 0 1rem; }}
 .link-card {{ display: block; background: var(--idx-card); border: 1px solid var(--idx-border); border-radius: 22px; padding: 1.05rem; color: inherit; text-decoration: none; box-shadow: 0 12px 28px rgba(16,24,32,.05); backdrop-filter: blur(12px); transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; }}
 .link-card:hover {{ transform: translateY(-2px); box-shadow: 0 18px 36px rgba(16,24,32,.09); border-color: rgba(23,59,57,.18); }}
 .card-top {{ display:flex; justify-content:space-between; gap:.75rem; align-items:flex-start; }}
-.card-top h3 {{ margin:0 0 .35rem; font-size:1.08rem; }}
-.card-top p {{ margin:0; font-size:.88rem; color:rgba(16,24,32,.68); }}
+.card-head h3 {{ margin:0 0 .35rem; font-size:1.08rem; }}
+.card-head p {{ margin:0; font-size:.88rem; color:rgba(16,24,32,.68); }}
 .card-meta {{ display:grid; grid-template-columns:1fr 1fr; gap:.65rem; margin-top:1rem; font-size:.84rem; color:rgba(16,24,32,.66); }}
 .card-meta span {{ background: rgba(255,255,255,.72); border: 1px solid rgba(16,24,32,.08); border-radius: 14px; padding: .72rem .8rem; }}
 .card-meta strong {{ display:block; margin-top:.2rem; color:var(--idx-ink); font-family: var(--serif); font-size:1rem; }}
+.card-foot {{ margin-top:.8rem; display:flex; align-items:center; justify-content:space-between; gap:.6rem; }}
+.card-link {{ font-size:.78rem; color:var(--idx-forest); letter-spacing:.04em; text-transform:uppercase; }}
+.tier {{ display:inline-flex; padding:.28rem .62rem; border-radius:999px; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; font-weight:700; }}
+.tier-fast {{ background:#def5ec; color:#0f5f43; }}
+.tier-mid {{ background:#fff1cf; color:#7e5d12; }}
+.tier-slow {{ background:#f6e7df; color:#8f4d2a; }}
 .badge {{ display:inline-flex; padding:.34rem .72rem; border-radius:999px; font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; white-space:nowrap; }}
 .badge-green {{ background:#ddf3e5; color:#155b35; }}
 .badge-gray {{ background:#e9eef1; color:#41535f; }}
+.empty-state {{ display:none; max-width:1040px; margin: 0 auto 2.4rem; padding: 0 1rem; }}
+.empty-card {{ border:1px dashed rgba(16,24,32,.2); border-radius:18px; padding:1.1rem; background:rgba(255,255,255,.7); color:rgba(16,24,32,.72); }}
 .reciprocity-footer {{ max-width: 1040px; margin: 0 auto 3rem; padding: 0 1rem 0.5rem; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr); gap:1rem; }}
 .footer-card {{ background: rgba(255,255,255,.84); border:1px solid rgba(16,24,32,.08); border-radius:22px; box-shadow: 0 16px 36px rgba(16,24,32,.05); padding:1.2rem; }}
 .footer-card h2, .footer-card h3 {{ margin-bottom:.6rem; }}
@@ -83,7 +124,8 @@ body {{
 @media (max-width: 720px) {{
   .reciprocity-hero {{ padding: 4.75rem 1rem 3.4rem; }}
   .reciprocity-toolbar {{ margin: -1.4rem .85rem 1.2rem; }}
-  .toolbar-grid, .reciprocity-footer, .card-meta {{ grid-template-columns: 1fr; }}
+  .toolbar-top, .filters, .reciprocity-footer, .card-meta {{ grid-template-columns: 1fr; }}
+  .result-count {{ text-align:left; }}
   .reciprocity-grid {{ padding: 0 .85rem; }}
 }}
 </style>
@@ -95,17 +137,46 @@ body {{
     <span class="eyebrow">License Transfer Tool</span>
     <h1>{profession} License Reciprocity by State</h1>
     <p>Compare compact participation, endorsement fees, fingerprint rules, temporary license availability, and current transfer timelines before you commit to a state.</p>
+    <div class="hero-stats">
+      <span class="hero-stat">States <strong>{total_states}</strong></span>
+      <span class="hero-stat">Compact states <strong>{member_count}</strong></span>
+      <span class="hero-stat">Updated <strong>{latest_verified}</strong></span>
+    </div>
   </div>
 </header>
 <main id="main-content">
-  <section class="reciprocity-toolbar">
+  <section class="reciprocity-toolbar" aria-label="Reciprocity filters">
     <div class="toolbar-grid">
-      <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
-      <div class="toolbar-note">Covers compact status, endorsement cost, and timing in one view.</div>
+      <div class="toolbar-top">
+        <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
+        <div id="resultCount" class="result-count"></div>
+      </div>
+      <div class="filters">
+        <div class="filter-group">
+          <span class="filter-label">Compact status</span>
+          <div class="pill-row" data-filter-group="compact">
+            <button type="button" class="filter-pill active" data-value="all">All</button>
+            <button type="button" class="filter-pill" data-value="member">Compact</button>
+            <button type="button" class="filter-pill" data-value="non-member">Endorsement</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Processing tier</span>
+          <div class="pill-row" data-filter-group="tier">
+            <button type="button" class="filter-pill active" data-value="all">All</button>
+            <button type="button" class="filter-pill" data-value="fast">Fast</button>
+            <button type="button" class="filter-pill" data-value="mid">Mid</button>
+            <button type="button" class="filter-pill" data-value="slow">Slow</button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="reciprocity-grid" id="reciprocityGrid">
 {cards_html}
+  </section>
+  <section class="empty-state" id="emptyState" aria-live="polite">
+    <div class="empty-card">No states match your current filters. Clear one filter or search term and try again.</div>
   </section>
   <section class="reciprocity-footer">
     <article class="footer-card">
@@ -122,13 +193,52 @@ body {{
 <script>
 const input = document.getElementById('stateSearch');
 const cards = [...document.querySelectorAll('.link-card')];
-input.addEventListener('input', () => {{
-  const q = input.value.toLowerCase().trim();
-  for (const card of cards) {{
-    const match = card.dataset.state.includes(q);
-    card.style.display = match ? '' : 'none';
+const resultCount = document.getElementById('resultCount');
+const emptyState = document.getElementById('emptyState');
+const compactPills = [...document.querySelectorAll('[data-filter-group="compact"] .filter-pill')];
+const tierPills = [...document.querySelectorAll('[data-filter-group="tier"] .filter-pill')];
+
+let compactFilter = 'all';
+let tierFilter = 'all';
+
+function setActive(pills, value) {{
+  for (const pill of pills) {{
+    pill.classList.toggle('active', pill.dataset.value === value);
   }}
-}});
+}}
+
+function applyFilters() {{
+  const q = input.value.toLowerCase().trim();
+  let shown = 0;
+  for (const card of cards) {{
+    const matchesSearch = card.dataset.state.includes(q);
+    const matchesCompact = compactFilter === 'all' || card.dataset.compact === compactFilter;
+    const matchesTier = tierFilter === 'all' || card.dataset.tier === tierFilter;
+    const visible = matchesSearch && matchesCompact && matchesTier;
+    card.style.display = visible ? '' : 'none';
+    shown += visible ? 1 : 0;
+  }}
+  resultCount.textContent = `${{shown}} of ${{cards.length}} states`;
+  emptyState.style.display = shown === 0 ? '' : 'none';
+}}
+
+input.addEventListener('input', applyFilters);
+for (const pill of compactPills) {{
+  pill.addEventListener('click', () => {{
+    compactFilter = pill.dataset.value;
+    setActive(compactPills, compactFilter);
+    applyFilters();
+  }});
+}}
+for (const pill of tierPills) {{
+  pill.addEventListener('click', () => {{
+    tierFilter = pill.dataset.value;
+    setActive(tierPills, tierFilter);
+    applyFilters();
+  }});
+}}
+
+applyFilters();
 </script>
 </body>
 </html>'''

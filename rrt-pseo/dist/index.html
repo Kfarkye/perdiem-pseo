@@ -13,14 +13,18 @@
   --idx-ink: #101820;
   --idx-forest: #173b39;
   --idx-accent: #bc5e36;
-  --idx-card: rgba(255,255,255,0.86);
-  --idx-border: rgba(16,24,32,0.09);
+  --idx-card: rgba(255,255,255,0.88);
+  --idx-border: rgba(16,24,32,0.1);
 }
 body {
   background:
     radial-gradient(circle at top left, rgba(188,94,54,.08), transparent 28%),
     radial-gradient(circle at top right, rgba(23,59,57,.08), transparent 32%),
     #fbf7ef;
+}
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 3px solid #2f7d89;
+  outline-offset: 2px;
 }
 .reciprocity-hero {
   padding: 5.5rem 1.5rem 4rem;
@@ -32,24 +36,42 @@ body {
 }
 .reciprocity-hero-inner { max-width: 1040px; margin: 0 auto; }
 .eyebrow { display:inline-flex; padding:.38rem .8rem; border-radius:999px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.12); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:#fff5ef; margin-bottom:1rem; }
-.reciprocity-hero h1 { color: #fff; max-width: 720px; margin-bottom: .9rem; }
-.reciprocity-hero p { max-width: 720px; color: rgba(255, 250, 245, 0.84); }
-.reciprocity-toolbar { max-width: 1040px; margin: -1.8rem auto 1.4rem; padding: 1rem; background: rgba(255,255,255,.84); border-radius: 22px; box-shadow: 0 22px 48px rgba(16,24,32,.08); border: 1px solid rgba(16,24,32,.08); position: relative; z-index: 3; backdrop-filter: blur(12px); }
-.toolbar-grid { display:grid; grid-template-columns: minmax(0,1.5fr) auto; gap: .85rem; align-items:center; }
+.reciprocity-hero h1 { color: #fff; max-width: 760px; margin-bottom: .9rem; }
+.reciprocity-hero p { max-width: 760px; color: rgba(255, 250, 245, 0.84); }
+.hero-stats { margin-top: 1rem; display:flex; flex-wrap:wrap; gap:.6rem; }
+.hero-stat { display:inline-flex; align-items:center; gap:.4rem; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.1); border-radius:999px; padding:.4rem .8rem; font-size:.74rem; color:#fff9f4; }
+.reciprocity-toolbar { max-width: 1040px; margin: -1.8rem auto 1.4rem; padding: 1rem; background: rgba(255,255,255,.86); border-radius: 22px; box-shadow: 0 22px 48px rgba(16,24,32,.08); border: 1px solid rgba(16,24,32,.08); position: relative; z-index: 3; backdrop-filter: blur(12px); }
+.toolbar-grid { display:grid; grid-template-columns: minmax(0,1fr); gap:.85rem; }
+.toolbar-top { display:grid; grid-template-columns: minmax(0,1.4fr) auto; gap:.8rem; align-items:center; }
 .reciprocity-toolbar input { width: 100%; padding: .95rem 1rem; border-radius: 14px; border: 1px solid rgba(16,24,32,.12); background: #fff; }
-.toolbar-note { color: rgba(16,24,32,.62); font-size: .84rem; }
-.reciprocity-grid { max-width: 1040px; margin: 0 auto 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; padding: 0 1rem; }
+.result-count { font-size:.83rem; color:rgba(16,24,32,.66); text-align:right; }
+.filters { display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:.75rem; }
+.filter-group { border:1px solid rgba(16,24,32,.08); border-radius:14px; background:rgba(255,255,255,.68); padding:.68rem; }
+.filter-label { display:block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:rgba(16,24,32,.56); margin-bottom:.45rem; }
+.pill-row { display:flex; flex-wrap:wrap; gap:.45rem; }
+.filter-pill { border:1px solid rgba(16,24,32,.14); background:#fff; color:rgba(16,24,32,.75); border-radius:999px; font-size:.74rem; padding:.34rem .68rem; cursor:pointer; transition: all .15s ease; }
+.filter-pill:hover { border-color:rgba(23,59,57,.4); color:var(--idx-forest); }
+.filter-pill.active { background:var(--idx-forest); color:#fff; border-color:var(--idx-forest); }
+.reciprocity-grid { max-width: 1040px; margin: 0 auto 2.6rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; padding: 0 1rem; }
 .link-card { display: block; background: var(--idx-card); border: 1px solid var(--idx-border); border-radius: 22px; padding: 1.05rem; color: inherit; text-decoration: none; box-shadow: 0 12px 28px rgba(16,24,32,.05); backdrop-filter: blur(12px); transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; }
 .link-card:hover { transform: translateY(-2px); box-shadow: 0 18px 36px rgba(16,24,32,.09); border-color: rgba(23,59,57,.18); }
 .card-top { display:flex; justify-content:space-between; gap:.75rem; align-items:flex-start; }
-.card-top h3 { margin:0 0 .35rem; font-size:1.08rem; }
-.card-top p { margin:0; font-size:.88rem; color:rgba(16,24,32,.68); }
+.card-head h3 { margin:0 0 .35rem; font-size:1.08rem; }
+.card-head p { margin:0; font-size:.88rem; color:rgba(16,24,32,.68); }
 .card-meta { display:grid; grid-template-columns:1fr 1fr; gap:.65rem; margin-top:1rem; font-size:.84rem; color:rgba(16,24,32,.66); }
 .card-meta span { background: rgba(255,255,255,.72); border: 1px solid rgba(16,24,32,.08); border-radius: 14px; padding: .72rem .8rem; }
 .card-meta strong { display:block; margin-top:.2rem; color:var(--idx-ink); font-family: var(--serif); font-size:1rem; }
+.card-foot { margin-top:.8rem; display:flex; align-items:center; justify-content:space-between; gap:.6rem; }
+.card-link { font-size:.78rem; color:var(--idx-forest); letter-spacing:.04em; text-transform:uppercase; }
+.tier { display:inline-flex; padding:.28rem .62rem; border-radius:999px; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; font-weight:700; }
+.tier-fast { background:#def5ec; color:#0f5f43; }
+.tier-mid { background:#fff1cf; color:#7e5d12; }
+.tier-slow { background:#f6e7df; color:#8f4d2a; }
 .badge { display:inline-flex; padding:.34rem .72rem; border-radius:999px; font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; white-space:nowrap; }
 .badge-green { background:#ddf3e5; color:#155b35; }
 .badge-gray { background:#e9eef1; color:#41535f; }
+.empty-state { display:none; max-width:1040px; margin: 0 auto 2.4rem; padding: 0 1rem; }
+.empty-card { border:1px dashed rgba(16,24,32,.2); border-radius:18px; padding:1.1rem; background:rgba(255,255,255,.7); color:rgba(16,24,32,.72); }
 .reciprocity-footer { max-width: 1040px; margin: 0 auto 3rem; padding: 0 1rem 0.5rem; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr); gap:1rem; }
 .footer-card { background: rgba(255,255,255,.84); border:1px solid rgba(16,24,32,.08); border-radius:22px; box-shadow: 0 16px 36px rgba(16,24,32,.05); padding:1.2rem; }
 .footer-card h2, .footer-card h3 { margin-bottom:.6rem; }
@@ -58,7 +80,8 @@ body {
 @media (max-width: 720px) {
   .reciprocity-hero { padding: 4.75rem 1rem 3.4rem; }
   .reciprocity-toolbar { margin: -1.4rem .85rem 1.2rem; }
-  .toolbar-grid, .reciprocity-footer, .card-meta { grid-template-columns: 1fr; }
+  .toolbar-top, .filters, .reciprocity-footer, .card-meta { grid-template-columns: 1fr; }
+  .result-count { text-align:left; }
   .reciprocity-grid { padding: 0 .85rem; }
 }
 </style>
@@ -70,220 +93,912 @@ body {
     <span class="eyebrow">License Transfer Tool</span>
     <h1>Respiratory Therapist License Reciprocity by State</h1>
     <p>Compare compact participation, endorsement fees, fingerprint rules, temporary license availability, and current transfer timelines before you commit to a state.</p>
+    <div class="hero-stats">
+      <span class="hero-stat">States <strong>51</strong></span>
+      <span class="hero-stat">Compact states <strong>0</strong></span>
+      <span class="hero-stat">Updated <strong>2026-03-10</strong></span>
+    </div>
   </div>
 </header>
 <main id="main-content">
-  <section class="reciprocity-toolbar">
+  <section class="reciprocity-toolbar" aria-label="Reciprocity filters">
     <div class="toolbar-grid">
-      <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
-      <div class="toolbar-note">Covers compact status, endorsement cost, and timing in one view.</div>
+      <div class="toolbar-top">
+        <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
+        <div id="resultCount" class="result-count"></div>
+      </div>
+      <div class="filters">
+        <div class="filter-group">
+          <span class="filter-label">Compact status</span>
+          <div class="pill-row" data-filter-group="compact">
+            <button type="button" class="filter-pill active" data-value="all">All</button>
+            <button type="button" class="filter-pill" data-value="member">Compact</button>
+            <button type="button" class="filter-pill" data-value="non-member">Endorsement</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Processing tier</span>
+          <div class="pill-row" data-filter-group="tier">
+            <button type="button" class="filter-pill active" data-value="all">All</button>
+            <button type="button" class="filter-pill" data-value="fast">Fast</button>
+            <button type="button" class="filter-pill" data-value="mid">Mid</button>
+            <button type="button" class="filter-pill" data-value="slow">Slow</button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="reciprocity-grid" id="reciprocityGrid">
       <a class="link-card" href="/alabama-rrt" data-state="alabama" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Alabama</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Alabama</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/alaska-rrt" data-state="alaska" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Alaska</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Alaska</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/arizona-rrt" data-state="arizona" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Arizona</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Arizona</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/arkansas-rrt" data-state="arkansas" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Arkansas</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Arkansas</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/california-rrt" data-state="california" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>California</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>California</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/colorado-rrt" data-state="colorado" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Colorado</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Colorado</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/connecticut-rrt" data-state="connecticut" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Connecticut</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Connecticut</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/delaware-rrt" data-state="delaware" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Delaware</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Delaware</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/dc-rrt" data-state="district of columbia" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>District of Columbia</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>District of Columbia</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/florida-rrt" data-state="florida" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Florida</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Florida</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/georgia-rrt" data-state="georgia" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Georgia</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Georgia</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/hawaii-rrt" data-state="hawaii" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Hawaii</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Hawaii</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/idaho-rrt" data-state="idaho" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Idaho</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Idaho</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/illinois-rrt" data-state="illinois" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Illinois</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Illinois</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/indiana-rrt" data-state="indiana" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Indiana</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Indiana</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/iowa-rrt" data-state="iowa" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Iowa</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Iowa</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/kansas-rrt" data-state="kansas" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Kansas</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Kansas</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/kentucky-rrt" data-state="kentucky" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Kentucky</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Kentucky</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/louisiana-rrt" data-state="louisiana" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Louisiana</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Louisiana</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/maine-rrt" data-state="maine" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Maine</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Maine</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/maryland-rrt" data-state="maryland" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Maryland</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Maryland</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/massachusetts-rrt" data-state="massachusetts" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Massachusetts</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Massachusetts</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/michigan-rrt" data-state="michigan" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Michigan</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Michigan</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/minnesota-rrt" data-state="minnesota" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Minnesota</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Minnesota</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/mississippi-rrt" data-state="mississippi" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Mississippi</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Mississippi</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/missouri-rrt" data-state="missouri" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Missouri</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Missouri</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/montana-rrt" data-state="montana" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Montana</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Montana</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/nebraska-rrt" data-state="nebraska" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Nebraska</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Nebraska</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/nevada-rrt" data-state="nevada" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Nevada</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Nevada</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/new-hampshire-rrt" data-state="new hampshire" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>New Hampshire</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>New Hampshire</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/new-jersey-rrt" data-state="new jersey" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>New Jersey</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>New Jersey</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/new-mexico-rrt" data-state="new mexico" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>New Mexico</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>New Mexico</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/new-york-rrt" data-state="new york" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>New York</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>New York</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/north-carolina-rrt" data-state="north carolina" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>North Carolina</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>North Carolina</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/north-dakota-rrt" data-state="north dakota" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>North Dakota</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>North Dakota</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/ohio-rrt" data-state="ohio" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Ohio</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Ohio</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/oklahoma-rrt" data-state="oklahoma" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Oklahoma</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Oklahoma</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/oregon-rrt" data-state="oregon" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Oregon</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Oregon</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/pennsylvania-rrt" data-state="pennsylvania" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Pennsylvania</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Pennsylvania</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/rhode-island-rrt" data-state="rhode island" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Rhode Island</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Rhode Island</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/south-carolina-rrt" data-state="south carolina" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>South Carolina</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>South Carolina</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/south-dakota-rrt" data-state="south dakota" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>South Dakota</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>South Dakota</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/tennessee-rrt" data-state="tennessee" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Tennessee</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Tennessee</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/texas-rrt" data-state="texas" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Texas</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Texas</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/utah-rrt" data-state="utah" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Utah</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Utah</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/vermont-rrt" data-state="vermont" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Vermont</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Vermont</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/virginia-rrt" data-state="virginia" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Virginia</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Virginia</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/washington-rrt" data-state="washington" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Washington</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Washington</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/west-virginia-rrt" data-state="west virginia" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>West Virginia</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>West Virginia</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/wisconsin-rrt" data-state="wisconsin" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Wisconsin</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Wisconsin</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
       <a class="link-card" href="/wyoming-rrt" data-state="wyoming" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><div><h3>Wyoming</h3><p>Endorsement only</p></div><span class="badge badge-gray">Endorsement</span></div>
-        <div class="card-meta"><span>Fee <strong>$100</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
+        <div class="card-top">
+          <div class="card-head">
+            <h3>Wyoming</h3>
+            <p>Endorsement only</p>
+          </div>
+          <span class="badge badge-gray">Endorsement</span>
+        </div>
+        <div class="card-meta">
+          <span>Fee <strong>$100</strong></span>
+          <span>Timeline <strong>4 to 6 Weeks</strong></span>
+        </div>
+        <div class="card-foot">
+          <span class="tier tier-mid">Mid tier</span>
+          <span class="card-link">Open State Guide ></span>
+        </div>
       </a>
+  </section>
+  <section class="empty-state" id="emptyState" aria-live="polite">
+    <div class="empty-card">No states match your current filters. Clear one filter or search term and try again.</div>
   </section>
   <section class="reciprocity-footer">
     <article class="footer-card">
@@ -303,13 +1018,52 @@ body {
 <script>
 const input = document.getElementById('stateSearch');
 const cards = [...document.querySelectorAll('.link-card')];
-input.addEventListener('input', () => {
-  const q = input.value.toLowerCase().trim();
-  for (const card of cards) {
-    const match = card.dataset.state.includes(q);
-    card.style.display = match ? '' : 'none';
+const resultCount = document.getElementById('resultCount');
+const emptyState = document.getElementById('emptyState');
+const compactPills = [...document.querySelectorAll('[data-filter-group="compact"] .filter-pill')];
+const tierPills = [...document.querySelectorAll('[data-filter-group="tier"] .filter-pill')];
+
+let compactFilter = 'all';
+let tierFilter = 'all';
+
+function setActive(pills, value) {
+  for (const pill of pills) {
+    pill.classList.toggle('active', pill.dataset.value === value);
   }
-});
+}
+
+function applyFilters() {
+  const q = input.value.toLowerCase().trim();
+  let shown = 0;
+  for (const card of cards) {
+    const matchesSearch = card.dataset.state.includes(q);
+    const matchesCompact = compactFilter === 'all' || card.dataset.compact === compactFilter;
+    const matchesTier = tierFilter === 'all' || card.dataset.tier === tierFilter;
+    const visible = matchesSearch && matchesCompact && matchesTier;
+    card.style.display = visible ? '' : 'none';
+    shown += visible ? 1 : 0;
+  }
+  resultCount.textContent = `${shown} of ${cards.length} states`;
+  emptyState.style.display = shown === 0 ? '' : 'none';
+}
+
+input.addEventListener('input', applyFilters);
+for (const pill of compactPills) {
+  pill.addEventListener('click', () => {
+    compactFilter = pill.dataset.value;
+    setActive(compactPills, compactFilter);
+    applyFilters();
+  });
+}
+for (const pill of tierPills) {
+  pill.addEventListener('click', () => {
+    tierFilter = pill.dataset.value;
+    setActive(tierPills, tierFilter);
+    applyFilters();
+  });
+}
+
+applyFilters();
 </script>
 </body>
 </html>
