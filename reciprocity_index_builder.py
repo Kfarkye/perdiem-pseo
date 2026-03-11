@@ -1,28 +1,27 @@
 from __future__ import annotations
 
-from datetime import datetime
-
 
 def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css_hash: str, today: str) -> str:
     profession = profile['identity']['title_full']
-    slug = profile['slug']
     plural = profile['identity'].get('title_plural', profession + 's')
     latest_verified = today
     cards = []
-    for s in sorted(states_manifest, key=lambda item: item['name']):
-        compact_badge = 'Compact' if s['state_is_member'] else 'Endorsement'
+    sorted_states = sorted(states_manifest, key=lambda item: item['name'])
+    for s in sorted_states:
+        member = s['state_is_member']
+        badge_label = 'Compact' if member else 'Endorsement'
+        badge_class = 'badge-green' if member else 'badge-gray'
         cards.append(
-            f'''      <a class="link-card" href="/{s['slug']}" data-state="{s['name'].lower()}" data-compact="{'member' if s['state_is_member'] else 'non-member'}" data-tier="{s['processing_tier']}">\n'''
-            f'''        <div class="card-top"><h3>{s['name']}</h3><span class="badge {'badge-green' if s['state_is_member'] else 'badge-gray'}">{compact_badge}</span></div>\n'''
-            f'''        <p>{s['compact_label']}</p>\n'''
-            f'''        <div class="card-meta"><span>${s['endorsement_fee']}</span><span>{s['processing_time']}</span></div>\n'''
+            f'''      <a class="link-card" href="/{s['slug']}" data-state="{s['name'].lower()}" data-compact="{'member' if member else 'non-member'}" data-tier="{s['processing_tier']}">\n'''
+            f'''        <div class="card-top"><div><h3>{s['name']}</h3><p>{s['compact_label']}</p></div><span class="badge {badge_class}">{badge_label}</span></div>\n'''
+            f'''        <div class="card-meta"><span>Fee <strong>${s['endorsement_fee']}</strong></span><span>Timeline <strong>{s['processing_time']}</strong></span></div>\n'''
             f'''      </a>'''
         )
         latest_verified = max(latest_verified, s.get('last_updated') or today)
     cards_html = '\n'.join(cards)
     title = f"{profession} License Reciprocity by State - Compact Status, Fees and Transfer Timelines (2026)"
     desc = f"Compare {plural.lower()} license reciprocity rules by state, including compact membership, endorsement fees, temporary license availability, and processing times."
-    popular = states_manifest[:4]
+    popular = sorted_states[:4]
     popular_links = '\n'.join(f'<li><a href="/{s["slug"]}">{s["name"]}</a></li>' for s in popular)
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -35,40 +34,89 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="/css/styles.css?v={css_hash}">
 <style>
-.reciprocity-hero {{ padding: 5rem 1.5rem 3rem; background: linear-gradient(180deg, #0f3d3e 0%, #123d2e 100%); color: #f7f3eb; text-align: center; }}
-.reciprocity-hero h1 {{ color: #fff; margin-bottom: 1rem; }}
-.reciprocity-hero p {{ max-width: 700px; margin: 0 auto; color: #d8e5df; }}
-.reciprocity-toolbar {{ max-width: 1040px; margin: -1.75rem auto 2rem; padding: 1rem; background: #fff; border-radius: 18px; box-shadow: 0 18px 40px rgba(15,61,62,.08); border: 1px solid #e8e0d3; }}
-.reciprocity-toolbar input {{ width: 100%; padding: .85rem 1rem; border-radius: 12px; border: 1px solid #d8d0c2; }}
-.reciprocity-grid {{ max-width: 1040px; margin: 0 auto 3rem; display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1rem; padding: 0 1rem; }}
-.link-card {{ display: block; background: #fff; border: 1px solid #e8e0d3; border-radius: 18px; padding: 1rem; color: inherit; text-decoration: none; box-shadow: 0 10px 24px rgba(25,31,31,.04); }}
-.card-top {{ display: flex; justify-content: space-between; gap: .75rem; align-items: start; }}
-.card-top h3 {{ margin: 0; }}
-.card-meta {{ margin-top: .75rem; display: flex; justify-content: space-between; color: #0f3d3e; font-size: .9rem; }}
-.badge {{ display: inline-flex; padding: .25rem .55rem; border-radius: 999px; font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; }}
-.badge-green {{ background: #d8f4df; color: #14532d; }}
-.badge-gray {{ background: #eceff1; color: #37474f; }}
-.reciprocity-footer {{ max-width: 1040px; margin: 0 auto 3rem; padding: 0 1rem; }}
+:root {{
+  --idx-ink: #101820;
+  --idx-forest: #173b39;
+  --idx-accent: #bc5e36;
+  --idx-card: rgba(255,255,255,0.86);
+  --idx-border: rgba(16,24,32,0.09);
+}}
+body {{
+  background:
+    radial-gradient(circle at top left, rgba(188,94,54,.08), transparent 28%),
+    radial-gradient(circle at top right, rgba(23,59,57,.08), transparent 32%),
+    #fbf7ef;
+}}
+.reciprocity-hero {{
+  padding: 5.5rem 1.5rem 4rem;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(245, 206, 182, .16), transparent 24%),
+    radial-gradient(circle at 80% 24%, rgba(74, 132, 121, .18), transparent 24%),
+    linear-gradient(180deg, #132622 0%, #101820 100%);
+  color: #f7f3eb;
+}}
+.reciprocity-hero-inner {{ max-width: 1040px; margin: 0 auto; }}
+.eyebrow {{ display:inline-flex; padding:.38rem .8rem; border-radius:999px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.12); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:#fff5ef; margin-bottom:1rem; }}
+.reciprocity-hero h1 {{ color: #fff; max-width: 720px; margin-bottom: .9rem; }}
+.reciprocity-hero p {{ max-width: 720px; color: rgba(255, 250, 245, 0.84); }}
+.reciprocity-toolbar {{ max-width: 1040px; margin: -1.8rem auto 1.4rem; padding: 1rem; background: rgba(255,255,255,.84); border-radius: 22px; box-shadow: 0 22px 48px rgba(16,24,32,.08); border: 1px solid rgba(16,24,32,.08); position: relative; z-index: 3; backdrop-filter: blur(12px); }}
+.toolbar-grid {{ display:grid; grid-template-columns: minmax(0,1.5fr) auto; gap: .85rem; align-items:center; }}
+.reciprocity-toolbar input {{ width: 100%; padding: .95rem 1rem; border-radius: 14px; border: 1px solid rgba(16,24,32,.12); background: #fff; }}
+.toolbar-note {{ color: rgba(16,24,32,.62); font-size: .84rem; }}
+.reciprocity-grid {{ max-width: 1040px; margin: 0 auto 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; padding: 0 1rem; }}
+.link-card {{ display: block; background: var(--idx-card); border: 1px solid var(--idx-border); border-radius: 22px; padding: 1.05rem; color: inherit; text-decoration: none; box-shadow: 0 12px 28px rgba(16,24,32,.05); backdrop-filter: blur(12px); transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; }}
+.link-card:hover {{ transform: translateY(-2px); box-shadow: 0 18px 36px rgba(16,24,32,.09); border-color: rgba(23,59,57,.18); }}
+.card-top {{ display:flex; justify-content:space-between; gap:.75rem; align-items:flex-start; }}
+.card-top h3 {{ margin:0 0 .35rem; font-size:1.08rem; }}
+.card-top p {{ margin:0; font-size:.88rem; color:rgba(16,24,32,.68); }}
+.card-meta {{ display:grid; grid-template-columns:1fr 1fr; gap:.65rem; margin-top:1rem; font-size:.84rem; color:rgba(16,24,32,.66); }}
+.card-meta span {{ background: rgba(255,255,255,.72); border: 1px solid rgba(16,24,32,.08); border-radius: 14px; padding: .72rem .8rem; }}
+.card-meta strong {{ display:block; margin-top:.2rem; color:var(--idx-ink); font-family: var(--serif); font-size:1rem; }}
+.badge {{ display:inline-flex; padding:.34rem .72rem; border-radius:999px; font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; white-space:nowrap; }}
+.badge-green {{ background:#ddf3e5; color:#155b35; }}
+.badge-gray {{ background:#e9eef1; color:#41535f; }}
+.reciprocity-footer {{ max-width: 1040px; margin: 0 auto 3rem; padding: 0 1rem 0.5rem; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr); gap:1rem; }}
+.footer-card {{ background: rgba(255,255,255,.84); border:1px solid rgba(16,24,32,.08); border-radius:22px; box-shadow: 0 16px 36px rgba(16,24,32,.05); padding:1.2rem; }}
+.footer-card h2, .footer-card h3 {{ margin-bottom:.6rem; }}
+.footer-card ul {{ padding-left:1.2rem; margin:0; display:grid; gap:.45rem; }}
+.footer-card p {{ margin:0; color:rgba(16,24,32,.68); }}
+@media (max-width: 720px) {{
+  .reciprocity-hero {{ padding: 4.75rem 1rem 3.4rem; }}
+  .reciprocity-toolbar {{ margin: -1.4rem .85rem 1.2rem; }}
+  .toolbar-grid, .reciprocity-footer, .card-meta {{ grid-template-columns: 1fr; }}
+  .reciprocity-grid {{ padding: 0 .85rem; }}
+}}
 </style>
 </head>
 <body>
 <nav class="site-nav" aria-label="Site navigation"><div class="site-nav-inner"><a href="/" class="site-nav-brand">State Licensing Reference</a></div></nav>
 <header class="reciprocity-hero">
-  <p class="eyebrow">License Transfer Tool</p>
-  <h1>{profession} License Reciprocity by State</h1>
-  <p>Compare compact participation, endorsement fees, fingerprint rules, temporary license availability, and transfer timelines before you apply.</p>
+  <div class="reciprocity-hero-inner">
+    <span class="eyebrow">License Transfer Tool</span>
+    <h1>{profession} License Reciprocity by State</h1>
+    <p>Compare compact participation, endorsement fees, fingerprint rules, temporary license availability, and current transfer timelines before you commit to a state.</p>
+  </div>
 </header>
 <main id="main-content">
   <section class="reciprocity-toolbar">
-    <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
+    <div class="toolbar-grid">
+      <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
+      <div class="toolbar-note">Covers compact status, endorsement cost, and timing in one view.</div>
+    </div>
   </section>
   <section class="reciprocity-grid" id="reciprocityGrid">
 {cards_html}
   </section>
   <section class="reciprocity-footer">
-    <h2>Popular reciprocity pages</h2>
-    <ul>{popular_links}</ul>
-    <p>Last refreshed {latest_verified}.</p>
+    <article class="footer-card">
+      <h2>How to use this directory</h2>
+      <p>Open your target state first. The lead section on each page answers the practical question up front: compact privilege or endorsement, total fee, fingerprinting, and how fast the board usually moves.</p>
+    </article>
+    <article class="footer-card">
+      <h3>Popular reciprocity pages</h3>
+      <ul>{popular_links}</ul>
+      <p>Last refreshed {latest_verified}.</p>
+    </article>
   </section>
 </main>
 <script>

@@ -18,19 +18,436 @@
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    .reciprocity-lead { background: linear-gradient(180deg, #fff9f0 0%, #f4efe6 100%); border: 1px solid #e6dac8; border-radius: 22px; padding: 1.5rem; }
-    .badge { display: inline-flex; padding: .3rem .65rem; border-radius: 999px; font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
-    .badge-green { background: #d8f4df; color: #14532d; }
-    .badge-yellow { background: #fff3cd; color: #8a5a00; }
-    .badge-gray { background: #eceff1; color: #37474f; }
-    .action-box { margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,.75); border-radius: 16px; border: 1px solid #e8dfd0; }
-    .cta-row { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
-    .mini-facts { display: grid; grid-template-columns: repeat(auto-fit,minmax(170px,1fr)); gap: .75rem; margin-top: 1rem; }
-    .mini-facts div { background: #fff; border-radius: 14px; border: 1px solid #eadfce; padding: .9rem; }
-    .crawl-links { display: flex; flex-wrap: wrap; gap: .75rem; }
-    .crawl-links a { text-decoration: none; }
+    :root {
+      --ui-ink: #101820;
+      --ui-forest: #163c3a;
+      --ui-forest-soft: #214f4d;
+      --ui-cream: #fbf7ef;
+      --ui-card: rgba(255, 255, 255, 0.88);
+      --ui-border: rgba(16, 24, 32, 0.1);
+      --ui-shadow: 0 20px 48px rgba(16, 24, 32, 0.08);
+      --ui-shadow-soft: 0 10px 24px rgba(16, 24, 32, 0.05);
+      --ui-green-bg: #ddf3e5;
+      --ui-green-fg: #155b35;
+      --ui-yellow-bg: #fff1c7;
+      --ui-yellow-fg: #8a5b00;
+      --ui-gray-bg: #e9eef1;
+      --ui-gray-fg: #41535f;
+      --ui-accent: #bd5f37;
+      --ui-accent-soft: #f2dfd5;
+    }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(189, 95, 55, 0.08), transparent 24%),
+        radial-gradient(circle at top right, rgba(22, 60, 58, 0.08), transparent 28%),
+        var(--ui-cream);
+    }
+    .hero {
+      padding-bottom: 4.5rem;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(244, 219, 198, 0.18), transparent 30%),
+        radial-gradient(circle at 85% 25%, rgba(64, 130, 109, 0.18), transparent 28%),
+        linear-gradient(180deg, #132622 0%, #101820 100%);
+    }
+    .hero-inner {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .hero-breadcrumb {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255, 250, 245, 0.72);
+      margin-bottom: 1rem;
+    }
+    .hero-breadcrumb a {
+      color: rgba(255, 250, 245, 0.92);
+      text-decoration: none;
+    }
+    .hero-copy {
+      max-width: 760px;
+    }
+    .hero-sub {
+      max-width: 640px;
+      color: rgba(255, 250, 245, 0.82);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff5ef;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      padding: 0.55rem 0.9rem;
+      font-size: 0.78rem;
+      backdrop-filter: blur(12px);
+    }
+    .trust-pill strong {
+      color: #fff;
+      font-weight: 600;
+    }
+    main {
+      max-width: 980px;
+      margin: -2.9rem auto 0;
+      padding: 0 1rem 4rem;
+      position: relative;
+      z-index: 2;
+    }
+    .page-shell {
+      display: grid;
+      gap: 1.2rem;
+    }
+    .section {
+      background: var(--ui-card);
+      border: 1px solid var(--ui-border);
+      border-radius: 24px;
+      box-shadow: var(--ui-shadow-soft);
+      padding: 1.4rem;
+      backdrop-filter: blur(12px);
+    }
+    .section h2 {
+      margin-bottom: 0.9rem;
+      font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+      letter-spacing: -0.03em;
+    }
+    .section-intro {
+      color: rgba(16, 24, 32, 0.78);
+      max-width: 62ch;
+    }
+    .reciprocity-lead {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(251, 247, 239, 0.98)),
+        var(--ui-cream);
+      border: 1px solid rgba(22, 60, 58, 0.12);
+      box-shadow: var(--ui-shadow);
+      padding: 1.65rem;
+    }
+    .reciprocity-topline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.85rem;
+      margin-bottom: 1rem;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.42rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.02);
+    }
+    .badge-green { background: var(--ui-green-bg); color: var(--ui-green-fg); }
+    .badge-yellow { background: var(--ui-yellow-bg); color: var(--ui-yellow-fg); }
+    .badge-gray { background: var(--ui-gray-bg); color: var(--ui-gray-fg); }
+    .trust-inline {
+      color: rgba(16, 24, 32, 0.58);
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .lead-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.95fr);
+      gap: 1rem;
+      align-items: start;
+    }
+    .reciprocity-copy p:last-child { margin-bottom: 0; }
+    .decision-panel {
+      background: rgba(22, 60, 58, 0.05);
+      border: 1px solid rgba(22, 60, 58, 0.1);
+      border-radius: 20px;
+      padding: 1rem;
+    }
+    .decision-panel h3 {
+      font-size: 0.92rem;
+      font-family: var(--sans);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ui-forest);
+      margin-bottom: 0.75rem;
+    }
+    .decision-panel ol {
+      padding-left: 1.1rem;
+      color: rgba(16, 24, 32, 0.78);
+      display: grid;
+      gap: 0.55rem;
+      margin-bottom: 1rem;
+      font-size: 0.92rem;
+    }
+    .fact-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-top: 1.25rem;
+    }
+    .fact-card {
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(16, 24, 32, 0.08);
+      border-radius: 18px;
+      padding: 0.95rem 1rem;
+      min-height: 112px;
+    }
+    .fact-label {
+      display: block;
+      margin-bottom: 0.45rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(16, 24, 32, 0.54);
+    }
+    .fact-value {
+      display: block;
+      font-family: var(--serif);
+      font-size: 1.08rem;
+      line-height: 1.25;
+      color: var(--ui-ink);
+    }
+    .fact-note {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.82rem;
+      color: rgba(16, 24, 32, 0.66);
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.2rem;
+    }
+    .action-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      min-height: 48px;
+      padding: 0.78rem 1rem;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+    }
+    .action-link:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px rgba(16, 24, 32, 0.08);
+    }
+    .action-link-primary {
+      background: var(--ui-forest);
+      color: #fff;
+      border: 1px solid var(--ui-forest);
+    }
+    .action-link-secondary {
+      background: #fff;
+      color: var(--ui-forest);
+      border: 1px solid rgba(22, 60, 58, 0.18);
+    }
+    .action-link-tertiary {
+      background: rgba(189, 95, 55, 0.08);
+      color: #8f4d2a;
+      border: 1px solid rgba(189, 95, 55, 0.15);
+    }
+    .section-stack {
+      display: grid;
+      gap: 1rem;
+    }
+    .steps-list {
+      display: grid;
+      gap: 0.85rem;
+      list-style: none;
+      counter-reset: endorsement-steps;
+      padding: 0;
+      margin: 0;
+    }
+    .steps-list li {
+      counter-increment: endorsement-steps;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(16, 24, 32, 0.08);
+      border-radius: 18px;
+      padding: 1rem 1rem 1rem 4rem;
+      position: relative;
+    }
+    .steps-list li::before {
+      content: counter(endorsement-steps);
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      width: 2.1rem;
+      height: 2.1rem;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: var(--ui-forest);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+    }
+    .steps-list strong {
+      display: block;
+      margin-bottom: 0.4rem;
+      color: var(--ui-ink);
+      font-size: 1rem;
+    }
+    .steps-list p,
+    .faq-item p,
+    .checklist li,
+    .board-grid dd,
+    .facts-grid dd {
+      margin-bottom: 0;
+      color: rgba(16, 24, 32, 0.78);
+    }
+    .facts-grid,
+    .board-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+    .facts-grid > div,
+    .board-grid > div {
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(16, 24, 32, 0.08);
+      border-radius: 18px;
+      padding: 0.95rem 1rem;
+    }
+    .facts-grid dt,
+    .board-grid dt {
+      margin-bottom: 0.35rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(16, 24, 32, 0.54);
+    }
+    .facts-grid dd,
+    .board-grid dd {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--ui-ink);
+      line-height: 1.35;
+    }
+    .checklist {
+      display: grid;
+      gap: 0.75rem;
+      list-style: none;
+      padding: 0;
+    }
+    .checklist li {
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(16, 24, 32, 0.08);
+      border-radius: 18px;
+      padding: 0.95rem 1rem 0.95rem 2.85rem;
+      position: relative;
+    }
+    .checklist li::before {
+      content: '•';
+      position: absolute;
+      left: 1rem;
+      top: 0.75rem;
+      font-size: 1.6rem;
+      color: var(--ui-accent);
+      line-height: 1;
+    }
+    .board-link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .faq-list {
+      display: grid;
+      gap: 0.8rem;
+    }
+    .faq-item {
+      background: rgba(255,255,255,0.74);
+      border: 1px solid rgba(16, 24, 32, 0.08);
+      border-radius: 18px;
+      padding: 1rem;
+    }
+    .faq-item h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1rem;
+    }
+    .crawl-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .crawl-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      text-decoration: none;
+      padding: 0.75rem 0.95rem;
+      border-radius: 14px;
+      color: var(--ui-forest);
+      background: rgba(22, 60, 58, 0.06);
+      border: 1px solid rgba(22, 60, 58, 0.12);
+      font-weight: 500;
+    }
+    .crawl-links a:hover {
+      background: rgba(22, 60, 58, 0.1);
+    }
+    @media (max-width: 860px) {
+      .lead-grid,
+      .fact-strip,
+      .facts-grid,
+      .board-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 720px) {
+      .hero {
+        padding-bottom: 3.6rem;
+      }
+      main {
+        margin-top: -2rem;
+        padding-inline: 0.75rem;
+      }
+      .section,
+      .reciprocity-lead {
+        padding: 1.1rem;
+        border-radius: 20px;
+      }
+      .lead-grid,
+      .fact-strip,
+      .facts-grid,
+      .board-grid {
+        grid-template-columns: 1fr;
+      }
+      .steps-list li {
+        padding-left: 1rem;
+        padding-top: 3.65rem;
+      }
+      .steps-list li::before {
+        top: 1rem;
+      }
+      .cta-row,
+      .board-link-row,
+      .crawl-links {
+        flex-direction: column;
+      }
+      .action-link,
+      .crawl-links a {
+        width: 100%;
+      }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -85,47 +502,88 @@
 </head>
 <body id="top">
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <nav class="site-nav" aria-label="Primary site navigation"><div class="site-nav-inner"><a href="/" class="site-nav-brand">State Licensing Reference</a></div></nav>
+  <nav class="site-nav" aria-label="Primary site navigation">
+    <div class="site-nav-inner">
+      <a href="/" class="site-nav-brand">State Licensing Reference</a>
+    </div>
+  </nav>
   <header class="hero" aria-labelledby="hero-title">
     <div class="hero-inner">
-      <nav class="hero-breadcrumb" aria-label="Breadcrumb"><a href="/">All States</a> <span class="bc-sep" aria-hidden="true">·</span> Kansas</nav>
-      <h1 id="hero-title">Kansas Physical Therapist License <em>Reciprocity &amp; How to Apply</em></h1>
-      <p class="hero-sub">Already licensed elsewhere? Start with compact status, endorsement requirements, fees, and your likely transfer timeline.</p>
-      <div class="hero-meta"><span class="hero-pill">Last verified 2026-02-25</span></div>
+      <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">All States</a> <span class="bc-sep" aria-hidden="true">·</span> Kansas
+      </nav>
+      <div class="hero-copy">
+        <h1 id="hero-title">Kansas Physical Therapist License <em>Reciprocity &amp; How to Apply</em></h1>
+        <p class="hero-sub">Start with the only questions that matter for travelers: does your current license already cover Kansas, what does endorsement cost, and how quickly can you get cleared to work?</p>
+        <div class="hero-meta">
+          <span class="trust-pill"><strong>Last verified</strong> 2026-02-25</span>
+          <span class="trust-pill"><strong>Official board</strong> Kansas Board of Healing Arts — PT</span>
+        </div>
+      </div>
     </div>
   </header>
   <main id="main-content">
     <div class="page-shell">
       <section id="reciprocity" class="section reciprocity-lead" aria-labelledby="reciprocity-heading">
-        
-          <span class="badge badge-green">Compact State</span>
-          <h2 id="reciprocity-heading">Your Physical Therapist License May Already Cover Kansas</h2>
-          <p>Kansas is a member of the PT Compact. If your home state and license qualify for compact privilege, you may be able to practice in Kansas without a separate endorsement application.</p>
-          <div class="action-box">
-            <strong>Check your status</strong>
+        <div class="reciprocity-topline">
+          
+            <span class="badge badge-green">Compact State</span>
+          
+          <span class="trust-inline">Decision point for travel-ready licensing</span>
+        </div>
+        <div class="lead-grid">
+          <div class="reciprocity-copy">
+            
+              <h2 id="reciprocity-heading">Your Physical Therapist License May Already Cover Kansas</h2>
+              <p class="section-intro">Kansas participates in the PT Compact. If your home state and credential qualify for compact privilege, you may be able to work in Kansas without filing a separate endorsement application.</p>
+              <p><strong>Fallback path:</strong> if your home state is outside the compact or your privilege is not active, use the endorsement flow below.</p>
+            
+          </div>
+          <aside class="decision-panel" aria-label="Reciprocity checklist">
+            <h3>Before You Start</h3>
             <ol>
-              <li>Confirm your home state also participates in the PT Compact.</li>
-              <li>Verify your license is active and unencumbered.</li>
+              
+                <li>Confirm your home state also participates in PT Compact.</li>
+                <li>Make sure your license is active, unencumbered, and privilege-eligible.</li>
+                <li>Use endorsement only if you do not qualify for compact privilege.</li>
               
             </ol>
-            <a href="https://ptcompact.org/ptc-states/" target="_blank" rel="noopener">Open PT Compact portal</a>
-          </div>
-          <p><strong>Not using compact privilege?</strong> Apply by endorsement below.</p>
-        
-        <div class="mini-facts">
-          <div><strong>Endorsement fee</strong><br>$100</div>
-          <div><strong>Processing time</strong><br>4 to 6 Weeks</div>
-          <div><strong>Fingerprinting</strong><br>Required</div>
-          <div><strong>Temporary license</strong><br>Available</div>
+            
+              <a class="action-link action-link-tertiary" href="https://ptcompact.org/ptc-states/" target="_blank" rel="noopener">Open PT Compact Portal</a>
+            
+          </aside>
+        </div>
+        <div class="fact-strip" aria-label="Reciprocity quick facts">
+          <article class="fact-card">
+            <span class="fact-label">Endorsement Fee</span>
+            <span class="fact-value">$100</span>
+            <span class="fact-note">State-level transfer cost</span>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Processing Time</span>
+            <span class="fact-value">4 to 6 Weeks</span>
+            <span class="fact-note">Best estimate from current board data</span>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Fingerprinting</span>
+            <span class="fact-value">Required</span>
+            <span class="fact-note">Background screening expectation</span>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Temporary License</span>
+            <span class="fact-value">Available</span>
+            <span class="fact-note">Useful if you need a faster start date</span>
+          </article>
         </div>
         <div class="cta-row">
-          <a href="#endorsement">See endorsement steps</a>
-          <a href="https://www.ksbha.org/" target="_blank" rel="noopener">Official board portal</a>
+          <a class="action-link action-link-primary" href="#endorsement">See Endorsement Steps</a>
+          <a class="action-link action-link-secondary" href="https://www.ksbha.org/" target="_blank" rel="noopener">Official Board Portal</a>
         </div>
       </section>
 
       <section id="endorsement" class="section" aria-labelledby="apply-heading">
         <h2 id="apply-heading">Endorsement Application Steps</h2>
+        <p class="section-intro">Work through these in order. This sequence is the fastest way to move from out-of-state license to a board-cleared application in Kansas.</p>
         <ol class="steps-list">
           
           <li>
@@ -175,7 +633,9 @@
           <div><dt>Phone</dt><dd>(785) 296-7413</dd></div>
           <div><dt>Email</dt><dd>See board website</dd></div>
         </dl>
-        <p><a href="https://www.ksbha.org/" target="_blank" rel="noopener">Visit official board portal</a></p>
+        <div class="board-link-row">
+          <a class="action-link action-link-secondary" href="https://www.ksbha.org/" target="_blank" rel="noopener">Visit Official Board Portal</a>
+        </div>
       </section>
 
       <section id="renewal" class="section" aria-labelledby="renewal-heading">

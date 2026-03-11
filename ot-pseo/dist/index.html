@@ -9,297 +9,295 @@
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="/css/styles.css?v=5d9c21d5">
 <style>
-.reciprocity-hero { padding: 5rem 1.5rem 3rem; background: linear-gradient(180deg, #0f3d3e 0%, #123d2e 100%); color: #f7f3eb; text-align: center; }
-.reciprocity-hero h1 { color: #fff; margin-bottom: 1rem; }
-.reciprocity-hero p { max-width: 700px; margin: 0 auto; color: #d8e5df; }
-.reciprocity-toolbar { max-width: 1040px; margin: -1.75rem auto 2rem; padding: 1rem; background: #fff; border-radius: 18px; box-shadow: 0 18px 40px rgba(15,61,62,.08); border: 1px solid #e8e0d3; }
-.reciprocity-toolbar input { width: 100%; padding: .85rem 1rem; border-radius: 12px; border: 1px solid #d8d0c2; }
-.reciprocity-grid { max-width: 1040px; margin: 0 auto 3rem; display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1rem; padding: 0 1rem; }
-.link-card { display: block; background: #fff; border: 1px solid #e8e0d3; border-radius: 18px; padding: 1rem; color: inherit; text-decoration: none; box-shadow: 0 10px 24px rgba(25,31,31,.04); }
-.card-top { display: flex; justify-content: space-between; gap: .75rem; align-items: start; }
-.card-top h3 { margin: 0; }
-.card-meta { margin-top: .75rem; display: flex; justify-content: space-between; color: #0f3d3e; font-size: .9rem; }
-.badge { display: inline-flex; padding: .25rem .55rem; border-radius: 999px; font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; }
-.badge-green { background: #d8f4df; color: #14532d; }
-.badge-gray { background: #eceff1; color: #37474f; }
-.reciprocity-footer { max-width: 1040px; margin: 0 auto 3rem; padding: 0 1rem; }
+:root {
+  --idx-ink: #101820;
+  --idx-forest: #173b39;
+  --idx-accent: #bc5e36;
+  --idx-card: rgba(255,255,255,0.86);
+  --idx-border: rgba(16,24,32,0.09);
+}
+body {
+  background:
+    radial-gradient(circle at top left, rgba(188,94,54,.08), transparent 28%),
+    radial-gradient(circle at top right, rgba(23,59,57,.08), transparent 32%),
+    #fbf7ef;
+}
+.reciprocity-hero {
+  padding: 5.5rem 1.5rem 4rem;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(245, 206, 182, .16), transparent 24%),
+    radial-gradient(circle at 80% 24%, rgba(74, 132, 121, .18), transparent 24%),
+    linear-gradient(180deg, #132622 0%, #101820 100%);
+  color: #f7f3eb;
+}
+.reciprocity-hero-inner { max-width: 1040px; margin: 0 auto; }
+.eyebrow { display:inline-flex; padding:.38rem .8rem; border-radius:999px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.12); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:#fff5ef; margin-bottom:1rem; }
+.reciprocity-hero h1 { color: #fff; max-width: 720px; margin-bottom: .9rem; }
+.reciprocity-hero p { max-width: 720px; color: rgba(255, 250, 245, 0.84); }
+.reciprocity-toolbar { max-width: 1040px; margin: -1.8rem auto 1.4rem; padding: 1rem; background: rgba(255,255,255,.84); border-radius: 22px; box-shadow: 0 22px 48px rgba(16,24,32,.08); border: 1px solid rgba(16,24,32,.08); position: relative; z-index: 3; backdrop-filter: blur(12px); }
+.toolbar-grid { display:grid; grid-template-columns: minmax(0,1.5fr) auto; gap: .85rem; align-items:center; }
+.reciprocity-toolbar input { width: 100%; padding: .95rem 1rem; border-radius: 14px; border: 1px solid rgba(16,24,32,.12); background: #fff; }
+.toolbar-note { color: rgba(16,24,32,.62); font-size: .84rem; }
+.reciprocity-grid { max-width: 1040px; margin: 0 auto 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; padding: 0 1rem; }
+.link-card { display: block; background: var(--idx-card); border: 1px solid var(--idx-border); border-radius: 22px; padding: 1.05rem; color: inherit; text-decoration: none; box-shadow: 0 12px 28px rgba(16,24,32,.05); backdrop-filter: blur(12px); transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; }
+.link-card:hover { transform: translateY(-2px); box-shadow: 0 18px 36px rgba(16,24,32,.09); border-color: rgba(23,59,57,.18); }
+.card-top { display:flex; justify-content:space-between; gap:.75rem; align-items:flex-start; }
+.card-top h3 { margin:0 0 .35rem; font-size:1.08rem; }
+.card-top p { margin:0; font-size:.88rem; color:rgba(16,24,32,.68); }
+.card-meta { display:grid; grid-template-columns:1fr 1fr; gap:.65rem; margin-top:1rem; font-size:.84rem; color:rgba(16,24,32,.66); }
+.card-meta span { background: rgba(255,255,255,.72); border: 1px solid rgba(16,24,32,.08); border-radius: 14px; padding: .72rem .8rem; }
+.card-meta strong { display:block; margin-top:.2rem; color:var(--idx-ink); font-family: var(--serif); font-size:1rem; }
+.badge { display:inline-flex; padding:.34rem .72rem; border-radius:999px; font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; white-space:nowrap; }
+.badge-green { background:#ddf3e5; color:#155b35; }
+.badge-gray { background:#e9eef1; color:#41535f; }
+.reciprocity-footer { max-width: 1040px; margin: 0 auto 3rem; padding: 0 1rem 0.5rem; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr); gap:1rem; }
+.footer-card { background: rgba(255,255,255,.84); border:1px solid rgba(16,24,32,.08); border-radius:22px; box-shadow: 0 16px 36px rgba(16,24,32,.05); padding:1.2rem; }
+.footer-card h2, .footer-card h3 { margin-bottom:.6rem; }
+.footer-card ul { padding-left:1.2rem; margin:0; display:grid; gap:.45rem; }
+.footer-card p { margin:0; color:rgba(16,24,32,.68); }
+@media (max-width: 720px) {
+  .reciprocity-hero { padding: 4.75rem 1rem 3.4rem; }
+  .reciprocity-toolbar { margin: -1.4rem .85rem 1.2rem; }
+  .toolbar-grid, .reciprocity-footer, .card-meta { grid-template-columns: 1fr; }
+  .reciprocity-grid { padding: 0 .85rem; }
+}
 </style>
 </head>
 <body>
 <nav class="site-nav" aria-label="Site navigation"><div class="site-nav-inner"><a href="/" class="site-nav-brand">State Licensing Reference</a></div></nav>
 <header class="reciprocity-hero">
-  <p class="eyebrow">License Transfer Tool</p>
-  <h1>Occupational Therapist License Reciprocity by State</h1>
-  <p>Compare compact participation, endorsement fees, fingerprint rules, temporary license availability, and transfer timelines before you apply.</p>
+  <div class="reciprocity-hero-inner">
+    <span class="eyebrow">License Transfer Tool</span>
+    <h1>Occupational Therapist License Reciprocity by State</h1>
+    <p>Compare compact participation, endorsement fees, fingerprint rules, temporary license availability, and current transfer timelines before you commit to a state.</p>
+  </div>
 </header>
 <main id="main-content">
   <section class="reciprocity-toolbar">
-    <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
+    <div class="toolbar-grid">
+      <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
+      <div class="toolbar-note">Covers compact status, endorsement cost, and timing in one view.</div>
+    </div>
   </section>
   <section class="reciprocity-grid" id="reciprocityGrid">
       <a class="link-card" href="/alabama-ot" data-state="alabama" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Alabama</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Alabama</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/alaska-ot" data-state="alaska" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Alaska</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Alaska</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/arizona-ot" data-state="arizona" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Arizona</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Arizona</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/arkansas-ot" data-state="arkansas" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Arkansas</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Arkansas</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/california-ot" data-state="california" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>California</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>California</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/colorado-ot" data-state="colorado" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Colorado</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Colorado</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/connecticut-ot" data-state="connecticut" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Connecticut</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Connecticut</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/delaware-ot" data-state="delaware" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Delaware</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Delaware</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/dc-ot" data-state="district of columbia" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>District of Columbia</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>District of Columbia</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/florida-ot" data-state="florida" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Florida</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Florida</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/georgia-ot" data-state="georgia" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Georgia</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Georgia</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/hawaii-ot" data-state="hawaii" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Hawaii</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Hawaii</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/idaho-ot" data-state="idaho" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Idaho</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Idaho</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/illinois-ot" data-state="illinois" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Illinois</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Illinois</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/indiana-ot" data-state="indiana" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Indiana</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Indiana</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/iowa-ot" data-state="iowa" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Iowa</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Iowa</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/kansas-ot" data-state="kansas" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Kansas</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Kansas</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/kentucky-ot" data-state="kentucky" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Kentucky</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Kentucky</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/louisiana-ot" data-state="louisiana" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Louisiana</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Louisiana</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/maine-ot" data-state="maine" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Maine</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Maine</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/maryland-ot" data-state="maryland" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Maryland</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Maryland</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/massachusetts-ot" data-state="massachusetts" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Massachusetts</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Massachusetts</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/michigan-ot" data-state="michigan" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Michigan</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Michigan</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/minnesota-ot" data-state="minnesota" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Minnesota</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Minnesota</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/mississippi-ot" data-state="mississippi" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Mississippi</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Mississippi</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/missouri-ot" data-state="missouri" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Missouri</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Missouri</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/montana-ot" data-state="montana" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Montana</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Montana</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/nebraska-ot" data-state="nebraska" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Nebraska</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Nebraska</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/nevada-ot" data-state="nevada" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Nevada</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Nevada</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/new-hampshire-ot" data-state="new hampshire" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>New Hampshire</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>New Hampshire</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/new-jersey-ot" data-state="new jersey" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>New Jersey</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>New Jersey</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/new-mexico-ot" data-state="new mexico" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>New Mexico</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>New Mexico</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/new-york-ot" data-state="new york" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>New York</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>New York</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/north-carolina-ot" data-state="north carolina" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>North Carolina</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>North Carolina</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/north-dakota-ot" data-state="north dakota" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>North Dakota</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>North Dakota</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/ohio-ot" data-state="ohio" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Ohio</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Ohio</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/oklahoma-ot" data-state="oklahoma" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Oklahoma</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Oklahoma</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/oregon-ot" data-state="oregon" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Oregon</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Oregon</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/pennsylvania-ot" data-state="pennsylvania" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Pennsylvania</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Pennsylvania</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/rhode-island-ot" data-state="rhode island" data-compact="non-member" data-tier="mid">
-        <div class="card-top"><h3>Rhode Island</h3><span class="badge badge-gray">Endorsement</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Rhode Island</h3><p>OT Compact</p></div><span class="badge badge-gray">Endorsement</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/south-carolina-ot" data-state="south carolina" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>South Carolina</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>South Carolina</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/south-dakota-ot" data-state="south dakota" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>South Dakota</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>South Dakota</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/tennessee-ot" data-state="tennessee" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Tennessee</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Tennessee</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/texas-ot" data-state="texas" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Texas</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Texas</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/utah-ot" data-state="utah" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Utah</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Utah</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/vermont-ot" data-state="vermont" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Vermont</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Vermont</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/virginia-ot" data-state="virginia" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Virginia</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Virginia</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/washington-ot" data-state="washington" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Washington</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Washington</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/west-virginia-ot" data-state="west virginia" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>West Virginia</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>West Virginia</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/wisconsin-ot" data-state="wisconsin" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Wisconsin</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Wisconsin</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
       <a class="link-card" href="/wyoming-ot" data-state="wyoming" data-compact="member" data-tier="mid">
-        <div class="card-top"><h3>Wyoming</h3><span class="badge badge-green">Compact</span></div>
-        <p>OT Compact</p>
-        <div class="card-meta"><span>$0</span><span>4 to 6 Weeks</span></div>
+        <div class="card-top"><div><h3>Wyoming</h3><p>OT Compact</p></div><span class="badge badge-green">Compact</span></div>
+        <div class="card-meta"><span>Fee <strong>$0</strong></span><span>Timeline <strong>4 to 6 Weeks</strong></span></div>
       </a>
   </section>
   <section class="reciprocity-footer">
-    <h2>Popular reciprocity pages</h2>
-    <ul><li><a href="/alabama-ot">Alabama</a></li>
+    <article class="footer-card">
+      <h2>How to use this directory</h2>
+      <p>Open your target state first. The lead section on each page answers the practical question up front: compact privilege or endorsement, total fee, fingerprinting, and how fast the board usually moves.</p>
+    </article>
+    <article class="footer-card">
+      <h3>Popular reciprocity pages</h3>
+      <ul><li><a href="/alabama-ot">Alabama</a></li>
 <li><a href="/alaska-ot">Alaska</a></li>
 <li><a href="/arizona-ot">Arizona</a></li>
 <li><a href="/arkansas-ot">Arkansas</a></li></ul>
-    <p>Last refreshed 2026-03-10.</p>
+      <p>Last refreshed 2026-03-10.</p>
+    </article>
   </section>
 </main>
 <script>
