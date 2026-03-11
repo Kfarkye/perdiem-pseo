@@ -5,102 +5,100 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     profession = profile['identity']['title_full']
     plural = profile['identity'].get('title_plural', profession + 's')
     sorted_states = sorted(states_manifest, key=lambda item: item['name'])
+    total_states = len(sorted_states)
+
     latest_verified = today
     member_count = 0
-    cdr_only_count = 0
+    cdr_state_count = 0
     cards = []
 
     for s in sorted_states:
+        name = s['name']
+        slug = s['slug']
         member = bool(s.get('state_is_member'))
         license_required = bool(s.get('license_required', True))
-        member_count += 1 if member else 0
-        cdr_only_count += 1 if not license_required else 0
-
+        fee_value = s.get('endorsement_fee')
+        fee = int(fee_value) if isinstance(fee_value, (int, float)) else 0
+        processing_time = s.get('processing_time') or 'TBD'
         tier = (s.get('processing_tier') or 'slow').lower()
         if tier not in {'fast', 'mid', 'slow', 'none'}:
             tier = 'slow'
 
-        fee_value = s.get('endorsement_fee')
-        fee = int(fee_value) if isinstance(fee_value, (int, float)) else 0
-        processing_time = s.get('processing_time') or 'TBD'
+        if member:
+            member_count += 1
+        if not license_required:
+            cdr_state_count += 1
 
         if not license_required:
             path_label = 'CDR State'
-            path_class = 'badge-blue'
             path_filter = 'cdr-only'
             tier = 'none'
-            cards.append(
-                f'''      <a class="link-card link-card-cdr" href="/{s['slug']}" data-state="{s['name'].lower()}" data-name="{s['name'].lower()}" data-fee="{fee}" data-path="{path_filter}" data-tier="{tier}">\n'''
-                f'''        <div class="card-top">\n'''
-                f'''          <div class="card-head">\n'''
-                f'''            <h3>{s['name']}</h3>\n'''
-                f'''            <p>CDR credential route</p>\n'''
-                f'''          </div>\n'''
-                f'''          <span class="badge {path_class}">{path_label}</span>\n'''
-                f'''        </div>\n'''
-                f'''        <p class="cdr-kicker">No state transfer application. Keep an active CDR credential.</p>\n'''
-                f'''        <div class="cdr-chips">\n'''
-                f'''          <span class="cdr-chip">$0 state fee</span>\n'''
-                f'''          <span class="cdr-chip">No state wait</span>\n'''
-                f'''        </div>\n'''
-                f'''        <div class="card-foot card-foot-cdr">\n'''
-                f'''          <span class="card-link">Open guide</span>\n'''
-                f'''        </div>\n'''
-                f'''      </a>'''
+            tier_label = 'No state wait'
+            tier_class = 'tier-none'
+            compact_sub = 'No state transfer application'
+            meta_html = (
+                '<div class="card-meta card-meta-cdr">'
+                '<span>CDR credential only</span>'
+                '<span>$0 state fee</span>'
+                '</div>'
+            )
+        elif member:
+            path_label = 'Compact'
+            path_filter = 'member'
+            tier_label = {'fast': 'Fast', 'mid': 'Moderate', 'slow': 'Long'}.get(tier, 'Long')
+            tier_class = {'fast': 'tier-fast', 'mid': 'tier-mid', 'slow': 'tier-slow'}.get(tier, 'tier-slow')
+            compact_sub = ''
+            meta_html = (
+                '<div class="card-meta">'
+                f'<span><small>Fee</small><strong>${fee}</strong></span>'
+                f'<span><small>Timeline</small><strong>{processing_time}</strong></span>'
+                '</div>'
             )
         else:
-            if member:
-                path_label = 'Compact'
-                path_class = 'badge-green'
-                path_filter = 'member'
-                support_line = s.get('compact_label') or 'Compact route'
-            else:
-                path_label = 'Endorsement'
-                path_class = 'badge-gray'
-                path_filter = 'non-member'
-                support_line = ''
-            speed_label = {
-                'fast': 'Fast timeline',
-                'mid': 'Moderate timeline',
-                'slow': 'Longer timeline',
-            }.get(tier, 'Longer timeline')
-            speed_class = {
-                'fast': 'speed-fast',
-                'mid': 'speed-mid',
-                'slow': 'speed-slow',
-            }.get(tier, 'speed-slow')
-            support_html = f'''            <p>{support_line}</p>\n''' if support_line else ''
-            cards.append(
-                f'''      <a class="link-card" href="/{s['slug']}" data-state="{s['name'].lower()}" data-name="{s['name'].lower()}" data-fee="{fee}" data-path="{path_filter}" data-tier="{tier}">\n'''
-                f'''        <div class="card-top">\n'''
-                f'''          <div class="card-head">\n'''
-                f'''            <h3>{s['name']}</h3>\n'''
-                f'''{support_html}'''
-                f'''          </div>\n'''
-                f'''          <span class="badge {path_class}">{path_label}</span>\n'''
-                f'''        </div>\n'''
-                f'''        <div class="card-meta">\n'''
-                f'''          <span class="metric metric-fee"><span class="metric-label">Fee</span><strong>${fee}</strong></span>\n'''
-                f'''          <span class="metric"><span class="metric-label">Timeline</span><strong>{processing_time}</strong></span>\n'''
-                f'''        </div>\n'''
-                f'''        <div class="card-foot">\n'''
-                f'''          <span class="speed-indicator {speed_class}"><span class="speed-dot" aria-hidden="true"></span>{speed_label}</span>\n'''
-                f'''          <span class="card-link">Open guide</span>\n'''
-                f'''        </div>\n'''
-                f'''      </a>'''
+            path_label = 'Endorsement'
+            path_filter = 'non-member'
+            tier_label = {'fast': 'Fast', 'mid': 'Moderate', 'slow': 'Long'}.get(tier, 'Long')
+            tier_class = {'fast': 'tier-fast', 'mid': 'tier-mid', 'slow': 'tier-slow'}.get(tier, 'tier-slow')
+            compact_sub = ''
+            meta_html = (
+                '<div class="card-meta">'
+                f'<span><small>Fee</small><strong>${fee}</strong></span>'
+                f'<span><small>Timeline</small><strong>{processing_time}</strong></span>'
+                '</div>'
             )
+
+        sub_html = f'''        <p class="sub">{compact_sub}</p>\n''' if compact_sub else ''
+
+        cards.append(
+            f'''      <a class="card" href="/{slug}" data-state="{name.lower()}" data-name="{name.lower()}" data-fee="{fee}" data-path="{path_filter}" data-tier="{tier}">\n'''
+            f'''        <div class="card-head">\n'''
+            f'''          <h3>{name}</h3>\n'''
+            f'''          <span class="path">{path_label}</span>\n'''
+            f'''        </div>\n'''
+            f'''{sub_html}'''
+            f'''        {meta_html}\n'''
+            f'''        <div class="card-foot">\n'''
+            f'''          <span class="tier {tier_class}">{tier_label}</span>\n'''
+            f'''          <span class="open">Open guide</span>\n'''
+            f'''        </div>\n'''
+            f'''      </a>'''
+        )
+
         latest_verified = max(latest_verified, s.get('last_updated') or today)
 
     cards_html = '\n'.join(cards)
     title = f"{profession} License Reciprocity by State - Compact Status, Fees and Transfer Timelines (2026)"
-    desc = f"Compare {plural.lower()} license reciprocity rules by state, including compact paths, CDR-only states, endorsement fees, and processing timelines."
+    desc = (
+        f"Compare {plural.lower()} license reciprocity rules by state, including compact participation, "
+        "endorsement fees, and processing timelines."
+    )
+
     popular = sorted_states[:4]
     popular_links = '\n'.join(f'<li><a href="/{s["slug"]}">{s["name"]}</a></li>' for s in popular)
-    total_states = len(sorted_states)
 
-    cdr_stat = f'<span class="hero-stat">CDR states <strong>{cdr_only_count}</strong></span>' if cdr_only_count else ''
-    cdr_path_filter_button = '<button type="button" class="filter-pill" data-value="cdr-only">CDR State</button>' if cdr_only_count else ''
-    cdr_tier_filter_button = ''
+    cdr_stat = f'<span>CDR states <strong>{cdr_state_count}</strong></span>' if cdr_state_count else ''
+    cdr_path_button = '<button type="button" class="pill" data-value="cdr-only">CDR State</button>' if cdr_state_count else ''
+    cdr_tier_button = '<button type="button" class="pill" data-value="none">No state wait</button>' if cdr_state_count else ''
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -114,18 +112,23 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
 <link rel="stylesheet" href="/css/styles.css?v={css_hash}">
 <style>
 :root {{
-  --idx-ink: #101820;
-  --idx-forest: #173b39;
-  --idx-accent: #bc5e36;
-  --idx-card: rgba(255,255,255,0.9);
-  --idx-border: rgba(16,24,32,0.12);
+  --bg: #f5f5f2;
+  --surface: #ffffff;
+  --ink: #101316;
+  --muted: #5f676f;
+  --line: #d9dde1;
+  --accent: #12212f;
+  --compact: #0f5a3a;
+  --endorsement: #36495b;
+  --cdr: #0f4f87;
 }}
+* {{ box-sizing: border-box; }}
 body {{
-  background:
-    radial-gradient(circle at top left, rgba(188,94,54,.08), transparent 28%),
-    radial-gradient(circle at top right, rgba(23,59,57,.08), transparent 32%),
-    #fbf7ef;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
 }}
+a {{ color: inherit; }}
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {{
   outline: 3px solid #2f7d89;
   outline-offset: 2px;
@@ -134,213 +137,368 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   position: sticky;
   top: 0;
   z-index: 30;
-  backdrop-filter: blur(12px);
-  background: rgba(16,24,32,.86);
-  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: rgba(245,245,242,.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
 }}
 .site-nav-inner {{
-  max-width: 1040px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: .7rem 1rem;
+  padding: .85rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: .8rem;
+  gap: 1rem;
+}}
+.site-nav-brand {{
+  font-size: .84rem;
+  letter-spacing: .03em;
+  text-decoration: none;
+  color: var(--muted);
 }}
 .site-nav-links {{
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: .35rem;
+  gap: .7rem;
 }}
 .site-nav-links a {{
   text-decoration: none;
-  color: rgba(255,250,245,.88);
-  font-size: .72rem;
+  font-size: .74rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: #3d4650;
+}}
+.hero {{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.2rem 1rem 1.2rem;
+}}
+.hero h1 {{
+  margin: 0 0 .55rem;
+  font-size: clamp(1.55rem, 2.8vw, 2.15rem);
+  letter-spacing: -.02em;
+}}
+.hero p {{
+  margin: 0;
+  max-width: 72ch;
+  color: var(--muted);
+  line-height: 1.55;
+}}
+.hero-stats {{
+  margin-top: .95rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  color: #49525b;
+  font-size: .8rem;
+}}
+.hero-stats span {{
+  padding-right: .8rem;
+  border-right: 1px solid var(--line);
+}}
+.hero-stats span:last-child {{ border-right: 0; padding-right: 0; }}
+main {{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem 2.4rem;
+}}
+.toolbar {{
+  position: sticky;
+  top: 58px;
+  z-index: 20;
+  background: rgba(245,245,242,.96);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: .9rem;
+  backdrop-filter: blur(8px);
+}}
+.toolbar-top {{
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto auto;
+  gap: .65rem;
+  align-items: center;
+}}
+.toolbar input, .toolbar select {{
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: .65rem .78rem;
+  background: var(--surface);
+  color: var(--ink);
+}}
+.result-count {{
+  font-size: .8rem;
+  color: var(--muted);
+  text-align: right;
+}}
+.filters {{
+  margin-top: .7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .65rem;
+}}
+.filter-box {{
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: .6rem;
+}}
+.filter-label {{
+  display: block;
+  margin-bottom: .45rem;
+  font-size: .67rem;
   letter-spacing: .08em;
   text-transform: uppercase;
+  color: #6a737d;
+}}
+.pill-row {{ display: flex; flex-wrap: wrap; gap: .4rem; }}
+.pill {{
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #3f4852;
   border-radius: 999px;
-  padding: .32rem .62rem;
-  border: 1px solid transparent;
+  font-size: .72rem;
+  padding: .28rem .6rem;
+  cursor: pointer;
 }}
-.site-nav-links a:hover {{
-  border-color: rgba(255,255,255,.16);
-  background: rgba(255,255,255,.12);
+.pill.active {{
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }}
-.reciprocity-hero {{
-  padding: 5.3rem 1.5rem 3.9rem;
-  background:
-    radial-gradient(circle at 18% 18%, rgba(245, 206, 182, .16), transparent 24%),
-    radial-gradient(circle at 80% 24%, rgba(74, 132, 121, .18), transparent 24%),
-    linear-gradient(180deg, #132622 0%, #101820 100%);
-  color: #f7f3eb;
+.grid {{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: .75rem;
 }}
-.reciprocity-hero-inner {{ max-width: 1040px; margin: 0 auto; }}
-.eyebrow {{ display:inline-flex; padding:.38rem .8rem; border-radius:999px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.12); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:#fff5ef; margin-bottom:1rem; }}
-.reciprocity-hero h1 {{ color: #fff; max-width: 760px; margin-bottom: .9rem; }}
-.reciprocity-hero p {{ max-width: 760px; color: rgba(255, 250, 245, 0.84); }}
-.hero-stats {{ margin-top: 1rem; display:flex; flex-wrap:wrap; gap:.6rem; }}
-.hero-stat {{ display:inline-flex; align-items:center; gap:.4rem; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.1); border-radius:999px; padding:.4rem .8rem; font-size:.74rem; color:#fff9f4; }}
-.reciprocity-toolbar {{
-  max-width: 1040px;
-  margin: -1.8rem auto 1.4rem;
-  padding: 1rem;
-  background: rgba(255,255,255,.9);
-  border-radius: 22px;
-  box-shadow: 0 22px 48px rgba(16,24,32,.09);
-  border: 1px solid rgba(16,24,32,.08);
-  position: sticky;
-  top: 62px;
-  z-index: 18;
-  backdrop-filter: blur(12px);
+.card {{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: .88rem;
+  transition: border-color .15s ease, transform .15s ease;
 }}
-.toolbar-grid {{ display:grid; grid-template-columns: minmax(0,1fr); gap:.85rem; }}
-.toolbar-top {{ display:grid; grid-template-columns: minmax(0,1fr) auto auto; gap:.8rem; align-items:center; }}
-.reciprocity-toolbar input {{ width: 100%; padding: .95rem 1rem; border-radius: 14px; border: 1px solid rgba(16,24,32,.14); background: #fff; }}
-.sort-select {{ min-height: 44px; border: 1px solid rgba(16,24,32,.18); border-radius: 12px; background:#fff; color:rgba(16,24,32,.84); font-size:.82rem; padding: .55rem .75rem; }}
-.result-count {{ font-size:.83rem; color:rgba(16,24,32,.66); text-align:right; }}
-.filters {{ display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:.75rem; }}
-.filter-group {{ border:1px solid rgba(16,24,32,.08); border-radius:14px; background:rgba(255,255,255,.7); padding:.68rem; }}
-.filter-label {{ display:block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:rgba(16,24,32,.56); margin-bottom:.45rem; }}
-.pill-row {{ display:flex; flex-wrap:wrap; gap:.45rem; }}
-.filter-pill {{ border:1px solid rgba(16,24,32,.14); background:#fff; color:rgba(16,24,32,.76); border-radius:999px; font-size:.74rem; padding:.34rem .68rem; cursor:pointer; transition: all .15s ease; }}
-.filter-pill:hover {{ border-color:rgba(23,59,57,.42); color:var(--idx-forest); }}
-.filter-pill.active {{ background:var(--idx-forest); color:#fff; border-color:var(--idx-forest); }}
-.reciprocity-grid {{ max-width: 1040px; margin: 0 auto 2.6rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(252px, 1fr)); gap: 1rem; padding: 0 1rem; }}
-.link-card {{ display: block; background: var(--idx-card); border: 1px solid var(--idx-border); border-radius: 22px; padding: 1.05rem; color: inherit; text-decoration: none; box-shadow: 0 12px 28px rgba(16,24,32,.05); backdrop-filter: blur(12px); transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; }}
-.link-card:hover {{ transform: translateY(-2px); box-shadow: 0 18px 36px rgba(16,24,32,.1); border-color: rgba(23,59,57,.2); }}
-.card-top {{ display:flex; justify-content:space-between; gap:.75rem; align-items:flex-start; }}
-.card-head h3 {{ margin:0 0 .32rem; font-size:1.08rem; }}
-.card-head p {{ margin:0; font-size:.86rem; color:rgba(16,24,32,.67); }}
-.card-meta {{ display:grid; grid-template-columns:1fr 1fr; gap:.65rem; margin-top:1rem; }}
-.metric {{ background: rgba(255,255,255,.72); border: 1px solid rgba(16,24,32,.08); border-radius: 14px; padding: .72rem .8rem; }}
-.metric-fee {{ border-color: rgba(188,94,54,.32); background: rgba(255,248,242,.92); }}
-.metric-label {{ display:block; font-size:.69rem; letter-spacing:.07em; text-transform:uppercase; color:rgba(16,24,32,.56); margin-bottom:.2rem; }}
-.metric strong {{ color:var(--idx-ink); font-family: var(--serif); font-size:1rem; line-height:1.3; }}
-.link-card-cdr {{ border-color: rgba(15,79,135,.22); background: linear-gradient(180deg, rgba(247,252,255,.95), rgba(255,255,255,.92)); }}
-.cdr-kicker {{ margin:.9rem 0 .7rem; color:rgba(16,24,32,.72); font-size:.84rem; line-height:1.45; }}
-.cdr-chips {{ display:flex; flex-wrap:wrap; gap:.45rem; }}
-.cdr-chip {{ display:inline-flex; align-items:center; border-radius:999px; border:1px solid rgba(15,79,135,.25); background:rgba(15,79,135,.07); color:#0f4f87; font-size:.73rem; font-weight:600; padding:.28rem .62rem; }}
-.card-foot {{ margin-top:.85rem; display:flex; align-items:center; justify-content:space-between; gap:.6rem; }}
-.card-foot-cdr {{ justify-content:flex-end; margin-top:.72rem; }}
-.speed-indicator {{ display:inline-flex; align-items:center; gap:.42rem; font-size:.76rem; color:rgba(16,24,32,.72); }}
-.speed-dot {{ width:8px; height:8px; border-radius:999px; display:inline-block; }}
-.speed-fast .speed-dot {{ background:#0f6b4a; }}
-.speed-mid .speed-dot {{ background:#8a6512; }}
-.speed-slow .speed-dot {{ background:#8f4d2a; }}
-.speed-none .speed-dot {{ background:#0f4f87; }}
-.card-link {{
-  font-size:.72rem;
-  color:#fff;
-  letter-spacing:.07em;
-  text-transform:uppercase;
-  background: var(--idx-forest);
-  border: 1px solid var(--idx-forest);
+.card:hover {{
+  transform: translateY(-1px);
+  border-color: #aeb6be;
+}}
+.card-head {{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: .55rem;
+}}
+.card h3 {{
+  margin: 0;
+  font-size: 1.04rem;
+}}
+.path {{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .2rem .52rem;
   border-radius: 999px;
-  padding: .34rem .65rem;
+  font-size: .64rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: 700;
+  color: #fff;
+  background: var(--endorsement);
 }}
-.badge {{ display:inline-flex; padding:.34rem .72rem; border-radius:999px; font-size:.69rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; white-space:nowrap; }}
-.badge-green {{ background:#14532d; color:#f4fff7; }}
-.badge-gray {{ background:#334155; color:#f8fafc; }}
-.badge-blue {{ background:#0f4f87; color:#eef7ff; }}
-.empty-state {{ display:none; max-width:1040px; margin: 0 auto 2.4rem; padding: 0 1rem; }}
-.empty-card {{ border:1px dashed rgba(16,24,32,.2); border-radius:18px; padding:1.1rem; background:rgba(255,255,255,.7); color:rgba(16,24,32,.72); }}
-.reciprocity-footer {{ max-width: 1040px; margin: 0 auto 3rem; padding: 0 1rem 0.5rem; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr); gap:1rem; }}
-.footer-card {{ background: rgba(255,255,255,.84); border:1px solid rgba(16,24,32,.08); border-radius:22px; box-shadow: 0 16px 36px rgba(16,24,32,.05); padding:1.2rem; }}
-.footer-card h2, .footer-card h3 {{ margin-bottom:.6rem; }}
-.footer-card ul {{ padding-left:1.2rem; margin:0; display:grid; gap:.45rem; }}
-.footer-card p {{ margin:0; color:rgba(16,24,32,.68); }}
-@media (max-width: 820px) {{
-  .toolbar-top {{ grid-template-columns: minmax(0,1fr); }}
-  .result-count {{ text-align:left; }}
+.card[data-path="member"] .path {{ background: var(--compact); }}
+.card[data-path="cdr-only"] .path {{ background: var(--cdr); }}
+.sub {{
+  margin: .38rem 0 .55rem;
+  font-size: .78rem;
+  color: var(--muted);
+}}
+.card-meta {{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+}}
+.card-meta span {{
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: .54rem .62rem;
+  background: #fff;
+}}
+.card-meta small {{
+  display: block;
+  font-size: .64rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #6e7781;
+  margin-bottom: .15rem;
+}}
+.card-meta strong {{
+  font-size: .94rem;
+  color: var(--ink);
+}}
+.card-meta-cdr {{ grid-template-columns: 1fr 1fr; }}
+.card-meta-cdr span {{
+  font-size: .75rem;
+  color: #1f4f78;
+  border-color: #c7d9ea;
+  background: #f3f8fd;
+}}
+.card-foot {{
+  margin-top: .62rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}}
+.tier {{
+  display: inline-flex;
+  align-items: center;
+  font-size: .72rem;
+  color: #4f5861;
+}}
+.tier::before {{
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  margin-right: .35rem;
+  background: #8b949e;
+}}
+.tier-fast::before {{ background: #0f6b4a; }}
+.tier-mid::before {{ background: #8a6512; }}
+.tier-slow::before {{ background: #8f4d2a; }}
+.tier-none::before {{ background: #0f4f87; }}
+.open {{
+  font-size: .68rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}}
+.empty {{
+  display: none;
+  margin-top: 1rem;
+  border: 1px dashed #b9c0c7;
+  border-radius: 12px;
+  padding: .9rem;
+  color: var(--muted);
+  background: #fff;
+}}
+.footer {{
+  margin-top: 1.1rem;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: .7rem;
+}}
+.footer section {{
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: .9rem;
+}}
+.footer h2, .footer h3 {{ margin: 0 0 .45rem; font-size: 1rem; }}
+.footer p {{ margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.5; }}
+.footer ul {{ margin: 0; padding-left: 1.1rem; display: grid; gap: .35rem; }}
+@media (max-width: 860px) {{
+  .toolbar-top {{ grid-template-columns: 1fr; }}
+  .result-count {{ text-align: left; }}
+  .filters, .footer {{ grid-template-columns: 1fr; }}
 }}
 @media (max-width: 720px) {{
-  .reciprocity-hero {{ padding: 4.75rem 1rem 3.4rem; }}
-  .reciprocity-toolbar {{ margin: -1.4rem .85rem 1.2rem; top: 56px; }}
-  .filters, .reciprocity-footer, .card-meta {{ grid-template-columns: 1fr; }}
-  .reciprocity-grid {{ padding: 0 .85rem; }}
   .site-nav-inner {{ flex-wrap: wrap; }}
+  .toolbar {{ top: 54px; }}
 }}
 </style>
 </head>
 <body>
-<nav class="site-nav" aria-label="Site navigation"><div class="site-nav-inner"><a href="/" class="site-nav-brand">State Licensing Reference</a><ul class="site-nav-links"><li><a href="/">Directory</a></li><li><a href="#main-content">Tool</a></li><li><a href="#how-to-use">How It Works</a></li></ul></div></nav>
-<header class="reciprocity-hero">
-  <div class="reciprocity-hero-inner">
-    <span class="eyebrow">License Transfer Tool</span>
-    <h1>{profession} License Reciprocity by State</h1>
-    <p>Compare compact participation, endorsement fees, fingerprint rules, temporary license availability, and current transfer timelines before you commit to a state.</p>
-    <div class="hero-stats">
-      <span class="hero-stat">States <strong>{total_states}</strong></span>
-      <span class="hero-stat">Compact states <strong>{member_count}</strong></span>
-      {cdr_stat}
-      <span class="hero-stat">Updated <strong>{latest_verified}</strong></span>
-    </div>
+<nav class="site-nav" aria-label="Site navigation">
+  <div class="site-nav-inner">
+    <a href="/" class="site-nav-brand">State Licensing Reference</a>
+    <ul class="site-nav-links">
+      <li><a href="/">Directory</a></li>
+      <li><a href="#main-content">Tool</a></li>
+      <li><a href="#how-to-use">How It Works</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="hero">
+  <h1>{profession} License Reciprocity by State</h1>
+  <p>Find your fastest path to practice: compact privilege, endorsement, or CDR State route.</p>
+  <div class="hero-stats">
+    <span>States <strong>{total_states}</strong></span>
+    <span>Compact states <strong>{member_count}</strong></span>
+    {cdr_stat}
+    <span>Updated <strong>{latest_verified}</strong></span>
   </div>
 </header>
 <main id="main-content">
-  <section class="reciprocity-toolbar" aria-label="Reciprocity filters">
-    <div class="toolbar-grid">
-      <div class="toolbar-top">
-        <input id="stateSearch" type="search" placeholder="Search by state name" aria-label="Search states">
-        <select id="sortSelect" class="sort-select" aria-label="Sort states">
-          <option value="fee">Sort: Fee (Low to High)</option>
-          <option value="speed">Sort: Timeline (Fast to Slow)</option>
-          <option value="state">Sort: State</option>
-        </select>
-        <div id="resultCount" class="result-count"></div>
-      </div>
-      <div class="filters">
-        <div class="filter-group">
-          <span class="filter-label">Path type</span>
-          <div class="pill-row" data-filter-group="path">
-            <button type="button" class="filter-pill active" data-value="all">All</button>
-            <button type="button" class="filter-pill" data-value="member">Compact</button>
-            <button type="button" class="filter-pill" data-value="non-member">Endorsement</button>
-            {cdr_path_filter_button}
-          </div>
+  <section class="toolbar" aria-label="Reciprocity filters">
+    <div class="toolbar-top">
+      <input id="stateSearch" type="search" placeholder="Search state" aria-label="Search states">
+      <select id="sortSelect" aria-label="Sort states">
+        <option value="fee">Sort: Fee (Low to High)</option>
+        <option value="speed">Sort: Timeline (Fast to Slow)</option>
+        <option value="state">Sort: State</option>
+      </select>
+      <div id="resultCount" class="result-count"></div>
+    </div>
+    <div class="filters">
+      <div class="filter-box">
+        <span class="filter-label">Path</span>
+        <div class="pill-row" data-filter-group="path">
+          <button type="button" class="pill active" data-value="all">All</button>
+          <button type="button" class="pill" data-value="member">Compact</button>
+          <button type="button" class="pill" data-value="non-member">Endorsement</button>
+          {cdr_path_button}
         </div>
-        <div class="filter-group">
-          <span class="filter-label">Timeline</span>
-          <div class="pill-row" data-filter-group="tier">
-            <button type="button" class="filter-pill active" data-value="all">All</button>
-            <button type="button" class="filter-pill" data-value="fast">Fast</button>
-            <button type="button" class="filter-pill" data-value="mid">Mid</button>
-            <button type="button" class="filter-pill" data-value="slow">Slow</button>
-            {cdr_tier_filter_button}
-          </div>
+      </div>
+      <div class="filter-box">
+        <span class="filter-label">Timeline</span>
+        <div class="pill-row" data-filter-group="tier">
+          <button type="button" class="pill active" data-value="all">All</button>
+          <button type="button" class="pill" data-value="fast">Fast</button>
+          <button type="button" class="pill" data-value="mid">Mid</button>
+          <button type="button" class="pill" data-value="slow">Slow</button>
+          {cdr_tier_button}
         </div>
       </div>
     </div>
   </section>
-  <section class="reciprocity-grid" id="reciprocityGrid">
+
+  <section class="grid" id="reciprocityGrid">
 {cards_html}
   </section>
-  <section class="empty-state" id="emptyState" aria-live="polite">
-    <div class="empty-card">No states match your current filters. Clear one filter or search term and try again.</div>
+
+  <section class="empty" id="emptyState" aria-live="polite">
+    No states match your filters. Clear one filter and try again.
   </section>
-  <section class="reciprocity-footer">
-    <article id="how-to-use" class="footer-card">
+
+  <section class="footer">
+    <section id="how-to-use">
       <h2>How to use this directory</h2>
-      <p>Start with path type first: compact, endorsement, or CDR State. Then sort by fee and timeline to shortlist states with the fastest path to your next assignment.</p>
-    </article>
-    <article class="footer-card">
-      <h3>Popular reciprocity pages</h3>
+      <p>Filter by path first, then sort by fee or speed. Open a state guide to confirm board steps, documents, and renewal requirements.</p>
+    </section>
+    <section>
+      <h3>Popular states</h3>
       <ul>{popular_links}</ul>
       <p>Last refreshed {latest_verified}.</p>
-    </article>
+    </section>
   </section>
 </main>
+
 <script>
 const input = document.getElementById('stateSearch');
-const cards = [...document.querySelectorAll('.link-card')];
+const cards = [...document.querySelectorAll('.card')];
 const grid = document.getElementById('reciprocityGrid');
 const sortSelect = document.getElementById('sortSelect');
 const resultCount = document.getElementById('resultCount');
 const emptyState = document.getElementById('emptyState');
-const pathPills = [...document.querySelectorAll('[data-filter-group="path"] .filter-pill')];
-const tierPills = [...document.querySelectorAll('[data-filter-group="tier"] .filter-pill')];
+const pathPills = [...document.querySelectorAll('[data-filter-group="path"] .pill')];
+const tierPills = [...document.querySelectorAll('[data-filter-group="tier"] .pill')];
 
 let pathFilter = 'all';
 let tierFilter = 'all';
@@ -385,8 +543,9 @@ function setActive(pills, value) {{
 
 function applyFilters() {{
   const q = input.value.toLowerCase().trim();
-  let shown = 0;
   const visibleCards = [];
+  let shown = 0;
+
   for (const card of cards) {{
     const matchesSearch = card.dataset.state.includes(q);
     const matchesPath = pathFilter === 'all' || card.dataset.path === pathFilter;
@@ -394,11 +553,13 @@ function applyFilters() {{
     const visible = matchesSearch && matchesPath && matchesTier;
     card.style.display = visible ? '' : 'none';
     if (visible) visibleCards.push(card);
-    shown += visible ? 1 : 0;
+    if (visible) shown += 1;
   }}
+
   for (const card of sortVisible(visibleCards)) {{
     grid.appendChild(card);
   }}
+
   resultCount.textContent = `${{shown}} of ${{cards.length}} states`;
   emptyState.style.display = shown === 0 ? '' : 'none';
   syncUrl();
