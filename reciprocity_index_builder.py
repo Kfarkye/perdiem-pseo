@@ -70,10 +70,10 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
             f'data-fee="{s["fee"]}" data-tier="{tier}" '
             f'data-path="{"cdr-only" if not s["license_required"] else "member" if s["member"] else "non-member"}">\n'
             f'  <span class="r-name">{s["name"]}</span>\n'
-            f'  <span class="r-fee">{fee_display}</span>\n'
             f'  <span class="r-time">{time_display}</span>\n'
             f'  <span class="r-speed"><span class="badge badge-{tier}">{tier_label}</span></span>\n'
-            f'  <span class="r-chevron"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>\n'
+            f'  <span class="r-fee">{fee_display}</span>\n'
+            f'  <span class="r-chevron"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>\n'
             f'</a>'
         )
 
@@ -92,7 +92,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     cdr_stat_block = ''
     if cdr_state_count:
         cdr_section = f'''
-  <section class="group" id="group-cdr">
+  <section class="group animate-in" style="animation-delay: 0.15s" id="group-cdr">
     <div class="group-header">
       <h2>CDR States</h2>
       <span class="group-count">{cdr_state_count}</span>
@@ -100,9 +100,9 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     <p class="group-desc">No state license required \u2014 national CDR credential only.</p>
     <div class="group-head-row">
       <span>State</span>
-      <span>Fee</span>
       <span>Timeline</span>
-      <span>Speed</span>
+      <span class="align-right">Speed</span>
+      <span class="align-right">Fee</span>
       <span></span>
     </div>
     <div class="group-rows" data-group="cdr-only">
@@ -111,6 +111,7 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
   </section>'''
         cdr_filter_pill = '<button type="button" class="seg-btn" data-value="cdr-only">CDR</button>'
         cdr_stat_block = f'''
+      <div class="stat-divider"></div>
       <div class="stat">
         <span class="stat-value">{cdr_state_count}</span>
         <span class="stat-label">CDR States</span>
@@ -125,66 +126,108 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{domain}/">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#F5F5F7">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F2F2F7">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
 <style>
-/* ── RESET ──────────────────────────────────── */
-*,*::before,*::after {{ box-sizing: border-box; }}
+/* ── APPLE HIG DESIGN SYSTEM ────────────────── */
+:root {{
+  color-scheme: light dark;
+  
+  /* Light Mode Tokens */
+  --bg-system: #F2F2F7;
+  --bg-surface: #FFFFFF;
+  --bg-surface-active: #E5E5EA;
+  
+  --label-primary: #000000;
+  --label-secondary: rgba(60, 60, 67, 0.6);
+  --label-tertiary: rgba(60, 60, 67, 0.3);
+  
+  --tint: #007AFF;
+  --focus-ring: rgba(0, 122, 255, 0.4);
+  
+  --separator: rgba(60, 60, 67, 0.29);
+  --fill-tertiary: rgba(118, 118, 128, 0.12);
+  
+  --toolbar-bg: rgba(255, 255, 255, 0.72);
+  --toolbar-border: rgba(0, 0, 0, 0.08);
+  --seg-active: #FFFFFF;
+  
+  --badge-fast-bg: #E4F4E9; --badge-fast-txt: #1E823D;
+  --badge-mid-bg: #FFF3E0;  --badge-mid-txt: #B25000;
+  --badge-slow-bg: #FDECEC; --badge-slow-txt: #C92A2A;
+  --badge-none-bg: #F2F2F7; --badge-none-txt: rgba(60, 60, 67, 0.6);
+  
+  --shadow-card: 0 4px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02);
+  --shadow-float: 0 12px 32px rgba(0,0,0,0.1), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-seg: 0 3px 8px rgba(0,0,0,0.12), 0 3px 1px rgba(0,0,0,0.04);
+}}
+
+@media (prefers-color-scheme: dark) {{
+  :root {{
+    --bg-system: #000000;
+    --bg-surface: #1C1C1E;
+    --bg-surface-active: #2C2C2E;
+    
+    --label-primary: #FFFFFF;
+    --label-secondary: rgba(235, 235, 245, 0.6);
+    --label-tertiary: rgba(235, 235, 245, 0.3);
+    
+    --tint: #0A84FF;
+    --focus-ring: rgba(10, 132, 255, 0.5);
+    
+    --separator: rgba(84, 84, 88, 0.65);
+    --fill-tertiary: rgba(118, 118, 128, 0.24);
+    
+    --toolbar-bg: rgba(28, 28, 30, 0.72);
+    --toolbar-border: rgba(255, 255, 255, 0.15);
+    --seg-active: #636366;
+    
+    --badge-fast-bg: #1B3320; --badge-fast-txt: #32D74B;
+    --badge-mid-bg: #332100;  --badge-mid-txt: #FF9F0A;
+    --badge-slow-bg: #331515; --badge-slow-txt: #FF453A;
+    --badge-none-bg: #2C2C2E; --badge-none-txt: rgba(235, 235, 245, 0.6);
+    
+    --shadow-card: 0 4px 20px rgba(0,0,0,0.4);
+    --shadow-float: 0 12px 32px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08);
+    --shadow-seg: 0 3px 8px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.1);
+  }}
+}}
+
+*, *::before, *::after {{ box-sizing: border-box; }}
 body {{ margin: 0; padding: 0; }}
 a {{ text-decoration: none; color: inherit; -webkit-tap-highlight-color: transparent; }}
-button {{ font-family: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }}
+button {{ font-family: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; border: none; background: none; }}
 ul {{ list-style: none; margin: 0; padding: 0; }}
-
-/* ── APPLE/FIGMA DESIGN TOKENS ─────────────── */
-:root {{
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  
-  --bg-color: #F5F5F7;
-  --surface: #FFFFFF;
-  --surface-hover: #FBFBFD;
-  
-  --text-primary: #1D1D1F;
-  --text-secondary: #86868B;
-  --text-tertiary: #A1A1A6;
-  
-  --primary: #0071E3;
-  --focus-ring: rgba(0, 113, 227, 0.3);
-  
-  --border: rgba(0, 0, 0, 0.08);
-  --border-strong: rgba(0, 0, 0, 0.12);
-  --divider: rgba(0, 0, 0, 0.06);
-  
-  --radius-lg: 16px;
-  --radius-md: 10px;
-  --radius-sm: 8px;
-  
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.02);
-  --shadow-card: 0 2px 8px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
-  --shadow-seg: 0 3px 8px rgba(0,0,0,0.12), 0 3px 1px rgba(0,0,0,0.04);
-  --shadow-float: 0 8px 32px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
-  
-  --transition: 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
-}}
 
 html {{ scroll-behavior: smooth; }}
 
 body {{
-  font-family: var(--font-sans);
-  background: var(--bg-color);
-  color: var(--text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg-system);
+  color: var(--label-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   line-height: 1.5;
-  letter-spacing: -0.01em;
 }}
 
-h1, h2, h3, h4, .stat-value {{ font-family: var(--font-display); }}
+h1, h2, h3, .stat-value {{ 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}}
 
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {{
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--tint);
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: 6px;
+}}
+
+/* ── ANIMATIONS ─────────────────────────────── */
+@keyframes fadeScaleIn {{
+  0% {{ opacity: 0; transform: scale(0.98) translateY(10px); }}
+  100% {{ opacity: 1; transform: scale(1) translateY(0); }}
+}}
+.animate-in {{
+  animation: fadeScaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }}
 
 /* ── NAV ────────────────────────────────────── */
@@ -192,104 +235,103 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 1.25rem 1.5rem;
 }}
 .nav-brand {{
   font-size: 15px;
   font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--text-primary);
+  letter-spacing: -0.015em;
   display: flex;
   align-items: center;
   gap: 8px;
+  color: var(--label-primary);
 }}
 .nav-links {{ display: flex; gap: 1.5rem; }}
 .nav-links a {{
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-secondary);
-  transition: color var(--transition);
+  color: var(--label-secondary);
+  transition: color 0.2s;
 }}
-.nav-links a:hover {{ color: var(--text-primary); }}
+.nav-links a:hover {{ color: var(--label-primary); }}
 
 /* ── HERO ───────────────────────────────────── */
 .hero-wrapper {{
-  padding: 3.5rem 1.5rem 2.5rem;
-  max-width: 800px;
+  padding: 3rem 1.5rem 3rem;
+  max-width: 760px;
   margin: 0 auto;
   text-align: center;
 }}
 .hero-wrapper h1 {{
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.1;
   margin: 0 0 1rem;
-  color: var(--text-primary);
 }}
 .hero-sub {{
   font-size: 1.15rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  max-width: 55ch;
+  color: var(--label-secondary);
+  line-height: 1.4;
   margin: 0 auto;
   font-weight: 400;
 }}
-.stats {{
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
+
+.stats-container {{
+  display: inline-flex;
+  background: var(--bg-surface);
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
   margin-top: 2.5rem;
-  flex-wrap: wrap;
+  box-shadow: var(--shadow-card);
+  gap: 1.5rem;
+  align-items: center;
 }}
 .stat {{
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  border-radius: var(--radius-lg);
-  padding: 1.25rem 1.5rem;
-  min-width: 140px;
-  flex: 1;
-  max-width: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 4px;
+  align-items: flex-start;
+  text-align: left;
 }}
 .stat-value {{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.04em;
-  color: var(--text-primary);
   line-height: 1.1;
   font-variant-numeric: tabular-nums;
 }}
 .stat-label {{
   font-size: 0.75rem;
   font-weight: 600;
+  color: var(--label-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}}
+.stat-divider {{
+  width: 1px;
+  height: 32px;
+  background: var(--separator);
 }}
 
-/* ── TOOLBAR (GLASSMORPHIC) ─────────────────── */
+/* ── FLOATING TOOLBAR ───────────────────────── */
 .toolbar-wrap {{
   position: sticky;
   top: 1.5rem;
   z-index: 50;
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto 3.5rem;
   padding: 0 1.5rem;
   pointer-events: none;
 }}
 .toolbar {{
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(24px) saturate(200%);
-  -webkit-backdrop-filter: blur(24px) saturate(200%);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  background: var(--toolbar-bg);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid var(--toolbar-border);
+  border-radius: 16px;
   padding: 8px;
   display: flex;
   align-items: center;
@@ -299,7 +341,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }}
 .search-wrap {{
   flex: 1;
-  min-width: 180px;
+  min-width: 200px;
   position: relative;
 }}
 .search-icon {{
@@ -307,60 +349,56 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--text-secondary);
+  color: var(--label-secondary);
   pointer-events: none;
 }}
 .search-input {{
   width: 100%;
   height: 36px;
   padding: 0 12px 0 36px;
-  background: rgba(118, 118, 128, 0.08);
+  background: var(--fill-tertiary);
   border: none;
-  border-radius: var(--radius-md);
-  color: var(--text-primary);
+  border-radius: 10px;
+  color: var(--label-primary);
   font-size: 15px;
   font-family: inherit;
-  transition: all var(--transition);
+  transition: all 0.2s;
 }}
-.search-input::placeholder {{ color: var(--text-secondary); }}
-.search-input:focus {{
-  background: var(--surface);
-  box-shadow: 0 0 0 2px var(--focus-ring);
-  outline: none;
-}}
+.search-input::placeholder {{ color: var(--label-secondary); font-weight: 400; }}
+.search-input:focus {{ background: var(--bg-surface); box-shadow: 0 0 0 2px var(--focus-ring); outline: none; }}
+
 .seg-group {{
   display: flex;
-  background: rgba(118, 118, 128, 0.1);
-  border-radius: var(--radius-md);
+  background: var(--fill-tertiary);
+  border-radius: 10px;
   padding: 2px;
   gap: 2px;
 }}
 .seg-btn {{
   height: 32px;
-  padding: 0 14px;
-  border: none;
-  background: transparent;
+  padding: 0 16px;
   font-size: 13px;
   font-weight: 500;
-  color: var(--text-secondary);
-  border-radius: var(--radius-sm);
-  transition: all var(--transition);
+  color: var(--label-secondary);
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   white-space: nowrap;
 }}
-.seg-btn:hover:not(.active) {{ color: var(--text-primary); }}
+.seg-btn:hover:not(.active) {{ color: var(--label-primary); }}
 .seg-btn.active {{
-  background: var(--surface);
-  color: var(--text-primary);
+  background: var(--seg-active);
+  color: var(--label-primary);
   font-weight: 600;
   box-shadow: var(--shadow-seg);
 }}
+
 .sort-select {{
   height: 36px;
-  padding: 0 32px 0 14px;
-  background: rgba(118, 118, 128, 0.08);
+  padding: 0 32px 0 16px;
+  background: var(--fill-tertiary);
   border: none;
-  border-radius: var(--radius-md);
-  color: var(--text-primary);
+  border-radius: 10px;
+  color: var(--label-primary);
   font-size: 14px;
   font-weight: 500;
   font-family: inherit;
@@ -369,82 +407,74 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   -webkit-appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%2386868B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 12px center;
-  transition: all var(--transition);
+  background-position: right 14px center;
+  transition: all 0.2s;
 }}
-.sort-select:focus {{
-  background: var(--surface);
-  box-shadow: 0 0 0 2px var(--focus-ring);
-  outline: none;
-}}
-.result-count {{
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  padding: 0 8px;
-  font-variant-numeric: tabular-nums;
-}}
+.sort-select:focus {{ background: var(--bg-surface); box-shadow: 0 0 0 2px var(--focus-ring); outline: none; }}
 
-/* ── CONTENT (iOS SETTINGS STYLE) ───────────── */
+/* ── LIST VIEWS (SETTINGS CARDS) ────────────── */
 .content {{
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5rem 4rem;
 }}
 .group {{ margin-bottom: 3.5rem; }}
 .group-header {{
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 12px;
   margin-bottom: 8px;
-  padding: 0 8px;
+  padding: 0 16px;
 }}
 .group-header h2 {{
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   margin: 0;
 }}
 .group-count {{
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  color: var(--text-secondary);
-  background: rgba(118, 118, 128, 0.08);
+  color: var(--label-secondary);
+  background: var(--fill-tertiary);
   padding: 2px 8px;
   border-radius: 99px;
   font-variant-numeric: tabular-nums;
 }}
 .group-desc {{
-  font-size: 15px;
-  color: var(--text-secondary);
-  margin: 0 0 20px 8px;
+  font-size: 14px;
+  color: var(--label-secondary);
+  margin: 0 0 16px 16px;
 }}
+
 .group-head-row {{
   display: grid;
-  grid-template-columns: 2fr 1fr 1.5fr 1fr 32px;
+  grid-template-columns: 2fr 1.5fr 100px 80px 24px;
   padding: 0 24px 8px;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+  color: var(--label-secondary);
 }}
+.align-right {{ text-align: right; }}
+
 .group-rows {{
-  background: var(--surface);
-  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  border-radius: 16px;
   box-shadow: var(--shadow-card);
-  border: 1px solid var(--border);
   overflow: hidden;
 }}
+
 .row {{
   display: grid;
-  grid-template-columns: 2fr 1fr 1.5fr 1fr 32px;
+  grid-template-columns: 2fr 1.5fr 100px 80px 24px;
   align-items: center;
-  padding: 16px 24px;
+  padding: 14px 24px;
   position: relative;
-  transition: background var(--transition);
+  transition: background-color 0.15s;
 }}
+/* True 0.5px Inset Retina Hairline */
 .row::after {{
   content: "";
   position: absolute;
@@ -452,28 +482,32 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   left: 24px;
   right: 0;
   height: 1px;
-  background: var(--divider);
+  background: var(--separator);
+  transform: scaleY(0.5);
+  transform-origin: bottom;
 }}
-.row.last-visible::after {{ display: none; }}
-.row:hover {{ background: var(--surface-hover); }}
-.row:active {{ background: rgba(0,0,0,0.03); }}
+.row.no-border::after {{ display: none; }}
+@media (hover: hover) {{ 
+  .row:hover {{ background-color: var(--bg-surface-active); }} 
+}}
+.row:active {{ 
+  background-color: var(--bg-surface-active); 
+  transform: scale(0.995); 
+  z-index: 1; 
+  transition: transform 0.1s; 
+}}
 
-.r-name {{ font-size: 16px; font-weight: 600; color: var(--text-primary); }}
-.r-fee {{ font-size: 15px; font-weight: 500; color: var(--text-primary); font-variant-numeric: tabular-nums; }}
-.r-time {{ font-size: 15px; color: var(--text-secondary); }}
-.r-speed {{ display: flex; align-items: center; }}
+.r-name {{ font-size: 17px; font-weight: 500; letter-spacing: -0.022em; color: var(--label-primary); }}
+.r-time {{ font-size: 15px; color: var(--label-secondary); }}
+.r-speed {{ display: flex; justify-content: flex-end; }}
+.r-fee {{ font-size: 17px; font-weight: 400; color: var(--label-secondary); text-align: right; font-variant-numeric: tabular-nums; }}
 .r-chevron {{
   display: flex;
   justify-content: flex-end;
-  color: #C7C7CC;
-  transition: transform var(--transition), color var(--transition);
-}}
-.row:hover .r-chevron {{
-  transform: translateX(3px);
-  color: var(--text-secondary);
+  color: var(--label-tertiary);
 }}
 
-/* ── BADGES ─────────────────────────────────── */
+/* ── SEMANTIC BADGES ────────────────────────── */
 .badge {{
   display: inline-flex;
   align-items: center;
@@ -483,92 +517,90 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   font-weight: 600;
   letter-spacing: 0.01em;
 }}
-.badge-fast {{ background: rgba(52, 199, 89, 0.15); color: #14833D; }}
-.badge-mid  {{ background: rgba(255, 149, 0, 0.15); color: #B25000; }}
-.badge-slow {{ background: rgba(255, 59, 48, 0.12); color: #C00F0C; }}
-.badge-none {{ background: rgba(142, 142, 147, 0.15); color: var(--text-secondary); }}
+.badge-fast {{ background: var(--badge-fast-bg); color: var(--badge-fast-txt); }}
+.badge-mid  {{ background: var(--badge-mid-bg); color: var(--badge-mid-txt); }}
+.badge-slow {{ background: var(--badge-slow-bg); color: var(--badge-slow-txt); }}
+.badge-none {{ background: var(--badge-none-bg); color: var(--badge-none-txt); }}
 
 /* ── EMPTY STATE ────────────────────────────── */
 .empty {{
   display: none;
   text-align: center;
   padding: 5rem 2rem;
-  background: var(--surface);
-  border-radius: var(--radius-lg);
-  border: 1px dashed var(--border-strong);
-  box-shadow: var(--shadow-sm);
-  margin-bottom: 2rem;
+  background: var(--bg-surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
 }}
-.empty svg {{ width: 40px; height: 40px; color: var(--text-tertiary); margin-bottom: 1rem; }}
-.empty h3 {{ font-size: 18px; font-weight: 600; margin: 0 0 8px; color: var(--text-primary); }}
-.empty p {{ font-size: 15px; color: var(--text-secondary); margin: 0; }}
+.empty svg {{ width: 44px; height: 44px; color: var(--label-tertiary); margin-bottom: 16px; }}
+.empty h3 {{ font-size: 19px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.015em; color: var(--label-primary); }}
+.empty p {{ font-size: 15px; color: var(--label-secondary); margin: 0; }}
 
 /* ── FOOTER ─────────────────────────────────── */
 .foot-wrapper {{
-  border-top: 1px solid var(--border-strong);
-  background: var(--surface);
-  padding: 3.5rem 1.5rem 4rem;
+  padding: 3rem 1.5rem;
   margin-top: 2rem;
+  border-top: 1px solid var(--separator);
 }}
 .foot {{
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 4rem;
 }}
-.foot h2, .foot h3 {{ font-size: 16px; font-weight: 600; color: var(--text-primary); margin: 0 0 12px; }}
-.foot p {{ font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin: 0; }}
+.foot h2, .foot h3 {{ font-size: 15px; font-weight: 600; color: var(--label-primary); margin: 0 0 12px; }}
+.foot p {{ font-size: 14px; color: var(--label-secondary); line-height: 1.6; margin: 0; }}
 .foot ul {{ display: grid; gap: 10px; }}
-.foot li a {{ font-size: 14px; color: var(--primary); font-weight: 500; transition: opacity var(--transition); }}
+.foot li a {{ font-size: 14px; color: var(--tint); font-weight: 400; transition: opacity 0.2s; }}
 .foot li a:hover {{ opacity: 0.8; }}
-.foot-meta {{ font-size: 12px; color: var(--text-tertiary); margin-top: 1.5rem !important; }}
+.foot-meta {{ font-size: 12px; color: var(--label-tertiary); margin-top: 1.5rem !important; display: block; }}
 
 /* ── RESPONSIVE ─────────────────────────────── */
 @media (max-width: 860px) {{
   .toolbar-wrap {{ top: 1rem; }}
-  .toolbar {{ flex-wrap: wrap; padding: 10px; }}
+  .toolbar {{ flex-wrap: wrap; padding: 12px; border-radius: 16px; }}
   .search-wrap {{ width: 100%; flex: none; order: 1; }}
   .seg-group {{ flex: 1; justify-content: space-between; order: 2; }}
   .seg-btn {{ flex: 1; padding: 0; text-align: center; }}
   .sort-select {{ flex: 1; order: 3; }}
-  .result-count {{ display: none; }}
 }}
 
 @media (max-width: 640px) {{
   .hero-wrapper {{ padding: 2rem 1rem 1rem; }}
-  .stats {{ gap: 1rem; }}
-  .stat {{ min-width: 40%; padding: 1rem; }}
+  .stats-container {{ display: flex; flex-direction: column; width: 100%; align-items: stretch; padding: 1.5rem; gap: 1rem; border-radius: 16px; }}
+  .stat-divider {{ width: 100%; height: 1px; }}
   
   .group-head-row {{ display: none; }}
+  .group-header, .group-desc {{ padding-left: 8px; }}
+  
   .row {{
-    grid-template-columns: 1fr auto 24px;
+    grid-template-columns: 1fr auto 20px;
     grid-template-areas:
       "name fee chevron"
       "time speed chevron";
-    gap: 6px 12px;
-    padding: 16px 20px;
+    gap: 4px 12px;
+    padding: 14px 16px;
   }}
-  .row::after {{ left: 20px; }}
-  .r-name {{ grid-area: name; font-size: 16px; }}
+  .row::after {{ left: 16px; }}
+  .r-name {{ grid-area: name; font-size: 17px; }}
+  .r-time {{ grid-area: time; font-size: 14px; }}
   .r-fee {{ grid-area: fee; text-align: right; }}
-  .r-fee::before {{ content: 'Fee: '; color: var(--text-tertiary); font-weight: 400; }}
-  .r-time {{ grid-area: time; font-size: 13px; }}
-  .r-speed {{ grid-area: speed; justify-content: flex-end; }}
-  .r-chevron {{ grid-area: chevron; align-self: center; transform: none !important; color: #C7C7CC !important; }}
+  .r-speed {{ grid-area: speed; justify-content: flex-end; padding-right: 0; }}
+  .badge {{ font-size: 12px; padding: 2px 8px; }}
+  .r-chevron {{ grid-area: chevron; align-self: center; }}
   
   .foot {{ grid-template-columns: 1fr; gap: 2.5rem; }}
 }}
 
 @media (prefers-reduced-motion: reduce) {{
-  *, *::before, *::after {{ transition: none !important; }}
+  *, *::before, *::after {{ transition: none !important; animation: none !important; }}
 }}
 </style>
 </head>
 <body>
-<nav class="nav" aria-label="Site navigation">
+<nav class="nav animate-in" aria-label="Site navigation">
   <div class="nav-brand">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tint)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
     State Licensing Reference
   </div>
   <div class="nav-links">
@@ -577,28 +609,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   </div>
 </nav>
 
-<header class="hero-wrapper">
-  <div>
-    <h1>{profession} License<br>Reciprocity by State</h1>
-    <p class="hero-sub">Compare compact privileges, endorsement fees, and processing timelines across all {total_states} states and DC.</p>
-    <div class="stats">
-      <div class="stat">
-        <span class="stat-value">{total_states}</span>
-        <span class="stat-label">Jurisdictions</span>
-      </div>
-      <div class="stat">
-        <span class="stat-value">{member_count}</span>
-        <span class="stat-label">Compact States</span>
-      </div>{cdr_stat_block}
-      <div class="stat">
-        <span class="stat-value">{latest_verified}</span>
-        <span class="stat-label">Verified</span>
-      </div>
+<header class="hero-wrapper animate-in" style="animation-delay: 0.05s">
+  <h1>{profession} License<br>Reciprocity by State</h1>
+  <p class="hero-sub">Compare compact privileges, endorsement fees, and processing timelines across all {total_states} states and DC.</p>
+  
+  <div class="stats-container">
+    <div class="stat">
+      <span class="stat-value">{total_states}</span>
+      <span class="stat-label">Jurisdictions</span>
     </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-value">{member_count}</span>
+      <span class="stat-label">Compact States</span>
+    </div>{cdr_stat_block}
   </div>
 </header>
 
-<div class="toolbar-wrap">
+<div class="toolbar-wrap animate-in" style="animation-delay: 0.1s">
   <div class="toolbar" role="search">
     <div class="search-wrap">
       <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
@@ -615,12 +643,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       <option value="fee">Sort: Fee</option>
       <option value="speed">Sort: Speed</option>
     </select>
-    <span id="resultCount" class="result-count"></span>
   </div>
 </div>
 
 <main class="content" id="main-content">
-  <section class="group" id="group-compact">
+  <section class="group animate-in" style="animation-delay: 0.15s" id="group-compact">
     <div class="group-header">
       <h2>Compact States</h2>
       <span class="group-count">{member_count}</span>
@@ -628,9 +655,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     <p class="group-desc">Your home-state license may already cover these states via compact privilege.</p>
     <div class="group-head-row">
       <span>State</span>
-      <span>Fee</span>
       <span>Timeline</span>
-      <span>Speed</span>
+      <span class="align-right">Speed</span>
+      <span class="align-right">Fee</span>
       <span></span>
     </div>
     <div class="group-rows" data-group="member">
@@ -638,7 +665,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     </div>
   </section>
 
-  <section class="group" id="group-endorsement">
+  <section class="group animate-in" style="animation-delay: 0.2s" id="group-endorsement">
     <div class="group-header">
       <h2>Endorsement States</h2>
       <span class="group-count">{endorsement_count}</span>
@@ -646,9 +673,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     <p class="group-desc">Requires a separate board application with fee and processing time.</p>
     <div class="group-head-row">
       <span>State</span>
-      <span>Fee</span>
       <span>Timeline</span>
-      <span>Speed</span>
+      <span class="align-right">Speed</span>
+      <span class="align-right">Fee</span>
       <span></span>
     </div>
     <div class="group-rows" data-group="non-member">
@@ -661,13 +688,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
     </svg>
-    <h3>No States Found</h3>
+    <h3>No Matches Found</h3>
     <p>Try adjusting your search or clearing your filters.</p>
   </section>
 </main>
 
 <div class="foot-wrapper">
-  <section class="foot" id="how-to-use">
+  <section class="foot animate-in" id="how-to-use" style="animation-delay: 0.25s">
     <div>
       <h2>How to use this directory</h2>
       <p>Start with the path filter to narrow by compact, endorsement, or CDR. Sort by fee or speed to find your fastest or cheapest route. Open any state to see the full board-verified guide with steps, documents, and renewal info.</p>
@@ -678,7 +705,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <li><a href="#group-compact">Compact states</a></li>
         <li><a href="#group-endorsement">Endorsement states</a></li>
       </ul>
-      <p class="foot-meta">Last refreshed {latest_verified}</p>
+      <span class="foot-meta">Verified updated &bull; {latest_verified}</span>
     </div>
   </section>
 </div>
@@ -688,7 +715,6 @@ const input = document.getElementById('stateSearch');
 const allRows = [...document.querySelectorAll('.row')];
 const groups = [...document.querySelectorAll('.group')];
 const sortSelect = document.getElementById('sortSelect');
-const resultCount = document.getElementById('resultCount');
 const emptyState = document.getElementById('emptyState');
 const pathBtns = [...document.querySelectorAll('[data-filter-group="path"] .seg-btn')];
 
@@ -743,18 +769,18 @@ function applyFilters() {{
     
     const sortedVisible = sortRows(visible);
     
-    // Sort and fix the inset bottom border for the last visible row
+    // Automatically manages the hidden bottom border rule for the last visible element
     for (const r of sortedVisible) {{
-      r.classList.remove('last-visible');
+      r.classList.remove('no-border');
       container.appendChild(r);
     }}
     if (sortedVisible.length > 0) {{
-      sortedVisible[sortedVisible.length - 1].classList.add('last-visible');
+      sortedVisible[sortedVisible.length - 1].classList.add('no-border');
     }}
     
-    // Keep hidden nodes at the bottom of the DOM so they don't break :last-child layout logic
+    // Keep hidden rows out of the way to preserve the structural flex/grid flow
     for (const r of hidden) {{
-      r.classList.remove('last-visible');
+      r.classList.remove('no-border');
       container.appendChild(r);
     }}
   }});
@@ -766,7 +792,6 @@ function applyFilters() {{
     g.style.display = hasVisible ? '' : 'none';
   }}
 
-  resultCount.textContent = `${{shown}} result${{shown === 1 ? '' : 's'}}`;
   emptyState.style.display = shown === 0 ? 'block' : 'none';
   syncUrl();
 }}
@@ -787,6 +812,8 @@ if (params.get('q')) input.value = params.get('q');
 if (params.get('path') && ['all','member','non-member','cdr-only'].includes(params.get('path'))) pathFilter = params.get('path');
 if (params.get('sort') && ['state','fee','speed'].includes(params.get('sort'))) sortSelect.value = params.get('sort');
 for (const b of pathBtns) b.classList.toggle('active', b.dataset.value === pathFilter);
+
+// Trigger initial filter to process borders
 applyFilters();
 </script>
 </body>
