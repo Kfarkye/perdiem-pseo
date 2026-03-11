@@ -19,7 +19,7 @@
     "keywords": "occupational therapist license reciprocity connecticut, how to transfer occupational therapist license to connecticut, occupational therapist compact connecticut, connecticut occupational therapist endorsement application"
   },
   "board": {
-    "name": "Connecticut DPH \u2014 OT Licensure",
+    "name": "Connecticut DPH — OT Licensure",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -126,7 +126,7 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/DPH",

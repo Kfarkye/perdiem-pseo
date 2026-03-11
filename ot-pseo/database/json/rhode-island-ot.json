@@ -19,7 +19,7 @@
     "keywords": "occupational therapist license reciprocity rhode island, how to transfer occupational therapist license to rhode island, occupational therapist compact rhode island, rhode island occupational therapist endorsement application"
   },
   "board": {
-    "name": "Rhode Island DOH \u2014 OT Licensure",
+    "name": "Rhode Island DOH — OT Licensure",
     "parent_dept": "Rhode Island Department of Health",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -126,7 +126,7 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 140,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.ri.gov/licenses/",

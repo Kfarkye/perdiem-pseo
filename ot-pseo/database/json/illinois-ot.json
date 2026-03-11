@@ -19,7 +19,7 @@
     "keywords": "occupational therapist license reciprocity illinois, how to transfer occupational therapist license to illinois, occupational therapist compact illinois, illinois occupational therapist endorsement application"
   },
   "board": {
-    "name": "Illinois IDFPR \u2014 Occupational Therapy",
+    "name": "Illinois IDFPR — Occupational Therapy",
     "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -126,13 +126,13 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 25,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://idfpr.illinois.gov/profs/ot.asp",
     "endorsement_url": "https://idfpr.illinois.gov/profs/ot.asp",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
-    "requires_psv": true
+    "requires_psv": false
   },
   "slug": "illinois-ot",
   "specialty": "ot"

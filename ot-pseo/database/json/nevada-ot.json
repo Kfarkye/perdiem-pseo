@@ -125,14 +125,14 @@
     "license_required": true,
     "fingerprint_required": true,
     "temp_license_available": true,
-    "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "jurisprudence_required": true,
+    "endorsement_fee": 500,
+    "processing_time": "3 to 5 Business Days",
     "processing_tier": "mid",
     "board_url": "https://bop.nv.gov/",
     "endorsement_url": "https://bop.nv.gov/",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
-    "requires_psv": true
+    "requires_psv": false
   },
   "slug": "nevada-ot",
   "specialty": "ot"
