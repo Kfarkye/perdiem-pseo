@@ -11,7 +11,7 @@
     "vendor_url": "https://www.identogo.com/locations/colorado"
   },
   "profession_name": "Dietitian",
-  "credential_nomenclature": "Licensed Dietitian (LD) \u2014 Effective September 1, 2026",
+  "credential_nomenclature": "Licensed Dietitian (LD) — Effective September 1, 2026",
   "last_updated": "2026-02-25",
   "seo": {
     "title": "Colorado Dietitian License Reciprocity - How to Transfer Your License (2026)",
@@ -31,7 +31,7 @@
   "quick_facts": {
     "total_fee": "~$239.50 (Estimated)",
     "fee_breakdown": "~$200 initial registration fee + $39.50 CBI background check (Estimated for FY 2026-27)",
-    "renewal_fee": "~$125\u2013$180 (Estimated)",
+    "renewal_fee": "~$125–$180 (Estimated)",
     "renewal_cycle": "Annual (Estimated) + 75 CPE hours per 5-year CDR cycle",
     "processing_time": "TBD (New program launching Sept 2026)",
     "license_duration": "1 Year (Estimated)"
@@ -136,11 +136,11 @@
     "compact_portal_url": "https://dietitianscompact.org/",
     "license_required": false,
     "fingerprint_required": true,
-    "temp_license_available": true,
+    "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 239,
-    "processing_time": "TBD (New program launching Sept 2026)",
-    "processing_tier": "slow",
+    "endorsement_fee": 0,
+    "processing_time": "N/A (No state application currently)",
+    "processing_tier": "none",
     "board_url": "https://dpo.colorado.gov/",
     "endorsement_url": "https://dpo.colorado.gov/",
     "notes": "Details on reciprocity or endorsement will be established by the new Board of Dietetics and Nutrition under DORA regulations. Active CDR registration will serve as the primary qualification for state licensure."

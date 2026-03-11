@@ -55,6 +55,7 @@ for json_file in sorted(JSON_DIR.glob("*.json")):
         'endorsement_fee': data['reciprocity']['endorsement_fee'],
         'processing_time': data['reciprocity']['processing_time'],
         'processing_tier': data['reciprocity']['processing_tier'],
+        'license_required': data['reciprocity'].get('license_required', True),
     })
     urls.append(f"  <url><loc>{DOMAIN}/{slug_value}</loc><lastmod>{data.get('last_updated', TODAY)}</lastmod><priority>0.8</priority></url>")
 

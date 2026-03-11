@@ -224,6 +224,7 @@
     .badge-green { background: var(--ui-green-bg); color: var(--ui-green-fg); }
     .badge-yellow { background: var(--ui-yellow-bg); color: var(--ui-yellow-fg); }
     .badge-gray { background: var(--ui-gray-bg); color: var(--ui-gray-fg); }
+    .badge-blue { background: #0f4f87; color: #eef7ff; }
     .trust-inline {
       color: rgba(16, 24, 32, 0.58);
       font-size: 0.8rem;
@@ -243,6 +244,7 @@
     .tier-fast { background: #def5ec; color: #0f5f43; }
     .tier-mid { background: #fff1cf; color: #7e5d12; }
     .tier-slow { background: #f6e7df; color: #8f4d2a; }
+    .tier-na { background: #e8f2fb; color: #0f4f87; }
     .lead-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.95fr);
@@ -653,7 +655,11 @@
         <div class="hero-meta">
           <span class="trust-pill"><strong>Last verified</strong> {{ last_verified_date | default(last_updated, true) }}</span>
           <span class="trust-pill"><strong>Official board</strong> {{ board.name }}</span>
-          <span class="tier-pill tier-{{ reciprocity.processing_tier | default('slow') }}">{{ reciprocity.processing_tier | default('slow') }} tier</span>
+          {% if reciprocity.license_required %}
+            <span class="tier-pill tier-{{ reciprocity.processing_tier | default('slow') }}">{{ reciprocity.processing_tier | default('slow') }} tier</span>
+          {% else %}
+            <span class="tier-pill tier-na">CDR only</span>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -662,7 +668,9 @@
     <div class="page-shell">
       <section id="reciprocity" class="section reciprocity-lead" aria-labelledby="reciprocity-heading">
         <div class="reciprocity-topline">
-          {% if reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
+          {% if not reciprocity.license_required %}
+            <span class="badge badge-blue">No State License Needed</span>
+          {% elif reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
             <span class="badge badge-green">Compact State</span>
           {% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}
             <span class="badge badge-yellow">Compact Enacted - Not Yet Active</span>
@@ -673,7 +681,11 @@
         </div>
         <div class="lead-grid">
           <div class="reciprocity-copy">
-            {% if reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
+            {% if not reciprocity.license_required %}
+              <h2 id="reciprocity-heading">{{ state_name }} {{ profession_name }} Practice Path</h2>
+              <p class="section-intro">Good news: {{ state_name }} does not currently require a state-level license to practice dietetics. You do not need to file a state endorsement or transfer application.</p>
+              <p><strong>What you need:</strong> maintain an active national credential from the Commission on Dietetic Registration (CDR).{% if reciprocity.notes %} {{ reciprocity.notes }}{% endif %}</p>
+            {% elif reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
               <h2 id="reciprocity-heading">Your {{ profession_name }} License May Already Cover {{ state_name }}</h2>
               <p class="section-intro">{{ state_name }} participates in the {{ reciprocity.compact_name }}. If your home state and credential qualify for compact privilege, you may be able to work in {{ state_name }} without filing a separate endorsement application.</p>
               <p><strong>Fallback path:</strong> if your home state is outside the compact or your privilege is not active, use the endorsement flow below.</p>
@@ -690,7 +702,11 @@
           <aside class="decision-panel" aria-label="Reciprocity checklist">
             <h3>Before You Start</h3>
             <ol>
-              {% if reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
+              {% if not reciprocity.license_required %}
+                <li>Confirm your CDR credential is active and in good standing.</li>
+                <li>Check employer and payer onboarding requirements for your setting.</li>
+                <li>Use the official resources below for any state-specific title or scope updates.</li>
+              {% elif reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
                 <li>Confirm your home state also participates in {{ reciprocity.compact_name }}.</li>
                 <li>Make sure your license is active, unencumbered, and privilege-eligible.</li>
                 {% if reciprocity.jurisprudence_required %}<li>Complete the jurisprudence requirement before your first shift.</li>{% else %}<li>Use endorsement only if you do not qualify for compact privilege.</li>{% endif %}
@@ -708,12 +724,12 @@
         <div class="fact-strip" aria-label="Reciprocity quick facts">
           <article class="fact-card">
             <span class="fact-label">Endorsement Fee</span>
-            <span class="fact-value">${{ reciprocity.endorsement_fee }}</span>
+            <span class="fact-value">{% if reciprocity.license_required %}${{ reciprocity.endorsement_fee }}{% else %}$0{% endif %}</span>
             <span class="fact-note">State-level transfer cost</span>
           </article>
           <article class="fact-card">
             <span class="fact-label">Processing Time</span>
-            <span class="fact-value">{{ reciprocity.processing_time }}</span>
+            <span class="fact-value">{% if reciprocity.license_required %}{{ reciprocity.processing_time }}{% else %}N/A (No state application){% endif %}</span>
             <span class="fact-note">Best estimate from current board data</span>
           </article>
           <article class="fact-card">
@@ -723,13 +739,13 @@
           </article>
           <article class="fact-card">
             <span class="fact-label">Temporary License</span>
-            <span class="fact-value">{{ 'Available' if reciprocity.temp_license_available else 'Not listed' }}</span>
+            <span class="fact-value">{% if reciprocity.license_required %}{{ 'Available' if reciprocity.temp_license_available else 'Not listed' }}{% else %}Not needed{% endif %}</span>
             <span class="fact-note">Useful if you need a faster start date</span>
           </article>
         </div>
         <div class="cta-row">
-          <a class="action-link action-link-primary" href="#endorsement">See Endorsement Steps</a>
-          <a class="action-link action-link-secondary" href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">Official Board Portal</a>
+          <a class="action-link action-link-primary" href="#endorsement">{% if reciprocity.license_required %}See Endorsement Steps{% else %}See Readiness Checklist{% endif %}</a>
+          <a class="action-link action-link-secondary" href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">{% if reciprocity.license_required %}Official Board Portal{% else %}Primary Credential Portal{% endif %}</a>
         </div>
       </section>
 
@@ -743,8 +759,8 @@
       </nav>
 
       <section id="endorsement" class="section" aria-labelledby="apply-heading">
-        <h2 id="apply-heading">Endorsement Application Steps</h2>
-        <p class="section-intro">Work through these in order. This sequence is the fastest way to move from out-of-state license to a board-cleared application in {{ state_name }}.</p>
+        <h2 id="apply-heading">{% if reciprocity.license_required %}Endorsement Application Steps{% else %}Work Readiness Checklist{% endif %}</h2>
+        <p class="section-intro">{% if reciprocity.license_required %}Work through these in order. This sequence is the fastest way to move from out-of-state license to a board-cleared application in {{ state_name }}.{% else %}Use this sequence to confirm credential readiness, employer onboarding, and any state-specific title guidance before your first shift in {{ state_name }}.{% endif %}</p>
         <ol class="steps-list">
           {% for step in steps %}
           <li>

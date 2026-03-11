@@ -25,8 +25,8 @@
     "physical_address": "Not Applicable",
     "phone": "Not Applicable",
     "fax": "Not Applicable",
-    "email": "Not Applicable",
-    "url": "Not Applicable"
+    "email": "",
+    "url": "https://www.cdrnet.org/"
   },
   "quick_facts": {
     "total_fee": "$0",
@@ -108,12 +108,12 @@
     "compact_portal_url": "https://dietitianscompact.org/",
     "license_required": false,
     "fingerprint_required": false,
-    "temp_license_available": true,
+    "temp_license_available": false,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "Not Applicable",
-    "processing_tier": "slow",
-    "board_url": "Not Applicable",
+    "processing_time": "N/A (No state application)",
+    "processing_tier": "none",
+    "board_url": "https://www.cdrnet.org/",
     "endorsement_url": "Not Applicable",
     "notes": "If you are a licensed dietitian moving to California from another state, you do not need to transfer your license. As long as your national CDR registration is active, you are legally permitted to practice."
   },

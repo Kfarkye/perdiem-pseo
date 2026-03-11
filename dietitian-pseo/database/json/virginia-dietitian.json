@@ -38,7 +38,7 @@
   },
   "license_types": [
     {
-      "title": "Title Protection \u2014 Dietitian / Nutritionist",
+      "title": "Title Protection — Dietitian / Nutritionist",
       "description": "Virginia does not mandate state licensure for dietitians. However, the DHP Board of Health Professions establishes minimum qualifications for using the protected titles 'dietitian' or 'nutritionist'. Meeting CDR registration standards or equivalent qualifications allows use of the title."
     }
   ],
@@ -128,7 +128,7 @@
     "jurisprudence_required": false,
     "endorsement_fee": 0,
     "processing_time": "N/A (No state application)",
-    "processing_tier": "slow",
+    "processing_tier": "none",
     "board_url": "https://www.dhp.virginia.gov/bhp/",
     "endorsement_url": "https://www.dhp.virginia.gov/bhp/",
     "notes": "Virginia has no state license to transfer. Title protection eligibility is demonstrated by holding a valid CDR credential, or a current dietitian/nutritionist license or certificate from another state."

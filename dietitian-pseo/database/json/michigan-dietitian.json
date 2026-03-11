@@ -11,7 +11,7 @@
     "vendor_url": "https://uenroll.identogo.com/"
   },
   "profession_name": "Dietitian Nutritionist",
-  "credential_nomenclature": "Licensed Dietitian Nutritionist (LDN) \u2014 Application Process Pending",
+  "credential_nomenclature": "Licensed Dietitian Nutritionist (LDN) — Application Process Pending",
   "last_updated": "2026-02-25",
   "seo": {
     "title": "Michigan Dietitian Nutritionist License Reciprocity - How to Transfer Your License (2026)",
@@ -132,11 +132,11 @@
     "compact_portal_url": "https://dietitianscompact.org/",
     "license_required": false,
     "fingerprint_required": true,
-    "temp_license_available": true,
+    "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 130,
-    "processing_time": "TBD (Application process not yet open in early 2026)",
-    "processing_tier": "slow",
+    "endorsement_fee": 0,
+    "processing_time": "N/A (No state application currently)",
+    "processing_tier": "none",
     "board_url": "https://www.michigan.gov/lara/bureau-list/bpl",
     "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl",
     "notes": "Reciprocity provisions will be defined by the newly formed Board. Active CDR registration will be the primary qualifying credential, making the transition straightforward for out-of-state licensees."
