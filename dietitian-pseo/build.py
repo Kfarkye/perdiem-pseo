@@ -49,15 +49,6 @@ for json_file in sorted(JSON_DIR.glob("*.json")):
     processing_time = data['reciprocity'].get('processing_time', 'TBD')
     requires_psv = data['reciprocity'].get('requires_psv', False)
     fee = data['reciprocity'].get('endorsement_fee', 0)
-    
-    if data['reciprocity'].get('state_is_member'):
-        processing_time = '1 to 3 Days'
-        requires_psv = False
-        comp_fee = data.get('compact', {}).get('compact_privilege_fee')
-        if comp_fee and str(comp_fee).lower() not in ['n/a', 'none', 'tbd']:
-            fee = comp_fee
-        else:
-            fee = 'N/A'
 
     states_manifest.append({
         'name': data['state_name'],
@@ -76,7 +67,14 @@ for json_file in sorted(JSON_DIR.glob("*.json")):
     urls.append(f"  <url><loc>{DOMAIN}/{slug_value}</loc><lastmod>{data.get('last_updated', TODAY)}</lastmod><priority>0.8</priority></url>")
 
 profile = json.loads((ROOT.parent / 'vertical_profiles.json').read_text(encoding='utf-8'))['verticals'][VERTICAL_SLUG]
-index_html = render_index(domain=DOMAIN, profile=profile, states_manifest=states_manifest, css_hash=css_hash, today=TODAY)
+index_html = render_index(
+    domain=DOMAIN,
+    profile=profile,
+    states_manifest=states_manifest,
+    css_hash=css_hash,
+    today=TODAY,
+    suppress_compact_ui=True,
+)
 (DIST_DIR / 'index.html').write_text(index_html, encoding='utf-8')
 robots_txt = "User-agent: *\nAllow: /\n\nSitemap: " + DOMAIN + "/sitemap.xml\n"
 (DIST_DIR / 'robots.txt').write_text(robots_txt, encoding='utf-8')

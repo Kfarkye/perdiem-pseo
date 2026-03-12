@@ -651,7 +651,7 @@
       </nav>
       <div class="hero-copy">
         <h1 id="hero-title">{{ state_name }} {{ profession_name }} License <em>Reciprocity &amp; How to Apply</em></h1>
-        <p class="hero-sub">Start with the only questions that matter for travelers: does your current license already cover {{ state_name }}, what does endorsement cost, and how quickly can you get cleared to work?</p>
+        <p class="hero-sub">Start with the only questions that matter for travelers: what does endorsement cost, and how quickly can you get cleared to work in {{ state_name }}?</p>
         <div class="hero-meta">
           <span class="trust-pill"><strong>Last verified</strong> {{ last_verified_date | default(last_updated, true) }}</span>
           <span class="trust-pill"><strong>Official board</strong> {{ board.name }}</span>
@@ -670,12 +670,8 @@
         <div class="reciprocity-topline">
           {% if not reciprocity.license_required %}
             <span class="badge badge-blue">CDR State</span>
-          {% elif reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
-            <span class="badge badge-green">Compact State</span>
-          {% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}
-            <span class="badge badge-yellow">Compact Enacted - Not Yet Active</span>
           {% else %}
-            <span class="badge badge-gray">No Interstate Compact</span>
+            <span class="badge badge-gray">State Endorsement Required</span>
           {% endif %}
           <span class="trust-inline">Decision point for travel-ready licensing</span>
         </div>
@@ -685,17 +681,10 @@
               <h2 id="reciprocity-heading">{{ state_name }} {{ profession_name }} Practice Path</h2>
               <p class="section-intro">Good news: {{ state_name }} does not currently require a state-level license to practice dietetics. You do not need to file a state endorsement or transfer application.</p>
               <p><strong>What you need:</strong> maintain an active national credential from the Commission on Dietetic Registration (CDR).{% if reciprocity.notes %} {{ reciprocity.notes }}{% endif %}</p>
-            {% elif reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
-              <h2 id="reciprocity-heading">Your {{ profession_name }} License May Already Cover {{ state_name }}</h2>
-              <p class="section-intro">{{ state_name }} participates in the {{ reciprocity.compact_name }}. If your home state and credential qualify for compact privilege, you may be able to work in {{ state_name }} without filing a separate endorsement application.</p>
-              <p><strong>Fallback path:</strong> if your home state is outside the compact or your privilege is not active, use the endorsement flow below.</p>
-            {% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}
-              <h2 id="reciprocity-heading">Reciprocity in {{ state_name }} for {{ profession_name }}s</h2>
-              <p class="section-intro">{{ state_name }} has enacted the {{ reciprocity.compact_name }}, but compact privileges are not yet issuing. Until that launch happens, out-of-state applicants still move through endorsement with the state board.</p>
-              <p><strong>What changes later:</strong> once the compact goes live, qualified travelers should be able to practice with far less transfer friction.</p>
             {% else %}
               <h2 id="reciprocity-heading">How to Transfer Your {{ profession_name }} License to {{ state_name }}</h2>
-              <p class="section-intro">There is no active interstate compact covering {{ profession_name.lower() }} practice in {{ state_name }}. To work here, plan on a full endorsement or transfer application through {{ board.name }}.</p>
+              <p class="section-intro">To work in {{ state_name }}, plan on a full endorsement or transfer application through {{ board.name }}.</p>
+              <p><strong>Clarity first:</strong> interstate compact privileges are not currently available for this {{ profession_name.lower() }} path.</p>
               <p><strong>Good news:</strong> the exact cost, documentation, and board path are laid out below so there is no guesswork.</p>
             {% endif %}
           </div>
@@ -706,19 +695,12 @@
                 <li>Confirm your CDR credential is active and in good standing.</li>
                 <li>Check employer and payer onboarding requirements for your setting.</li>
                 <li>Use the official resources below for any state-specific title or scope updates.</li>
-              {% elif reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
-                <li>Confirm your home state also participates in {{ reciprocity.compact_name }}.</li>
-                <li>Make sure your license is active, unencumbered, and privilege-eligible.</li>
-                {% if reciprocity.jurisprudence_required %}<li>Complete the jurisprudence requirement before your first shift.</li>{% else %}<li>Use endorsement only if you do not qualify for compact privilege.</li>{% endif %}
               {% else %}
                 <li>Open the official board portal before gathering documents.</li>
                 <li>Budget the endorsement fee and expected processing window below.</li>
                 {% if reciprocity.temp_license_available %}<li>Ask about the temporary or provisional path if you need to start sooner.</li>{% else %}<li>Assume you need full approval before starting work unless the board says otherwise.</li>{% endif %}
               {% endif %}
             </ol>
-            {% if reciprocity.compact_status != 'none' and reciprocity.compact_url %}
-              <a class="action-link action-link-tertiary" href="{{ reciprocity.compact_portal_url or reciprocity.compact_url }}" target="_blank" rel="noopener">Open {{ reciprocity.compact_name }} Portal</a>
-            {% endif %}
           </aside>
         </div>
         <div class="fact-strip" aria-label="Reciprocity quick facts">

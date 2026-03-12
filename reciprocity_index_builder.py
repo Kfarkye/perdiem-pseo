@@ -1,7 +1,15 @@
 from __future__ import annotations
 
 
-def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css_hash: str, today: str) -> str:
+def render_index(
+    *,
+    domain: str,
+    profile: dict,
+    states_manifest: list[dict],
+    css_hash: str,
+    today: str,
+    suppress_compact_ui: bool = False,
+) -> str:
     profession = profile['identity']['title_full']
     plural = profile['identity'].get('title_plural', profession + 's')
     sorted_states = sorted(states_manifest, key=lambda item: item['name'])
@@ -16,8 +24,8 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         name = s['name']
         slug = s['slug']
         tier = 'slow'
-        member = bool(s.get('state_is_member'))
         license_required = bool(s.get('license_required', True))
+        member = bool(s.get('state_is_member')) and not (suppress_compact_ui and license_required)
         fee_value = s.get('endorsement_fee')
         fee_raw = s.get('endorsement_fee', 0)
         processing_time = s.get('processing_time') or 'TBD'
@@ -58,9 +66,10 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         else:
             endorsement_states.append(entry)
 
-    member_count = len(compact_states)
+    compact_count = len(compact_states)
     cdr_state_count = len(cdr_states)
     endorsement_count = len(endorsement_states)
+    show_compact_ui = not suppress_compact_ui
 
     def render_row(s: dict) -> str:
         tier = s['tier']
@@ -104,11 +113,18 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
     endorsement_rows = '\n'.join(render_row(s) for s in endorsement_states)
     cdr_rows = '\n'.join(render_row(s) for s in cdr_states)
 
-    title = f"{profession} License Reciprocity by State - Compact Status, Fees and Transfer Timelines (2026)"
-    desc = (
-        f"Compare {plural.lower()} license reciprocity rules by state, including compact participation, "
-        "endorsement fees, and processing timelines."
-    )
+    if show_compact_ui:
+        title = f"{profession} License Reciprocity by State - Compact Status, Fees and Transfer Timelines (2026)"
+        desc = (
+            f"Compare {plural.lower()} license reciprocity rules by state, including compact participation, "
+            "endorsement fees, and processing timelines."
+        )
+    else:
+        title = f"{profession} License Transfer by State - Endorsement Fees and Timelines (2026)"
+        desc = (
+            f"Compare {plural.lower()} transfer requirements by state, including endorsement fees, "
+            "administrative difficulty tiers, and processing timelines."
+        )
 
     cdr_section = ''
     cdr_filter_pill = ''
@@ -139,6 +155,47 @@ def render_index(*, domain: str, profile: dict, states_manifest: list[dict], css
         <span class="stat-value">{cdr_state_count}</span>
         <span class="stat-label">CDR States</span>
       </div>'''
+
+    if show_compact_ui:
+        hero_h1 = f"{profession} License<br>Reciprocity by State"
+        hero_sub = f"Compare compact privileges, endorsement fees, and processing timelines across all {total_states} states and DC."
+        primary_count = compact_count
+        primary_label = "Compact States"
+        path_filter_aria = "Filter by reciprocity path"
+        compact_filter_btn = '<button type="button" class="seg-btn" data-value="member" aria-pressed="false">Compact</button>'
+        compact_section = f'''
+  <section class="group animate-in" style="animation-delay: 0.15s" id="group-compact" aria-labelledby="heading-compact">
+    <div class="group-header">
+      <h2 id="heading-compact">Compact States</h2>
+      <span class="group-count" aria-label="{compact_count} states">{compact_count}</span>
+    </div>
+    <p class="group-desc">Your home-state license may already cover these states via compact privilege.</p>
+    <div class="group-head-row" aria-hidden="true">
+      <span>State</span>
+      <span>Timeline</span>
+      <span class="align-right">Difficulty</span>
+      <span class="align-right">Fee</span>
+      <span></span>
+    </div>
+    <div class="group-rows" data-group="member" role="list">
+{compact_rows}
+    </div>
+  </section>
+'''
+        how_to_use_copy = "Start with the path filter to narrow by compact, endorsement, or CDR. Sort by fee or speed to find your fastest or cheapest route. Open any state to see the full board-verified guide with steps, documents, and renewal info."
+        quick_link_compact = '<li><a href="#group-compact">Compact states</a></li>'
+        allowed_path_values = "['all','member','non-member','cdr-only']"
+    else:
+        hero_h1 = f"{profession} License<br>Transfer by State"
+        hero_sub = f"Compare endorsement fees, administrative difficulty, and processing timelines across all {total_states} states and DC."
+        primary_count = endorsement_count
+        primary_label = "Endorsement States"
+        path_filter_aria = "Filter by licensure path"
+        compact_filter_btn = ''
+        compact_section = ''
+        how_to_use_copy = "Use the path filter to focus on endorsement or CDR states. Sort by fee or difficulty to find your fastest or most practical route. Open any state for board-verified steps, documents, and renewal details."
+        quick_link_compact = ''
+        allowed_path_values = "['all','non-member','cdr-only']"
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -700,8 +757,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 </nav>
 
 <header class="hero-wrapper animate-in" style="animation-delay: 0.05s">
-  <h1>{profession} License<br>Reciprocity by State</h1>
-  <p class="hero-sub">Compare compact privileges, endorsement fees, and processing timelines across all {total_states} states and DC.</p>
+  <h1>{hero_h1}</h1>
+  <p class="hero-sub">{hero_sub}</p>
   
   <div class="stats-container">
     <div class="stat">
@@ -710,8 +767,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     </div>
     <div class="stat-divider" aria-hidden="true"></div>
     <div class="stat">
-      <span class="stat-value">{member_count}</span>
-      <span class="stat-label">Compact States</span>
+      <span class="stat-value">{primary_count}</span>
+      <span class="stat-label">{primary_label}</span>
     </div>{cdr_stat_block}
   </div>
 </header>
@@ -726,9 +783,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       </button>
     </div>
     <div class="toolbar-bottom-row">
-      <div class="seg-group" data-filter-group="path" role="group" aria-label="Filter by reciprocity path">
+      <div class="seg-group" data-filter-group="path" role="group" aria-label="{path_filter_aria}">
         <button type="button" class="seg-btn active" data-value="all" aria-pressed="true">All</button>
-        <button type="button" class="seg-btn" data-value="member" aria-pressed="false">Compact</button>
+        {compact_filter_btn}
         <button type="button" class="seg-btn" data-value="non-member" aria-pressed="false">Endorsement</button>
         {cdr_filter_pill}
       </div>
@@ -742,24 +799,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 </div>
 
 <main class="content" id="main-content">
-  <section class="group animate-in" style="animation-delay: 0.15s" id="group-compact" aria-labelledby="heading-compact">
-    <div class="group-header">
-      <h2 id="heading-compact">Compact States</h2>
-      <span class="group-count" aria-label="{member_count} states">{member_count}</span>
-    </div>
-    <p class="group-desc">Your home-state license may already cover these states via compact privilege.</p>
-    <div class="group-head-row" aria-hidden="true">
-      <span>State</span>
-      <span>Timeline</span>
-      <span class="align-right">Difficulty</span>
-      <span class="align-right">Fee</span>
-      <span></span>
-    </div>
-    <div class="group-rows" data-group="member" role="list">
-{compact_rows}
-    </div>
-  </section>
-
+  {compact_section}
   <section class="group animate-in" style="animation-delay: 0.2s" id="group-endorsement" aria-labelledby="heading-endorsement">
     <div class="group-header">
       <h2 id="heading-endorsement">Endorsement States</h2>
@@ -792,12 +832,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   <footer class="foot animate-in" id="how-to-use" style="animation-delay: 0.25s">
     <div>
       <h2>How to use this directory</h2>
-      <p>Start with the path filter to narrow by compact, endorsement, or CDR. Sort by fee or speed to find your fastest or cheapest route. Open any state to see the full board-verified guide with steps, documents, and renewal info.</p>
+      <p>{how_to_use_copy}</p>
     </div>
     <div>
       <h3>Quick links</h3>
       <ul>
-        <li><a href="#group-compact">Compact states</a></li>
+        {quick_link_compact}
         <li><a href="#group-endorsement">Endorsement states</a></li>
       </ul>
       <span class="foot-meta">Verified updated &bull; {latest_verified}</span>
@@ -916,7 +956,7 @@ for (const btn of pathBtns) {{
 
 const params = new URLSearchParams(window.location.search);
 if (params.get('q')) input.value = params.get('q');
-if (params.get('path') && ['all','member','non-member','cdr-only'].includes(params.get('path'))) pathFilter = params.get('path');
+if (params.get('path') && {allowed_path_values}.includes(params.get('path'))) pathFilter = params.get('path');
 if (params.get('sort') && ['state','fee','difficulty'].includes(params.get('sort'))) sortSelect.value = params.get('sort');
 
 for (const b of pathBtns) {{
