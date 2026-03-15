@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0">
-<title>Pharmacist License Reciprocity by State - Compact Status, Fees and Transfer Timelines (2026)</title>
-<meta name="description" content="Compare pharmacists license reciprocity rules by state, including compact participation, endorsement fees, and processing timelines.">
+<title>Pharmacist License Transfer by State - Endorsement Fees and Timelines (2026)</title>
+<meta name="description" content="Compare pharmacists transfer requirements by state, including endorsement fees, administrative difficulty tiers, and processing timelines.">
 <link rel="canonical" href="https://www.statelicensingreference.com/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#ffffff">
@@ -427,25 +427,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   </div>
   <div class="nav-links">
     <a href="/">All States</a>
+    <a href="https://perdiem-portal.vercel.app">All Specialties</a>
     <a href="#how-to-use">How It Works</a>
   </div>
 </nav>
 
 <header class="hero-wrapper">
-  <h1>Pharmacist License<br>Reciprocity by State</h1>
-  <p class="hero-sub">Compare compact privileges, endorsement fees, and processing timelines across all 51 states and DC.</p>
+  <h1>Pharmacist License<br>Transfer by State</h1>
+  <p class="hero-sub">Compare endorsement fees, administrative difficulty, and processing timelines across all 51 states and DC.</p>
   
-  <div class="stats-container">
-    <div class="stat">
-      <span class="stat-value">51</span>
-      <span class="stat-label">Jurisdictions</span>
-    </div>
-    <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat">
-      <span class="stat-value">0</span>
-      <span class="stat-label">Compact States</span>
-    </div>
-  </div>
+  
 </header>
 
 <div class="toolbar-wrap">
@@ -458,9 +449,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       </button>
     </div>
     <div class="toolbar-bottom-row">
-      <div class="seg-group" data-filter-group="path" role="group" aria-label="Filter by reciprocity path">
+      <div class="seg-group" data-filter-group="path" role="group" aria-label="Filter by licensure path">
         <button type="button" class="seg-btn active" data-value="all" aria-pressed="true">All</button>
-        <button type="button" class="seg-btn" data-value="member" aria-pressed="false">Compact</button>
+        
         <button type="button" class="seg-btn" data-value="non-member" aria-pressed="false">Endorsement</button>
         
       </div>
@@ -475,24 +466,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 <main class="content" id="main-content">
   
-  <section class="group" id="group-compact" aria-labelledby="heading-compact">
-    <div class="group-header">
-      <h2 id="heading-compact">Compact States</h2>
-      <span class="group-count" aria-label="0 states">0</span>
-    </div>
-    <p class="group-desc">Your home-state license may already cover these states via compact privilege.</p>
-    <div class="group-head-row" aria-hidden="true">
-      <span>State</span>
-      <span>Timeline</span>
-      <span class="align-right">Difficulty</span>
-      <span class="align-right">Fee</span>
-      <span></span>
-    </div>
-    <div class="group-rows" data-group="member" role="list">
-
-    </div>
-  </section>
-
   <section class="group" id="group-endorsement" aria-labelledby="heading-endorsement">
     <div class="group-header">
       <h2 id="heading-endorsement">Endorsement States</h2>
@@ -881,12 +854,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   <footer class="foot" id="how-to-use">
     <div>
       <h2>How to use this directory</h2>
-      <p>Start with the path filter to narrow by compact, endorsement, or CDR. Sort by fee or speed to find your fastest or cheapest route. Open any state to see the full board-verified guide with steps, documents, and renewal info.</p>
+      <p>Use the path filter to focus on endorsement or CDR states. Sort by fee or difficulty to find your fastest or most practical route. Open any state for board-verified steps, documents, and renewal details.</p>
     </div>
     <div>
       <h3>Quick links</h3>
       <ul>
-        <li><a href="#group-compact">Compact states</a></li>
+        
         <li><a href="#group-endorsement">Endorsement states</a></li>
       </ul>
       <span class="foot-meta">Verified updated &bull; 2026-03-15</span>
@@ -1005,7 +978,7 @@ for (const btn of pathBtns) {
 
 const params = new URLSearchParams(window.location.search);
 if (params.get('q')) input.value = params.get('q');
-if (params.get('path') && ['all','member','non-member','cdr-only'].includes(params.get('path'))) pathFilter = params.get('path');
+if (params.get('path') && ['all','non-member','cdr-only'].includes(params.get('path'))) pathFilter = params.get('path');
 if (params.get('sort') && ['state','fee','difficulty'].includes(params.get('sort'))) sortSelect.value = params.get('sort');
 
 for (const b of pathBtns) {

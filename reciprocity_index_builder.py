@@ -12,6 +12,8 @@ def render_index(
 ) -> str:
     profession = profile['identity']['title_full']
     plural = profile['identity'].get('title_plural', profession + 's')
+    compact_status = str(profile.get('regulatory', {}).get('compact_status', '')).lower()
+    has_compact_framework = compact_status in {'active', 'enacted'}
     sorted_states = sorted(states_manifest, key=lambda item: item['name'])
     total_states = len(sorted_states)
 
@@ -25,7 +27,11 @@ def render_index(
         slug = s['slug']
         tier = 'slow'
         license_required = bool(s.get('license_required', True))
-        member = bool(s.get('state_is_member')) and not (suppress_compact_ui and license_required)
+        member = (
+            has_compact_framework
+            and bool(s.get('state_is_member'))
+            and not (suppress_compact_ui and license_required)
+        )
         fee_value = s.get('endorsement_fee')
         fee_raw = s.get('endorsement_fee', 0)
         processing_time = s.get('processing_time') or 'TBD'
@@ -69,7 +75,7 @@ def render_index(
     compact_count = len(compact_states)
     cdr_state_count = len(cdr_states)
     endorsement_count = len(endorsement_states)
-    show_compact_ui = not suppress_compact_ui
+    show_compact_ui = has_compact_framework and not suppress_compact_ui
 
     def render_row(s: dict) -> str:
         tier = s['tier']
@@ -196,6 +202,26 @@ def render_index(
         how_to_use_copy = "Use the path filter to focus on endorsement or CDR states. Sort by fee or difficulty to find your fastest or most practical route. Open any state for board-verified steps, documents, and renewal details."
         quick_link_compact = ''
         allowed_path_values = "['all','non-member','cdr-only']"
+
+    # Render stats only when there is meaningful compact/CDR signal.
+    # This suppresses "0 Compact States" noise on non-compact specialties.
+    has_meaningful_stats = compact_count > 0 or cdr_state_count > 0
+
+    if has_meaningful_stats:
+        stats_block = f'''
+  <div class="stats-container">
+    <div class="stat">
+      <span class="stat-value">{total_states}</span>
+      <span class="stat-label">Jurisdictions</span>
+    </div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat">
+      <span class="stat-value">{primary_count}</span>
+      <span class="stat-label">{primary_label}</span>
+    </div>{cdr_stat_block}
+  </div>'''
+    else:
+        stats_block = ''
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -626,6 +652,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   </div>
   <div class="nav-links">
     <a href="/">All States</a>
+    <a href="https://perdiem-portal.vercel.app">All Specialties</a>
     <a href="#how-to-use">How It Works</a>
   </div>
 </nav>
@@ -634,17 +661,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   <h1>{hero_h1}</h1>
   <p class="hero-sub">{hero_sub}</p>
   
-  <div class="stats-container">
-    <div class="stat">
-      <span class="stat-value">{total_states}</span>
-      <span class="stat-label">Jurisdictions</span>
-    </div>
-    <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat">
-      <span class="stat-value">{primary_count}</span>
-      <span class="stat-label">{primary_label}</span>
-    </div>{cdr_stat_block}
-  </div>
+  {stats_block}
 </header>
 
 <div class="toolbar-wrap">
