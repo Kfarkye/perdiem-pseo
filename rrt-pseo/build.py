@@ -11,6 +11,9 @@ import sys
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 ROOT = Path(__file__).resolve().parent
+# Load shared state hero images
+IMAGES_FILE = ROOT.parent / "state_images.json"
+STATE_IMAGES = json.loads(IMAGES_FILE.read_text(encoding="utf-8")) if IMAGES_FILE.exists() else {}
 sys.path.insert(0, str(ROOT.parent))
 
 from reciprocity_index_builder import render_index
@@ -20,7 +23,7 @@ TEMPLATES_DIR = ROOT / "src" / "templates"
 CSS_SRC = ROOT / "src" / "css" / "styles.css"
 CSS_DIST = DIST_DIR / "css" / "styles.css"
 CONTENT_DIR = ROOT / "content"
-DOMAIN = "https://statelicensingreference.com"
+DOMAIN = "https://www.statelicensingreference.com"
 TODAY = datetime.now().strftime("%Y-%m-%d")
 VERTICAL_SLUG = "rrt"
 
@@ -45,7 +48,12 @@ for json_file in sorted(JSON_DIR.glob("*.json")):
     if out_name in tier2_files:
         shutil.copy2(tier2_files[out_name], out_path)
     else:
-        out_path.write_text(template.render(**data), encoding="utf-8")
+        state_abbr = data.get('reciprocity', {}).get('state_abbr') or data['state_slug'][:2].upper()
+        # Map state name to abbreviation for image lookup
+        STATE_NAME_TO_ABBR = {"Alabama":"AL","Alaska":"AK","Arizona":"AZ","Arkansas":"AR","California":"CA","Colorado":"CO","Connecticut":"CT","Delaware":"DE","Florida":"FL","Georgia":"GA","Hawaii":"HI","Idaho":"ID","Illinois":"IL","Indiana":"IN","Iowa":"IA","Kansas":"KS","Kentucky":"KY","Louisiana":"LA","Maine":"ME","Maryland":"MD","Massachusetts":"MA","Michigan":"MI","Minnesota":"MN","Mississippi":"MS","Missouri":"MO","Montana":"MT","Nebraska":"NE","Nevada":"NV","New Hampshire":"NH","New Jersey":"NJ","New Mexico":"NM","New York":"NY","North Carolina":"NC","North Dakota":"ND","Ohio":"OH","Oklahoma":"OK","Oregon":"OR","Pennsylvania":"PA","Rhode Island":"RI","South Carolina":"SC","South Dakota":"SD","Tennessee":"TN","Texas":"TX","Utah":"UT","Vermont":"VT","Virginia":"VA","Washington":"WA","West Virginia":"WV","Wisconsin":"WI","Wyoming":"WY","District of Columbia":"DC"}
+        abbr = STATE_NAME_TO_ABBR.get(data['state_name'], '')
+        hero_img = STATE_IMAGES.get(abbr, {})
+        out_path.write_text(template.render(**data, hero_image_url=hero_img.get('url',''), hero_image_alt=hero_img.get('alt','')), encoding="utf-8")
     states_manifest.append({
         'name': data['state_name'],
         'slug': slug_value,
