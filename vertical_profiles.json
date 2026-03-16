@@ -4,7 +4,7 @@
     "last_updated": "2026-02-25",
     "purpose": "Canonical vertical profiles for the State Licensing Reference pSEO engine. Each profile contains the YMYL-safe copy, routing slugs, exam/board/accrediting metadata, and verification hooks needed to render a fully compliant landing page.",
     "verification_status": "PENDING = needs VA/researcher to confirm with primary source. VERIFIED = confirmed via official board URL.",
-    "portal_domain": "https://perdiem-portal.vercel.app",
+    "portal_domain": "https://statelicensingreference.com",
     "vertical_domain_pattern": "https://perdiem-{slug}.vercel.app",
     "vertical_domain_overrides": {
       "dietitian": "https://statelicensingreference.com"

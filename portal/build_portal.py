@@ -47,6 +47,18 @@ VERTICAL_COLORS = {
     "pharmacist": "#FF6B35",
 }
 
+# Canonical deployment URLs for each specialty project.
+VERTICAL_DOMAIN_OVERRIDES = {
+    "dietitian": "https://perdiem-dietitian.vercel.app",
+    "ot": "https://perdiem-ot.vercel.app",
+    "pt": "https://perdiem-pt.vercel.app",
+    "slp": "https://perdiem-slp.vercel.app",
+    "aud": "https://perdiem-aud.vercel.app",
+    "rrt": "https://perdiem-rt.vercel.app",
+    "pharm": "https://perdiem-pharm.vercel.app",
+    "pharmacist": "https://perdiem-pharmacist.vercel.app",
+}
+
 
 def compact_badge(status: str) -> dict[str, str]:
     if status == "active":
@@ -61,6 +73,9 @@ def resolve_portal_domain(meta: dict) -> str:
 
 
 def resolve_vertical_url(slug: str, meta: dict) -> str:
+    if slug in VERTICAL_DOMAIN_OVERRIDES:
+        return VERTICAL_DOMAIN_OVERRIDES[slug]
+
     overrides = meta.get("vertical_domain_overrides") or {}
     if slug in overrides:
         return overrides[slug]
