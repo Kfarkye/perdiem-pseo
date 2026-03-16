@@ -23,7 +23,7 @@ TEMPLATES_DIR = ROOT / "src" / "templates"
 CSS_SRC = ROOT / "src" / "css" / "styles.css"
 CSS_DIST = DIST_DIR / "css" / "styles.css"
 CONTENT_DIR = ROOT / "content"
-DOMAIN = "https://www.statelicensingreference.com"
+DOMAIN = "https://ot.statelicensingreference.com"
 TODAY = datetime.now().strftime("%Y-%m-%d")
 VERTICAL_SLUG = "ot"
 

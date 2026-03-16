@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://statelicensingreference.com/</loc><lastmod>2026-03-16</lastmod><priority>1.0</priority></url>
-  <url><loc>https://perdiem-dietitian.vercel.app/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://perdiem-ot.vercel.app/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://perdiem-pt.vercel.app/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://perdiem-rt.vercel.app/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://perdiem-slp.vercel.app/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://perdiem-aud.vercel.app/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://perdiem-pharm.vercel.app/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://perdiem-pharmacist.vercel.app/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://dietitian.statelicensingreference.com/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://ot.statelicensingreference.com/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://pt.statelicensingreference.com/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://rt.statelicensingreference.com/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://slp.statelicensingreference.com/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://aud.statelicensingreference.com/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://pharm.statelicensingreference.com/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://pharmacist.statelicensingreference.com/</loc><lastmod>2026-03-16</lastmod><priority>0.9</priority></url>
 </urlset>

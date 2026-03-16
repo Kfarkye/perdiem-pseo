@@ -49,14 +49,14 @@ VERTICAL_COLORS = {
 
 # Canonical deployment URLs for each specialty project.
 VERTICAL_DOMAIN_OVERRIDES = {
-    "dietitian": "https://perdiem-dietitian.vercel.app",
-    "ot": "https://perdiem-ot.vercel.app",
-    "pt": "https://perdiem-pt.vercel.app",
-    "slp": "https://perdiem-slp.vercel.app",
-    "aud": "https://perdiem-aud.vercel.app",
-    "rrt": "https://perdiem-rt.vercel.app",
-    "pharm": "https://perdiem-pharm.vercel.app",
-    "pharmacist": "https://perdiem-pharmacist.vercel.app",
+    "dietitian": "https://dietitian.statelicensingreference.com",
+    "ot": "https://ot.statelicensingreference.com",
+    "pt": "https://pt.statelicensingreference.com",
+    "slp": "https://slp.statelicensingreference.com",
+    "aud": "https://aud.statelicensingreference.com",
+    "rrt": "https://rt.statelicensingreference.com",
+    "pharm": "https://pharm.statelicensingreference.com",
+    "pharmacist": "https://pharmacist.statelicensingreference.com",
 }
 
 
