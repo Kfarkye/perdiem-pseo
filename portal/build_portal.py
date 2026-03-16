@@ -69,7 +69,7 @@ def compact_badge(status: str) -> dict[str, str]:
 
 
 def resolve_portal_domain(meta: dict) -> str:
-    return meta.get("portal_domain") or "https://perdiem-portal.vercel.app"
+    return meta.get("portal_domain") or "https://statelicensingreference.com"
 
 
 def resolve_vertical_url(slug: str, meta: dict) -> str:
@@ -80,7 +80,7 @@ def resolve_vertical_url(slug: str, meta: dict) -> str:
     if slug in overrides:
         return overrides[slug]
 
-    pattern = meta.get("vertical_domain_pattern") or "https://perdiem-{slug}.vercel.app"
+    pattern = meta.get("vertical_domain_pattern") or "https://{slug}.statelicensingreference.com"
     try:
         return pattern.format(slug=slug)
     except KeyError as exc:

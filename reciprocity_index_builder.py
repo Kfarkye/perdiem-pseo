@@ -652,7 +652,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   </div>
   <div class="nav-links">
     <a href="/">All States</a>
-    <a href="https://perdiem-portal.vercel.app">All Specialties</a>
+    <a href="https://statelicensingreference.com">All Specialties</a>
     <a href="#how-to-use">How It Works</a>
   </div>
 </nav>

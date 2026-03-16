@@ -53,7 +53,7 @@ for json_file in sorted(JSON_DIR.glob("*.json")):
         STATE_NAME_TO_ABBR = {"Alabama":"AL","Alaska":"AK","Arizona":"AZ","Arkansas":"AR","California":"CA","Colorado":"CO","Connecticut":"CT","Delaware":"DE","Florida":"FL","Georgia":"GA","Hawaii":"HI","Idaho":"ID","Illinois":"IL","Indiana":"IN","Iowa":"IA","Kansas":"KS","Kentucky":"KY","Louisiana":"LA","Maine":"ME","Maryland":"MD","Massachusetts":"MA","Michigan":"MI","Minnesota":"MN","Mississippi":"MS","Missouri":"MO","Montana":"MT","Nebraska":"NE","Nevada":"NV","New Hampshire":"NH","New Jersey":"NJ","New Mexico":"NM","New York":"NY","North Carolina":"NC","North Dakota":"ND","Ohio":"OH","Oklahoma":"OK","Oregon":"OR","Pennsylvania":"PA","Rhode Island":"RI","South Carolina":"SC","South Dakota":"SD","Tennessee":"TN","Texas":"TX","Utah":"UT","Vermont":"VT","Virginia":"VA","Washington":"WA","West Virginia":"WV","Wisconsin":"WI","Wyoming":"WY","District of Columbia":"DC"}
         abbr = STATE_NAME_TO_ABBR.get(data['state_name'], '')
         hero_img = STATE_IMAGES.get(abbr, {})
-        out_path.write_text(template.render(**data, hero_image_url=hero_img.get('url',''), hero_image_alt=hero_img.get('alt','')), encoding="utf-8")
+        out_path.write_text(template.render(**data, site_domain=DOMAIN, hero_image_url=hero_img.get('url',''), hero_image_alt=hero_img.get('alt','')), encoding="utf-8")
     processing_time = data['reciprocity'].get('processing_time', 'TBD')
     requires_psv = data['reciprocity'].get('requires_psv', False)
     fee = data['reciprocity'].get('endorsement_fee', 0)
