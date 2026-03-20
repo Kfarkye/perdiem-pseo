@@ -118,10 +118,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.72fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 44px;
   align-items: stretch;
-  min-height: 380px;
+  min-height: 280px;
 }
 .hero-copy {
   max-width: 46rem;
@@ -145,84 +145,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: 19px;
   color: #444;
   margin: 0;
-}
-.hero-proofline {
-  margin: 18px 0 0;
-  font-size: 14px;
-  color: #6b6258;
-}
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px 18px;
-  margin-top: 22px;
-}
-.hero-actions a {
-  font-size: 14px;
-  color: #2b2b2b;
-  text-decoration: underline;
-  text-decoration-color: rgba(176, 138, 82, 0.34);
-  text-underline-offset: 4px;
-}
-.hero-actions a:hover {
-  text-decoration-color: rgba(176, 138, 82, 0.74);
-}
-
-.aside-card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 24px 24px 22px;
-  box-shadow: var(--shadow-card);
-}
-.hero-aside {
-  display: flex;
-  align-items: stretch;
-}
-.trend-card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.aside-label {
-  margin: 0 0 14px;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #7c7267;
-}
-.aside-meta {
-  margin-top: 16px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  font-size: 13px;
-  color: #7b7166;
-}
-.popular-links {
-  display: grid;
-  gap: 10px;
-}
-.popular-links a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 12px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  font-size: 15px;
-  color: #282828;
-}
-.popular-links a:first-child {
-  border-top: 0;
-  padding-top: 0;
-}
-.popular-links a:hover {
-  color: var(--link);
-}
-.popular-links svg {
-  flex: 0 0 auto;
-  color: #a79b8f;
 }
 
 .search-wrap {
@@ -595,7 +517,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <a href="{{ domain }}/" class="site-nav-brand">State Licensing Reference</a>
     <div class="site-nav-links">
       <a href="#state-jump">Search by state</a>
-      <a href="#trending-states">Trending states</a>
       <a href="#about">Methodology</a>
     </div>
   </div>
@@ -606,23 +527,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <div class="hero-copy">
       <p class="hero-kicker">Licensing Hub</p>
       <h1>State-by-state licensing requirements.</h1>
-      <p class="hero-sub">Board links, fees, timelines, fingerprinting, and required steps by state.</p>
     </div>
-
-    <aside class="hero-aside" id="trending-states" aria-label="Trending states">
-      <section class="aside-card trend-card">
-        <p class="aside-label">Trending states</p>
-        <div class="popular-links">
-          {% for guide in popular_guides %}
-          <a href="{{ guide.url }}">
-            <span>{{ guide.label }}</span>
-            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg>
-          </a>
-          {% endfor %}
-        </div>
-        <p class="aside-meta">Commonly accessed state guides.</p>
-      </section>
-    </aside>
   </div>
 </header>
 
@@ -650,7 +555,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           <option value="{{ option.label }}"></option>
           {% endfor %}
         </datalist>
-        <p class="search-examples">Popular starts: <a href="{{ domain }}/texas-pt">Texas PT</a> · <a href="{{ domain }}/florida-ot">Florida OT</a> · <a href="{{ domain }}/california-pharmacist">California Pharmacist</a></p>
       </section>
     </div>
   </div>
@@ -676,33 +580,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     </article>
   </section>
 
-  <section class="directory-shell" id="professions" aria-label="Profession directory">
-    <div class="directory-head">
-      <div>
-        <p class="section-kicker">Specialties</p>
-        <p class="grid-title">Specialty directories</p>
-      </div>
-      <span class="directory-note">Direct links by specialty.</span>
-    </div>
-    <div class="profession-grid" id="professionGrid">
-      {% for card in cards %}
-      <a class="profession-card" href="{{ card.url }}" data-profession="{{ card.title_full | lower }}" aria-label="Open {{ card.title_full }} licensing guides">
-        <span class="card-body">
-          <span class="card-title">{{ card.title_full }}</span>
-          <span class="card-meta">
-            <span>{{ card.credential }}</span>
-            <span class="card-meta-divider" aria-hidden="true">&bull;</span>
-            <span>{{ card.exam }}</span>
-          </span>
-        </span>
-        <span class="card-chevron" aria-hidden="true">
-          <svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg>
-        </span>
-      </a>
-      {% endfor %}
-    </div>
-  </section>
-
 </main>
 
 <div class="foot-wrapper">
@@ -710,14 +587,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <div>
       <h2>About This Hub</h2>
       <p>State Licensing Reference is an independent resource for travel clinicians comparing licensing paths across the United States.</p>
-    </div>
-    <div>
-      <h2>Professions</h2>
-      <ul class="foot-links">
-        {% for card in foot_cards %}
-        <li><a href="{{ card.url }}">{{ card.title_plural }}</a></li>
-        {% endfor %}
-      </ul>
       <span class="foot-meta">Updated &bull; {{ today }}</span>
     </div>
   </footer>
