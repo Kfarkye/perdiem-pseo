@@ -517,7 +517,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <a href="{{ domain }}/" class="site-nav-brand">State Licensing Reference</a>
     <div class="site-nav-links">
       <a href="#specialty-jump">Specialties</a>
-      <a href="#about">Methodology</a>
+      <a href="#about">About</a>
     </div>
   </div>
 </nav>
@@ -549,28 +549,34 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 </div>
 
 <main class="content">
-  <section class="features feature-shell" id="about">
-    <article class="feature-card">
-      <h3>Timing and fees</h3>
-      <p>Fees and processing timelines by state.</p>
-    </article>
-    <article class="feature-card">
-      <h3>Fingerprinting and forms</h3>
-      <p>Fingerprinting, verification, and required application documents.</p>
-    </article>
-    <article class="feature-card">
-      <h3>Primary board links</h3>
-      <p>Primary state board links and contact details.</p>
-    </article>
-    <article class="feature-card">
-      <h3>Renewal and state rules</h3>
-      <p>Renewal cycle and state-specific licensing requirements.</p>
-    </article>
+  <section class="directory-shell" id="professions" aria-label="Profession directory">
+    <div class="directory-head">
+      <div>
+        <p class="grid-title">Specialties</p>
+      </div>
+    </div>
+    <div class="profession-grid">
+      {% for card in cards %}
+      <a class="profession-card" href="{{ card.url }}" aria-label="Open {{ card.title_full }} licensing guides">
+        <span class="card-body">
+          <span class="card-title">{{ card.title_full }}</span>
+          <span class="card-meta">
+            <span>{{ card.credential }}</span>
+            <span class="card-meta-divider" aria-hidden="true">&bull;</span>
+            <span>{{ card.exam }}</span>
+          </span>
+        </span>
+        <span class="card-chevron" aria-hidden="true">
+          <svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
   </section>
 
 </main>
 
-<div class="foot-wrapper">
+<div class="foot-wrapper" id="about">
   <footer class="foot">
     <div>
       <h2>About This Hub</h2>
