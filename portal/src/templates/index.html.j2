@@ -72,7 +72,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   position: sticky;
   top: 0;
   z-index: 100;
-  height: 58px;
+  min-height: 64px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -95,26 +95,37 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-weight: 600;
   color: #555;
 }
-.site-nav-links {
+.site-nav-tools {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
 }
-.site-nav-links a {
+.site-nav-tools .search-select {
+  width: 280px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.site-nav-tools .search-submit {
+  height: 36px;
+  border-radius: 10px;
+  padding: 0 12px;
   font-size: 13px;
-  color: #888;
-  padding: 6px 0;
-  border-bottom: 1px solid transparent;
 }
-.site-nav-links a:hover {
+.site-nav-about {
+  font-size: 13px;
+  color: #777;
+  padding: 6px 2px;
+}
+.site-nav-about:hover {
   color: #333;
-  border-color: rgba(176, 138, 82, 0.48);
 }
 
 .hero-wrapper {
   max-width: var(--shell);
   margin: 0 auto;
-  padding: 92px 24px 56px;
+  padding: 72px 24px 56px;
 }
 .hero-grid {
   display: grid;
@@ -446,10 +457,30 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 @media (max-width: 760px) {
-  .site-nav-links { display: none; }
+  .site-nav {
+    min-height: auto;
+    padding: 8px 0;
+  }
+  .site-nav-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .site-nav-tools {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+  }
+  .site-nav-tools .search-select {
+    width: 100%;
+  }
+  .site-nav-about {
+    display: none;
+  }
   .hero-wrapper { padding: 46px 16px 28px; }
   .site-nav-inner,
-  .search-wrap,
   .content,
   .foot-wrapper {
     padding-left: 16px;
@@ -515,9 +546,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 <nav class="site-nav" aria-label="Site navigation">
   <div class="site-nav-inner">
     <a href="{{ domain }}/" class="site-nav-brand">State Licensing Reference</a>
-    <div class="site-nav-links">
-      <a href="#specialty-jump">Specialties</a>
-      <a href="#about">About</a>
+    <div class="site-nav-tools">
+      <select id="specialtySelect" class="search-select" aria-label="Choose specialty">
+        {% for card in cards %}
+        <option value="{{ card.slug }}">{{ card.title_full }}</option>
+        {% endfor %}
+      </select>
+      <button id="specialtyOpenButton" class="search-submit" type="button">Open</button>
+      <a href="#about" class="site-nav-about">About</a>
     </div>
   </div>
 </nav>
@@ -526,27 +562,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   <div class="hero-grid">
     <div class="hero-copy">
       <p class="hero-kicker">Licensing Hub</p>
-      <h1>State-by-state licensing requirements.</h1>
+      <h1>State by State</h1>
     </div>
   </div>
 </header>
-
-<div class="search-wrap" id="search">
-  <div class="search-inner">
-    <div class="search-grid">
-      <section class="search-panel" id="specialty-jump" aria-label="Choose specialty">
-        <div class="search-actions-stacked">
-          <select id="specialtySelect" class="search-select" aria-label="Choose specialty">
-            {% for card in cards %}
-            <option value="{{ card.slug }}">{{ card.title_full }}</option>
-            {% endfor %}
-          </select>
-          <button id="specialtyOpenButton" class="search-submit" type="button">Open specialty</button>
-        </div>
-      </section>
-    </div>
-  </div>
-</div>
 
 <main class="content">
   <section class="directory-shell" id="professions" aria-label="Profession directory">
