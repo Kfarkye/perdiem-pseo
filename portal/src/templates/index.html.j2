@@ -141,7 +141,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   margin-bottom: 14px;
 }
 .hero-sub {
-  max-width: 39ch;
+  max-width: 42ch;
   font-size: 19px;
   color: #444;
   margin: 0;
@@ -239,7 +239,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .search-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.92fr);
   gap: 18px;
 }
 .search-panel {
@@ -272,6 +272,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .search-actions {
   display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.search-actions-stacked {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.95fr) auto;
   gap: 10px;
   align-items: center;
 }
@@ -353,8 +359,11 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .content {
   max-width: var(--shell);
-  margin: 30px auto 0;
+  margin: 34px auto 0;
   padding: 0 24px 72px;
+}
+.feature-shell {
+  margin-bottom: 34px;
 }
 .directory-shell {
   border: 1px solid var(--line);
@@ -370,6 +379,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   gap: 12px;
   padding: 20px 24px 18px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.section-kicker {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7c7267;
+  margin: 0 0 12px;
 }
 .grid-title {
   font-size: 11px;
@@ -562,7 +578,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .search-grid {
     grid-template-columns: 1fr;
   }
-  .search-actions {
+  .search-actions,
+  .search-actions-stacked {
+    grid-template-columns: 1fr;
     flex-direction: column;
     align-items: stretch;
   }
@@ -577,7 +595,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <a href="{{ domain }}/" class="site-nav-brand">State Licensing Reference</a>
     <div class="site-nav-links">
       <a href="#state-jump">Search by state</a>
-      <a href="#professions">Professions</a>
+      <a href="#trending-states">Trending states</a>
+      <a href="#professions">Browse professions</a>
       <a href="#about">What You’ll Find</a>
     </div>
   </div>
@@ -587,13 +606,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   <div class="hero-grid">
     <div class="hero-copy">
       <p class="hero-kicker">For travel clinicians</p>
-      <h1>Find the licensing steps before the contract starts.</h1>
-      <p class="hero-sub">Open your profession or start with your state, then get the licensing path, cost, fingerprinting, and board source without digging around.</p>
-      <p class="hero-proofline">Board links on every guide, with fees and timing where we can verify them cleanly.</p>
+      <h1>Choose the state for your next contract.</h1>
+      <p class="hero-sub">You already know your specialty. Start with the destination to check fees, timing, fingerprinting, and board steps before your start date gets tight.</p>
+      <p class="hero-proofline">Board links on every guide, plus fee and timing details when we've confirmed them with the board.</p>
       <div class="hero-actions">
         <a href="#state-jump">Search by state</a>
-        <a href="#search">Search professions</a>
         <a href="#trending-states">Open trending states</a>
+        <a href="#professions">Browse professions</a>
         <a href="#about">See what you’ll find</a>
       </div>
     </div>
@@ -609,7 +628,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           </a>
           {% endfor %}
         </div>
-        <p class="aside-meta">Open one of the busiest state guides, then switch professions or compare nearby states.</p>
+        <p class="aside-meta">Start with one of the states clinicians check most often, then switch professions or compare nearby states.</p>
       </section>
     </aside>
   </div>
@@ -618,26 +637,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 <div class="search-wrap" id="search">
   <div class="search-inner">
     <div class="search-grid">
-      <section class="search-panel" aria-label="Search by profession">
-        <div class="search-copy">
-          <span class="search-title">Start with a profession.</span>
-          <span class="search-note">Then choose your state inside the guide you open.</span>
-        </div>
-        <div class="search-field" role="search">
-          <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
-          <input id="professionSearch" class="search-input" type="text" placeholder="Try PT, OT, dietitian, or pharmacist" aria-label="Search professions" autocomplete="off" spellcheck="false">
-          <button class="search-clear" id="searchClear" aria-label="Clear search">
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
-          </button>
-        </div>
-        <p class="search-examples">Jump straight in: <a href="{{ domain }}/pt">PT</a> · <a href="{{ domain }}/ot">OT</a> · <a href="{{ domain }}/dietitian">Dietitian</a> · <a href="{{ domain }}/pharmacist">Pharmacist</a></p>
-      </section>
       <section class="search-panel" id="state-jump" aria-label="Search by state">
         <div class="search-copy">
-          <span class="search-title">Start with a state.</span>
-          <span class="search-note">Pick a state, then jump straight into the right specialty guide.</span>
+          <span class="search-title">Start with the state.</span>
+          <span class="search-note">Then choose your profession and open the guide you actually need.</span>
         </div>
-        <div class="search-actions">
+        <div class="search-actions-stacked">
           <div class="search-field">
             <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
             <input id="stateJumpSearch" class="search-input" type="text" placeholder="Try Texas, Florida, or California" aria-label="Search states" list="stateOptions" autocomplete="off" spellcheck="false">
@@ -656,15 +661,51 @@ a:focus-visible, button:focus-visible, input:focus-visible {
         </datalist>
         <p class="search-examples">Popular starts: <a href="{{ domain }}/texas-pt">Texas PT</a> · <a href="{{ domain }}/florida-ot">Florida OT</a> · <a href="{{ domain }}/california-pharmacist">California Pharmacist</a></p>
       </section>
+      <section class="search-panel" aria-label="Browse by profession">
+        <div class="search-copy">
+          <span class="search-title">Need the profession index instead?</span>
+          <span class="search-note">Use this when you know your specialty but you’re still comparing destinations.</span>
+        </div>
+        <div class="search-field" role="search">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
+          <input id="professionSearch" class="search-input" type="text" placeholder="Try PT, OT, dietitian, or pharmacist" aria-label="Search professions" autocomplete="off" spellcheck="false">
+          <button class="search-clear" id="searchClear" aria-label="Clear search">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
+          </button>
+        </div>
+        <p class="search-examples">Jump straight to a directory: <a href="{{ domain }}/pt">PT</a> · <a href="{{ domain }}/ot">OT</a> · <a href="{{ domain }}/dietitian">Dietitian</a> · <a href="{{ domain }}/pharmacist">Pharmacist</a></p>
+      </section>
     </div>
   </div>
 </div>
 
-<main class="content" id="professions">
-  <section class="directory-shell" aria-label="Profession directory">
+<main class="content">
+  <section class="features feature-shell" id="about">
+    <article class="feature-card">
+      <h3>Timing and fees</h3>
+      <p>See what the state usually asks for, how long the path takes, and where the delays tend to happen.</p>
+    </article>
+    <article class="feature-card">
+      <h3>Fingerprinting and forms</h3>
+      <p>Know which verifications, background steps, and application documents usually show up before you apply.</p>
+    </article>
+    <article class="feature-card">
+      <h3>Primary board links</h3>
+      <p>Every guide links back to the state board so you can verify the source yourself before a contract gets tight.</p>
+    </article>
+    <article class="feature-card">
+      <h3>Renewal and state rules</h3>
+      <p>Keep the renewal cycle, board contact details, and state-specific notes in one place once you land there.</p>
+    </article>
+  </section>
+
+  <section class="directory-shell" id="professions" aria-label="Profession directory">
     <div class="directory-head">
-      <p class="grid-title">Choose Your Profession</p>
-      <span class="directory-note">Open a profession to see all 50 states and DC in one place.</span>
+      <div>
+        <p class="section-kicker">Backup navigation</p>
+        <p class="grid-title">Browse by profession</p>
+      </div>
+      <span class="directory-note">Open a profession index if you’re still comparing multiple destinations.</span>
     </div>
     <div class="profession-grid" id="professionGrid">
       {% for card in cards %}
@@ -689,25 +730,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <h3>No Matches Found</h3>
     <p>Try adjusting your search term.</p>
   </div>
-
-  <section class="features" id="about">
-    <article class="feature-card">
-      <h3>Official board source</h3>
-      <p>Every guide links back to the state board so you can verify the source yourself.</p>
-    </article>
-    <article class="feature-card">
-      <h3>Fees and timing</h3>
-      <p>See what it costs, how long it usually takes, and where the hold-ups usually happen.</p>
-    </article>
-    <article class="feature-card">
-      <h3>Forms and fingerprinting</h3>
-      <p>Know which verifications, documents, and background steps usually show up before you apply.</p>
-    </article>
-    <article class="feature-card">
-      <h3>Renewal and state rules</h3>
-      <p>Keep the renewal cycle, board contacts, and state-specific notes in one place once you land there.</p>
-    </article>
-  </section>
 </main>
 
 <div class="foot-wrapper">
