@@ -161,7 +161,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .search-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.92fr);
+  grid-template-columns: 1fr;
   gap: 18px;
 }
 .search-panel {
@@ -199,7 +199,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .search-actions-stacked {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.95fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
   align-items: center;
 }
@@ -516,7 +516,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   <div class="site-nav-inner">
     <a href="{{ domain }}/" class="site-nav-brand">State Licensing Reference</a>
     <div class="site-nav-links">
-      <a href="#state-jump">Search by state</a>
+      <a href="#specialty-jump">Specialties</a>
       <a href="#about">Methodology</a>
     </div>
   </div>
@@ -534,24 +534,15 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 <div class="search-wrap" id="search">
   <div class="search-inner">
     <div class="search-grid">
-      <section class="search-panel" id="state-jump" aria-label="Search by state">
+      <section class="search-panel" id="specialty-jump" aria-label="Choose specialty">
         <div class="search-actions-stacked">
-          <div class="search-field">
-            <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
-            <input id="stateJumpSearch" class="search-input" type="text" placeholder="Try Texas, Florida, or California" aria-label="Search states" list="stateOptions" autocomplete="off" spellcheck="false">
-          </div>
-          <select id="stateProfessionSelect" class="search-select" aria-label="Choose a profession">
+          <select id="specialtySelect" class="search-select" aria-label="Choose specialty">
             {% for card in cards %}
             <option value="{{ card.slug }}">{{ card.title_full }}</option>
             {% endfor %}
           </select>
-          <button id="stateJumpButton" class="search-submit" type="button" disabled>Open guide</button>
+          <button id="specialtyOpenButton" class="search-submit" type="button">Open specialty</button>
         </div>
-        <datalist id="stateOptions">
-          {% for option in state_options %}
-          <option value="{{ option.label }}"></option>
-          {% endfor %}
-        </datalist>
       </section>
     </div>
   </div>
@@ -590,27 +581,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 </div>
 
 <script>
-const stateJumpSearch = document.getElementById('stateJumpSearch');
-const stateProfessionSelect = document.getElementById('stateProfessionSelect');
-const stateJumpButton = document.getElementById('stateJumpButton');
-const stateMap = new Map([
-  {% for option in state_options %}
-  ['{{ option.label | lower }}', '{{ option.slug }}'],
-  {% endfor %}
-]);
+const specialtySelect = document.getElementById('specialtySelect');
+const specialtyOpenButton = document.getElementById('specialtyOpenButton');
 
-function syncStateJump() {
-  const match = stateMap.get(stateJumpSearch.value.toLowerCase().trim());
-  stateJumpButton.disabled = !match;
-}
-
-stateJumpSearch.addEventListener('input', syncStateJump);
-stateJumpButton.addEventListener('click', () => {
-  const match = stateMap.get(stateJumpSearch.value.toLowerCase().trim());
-  if (!match) return;
-  window.location.href = `${window.location.origin}/${match}-${stateProfessionSelect.value}`;
+specialtyOpenButton.addEventListener('click', () => {
+  const slug = specialtySelect.value;
+  if (!slug) return;
+  window.location.href = `${window.location.origin}/${slug}`;
 });
-syncStateJump();
 </script>
 </body>
 </html>
