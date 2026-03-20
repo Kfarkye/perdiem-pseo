@@ -596,8 +596,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     <div class="site-nav-links">
       <a href="#state-jump">Search by state</a>
       <a href="#trending-states">Trending states</a>
-      <a href="#professions">Browse professions</a>
-      <a href="#about">What You’ll Find</a>
+      <a href="#about">Methodology</a>
     </div>
   </div>
 </nav>
@@ -608,12 +607,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
       <p class="hero-kicker">Licensing Hub</p>
       <h1>State-by-state licensing requirements.</h1>
       <p class="hero-sub">Board links, fees, timelines, fingerprinting, and required steps by state.</p>
-      <div class="hero-actions">
-        <a href="#state-jump">Search states</a>
-        <a href="#trending-states">Trending states</a>
-        <a href="#professions">Specialties</a>
-        <a href="#about">Methodology</a>
-      </div>
     </div>
 
     <aside class="hero-aside" id="trending-states" aria-label="Trending states">
@@ -627,7 +620,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           </a>
           {% endfor %}
         </div>
-        <p class="aside-meta">Start with one of the states clinicians check most often, then switch professions or compare nearby states.</p>
+        <p class="aside-meta">Commonly accessed state guides.</p>
       </section>
     </aside>
   </div>
@@ -639,7 +632,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
       <section class="search-panel" id="state-jump" aria-label="Search by state">
         <div class="search-copy">
           <span class="search-title">Start with the state.</span>
-          <span class="search-note">Then choose your profession and open the guide you actually need.</span>
         </div>
         <div class="search-actions-stacked">
           <div class="search-field">
@@ -659,20 +651,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
           {% endfor %}
         </datalist>
         <p class="search-examples">Popular starts: <a href="{{ domain }}/texas-pt">Texas PT</a> · <a href="{{ domain }}/florida-ot">Florida OT</a> · <a href="{{ domain }}/california-pharmacist">California Pharmacist</a></p>
-      </section>
-      <section class="search-panel" aria-label="Browse by profession">
-        <div class="search-copy">
-          <span class="search-title">Need the profession index instead?</span>
-          <span class="search-note">Use this when you know your specialty but you’re still comparing destinations.</span>
-        </div>
-        <div class="search-field" role="search">
-          <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
-          <input id="professionSearch" class="search-input" type="text" placeholder="Try PT, OT, dietitian, or pharmacist" aria-label="Search professions" autocomplete="off" spellcheck="false">
-          <button class="search-clear" id="searchClear" aria-label="Clear search">
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
-          </button>
-        </div>
-        <p class="search-examples">Jump straight to a directory: <a href="{{ domain }}/pt">PT</a> · <a href="{{ domain }}/ot">OT</a> · <a href="{{ domain }}/dietitian">Dietitian</a> · <a href="{{ domain }}/pharmacist">Pharmacist</a></p>
       </section>
     </div>
   </div>
@@ -701,10 +679,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   <section class="directory-shell" id="professions" aria-label="Profession directory">
     <div class="directory-head">
       <div>
-        <p class="section-kicker">Backup navigation</p>
-        <p class="grid-title">Browse by profession</p>
+        <p class="section-kicker">Specialties</p>
+        <p class="grid-title">Specialty directories</p>
       </div>
-      <span class="directory-note">Open a profession index if you’re still comparing multiple destinations.</span>
+      <span class="directory-note">Direct links by specialty.</span>
     </div>
     <div class="profession-grid" id="professionGrid">
       {% for card in cards %}
@@ -725,10 +703,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     </div>
   </section>
 
-  <div class="empty-state" id="emptyState" aria-live="polite">
-    <h3>No Matches Found</h3>
-    <p>Try adjusting your search term.</p>
-  </div>
 </main>
 
 <div class="foot-wrapper">
@@ -750,11 +724,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 </div>
 
 <script>
-const input = document.getElementById('professionSearch');
-const clearBtn = document.getElementById('searchClear');
-const cards = [...document.querySelectorAll('.profession-card')];
-const grid = document.getElementById('professionGrid');
-const emptyState = document.getElementById('emptyState');
 const stateJumpSearch = document.getElementById('stateJumpSearch');
 const stateProfessionSelect = document.getElementById('stateProfessionSelect');
 const stateJumpButton = document.getElementById('stateJumpButton');
@@ -763,26 +732,6 @@ const stateMap = new Map([
   ['{{ option.label | lower }}', '{{ option.slug }}'],
   {% endfor %}
 ]);
-
-function applyFilter() {
-  const q = input.value.toLowerCase().trim();
-  clearBtn.style.display = q ? 'flex' : 'none';
-  let shown = 0;
-  for (const card of cards) {
-    const match = card.dataset.profession.includes(q);
-    card.style.display = match ? '' : 'none';
-    if (match) shown++;
-  }
-  grid.style.display = shown > 0 ? '' : 'none';
-  emptyState.style.display = shown === 0 ? 'block' : 'none';
-}
-
-input.addEventListener('input', () => requestAnimationFrame(applyFilter));
-clearBtn.addEventListener('click', () => {
-  input.value = '';
-  input.focus();
-  requestAnimationFrame(applyFilter);
-});
 
 function syncStateJump() {
   const match = stateMap.get(stateJumpSearch.value.toLowerCase().trim());
