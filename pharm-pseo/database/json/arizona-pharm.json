@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-18",
   "seo": {
     "title": "Arizona Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Arizona - compact status, endorsement steps, fees, and processing time.",
@@ -29,12 +29,12 @@
     "url": "https://pharmacy.az.gov/"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "total_fee": "$82",
+    "fee_breakdown": "$82 pharmacy technician license application fee",
+    "renewal_fee": "$72",
+    "renewal_cycle": "See board",
+    "processing_time": "Not published by board",
+    "license_duration": "See board"
   },
   "license_types": [
     {
@@ -71,7 +71,7 @@
   "faqs": [
     {
       "question": "How much does a Arizona pharmacy technician license cost?",
-      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      "answer": "The Arizona State Board of Pharmacy lists an $82 pharmacy technician application fee and a $72 renewal fee."
     },
     {
       "question": "Is national certification required?",
@@ -83,11 +83,11 @@
     },
     {
       "question": "How long does it take to transfer my pharmacy technician license to Arizona?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      "answer": "The Arizona State Board of Pharmacy does not publish a public pharmacy technician processing timeline on its licensing page. Use the board's application status tools to check progress."
     },
     {
       "question": "Can I start working in Arizona while my endorsement application is processing?",
-      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+      "answer": "The Arizona State Board of Pharmacy does not publish a public pharmacy technician processing timeline on its licensing page. Use the board's application status tools to check progress."
     }
   ],
   "compact": {
@@ -97,10 +97,10 @@
     "compact_source_url": ""
   },
   "fees_endorsement": {
-    "app_fee": "$100",
-    "background_check_fee": "$0 (included in application)",
+    "app_fee": "$82",
+    "background_check_fee": "Fingerprint clearance card fee paid separately",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$82 plus fingerprint clearance card costs"
   },
   "temp_license": {
     "available": true,
@@ -108,8 +108,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://pharmacy.az.gov/",
+  "last_verified_date": "2026-03-18",
+  "board_source_url": "https://pharmacy.az.gov/technician-license-information",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -122,13 +122,26 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 82,
+    "processing_time": "Not published by board",
     "processing_tier": "mid",
-    "board_url": "https://pharmacy.az.gov/",
-    "endorsement_url": "https://pharmacy.az.gov/",
+    "board_url": "https://pharmacy.az.gov/technician-license-information",
+    "endorsement_url": "https://pharmacy.az.gov/technician-license-information",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "arizona-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": false,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": false
+  },
+  "board_verification_sources": {
+    "fee": "https://pharmacy.az.gov/technician-license-information",
+    "timeline": "https://pharmacy.az.gov/technician-license-information"
+  }
 }

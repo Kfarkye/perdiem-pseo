@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-18",
   "seo": {
     "title": "Pennsylvania Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Pennsylvania - compact status, endorsement steps, fees, and processing time.",
@@ -29,11 +29,11 @@
     "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Pharmacy/Pages/default.aspx"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "total_fee": "$30",
+    "fee_breakdown": "$30 initial registration fee",
+    "renewal_fee": "$70",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Not published by board",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -71,7 +71,7 @@
   "faqs": [
     {
       "question": "How much does a Pennsylvania pharmacy technician license cost?",
-      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      "answer": "The Pennsylvania State Board of Pharmacy snapshot lists a $30 initial pharmacy technician registration fee and a $70 biennial renewal fee."
     },
     {
       "question": "Is national certification required?",
@@ -83,11 +83,11 @@
     },
     {
       "question": "How long does it take to transfer my pharmacy technician license to Pennsylvania?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      "answer": "Pennsylvania does not publish a pharmacy technician processing timeline on its public registration snapshot page. Check the board portal for status updates."
     },
     {
       "question": "Can I start working in Pennsylvania while my endorsement application is processing?",
-      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+      "answer": "Pennsylvania does not publish a pharmacy technician processing timeline on its public registration snapshot page. Check the board portal for status updates."
     }
   ],
   "compact": {
@@ -97,10 +97,10 @@
     "compact_source_url": ""
   },
   "fees_endorsement": {
-    "app_fee": "$100",
-    "background_check_fee": "$0 (included in application)",
+    "app_fee": "$30",
+    "background_check_fee": "See board if applicable",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$30"
   },
   "temp_license": {
     "available": true,
@@ -108,8 +108,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Pharmacy/Pages/default.aspx",
+  "last_verified_date": "2026-03-18",
+  "board_source_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -122,13 +122,27 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 30,
+    "processing_time": "Not published by board",
     "processing_tier": "mid",
-    "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Pharmacy/Pages/default.aspx",
-    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Pharmacy/Pages/default.aspx",
+    "board_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
+    "endorsement_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "pennsylvania-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": false,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": true
+  },
+  "board_verification_sources": {
+    "fee": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
+    "timeline": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
+    "renewal": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot"
+  }
 }

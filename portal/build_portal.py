@@ -23,53 +23,39 @@ ASSET_DIR = ROOT / "src" / "assets"
 TEMPLATE_NAME = "index.html.j2"
 TODAY = datetime.now().strftime("%Y-%m-%d")
 
-# Icons (SF Symbol-style SVG paths) for each profession.
-VERTICAL_ICONS = {
-    "dietitian": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c1.5 0 3-.3 4.3-.9"/><path d="M7 12.5c0-2.8 2.2-5 5-5s5 2.2 5 5"/><path d="M12 7.5V2"/><path d="M14.5 14.5l3-3"/><path d="M20 8l2 2-4 4"/></svg>',
-    "ot": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/><rect x="2" y="20" width="20" height="0" rx="0"/></svg>',
-    "pt": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M6.5 8a4 4 0 0 1 11 0"/><path d="M12 12v5"/><path d="M8 22l4-5 4 5"/></svg>',
-    "rrt": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg>',
-    "slp": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13z"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M5 12H2"/><path d="M22 12h-3"/></svg>',
-    "aud": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>',
-    "pharm": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.54.8a2 2 0 0 0 1.66.9H20a2 2 0 0 1 2 2v2"/><circle cx="17" cy="17" r="3"/><path d="M17 14v6"/><path d="M14 17h6"/></svg>',
-    "pharmacist": '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 6H4z"/><path d="M12 8v14"/><path d="M4 8h16"/><path d="M7 22h10"/><path d="M9 12h6"/><path d="M9 16h6"/></svg>',
-}
+# Unified single-host deployment uses root-host paths per specialty.
+VERTICAL_DOMAIN_OVERRIDES = {}
 
-# Accent colors per vertical (used for hover/active tint).
-VERTICAL_COLORS = {
-    "dietitian": "#34C759",
-    "ot": "#FF9F0A",
-    "pt": "#007AFF",
-    "rrt": "#5856D6",
-    "slp": "#FF2D55",
-    "aud": "#AF52DE",
-    "pharm": "#00C7BE",
-    "pharmacist": "#FF6B35",
-}
-
-# Canonical deployment URLs for each specialty project.
-VERTICAL_DOMAIN_OVERRIDES = {
-    "dietitian": "https://dietitian.statelicensingreference.com",
-    "ot": "https://ot.statelicensingreference.com",
-    "pt": "https://pt.statelicensingreference.com",
-    "slp": "https://slp.statelicensingreference.com",
-    "aud": "https://aud.statelicensingreference.com",
-    "rrt": "https://rt.statelicensingreference.com",
-    "pharm": "https://pharm.statelicensingreference.com",
-    "pharmacist": "https://pharmacist.statelicensingreference.com",
-}
+POPULAR_GUIDES = (
+    ("Michigan Dietitian", "/michigan-dietitian"),
+    ("North Carolina Dietitian", "/north-carolina-dietitian"),
+    ("Tennessee Dietitian", "/tennessee-dietitian"),
+    ("Montana Dietitian", "/montana-dietitian"),
+)
 
 
-def compact_badge(status: str) -> dict[str, str]:
-    if status == "active":
-        return {"label": "Compact Active", "variant": "active"}
-    if status == "enacted":
-        return {"label": "Compact Enacted", "variant": "enacted"}
-    return {"label": "No Compact", "variant": "none"}
+def load_state_options(root: Path, deployed_verticals: list[str]) -> list[dict[str, str]]:
+    for slug in deployed_verticals:
+        json_dir = root.parent / f"{slug}-pseo" / "database" / "json"
+        if not json_dir.exists():
+            continue
+
+        options = []
+        for json_file in sorted(json_dir.glob("*.json")):
+            data = json.loads(json_file.read_text(encoding="utf-8"))
+            options.append(
+                {
+                    "label": data["state_name"],
+                    "slug": data["state_slug"],
+                }
+            )
+        return sorted(options, key=lambda item: item["label"])
+
+    return []
 
 
 def resolve_portal_domain(meta: dict) -> str:
-    return meta.get("portal_domain") or "https://statelicensingreference.com"
+    return (meta.get("portal_domain") or "https://www.statelicensingreference.com").rstrip("/")
 
 
 def resolve_vertical_url(slug: str, meta: dict) -> str:
@@ -80,7 +66,7 @@ def resolve_vertical_url(slug: str, meta: dict) -> str:
     if slug in overrides:
         return overrides[slug]
 
-    pattern = meta.get("vertical_domain_pattern") or "https://{slug}.statelicensingreference.com"
+    pattern = meta.get("vertical_domain_pattern") or (resolve_portal_domain(meta) + "/{slug}")
     try:
         return pattern.format(slug=slug)
     except KeyError as exc:
@@ -92,6 +78,7 @@ def build() -> None:
     meta = profiles.get("_meta", {})
     deployed = meta.get("deployed_verticals", [])
     verticals = profiles.get("verticals", {})
+    state_options = load_state_options(ROOT, deployed)
 
     domain = resolve_portal_domain(meta)
 
@@ -108,17 +95,14 @@ def build() -> None:
             {
                 "slug": slug,
                 "url": url,
-                "color": VERTICAL_COLORS.get(slug, "#007AFF"),
-                "icon": VERTICAL_ICONS.get(slug, ""),
                 "title_full": identity["title_full"],
                 "title_plural": identity.get("title_plural", f"{identity['title_full']}s"),
                 "credential": identity["credential"],
                 "exam": regulatory["national_exam"],
-                "badge": compact_badge(regulatory.get("compact_status", "none")),
             }
         )
         sitemap_urls.append(
-            f"  <url><loc>{url}/</loc><lastmod>{TODAY}</lastmod><priority>0.9</priority></url>"
+            f"  <url><loc>{url}</loc><lastmod>{TODAY}</lastmod><priority>0.9</priority></url>"
         )
 
     env = Environment(
@@ -135,6 +119,11 @@ def build() -> None:
         cards=cards,
         deployed_count=len(deployed),
         foot_cards=cards,
+        state_options=state_options,
+        popular_guides=[
+            {"label": label, "url": f"{domain}{path}"}
+            for label, path in POPULAR_GUIDES
+        ],
     )
 
     DIST_DIR.mkdir(exist_ok=True)
@@ -143,7 +132,10 @@ def build() -> None:
     # favicon
     favicon_src = ASSET_DIR / "favicon.svg"
     if favicon_src.exists():
-        shutil.copy2(favicon_src, DIST_DIR / "favicon.svg")
+        shutil.copyfile(favicon_src, DIST_DIR / "favicon.svg")
+    social_card_src = ASSET_DIR / "social-card.svg"
+    if social_card_src.exists():
+        shutil.copyfile(social_card_src, DIST_DIR / "social-card.svg")
 
     # robots.txt + sitemap use the same canonical domain
     robots = f"User-agent: *\nAllow: /\n\nSitemap: {domain}/sitemap.xml\n"

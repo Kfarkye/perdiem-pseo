@@ -1,0 +1,51 @@
+{
+  "installCommand": "python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt",
+  "buildCommand": ". .venv/bin/activate && python3 build_unified.py",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "statelicensingreference.com"
+        }
+      ],
+      "destination": "https://www.statelicensingreference.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "statelicensingreference.com"
+        }
+      ],
+      "destination": "https://www.statelicensingreference.com/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}

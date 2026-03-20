@@ -3,15 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0">
-<title>Travel Healthcare Licensing Hub — Reciprocity, Compact & Endorsement Guides (2026)</title>
-<meta name="description" content="Traveler-first licensing hub: compare reciprocity, compact status, endorsement fees, and processing timelines for {{ deployed_count }} healthcare professions across all 50 states and DC.">
-<link rel="canonical" href="{{ domain }}/">
+<title>License Transfer by State — Endorsement Fees, Board Links & Timelines (2026)</title>
+<meta name="description" content="Find license transfer and endorsement requirements by state for {{ deployed_count }} travel healthcare professions. Compare board links, fees, fingerprinting, and timelines across all 50 states and DC.">
+<link rel="canonical" href="{{ domain }}">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#ffffff">
-<meta property="og:title" content="Travel Healthcare Licensing Hub — Reciprocity, Compact & Endorsement Guides (2026)">
-<meta property="og:description" content="Traveler-first licensing intelligence for healthcare clinicians moving state to state.">
+<meta property="og:title" content="License Transfer by State — Endorsement Fees, Board Links & Timelines (2026)">
+<meta property="og:description" content="Compare license transfer steps, fees, fingerprinting, and board links across all 50 states and DC.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{ domain }}/">
+<meta property="og:url" content="{{ domain }}">
+<meta property="og:image" content="{{ domain }}/social-card.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="License Transfer by State — Endorsement Fees, Board Links & Timelines (2026)">
+<meta name="twitter:description" content="Compare license transfer steps, fees, fingerprinting, and board links across all 50 states and DC.">
+<meta name="twitter:image" content="{{ domain }}/social-card.svg">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,16 +30,16 @@
   --line: #e5e1db;
   --link: #1a5f7a;
   --focus: rgba(26, 95, 122, 0.2);
-  --badge-active-bg: #e6f4e8;
-  --badge-active-txt: #2f7a3b;
-  --badge-enacted-bg: #fff3e3;
-  --badge-enacted-txt: #9a5b12;
-  --badge-none-bg: #f0f0f0;
-  --badge-none-txt: #777777;
+  --accent: #b08a52;
+  --accent-soft: rgba(176, 138, 82, 0.14);
+  --shell: 1120px;
+  --reading: 760px;
+  --shadow-soft: 0 18px 42px rgba(37, 29, 20, 0.06);
+  --shadow-card: 0 16px 34px rgba(37, 29, 20, 0.08);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+html { scroll-behavior: smooth; scroll-padding-top: 124px; }
 body {
   margin: 0;
   background: var(--bg);
@@ -42,11 +47,16 @@ body {
   font-family: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
-a { color: inherit; text-decoration: none; }
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
 button { font: inherit; border: 0; background: none; cursor: pointer; }
 ul { list-style: none; margin: 0; padding: 0; }
-h1, h2, h3, .stat-value {
+h1, h2, h3 {
   font-family: 'Source Serif 4', Georgia, serif;
   letter-spacing: -0.01em;
   line-height: 1.2;
@@ -62,19 +72,20 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   position: sticky;
   top: 0;
   z-index: 100;
-  height: 48px;
+  height: 58px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.82);
 }
 .site-nav-inner {
   width: 100%;
-  max-width: 920px;
+  max-width: var(--shell);
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,83 +94,185 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: 13px;
   font-weight: 600;
   color: #555;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 .site-nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
 }
 .site-nav-links a {
   font-size: 13px;
   color: #888;
+  padding: 6px 0;
+  border-bottom: 1px solid transparent;
 }
-.site-nav-links a:hover { color: #333; }
+.site-nav-links a:hover {
+  color: #333;
+  border-color: rgba(176, 138, 82, 0.48);
+}
 
 .hero-wrapper {
-  max-width: 640px;
+  max-width: var(--shell);
   margin: 0 auto;
-  padding: 48px 24px 24px;
+  padding: 92px 24px 56px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.72fr);
+  gap: 44px;
+  align-items: stretch;
+  min-height: 380px;
+}
+.hero-copy {
+  max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hero-kicker {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7c7267;
 }
 .hero-wrapper h1 {
-  font-size: clamp(30px, 4.8vw, 44px);
-  margin-bottom: 12px;
+  font-size: clamp(34px, 5vw, 52px);
+  margin-bottom: 14px;
 }
 .hero-sub {
-  font-size: 17px;
+  max-width: 39ch;
+  font-size: 19px;
   color: #444;
   margin: 0;
 }
-
-.stats-container {
-  margin-top: 24px;
+.hero-proofline {
+  margin: 18px 0 0;
+  font-size: 14px;
+  color: #6b6258;
+}
+.hero-actions {
   display: flex;
-  align-items: stretch;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  margin-top: 22px;
+}
+.hero-actions a {
+  font-size: 14px;
+  color: #2b2b2b;
+  text-decoration: underline;
+  text-decoration-color: rgba(176, 138, 82, 0.34);
+  text-underline-offset: 4px;
+}
+.hero-actions a:hover {
+  text-decoration-color: rgba(176, 138, 82, 0.74);
+}
+
+.aside-card {
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 16px;
+  border-radius: 24px;
+  padding: 24px 24px 22px;
+  box-shadow: var(--shadow-card);
 }
-.stat {
-  min-width: 0;
+.hero-aside {
+  display: flex;
+  align-items: stretch;
+}
+.trend-card {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.stat-value {
-  font-size: 26px;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-}
-.stat-label {
-  margin-top: 4px;
-  font-size: 12px;
+.aside-label {
+  margin: 0 0 14px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #666;
+  color: #7c7267;
 }
-.stat-divider {
-  width: 1px;
-  background: var(--line);
+.aside-meta {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 13px;
+  color: #7b7166;
+}
+.popular-links {
+  display: grid;
+  gap: 10px;
+}
+.popular-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 15px;
+  color: #282828;
+}
+.popular-links a:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.popular-links a:hover {
+  color: var(--link);
+}
+.popular-links svg {
+  flex: 0 0 auto;
+  color: #a79b8f;
 }
 
 .search-wrap {
-  max-width: 920px;
+  max-width: var(--shell);
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 .search-inner {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 22px;
   background: #fff;
-  padding: 12px;
+  padding: 16px;
+  box-shadow: var(--shadow-soft);
+}
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.search-panel {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  padding: 16px;
+  background: #fff;
+}
+.search-copy {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.search-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+.search-note {
+  font-size: 13px;
+  color: #7c7267;
 }
 .search-field {
   min-width: 0;
   position: relative;
   display: flex;
+  align-items: center;
+}
+.search-actions {
+  display: flex;
+  gap: 10px;
   align-items: center;
 }
 .search-icon {
@@ -170,9 +283,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .search-input {
   width: 100%;
-  height: 40px;
+  height: 44px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 0 38px;
   font-size: 15px;
   font-family: inherit;
@@ -180,6 +293,36 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   background: #fff;
 }
 .search-input::placeholder { color: #999; }
+.search-select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0 40px 0 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--text);
+  background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23888' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+.search-submit {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 12px;
+  background: #191919;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.search-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
 .search-clear {
   position: absolute;
   right: 9px;
@@ -193,121 +336,131 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   color: #999;
   background: #fff;
 }
+.search-examples {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: #7f766b;
+}
+.search-examples a {
+  color: #4a4641;
+  text-decoration: underline;
+  text-decoration-color: rgba(176, 138, 82, 0.28);
+  text-underline-offset: 3px;
+}
+.search-examples a:hover {
+  text-decoration-color: rgba(176, 138, 82, 0.7);
+}
 
 .content {
-  max-width: 920px;
-  margin: 26px auto 0;
-  padding: 0 16px 56px;
+  max-width: var(--shell);
+  margin: 30px auto 0;
+  padding: 0 24px 72px;
+}
+.directory-shell {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--paper);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.directory-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 24px 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 .grid-title {
   font-size: 11px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #777;
-  margin: 0 0 8px;
+  margin: 0;
+}
+.directory-note {
+  font-size: 13px;
+  color: #7c7267;
 }
 
 .profession-grid {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  overflow: hidden;
-  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  background: rgba(255, 255, 255, 0.72);
 }
 .profession-card {
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr) auto 20px;
+  grid-template-columns: minmax(0, 1fr) 20px;
   gap: 12px;
   align-items: center;
-  padding: 14px 12px;
-  border-top: 1px solid var(--line);
+  min-height: 116px;
+  padding: 24px 26px 22px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  background: transparent;
 }
-.profession-card:first-child { border-top: 0; }
-.profession-card:hover { background: var(--paper); }
+.profession-card:hover {
+  background: rgba(255, 255, 255, 0.72);
+}
+.profession-card:nth-child(odd) {
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+}
+.profession-card:nth-child(-n+2) {
+  border-top: 0;
+}
 
-.card-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--paper);
-  color: #444;
-}
-.card-icon svg {
-  width: 22px;
-  height: 22px;
-}
 .card-body {
   min-width: 0;
 }
 .card-title {
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 600;
   margin: 0;
 }
-.card-credential {
-  margin: 2px 0 0;
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0 0;
   font-size: 14px;
-  color: #555;
+  color: #5f5a53;
 }
-.card-exam {
-  margin: 3px 0 0;
-  font-size: 12px;
-  color: #777;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.compact-badge {
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 999px;
-  padding: 4px 8px;
-  white-space: nowrap;
-}
-.compact-badge.active {
-  background: var(--badge-active-bg);
-  color: var(--badge-active-txt);
-}
-.compact-badge.enacted {
-  background: var(--badge-enacted-bg);
-  color: var(--badge-enacted-txt);
-}
-.compact-badge.none {
-  background: var(--badge-none-bg);
-  color: var(--badge-none-txt);
+.card-meta-divider {
+  color: #b0a79d;
 }
 .card-chevron {
   display: flex;
   justify-content: flex-end;
   color: #9a9a9a;
+  align-self: center;
 }
 
 .empty-state {
   display: none;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 18px;
   background: var(--paper);
   padding: 32px 20px;
   text-align: center;
   margin-top: 12px;
+  box-shadow: var(--shadow-soft);
 }
 .empty-state h3 { font-size: 22px; margin: 0 0 6px; }
 .empty-state p { margin: 0; color: #666; }
 
 .features {
-  margin-top: 36px;
+  margin-top: 44px;
   display: grid;
-  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
 }
 .feature-card {
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 18px;
+  border-radius: 22px;
+  padding: 24px 24px 22px;
+  box-shadow: var(--shadow-soft);
 }
 .feature-card h3 {
   font-size: 20px;
@@ -321,14 +474,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .foot-wrapper {
   border-top: 1px solid var(--line);
-  padding: 32px 16px 40px;
+  padding: 44px 24px 60px;
 }
 .foot {
-  max-width: 920px;
+  max-width: var(--shell);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 28px;
+  gap: 48px;
 }
 .foot h2 {
   font-family: 'Source Serif 4', Georgia, serif;
@@ -356,33 +509,64 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 @media (max-width: 760px) {
   .site-nav-links { display: none; }
-  .hero-wrapper { padding: 36px 16px 20px; }
-  .stats-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  .hero-wrapper { padding: 46px 16px 28px; }
+  .site-nav-inner,
+  .search-wrap,
+  .content,
+  .foot-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  .stat-divider {
-    width: 100%;
-    height: 1px;
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    min-height: 0;
+  }
+  .hero-copy {
+    justify-content: flex-start;
+  }
+  .hero-actions {
+    gap: 10px 14px;
+  }
+  .directory-head {
+    display: block;
+    padding: 18px 16px 14px;
+  }
+  .directory-note {
+    display: block;
+    margin-top: 4px;
   }
   .profession-card {
-    grid-template-columns: 40px minmax(0, 1fr) 20px;
-    grid-template-areas:
-      "icon body chevron"
-      "icon badge chevron";
-    gap: 8px 10px;
+    grid-template-columns: minmax(0, 1fr) 20px;
+    gap: 10px;
+    min-height: 0;
+    padding: 18px 16px;
   }
-  .card-icon { grid-area: icon; }
-  .card-body { grid-area: body; }
-  .compact-badge {
-    grid-area: badge;
-    justify-self: start;
+  .profession-grid { grid-template-columns: 1fr; }
+  .profession-card:nth-child(odd) {
+    border-right: 0;
+  }
+  .profession-card:nth-child(2) {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
   }
   .card-chevron {
-    grid-area: chevron;
     align-self: center;
   }
+  .search-copy {
+    display: block;
+  }
+  .search-note {
+    display: block;
+    margin-top: 4px;
+  }
+  .search-grid {
+    grid-template-columns: 1fr;
+  }
+  .search-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .features { grid-template-columns: 1fr; }
   .foot { grid-template-columns: 1fr; }
 }
 </style>
@@ -390,70 +574,116 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 <body>
 <nav class="site-nav" aria-label="Site navigation">
   <div class="site-nav-inner">
-    <a href="{{ domain }}/" class="site-nav-brand">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b08a52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      State Licensing Reference
-    </a>
+    <a href="{{ domain }}/" class="site-nav-brand">State Licensing Reference</a>
     <div class="site-nav-links">
-      <a href="{{ domain }}/" aria-current="page">All Specialties</a>
+      <a href="#state-jump">Search by state</a>
       <a href="#professions">Professions</a>
-      <a href="#about">About</a>
+      <a href="#about">What You’ll Find</a>
     </div>
   </div>
 </nav>
 
 <header class="hero-wrapper">
-  <h1>Travel Healthcare Licensing Hub</h1>
-  <p class="hero-sub">Board-verified reciprocity, compact status, endorsement fees, and transfer timelines by profession.</p>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="hero-kicker">For travel clinicians</p>
+      <h1>Find the licensing steps before the contract starts.</h1>
+      <p class="hero-sub">Open your profession or start with your state, then get the licensing path, cost, fingerprinting, and board source without digging around.</p>
+      <p class="hero-proofline">Board links on every guide, with fees and timing where we can verify them cleanly.</p>
+      <div class="hero-actions">
+        <a href="#state-jump">Search by state</a>
+        <a href="#search">Search professions</a>
+        <a href="#trending-states">Open trending states</a>
+        <a href="#about">See what you’ll find</a>
+      </div>
+    </div>
 
-  <div class="stats-container">
-    <div class="stat">
-      <span class="stat-value">{{ deployed_count }}</span>
-      <span class="stat-label">Professions</span>
-    </div>
-    <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat">
-      <span class="stat-value">51</span>
-      <span class="stat-label">Jurisdictions</span>
-    </div>
-    <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat">
-      <span class="stat-value">400+</span>
-      <span class="stat-label">State Guides</span>
-    </div>
+    <aside class="hero-aside" id="trending-states" aria-label="Trending states">
+      <section class="aside-card trend-card">
+        <p class="aside-label">Trending states</p>
+        <div class="popular-links">
+          {% for guide in popular_guides %}
+          <a href="{{ guide.url }}">
+            <span>{{ guide.label }}</span>
+            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg>
+          </a>
+          {% endfor %}
+        </div>
+        <p class="aside-meta">Open one of the busiest state guides, then switch professions or compare nearby states.</p>
+      </section>
+    </aside>
   </div>
 </header>
 
-<div class="search-wrap">
+<div class="search-wrap" id="search">
   <div class="search-inner">
-    <div class="search-field" role="search">
-      <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
-      <input id="professionSearch" class="search-input" type="text" placeholder="Search professions..." aria-label="Search professions" autocomplete="off" spellcheck="false">
-      <button class="search-clear" id="searchClear" aria-label="Clear search">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
-      </button>
+    <div class="search-grid">
+      <section class="search-panel" aria-label="Search by profession">
+        <div class="search-copy">
+          <span class="search-title">Start with a profession.</span>
+          <span class="search-note">Then choose your state inside the guide you open.</span>
+        </div>
+        <div class="search-field" role="search">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
+          <input id="professionSearch" class="search-input" type="text" placeholder="Try PT, OT, dietitian, or pharmacist" aria-label="Search professions" autocomplete="off" spellcheck="false">
+          <button class="search-clear" id="searchClear" aria-label="Clear search">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
+          </button>
+        </div>
+        <p class="search-examples">Jump straight in: <a href="{{ domain }}/pt">PT</a> · <a href="{{ domain }}/ot">OT</a> · <a href="{{ domain }}/dietitian">Dietitian</a> · <a href="{{ domain }}/pharmacist">Pharmacist</a></p>
+      </section>
+      <section class="search-panel" id="state-jump" aria-label="Search by state">
+        <div class="search-copy">
+          <span class="search-title">Start with a state.</span>
+          <span class="search-note">Pick a state, then jump straight into the right specialty guide.</span>
+        </div>
+        <div class="search-actions">
+          <div class="search-field">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
+            <input id="stateJumpSearch" class="search-input" type="text" placeholder="Try Texas, Florida, or California" aria-label="Search states" list="stateOptions" autocomplete="off" spellcheck="false">
+          </div>
+          <select id="stateProfessionSelect" class="search-select" aria-label="Choose a profession">
+            {% for card in cards %}
+            <option value="{{ card.slug }}">{{ card.title_full }}</option>
+            {% endfor %}
+          </select>
+          <button id="stateJumpButton" class="search-submit" type="button" disabled>Open guide</button>
+        </div>
+        <datalist id="stateOptions">
+          {% for option in state_options %}
+          <option value="{{ option.label }}"></option>
+          {% endfor %}
+        </datalist>
+        <p class="search-examples">Popular starts: <a href="{{ domain }}/texas-pt">Texas PT</a> · <a href="{{ domain }}/florida-ot">Florida OT</a> · <a href="{{ domain }}/california-pharmacist">California Pharmacist</a></p>
+      </section>
     </div>
   </div>
 </div>
 
 <main class="content" id="professions">
-  <p class="grid-title">Choose Your Profession</p>
-  <div class="profession-grid" id="professionGrid">
-    {% for card in cards %}
-    <a class="profession-card" href="{{ card.url }}" data-profession="{{ card.title_full | lower }}" aria-label="Open {{ card.title_full }} licensing guides">
-      <span class="card-icon" aria-hidden="true">{{ card.icon | safe }}</span>
-      <span class="card-body">
-        <span class="card-title">{{ card.title_full }}</span>
-        <span class="card-credential">{{ card.credential }}</span>
-        <span class="card-exam">{{ card.exam }}</span>
-      </span>
-      <span class="compact-badge {{ card.badge.variant }}">{{ card.badge.label }}</span>
-      <span class="card-chevron" aria-hidden="true">
-        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg>
-      </span>
-    </a>
-    {% endfor %}
-  </div>
+  <section class="directory-shell" aria-label="Profession directory">
+    <div class="directory-head">
+      <p class="grid-title">Choose Your Profession</p>
+      <span class="directory-note">Open a profession to see all 50 states and DC in one place.</span>
+    </div>
+    <div class="profession-grid" id="professionGrid">
+      {% for card in cards %}
+      <a class="profession-card" href="{{ card.url }}" data-profession="{{ card.title_full | lower }}" aria-label="Open {{ card.title_full }} licensing guides">
+        <span class="card-body">
+          <span class="card-title">{{ card.title_full }}</span>
+          <span class="card-meta">
+            <span>{{ card.credential }}</span>
+            <span class="card-meta-divider" aria-hidden="true">&bull;</span>
+            <span>{{ card.exam }}</span>
+          </span>
+        </span>
+        <span class="card-chevron" aria-hidden="true">
+          <svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
 
   <div class="empty-state" id="emptyState" aria-live="polite">
     <h3>No Matches Found</h3>
@@ -462,16 +692,20 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
   <section class="features" id="about">
     <article class="feature-card">
-      <h3>Board-Verified Data</h3>
-      <p>Every fee, timeline, and requirement is sourced directly from official state boards.</p>
+      <h3>Official board source</h3>
+      <p>Every guide links back to the state board so you can verify the source yourself.</p>
     </article>
     <article class="feature-card">
-      <h3>Real Processing Windows</h3>
-      <p>See practical timeline ranges so you can plan contracts and start dates with less guesswork.</p>
+      <h3>Fees and timing</h3>
+      <p>See what it costs, how long it usually takes, and where the hold-ups usually happen.</p>
     </article>
     <article class="feature-card">
-      <h3>Compact vs Endorsement Clarity</h3>
-      <p>Quickly identify where compact privilege applies and where full endorsement is still required.</p>
+      <h3>Forms and fingerprinting</h3>
+      <p>Know which verifications, documents, and background steps usually show up before you apply.</p>
+    </article>
+    <article class="feature-card">
+      <h3>Renewal and state rules</h3>
+      <p>Keep the renewal cycle, board contacts, and state-specific notes in one place once you land there.</p>
     </article>
   </section>
 </main>
@@ -500,6 +734,14 @@ const clearBtn = document.getElementById('searchClear');
 const cards = [...document.querySelectorAll('.profession-card')];
 const grid = document.getElementById('professionGrid');
 const emptyState = document.getElementById('emptyState');
+const stateJumpSearch = document.getElementById('stateJumpSearch');
+const stateProfessionSelect = document.getElementById('stateProfessionSelect');
+const stateJumpButton = document.getElementById('stateJumpButton');
+const stateMap = new Map([
+  {% for option in state_options %}
+  ['{{ option.label | lower }}', '{{ option.slug }}'],
+  {% endfor %}
+]);
 
 function applyFilter() {
   const q = input.value.toLowerCase().trim();
@@ -520,6 +762,19 @@ clearBtn.addEventListener('click', () => {
   input.focus();
   requestAnimationFrame(applyFilter);
 });
+
+function syncStateJump() {
+  const match = stateMap.get(stateJumpSearch.value.toLowerCase().trim());
+  stateJumpButton.disabled = !match;
+}
+
+stateJumpSearch.addEventListener('input', syncStateJump);
+stateJumpButton.addEventListener('click', () => {
+  const match = stateMap.get(stateJumpSearch.value.toLowerCase().trim());
+  if (!match) return;
+  window.location.href = `${window.location.origin}/${match}-${stateProfessionSelect.value}`;
+});
+syncStateJump();
 </script>
 </body>
 </html>

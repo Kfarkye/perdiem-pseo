@@ -28,7 +28,15 @@
       --line: #e6e2dc;
       --ink: #1f1f1f;
       --muted: #6f6f6f;
+      --soft: #888888;
       --link: #1f6280;
+      --accent: #b08a52;
+      --accent-soft: rgba(176, 138, 82, 0.12);
+      --shell: 1120px;
+      --reading: 760px;
+      --hero-reading: 780px;
+      --shadow-soft: 0 18px 42px rgba(37, 29, 20, 0.06);
+      --shadow-hairline: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
     }
 
     html {
@@ -38,10 +46,10 @@
     }
 
     body {
-      font-family: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.7;
       background: var(--bg);
       color: var(--ink);
+      font-family: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
@@ -50,6 +58,37 @@
       color: var(--link);
       text-decoration-thickness: 1px;
       text-underline-offset: 2px;
+      transition: color 140ms ease, text-decoration-color 140ms ease;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Source Serif 4', Georgia, serif;
+      color: #191919;
+      letter-spacing: -0.01em;
+      line-height: 1.22;
+    }
+
+    h1 {
+      font-size: clamp(30px, 5vw, 40px);
+    }
+
+    h2 {
+      font-size: clamp(24px, 3.8vw, 30px);
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #313131;
     }
 
     .skip-link {
@@ -74,18 +113,18 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      height: 48px;
       background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-      height: 48px;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
     }
 
     .site-nav-inner {
-      max-width: 920px;
+      width: min(var(--shell), calc(100% - 48px));
       height: 48px;
       margin: 0 auto;
-      padding: 0 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -105,8 +144,6 @@
       align-items: center;
       gap: 20px;
       list-style: none;
-      margin: 0;
-      padding: 0;
     }
 
     .site-nav-links a {
@@ -124,20 +161,19 @@
       overflow: hidden;
       border-bottom: 1px solid var(--line);
       background: var(--paper);
-      margin-bottom: 24px;
+      margin-bottom: 40px;
     }
 
     .hero-with-image {
-      min-height: 340px;
+      min-height: 380px;
     }
 
     .hero-image {
       width: 100%;
-      height: min(54vh, 480px);
-      min-height: 320px;
+      height: min(58vh, 560px);
+      min-height: 360px;
       object-fit: cover;
       object-position: center 32%;
-      display: block;
     }
 
     .hero-fade {
@@ -145,17 +181,17 @@
       inset: 0;
       background: linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0) 40%,
-        rgba(255, 255, 255, 0.86) 76%,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.74) 68%,
+        rgba(255, 255, 255, 0.94) 84%,
         rgba(255, 255, 255, 1) 100%
       );
       pointer-events: none;
     }
 
     .hero-inner {
-      width: min(640px, 100%);
+      width: min(var(--hero-reading), calc(100% - 64px));
       margin: 0 auto;
-      padding: 24px 24px 32px;
       position: relative;
       z-index: 2;
     }
@@ -163,151 +199,270 @@
     .hero-with-image .hero-inner {
       position: absolute;
       left: 50%;
+      right: auto;
       bottom: 0;
       transform: translateX(-50%);
-      padding-bottom: 32px;
+      padding-bottom: 44px;
+    }
+
+    .hero-no-image .hero-inner {
+      padding: 72px 0 52px;
     }
 
     .state-label {
+      margin-bottom: 8px;
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #888;
-      margin-bottom: 8px;
-    }
-
-    h1, h2, h3 {
-      font-family: 'Source Serif 4', Georgia, serif;
-      color: #191919;
-      letter-spacing: -0.01em;
-      line-height: 1.25;
-    }
-
-    h1 {
-      font-size: clamp(28px, 5vw, 38px);
-      margin-bottom: 12px;
-    }
-
-    h2 {
-      font-size: clamp(22px, 3.6vw, 29px);
-      margin-bottom: 12px;
-    }
-
-    h3 {
-      font-size: 19px;
-      margin-bottom: 8px;
+      color: var(--soft);
     }
 
     .hero-sub {
+      margin-top: 12px;
       color: #444;
-      margin-bottom: 10px;
+      max-width: 39ch;
+      font-size: 18px;
     }
 
     .updated {
+      margin-top: 14px;
       font-size: 13px;
       color: #999;
+      letter-spacing: 0.01em;
     }
 
     #main-content {
-      max-width: 920px;
+      width: min(var(--shell), calc(100% - 48px));
       margin: 0 auto;
-      padding: 0 16px 80px;
+      padding-bottom: 104px;
     }
 
-    .content {
-      width: min(860px, 100%);
-      margin: 0 auto;
+    .page-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(272px, 320px);
+      gap: 56px;
+      align-items: start;
     }
 
-    .content section {
-      margin-bottom: 40px;
+    .content-column {
+      order: 1;
+      min-width: 0;
     }
 
-    .content p {
-      margin-bottom: 16px;
-      color: #333;
+    .context-rail {
+      order: 2;
+      min-width: 0;
     }
 
-    .facts-box {
+    .section-shell,
+    .section-shell-wide {
+      width: 100%;
+      margin: 0 0 64px;
+    }
+
+    .section-copy {
+      width: min(42rem, 100%);
+      margin-bottom: 18px;
+    }
+
+    .section-copy > * + * {
+      margin-top: 16px;
+    }
+
+    .section-kicker {
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8a7d6f;
+    }
+
+    .section-box {
       background: var(--paper);
       border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 24px;
-      margin-bottom: 24px;
+      border-radius: 18px;
+      padding: 28px 30px;
+      box-shadow: var(--shadow-soft), var(--shadow-hairline);
     }
 
-    .facts-box dl,
-    .quick-grid,
-    .board-grid,
-    .fees-grid {
+    .context-card {
+      position: sticky;
+      top: 82px;
+    }
+
+    .context-card h2 {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    .facts-grid {
       display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 8px 20px;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 14px 28px;
     }
 
-    .facts-box dt,
-    .quick-grid dt,
-    .board-grid dt,
-    .fees-grid dt {
+    .facts-grid dt {
+      font-size: 12px;
+      font-weight: 600;
+      color: #74695d;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .facts-grid dd {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.55;
+      color: #222;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .facts-grid-rail {
+      grid-template-columns: 1fr;
+      gap: 6px 0;
+    }
+
+    .facts-grid-rail dt {
+      margin-top: 12px;
+      font-size: 11px;
+      color: #8b7f72;
+    }
+
+    .facts-grid-rail dt:first-child {
+      margin-top: 0;
+    }
+
+    .facts-grid-rail dd {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ece6de;
+      font-size: 15px;
+      color: #1f1f1f;
+    }
+
+    .facts-grid-rail dd:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .context-links {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid #ece6de;
+    }
+
+    .context-links a {
       font-size: 14px;
       font-weight: 600;
-      color: #555;
+      text-decoration: none;
+      color: var(--link);
     }
 
-    .facts-box dd,
-    .quick-grid dd,
-    .board-grid dd,
-    .fees-grid dd {
-      font-size: 15px;
-      color: #222;
-      margin: 0;
+    .context-links a:hover {
+      text-decoration: underline;
+      text-decoration-color: rgba(31, 98, 128, 0.3);
     }
 
-    .from-board {
-      color: #777;
-      font-size: 13px;
-      margin-top: 10px;
+    .section-label {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #ece8e1;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #7a7065;
     }
 
     .steps {
       list-style: none;
       display: grid;
-      gap: 24px;
-      margin-top: 12px;
+      gap: 34px;
     }
 
     .steps li {
-      border-left: 2px solid #e0ddd8;
-      padding-left: 24px;
+      position: relative;
+      border-left: 2px solid #ddd2c3;
+      padding-left: 28px;
+    }
+
+    .steps li::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -7px;
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 0 6px var(--paper);
+    }
+
+    .step-kicker {
+      margin-bottom: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #a4a4a4;
     }
 
     .step-title {
-      font-family: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 17px;
+      margin-bottom: 8px;
+      font-size: 19px;
       font-weight: 600;
       color: #191919;
-      margin-bottom: 6px;
     }
 
     .docs {
-      padding-left: 18px;
+      list-style: none;
+      display: grid;
+      gap: 14px;
     }
 
     .docs li {
-      margin-bottom: 10px;
+      position: relative;
+      padding-left: 18px;
+      color: #2e2e2e;
+    }
+
+    .docs li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.72em;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #c3aa84;
     }
 
     details {
       border-bottom: 1px solid var(--line);
-      padding: 12px 0;
+      padding: 18px 0;
     }
 
     summary {
       cursor: pointer;
+      list-style: none;
       font-weight: 600;
       color: #222;
-      list-style: none;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 17px;
+    }
+
+    summary::after {
+      content: "+";
+      flex: 0 0 auto;
+      color: #8f8578;
+      font-size: 22px;
+      line-height: 1;
     }
 
     summary::-webkit-details-marker {
@@ -315,28 +470,96 @@
     }
 
     details[open] summary {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+    }
+
+    details[open] summary::after {
+      content: "−";
     }
 
     .source-note {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #ece8e1;
       font-size: 13px;
       color: #888;
-      border-top: 1px solid #eee;
-      padding-top: 10px;
-      margin-top: 6px;
+    }
+
+    .sources-list p + p {
+      margin-top: 10px;
+    }
+
+    .related-guides-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .related-guides-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px 26px;
+      box-shadow: var(--shadow-soft), var(--shadow-hairline);
+    }
+
+    .related-guides-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .related-guides-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      padding: 0;
+    }
+
+    .related-guides-list a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-color: rgba(31, 98, 128, 0.24);
+      text-underline-offset: 3px;
+    }
+
+    .related-guides-list a:hover {
+      text-decoration-color: rgba(31, 98, 128, 0.68);
     }
 
     .footer {
-      width: min(640px, 100%);
+      width: min(var(--reading), calc(100% - 48px));
       margin: 0 auto;
-      padding: 12px 24px 60px;
+      padding: 24px 0 80px;
       font-size: 13px;
-      color: #aaa;
       line-height: 1.6;
+      color: #aaa;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer p + p {
+      margin-top: 12px;
     }
 
     .footer a {
       color: #aaa;
+    }
+
+    @media (max-width: 980px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .context-rail {
+        order: 0;
+      }
+
+      .content-column {
+        order: 1;
+      }
+
+      .context-card {
+        position: static;
+      }
     }
 
     @media (max-width: 720px) {
@@ -353,31 +576,64 @@
         height: 44vh;
       }
 
-      .facts-box,
-      .content section {
-        margin-bottom: 32px;
+      .hero-with-image .hero-inner {
+        width: calc(100% - 32px);
+        padding-bottom: 24px;
       }
 
-      .facts-box dl,
-      .quick-grid,
-      .board-grid,
-      .fees-grid {
+      .hero-no-image .hero-inner {
+        width: calc(100% - 32px);
+        padding: 52px 0 34px;
+      }
+
+      #main-content {
+        width: calc(100% - 32px);
+      }
+
+      .section-shell,
+      .section-shell-wide {
+        margin-bottom: 44px;
+      }
+
+      .section-box {
+        padding: 20px;
+      }
+
+      .facts-grid {
         grid-template-columns: 1fr;
         gap: 4px;
       }
 
-      .facts-box dd,
-      .quick-grid dd,
-      .board-grid dd,
-      .fees-grid dd {
+      .facts-grid dd {
         margin-bottom: 10px;
+      }
+
+      .facts-grid-rail {
+        gap: 2px;
       }
 
       .steps li {
         padding-left: 16px;
       }
+
+      .footer {
+        width: calc(100% - 32px);
+        padding-bottom: 64px;
+      }
+
+      .related-guides-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
+  {% set fee_verified = board_verification.get('fee_verified', false) %}
+  {% set timeline_verified = board_verification.get('timeline_verified', false) %}
+  {% set renewal_fee_verified = board_verification.get('renewal_fee_verified', false) %}
+  {% set renewal_cycle_verified = board_verification.get('renewal_cycle_verified', false) %}
+  {% set background_check_fee_verified = board_verification.get('background_check_fee_verified', false) %}
+  {% set jurisprudence_fee_verified = board_verification.get('jurisprudence_fee_verified', false) %}
+  {% set total_estimated_cost_verified = board_verification.get('total_estimated_cost_verified', false) %}
+  {% set has_verified_board_data = fee_verified or timeline_verified or renewal_fee_verified or renewal_cycle_verified or background_check_fee_verified or jurisprudence_fee_verified or total_estimated_cost_verified %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -393,10 +649,13 @@
         "@type": "FAQPage",
         "mainEntity": [
           {% for faq in faqs %}
+          {% set question_text = faq.question | lower %}
+          {% set faq_is_cost = 'how much' in question_text or 'cost' in question_text or 'fee' in question_text %}
+          {% set faq_is_timeline = 'how long' in question_text or 'processing' in question_text or 'timeline' in question_text %}
           {
             "@type": "Question",
             "name": {{ faq.question | striptags | trim | tojson }},
-            "acceptedAnswer": {"@type": "Answer", "text": {{ faq.answer | striptags | trim | tojson }} }
+            "acceptedAnswer": {"@type": "Answer", "text": {% if verify_fee_and_timing_with_board and ((faq_is_cost and not fee_verified) or (faq_is_timeline and not timeline_verified)) %}{{ "Verify the current fee and processing timeline on the primary board page linked below. Those details are still being re-checked state by state for this specialty." | tojson }}{% else %}{{ faq.answer | striptags | trim | tojson }}{% endif %} }
           }{% if not loop.last %},{% endif %}
           {% endfor %}
         ]
@@ -413,27 +672,94 @@
       <a href="/" class="site-nav-brand">State Licensing Reference</a>
       <ul class="site-nav-links">
         <li><a href="/">All States</a></li>
-        <li><a href="https://statelicensingreference.com">All Specialties</a></li>
+        <li><a href="https://www.statelicensingreference.com">Specialties</a></li>
       </ul>
     </div>
   </nav>
 
   <header class="hero {% if hero_image_url %}hero-with-image{% else %}hero-no-image{% endif %}" aria-labelledby="hero-title">
     {% if hero_image_url %}
-      <img class="hero-image" src="{{ hero_image_url }}" alt="{{ hero_image_alt or (state_name ~ ' landscape') }}" loading="eager" />
+      <img class="hero-image" src="{{ hero_image_url }}" alt="{{ hero_image_alt or (state_name ~ ' landscape') }}" loading="eager" fetchpriority="high" />
       <div class="hero-fade"></div>
     {% endif %}
     <div class="hero-inner">
       <p class="state-label">{{ state_name }}</p>
-      <h1 id="hero-title">Getting Your {{ profession_name }} License in {{ state_name }}</h1>
+      <h1 id="hero-title">{{ state_name }} Pharmacy Tech License</h1>
       <p class="hero-sub">Here's what you need to know.</p>
       <p class="updated">Last updated {{ last_verified_date | default(last_updated, true) }} · Sources verified</p>
     </div>
   </header>
 
   <main id="main-content">
-    <div class="content">
-      <section id="reciprocity" aria-labelledby="reciprocity-heading">
+    <div class="page-layout">
+      <aside class="context-rail" aria-labelledby="quick-reference-heading">
+        <div class="section-box context-card">
+          <p class="section-kicker">Quick reference</p>
+          <h2 id="quick-reference-heading">At a glance</h2>
+          <dl class="facts-grid facts-grid-rail">
+            <dt>Endorsement fee</dt>
+            <dd>
+              {% if not reciprocity.license_required %}
+                $0
+              {% elif verify_fee_and_timing_with_board and not fee_verified %}
+                See board
+              {% else %}
+                {% if reciprocity.endorsement_fee is number %}
+                  {% if reciprocity.endorsement_fee == (reciprocity.endorsement_fee | int) %}${{ reciprocity.endorsement_fee | int }}{% else %}${{ '%.2f' | format(reciprocity.endorsement_fee) }}{% endif %}
+                {% else %}
+                  {{ reciprocity.endorsement_fee }}
+                {% endif %}
+              {% endif %}
+            </dd>
+
+            <dt>Processing time</dt>
+            <dd>
+              {% if not reciprocity.license_required %}
+                No state application
+              {% elif verify_fee_and_timing_with_board and not timeline_verified %}
+                See board
+              {% else %}
+                {{ reciprocity.processing_time }}
+              {% endif %}
+            </dd>
+
+            <dt>Renewal fee</dt>
+            <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_fee_verified else quick_facts.renewal_fee }}</dd>
+
+            <dt>Fingerprinting</dt>
+            <dd>{{ 'Required' if reciprocity.fingerprint_required else 'Not clearly required' }}</dd>
+
+            <dt>Board</dt>
+            <dd>{{ board.name }}</dd>
+
+            <dt>Path</dt>
+            <dd>
+              {% if reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
+                {{ reciprocity.compact_name }} active
+              {% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}
+                {{ reciprocity.compact_name }} enacted
+              {% else %}
+                Endorsement through {{ board.name }}
+              {% endif %}
+            </dd>
+          </dl>
+          <div class="context-links">
+            <a href="#endorsement">{% if reciprocity.license_required %}See the steps{% else %}See the checklist{% endif %}</a>
+            <a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">Primary board page</a>
+          </div>
+          {% if verify_fee_and_timing_with_board and has_verified_board_data %}
+            <p class="source-note">Board-checked {{ last_verified_date | default(last_updated, true) }}. Any field still marked "See board" has not been confirmed yet.</p>
+          {% elif verify_fee_and_timing_with_board %}
+            <p class="source-note">Fee and timing details are still being re-checked state by state. Use the board page before relying on a number.</p>
+          {% else %}
+            <p class="source-note">Last updated {{ last_verified_date | default(last_updated, true) }}.</p>
+          {% endif %}
+        </div>
+      </aside>
+      <div class="content-column">
+    <section id="reciprocity" class="section-shell" aria-labelledby="reciprocity-heading">
+      <div class="section-copy">
+        <p class="section-kicker">Start here</p>
         <h2 id="reciprocity-heading">Licensing Path</h2>
 
         {% if not reciprocity.license_required %}
@@ -447,129 +773,215 @@
         {% else %}
           <p>There is no active interstate compact route for {{ profession_name.lower() }} licensing in {{ state_name }}. Plan on endorsement through {{ board.name }}.</p>
         {% endif %}
+      </div>
+    </section>
 
-        <div class="facts-box">
-          <dl>
-            <dt>Endorsement fee</dt>
-            <dd>{% if reciprocity.license_required %}${{ reciprocity.endorsement_fee }}{% else %}$0{% endif %}</dd>
-            <dt>Processing time</dt>
-            <dd>{% if reciprocity.license_required %}{{ reciprocity.processing_time }}{% else %}No state application{% endif %}</dd>
-            <dt>Fingerprinting</dt>
-            <dd>{{ 'Required' if reciprocity.fingerprint_required else 'Not clearly required' }}</dd>
-            <dt>Temporary license</dt>
-            <dd>{% if reciprocity.license_required %}{{ 'Available' if reciprocity.temp_license_available else 'Not listed' }}{% else %}Not needed{% endif %}</dd>
-            <dt>Compact</dt>
-            <dd>
-              {% if reciprocity.compact_status == 'active' and reciprocity.state_is_member %}
-                {{ reciprocity.compact_name }} active in {{ state_name }}
-              {% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}
-                {{ reciprocity.compact_name }} enacted, not active yet
-              {% elif reciprocity.compact_status != 'none' %}
-                {{ reciprocity.compact_name }} not active for this state
-              {% else %}
-                No active compact path
-              {% endif %}
-            </dd>
-            <dt>Board</dt>
-            <dd>{{ board.name }}</dd>
-          </dl>
-          <p class="from-board">From the board</p>
-        </div>
-      </section>
-
-      <section id="endorsement" aria-labelledby="apply-heading">
+    <section id="endorsement" class="section-shell" aria-labelledby="apply-heading">
+      <div class="section-copy">
+        <p class="section-kicker">Process</p>
         <h2 id="apply-heading">{% if reciprocity.license_required %}Endorsement Steps{% else %}Readiness Steps{% endif %}</h2>
-        <ol class="steps">
-          {% for step in steps %}
-            <li>
-              <p class="step-title">{{ step.title }}</p>
-              <p>{{ step.description }}</p>
-            </li>
-          {% endfor %}
-        </ol>
-      </section>
+      </div>
 
-      <section id="quick-facts" aria-labelledby="quick-facts-heading">
-        <h2 id="quick-facts-heading">Quick Facts</h2>
-        <div class="facts-box">
-          <dl class="quick-grid">
-            <dt>Total fee</dt><dd>{{ quick_facts.total_fee }}</dd>
-            <dt>Processing time</dt><dd>{{ quick_facts.processing_time }}</dd>
-            <dt>Renewal fee</dt><dd>{{ quick_facts.renewal_fee }}</dd>
-            <dt>Renewal cycle</dt><dd>{{ quick_facts.renewal_cycle }}</dd>
-          </dl>
-        </div>
-      </section>
+      <ol class="steps">
+        {% for step in steps %}
+          <li>
+            <p class="step-kicker">Step {{ loop.index }}</p>
+            <p class="step-title">{{ step.title }}</p>
+            <p>{{ step.description }}</p>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
 
-      <section id="fees" aria-labelledby="fees-heading">
-        <h2 id="fees-heading">Fees</h2>
-        <div class="facts-box">
-          <dl class="fees-grid">
-            <dt>Application</dt><dd>{{ fees_endorsement.app_fee }}</dd>
-            <dt>Background check</dt><dd>{{ fees_endorsement.background_check_fee }}</dd>
-            <dt>Jurisprudence exam</dt><dd>{{ fees_endorsement.jurisprudence_exam_fee }}</dd>
-            <dt>Total estimated cost</dt><dd>{{ fees_endorsement.total_estimated_cost }}</dd>
-          </dl>
-        </div>
-      </section>
+    <section id="quick-facts" class="section-shell" aria-labelledby="quick-facts-heading">
+      <div class="section-copy">
+        <p class="section-kicker">Costs and timing</p>
+        <h2 id="quick-facts-heading">Fees and Renewal</h2>
+      </div>
 
-      <section id="license-types" aria-labelledby="license-types-heading">
+      <div class="section-box">
+        <dl class="facts-grid">
+          <dt>Total fee</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not fee_verified else quick_facts.total_fee }}</dd>
+
+          <dt>Processing time</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not timeline_verified else quick_facts.processing_time }}</dd>
+
+          <dt>Renewal fee</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_fee_verified else quick_facts.renewal_fee }}</dd>
+
+          <dt>Renewal cycle</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_cycle_verified else quick_facts.renewal_cycle }}</dd>
+
+          <dt>Application</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not fee_verified else fees_endorsement.app_fee }}</dd>
+
+          <dt>Background check</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not background_check_fee_verified else fees_endorsement.background_check_fee }}</dd>
+
+          <dt>Jurisprudence exam</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not jurisprudence_fee_verified else fees_endorsement.jurisprudence_exam_fee }}</dd>
+
+          <dt>Total estimated cost</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not total_estimated_cost_verified else fees_endorsement.total_estimated_cost }}</dd>
+        </dl>
+        {% if verify_fee_and_timing_with_board %}
+          {% if has_verified_board_data %}
+            <p class="source-note">Any fee field still marked "See board" has not been confirmed from the board yet.</p>
+          {% else %}
+            <p class="source-note">Fee and renewal details are still being checked against the board for this specialty. Verify the current amount before you apply.</p>
+          {% endif %}
+        {% endif %}
+      </div>
+    </section>
+
+    <section id="license-types" class="section-shell" aria-labelledby="license-types-heading">
+      <div class="section-copy">
+        <p class="section-kicker">License options</p>
         <h2 id="license-types-heading">License Types</h2>
-        {% for lt in license_types %}
-          <p><strong>{{ lt.title }}</strong>: {{ lt.description }}</p>
-        {% endfor %}
-      </section>
+      </div>
+      {% for lt in license_types %}
+        <p><strong>{{ lt.title }}</strong>: {{ lt.description }}</p>
+      {% endfor %}
+    </section>
 
-      <section id="documents" aria-labelledby="docs-heading">
+    <section id="documents" class="section-shell" aria-labelledby="docs-heading">
+      <div class="section-copy">
+        <p class="section-kicker">Paperwork</p>
         <h2 id="docs-heading">Required Documents</h2>
-        <ul class="docs">
-          {% for doc in documents %}
-            <li><strong>{{ doc.item }}</strong>{% if doc.detail %}: {{ doc.detail }}{% endif %}</li>
-          {% endfor %}
-        </ul>
-      </section>
-
-      <section id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Board Contact</h2>
-        <div class="facts-box">
-          <dl class="board-grid">
-            <dt>Board</dt><dd>{{ board.name }}</dd>
-            <dt>Department</dt><dd>{{ board.parent_dept }}</dd>
-            <dt>Phone</dt><dd>{{ board.phone if board.phone else 'See board portal' }}</dd>
-            <dt>Email</dt><dd>{{ board.email | replace('mailto:', '') if board.email else 'See board portal' }}</dd>
-            <dt>Board site</dt><dd><a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">{{ reciprocity.board_url or board.url }}</a></dd>
-            <dt>Compact source</dt><dd><a href="{{ compact.compact_source_url }}" target="_blank" rel="noopener">{{ compact.compact_source_url }}</a></dd>
-          </dl>
-          <p class="source-note">Source: <a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">Primary board website</a></p>
-        </div>
-      </section>
-
-      <section id="renewal" aria-labelledby="renewal-heading">
-        <h2 id="renewal-heading">Renewal</h2>
-        <p>Renewal fee is {{ quick_facts.renewal_fee }}. Renewal cycle: {{ quick_facts.renewal_cycle }}.</p>
-      </section>
-
-      <section id="faq" aria-labelledby="faq-heading">
-        <h2 id="faq-heading">{{ state_name }} {{ profession_name }} Licensing FAQ</h2>
-        {% for faq in faqs %}
-          <details>
-            <summary>{{ faq.question }}</summary>
-            <p>{{ faq.answer }}</p>
-          </details>
+      </div>
+      <ul class="docs">
+        {% for doc in documents %}
+          <li><strong>{{ doc.item }}</strong>{% if doc.detail %}: {{ doc.detail }}{% endif %}</li>
         {% endfor %}
-      </section>
+      </ul>
+    </section>
 
-      <section id="sources" aria-labelledby="sources-heading">
+    <section id="contact" class="section-shell" aria-labelledby="contact-heading">
+      <div class="section-copy">
+        <p class="section-kicker">Board contact</p>
+        <h2 id="contact-heading">Board Contact</h2>
+      </div>
+
+      <div class="section-box">
+        <dl class="facts-grid">
+          <dt>Board</dt>
+          <dd>{{ board.name }}</dd>
+
+          {% if board.parent_dept %}
+            <dt>Department</dt>
+            <dd>{{ board.parent_dept }}</dd>
+          {% endif %}
+
+          {% if board.phone %}
+            <dt>Phone</dt>
+            <dd>{{ board.phone }}</dd>
+          {% endif %}
+
+          {% if board.email %}
+            <dt>Email</dt>
+            <dd>{{ board.email | replace('mailto:', '') }}</dd>
+          {% endif %}
+
+          <dt>Board site</dt>
+          <dd><a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">Primary board page</a></dd>
+
+          {% if compact.compact_source_url %}
+            <dt>Compact source</dt>
+            <dd><a href="{{ compact.compact_source_url }}" target="_blank" rel="noopener">{{ compact.compact_name or "Compact status page" }}</a></dd>
+          {% endif %}
+        </dl>
+        <p class="source-note">Source: <a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">Primary board website</a></p>
+      </div>
+    </section>
+
+    <section id="renewal" class="section-shell" aria-labelledby="renewal-heading">
+      <div class="section-copy">
+        <p class="section-kicker">Renewal</p>
+        <h2 id="renewal-heading">Renewal</h2>
+        {% if verify_fee_and_timing_with_board and not (renewal_fee_verified or renewal_cycle_verified) %}
+          <p>Renewal details are still being checked against the board. Use the primary board link below before relying on a fee or cycle.</p>
+        {% elif verify_fee_and_timing_with_board %}
+          <p>Renewal fee is {{ quick_facts.renewal_fee if renewal_fee_verified else 'See board' }}. Renewal cycle: {{ quick_facts.renewal_cycle if renewal_cycle_verified else 'See board' }}.</p>
+        {% else %}
+          <p>Renewal fee is {{ quick_facts.renewal_fee }}. Renewal cycle: {{ quick_facts.renewal_cycle }}.</p>
+        {% endif %}
+      </div>
+    </section>
+
+    <section id="faq" class="section-shell" aria-labelledby="faq-heading">
+      <div class="section-copy">
+        <p class="section-kicker">Questions</p>
+        <h2 id="faq-heading">{{ state_name }} {{ profession_name }} Licensing FAQ</h2>
+      </div>
+      {% for faq in faqs %}
+        <details>
+          <summary>{{ faq.question }}</summary>
+          {% set question_text = faq.question | lower %}
+          {% set faq_is_cost = 'how much' in question_text or 'cost' in question_text or 'fee' in question_text %}
+          {% set faq_is_timeline = 'how long' in question_text or 'processing' in question_text or 'timeline' in question_text %}
+          {% if verify_fee_and_timing_with_board and ((faq_is_cost and not fee_verified) or (faq_is_timeline and not timeline_verified)) %}
+            <p>Verify the current fee and processing timeline on the primary board page linked below. Those details are still being re-checked state by state for this specialty.</p>
+          {% else %}
+            <p>{{ faq.answer }}</p>
+          {% endif %}
+        </details>
+      {% endfor %}
+    </section>
+
+    {% if same_state_specialties or nearby_state_links %}
+    <section id="related-guides" class="section-shell" aria-labelledby="related-guides-heading">
+      <div class="section-copy">
+        <p class="section-kicker">Next reads</p>
+        <h2 id="related-guides-heading">Keep Going</h2>
+      </div>
+      <div class="related-guides-grid">
+        {% if same_state_specialties %}
+        <article class="related-guides-card">
+          <h3>Also in {{ state_name }}</h3>
+          <ul class="related-guides-list">
+            {% for item in same_state_specialties %}
+            <li><a href="{{ item.url }}">{{ item.label }} licensing</a></li>
+            {% endfor %}
+          </ul>
+        </article>
+        {% endif %}
+        {% if nearby_state_links %}
+        <article class="related-guides-card">
+          <h3>Nearby state guides</h3>
+          <ul class="related-guides-list">
+            {% for item in nearby_state_links %}
+            <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+            {% endfor %}
+          </ul>
+        </article>
+        {% endif %}
+      </div>
+    </section>
+
+    {% endif %}
+
+    <section id="sources" class="section-shell" aria-labelledby="sources-heading">
+      <div class="section-copy sources-list">
+        <p class="section-kicker">Primary sources</p>
         <h2 id="sources-heading">Sources</h2>
         <p><a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">{{ board.name }}</a></p>
+        {% if board_verification_sources.get('fee') and board_verification_sources.get('fee') != (reciprocity.board_url or board.url) %}
+          <p><a href="{{ board_verification_sources.get('fee') }}" target="_blank" rel="noopener">Board fee schedule</a></p>
+        {% endif %}
+        {% if board_verification_sources.get('timeline') and board_verification_sources.get('timeline') != board_verification_sources.get('fee') and board_verification_sources.get('timeline') != (reciprocity.board_url or board.url) %}
+          <p><a href="{{ board_verification_sources.get('timeline') }}" target="_blank" rel="noopener">Board processing page</a></p>
+        {% endif %}
         {% if compact.compact_source_url %}<p><a href="{{ compact.compact_source_url }}" target="_blank" rel="noopener">{{ compact.compact_name }}</a></p>{% endif %}
-      </section>
+      </div>
+    </section>
+      </div>
     </div>
-
-    <footer class="footer">
-      <p>This page is maintained as a reference for {{ profession_name.lower() }}s and recruiters evaluating {{ state_name }} assignments.</p>
-      <p><a href="https://statelicensingreference.com">statelicensingreference.com</a></p>
-    </footer>
   </main>
+
+  <footer class="footer">
+    <p>This page is maintained as a reference for {{ profession_name.lower() }}s and recruiters evaluating {{ state_name }} assignments.</p>
+    <p><a href="https://www.statelicensingreference.com">statelicensingreference.com</a></p>
+  </footer>
 </body>
 </html>

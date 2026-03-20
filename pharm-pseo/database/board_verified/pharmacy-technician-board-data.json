@@ -1,0 +1,552 @@
+{
+  "_meta": {
+    "specialty": "pharm",
+    "verified_date": "2026-03-18",
+    "description": "Primary-board fee and timeline overrides for pharmacy technician state pages."
+  },
+  "states": {
+    "california-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml",
+      "sources": {
+        "fee": "https://pharmacy.ca.gov/about/fee_schedule.shtml",
+        "timeline": "https://www.pharmacy.ca.gov/applicants/tch.shtml"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": false
+      },
+      "quick_facts": {
+        "total_fee": "$120",
+        "fee_breakdown": "$120 pharmacy technician application fee (effective January 1, 2025)",
+        "renewal_fee": "$150",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Allow 45 days for board processing",
+        "license_duration": "2 Years"
+      },
+      "fees_endorsement": {
+        "app_fee": "$120",
+        "background_check_fee": "See board / vendor",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$120 plus any fingerprint or vendor fees"
+      },
+      "reciprocity": {
+        "endorsement_fee": 120,
+        "processing_time": "Allow 45 days for board processing",
+        "board_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml",
+        "endorsement_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml"
+      },
+      "faq_answers": {
+        "cost": "The California State Board of Pharmacy fee schedule lists a $120 pharmacy technician application fee effective January 1, 2025. The biennial renewal fee is $150.",
+        "timeline": "The board says to allow 45 days to process a pharmacy technician application before checking status."
+      }
+    },
+    "florida-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://floridaspharmacy.gov/registered-pharmacy-technician/",
+      "sources": {
+        "fee": "https://floridaspharmacy.gov/registered-pharmacy-technician/",
+        "timeline": "https://floridaspharmacy.gov/registered-pharmacy-technician/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$105",
+        "fee_breakdown": "$50 application fee + $50 licensure fee + $5 unlicensed activity fee",
+        "renewal_fee": "$55",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Please allow 30 days for initial review",
+        "license_duration": "2 Years"
+      },
+      "fees_endorsement": {
+        "app_fee": "$105",
+        "background_check_fee": "See board if applicable",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$105"
+      },
+      "reciprocity": {
+        "endorsement_fee": 105,
+        "processing_time": "Please allow 30 days for initial review",
+        "board_url": "https://floridaspharmacy.gov/registered-pharmacy-technician/",
+        "endorsement_url": "https://floridaspharmacy.gov/registered-pharmacy-technician/"
+      },
+      "faq_answers": {
+        "cost": "The Florida Board of Pharmacy lists a total initial registered pharmacy technician fee of $105: $50 application, $50 licensure, and a $5 unlicensed activity fee. The biennial renewal fee is $55.",
+        "timeline": "The Florida Board of Pharmacy says to allow 30 days for initial review of a registered pharmacy technician application."
+      }
+    },
+    "arizona-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://pharmacy.az.gov/technician-license-information",
+      "sources": {
+        "fee": "https://pharmacy.az.gov/technician-license-information",
+        "timeline": "https://pharmacy.az.gov/technician-license-information"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": false,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": false
+      },
+      "quick_facts": {
+        "total_fee": "$82",
+        "fee_breakdown": "$82 pharmacy technician license application fee",
+        "renewal_fee": "$72",
+        "renewal_cycle": "See board",
+        "processing_time": "Not published by board",
+        "license_duration": "See board"
+      },
+      "fees_endorsement": {
+        "app_fee": "$82",
+        "background_check_fee": "Fingerprint clearance card fee paid separately",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$82 plus fingerprint clearance card costs"
+      },
+      "reciprocity": {
+        "endorsement_fee": 82,
+        "processing_time": "Not published by board",
+        "board_url": "https://pharmacy.az.gov/technician-license-information",
+        "endorsement_url": "https://pharmacy.az.gov/technician-license-information"
+      },
+      "faq_answers": {
+        "cost": "The Arizona State Board of Pharmacy lists an $82 pharmacy technician application fee and a $72 renewal fee.",
+        "timeline": "The Arizona State Board of Pharmacy does not publish a public pharmacy technician processing timeline on its licensing page. Use the board's application status tools to check progress."
+      }
+    },
+    "ohio-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
+      "sources": {
+        "fee": "https://www.pharmacy.ohio.gov/about/fees",
+        "timeline": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
+        "renewal": "https://www.pharmacy.ohio.gov/documents/pubs/messages/2025-09-12%20technicians%20-%20fee%20change%20notice.pdf"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$65",
+        "fee_breakdown": "$65 board registration fee",
+        "renewal_fee": "$65",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "10 to 15 business days",
+        "license_duration": "2 Years"
+      },
+      "fees_endorsement": {
+        "app_fee": "$65",
+        "background_check_fee": "See board / vendor",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$65 plus any background-check fees"
+      },
+      "reciprocity": {
+        "endorsement_fee": 65,
+        "processing_time": "10 to 15 business days",
+        "board_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
+        "endorsement_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech"
+      },
+      "faq_answers": {
+        "cost": "The Ohio Board of Pharmacy fee schedule lists a $65 registration fee for registered and certified pharmacy technicians. The board's September 2025 fee notice says the same amount applies to initial, renewal, and reinstatement applications.",
+        "timeline": "The Ohio Board of Pharmacy says the application review process for registered pharmacy technician applications normally occurs within 10 to 15 business days of submission."
+      }
+    },
+    "montana-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
+      "sources": {
+        "fee": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
+        "timeline": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
+        "renewal": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$35",
+        "fee_breakdown": "$35 application fee",
+        "renewal_fee": "$30",
+        "renewal_cycle": "Annual renewal window May 2 to June 30",
+        "processing_time": "Not published by board",
+        "license_duration": "1 Year"
+      },
+      "fees_endorsement": {
+        "app_fee": "$35",
+        "background_check_fee": "See board if applicable",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$35"
+      },
+      "reciprocity": {
+        "endorsement_fee": 35,
+        "processing_time": "Not published by board",
+        "board_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
+        "endorsement_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician"
+      },
+      "faq_answers": {
+        "cost": "The Montana Board of Pharmacy lists a $35 application fee for a certified pharmacy technician. The active renewal fee is $30.",
+        "timeline": "The Montana Board of Pharmacy does not publish a public pharmacy technician processing timeline on its licensing page."
+      }
+    },
+    "texas-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://www.pharmacy.texas.gov/applicants/tech.asp",
+      "sources": {
+        "fee": "https://www.pharmacy.texas.gov/files_pdf/BN/May24/F.1.4.pdf",
+        "timeline": "https://www.pharmacy.texas.gov/applicants/tech.asp",
+        "renewal": "https://www.pharmacy.texas.gov/licensees/renew-pharm-tech.asp"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": false,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": false
+      },
+      "quick_facts": {
+        "total_fee": "$81",
+        "fee_breakdown": "$81 initial registration fee",
+        "renewal_fee": "See board",
+        "renewal_cycle": "Every 2 years, on or before the last day of the original issue month",
+        "processing_time": "Allow a minimum of 6 weeks for review and processing",
+        "license_duration": "2 Years"
+      },
+      "fees_endorsement": {
+        "app_fee": "$81",
+        "background_check_fee": "Fingerprint vendor fee paid separately",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$81 plus fingerprint vendor fees"
+      },
+      "reciprocity": {
+        "endorsement_fee": 81,
+        "processing_time": "Allow a minimum of 6 weeks for review and processing",
+        "board_url": "https://www.pharmacy.texas.gov/applicants/tech.asp",
+        "endorsement_url": "https://www.pharmacy.texas.gov/applicants/tech.asp"
+      },
+      "faq_answers": {
+        "cost": "The Texas State Board of Pharmacy lists an $81 initial pharmacy technician registration fee in its current fee materials. Fingerprinting is paid separately to the vendor.",
+        "timeline": "The Texas State Board of Pharmacy says to allow a minimum of six weeks for a pharmacy technician application to be reviewed and processed."
+      }
+    },
+    "washington-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
+      "sources": {
+        "fee": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
+        "timeline": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
+        "renewal": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": false
+      },
+      "quick_facts": {
+        "total_fee": "$140",
+        "fee_breakdown": "$140 original credential fee",
+        "renewal_fee": "$140",
+        "renewal_cycle": "Every 2 years, on or before your birthday",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "fees_endorsement": {
+        "app_fee": "$140",
+        "background_check_fee": "See board / vendor",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$140 plus any board-required supporting costs"
+      },
+      "reciprocity": {
+        "endorsement_fee": 140,
+        "processing_time": "Not published by board",
+        "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
+        "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information"
+      },
+      "faq_answers": {
+        "cost": "The Washington Department of Health lists a $140 original pharmacy technician credential fee and a $140 renewal fee.",
+        "timeline": "Washington does not publish a public pharmacy technician processing timeline on its licensing information page. Use the board application tools and provider search to check status."
+      }
+    },
+    "north-carolina-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://www.ncbop.org/pharmacy-technicians.html",
+      "sources": {
+        "fee": "https://www.ncbop.org/pharmacy-technicians.html",
+        "timeline": "https://www.ncbop.org/pharmacy-technicians.html",
+        "renewal": "https://www.ncbop.org/renewal.html"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$30",
+        "fee_breakdown": "$30 non-refundable registration fee",
+        "renewal_fee": "$30",
+        "renewal_cycle": "Annual renewal period November 1 through December 31",
+        "processing_time": "Allow 3 to 5 business days for board review",
+        "license_duration": "1 Year"
+      },
+      "fees_endorsement": {
+        "app_fee": "$30",
+        "background_check_fee": "See board if applicable",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$30"
+      },
+      "reciprocity": {
+        "endorsement_fee": 30,
+        "processing_time": "Allow 3 to 5 business days for board review",
+        "board_url": "https://www.ncbop.org/pharmacy-technicians.html",
+        "endorsement_url": "https://www.ncbop.org/pharmacy-technicians.html"
+      },
+      "faq_answers": {
+        "cost": "The North Carolina Board of Pharmacy lists a $30 pharmacy technician registration fee and a $30 annual renewal fee.",
+        "timeline": "The North Carolina Board of Pharmacy says pharmacy technician applications are usually reviewed within 3 to 5 business days once all required materials are in."
+      }
+    },
+    "pennsylvania-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
+      "sources": {
+        "fee": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
+        "timeline": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
+        "renewal": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$30",
+        "fee_breakdown": "$30 initial registration fee",
+        "renewal_fee": "$70",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "fees_endorsement": {
+        "app_fee": "$30",
+        "background_check_fee": "See board if applicable",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$30"
+      },
+      "reciprocity": {
+        "endorsement_fee": 30,
+        "processing_time": "Not published by board",
+        "board_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
+        "endorsement_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot"
+      },
+      "faq_answers": {
+        "cost": "The Pennsylvania State Board of Pharmacy snapshot lists a $30 initial pharmacy technician registration fee and a $70 biennial renewal fee.",
+        "timeline": "Pennsylvania does not publish a pharmacy technician processing timeline on its public registration snapshot page. Check the board portal for status updates."
+      }
+    },
+    "michigan-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy",
+      "sources": {
+        "fee": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy",
+        "timeline": "https://www.michigan.gov/lara/-/media/Project/Websites/lara/about/Legislative-Reports/Boilerplate-Required-Reports/FY2025/Section-225-Revenue-and-Expenditure-Data-Report.pdf",
+        "renewal": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": false
+      },
+      "quick_facts": {
+        "total_fee": "$137.70",
+        "fee_breakdown": "$137.70 application and initial licensure fee",
+        "renewal_fee": "$61.20",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "About 90 days",
+        "license_duration": "2 Years"
+      },
+      "fees_endorsement": {
+        "app_fee": "$137.70",
+        "background_check_fee": "Fingerprint vendor fee paid separately",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$137.70 plus fingerprint vendor fees"
+      },
+      "reciprocity": {
+        "endorsement_fee": 137.7,
+        "processing_time": "About 90 days",
+        "board_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy",
+        "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy"
+      },
+      "faq_answers": {
+        "cost": "Michigan lists a $137.70 pharmacy technician application and initial licensure fee, with a $61.20 renewal fee for the two-year cycle.",
+        "timeline": "Michigan\u2019s current licensing report says pharmacy technician applications average about 90 days from receipt to issuance."
+      }
+    },
+    "new-york-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms",
+      "sources": {
+        "fee": "https://www.op.nysed.gov/about/fees",
+        "timeline": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/status",
+        "renewal": "https://www.op.nysed.gov/about/fees"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$175",
+        "fee_breakdown": "$75 application fee + $100 first registration fee",
+        "renewal_fee": "$100",
+        "renewal_cycle": "Every 3 years",
+        "processing_time": "Allow 6 weeks before requesting a status update",
+        "license_duration": "3 Years"
+      },
+      "fees_endorsement": {
+        "app_fee": "$175",
+        "background_check_fee": "See board if applicable",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$175"
+      },
+      "reciprocity": {
+        "endorsement_fee": 175,
+        "processing_time": "Allow 6 weeks before requesting a status update",
+        "board_url": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms",
+        "endorsement_url": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms"
+      },
+      "faq_answers": {
+        "cost": "New York charges a $75 application fee plus a $100 first registration fee for registered pharmacy technicians. The triennial renewal fee is $100.",
+        "timeline": "The New York Office of the Professions asks applicants to allow six weeks before requesting a status update on a pharmacy technician application."
+      }
+    },
+    "illinois-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
+      "sources": {
+        "fee": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
+        "timeline": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
+        "renewal": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": false,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$40",
+        "fee_breakdown": "$40 online application fee",
+        "renewal_fee": "See board",
+        "renewal_cycle": "Annual, expires March 31",
+        "processing_time": "Not published by board",
+        "license_duration": "Valid through March 31"
+      },
+      "fees_endorsement": {
+        "app_fee": "$40",
+        "background_check_fee": "See board if applicable",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$40"
+      },
+      "reciprocity": {
+        "endorsement_fee": 40,
+        "processing_time": "Not published by board",
+        "board_url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
+        "endorsement_url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf"
+      },
+      "faq_answers": {
+        "cost": "Illinois lists a $40 online application fee for pharmacy technician registration.",
+        "timeline": "Illinois does not publish a public pharmacy technician processing timeline in the application checklist. Check the IDFPR portal for status updates."
+      }
+    },
+    "oregon-pharm": {
+      "verified_date": "2026-03-18",
+      "board_source_url": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx",
+      "sources": {
+        "fee": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx",
+        "timeline": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx",
+        "renewal": "https://www.oregon.gov/pharmacy/Documents/Technician_Renewal_FAQs.pdf"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": true,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$115",
+        "fee_breakdown": "$70 application fee + $45 national fingerprint background check fee",
+        "renewal_fee": "$104",
+        "renewal_cycle": "Expires June 30 of even-numbered years",
+        "processing_time": "Approximately 4 to 6 weeks",
+        "license_duration": "Through June 30 of even-numbered years"
+      },
+      "fees_endorsement": {
+        "app_fee": "$115",
+        "background_check_fee": "$12.50 Fieldprint appointment fee",
+        "jurisprudence_exam_fee": "$0",
+        "total_estimated_cost": "$127.50"
+      },
+      "reciprocity": {
+        "endorsement_fee": 115,
+        "processing_time": "Approximately 4 to 6 weeks",
+        "board_url": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx",
+        "endorsement_url": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx"
+      },
+      "faq_answers": {
+        "cost": "Oregon\u2019s pharmacy technician application totals $115: a $70 application fee plus a $45 national fingerprint background check fee. The board\u2019s renewal FAQ lists a $104 renewal total before late fees.",
+        "timeline": "The Oregon Board of Pharmacy says pharmacy technician applications usually take about 4 to 6 weeks to process once all materials are in."
+      }
+    }
+  }
+}

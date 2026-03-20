@@ -1,0 +1,6 @@
+.git
+.vercel
+.unified-build-done
+.unified-build-result
+dist
+*/dist

@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-18",
   "seo": {
     "title": "Ohio Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Ohio - compact status, endorsement steps, fees, and processing time.",
@@ -29,11 +29,11 @@
     "url": "https://www.pharmacy.ohio.gov"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "total_fee": "$65",
+    "fee_breakdown": "$65 board registration fee",
+    "renewal_fee": "$65",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "10 to 15 business days",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -71,7 +71,7 @@
   "faqs": [
     {
       "question": "How much does a Ohio pharmacy technician license cost?",
-      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      "answer": "The Ohio Board of Pharmacy fee schedule lists a $65 registration fee for registered and certified pharmacy technicians. The board's September 2025 fee notice says the same amount applies to initial, renewal, and reinstatement applications."
     },
     {
       "question": "Is national certification required?",
@@ -83,11 +83,11 @@
     },
     {
       "question": "How long does it take to transfer my pharmacy technician license to Ohio?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      "answer": "The Ohio Board of Pharmacy says the application review process for registered pharmacy technician applications normally occurs within 10 to 15 business days of submission."
     },
     {
       "question": "Can I start working in Ohio while my endorsement application is processing?",
-      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+      "answer": "The Ohio Board of Pharmacy says the application review process for registered pharmacy technician applications normally occurs within 10 to 15 business days of submission."
     }
   ],
   "compact": {
@@ -97,10 +97,10 @@
     "compact_source_url": ""
   },
   "fees_endorsement": {
-    "app_fee": "$100",
-    "background_check_fee": "$0 (included in application)",
+    "app_fee": "$65",
+    "background_check_fee": "See board / vendor",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$65 plus any background-check fees"
   },
   "temp_license": {
     "available": true,
@@ -108,8 +108,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://www.pharmacy.ohio.gov",
+  "last_verified_date": "2026-03-18",
+  "board_source_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -122,13 +122,27 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 65,
+    "processing_time": "10 to 15 business days",
     "processing_tier": "mid",
-    "board_url": "https://www.pharmacy.ohio.gov",
-    "endorsement_url": "https://www.pharmacy.ohio.gov",
+    "board_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
+    "endorsement_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "ohio-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": true
+  },
+  "board_verification_sources": {
+    "fee": "https://www.pharmacy.ohio.gov/about/fees",
+    "timeline": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
+    "renewal": "https://www.pharmacy.ohio.gov/documents/pubs/messages/2025-09-12%20technicians%20-%20fee%20change%20notice.pdf"
+  }
 }

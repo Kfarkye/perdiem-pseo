@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-18",
   "seo": {
     "title": "Washington Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Washington - compact status, endorsement steps, fees, and processing time.",
@@ -29,11 +29,11 @@
     "url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "total_fee": "$140",
+    "fee_breakdown": "$140 original credential fee",
+    "renewal_fee": "$140",
+    "renewal_cycle": "Every 2 years, on or before your birthday",
+    "processing_time": "Not published by board",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -71,7 +71,7 @@
   "faqs": [
     {
       "question": "How much does a Washington pharmacy technician license cost?",
-      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      "answer": "The Washington Department of Health lists a $140 original pharmacy technician credential fee and a $140 renewal fee."
     },
     {
       "question": "Is national certification required?",
@@ -83,11 +83,11 @@
     },
     {
       "question": "How long does it take to transfer my pharmacy technician license to Washington?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      "answer": "Washington does not publish a public pharmacy technician processing timeline on its licensing information page. Use the board application tools and provider search to check status."
     },
     {
       "question": "Can I start working in Washington while my endorsement application is processing?",
-      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+      "answer": "Washington does not publish a public pharmacy technician processing timeline on its licensing information page. Use the board application tools and provider search to check status."
     }
   ],
   "compact": {
@@ -97,10 +97,10 @@
     "compact_source_url": ""
   },
   "fees_endorsement": {
-    "app_fee": "$100",
-    "background_check_fee": "$0 (included in application)",
+    "app_fee": "$140",
+    "background_check_fee": "See board / vendor",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$140 plus any board-required supporting costs"
   },
   "temp_license": {
     "available": true,
@@ -108,8 +108,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information",
+  "last_verified_date": "2026-03-18",
+  "board_source_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -122,13 +122,27 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 140,
+    "processing_time": "Not published by board",
     "processing_tier": "mid",
-    "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information",
-    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information",
+    "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
+    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "washington-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": false,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": false
+  },
+  "board_verification_sources": {
+    "fee": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
+    "timeline": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
+    "renewal": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information"
+  }
 }
