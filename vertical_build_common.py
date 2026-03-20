@@ -13,67 +13,13 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
+from build_shared import STATE_NAME_TO_ABBR
 from reciprocity_index_builder import render_index
 from site_linking import (
     build_nearby_state_links,
     build_same_state_specialties,
     load_vertical_catalog,
 )
-
-
-STATE_NAME_TO_ABBR = {
-    "Alabama": "AL",
-    "Alaska": "AK",
-    "Arizona": "AZ",
-    "Arkansas": "AR",
-    "California": "CA",
-    "Colorado": "CO",
-    "Connecticut": "CT",
-    "Delaware": "DE",
-    "District of Columbia": "DC",
-    "Florida": "FL",
-    "Georgia": "GA",
-    "Hawaii": "HI",
-    "Idaho": "ID",
-    "Illinois": "IL",
-    "Indiana": "IN",
-    "Iowa": "IA",
-    "Kansas": "KS",
-    "Kentucky": "KY",
-    "Louisiana": "LA",
-    "Maine": "ME",
-    "Maryland": "MD",
-    "Massachusetts": "MA",
-    "Michigan": "MI",
-    "Minnesota": "MN",
-    "Mississippi": "MS",
-    "Missouri": "MO",
-    "Montana": "MT",
-    "Nebraska": "NE",
-    "Nevada": "NV",
-    "New Hampshire": "NH",
-    "New Jersey": "NJ",
-    "New Mexico": "NM",
-    "New York": "NY",
-    "North Carolina": "NC",
-    "North Dakota": "ND",
-    "Ohio": "OH",
-    "Oklahoma": "OK",
-    "Oregon": "OR",
-    "Pennsylvania": "PA",
-    "Rhode Island": "RI",
-    "South Carolina": "SC",
-    "South Dakota": "SD",
-    "Tennessee": "TN",
-    "Texas": "TX",
-    "Utah": "UT",
-    "Vermont": "VT",
-    "Virginia": "VA",
-    "Washington": "WA",
-    "West Virginia": "WV",
-    "Wisconsin": "WI",
-    "Wyoming": "WY",
-}
 
 
 def build_vertical(vertical_root: Path) -> None:
@@ -87,7 +33,7 @@ def build_vertical(vertical_root: Path) -> None:
 
     json_dir = root / "database" / "json"
     dist_dir = root / "dist"
-    templates_dir = root / "src" / "templates"
+    templates_dir = repo_root / "shared_templates"
     content_dir = root / "content"
     canonical_host = "https://www.statelicensingreference.com"
     today = datetime.now().strftime("%Y-%m-%d")
@@ -102,6 +48,7 @@ def build_vertical(vertical_root: Path) -> None:
     specialty_path = profile.get("slug", vertical_slug)
     specialty_index_url = f"{canonical_host}/{specialty_path}"
     suppress_compact_ui = vertical_slug == "dietitian"
+    verify_fee_and_timing_with_board = vertical_slug == "pharm"
 
     env = Environment(loader=FileSystemLoader(templates_dir), undefined=StrictUndefined, autoescape=False)
     template = env.get_template("state-hub.html")
@@ -138,6 +85,9 @@ def build_vertical(vertical_root: Path) -> None:
                         state_name=data["state_name"],
                         current_vertical_slug=vertical_slug,
                     ),
+                    board_verification=data.get("board_verification", {}),
+                    board_verification_sources=data.get("board_verification_sources", {}),
+                    verify_fee_and_timing_with_board=verify_fee_and_timing_with_board,
                 ),
                 encoding="utf-8",
             )

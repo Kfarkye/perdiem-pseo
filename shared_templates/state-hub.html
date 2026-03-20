@@ -626,6 +626,14 @@
       }
     }
   </style>
+  {% set fee_verified = board_verification.get('fee_verified', false) %}
+  {% set timeline_verified = board_verification.get('timeline_verified', false) %}
+  {% set renewal_fee_verified = board_verification.get('renewal_fee_verified', false) %}
+  {% set renewal_cycle_verified = board_verification.get('renewal_cycle_verified', false) %}
+  {% set background_check_fee_verified = board_verification.get('background_check_fee_verified', false) %}
+  {% set jurisprudence_fee_verified = board_verification.get('jurisprudence_fee_verified', false) %}
+  {% set total_estimated_cost_verified = board_verification.get('total_estimated_cost_verified', false) %}
+  {% set has_verified_board_data = fee_verified or timeline_verified or renewal_fee_verified or renewal_cycle_verified or background_check_fee_verified or jurisprudence_fee_verified or total_estimated_cost_verified %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -641,10 +649,13 @@
         "@type": "FAQPage",
         "mainEntity": [
           {% for faq in faqs %}
+          {% set question_text = faq.question | lower %}
+          {% set faq_is_cost = 'how much' in question_text or 'cost' in question_text or 'fee' in question_text %}
+          {% set faq_is_timeline = 'how long' in question_text or 'processing' in question_text or 'timeline' in question_text %}
           {
             "@type": "Question",
             "name": {{ faq.question | striptags | trim | tojson }},
-            "acceptedAnswer": {"@type": "Answer", "text": {{ faq.answer | striptags | trim | tojson }} }
+            "acceptedAnswer": {"@type": "Answer", "text": {% if verify_fee_and_timing_with_board and ((faq_is_cost and not fee_verified) or (faq_is_timeline and not timeline_verified)) %}{{ "Verify the current fee and processing timeline on the primary board page linked below. Those details are still being re-checked state by state for this specialty." | tojson }}{% else %}{{ faq.answer | striptags | trim | tojson }}{% endif %} }
           }{% if not loop.last %},{% endif %}
           {% endfor %}
         ]
@@ -673,7 +684,13 @@
     {% endif %}
     <div class="hero-inner">
       <p class="state-label">{{ state_name }}</p>
-      <h1 id="hero-title">Getting Your {{ profession_name }} License in {{ state_name }}</h1>
+      <h1 id="hero-title">
+        {% if profession_name | lower == "pharmacy technician" %}
+          {{ state_name }} Pharmacy Tech License
+        {% else %}
+          Getting Your {{ profession_name }} License in {{ state_name }}
+        {% endif %}
+      </h1>
       <p class="hero-sub">Here's what you need to know.</p>
       <p class="updated">Last updated {{ last_verified_date | default(last_updated, true) }} · Sources verified</p>
     </div>
@@ -696,13 +713,33 @@
           <h2 id="quick-reference-heading">At a glance</h2>
           <dl class="facts-grid facts-grid-rail">
             <dt>Endorsement fee</dt>
-            <dd>{% if reciprocity.license_required %}${{ reciprocity.endorsement_fee }}{% else %}$0{% endif %}</dd>
+            <dd>
+              {% if not reciprocity.license_required %}
+                $0
+              {% elif verify_fee_and_timing_with_board and not fee_verified %}
+                See board
+              {% else %}
+                {% if reciprocity.endorsement_fee is number %}
+                  {% if reciprocity.endorsement_fee == (reciprocity.endorsement_fee | int) %}${{ reciprocity.endorsement_fee | int }}{% else %}${{ '%.2f' | format(reciprocity.endorsement_fee) }}{% endif %}
+                {% else %}
+                  {{ reciprocity.endorsement_fee }}
+                {% endif %}
+              {% endif %}
+            </dd>
 
             <dt>Processing time</dt>
-            <dd>{% if reciprocity.license_required %}{{ reciprocity.processing_time }}{% else %}No state application{% endif %}</dd>
+            <dd>
+              {% if not reciprocity.license_required %}
+                No state application
+              {% elif verify_fee_and_timing_with_board and not timeline_verified %}
+                See board
+              {% else %}
+                {{ reciprocity.processing_time }}
+              {% endif %}
+            </dd>
 
             <dt>Renewal fee</dt>
-            <dd>{{ quick_facts.renewal_fee }}</dd>
+            <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_fee_verified else quick_facts.renewal_fee }}</dd>
 
             <dt>Fingerprinting</dt>
             <dd>{{ 'Required' if reciprocity.fingerprint_required else 'Not clearly required' }}</dd>
@@ -725,7 +762,13 @@
             <a href="#endorsement">{% if reciprocity.license_required %}See the steps{% else %}See the checklist{% endif %}</a>
             <a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">Primary board page</a>
           </div>
-          <p class="source-note">Last updated {{ last_verified_date | default(last_updated, true) }}.</p>
+          {% if verify_fee_and_timing_with_board and has_verified_board_data %}
+            <p class="source-note">Board-checked {{ last_verified_date | default(last_updated, true) }}. Any field still marked "See board" has not been confirmed yet.</p>
+          {% elif verify_fee_and_timing_with_board %}
+            <p class="source-note">Fee and timing details are still being re-checked state by state. Check the board page before you count on a fee or timeline for a start date.</p>
+          {% else %}
+            <p class="source-note">Last updated {{ last_verified_date | default(last_updated, true) }}.</p>
+          {% endif %}
         </div>
       </aside>
       <div class="content-column">
@@ -863,29 +906,36 @@
       <div class="section-box">
         <dl class="facts-grid">
           <dt>Total fee</dt>
-          <dd>{{ quick_facts.total_fee }}</dd>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not fee_verified else quick_facts.total_fee }}</dd>
 
           <dt>Processing time</dt>
-          <dd>{{ quick_facts.processing_time }}</dd>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not timeline_verified else quick_facts.processing_time }}</dd>
 
           <dt>Renewal fee</dt>
-          <dd>{{ quick_facts.renewal_fee }}</dd>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_fee_verified else quick_facts.renewal_fee }}</dd>
 
           <dt>Renewal cycle</dt>
-          <dd>{{ quick_facts.renewal_cycle }}</dd>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_cycle_verified else quick_facts.renewal_cycle }}</dd>
 
           <dt>Application</dt>
-          <dd>{{ fees_endorsement.app_fee }}</dd>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not fee_verified else fees_endorsement.app_fee }}</dd>
 
           <dt>Background check</dt>
-          <dd>{{ fees_endorsement.background_check_fee }}</dd>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not background_check_fee_verified else fees_endorsement.background_check_fee }}</dd>
 
           <dt>Jurisprudence exam</dt>
-          <dd>{{ fees_endorsement.jurisprudence_exam_fee }}</dd>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not jurisprudence_fee_verified else fees_endorsement.jurisprudence_exam_fee }}</dd>
 
           <dt>Total estimated cost</dt>
-          <dd>{{ fees_endorsement.total_estimated_cost }}</dd>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not total_estimated_cost_verified else fees_endorsement.total_estimated_cost }}</dd>
         </dl>
+        {% if verify_fee_and_timing_with_board %}
+          {% if has_verified_board_data %}
+            <p class="source-note">Any fee field still marked "See board" has not been confirmed from the board yet.</p>
+          {% else %}
+            <p class="source-note">Fee and renewal details are still being checked against the board for this specialty. Verify the current amount before you apply.</p>
+          {% endif %}
+        {% endif %}
       </div>
     </section>
 
@@ -953,7 +1003,13 @@
       <div class="section-copy">
         <p class="section-kicker">Renewal</p>
         <h2 id="renewal-heading">Renewal</h2>
-        <p>Renewal fee is {{ quick_facts.renewal_fee }}. Renewal cycle: {{ quick_facts.renewal_cycle }}.</p>
+        {% if verify_fee_and_timing_with_board and not (renewal_fee_verified or renewal_cycle_verified) %}
+          <p>Renewal details are still being checked against the board. Use the primary board link below before relying on a fee or cycle.</p>
+        {% elif verify_fee_and_timing_with_board %}
+          <p>Renewal fee is {{ quick_facts.renewal_fee if renewal_fee_verified else 'See board' }}. Renewal cycle: {{ quick_facts.renewal_cycle if renewal_cycle_verified else 'See board' }}.</p>
+        {% else %}
+          <p>Renewal fee is {{ quick_facts.renewal_fee }}. Renewal cycle: {{ quick_facts.renewal_cycle }}.</p>
+        {% endif %}
       </div>
     </section>
 
@@ -965,7 +1021,14 @@
       {% for faq in faqs %}
         <details>
           <summary>{{ faq.question }}</summary>
-          <p>{{ faq.answer }}</p>
+          {% set question_text = faq.question | lower %}
+          {% set faq_is_cost = 'how much' in question_text or 'cost' in question_text or 'fee' in question_text %}
+          {% set faq_is_timeline = 'how long' in question_text or 'processing' in question_text or 'timeline' in question_text %}
+          {% if verify_fee_and_timing_with_board and ((faq_is_cost and not fee_verified) or (faq_is_timeline and not timeline_verified)) %}
+            <p>Verify the current fee and processing timeline on the primary board page linked below. Those details are still being re-checked state by state for this specialty.</p>
+          {% else %}
+            <p>{{ faq.answer }}</p>
+          {% endif %}
         </details>
       {% endfor %}
     </section>
@@ -1007,6 +1070,12 @@
         <p class="section-kicker">Primary sources</p>
         <h2 id="sources-heading">Sources</h2>
         <p><a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">{{ board.name }}</a></p>
+        {% if board_verification_sources.get('fee') and board_verification_sources.get('fee') != (reciprocity.board_url or board.url) %}
+          <p><a href="{{ board_verification_sources.get('fee') }}" target="_blank" rel="noopener">Board fee schedule</a></p>
+        {% endif %}
+        {% if board_verification_sources.get('timeline') and board_verification_sources.get('timeline') != board_verification_sources.get('fee') and board_verification_sources.get('timeline') != (reciprocity.board_url or board.url) %}
+          <p><a href="{{ board_verification_sources.get('timeline') }}" target="_blank" rel="noopener">Board processing page</a></p>
+        {% endif %}
         {% if compact.compact_source_url %}<p><a href="{{ compact.compact_source_url }}" target="_blank" rel="noopener">{{ compact.compact_name }}</a></p>{% endif %}
       </div>
     </section>

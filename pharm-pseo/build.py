@@ -10,12 +10,13 @@ import sys
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT.parent))
+
+from build_shared import STATE_NAME_TO_ABBR, format_fee_display
 
 # Load shared state hero images.
 IMAGES_FILE = ROOT.parent / "state_images.json"
 STATE_IMAGES = json.loads(IMAGES_FILE.read_text(encoding="utf-8")) if IMAGES_FILE.exists() else {}
-
-sys.path.insert(0, str(ROOT.parent))
 
 from consumer_db_overrides import (
     DB_SPECIALTY_BY_VERTICAL,
@@ -31,84 +32,11 @@ from site_linking import (
 
 JSON_DIR = ROOT / "database" / "json"
 DIST_DIR = ROOT / "dist"
-TEMPLATES_DIR = ROOT / "src" / "templates"
 CONTENT_DIR = ROOT / "content"
 CANONICAL_HOST = "https://www.statelicensingreference.com"
 TODAY = datetime.now().strftime("%Y-%m-%d")
 VERTICAL_SLUG = ROOT.name.replace("-pseo", "")
 CSS_HASH = "0"
-
-STATE_NAME_TO_ABBR = {
-    "Alabama": "AL",
-    "Alaska": "AK",
-    "Arizona": "AZ",
-    "Arkansas": "AR",
-    "California": "CA",
-    "Colorado": "CO",
-    "Connecticut": "CT",
-    "Delaware": "DE",
-    "District of Columbia": "DC",
-    "Florida": "FL",
-    "Georgia": "GA",
-    "Hawaii": "HI",
-    "Idaho": "ID",
-    "Illinois": "IL",
-    "Indiana": "IN",
-    "Iowa": "IA",
-    "Kansas": "KS",
-    "Kentucky": "KY",
-    "Louisiana": "LA",
-    "Maine": "ME",
-    "Maryland": "MD",
-    "Massachusetts": "MA",
-    "Michigan": "MI",
-    "Minnesota": "MN",
-    "Mississippi": "MS",
-    "Missouri": "MO",
-    "Montana": "MT",
-    "Nebraska": "NE",
-    "Nevada": "NV",
-    "New Hampshire": "NH",
-    "New Jersey": "NJ",
-    "New Mexico": "NM",
-    "New York": "NY",
-    "North Carolina": "NC",
-    "North Dakota": "ND",
-    "Ohio": "OH",
-    "Oklahoma": "OK",
-    "Oregon": "OR",
-    "Pennsylvania": "PA",
-    "Rhode Island": "RI",
-    "South Carolina": "SC",
-    "South Dakota": "SD",
-    "Tennessee": "TN",
-    "Texas": "TX",
-    "Utah": "UT",
-    "Vermont": "VT",
-    "Virginia": "VA",
-    "Washington": "WA",
-    "West Virginia": "WV",
-    "Wisconsin": "WI",
-    "Wyoming": "WY",
-}
-
-
-def format_fee_display(value: object) -> str:
-    if isinstance(value, (int, float)):
-        if float(value).is_integer():
-            return f"${int(value)}"
-        return f"${value:,.2f}"
-    if isinstance(value, str):
-        cleaned = value.replace("$", "").replace(",", "").strip()
-        try:
-            number = float(cleaned)
-        except ValueError:
-            return value
-        if number.is_integer():
-            return f"${int(number)}"
-        return f"${number:,.2f}"
-    return str(value)
-
 
 DIST_DIR.mkdir(exist_ok=True)
 
@@ -119,7 +47,7 @@ specialty_path = profile.get("slug", VERTICAL_SLUG)
 specialty_index_url = f"{CANONICAL_HOST}/{specialty_path}"
 suppress_compact_ui = VERTICAL_SLUG == "dietitian"
 
-env = Environment(loader=FileSystemLoader(TEMPLATES_DIR), undefined=StrictUndefined, autoescape=False)
+env = Environment(loader=FileSystemLoader(ROOT.parent / "shared_templates"), undefined=StrictUndefined, autoescape=False)
 template = env.get_template("state-hub.html")
 
 tier2_files = {f.name: f for f in CONTENT_DIR.glob("*.html")} if CONTENT_DIR.exists() else {}
