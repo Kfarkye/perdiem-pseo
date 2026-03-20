@@ -4,11 +4,9 @@
     "last_updated": "2026-02-25",
     "purpose": "Canonical vertical profiles for the State Licensing Reference pSEO engine. Each profile contains the YMYL-safe copy, routing slugs, exam/board/accrediting metadata, and verification hooks needed to render a fully compliant landing page.",
     "verification_status": "PENDING = needs VA/researcher to confirm with primary source. VERIFIED = confirmed via official board URL.",
-    "portal_domain": "https://statelicensingreference.com",
-    "vertical_domain_pattern": "https://{slug}.statelicensingreference.com",
-    "vertical_domain_overrides": {
-      "rrt": "https://rt.statelicensingreference.com"
-    },
+    "portal_domain": "https://www.statelicensingreference.com",
+    "vertical_domain_pattern": "https://www.statelicensingreference.com/{slug}",
+    "vertical_domain_overrides": {},
     "deployed_verticals": [
       "dietitian",
       "ot",

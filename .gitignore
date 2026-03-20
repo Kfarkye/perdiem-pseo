@@ -22,3 +22,4 @@ qa_*.csv
 # IDE
 .vscode/
 .idea/
+.vercel
