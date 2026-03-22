@@ -102,6 +102,9 @@ for json_file, data in records:
     # Invariant to catch ID/SHAPE errors around states with no DA license:
     assert isinstance(data["reciprocity"].get("license_required"), bool), f"Data integrity error: {slug_value} is missing the explicit license_required boolean flag."
 
+    # Google SEO Invariant - fail build if title is too long to rank well unconditionally
+    assert len(data["seo"].get("title", "")) <= 65, f"SEO Error: {slug_value} title exceeds Google 65-char strict limit ({len(data['seo'].get('title', ''))} chars)"
+
     processing_time = data["reciprocity"].get("processing_time", "TBD")
     requires_psv = data["reciprocity"].get("requires_psv", False)
     fee = data["reciprocity"].get("endorsement_fee", 0)
