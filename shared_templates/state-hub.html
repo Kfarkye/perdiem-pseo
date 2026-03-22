@@ -709,7 +709,6 @@
     <div class="page-layout">
       <aside class="context-rail" aria-labelledby="quick-reference-heading">
         <div class="section-box context-card">
-          <p class="section-kicker">Quick reference</p>
           <h2 id="quick-reference-heading">At a glance</h2>
           <dl class="facts-grid facts-grid-rail">
             <dt>Endorsement fee</dt>
@@ -774,7 +773,6 @@
       <div class="content-column">
     <section id="reciprocity" class="section-shell" aria-labelledby="reciprocity-heading">
       <div class="section-copy">
-        <p class="section-kicker">ENDORSEMENT PATH</p>
         <h2 id="reciprocity-heading">Path for Out-of-State {{ profession_name }}s</h2>
 
         {% if not reciprocity.license_required %}
@@ -795,7 +793,6 @@
 
     <section id="friction" class="section-shell" aria-labelledby="friction-heading">
       <div class="section-copy">
-        <p class="section-kicker">Common {{ state_name }} delays</p>
         <h2 id="friction-heading">Items to Watch Out For</h2>
         <p>These are the issues most likely to affect whether your contract timeline is realistic in {{ state_name }}.</p>
       </div>
@@ -811,7 +808,6 @@
 
     <section id="endorsement" class="section-shell" aria-labelledby="apply-heading">
       <div class="section-copy">
-        <p class="section-kicker">Submission checklist</p>
         <h2 id="apply-heading">{% if reciprocity.license_required %}{{ state_name }} Endorsement Requirements{% else %}What to Confirm{% endif %}</h2>
         {% if reciprocity.license_required %}<p>This is the endorsement checklist for already-licensed clinicians applying in {{ state_name }}.</p>{% endif %}
       </div>
@@ -898,7 +894,6 @@
 
     <section id="quick-facts" class="section-shell" aria-labelledby="quick-facts-heading">
       <div class="section-copy">
-        <p class="section-kicker">Costs and timing</p>
         <h2 id="quick-facts-heading">Fees and Renewal</h2>
       </div>
 
@@ -938,10 +933,33 @@
       </div>
     </section>
 
+    {% if temp_license.available %}
+    <section id="temp-license" class="section-shell" aria-labelledby="temp-license-heading">
+      <div class="section-copy">
+        <h2 id="temp-license-heading">Temporary License</h2>
+        <p>{{ state_name }} offers a temporary or provisional license so you can start working while your full endorsement application is processing.</p>
+      </div>
+      <div class="section-box">
+        <dl class="facts-grid">
+          {% if temp_license.fee and temp_license.fee != 'N/A' %}
+          <dt>Fee</dt>
+          <dd>{{ temp_license.fee }}</dd>
+          {% endif %}
+          {% if temp_license.duration and temp_license.duration != 'N/A' %}
+          <dt>Duration</dt>
+          <dd>{{ temp_license.duration }}</dd>
+          {% endif %}
+          {% if temp_license.processing_time and temp_license.processing_time != 'N/A' %}
+          <dt>Processing time</dt>
+          <dd>{{ temp_license.processing_time }}</dd>
+          {% endif %}
+        </dl>
+      </div>
+    </section>
+    {% endif %}
 
     <section id="documents" class="section-shell" aria-labelledby="docs-heading">
       <div class="section-copy">
-        <p class="section-kicker">Paperwork</p>
         <h2 id="docs-heading">Required Documents</h2>
       </div>
       <ul class="docs">
@@ -953,7 +971,6 @@
 
     <section id="contact" class="section-shell" aria-labelledby="contact-heading">
       <div class="section-copy">
-        <p class="section-kicker">Board contact</p>
         <h2 id="contact-heading">Board Contact</h2>
       </div>
 
@@ -991,7 +1008,6 @@
 
     <section id="renewal" class="section-shell" aria-labelledby="renewal-heading">
       <div class="section-copy">
-        <p class="section-kicker">Renewal</p>
         <h2 id="renewal-heading">Renewal</h2>
         {% if verify_fee_and_timing_with_board and not (renewal_fee_verified or renewal_cycle_verified) %}
           <p>Renewal details are still being checked against the board. Use the primary board link below before relying on a fee or cycle.</p>
@@ -1005,7 +1021,6 @@
 
     <section id="faq" class="section-shell" aria-labelledby="faq-heading">
       <div class="section-copy">
-        <p class="section-kicker">Questions</p>
         <h2 id="faq-heading">{{ state_name }} {{ profession_name }} Licensing FAQ</h2>
       </div>
       {% for faq in faqs %}
@@ -1026,7 +1041,6 @@
     {% if nearby_state_links %}
     <section id="related-guides" class="section-shell" aria-labelledby="related-guides-heading">
       <div class="section-copy">
-        <p class="section-kicker">Trending</p>
         <h2 id="related-guides-heading">Trending States</h2>
       </div>
       <div class="related-guides-grid">
@@ -1047,7 +1061,6 @@
 
     <section id="sources" class="section-shell" aria-labelledby="sources-heading">
       <div class="section-copy sources-list">
-        <p class="section-kicker">Primary sources</p>
         <h2 id="sources-heading">Sources</h2>
         <p><a href="{{ reciprocity.board_url or board.url }}" target="_blank" rel="noopener">{{ board.name }}</a></p>
         {% if board_verification_sources.get('fee') and board_verification_sources.get('fee') != (reciprocity.board_url or board.url) %}
