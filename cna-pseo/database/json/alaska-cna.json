@@ -48,8 +48,8 @@
       "description": "Complete a state-approved CNA training program (typically 75-120 hours)."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass the written and clinical skills components of the state competency exam."
+      "title": "Pass the State Competency Exam",
+      "description": "Pass both the written and clinical skills portions of your state's nurse aide competency exam. There is no national certification exam for CNAs."
     },
     {
       "title": "Submit Application and Fees",
@@ -62,8 +62,8 @@
       "detail": "Certificate of completion from your approved CNA training program."
     },
     {
-      "item": "Exam Score Report",
-      "detail": "Official verification of passing the state competency exam."
+      "item": "State Competency Exam Results",
+      "detail": "Official verification of passing your state's nurse aide competency evaluation."
     }
   ],
   "provisional_text": "Some states allow CNAs to work under supervision for a limited period while their endorsement application is being processed.",

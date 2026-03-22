@@ -415,9 +415,9 @@
         "specific_pain_point": "Registry transfer verification between states"
       },
       "regulatory": {
-        "national_exam": "State Competency Exam (Written & Clinical Skills)",
-        "exam_board": "State Nurse Aide Registry",
-        "accrediting_body": "State-approved CNA training programs (OBRA-compliant)",
+        "national_exam": "None",
+        "exam_board": "None (state nurse aide registries)",
+        "accrediting_body": "State-approved CNA training programs (OBRA-compliant, minimum 75 hours)",
         "compact_name": "None",
         "compact_status_safe": "CNA certification does not currently have a multistate compact. Each state maintains its own nurse aide registry and sets its own endorsement requirements.",
         "compact_live_count": null,
