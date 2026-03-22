@@ -19,7 +19,7 @@
     "keywords": "physical therapist license reciprocity missouri, how to transfer physical therapist license to missouri, physical therapist compact missouri, missouri physical therapist endorsement application"
   },
   "board": {
-    "name": "Missouri Board of Healing Arts \u2014 PT",
+    "name": "Missouri Board of Healing Arts — PT",
     "parent_dept": "Missouri Division of Professional Registration",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -43,14 +43,6 @@
     }
   ],
   "steps": [
-    {
-      "title": "Complete Education Requirements",
-      "description": "Complete a CAPTE-accredited Doctor of Physical Therapy (DPT) program and any required clinical practicum or fieldwork."
-    },
-    {
-      "title": "Pass the NPTE",
-      "description": "Successfully pass the required NPTE (National Physical Therapy Examination)."
-    },
     {
       "title": "Submit Application and Fees",
       "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."

@@ -19,7 +19,7 @@
     "keywords": "speech-language pathologist license reciprocity connecticut, how to transfer speech-language pathologist license to connecticut, speech-language pathologist compact connecticut, connecticut speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Department of Public Health \u2014 Speech-Language Pathology",
+    "name": "Department of Public Health — Speech-Language Pathology",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
     "mailing_address": "410 Capitol Ave., MS #12APP, Hartford, CT 06134",
     "physical_address": "410 Capitol Ave., Hartford, CT 06134",
@@ -47,18 +47,6 @@
     }
   ],
   "steps": [
-    {
-      "title": "Earn a Master's Degree in SLP",
-      "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
-    },
-    {
-      "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on the Praxis Examination (test code 5331, score 162)."
-    },
-    {
-      "title": "Complete Clinical Fellowship",
-      "description": "Complete 36 weeks of supervised clinical practice (1,260 hours)."
-    },
     {
       "title": "Submit Application to DPH",
       "description": "Submit application with $200 fee to CT DPH."

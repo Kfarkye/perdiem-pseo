@@ -11,7 +11,7 @@
     "vendor_url": "https://uenroll.identogo.com/"
   },
   "profession_name": "Dietitian Nutritionist",
-  "credential_nomenclature": "Licensed Dietitian Nutritionist (LDN) \u2014 Application Process Pending",
+  "credential_nomenclature": "Licensed Dietitian Nutritionist (LDN) — Application Process Pending",
   "last_updated": "2026-02-25",
   "seo": {
     "title": "Michigan Dietitian Nutritionist License Reciprocity - How to Transfer Your License (2026)",
@@ -47,10 +47,6 @@
     }
   ],
   "steps": [
-    {
-      "title": "Complete Education & Supervised Practice",
-      "description": "Earn a master's degree from an ACEND-accredited program. Complete at least 1,200 hours of supervised practice through an accredited dietetic internship."
-    },
     {
       "title": "Pass the CDR Examination",
       "description": "Successfully pass the CDR Registration Examination for Dietitians and obtain active RD/RDN status. This is the primary qualification."

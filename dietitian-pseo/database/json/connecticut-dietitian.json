@@ -19,7 +19,7 @@
     "keywords": "dietitian license reciprocity connecticut, how to transfer dietitian license to connecticut, dietitian compact connecticut, connecticut dietitian endorsement application"
   },
   "board": {
-    "name": "Department of Public Health \u2014 Dietitian-Nutritionist Certification",
+    "name": "Department of Public Health — Dietitian-Nutritionist Certification",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
     "mailing_address": "410 Capitol Avenue, MS#12APP<br>Hartford, CT 06134",
     "physical_address": "410 Capitol Avenue<br>Hartford, CT 06134",
@@ -44,10 +44,6 @@
   ],
   "steps": [
     {
-      "title": "Complete Education & Supervised Practice",
-      "description": "Earn a master's degree or higher from an ACEND-accredited program (DPD, CP, or GP pathway). Complete at least 1,000\u20131,200 hours of ACEND-accredited supervised practice."
-    },
-    {
       "title": "Pass the CDR Examination & Obtain Registration",
       "description": "Successfully pass the CDR Registration Examination for Dietitians ($200 fee). Obtain active CDR registration (RD/RDN credential)."
     },
@@ -63,7 +59,7 @@
   "documents": [
     {
       "item": "CDR Registration Verification",
-      "detail": "Must be sent directly from CDR to the Connecticut DPH \u2014 self-reported copies are not accepted."
+      "detail": "Must be sent directly from CDR to the Connecticut DPH — self-reported copies are not accepted."
     },
     {
       "item": "Completed eLicense Application",

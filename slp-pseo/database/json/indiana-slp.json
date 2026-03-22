@@ -48,18 +48,6 @@
   ],
   "steps": [
     {
-      "title": "Earn a Master's Degree in SLP",
-      "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
-    },
-    {
-      "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on the Praxis Examination (test code 5331, score 162)."
-    },
-    {
-      "title": "Complete Clinical Fellowship",
-      "description": "Complete 36 weeks of supervised clinical practice (1,260 hours)."
-    },
-    {
       "title": "Submit Application to PLA",
       "description": "Submit application with $50 fee through PLA online portal."
     }
@@ -88,7 +76,7 @@
   "faqs": [
     {
       "question": "How much does an Indiana SLP license cost?",
-      "answer": "The application fee is $50 \u2014 one of the lowest in the country. Biennial renewal is also $50."
+      "answer": "The application fee is $50 — one of the lowest in the country. Biennial renewal is also $50."
     },
     {
       "question": "Is Indiana part of the ASLP Interstate Compact?",

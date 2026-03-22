@@ -19,7 +19,7 @@
     "keywords": "speech-language pathologist license reciprocity utah, how to transfer speech-language pathologist license to utah, speech-language pathologist compact utah, utah speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Division of Professional Licensing \u2014 Speech-Language Pathology",
+    "name": "Division of Professional Licensing — Speech-Language Pathology",
     "parent_dept": "Utah Department of Commerce, Division of Professional Licensing (DOPL)",
     "mailing_address": "P.O. Box 146741, Salt Lake City, UT 84114-6741",
     "physical_address": "160 E. 300 South, Salt Lake City, UT 84111",
@@ -47,18 +47,6 @@
     }
   ],
   "steps": [
-    {
-      "title": "Earn a Master's Degree in SLP",
-      "description": "From a CAA-accredited program."
-    },
-    {
-      "title": "Pass the Praxis Examination",
-      "description": "Test code 5331, score 162."
-    },
-    {
-      "title": "Complete Clinical Fellowship",
-      "description": "36 weeks supervised clinical practice."
-    },
     {
       "title": "Submit Application to DOPL",
       "description": "Submit with $100 fee through DOPL."
@@ -88,7 +76,7 @@
   "faqs": [
     {
       "question": "How much does a Utah SLP license cost?",
-      "answer": "$100 initial. $52 biennial renewal \u2014 one of the lowest renewal fees in the country."
+      "answer": "$100 initial. $52 biennial renewal — one of the lowest renewal fees in the country."
     },
     {
       "question": "Is Utah part of the ASLP Interstate Compact?",

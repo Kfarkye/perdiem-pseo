@@ -44,10 +44,6 @@
   ],
   "steps": [
     {
-      "title": "Complete Education & Supervised Practice",
-      "description": "Earn a bachelor's degree or higher from a regionally accredited institution in dietetics, human nutrition, or a related field. Complete at least 900 hours of supervised practice including 300 hours in clinical dietetics, 120 hours in food service administration, and 120 hours in community nutrition."
-    },
-    {
       "title": "Pass the CDR Examination",
       "description": "Successfully pass the registration examination for dietitians established by the Commission on Dietetic Registration (CDR), or an equivalent examination approved by the Wisconsin Dietitians Affiliated Credentialing Board."
     },
@@ -83,7 +79,7 @@
     },
     {
       "question": "What are Wisconsin's supervised practice hour requirements?",
-      "answer": "Wisconsin requires a minimum of 900 hours of supervised dietetics practice, including at least 300 hours in clinical dietetics, 120 hours in food service administration, and 120 hours in community nutrition \u2014 all under approved supervision."
+      "answer": "Wisconsin requires a minimum of 900 hours of supervised dietetics practice, including at least 300 hours in clinical dietetics, 120 hours in food service administration, and 120 hours in community nutrition — all under approved supervision."
     },
     {
       "question": "Is Wisconsin transitioning to licensure?",

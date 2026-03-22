@@ -38,15 +38,11 @@
   },
   "license_types": [
     {
-      "title": "Title Protection \u2014 Dietitian / Nutritionist",
+      "title": "Title Protection — Dietitian / Nutritionist",
       "description": "Virginia does not mandate state licensure for dietitians. However, the DHP Board of Health Professions establishes minimum qualifications for using the protected titles 'dietitian' or 'nutritionist'. Meeting CDR registration standards or equivalent qualifications allows use of the title."
     }
   ],
   "steps": [
-    {
-      "title": "Complete Education & Supervised Practice",
-      "description": "Earn a master's degree from an ACEND-accredited program. Complete 1,200 hours of supervised practice through a CDR-approved dietetic internship."
-    },
     {
       "title": "Pass the CDR Examination",
       "description": "Successfully pass the CDR Registration Examination for Dietitians and obtain active RD/RDN status."

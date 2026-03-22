@@ -11,7 +11,7 @@
     "vendor_url": "https://uenroll.identogo.com/"
   },
   "profession_name": "Dietitian",
-  "credential_nomenclature": "Licensed Dietitian/Nutritionist \u2014 Regulations Pending",
+  "credential_nomenclature": "Licensed Dietitian/Nutritionist — Regulations Pending",
   "last_updated": "2026-02-25",
   "seo": {
     "title": "New Jersey Dietitian License Reciprocity - How to Transfer Your License (2026)",
@@ -43,10 +43,6 @@
     }
   ],
   "steps": [
-    {
-      "title": "Complete Education & Supervised Practice",
-      "description": "Earn a master's degree from an ACEND-accredited program. Complete a minimum of 1,200 hours of supervised practice through a dietetic internship."
-    },
     {
       "title": "Pass the CDR Examination",
       "description": "Successfully pass the CDR Registration Examination for Dietitians. Active CDR registration will automatically qualify individuals for NJ state licensure once the process opens."

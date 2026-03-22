@@ -48,18 +48,6 @@
   ],
   "steps": [
     {
-      "title": "Earn a Master's Degree in SLP",
-      "description": "Complete a master's degree from a CAA-accredited program."
-    },
-    {
-      "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on Praxis (test code 5331, score 162)."
-    },
-    {
-      "title": "Complete Clinical Fellowship",
-      "description": "Complete 36 weeks of supervised clinical practice."
-    },
-    {
       "title": "Submit Application to DHHS",
       "description": "Submit application with fees."
     }

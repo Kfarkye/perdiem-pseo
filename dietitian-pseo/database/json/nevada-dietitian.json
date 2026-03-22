@@ -19,7 +19,7 @@
     "keywords": "dietitian license reciprocity nevada, how to transfer dietitian license to nevada, dietitian compact nevada, nevada dietitian endorsement application"
   },
   "board": {
-    "name": "Nevada Division of Public and Behavioral Health \u2014 Dietitian Licensing",
+    "name": "Nevada Division of Public and Behavioral Health — Dietitian Licensing",
     "parent_dept": "Department of Health and Human Services",
     "mailing_address": "4150 Technology Way, Suite 300<br>Carson City, NV 89706",
     "physical_address": "4150 Technology Way, Suite 300<br>Carson City, NV 89706",
@@ -51,10 +51,6 @@
     }
   ],
   "steps": [
-    {
-      "title": "Complete Education & Supervised Practice",
-      "description": "Earn a master's degree or higher from an ACEND-accredited program. Complete a minimum of 1,200 hours of supervised practice."
-    },
     {
       "title": "Pass the CDR Examination",
       "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."

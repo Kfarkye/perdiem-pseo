@@ -38,19 +38,15 @@
   },
   "license_types": [
     {
-      "title": "Licensed Dietitian (LD) \u2014 Licensure by Registration",
+      "title": "Licensed Dietitian (LD) — Licensure by Registration",
       "description": "For applicants currently registered with the Commission on Dietetic Registration (CDR). The most common pathway."
     },
     {
-      "title": "Licensed Dietitian (LD) \u2014 Licensure by Examination",
+      "title": "Licensed Dietitian (LD) — Licensure by Examination",
       "description": "For applicants who have passed a Panel-approved examination and hold a baccalaureate or master's degree in an approved nutrition field from a regionally accredited institution."
     }
   ],
   "steps": [
-    {
-      "title": "Complete Education & Supervised Practice",
-      "description": "Earn a bachelor's or master's degree from an ACEND-accredited program in human nutrition, dietetics, or a related field. Complete at least 1,200 hours of supervised practice through an ACEND-accredited dietetic internship."
-    },
     {
       "title": "Pass the CDR Examination",
       "description": "Successfully pass the CDR Registration Examination for Dietitians ($200 fee). Obtain current CDR registration."

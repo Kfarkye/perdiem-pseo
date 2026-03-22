@@ -19,7 +19,7 @@
     "keywords": "speech-language pathologist license reciprocity arizona, how to transfer speech-language pathologist license to arizona, speech-language pathologist compact arizona, arizona speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Department of Health Services \u2014 Speech-Language Pathology",
+    "name": "Department of Health Services — Speech-Language Pathology",
     "parent_dept": "Arizona Department of Health Services (ADHS)",
     "mailing_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
     "physical_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
@@ -47,18 +47,6 @@
     }
   ],
   "steps": [
-    {
-      "title": "Earn a Master's Degree in SLP",
-      "description": "Complete a master's degree from a CAA-accredited speech-language pathology program."
-    },
-    {
-      "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology (test code 5331, score 162)."
-    },
-    {
-      "title": "Complete Clinical Fellowship",
-      "description": "Complete 36 weeks of full-time supervised clinical practice (1,260 hours) under an ASHA-certified SLP."
-    },
     {
       "title": "Submit Application to ADHS",
       "description": "Submit the application with the $100 fee plus $50 license fee. Include transcripts, Praxis scores, and CF verification."

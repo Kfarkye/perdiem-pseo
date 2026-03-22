@@ -32,7 +32,7 @@
     "total_fee": "$140",
     "fee_breakdown": "$140 application fee (includes state regulatory fee)",
     "renewal_fee": "$90",
-    "renewal_cycle": "Every 2 years (by birth month) \u2014 no CE required for state renewal",
+    "renewal_cycle": "Every 2 years (by birth month) — no CE required for state renewal",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years"
   },
@@ -47,10 +47,6 @@
     }
   ],
   "steps": [
-    {
-      "title": "Complete Education & Supervised Practice",
-      "description": "Earn a master's degree or higher from an ACEND-accredited program in dietetics, human nutrition, or a related field. Complete at least 1,200 hours of ACEND-accredited supervised practice."
-    },
     {
       "title": "Pass the CDR Examination",
       "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. The CDR exam fee is $200."
@@ -95,7 +91,7 @@
     },
     {
       "question": "Does Tennessee require continuing education for dietitians?",
-      "answer": "Tennessee does not mandate state-level continuing education for license renewal. However, to maintain your CDR registration \u2014 which is required for state licensure \u2014 you must complete 75 continuing professional education units every five years."
+      "answer": "Tennessee does not mandate state-level continuing education for license renewal. However, to maintain your CDR registration — which is required for state licensure — you must complete 75 continuing professional education units every five years."
     },
     {
       "question": "Can I practice in Tennessee while waiting for my license?",

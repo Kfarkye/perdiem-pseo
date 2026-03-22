@@ -29,8 +29,8 @@
     "url": "http://www.rcb.ca.gov"
   },
   "quick_facts": {
-    "total_fee": "$273",
-    "fee_breakdown": "$100 application/license fee",
+    "total_fee": "$349",
+    "fee_breakdown": "$300 application fee + $49 out-of-state fingerprint card fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "8 to 12 Weeks",
@@ -43,14 +43,6 @@
     }
   ],
   "steps": [
-    {
-      "title": "Complete Education Requirements",
-      "description": "Complete a CoARC-accredited respiratory care program and any required clinical practicum or fieldwork."
-    },
-    {
-      "title": "Pass the NBRC",
-      "description": "Successfully pass the required NBRC (National Board for Respiratory Care) TMC Exam."
-    },
     {
       "title": "Submit Application and Fees",
       "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
@@ -97,10 +89,10 @@
     "compact_source_url": ""
   },
   "fees_endorsement": {
-    "app_fee": "$100",
-    "background_check_fee": "$0 (included in application)",
-    "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$273"
+    "app_fee": "$300",
+    "background_check_fee": "$49 (out-of-state fingerprint card processing)",
+    "jurisprudence_exam_fee": "$0 (Law & Ethics course may have separate provider fee)",
+    "total_estimated_cost": "$349"
   },
   "temp_license": {
     "available": true,
@@ -122,9 +114,9 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 300,
-    "processing_time": "4 to 8 Weeks",
-    "processing_tier": "mid",
+    "endorsement_fee": 349,
+    "processing_time": "8 to 12 Weeks",
+    "processing_tier": "slow",
     "board_url": "http://www.rcb.ca.gov",
     "endorsement_url": "http://www.rcb.ca.gov",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
