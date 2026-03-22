@@ -119,7 +119,7 @@
     "compact_url": "",
     "compact_portal_url": "",
     "license_required": true,
-    "fingerprint_required": true,
+    "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
@@ -128,7 +128,10 @@
     "board_url": "http://www.asbrt.alabama.gov",
     "endorsement_url": "http://www.asbrt.alabama.gov",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": false,
+    "board_source_url": "https://www.asbrt.alabama.gov/"
   },
   "slug": "alabama-rrt",
   "specialty": "rrt"

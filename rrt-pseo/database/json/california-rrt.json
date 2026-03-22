@@ -121,14 +121,17 @@
     "license_required": true,
     "fingerprint_required": true,
     "temp_license_available": true,
-    "jurisprudence_required": false,
-    "endorsement_fee": 273,
-    "processing_time": "8 to 12 Weeks",
-    "processing_tier": "slow",
+    "jurisprudence_required": true,
+    "endorsement_fee": 300,
+    "processing_time": "4 to 8 Weeks",
+    "processing_tier": "mid",
     "board_url": "http://www.rcb.ca.gov",
     "endorsement_url": "http://www.rcb.ca.gov",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": true
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": false,
+    "board_source_url": "https://www.rcb.ca.gov/"
   },
   "slug": "california-rrt",
   "specialty": "rrt"

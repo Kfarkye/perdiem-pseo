@@ -122,13 +122,16 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "endorsement_fee": 220,
+    "processing_time": "6 to 8 Weeks",
+    "processing_tier": "slow",
     "board_url": "http://www.respiratoryboard.az.gov/",
     "endorsement_url": "http://www.respiratoryboard.az.gov/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://respiratorycare.az.gov/"
   },
   "slug": "arizona-rrt",
   "specialty": "rrt"
