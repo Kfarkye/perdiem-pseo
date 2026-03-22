@@ -121,13 +121,17 @@
     "license_required": true,
     "fingerprint_required": true,
     "temp_license_available": true,
-    "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "jurisprudence_required": true,
+    "endorsement_fee": 70,
+    "processing_time": "1 to 3 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://pharmacyboard.arkansas.gov/",
     "endorsement_url": "https://pharmacyboard.arkansas.gov/",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-state-board-of-pharmacy"
   },
   "slug": "arkansas-pharm",
   "specialty": "pharm"

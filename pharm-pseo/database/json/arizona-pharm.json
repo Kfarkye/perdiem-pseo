@@ -123,11 +123,15 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 82,
-    "processing_time": "Not published by board",
-    "processing_tier": "mid",
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://pharmacy.az.gov/technician-license-information",
     "endorsement_url": "https://pharmacy.az.gov/technician-license-information",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://pharmacy.az.gov/"
   },
   "slug": "arizona-pharm",
   "specialty": "pharm",

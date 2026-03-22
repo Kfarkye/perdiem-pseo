@@ -123,11 +123,15 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 120,
-    "processing_time": "Allow 45 days for board processing",
-    "processing_tier": "mid",
+    "processing_time": "4 to 12 Weeks",
+    "processing_tier": "slow",
     "board_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml",
     "endorsement_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.pharmacy.ca.gov/"
   },
   "slug": "california-pharm",
   "specialty": "pharm",
