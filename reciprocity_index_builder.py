@@ -146,7 +146,10 @@ def render_index(
         tier = s['tier']
         step_labels = extra_step_labels(s)
         step_count = extra_step_sort_value(s)
-        if step_labels:
+        if s['member']:
+            steps_display = ''
+            step_count = 0
+        elif step_labels:
             steps_display = "".join(f'<span class="step-flag">{label}</span>' for label in step_labels)
         elif not s["license_required"]:
             steps_display = '<span class="step-plain">No state application</span>'
