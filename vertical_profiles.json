@@ -16,7 +16,8 @@
       "aud",
       "pharm",
       "pharmacist",
-      "cna"
+      "cna",
+      "da"
     ],
     "expansion_candidates": [
       "rn",
@@ -447,6 +448,53 @@
       "footer": {
         "tagline": "Independent, YMYL-compliant certification guides for certified nursing assistants across the United States.",
         "disclaimer_entity": "any state nurse aide registry, the CMS, or any federal agency"
+      }
+    },
+    "da": {
+      "slug": "da",
+      "dir": "da-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "Dental Assistant",
+        "title_full": "Dental Assistant",
+        "title_plural": "Dental Assistants",
+        "primary_acronym": "DA/RDA/CDA",
+        "credential": "CDA (Certified Dental Assistant) / RDA (Registered Dental Assistant)",
+        "specific_pain_point": "Wildly different state requirements — some states license, others don't — plus radiography permit confusion"
+      },
+      "regulatory": {
+        "national_exam": "DANB CDA Exam (Certified Dental Assistant — GC, RHS, ICE components)",
+        "exam_board": "DANB (Dental Assisting National Board)",
+        "accrediting_body": "CODA (Commission on Dental Accreditation)",
+        "compact_name": "None",
+        "compact_status_safe": "Dental assisting does not currently have a multistate compact. Each state sets its own requirements, and some states do not license general dental assistants at all.",
+        "compact_live_count": null,
+        "compact_verification_hook": "VERIFIED",
+        "compact_source_url": "",
+        "compact_status": "none",
+        "renewal_cycle": "2 years"
+      },
+      "copy": {
+        "hero_h1_line1": "Dental Assistant License",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "Real processing times, true costs, and step-by-step board instructions for every state.",
+        "hero_audience_text": "Dental assistants",
+        "overline": "",
+        "new_grad_milestone": "DANB CDA certification",
+        "new_grad_card": "Just completed your dental assisting program? Navigate the confusing mix of DANB national certification, state-specific registration, and radiography permits so you can start chairside work\u2014without overlapping application errors.",
+        "travel_card": "Moving to a new state? Some states license dental assistants, others don't even regulate them. Get exact requirements for your target state\u2014including whether you need a separate radiography permit or expanded function credential.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common board delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "Dental Assistant License Requirements by State \u2014 Fees, DANB Certification & How to Apply (2026)",
+        "meta_desc": "Complete 2026 guide to dental assistant licensing requirements, DANB CDA certification, radiography permits, and board contacts for all 50 US states and DC.",
+        "meta_kw": "dental assistant license by state, dental assistant certification, RDA requirements, DANB CDA, dental assistant radiography permit, dental assistant license cost",
+        "og_title": "Dental Assistant License Requirements by State (2026)",
+        "og_desc": "Compare dental assistant licensing fees, DANB certification requirements, and application steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant licensing guides for dental assistants across the United States.",
+        "disclaimer_entity": "DANB, CODA, any state board of dentistry, or any federal agency"
       }
     },
     "rn": {

@@ -1,0 +1,138 @@
+{
+  "state_slug": "nevada",
+  "state_name": "Nevada",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dental Assistant",
+  "credential_nomenclature": "Dental Assistant / EFDA",
+  "last_updated": "2026-03-22",
+  "seo": {
+    "title": "Nevada Dental Assistant License Requirements - How to Get Certified (2026)",
+    "description": "Complete guide to dental assistant licensing in Nevada — endorsement steps, fees, DANB certification, and radiography permits.",
+    "keywords": "dental assistant license nevada, dental assistant certification nevada, RDA nevada, DANB CDA nevada, dental assistant radiography nevada"
+  },
+  "board": {
+    "name": "Nevada State Board of Dental Examiners",
+    "parent_dept": "State Board of Dentistry",
+    "mailing_address": "See board website",
+    "physical_address": "See board website",
+    "phone": "(702) 486-7044",
+    "fax": "N/A (contact by phone)",
+    "email": "See board website",
+    "url": "https://dental.nv.gov/"
+  },
+  "quick_facts": {
+    "total_fee": "$200",
+    "fee_breakdown": "$200 application/registration fee",
+    "renewal_fee": "$200",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 8 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Dental Assistant / EFDA",
+      "description": "The primary credential for dental assistants in Nevada."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education/Training",
+      "description": "Complete a CODA-accredited dental assisting program or gain on-the-job training under a licensed dentist."
+    },
+    {
+      "title": "Obtain Required Certifications",
+      "description": "Obtain DANB CDA certification or pass state-specific exams as required."
+    },
+    {
+      "title": "Apply for State Credential",
+      "description": "Submit application to the Nevada State Board of Dental Examiners with required documentation and fees."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Proof of Training",
+      "detail": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "item": "DANB Certification",
+      "detail": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "item": "Radiography Certification",
+      "detail": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "provisional_text": "Some states allow dental assistants to work under direct supervision while obtaining required certifications or completing training.",
+  "reciprocity_text": "Dental assistants can apply for Dental Assistant / EFDA through the Nevada State Board of Dental Examiners by license.",
+  "faqs": [
+    {
+      "question": "Does Nevada require a dental assistant license?",
+      "answer": "Yes, Nevada requires Dental Assistant / EFDA through the state board."
+    },
+    {
+      "question": "Is DANB certification recognized in Nevada?",
+      "answer": "Yes, DANB CDA certification is recognized and often preferred by employers in Nevada."
+    },
+    {
+      "question": "Can I take dental x-rays in Nevada?",
+      "answer": "Yes, but a radiography permit or certification is required."
+    },
+    {
+      "question": "How much does it cost to become a dental assistant in Nevada?",
+      "answer": "State application fees are $200. Additional costs may include DANB CDA exam ($450), radiography certification, and background check fees."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "N/A",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": ""
+  },
+  "fees_endorsement": {
+    "app_fee": "$200",
+    "background_check_fee": "Varies by provider",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$200"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-03-22",
+  "board_source_url": "https://dental.nv.gov/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "",
+    "compact_portal_url": "",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 200,
+    "processing_time": "4 to 8 Weeks",
+    "processing_tier": "slow",
+    "board_url": "https://dental.nv.gov/",
+    "endorsement_url": "https://dental.nv.gov/",
+    "notes": "Dental assistants can apply for Dental Assistant / EFDA through the Nevada State Board of Dental Examiners by license.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://dental.nv.gov/"
+  },
+  "slug": "nevada-da",
+  "specialty": "da"
+}

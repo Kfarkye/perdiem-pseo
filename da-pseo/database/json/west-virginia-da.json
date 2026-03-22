@@ -1,0 +1,138 @@
+{
+  "state_slug": "west-virginia",
+  "state_name": "West Virginia",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Dental Assistant",
+  "credential_nomenclature": "Registered Dental Assistant",
+  "last_updated": "2026-03-22",
+  "seo": {
+    "title": "West Virginia Dental Assistant License Requirements - How to Get Certified (2026)",
+    "description": "Complete guide to dental assistant licensing in West Virginia — endorsement steps, fees, DANB certification, and radiography permits.",
+    "keywords": "dental assistant license west virginia, dental assistant certification west virginia, RDA west virginia, DANB CDA west virginia, dental assistant radiography west virginia"
+  },
+  "board": {
+    "name": "West Virginia Board of Dental Examiners",
+    "parent_dept": "State Board of Dentistry",
+    "mailing_address": "See board website",
+    "physical_address": "See board website",
+    "phone": "(304) 252-8266",
+    "fax": "N/A (contact by phone)",
+    "email": "See board website",
+    "url": "https://wvdentalboard.org/"
+  },
+  "quick_facts": {
+    "total_fee": "$50",
+    "fee_breakdown": "$50 application/registration fee",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Registered Dental Assistant",
+      "description": "The primary credential for dental assistants in West Virginia."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education/Training",
+      "description": "Complete a CODA-accredited dental assisting program or gain on-the-job training under a licensed dentist."
+    },
+    {
+      "title": "Obtain Required Certifications",
+      "description": "Obtain DANB CDA certification or pass state-specific exams as required."
+    },
+    {
+      "title": "Apply for State Credential",
+      "description": "Submit application to the West Virginia Board of Dental Examiners with required documentation and fees."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Proof of Training",
+      "detail": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "item": "DANB Certification",
+      "detail": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "item": "Radiography Certification",
+      "detail": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "provisional_text": "Some states allow dental assistants to work under direct supervision while obtaining required certifications or completing training.",
+  "reciprocity_text": "Dental assistants can apply for Registered Dental Assistant through the West Virginia Board of Dental Examiners by registration.",
+  "faqs": [
+    {
+      "question": "Does West Virginia require a dental assistant license?",
+      "answer": "Yes, West Virginia requires Registered Dental Assistant through the state board."
+    },
+    {
+      "question": "Is DANB certification recognized in West Virginia?",
+      "answer": "Yes, DANB CDA certification is recognized and often preferred by employers in West Virginia."
+    },
+    {
+      "question": "Can I take dental x-rays in West Virginia?",
+      "answer": "Yes, but a radiography permit or certification is required."
+    },
+    {
+      "question": "How much does it cost to become a dental assistant in West Virginia?",
+      "answer": "State application fees are $50. Additional costs may include DANB CDA exam ($450), radiography certification, and background check fees."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "N/A",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": ""
+  },
+  "fees_endorsement": {
+    "app_fee": "$50",
+    "background_check_fee": "Varies by provider",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$50"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-03-22",
+  "board_source_url": "https://wvdentalboard.org/",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "",
+    "compact_portal_url": "",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 50,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
+    "board_url": "https://wvdentalboard.org/",
+    "endorsement_url": "https://wvdentalboard.org/",
+    "notes": "Dental assistants can apply for Registered Dental Assistant through the West Virginia Board of Dental Examiners by registration.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://wvdentalboard.org/"
+  },
+  "slug": "west-virginia-da",
+  "specialty": "da"
+}

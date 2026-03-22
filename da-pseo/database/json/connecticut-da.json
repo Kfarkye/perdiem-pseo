@@ -1,0 +1,138 @@
+{
+  "state_slug": "connecticut",
+  "state_name": "Connecticut",
+  "fingerprints": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": ""
+  },
+  "profession_name": "Dental Assistant",
+  "credential_nomenclature": "Dental Assistant (no state license required)",
+  "last_updated": "2026-03-22",
+  "seo": {
+    "title": "Connecticut Dental Assistant License Requirements - How to Get Certified (2026)",
+    "description": "Complete guide to dental assistant requirements in Connecticut — fees, DANB certification, and radiography permits.",
+    "keywords": "dental assistant license connecticut, dental assistant certification connecticut, RDA connecticut, DANB CDA connecticut, dental assistant radiography connecticut"
+  },
+  "board": {
+    "name": "Connecticut Department of Public Health",
+    "parent_dept": "State Board of Dentistry",
+    "mailing_address": "See board website",
+    "physical_address": "See board website",
+    "phone": "(860) 509-7603",
+    "fax": "N/A (contact by phone)",
+    "email": "See board website",
+    "url": "https://portal.ct.gov/DPH"
+  },
+  "quick_facts": {
+    "total_fee": "$0",
+    "fee_breakdown": "No state application fee",
+    "renewal_fee": "N/A",
+    "renewal_cycle": "N/A",
+    "processing_time": "2 to 4 Weeks",
+    "license_duration": "N/A"
+  },
+  "license_types": [
+    {
+      "title": "Dental Assistant (no state license required)",
+      "description": "No state-level credential required for general dental assistants in Connecticut."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Education/Training",
+      "description": "Complete a CODA-accredited dental assisting program or gain on-the-job training under a licensed dentist."
+    },
+    {
+      "title": "Obtain Required Certifications",
+      "description": "Obtain DANB CDA certification or pass state-specific exams as required."
+    },
+    {
+      "title": "Apply for State Credential",
+      "description": "No state application required for general dental assistants. Check expanded function requirements."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Proof of Training",
+      "detail": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "item": "DANB Certification",
+      "detail": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "item": "Radiography Certification",
+      "detail": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "provisional_text": "Some states allow dental assistants to work under direct supervision while obtaining required certifications or completing training.",
+  "reciprocity_text": "Connecticut does not require state licensure for general dental assistants. DANB national certification is recognized and recommended.",
+  "faqs": [
+    {
+      "question": "Does Connecticut require a dental assistant license?",
+      "answer": "No, Connecticut does not require state licensure for general dental assistants. However, expanded functions and radiography may require permits or certifications."
+    },
+    {
+      "question": "Is DANB certification recognized in Connecticut?",
+      "answer": "Yes, DANB CDA certification is recognized and often preferred by employers in Connecticut."
+    },
+    {
+      "question": "Can I take dental x-rays in Connecticut?",
+      "answer": "Yes, but a radiography permit or certification is required."
+    },
+    {
+      "question": "How much does it cost to become a dental assistant in Connecticut?",
+      "answer": "There is no state application fee for general dental assistants in Connecticut. However, DANB CDA exam costs $450, and radiography certifications may have additional fees."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "N/A",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": ""
+  },
+  "fees_endorsement": {
+    "app_fee": "$0",
+    "background_check_fee": "Varies by provider",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$0"
+  },
+  "temp_license": {
+    "available": false,
+    "fee": "N/A",
+    "processing_time": "N/A",
+    "duration": "N/A"
+  },
+  "last_verified_date": "2026-03-22",
+  "board_source_url": "https://portal.ct.gov/DPH",
+  "license_pathway": "no-license",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "",
+    "compact_portal_url": "",
+    "license_required": false,
+    "fingerprint_required": false,
+    "temp_license_available": false,
+    "jurisprudence_required": false,
+    "endorsement_fee": 0,
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
+    "board_url": "https://portal.ct.gov/DPH",
+    "endorsement_url": "https://portal.ct.gov/DPH",
+    "notes": "Connecticut does not issue a general dental assistant license. Radiography competency must be demonstrated.",
+    "requires_psv": false,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://portal.ct.gov/DPH"
+  },
+  "slug": "connecticut-da",
+  "specialty": "da"
+}
