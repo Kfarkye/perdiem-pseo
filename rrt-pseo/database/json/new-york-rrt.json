@@ -119,16 +119,19 @@
     "compact_url": "",
     "compact_portal_url": "",
     "license_required": true,
-    "fingerprint_required": false,
+    "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 94,
-    "processing_time": "8 to 12 Weeks",
+    "endorsement_fee": 294,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.op.nysed.gov/professions-index/respiratory-therapy",
     "endorsement_url": "https://www.op.nysed.gov/professions-index/respiratory-therapy",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": true
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": false,
+    "board_source_url": "https://www.op.nysed.gov/professions/respiratory-therapists"
   },
   "slug": "new-york-rrt",
   "specialty": "rrt"

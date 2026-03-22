@@ -119,16 +119,19 @@
     "compact_url": "",
     "compact_portal_url": "",
     "license_required": true,
-    "fingerprint_required": false,
+    "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 80,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.health.nd.gov/",
     "endorsement_url": "https://www.health.nd.gov/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.ndsbrc.com/"
   },
   "slug": "north-dakota-rrt",
   "specialty": "rrt"

@@ -122,13 +122,16 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 285,
-    "processing_time": "6 to 10 Weeks",
-    "processing_tier": "slow",
+    "endorsement_fee": 125,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
     "board_url": "https://www.njconsumeraffairs.gov/",
     "endorsement_url": "https://www.njconsumeraffairs.gov/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": true
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.njconsumeraffairs.gov/rc/"
   },
   "slug": "new-jersey-rrt",
   "specialty": "rrt"

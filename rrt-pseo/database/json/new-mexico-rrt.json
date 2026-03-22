@@ -121,14 +121,17 @@
     "license_required": true,
     "fingerprint_required": true,
     "temp_license_available": true,
-    "jurisprudence_required": false,
+    "jurisprudence_required": true,
     "endorsement_fee": 150,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "processing_time": "1 to 3 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://www.rld.nm.gov/",
     "endorsement_url": "https://www.rld.nm.gov/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.rld.nm.gov/boards-and-commissions/respiratory-care-advisory-board/"
   },
   "slug": "new-mexico-rrt",
   "specialty": "rrt"
