@@ -245,7 +245,8 @@ def render_index(
       </div>'''
 
     if show_compact_ui:
-        hero_h1 = f"{profession} License<br>Reciprocity by State"
+        hero_h1 = profession
+        hero_sub = "License Reciprocity by State"
         primary_count = compact_count
         primary_label = "Compact States"
         path_filter_aria = "Filter by reciprocity path"
@@ -273,7 +274,8 @@ def render_index(
         quick_link_compact = '<li><a href="#group-compact">Compact states</a></li>'
         allowed_path_values = "['all','member','non-member','cdr-only']"
     else:
-        hero_h1 = f"{profession} License<br>Transfer by State"
+        hero_h1 = profession
+        hero_sub = "License Transfer by State"
         primary_count = endorsement_count
         primary_label = "Endorsement States"
         path_filter_aria = "Filter by licensure path"
@@ -777,6 +779,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 <header class="hero-wrapper">
   <h1>{hero_h1}</h1>
+  <p class="hero-sub">{hero_sub}</p>
 </header>
 
 {stats_block}
