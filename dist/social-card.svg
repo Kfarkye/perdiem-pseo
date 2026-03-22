@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="32" fill="#FAF9F7"/>
+  <rect x="26" y="26" width="1148" height="578" rx="28" fill="#FFFFFF" stroke="#E6E2DC" stroke-width="2"/>
+  <rect x="82" y="92" width="164" height="164" rx="28" fill="#FFF7EA" stroke="#E0D2BC" stroke-width="2"/>
+  <path d="M164 128L211 147V220C211 253 164 276 164 276C164 276 117 253 117 220V147L164 128Z" fill="#B08A52"/>
+  <text x="298" y="170" fill="#7C7267" font-family="Karla, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3.6">STATE LICENSING REFERENCE</text>
+  <text x="298" y="258" fill="#191919" font-family="'Source Serif 4', Georgia, serif" font-size="64" font-weight="600">License Transfer by State</text>
+  <text x="298" y="334" fill="#191919" font-family="'Source Serif 4', Georgia, serif" font-size="64" font-weight="600">Board Links, Fees, and Timelines</text>
+  <text x="298" y="402" fill="#4D463F" font-family="Karla, Arial, sans-serif" font-size="30">Endorsement steps, fingerprinting, and renewal details for all 50 states and DC.</text>
+  <rect x="82" y="462" width="276" height="84" rx="22" fill="#FAF9F7" stroke="#E6E2DC" stroke-width="2"/>
+  <text x="116" y="514" fill="#191919" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="600">8 professions</text>
+  <rect x="386" y="462" width="320" height="84" rx="22" fill="#FAF9F7" stroke="#E6E2DC" stroke-width="2"/>
+  <text x="420" y="514" fill="#191919" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="600">51 jurisdictions</text>
+  <rect x="734" y="462" width="374" height="84" rx="22" fill="#FAF9F7" stroke="#E6E2DC" stroke-width="2"/>
+  <text x="768" y="514" fill="#191919" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="600">Board-source guides</text>
+</svg>

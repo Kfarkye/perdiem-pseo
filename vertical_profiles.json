@@ -46,7 +46,8 @@
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
         "compact_source_url": "https://otcompact.org/",
-        "compact_status": "enacted"
+        "compact_status": "enacted",
+        "renewal_cycle": "3 years"
       },
       "copy": {
         "hero_h1_line1": "OT License",
@@ -92,7 +93,8 @@
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
         "compact_source_url": "https://ptcompact.org/ptc-states/",
-        "compact_status": "active"
+        "compact_status": "active",
+        "renewal_cycle": "2 years"
       },
       "copy": {
         "hero_h1_line1": "PT License",
@@ -138,7 +140,8 @@
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
         "compact_source_url": "https://aslpcompact.com/",
-        "compact_status": "active"
+        "compact_status": "active",
+        "renewal_cycle": "3 years"
       },
       "copy": {
         "hero_h1_line1": "SLP License",
@@ -184,7 +187,8 @@
         "compact_live_count": null,
         "compact_verification_hook": "VERIFIED",
         "compact_source_url": "",
-        "compact_status": "none"
+        "compact_status": "none",
+        "renewal_cycle": "2 years"
       },
       "copy": {
         "hero_h1_line1": "RRT License",
@@ -230,7 +234,8 @@
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
         "compact_source_url": "https://dietitianscompact.org/",
-        "compact_status": "enacted"
+        "compact_status": "enacted",
+        "renewal_cycle": "5 years"
       },
       "copy": {
         "hero_h1_line1": "Dietitian License",
@@ -276,7 +281,8 @@
         "compact_live_count": null,
         "compact_verification_hook": "PENDING",
         "compact_source_url": "https://aslpcompact.com/",
-        "compact_status": "active"
+        "compact_status": "active",
+        "renewal_cycle": "3 years"
       },
       "copy": {
         "hero_h1_line1": "Audiologist License",
@@ -322,7 +328,8 @@
         "compact_live_count": null,
         "compact_verification_hook": "VERIFIED",
         "compact_source_url": "",
-        "compact_status": "none"
+        "compact_status": "none",
+        "renewal_cycle": "2 years"
       },
       "copy": {
         "hero_h1_line1": "Pharmacy Tech License",
@@ -368,7 +375,8 @@
         "compact_live_count": null,
         "compact_verification_hook": "VERIFIED",
         "compact_source_url": "",
-        "compact_status": "none"
+        "compact_status": "none",
+        "renewal_cycle": "1–2 years"
       },
       "copy": {
         "hero_h1_line1": "Pharmacist License",

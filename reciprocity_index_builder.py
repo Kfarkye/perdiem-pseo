@@ -303,25 +303,28 @@ def render_index(
     site_root = domain.rsplit("/", 1)[0]
     share_image = f"{site_root}/social-card.svg"
 
-    # Render stats only when there is meaningful compact/CDR signal.
-    # This suppresses "0 Compact States" noise on non-compact specialties.
-    has_meaningful_stats = (compact_count > 0 or cdr_state_count > 0) and not verify_fee_and_timing_with_board
+    # Pull profession-level metadata for the stats block
+    national_credential = profile['identity'].get('credential', '')
+    national_exam = profile.get('regulatory', {}).get('national_exam', '')
+    renewal_cycle = profile.get('regulatory', {}).get('renewal_cycle', '2 years')
 
-    if has_meaningful_stats:
-        stats_block = f'''
+    stats_block = f'''
   <div class="stats-container">
     <div class="stat">
-      <span class="stat-value">{total_states}</span>
-      <span class="stat-label">Jurisdictions</span>
+      <span class="stat-value" style="font-size:18px">{national_credential}</span>
+      <span class="stat-label">National License</span>
     </div>
     <div class="stat-divider" aria-hidden="true"></div>
     <div class="stat">
-      <span class="stat-value">{primary_count}</span>
-      <span class="stat-label">{primary_label}</span>
-    </div>{cdr_stat_block}
+      <span class="stat-value" style="font-size:16px">{national_exam}</span>
+      <span class="stat-label">National Exam</span>
+    </div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat">
+      <span class="stat-value">{renewal_cycle}</span>
+      <span class="stat-label">Renewal Cycle</span>
+    </div>
   </div>'''
-    else:
-        stats_block = ''
 
     return f'''<!DOCTYPE html>
 <html lang="en">
