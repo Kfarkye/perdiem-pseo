@@ -99,6 +99,9 @@ for json_file, data in records:
             encoding="utf-8",
         )
 
+    # Invariant to catch ID/SHAPE errors around states with no DA license:
+    assert isinstance(data["reciprocity"].get("license_required"), bool), f"Data integrity error: {slug_value} is missing the explicit license_required boolean flag."
+
     processing_time = data["reciprocity"].get("processing_time", "TBD")
     requires_psv = data["reciprocity"].get("requires_psv", False)
     fee = data["reciprocity"].get("endorsement_fee", 0)
