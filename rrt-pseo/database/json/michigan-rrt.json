@@ -122,13 +122,16 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 83,
+    "endorsement_fee": 103,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.michigan.gov/lara/",
     "endorsement_url": "https://www.michigan.gov/lara/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": false,
+    "board_source_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/respiratory-therapist"
   },
   "slug": "michigan-rrt",
   "specialty": "rrt"

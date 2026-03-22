@@ -122,13 +122,16 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 200,
+    "processing_time": "3 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.maryland.gov/",
     "endorsement_url": "https://health.maryland.gov/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.mbp.state.md.us/bpqapp/rcp.aspx"
   },
   "slug": "maryland-rrt",
   "specialty": "rrt"

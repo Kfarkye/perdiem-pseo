@@ -122,13 +122,16 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 110,
+    "endorsement_fee": 170,
     "processing_time": "3 to 5 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.oplc.nh.gov/",
     "endorsement_url": "https://www.oplc.nh.gov/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.oplc.nh.gov/respiratory-care"
   },
   "slug": "new-hampshire-rrt",
   "specialty": "rrt"

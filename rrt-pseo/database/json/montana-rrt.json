@@ -119,16 +119,19 @@
     "compact_url": "",
     "compact_portal_url": "",
     "license_required": true,
-    "fingerprint_required": false,
+    "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "3 to 5 Weeks",
-    "processing_tier": "fast",
+    "processing_time": "4 to 8 Weeks",
+    "processing_tier": "mid",
     "board_url": "https://boards.bsd.dli.mt.gov/",
     "endorsement_url": "https://boards.bsd.dli.mt.gov/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://boards.bsd.dli.mt.gov/respiratory-care-practitioners"
   },
   "slug": "montana-rrt",
   "specialty": "rrt"

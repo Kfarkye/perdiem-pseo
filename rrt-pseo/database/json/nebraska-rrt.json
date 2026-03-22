@@ -122,13 +122,16 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 125,
+    "endorsement_fee": 118,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
     "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": false,
+    "board_source_url": "https://dhhs.ne.gov/licensure/Pages/Respiratory-Care-Practitioner.aspx"
   },
   "slug": "nebraska-rrt",
   "specialty": "rrt"
