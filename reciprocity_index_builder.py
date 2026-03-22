@@ -309,20 +309,18 @@ def render_index(
     renewal_cycle = profile.get('regulatory', {}).get('renewal_cycle', '2 years')
 
     stats_block = f'''
-  <div class="stats-container">
-    <div class="stat">
-      <span class="stat-value" style="font-size:18px">{national_credential}</span>
-      <span class="stat-label">National License</span>
+  <div class="credential-bar">
+    <div class="credential-item">
+      <span class="credential-label">National License</span>
+      <span class="credential-value">{national_credential}</span>
     </div>
-    <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat">
-      <span class="stat-value" style="font-size:16px">{national_exam}</span>
-      <span class="stat-label">National Exam</span>
+    <div class="credential-item">
+      <span class="credential-label">National Exam</span>
+      <span class="credential-value">{national_exam}</span>
     </div>
-    <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat">
-      <span class="stat-value">{renewal_cycle}</span>
-      <span class="stat-label">Renewal Cycle</span>
+    <div class="credential-item">
+      <span class="credential-label">Renewal Cycle</span>
+      <span class="credential-value">{renewal_cycle}</span>
     </div>
   </div>'''
 
@@ -434,13 +432,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .nav-links a:hover {{ color: #333; }}
 
 .hero-wrapper {{
-  max-width: var(--reading);
+  max-width: var(--shell);
   margin: 0 auto;
-  padding: 64px 24px 40px;
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.85fr);
-  gap: 34px;
-  align-items: end;
+  padding: 64px 24px 32px;
 }}
 .hero-kicker {{
   margin: 0 0 12px;
@@ -452,28 +446,46 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero-wrapper h1 {{
   font-size: clamp(30px, 4.8vw, 44px);
   margin-bottom: 12px;
-  grid-column: 1;
+  max-width: var(--reading);
 }}
 .hero-sub {{
-  max-width: 37ch;
+  max-width: 52ch;
   font-size: 18px;
   color: #444;
   margin: 0;
-  grid-column: 1;
 }}
 
-.stats-container {{
-  margin-top: 28px;
-  display: flex;
-  align-items: stretch;
-  gap: 20px;
+.credential-bar {{
+  max-width: var(--shell);
+  margin: 0 auto;
+  padding: 0 24px 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}}
+.credential-item {{
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 20px 22px;
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   box-shadow: var(--shadow-soft);
-  grid-column: 2;
-  grid-row: 1 / span 3;
+}}
+.credential-label {{
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 600;
+}}
+.credential-value {{
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #191919;
+  line-height: 1.35;
 }}
 .stat {{
   min-width: 0;
@@ -510,51 +522,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   border-radius: 18px;
   background: #fff;
   padding: 14px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 10px 12px;
-  box-shadow: var(--shadow-soft);
-}}
-.search-wrap {{
-  min-width: 0;
-  position: relative;
   display: flex;
   align-items: center;
-}}
-.search-icon {{
-  position: absolute;
-  left: 12px;
-  color: #999;
-  pointer-events: none;
-}}
-.search-input {{
-  width: 100%;
-  height: 40px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0 38px;
-  font-size: 15px;
-  font-family: inherit;
-  color: var(--text);
-  background: #fff;
-}}
-.search-input::placeholder {{ color: #999; }}
-.search-clear {{
-  position: absolute;
-  right: 9px;
-  width: 22px;
-  height: 22px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  color: #999;
-  background: #fff;
+  gap: 10px;
+  box-shadow: var(--shadow-soft);
 }}
 .toolbar-bottom-row {{
   display: flex;
   gap: 10px;
+  width: 100%;
+  align-items: center;
 }}
 .seg-group {{
   display: flex;
@@ -752,17 +729,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     padding: 0 16px;
   }}
   .hero-wrapper {{
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }}
-  .toolbar-wrap,
-  .content,
-  .foot-wrapper {{
-    padding-left: 16px;
-    padding-right: 16px;
-  }}
-  .toolbar {{
-    grid-template-columns: 1fr;
+    padding: 36px 16px 24px;
   }}
   .toolbar-bottom-row {{
     flex-wrap: wrap;
@@ -778,14 +745,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 @media (max-width: 640px) {{
   .nav-links {{ display: none; }}
   .hero-wrapper {{ padding: 36px 16px 24px; }}
-  .stats-container {{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }}
-  .stat-divider {{
-    width: 100%;
-    height: 1px;
+  .credential-bar {{
+    grid-template-columns: 1fr;\n    padding: 0 16px 24px;
   }}
   .group-head-row {{ display: none; }}
   .row {{
@@ -823,19 +784,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   <p class="hero-kicker">Board-verified transfer paths</p>
   <h1>{hero_h1}</h1>
   <p class="hero-sub">{hero_sub}</p>
-  
-  {stats_block}
 </header>
 
+{stats_block}
+
 <div class="toolbar-wrap">
-  <search class="toolbar" role="search">
-    <div class="search-wrap">
-      <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
-      <input id="stateSearch" class="search-input" type="text" placeholder="Search states..." aria-label="Search states by name" autocomplete="off" spellcheck="false">
-      <button class="search-clear" id="searchClear" aria-label="Clear search">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
-      </button>
-    </div>
+  <div class="toolbar">
     <div class="toolbar-bottom-row">
       <div class="seg-group" data-filter-group="path" role="group" aria-label="{path_filter_aria}">
         <button type="button" class="seg-btn active" data-value="all" aria-pressed="true">All</button>
@@ -849,7 +803,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <option value="extra-steps">Sort: Extra steps</option>
       </select>
     </div>
-  </search>
+  </div>
 </div>
 
 <main class="content" id="main-content">
