@@ -1033,26 +1033,16 @@
       {% endfor %}
     </section>
 
-    {% if same_state_specialties or nearby_state_links %}
+    {% if nearby_state_links %}
     <section id="related-guides" class="section-shell" aria-labelledby="related-guides-heading">
       <div class="section-copy">
-        <p class="section-kicker">Next reads</p>
-        <h2 id="related-guides-heading">Keep Going</h2>
+        <p class="section-kicker">Trending</p>
+        <h2 id="related-guides-heading">Trending States</h2>
       </div>
       <div class="related-guides-grid">
-        {% if same_state_specialties %}
-        <article class="related-guides-card">
-          <h3>Also in {{ state_name }}</h3>
-          <ul class="related-guides-list">
-            {% for item in same_state_specialties %}
-            <li><a href="{{ item.url }}">{{ item.label }} licensing</a></li>
-            {% endfor %}
-          </ul>
-        </article>
-        {% endif %}
         {% if nearby_state_links %}
         <article class="related-guides-card">
-          <h3>Nearby state guides</h3>
+          <h3>Trending states</h3>
           <ul class="related-guides-list">
             {% for item in nearby_state_links %}
             <li><a href="{{ item.url }}">{{ item.label }}</a></li>
