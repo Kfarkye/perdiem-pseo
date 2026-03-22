@@ -246,7 +246,7 @@ def render_index(
 
     if show_compact_ui:
         hero_h1 = f"{profession} License<br>Reciprocity by State"
-        hero_sub = f"Compare compact privileges, endorsement fees, and processing timelines across all {total_states} states and DC."
+        hero_sub = f"Fees, timelines, and compact status for all {total_states} jurisdictions."
         primary_count = compact_count
         primary_label = "Compact States"
         path_filter_aria = "Filter by reciprocity path"
@@ -276,9 +276,9 @@ def render_index(
     else:
         hero_h1 = f"{profession} License<br>Transfer by State"
         if verify_fee_and_timing_with_board:
-            hero_sub = f"Open any state guide for board links, required documents, and licensing steps across all {total_states} states and DC."
+            hero_sub = f"Board links, fees, and licensing steps for all {total_states} jurisdictions."
         else:
-            hero_sub = f"Compare endorsement fees, fingerprints, exam requirements, and processing timelines across all {total_states} states and DC."
+            hero_sub = f"Fees, timelines, and extra steps for all {total_states} jurisdictions."
         primary_count = endorsement_count
         primary_label = "Endorsement States"
         path_filter_aria = "Filter by licensure path"
@@ -781,7 +781,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 </nav>
 
 <header class="hero-wrapper">
-  <p class="hero-kicker">Board-verified transfer paths</p>
   <h1>{hero_h1}</h1>
   <p class="hero-sub">{hero_sub}</p>
 </header>
