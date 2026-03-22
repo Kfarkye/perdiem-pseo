@@ -84,9 +84,13 @@ def render_index(
         slug = s['slug']
         tier = 'slow'
         license_required = bool(s.get('license_required', True))
+        is_member_flag = (
+            bool(s.get('state_is_member'))
+            or bool(s.get('compact', {}).get('is_compact_member'))
+        )
         member = (
             has_compact_framework
-            and bool(s.get('state_is_member'))
+            and is_member_flag
             and not (suppress_compact_ui and license_required)
         )
         fee_value = s.get('endorsement_fee')
