@@ -127,7 +127,11 @@
     "processing_tier": "mid",
     "board_url": "https://gbp.georgia.gov",
     "endorsement_url": "https://gbp.georgia.gov",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://sos.ga.gov/index.php/licensing/plb/45"
   },
   "slug": "georgia-pharm",
   "specialty": "pharm"
