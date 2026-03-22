@@ -123,11 +123,15 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 30,
-    "processing_time": "Allow 3 to 5 business days for board review",
-    "processing_tier": "mid",
+    "processing_time": "1 to 2 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://www.ncbop.org/pharmacy-technicians.html",
     "endorsement_url": "https://www.ncbop.org/pharmacy-technicians.html",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "http://www.ncbop.org/"
   },
   "slug": "north-carolina-pharm",
   "specialty": "pharm",
