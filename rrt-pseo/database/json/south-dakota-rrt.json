@@ -119,7 +119,7 @@
     "compact_url": "",
     "compact_portal_url": "",
     "license_required": true,
-    "fingerprint_required": false,
+    "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 75,
@@ -128,7 +128,10 @@
     "board_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
     "endorsement_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://sdbmoe.gov/professions/respiratory-care-practitioner/"
   },
   "slug": "south-dakota-rrt",
   "specialty": "rrt"
