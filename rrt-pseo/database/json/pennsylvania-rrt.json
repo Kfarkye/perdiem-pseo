@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity pennsylvania, how to transfer respiratory therapist license to pennsylvania, respiratory therapist compact pennsylvania, pennsylvania respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Pennsylvania Board of Medicine \u2014 RT",
+    "name": "Pennsylvania Board of Medicine — RT",
     "parent_dept": "Pennsylvania Department of State",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -29,11 +29,11 @@
     "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Medicine/Pages/default.aspx"
   },
   "quick_facts": {
-    "total_fee": "$100",
+    "total_fee": "$30",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -100,7 +100,7 @@
     "app_fee": "$100",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$30"
   },
   "temp_license": {
     "available": true,
@@ -122,12 +122,13 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 30,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Medicine/Pages/default.aspx",
     "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Medicine/Pages/default.aspx",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "pennsylvania-rrt",
   "specialty": "rrt"

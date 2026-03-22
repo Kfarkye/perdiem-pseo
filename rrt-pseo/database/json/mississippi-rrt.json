@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity mississippi, how to transfer respiratory therapist license to mississippi, respiratory therapist compact mississippi, mississippi respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Mississippi DOH \u2014 Professional Licensure \u2014 RT",
+    "name": "Mississippi DOH — Professional Licensure — RT",
     "parent_dept": "Mississippi State Department of Health",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -127,7 +127,8 @@
     "processing_tier": "mid",
     "board_url": "https://msdh.ms.gov/",
     "endorsement_url": "https://msdh.ms.gov/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "mississippi-rrt",
   "specialty": "rrt"

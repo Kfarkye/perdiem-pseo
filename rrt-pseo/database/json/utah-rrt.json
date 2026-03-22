@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity utah, how to transfer respiratory therapist license to utah, respiratory therapist compact utah, utah respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Utah DOPL \u2014 Respiratory Therapy",
+    "name": "Utah DOPL — Respiratory Therapy",
     "parent_dept": "Department of Commerce",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -29,11 +29,11 @@
     "url": "https://dopl.utah.gov/"
   },
   "quick_facts": {
-    "total_fee": "$100",
+    "total_fee": "$90",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 5 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -100,7 +100,7 @@
     "app_fee": "$100",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$90"
   },
   "temp_license": {
     "available": true,
@@ -122,12 +122,13 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "endorsement_fee": 90,
+    "processing_time": "3 to 5 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://dopl.utah.gov/",
     "endorsement_url": "https://dopl.utah.gov/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "utah-rrt",
   "specialty": "rrt"

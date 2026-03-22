@@ -2,7 +2,7 @@
   "state_slug": "minnesota",
   "state_name": "Minnesota",
   "fingerprints": {
-    "required": true,
+    "required": false,
     "method_in_state": "LiveScan (IdentoGO)",
     "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
     "vendor": "IdentoGO / BCA",
@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity minnesota, how to transfer respiratory therapist license to minnesota, respiratory therapist compact minnesota, minnesota respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Minnesota Board of Medical Practice \u2014 RT",
+    "name": "Minnesota Board of Medical Practice — RT",
     "parent_dept": "Minnesota Department of Health",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -33,7 +33,7 @@
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 5 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -119,15 +119,16 @@
     "compact_url": "",
     "compact_portal_url": "",
     "license_required": true,
-    "fingerprint_required": true,
+    "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "processing_time": "3 to 5 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://mn.gov/boards/medical-practice/",
     "endorsement_url": "https://mn.gov/boards/medical-practice/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "minnesota-rrt",
   "specialty": "rrt"

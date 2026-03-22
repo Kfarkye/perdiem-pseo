@@ -127,7 +127,8 @@
     "processing_tier": "mid",
     "board_url": "http://www.asbrt.alabama.gov",
     "endorsement_url": "http://www.asbrt.alabama.gov",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "alabama-rrt",
   "specialty": "rrt"

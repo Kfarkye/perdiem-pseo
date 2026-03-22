@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity nevada, how to transfer respiratory therapist license to nevada, respiratory therapist compact nevada, nevada respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Nevada Board of Medical Examiners \u2014 RT",
+    "name": "Nevada Board of Medical Examiners — RT",
     "parent_dept": "Department of Health and Human Services",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -127,7 +127,8 @@
     "processing_tier": "mid",
     "board_url": "https://medboard.nv.gov/",
     "endorsement_url": "https://medboard.nv.gov/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "nevada-rrt",
   "specialty": "rrt"

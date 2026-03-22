@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity arkansas, how to transfer respiratory therapist license to arkansas, respiratory therapist compact arkansas, arkansas respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Arkansas State Medical Board \u2014 RT",
+    "name": "Arkansas State Medical Board — RT",
     "parent_dept": "Arkansas Department of Health",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -29,11 +29,11 @@
     "url": "http://www.armedicalboard.org/Professionals/RespiratoryTherapist.aspx"
   },
   "quick_facts": {
-    "total_fee": "$100",
+    "total_fee": "$50",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -100,7 +100,7 @@
     "app_fee": "$100",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$50"
   },
   "temp_license": {
     "available": true,
@@ -122,12 +122,13 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "endorsement_fee": 50,
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
     "board_url": "http://www.armedicalboard.org/Professionals/RespiratoryTherapist.aspx",
     "endorsement_url": "http://www.armedicalboard.org/Professionals/RespiratoryTherapist.aspx",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "arkansas-rrt",
   "specialty": "rrt"

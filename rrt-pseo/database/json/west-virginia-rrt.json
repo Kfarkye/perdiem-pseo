@@ -127,7 +127,8 @@
     "processing_tier": "mid",
     "board_url": "https://wvbort.com/",
     "endorsement_url": "https://wvbort.com/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "west-virginia-rrt",
   "specialty": "rrt"

@@ -2,7 +2,7 @@
   "state_slug": "south-dakota",
   "state_name": "South Dakota",
   "fingerprints": {
-    "required": true,
+    "required": false,
     "method_in_state": "LiveScan (IdentoGO)",
     "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
     "vendor": "IdentoGO (IDEMIA)",
@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity south dakota, how to transfer respiratory therapist license to south dakota, respiratory therapist compact south dakota, south dakota respiratory therapist endorsement application"
   },
   "board": {
-    "name": "South Dakota Board of Medical and Osteopathic Examiners \u2014 RT",
+    "name": "South Dakota Board of Medical and Osteopathic Examiners — RT",
     "parent_dept": "Department of Health",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -29,11 +29,11 @@
     "url": "https://doh.sd.gov/licensing-and-records/boards/medical/"
   },
   "quick_facts": {
-    "total_fee": "$100",
+    "total_fee": "$75",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -100,7 +100,7 @@
     "app_fee": "$100",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$75"
   },
   "temp_license": {
     "available": true,
@@ -119,15 +119,16 @@
     "compact_url": "",
     "compact_portal_url": "",
     "license_required": true,
-    "fingerprint_required": true,
+    "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "endorsement_fee": 75,
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
     "endorsement_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "south-dakota-rrt",
   "specialty": "rrt"

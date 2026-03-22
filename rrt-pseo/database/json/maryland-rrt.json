@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity maryland, how to transfer respiratory therapist license to maryland, respiratory therapist compact maryland, maryland respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Maryland DOH \u2014 Respiratory Care Practitioners",
+    "name": "Maryland DOH — Respiratory Care Practitioners",
     "parent_dept": "Maryland Department of Health (MDH)",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -127,7 +127,8 @@
     "processing_tier": "mid",
     "board_url": "https://health.maryland.gov/",
     "endorsement_url": "https://health.maryland.gov/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "maryland-rrt",
   "specialty": "rrt"

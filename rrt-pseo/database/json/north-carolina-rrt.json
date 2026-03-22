@@ -33,7 +33,7 @@
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 5 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -123,11 +123,12 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "processing_time": "3 to 5 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://www.ncrcb.org/",
     "endorsement_url": "https://www.ncrcb.org/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "north-carolina-rrt",
   "specialty": "rrt"

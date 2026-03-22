@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity delaware, how to transfer respiratory therapist license to delaware, respiratory therapist compact delaware, delaware respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Delaware Division of Professional Regulation \u2014 RT",
+    "name": "Delaware Division of Professional Regulation — RT",
     "parent_dept": "Delaware Division of Professional Regulation",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -29,7 +29,7 @@
     "url": "https://dpr.delaware.gov/boards/medicalpractice/respiratory_license/"
   },
   "quick_facts": {
-    "total_fee": "$100",
+    "total_fee": "$134",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
@@ -100,7 +100,7 @@
     "app_fee": "$100",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$134"
   },
   "temp_license": {
     "available": true,
@@ -122,12 +122,13 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 134,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dpr.delaware.gov/boards/medicalpractice/respiratory_license/",
     "endorsement_url": "https://dpr.delaware.gov/boards/medicalpractice/respiratory_license/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "delaware-rrt",
   "specialty": "rrt"

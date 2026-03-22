@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity connecticut, how to transfer respiratory therapist license to connecticut, respiratory therapist compact connecticut, connecticut respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Connecticut DPH \u2014 Respiratory Care",
+    "name": "Connecticut DPH — Respiratory Care",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -29,11 +29,11 @@
     "url": "https://portal.ct.gov/DPH"
   },
   "quick_facts": {
-    "total_fee": "$100",
+    "total_fee": "$200",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -100,7 +100,7 @@
     "app_fee": "$100",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$200"
   },
   "temp_license": {
     "available": true,
@@ -122,12 +122,13 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 200,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/DPH",
     "endorsement_url": "https://portal.ct.gov/DPH",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "connecticut-rrt",
   "specialty": "rrt"

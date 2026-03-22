@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity texas, how to transfer respiratory therapist license to texas, respiratory therapist compact texas, texas respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Texas Medical Board \u2014 Respiratory Care",
+    "name": "Texas Medical Board — Respiratory Care",
     "parent_dept": "Texas Department of Licensing and Regulation (TDLR)",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -29,11 +29,11 @@
     "url": "https://www.tmb.state.tx.us/"
   },
   "quick_facts": {
-    "total_fee": "$100",
+    "total_fee": "$131",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -100,7 +100,7 @@
     "app_fee": "$100",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$131"
   },
   "temp_license": {
     "available": true,
@@ -121,13 +121,14 @@
     "license_required": true,
     "fingerprint_required": true,
     "temp_license_available": true,
-    "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "jurisprudence_required": true,
+    "endorsement_fee": 131,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.tmb.state.tx.us/",
     "endorsement_url": "https://www.tmb.state.tx.us/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "texas-rrt",
   "specialty": "rrt"

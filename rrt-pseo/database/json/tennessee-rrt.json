@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity tennessee, how to transfer respiratory therapist license to tennessee, respiratory therapist compact tennessee, tennessee respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Tennessee Board of Medical Examiners \u2014 RT",
+    "name": "Tennessee Board of Medical Examiners — RT",
     "parent_dept": "Tennessee Department of Health",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -127,7 +127,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/me-board.html",
     "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/me-board.html",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "tennessee-rrt",
   "specialty": "rrt"

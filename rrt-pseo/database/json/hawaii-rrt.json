@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity hawaii, how to transfer respiratory therapist license to hawaii, respiratory therapist compact hawaii, hawaii respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Hawaii PVL \u2014 Respiratory Therapy",
+    "name": "Hawaii PVL — Respiratory Therapy",
     "parent_dept": "Hawaii Department of Health (DOH) Office of Health Care Assurance",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -33,7 +33,7 @@
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "8 to 12 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -123,11 +123,12 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "processing_time": "8 to 12 Weeks",
+    "processing_tier": "slow",
     "board_url": "http://cca.hawaii.gov/pvl/programs/respiratory/",
     "endorsement_url": "http://cca.hawaii.gov/pvl/programs/respiratory/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "hawaii-rrt",
   "specialty": "rrt"

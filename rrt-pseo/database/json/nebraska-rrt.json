@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity nebraska, how to transfer respiratory therapist license to nebraska, respiratory therapist compact nebraska, nebraska respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Nebraska DHHS \u2014 Respiratory Care",
+    "name": "Nebraska DHHS — Respiratory Care",
     "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -29,7 +29,7 @@
     "url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx"
   },
   "quick_facts": {
-    "total_fee": "$100",
+    "total_fee": "$125",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
@@ -100,7 +100,7 @@
     "app_fee": "$100",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$125"
   },
   "temp_license": {
     "available": true,
@@ -122,12 +122,13 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 125,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
     "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "nebraska-rrt",
   "specialty": "rrt"

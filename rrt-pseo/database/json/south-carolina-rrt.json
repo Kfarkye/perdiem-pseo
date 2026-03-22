@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity south carolina, how to transfer respiratory therapist license to south carolina, respiratory therapist compact south carolina, south carolina respiratory therapist endorsement application"
   },
   "board": {
-    "name": "South Carolina Board of Medical Examiners \u2014 RT",
+    "name": "South Carolina Board of Medical Examiners — RT",
     "parent_dept": "South Carolina Department of Labor, Licensing and Regulation (LLR)",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -127,7 +127,8 @@
     "processing_tier": "mid",
     "board_url": "https://llr.sc.gov/med/",
     "endorsement_url": "https://llr.sc.gov/med/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "south-carolina-rrt",
   "specialty": "rrt"

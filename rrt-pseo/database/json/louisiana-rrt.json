@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity louisiana, how to transfer respiratory therapist license to louisiana, respiratory therapist compact louisiana, louisiana respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Louisiana State Board of Medical Examiners \u2014 RT",
+    "name": "Louisiana State Board of Medical Examiners — RT",
     "parent_dept": "Independent State Board",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -127,7 +127,8 @@
     "processing_tier": "mid",
     "board_url": "https://www.lsbme.la.gov/",
     "endorsement_url": "https://www.lsbme.la.gov/",
-    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": false
   },
   "slug": "louisiana-rrt",
   "specialty": "rrt"
