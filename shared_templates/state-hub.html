@@ -813,8 +813,8 @@
     <section id="endorsement" class="section-shell" aria-labelledby="apply-heading">
       <div class="section-copy">
         <p class="section-kicker">Submission checklist</p>
-        <h2 id="apply-heading">{% if reciprocity.license_required %}What {{ state_name }} Wants From You{% else %}What to Confirm{% endif %}</h2>
-        {% if reciprocity.license_required %}<p>This is the endorsement checklist for already-licensed clinicians moving into {{ state_name }}.</p>{% endif %}
+        <h2 id="apply-heading">{% if reciprocity.license_required %}{{ state_name }} Endorsement Requirements{% else %}What to Confirm{% endif %}</h2>
+        {% if reciprocity.license_required %}<p>This is the endorsement checklist for already-licensed clinicians applying in {{ state_name }}.</p>{% endif %}
       </div>
 
       <ol class="steps">
@@ -826,7 +826,7 @@
           <li>
             <p class="step-kicker">Step {{ step_ns.number }}</p>
             <p class="step-title">Start the {{ state_name }} application</p>
-            <p>Apply through {{ board.name }}{% if fees_endorsement.app_fee and fees_endorsement.app_fee != '$0' %} and plan on {{ fees_endorsement.app_fee }} in application fees{% endif %}{% if fees_endorsement.total_estimated_cost and fees_endorsement.total_estimated_cost != '$0' and fees_endorsement.total_estimated_cost != fees_endorsement.app_fee %}. The total cost listed here is {{ fees_endorsement.total_estimated_cost }}{% endif %}.</p>
+            <p>Apply through the {{ board.name }}{% if fees_endorsement.app_fee and fees_endorsement.app_fee != '$0' %}. The application fee is {{ fees_endorsement.app_fee }}{% endif %}.</p>
           </li>
 
           {% if verification_inferred %}
@@ -834,7 +834,7 @@
             <li>
               <p class="step-kicker">Step {{ step_ns.number }}</p>
               <p class="step-title">Send verification of your current license</p>
-              <p>{{ state_name }} expects verification sent directly from your current state or its verification system before the file is complete.</p>
+              <p>{{ state_name }} requires verification sent directly from your current state board or its official verification system before your file is complete.</p>
             </li>
           {% endif %}
 
@@ -852,7 +852,7 @@
             <li>
               <p class="step-kicker">Step {{ step_ns.number }}</p>
               <p class="step-title">Complete fingerprinting or background check</p>
-              <p>{{ state_name }} lists fingerprinting or background screening on this path{% if fingerprints.method_out_of_state %}. Out-of-state applicants use: {{ fingerprints.method_out_of_state }}{% endif %}.</p>
+              <p>{{ state_name }} requires fingerprinting or background screening on this path.{% if fingerprints.method_out_of_state %} Out-of-state applicants can use {{ fingerprints.method_out_of_state }}.{% endif %}</p>
             </li>
           {% endif %}
 
@@ -860,8 +860,8 @@
             {% set step_ns.number = step_ns.number + 1 %}
             <li>
               <p class="step-kicker">Step {{ step_ns.number }}</p>
-              <p class="step-title">Complete any state law exam</p>
-              <p>{{ state_name }} lists a jurisprudence or state law exam as part of this licensing path.</p>
+              <p class="step-title">Complete the jurisprudence or state law requirement</p>
+              <p>{{ state_name }} requires a jurisprudence exam or state law course as part of this licensing path. Check the board site for approved providers.</p>
             </li>
           {% endif %}
 
@@ -869,7 +869,7 @@
           <li>
             <p class="step-kicker">Step {{ step_ns.number }}</p>
             <p class="step-title">Wait for board processing</p>
-            <p>Most applicants should plan on {{ processing_label }}{% if reciprocity.temp_license_available %}. The board also lists a temporary or provisional path while the full file is pending{% endif %}.</p>
+            <p>Plan on about {{ processing_label }} for processing{% if reciprocity.temp_license_available %}. {{ state_name }} also lists a temporary or provisional route while the full file is pending{% endif %}.</p>
           </li>
         {% endif %}
 
