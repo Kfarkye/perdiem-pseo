@@ -153,6 +153,10 @@ def render_index(
             fee_display = '\u2014'
             time_display = 'No state app'
             s['fee'] = 0
+        elif s['member']:
+            fee_display = '$0'
+            time_display = 'Compact privilege'
+            s['fee'] = 0
         elif verify_fee_and_timing_with_board:
             fee_display = s.get('fee_display') or 'See board'
             time_display = s.get('time_display') or 'See board'
