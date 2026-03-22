@@ -123,11 +123,15 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 30,
-    "processing_time": "Not published by board",
-    "processing_tier": "mid",
+    "processing_time": "1 to 2 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
     "endorsement_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Pharmacy/"
   },
   "slug": "pennsylvania-pharm",
   "specialty": "pharm",

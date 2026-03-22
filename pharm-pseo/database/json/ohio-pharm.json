@@ -123,11 +123,15 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 65,
-    "processing_time": "10 to 15 business days",
-    "processing_tier": "mid",
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
     "endorsement_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": false,
+    "board_source_url": "https://www.pharmacy.ohio.gov/"
   },
   "slug": "ohio-pharm",
   "specialty": "pharm",
