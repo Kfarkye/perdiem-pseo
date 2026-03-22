@@ -83,11 +83,11 @@
     },
     {
       "question": "How long does it take to transfer my pharmacy technician license to Michigan?",
-      "answer": "Michigan\u2019s current licensing report says pharmacy technician applications average about 90 days from receipt to issuance."
+      "answer": "Michigan’s current licensing report says pharmacy technician applications average about 90 days from receipt to issuance."
     },
     {
       "question": "Can I start working in Michigan while my endorsement application is processing?",
-      "answer": "Michigan\u2019s current licensing report says pharmacy technician applications average about 90 days from receipt to issuance."
+      "answer": "Michigan’s current licensing report says pharmacy technician applications average about 90 days from receipt to issuance."
     }
   ],
   "compact": {
@@ -123,11 +123,15 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 137.7,
-    "processing_time": "About 90 days",
-    "processing_tier": "mid",
+    "processing_time": "2 to 4 Weeks",
+    "processing_tier": "fast",
     "board_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy",
     "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/pharm"
   },
   "slug": "michigan-pharm",
   "specialty": "pharm",
