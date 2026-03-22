@@ -118,7 +118,7 @@
     "state_is_member": false,
     "compact_url": "",
     "compact_portal_url": "",
-    "license_required": true,
+    "license_required": false,
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,

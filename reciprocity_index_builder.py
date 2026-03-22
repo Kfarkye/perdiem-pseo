@@ -71,6 +71,8 @@ def render_index(
     plural = profile['identity'].get('title_plural', profession + 's')
     compact_status = str(profile.get('regulatory', {}).get('compact_status', '')).lower()
     has_compact_framework = compact_status in {'active', 'enacted'}
+    exam_board = profile.get('regulatory', {}).get('exam_board', 'CDR')
+    national_acronym = exam_board.split(' ')[0] if exam_board else 'CDR'
     sorted_states = sorted(states_manifest, key=lambda item: item['name'])
     total_states = len(sorted_states)
 
@@ -232,10 +234,10 @@ def render_index(
         cdr_section = f'''
   <section class="group" id="group-cdr" aria-labelledby="heading-cdr">
     <div class="group-header">
-      <h2 id="heading-cdr">CDR States</h2>
-      <span class="group-count">{cdr_state_count}</span>
+      <h2 id="heading-cdr">{national_acronym} States</h2>
+      <span class="group-count">{{cdr_state_count}}</span>
     </div>
-    <p class="group-desc">No state license required \u2014 national CDR credential only.</p>
+    <p class="group-desc">No state license required \u2014 national {national_acronym} credential only.</p>
     <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
@@ -244,15 +246,15 @@ def render_index(
       <span></span>
     </div>
     <div class="group-rows" data-group="cdr-only" role="list">
-{cdr_rows}
+{{cdr_rows}}
     </div>
   </section>'''
-        cdr_filter_pill = '<button type="button" class="seg-btn" data-value="cdr-only" aria-pressed="false">CDR</button>'
+        cdr_filter_pill = f'<button type="button" class="seg-btn" data-value="cdr-only" aria-pressed="false">{national_acronym}</button>'
         cdr_stat_block = f'''
       <div class="stat-divider" aria-hidden="true"></div>
       <div class="stat">
-        <span class="stat-value">{cdr_state_count}</span>
-        <span class="stat-label">CDR States</span>
+        <span class="stat-value">{{cdr_state_count}}</span>
+        <span class="stat-label">{national_acronym} States</span>
       </div>'''
 
     if show_compact_ui:
@@ -281,7 +283,7 @@ def render_index(
     </div>
   </section>
 '''
-        how_to_use_copy = "Start with the path filter to narrow by compact, endorsement, or CDR. Sort by fee or speed to find your fastest or cheapest route. Open any state to see the full board-verified guide with steps, documents, and renewal info."
+        how_to_use_copy = f"Start with the path filter to narrow by compact, endorsement, or {national_acronym}. Sort by fee or speed to find your fastest or cheapest route. Open any state to see the full board-verified guide with steps, documents, and renewal info."
         quick_link_compact = '<li><a href="#group-compact">Compact states</a></li>'
         allowed_path_values = "['all','member','non-member','cdr-only']"
     else:
@@ -293,9 +295,9 @@ def render_index(
         compact_filter_btn = ''
         compact_section = ''
         if verify_fee_and_timing_with_board:
-            how_to_use_copy = "Use the path filter to focus on endorsement or CDR states. Sort by extra steps, then open any state guide to verify current fees and processing details directly with the board."
+            how_to_use_copy = f"Use the path filter to focus on endorsement or {national_acronym} states. Sort by extra steps, then open any state guide to verify current fees and processing details directly with the board."
         else:
-            how_to_use_copy = "Use the path filter to focus on endorsement or CDR states. Sort by fee or extra steps to find the cleanest route. Open any state for steps, documents, and renewal details."
+            how_to_use_copy = f"Use the path filter to focus on endorsement or {national_acronym} states. Sort by fee or extra steps to find the cleanest route. Open any state for steps, documents, and renewal details."
         quick_link_compact = ''
         allowed_path_values = "['all','non-member','cdr-only']"
 

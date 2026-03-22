@@ -822,7 +822,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   <section class="group" id="group-cdr" aria-labelledby="heading-cdr">
     <div class="group-header">
       <h2 id="heading-cdr">CDR States</h2>
-      <span class="group-count">5</span>
+      <span class="group-count">{cdr_state_count}</span>
     </div>
     <p class="group-desc">No state license required — national CDR credential only.</p>
     <div class="group-head-row" aria-hidden="true">
@@ -833,41 +833,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       <span></span>
     </div>
     <div class="group-rows" data-group="cdr-only" role="list">
-<a class="row" href="/arizona-dietitian" data-state="arizona" data-fee="0" data-tier="none" data-extra-steps="11" data-path="cdr-only">
-  <span class="r-name" title="Arizona">Arizona</span>
-  <span class="r-time">No state app</span>
-  <span class="r-speed"><span class="step-flag">PSV</span></span>
-  <span class="r-fee">—</span>
-  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
-</a>
-<a class="row" href="/california-dietitian" data-state="california" data-fee="0" data-tier="none" data-extra-steps="0" data-path="cdr-only">
-  <span class="r-name" title="California">California</span>
-  <span class="r-time">No state app</span>
-  <span class="r-speed"><span class="step-plain">No state application</span></span>
-  <span class="r-fee">—</span>
-  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
-</a>
-<a class="row" href="/colorado-dietitian" data-state="colorado" data-fee="0" data-tier="none" data-extra-steps="12" data-path="cdr-only">
-  <span class="r-name" title="Colorado">Colorado</span>
-  <span class="r-time">No state app</span>
-  <span class="r-speed"><span class="step-flag">Fingerprints</span></span>
-  <span class="r-fee">—</span>
-  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
-</a>
-<a class="row" href="/michigan-dietitian" data-state="michigan" data-fee="0" data-tier="none" data-extra-steps="12" data-path="cdr-only">
-  <span class="r-name" title="Michigan">Michigan</span>
-  <span class="r-time">No state app</span>
-  <span class="r-speed"><span class="step-flag">Fingerprints</span></span>
-  <span class="r-fee">—</span>
-  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
-</a>
-<a class="row" href="/virginia-dietitian" data-state="virginia" data-fee="0" data-tier="none" data-extra-steps="11" data-path="cdr-only">
-  <span class="r-name" title="Virginia">Virginia</span>
-  <span class="r-time">No state app</span>
-  <span class="r-speed"><span class="step-flag">PSV</span></span>
-  <span class="r-fee">—</span>
-  <span class="r-chevron" aria-hidden="true"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 1.5L6.5 6.5L1.5 11.5"/></svg></span>
-</a>
+{cdr_rows}
     </div>
   </section>
 
