@@ -19,7 +19,7 @@
     "keywords": "occupational therapist license reciprocity virginia, how to transfer occupational therapist license to virginia, occupational therapist compact virginia, virginia occupational therapist endorsement application"
   },
   "board": {
-    "name": "Virginia Board of Medicine \u2014 OT",
+    "name": "Virginia Board of Medicine — OT",
     "parent_dept": "Virginia Department of Health Professions (DHP)",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -29,9 +29,9 @@
     "url": "https://www.dhp.virginia.gov/medicine/"
   },
   "quick_facts": {
-    "total_fee": "",
+    "total_fee": "$130",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "",
+    "renewal_fee": "$70",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years"
@@ -104,7 +104,7 @@
     "app_fee": "N/A",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": ""
+    "total_estimated_cost": "$180"
   },
   "temp_license": {
     "available": true,
@@ -112,7 +112,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
+  "last_verified_date": "2026-03-22",
   "board_source_url": "https://www.dhp.virginia.gov/medicine/",
   "license_pathway": "endorsement",
   "profession_overrides": {},

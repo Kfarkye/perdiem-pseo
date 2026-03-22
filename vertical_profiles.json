@@ -15,7 +15,8 @@
       "slp",
       "aud",
       "pharm",
-      "pharmacist"
+      "pharmacist",
+      "cna"
     ],
     "expansion_candidates": [
       "rn",
@@ -399,6 +400,53 @@
       "footer": {
         "tagline": "Independent, YMYL-compliant licensing guides for pharmacists across the United States.",
         "disclaimer_entity": "the NABP, ACPE, any state board of pharmacy, or any federal agency"
+      }
+    },
+    "cna": {
+      "slug": "cna",
+      "dir": "cna-pseo",
+      "status": "DEPLOYED",
+      "identity": {
+        "title_short": "CNA",
+        "title_full": "Certified Nursing Assistant",
+        "title_plural": "Certified Nursing Assistants",
+        "primary_acronym": "CNA",
+        "credential": "CNA (Certified Nursing Assistant)",
+        "specific_pain_point": "Registry transfer verification between states"
+      },
+      "regulatory": {
+        "national_exam": "State Competency Exam (Written & Clinical Skills)",
+        "exam_board": "State Nurse Aide Registry",
+        "accrediting_body": "State-approved CNA training programs (OBRA-compliant)",
+        "compact_name": "None",
+        "compact_status_safe": "CNA certification does not currently have a multistate compact. Each state maintains its own nurse aide registry and sets its own endorsement requirements.",
+        "compact_live_count": null,
+        "compact_verification_hook": "VERIFIED",
+        "compact_source_url": "",
+        "compact_status": "none",
+        "renewal_cycle": "2 years"
+      },
+      "copy": {
+        "hero_h1_line1": "CNA Certification",
+        "hero_h1_line2": "State Directory",
+        "hero_sub": "Real processing times, true costs, and step-by-step board instructions for every state.",
+        "hero_audience_text": "Certified nursing assistants",
+        "overline": "",
+        "new_grad_milestone": "state competency exam",
+        "new_grad_card": "Just completed your CNA training program? Navigate the tricky sequence of clinical hour verification, competency exam scheduling, and state registry placement so you can start working at the bedside\u2014without overlapping application errors.",
+        "travel_card": "Moving to a new state? CNA reciprocity varies widely\u2014some states transfer your certification for free, others require new background checks and fees. Get exact requirements before you relocate.",
+        "boundaries_what_is": "We don't file your paperwork. We give you the step-by-step playbook to avoid common registry delays, skip the red tape, and hit your start date on time."
+      },
+      "seo": {
+        "meta_title": "CNA Certification Requirements by State \u2014 Fees, Registry Contacts & How to Transfer (2026)",
+        "meta_desc": "Complete 2026 guide to CNA certification requirements, reciprocity fees, and registry contacts for all 50 US states and DC.",
+        "meta_kw": "CNA certification by state, CNA reciprocity, how to transfer CNA license, nursing assistant certification cost, CNA endorsement requirements",
+        "og_title": "CNA Certification Requirements by State (2026)",
+        "og_desc": "Compare CNA certification fees, registry contacts, and endorsement steps across all 50 states."
+      },
+      "footer": {
+        "tagline": "Independent, YMYL-compliant certification guides for certified nursing assistants across the United States.",
+        "disclaimer_entity": "any state nurse aide registry, the CMS, or any federal agency"
       }
     },
     "rn": {

@@ -1,0 +1,134 @@
+{
+  "state_slug": "dc",
+  "state_name": "District of Columbia",
+  "fingerprints": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "profession_name": "Certified Nursing Assistant",
+  "credential_nomenclature": "CNA",
+  "last_updated": "2026-03-22",
+  "seo": {
+    "title": "District of Columbia CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "description": "Already certified as a CNA? Here's whether your certification transfers to District of Columbia - endorsement steps, fees, and processing time.",
+    "keywords": "CNA license reciprocity district of columbia, how to transfer CNA license to district of columbia, district of columbia CNA endorsement application"
+  },
+  "board": {
+    "name": "DC Board of Nursing",
+    "parent_dept": "State Health Department",
+    "mailing_address": "See board website",
+    "physical_address": "See board website",
+    "phone": "(202) 442-5955",
+    "fax": "N/A (contact by phone)",
+    "email": "See board website",
+    "url": "https://dchealth.dc.gov/bon"
+  },
+  "quick_facts": {
+    "total_fee": "$15",
+    "fee_breakdown": "$15 endorsement application fee",
+    "renewal_fee": "N/A",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "6 to 8 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Certified Nursing Assistant (CNA)",
+      "description": "The standard credential to practice as a nursing assistant in District of Columbia."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Complete Training Program",
+      "description": "Complete a state-approved CNA training program (typically 75-120 hours)."
+    },
+    {
+      "title": "Pass the Competency Exam",
+      "description": "Pass the written and clinical skills components of the state competency exam."
+    },
+    {
+      "title": "Submit Application and Fees",
+      "description": "Complete the state application, undergo a background check if required, and submit the necessary fees."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Proof of Training",
+      "detail": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "item": "Exam Score Report",
+      "detail": "Official verification of passing the state competency exam."
+    }
+  ],
+  "provisional_text": "Some states allow CNAs to work under supervision for a limited period while their endorsement application is being processed.",
+  "reciprocity_text": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+  "faqs": [
+    {
+      "question": "How much does District of Columbia CNA endorsement cost?",
+      "answer": "The endorsement application fee is $15. Additional costs may include background check fees."
+    },
+    {
+      "question": "Is a background check required?",
+      "answer": "Yes, a fingerprint-based background check is required in District of Columbia."
+    },
+    {
+      "question": "How long does it take to transfer my CNA certification to District of Columbia?",
+      "answer": "Most endorsement applications take 6 to 8 Weeks."
+    },
+    {
+      "question": "Can I start working in District of Columbia while waiting?",
+      "answer": "Check with the state board about temporary practice permits while your endorsement is being processed."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "N/A",
+    "compact_privilege_fee": "N/A",
+    "compact_source_url": ""
+  },
+  "fees_endorsement": {
+    "app_fee": "$15",
+    "background_check_fee": "Varies by provider",
+    "jurisprudence_exam_fee": "$0",
+    "total_estimated_cost": "$15"
+  },
+  "temp_license": {
+    "available": true,
+    "fee": "See board",
+    "processing_time": "See board",
+    "duration": "See board"
+  },
+  "last_verified_date": "2026-03-22",
+  "board_source_url": "https://dchealth.dc.gov/bon",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "compact_name": "",
+    "compact_status": "none",
+    "state_is_member": false,
+    "compact_url": "",
+    "compact_portal_url": "",
+    "license_required": true,
+    "fingerprint_required": true,
+    "temp_license_available": true,
+    "jurisprudence_required": false,
+    "endorsement_fee": 15,
+    "processing_time": "6 to 8 Weeks",
+    "processing_tier": "slow",
+    "board_url": "https://dchealth.dc.gov/bon",
+    "endorsement_url": "https://dchealth.dc.gov/bon",
+    "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://dchealth.dc.gov/bon"
+  },
+  "slug": "dc-cna",
+  "specialty": "cna"
+}
