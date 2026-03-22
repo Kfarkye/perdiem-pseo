@@ -235,7 +235,7 @@ def render_index(
   <section class="group" id="group-cdr" aria-labelledby="heading-cdr">
     <div class="group-header">
       <h2 id="heading-cdr">{national_acronym} States</h2>
-      <span class="group-count">{{cdr_state_count}}</span>
+      <span class="group-count">{cdr_state_count}</span>
     </div>
     <p class="group-desc">No state license required \u2014 national {national_acronym} credential only.</p>
     <div class="group-head-row" aria-hidden="true">
@@ -246,14 +246,14 @@ def render_index(
       <span></span>
     </div>
     <div class="group-rows" data-group="cdr-only" role="list">
-{{cdr_rows}}
+{cdr_rows}
     </div>
   </section>'''
         cdr_filter_pill = f'<button type="button" class="seg-btn" data-value="cdr-only" aria-pressed="false">{national_acronym}</button>'
         cdr_stat_block = f'''
       <div class="stat-divider" aria-hidden="true"></div>
       <div class="stat">
-        <span class="stat-value">{{cdr_state_count}}</span>
+        <span class="stat-value">{cdr_state_count}</span>
         <span class="stat-label">{national_acronym} States</span>
       </div>'''
 
