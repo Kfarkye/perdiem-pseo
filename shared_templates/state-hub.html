@@ -795,18 +795,17 @@
 
     <section id="friction" class="section-shell" aria-labelledby="friction-heading">
       <div class="section-copy">
-        <p class="section-kicker">What can slow you down</p>
-        <h2 id="friction-heading">State-Specific Friction</h2>
-        <p>These are the pieces most likely to affect whether your contract timeline is realistic in {{ state_name }}.</p>
+        <p class="section-kicker">Common {{ state_name }} delays</p>
+        <h2 id="friction-heading">Where Timelines Usually Slip</h2>
+        <p>These are the issues most likely to affect whether your contract timeline is realistic in {{ state_name }}.</p>
       </div>
       {% set reciprocity_notes = reciprocity.notes | default('') | lower %}
       {% set verification_inferred = reciprocity.requires_psv | default(false) or 'verification' in reciprocity_notes or 'license' in reciprocity_notes %}
       <ul class="docs">
-        <li><strong>Fingerprinting</strong>: {% if reciprocity.fingerprint_required %}Required{% if fingerprints.method_out_of_state %}. Out-of-state applicants use: {{ fingerprints.method_out_of_state }}{% endif %}{% else %}The board page does not publish a separate fingerprint requirement for this path.{% endif %}</li>
-        <li><strong>License verification</strong>: {% if verification_inferred %}{{ state_name }} expects verification of your current out-of-state license before the file is complete.{% else %}The board page does not spell out a separate license verification step for this path.{% endif %}</li>
+        <li><strong>Fingerprinting</strong>: {% if reciprocity.fingerprint_required %}Required.{% if fingerprints.method_out_of_state %} Out-of-state applicants can use {{ fingerprints.method_out_of_state }}.{% endif %}{% if fingerprints.delay_out_of_state_weeks %} Completing prints outside {{ state_name }} can add {{ fingerprints.delay_out_of_state_weeks }} weeks.{% endif %}{% else %}The board does not publish a separate fingerprint requirement for this path.{% endif %}</li>
+        <li><strong>License verification</strong>: {% if verification_inferred %}{{ state_name }} requires verification of your current out-of-state license before your file is complete.{% else %}The board does not spell out a separate license verification step for this path.{% endif %}</li>
         <li><strong>Compact status</strong>: {% if reciprocity.compact_status == 'active' and reciprocity.state_is_member %}{{ reciprocity.compact_name }} is active in {{ state_name }}.{% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}{{ reciprocity.compact_name }} is enacted in {{ state_name }}, but it is not issuing privileges yet.{% elif reciprocity.compact_status != 'none' %}{{ reciprocity.compact_name }} is not active for this state path.{% else %}No active compact route here. Plan on endorsement.{% endif %}</li>
-        <li><strong>Temporary license</strong>: {% if reciprocity.temp_license_available %}The board lists a temporary or provisional path while the full file is pending.{% else %}The board page does not list a temporary path for this route.{% endif %}</li>
-        {% if fingerprints.delay_out_of_state_weeks %}<li><strong>Out-of-state fingerprint delay</strong>: {{ fingerprints.delay_out_of_state_weeks }} additional weeks can show up if you are completing prints outside {{ state_name }}.</li>{% endif %}
+        <li><strong>Temporary license</strong>: {% if reciprocity.temp_license_available %}The board lists a temporary or provisional route while the full file is pending.{% else %}The board does not list a temporary route for this path.{% endif %}</li>
       </ul>
     </section>
 
