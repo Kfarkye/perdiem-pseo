@@ -123,11 +123,15 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 35,
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
     "endorsement_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification."
+    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://boards.bsd.dli.mt.gov/pharmacy/"
   },
   "slug": "montana-pharm",
   "specialty": "pharm",
