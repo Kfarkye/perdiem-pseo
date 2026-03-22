@@ -154,7 +154,7 @@ def render_index(
             time_display = 'No state app'
             s['fee'] = 0
         elif s['member']:
-            fee_display = '$0'
+            fee_display = ''
             time_display = ''
             s['fee'] = 0
         elif verify_fee_and_timing_with_board:
@@ -261,7 +261,7 @@ def render_index(
       <h2 id="heading-compact">Compact States</h2>
       <span class="group-count" aria-label="{compact_count} states">{compact_count}</span>
     </div>
-    <p class="group-desc">Your home-state license may already cover these states via compact privilege.</p>
+    <p class="group-desc">Practice immediately with your existing license — no separate state application or fee required.</p>
     <div class="group-head-row" aria-hidden="true">
       <span>State</span>
       <span>Timeline</span>
