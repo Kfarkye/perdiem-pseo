@@ -1,0 +1,799 @@
+[
+  {
+    "vertical": "lpn",
+    "state": "Massachusetts",
+    "state_abbr": "",
+    "profession": "Licensed Practical Nurse",
+    "board_name": "Board of Registration in Nursing",
+    "board_url": "https://www.mass.gov/how-to/apply-for-a-nursing-license-by-reciprocity",
+    "missing_fields": [
+      "quick_facts.renewal_fee"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Alabama",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Alabama State Board of Occupational Therapy",
+    "board_url": "http://www.ot.alabama.gov",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Alaska",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Alaska PT & OT Board",
+    "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/PhysicalTherapyOccupationalTherapy",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Arizona",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Arizona Board of Occupational Therapy Examiners",
+    "board_url": "http://ot.az.gov",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Arkansas",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Arkansas State Medical Board \u2014 OT Section",
+    "board_url": "http://www.armedicalboard.org/Professionals/OccupationalTherapistandAssistant.aspx",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "California",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "California Board of Occupational Therapy",
+    "board_url": "http://www.bot.ca.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Colorado",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Colorado DORA \u2014 Occupational Therapy",
+    "board_url": "http://www.colorado.gov/DORA/Occupational_Therapy",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Connecticut",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Connecticut DPH \u2014 OT Licensure",
+    "board_url": "https://portal.ct.gov/DPH",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "District of Columbia",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "DC Board of Rehabilitative Therapies",
+    "board_url": "https://dchealth.dc.gov/service/occupational-therapy-licensing",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Delaware",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Delaware Board of Occupational Therapy Practice",
+    "board_url": "https://dpr.delaware.gov/boards/occupationaltherapy/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Florida",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Florida Board of Occupational Therapy Practice",
+    "board_url": "https://floridasoccupationaltherapy.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Georgia",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Georgia Board of Occupational Therapy",
+    "board_url": "https://sos.ga.gov/PLB/acrobat/Forms/38%20Reference%20-%20Occupational%20Therapy.pdf",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Hawaii",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Hawaii DCCA Professional & Vocational Licensing \u2014 OT",
+    "board_url": "https://cca.hawaii.gov/pvl/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Idaho",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Idaho DOPL \u2014 Occupational Therapy Licensure Board",
+    "board_url": "https://dopl.idaho.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Illinois",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Illinois IDFPR \u2014 Occupational Therapy",
+    "board_url": "https://idfpr.illinois.gov/profs/ot.asp",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Indiana",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Indiana PLA \u2014 Occupational Therapy",
+    "board_url": "https://www.in.gov/pla/professions/occupational-therapy/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Iowa",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Iowa Board of Physical and Occupational Therapy",
+    "board_url": "https://www.idph.iowa.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Kansas",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Kansas Board of Healing Arts \u2014 OT",
+    "board_url": "https://www.ksbha.org/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Kentucky",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Kentucky Board of Licensure for Occupational Therapy",
+    "board_url": "https://bot.ky.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Louisiana",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Louisiana State Board of Medical Examiners \u2014 OT",
+    "board_url": "https://www.lsbme.la.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Maine",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Maine Board of Occupational Therapy Practice",
+    "board_url": "https://www.maine.gov/pfr/professionallicensing/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Maryland",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Maryland Board of Occupational Therapy Practice",
+    "board_url": "https://health.maryland.gov/botp/Pages/index.aspx",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Massachusetts",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Massachusetts Board of Allied Health \u2014 OT",
+    "board_url": "https://www.mass.gov/orgs/board-of-registration-of-allied-health-professionals",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Michigan",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Michigan LARA \u2014 Occupational Therapy",
+    "board_url": "https://www.michigan.gov/lara/bureau-list/bpl/occ/professions/occupational-therapists",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Minnesota",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Minnesota Board of Medical Practice \u2014 OT",
+    "board_url": "https://mn.gov/boards/medical-practice/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Mississippi",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Mississippi Board of Occupational Therapy",
+    "board_url": "https://www.ot.ms.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Missouri",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Missouri Advisory Commission for Occupational Therapy",
+    "board_url": "https://pr.mo.gov/occtherp.asp",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Montana",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Montana Board of Occupational Therapy Practice",
+    "board_url": "https://boards.bsd.dli.mt.gov/occupational-therapists",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Nebraska",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Nebraska DHHS \u2014 Occupational Therapy",
+    "board_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Nevada",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Nevada Board of Occupational Therapy",
+    "board_url": "https://bop.nv.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "New Hampshire",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "New Hampshire OPLC \u2014 Occupational Therapy",
+    "board_url": "https://www.oplc.nh.gov/occupational-therapy",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "New Jersey",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "New Jersey Board of Occupational Therapy",
+    "board_url": "https://www.njconsumeraffairs.gov/ot",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "New Mexico",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "New Mexico Board of Occupational Therapy Practice",
+    "board_url": "https://www.rld.nm.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "New York",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "New York Office of the Professions \u2014 OT",
+    "board_url": "https://www.op.nysed.gov/professions-index/occupational-therapy",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "North Carolina",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "North Carolina Board of Occupational Therapy",
+    "board_url": "https://www.ncbot.org/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "North Dakota",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "North Dakota Board of Occupational Therapy Practice",
+    "board_url": "https://www.ndotboard.com/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Ohio",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Ohio OT, PT, and Athletic Trainers Board",
+    "board_url": "https://otptat.ohio.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Oklahoma",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Oklahoma Board of Medical Licensure \u2014 OT",
+    "board_url": "https://www.okmedicalboard.org/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Oregon",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Oregon Occupational Therapy Licensing Board",
+    "board_url": "https://www.oregon.gov/otlb",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Pennsylvania",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Pennsylvania Board of Occupational Therapy Education and Licensure",
+    "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/OccupationalTherapy/Pages/default.aspx",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Rhode Island",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Rhode Island DOH \u2014 OT Licensure",
+    "board_url": "https://health.ri.gov/licenses/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "South Carolina",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "South Carolina Board of Occupational Therapy",
+    "board_url": "https://llr.sc.gov/ot/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "South Dakota",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "South Dakota Board of Medical and Osteopathic Examiners \u2014 OT",
+    "board_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Tennessee",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Tennessee Board of Occupational Therapy",
+    "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/ot-board.html",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Texas",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Texas Executive Council of PT and OT Examiners (ECPTOTE)",
+    "board_url": "https://ptot.texas.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Utah",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Utah DOPL \u2014 Occupational Therapy",
+    "board_url": "https://dopl.utah.gov/ot/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Vermont",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Vermont Office of Professional Regulation \u2014 OT",
+    "board_url": "https://sos.vermont.gov/opr/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Virginia",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Virginia Board of Medicine \u2014 OT",
+    "board_url": "https://www.dhp.virginia.gov/medicine/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Washington",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Washington DOH \u2014 Occupational Therapy",
+    "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "West Virginia",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "West Virginia Board of Occupational Therapy",
+    "board_url": "https://wvbot.org/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Wisconsin",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Wisconsin DSPS \u2014 Occupational Therapist",
+    "board_url": "https://dsps.wi.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "ot",
+    "state": "Wyoming",
+    "state_abbr": "",
+    "profession": "Occupational Therapist",
+    "board_name": "Wyoming Board of Occupational Therapy",
+    "board_url": "https://occupationaltherapy.wyo.gov/",
+    "missing_fields": [
+      "quick_facts.total_fee",
+      "quick_facts.renewal_fee",
+      "fees_endorsement.total_estimated_cost"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "Arizona",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "Arizona Board of Pharmacy",
+    "board_url": "https://pharmacy.az.gov/technician-license-information",
+    "missing_fields": [
+      "quick_facts.renewal_cycle",
+      "quick_facts.license_duration"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "California",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "California Board of Pharmacy",
+    "board_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml",
+    "missing_fields": [
+      "fees_endorsement.background_check_fee"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "Florida",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "Florida Board of Pharmacy",
+    "board_url": "https://floridaspharmacy.gov/registered-pharmacy-technician/",
+    "missing_fields": [
+      "fees_endorsement.background_check_fee"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "Illinois",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "Illinois Board of Pharmacy",
+    "board_url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
+    "missing_fields": [
+      "quick_facts.renewal_fee",
+      "fees_endorsement.background_check_fee"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "Montana",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "Montana Board of Pharmacy",
+    "board_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
+    "missing_fields": [
+      "fees_endorsement.background_check_fee"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "New York",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "New York Board of Pharmacy",
+    "board_url": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms",
+    "missing_fields": [
+      "fees_endorsement.background_check_fee"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "North Carolina",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "North Carolina Board of Pharmacy",
+    "board_url": "https://www.ncbop.org/pharmacy-technicians.html",
+    "missing_fields": [
+      "fees_endorsement.background_check_fee"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "Ohio",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "Ohio Board of Pharmacy",
+    "board_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
+    "missing_fields": [
+      "fees_endorsement.background_check_fee"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "Pennsylvania",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "Pennsylvania Board of Pharmacy",
+    "board_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
+    "missing_fields": [
+      "fees_endorsement.background_check_fee"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "Texas",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "Texas State Board of Pharmacy",
+    "board_url": "https://www.pharmacy.texas.gov/applicants/tech.asp",
+    "missing_fields": [
+      "quick_facts.renewal_fee"
+    ]
+  },
+  {
+    "vertical": "pharm",
+    "state": "Washington",
+    "state_abbr": "",
+    "profession": "Pharmacy Technician",
+    "board_name": "Washington Pharmacy Quality Assurance Commission",
+    "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
+    "missing_fields": [
+      "fees_endorsement.background_check_fee"
+    ]
+  }
+]
