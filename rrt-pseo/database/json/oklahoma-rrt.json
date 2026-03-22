@@ -121,14 +121,17 @@
     "license_required": true,
     "fingerprint_required": true,
     "temp_license_available": true,
-    "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "3 to 5 Weeks",
-    "processing_tier": "fast",
+    "jurisprudence_required": true,
+    "endorsement_fee": 100,
+    "processing_time": "6 to 8 Weeks",
+    "processing_tier": "slow",
     "board_url": "https://www.okmedicalboard.org/",
     "endorsement_url": "https://www.okmedicalboard.org/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.okmedicalboard.org/respiratory_care"
   },
   "slug": "oklahoma-rrt",
   "specialty": "rrt"

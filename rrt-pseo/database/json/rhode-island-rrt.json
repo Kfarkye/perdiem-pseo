@@ -119,16 +119,19 @@
     "compact_url": "",
     "compact_portal_url": "",
     "license_required": true,
-    "fingerprint_required": true,
+    "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 60,
-    "processing_time": "3 to 5 Weeks",
-    "processing_tier": "fast",
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
     "board_url": "https://health.ri.gov/licenses/",
     "endorsement_url": "https://health.ri.gov/licenses/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": false,
+    "board_source_url": "https://health.ri.gov/licenses/detail.php?id=231"
   },
   "slug": "rhode-island-rrt",
   "specialty": "rrt"
