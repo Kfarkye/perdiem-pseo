@@ -122,13 +122,16 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "3 to 5 Weeks",
-    "processing_tier": "fast",
+    "endorsement_fee": 150,
+    "processing_time": "4 to 6 Weeks",
+    "processing_tier": "mid",
     "board_url": "http://www.medicalboard.georgia.gov/",
     "endorsement_url": "http://www.medicalboard.georgia.gov/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://gcmb.georgia.gov/respiratory-care"
   },
   "slug": "georgia-rrt",
   "specialty": "rrt"
