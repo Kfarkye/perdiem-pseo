@@ -123,12 +123,15 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 130,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "processing_time": "6 to 8 Weeks",
+    "processing_tier": "slow",
     "board_url": "https://www.dhp.virginia.gov/medicine/",
     "endorsement_url": "https://www.dhp.virginia.gov/medicine/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.dhp.virginia.gov/medicine/respiratory_care/"
   },
   "slug": "virginia-rrt",
   "specialty": "rrt"

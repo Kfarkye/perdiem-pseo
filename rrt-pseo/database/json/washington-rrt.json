@@ -123,12 +123,15 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 140,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://doh.wa.gov/",
     "endorsement_url": "https://doh.wa.gov/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/respiratory-care-practitioner"
   },
   "slug": "washington-rrt",
   "specialty": "rrt"

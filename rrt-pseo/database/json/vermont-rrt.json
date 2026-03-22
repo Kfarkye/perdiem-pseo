@@ -122,13 +122,16 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "3 to 5 Weeks",
-    "processing_tier": "fast",
+    "endorsement_fee": 115,
+    "processing_time": "6 to 12 Weeks",
+    "processing_tier": "slow",
     "board_url": "https://sos.vermont.gov/opr/",
     "endorsement_url": "https://sos.vermont.gov/opr/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
-    "requires_psv": false
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://sos.vermont.gov/respiratory-care/"
   },
   "slug": "vermont-rrt",
   "specialty": "rrt"
