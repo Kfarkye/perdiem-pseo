@@ -155,7 +155,7 @@ def render_index(
             s['fee'] = 0
         elif s['member']:
             fee_display = '$0'
-            time_display = 'Compact privilege'
+            time_display = ''
             s['fee'] = 0
         elif verify_fee_and_timing_with_board:
             fee_display = s.get('fee_display') or 'See board'
