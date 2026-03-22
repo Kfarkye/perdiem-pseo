@@ -125,13 +125,17 @@
     "license_required": true,
     "fingerprint_required": true,
     "temp_license_available": true,
-    "jurisprudence_required": false,
-    "endorsement_fee": 250,
-    "processing_time": "4 to 6 Weeks",
-    "processing_tier": "mid",
+    "jurisprudence_required": true,
+    "endorsement_fee": 300,
+    "processing_time": "8 to 12 Weeks",
+    "processing_tier": "slow",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html",
     "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html",
-    "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
+    "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE.",
+    "requires_psv": true,
+    "board_fee_verified": true,
+    "board_timeline_verified": true,
+    "board_source_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html"
   },
   "slug": "tennessee-pharmacist",
   "specialty": "pharmacist"
