@@ -4,12 +4,17 @@
   "CO": { "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80&auto=format", "alt": "Colorado — snow-capped Rocky Mountains and evergreen forest" },
   "DC": { "url": "https://images.unsplash.com/photo-1501466044931-62695aada8e9?w=1200&q=80&auto=format", "alt": "Washington DC — Capitol reflecting pool at dawn" },
   "FL": { "url": "https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=1200&q=80&auto=format", "alt": "Florida — palm trees and warm sky at dusk" },
+  "GA": { "url": "https://images.unsplash.com/photo-1695168790836-dfd7228b7fa2?w=1200&q=80&auto=format", "alt": "Georgia — Atlanta skyline at sunset with autumn foliage" },
   "HI": { "url": "https://images.unsplash.com/photo-1507876466758-bc54f384809c?w=1200&q=80&auto=format", "alt": "Hawaii — Na Pali coast from above" },
   "ID": { "url": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=1200&q=80&auto=format", "alt": "Idaho — Sawtooth Mountains reflected in alpine lake" },
   "IL": { "url": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1200&q=80&auto=format", "alt": "Chicago skyline at blue hour from the lakefront" },
+  "MA": { "url": "https://images.unsplash.com/photo-1565127803082-69dd82351360?w=1200&q=80&auto=format", "alt": "Massachusetts — Boston skyline and Charles River with sailboats" },
   "NV": { "url": "https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?w=1200&q=80&auto=format", "alt": "Nevada — Red Rock Canyon at golden hour" },
   "NM": { "url": "https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?w=1200&q=80&auto=format", "alt": "New Mexico — desert mesas with warm light" },
   "NY": { "url": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=1200&q=80&auto=format", "alt": "New York — Manhattan skyline from Brooklyn Bridge" },
+  "OR": { "url": "https://images.unsplash.com/photo-1618464072321-53944f58967c?w=1200&q=80&auto=format", "alt": "Oregon — aerial view of Crater Lake and surrounding mountains" },
+  "TN": { "url": "https://images.unsplash.com/photo-1565768502425-079460b64877?w=1200&q=80&auto=format", "alt": "Tennessee — sunset over misty Great Smoky Mountains ridges" },
+  "TX": { "url": "https://images.unsplash.com/photo-1725802145664-fd7c1651108a?w=1200&q=80&auto=format", "alt": "Texas — desert road through Big Bend toward the Chisos Mountains" },
   "UT": { "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80&auto=format", "alt": "Utah — sandstone formations along the road through Arches" },
   "WA": { "url": "https://images.unsplash.com/photo-1542223616-740d5dff7f56?w=1200&q=80&auto=format", "alt": "Washington — Seattle Space Needle skyline at night" }
 }
