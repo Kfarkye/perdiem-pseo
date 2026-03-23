@@ -106,13 +106,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .nav-links a:hover { color: #333; }
 
 .hero-wrapper {
-  max-width: var(--reading);
+  max-width: var(--shell);
   margin: 0 auto;
-  padding: 64px 24px 40px;
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.85fr);
-  gap: 34px;
-  align-items: end;
+  padding: 64px 24px 32px;
 }
 .hero-kicker {
   margin: 0 0 12px;
@@ -124,28 +120,46 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero-wrapper h1 {
   font-size: clamp(30px, 4.8vw, 44px);
   margin-bottom: 12px;
-  grid-column: 1;
+  max-width: var(--reading);
 }
 .hero-sub {
-  max-width: 37ch;
+  max-width: 52ch;
   font-size: 18px;
   color: #444;
   margin: 0;
-  grid-column: 1;
 }
 
-.stats-container {
-  margin-top: 28px;
-  display: flex;
-  align-items: stretch;
-  gap: 20px;
+.credential-bar {
+  max-width: var(--shell);
+  margin: 0 auto;
+  padding: 0 24px 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.credential-item {
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 20px 22px;
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   box-shadow: var(--shadow-soft);
-  grid-column: 2;
-  grid-row: 1 / span 3;
+}
+.credential-label {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 600;
+}
+.credential-value {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #191919;
+  line-height: 1.35;
 }
 .stat {
   min-width: 0;
@@ -182,51 +196,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   border-radius: 18px;
   background: #fff;
   padding: 14px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 10px 12px;
-  box-shadow: var(--shadow-soft);
-}
-.search-wrap {
-  min-width: 0;
-  position: relative;
   display: flex;
   align-items: center;
-}
-.search-icon {
-  position: absolute;
-  left: 12px;
-  color: #999;
-  pointer-events: none;
-}
-.search-input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0 38px;
-  font-size: 15px;
-  font-family: inherit;
-  color: var(--text);
-  background: #fff;
-}
-.search-input::placeholder { color: #999; }
-.search-clear {
-  position: absolute;
-  right: 9px;
-  width: 22px;
-  height: 22px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  color: #999;
-  background: #fff;
+  gap: 10px;
+  box-shadow: var(--shadow-soft);
 }
 .toolbar-bottom-row {
   display: flex;
   gap: 10px;
+  width: 100%;
+  align-items: center;
 }
 .seg-group {
   display: flex;
@@ -424,17 +403,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     padding: 0 16px;
   }
   .hero-wrapper {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .toolbar-wrap,
-  .content,
-  .foot-wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .toolbar {
-    grid-template-columns: 1fr;
+    padding: 36px 16px 24px;
   }
   .toolbar-bottom-row {
     flex-wrap: wrap;
@@ -450,14 +419,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .hero-wrapper { padding: 36px 16px 24px; }
-  .stats-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .stat-divider {
-    width: 100%;
-    height: 1px;
+  .credential-bar {
+    grid-template-columns: 1fr;
+    padding: 0 16px 24px;
   }
   .group-head-row { display: none; }
   .row {
@@ -492,53 +456,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 </nav>
 
 <header class="hero-wrapper">
-  <p class="hero-kicker">Board-verified transfer paths</p>
-  <h1>Dietitian & Nutritionist License<br>Transfer by State</h1>
-  <p class="hero-sub">Compare endorsement fees, fingerprints, exam requirements, and processing timelines across all 51 states and DC.</p>
-  
-  
-  <div class="stats-container">
-    <div class="stat">
-      <span class="stat-value">51</span>
-      <span class="stat-label">Jurisdictions</span>
-    </div>
-    <div class="stat-divider" aria-hidden="true"></div>
-    <div class="stat">
-      <span class="stat-value">46</span>
-      <span class="stat-label">Endorsement States</span>
-    </div>
-      <div class="stat-divider" aria-hidden="true"></div>
-      <div class="stat">
-        <span class="stat-value">5</span>
-        <span class="stat-label">CDR States</span>
-      </div>
-  </div>
+  <h1>Dietitian & Nutritionist</h1>
+  <p class="hero-sub">License Transfer by State</p>
 </header>
 
-<div class="toolbar-wrap">
-  <search class="toolbar" role="search">
-    <div class="search-wrap">
-      <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11L15 15"/></svg>
-      <input id="stateSearch" class="search-input" type="text" placeholder="Search states..." aria-label="Search states by name" autocomplete="off" spellcheck="false">
-      <button class="search-clear" id="searchClear" aria-label="Clear search">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M1 1L13 13M1 13L13 1"/></svg>
-      </button>
+
+  <div class="credential-bar">
+    <div class="credential-item">
+      <span class="credential-label">National License</span>
+      <span class="credential-value">RDN (Registered Dietitian Nutritionist)</span>
     </div>
-    <div class="toolbar-bottom-row">
-      <div class="seg-group" data-filter-group="path" role="group" aria-label="Filter by licensure path">
-        <button type="button" class="seg-btn active" data-value="all" aria-pressed="true">All</button>
-        
-        <button type="button" class="seg-btn" data-value="non-member" aria-pressed="false">Endorsement</button>
-        <button type="button" class="seg-btn" data-value="cdr-only" aria-pressed="false">CDR</button>
-      </div>
-      <select id="sortSelect" class="sort-select" aria-label="Sort states">
-        <option value="state">Sort: A &ndash; Z</option>
-        <option value="fee">Sort: Fee</option>
-        <option value="extra-steps">Sort: Extra steps</option>
-      </select>
+    <div class="credential-item">
+      <span class="credential-label">National Exam</span>
+      <span class="credential-value">CDR Registration Examination for Dietitians</span>
     </div>
-  </search>
-</div>
+    <div class="credential-item">
+      <span class="credential-label">Renewal Cycle</span>
+      <span class="credential-value">5 years</span>
+    </div>
+  </div>
+
+
 
 <main class="content" id="main-content">
   
@@ -959,120 +897,5 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   </footer>
 </div>
 
-<script>
-const input = document.getElementById('stateSearch');
-const searchClear = document.getElementById('searchClear');
-const allRows = [...document.querySelectorAll('.row')];
-const groups = [...document.querySelectorAll('.group')];
-const sortSelect = document.getElementById('sortSelect');
-const emptyState = document.getElementById('emptyState');
-const pathBtns = [...document.querySelectorAll('[data-filter-group="path"] .seg-btn')];
-
-let pathFilter = 'all';
-
-function sortRows(rows) {
-  const mode = sortSelect.value;
-  return [...rows].sort((a, b) => {
-    if (mode === 'fee') return Number(a.dataset.fee) - Number(b.dataset.fee);
-    if (mode === 'extra-steps') {
-      const d = Number(a.dataset.extraSteps) - Number(b.dataset.extraSteps);
-      if (d !== 0) return d;
-      return Number(a.dataset.fee) - Number(b.dataset.fee);
-    }
-    return a.dataset.state.localeCompare(b.dataset.state);
-  });
-}
-
-function syncUrl() {
-  const params = new URLSearchParams(window.location.search);
-  const q = input.value.trim();
-  if (q) params.set('q', q); else params.delete('q');
-  if (pathFilter !== 'all') params.set('path', pathFilter); else params.delete('path');
-  if (sortSelect.value !== 'state') params.set('sort', sortSelect.value); else params.delete('sort');
-  const next = params.toString();
-  const target = next ? `${window.location.pathname}?${next}` : window.location.pathname;
-  window.history.replaceState(null, '', target);
-}
-
-function applyFilters() {
-  const q = input.value.toLowerCase().trim();
-  searchClear.style.display = q ? 'flex' : 'none';
-  let shown = 0;
-
-  for (const row of allRows) {
-    const matchQ = row.dataset.state.includes(q);
-    const matchP = pathFilter === 'all' || row.dataset.path === pathFilter;
-    const visible = matchQ && matchP;
-    row.style.display = visible ? '' : 'none';
-    if (visible) shown++;
-  }
-
-  document.querySelectorAll('.group-rows').forEach(container => {
-    const fragment = document.createDocumentFragment();
-    const visible = [...container.querySelectorAll('.row')].filter(r => r.style.display !== 'none');
-    const hidden = [...container.querySelectorAll('.row')].filter(r => r.style.display === 'none');
-    
-    const sortedVisible = sortRows(visible);
-    
-    for (const r of sortedVisible) {
-      r.classList.remove('no-border');
-      fragment.appendChild(r);
-    }
-    if (sortedVisible.length > 0) {
-      sortedVisible[sortedVisible.length - 1].classList.add('no-border');
-    }
-    
-    for (const r of hidden) {
-      r.classList.remove('no-border');
-      fragment.appendChild(r);
-    }
-    
-    container.appendChild(fragment);
-  });
-
-  for (const g of groups) {
-    const container = g.querySelector('.group-rows');
-    if (!container) continue;
-    const hasVisible = [...container.querySelectorAll('.row')].some(r => r.style.display !== 'none');
-    g.style.display = hasVisible ? '' : 'none';
-  }
-
-  emptyState.style.display = shown === 0 ? 'block' : 'none';
-  syncUrl();
-}
-
-input.addEventListener('input', () => requestAnimationFrame(applyFilters));
-searchClear.addEventListener('click', () => {
-  input.value = '';
-  input.focus();
-  requestAnimationFrame(applyFilters);
-});
-sortSelect.addEventListener('change', () => requestAnimationFrame(applyFilters));
-
-for (const btn of pathBtns) {
-  btn.addEventListener('click', () => {
-    pathFilter = btn.dataset.value;
-    for (const b of pathBtns) {
-      const isActive = b.dataset.value === pathFilter;
-      b.classList.toggle('active', isActive);
-      b.setAttribute('aria-pressed', isActive.toString());
-    }
-    requestAnimationFrame(applyFilters);
-  });
-}
-
-const params = new URLSearchParams(window.location.search);
-if (params.get('q')) input.value = params.get('q');
-if (params.get('path') && ['all','non-member','cdr-only'].includes(params.get('path'))) pathFilter = params.get('path');
-if (params.get('sort') && ['state','fee','extra-steps'].includes(params.get('sort'))) sortSelect.value = params.get('sort');
-
-for (const b of pathBtns) {
-  const isActive = b.dataset.value === pathFilter;
-  b.classList.toggle('active', isActive);
-  b.setAttribute('aria-pressed', isActive.toString());
-}
-
-requestAnimationFrame(applyFilters);
-</script>
 </body>
 </html>
