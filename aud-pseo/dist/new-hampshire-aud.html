@@ -43,6 +43,8 @@
       background: var(--bg);
       color: var(--ink);
       font-size: 16px;
+      scroll-behavior: smooth;
+      scroll-padding-top: 64px;
     }
 
     body {
@@ -71,6 +73,7 @@
       color: #191919;
       letter-spacing: -0.01em;
       line-height: 1.22;
+      text-wrap: balance;
     }
 
     h1 {
@@ -89,6 +92,7 @@
 
     p {
       color: #313131;
+      max-width: 70ch;
     }
 
     .skip-link {
@@ -402,6 +406,7 @@
     }
 
     .step-kicker {
+      display: block;
       margin-bottom: 6px;
       font-size: 12px;
       font-weight: 600;
@@ -455,14 +460,19 @@
       justify-content: space-between;
       gap: 20px;
       font-size: 17px;
+      transition: color 150ms ease;
     }
+
+    summary:hover { color: var(--ink); }
 
     summary::after {
       content: "+";
       flex: 0 0 auto;
       color: #8f8578;
-      font-size: 22px;
+      font-size: 24px;
       line-height: 1;
+      font-weight: 400;
+      transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms ease;
     }
 
     summary::-webkit-details-marker {
@@ -471,10 +481,12 @@
 
     details[open] summary {
       margin-bottom: 10px;
+      color: var(--ink);
     }
 
     details[open] summary::after {
-      content: "−";
+      transform: rotate(45deg);
+      color: var(--ink);
     }
 
     .source-note {
@@ -483,6 +495,10 @@
       border-top: 1px solid #ece8e1;
       font-size: 13px;
       color: #888;
+    }
+
+    .section-box + .section-box {
+      margin-top: 24px;
     }
 
     .sources-list p + p {
@@ -625,6 +641,22 @@
         grid-template-columns: 1fr;
       }
     }
+
+    @media print {
+      body { background: #fff !important; color: #000 !important; }
+      .site-nav, .hero-image, .hero-fade, .context-links, .context-rail,
+      .footer, #related-guides, .source-note { display: none !important; }
+      .hero-no-image .hero-inner, .hero-with-image .hero-inner {
+        padding: 0 0 20px 0; transform: none; position: static;
+      }
+      #main-content { width: 100%; }
+      .page-layout { display: block; }
+      .section-box { border: 1px solid #ccc; box-shadow: none; break-inside: avoid; }
+      details { border: none; break-inside: avoid; }
+      details[open] p { display: block !important; }
+      summary::after { display: none; }
+      a { text-decoration: none; color: #000; }
+    }
   </style>
   
   
@@ -727,18 +759,6 @@
   </header>
 
   <main id="main-content">
-    
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
     <div class="page-layout">
       <aside class="context-rail" aria-labelledby="quick-reference-heading">
         <div class="section-box context-card">
@@ -825,42 +845,42 @@
         
           
           <li>
-            <p class="step-kicker">Step 1</p>
-            <p class="step-title">Submit Your Application</p>
-            <p>Apply through the New Hampshire Board of Speech-Language Pathology and Audiology. The application fee is $100.</p>
+            <span class="step-kicker">Step 1</span>
+            <h3 class="step-title">Submit Your Application</h3>
+            <p>Apply through the New Hampshire Board of Speech-Language Pathology and Audiology. The application fee is $100.</h3>
           </li>
 
           
             
             <li>
-              <p class="step-kicker">Step 2</p>
-              <p class="step-title">Provide License Verification</p>
-              <p>New Hampshire requires official verification of your active out-of-state license. This must be sent directly to the board from your current state board or its official online verification system before your file can be considered complete.</p>
+              <span class="step-kicker">Step 2</span>
+              <h3 class="step-title">Provide License Verification</h3>
+              <p>New Hampshire requires official verification of your active out-of-state license. This must be sent directly to the board from your current state board or its official online verification system before your file can be considered complete.</h3>
             </li>
           
 
           
             
             <li>
-              <p class="step-kicker">Step 3</p>
-              <p class="step-title">Request Official Transcripts</p>
-              <p>Sent directly from your educational institution.</p>
+              <span class="step-kicker">Step 3</span>
+              <h3 class="step-title">Request Official Transcripts</h3>
+              <p>Sent directly from your educational institution.</h3>
             </li>
           
             
             <li>
-              <p class="step-kicker">Step 4</p>
-              <p class="step-title">Submit Your Exam Score Report</p>
-              <p>Official verification of passing the Praxis Exam in Audiology.</p>
+              <span class="step-kicker">Step 4</span>
+              <h3 class="step-title">Submit Your Exam Score Report</h3>
+              <p>Official verification of passing the Praxis Exam in Audiology.</h3>
             </li>
           
 
           
             
             <li>
-              <p class="step-kicker">Step 5</p>
-              <p class="step-title">Complete Fingerprinting and Background Screening</p>
-              <p>New Hampshire requires a criminal background check for all applicants. Out-of-state applicants can use IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects). Completing prints outside New Hampshire can add 2-4 weeks to your processing time.</p>
+              <span class="step-kicker">Step 5</span>
+              <h3 class="step-title">Complete Fingerprinting and Background Screening</h3>
+              <p>New Hampshire requires a criminal background check for all applicants. Out-of-state applicants can use IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects). Completing prints outside New Hampshire can add 2-4 weeks to your processing time.</h3>
             </li>
           
 
@@ -868,9 +888,9 @@
 
           
           <li>
-            <p class="step-kicker">Step 6</p>
-            <p class="step-title">Await Board Processing</p>
-            <p>Plan for a processing timeline of about 4 to 6 Weeks once your file is complete. If you need to start working immediately, the board offers a temporary or provisional licensing route that you can utilize while your full application is pending.</p>
+            <span class="step-kicker">Step 6</span>
+            <h3 class="step-title">Await Board Processing</h3>
+            <p>Plan for a processing timeline of about 4 to 6 Weeks once your file is complete. If you need to start working immediately, the board offers a temporary or provisional licensing route that you can utilize while your full application is pending.</h3>
           </li>
         
 
@@ -961,7 +981,7 @@
         <h2 id="contact-heading">Board Contact</h2>
       </div>
 
-      <div class="section-box">
+      <address class="section-box" style="font-style: normal;">
         <dl class="facts-grid">
           <dt>Board</dt>
           <dd>New Hampshire Board of Speech-Language Pathology and Audiology</dd>
@@ -973,12 +993,12 @@
 
           
             <dt>Phone</dt>
-            <dd>(603) 271-0254</dd>
+            <dd><a href="tel:6032710254">(603) 271-0254</a></dd>
           
 
           
             <dt>Email</dt>
-            <dd>oplc@nh.gov</dd>
+            <dd><a href="mailto:oplc@nh.gov">oplc@nh.gov</a></dd>
           
 
           <dt>Board site</dt>
@@ -990,7 +1010,7 @@
           
         </dl>
         <p class="source-note">Source: <a href="https://www.oplc.nh.gov/allied-health-professionals" target="_blank" rel="noopener">Primary board website</a></p>
-      </div>
+      </address>
     </section>
 
 
