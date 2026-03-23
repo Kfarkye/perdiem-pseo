@@ -3,20 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  
   <title>Hawaii Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)</title>
-  <meta name="description" content="Already licensed as a pharmacy technician? Here's whether your license transfers to Hawaii - compact status, endorsement steps, fees, and processing time." />
+  <meta name="description" content="Already licensed as a pharmacy technician? Here&#39;s whether your license transfers to Hawaii - compact status, endorsement steps, fees, and processing time." />
   <meta name="keywords" content="pharmacy technician license reciprocity hawaii, how to transfer pharmacy technician license to hawaii, pharmacy technician compact hawaii, hawaii pharmacy technician endorsement application" />
   
   
   <link rel="canonical" href="https://www.statelicensingreference.com/hawaii-pharm" />
   
+  
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1507876466758-bc54f384809c?w=1200&q=80&auto=format" fetchpriority="high" />
+  
+  
   <meta property="og:title" content="Hawaii Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)" />
-  <meta property="og:description" content="Already licensed as a pharmacy technician? Here's whether your license transfers to Hawaii - compact status, endorsement steps, fees, and processing time." />
+  <meta property="og:description" content="Already licensed as a pharmacy technician? Here&#39;s whether your license transfers to Hawaii - compact status, endorsement steps, fees, and processing time." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://www.statelicensingreference.com/hawaii-pharm" />
+  <meta property="og:site_name" content="State Licensing Reference" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Hawaii Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)" />
-  <meta name="twitter:description" content="Already licensed as a pharmacy technician? Here's whether your license transfers to Hawaii - compact status, endorsement steps, fees, and processing time." />
+  <meta name="twitter:description" content="Already licensed as a pharmacy technician? Here&#39;s whether your license transfers to Hawaii - compact status, endorsement steps, fees, and processing time." />
+  
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507876466758-bc54f384809c?w=1200&q=80&auto=format" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1507876466758-bc54f384809c?w=1200&q=80&auto=format" />
+  
   <meta name="theme-color" content="#faf9f7" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +35,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet" />
   
   <style>
-    /* 1. CSS Reset & Base Variables */
+    /* ==========================================================================
+       1. Base Architecture & Variables
+       ========================================================================== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -33,7 +46,7 @@
       --line: #e6e2dc;
       --ink: #1f1f1f;
       --muted: #5e5e5e; 
-      --soft: #666666; /* WCAG AA Compliant (5.7:1 on #fff) */
+      --soft: #555555; /* WCAG AAA (7.4:1 on #fff) */
       --link: #1f6280;
       --link-hover: #144459;
       --accent: #b08a52;
@@ -62,7 +75,6 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* Accessibility: Universal Keyboard Focus Ring */
     *:focus-visible {
       outline: 2px solid var(--link);
       outline-offset: 3px;
@@ -76,13 +88,12 @@
       transition: color 140ms ease, text-decoration-color 140ms ease;
     }
     
-    a:hover {
-      color: var(--link-hover);
-    }
-
+    a:hover { color: var(--link-hover); }
     img { display: block; max-width: 100%; height: auto; }
 
-    /* 2. Typography Engine */
+    /* ==========================================================================
+       2. Typography Engine
+       ========================================================================== */
     h1, h2, h3 {
       font-family: 'Source Serif 4', Georgia, serif;
       color: #191919;
@@ -98,11 +109,21 @@
     
     p, li, dd { 
       color: #313131; 
-      max-width: 70ch;
-      text-wrap: pretty;
+      max-width: 70ch; 
+      text-wrap: pretty; 
     }
 
-    /* 3. Navigation & Layout Elements */
+    small { 
+      display: block; 
+      margin-top: 4px; 
+      font-size: 0.85em; 
+      color: var(--soft); 
+      line-height: 1.4; 
+    }
+
+    /* ==========================================================================
+       3. Navigation
+       ========================================================================== */
     .skip-link {
       position: absolute;
       left: -9999px;
@@ -134,7 +155,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      height: 48px;
+      height: 56px;
       background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
@@ -144,7 +165,7 @@
     
     .site-nav-inner {
       width: min(var(--shell), calc(100% - 48px));
-      height: 48px;
+      height: 100%;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -158,13 +179,16 @@
       color: #4a4a4a;
       text-decoration: none;
       letter-spacing: -0.01em;
+      padding: 8px 0;
     }
     
     .site-nav-links { display: flex; align-items: center; gap: 20px; list-style: none; }
-    .site-nav-links a { font-size: 13px; color: var(--soft); text-decoration: none; }
+    .site-nav-links a { font-size: 13px; color: var(--soft); text-decoration: none; padding: 12px 0; }
     .site-nav-links a:hover { color: var(--ink); }
 
-    /* 4. Hero Section */
+    /* ==========================================================================
+       4. Hero Section
+       ========================================================================== */
     .hero {
       position: relative;
       overflow: hidden;
@@ -172,7 +196,8 @@
       background: var(--paper);
       margin-bottom: 40px;
     }
-    .hero-with-image { min-height: 380px; }
+    /* FIX F4: Skeleton only on image pages */
+    .hero-with-image { min-height: 380px; background: #eae8e4; }
     
     .hero-image {
       width: 100%;
@@ -215,12 +240,16 @@
     .hero-sub { margin-top: 12px; color: #444; max-width: 39ch; font-size: 18px; }
     .updated { display: inline-block; margin-top: 14px; font-size: 13px; color: var(--soft); letter-spacing: 0.01em; }
 
-    /* 5. Grid Layout & Core Containers */
+    /* ==========================================================================
+       5. Core Containers
+       ========================================================================== */
     #main-content {
       width: min(var(--shell), calc(100% - 48px));
       margin: 0 auto;
       padding-bottom: 104px;
     }
+    
+    #main-content:focus { outline: none; }
     
     .page-layout {
       display: grid;
@@ -233,6 +262,12 @@
     .context-rail { order: 2; min-width: 0; }
 
     .section-shell, .section-shell-wide { width: 100%; margin: 0 0 64px; }
+    
+    #faq, #contact, #related-guides, #sources {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
+
     .section-copy { width: min(42rem, 100%); margin-bottom: 18px; }
     .section-copy > * + * { margin-top: 16px; }
 
@@ -243,70 +278,46 @@
       padding: 28px 30px;
       box-shadow: var(--shadow-soft), var(--shadow-hairline);
     }
-    
     .section-box + .section-box { margin-top: 24px; }
     address.section-box { font-style: normal; }
 
-    /* Resilient Sticky Sidebar */
+    /* FIX F2: vh fallback before dvh */
     .context-card {
       position: sticky;
       top: 82px;
       max-height: calc(100vh - 120px);
+      max-height: calc(100dvh - 120px);
       overflow-y: auto;
       overscroll-behavior: contain;
     }
-    
     .context-card::-webkit-scrollbar { width: 4px; }
     .context-card::-webkit-scrollbar-track { background: transparent; }
     .context-card::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 4px; }
     .context-card:hover::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); }
-
     .context-card h2 { font-size: 26px; margin-bottom: 14px; }
 
-    /* 6. Data Display */
+    /* ==========================================================================
+       6. Data Components
+       ========================================================================== */
     .facts-grid {
       display: grid;
       grid-template-columns: 180px minmax(0, 1fr);
       gap: 14px 28px;
     }
-    .facts-grid dt {
-      font-size: 12px;
-      font-weight: 600;
-      color: #6a6054;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .facts-grid dd {
-      margin: 0;
-      font-size: 16px;
-      line-height: 1.55;
-      color: #222;
-      font-variant-numeric: tabular-nums;
-      max-width: none; /* Override p,li,dd 70ch constraint */
-    }
+    .facts-grid dt { font-size: 12px; font-weight: 600; color: #6a6054; letter-spacing: 0.06em; text-transform: uppercase; }
+    /* FIX F1: Override 70ch constraint on data values */
+    .facts-grid dd { margin: 0; font-size: 16px; line-height: 1.55; color: #222; font-variant-numeric: tabular-nums; max-width: none; }
 
     .facts-grid-rail { grid-template-columns: 1fr; gap: 6px 0; }
     .facts-grid-rail dt { margin-top: 12px; font-size: 11px; color: #6a6054; }
     .facts-grid-rail dt:first-child { margin-top: 0; }
-    .facts-grid-rail dd {
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--line);
-      font-size: 15px;
-      color: #1f1f1f;
-    }
+    .facts-grid-rail dd { padding-bottom: 10px; border-bottom: 1px solid var(--line); font-size: 15px; color: #1f1f1f; }
     .facts-grid-rail dd:last-child { border-bottom: 0; padding-bottom: 0; }
 
-    .context-links {
-      display: grid;
-      gap: 10px;
-      margin-top: 18px;
-      padding-top: 16px;
-      border-top: 1px solid var(--line);
-    }
-    .context-links a { font-size: 14px; font-weight: 600; text-decoration: none; color: var(--link); }
+    .context-links { display: grid; gap: 10px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+    .context-links a { font-size: 14px; font-weight: 600; text-decoration: none; color: var(--link); padding: 4px 0; }
     .context-links a:hover { text-decoration: underline; text-decoration-color: rgba(31, 98, 128, 0.3); }
 
-    /* Step Timeline */
     .steps { list-style: none; display: grid; gap: 34px; }
     .steps li { position: relative; border-left: 2px solid #ddd2c3; padding-left: 28px; }
     .steps li::before {
@@ -321,17 +332,7 @@
       border: 2px solid var(--accent);
       box-shadow: 0 0 0 6px var(--paper);
     }
-
-    .step-kicker {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--soft);
-    }
-
+    .step-kicker { display: block; margin-bottom: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--soft); }
     .step-title { margin-bottom: 8px; font-size: 19px; font-weight: 600; color: #191919; }
 
     .docs { list-style: none; display: grid; gap: 14px; }
@@ -347,8 +348,10 @@
       background: #c3aa84;
     }
 
-    /* 7. FAQ Interactions */
-    details { border-bottom: 1px solid var(--line); padding: 18px 0; }
+    /* ==========================================================================
+       7. FAQ Interactions
+       ========================================================================== */
+    details { border-bottom: 1px solid var(--line); }
     summary {
       cursor: pointer;
       list-style: none;
@@ -359,11 +362,21 @@
       justify-content: space-between;
       gap: 20px;
       font-size: 17px;
+      padding: 20px 0;
       transition: color 150ms ease;
     }
+    /* FIX F5: Restore hover state */
     summary:hover { color: var(--ink); }
-    summary::after {
+    
+    summary:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: -2px;
+      border-radius: 4px;
+    }
+    
+    .faq-icon::after {
       content: "+";
+      display: block;
       flex-shrink: 0;
       color: var(--soft);
       font-size: 24px;
@@ -373,56 +386,43 @@
       transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms ease;
       will-change: transform;
     }
+    
     summary::-webkit-details-marker { display: none; }
-    details[open] summary { margin-bottom: 10px; color: var(--ink); }
-    details[open] summary::after {
-      transform: rotate(45deg);
-      color: var(--ink);
-    }
+    details[open] summary { color: var(--ink); }
+    details[open] p { padding-bottom: 20px; }
+    details[open] .faq-icon::after { transform: rotate(45deg); color: var(--ink); }
 
-    .source-note {
-      margin-top: 18px;
-      padding-top: 14px;
-      border-top: 1px solid var(--line);
-      font-size: 13px;
-      color: var(--soft);
-    }
+    .source-note { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 13px; color: var(--soft); }
     .sources-list p + p { margin-top: 10px; }
 
-    /* 8. Footer & Related Links */
+    /* ==========================================================================
+       8. Footer & Related Links
+       ========================================================================== */
     .related-guides-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-    .related-guides-card {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 24px 26px;
-      box-shadow: var(--shadow-soft), var(--shadow-hairline);
-    }
+    .related-guides-card { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 24px 26px; box-shadow: var(--shadow-soft), var(--shadow-hairline); }
     .related-guides-card h3 { margin-bottom: 12px; }
-
+    
     .related-guides-list { list-style: none; display: grid; gap: 10px; padding: 0; }
-    .related-guides-list a {
-      color: var(--link);
-      text-decoration: underline;
-      text-decoration-color: rgba(31, 98, 128, 0.24);
-      text-underline-offset: 3px;
-    }
+    .related-guides-list a { color: var(--link); text-decoration: underline; text-decoration-color: rgba(31, 98, 128, 0.24); text-underline-offset: 3px; padding: 4px 0; }
     .related-guides-list a:hover { text-decoration-color: rgba(31, 98, 128, 0.68); }
 
-    .footer {
-      width: min(var(--reading), calc(100% - 48px));
-      margin: 0 auto;
-      padding: 24px 0 80px;
-      font-size: 13px;
-      line-height: 1.6;
-      color: var(--soft);
-      border-top: 1px solid var(--line);
-    }
+    .footer { width: min(var(--reading), calc(100% - 48px)); margin: 0 auto; padding: 24px 0 80px; font-size: 13px; line-height: 1.6; color: var(--soft); border-top: 1px solid var(--line); }
     .footer p + p { margin-top: 12px; }
     .footer a { color: var(--soft); font-weight: 500; }
     .footer a:hover { color: var(--ink); }
 
-    /* 9. Responsive Breakpoints */
+    /* ==========================================================================
+       9. Responsive & Accessibility
+       ========================================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto !important; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
     @media (max-width: 980px) {
       .page-layout { grid-template-columns: 1fr; gap: 28px; }
       .context-rail { order: 0; }
@@ -447,22 +447,27 @@
       .related-guides-grid { grid-template-columns: 1fr; }
     }
 
-    /* 10. Print Styles */
+    /* ==========================================================================
+       10. Print Styles
+       ========================================================================== */
     @media print {
       body { background: #fff !important; color: #000 !important; font-size: 11pt; }
       .site-nav, .hero-image, .hero-fade, .context-links, .footer, #related-guides, .source-note, .skip-link { display: none !important; }
       .hero-no-image .hero-inner, .hero-with-image .hero-inner { padding: 0 0 20px 0; transform: none; position: static; color: #000; border-bottom: 2px solid #000; }
-      .section-box { border: 1px solid #ccc; box-shadow: none; break-inside: avoid; }
+      .section-box { border: 1px solid #ccc; box-shadow: none; break-inside: avoid; margin-top: 24px; }
       .page-layout { display: block; }
       .context-rail { margin-bottom: 40px; }
       details { border: none !important; break-inside: avoid; display: block !important; }
-      details p, details[open] p { display: block !important; }
-      summary::after { display: none; }
+      details p, details[open] p { display: block !important; padding-bottom: 8px; }
+      summary .faq-icon { display: none; }
       a { text-decoration: none; color: #000; }
+      .section-shell a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 90%; color: #333; word-break: break-word; }
       h1, h2, h3 { color: #000; page-break-after: avoid; }
     }
   </style>
 
+  
+  
   
   
   
@@ -478,16 +483,33 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "headline": "Hawaii Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
-        "dateModified": "2026-02-25",
-        "author": {
-          "@type": "Organization",
+        "@type": "WebPage",
+        "@id": "https://www.statelicensingreference.com/hawaii-pharm#webpage",
+        "url": "https://www.statelicensingreference.com/hawaii-pharm",
+        "name": "Hawaii Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.statelicensingreference.com/#website",
+          "url": "https://www.statelicensingreference.com/",
           "name": "State Licensing Reference"
         }
       },
       {
+        "@type": "Article",
+        "@id": "https://www.statelicensingreference.com/hawaii-pharm#article",
+        "isPartOf": { "@id": "https://www.statelicensingreference.com/hawaii-pharm#webpage" },
+        "headline": "Hawaii Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
+        "image": [ "https://images.unsplash.com/photo-1507876466758-bc54f384809c?w=1200\u0026q=80\u0026auto=format" ],
+        "dateModified": "2026-02-25",
+        "author": {
+          "@type": "Organization",
+          "name": "State Licensing Reference",
+          "url": "https://www.statelicensingreference.com"
+        }
+      },
+      {
         "@type": "BreadcrumbList",
+        "@id": "https://www.statelicensingreference.com/hawaii-pharm#breadcrumb",
         "itemListElement": [
           {"@type": "ListItem", "position": 1, "name": "All States", "item": "https://www.statelicensingreference.com/"},
           {"@type": "ListItem", "position": 2, "name": "Hawaii", "item": "https://www.statelicensingreference.com/hawaii-pharm"}
@@ -496,6 +518,7 @@
       
       ,{
         "@type": "FAQPage",
+        "@id": "https://www.statelicensingreference.com/hawaii-pharm#faq",
         "mainEntity": [
           
           
@@ -565,13 +588,13 @@
   }
   </script>
 </head>
-<body id="top">
+<body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <nav class="site-nav" aria-label="Primary site navigation">
     <div class="site-nav-inner">
       <a href="/" class="site-nav-brand">State Licensing Reference</a>
-      <ul class="site-nav-links">
+      <ul class="site-nav-links" role="list">
         <li><a href="/">All States</a></li>
         <li><a href="https://www.statelicensingreference.com" target="_blank" rel="noopener noreferrer">Specialties</a></li>
       </ul>
@@ -580,7 +603,7 @@
 
   <header class="hero hero-with-image" aria-labelledby="hero-title">
     
-      <img class="hero-image" src="https://images.unsplash.com/photo-1507876466758-bc54f384809c?w=1200&q=80&auto=format" alt="Hawaii — Na Pali coast from above" loading="eager" fetchpriority="high" decoding="sync" />
+      <img class="hero-image" src="https://images.unsplash.com/photo-1507876466758-bc54f384809c?w=1200&q=80&auto=format" alt="Hawaii — Na Pali coast from above" loading="eager" fetchpriority="high" decoding="async" />
       <div class="hero-fade" aria-hidden="true"></div>
     
     <div class="hero-inner">
@@ -594,7 +617,7 @@
     </div>
   </header>
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
     <div class="page-layout">
       
       <aside class="context-rail" aria-labelledby="quick-reference-heading">
@@ -659,7 +682,7 @@
           </div>
           
           
-          <ul class="docs">
+          <ul class="docs" role="list">
             <li><strong>Fingerprinting</strong>: The board does not publish a separate fingerprint requirement for this path.</li>
             <li><strong>License verification</strong>: Hawaii requires verification of your current out-of-state license before your file is complete.</li>
             <li><strong>Compact status</strong>: No active compact route here. Plan on endorsement.</li>
@@ -673,7 +696,7 @@
             <p>This is the step-by-step endorsement checklist for already-licensed pharmacy technicians applying to practice in Hawaii.</p>
           </div>
 
-          <ol class="steps">
+          <ol class="steps" role="list">
             
             
 
@@ -816,11 +839,13 @@
               
 
               
+                
                 <dt>Phone</dt>
                 <dd><a href="tel:8085862708">(808) 586-2708</a></dd>
               
 
               
+                
                 <dt>Email</dt>
                 <dd><a href="mailto:See board website">See board website</a></dd>
               
@@ -834,13 +859,17 @@
           </address>
         </section>
 
+        
         <section id="faq" class="section-shell" aria-labelledby="faq-heading">
           <div class="section-copy">
             <h2 id="faq-heading">Hawaii Pharmacy Technician Licensing FAQ</h2>
           </div>
           
             <details>
-              <summary>How much does a Hawaii pharmacy technician license cost?</summary>
+              <summary>
+                <span class="faq-question">How much does a Hawaii pharmacy technician license cost?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
               
               
               
@@ -850,7 +879,10 @@
             </details>
           
             <details>
-              <summary>Is national certification required?</summary>
+              <summary>
+                <span class="faq-question">Is national certification required?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
               
               
               
@@ -860,7 +892,10 @@
             </details>
           
             <details>
-              <summary>Does Hawaii have reciprocity for pharmacy technicians?</summary>
+              <summary>
+                <span class="faq-question">Does Hawaii have reciprocity for pharmacy technicians?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
               
               
               
@@ -870,7 +905,10 @@
             </details>
           
             <details>
-              <summary>How long does it take to transfer my pharmacy technician license to Hawaii?</summary>
+              <summary>
+                <span class="faq-question">How long does it take to transfer my pharmacy technician license to Hawaii?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
               
               
               
@@ -880,7 +918,10 @@
             </details>
           
             <details>
-              <summary>Can I start working in Hawaii while my endorsement application is processing?</summary>
+              <summary>
+                <span class="faq-question">Can I start working in Hawaii while my endorsement application is processing?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
               
               
               
@@ -890,6 +931,7 @@
             </details>
           
         </section>
+        
 
         
 
