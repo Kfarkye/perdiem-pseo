@@ -807,7 +807,7 @@
     <section id="endorsement" class="section-shell" aria-labelledby="apply-heading">
       <div class="section-copy">
         <h2 id="apply-heading">{% if reciprocity.license_required %}{{ state_name }} Endorsement Requirements{% else %}What to Confirm{% endif %}</h2>
-        {% if reciprocity.license_required %}<p>This is the endorsement checklist for already-licensed clinicians applying in {{ state_name }}.</p>{% endif %}
+        {% if reciprocity.license_required %}<p>This is the step-by-step endorsement checklist for already-licensed {{ profession_name.lower() }}s applying to practice in {{ state_name }}.</p>{% endif %}
       </div>
 
       <ol class="steps">
@@ -818,7 +818,7 @@
           {% set step_ns.number = step_ns.number + 1 %}
           <li>
             <p class="step-kicker">Step {{ step_ns.number }}</p>
-            <p class="step-title">Start the {{ state_name }} application</p>
+            <p class="step-title">Submit Your Application</p>
             <p>Apply through the {{ board.name }}{% if fees_endorsement.app_fee and fees_endorsement.app_fee != '$0' %}. The application fee is {{ fees_endorsement.app_fee }}{% endif %}.</p>
           </li>
 
@@ -826,8 +826,8 @@
             {% set step_ns.number = step_ns.number + 1 %}
             <li>
               <p class="step-kicker">Step {{ step_ns.number }}</p>
-              <p class="step-title">Send verification of your current license</p>
-              <p>{{ state_name }} requires verification sent directly from your current state board or its official verification system before your file is complete.</p>
+              <p class="step-title">Provide License Verification</p>
+              <p>{{ state_name }} requires official verification of your active out-of-state license. This must be sent directly to the board from your current state board or its official online verification system before your file can be considered complete.</p>
             </li>
           {% endif %}
 
@@ -835,7 +835,7 @@
             {% set step_ns.number = step_ns.number + 1 %}
             <li>
               <p class="step-kicker">Step {{ step_ns.number }}</p>
-              <p class="step-title">Send {{ document.item }}</p>
+              <p class="step-title">{% if 'transcript' in document.item | lower %}Request {{ document.item }}{% elif 'score' in document.item | lower or 'exam' in document.item | lower or 'praxis' in document.item | lower %}Submit Your {{ document.item }}{% elif 'fellowship' in document.item | lower or 'verification' in document.item | lower or 'registration' in document.item | lower %}Verify Your {{ document.item }}{% else %}Provide {{ document.item }}{% endif %}</p>
               <p>{{ document.detail }}</p>
             </li>
           {% endfor %}
@@ -844,8 +844,8 @@
             {% set step_ns.number = step_ns.number + 1 %}
             <li>
               <p class="step-kicker">Step {{ step_ns.number }}</p>
-              <p class="step-title">Complete fingerprinting or background check</p>
-              <p>{{ state_name }} requires fingerprinting or background screening on this path.{% if fingerprints.method_out_of_state %} Out-of-state applicants can use {{ fingerprints.method_out_of_state }}.{% endif %}</p>
+              <p class="step-title">Complete Fingerprinting and Background Screening</p>
+              <p>{{ state_name }} requires a criminal background check for all applicants.{% if fingerprints.method_out_of_state %} Out-of-state applicants can use {{ fingerprints.method_out_of_state }}.{% endif %}{% if fingerprints.delay_out_of_state_weeks %} Completing prints outside {{ state_name }} can add {{ fingerprints.delay_out_of_state_weeks }} weeks to your processing time.{% endif %}</p>
             </li>
           {% endif %}
 
@@ -853,7 +853,7 @@
             {% set step_ns.number = step_ns.number + 1 %}
             <li>
               <p class="step-kicker">Step {{ step_ns.number }}</p>
-              <p class="step-title">Complete the jurisprudence or state law requirement</p>
+              <p class="step-title">Complete the Jurisprudence or State Law Requirement</p>
               <p>{{ state_name }} requires a jurisprudence exam or state law course as part of this licensing path. Check the board site for approved providers.</p>
             </li>
           {% endif %}
@@ -861,8 +861,8 @@
           {% set step_ns.number = step_ns.number + 1 %}
           <li>
             <p class="step-kicker">Step {{ step_ns.number }}</p>
-            <p class="step-title">Wait for board processing</p>
-            <p>Plan on about {{ processing_label }} for processing{% if reciprocity.temp_license_available %}. {{ state_name }} also lists a temporary or provisional route while the full file is pending{% endif %}.</p>
+            <p class="step-title">Await Board Processing</p>
+            <p>Plan for a processing timeline of about {{ processing_label }} once your file is complete.{% if reciprocity.temp_license_available %} If you need to start working immediately, the board offers a temporary or provisional licensing route that you can utilize while your full application is pending.{% endif %}</p>
           </li>
         {% endif %}
 
