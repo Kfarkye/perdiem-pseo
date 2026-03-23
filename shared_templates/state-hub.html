@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#faf9f7" />
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
   
-  {%- set safe_title = seo.title | default(profession_name ~ ' License in ' ~ state_name, true) | string | trim | e -%}
+  {%- set safe_title = seo.title | default(state_name ~ ' ' ~ profession_name ~ ' License', true) | string | trim | e -%}
   {%- set safe_desc = seo.description | default('Complete guide and requirements for the ' ~ state_name ~ ' ' ~ profession_name ~ ' license.', true) | string | trim | e -%}
   
   <title>{{ safe_title }}</title>
@@ -624,7 +624,7 @@
         {%- if profession_name | lower == "pharmacy technician" -%}
           {{ state_name | e }} Pharmacy Tech License
         {%- else -%}
-          {{ profession_name | e }} License in {{ state_name | e }}
+          {{ state_name | e }} {{ profession_name | e }} License
         {%- endif -%}
       </h1>
       <p class="hero-sub">Here's what you need to know.</p>
