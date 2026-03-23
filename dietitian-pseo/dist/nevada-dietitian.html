@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -7,7 +7,9 @@
   <meta name="description" content="Already licensed as a dietitian? Here's whether your license transfers to Nevada - compact status, endorsement steps, fees, and processing time." />
   <meta name="keywords" content="dietitian license reciprocity nevada, how to transfer dietitian license to nevada, dietitian compact nevada, nevada dietitian endorsement application" />
   
+  
   <link rel="canonical" href="https://www.statelicensingreference.com/nevada-dietitian" />
+  
   <meta property="og:title" content="Nevada Dietitian License Reciprocity - How to Transfer Your License (2026)" />
   <meta property="og:description" content="Already licensed as a dietitian? Here's whether your license transfers to Nevada - compact status, endorsement steps, fees, and processing time." />
   <meta property="og:type" content="article" />
@@ -16,10 +18,13 @@
   <meta name="twitter:title" content="Nevada Dietitian License Reciprocity - How to Transfer Your License (2026)" />
   <meta name="twitter:description" content="Already licensed as a dietitian? Here's whether your license transfers to Nevada - compact status, endorsement steps, fees, and processing time." />
   <meta name="theme-color" content="#faf9f7" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet" />
+  
   <style>
+    /* 1. CSS Reset & Base Variables */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -27,11 +32,11 @@
       --paper: #faf9f7;
       --line: #e6e2dc;
       --ink: #1f1f1f;
-      --muted: #6f6f6f;
-      --soft: #888888;
+      --muted: #5e5e5e; 
+      --soft: #666666; /* WCAG AA Compliant (5.7:1 on #fff) */
       --link: #1f6280;
+      --link-hover: #144459;
       --accent: #b08a52;
-      --accent-soft: rgba(176, 138, 82, 0.12);
       --shell: 1120px;
       --reading: 760px;
       --hero-reading: 780px;
@@ -44,73 +49,85 @@
       color: var(--ink);
       font-size: 16px;
       scroll-behavior: smooth;
-      scroll-padding-top: 64px;
+      scroll-padding-top: 80px;
+      -webkit-text-size-adjust: 100%;
     }
 
     body {
       background: var(--bg);
       color: var(--ink);
-      font-family: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Karla', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Accessibility: Universal Keyboard Focus Ring */
+    *:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: 3px;
+      border-radius: 2px;
     }
 
     a {
       color: var(--link);
       text-decoration-thickness: 1px;
-      text-underline-offset: 2px;
+      text-underline-offset: 3px;
       transition: color 140ms ease, text-decoration-color 140ms ease;
     }
-
-    img {
-      display: block;
-      max-width: 100%;
+    
+    a:hover {
+      color: var(--link-hover);
     }
 
+    img { display: block; max-width: 100%; height: auto; }
+
+    /* 2. Typography Engine */
     h1, h2, h3 {
       font-family: 'Source Serif 4', Georgia, serif;
       color: #191919;
       letter-spacing: -0.01em;
       line-height: 1.22;
       text-wrap: balance;
+      text-rendering: optimizeLegibility;
     }
 
-    h1 {
-      font-size: clamp(30px, 5vw, 40px);
-    }
-
-    h2 {
-      font-size: clamp(24px, 3.8vw, 30px);
-      margin-bottom: 12px;
-    }
-
-    h3 {
-      font-size: 19px;
-      margin-bottom: 8px;
-    }
-
-    p {
-      color: #313131;
+    h1 { font-size: clamp(30px, 5vw, 40px); }
+    h2 { font-size: clamp(24px, 3.8vw, 30px); margin-bottom: 12px; }
+    h3 { font-size: 19px; margin-bottom: 8px; }
+    
+    p, li, dd { 
+      color: #313131; 
       max-width: 70ch;
+      text-wrap: pretty;
     }
 
+    /* 3. Navigation & Layout Elements */
     .skip-link {
       position: absolute;
       left: -9999px;
       top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
     }
-
-    .skip-link:focus {
-      left: 12px;
-      top: 10px;
-      z-index: 200;
-      background: #fff;
-      border: 1px solid var(--line);
+    
+    .skip-link:focus-visible {
+      position: fixed;
+      left: 16px;
+      top: 16px;
+      width: auto;
+      height: auto;
+      z-index: 9999;
+      background: var(--bg);
+      border: 2px solid var(--link);
       border-radius: 6px;
-      padding: 8px 10px;
+      padding: 12px 16px;
       color: var(--ink);
+      font-weight: 600;
       text-decoration: none;
+      box-shadow: var(--shadow-soft);
+      outline: none;
     }
 
     .site-nav {
@@ -124,7 +141,7 @@
       border-bottom: 1px solid rgba(0, 0, 0, 0.06);
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
     }
-
+    
     .site-nav-inner {
       width: min(var(--shell), calc(100% - 48px));
       height: 48px;
@@ -134,32 +151,20 @@
       justify-content: space-between;
       gap: 16px;
     }
-
+    
     .site-nav-brand {
       font-size: 13px;
       font-weight: 600;
-      color: #555;
+      color: #4a4a4a;
       text-decoration: none;
       letter-spacing: -0.01em;
     }
+    
+    .site-nav-links { display: flex; align-items: center; gap: 20px; list-style: none; }
+    .site-nav-links a { font-size: 13px; color: var(--soft); text-decoration: none; }
+    .site-nav-links a:hover { color: var(--ink); }
 
-    .site-nav-links {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      list-style: none;
-    }
-
-    .site-nav-links a {
-      font-size: 13px;
-      color: #888;
-      text-decoration: none;
-    }
-
-    .site-nav-links a:hover {
-      color: #444;
-    }
-
+    /* 4. Hero Section */
     .hero {
       position: relative;
       overflow: hidden;
@@ -167,11 +172,8 @@
       background: var(--paper);
       margin-bottom: 40px;
     }
-
-    .hero-with-image {
-      min-height: 380px;
-    }
-
+    .hero-with-image { min-height: 380px; }
+    
     .hero-image {
       width: 100%;
       height: min(58vh, 560px);
@@ -179,7 +181,7 @@
       object-fit: cover;
       object-position: center 32%;
     }
-
+    
     .hero-fade {
       position: absolute;
       inset: 0;
@@ -192,14 +194,14 @@
       );
       pointer-events: none;
     }
-
+    
     .hero-inner {
       width: min(var(--hero-reading), calc(100% - 64px));
       margin: 0 auto;
       position: relative;
       z-index: 2;
     }
-
+    
     .hero-with-image .hero-inner {
       position: absolute;
       left: 50%;
@@ -208,80 +210,31 @@
       transform: translateX(-50%);
       padding-bottom: 44px;
     }
+    
+    .hero-no-image .hero-inner { padding: 72px 0 52px; }
+    .hero-sub { margin-top: 12px; color: #444; max-width: 39ch; font-size: 18px; }
+    .updated { display: inline-block; margin-top: 14px; font-size: 13px; color: var(--soft); letter-spacing: 0.01em; }
 
-    .hero-no-image .hero-inner {
-      padding: 72px 0 52px;
-    }
-
-    .state-label {
-      margin-bottom: 8px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--soft);
-    }
-
-    .hero-sub {
-      margin-top: 12px;
-      color: #444;
-      max-width: 39ch;
-      font-size: 18px;
-    }
-
-    .updated {
-      margin-top: 14px;
-      font-size: 13px;
-      color: #999;
-      letter-spacing: 0.01em;
-    }
-
+    /* 5. Grid Layout & Core Containers */
     #main-content {
       width: min(var(--shell), calc(100% - 48px));
       margin: 0 auto;
       padding-bottom: 104px;
     }
-
+    
     .page-layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(272px, 320px);
       gap: 56px;
       align-items: start;
     }
+    
+    .content-column { order: 1; min-width: 0; }
+    .context-rail { order: 2; min-width: 0; }
 
-    .content-column {
-      order: 1;
-      min-width: 0;
-    }
-
-    .context-rail {
-      order: 2;
-      min-width: 0;
-    }
-
-    .section-shell,
-    .section-shell-wide {
-      width: 100%;
-      margin: 0 0 64px;
-    }
-
-    .section-copy {
-      width: min(42rem, 100%);
-      margin-bottom: 18px;
-    }
-
-    .section-copy > * + * {
-      margin-top: 16px;
-    }
-
-    .section-kicker {
-      margin-bottom: 10px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #8a7d6f;
-    }
+    .section-shell, .section-shell-wide { width: 100%; margin: 0 0 64px; }
+    .section-copy { width: min(42rem, 100%); margin-bottom: 18px; }
+    .section-copy > * + * { margin-top: 16px; }
 
     .section-box {
       background: var(--paper);
@@ -290,116 +243,80 @@
       padding: 28px 30px;
       box-shadow: var(--shadow-soft), var(--shadow-hairline);
     }
+    
+    .section-box + .section-box { margin-top: 24px; }
+    address.section-box { font-style: normal; }
 
+    /* Resilient Sticky Sidebar */
     .context-card {
       position: sticky;
       top: 82px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
     }
+    
+    .context-card::-webkit-scrollbar { width: 4px; }
+    .context-card::-webkit-scrollbar-track { background: transparent; }
+    .context-card::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 4px; }
+    .context-card:hover::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); }
 
-    .context-card h2 {
-      font-size: 26px;
-      margin-bottom: 14px;
-    }
+    .context-card h2 { font-size: 26px; margin-bottom: 14px; }
 
+    /* 6. Data Display */
     .facts-grid {
       display: grid;
       grid-template-columns: 180px minmax(0, 1fr);
       gap: 14px 28px;
     }
-
     .facts-grid dt {
       font-size: 12px;
       font-weight: 600;
-      color: #74695d;
+      color: #6a6054;
       letter-spacing: 0.06em;
       text-transform: uppercase;
     }
-
     .facts-grid dd {
       margin: 0;
       font-size: 16px;
       line-height: 1.55;
       color: #222;
       font-variant-numeric: tabular-nums;
+      max-width: none; /* Override p,li,dd 70ch constraint */
     }
 
-    .facts-grid-rail {
-      grid-template-columns: 1fr;
-      gap: 6px 0;
-    }
-
-    .facts-grid-rail dt {
-      margin-top: 12px;
-      font-size: 11px;
-      color: #8b7f72;
-    }
-
-    .facts-grid-rail dt:first-child {
-      margin-top: 0;
-    }
-
+    .facts-grid-rail { grid-template-columns: 1fr; gap: 6px 0; }
+    .facts-grid-rail dt { margin-top: 12px; font-size: 11px; color: #6a6054; }
+    .facts-grid-rail dt:first-child { margin-top: 0; }
     .facts-grid-rail dd {
       padding-bottom: 10px;
-      border-bottom: 1px solid #ece6de;
+      border-bottom: 1px solid var(--line);
       font-size: 15px;
       color: #1f1f1f;
     }
-
-    .facts-grid-rail dd:last-child {
-      border-bottom: 0;
-      padding-bottom: 0;
-    }
+    .facts-grid-rail dd:last-child { border-bottom: 0; padding-bottom: 0; }
 
     .context-links {
       display: grid;
       gap: 10px;
       margin-top: 18px;
       padding-top: 16px;
-      border-top: 1px solid #ece6de;
+      border-top: 1px solid var(--line);
     }
+    .context-links a { font-size: 14px; font-weight: 600; text-decoration: none; color: var(--link); }
+    .context-links a:hover { text-decoration: underline; text-decoration-color: rgba(31, 98, 128, 0.3); }
 
-    .context-links a {
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      color: var(--link);
-    }
-
-    .context-links a:hover {
-      text-decoration: underline;
-      text-decoration-color: rgba(31, 98, 128, 0.3);
-    }
-
-    .section-label {
-      margin-top: 18px;
-      padding-top: 14px;
-      border-top: 1px solid #ece8e1;
-      font-size: 12px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: #7a7065;
-    }
-
-    .steps {
-      list-style: none;
-      display: grid;
-      gap: 34px;
-    }
-
-    .steps li {
-      position: relative;
-      border-left: 2px solid #ddd2c3;
-      padding-left: 28px;
-    }
-
+    /* Step Timeline */
+    .steps { list-style: none; display: grid; gap: 34px; }
+    .steps li { position: relative; border-left: 2px solid #ddd2c3; padding-left: 28px; }
     .steps li::before {
       content: "";
       position: absolute;
       top: 6px;
       left: -7px;
-      width: 10px;
-      height: 10px;
-      border-radius: 999px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
       background: #ffffff;
       border: 2px solid var(--accent);
       box-shadow: 0 0 0 6px var(--paper);
@@ -412,44 +329,26 @@
       font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #a4a4a4;
+      color: var(--soft);
     }
 
-    .step-title {
-      margin-bottom: 8px;
-      font-size: 19px;
-      font-weight: 600;
-      color: #191919;
-    }
+    .step-title { margin-bottom: 8px; font-size: 19px; font-weight: 600; color: #191919; }
 
-    .docs {
-      list-style: none;
-      display: grid;
-      gap: 14px;
-    }
-
-    .docs li {
-      position: relative;
-      padding-left: 18px;
-      color: #2e2e2e;
-    }
-
+    .docs { list-style: none; display: grid; gap: 14px; }
+    .docs li { position: relative; padding-left: 18px; color: #2e2e2e; }
     .docs li::before {
       content: "";
       position: absolute;
       left: 0;
-      top: 0.72em;
+      top: 0.65em;
       width: 6px;
       height: 6px;
-      border-radius: 999px;
+      border-radius: 50%;
       background: #c3aa84;
     }
 
-    details {
-      border-bottom: 1px solid var(--line);
-      padding: 18px 0;
-    }
-
+    /* 7. FAQ Interactions */
+    details { border-bottom: 1px solid var(--line); padding: 18px 0; }
     summary {
       cursor: pointer;
       list-style: none;
@@ -462,28 +361,20 @@
       font-size: 17px;
       transition: color 150ms ease;
     }
-
     summary:hover { color: var(--ink); }
-
     summary::after {
       content: "+";
-      flex: 0 0 auto;
-      color: #8f8578;
+      flex-shrink: 0;
+      color: var(--soft);
       font-size: 24px;
       line-height: 1;
       font-weight: 400;
+      font-family: system-ui, -apple-system, sans-serif;
       transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms ease;
+      will-change: transform;
     }
-
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    details[open] summary {
-      margin-bottom: 10px;
-      color: var(--ink);
-    }
-
+    summary::-webkit-details-marker { display: none; }
+    details[open] summary { margin-bottom: 10px; color: var(--ink); }
     details[open] summary::after {
       transform: rotate(45deg);
       color: var(--ink);
@@ -492,25 +383,14 @@
     .source-note {
       margin-top: 18px;
       padding-top: 14px;
-      border-top: 1px solid #ece8e1;
+      border-top: 1px solid var(--line);
       font-size: 13px;
-      color: #888;
+      color: var(--soft);
     }
+    .sources-list p + p { margin-top: 10px; }
 
-    .section-box + .section-box {
-      margin-top: 24px;
-    }
-
-    .sources-list p + p {
-      margin-top: 10px;
-    }
-
-    .related-guides-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
+    /* 8. Footer & Related Links */
+    .related-guides-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
     .related-guides-card {
       background: var(--paper);
       border: 1px solid var(--line);
@@ -518,28 +398,16 @@
       padding: 24px 26px;
       box-shadow: var(--shadow-soft), var(--shadow-hairline);
     }
+    .related-guides-card h3 { margin-bottom: 12px; }
 
-    .related-guides-card h3 {
-      margin-bottom: 12px;
-    }
-
-    .related-guides-list {
-      list-style: none;
-      display: grid;
-      gap: 10px;
-      padding: 0;
-    }
-
+    .related-guides-list { list-style: none; display: grid; gap: 10px; padding: 0; }
     .related-guides-list a {
       color: var(--link);
       text-decoration: underline;
       text-decoration-color: rgba(31, 98, 128, 0.24);
       text-underline-offset: 3px;
     }
-
-    .related-guides-list a:hover {
-      text-decoration-color: rgba(31, 98, 128, 0.68);
-    }
+    .related-guides-list a:hover { text-decoration-color: rgba(31, 98, 128, 0.68); }
 
     .footer {
       width: min(var(--reading), calc(100% - 48px));
@@ -547,117 +415,56 @@
       padding: 24px 0 80px;
       font-size: 13px;
       line-height: 1.6;
-      color: #aaa;
+      color: var(--soft);
       border-top: 1px solid var(--line);
     }
+    .footer p + p { margin-top: 12px; }
+    .footer a { color: var(--soft); font-weight: 500; }
+    .footer a:hover { color: var(--ink); }
 
-    .footer p + p {
-      margin-top: 12px;
-    }
-
-    .footer a {
-      color: #aaa;
-    }
-
+    /* 9. Responsive Breakpoints */
     @media (max-width: 980px) {
-      .page-layout {
-        grid-template-columns: 1fr;
-        gap: 28px;
-      }
-
-      .context-rail {
-        order: 0;
-      }
-
-      .content-column {
-        order: 1;
-      }
-
-      .context-card {
-        position: static;
-      }
+      .page-layout { grid-template-columns: 1fr; gap: 28px; }
+      .context-rail { order: 0; }
+      .content-column { order: 1; }
+      .context-card { position: static; max-height: none; overflow-y: visible; }
     }
 
     @media (max-width: 720px) {
-      .site-nav-links {
-        display: none;
-      }
-
-      .hero-with-image {
-        min-height: 300px;
-      }
-
-      .hero-image {
-        min-height: 280px;
-        height: 44vh;
-      }
-
-      .hero-with-image .hero-inner {
-        width: calc(100% - 32px);
-        padding-bottom: 24px;
-      }
-
-      .hero-no-image .hero-inner {
-        width: calc(100% - 32px);
-        padding: 52px 0 34px;
-      }
-
-      #main-content {
-        width: calc(100% - 32px);
-      }
-
-      .section-shell,
-      .section-shell-wide {
-        margin-bottom: 44px;
-      }
-
-      .section-box {
-        padding: 20px;
-      }
-
-      .facts-grid {
-        grid-template-columns: 1fr;
-        gap: 4px;
-      }
-
-      .facts-grid dd {
-        margin-bottom: 10px;
-      }
-
-      .facts-grid-rail {
-        gap: 2px;
-      }
-
-      .steps li {
-        padding-left: 16px;
-      }
-
-      .footer {
-        width: calc(100% - 32px);
-        padding-bottom: 64px;
-      }
-
-      .related-guides-grid {
-        grid-template-columns: 1fr;
-      }
+      .site-nav-links { display: none; }
+      .hero-with-image { min-height: 300px; }
+      .hero-image { min-height: 280px; height: 44vh; }
+      .hero-with-image .hero-inner { width: calc(100% - 32px); padding-bottom: 24px; }
+      .hero-no-image .hero-inner { width: calc(100% - 32px); padding: 52px 0 34px; }
+      #main-content { width: calc(100% - 32px); }
+      .section-shell, .section-shell-wide { margin-bottom: 44px; }
+      .section-box { padding: 20px; }
+      .facts-grid { grid-template-columns: 1fr; gap: 4px; }
+      .facts-grid dd { margin-bottom: 10px; }
+      .facts-grid-rail { gap: 2px; }
+      .steps li { padding-left: 16px; }
+      .footer { width: calc(100% - 32px); padding-bottom: 64px; }
+      .related-guides-grid { grid-template-columns: 1fr; }
     }
 
+    /* 10. Print Styles */
     @media print {
-      body { background: #fff !important; color: #000 !important; }
-      .site-nav, .hero-image, .hero-fade, .context-links, .context-rail,
-      .footer, #related-guides, .source-note { display: none !important; }
-      .hero-no-image .hero-inner, .hero-with-image .hero-inner {
-        padding: 0 0 20px 0; transform: none; position: static;
-      }
-      #main-content { width: 100%; }
-      .page-layout { display: block; }
+      body { background: #fff !important; color: #000 !important; font-size: 11pt; }
+      .site-nav, .hero-image, .hero-fade, .context-links, .footer, #related-guides, .source-note, .skip-link { display: none !important; }
+      .hero-no-image .hero-inner, .hero-with-image .hero-inner { padding: 0 0 20px 0; transform: none; position: static; color: #000; border-bottom: 2px solid #000; }
       .section-box { border: 1px solid #ccc; box-shadow: none; break-inside: avoid; }
-      details { border: none; break-inside: avoid; }
-      details[open] p { display: block !important; }
+      .page-layout { display: block; }
+      .context-rail { margin-bottom: 40px; }
+      details { border: none !important; break-inside: avoid; display: block !important; }
+      details p, details[open] p { display: block !important; }
       summary::after { display: none; }
       a { text-decoration: none; color: #000; }
+      h1, h2, h3 { color: #000; page-break-after: avoid; }
     }
   </style>
+
+  
+  
   
   
   
@@ -671,13 +478,23 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Article",
+        "headline": "Nevada Dietitian License Reciprocity - How to Transfer Your License (2026)",
+        "dateModified": "2026-02-25",
+        "author": {
+          "@type": "Organization",
+          "name": "State Licensing Reference"
+        }
+      },
+      {
         "@type": "BreadcrumbList",
         "itemListElement": [
           {"@type": "ListItem", "position": 1, "name": "All States", "item": "https://www.statelicensingreference.com/"},
           {"@type": "ListItem", "position": 2, "name": "Nevada", "item": "https://www.statelicensingreference.com/nevada-dietitian"}
         ]
-      },
-      {
+      }
+      
+      ,{
         "@type": "FAQPage",
         "mainEntity": [
           
@@ -687,7 +504,10 @@
           {
             "@type": "Question",
             "name": "How much does a Nevada dietitian license cost?",
-            "acceptedAnswer": {"@type": "Answer", "text": "The initial license application fee is $200, plus a $37.50 fee for the fingerprint background check. The provisional license also costs $200." }
+            "acceptedAnswer": {
+              "@type": "Answer", 
+              "text": "The initial license application fee is $200, plus a $37.50 fee for the fingerprint background check. The provisional license also costs $200."
+            }
           },
           
           
@@ -696,7 +516,10 @@
           {
             "@type": "Question",
             "name": "When does the Nevada license need to be renewed?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Nevada dietitian licenses are renewed biennially (every two years). The renewal fee is $200." }
+            "acceptedAnswer": {
+              "@type": "Answer", 
+              "text": "Nevada dietitian licenses are renewed biennially (every two years). The renewal fee is $200."
+            }
           },
           
           
@@ -705,7 +528,10 @@
           {
             "@type": "Question",
             "name": "What are the continuing education requirements for Nevada?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Nevada currently relies on the Commission on Dietetic Registration (CDR) for continuing education tracking. There are no additional state-mandated CE hours beyond the 75 CPEUs required every five years to maintain active CDR registration." }
+            "acceptedAnswer": {
+              "@type": "Answer", 
+              "text": "Nevada currently relies on the Commission on Dietetic Registration (CDR) for continuing education tracking. There are no additional state-mandated CE hours beyond the 75 CPEUs required every five years to maintain active CDR registration."
+            }
           },
           
           
@@ -714,7 +540,10 @@
           {
             "@type": "Question",
             "name": "Does Nevada have reciprocity for dietitians?",
-            "acceptedAnswer": {"@type": "Answer", "text": "No interstate compact currently covers dietitian practice in Nevada. To work in Nevada, apply for licensure by endorsement through the state board." }
+            "acceptedAnswer": {
+              "@type": "Answer", 
+              "text": "No interstate compact currently covers dietitian practice in Nevada. To work in Nevada, apply for licensure by endorsement through the state board."
+            }
           },
           
           
@@ -723,7 +552,10 @@
           {
             "@type": "Question",
             "name": "How long does it take to transfer my dietitian license to Nevada?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing." }
+            "acceptedAnswer": {
+              "@type": "Answer", 
+              "text": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+            }
           },
           
           
@@ -732,11 +564,15 @@
           {
             "@type": "Question",
             "name": "Can I start working in Nevada while my endorsement application is processing?",
-            "acceptedAnswer": {"@type": "Answer", "text": "A temporary or provisional credential is available while the full endorsement application is pending." }
+            "acceptedAnswer": {
+              "@type": "Answer", 
+              "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+            }
           }
           
         ]
       }
+      
     ]
   }
   </script>
@@ -749,15 +585,15 @@
       <a href="/" class="site-nav-brand">State Licensing Reference</a>
       <ul class="site-nav-links">
         <li><a href="/">All States</a></li>
-        <li><a href="https://www.statelicensingreference.com">Specialties</a></li>
+        <li><a href="https://www.statelicensingreference.com" target="_blank" rel="noopener noreferrer">Specialties</a></li>
       </ul>
     </div>
   </nav>
 
   <header class="hero hero-with-image" aria-labelledby="hero-title">
     
-      <img class="hero-image" src="https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?w=1200&q=80&auto=format" alt="Nevada — Red Rock Canyon at golden hour" loading="eager" fetchpriority="high" />
-      <div class="hero-fade"></div>
+      <img class="hero-image" src="https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?w=1200&q=80&auto=format" alt="Nevada — Red Rock Canyon at golden hour" loading="eager" fetchpriority="high" decoding="sync" />
+      <div class="hero-fade" aria-hidden="true"></div>
     
     <div class="hero-inner">
       <h1 id="hero-title">
@@ -766,12 +602,13 @@
         
       </h1>
       <p class="hero-sub">Here's what you need to know.</p>
-      <p class="updated">Last updated 2026-02-25 · Sources verified</p>
+      <time class="updated" datetime="2026-02-25">Last updated 2026-02-25 · Sources verified</time>
     </div>
   </header>
 
   <main id="main-content">
     <div class="page-layout">
+      
       <aside class="context-rail" aria-labelledby="quick-reference-heading">
         <div class="section-box context-card">
           <h2 id="quick-reference-heading">At a glance</h2>
@@ -810,347 +647,344 @@
           </dl>
           <div class="context-links">
             <a href="#endorsement">See the steps</a>
-            <a href="https://dpbh.nv.gov/" target="_blank" rel="noopener">Primary board page</a>
+            <a href="https://dpbh.nv.gov/" target="_blank" rel="noopener noreferrer">Primary board page</a>
           </div>
           
-            <p class="source-note">Last updated 2026-02-25.</p>
+            <p class="source-note">Last updated <time datetime="2026-02-25">2026-02-25</time>.</p>
           
         </div>
       </aside>
+      
       <div class="content-column">
-    <section id="reciprocity" class="section-shell" aria-labelledby="reciprocity-heading">
-      <div class="section-copy">
-        <h2 id="reciprocity-heading">Out-of-State Dietitians</h2>
+        <section id="reciprocity" class="section-shell" aria-labelledby="reciprocity-heading">
+          <div class="section-copy">
+            <h2 id="reciprocity-heading">Out-of-State Dietitians</h2>
 
-        
-          <p>There is no active interstate compact route for dietitian licensing in Nevada. Plan on endorsement through Nevada Division of Public and Behavioral Health — Dietitian Licensing.</p>
-        
-      </div>
-    </section>
-
-    <section id="friction" class="section-shell" aria-labelledby="friction-heading">
-      <div class="section-copy">
-        <h2 id="friction-heading">Key Timeline Factors</h2>
-        <p>Keep these requirements in mind, as they are the most likely to impact your processing timeline in Nevada.</p>
-      </div>
-      
-      
-      <ul class="docs">
-        <li><strong>Fingerprinting</strong>: Required. Out-of-state applicants can use IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects). Completing prints outside Nevada can add 2-4 weeks.</li>
-        <li><strong>License verification</strong>: Nevada requires verification of your current out-of-state license before your file is complete.</li>
-        <li><strong>Compact status</strong>: No active compact route here. Plan on endorsement.</li>
-        <li><strong>Temporary license</strong>: The board lists a temporary or provisional route while the full file is pending.</li>
-      </ul>
-    </section>
-
-    <section id="endorsement" class="section-shell" aria-labelledby="apply-heading">
-      <div class="section-copy">
-        <h2 id="apply-heading">Nevada Endorsement Requirements</h2>
-        <p>This is the step-by-step endorsement checklist for already-licensed dietitians applying to practice in Nevada.</p>
-      </div>
-
-      <ol class="steps">
-        
-        
-
-        
-          
-          <li>
-            <span class="step-kicker">Step 1</span>
-            <h3 class="step-title">Submit Your Application</h3>
-            <p>Apply through the Nevada Division of Public and Behavioral Health — Dietitian Licensing. The application fee is $200.</h3>
-          </li>
-
-          
             
-            <li>
-              <span class="step-kicker">Step 2</span>
-              <h3 class="step-title">Provide License Verification</h3>
-              <p>Nevada requires official verification of your active out-of-state license. This must be sent directly to the board from your current state board or its official online verification system before your file can be considered complete.</h3>
-            </li>
-          
-
-          
+              <p>There is no active interstate compact route for dietitian licensing in Nevada. Plan on endorsement through Nevada Division of Public and Behavioral Health — Dietitian Licensing.</p>
             
-            <li>
-              <span class="step-kicker">Step 3</span>
-              <h3 class="step-title">Verify Your CDR Registration Card</h3>
-              <p>Proof of active registration with the Commission on Dietetic Registration.</h3>
-            </li>
+          </div>
+        </section>
+
+        <section id="friction" class="section-shell" aria-labelledby="friction-heading">
+          <div class="section-copy">
+            <h2 id="friction-heading">Key Timeline Factors</h2>
+            <p>Keep these requirements in mind, as they are the most likely to impact your processing timeline in Nevada.</p>
+          </div>
           
+          
+          <ul class="docs">
+            <li><strong>Fingerprinting</strong>: Required. Out-of-state applicants can use IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects). Completing prints outside Nevada can add 2-4 weeks.</li>
+            <li><strong>License verification</strong>: Nevada requires verification of your current out-of-state license before your file is complete.</li>
+            <li><strong>Compact status</strong>: No active compact route here. Plan on endorsement.</li>
+            <li><strong>Temporary license</strong>: The board lists a temporary or provisional route while the full file is pending.</li>
+          </ul>
+        </section>
+
+        <section id="endorsement" class="section-shell" aria-labelledby="apply-heading">
+          <div class="section-copy">
+            <h2 id="apply-heading">Nevada Endorsement Requirements</h2>
+            <p>This is the step-by-step endorsement checklist for already-licensed dietitians applying to practice in Nevada.</p>
+          </div>
+
+          <ol class="steps">
             
-            <li>
-              <span class="step-kicker">Step 4</span>
-              <h3 class="step-title">Request Official College Transcripts</h3>
-              <p>Sent directly from the university showing your conferred degree.</h3>
-            </li>
-          
             
-            <li>
-              <span class="step-kicker">Step 5</span>
-              <h3 class="step-title">Provide Fingerprint Background Check</h3>
-              <p>Verification sent directly from the Nevada Department of Public Safety.</h3>
-            </li>
-          
+
             
-            <li>
-              <span class="step-kicker">Step 6</span>
-              <h3 class="step-title">Provide Photo ID & Proof of Citizenship</h3>
-              <p>Valid government-issued photo identification and evidence of lawful presence.</h3>
-            </li>
-          
+              
+              <li>
+                <span class="step-kicker" aria-hidden="true">Step 1</span>
+                <h3 class="step-title">Submit Your Application</h3>
+                <p>Apply through the Nevada Division of Public and Behavioral Health — Dietitian Licensing. The application fee is $200.</p>
+              </li>
 
-          
+              
+                
+                <li>
+                  <span class="step-kicker" aria-hidden="true">Step 2</span>
+                  <h3 class="step-title">Provide License Verification</h3>
+                  <p>Nevada requires official verification of your active out-of-state license. This must be sent directly to the board from your current state board or its official online verification system before your file can be considered complete.</p>
+                </li>
+              
+
+              
+                
+                <li>
+                  <span class="step-kicker" aria-hidden="true">Step 3</span>
+                  <h3 class="step-title">Verify Your CDR Registration Card</h3>
+                  <p>Proof of active registration with the Commission on Dietetic Registration.</p>
+                </li>
+              
+                
+                <li>
+                  <span class="step-kicker" aria-hidden="true">Step 4</span>
+                  <h3 class="step-title">Request Official College Transcripts</h3>
+                  <p>Sent directly from the university showing your conferred degree.</p>
+                </li>
+              
+                
+                <li>
+                  <span class="step-kicker" aria-hidden="true">Step 5</span>
+                  <h3 class="step-title">Provide Fingerprint Background Check</h3>
+                  <p>Verification sent directly from the Nevada Department of Public Safety.</p>
+                </li>
+              
+                
+                <li>
+                  <span class="step-kicker" aria-hidden="true">Step 6</span>
+                  <h3 class="step-title">Provide Photo ID & Proof of Citizenship</h3>
+                  <p>Valid government-issued photo identification and evidence of lawful presence.</p>
+                </li>
+              
+
+              
+                
+                <li>
+                  <span class="step-kicker" aria-hidden="true">Step 7</span>
+                  <h3 class="step-title">Complete Fingerprinting and Background Screening</h3>
+                  <p>Nevada requires a criminal background check for all applicants. Out-of-state applicants can use IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects). Completing prints outside Nevada can add 2-4 weeks to your processing time.</p>
+                </li>
+              
+
+              
+
+              
+              <li>
+                <span class="step-kicker" aria-hidden="true">Step 8</span>
+                <h3 class="step-title">Await Board Processing</h3>
+                <p>Plan for a processing timeline of about 4 to 6 Weeks once your file is complete. If you need to start working immediately, the board offers a temporary or provisional licensing route that you can utilize while your full application is pending.</p>
+              </li>
             
-            <li>
-              <span class="step-kicker">Step 7</span>
-              <h3 class="step-title">Complete Fingerprinting and Background Screening</h3>
-              <p>Nevada requires a criminal background check for all applicants. Out-of-state applicants can use IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects). Completing prints outside Nevada can add 2-4 weeks to your processing time.</h3>
-            </li>
-          
 
-          
-
-          
-          <li>
-            <span class="step-kicker">Step 8</span>
-            <h3 class="step-title">Await Board Processing</h3>
-            <p>Plan for a processing timeline of about 4 to 6 Weeks once your file is complete. If you need to start working immediately, the board offers a temporary or provisional licensing route that you can utilize while your full application is pending.</h3>
-          </li>
-        
-
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-
-        
-      </ol>
-    </section>
-
-    <section id="quick-facts" class="section-shell" aria-labelledby="quick-facts-heading">
-      <div class="section-copy">
-        <h2 id="quick-facts-heading">Fees, Processing Time, and Renewal</h2>
-        <p>Here is a complete breakdown of the costs and timelines associated with getting and maintaining your Nevada Dietitian license.</p>
-      </div>
-
-      <div class="section-box">
-        <h3>Initial Licensing Costs</h3>
-        <dl class="facts-grid">
-          <dt>Application fee</dt>
-          <dd>$200</dd>
-
-          <dt>Background check</dt>
-          <dd>
             
-              $37.50
+              
               
             
-          </dd>
-
-          
-
-          <dt>Total estimated cost</dt>
-          <dd>
+              
+              
             
-              <strong>$237.50</strong>
-              <em class="source-note">(Covers your application fee plus the initial license issuance fee)</em>
+              
+              
             
-          </dd>
-        </dl>
-      </div>
 
-      <div class="section-box">
-        <h3>Processing Timeline</h3>
-        <dl class="facts-grid">
-          <dt>Estimated time</dt>
-          <dd>
             
-              4 to 6 Weeks <em class="source-note">(once your application and fingerprinting are fully received by the board)</em>
-            
-          </dd>
-        </dl>
-      </div>
+          </ol>
+        </section>
 
-      <div class="section-box">
-        <h3>Ongoing License Renewal</h3>
-        <dl class="facts-grid">
-          <dt>Renewal cycle</dt>
-          <dd>Every 2 years (no state-mandated CE, but CDR requires 75 CPEUs per 5 years)</dd>
+        <section id="quick-facts" class="section-shell" aria-labelledby="quick-facts-heading">
+          <div class="section-copy">
+            <h2 id="quick-facts-heading">Fees, Processing Time, and Renewal</h2>
+            <p>Here is a complete breakdown of the costs and timelines associated with getting and maintaining your Nevada Dietitian license.</p>
+          </div>
 
-          <dt>Renewal fee</dt>
-          <dd>$200</dd>
-        </dl>
-      </div>
+          <div class="section-box">
+            <h3>Initial Licensing Costs</h3>
+            <dl class="facts-grid">
+              <dt>Application fee</dt>
+              <dd>$200</dd>
 
-      
-    </section>
+              <dt>Background check</dt>
+              <dd>
+                
+                  $37.50
+                  
+                
+              </dd>
 
-    
-    <section id="temp-license" class="section-shell" aria-labelledby="temp-license-heading">
-      <div class="section-copy">
-        <h2 id="temp-license-heading">Temporary License</h2>
-        <p>Nevada offers a temporary or provisional license so you can start working while your full endorsement application is processing.</p>
-      </div>
-    </section>
-    
+              
 
+              <dt>Total estimated cost</dt>
+              <dd>
+                
+                  <strong>$237.50</strong>
+                  <em class="source-note">(Covers your application fee plus the initial license issuance fee)</em>
+                
+              </dd>
+            </dl>
+          </div>
 
-    <section id="contact" class="section-shell" aria-labelledby="contact-heading">
-      <div class="section-copy">
-        <h2 id="contact-heading">Board Contact</h2>
-      </div>
+          <div class="section-box">
+            <h3>Processing Timeline</h3>
+            <dl class="facts-grid">
+              <dt>Estimated time</dt>
+              <dd>
+                
+                  4 to 6 Weeks <em class="source-note">(once your application and fingerprinting are fully received by the board)</em>
+                
+              </dd>
+            </dl>
+          </div>
 
-      <address class="section-box" style="font-style: normal;">
-        <dl class="facts-grid">
-          <dt>Board</dt>
-          <dd>Nevada Division of Public and Behavioral Health — Dietitian Licensing</dd>
+          <div class="section-box">
+            <h3>Ongoing License Renewal</h3>
+            <dl class="facts-grid">
+              <dt>Renewal cycle</dt>
+              <dd>Every 2 years (no state-mandated CE, but CDR requires 75 CPEUs per 5 years)</dd>
 
-          
-            <dt>Department</dt>
-            <dd>Department of Health and Human Services</dd>
-          
-
-          
-            <dt>Phone</dt>
-            <dd><a href="tel:7756841030">(775) 684-1030</a></dd>
-          
-
-          
-            <dt>Email</dt>
-            <dd><a href="mailto:dpbh@dhhs.nv.gov">dpbh@dhhs.nv.gov</a></dd>
-          
-
-          <dt>Board site</dt>
-          <dd><a href="https://dpbh.nv.gov/" target="_blank" rel="noopener">Primary board page</a></dd>
+              <dt>Renewal fee</dt>
+              <dd>$200</dd>
+            </dl>
+          </div>
 
           
-            <dt>Compact source</dt>
-            <dd><a href="https://dietitianscompact.org/" target="_blank" rel="noopener">Dietitian Compact</a></dd>
-          
-        </dl>
-        <p class="source-note">Source: <a href="https://dpbh.nv.gov/" target="_blank" rel="noopener">Primary board website</a></p>
-      </address>
-    </section>
+        </section>
 
-
-
-    <section id="faq" class="section-shell" aria-labelledby="faq-heading">
-      <div class="section-copy">
-        <h2 id="faq-heading">Nevada Dietitian Licensing FAQ</h2>
-      </div>
-      
-        <details>
-          <summary>How much does a Nevada dietitian license cost?</summary>
-          
-          
-          
-          
-            <p>The initial license application fee is $200, plus a $37.50 fee for the fingerprint background check. The provisional license also costs $200.</p>
-          
-        </details>
-      
-        <details>
-          <summary>When does the Nevada license need to be renewed?</summary>
-          
-          
-          
-          
-            <p>Nevada dietitian licenses are renewed biennially (every two years). The renewal fee is $200.</p>
-          
-        </details>
-      
-        <details>
-          <summary>What are the continuing education requirements for Nevada?</summary>
-          
-          
-          
-          
-            <p>Nevada currently relies on the Commission on Dietetic Registration (CDR) for continuing education tracking. There are no additional state-mandated CE hours beyond the 75 CPEUs required every five years to maintain active CDR registration.</p>
-          
-        </details>
-      
-        <details>
-          <summary>Does Nevada have reciprocity for dietitians?</summary>
-          
-          
-          
-          
-            <p>No interstate compact currently covers dietitian practice in Nevada. To work in Nevada, apply for licensure by endorsement through the state board.</p>
-          
-        </details>
-      
-        <details>
-          <summary>How long does it take to transfer my dietitian license to Nevada?</summary>
-          
-          
-          
-          
-            <p>Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing.</p>
-          
-        </details>
-      
-        <details>
-          <summary>Can I start working in Nevada while my endorsement application is processing?</summary>
-          
-          
-          
-          
-            <p>A temporary or provisional credential is available while the full endorsement application is pending.</p>
-          
-        </details>
-      
-    </section>
-
-    
-    <section id="related-guides" class="section-shell" aria-labelledby="related-guides-heading">
-      <div class="section-copy">
-        <h2 id="related-guides-heading">Trending States</h2>
-      </div>
-      <div class="related-guides-grid">
         
-        <article class="related-guides-card">
-          <h3>Trending states</h3>
-          <ul class="related-guides-list">
-            
-            <li><a href="/arizona-dietitian">Arizona</a></li>
-            
-            <li><a href="/california-dietitian">California</a></li>
-            
-            <li><a href="/idaho-dietitian">Idaho</a></li>
-            
-            <li><a href="/oregon-dietitian">Oregon</a></li>
-            
-          </ul>
-        </article>
+        <section id="temp-license" class="section-shell" aria-labelledby="temp-license-heading">
+          <div class="section-copy">
+            <h2 id="temp-license-heading">Temporary License</h2>
+            <p>Nevada offers a temporary or provisional license so you can start working while your full endorsement application is processing.</p>
+          </div>
+        </section>
         
-      </div>
-    </section>
 
-    
+        <section id="contact" class="section-shell" aria-labelledby="contact-heading">
+          <div class="section-copy">
+            <h2 id="contact-heading">Board Contact</h2>
+          </div>
 
-    <section id="sources" class="section-shell" aria-labelledby="sources-heading">
-      <div class="section-copy sources-list">
-        <h2 id="sources-heading">Sources</h2>
-        <p><a href="https://dpbh.nv.gov/" target="_blank" rel="noopener">Nevada Division of Public and Behavioral Health — Dietitian Licensing</a></p>
+          <address class="section-box">
+            <dl class="facts-grid">
+              <dt>Board</dt>
+              <dd>Nevada Division of Public and Behavioral Health — Dietitian Licensing</dd>
+
+              
+                <dt>Department</dt>
+                <dd>Department of Health and Human Services</dd>
+              
+
+              
+                <dt>Phone</dt>
+                <dd><a href="tel:7756841030">(775) 684-1030</a></dd>
+              
+
+              
+                <dt>Email</dt>
+                <dd><a href="mailto:dpbh@dhhs.nv.gov">dpbh@dhhs.nv.gov</a></dd>
+              
+
+              <dt>Board site</dt>
+              <dd><a href="https://dpbh.nv.gov/" target="_blank" rel="noopener noreferrer">Primary board page</a></dd>
+
+              
+                <dt>Compact source</dt>
+                <dd><a href="https://dietitianscompact.org/" target="_blank" rel="noopener noreferrer">Dietitian Compact</a></dd>
+              
+            </dl>
+            <p class="source-note">Source: <a href="https://dpbh.nv.gov/" target="_blank" rel="noopener noreferrer">Primary board website</a></p>
+          </address>
+        </section>
+
+        <section id="faq" class="section-shell" aria-labelledby="faq-heading">
+          <div class="section-copy">
+            <h2 id="faq-heading">Nevada Dietitian Licensing FAQ</h2>
+          </div>
+          
+            <details>
+              <summary>How much does a Nevada dietitian license cost?</summary>
+              
+              
+              
+              
+                <p>The initial license application fee is $200, plus a $37.50 fee for the fingerprint background check. The provisional license also costs $200.</p>
+              
+            </details>
+          
+            <details>
+              <summary>When does the Nevada license need to be renewed?</summary>
+              
+              
+              
+              
+                <p>Nevada dietitian licenses are renewed biennially (every two years). The renewal fee is $200.</p>
+              
+            </details>
+          
+            <details>
+              <summary>What are the continuing education requirements for Nevada?</summary>
+              
+              
+              
+              
+                <p>Nevada currently relies on the Commission on Dietetic Registration (CDR) for continuing education tracking. There are no additional state-mandated CE hours beyond the 75 CPEUs required every five years to maintain active CDR registration.</p>
+              
+            </details>
+          
+            <details>
+              <summary>Does Nevada have reciprocity for dietitians?</summary>
+              
+              
+              
+              
+                <p>No interstate compact currently covers dietitian practice in Nevada. To work in Nevada, apply for licensure by endorsement through the state board.</p>
+              
+            </details>
+          
+            <details>
+              <summary>How long does it take to transfer my dietitian license to Nevada?</summary>
+              
+              
+              
+              
+                <p>Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing.</p>
+              
+            </details>
+          
+            <details>
+              <summary>Can I start working in Nevada while my endorsement application is processing?</summary>
+              
+              
+              
+              
+                <p>A temporary or provisional credential is available while the full endorsement application is pending.</p>
+              
+            </details>
+          
+        </section>
+
         
+        <section id="related-guides" class="section-shell" aria-labelledby="related-guides-heading">
+          <div class="section-copy">
+            <h2 id="related-guides-heading">Trending States</h2>
+          </div>
+          <div class="related-guides-grid">
+            
+            <article class="related-guides-card">
+              <h3>Trending states</h3>
+              <ul class="related-guides-list">
+                
+                <li><a href="/arizona-dietitian">Arizona</a></li>
+                
+                <li><a href="/california-dietitian">California</a></li>
+                
+                <li><a href="/idaho-dietitian">Idaho</a></li>
+                
+                <li><a href="/oregon-dietitian">Oregon</a></li>
+                
+              </ul>
+            </article>
+            
+          </div>
+        </section>
         
-        <p><a href="https://dietitianscompact.org/" target="_blank" rel="noopener">Dietitian Compact</a></p>
-      </div>
-    </section>
+
+        <section id="sources" class="section-shell" aria-labelledby="sources-heading">
+          <div class="section-copy sources-list">
+            <h2 id="sources-heading">Sources</h2>
+            <p><a href="https://dpbh.nv.gov/" target="_blank" rel="noopener noreferrer">Nevada Division of Public and Behavioral Health — Dietitian Licensing</a></p>
+            
+            
+            <p><a href="https://dietitianscompact.org/" target="_blank" rel="noopener noreferrer">Dietitian Compact</a></p>
+          </div>
+        </section>
       </div>
     </div>
   </main>
 
   <footer class="footer">
     <p>This page is maintained as a reference for dietitians and recruiters evaluating Nevada assignments.</p>
-    <p><a href="https://www.statelicensingreference.com">statelicensingreference.com</a></p>
+    <p><a href="https://www.statelicensingreference.com" target="_blank" rel="noopener noreferrer">statelicensingreference.com</a></p>
   </footer>
 </body>
 </html>
