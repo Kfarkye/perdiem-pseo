@@ -892,43 +892,77 @@
 
     <section id="quick-facts" class="section-shell" aria-labelledby="quick-facts-heading">
       <div class="section-copy">
-        <h2 id="quick-facts-heading">Fees and Renewal</h2>
+        <h2 id="quick-facts-heading">Fees, Processing Time, and Renewal</h2>
+        <p>Here is a complete breakdown of the costs and timelines associated with getting and maintaining your {{ state_name }} {{ profession_name }} license.</p>
       </div>
 
       <div class="section-box">
+        <h3>Initial Licensing Costs</h3>
         <dl class="facts-grid">
-          <dt>Total fee</dt>
-          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not fee_verified else quick_facts.total_fee }}</dd>
-
-          <dt>Processing time</dt>
-          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not timeline_verified else quick_facts.processing_time }}</dd>
-
-          <dt>Renewal fee</dt>
-          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_fee_verified else quick_facts.renewal_fee }}</dd>
-
-          <dt>Renewal cycle</dt>
-          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_cycle_verified else quick_facts.renewal_cycle }}</dd>
-
-          <dt>Application</dt>
+          <dt>Application fee</dt>
           <dd>{{ 'See board' if verify_fee_and_timing_with_board and not fee_verified else fees_endorsement.app_fee }}</dd>
 
           <dt>Background check</dt>
-          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not background_check_fee_verified else fees_endorsement.background_check_fee }}</dd>
+          <dd>
+            {% if verify_fee_and_timing_with_board and not background_check_fee_verified %}
+              See board
+            {% else %}
+              {{ fees_endorsement.background_check_fee }}
+              {% if fees_endorsement.background_check_fee == '$0' or fees_endorsement.background_check_fee == '$0 (included in application)' %}
+                <em class="source-note">(The board's processing fee is included in the application, but out-of-state fingerprinting services like IdentoGO charge a separate fee of ~$40)</em>
+              {% endif %}
+            {% endif %}
+          </dd>
 
+          {% if reciprocity.jurisprudence_required | default(false) %}
           <dt>Jurisprudence exam</dt>
           <dd>{{ 'See board' if verify_fee_and_timing_with_board and not jurisprudence_fee_verified else fees_endorsement.jurisprudence_exam_fee }}</dd>
+          {% endif %}
 
           <dt>Total estimated cost</dt>
-          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not total_estimated_cost_verified else fees_endorsement.total_estimated_cost }}</dd>
+          <dd>
+            {% if verify_fee_and_timing_with_board and not total_estimated_cost_verified %}
+              See board
+            {% else %}
+              <strong>{{ fees_endorsement.total_estimated_cost }}</strong>
+              <em class="source-note">(Covers your application fee plus the initial license issuance fee)</em>
+            {% endif %}
+          </dd>
         </dl>
-        {% if verify_fee_and_timing_with_board %}
-          {% if has_verified_board_data %}
-            <p class="source-note">Any fee field still marked "See board" has not been confirmed from the board yet.</p>
-          {% else %}
-            <p class="source-note">Fee and renewal details are still being checked against the board for this specialty. Verify the current amount before you apply.</p>
-          {% endif %}
-        {% endif %}
       </div>
+
+      <div class="section-box">
+        <h3>Processing Timeline</h3>
+        <dl class="facts-grid">
+          <dt>Estimated time</dt>
+          <dd>
+            {% if verify_fee_and_timing_with_board and not timeline_verified %}
+              See board
+            {% else %}
+              {{ quick_facts.processing_time }} <em class="source-note">(once your application and fingerprinting are fully received by the board)</em>
+            {% endif %}
+          </dd>
+        </dl>
+      </div>
+
+      <div class="section-box">
+        <h3>Ongoing License Renewal</h3>
+        <dl class="facts-grid">
+          <dt>Renewal cycle</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_cycle_verified else quick_facts.renewal_cycle }}</dd>
+
+          <dt>Renewal fee</dt>
+          <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_fee_verified else quick_facts.renewal_fee }}</dd>
+        </dl>
+      </div>
+
+      {% if verify_fee_and_timing_with_board %}
+        {% if has_verified_board_data %}
+          <p class="source-note">Any fee field still marked "See board" has not been confirmed from the board yet.</p>
+        {% else %}
+          <p class="source-note">Fee and renewal details are still being checked against the board for this specialty. Verify the current amount before you apply.</p>
+        {% endif %}
+      {% endif %}
     </section>
 
     {% if temp_license.available %}
