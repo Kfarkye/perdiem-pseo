@@ -1,4 +1,8 @@
 {
+  "AZ": { "url": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=1200&q=80&auto=format", "alt": "Arizona — Horseshoe Bend on the Colorado River" },
+  "CA": { "url": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=1200&q=80&auto=format", "alt": "California — Golden Gate Bridge at sunset" },
+  "CO": { "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80&auto=format", "alt": "Colorado — snow-capped Rocky Mountains and evergreen forest" },
+  "DC": { "url": "https://images.unsplash.com/photo-1501466044931-62695aada8e9?w=1200&q=80&auto=format", "alt": "Washington DC — Capitol reflecting pool at dawn" },
   "FL": { "url": "https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=1200&q=80&auto=format", "alt": "Florida — palm trees and warm sky at dusk" },
   "HI": { "url": "https://images.unsplash.com/photo-1507876466758-bc54f384809c?w=1200&q=80&auto=format", "alt": "Hawaii — Na Pali coast from above" },
   "ID": { "url": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=1200&q=80&auto=format", "alt": "Idaho — Sawtooth Mountains reflected in alpine lake" },
@@ -6,5 +10,6 @@
   "NV": { "url": "https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?w=1200&q=80&auto=format", "alt": "Nevada — Red Rock Canyon at golden hour" },
   "NM": { "url": "https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?w=1200&q=80&auto=format", "alt": "New Mexico — desert mesas with warm light" },
   "NY": { "url": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=1200&q=80&auto=format", "alt": "New York — Manhattan skyline from Brooklyn Bridge" },
-  "DC": { "url": "https://images.unsplash.com/photo-1501466044931-62695aada8e9?w=1200&q=80&auto=format", "alt": "Washington DC — Capitol reflecting pool at dawn" }
+  "UT": { "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80&auto=format", "alt": "Utah — sandstone formations along the road through Arches" },
+  "WA": { "url": "https://images.unsplash.com/photo-1542223616-740d5dff7f56?w=1200&q=80&auto=format", "alt": "Washington — Seattle Space Needle skyline at night" }
 }
