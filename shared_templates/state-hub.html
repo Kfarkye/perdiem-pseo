@@ -683,7 +683,6 @@
       <div class="hero-fade"></div>
     {% endif %}
     <div class="hero-inner">
-      <p class="state-label">{{ state_name }}</p>
       <h1 id="hero-title">
         {% if profession_name | lower == "pharmacy technician" %}
           {{ state_name }} Pharmacy Tech License
@@ -971,35 +970,9 @@
         <h2 id="temp-license-heading">Temporary License</h2>
         <p>{{ state_name }} offers a temporary or provisional license so you can start working while your full endorsement application is processing.</p>
       </div>
-      <div class="section-box">
-        <dl class="facts-grid">
-          {% if temp_license.fee and temp_license.fee != 'N/A' %}
-          <dt>Fee</dt>
-          <dd>{{ temp_license.fee }}</dd>
-          {% endif %}
-          {% if temp_license.duration and temp_license.duration != 'N/A' %}
-          <dt>Duration</dt>
-          <dd>{{ temp_license.duration }}</dd>
-          {% endif %}
-          {% if temp_license.processing_time and temp_license.processing_time != 'N/A' %}
-          <dt>Processing time</dt>
-          <dd>{{ temp_license.processing_time }}</dd>
-          {% endif %}
-        </dl>
-      </div>
     </section>
     {% endif %}
 
-    <section id="documents" class="section-shell" aria-labelledby="docs-heading">
-      <div class="section-copy">
-        <h2 id="docs-heading">Required Documents</h2>
-      </div>
-      <ul class="docs">
-        {% for doc in documents %}
-          <li><strong>{{ doc.item }}</strong>{% if doc.detail %}: {{ doc.detail }}{% endif %}</li>
-        {% endfor %}
-      </ul>
-    </section>
 
     <section id="contact" class="section-shell" aria-labelledby="contact-heading">
       <div class="section-copy">
@@ -1038,18 +1011,7 @@
       </div>
     </section>
 
-    <section id="renewal" class="section-shell" aria-labelledby="renewal-heading">
-      <div class="section-copy">
-        <h2 id="renewal-heading">Renewal</h2>
-        {% if verify_fee_and_timing_with_board and not (renewal_fee_verified or renewal_cycle_verified) %}
-          <p>Renewal details are still being checked against the board. Use the primary board link below before relying on a fee or cycle.</p>
-        {% elif verify_fee_and_timing_with_board %}
-          <p>Renewal fee is {{ quick_facts.renewal_fee if renewal_fee_verified else 'See board' }}. Renewal cycle: {{ quick_facts.renewal_cycle if renewal_cycle_verified else 'See board' }}.</p>
-        {% else %}
-          <p>Renewal fee is {{ quick_facts.renewal_fee }}. Renewal cycle: {{ quick_facts.renewal_cycle }}.</p>
-        {% endif %}
-      </div>
-    </section>
+
 
     <section id="faq" class="section-shell" aria-labelledby="faq-heading">
       <div class="section-copy">
