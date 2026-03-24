@@ -80,6 +80,24 @@ def build_verticals() -> tuple[list[str], list[str]]:
         if not vertical_dir.exists() and slug == "rrt":
             vertical_dir = REPO / "rrt-pseo"
 
+        if slug == "cna":
+            run_build(vertical_dir, "build_v2.py")
+            
+            dist_v2 = vertical_dir / "dist-v2"
+            for f in dist_v2.iterdir():
+                if f.is_file():
+                    if f.name in ["robots.txt", "sitemap.xml"]:
+                        continue
+                    out_name = "cna.html" if f.name == "index.html" else f.name
+                    shutil.copyfile(f, DIST_DIR / out_name)
+                    
+            for json_file in sorted((vertical_dir / "database" / "v2").glob("*.json")):
+                data = json.loads(json_file.read_text(encoding="utf-8"))
+                state_urls.append(f"{CANONICAL_HOST}/{data['routing']['canonical_slug']}")
+                
+            specialty_urls.append(f"{CANONICAL_HOST}/cna")
+            continue
+
         json_dir = vertical_dir / "database" / "json"
         content_dir = vertical_dir / "content"
         tier2_files = {f.name: f for f in content_dir.glob("*.html")} if content_dir.exists() else {}
