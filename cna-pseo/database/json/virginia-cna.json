@@ -12,7 +12,7 @@
   },
   "profession_name": "Certified Nursing Assistant",
   "credential_nomenclature": "CNA",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-24",
   "seo": {
     "title": "Virginia CNA License Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Virginia - endorsement steps, fees, and processing time.",
@@ -70,20 +70,12 @@
   "reciprocity_text": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
   "faqs": [
     {
-      "question": "How much does Virginia CNA endorsement cost?",
-      "answer": "There is no application fee for CNA endorsement in Virginia. However, background check fees may apply."
+      "question": "Who administers the Virginia CNA exam?",
+      "answer": "The VA nurse aide exam is administered by Credentia. Register at credentia.com/test-takers/va."
     },
     {
-      "question": "Is a background check required?",
-      "answer": "Yes, a fingerprint-based background check is required in Virginia."
-    },
-    {
-      "question": "How long does it take to transfer my CNA certification to Virginia?",
-      "answer": "Most endorsement applications take 2 to 4 Weeks."
-    },
-    {
-      "question": "Can I start working in Virginia while waiting?",
-      "answer": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      "question": "How do I verify a Virginia CNA?",
+      "answer": "Use the DHP License Lookup at dhp.virginiainteractive.org/Lookup/Index or contact VBON at (804) 367-4515 or nurseaide@dhp.virginia.gov."
     }
   ],
   "compact": {
@@ -104,7 +96,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-03-22",
+  "last_verified_date": "2026-03-24",
   "board_source_url": "https://www.dhp.virginia.gov/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
@@ -122,13 +114,18 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.dhp.virginia.gov/",
-    "endorsement_url": "https://www.dhp.virginia.gov/",
-    "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+    "endorsement_url": "https://www.credentia.com/test-takers/va",
+    "notes": "Virginia CNA endorsement is handled through the Credentia CNA365 platform or the VA Board of Nursing.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,
     "board_source_url": "https://www.dhp.virginia.gov/"
   },
   "slug": "virginia-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "board_verification_sources": {
+    "registry": "https://dhp.virginiainteractive.org/Lookup/Index",
+    "exam_portal": "https://www.credentia.com/test-takers/va",
+    "board_page": "https://www.dhp.virginia.gov/nursing/nursing-education/nurse-aide/"
+  }
 }

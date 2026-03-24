@@ -12,7 +12,7 @@
   },
   "profession_name": "Certified Nursing Assistant",
   "credential_nomenclature": "CNA",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-24",
   "seo": {
     "title": "Ohio CNA License Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Ohio - endorsement steps, fees, and processing time.",
@@ -70,20 +70,20 @@
   "reciprocity_text": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
   "faqs": [
     {
-      "question": "How much does Ohio CNA endorsement cost?",
-      "answer": "There is no application fee for CNA endorsement in Ohio. However, background check fees may apply."
+      "question": "Who administers the Ohio CNA/STNA exam?",
+      "answer": "The Ohio nurse aide exam is administered by D&S Headmaster. Contact them at (877) 851-2355 or visit hdmaster.com."
     },
     {
-      "question": "Is a background check required?",
-      "answer": "Yes, a fingerprint-based background check is required in Ohio."
+      "question": "How do I transfer my CNA to Ohio?",
+      "answer": "Submit Form HEA 6907 (Reciprocity Request) by mail, fax (614-564-2461), or email (NAR@odh.ohio.gov). There is no fee for Ohio CNA reciprocity."
     },
     {
-      "question": "How long does it take to transfer my CNA certification to Ohio?",
-      "answer": "Most endorsement applications take 2 to 4 Weeks."
+      "question": "Is Ohio calling it CNA or STNA?",
+      "answer": "Ohio is transitioning from 'STNA' (State Tested Nursing Assistant) to 'CNA' terminology as of October 24, 2024. Some forms may still use STNA."
     },
     {
-      "question": "Can I start working in Ohio while waiting?",
-      "answer": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      "question": "How do I verify an Ohio CNA?",
+      "answer": "Use the Ohio Nurse Aide Registry Inquiry at nurseaideinquiry.odh.ohio.gov or call (800) 582-5908."
     }
   ],
   "compact": {
@@ -104,7 +104,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-03-22",
+  "last_verified_date": "2026-03-24",
   "board_source_url": "https://odh.ohio.gov/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
@@ -122,13 +122,17 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://odh.ohio.gov/",
-    "endorsement_url": "https://odh.ohio.gov/",
-    "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+    "endorsement_url": "https://ohio.gov",
+    "notes": "Ohio uses Form HEA 6907 (Nurse Aide Registry Request for Reciprocity). Submit by mail to Ohio Dept of Health, Nurse Aide Registry, 246 N. High Street, Attn: NAR, Columbus, OH 43215, or fax to (614) 564-2461, or email NAR@odh.ohio.gov. No fee. Note: Ohio is transitioning from 'STNA' to 'CNA' terminology as of October 2024.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,
     "board_source_url": "https://odh.ohio.gov/"
   },
   "slug": "ohio-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "board_verification_sources": {
+    "registry": "https://nurseaideinquiry.odh.ohio.gov",
+    "exam_portal": "https://www.hdmaster.com"
+  }
 }

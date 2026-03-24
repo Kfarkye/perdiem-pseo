@@ -3,16 +3,16 @@
   "state_name": "Florida",
   "fingerprints": {
     "required": true,
-    "method_in_state": "LiveScan (IdentoGO)",
-    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
-    "vendor": "IdentoGO (IDEMIA)",
+    "method_in_state": "LiveScan (Level II — AHCA Clearinghouse)",
+    "method_out_of_state": "AHCA Clearinghouse (CHAI) at flclearinghouse.com — ORI: EDOH0380Z",
+    "vendor": "AHCA / FDLE",
     "fee": "$35-$50 (varies by state)",
     "delay_out_of_state_weeks": "2-4",
-    "vendor_url": "https://uenroll.identogo.com/"
+    "vendor_url": "https://www.flclearinghouse.com"
   },
   "profession_name": "Certified Nursing Assistant",
   "credential_nomenclature": "CNA",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-24",
   "seo": {
     "title": "Florida CNA License Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Florida - endorsement steps, fees, and processing time.",
@@ -44,46 +44,58 @@
   ],
   "steps": [
     {
-      "title": "Complete Training Program",
-      "description": "Complete a state-approved CNA training program (typically 75-120 hours)."
+      "title": "Complete a State-Approved Training Program",
+      "description": "Florida requires a state-approved CNA training program. Florida also offers a unique 'Challenger Route' allowing individuals 18+ with a high school diploma to sit for the exam without formal training."
     },
     {
-      "title": "Pass the State Competency Exam",
-      "description": "Pass both the written and clinical skills portions of your state's nurse aide competency exam. There is no national certification exam for CNAs."
+      "title": "Pass Background Screening",
+      "description": "All applicants must pass a Level II LiveScan background check through the AHCA Clearinghouse (ORI: EDOH0380Z)."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary fees."
+      "title": "Register for the State Competency Exam",
+      "description": "Register through Prometric at prometric.com/nurseaide/fl. The exam has both a written and skills component."
+    },
+    {
+      "title": "Submit Application via FL Health Source",
+      "description": "Apply online at flhealthsource.gov to be added to the Florida Nurse Aide Registry."
     }
   ],
   "documents": [
     {
       "item": "Proof of Training",
-      "detail": "Certificate of completion from your approved CNA training program."
+      "detail": "Certificate from your state-approved CNA program, or high school diploma/GED if using the Challenger Route."
     },
     {
-      "item": "State Competency Exam Results",
-      "detail": "Official verification of passing your state's nurse aide competency evaluation."
+      "item": "Prometric Exam Results",
+      "detail": "Official results from your Prometric competency exam."
+    },
+    {
+      "item": "Level II Background Screening",
+      "detail": "Completed via AHCA Clearinghouse (flclearinghouse.com) using ORI: EDOH0380Z."
     }
   ],
   "provisional_text": "Some states allow CNAs to work under supervision for a limited period while their endorsement application is being processed.",
   "reciprocity_text": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
   "faqs": [
     {
-      "question": "How much does Florida CNA endorsement cost?",
-      "answer": "The endorsement application fee is $50. Additional costs may include background check fees."
+      "question": "Can I challenge the CNA exam in Florida without training?",
+      "answer": "Yes. Florida's Challenger Route lets individuals 18 or older with a high school diploma take the CNA exam without completing a formal training program."
     },
     {
-      "question": "Is a background check required?",
-      "answer": "Yes, a fingerprint-based background check is required in Florida."
+      "question": "Who administers the Florida CNA exam?",
+      "answer": "The Florida CNA competency exam is administered by Prometric. Register at prometric.com/nurseaide/fl."
     },
     {
-      "question": "How long does it take to transfer my CNA certification to Florida?",
-      "answer": "Most endorsement applications take 2 to 4 Weeks."
+      "question": "How do I verify a Florida CNA license?",
+      "answer": "Use the FL DOH MQA Provider Search at mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders."
     },
     {
-      "question": "Can I start working in Florida while waiting?",
-      "answer": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      "question": "How do I transfer my CNA to Florida?",
+      "answer": "Apply for endorsement through the FL Health Source portal (flhealthsource.gov). You must hold an active out-of-state CNA certificate and pass a Level II background check."
+    },
+    {
+      "question": "How long does Florida CNA endorsement take?",
+      "answer": "Most endorsement applications are processed in 2 to 4 weeks once your file is complete."
     }
   ],
   "compact": {
@@ -104,7 +116,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-03-22",
+  "last_verified_date": "2026-03-24",
   "board_source_url": "https://floridasnursing.gov/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
@@ -122,13 +134,19 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://floridasnursing.gov/",
-    "endorsement_url": "https://floridasnursing.gov/",
-    "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+    "endorsement_url": "https://flhealthsource.gov",
+    "notes": "Out-of-state CNAs apply for endorsement through the FL Health Source online portal. A Level II LiveScan background check is required. No state exam retake if approved.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,
     "board_source_url": "https://floridasnursing.gov/"
   },
   "slug": "florida-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "board_verification_sources": {
+    "registry": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders",
+    "exam_portal": "https://www.prometric.com/nurseaide/fl",
+    "application_portal": "https://www.flhealthsource.gov",
+    "transfer_portal": "https://www.flhealthsource.gov"
+  }
 }

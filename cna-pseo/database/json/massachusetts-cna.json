@@ -12,7 +12,7 @@
   },
   "profession_name": "Certified Nursing Assistant",
   "credential_nomenclature": "CNA",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-24",
   "seo": {
     "title": "Massachusetts CNA License Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Massachusetts - endorsement steps, fees, and processing time.",
@@ -70,20 +70,16 @@
   "reciprocity_text": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
   "faqs": [
     {
-      "question": "How much does Massachusetts CNA endorsement cost?",
-      "answer": "There is no application fee for CNA endorsement in Massachusetts. However, background check fees may apply."
+      "question": "Who administers the Massachusetts CNA exam?",
+      "answer": "The MA CNA exam is administered by D&S Headmaster. Contact them at (888) 401-0462 or visit hdmaster.com (Massachusetts CNA section)."
     },
     {
-      "question": "Is a background check required?",
-      "answer": "Yes, a fingerprint-based background check is required in Massachusetts."
+      "question": "How do I transfer my CNA to Massachusetts?",
+      "answer": "Contact the MA DPH Nurse Aide Testing Office at (781) 979-4010 or 1-800-962-4337 for reciprocity applications. A CORI background check is required."
     },
     {
-      "question": "How long does it take to transfer my CNA certification to Massachusetts?",
-      "answer": "Most endorsement applications take 2 to 4 Weeks."
-    },
-    {
-      "question": "Can I start working in Massachusetts while waiting?",
-      "answer": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      "question": "How do I verify a Massachusetts CNA?",
+      "answer": "Use the NARIS (Nurse Aide Registry Information System) at nars.dph.mass.gov or call (617) 753-8144 / email nars@mass.gov."
     }
   ],
   "compact": {
@@ -104,7 +100,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-03-22",
+  "last_verified_date": "2026-03-24",
   "board_source_url": "https://www.mass.gov/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
@@ -122,13 +118,18 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.mass.gov/",
-    "endorsement_url": "https://www.mass.gov/",
-    "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+    "endorsement_url": "https://www.mass.gov/nurse-aide-testing",
+    "notes": "Contact the MA DPH Nurse Aide Testing Office at (781) 979-4010 or 1-800-962-4337 for reciprocity. A CORI (Criminal Offender Record Information) background check is required.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,
     "board_source_url": "https://www.mass.gov/"
   },
   "slug": "massachusetts-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "board_verification_sources": {
+    "registry": "https://nars.dph.mass.gov",
+    "exam_portal": "https://www.hdmaster.com",
+    "info_page": "https://www.mass.gov/nurse-aide-testing"
+  }
 }

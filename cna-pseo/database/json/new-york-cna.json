@@ -12,7 +12,7 @@
   },
   "profession_name": "Certified Nursing Assistant",
   "credential_nomenclature": "CNA",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-24",
   "seo": {
     "title": "New York CNA License Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to New York - endorsement steps, fees, and processing time.",
@@ -70,20 +70,20 @@
   "reciprocity_text": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
   "faqs": [
     {
-      "question": "How much does New York CNA endorsement cost?",
-      "answer": "The endorsement application fee is $50. Additional costs may include background check fees."
+      "question": "Who administers the New York CNA exam?",
+      "answer": "The NYS Nurse Aide exam is administered by Prometric. Register at prometric.com/nurseaide/ny."
     },
     {
-      "question": "Is a background check required?",
-      "answer": "Yes, a fingerprint-based background check is required in New York."
+      "question": "How do I verify a New York CNA?",
+      "answer": "Use the Prometric NY Nurse Aide Registry portal or call the 24/7 IVR line at 1-800-918-8818."
     },
     {
-      "question": "How long does it take to transfer my CNA certification to New York?",
-      "answer": "Most endorsement applications take 2 to 4 Weeks."
+      "question": "How do I transfer my CNA to New York?",
+      "answer": "Contact Prometric at the NY Nurse Aide Portal to apply for reciprocity."
     },
     {
-      "question": "Can I start working in New York while waiting?",
-      "answer": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      "question": "How long does New York CNA endorsement take?",
+      "answer": "Most endorsement applications take 2 to 4 weeks. Contact the registry for current timelines."
     }
   ],
   "compact": {
@@ -104,7 +104,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-03-22",
+  "last_verified_date": "2026-03-24",
   "board_source_url": "https://www.health.ny.gov/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
@@ -121,14 +121,19 @@
     "endorsement_fee": 50,
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
-    "board_url": "https://www.health.ny.gov/",
-    "endorsement_url": "https://www.health.ny.gov/",
-    "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+    "board_url": "https://www.health.ny.gov/professionals/nursing_home_administrator/nha_cna.htm",
+    "endorsement_url": "https://www.prometric.com/nurseaide/ny",
+    "notes": "Contact Prometric at the NY Nurse Aide portal to apply for reciprocity. Phone verification available 24/7 at 1-800-918-8818.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,
     "board_source_url": "https://www.health.ny.gov/"
   },
   "slug": "new-york-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "board_verification_sources": {
+    "registry": "https://www.prometric.com/nurseaide/ny",
+    "exam_portal": "https://www.prometric.com/nurseaide/ny",
+    "info_page": "https://www.health.ny.gov/professionals/nursing_home_administrator/nha_cna.htm"
+  }
 }

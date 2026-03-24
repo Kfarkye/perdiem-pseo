@@ -12,7 +12,7 @@
   },
   "profession_name": "Certified Nursing Assistant",
   "credential_nomenclature": "CNA",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-24",
   "seo": {
     "title": "New Jersey CNA License Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to New Jersey - endorsement steps, fees, and processing time.",
@@ -70,20 +70,12 @@
   "reciprocity_text": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
   "faqs": [
     {
-      "question": "How much does New Jersey CNA endorsement cost?",
-      "answer": "The endorsement application fee is $200. Additional costs may include background check fees."
+      "question": "Who administers the New Jersey CNA exam?",
+      "answer": "The NJ Nurse Aide exam is administered by PSI. Schedule at psiexams.com or call 1-800-733-9267."
     },
     {
-      "question": "Is a background check required?",
-      "answer": "Yes, a fingerprint-based background check is required in New Jersey."
-    },
-    {
-      "question": "How long does it take to transfer my CNA certification to New Jersey?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks."
-    },
-    {
-      "question": "Can I start working in New Jersey while waiting?",
-      "answer": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      "question": "How do I transfer my CNA to New Jersey?",
+      "answer": "Contact the NJ DOH at (866) 561-5914 or email CNA@doh.nj.gov, or contact PSI at (877) 774-4243 / njna@psionline.com."
     }
   ],
   "compact": {
@@ -104,7 +96,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-03-22",
+  "last_verified_date": "2026-03-24",
   "board_source_url": "https://www.njconsumeraffairs.gov/nur/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
@@ -122,13 +114,18 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.njconsumeraffairs.gov/nur/",
-    "endorsement_url": "https://www.njconsumeraffairs.gov/nur/",
-    "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+    "endorsement_url": "https://www.nj.gov/health/healthfacilities/certification-nurse-aide/",
+    "notes": "Contact NJ DOH at (866) 561-5914 or CNA@doh.nj.gov, or PSI at (877) 774-4243 for reciprocity applications.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,
     "board_source_url": "https://www.njconsumeraffairs.gov/nur/"
   },
   "slug": "new-jersey-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "board_verification_sources": {
+    "registry": "https://www.psiexams.com",
+    "exam_portal": "https://candidate.psiexams.com",
+    "info_page": "https://www.nj.gov/health/healthfacilities/certification-nurse-aide/"
+  }
 }

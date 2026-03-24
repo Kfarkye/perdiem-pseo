@@ -12,7 +12,7 @@
   },
   "profession_name": "Certified Nursing Assistant",
   "credential_nomenclature": "CNA",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-03-24",
   "seo": {
     "title": "Illinois CNA License Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Illinois - endorsement steps, fees, and processing time.",
@@ -70,20 +70,16 @@
   "reciprocity_text": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
   "faqs": [
     {
-      "question": "How much does Illinois CNA endorsement cost?",
-      "answer": "The endorsement application fee is $25. Additional costs may include background check fees."
+      "question": "Who administers the Illinois CNA exam?",
+      "answer": "The Illinois nurse aide exam is administered by SIU-C (Southern Illinois University Carbondale) via nurseaidetesting.com."
     },
     {
-      "question": "Is a background check required?",
-      "answer": "Yes, a fingerprint-based background check is required in Illinois."
+      "question": "How do I transfer my CNA to Illinois?",
+      "answer": "Submit the Out-of-State CNA Application on nurseaidetesting.com with a $25 money order payable to SIU-C. A written competency retest is usually required."
     },
     {
-      "question": "How long does it take to transfer my CNA certification to Illinois?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks."
-    },
-    {
-      "question": "Can I start working in Illinois while waiting?",
-      "answer": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      "question": "How do I verify an Illinois CNA?",
+      "answer": "Search the Illinois Health Care Worker Registry (HCWR) at hcwr.illinois.gov or call (844) 789-3676 (M-F 8:30am-5pm CT)."
     }
   ],
   "compact": {
@@ -104,7 +100,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-03-22",
+  "last_verified_date": "2026-03-24",
   "board_source_url": "http://nursing.illinois.gov/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
@@ -122,13 +118,18 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://nursing.illinois.gov/",
-    "endorsement_url": "http://nursing.illinois.gov/",
-    "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+    "endorsement_url": "https://www.nurseaidetesting.com",
+    "notes": "Illinois reciprocity is handled through SIU-C Nurse Aide Testing. Submit the Out-of-State CNA Application with a $25 money order. A written competency retest is usually required.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,
     "board_source_url": "http://nursing.illinois.gov/"
   },
   "slug": "illinois-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "board_verification_sources": {
+    "registry": "https://hcwr.illinois.gov",
+    "exam_portal": "https://www.nurseaidetesting.com",
+    "info_page": "https://dph.illinois.gov/topics-services/health-care-regulation/nurse-aide-program.html"
+  }
 }
