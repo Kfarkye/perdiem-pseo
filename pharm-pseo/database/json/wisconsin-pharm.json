@@ -21,12 +21,14 @@
   "board": {
     "name": "Wisconsin Pharmacy Examining Board",
     "parent_dept": "Wisconsin Department of Safety and Professional Services (DSPS)",
-    "mailing_address": "See board website",
+    "mailing_address": "Wisconsin Department of Safety and Professional Services, P.O. Box 8935, Madison, WI 53708-8935",
     "physical_address": "See board website",
     "phone": "(608) 266-2112",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dsps.wi.gov/"
+    "email": "dsps@wisconsin.gov",
+    "url": "https://dsps.wi.gov/",
+    "contact_url": "https://dsps.wi.gov/Pages/ContactUs/Default.aspx",
+    "verify_url": "https://online.drl.wi.gov/LicenseLookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed online application for Pharmacy Technician License through the Wisconsin Department of Safety and Professional Services."
+      "title": "Create a DSPS Online Services Account",
+      "description": "Navigate to the Wisconsin DSPS Online Services portal at https://online.drl.wi.gov/UserLogin.aspx. Click 'Register for a new account' and complete the registration process to establish your user profile."
     },
     {
-      "title": "Pay the License Fee",
-      "description": "Pay the required license fee of $100 to the Wisconsin Department of Safety and Professional Services."
+      "title": "Submit the Online Application",
+      "description": "Log in to your newly created DSPS Online Services account. Locate and select the 'Pharmacy Technician' initial licensure application. Complete all required sections of the application form electronically."
     },
     {
-      "title": "Background Check",
-      "description": "Ensure you meet all background check requirements as outlined by the Wisconsin Pharmacy Examining Board."
+      "title": "Pay the Application Fee",
+      "description": "Pay the non-refundable $75.00 application fee directly through the Wisconsin DSPS Online Services portal during the application submission process."
+    },
+    {
+      "title": "Arrange for Official Transcript Submission",
+      "description": "Request your official high school transcript or documentation of GED/HSED equivalency to be sent directly from the educational institution to the Wisconsin Department of Safety and Professional Services."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Fulfill the requirements for a criminal background check as part of the application process. Follow any specific instructions provided by DSPS for initiating and completing this requirement."
+    },
+    {
+      "title": "Provide Proof of Age",
+      "description": "Ensure you provide documentation proving you are at least 18 years of age. This is typically done by submitting a copy of an official document as part of your online application or as directed by the Board."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dsps.wi.gov/",
-    "endorsement_url": "https://dsps.wi.gov/",
+    "endorsement_url": "https://online.drl.wi.gov/UserLogin.aspx?nextPage=/Application/ApplicationSearch.aspx",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Wisconsin",
-        "dek": "Wisconsin Pharmacy Technician licensure requires completing an application, paying a fee, and meeting background check requirements."
+        "dek": "Apply for your Pharmacy Technician license online through the Wisconsin DSPS Online Services portal (online.drl.wi.gov). Create an account, search for the 'Pharmacy Technician' initial licensure application, and submit all required documentation."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://dsps.wi.gov/pages/professions/pharmacytechnician.aspx",
     "timeline": "https://dsps.wi.gov/pages/professions/pharmacytechnician.aspx"
+  },
+  "official_links": {
+    "portal_name": "Wisconsin DSPS Online Services",
+    "portal_url": "https://online.drl.wi.gov/UserLogin.aspx?nextPage=/Application/ApplicationSearch.aspx",
+    "registration_steps": "Navigate to the portal URL, click 'Register for a new account', and follow the prompts to create your user profile. Once registered, log in to search for and start the 'Pharmacy Technician' application.",
+    "provider_search": "https://online.drl.wi.gov/LicenseLookup/LicenseLookup.aspx"
   }
 }

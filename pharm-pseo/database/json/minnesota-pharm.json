@@ -21,12 +21,14 @@
   "board": {
     "name": "Minnesota Board of Pharmacy",
     "parent_dept": "Minnesota Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Minnesota Board of Pharmacy\n2829 University Ave. SE, Suite 530\nMinneapolis, MN 55414-3251",
     "physical_address": "See board website",
-    "phone": "(651) 201-2825",
+    "phone": "651-201-2825",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://mn.gov/boards/pharmacy/"
+    "email": "pharmacy.board@state.mn.us",
+    "url": "https://mn.gov/boards/pharmacy/",
+    "contact_url": "https://mn.gov/boards/pharmacy/contact/",
+    "verify_url": "https://mn.gov/boards/pharmacy/licenseesearch/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,20 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application for license as a pharmacy technician to the Minnesota Board of Pharmacy."
+      "title": "Create an Account on eLicense Minnesota",
+      "description": "Visit the Minnesota Board of Pharmacy's eLicense portal at https://mn.gov/boards/pharmacy/elicense/ and click 'New Applicants Create an Account' to register your profile. You will need to verify your email address to activate your account."
     },
     {
-      "title": "Pass a Background Check",
-      "description": "Complete a criminal background check as required by the Minnesota Board of Pharmacy."
+      "title": "Complete and Submit the Online Application",
+      "description": "Log in to your newly created eLicense account. From the dashboard, locate and select the 'New Pharmacy Technician Application'. Complete all required fields accurately, provide attestations, and submit the non-refundable application fee of $35 through the portal."
     },
     {
-      "title": "Pay the License Fee",
-      "description": "Submit the required license fee to the Minnesota Board of Pharmacy."
+      "title": "Complete a Criminal Background Check (CBC)",
+      "description": "Register for a fingerprint-based criminal background check through IdentoGO at www.identogo.com. Select Minnesota, enter service code 249Q9F, and schedule your fingerprinting appointment at an authorized location. Ensure the results are directed to the Minnesota Board of Pharmacy."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log in to your eLicense Minnesota account to check the status of your application. The Board will review your submitted application, fee, and CBC results. Once approved, you will receive notification via email regarding your technician registration and can verify it on the Board's licensee search tool."
     }
   ],
   "documents": [
@@ -127,7 +133,7 @@
     "processing_time": "1 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://mn.gov/boards/pharmacy/",
-    "endorsement_url": "https://mn.gov/boards/pharmacy/",
+    "endorsement_url": "https://mn.gov/boards/pharmacy/licensing/technicians/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +152,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Minnesota",
-        "dek": "Minnesota Pharmacy Technician licensure requires completing an application, passing a background check, and paying the licensure fee."
+        "dek": "Apply online through the Minnesota Board of Pharmacy's eLicense portal (mn.gov/boards/pharmacy/elicense/). Create an account, select the 'New Pharmacy Technician Application', and follow the instructions, including the required criminal background check."
       }
     }
   },
@@ -185,5 +191,11 @@
   "board_verification_sources": {
     "fee": "https://mn.gov/boards/pharmacy/pharmacyprofessionals/pharmtechs/",
     "timeline": "https://mn.gov/boards/pharmacy/pharmacyprofessionals/pharmtechs/"
+  },
+  "official_links": {
+    "portal_name": "eLicense Minnesota Board of Pharmacy",
+    "portal_url": "https://mn.gov/boards/pharmacy/elicense/",
+    "registration_steps": "Navigate to the eLicense portal and click 'New Applicants Create an Account' to register. Once registered, log in and search for the 'Pharmacy Technician Application' to begin your application.",
+    "provider_search": "https://mn.gov/boards/pharmacy/licenseesearch/"
   }
 }

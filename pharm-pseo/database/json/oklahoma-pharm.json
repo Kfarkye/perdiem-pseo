@@ -21,12 +21,14 @@
   "board": {
     "name": "Oklahoma Board of Pharmacy",
     "parent_dept": "Oklahoma State Board of Medical Licensure and Supervision",
-    "mailing_address": "See board website",
+    "mailing_address": "Oklahoma State Board of Pharmacy, 2920 N. Lincoln Blvd., Suite A, Oklahoma City, OK 73105",
     "physical_address": "See board website",
     "phone": "(405) 521-3815",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.pharmacy.ok.gov/"
+    "email": "info@oklahomapharmacy.com",
+    "url": "http://www.pharmacy.ok.gov/",
+    "contact_url": "https://www.ok.gov/pharmacy/Contact_Us/",
+    "verify_url": "https://www.ok.gov/pharmacy/Licensee_Search/index.html"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Requirements",
-      "description": "You must be at least 16 years old, have a high school diploma or equivalent, and be of good moral character."
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you are at least 18 years of age (or enrolled in an approved high school program) and possess a high school diploma or GED equivalent."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete the Pharmacy Technician License Application and submit it to the Oklahoma Board of Pharmacy with all required documentation."
+      "title": "Create Account and Submit Online Application",
+      "description": "Visit the Oklahoma Board of Pharmacy Online Licensing Portal (ok.gov/pharmacy/Online_Licensing_Portal). Register for a new account, then log in and complete the 'Pharmacy Technician Initial Licensure' application. Pay the non-refundable application fee as part of this step."
     },
     {
-      "title": "Pay the License Fee",
-      "description": "Submit the required license fee of $100 to the Oklahoma Board of Pharmacy."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official high school transcript or GED certificate to be sent directly to the Oklahoma Board of Pharmacy. Instructions for submission will be provided during the online application process."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "After submitting your online application, the Board will email instructions for completing a criminal background check through their contracted vendor, IdentoGO. You must follow these instructions to submit your fingerprints and complete the process."
+    },
+    {
+      "title": "Complete Required Training",
+      "description": "Complete at least 160 hours of training in areas determined essential by the Board, or enroll in a Board-approved pharmacy technician training program, as required by Board Rule 535:10-5-5(f). This training must be completed as specified before licensure."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "The Board will review your application, background check results, and all submitted documentation. Once approved and all requirements are met, your pharmacy technician license will be issued."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "http://www.pharmacy.ok.gov/",
-    "endorsement_url": "http://www.pharmacy.ok.gov/",
+    "endorsement_url": "https://www.ok.gov/pharmacy/Licensing/Technicians/Technician_by_Endorsement/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Oklahoma",
-        "dek": "Oklahoma Pharmacy Technician licensure requires completing an application, submitting required documentation, and paying the associated fee."
+        "dek": "Apply online through the Oklahoma Board of Pharmacy's Online Licensing Portal (ok.gov/pharmacy/Online_Licensing_Portal). Create an account, select the Pharmacy Technician Initial License application, and follow the instructions."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://www.ok.gov/pharmacy/Forms_&_Documents/Licensing_Fees.html",
     "timeline": "https://www.ok.gov/pharmacy/Forms_&_Documents/Licensing_Fees.html"
+  },
+  "official_links": {
+    "portal_name": "Oklahoma Board of Pharmacy Online Licensing Portal",
+    "portal_url": "https://www.ok.gov/pharmacy/Online_Licensing_Portal/index.html",
+    "registration_steps": "Navigate to the portal, click 'New Users: Register for an Account', complete the registration form, and verify your email. Once registered, log in to start a new application for 'Pharmacy Technician Initial Licensure'.",
+    "provider_search": "https://www.ok.gov/pharmacy/Licensee_Search/index.html"
   }
 }

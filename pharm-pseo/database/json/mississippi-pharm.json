@@ -21,12 +21,14 @@
   "board": {
     "name": "Mississippi Board of Pharmacy",
     "parent_dept": "Mississippi State Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "6512 Old Canton Road, Suite 200, Jackson, MS 39211",
     "physical_address": "See board website",
     "phone": "(601) 899-8880",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.mbp.state.ms.us/"
+    "email": "info@mbop.ms.gov",
+    "url": "http://www.mbp.state.ms.us/",
+    "contact_url": "https://www.mbop.ms.gov/contact-us",
+    "verify_url": "https://portal.mbop.ms.gov/LicenseVerification"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Submit an Application",
-      "description": "Complete the Pharmacy Technician License Application provided by the Mississippi Board of Pharmacy."
+      "title": "1. Create an Account and Start Online Application",
+      "description": "Visit the Mississippi Board of Pharmacy Online Licensing Portal (portal.mbop.ms.gov). If you are a new user, click 'Register' to create an account. Once registered and logged in, locate and select the 'Pharmacy Technician Initial Application' to begin the online application process."
     },
     {
-      "title": "Pay Required Fees",
-      "description": "Submit the required license fee to the Mississippi Board of Pharmacy."
+      "title": "2. Submit Required Documentation Electronically",
+      "description": "As part of your online application, upload a clear, current, color photograph suitable for identification. Also, submit proof of high school graduation or its equivalent (e.g., GED) and proof of certification from a Board-approved national certification body (PTCB or NHA)."
     },
     {
-      "title": "Complete Continuing Education",
-      "description": "Maintain active license by completing 20 hours of continuing education every two years."
+      "title": "3. Complete Criminal History Background Check",
+      "description": "Obtain a criminal history background check by submitting fingerprints through a state-approved vendor, IdentoGO. Follow the instructions provided on the Board's website regarding the fingerprinting process and required codes for Mississippi Board of Pharmacy applicants."
+    },
+    {
+      "title": "4. Pay the Application Fee",
+      "description": "Pay the non-refundable application fee of $100.00 directly through the Mississippi Board of Pharmacy Online Licensing Portal as part of your application submission. Fees are subject to change, so verify the current amount on the Board's fee schedule page."
+    },
+    {
+      "title": "5. Await Board Review and Licensure",
+      "description": "After submitting all required documentation, background check results, and fees, the Board will review your application. You may be eligible to work for up to 90 days from the date of initial application submission pending final licensure, provided all items EXCEPT national certification have been submitted."
     }
   ],
   "documents": [
@@ -127,7 +137,7 @@
     "processing_time": "2 Weeks",
     "processing_tier": "slow",
     "board_url": "http://www.mbp.state.ms.us/",
-    "endorsement_url": "http://www.mbp.state.ms.us/",
+    "endorsement_url": "https://www.mbop.ms.gov/pharmacy-technicians",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Mississippi",
-        "dek": "Mississippi Pharmacy Technician licensure requires a completed application, payment of fees, and completion of continuing education."
+        "dek": "Apply online through the Mississippi Board of Pharmacy Online Licensing Portal (portal.mbop.ms.gov). Create an account, select the Pharmacy Technician application, and follow the instructions to submit your application and supporting documents."
       }
     }
   },
@@ -185,5 +195,11 @@
   "board_verification_sources": {
     "fee": "https://msbop.ms.gov/pharmacy-technicians",
     "timeline": "https://msbop.ms.gov/pharmacy-technicians"
+  },
+  "official_links": {
+    "portal_name": "Mississippi Board of Pharmacy Online Licensing Portal",
+    "portal_url": "https://portal.mbop.ms.gov/Account/Login",
+    "registration_steps": "New users must create an account by clicking the 'Register' button on the login page. Provide personal details, create a username and password, then log in to access the application options.",
+    "provider_search": "https://portal.mbop.ms.gov/LicenseVerification"
   }
 }

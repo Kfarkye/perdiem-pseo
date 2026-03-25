@@ -21,12 +21,14 @@
   "board": {
     "name": "Illinois Board of Pharmacy",
     "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
-    "mailing_address": "See board website",
+    "mailing_address": "Illinois Department of Financial and Professional Regulation, 320 West Washington Street, Springfield, Illinois 62786",
     "physical_address": "See board website",
-    "phone": "(800) 560-6420",
+    "phone": "1-888-473-4858",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "http://idfpr.illinois.gov/profs/pharm.asp"
+    "url": "http://idfpr.illinois.gov/profs/pharm.asp",
+    "contact_url": "https://idfpr.illinois.gov/contactus.html",
+    "verify_url": "https://idfpr.illinois.gov/licenselookup/licenselookup.html"
   },
   "quick_facts": {
     "total_fee": "$40",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Eligibility Requirements",
-      "description": "Applicants must be at least 16 years of age and of good moral character."
+      "title": "Review Requirements & Checklist",
+      "description": "Visit the IDFPR Pharmacy Technician webpage (idfpr.illinois.gov/profs/pharmacy/pharmtech.html) and download the 'Pharmacy Technician Application Checklist' to understand all eligibility criteria and required documentation before you begin."
     },
     {
-      "title": "Complete the Application",
-      "description": "Submit an application and pay the $40 license fee to the Illinois Department of Financial and Professional Regulation."
+      "title": "Create a CTS Account",
+      "description": "Navigate to the Continental Testing Services (CTS) Online Application Portal (continentaltesting.net/continental/start) and click on 'Register' to create a new user account. You will need to provide personal details and set up login credentials."
     },
     {
-      "title": "Complete Required Training",
-      "description": "Complete either a Board-approved Pharmacy Technician Training Program or 500 hours of on-the-job training under the supervision of a licensed pharmacist."
+      "title": "Complete Online Application",
+      "description": "Log in to your newly created CTS account. From the dashboard, select 'Apply for License', then locate and choose 'Pharmacy Technician' from the list of professions. Carefully complete all sections of the online application form as prompted."
+    },
+    {
+      "title": "Upload Supporting Documents",
+      "description": "Electronically submit all required supporting documentation, such as proof of high school completion or GED, social security number, and any other forms specified in the application checklist, directly through the CTS portal."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee securely through the Continental Testing Services (CTS) online payment system as the final step in completing your application."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log in to your CTS account to check the status of your application. Respond promptly to any requests for additional information or clarification from IDFPR or CTS to avoid delays."
     }
   ],
   "documents": [
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Illinois",
-        "dek": "Illinois Pharmacy Technician licensure requires completion of an application, meeting educational requirements, and completing continuing education."
+        "dek": "Apply online through the Continental Testing Services (CTS) Online Application Portal (continentaltesting.net/continental/start). Create an account, select 'Apply for License', and then 'Pharmacy Technician' to begin your application."
       }
     }
   },
@@ -186,5 +200,11 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "official_links": {
+    "portal_name": "Continental Testing Services (CTS) Online Application Portal",
+    "portal_url": "https://www.continentaltesting.net/continental/start",
+    "registration_steps": "Users must first create an account on the Continental Testing Services (CTS) portal. Once registered, log in, select 'Apply for License', then choose 'Pharmacy Technician' from the list of professions to begin your application.",
+    "provider_search": "https://idfpr.illinois.gov/licenselookup/licenselookup.html"
   }
 }

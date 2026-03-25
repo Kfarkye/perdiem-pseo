@@ -21,12 +21,14 @@
   "board": {
     "name": "Ohio Board of Pharmacy",
     "parent_dept": "State Medical Board of Ohio",
-    "mailing_address": "See board website",
+    "mailing_address": "State of Ohio Board of Pharmacy\n77 South High Street, 17th Floor\nColumbus, Ohio 43215-6126",
     "physical_address": "See board website",
-    "phone": "(614) 466-4143",
+    "phone": "614-466-4143",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.pharmacy.ohio.gov"
+    "email": "contact@pharmacy.ohio.gov",
+    "url": "https://www.pharmacy.ohio.gov",
+    "contact_url": "https://www.pharmacy.ohio.gov/contact-us/",
+    "verify_url": "https://elicense.ohio.gov/oh_communities/boardlookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$65",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a Criminal Background Check",
-      "description": "Complete a criminal background check through the Ohio Board of Pharmacy's approved vendor."
+      "title": "Meet Eligibility Requirements",
+      "description": "Applicants must be at least 18 years of age and possess a high school diploma or its equivalent (GED) to be eligible for Pharmacy Technician registration in Ohio."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application for license to the Ohio Board of Pharmacy."
+      "title": "Complete Criminal Records Check",
+      "description": "Undergo both a Bureau of Criminal Identification and Investigation (BCI) and Federal Bureau of Investigation (FBI) criminal records check. Fingerprints must be submitted via an authorized WebCheck vendor or by physical fingerprint card, with results sent directly to the State of Ohio Board of Pharmacy."
     },
     {
-      "title": "Pay the License Fee",
-      "description": "Pay the required license fee to the Ohio Board of Pharmacy."
+      "title": "Create an eLicense Ohio Account",
+      "description": "Register for an account on the eLicense Ohio portal at elicense.ohio.gov. Follow the prompts to set up your user profile and activate your account via email verification."
+    },
+    {
+      "title": "Submit Online Application and Documents",
+      "description": "Log in to your eLicense Ohio account, click 'Apply for a New License,' and search for 'Pharmacy Technician Registration.' Complete the online application form and upload all required supporting documents, including proof of age, high school diploma/GED, and any other requested information as detailed in the application instructions."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $35.00 through the eLicense Ohio portal using a credit card or electronic check."
+    },
+    {
+      "title": "Await Board Review and Registration",
+      "description": "Once your complete application, fee, and criminal records check results are received, the State of Ohio Board of Pharmacy will review your submission. You will be notified of your registration status upon approval, and your registration will be viewable on the eLicense Ohio portal."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "10 to 15 business days",
     "processing_tier": "fast",
     "board_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
-    "endorsement_url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
+    "endorsement_url": "https://elicense.ohio.gov/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Ohio",
-        "dek": "Ohio Pharmacy Technician licensure requires a criminal background check, a completed application, and payment of fees."
+        "dek": "Apply online for Pharmacy Technician registration through Ohio's eLicense portal (elicense.ohio.gov). Create an account, search for 'Pharmacy Technician Registration,' and submit your complete application."
       }
     }
   },
@@ -186,5 +200,11 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "official_links": {
+    "portal_name": "eLicense Ohio",
+    "portal_url": "https://elicense.ohio.gov/",
+    "registration_steps": "Navigate to elicense.ohio.gov, select 'Register for an Account' under the 'New Users' section. Once your account is activated, log in and click 'Apply for a New License' to search for 'Pharmacy Technician Registration'.",
+    "provider_search": "https://elicense.ohio.gov/oh_communities/boardlookup.aspx"
   }
 }

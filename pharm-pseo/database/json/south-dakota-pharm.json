@@ -21,12 +21,14 @@
   "board": {
     "name": "South Dakota Board of Pharmacy",
     "parent_dept": "Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "4303 S. Louise Ave., Suite 204, Sioux Falls, SD 57106-3156",
     "physical_address": "See board website",
-    "phone": "(605) 362-2737",
+    "phone": "605-362-2733",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://doh.sd.gov/licensing-and-records/boards/pharmacy/"
+    "email": "pharmacy@state.sd.us",
+    "url": "https://doh.sd.gov/licensing-and-records/boards/pharmacy/",
+    "contact_url": "https://doh.sd.gov/boards/pharmacy/contact.aspx",
+    "verify_url": "https://elicense.sd.gov/public/verify/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Submit an Application",
-      "description": "Complete the online application for Pharmacy Technician license through the South Dakota Board of Pharmacy."
+      "title": "1. Create an eLicense Account",
+      "description": "Navigate to the eLicense South Dakota portal at https://elicense.sd.gov. Click on 'Register for an Account' and follow the prompts to create your new user profile."
     },
     {
-      "title": "Pass a Background Check",
-      "description": "Successfully pass a criminal background check as required by the Board of Pharmacy."
+      "title": "2. Start New Application",
+      "description": "Log in to your eLicense account. From the dashboard, select 'Apply for a New License/Permit' and choose 'Pharmacy Technician New Application' under the South Dakota Board of Pharmacy."
     },
     {
-      "title": "Complete Continuing Education",
-      "description": "Maintain active license by completing 20 hours of continuing education every two years."
+      "title": "3. Complete Application & Pay Fee",
+      "description": "Fill out all required sections of the online application form. This includes personal details, educational history, and answering attestation questions. Submit the non-refundable application fee of $35.00 through the portal."
+    },
+    {
+      "title": "4. Submit Fingerprints for Background Check",
+      "description": "Follow the instructions provided within the eLicense application or on the Board's website (https://doh.sd.gov/boards/pharmacy/forms.aspx) for completing the fingerprint-based criminal background check. Schedule an appointment with IdentoGO and use the South Dakota Board of Pharmacy Service Code (151W03) for processing."
+    },
+    {
+      "title": "5. Await Board Review and Registration",
+      "description": "Ensure all parts of your application, including the background check results, have been submitted. The South Dakota Board of Pharmacy will review your complete application and, upon approval, issue your Pharmacy Technician registration."
     }
   ],
   "documents": [
@@ -127,7 +137,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://doh.sd.gov/licensing-and-records/boards/pharmacy/",
-    "endorsement_url": "https://doh.sd.gov/licensing-and-records/boards/pharmacy/",
+    "endorsement_url": "https://elicense.sd.gov",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in South Dakota",
-        "dek": "South Dakota Pharmacy Technician licensure requires completing an application, passing a background check, and completing continuing education credits."
+        "dek": "Apply online through the eLicense South Dakota portal (elicense.sd.gov). Create an account, search for the 'Pharmacy Technician New Application', and follow the prompts to submit your application and background check."
       }
     }
   },
@@ -185,5 +195,11 @@
   "board_verification_sources": {
     "fee": "https://dhp.sd.gov/sdboardofpharmacy/Licensees/PharmTechs.aspx",
     "timeline": "https://dhp.sd.gov/sdboardofpharmacy/Licensees/PharmTechs.aspx"
+  },
+  "official_links": {
+    "portal_name": "eLicense South Dakota",
+    "portal_url": "https://elicense.sd.gov",
+    "registration_steps": "Create a new account on eLicense South Dakota by clicking 'Register for an Account', then log in and select the Pharmacy Technician New Application.",
+    "provider_search": "https://elicense.sd.gov/public/verify/Search.aspx"
   }
 }

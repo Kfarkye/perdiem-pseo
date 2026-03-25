@@ -21,12 +21,14 @@
   "board": {
     "name": "Alabama Board of Pharmacy",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "P.O. Box 241031\nMontgomery, AL 36124-1031",
     "physical_address": "See board website",
-    "phone": "(205) 981-2280",
+    "phone": "(334) 242-5049",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.albop.com/"
+    "email": "tech@albop.com",
+    "url": "https://www.albop.com/",
+    "contact_url": "https://albop.com/contact-us/",
+    "verify_url": "https://albop.com/licensee-lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Basic Requirements",
-      "description": "You must be at least 17 years of age, possess a high school diploma or GED, and be of good moral character."
+      "title": "Review Eligibility and Requirements",
+      "description": "Before applying, review the Alabama Board of Pharmacy's requirements for initial pharmacy technician licensure, including being 17 years or older, educational qualifications (high school diploma/GED or enrollment), and the criminal background check process. Detailed information is available on the Technician Information page at albop.com/technician-information/."
     },
     {
-      "title": "Complete a Training Program",
-      "description": "Complete a Board-approved training program, or an employer-based training program in accordance with state regulations."
+      "title": "Create an eLicense Account and Start Application",
+      "description": "Visit the eLicense Alabama portal at albop.elicense.state.al.us/. Click 'New User Registration' to set up your account. After registration and login, select 'Apply for a License/Permit' and choose 'Initial Pharmacy Technician' to begin filling out the online application."
     },
     {
-      "title": "Apply for License",
-      "description": "Submit an application for license to the Alabama Board of Pharmacy, including all required documentation and fees."
+      "title": "Complete Application and Pay Fee",
+      "description": "Fill out all required sections of the online application form accurately. Submit your completed application and pay the non-refundable application fee of $60.00 directly through the eLicense system. Ensure all information is correct before submission."
+    },
+    {
+      "title": "Complete Criminal Background Check (Fingerprinting)",
+      "description": "Follow the specific instructions provided by the Board on the Technician Information page to complete the mandatory criminal background check. This involves registering for fingerprinting through IdentoGO (formerly Gemalto Cogent). Ensure you use the correct service codes provided by the Board."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "After submitting your application and completing all requirements, regularly log into your eLicense account at albop.elicense.state.al.us/ to monitor the status of your application. The Board will communicate any deficiencies or the final licensure decision through this portal."
     }
   ],
   "documents": [
@@ -127,7 +137,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.albop.com/",
-    "endorsement_url": "https://www.albop.com/",
+    "endorsement_url": "https://albop.elicense.state.al.us/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Alabama",
-        "dek": "Alabama Pharmacy Technician licensure requires applying to the Board, completing a training program, and passing a background check."
+        "dek": "Apply online through Alabama's eLicense portal (albop.elicense.state.al.us). Create an account, select 'Initial Pharmacy Technician' from the application options, and submit your application."
       }
     }
   },
@@ -185,5 +195,11 @@
   "board_verification_sources": {
     "fee": "https://albop.com/technician-application/",
     "timeline": "https://albop.com/technician-application/"
+  },
+  "official_links": {
+    "portal_name": "eLicense Alabama",
+    "portal_url": "https://albop.elicense.state.al.us/",
+    "registration_steps": "Navigate to the eLicense Alabama portal. Click 'New User Registration' to create an account by providing personal details. Once registered, log in and select 'Apply for a License/Permit', then choose 'Initial Pharmacy Technician' to begin the application.",
+    "provider_search": "https://albop.com/licensee-lookup/"
   }
 }

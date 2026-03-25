@@ -21,12 +21,14 @@
   "board": {
     "name": "Iowa Board of Pharmacy",
     "parent_dept": "Department of Inspections, Appeals, and Licensing (DIAL)",
-    "mailing_address": "See board website",
+    "mailing_address": "Iowa Board of Pharmacy\n400 SW 8th Street, Suite E\nDes Moines, Iowa 50309-4685",
     "physical_address": "See board website",
     "phone": "(515) 281-5944",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pharmacy.iowa.gov/"
+    "email": "pharmacy@iowa.gov",
+    "url": "https://pharmacy.iowa.gov/",
+    "contact_url": "https://pharmacy.iowa.gov/about/contact-us",
+    "verify_url": "https://ibpl.force.com/portal/s/license-search"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application for license as a pharmacy technician to the Iowa Board of Pharmacy."
+      "title": "Review Requirements",
+      "description": "Before applying, review the specific requirements for Pharmacy Technician Registration, including age (18+) and educational qualifications, on the Iowa Board of Pharmacy website ('pharmacy.iowa.gov')."
     },
     {
-      "title": "Pay the Required Fee",
-      "description": "Pay the required license fee to the Iowa Board of Pharmacy."
+      "title": "Create an IBPL Account",
+      "description": "Navigate to the Iowa Professional Licensing Bureau (IBPL) online portal ('ibpl.force.com'). Click 'Register an Account' to create your user profile. Once registered, log in to the system."
     },
     {
-      "title": "Complete Continuing Education",
-      "description": "Complete the required 20 hours of continuing education every two years to maintain active license."
+      "title": "Complete Online Application",
+      "description": "From your IBPL account dashboard, select 'Apply for a New License' and choose 'Pharmacy Technician Registration'. Fill out all sections of the application completely and accurately."
+    },
+    {
+      "title": "Initiate Criminal Background Check (CBC)",
+      "description": "Follow the instructions within the application and on the Board's website to initiate the required criminal background check. This typically involves registering with 3M Cogent (or the specified vendor) and completing fingerprinting, with results sent directly to the Board."
+    },
+    {
+      "title": "Upload Documents & Pay Fee",
+      "description": "Upload all necessary supporting documents as prompted by the online application (e.g., proof of high school diploma/GED). Finally, submit the non-refundable application fee of $50 through the portal."
+    },
+    {
+      "title": "Application Review and Approval",
+      "description": "After submission, the Iowa Board of Pharmacy will review your application and CBC results. Monitor your IBPL portal for updates on your application status. Once approved, your registration will be issued."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://pharmacy.iowa.gov/",
-    "endorsement_url": "https://pharmacy.iowa.gov/",
+    "endorsement_url": "https://pharmacy.iowa.gov/licensing/licensee-information/new-applications/pharmacy-technician-registration",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Iowa",
-        "dek": "Iowa Pharmacy Technician licensure requires completing an application, paying a fee, and completing continuing education for renewal."
+        "dek": "Apply for a Pharmacy Technician registration in Iowa through the Iowa Professional Licensing Bureau online portal (ibpl.force.com). You will need to create an account, complete the application, upload documents, and undergo a criminal background check."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://pharmacy.iowa.gov/licensing/license-type-information/pharmacy-technician",
     "timeline": "https://pharmacy.iowa.gov/licensing/license-type-information/pharmacy-technician"
+  },
+  "official_links": {
+    "portal_name": "Iowa Professional Licensing Bureau (IBPL) Online Portal",
+    "portal_url": "https://ibpl.force.com/",
+    "registration_steps": "Navigate to the Iowa Professional Licensing Bureau portal, click 'Register an Account' to create a new user profile, then log in and select 'Apply for a New License' to find the Pharmacy Technician application.",
+    "provider_search": "https://ibpl.force.com/portal/s/license-search"
   }
 }

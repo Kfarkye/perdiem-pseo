@@ -21,12 +21,14 @@
   "board": {
     "name": "Virginia Board of Pharmacy",
     "parent_dept": "Virginia Department of Health Professions (DHP)",
-    "mailing_address": "See board website",
+    "mailing_address": "Virginia Board of Pharmacy, Perimeter Center, 9960 Mayland Drive, Suite 300, Henrico, VA 23233-1463",
     "physical_address": "See board website",
-    "phone": "(804) 367-4456",
+    "phone": "(804) 367-4400",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.dhp.virginia.gov/pharmacy"
+    "url": "https://www.dhp.virginia.gov/pharmacy",
+    "contact_url": "https://www.dhp.virginia.gov/ContactUs/",
+    "verify_url": "https://www.license.dhp.virginia.gov/lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Eligibility Requirements",
-      "description": "Applicants must have a high school diploma or equivalent, and be of good moral character."
+      "title": "Review Eligibility Requirements",
+      "description": "Ensure you meet the basic requirements: be at least 18 years old and possess a high school diploma or its equivalent (GED). While no specific education program or criminal background check is required for initial registration, you must accurately disclose any relevant background history on the application."
     },
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application form and pay the required fee to the Virginia Board of Pharmacy."
+      "title": "Create an Account (or Log In)",
+      "description": "Navigate to the Virginia Department of Health Professions (DHP) Online Licensing System at https://www.license.dhp.virginia.gov/apply/. If you are a new user, click 'Register a New Account' to create your login credentials. If you have an existing DHP account, log in with your username and password."
     },
     {
-      "title": "Receive Your License",
-      "description": "Upon approval of your application, you will receive your Virginia Pharmacy Technician license."
+      "title": "Start New Application for Pharmacy Technician Registration",
+      "description": "Once logged into your DHP Online Licensing System account, select the 'New Application' option. From the list of available application types, choose 'Pharmacy Technician Registration' to begin your application process."
+    },
+    {
+      "title": "Complete the Online Application Form",
+      "description": "Fill out all required sections of the online application form thoroughly and accurately. This will include personal information, demographic details, and responses to background questions as requested by the Virginia Board of Pharmacy."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $25.00 through the DHP Online Licensing System. Payment is typically made electronically using a credit or debit card."
+    },
+    {
+      "title": "Submit Application and Await Board Review",
+      "description": "Carefully review your entire application for accuracy and completeness before electronically submitting it. The Virginia Board of Pharmacy will then review your application. You will be notified of your registration status upon successful processing."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "1 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.dhp.virginia.gov/pharmacy",
-    "endorsement_url": "https://www.dhp.virginia.gov/pharmacy",
+    "endorsement_url": "https://www.license.dhp.virginia.gov/apply/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Virginia",
-        "dek": "Virginia Pharmacy Technician licensure requires completing an application, meeting educational requirements, and paying a fee."
+        "dek": "Apply for Pharmacy Technician Registration online through the Virginia Department of Health Professions (DHP) Online Licensing System (license.dhp.virginia.gov/apply/). New users must create an account, then select 'New Application' and choose 'Pharmacy Technician Registration'."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://www.dhp.virginia.gov/pharmacy/pharmacy_technician.htm",
     "timeline": "https://www.dhp.virginia.gov/pharmacy/pharmacy_technician.htm"
+  },
+  "official_links": {
+    "portal_name": "Virginia Department of Health Professions (DHP) Online Licensing System",
+    "portal_url": "https://www.license.dhp.virginia.gov/apply/",
+    "registration_steps": "New users must click 'Register a New Account' to create credentials. Existing users can log in. After logging in, select 'New Application' and choose 'Pharmacy Technician Registration' to begin.",
+    "provider_search": "https://www.license.dhp.virginia.gov/lookup/"
   }
 }

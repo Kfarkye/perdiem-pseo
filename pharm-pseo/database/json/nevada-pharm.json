@@ -21,12 +21,14 @@
   "board": {
     "name": "Nevada Board of Pharmacy",
     "parent_dept": "Department of Health and Human Services",
-    "mailing_address": "See board website",
+    "mailing_address": "985 Damonte Ranch Parkway, Suite 206, Reno, NV 89521",
     "physical_address": "See board website",
     "phone": "(775) 850-1440",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://bop.nv.gov/"
+    "email": "nvbop@pharmacy.nv.gov",
+    "url": "https://bop.nv.gov/",
+    "contact_url": "https://bop.nv.gov/ContactUs/",
+    "verify_url": "https://online.bop.nv.gov/LicenseSearch"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Basic Requirements",
-      "description": "You must be at least 18 years old, have a high school diploma or equivalent, and be able to read, speak, and understand the English language."
+      "title": "Create Account & Submit Online Application",
+      "description": "Navigate to the Nevada State Board of Pharmacy Licensing Portal (online.bop.nv.gov), create a new account, and complete the Pharmacy Technician Application online."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit the Pharmacy Technician License Application to the Nevada State Board of Pharmacy along with the required fee and documentation."
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee of $50 directly through the online portal at the time of application submission."
     },
     {
-      "title": "Complete Continuing Education",
-      "description": "Complete at least 12 hours of continuing education every two years to maintain your license."
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided by the Board to complete a criminal background check via fingerprinting (LiveScan or hard cards). Ensure the results are sent directly to the Nevada State Board of Pharmacy."
+    },
+    {
+      "title": "Provide Supporting Documentation",
+      "description": "Arrange for official high school transcripts (or equivalent) AND documentation of successful completion of a board-approved pharmacy technician training program or current PTCB certification to be sent directly to the Nevada State Board of Pharmacy."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through the online portal and be prepared to submit any additional information requested by the Board."
     }
   ],
   "documents": [
@@ -127,7 +137,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://bop.nv.gov/",
-    "endorsement_url": "https://bop.nv.gov/",
+    "endorsement_url": "https://bop.nv.gov/License/Pharmacy_Technician/Endorsement_Instructions/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Nevada",
-        "dek": "Nevada Pharmacy Technician licensure requires submitting an application, passing a background check, and completing continuing education."
+        "dek": "Apply online through the Nevada State Board of Pharmacy Licensing Portal (online.bop.nv.gov). Create an account, select 'Pharmacy Technician' application, and follow the submission instructions."
       }
     }
   },
@@ -181,5 +191,11 @@
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nevada State Board of Pharmacy Licensing Portal",
+    "portal_url": "https://online.bop.nv.gov/",
+    "registration_steps": "Visit the Nevada State Board of Pharmacy Licensing Portal, click 'Create a New Account' and follow the prompts to register. Once registered, log in and select 'Apply for New License' for Pharmacy Technician.",
+    "provider_search": "https://online.bop.nv.gov/LicenseSearch"
   }
 }

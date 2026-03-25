@@ -21,12 +21,14 @@
   "board": {
     "name": "Maryland Board of Pharmacy",
     "parent_dept": "Maryland Department of Health (MDH)",
-    "mailing_address": "See board website",
+    "mailing_address": "Maryland Board of Pharmacy, 4201 Patterson Avenue, Baltimore, MD 21215-2299",
     "physical_address": "See board website",
-    "phone": "(410) 764-4755",
+    "phone": "410-764-4755",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://dhmh.maryland.gov/pharmacy/Pages/index.aspx"
+    "email": "mdh.mbop@maryland.gov",
+    "url": "http://dhmh.maryland.gov/pharmacy/Pages/index.aspx",
+    "contact_url": "https://health.maryland.gov/bop/Pages/contactus.aspx",
+    "verify_url": "https://mdbop.health.maryland.gov/liclookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Basic Requirements",
-      "description": "You must be at least 17 years old, of good moral character, and have a high school diploma or equivalent."
+      "title": "1. Review Eligibility Requirements",
+      "description": "Familiarize yourself with the Maryland Board of Pharmacy's requirements for Pharmacy Technician registration, including being at least 17 years old, possessing a high school diploma or GED equivalent, and understanding the criminal background check process. Visit the MD BOP Pharmacy Technician page for details."
     },
     {
-      "title": "Complete a Board-Approved Training Program",
-      "description": "Complete a training program that meets the requirements outlined by the Maryland Board of Pharmacy."
+      "title": "2. Create a Maryland OneStop Account",
+      "description": "Visit the Maryland OneStop portal (onestop.md.gov) and create a new user account if you do not already have one. This secure account will serve as your platform for submitting and managing your application."
     },
     {
-      "title": "Apply for License",
-      "description": "Submit your application, required documentation, and the fee to the Maryland Board of Pharmacy."
+      "title": "3. Complete the Online Application",
+      "description": "Log in to your Maryland OneStop account, locate the 'Board of Pharmacy - Pharmacy Technician Registration Application' service, and accurately complete all sections of the online application form with your personal, educational, and professional information."
+    },
+    {
+      "title": "4. Submit Required Documentation and Fee",
+      "description": "Upload all necessary supporting documents directly through the OneStop portal, such as proof of high school graduation or GED. Pay the non-refundable $45 application fee using a credit or debit card through the secure online payment system."
+    },
+    {
+      "title": "5. Complete Criminal History Records Check (CHRC)",
+      "description": "Follow the specific instructions provided by the Maryland Board of Pharmacy on their website (health.maryland.gov/bop/Pages/Fingerprinting-Instructions.aspx) to obtain a Criminal History Records Check (CHRC) through the Criminal Justice Information System (CJIS). This step typically involves fingerprinting."
+    },
+    {
+      "title": "6. Await Board Review and Registration Issuance",
+      "description": "The Maryland Board of Pharmacy will thoroughly review your complete application, submitted documentation, and the results of your CHRC. You will receive notification regarding the status of your registration upon approval."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "http://dhmh.maryland.gov/pharmacy/Pages/index.aspx",
-    "endorsement_url": "http://dhmh.maryland.gov/pharmacy/Pages/index.aspx",
+    "endorsement_url": "https://onestop.md.gov/services/board-of-pharmacy-pharmacy-technician-registration-application/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Maryland",
-        "dek": "Maryland Pharmacy Technician licensure requires registering with the Maryland Board of Pharmacy, completing a training program, and passing an exam."
+        "dek": "Apply online for your Maryland Pharmacy Technician registration through the Maryland OneStop portal (onestop.md.gov). Create an account, search for the 'Board of Pharmacy - Pharmacy Technician Registration Application', and submit your application and required documents."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://health.maryland.gov/pharmacy/Pages/FeeSchedule.aspx",
     "timeline": "https://health.maryland.gov/pharmacy/Pages/FeeSchedule.aspx"
+  },
+  "official_links": {
+    "portal_name": "Maryland OneStop Portal",
+    "portal_url": "https://onestop.md.gov/services/board-of-pharmacy-pharmacy-technician-registration-application/",
+    "registration_steps": "Navigate to the Maryland OneStop portal, select 'Sign In / Create Account' from the top right, and follow the prompts to register a new account using your email address and creating a password. Verify your email, then search for the Pharmacy Technician application service.",
+    "provider_search": "https://mdbop.health.maryland.gov/liclookup/"
   }
 }

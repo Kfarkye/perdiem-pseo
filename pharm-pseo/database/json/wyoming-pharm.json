@@ -21,12 +21,14 @@
   "board": {
     "name": "Wyoming Board of Pharmacy",
     "parent_dept": "Wyoming Department of Administration & Information",
-    "mailing_address": "See board website",
+    "mailing_address": "Wyoming Board of Pharmacy, 1800 Carey Ave. 4th Floor, Cheyenne, WY 82002",
     "physical_address": "See board website",
     "phone": "(307) 634-9636",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pharmacyboard.wyo.gov"
+    "email": "wypharmacyboard@wyo.gov",
+    "url": "https://pharmacyboard.wyo.gov",
+    "contact_url": "https://pharmacyboard.wyo.gov/contact-us",
+    "verify_url": "https://www.elicense.state.wy.us/verification/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application form to the Wyoming Board of Pharmacy."
+      "title": "1. Register an Account on eLicense Wyoming",
+      "description": "Navigate to the eLicense Wyoming portal at https://www.elicense.state.wy.us/. Click on 'Register a New User Account' in the top right corner and follow the instructions to create your personal account using a valid email address."
     },
     {
-      "title": "Meet Eligibility Requirements",
-      "description": "Ensure you meet all eligibility criteria as determined by the Wyoming Board of Pharmacy, including age and education requirements."
+      "title": "2. Start a New Pharmacy Technician Application",
+      "description": "Log in to your newly created eLicense Wyoming account. From your dashboard, select the 'New Application' option and choose 'Pharmacy Technician' from the list of available application types. Begin filling out the online application form."
     },
     {
-      "title": "Renew Your License",
-      "description": "Complete 12 hours of continuing education every 2 years to maintain your Wyoming Pharmacy Technician license."
+      "title": "3. Complete Application and Obtain Pharmacist-in-Charge Attestation",
+      "description": "Fill out all sections of the online application, providing personal details, education history (minimum high school diploma or equivalent), and consent to a criminal history background check. Crucially, your application requires an attestation of employment from a Wyoming licensed Pharmacist-in-Charge (PIC) indicating that you will receive on-the-job training in a Wyoming licensed pharmacy. Ensure this attestation is completed within the portal or submitted as directed."
+    },
+    {
+      "title": "4. Submit Application and Pay Fee",
+      "description": "Review your completed application for accuracy and completeness. Electronically submit any required supporting documents. Pay the non-refundable application fee of $50.00 directly through the eLicense Wyoming portal using an accepted payment method."
+    },
+    {
+      "title": "5. Complete Criminal History Background Check",
+      "description": "Follow the Board's instructions to complete the required criminal history background check. This typically involves fingerprinting and submitting them to the appropriate state and federal agencies (e.g., Wyoming Department of Criminal Investigation and the FBI). The Board will provide guidance on this process after your application submission."
+    },
+    {
+      "title": "6. Board Review and Licensure",
+      "description": "Monitor the status of your application through your eLicense Wyoming account. The Wyoming Board of Pharmacy will review your complete application, the PIC attestation, and the results of your background check. Upon satisfactory review and approval, your Pharmacy Technician license will be issued."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "1 to 2 Weeks",
     "processing_tier": "mid",
     "board_url": "https://pharmacyboard.wyo.gov",
-    "endorsement_url": "https://pharmacyboard.wyo.gov",
+    "endorsement_url": "https://www.elicense.state.wy.us/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Wyoming",
-        "dek": "Wyoming Pharmacy Technician licensure requires completing an application, meeting eligibility criteria, and completing continuing education for renewal."
+        "dek": "Apply online through Wyoming's eLicense portal (elicense.state.wy.us). Create an account, select 'New Application' for Pharmacy Technician, and submit your application along with required attestations and background check consent."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://pharmacy.wyo.gov/assets/docs/technician/Pharmacy%20Technician%20Application%20Packet%2007.2023.pdf",
     "timeline": "https://pharmacy.wyo.gov/assets/docs/technician/Pharmacy%20Technician%20Application%20Packet%2007.2023.pdf"
+  },
+  "official_links": {
+    "portal_name": "eLicense Wyoming",
+    "portal_url": "https://www.elicense.state.wy.us/",
+    "registration_steps": "Click 'Register a New User Account' in the top right corner. Follow the prompts to create your account with a valid email. Once registered and logged in, you can select 'New Application' to begin.",
+    "provider_search": "https://www.elicense.state.wy.us/verification/Search.aspx"
   }
 }

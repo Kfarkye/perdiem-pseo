@@ -21,12 +21,14 @@
   "board": {
     "name": "California Board of Pharmacy",
     "parent_dept": "Title Protection Only (Business and Professions Code Section 2585)",
-    "mailing_address": "See board website",
+    "mailing_address": "California State Board of Pharmacy\n1625 North Market Blvd, N219\nSacramento, CA 95834",
     "physical_address": "See board website",
-    "phone": "(916) 518-3100",
+    "phone": "(916) 574-7900",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.pharmacy.ca.gov"
+    "url": "https://www.pharmacy.ca.gov",
+    "contact_url": "https://www.pharmacy.ca.gov/contact.shtml",
+    "verify_url": "https://search.dca.ca.gov/"
   },
   "quick_facts": {
     "total_fee": "$120",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Eligibility Requirements",
-      "description": "Possess a high school diploma or equivalent (GED or foreign diploma evaluation)."
+      "title": "1. Review Eligibility Requirements",
+      "description": "Ensure you meet all requirements for licensure, including being at least 18 years old and having a high school diploma or equivalent, AND one of the following: a board-approved technician training program, or certification from the Pharmacy Technician Certification Board (PTCB), or a board-recognized pharmacy technician exam, or graduation from a school of pharmacy."
     },
     {
-      "title": "Complete Training or Examination",
-      "description": "Complete a board-approved training program or pass an examination (PTCB or ExCPT)."
+      "title": "2. Create a BreEZe Account",
+      "description": "Access the BreEZe Online Services Portal at https://www.breeze.ca.gov/. If you are a new user, click 'New User? Register Here' to create an account. You will need to provide personal information and set up security questions."
     },
     {
-      "title": "Apply for License",
-      "description": "Submit a completed application to the California Board of Pharmacy with the required fee."
+      "title": "3. Submit Online Application and Fee",
+      "description": "Log into your BreEZe account, navigate to 'Start a New Application', and select 'Pharmacy Technician Application'. Complete all sections of the application and pay the non-refundable application fee of $195.00 using a credit card."
+    },
+    {
+      "title": "4. Complete Fingerprint Background Check",
+      "description": "Complete a Live Scan fingerprint submission for a criminal background check. You must use the Live Scan form provided on the Board's website. Submit the completed form to a Live Scan service provider, who will transmit your fingerprints electronically to the California Department of Justice (DOJ) and the Federal Bureau of Investigation (FBI)."
+    },
+    {
+      "title": "5. Submit Official Transcripts/Certifications (if applicable)",
+      "description": "If your eligibility pathway requires proof of education (e.g., a pharmacy technician training program or school of pharmacy), arrange for your official transcripts to be sent directly from the educational institution to the California State Board of Pharmacy. If using PTCB certification, ensure it's verifiable."
+    },
+    {
+      "title": "6. Monitor Application Status",
+      "description": "Regularly log into your BreEZe account to monitor the status of your application. The Board will communicate any deficiencies or requests for additional information through the portal. Once approved, your license will be issued and viewable on BreEZe."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml",
-    "endorsement_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml",
+    "endorsement_url": "https://www.pharmacy.ca.gov/applicants/pt_lic.shtml",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -159,7 +173,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in California",
-        "dek": "California Pharmacy Technician licensure requires a high school diploma or equivalent, submission of an application, and completion of required training or passing an examination."
+        "dek": "Apply online through the California State Board of Pharmacy's BreEZe Online Services Portal (breeze.ca.gov). Create an account, select 'Pharmacy Technician Application', and submit your application."
       }
     }
   },
@@ -185,5 +199,11 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "official_links": {
+    "portal_name": "BreEZe Online Services Portal",
+    "portal_url": "https://www.breeze.ca.gov/",
+    "registration_steps": "First-time users must register for a BreEZe account. Click 'New User? Register Here' to create an account, then log in and select 'Start a New Application' for Pharmacy Technician.",
+    "provider_search": "https://search.dca.ca.gov/"
   }
 }

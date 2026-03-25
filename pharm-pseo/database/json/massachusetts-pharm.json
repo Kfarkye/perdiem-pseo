@@ -21,12 +21,14 @@
   "board": {
     "name": "Massachusetts Board of Pharmacy",
     "parent_dept": "Massachusetts Department of Public Health (DPH)",
-    "mailing_address": "See board website",
+    "mailing_address": "Board of Registration in Pharmacy\n250 Washington Street\nBoston, MA 02108",
     "physical_address": "See board website",
-    "phone": "(800) 414-0168",
+    "phone": "(617) 973-0935",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.mass.gov/dph/boards/pharmacy"
+    "email": "dpl.info@mass.gov",
+    "url": "https://www.mass.gov/dph/boards/pharmacy",
+    "contact_url": "https://www.mass.gov/orgs/board-of-registration-in-pharmacy",
+    "verify_url": "https://checkalicense.mass.gov/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Basic Qualifications",
-      "description": "Applicants must be at least 18 years old and of good moral character."
+      "title": "1. Review Eligibility Requirements",
+      "description": "Ensure you meet the minimum age of 16 years and satisfy the education requirements: either hold a high school diploma or its equivalent, be currently enrolled in a program leading to such, or be certified by the Pharmacy Technician Certification Board (PTCB) or the National Healthcareer Association (NHA)."
     },
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application and all required documentation to the Massachusetts Board of Pharmacy."
+      "title": "2. Register for a Gateway Account",
+      "description": "Visit the Professional Licensure Gateway at https://mass.gov/gateway and register for a new account. You will need to create a username and password."
     },
     {
-      "title": "Pay the License Fee",
-      "description": "Pay the non-refundable license fee of $100."
+      "title": "3. Complete the Online Application",
+      "description": "Log into your Professional Licensure Gateway account. Select the 'Board of Registration in Pharmacy' and then initiate the 'Pharmacy Technician Application'. Fill out all required sections completely, including attesting to any criminal history."
+    },
+    {
+      "title": "4. Upload Supporting Documentation",
+      "description": "Electronically upload all necessary supporting documents through the Gateway. This typically includes proof of age (e.g., driver's license, birth certificate) and proof of education or certification (e.g., high school diploma, GED certificate, or PTCB/NHA certification)."
+    },
+    {
+      "title": "5. Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $100.00 through the Professional Licensure Gateway using an accepted payment method."
+    },
+    {
+      "title": "6. Await Board Review and Approval",
+      "description": "After submitting your complete application and fee, the Board of Registration in Pharmacy will review your submission. You will be notified of your application status or any further requirements through the Gateway or via mail."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.mass.gov/dph/boards/pharmacy",
-    "endorsement_url": "https://www.mass.gov/dph/boards/pharmacy",
+    "endorsement_url": "https://www.mass.gov/pharmacy-technicians#how-to-apply-for-a-reciprocal-license-(out-of-state-pharmacy-technician-license)",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Massachusetts",
-        "dek": "Massachusetts Pharmacy Technician licensure requires completing an application, paying the required fee, and meeting all qualifications."
+        "dek": "Apply online through the Massachusetts Professional Licensure Gateway (mass.gov/gateway). Create an account, locate the Pharmacy Technician application under the Board of Registration in Pharmacy, and submit all required documentation."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://www.mass.gov/info-details/pharmacy-technician-registration-application-information",
     "timeline": "https://www.mass.gov/info-details/pharmacy-technician-registration-application-information"
+  },
+  "official_links": {
+    "portal_name": "Professional Licensure Gateway",
+    "portal_url": "https://mass.gov/gateway",
+    "registration_steps": "First-time applicants must register for a new account on the Gateway. This involves creating a username and password, then verifying your account before you can log in and start an application.",
+    "provider_search": "https://checkalicense.mass.gov/"
   }
 }

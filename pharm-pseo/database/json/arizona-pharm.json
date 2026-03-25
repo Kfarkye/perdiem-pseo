@@ -21,12 +21,14 @@
   "board": {
     "name": "Arizona Board of Pharmacy",
     "parent_dept": "Arizona does not mandate state dietitian licensure. The national CDR credential is the recognized standard.",
-    "mailing_address": "See board website",
+    "mailing_address": "1700 W. Washington Street, Suite 250, Phoenix, AZ 85007",
     "physical_address": "See board website",
     "phone": "(602) 771-2727",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pharmacy.az.gov/"
+    "email": "contact@azboardofpharmacy.gov",
+    "url": "https://pharmacy.az.gov/",
+    "contact_url": "https://pharmacy.az.gov/contact-us",
+    "verify_url": "https://azph.az.gov/AZBOOP/Search/LicenseSearch.aspx"
   },
   "quick_facts": {
     "total_fee": "$82",
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed Pharmacy Technician License Application to the Arizona Board of Pharmacy."
+      "title": "Review Eligibility & Gather Documents",
+      "description": "Visit the Arizona State Board of Pharmacy's Pharmacy Technician page (https://pharmacy.az.gov/new-applicants/pharmacy-technician) to review full requirements. Gather necessary documents including a copy of your government-issued photo ID, high school diploma or GED equivalent, and the completed Pharmacy Technician Attestation Form (available at https://pharmacy.az.gov/forms)."
     },
     {
-      "title": "Pass a Background Check",
-      "description": "Undergo a criminal background check, including fingerprinting, as part of the application process."
+      "title": "Initiate Fingerprint Background Check",
+      "description": "Complete the fingerprint background check process as detailed on the Board's Fingerprint Background Checks page (https://pharmacy.az.gov/fingerprint-background-checks). This typically involves obtaining a fingerprint card and submitting it to the Board's designated vendor according to their instructions."
     },
     {
-      "title": "Pay the License Fee",
-      "description": "Submit the required license fee to the Arizona Board of Pharmacy."
+      "title": "Create Online Account",
+      "description": "Navigate to the Arizona Board of Pharmacy Licensing Portal (https://azph.az.gov/licensure/) and click the \"create one\" link under the \"New Account\" section to establish your applicant profile with the Board."
+    },
+    {
+      "title": "Complete & Submit Application",
+      "description": "Log in to the Arizona Board of Pharmacy Licensing Portal using your new account. Select \"New Application\" for Pharmacy Technician and meticulously complete all required sections. Upload your photo ID, diploma/GED, and Pharmacy Technician Attestation Form directly within the online application."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Electronically submit the required application fee through the Arizona Board of Pharmacy Licensing Portal to finalize your application submission. Ensure all sections are complete and documents uploaded before payment."
     }
   ],
   "documents": [
@@ -127,7 +137,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://pharmacy.az.gov/technician-license-information",
-    "endorsement_url": "https://pharmacy.az.gov/technician-license-information",
+    "endorsement_url": "https://azph.az.gov/licensure/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -159,7 +169,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Arizona",
-        "dek": "Arizona Pharmacy Technician licensure requires completing an application, passing a background check, and paying a fee."
+        "dek": "Apply online through the Arizona Board of Pharmacy Licensing Portal (azph.az.gov/licensure/). Create an applicant account, then initiate a new application for Pharmacy Technician, submitting all required documentation and fees electronically."
       }
     }
   },
@@ -185,5 +195,11 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "official_links": {
+    "portal_name": "Arizona Board of Pharmacy Licensing Portal",
+    "portal_url": "https://azph.az.gov/licensure/",
+    "registration_steps": "Go to the Arizona Board of Pharmacy Licensing Portal (azph.az.gov/licensure/), click \"create one\" under the \"New Account\" section, and complete the registration form. Once your account is created and you are logged in, navigate to \"New Application\" and select \"Pharmacy Technician\" to begin.",
+    "provider_search": "https://azph.az.gov/AZBOOP/Search/LicenseSearch.aspx"
   }
 }

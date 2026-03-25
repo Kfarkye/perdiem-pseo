@@ -21,12 +21,14 @@
   "board": {
     "name": "Arkansas Board of Pharmacy",
     "parent_dept": "Arkansas Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "101 E. Capitol Ave., Suite 211, Little Rock, AR 72201",
     "physical_address": "See board website",
     "phone": "(501) 682-0190",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pharmacyboard.arkansas.gov/"
+    "email": "arpblive@arkansas.gov",
+    "url": "https://pharmacyboard.arkansas.gov/",
+    "contact_url": "https://pharmacyboard.arkansas.gov/contact/",
+    "verify_url": "https://ar.elicense.ky.gov/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Basic Requirements",
-      "description": "Applicants must be at least 18 years of age, possess a high school diploma or equivalent, and be of good moral character."
+      "title": "Create Account & Submit Online Application",
+      "description": "Access the AR Pharmacist/Technician/Intern Online Licensing System (ar.elicense.ky.gov). Click 'Register a Person' to create a user account, then log in and select the Pharmacy Technician initial application to complete and submit it."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete the Pharmacy Technician License Application and submit it with the required fee to the Arkansas State Board of Pharmacy."
+      "title": "Complete Criminal Background Check",
+      "description": "Register with the Arkansas State Police for a state and federal criminal background check. You will be directed to schedule fingerprinting with an approved vendor, such as IdentoGO. Specific instructions are typically provided within the online application process."
     },
     {
-      "title": "Complete Continuing Education",
-      "description": "Complete 20 hours of continuing education every two years to maintain license."
+      "title": "Provide Proof of Education",
+      "description": "Upload evidence of a high school diploma or its equivalent directly within the online application system. Ensure the document is clear and legible."
+    },
+    {
+      "title": "Obtain NABP eProfile ID",
+      "description": "If you do not already have one, create an NABP eProfile ID through the National Association of Boards of Pharmacy (NABP) website and provide this ID in your online application."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the required non-refundable application fee of $25.00 through the AR Pharmacist/Technician/Intern Online Licensing System using an accepted payment method (e.g., credit card)."
     }
   ],
   "documents": [
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Arkansas",
-        "dek": "Arkansas Pharmacy Technician licensure requires completing an application, paying the required fee, and completing continuing education requirements for renewal."
+        "dek": "Apply online through the AR Pharmacist/Technician/Intern Online Licensing System (ar.elicense.ky.gov). Create an account, select the Pharmacy Technician initial application, and follow the prompts for submission."
       }
     }
   },
@@ -185,5 +195,11 @@
   "board_verification_sources": {
     "fee": "https://www.arkansas.gov/pharmacy/PDFs/techpacket.pdf",
     "timeline": "https://www.arkansas.gov/pharmacy/PDFs/techpacket.pdf"
+  },
+  "official_links": {
+    "portal_name": "AR Pharmacist/Technician/Intern Online Licensing System",
+    "portal_url": "https://ar.elicense.ky.gov/",
+    "registration_steps": "Navigate to the portal, click 'Register a Person' to create a new user account, complete the required personal information, and then log in to access the application options and start a new application for Pharmacy Technician.",
+    "provider_search": "https://ar.elicense.ky.gov/Lookup/LicenseLookup.aspx"
   }
 }

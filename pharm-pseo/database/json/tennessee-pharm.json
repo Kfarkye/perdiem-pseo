@@ -21,12 +21,14 @@
   "board": {
     "name": "Tennessee Board of Pharmacy",
     "parent_dept": "Tennessee Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "665 Mainstream Drive, Nashville, TN 37243",
     "physical_address": "See board website",
-    "phone": "(615) 253-1299",
+    "phone": "(615) 741-5735",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html"
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html",
+    "contact_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board/contact.html",
+    "verify_url": "https://apps.tn.gov/hlrs/license-verification"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Eligibility Requirements",
-      "description": "Applicants must be at least seventeen (17) years of age and have earned a high school diploma or its equivalent."
+      "title": "1. Review Eligibility and Requirements",
+      "description": "Before applying, ensure you meet all eligibility requirements, including being 18 years of age or older (or having a high school diploma/GED) and not having a felony conviction. Review the full requirements on the Tennessee Board of Pharmacy's technician page at tn.gov/health/pharmacy-board/technician."
     },
     {
-      "title": "Submit an Application",
-      "description": "Apply for license as a Pharmacy Technician with the Tennessee Board of Pharmacy."
+      "title": "2. Create an Account on the HLRS Portal",
+      "description": "Go to the Tennessee Health Licensure and Regulatory System (HLRS) at apps.tn.gov/hlrs/. Click on 'New User Registration' and follow the instructions to create your profile. You will need to provide your Social Security Number, date of birth, and an active email address."
     },
     {
-      "title": "Pay the Required Fee",
-      "description": "Submit the required license fee of $100 to the Tennessee Board of Pharmacy."
+      "title": "3. Complete the Online Application",
+      "description": "Log in to your newly created HLRS account. Select the option to 'Apply for a New License' and choose 'Pharmacy Technician' from the list of professions. Complete all sections of the application form accurately."
+    },
+    {
+      "title": "4. Complete Criminal Background Check (CBC)",
+      "description": "During the online application process, you will be provided with instructions to complete a criminal background check (CBC) through the state-approved vendor, Identogo. You must follow these instructions to schedule and complete the fingerprinting process."
+    },
+    {
+      "title": "5. Upload Required Documents",
+      "description": "Electronically upload all necessary supporting documents as prompted within the HLRS system. This typically includes a Declaration of US Citizenship and Lawful Presence form, and potentially proof of high school graduation or GED if applicable. Ensure all documents are clear and legible."
+    },
+    {
+      "title": "6. Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $50 using a credit or debit card through the secure online payment system within the HLRS portal to finalize your application submission."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html",
-    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html",
+    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board/applicants/technician/reciprocity-endorsement.html",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Tennessee",
-        "dek": "Tennessee Pharmacy Technician licensure requires completing an application, paying a fee, and meeting specific eligibility criteria."
+        "dek": "Apply for a Pharmacy Technician license online through the Tennessee Health Licensure and Regulatory System (HLRS) at apps.tn.gov/hlrs/. Create a new user account, select Pharmacy Technician from the application options, and complete the required steps."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://www.tn.gov/health/health-professionals/pharmacy-board.html",
     "timeline": "https://www.tn.gov/health/health-professionals/pharmacy-board.html"
+  },
+  "official_links": {
+    "portal_name": "Tennessee Health Licensure and Regulatory System (HLRS)",
+    "portal_url": "https://apps.tn.gov/hlrs/",
+    "registration_steps": "Navigate to the HLRS portal and click 'New User Registration'. Follow the prompts to create an account using your personal information (SSN, DOB, email). Once registered, log in and select 'Apply for a New License', then choose 'Pharmacy Technician'.",
+    "provider_search": "https://apps.tn.gov/hlrs/license-verification"
   }
 }

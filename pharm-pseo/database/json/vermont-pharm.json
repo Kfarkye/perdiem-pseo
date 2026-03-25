@@ -21,12 +21,14 @@
   "board": {
     "name": "Vermont Board of Pharmacy",
     "parent_dept": "Vermont Office of Professional Regulation (OPR)",
-    "mailing_address": "See board website",
+    "mailing_address": "Office of Professional Regulation\n128 State Street\nMontpelier, VT 05633-1100",
     "physical_address": "See board website",
-    "phone": "(802) 828-2373",
+    "phone": "(802) 828-2363",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://sos.vermont.gov/pharmacy/"
+    "email": "sos.opr@vermont.gov",
+    "url": "https://sos.vermont.gov/pharmacy/",
+    "contact_url": "https://sos.vermont.gov/contact-us/",
+    "verify_url": "https://sos.vermont.gov/opr-online-services/license-lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Submit an Application",
-      "description": "Complete the Pharmacy Technician License Application and submit it to the Vermont Board of Pharmacy."
+      "title": "Obtain National Certification",
+      "description": "Ensure you hold current national pharmacy technician certification from an approved body, such as the Pharmacy Technician Certification Board (PTCB) or National Healthcareer Association (NHA), as this is a prerequisite for licensure in Vermont."
     },
     {
-      "title": "Pay the Required Fee",
-      "description": "Pay the $100 license fee to the Vermont Board of Pharmacy."
+      "title": "Create an OPR Online Services Account",
+      "description": "Navigate to the Vermont OPR Online Services Portal (https://sos.vermont.gov/opr-online-services/). If you are a new user, click 'Register a New User' to create your account."
     },
     {
-      "title": "Complete Continuing Education",
-      "description": "Complete 20 hours of continuing education every two years to maintain your license."
+      "title": "Complete and Submit the Online Application",
+      "description": "Log into your OPR Online Services account, locate the 'Pharmacy Technician Application' under the Board of Pharmacy, and accurately complete all sections of the application form."
+    },
+    {
+      "title": "Upload Required Documentation",
+      "description": "Electronically upload all necessary supporting documents, including proof of age (minimum 16 years), verification of a high school diploma or GED (or current high school enrollment), and official proof of your current national pharmacy technician certification."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $20.00 through the secure OPR Online Services Portal to finalize your application."
     }
   ],
   "documents": [
@@ -127,7 +137,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://sos.vermont.gov/pharmacy/",
-    "endorsement_url": "https://sos.vermont.gov/pharmacy/",
+    "endorsement_url": "https://sos.vermont.gov/opr-online-services/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Vermont",
-        "dek": "Vermont Pharmacy Technician licensure requires submitting an application, paying a fee, and completing continuing education."
+        "dek": "Apply online through Vermont's OPR Online Services Portal (sos.vermont.gov/opr-online-services/). Create an account, select the Pharmacy Technician application, and submit all required documentation and fees."
       }
     }
   },
@@ -185,5 +195,11 @@
   "board_verification_sources": {
     "fee": "https://sos.vermont.gov/opr/professions/pharmacy-technicians/",
     "timeline": "https://sos.vermont.gov/opr/professions/pharmacy-technicians/"
+  },
+  "official_links": {
+    "portal_name": "OPR Online Services Portal",
+    "portal_url": "https://sos.vermont.gov/opr-online-services/",
+    "registration_steps": "New users must navigate to the OPR Online Services Portal and click 'Register a New User' to create an account before beginning any application.",
+    "provider_search": "https://sos.vermont.gov/opr-online-services/license-lookup/"
   }
 }

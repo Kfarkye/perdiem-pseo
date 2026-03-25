@@ -21,12 +21,14 @@
   "board": {
     "name": "Montana Board of Pharmacy",
     "parent_dept": "Department of Labor & Industry",
-    "mailing_address": "See board website",
+    "mailing_address": "301 South Park\nPO Box 200513\nHelena MT 59620-0513",
     "physical_address": "See board website",
-    "phone": "(406) 841-2371",
+    "phone": "(406) 444-6880",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://boards.bsd.dli.mt.gov/pharmacy/"
+    "email": "dlibsdpha@mt.gov",
+    "url": "https://boards.bsd.dli.mt.gov/pharmacy/",
+    "contact_url": "https://boards.mt.gov/license-type/pharmacy/",
+    "verify_url": "https://boards.mt.gov/lookup/"
   },
   "quick_facts": {
     "total_fee": "$35",
@@ -44,16 +46,28 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a complete Pharmacy Technician License application to the Montana Board of Pharmacy."
+      "title": "Review Eligibility Requirements",
+      "description": "Ensure you meet the Montana Board of Pharmacy's requirements, including being at least 18 years old, having good moral character, and having either completed a Board-approved training program OR holding current PTCB (Pharmacy Technician Certification Board) or NHA (National Healthcareer Association) certification."
     },
     {
-      "title": "Pay the License Fee",
-      "description": "Pay the $35 license fee to the Montana Board of Pharmacy."
+      "title": "Create an Account & Apply Online",
+      "description": "Visit the eLicense Montana (Professional Licensing Online Portal) at `https://ebiz.mt.gov/pol`. Register for a new user account if you don't have one. Log in, select 'Apply for a new license', choose 'Pharmacy Technician' as the license type, and complete all sections of the online application form."
     },
     {
-      "title": "Meet the Qualifications",
-      "description": "Ensure you meet all qualifications, including having a high school diploma or GED and not having any disqualifying criminal convictions."
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $50.00 through the online portal using a credit or debit card during the application submission process."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Upload required documents directly to your online application or arrange for their submission. This includes proof of age (e.g., driver's license or birth certificate) and official transcripts or a certificate of completion from a Board-approved training program, OR proof of current PTCB/NHA certification."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the specific instructions provided within the online application or by the Board to complete a fingerprint-based criminal background check. This typically involves registering with and submitting fingerprints through a Board-approved vendor like IdentoGO."
+    },
+    {
+      "title": "Await Board Review and Licensure",
+      "description": "Allow time for the Montana Board of Pharmacy to thoroughly review your complete application, all submitted documentation, and the results of your criminal background check. Once approved, your Pharmacy Technician license will be issued."
     }
   ],
   "documents": [
@@ -126,7 +140,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
-    "endorsement_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
+    "endorsement_url": "https://ebiz.mt.gov/pol",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -159,7 +173,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Montana",
-        "dek": "Montana Pharmacy Technician licensure requires completing an application, paying a fee, and meeting all qualifications."
+        "dek": "Apply online through Montana's eLicense Montana (Professional Licensing Online Portal) at (ebiz.mt.gov/pol). Register for an account, select 'Apply for a new license', and follow the prompts for Pharmacy Technician licensure."
       }
     }
   },
@@ -185,5 +199,11 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "official_links": {
+    "portal_name": "eLicense Montana (Professional Licensing Online Portal)",
+    "portal_url": "https://ebiz.mt.gov/pol",
+    "registration_steps": "Register for a new account using your email and personal details. Once registered, log in, navigate to 'Apply for a new license', and select 'Pharmacy Technician' from the available license types.",
+    "provider_search": "https://boards.mt.gov/lookup/"
   }
 }

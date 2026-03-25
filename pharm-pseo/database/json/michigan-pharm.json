@@ -21,12 +21,14 @@
   "board": {
     "name": "Michigan Board of Pharmacy",
     "parent_dept": "Michigan Department of Licensing and Regulatory Affairs (LARA)",
-    "mailing_address": "See board website",
+    "mailing_address": "Bureau of Professional Licensing\nP.O. Box 30670\nLansing, MI 48909",
     "physical_address": "See board website",
-    "phone": "(517) 241-0199",
+    "phone": "517-335-0918",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.michigan.gov/lara/0,4601,7-154-72600---,00.html"
+    "email": "LARA-BPL-Help@michigan.gov",
+    "url": "https://www.michigan.gov/lara/0,4601,7-154-72600---,00.html",
+    "contact_url": "https://www.michigan.gov/lara/bureau-list/bpl/contact-bpl",
+    "verify_url": "https://lara.state.mi.us/VofP/"
   },
   "quick_facts": {
     "total_fee": "$137.70",
@@ -44,16 +46,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Eligibility Requirements",
-      "description": "You must be at least 18 years old, have a high school diploma or equivalent, and be of good moral character."
+      "title": "1. Meet Eligibility Requirements and Obtain National Certification",
+      "description": "Before applying for a Michigan state license, applicants must be at least 18 years old and hold current national certification from either the Pharmacy Technician Certification Board (PTCB) or the National Healthcareer Association (NHA) ExCPT. This is a mandatory prerequisite for Michigan licensure."
     },
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application for license as a Pharmacy Technician to the Michigan Board of Pharmacy."
+      "title": "2. Create a MiPLUS Account",
+      "description": "Visit the MiPLUS online licensing portal at aca-prod.accela.com/lara/Default.aspx. Click 'Register for an Account' and follow the prompts to create a new user account, then verify your email address as instructed."
     },
     {
-      "title": "Pay the Required Fee",
-      "description": "Pay the required license fee to the Michigan Board of Pharmacy."
+      "title": "3. Complete the Online Application",
+      "description": "Log in to your newly created MiPLUS account. From the MiPLUS home page, select 'Professional Licensing' and then locate and complete the appropriate 'Pharmacy Technician Application' (or 'Licensure by Endorsement (Pharmacy Technician)' if applying by endorsement). Ensure all required fields are accurately filled out."
+    },
+    {
+      "title": "4. Upload Supporting Documents",
+      "description": "As part of the online application process within MiPLUS, upload all necessary supporting documentation. This primarily includes proof of your current national certification from either PTCB or NHA ExCPT."
+    },
+    {
+      "title": "5. Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $25.00 through the MiPLUS portal using a credit card or electronic check. Your application will not be processed until the fee is received."
+    },
+    {
+      "title": "6. Monitor Application Status",
+      "description": "Regularly check the status of your application by logging into your MiPLUS account. Respond promptly to any requests for additional information or documentation from the Bureau of Professional Licensing to avoid delays in processing."
     }
   ],
   "documents": [
@@ -126,7 +140,7 @@
     "processing_time": "10 to 12 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy",
-    "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy",
+    "endorsement_url": "https://aca-prod.accela.com/lara/Default.aspx",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -159,7 +173,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Michigan",
-        "dek": "Michigan Pharmacy Technician licensure requires completing an application, meeting education or experience requirements, and paying the required fee."
+        "dek": "Apply online for a Michigan Pharmacy Technician license through the MiPLUS online licensing portal (aca-prod.accela.com/lara/Default.aspx). Create an account, select 'Professional Licensing', and complete the Pharmacy Technician Application."
       }
     }
   },
@@ -185,5 +199,11 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "official_links": {
+    "portal_name": "MiPLUS",
+    "portal_url": "https://aca-prod.accela.com/lara/Default.aspx",
+    "registration_steps": "Click 'Register for an Account' on the MiPLUS homepage. Follow the prompts to create a user profile, activate your account via email, and then log in to access the licensing applications.",
+    "provider_search": "https://lara.state.mi.us/VofP/"
   }
 }

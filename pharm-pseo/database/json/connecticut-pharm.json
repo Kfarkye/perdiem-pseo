@@ -21,12 +21,14 @@
   "board": {
     "name": "Connecticut Commission of Pharmacy",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
-    "mailing_address": "See board website",
+    "mailing_address": "Connecticut Department of Public Health\n410 Capitol Avenue, MS #12HSP\nPO Box 340308\nHartford, CT 06134-0308",
     "physical_address": "See board website",
-    "phone": "(860) 713-6070",
+    "phone": "(860) 509-7603",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://portal.ct.gov/DCP/Drug-Control-Division/Commission-of-Pharmacy/The-Commission-of-Pharmacy"
+    "email": "dph.hpapplications@ct.gov",
+    "url": "https://portal.ct.gov/DCP/Drug-Control-Division/Commission-of-Pharmacy/The-Commission-of-Pharmacy",
+    "contact_url": "https://portal.ct.gov/DPH/Public-Health-Services/HSP/Contact-Us",
+    "verify_url": "https://elicense.ct.gov/OLC/Search"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Basic Requirements",
-      "description": "You must be at least 18 years old and have a high school diploma or equivalent."
+      "title": "Review Eligibility Requirements",
+      "description": "Ensure you meet the eligibility criteria set by the Connecticut Department of Public Health. Applicants must be at least 16 years of age and satisfy one of the following: be enrolled in a high school or college; be a high school graduate or holder of a general equivalency diploma (GED); or be certified by a national certification body approved by the CT Department of Consumer Protection."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit the Pharmacy Technician License application to the Connecticut Commission of Pharmacy."
+      "title": "Create an eLicense Connecticut Account",
+      "description": "Navigate to the eLicense Connecticut portal at https://elicense.ct.gov/. If you are a first-time user, click on 'Register a New User Account' to set up your profile. If you have an existing account, log in with your credentials."
     },
     {
-      "title": "Pay the Fee",
-      "description": "Pay the $100 license fee."
+      "title": "Complete the Online Application Form",
+      "description": "Once logged into your eLicense CT account, select the option to 'Apply for a New License'. Search for or select 'Pharmacy Technician' from the list of available professions. Accurately complete all sections of the online application form as prompted."
+    },
+    {
+      "title": "Upload Required Supporting Documents",
+      "description": "Electronically submit all necessary supporting documentation through the eLicense portal. This typically includes a photocopy of official verification of your high school diploma or GED, an official college transcript, or official verification of enrollment in high school/college, or documentation from a national certification body, depending on your eligibility pathway."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $50.00 directly through the eLicense Connecticut portal. Payment can usually be made via credit/debit card or electronic check."
     }
   ],
   "documents": [
@@ -127,7 +137,7 @@
     "processing_time": "3 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/DCP/Drug-Control-Division/Commission-of-Pharmacy/The-Commission-of-Pharmacy",
-    "endorsement_url": "https://portal.ct.gov/DCP/Drug-Control-Division/Commission-of-Pharmacy/The-Commission-of-Pharmacy",
+    "endorsement_url": "https://portal.ct.gov/DPH/Public-Health-Services/HSP/Pharmacy-Technician",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Connecticut",
-        "dek": "Connecticut Pharmacy Technician licensure requires applying to the Commission of Pharmacy, completing the application requirements, and paying the required fee."
+        "dek": "Apply online for a Pharmacy Technician license through Connecticut's official eLicense portal (elicense.ct.gov). First-time users must create an account, then locate and complete the Pharmacy Technician application, uploading all required documents and paying the fee."
       }
     }
   },
@@ -185,5 +195,11 @@
   "board_verification_sources": {
     "fee": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration",
     "timeline": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration"
+  },
+  "official_links": {
+    "portal_name": "eLicense Connecticut",
+    "portal_url": "https://elicense.ct.gov/",
+    "registration_steps": "First-time users must create a new account on the eLicense Connecticut portal by clicking 'Register a New User Account'. After successful registration, log in to access the application forms.",
+    "provider_search": "https://elicense.ct.gov/OLC/Search"
   }
 }

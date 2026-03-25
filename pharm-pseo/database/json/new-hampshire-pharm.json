@@ -21,12 +21,14 @@
   "board": {
     "name": "New Hampshire Board of Pharmacy",
     "parent_dept": "New Hampshire Office of Professional Licensure and Certification (OPLC)",
-    "mailing_address": "See board website",
+    "mailing_address": "NH Office of Professional Licensure and Certification\n7 Eagle Square\nConcord, NH 03301",
     "physical_address": "See board website",
     "phone": "(603) 271-2152",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.oplc.nh.gov/board-pharmacy"
+    "email": "oplc_email@oplc.nh.gov",
+    "url": "https://www.oplc.nh.gov/board-pharmacy",
+    "contact_url": "https://www.oplc.nh.gov/contact-us",
+    "verify_url": "https://nh.lincware.com/Applicant/LicenseLookup.aspx?State=NH&Group=PHARMACY"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -44,16 +46,24 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application for Pharmacy Technician license to the New Hampshire Board of Pharmacy."
+      "title": "1. Create Account and Start Application",
+      "description": "Navigate to the OPLC Online Licensing Portal (nh.lincware.com/Applicant/Login.aspx), create a new account, and then log in. Select the 'New Applications' tab and choose 'Pharmacy Technician' to start your application."
     },
     {
-      "title": "Pay the Fee",
-      "description": "Pay the required license fee to the New Hampshire Board of Pharmacy."
+      "title": "2. Complete Application and Pay Fee",
+      "description": "Fill out all required sections of the online application form accurately. Review your information and pay the non-refundable application fee of $20.00 through the portal."
     },
     {
-      "title": "Meet Eligibility Requirements",
-      "description": "Ensure you meet all eligibility requirements as outlined by the New Hampshire Board of Pharmacy, including educational requirements and background checks."
+      "title": "3. Submit Required Documentation",
+      "description": "Upload or ensure submission of the following documents as instructed by the portal or the Pharmacy Technician Application Checklist: Proof of high school diploma or GED, your National Association of Boards of Pharmacy (NABP) eProfile ID, and verification of current national certification from either the Pharmacy Technician Certification Board (PTCB) or the National Healthcareer Association (NHA)."
+    },
+    {
+      "title": "4. Complete Criminal Background Check (CBC)",
+      "description": "Follow the specific instructions provided during the online application process or on the OPLC website's Criminal Background Check Information page (oplc.nh.gov/criminal-background-check-information) to complete the required state and federal criminal background check, which includes fingerprinting."
+    },
+    {
+      "title": "5. Await Board Review",
+      "description": "Once all application materials, fees, and background check results are received, the New Hampshire Board of Pharmacy will review your application. You can monitor the status of your application through the OPLC Online Licensing Portal."
     }
   ],
   "documents": [
@@ -126,7 +136,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.oplc.nh.gov/board-pharmacy",
-    "endorsement_url": "https://www.oplc.nh.gov/board-pharmacy",
+    "endorsement_url": "https://nh.lincware.com/Applicant/Login.aspx",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -145,7 +155,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in New Hampshire",
-        "dek": "New Hampshire Pharmacy Technician licensure requires submitting an application, paying a fee, and meeting eligibility requirements."
+        "dek": "Apply online through New Hampshire's OPLC Online Licensing Portal (nh.lincware.com/Applicant/Login.aspx). Create an account, select the Pharmacy Technician application, and submit all required documentation and fees."
       }
     }
   },
@@ -184,5 +194,11 @@
   "board_verification_sources": {
     "fee": "https://www.oplc.nh.gov/board-pharmacy",
     "timeline": "https://www.oplc.nh.gov/board-pharmacy"
+  },
+  "official_links": {
+    "portal_name": "OPLC Online Licensing Portal",
+    "portal_url": "https://nh.lincware.com/Applicant/Login.aspx",
+    "registration_steps": "Create an account on the OPLC Online Licensing Portal by clicking 'Register A New Account'. Once logged in, navigate to 'New Applications' and select the 'Pharmacy Technician' application to begin.",
+    "provider_search": "https://nh.lincware.com/Applicant/LicenseLookup.aspx?State=NH&Group=PHARMACY"
   }
 }

@@ -21,12 +21,14 @@
   "board": {
     "name": "Maine Board of Pharmacy",
     "parent_dept": "Maine Office of Professional and Occupational Regulation (OPOR)",
-    "mailing_address": "See board website",
+    "mailing_address": "35 State House Station, Augusta, ME 04333-0035",
     "physical_address": "See board website",
-    "phone": "(207) 624-8686",
+    "phone": "(207) 624-8603",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.maine.gov/pfr/professionallicensing/professions/board-pharmacy"
+    "email": "pharmacy.lic@maine.gov",
+    "url": "https://www.maine.gov/pfr/professionallicensing/professions/board-pharmacy",
+    "contact_url": "https://www.maine.gov/pfr/olcs/contact_us/",
+    "verify_url": "https://www.maine.gov/pfr/olcs/license_lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Requirements",
-      "description": "Ensure you meet the minimum qualifications, including being at least 17 years of age and having a high school diploma or equivalent."
+      "title": "Review Eligibility Requirements",
+      "description": "Ensure you meet Maine's requirements, including being at least 18 years old, possessing a high school diploma or equivalent, and meeting one of the following: completion of an accredited pharmacy technician training program, or documentation of at least 500 hours of pharmacy work experience within one year prior to application. (Source: Maine Board of Pharmacy Rules, Chapter 15)."
     },
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed Pharmacy Technician License Application to the Maine Board of Pharmacy."
+      "title": "Access the Online Licensing System",
+      "description": "Navigate to the Maine Office of Professional and Financial Regulation's Online Licensing System (OLCS) at https://www.maine.gov/pfr/olcs/."
     },
     {
-      "title": "Pay the Fee",
-      "description": "Pay the required license fee of $100 to the Maine Board of Pharmacy."
+      "title": "Create an Account and Start Application",
+      "description": "If you are a new user, click 'Register Now' to create an account. Log in to your account, then click on 'Apply for New License' and select 'Pharmacy Technician' from the available options."
+    },
+    {
+      "title": "Complete the Online Application",
+      "description": "Fill out all required sections of the application form accurately, providing personal, educational, and professional background information. This includes details regarding your high school education and pharmacy technician training or experience."
+    },
+    {
+      "title": "Submit Supporting Documentation and Criminal History Check",
+      "description": "Upload all necessary supporting documents, such as proof of high school diploma/GED and documentation of your training/experience. You will also need to consent to a Criminal History Records Check (CHRC) and follow instructions for fingerprinting if prompted by the system."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $25.00 through the secure online payment portal to finalize your application."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.maine.gov/pfr/professionallicensing/professions/board-pharmacy",
-    "endorsement_url": "https://www.maine.gov/pfr/professionallicensing/professions/board-pharmacy",
+    "endorsement_url": "https://www.maine.gov/pfr/olcs/ (Licensure by reciprocity is handled within the main online application system by selecting the appropriate option during the application process).",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Maine",
-        "dek": "Maine Pharmacy Technician licensure requires a completed application, payment of fees, and meeting all qualifications as outlined by the Maine Board of Pharmacy."
+        "dek": "Apply online through the Maine Office of Professional and Financial Regulation's Online Licensing System (maine.gov/pfr/olcs). Create an account, select 'Apply for New License', and choose 'Pharmacy Technician' to submit your application."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://www.maine.gov/pfr/professionallicensing/professions/pharmacy/",
     "timeline": "https://www.maine.gov/pfr/professionallicensing/professions/pharmacy/"
+  },
+  "official_links": {
+    "portal_name": "Maine Office of Professional and Financial Regulation's Online Licensing System (OLCS)",
+    "portal_url": "https://www.maine.gov/pfr/olcs/",
+    "registration_steps": "From the login page, click 'Register Now' to create a new account if you don't have one. Once registered and logged in, select 'Apply for New License' and follow the prompts to find and complete the Pharmacy Technician application.",
+    "provider_search": "https://www.maine.gov/pfr/olcs/license_lookup/"
   }
 }

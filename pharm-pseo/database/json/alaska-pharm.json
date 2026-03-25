@@ -21,12 +21,14 @@
   "board": {
     "name": "Alaska Board of Pharmacy",
     "parent_dept": "Division of Corporations, Business and Professional Licensing",
-    "mailing_address": "See board website",
+    "mailing_address": "State of Alaska\nBoard of Pharmacy\nP.O. Box 110806\nJuneau, AK 99811-0806",
     "physical_address": "See board website",
-    "phone": "(907) 465-2550",
+    "phone": "(907) 465-2580",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx"
+    "email": "license@alaska.gov",
+    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx",
+    "contact_url": "https://www.commerce.alaska.gov/web/cbpl/contactus.aspx",
+    "verify_url": "https://www.commerce.alaska.gov/cbp/main/LicenseSearch/Search"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,20 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed Pharmacy Technician License application to the Alaska Board of Pharmacy."
+      "title": "1. Create an Account and Start Application",
+      "description": "Go to the ProfessionalLicense.Alaska.Gov portal (professionallicense.alaska.gov), create a new user account if you don't have one, then select 'Apply for a License' and choose 'Pharmacy Technician - Initial' from the list of professions."
     },
     {
-      "title": "Pay the Required Fee",
-      "description": "Submit the required fee of $100 with your completed application."
+      "title": "2. Complete Application and Pay Fees",
+      "description": "Fill out all sections of the online application form accurately. You will need to pay the non-refundable initial application fee ($50) and the initial license fee ($100) through the portal. The total fee is $150."
     },
     {
-      "title": "Meet Continuing Education Requirements",
-      "description": "Complete the required 20 hours of continuing education every two years to maintain your license."
+      "title": "3. Submit Required Documentation",
+      "description": "Upload or arrange for the submission of official transcripts verifying your high school diploma or GED. Ensure that the Board can verify your current national certification from either the Pharmacy Technician Certification Board (PTCB) or the National Healthcareer Association (NHA)."
+    },
+    {
+      "title": "4. Complete a Criminal Background Check (CBC)",
+      "description": "Follow the instructions provided within the application or by the Board to complete a Criminal Background Check (CBC). This typically involves submitting fingerprints and an authorization form as required by the State of Alaska."
     }
   ],
   "documents": [
@@ -127,7 +133,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx",
-    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx",
+    "endorsement_url": "https://professionallicense.alaska.gov/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +152,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Alaska",
-        "dek": "Alaska Pharmacy Technician licensure requires completing an application, paying a fee, and completing continuing education requirements."
+        "dek": "Apply online through Alaska's ProfessionalLicense.Alaska.Gov portal (professionallicense.alaska.gov). Create an account, search for 'Pharmacy Technician - Initial', and submit your application along with all required documentation and a criminal background check."
       }
     }
   },
@@ -185,5 +191,11 @@
   "board_verification_sources": {
     "fee": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx",
     "timeline": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx"
+  },
+  "official_links": {
+    "portal_name": "ProfessionalLicense.Alaska.Gov",
+    "portal_url": "https://professionallicense.alaska.gov/",
+    "registration_steps": "Navigate to ProfessionalLicense.Alaska.Gov, click 'Register Here' to create an account, then select 'Apply for a License' and search for 'Pharmacy Technician - Initial'.",
+    "provider_search": "https://www.commerce.alaska.gov/cbp/main/LicenseSearch/Search"
   }
 }

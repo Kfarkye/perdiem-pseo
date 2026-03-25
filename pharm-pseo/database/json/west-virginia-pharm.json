@@ -21,12 +21,14 @@
   "board": {
     "name": "West Virginia Board of Pharmacy",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "WV Board of Pharmacy\n2001 Quarrier Street\nCharleston, WV 25305",
     "physical_address": "See board website",
-    "phone": "(304) 558-0558",
+    "phone": "304-558-0558",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.wvbop.com/"
+    "email": "pharmacy.board@wv.gov",
+    "url": "https://www.wvbop.com/",
+    "contact_url": "https://www.wvbp.com/Contact-Us",
+    "verify_url": "https://www.wvbp.us.thentiacloud.net/Portal/Pages/Search"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a complete application for license as a pharmacy technician to the West Virginia Board of Pharmacy."
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you meet the minimum age of 16, possess a high school diploma or its equivalent (or are currently enrolled in a program to obtain one), and have no disqualifying felony convictions related to drugs or public health, nor be a habitual user of dangerous or habit-forming drugs."
     },
     {
-      "title": "Pay the Required Fee",
-      "description": "Submit the required license fee of $100 to the West Virginia Board of Pharmacy."
+      "title": "Create an Online Account",
+      "description": "Access the WV Board of Pharmacy - Online Licensing Portal at wvbp.us.thentiacloud.net. Click the 'Register Now' link in the top right corner to create your new user account, setting up a unique username and password."
     },
     {
-      "title": "Complete Continuing Education",
-      "description": "Complete 5 hours of continuing education every two years to maintain active license."
+      "title": "Start and Complete the Application",
+      "description": "Log in to your newly created account. Navigate to the 'Applications' section and select the 'Initial Pharmacy Technician Registration' application. Carefully complete all required personal, educational, and background information as prompted."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the precise instructions provided within the online application to complete the mandatory criminal background check. This typically involves submitting fingerprints through a state-approved vendor as directed by the Board."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $35.00 directly through the online portal using a credit card (Visa, MasterCard, Discover). This payment is required for the application to be processed."
+    },
+    {
+      "title": "Submit and Monitor Status",
+      "description": "Review all entered information for accuracy, electronically submit your complete application, and regularly check your online account for updates on the processing and approval of your pharmacy technician registration."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.wvbop.com/",
-    "endorsement_url": "https://www.wvbop.com/",
+    "endorsement_url": "https://www.wvbp.com/Licenses-Registrations/Technician/Technician-Registration-by-Transfer-(Endorsement)",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in West Virginia",
-        "dek": "West Virginia Pharmacy Technician licensure requires submitting an application, paying a fee, and completing continuing education."
+        "dek": "Apply online through the West Virginia Board of Pharmacy's Online Licensing Portal (wvbp.us.thentiacloud.net). Create an new account, then locate and complete the 'Initial Pharmacy Technician Registration' application."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://www.wvbop.com/technicians/newapplication.html",
     "timeline": "https://www.wvbop.com/technicians/newapplication.html"
+  },
+  "official_links": {
+    "portal_name": "WV Board of Pharmacy - Online Licensing Portal",
+    "portal_url": "https://wvbp.us.thentiacloud.net/",
+    "registration_steps": "Navigate to the WV Board of Pharmacy - Online Licensing Portal (wvbp.us.thentiacloud.net) and click 'Register Now' to create a new user account. Once registered and logged in, find and select the 'Initial Pharmacy Technician Registration' application.",
+    "provider_search": "https://www.wvbp.us.thentiacloud.net/Portal/Pages/Search"
   }
 }

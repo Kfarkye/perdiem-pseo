@@ -21,12 +21,14 @@
   "board": {
     "name": "Georgia Board of Pharmacy",
     "parent_dept": "Georgia Secretary of State",
-    "mailing_address": "See board website",
+    "mailing_address": "237 Coliseum Drive, Macon, GA 31217-3858",
     "physical_address": "See board website",
-    "phone": "(404) 651-8000",
+    "phone": "(404) 424-9966",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://gbp.georgia.gov"
+    "email": "plbresponse@sos.ga.gov",
+    "url": "https://gbp.georgia.gov",
+    "contact_url": "https://sos.ga.gov/plb/pharmacy",
+    "verify_url": "https://verify.sos.ga.gov/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Basic Requirements",
-      "description": "Applicants must be at least 17 years of age and have a high school diploma or its equivalent."
+      "title": "Review Eligibility Requirements",
+      "description": "Before applying, ensure you meet all requirements set by the Georgia Board of Pharmacy, including being at least 17 years old, having a high school diploma or GED, and not having a disqualifying criminal history. Full details are available on the board's Pharmacy Technician Licensure Information page (sos.ga.gov/page/georgia-board-pharmacy-pharmacy-technician-licensure-information)."
     },
     {
-      "title": "Submit an Application",
-      "description": "Apply for license as a Pharmacy Technician with the Georgia Board of Pharmacy through their online portal and pay the applicable fee."
+      "title": "Create a Georgia Licensing Portal Account",
+      "description": "Navigate to the Georgia Licensing online portal (secure.sos.ga.gov/mylicense). If you are a new user, click 'Register an Account' and follow the instructions to create your personal licensing profile. Existing users can simply log in."
     },
     {
-      "title": "Complete a Criminal Background Check",
-      "description": "Satisfy the criminal background check requirements as determined by the Georgia Board of Pharmacy."
+      "title": "Complete and Submit Online Application",
+      "description": "Once logged into the Georgia Licensing portal, select 'Start a New Application' and choose 'Pharmacy Technician' from the list of professions. Accurately complete all sections of the application form online. Pay the required $100 application fee directly through the portal."
+    },
+    {
+      "title": "Upload Supporting Documentation",
+      "description": "Digitally upload all required supporting documents directly to your online application. This typically includes proof of age (e.g., driver's license, birth certificate) and official documentation of your high school diploma or GED. Ensure all documents are clear and legible."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Arrange for a fingerprint-based criminal background check (CBC) through GEMALTO Cogent. Detailed instructions on how to schedule fingerprinting and transmit results to the Board will be provided after you submit your application or can be found on the board's website under 'Criminal Background Checks'."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log into your Georgia Licensing portal account to check the status of your application. The Board will communicate any requests for additional information or documentation through the portal. Respond promptly to ensure timely processing of your application."
     }
   ],
   "documents": [
@@ -127,7 +141,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://gbp.georgia.gov",
-    "endorsement_url": "https://gbp.georgia.gov",
+    "endorsement_url": "https://sos.ga.gov/page/georgia-board-pharmacy-pharmacy-technician-licensure-information",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Georgia",
-        "dek": "Georgia Pharmacy Technician licensure requires applying to the State Board of Pharmacy, completing a criminal background check, and completing continuing education."
+        "dek": "Apply online through the Georgia Licensing portal (secure.sos.ga.gov/mylicense). Register for an account, select 'Pharmacy Technician' under 'Start a New Application,' and follow the detailed steps."
       }
     }
   },
@@ -185,5 +199,11 @@
   "board_verification_sources": {
     "fee": "https://gbp.georgia.gov/laws-rules-and-policies",
     "timeline": "https://gbp.georgia.gov/laws-rules-and-policies"
+  },
+  "official_links": {
+    "portal_name": "Georgia Licensing",
+    "portal_url": "https://secure.sos.ga.gov/mylicense",
+    "registration_steps": "Navigate to the Georgia Licensing portal, click 'Register an Account' for new users, and follow the prompts to create your professional licensing profile. Once registered, log in to start a new application.",
+    "provider_search": "https://verify.sos.ga.gov/"
   }
 }
