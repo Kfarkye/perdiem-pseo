@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-25",
   "seo": {
     "title": "Hawaii Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Hawaii - compact status, endorsement steps, fees, and processing time.",
@@ -29,11 +29,11 @@
     "url": "https://cca.hawaii.gov/pvl/boards/pharmacy/"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "total_fee": "$65",
+    "fee_breakdown": "Application fee: $40.00, Compliance Resolution Fund fee: $25.00",
+    "renewal_fee": "$65",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Not published by board",
     "license_duration": "2 Years",
     "ce_requirement": "4 hours per renewal cycle"
   },
@@ -109,8 +109,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/",
+  "last_verified_date": "2026-03-25",
+  "board_source_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/application_forms/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -123,11 +123,11 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 130,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 65,
+    "processing_time": "Not published by board",
     "processing_tier": "mid",
-    "board_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/",
-    "endorsement_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/",
+    "board_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/application_forms/",
+    "endorsement_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/application_forms/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -172,5 +172,18 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": false,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": true
+  },
+  "board_verification_sources": {
+    "fee": "https://cca.hawaii.gov/pvl/files/2024/01/PHAR_Tech_InitialInstructions_01.2024.pdf",
+    "timeline": "https://cca.hawaii.gov/pvl/files/2024/01/PHAR_Tech_InitialInstructions_01.2024.pdf"
   }
 }

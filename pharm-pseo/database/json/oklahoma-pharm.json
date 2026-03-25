@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-25",
   "seo": {
     "title": "Oklahoma Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Oklahoma - compact status, endorsement steps, fees, and processing time.",
@@ -29,12 +29,12 @@
     "url": "http://www.pharmacy.ok.gov/"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years",
+    "total_fee": "$60",
+    "fee_breakdown": "Initial Registration Fee: $60",
+    "renewal_fee": "$60",
+    "renewal_cycle": "Every 1 year",
+    "processing_time": "Not published by board",
+    "license_duration": "1 Year",
     "ce_requirement": "10 hours per renewal cycle"
   },
   "license_types": [
@@ -109,8 +109,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "http://www.pharmacy.ok.gov/",
+  "last_verified_date": "2026-03-25",
+  "board_source_url": "https://www.ok.gov/pharmacy/Licensure/Technician/index.html",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -123,11 +123,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 40,
-    "processing_time": "2 to 3 Weeks",
+    "endorsement_fee": 60,
+    "processing_time": "Not published by board",
     "processing_tier": "fast",
-    "board_url": "http://www.pharmacy.ok.gov/",
-    "endorsement_url": "http://www.pharmacy.ok.gov/",
+    "board_url": "https://www.ok.gov/pharmacy/Licensure/Technician/index.html",
+    "endorsement_url": "https://www.ok.gov/pharmacy/Licensure/Technician/index.html",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -172,5 +172,18 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": false,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": true
+  },
+  "board_verification_sources": {
+    "fee": "https://www.ok.gov/pharmacy/Forms_&_Documents/Licensing_Fees.html",
+    "timeline": "https://www.ok.gov/pharmacy/Forms_&_Documents/Licensing_Fees.html"
   }
 }

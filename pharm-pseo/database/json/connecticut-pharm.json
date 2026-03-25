@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-25",
   "seo": {
     "title": "Connecticut Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Connecticut - compact status, endorsement steps, fees, and processing time.",
@@ -30,11 +30,11 @@
   },
   "quick_facts": {
     "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
+    "fee_breakdown": "Initial/Endorsement Application Fee: $100.00",
     "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years",
+    "renewal_cycle": "Annually",
+    "processing_time": "3 to 4 Weeks",
+    "license_duration": "1 Year",
     "ce_requirement": "5 hours per renewal cycle"
   },
   "license_types": [
@@ -109,8 +109,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://portal.ct.gov/DCP/Drug-Control-Division/Commission-of-Pharmacy/The-Commission-of-Pharmacy",
+  "last_verified_date": "2026-03-25",
+  "board_source_url": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -124,10 +124,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "mid",
-    "board_url": "https://portal.ct.gov/DCP/Drug-Control-Division/Commission-of-Pharmacy/The-Commission-of-Pharmacy",
-    "endorsement_url": "https://portal.ct.gov/DCP/Drug-Control-Division/Commission-of-Pharmacy/The-Commission-of-Pharmacy",
+    "board_url": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration",
+    "endorsement_url": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -172,5 +172,18 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": true
+  },
+  "board_verification_sources": {
+    "fee": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration",
+    "timeline": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration"
   }
 }

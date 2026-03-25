@@ -72,7 +72,7 @@
   "faqs": [
     {
       "question": "How much does a Oregon pharmacy technician license cost?",
-      "answer": "Oregon’s pharmacy technician application totals $115: a $70 application fee plus a $45 national fingerprint background check fee. The board’s renewal FAQ lists a $104 renewal total before late fees."
+      "answer": "Oregon\u2019s pharmacy technician application totals $115: a $70 application fee plus a $45 national fingerprint background check fee. The board\u2019s renewal FAQ lists a $104 renewal total before late fees."
     },
     {
       "question": "Is national certification required?",
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 115,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Approximately 4 to 6 weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx",
     "endorsement_url": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx",

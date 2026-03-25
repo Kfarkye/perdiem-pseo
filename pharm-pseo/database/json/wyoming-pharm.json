@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-25",
   "seo": {
     "title": "Wyoming Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Wyoming - compact status, endorsement steps, fees, and processing time.",
@@ -29,11 +29,11 @@
     "url": "https://pharmacyboard.wyo.gov"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
+    "total_fee": "$50",
+    "fee_breakdown": "Initial Pharmacy Technician Registration Fee: $50.00",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "12 hours per renewal cycle"
   },
@@ -109,8 +109,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://pharmacyboard.wyo.gov",
+  "last_verified_date": "2026-03-25",
+  "board_source_url": "https://pharmacy.wyo.gov/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -123,11 +123,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 15,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "mid",
-    "board_url": "https://pharmacyboard.wyo.gov",
-    "endorsement_url": "https://pharmacyboard.wyo.gov",
+    "board_url": "https://pharmacy.wyo.gov/",
+    "endorsement_url": "https://pharmacy.wyo.gov/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -172,5 +172,18 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": true
+  },
+  "board_verification_sources": {
+    "fee": "https://pharmacy.wyo.gov/assets/docs/technician/Pharmacy%20Technician%20Application%20Packet%2007.2023.pdf",
+    "timeline": "https://pharmacy.wyo.gov/assets/docs/technician/Pharmacy%20Technician%20Application%20Packet%2007.2023.pdf"
   }
 }

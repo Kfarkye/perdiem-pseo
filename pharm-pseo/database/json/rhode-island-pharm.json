@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-25",
   "seo": {
     "title": "Rhode Island Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Rhode Island - compact status, endorsement steps, fees, and processing time.",
@@ -29,11 +29,11 @@
     "url": "https://health.ri.gov/licenses/"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "total_fee": "$25",
+    "fee_breakdown": "Initial Application Fee: $25",
+    "renewal_fee": "$25",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Not published by board",
     "license_duration": "2 Years",
     "ce_requirement": "20 hours every two years"
   },
@@ -109,8 +109,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://health.ri.gov/licenses/",
+  "last_verified_date": "2026-03-25",
+  "board_source_url": "https://health.ri.gov/licensing/detail.php?id=233",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -124,10 +124,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 25,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Not published by board",
     "processing_tier": "mid",
-    "board_url": "https://health.ri.gov/licenses/",
-    "endorsement_url": "https://health.ri.gov/licenses/",
+    "board_url": "https://health.ri.gov/licensing/detail.php?id=233",
+    "endorsement_url": "https://health.ri.gov/licensing/detail.php?id=233",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -172,5 +172,18 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": false,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": true
+  },
+  "board_verification_sources": {
+    "fee": "https://health.ri.gov/licensing/detail.php?id=233",
+    "timeline": "https://health.ri.gov/licensing/detail.php?id=233"
   }
 }

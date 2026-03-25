@@ -12,7 +12,7 @@
   },
   "profession_name": "Pharmacy Technician",
   "credential_nomenclature": "Certified Pharmacy Technician (CPhT)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-25",
   "seo": {
     "title": "District of Columbia Pharmacy Technician License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to District of Columbia - compact status, endorsement steps, fees, and processing time.",
@@ -29,12 +29,12 @@
     "url": "https://dchealth.dc.gov/bop"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "total_fee": "$200",
+    "fee_breakdown": "Application for Licensure by Endorsement/Reciprocity: $200",
+    "renewal_fee": "$200",
+    "renewal_cycle": "Every 2 years (expires Dec 31 of odd-numbered years)",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "Up to 2 Years (expires Dec 31 of odd-numbered years)"
   },
   "license_types": [
     {
@@ -108,8 +108,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://dchealth.dc.gov/bop",
+  "last_verified_date": "2026-03-25",
+  "board_source_url": "https://dchealth.dc.gov/node/1523456",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -122,11 +122,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
-    "board_url": "https://dchealth.dc.gov/bop",
-    "endorsement_url": "https://dchealth.dc.gov/bop",
+    "board_url": "https://dchealth.dc.gov/node/1523456",
+    "endorsement_url": "https://dchealth.dc.gov/node/1523456",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -171,5 +171,18 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": false,
+    "jurisprudence_fee_verified": true,
+    "total_estimated_cost_verified": true
+  },
+  "board_verification_sources": {
+    "fee": "https://dchealth.dc.gov/node/1523456",
+    "timeline": "https://dchealth.dc.gov/node/1523456"
   }
 }
