@@ -151,9 +151,9 @@
     "renewal": "https://www.pharmacy.ohio.gov/documents/pubs/messages/2025-09-12%20technicians%20-%20fee%20change%20notice.pdf"
   },
   "credential_type": {
-    "official_term": "license",
-    "page_title_term": "License",
-    "renewal_term": "license renewal",
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
     "transfer_term": "transfer"
   },
   "variants": {

@@ -151,10 +151,10 @@
     "renewal": "https://www.pharmacy.texas.gov/licensees/renew-pharm-tech.asp"
   },
   "credential_type": {
-    "official_term": "license",
-    "page_title_term": "License",
-    "renewal_term": "license renewal",
-    "transfer_term": "transfer"
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
   },
   "variants": {
     "new_applicant": {
