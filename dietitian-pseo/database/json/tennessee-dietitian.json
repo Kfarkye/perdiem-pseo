@@ -21,18 +21,20 @@
   "board": {
     "name": "Board of Dietitian/Nutritionist Examiners",
     "parent_dept": "Tennessee Department of Health",
-    "mailing_address": "665 Mainstream Drive<br>Nashville, TN 37243",
+    "mailing_address": "Tennessee Department of Health\nHealth Related Boards\n665 Mainstream Drive\nNashville, TN 37243",
     "physical_address": "665 Mainstream Drive<br>Nashville, TN 37243",
-    "phone": "(615) 532-3202",
+    "phone": "(615) 532-5166",
     "fax": "",
-    "email": "",
-    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html"
+    "email": "Ask.Health@tn.gov",
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
+    "contact_url": "https://www.tn.gov/health/health-professionals/health-related-boards/dn-board/contact-us.html",
+    "verify_url": "https://apps.health.tn.gov/LicensureVerification/"
   },
   "quick_facts": {
     "total_fee": "$140",
     "fee_breakdown": "$140 application fee (includes state regulatory fee)",
-    "renewal_fee": "$90",
-    "renewal_cycle": "Every 2 years (by birth month) — no CE required for state renewal",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians"
@@ -49,16 +51,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Supervised Practice",
-      "description": "You must earn a bachelor's degree or higher and complete a supervised practice program approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Register an Account with the Licensure and Regulatory System",
+      "description": "Navigate to the Licensure and Regulatory System portal at apps.health.tn.gov/Licensure/ and click 'Register a New Account' to create a user ID and password."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete and Submit the Online Application",
+      "description": "Log in to the Licensure and Regulatory System, select the Dietitian/Nutritionist application, complete all required sections, and submit it electronically."
     },
     {
-      "title": "Apply for a Tennessee License",
-      "description": "Submit an application and required documentation to the Tennessee Board of Dietitian/Nutritionist Examiners."
+      "title": "Submit Required Documentation",
+      "description": "Upload supporting documents through the Licensure and Regulatory System, including official transcripts verifying a qualifying degree, documentation of a minimum of 900 hours of supervised practice experience, and verification of successful completion of the Commission on Dietetic Registration (CDR) examination."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Remit the required initial application fee of $100.00 through the online Licensure and Regulatory System."
+    },
+    {
+      "title": "Await Board Review and Licensure",
+      "description": "The Tennessee Board of Dietitian/Nutritionist Examiners will review the submitted application and all accompanying documentation. Upon approval, the license will be issued."
     }
   ],
   "documents": [
@@ -92,7 +102,7 @@
     },
     {
       "question": "Does Tennessee require continuing education for dietitians?",
-      "answer": "Tennessee does not mandate state-level continuing education for license renewal. However, to maintain your CDR registration — which is required for state licensure — you must complete 75 continuing professional education units every five years."
+      "answer": "Tennessee does not mandate state-level continuing education for license renewal. However, to maintain your CDR registration \u2014 which is required for state licensure \u2014 you must complete 75 continuing professional education units every five years."
     },
     {
       "question": "Can I practice in Tennessee while waiting for my license?",
@@ -143,11 +153,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 140,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
-    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
+    "endorsement_url": "https://www.tn.gov/health/health-professionals/health-related-boards/dn-board/licensing.html",
     "notes": "Tennessee does not offer formal licensure by endorsement or reciprocity. Out-of-state dietitians must apply for a new Tennessee license through the standard application process, which requires current CDR registration, a complete application, and a background check. Holding an active CDR credential satisfies the education and examination requirements.",
     "requires_psv": true
   },
@@ -163,7 +173,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Tennessee",
-        "dek": "Tennessee Dietitian licenses require a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+        "dek": "To apply for a Dietitian/Nutritionist license in Tennessee, applicants must submit their application and required documentation through the state's online Licensure and Regulatory System."
       }
     }
   },
@@ -189,5 +199,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Licensure and Regulatory System",
+    "portal_url": "https://apps.health.tn.gov/Licensure/",
+    "registration_steps": "Navigate to the Licensure and Regulatory System portal at apps.health.tn.gov/Licensure/, click 'Register a New Account', and follow the prompts to create a user ID and password.",
+    "provider_search": "https://apps.health.tn.gov/LicensureVerification/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Dietetics and Nutrition Practice",
     "parent_dept": "Minnesota Department of Health",
-    "mailing_address": "2829 University Avenue SE, Suite 440<br>Minneapolis, MN 55414",
+    "mailing_address": "Minnesota Board of Dietetics and Nutrition Practice, 335 Randolph Avenue, Suite 170, St. Paul, MN 55102",
     "physical_address": "2829 University Avenue SE, Suite 440<br>Minneapolis, MN 55414",
-    "phone": "(612) 617-2175",
+    "phone": "651-201-2747",
     "fax": "",
-    "email": "",
-    "url": "https://mn.gov/boards/dietetics-and-nutrition/"
+    "email": "board.dietetics@state.mn.us",
+    "url": "https://mn.gov/boards/dietetics-and-nutrition/",
+    "contact_url": "https://mn.gov/boards/dietetics-nutrition/contact-us/",
+    "verify_url": "https://mn.gov/boards/dietetics-nutrition/license-lookup/"
   },
   "quick_facts": {
     "total_fee": "$282",
     "fee_breakdown": "$100 application + $150 initial license + $32 background check",
-    "renewal_fee": "$75",
-    "renewal_cycle": "Annual (by Nov 30) + 45 CE hours per 3 years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "10 to 14 Weeks",
     "license_duration": "1 Year (expires Nov 30)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "45 hours per 3 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Earn a bachelor's degree from a regionally accredited college or university with a major in human nutrition, dietetics, food and nutrition, or equivalent, meeting the Accreditation Council for Education in Nutrition and Dietetics (ACEND) requirements."
+      "title": "Complete Online Application",
+      "description": "Log in to the Minnesota Board of Dietetics and Nutrition Practice Online Application Portal and complete the online application for either a Licensed Dietitian (LD) or Licensed Nutritionist (LN) license."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete a supervised practice program accredited by ACEND or approved by the Board of Dietetics and Nutrition Practice."
+      "title": "Submit Required Documentation",
+      "description": "Arrange for official transcripts, verification of supervised practice, and verification of passing the Commission on Dietetic Registration (CDR) examination to be sent directly to the Board."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the specific instructions provided within the Minnesota Board of Dietetics and Nutrition Practice Online Application Portal for completing the required criminal background check."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable initial application fee of $100 through the Minnesota Board of Dietetics and Nutrition Practice Online Application Portal."
+    },
+    {
+      "title": "Board Review and Notification",
+      "description": "The Minnesota Board of Dietetics and Nutrition Practice will review your complete application and supporting documents at their regularly scheduled meetings and notify you of your licensure status."
     }
   ],
   "documents": [
@@ -89,7 +99,7 @@
     },
     {
       "question": "What are the continuing education requirements for Minnesota dietitians?",
-      "answer": "Minnesota requires 45 continuing education units (CEUs) every three years for state license renewal. Additionally, CDR registration requires 75 CPEUs every five years — many activities satisfy both requirements."
+      "answer": "Minnesota requires 45 continuing education units (CEUs) every three years for state license renewal. Additionally, CDR registration requires 75 CPEUs every five years \u2014 many activities satisfy both requirements."
     },
     {
       "question": "Does Minnesota require a notarized CDR card?",
@@ -140,11 +150,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 282,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "10 to 14 Weeks",
     "processing_tier": "fast",
     "board_url": "https://mn.gov/boards/dietetics-and-nutrition/",
-    "endorsement_url": "https://mn.gov/boards/dietetics-and-nutrition/",
+    "endorsement_url": "https://mn.gov/boards/dietetics-nutrition/licensure/applying-for-a-license.jsp",
     "notes": "Minnesota does not have a formal reciprocity agreement with other states. Out-of-state dietitians must apply through the standard online application process. Holding current CDR registration satisfies the education and examination requirements. All applicants must complete the Minnesota background check regardless of prior state licensure.",
     "requires_psv": true
   },
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Minnesota",
-        "dek": "Minnesota Dietitian License requires a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+        "dek": "To apply for a Dietitian or Nutritionist license in Minnesota, you must use the Minnesota Board of Dietetics and Nutrition Practice Online Application Portal to submit your application and supporting documents."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Minnesota Board of Dietetics and Nutrition Practice Online Application Portal",
+    "portal_url": "https://mblc.mn.gov/",
+    "registration_steps": "Navigate to the Minnesota Board of Dietetics and Nutrition Practice Online Application Portal (mblc.mn.gov), click 'Create an Account,' and follow the prompts to register with your email address and create a password.",
+    "provider_search": "https://mn.gov/boards/dietetics-nutrition/license-lookup/"
   }
 }

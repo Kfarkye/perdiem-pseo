@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Audiology and Speech-Language Pathology",
     "parent_dept": "Virginia Department of Health Professions (DHP)",
-    "mailing_address": "9960 Mayland Dr., Suite 300, Henrico, VA 23233-1463",
+    "mailing_address": "Virginia Board of Audiology and Speech-Language Pathology, Perimeter Center, 9960 Mayland Drive, Suite 300, Henrico, VA 23233-1463",
     "physical_address": "9960 Mayland Dr., Suite 300, Henrico, VA 23233",
-    "phone": "(804) 367-4600",
+    "phone": "(804) 367-4654",
     "fax": "(804) 527-4413",
-    "email": "mailto:audboard@dhp.virginia.gov",
-    "url": "https://www.dhp.virginia.gov/aud/"
+    "email": "audslp@dhp.virginia.gov",
+    "url": "https://www.dhp.virginia.gov/aud/",
+    "contact_url": "https://www.dhp.virginia.gov/aud/aud_contact.htm",
+    "verify_url": "https://www.dhp.virginia.gov/LicenseLookup/"
   },
   "quick_facts": {
     "total_fee": "$130",
     "fee_breakdown": "$130 application and license fee",
-    "renewal_fee": "$75",
-    "renewal_cycle": "Every 2 years (June 30)",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$90",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a Master's Degree",
-      "description": "Obtain a master's degree or doctoral degree in speech-language pathology from an accredited educational institution."
+      "title": "Create Account and Submit Online Application",
+      "description": "Register on the Virginia Department of Health Professions Online Services portal and complete the Speech-Language Pathologist licensure application. Pay the non-refundable application fee of $130."
     },
     {
-      "title": "Complete Supervised Clinical Experience",
-      "description": "Complete a supervised clinical practicum consistent with requirements found in 18VAC30-20-100 of the Virginia Administrative Code."
+      "title": "Submit Official Transcripts",
+      "description": "Have official transcripts, verifying completion of a master's or doctoral degree in Speech-Language Pathology from an accredited program, sent directly from your academic institution to the Board office."
     },
     {
-      "title": "Pass the National Examination and Apply",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit a completed application with all required documentation and fees to the Virginia Board of Audiology and Speech-Language Pathology."
+      "title": "Verify Supervised Post-Graduate Professional Experience",
+      "description": "Ensure your supervisor submits the 'Verification of Supervised Post-Graduate Professional Experience' form directly to the Board, documenting successful completion of your clinical fellowship (CFY) or equivalent."
+    },
+    {
+      "title": "Pass National Examination (Praxis)",
+      "description": "Arrange for official scores from the Praxis exam in Speech-Language Pathology (ETS code R7119 for Virginia) to be sent directly from Educational Testing Service (ETS) to the Board."
+    },
+    {
+      "title": "Pass Virginia State Jurisprudence Examination",
+      "description": "Complete the online open-book Virginia State Jurisprudence Examination. Instructions for accessing and completing this exam are available on the Board's website or within the online application."
     }
   ],
   "documents": [
@@ -142,10 +152,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 130,
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.dhp.virginia.gov/aud/",
-    "endorsement_url": "https://www.dhp.virginia.gov/aud/",
+    "endorsement_url": "https://www.dhp.virginia.gov/aud/aud_forms.htm",
     "notes": "Virginia is a member of the ASLP Interstate Compact."
   },
   "slug": "virginia-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Virginia",
-        "dek": "Virginia Speech-Language Pathology licenses require a master's degree, supervised clinical experience, and passing the national examination."
+        "dek": "To apply for a Speech-Language Pathologist license in Virginia, use the Virginia Department of Health Professions Online Services portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Virginia Department of Health Professions Online Services",
+    "portal_url": "https://www.dhp.virginia.gov/LicenseLookup/Login.aspx?board=2",
+    "registration_steps": "Navigate to the portal URL, click 'New Registrant? Create an Account', and follow the prompts to set up your account before starting a new application.",
+    "provider_search": "https://www.dhp.virginia.gov/LicenseLookup/"
   }
 }

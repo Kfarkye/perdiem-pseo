@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Registration of Speech-Language Pathology and Audiology",
     "parent_dept": "Massachusetts Division of Professional Licensure",
-    "mailing_address": "1000 Washington St., Suite 710, Boston, MA 02118",
+    "mailing_address": "1000 Washington Street, Suite 710, Boston, MA 02118-6100",
     "physical_address": "1000 Washington St., Suite 710, Boston, MA 02118",
     "phone": "(617) 701-8600",
     "fax": "(617) 701-8652",
-    "email": "mailto:dpl.boards@mass.gov",
-    "url": "https://www.mass.gov/orgs/board-of-registration-of-speech-language-pathology-and-audiology"
+    "email": "customerservice@mass.gov",
+    "url": "https://www.mass.gov/orgs/board-of-registration-of-speech-language-pathology-and-audiology",
+    "contact_url": "https://www.mass.gov/orgs/board-of-speech-language-pathology-and-audiology#contact",
+    "verify_url": "https://checkalicense.mass.gov/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Doctoral Degree",
-      "description": "Earn a doctoral degree in audiology from an accredited educational institution."
+      "title": "Register and Apply Online",
+      "description": "Create an account on the Massachusetts ePLACE online licensing portal (eplace.mass.gov), then log in and initiate a 'New License Application' for an Audiologist license."
     },
     {
-      "title": "Pass the National Exam",
-      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series."
+      "title": "Complete Application and Pay Fee",
+      "description": "Fill out all required sections of the Audiologist license application within ePLACE and pay the required application fee through the portal."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application, including all required documentation and fees, to the Massachusetts Board of Registration of Speech-Language Pathology and Audiology."
+      "title": "Submit Academic Transcripts",
+      "description": "Arrange for official academic transcripts verifying your master's degree or its equivalent in audiology from an accredited academic institution to be submitted to the Board, typically by uploading them to ePLACE or having your institution send them electronically."
+    },
+    {
+      "title": "Provide Verification of Experience",
+      "description": "Upload documentation verifying satisfactory completion of at least 400 hours of supervised clinical practicum and a minimum of 9 months (1260 hours) of supervised professional experience, often referred to as the Clinical Fellowship Year (CFY), to your ePLACE application."
+    },
+    {
+      "title": "Submit Exam Scores",
+      "description": "Provide official documentation of a passing score on the National Praxis Examination in Audiology, usually by submitting the score report directly to the Board through ePLACE."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application within your ePLACE account for any requests for additional information or updates from the Board of Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 178,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.mass.gov/orgs/board-of-registration-of-speech-language-pathology-and-audiology",
-    "endorsement_url": "https://www.mass.gov/orgs/board-of-registration-of-speech-language-pathology-and-audiology",
+    "endorsement_url": "https://www.mass.gov/how-to/apply-for-an-audiology-license-by-reciprocity",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "massachusetts-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Massachusetts",
-        "dek": "Massachusetts Audiologist License requires a doctoral degree in audiology, passing the national audiology exam, and completion of a supervised professional experience."
+        "dek": "To apply for an Audiology license in Massachusetts, you must submit your application and all supporting documentation through the state's online licensing portal, ePLACE."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ePLACE",
+    "portal_url": "https://eplace.mass.gov/",
+    "registration_steps": "1. Go to the ePLACE portal (eplace.mass.gov) and click 'New Users: Register for an Account'.\n2. Complete the registration form with your personal details, email, and create a password.\n3. Verify your email address by clicking the link sent to your inbox.\n4. Log in to ePLACE using your new credentials and select 'New License Application', then choose 'Audiologist'.",
+    "provider_search": "https://checkalicense.mass.gov/"
   }
 }

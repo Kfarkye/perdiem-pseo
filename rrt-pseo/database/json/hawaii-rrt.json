@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity hawaii, how to transfer respiratory therapist license to hawaii, respiratory therapist compact hawaii, hawaii respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Hawaii PVL — Respiratory Therapy",
+    "name": "Hawaii PVL \u2014 Respiratory Therapy",
     "parent_dept": "Hawaii Department of Health (DOH) Office of Health Care Assurance",
-    "mailing_address": "See board website",
+    "mailing_address": "Department of Commerce and Consumer Affairs, Professional and Vocational Licensing Division, P. O. Box 3469, Honolulu, Hawaii 96801",
     "physical_address": "See board website",
-    "phone": "(808) 586-2704",
+    "phone": "(808) 586-3000",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "http://cca.hawaii.gov/pvl/programs/respiratory/"
+    "url": "http://cca.hawaii.gov/pvl/programs/respiratory/",
+    "contact_url": "https://cca.hawaii.gov/pvl/boards/medical/",
+    "verify_url": "https://pvl.ehawaii.gov/pvlsearch/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "8 to 12 Weeks",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a Respiratory Care Program",
-      "description": "Graduate from a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create MyPVL Account and Start Application",
+      "description": "Navigate to the MyPVL portal (https://pvl.ehawaii.gov/mypvl/), create an account, log in, and select 'Apply for a License' for Respiratory Therapist."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully pass the National Board for Respiratory Care (NBRC) examination."
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Fill out all required sections of the online application form within MyPVL and submit the non-refundable application and initial license fees."
     },
     {
-      "title": "Apply for a Hawaii Respiratory Therapist License",
-      "description": "Submit a completed application, required documentation, and fees to the Hawaii Board of Respiratory Therapy."
+      "title": "Arrange for NBRC Verification",
+      "description": "Request the National Board for Respiratory Care (NBRC) to directly send verification of your RRT credential to the Hawaii Board of Medical Examiners."
+    },
+    {
+      "title": "Complete Criminal History Record Check (CHRC)",
+      "description": "Follow the instructions provided by the Board (available on the Forms page) to complete the required fingerprint-based criminal history record check."
+    },
+    {
+      "title": "Submit All Supporting Documents",
+      "description": "Ensure all other required documents, such as official transcripts and any other forms specified by the Board, are submitted either via MyPVL or mail."
+    },
+    {
+      "title": "Board Review and Licensure",
+      "description": "The Board of Medical Examiners will review your complete application and supporting documents. Upon approval, your license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 270,
-    "processing_time": "9 to 12 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "http://cca.hawaii.gov/pvl/programs/respiratory/",
-    "endorsement_url": "http://cca.hawaii.gov/pvl/programs/respiratory/",
+    "endorsement_url": "https://cca.hawaii.gov/pvl/boards/medical/forms/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Hawaii",
-        "dek": "Hawaii Respiratory Therapist License requires graduation from an accredited respiratory care program, passing the NBRC examination, and a completed application."
+        "dek": "To apply for a Respiratory Therapist license in Hawaii, navigate to the MyPVL online portal to create an account and begin your application."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyPVL",
+    "portal_url": "https://pvl.ehawaii.gov/mypvl/",
+    "registration_steps": "1. Navigate to the MyPVL portal at pvl.ehawaii.gov/mypvl/. 2. Click 'Create an Account' and follow the prompts to register with a valid email address and create a password. 3. Once your account is created and verified, log in to access the application dashboard. 4. Select 'Apply for a License' and choose 'Respiratory Therapist' from the available professions.",
+    "provider_search": "https://pvl.ehawaii.gov/pvlsearch/"
   }
 }

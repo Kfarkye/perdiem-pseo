@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "New Jersey Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in New Jersey — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in New Jersey \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license new jersey, dental assistant certification new jersey, RDA new jersey, DANB CDA new jersey, dental assistant radiography new jersey"
   },
   "board": {
     "name": "New Jersey State Board of Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "New Jersey State Board of Dentistry\n124 Halsey Street\nP.O. Box 45059\nNewark, New Jersey 07101",
     "physical_address": "See board website",
     "phone": "(973) 504-6405",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.njconsumeraffairs.gov/den/"
+    "url": "https://www.njconsumeraffairs.gov/den/",
+    "contact_url": "https://www.njconsumeraffairs.gov/den/Pages/contact-us.aspx",
+    "verify_url": "https://newjersey.mylicense.com/verification/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 application/registration fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "1 to 3 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -44,16 +46,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a CODA-accredited Program",
-      "description": "Graduate from a dental assisting program accredited by the Commission on Dental Accreditation (CODA)."
+      "title": "Access the MyLicense Portal",
+      "description": "Navigate to the MyLicense Online Application System for the New Jersey State Board of Dentistry."
     },
     {
-      "title": "Complete a Radiology Course",
-      "description": "Successfully complete a Board-approved course in dental radiology."
+      "title": "Create or Log In",
+      "description": "If you are a new user, create an account using the 'Register a New User' option. Existing users should log in with their credentials."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application to the New Jersey State Board of Dentistry and pay the required fee."
+      "title": "Initiate Application",
+      "description": "Select 'Board of Dentistry' and then 'Dental Assistant Radiologic Technologist (DRT)' from the application options to begin your online registration."
+    },
+    {
+      "title": "Complete Application & Upload Documents",
+      "description": "Fill out all required sections of the application form and upload necessary supporting documentation, such as proof of qualifications (e.g., DANB certifications, CODA-accredited program completion, CPR card)."
+    },
+    {
+      "title": "Pay Fees",
+      "description": "Submit the required application fee ($100) and initial registration fee ($75) via the MyLicense portal to complete your submission."
+    },
+    {
+      "title": "Monitor Status",
+      "description": "Regularly check the MyLicense portal for updates on your application status and respond promptly to any requests for additional information from the Board."
     }
   ],
   "documents": [
@@ -123,10 +137,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 50,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "1 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.njconsumeraffairs.gov/den/",
-    "endorsement_url": "https://www.njconsumeraffairs.gov/den/",
+    "endorsement_url": "https://www.njconsumeraffairs.gov/den/Pages/da-registration.aspx",
     "notes": "Dental assistants can apply for Registered Dental Assistant through the New Jersey State Board of Dentistry by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -145,7 +159,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in New Jersey",
-        "dek": "New Jersey Dental Assistant registration requires graduating from a CODA-accredited dental assisting program, completing a Board-approved course in radiology, and submitting an application."
+        "dek": "To register as a Dental Radiologic Technologist (DRT), a specific category of Dental Assistant, in New Jersey, applicants must utilize the MyLicense Online Application System provided by the New Jersey State Board of Dentistry."
       }
     }
   },
@@ -171,5 +185,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense Online Application System",
+    "portal_url": "https://newjersey.mylicense.com/boardsandcommissions/",
+    "registration_steps": "To create an account, navigate to the MyLicense portal and click 'Apply for a New License'. Follow the prompts to select 'Board of Dentistry' and 'Dental Assistant Radiologic Technologist (DRT)', then click 'Register a New User' to set up your account credentials before proceeding with the application.",
+    "provider_search": "https://newjersey.mylicense.com/verification/"
   }
 }

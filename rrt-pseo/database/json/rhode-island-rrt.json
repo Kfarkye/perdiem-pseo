@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity rhode island, how to transfer respiratory therapist license to rhode island, respiratory therapist compact rhode island, rhode island respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Rhode Island DOH — RT Licensure",
+    "name": "Rhode Island DOH \u2014 RT Licensure",
     "parent_dept": "Rhode Island Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "3 Capitol Hill, Providence, RI 02908",
     "physical_address": "See board website",
     "phone": "(401) 222-2828",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://health.ri.gov/licenses/"
+    "email": "RIDOH.dohprofreg@health.ri.gov",
+    "url": "https://health.ri.gov/licenses/",
+    "contact_url": "https://health.ri.gov/licensing/",
+    "verify_url": "https://health.ri.gov/licensing/profile-search/"
   },
   "quick_facts": {
     "total_fee": "$60",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 contact hours of continuing education every two years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Approved Program",
-      "description": "Complete a respiratory therapy education program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create Account and Log In",
+      "description": "Register for a new user account on the Rhode Island Department of Health Online Licensing Portal (prc.health.ri.gov/PRC/login.aspx) and log in to begin."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Start New Application",
+      "description": "Select 'Respiratory Care Practitioner' from the list of available application types within the Rhode Island Department of Health Online Licensing Portal and complete all required sections of the application."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, official transcripts, NBRC verification, and the required fee to the Rhode Island Department of Health."
+      "title": "Submit Required Documents",
+      "description": "Upload all necessary supporting documentation, including proof of your NBRC Registered Respiratory Therapist (RRT) credential, official transcripts from your respiratory care program, and any other specified forms directly to the online portal."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee securely through the Rhode Island Department of Health Online Licensing Portal using a credit or debit card."
+    },
+    {
+      "title": "Request Official Verifications",
+      "description": "Arrange for official verification of your NBRC RRT credential to be sent directly from the NBRC to the Rhode Island Department of Health."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application within the Rhode Island Department of Health Online Licensing Portal and respond promptly to any requests for additional information or clarification."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 60,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.ri.gov/licenses/",
-    "endorsement_url": "https://health.ri.gov/licenses/",
+    "endorsement_url": "https://health.ri.gov/licensing/detail.php?id=233",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Rhode Island",
-        "dek": "Rhode Island Respiratory Therapist license requires graduation from an approved educational program, passing the NBRC examination, and paying the required fee."
+        "dek": "To apply for a Respiratory Care Practitioner license in Rhode Island, you must submit your application electronically through the Rhode Island Department of Health Online Licensing Portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Rhode Island Department of Health Online Licensing Portal",
+    "portal_url": "https://prc.health.ri.gov/PRC/login.aspx",
+    "registration_steps": "1. Navigate to the Rhode Island Department of Health Online Licensing Portal.\n2. Click 'Register Here' to create a new user account.\n3. Complete the registration form by providing personal details, creating a username, and setting a password.\n4. Verify your email address if prompted.\n5. Log in with your newly created credentials to access the application dashboard.",
+    "provider_search": "https://health.ri.gov/licensing/profile-search/"
   }
 }

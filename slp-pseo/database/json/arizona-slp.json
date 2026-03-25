@@ -19,21 +19,23 @@
     "keywords": "speech-language pathologist license reciprocity arizona, how to transfer speech-language pathologist license to arizona, speech-language pathologist compact arizona, arizona speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Department of Health Services — Speech-Language Pathology",
+    "name": "Department of Health Services \u2014 Speech-Language Pathology",
     "parent_dept": "Arizona Department of Health Services (ADHS)",
-    "mailing_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
+    "mailing_address": "Arizona Department of Health Services, Board of Examiners for Speech-Language Pathology & Audiology, 150 North 18th Avenue, Suite 410, Phoenix, AZ 85007",
     "physical_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
-    "phone": "(602) 364-2079",
+    "phone": "602-364-0777",
     "fax": "(602) 364-4769",
-    "email": "mailto:speechpathology@azdhs.gov",
-    "url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/"
+    "email": "SLPA@azdhs.gov",
+    "url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
+    "contact_url": "https://www.azdhs.gov/licensing/special-licensing/speech-language-audiology/contact-us/index.php",
+    "verify_url": "https://www.azdhs.gov/licensing/special-licensing/search-licensed-professionals/index.php"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": "$100 application + $50 license fee",
-    "renewal_fee": "$100",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "8 to 9 Weeks",
     "license_duration": "2 years",
     "exam_name": "National Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -50,16 +52,20 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Obtain a master's degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA)."
+      "title": "Create Account and Start Application in ADHS Licensing Portal",
+      "description": "Register for an account on the ADHS Licensing Portal and begin the online application for a Speech-Language Pathologist license, providing all required information."
     },
     {
-      "title": "Complete a Clinical Fellowship",
-      "description": "Complete a supervised clinical fellowship of at least 1260 hours within 36 months under the guidance of a licensed speech-language pathologist."
+      "title": "Submit Required Documentation and Fingerprint Background Check",
+      "description": "Complete the online application, upload all necessary supporting documents (such as a professional resume), and follow the instructions within the ADHS Licensing Portal to complete your fingerprint background check for state and federal clearance."
     },
     {
-      "title": "Pass the National Examination and Apply",
-      "description": "Pass the National Examination in Speech-Language Pathology and submit a completed application, official transcripts, clinical fellowship report, and required fees to the Arizona Department of Health Services."
+      "title": "Arrange for Official Transcripts and Praxis Scores",
+      "description": "Request official graduate degree transcripts, demonstrating completion of a Council on Academic Accreditation (CAA) accredited program, from your university and official Praxis Exam scores (passing score of 162 for code 5003 or 5331) from ETS to be sent directly to the Arizona Board of Examiners."
+    },
+    {
+      "title": "Submit Verification of Supervised Professional Experience",
+      "description": "Ensure that your supervised professional experience (Clinical Fellowship) documentation, including the Clinical Fellowship Report and Rating Form, verifying a minimum of 36 weeks and 375 hours of supervised experience, is submitted to the Board. This form is typically completed by your supervisor."
     }
   ],
   "documents": [
@@ -142,10 +148,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 150,
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "8 to 9 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
-    "endorsement_url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
+    "endorsement_url": "https://www.azdhs.gov/licensing/special-licensing/speech-language-audiology/licensure-information/licensure-by-endorsement/index.php",
     "notes": "Arizona is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Arizona through a compact privilege. Traditional endorsement pathways are also available for non-compact applicants."
   },
   "slug": "arizona-slp",
@@ -160,7 +166,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Arizona",
-        "dek": "Arizona Speech-Language Pathology license requires a master's degree, completion of a clinical fellowship, and passing the national examination."
+        "dek": "To apply for a Speech-Language Pathologist license in Arizona, you must submit your application through the ADHS Licensing Portal."
       }
     }
   },
@@ -186,5 +192,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ADHS Licensing Portal",
+    "portal_url": "https://licensing.azdhs.gov/",
+    "registration_steps": "First-time applicants must create an account by clicking 'Register' on the ADHS Licensing Portal homepage before starting their application.",
+    "provider_search": "https://www.azdhs.gov/licensing/special-licensing/search-licensed-professionals/index.php"
   }
 }

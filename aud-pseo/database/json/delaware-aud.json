@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech/Language Pathologists, Audiologists and Hearing Aid Dispensers",
     "parent_dept": "Delaware Division of Professional Regulation",
-    "mailing_address": "861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
+    "mailing_address": "Cannon Building, 861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
     "physical_address": "861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
     "phone": "(302) 744-4500",
     "fax": "(302) 739-2711",
-    "email": "mailto:customerservice.dpr@delaware.gov",
-    "url": "https://dpr.delaware.gov/boards/speechpath/"
+    "email": "customerservice.dpr@delaware.gov",
+    "url": "https://dpr.delaware.gov/boards/speechpath/",
+    "contact_url": "https://dpr.delaware.gov/contact-us/",
+    "verify_url": "https://dpr.delaware.gov/licenselookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$105",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 5 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination",
     "ce_requirement": "20 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Obtain a doctoral degree in audiology from an accredited educational institution."
+      "title": "Register for a DELPROS Account",
+      "description": "Go to the DELPROS online portal, select 'Register a new User Account', and follow the prompts to create your professional profile and log in."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Successfully complete the Audiology Examination."
+      "title": "Complete the Online Application",
+      "description": "Log into your DELPROS account, select 'Apply for a New License', choose 'Audiologist' from the list, and accurately complete all sections of the application form."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application to the Delaware Board of Speech/Language Pathologists, Audiologists and Hearing Aid Dispensers along with all required documentation and fees."
+      "title": "Submit Required Documents",
+      "description": "Upload or arrange for direct submission of official transcripts from your university, verification of your supervised professional experience (e.g., CFY report), and official Praxis examination scores to DELPROS."
+    },
+    {
+      "title": "Verify Out-of-State Licensure (if applicable)",
+      "description": "If applying by endorsement, request verification of current and good standing licensure from all states where you have previously held an Audiologist license to be sent directly to DELPROS."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Remit the non-refundable application fee of $117 directly through the DELPROS system upon submission of your complete application."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "Monitor your application status in DELPROS; once all required documentation is received and reviewed, the Board will process your application and notify you of approval for your Delaware Audiologist license."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 117,
+    "processing_time": "3 to 5 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dpr.delaware.gov/boards/speechpath/",
-    "endorsement_url": "https://dpr.delaware.gov/boards/speechpath/",
+    "endorsement_url": "https://dpr.delaware.gov/apply-for-a-license/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "delaware-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Delaware",
-        "dek": "Delaware Audiologist License requires a doctoral degree in audiology, passing the Audiology Examination, and completion of a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Delaware, navigate to the DELPROS online portal, create an account, and submit your application along with all required supporting documentation."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DELPROS",
+    "portal_url": "https://delpros.delaware.gov/",
+    "registration_steps": "Go to https://delpros.delaware.gov/, click 'Register a new User Account', and follow the prompts to create your professional profile.",
+    "provider_search": "https://dpr.delaware.gov/licenselookup/"
   }
 }

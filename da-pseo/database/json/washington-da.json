@@ -15,24 +15,26 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Washington Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Washington — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Washington \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license washington, dental assistant certification washington, RDA washington, DANB CDA washington, dental assistant radiography washington"
   },
   "board": {
     "name": "Washington Department of Health",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Washington State Department of Health\nProfessional Licensing\nPO Box 47877\nOlympia, WA 98504-7877",
     "physical_address": "See board website",
-    "phone": "(360) 236-4700",
+    "phone": "360-236-4700",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702-update/dental-professions"
+    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702-update/dental-professions",
+    "contact_url": "https://doh.wa.gov/licensing-and-regulation/contact-us",
+    "verify_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/find-health-care-provider"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/registration fee",
-    "renewal_fee": "$65",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Annually",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years"
   },
@@ -44,16 +46,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a CODA-accredited dental assisting program or meet the requirements for on-the-job training."
+      "title": "Access the Online Application",
+      "description": "Log in to the Professional Licensing Services (PLS) portal through your SecureAccess Washington (SAW) account and select the Dental Assistant application type."
     },
     {
-      "title": "Obtain BLS Certification",
-      "description": "Provide proof of current Basic Life Support (BLS) certification."
+      "title": "Complete the Application Form",
+      "description": "Fill out all required sections of the Dental Assistant application form within the PLS system, providing accurate personal, educational, and professional history."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Complete the Dental Assistant Registration application and pay the required fee."
+      "title": "Submit Required Documentation",
+      "description": "Upload necessary supporting documents, which may include official transcripts, proof of dental assisting education, and any relevant exam scores directly into the PLS application."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $50.00 online through the PLS payment portal."
+    },
+    {
+      "title": "Await Application Review",
+      "description": "The Washington State Department of Health will review your complete application and all submitted documents for compliance with state licensing requirements."
+    },
+    {
+      "title": "Receive License Decision",
+      "description": "Once your application is approved, your Dental Assistant license will be issued, and you will be notified through the PLS system or by mail."
     }
   ],
   "documents": [
@@ -122,11 +136,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 50,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702-update/dental-professions",
-    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702-update/dental-professions",
+    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/dental-assistant/out-state-applicants",
     "notes": "Dental assistants can apply for Registered Dental Assistant (EFDA) through the Washington Department of Health by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -145,7 +159,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Washington",
-        "dek": "Washington Dental Assistant registration requires graduation from an accredited program, holding a current BLS certificate, and completing the application process."
+        "dek": "To apply for a Dental Assistant license in Washington, you must register and apply online through the Professional Licensing Services (PLS) system, which is accessed via SecureAccess Washington (SAW)."
       }
     }
   },
@@ -171,5 +185,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Professional Licensing Services (PLS) via SecureAccess Washington (SAW)",
+    "portal_url": "https://fortress.wa.gov/doh/pls/secure/applicant/applicantlogin.aspx",
+    "registration_steps": "1. Create a SecureAccess Washington (SAW) account at secureaccess.wa.gov if you don't already have one.\n2. Log in to your SAW account and add the 'Department of Health - Professional & Business Licensing' service.\n3. Access the Professional Licensing Services (PLS) portal through SAW and begin your Dental Assistant application.",
+    "provider_search": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/find-health-care-provider"
   }
 }

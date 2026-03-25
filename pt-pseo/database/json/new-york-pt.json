@@ -19,21 +19,23 @@
     "keywords": "physical therapist license reciprocity new york, how to transfer physical therapist license to new york, physical therapist compact new york, new york physical therapist endorsement application"
   },
   "board": {
-    "name": "New York Office of the Professions — PT",
+    "name": "New York Office of the Professions \u2014 PT",
     "parent_dept": "NYSED Office of the Professions",
-    "mailing_address": "See board website",
+    "mailing_address": "New York State Education Department\nOffice of the Professions\nPhysical Therapy Unit\n89 Washington Avenue\nAlbany, NY 12234-1000",
     "physical_address": "See board website",
-    "phone": "(518) 474-3817",
+    "phone": "518-474-3817",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.op.nysed.gov/professions-index/physical-therapy"
+    "url": "https://www.op.nysed.gov/professions-index/physical-therapy",
+    "contact_url": "https://www.op.nysed.gov/contact-us",
+    "verify_url": "https://www.op.nysed.gov/verification-search"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$294",
+    "renewal_cycle": "Every 3 years",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "36 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Approved Physical Therapy Program",
-      "description": "Complete a physical therapy education program approved by the New York State Education Department or determined to be substantially equivalent."
+      "title": "Create a MY NYSED Account",
+      "description": "Register an account on the New York State Education Department (NYSED) website to begin the application process through the NYSED Online Application System."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit Application and Fee",
+      "description": "Complete the 'Application for Licensure (Form 1)' through your MY NYSED Account in the Professional Licensing section of the NYSED Online Application System and pay the non-refundable $294 fee."
     },
     {
-      "title": "Apply for a Physical Therapy License",
-      "description": "Submit an application for licensure to the New York State Education Department, Office of the Professions, along with the required fee and documentation."
+      "title": "Verify Education",
+      "description": "Have your professional educational institution send official transcripts directly to NYSED. Use Form 2 for New York programs or Form 2F for foreign-educated applicants."
+    },
+    {
+      "title": "Pass the NPTE",
+      "description": "Register with the Federation of State Boards of Physical Therapy (FSBPT) and pass the National Physical Therapy Examination (NPTE) after receiving approval from NYSED."
+    },
+    {
+      "title": "Complete Clinical Experience and Required Training",
+      "description": "Ensure completion of 12 weeks of supervised clinical experience (Form 4B), approved infection control training (Form 2Q), and child abuse identification and reporting training (Form 2A), submitting documentation to NYSED as required."
+    },
+    {
+      "title": "Receive License",
+      "description": "Once all requirements are met and verified by the New York State Education Department, your Physical Therapist license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 294,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.op.nysed.gov/professions-index/physical-therapy",
-    "endorsement_url": "https://www.op.nysed.gov/professions-index/physical-therapy",
+    "endorsement_url": "https://www.op.nysed.gov/professions/physical-therapy/license-requirements",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "new-york-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in New York",
-        "dek": "New York Physical Therapy licensure requires graduation from an approved program, passing the National Physical Therapy Examination (NPTE), and completing the application process."
+        "dek": "To apply for a Physical Therapist license in New York, applicants must use the NYSED Online Application System after creating a MY NYSED Account."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NYSED Online Application System",
+    "portal_url": "https://www.op.nysed.gov/professions/physical-therapy/license-requirements#apply-online",
+    "registration_steps": "Create a MY NYSED Account on the New York State Education Department website, then log in and navigate to the 'Professional Licensing' section to start your application.",
+    "provider_search": "https://www.op.nysed.gov/verification-search"
   }
 }

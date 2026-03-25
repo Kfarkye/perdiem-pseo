@@ -21,18 +21,20 @@
   "board": {
     "name": "Mississippi Board of Pharmacy",
     "parent_dept": "Mississippi State Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "6360 I-55 North, Suite 400, Jackson, MS 39211",
     "physical_address": "See board website",
     "phone": "(601) 899-8880",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "http://www.mbp.state.ms.us/"
+    "url": "http://www.mbp.state.ms.us/",
+    "contact_url": "https://www.mbp.ms.gov/contact-us",
+    "verify_url": "https://liclookup.mbp.ms.gov/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX & MPJE",
@@ -46,16 +48,20 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program from a college of pharmacy accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create Account & Submit Application",
+      "description": "Register for an account on the Mississippi Board of Pharmacy Online Application System, complete the online application form, provide your NABP e-Profile ID, and pay the $200 initial licensure fee."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass both the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Pass Required Examinations",
+      "description": "Achieve passing scores on both the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE), ensuring the scores are reported to the Mississippi Board of Pharmacy."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete the Mississippi Board of Pharmacy's application, including all required documentation and fees."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official transcripts from an ACPE-accredited college of pharmacy to be sent directly to the Mississippi Board of Pharmacy."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided by the Board to complete the required criminal history record background check, which includes fingerprinting via Identogo."
     }
   ],
   "documents": [
@@ -128,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 400,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.mbp.state.ms.us/",
-    "endorsement_url": "http://www.mbp.state.ms.us/",
+    "endorsement_url": "https://www.mbp.ms.gov/online-services/reciprocity-application",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "mississippi-pharmacist",
@@ -147,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Mississippi",
-        "dek": "Mississippi Pharmacist License requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing the required application process."
+        "dek": "To apply for a new Pharmacist license in Mississippi, applicants must create an account and submit their application through the Mississippi Board of Pharmacy Online Application System."
       }
     }
   },
@@ -173,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Mississippi Board of Pharmacy Online Application System",
+    "portal_url": "https://www.mbp.ms.gov/online-services/pharmacist-initial-licensure-application",
+    "registration_steps": "Create an account on the Mississippi Board of Pharmacy Online Application System by clicking 'New User Registration', then log in to access and complete the initial pharmacist licensure application.",
+    "provider_search": "https://liclookup.mbp.ms.gov/"
   }
 }

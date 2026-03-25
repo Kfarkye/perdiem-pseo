@@ -21,22 +21,22 @@
   "board": {
     "name": "Texas HHSC",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Texas Health and Human Services Commission\nNurse Aide Registry\nMail Code H-340\nP.O. Box 149030\nAustin, Texas 78714-9030",
     "physical_address": "See board website",
-    "phone": "(512) 438-2200",
+    "phone": "512-438-2050",
     "fax": "N/A (contact by phone)",
-    "email": "nurseaideregistry@hhs.texas.gov",
+    "email": "nar@hhs.texas.gov",
     "url": "https://www.hhs.texas.gov/",
-    "verify_url": "https://tulip.hhs.texas.gov/tuliplogin/",
-    "contact_url": "mailto:nurseaideregistry@hhs.texas.gov",
+    "verify_url": "https://www.prometric.com/nurse-aide/tx",
+    "contact_url": "https://www.hhs.texas.gov/providers/long-term-care-providers/nurse-aide-registry-competency-evaluation-program",
     "website": "https://www.hhs.texas.gov/"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 8 Weeks",
+    "processing_time": "1.5 to 2 Weeks",
     "license_duration": "2 Years",
     "training_hours": "100 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -50,16 +50,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Texas-approved CNA training program, usually 100 hours long."
+      "title": "Complete a Texas-Approved Nurse Aide Training Program (NATCEP)",
+      "description": "Enroll in and successfully complete a Nurse Aide Training and Competency Evaluation Program (NATCEP) approved by the Texas Health and Human Services (HHS)."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Texas nurse aide exam."
+      "title": "Create an Account and Register for the Competency Exam with Prometric",
+      "description": "Visit the Prometric Texas Nurse Aide Portal and follow the instructions to create a candidate account and schedule your Nurse Aide Competency Evaluation Exam (NACEP)."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Pass the Nurse Aide Competency Evaluation Exam",
+      "description": "Successfully complete both the written/oral and skills portions of the NACEP administered by Prometric. This exam tests your knowledge and practical skills as a nurse aide."
+    },
+    {
+      "title": "Be Listed on the Texas Nurse Aide Registry",
+      "description": "Upon passing the NACEP, Prometric will report your results to the Texas Health and Human Services (HHS), and you will be automatically added to the Texas Nurse Aide Registry within 7-10 business days. No separate application is required for initial listing."
+    },
+    {
+      "title": "Maintain Active Registry Status",
+      "description": "To remain active on the registry, you must work for pay performing nursing-related duties under the supervision of a licensed nurse for at least 16 hours within a 24-month period, and renew your certification every two years."
     }
   ],
   "documents": [
@@ -125,10 +133,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "4 to 8 Weeks",
+    "processing_time": "1.5 to 2 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.hhs.texas.gov/",
-    "endorsement_url": "https://www.hhs.texas.gov/",
+    "endorsement_url": "https://www.hhs.texas.gov/sites/default/files/documents/providers/long-term-care-providers/nar-forms/5505.pdf",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -182,7 +190,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Texas",
-        "dek": "Texas CNA certification requires a 100-hour training program, Texas HHSC eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nursing Assistant (CNA) in Texas, candidates must complete an approved training program and pass the state competency exam administered through the Prometric Texas Nurse Aide Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Texas | Full Requirements & Steps",
@@ -250,5 +258,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Texas Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Prometric Texas Nurse Aide Portal",
+    "portal_url": "https://www.prometric.com/nurse-aide/tx",
+    "registration_steps": "Visit the Prometric Texas Nurse Aide website, navigate to 'Schedule your exam' or 'Online Application', and follow the prompts to create a candidate account and register for the competency evaluation.",
+    "provider_search": "https://www.prometric.com/nurse-aide/tx"
   }
 }

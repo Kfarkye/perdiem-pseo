@@ -19,19 +19,21 @@
     "keywords": "occupational therapist license reciprocity wisconsin, how to transfer occupational therapist license to wisconsin, occupational therapist compact wisconsin, wisconsin occupational therapist endorsement application"
   },
   "board": {
-    "name": "Wisconsin DSPS — Occupational Therapist",
+    "name": "Wisconsin DSPS \u2014 Occupational Therapist",
     "parent_dept": "Wisconsin Department of Safety and Professional Services (DSPS)",
-    "mailing_address": "See board website",
+    "mailing_address": "Wisconsin Department of Safety and Professional Services\nP.O. Box 8368\nMadison, WI 53708-8368",
     "physical_address": "See board website",
     "phone": "(608) 266-2112",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dsps.wi.gov/"
+    "email": "dsps@wisconsin.gov",
+    "url": "https://dsps.wi.gov/",
+    "contact_url": "https://dsps.wi.gov/pages/AboutUs/ContactUs.aspx",
+    "verify_url": "https://app.wi.gov/LicenseSearch/Search"
   },
   "quick_facts": {
     "total_fee": "$78",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$78",
+    "renewal_fee": "$68",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Occupational Therapy Program",
-      "description": "Graduate from an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create a DSPS LicensE Account",
+      "description": "Go to the DSPS LicensE portal (online.drl.wi.gov/Default.aspx) and register as a new user to create your online account."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Online Application",
+      "description": "Log in to your DSPS LicensE account, select 'Apply for a License,' and complete the Occupational Therapist application form, paying the required fee."
     },
     {
-      "title": "Apply for a Wisconsin Occupational Therapist License",
-      "description": "Submit an application for licensure to the Wisconsin Department of Safety and Professional Services (DSPS) and pay all required fees."
+      "title": "Submit Official Transcript",
+      "description": "Have your occupational therapy program send official transcripts directly to the Wisconsin Department of Safety and Professional Services (DSPS) from your educational institution."
+    },
+    {
+      "title": "Submit NBCOT Scores",
+      "description": "Arrange for the National Board for Certification in Occupational Therapy (NBCOT) to send your official examination scores directly to DSPS."
+    },
+    {
+      "title": "Provide Licensure Verification (if by Endorsement)",
+      "description": "If applying by endorsement, request official verification of your current occupational therapy license(s) from any state(s) where you are currently or have been previously licensed, sent directly to DSPS."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 125,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dsps.wi.gov/",
-    "endorsement_url": "https://dsps.wi.gov/",
+    "endorsement_url": "https://dsps.wi.gov/pages/professions/occupationaltherapist.aspx",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Wisconsin",
-        "dek": "Wisconsin Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and completing the application."
+        "dek": "Occupational Therapists applying for licensure in Wisconsin must use the DSPS LicensE online system to submit their application."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DSPS LicensE",
+    "portal_url": "https://online.drl.wi.gov/Default.aspx",
+    "registration_steps": "1. Go to the DSPS LicensE portal. 2. Click on 'New User Registration' to create an account. 3. Follow the prompts to provide your email, create a password, and verify your account. 4. Once registered and logged in, select 'Apply for a License' to begin the Occupational Therapist application.",
+    "provider_search": "https://app.wi.gov/LicenseSearch/Search"
   }
 }

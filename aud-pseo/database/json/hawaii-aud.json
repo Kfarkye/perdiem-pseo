@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Speech Pathology and Audiology",
     "parent_dept": "Hawaii Department of Commerce and Consumer Affairs (DCCA)",
-    "mailing_address": "P.O. Box 3469, Honolulu, HI 96801",
+    "mailing_address": "Department of Commerce and Consumer Affairs\nProfessional and Vocational Licensing Division\nP. O. Box 3469\nHonolulu, HI 96801",
     "physical_address": "335 Merchant St., Room 301, Honolulu, HI 96813",
     "phone": "(808) 586-3000",
     "fax": "(808) 586-2689",
     "email": "mailto:pvl@dcca.hawaii.gov",
-    "url": "https://cca.hawaii.gov/pvl/boards/speech/"
+    "url": "https://cca.hawaii.gov/pvl/boards/speech/",
+    "contact_url": "https://cca.hawaii.gov/pvl/contact-us/",
+    "verify_url": "https://pvl.ehawaii.gov/pvlsearch/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "Earn a doctoral degree in audiology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+      "title": "Create a MyPVL Account",
+      "description": "Navigate to the MyPVL portal (pvl.ehawaii.gov/mypvl) and click 'Register A New Account' to establish your user profile."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a minimum of nine months of supervised professional experience as outlined in the application instructions."
+      "title": "Initiate Application",
+      "description": "Log in to your newly created MyPVL account and select 'Apply for a New License' to begin the Audiologist licensure application."
     },
     {
-      "title": "Pass the Examination and Apply",
-      "description": "Pass the Audiology Examination administered by Praxis and submit a completed application with the required fee and supporting documentation to the Board."
+      "title": "Complete Application Form",
+      "description": "Fill out the online application completely, providing all required personal, educational, and professional information within the MyPVL system."
+    },
+    {
+      "title": "Upload Required Documents",
+      "description": "Digitally upload all necessary supporting documents, such as official transcripts (showing a master's or doctoral degree in audiology), practicum verification forms, proof of ASHA CCC-A certification (or equivalent), and a valid government-issued identification, to your MyPVL application."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Submit the non-refundable application fee (and any applicable biennial renewal fee for endorsement) securely through the MyPVL system using a credit card."
+    },
+    {
+      "title": "Submit and Monitor Application",
+      "description": "Submit your completed application via MyPVL and regularly check your MyPVL account for status updates or requests for additional information from the Board of Speech Pathology and Audiology."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 170,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://cca.hawaii.gov/pvl/boards/speech/",
-    "endorsement_url": "https://cca.hawaii.gov/pvl/boards/speech/",
+    "endorsement_url": "https://cca.hawaii.gov/pvl/files/2013/03/ENDOAUD.pdf",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "hawaii-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Hawaii",
-        "dek": "Hawaii Audiologist license requires graduation from an accredited program, passing the required examination, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Hawaii, applicants must use the state's online licensing portal, MyPVL, to submit their application and supporting documents."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyPVL",
+    "portal_url": "https://pvl.ehawaii.gov/mypvl/",
+    "registration_steps": "Click on 'Register A New Account' to create your MyPVL user profile. Once registered, log in to your account and select 'Apply for a New License' to begin the Audiologist application.",
+    "provider_search": "https://pvl.ehawaii.gov/pvlsearch/"
   }
 }

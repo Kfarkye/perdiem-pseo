@@ -19,21 +19,23 @@
     "keywords": "speech-language pathologist license reciprocity utah, how to transfer speech-language pathologist license to utah, speech-language pathologist compact utah, utah speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Division of Professional Licensing — Speech-Language Pathology",
+    "name": "Division of Professional Licensing \u2014 Speech-Language Pathology",
     "parent_dept": "Utah Department of Commerce, Division of Professional Licensing (DOPL)",
-    "mailing_address": "P.O. Box 146741, Salt Lake City, UT 84114-6741",
+    "mailing_address": "160 East 300 South, Salt Lake City, Utah 84111",
     "physical_address": "160 E. 300 South, Salt Lake City, UT 84111",
     "phone": "(801) 530-6628",
     "fax": "(801) 530-6511",
-    "email": "mailto:dopl@utah.gov",
-    "url": "https://dopl.utah.gov/slp/"
+    "email": "dopl@utah.gov",
+    "url": "https://dopl.utah.gov/slp/",
+    "contact_url": "https://dopl.utah.gov/contact-us.html",
+    "verify_url": "https://dopl.utah.gov/licensing/license-lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application and license fee",
-    "renewal_fee": "$52",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$70",
+    "renewal_cycle": "Every 2 years (by September 30 of even-numbered years)",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -51,15 +53,27 @@
   "steps": [
     {
       "title": "Meet Educational Requirements",
-      "description": "Complete a master's degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) of the American Speech-Language-Hearing Association (ASHA)."
+      "description": "Obtain a master's or doctoral degree in Speech-Language Pathology from a program accredited by the American Speech-Language-Hearing Association (ASHA)."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience consisting of at least 36 weeks of full-time (or equivalent part-time) experience and 1260 clock hours under the supervision of a licensed speech-language pathologist."
+      "title": "Complete Clinical Fellowship or Hold ASHA CCC",
+      "description": "Complete a supervised clinical fellowship year (CFY) of at least 1,260 hours over a minimum of 36 weeks, OR hold the Certificate of Clinical Competence (CCC) from ASHA."
     },
     {
-      "title": "Pass the Praxis Examination and Apply",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology with a qualifying score and submit an application for licensure to the Utah Division of Professional Licensing along with all required documentation and fees."
+      "title": "Pass National Examination",
+      "description": "Pass the national examination in speech-language pathology (Praxis)."
+    },
+    {
+      "title": "Create MyLicense Account and Apply",
+      "description": "Register an account on the MyLicense portal (secure.utah.gov/account/login) and complete the online application for a Speech-Language Pathologist license."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Upload required documents such as official transcripts, Praxis scores, and CFY/ASHA CCC verification directly through the MyLicense portal or arrange for their submission by third parties."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee of $120.00 via the MyLicense portal to finalize your submission."
     }
   ],
   "documents": [
@@ -86,7 +100,7 @@
   "faqs": [
     {
       "question": "How much does a Utah SLP license cost?",
-      "answer": "$100 initial. $52 biennial renewal — one of the lowest renewal fees in the country."
+      "answer": "$100 initial. $52 biennial renewal \u2014 one of the lowest renewal fees in the country."
     },
     {
       "question": "Is Utah part of the ASLP Interstate Compact?",
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 120,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dopl.utah.gov/slp/",
-    "endorsement_url": "https://dopl.utah.gov/slp/",
+    "endorsement_url": "https://dopl.utah.gov/slpa/apply.html",
     "notes": "Utah is a member of the ASLP Interstate Compact."
   },
   "slug": "utah-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Utah",
-        "dek": "Utah Speech-Language Pathology license requires a master's degree, passing the Praxis exam, and completion of a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in Utah, submit your application and supporting documentation through the Utah DOPL's MyLicense online portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense",
+    "portal_url": "https://secure.utah.gov/account/login.html?returnURL=https://secure.utah.gov/dopl/MyLicense_Portal",
+    "registration_steps": "Visit the MyLicense portal and click 'Register Account' to create a new user profile before logging in to start your application.",
+    "provider_search": "https://dopl.utah.gov/licensing/license-lookup/"
   }
 }

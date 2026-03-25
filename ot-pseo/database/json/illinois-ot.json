@@ -19,19 +19,21 @@
     "keywords": "occupational therapist license reciprocity illinois, how to transfer occupational therapist license to illinois, occupational therapist compact illinois, illinois occupational therapist endorsement application"
   },
   "board": {
-    "name": "Illinois IDFPR — Occupational Therapy",
+    "name": "Illinois IDFPR \u2014 Occupational Therapy",
     "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
-    "mailing_address": "See board website",
+    "mailing_address": "IDFPR, 320 W. Washington St., Springfield, IL 62786",
     "physical_address": "See board website",
-    "phone": "(888) 473-4858",
+    "phone": "1-800-560-6420",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://idfpr.illinois.gov/profs/ot.asp"
+    "url": "https://idfpr.illinois.gov/profs/ot.asp",
+    "contact_url": "https://idfpr.illinois.gov/ContactUs.html",
+    "verify_url": "https://idfpr.illinois.gov/Applications/LicenseLookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$225",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$90",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE-Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Review Licensure Requirements",
+      "description": "Visit the IDFPR Occupational Therapist webpage and carefully review the 'Application for Licensure as an Occupational Therapist' form and the detailed requirements for licensure, including education, fieldwork, and examination."
     },
     {
-      "title": "Pass the NBCOT Exam",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Create IDFPR Online Services Portal Account",
+      "description": "Navigate to the IDFPR Online Services Portal, register for a new account by providing your personal information, and then log in to access the application system."
     },
     {
-      "title": "Apply for an Occupational Therapist License",
-      "description": "Submit an application for licensure to the Illinois Department of Financial and Professional Regulation (IDFPR), including all required documentation and fees."
+      "title": "Complete Online Application",
+      "description": "Within the IDFPR Online Services Portal, locate and complete the online 'Application for Licensure as an Occupational Therapist,' ensuring all necessary personal and professional details are accurately provided."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts from your accredited occupational therapy program, verification of supervised fieldwork (typically Part III of the application form completed by your supervisor), and your official NBCOT score report to be sent directly to IDFPR."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required $90 application fee securely through the IDFPR Online Services Portal using a credit card or other accepted payment method."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application via the IDFPR Online Services Portal and respond promptly to any requests from IDFPR for additional information or documentation."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 25,
+    "endorsement_fee": 90,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://idfpr.illinois.gov/profs/ot.asp",
-    "endorsement_url": "https://idfpr.illinois.gov/profs/ot.asp",
+    "endorsement_url": "https://idfpr.illinois.gov/profs/OT.html",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": false
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Illinois",
-        "dek": "Illinois Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and completing the application process."
+        "dek": "Occupational Therapist license applications for Illinois are processed through the IDFPR Online Services Portal, managed by the Illinois Department of Financial and Professional Regulation (IDFPR)."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "IDFPR Online Services Portal",
+    "portal_url": "https://online.idfpr.illinois.gov/",
+    "registration_steps": "Visit the IDFPR Online Services Portal, click 'Register' for new users, and follow the prompts to create an account by providing personal details, a username, and password.",
+    "provider_search": "https://idfpr.illinois.gov/Applications/LicenseLookup/LicenseLookup.aspx"
   }
 }

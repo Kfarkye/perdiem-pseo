@@ -21,21 +21,22 @@
   "board": {
     "name": "Connecticut Dept of Public Health",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Prometric, P.O. Box 9037, Princeton, NJ 08543-9037",
     "physical_address": "See board website",
-    "phone": "(860) 509-7603",
+    "phone": "1-800-845-8567",
     "fax": "N/A (contact by phone)",
-    "email": "CTCNA@Prometric.com",
+    "email": "CTNA@prometric.com",
     "url": "https://portal.ct.gov/DPH",
-    "contact_url": "mailto:CTCNA@Prometric.com",
-    "website": "https://portal.ct.gov/DPH"
+    "contact_url": "https://www.prometric.com/nurseaide/ct",
+    "website": "https://portal.ct.gov/DPH",
+    "verify_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$55",
     "fee_breakdown": "$55 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "training_hours": "100 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -49,16 +50,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Connecticut-approved CNA training program, usually 100 hours long."
+      "title": "Meet Eligibility Requirements",
+      "description": "Complete a state-approved Nurse Aide Training Program (NATP) or meet criteria for endorsement from another state."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Connecticut nurse aide exam."
+      "title": "Create an Account with Prometric",
+      "description": "Visit the Prometric Connecticut Nurse Aide Registry portal and create an online candidate account to manage your application and testing."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Submit Application",
+      "description": "Log in to your Prometric account and submit the appropriate application for initial certification (which includes examination registration) or for reciprocity if you are licensed in another state."
+    },
+    {
+      "title": "Schedule and Pass the Competency Exam (if applicable)",
+      "description": "For initial certification, schedule and pass both the Written/Oral and Skill portions of the Nurse Aide Competency Exam through the Prometric portal."
+    },
+    {
+      "title": "Registry Placement",
+      "description": "Upon successful completion of all requirements (passing the exam or successful reciprocity application), Prometric will notify the Connecticut Department of Public Health for your placement on the Connecticut Nurse Aide Registry."
     }
   ],
   "documents": [
@@ -123,11 +132,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 55,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 45,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://portal.ct.gov/DPH",
-    "endorsement_url": "https://portal.ct.gov/DPH",
+    "endorsement_url": "https://www.prometric.com/nurseaide/ct/reciprocity",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -172,7 +181,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Connecticut",
-        "dek": "Connecticut CNA certification requires a 100-hour training program, Connecticut Dept of Public Health eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for your Certified Nursing Assistant (CNA) certification in Connecticut, you must go through the Prometric Connecticut Nurse Aide Registry portal."
       },
       "seo": {
         "title": "How to Become a CNA in Connecticut | DPH Requirements",
@@ -214,5 +223,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Connecticut Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Prometric Connecticut Nurse Aide Registry",
+    "portal_url": "https://www.prometric.com/nurseaide/ct",
+    "registration_steps": "Candidates must create an online account on the Prometric Connecticut Nurse Aide Registry portal to apply for certification, schedule exams, or apply for reciprocity.",
+    "provider_search": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
   }
 }

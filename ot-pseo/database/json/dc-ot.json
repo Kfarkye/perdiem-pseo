@@ -21,17 +21,19 @@
   "board": {
     "name": "DC Board of Rehabilitative Therapies",
     "parent_dept": "DC Department of Health, Health Regulation and Licensing Administration (HRLA)",
-    "mailing_address": "See board website",
+    "mailing_address": "Board of Occupational Therapy\nHealth Professional Licensing Administration (HPLA)\n899 North Capitol Street, NE, 2nd Floor\nWashington, DC 20002",
     "physical_address": "See board website",
-    "phone": "(202) 442-8336",
+    "phone": "(202) 442-5955",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dchealth.dc.gov/service/occupational-therapy-licensing"
+    "email": "hpl@dc.gov",
+    "url": "https://dchealth.dc.gov/service/occupational-therapy-licensing",
+    "contact_url": "https://dchealth.dc.gov/hpla",
+    "verify_url": "https://doh.force.com/hpla/s/license-lookup"
   },
   "quick_facts": {
     "total_fee": "$264",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "",
+    "renewal_fee": "$230",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create an AccessDCDOH Account and Apply Online",
+      "description": "Register for an account and log in to the AccessDCDOH Online Licensing System. Complete and submit the online application for Occupational Therapy licensure, ensuring all sections are accurately filled out."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, verifying your graduation from an accredited occupational therapy program, to be sent directly from your educational institution to the DC Board of Occupational Therapy."
     },
     {
-      "title": "Apply for a DC Occupational Therapy License",
-      "description": "Submit a complete application and all required documents to the DC Board of Rehabilitative Therapies, including exam scores and official transcripts."
+      "title": "Provide NBCOT Exam Scores",
+      "description": "Request the National Board for Certification in Occupational Therapy (NBCOT) to send your official exam scores directly to the DC Board of Occupational Therapy for verification."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Follow the specific instructions provided by the Board within the AccessDCDOH Online Licensing System to complete the required criminal background check."
+    },
+    {
+      "title": "Submit All Supporting Documents and Fee",
+      "description": "Upload any additional required documents, such as verification of supervised fieldwork experience, and pay the non-refundable application fee of $230 through the AccessDCDOH Online Licensing System."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 314,
+    "endorsement_fee": 230,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dchealth.dc.gov/service/occupational-therapy-licensing",
-    "endorsement_url": "https://dchealth.dc.gov/service/occupational-therapy-licensing",
+    "endorsement_url": "https://dchealth.dc.gov/service/board-occupational-therapy",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in District of Columbia",
-        "dek": "District of Columbia Occupational Therapy license requires graduation from an ACOTE accredited program, passing the NBCOT exam, and completing the application process."
+        "dek": "To apply for an Occupational Therapist license in the District of Columbia, you must submit your application and all supporting documentation through the AccessDCDOH Online Licensing System."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "AccessDCDOH Online Licensing System",
+    "portal_url": "https://doh.force.com/hpla/s/login/",
+    "registration_steps": "Navigate to the AccessDCDOH Online Licensing System. Click 'Sign Up' to create a new user account, verify your email address, and set your password. Once registered, log in to start a new application for Occupational Therapy licensure.",
+    "provider_search": "https://doh.force.com/hpla/s/license-lookup"
   }
 }

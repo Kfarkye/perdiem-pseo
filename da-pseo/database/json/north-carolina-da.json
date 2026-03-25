@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "N. Carolina Dental Assistant License (2026) | Fees & Guide",
-    "description": "Complete guide to dental assistant requirements in North Carolina — fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant requirements in North Carolina \u2014 fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license north carolina, dental assistant certification north carolina, RDA north carolina, DANB CDA north carolina, dental assistant radiography north carolina"
   },
   "board": {
     "name": "North Carolina State Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "1500 Sunday Drive, Suite 102, Raleigh, NC 27607",
     "physical_address": "See board website",
     "phone": "(919) 678-8223",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.ncdentalboard.org/"
+    "email": "contact@ncdentalboard.org",
+    "url": "https://www.ncdentalboard.org/",
+    "contact_url": "https://ncdentalboard.org/contactus.htm",
+    "verify_url": "https://ncdentalboard.org/licensing/dALookup.htm"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "N/A",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "N/A",
     "exam_name": "National Entry Level Dental Assistant (NELDA) exam, or the Certified Dental Assistant (CDA) exam, or successful completion of a CODA-accredited dental assisting program",
     "ce_requirement": "N/A"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education or Exam Requirements",
-      "description": "Complete a CODA-accredited dental assisting program or pass the National Entry Level Dental Assistant (NELDA) exam or the Certified Dental Assistant (CDA) exam."
+      "title": "Review Registration Requirements",
+      "description": "Review the specific requirements for the desired Dental Assistant registration type (e.g., DA I, DA II) on the North Carolina State Board of Dental Examiners (NCSBDE) website."
     },
     {
-      "title": "Complete the Application",
-      "description": "Complete the Dental Assistant II registration application on the North Carolina State Board of Dental Examiners website."
+      "title": "Prepare Supporting Documentation",
+      "description": "Gather all required documents such as current CPR certification, approved dental radiography course completion, and any other relevant credentials as outlined by the NCSBDE for your chosen registration type."
     },
     {
-      "title": "Submit Required Documentation",
-      "description": "Submit official transcripts or exam results and any other required documentation to the North Carolina State Board of Dental Examiners."
+      "title": "Create Account on NCSBDE Online Services",
+      "description": "Navigate to the NCSBDE Online Services portal at https://ncdentalboard.org/OnlineServices/ and create a new account or log in if you are an existing user."
+    },
+    {
+      "title": "Complete Online Application",
+      "description": "Access the Dental Assistant Registration application within the NCSBDE Online Services portal, fill out all required sections accurately, and upload all supporting documents electronically."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required application fee through the NCSBDE Online Services portal to finalize your application submission."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Track the status of your application through the NCSBDE Online Services portal and respond promptly to any requests for additional information or clarification from the Board."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": false,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.ncdentalboard.org/",
-    "endorsement_url": "https://www.ncdentalboard.org/",
+    "endorsement_url": "https://ncdentalboard.org/licensing/da.htm",
     "notes": "North Carolina classifies dental assistants (DA I, DA II, DA III) based on experience and training rather than formal licensure.",
     "requires_psv": false,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in North Carolina",
-        "dek": "North Carolina Dental Assistant registration requires graduation from a CODA-accredited program or passing the NELDA or CDA exam, submitting an application to the board, and providing supporting documentation."
+        "dek": "To apply for Dental Assistant registration in North Carolina, new applicants must create an account and submit their application through the NCSBDE Online Services portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NCSBDE Online Services",
+    "portal_url": "https://ncdentalboard.org/OnlineServices/",
+    "registration_steps": "Navigate to the NCSBDE Online Services portal, click 'Create Account' for new users or 'Login' for existing users, and follow the prompts to register your profile before starting your Dental Assistant registration application.",
+    "provider_search": "https://ncdentalboard.org/licensing/dALookup.htm"
   }
 }

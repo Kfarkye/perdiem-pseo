@@ -21,17 +21,19 @@
   "board": {
     "name": "Ohio OT, PT, and Athletic Trainers Board",
     "parent_dept": "State Medical Board of Ohio",
-    "mailing_address": "See board website",
+    "mailing_address": "Ohio OTPTAT Board\n77 S. High Street, 16th Floor\nColumbus, OH 43215-6108",
     "physical_address": "See board website",
     "phone": "(614) 466-3774",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://otptat.ohio.gov/"
+    "email": "board@otptat.ohio.gov",
+    "url": "https://otptat.ohio.gov/",
+    "contact_url": "https://otptat.ohio.gov/about/contact-us",
+    "verify_url": "https://license.ohio.gov/lookup"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a physical therapy educational program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create Account and Submit Application",
+      "description": "Register for an account on the eLicense Ohio portal (elicense.ohio.gov) and complete the online application for 'Initial Physical Therapist Licensure' or 'Licensure by Endorsement', paying the required application fee."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the National Physical Therapy Examination (NPTE) for physical therapists."
+      "title": "Submit Required Documentation",
+      "description": "Arrange for official transcripts from your CAPTE-accredited physical therapy program to be sent directly to the Ohio OTPTAT Board. Other supporting documents may be uploaded directly to your eLicense Ohio application."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application for licensure to the Ohio OT, PT, and Athletic Trainers Board along with required documentation and fees."
+      "title": "Pass National & Jurisprudence Exams",
+      "description": "If applying by examination, register with the FSBPT and pass the National Physical Therapy Examination (NPTE). Additionally, complete and pass the Ohio Physical Therapy Jurisprudence Examination, which is typically administered online."
+    },
+    {
+      "title": "Complete Criminal Records Background Check",
+      "description": "Submit to a criminal records background check through fingerprinting (BCI & FBI) as directed by the Board. Instructions for this process are provided within the eLicense Ohio application or on the Board's website."
+    },
+    {
+      "title": "Board Review and Licensure",
+      "description": "Once all required documents, exam scores (NPTE and Jurisprudence), and background check results have been received and verified, the Ohio OTPTAT Board will review your complete application and issue your physical therapist license upon approval."
     }
   ],
   "documents": [
@@ -128,7 +138,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://otptat.ohio.gov/",
-    "endorsement_url": "https://otptat.ohio.gov/",
+    "endorsement_url": "https://otptat.ohio.gov/physical-therapists",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "ohio-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Ohio",
-        "dek": "Ohio Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination (NPTE), and a criminal background check."
+        "dek": "Physical Therapist licensure in Ohio is managed by the Ohio Occupational Therapy, Physical Therapy, and Athletic Trainers Board, with all applications submitted through the eLicense Ohio portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense Ohio",
+    "portal_url": "https://elicense.ohio.gov/",
+    "registration_steps": "To begin, navigate to the eLicense Ohio portal and click 'Register a New Account'. Follow the prompts to create your account by providing personal information, setting up security questions, and creating a username and password. Once registered, log in and select the 'Initial Physical Therapist Licensure' application type to start your application.",
+    "provider_search": "https://license.ohio.gov/lookup"
   }
 }

@@ -21,20 +21,21 @@
   "board": {
     "name": "Alabama Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Nurse Aide Registry\nAlabama Department of Public Health\nThe RSA Tower\nP.O. Box 303017\nMontgomery, AL 36130-3017",
     "physical_address": "See board website",
-    "phone": "(334) 293-5200",
+    "phone": "(334) 206-5166 (option 1 for Nurse Aide Registry)",
     "fax": "N/A (contact by phone)",
-    "email": "NARegistry@adph.state.al.us",
+    "email": "nar@adph.state.al.us",
     "url": "https://www.abn.alabama.gov/",
-    "contact_url": "mailto:NARegistry@adph.state.al.us"
+    "contact_url": "https://www.adph.org/nurseaide/contact.asp",
+    "verify_url": "https://nara.adph.state.al.us/NARA/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$125",
     "fee_breakdown": "$125 endorsement application fee",
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 8 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -48,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Alabama-approved CNA training program, usually 120 hours long."
+      "title": "Complete Approved Training & Pass Exam",
+      "description": "Successfully complete an Alabama-approved Nurse Aide Training and Competency Evaluation Program (NATCEP) and pass both the written/oral and clinical skills portions of the Alabama Nurse Aide Competency Examination administered by Prometric."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Alabama nurse aide exam."
+      "title": "Create an Account on the Alabama Nurse Aide Registry Application Portal",
+      "description": "Navigate to the Alabama Nurse Aide Registry Application Portal, select 'Initial Certification', and create a new user account with your email address and password if you do not already have one."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Complete and Submit the Initial Certification Application",
+      "description": "Log in to your account on the Alabama Nurse Aide Registry Application Portal, accurately fill out the initial certification application, providing all required personal, training, and examination information."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Upload or submit any necessary supporting documents as requested by the Alabama Nurse Aide Registry Application Portal, such as proof of training program completion and exam results."
+    },
+    {
+      "title": "Await Application Processing and Registry Listing",
+      "description": "The Alabama Nurse Aide Registry will review your submitted application and documentation. Upon approval, your name will be added to the Alabama Nurse Aide Registry, making your certification active."
     }
   ],
   "documents": [
@@ -123,10 +132,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 125,
-    "processing_time": "4 to 8 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.abn.alabama.gov/",
-    "endorsement_url": "https://www.abn.alabama.gov/",
+    "endorsement_url": "https://www.adph.org/nurseaide/endorsement.asp",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -171,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Alabama",
-        "dek": "Alabama CNA certification requires a 120-hour training program, Alabama Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for Certified Nursing Assistant (CNA) certification in Alabama, you must use the Alabama Nurse Aide Registry Application Portal provided by the Alabama Department of Public Health for initial certification or endorsement."
       },
       "seo": {
         "title": "How to Become a CNA in Alabama",
@@ -217,5 +226,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Alabama Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "renewal_fee_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Alabama Nurse Aide Registry Application Portal",
+    "portal_url": "https://nara.adph.state.al.us/NARA/Default.aspx",
+    "registration_steps": "To create an account, navigate to the Alabama Nurse Aide Registry Application Portal, select 'Initial Certification' or 'Certification by Endorsement (Reciprocity)', and then click 'New User?' to register with your email address and create a password.",
+    "provider_search": "https://nara.adph.state.al.us/NARA/Search.aspx"
   }
 }

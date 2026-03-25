@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathologists and Audiologists",
     "parent_dept": "NC Board of Examiners for SLP and Audiology",
-    "mailing_address": "P.O. Box 16885, Greensboro, NC 27416",
+    "mailing_address": "NCBOESLPA, PO Box 10218, Raleigh, NC 27605",
     "physical_address": "2222-C Wrightsville Ave., Wilmington, NC 28403",
-    "phone": "(336) 272-1828",
+    "phone": "(919) 233-1016",
     "fax": "(336) 272-1829",
-    "email": "mailto:info@ncboeslpa.org",
-    "url": "https://www.ncboeslpa.org/"
+    "email": "board@ncboeslpa.org",
+    "url": "https://www.ncboeslpa.org/",
+    "contact_url": "https://ncboeslpa.org/contact-us/",
+    "verify_url": "https://ncboeslpa.org/verify-a-license/"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": "$100 application + $50 license fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$80",
+    "renewal_cycle": "Annually",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Clinical Practicum",
-      "description": "Earn a master's degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) of the American Speech-Language-Hearing Association (ASHA) that includes a clinical practicum."
+      "title": "Create Account and Submit Online Application",
+      "description": "Register and create an account on the NCBOESLPA Online Portal. Complete and submit the Speech-Language Pathologist application online."
     },
     {
-      "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Complete Jurisprudence Exam and Background Check",
+      "description": "Complete the online Jurisprudence Exam, achieving a 100% score. Submit to a criminal background check (fingerprinting) and ensure the results are sent to the Board."
     },
     {
-      "title": "Apply for and Complete Supervised Professional Experience (SPE)",
-      "description": "Apply for licensure and complete a supervised professional experience (SPE) of at least 1260 clock hours within 36 months from the date of initial licensure."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, showing your master's or doctoral degree in Speech-Language Pathology, to be sent directly to the Board from your educational institution."
+    },
+    {
+      "title": "Submit Praxis SLP Score Report",
+      "description": "Request your official Praxis SLP score report to be sent directly to the Board from Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Submit Clinical Fellowship (CF) Report",
+      "description": "Submit the official Clinical Fellowship Report form, found on the Board's website, documenting the successful completion of your clinical fellowship."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.ncboeslpa.org/",
-    "endorsement_url": "https://www.ncboeslpa.org/",
+    "endorsement_url": "https://ncboeslpa.org/licensing/speech-language-pathologist/",
     "notes": "North Carolina is a member of the ASLP Interstate Compact."
   },
   "slug": "north-carolina-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in North Carolina",
-        "dek": "North Carolina Speech-Language Pathologist license requires graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+        "dek": "To apply for an SLP license in North Carolina, create an account and submit your application through the NCBOESLPA Online Portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NCBOESLPA Online Portal",
+    "portal_url": "https://portal.ncboeslpa.org/",
+    "registration_steps": "Navigate to the NCBOESLPA Online Portal. Click 'Register' to create a new account, then follow the prompts. Once logged in, select 'Speech-Language Pathologist' and 'New Application' to begin.",
+    "provider_search": "https://ncboeslpa.org/verify-a-license/"
   }
 }

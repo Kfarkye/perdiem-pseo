@@ -21,19 +21,21 @@
   "board": {
     "name": "Missouri DHSS",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Missouri Department of Health and Senior Services\nBureau of Health Care and Licensure\nHealth Care Worker Registry\nPO Box 570\nJefferson City, MO 65102",
     "physical_address": "See board website",
-    "phone": "(573) 526-5686",
+    "phone": "573-522-5863",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://health.mo.gov/"
+    "email": "cnaregistry@health.mo.gov",
+    "url": "https://health.mo.gov/",
+    "contact_url": "https://health.mo.gov/safety/cnaregistry/contact.php",
+    "verify_url": "https://health.mo.gov/safety/cnaregistry/lookup.php"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "0 to 3 Weeks",
     "license_duration": "2 Years",
     "training_hours": "175 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Missouri-approved CNA training program, usually 175 hours long."
+      "title": "Complete Approved Training & Exam (Initial Applicants)",
+      "description": "If you are seeking initial certification, enroll in and successfully complete a state-approved Missouri CNA training program and pass the state competency evaluation (written/oral and skills) through a state-approved testing vendor. Your successful completion will be submitted to the Missouri Health Care Worker Registry."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Missouri nurse aide exam."
+      "title": "Apply for Reciprocity (Endorsement Applicants)",
+      "description": "If you are seeking certification by endorsement from another state, review Missouri's reciprocity requirements and download the 'Reciprocity Application for Nurse Assistants' form from the Missouri Department of Health and Senior Services website."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Gather Documentation and Submit Application",
+      "description": "For endorsement, complete the reciprocity application form and gather all required supporting documents as specified (e.g., proof of current out-of-state certification). Mail the completed application and documents to the Missouri DHSS Health Care Worker Registry at the address provided on the form."
+    },
+    {
+      "title": "Registry Processing",
+      "description": "The Missouri Department of Health and Senior Services' Health Care Worker Registry will process your application for endorsement or your submitted results from the testing vendor for initial certification."
+    },
+    {
+      "title": "Verify Listing on HCWR",
+      "description": "Once your certification is processed, verify your active status on the Missouri Health Care Worker Registry (HCWR) Lookup tool. Your listing on the registry serves as your official certification to practice as a CNA in Missouri."
     }
   ],
   "documents": [
@@ -122,10 +132,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "0 to 3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://health.mo.gov/",
-    "endorsement_url": "https://health.mo.gov/",
+    "endorsement_url": "https://health.mo.gov/safety/cnaregistry/reciprocity.php",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Missouri",
-        "dek": "Missouri CNA certification requires a 175-hour training program, Missouri DHSS eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "For Certified Nursing Assistant endorsement in Missouri, submit a mail-in application to the Missouri Department of Health and Senior Services. Initial certification status is automatically recorded in the Missouri Health Care Worker Registry (HCWR) after successful training and testing."
       },
       "seo": {
         "title": "How to Become a CNA in Missouri",
@@ -216,5 +226,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Missouri Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Missouri Health Care Worker Registry (HCWR)",
+    "portal_url": "https://health.mo.gov/safety/cnaregistry/",
+    "registration_steps": "Initial certification in Missouri is attained by completing an approved training program and passing a state competency exam. The testing vendor then submits the successful results to the Missouri Health Care Worker Registry for listing. For endorsement from another state, individuals must complete and mail in a paper application. There is no traditional online account creation or application portal for initial certification; the HCWR primarily serves as a lookup and renewal system for those already certified.",
+    "provider_search": "https://health.mo.gov/safety/cnaregistry/lookup.php"
   }
 }

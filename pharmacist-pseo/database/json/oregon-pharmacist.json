@@ -21,18 +21,20 @@
   "board": {
     "name": "Oregon Board of Pharmacy",
     "parent_dept": "Oregon Health Licensing Office (HLO)",
-    "mailing_address": "See board website",
+    "mailing_address": "800 NE Oregon St, STE 150, Portland, OR 97232",
     "physical_address": "See board website",
     "phone": "(971) 673-0001",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.oregon.gov/pharmacy/Pages/index.aspx"
+    "email": "pharmacy.board@oregon.gov",
+    "url": "https://www.oregon.gov/pharmacy/Pages/index.aspx",
+    "contact_url": "https://www.oregon.gov/pharmacy/pages/contact.aspx",
+    "verify_url": "https://www.oregon.gov/pharmacy/pages/lookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$200",
+    "renewal_cycle": "Every 1 year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a pharmacy degree from a program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create an Account in the Applicant Portal",
+      "description": "Navigate to the Oregon Board of Pharmacy Applicant Portal (oregon.mypalm.info) and click 'Register' to create a new user account if you don't have one already."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Complete the Pharmacist Licensure Application",
+      "description": "Log into the Applicant Portal, select the Pharmacist application, complete all required sections, upload necessary supporting documents, and pay the associated application fee."
     },
     {
-      "title": "Submit an Application to the Board",
-      "description": "Complete and submit an application for licensure to the Oregon Board of Pharmacy, including all required documentation and fees."
+      "title": "Register for and Pass Required Examinations",
+      "description": "Register with the National Association of Boards of Pharmacy (NABP) to take and pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE - Oregon component). Ensure NABP sends your scores directly to the Oregon Board of Pharmacy."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for your official transcript from an ACPE-accredited pharmacy school to be sent directly to the Board. Complete any required background checks as instructed by the Board."
+    },
+    {
+      "title": "Await Board Review and Licensure",
+      "description": "The Board will review your completed application, official exam scores, and all submitted documentation. Upon successful review and approval, your pharmacist license will be issued."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oregon.gov/pharmacy/Pages/index.aspx",
-    "endorsement_url": "https://www.oregon.gov/pharmacy/Pages/index.aspx",
+    "endorsement_url": "https://www.oregon.gov/pharmacy/pages/licensing_pharmacist_endorsement.aspx",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "oregon-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Oregon",
-        "dek": "Oregon Pharmacist licensure requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and meeting character requirements."
+        "dek": "To apply for a pharmacist license in Oregon, create an account and submit your application through the Oregon Board of Pharmacy Applicant Portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Oregon Board of Pharmacy Applicant Portal",
+    "portal_url": "https://oregon.mypalm.info/",
+    "registration_steps": "Go to oregon.mypalm.info. Click 'Register' if you are a new user. Follow the prompts to create your account and begin your application.",
+    "provider_search": "https://www.oregon.gov/pharmacy/pages/lookup.aspx"
   }
 }

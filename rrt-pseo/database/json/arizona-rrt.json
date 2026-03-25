@@ -21,17 +21,19 @@
   "board": {
     "name": "Arizona Board of Respiratory Care Examiners",
     "parent_dept": "Arizona does not mandate state dietitian licensure. The national CDR credential is the recognized standard.",
-    "mailing_address": "See board website",
+    "mailing_address": "Arizona State Board of Respiratory Care Examiners, 1740 W. Adams Street, Suite 3004, Phoenix, AZ 85007",
     "physical_address": "See board website",
-    "phone": "(602) 542-5995",
+    "phone": "(602) 542-5360",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.respiratoryboard.az.gov/"
+    "email": "info@azborce.gov",
+    "url": "http://www.respiratoryboard.az.gov/",
+    "contact_url": "https://www.azborce.gov/contact-us",
+    "verify_url": "https://www.azborce.gov/licensee-search"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Therapy Program",
-      "description": "Graduate from a respiratory therapy education program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or its successor."
+      "title": "Create an Account on the AZ Licensing Portal",
+      "description": "Navigate to the AZ Licensing Portal and register for a new user account using a valid email address."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) Therapist Multiple Choice (TMC) Examination and Clinical Simulation Examination (CSE)."
+      "title": "Complete the Online Application",
+      "description": "Log into your AZ Licensing Portal account, select the 'Respiratory Care Practitioner Endorsement License' application type, and accurately fill out all required sections."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, including required documentation and fees, to the Arizona Board of Respiratory Care Examiners."
+      "title": "Submit Required Documentation",
+      "description": "Upload official transcripts, verification of NBRC credentials, and verification of licensure from any state where you have ever held a license, as specified in the AZ Licensing Portal."
+    },
+    {
+      "title": "Complete Fingerprint Background Check",
+      "description": "Follow the instructions provided by the Board to obtain a fingerprint card and complete the required criminal background check through approved channels."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the $150 endorsement application fee electronically through the AZ Licensing Portal to finalize your submission."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your AZ Licensing Portal account for updates on your application status and respond promptly to any requests for additional information from the Board."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 220,
-    "processing_time": "6 to 8 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "http://www.respiratoryboard.az.gov/",
-    "endorsement_url": "http://www.respiratoryboard.az.gov/",
+    "endorsement_url": "https://www.azborce.gov/license-information/how-obtain-license",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Arizona",
-        "dek": "Arizona Respiratory Therapist licenses require graduation from an accredited program, passing the NBRC examination, and submitting an application to the Arizona Board of Respiratory Care Examiners."
+        "dek": "To apply for a Respiratory Therapist license in Arizona, users must create an account and complete the application process through the AZ Licensing Portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "AZ Licensing Portal",
+    "portal_url": "https://azborce.us.thentiacloud.net/",
+    "registration_steps": "New users must navigate to the AZ Licensing Portal and click 'Register Now' to create an account with a valid email address and password.",
+    "provider_search": "https://www.azborce.gov/licensee-search"
   }
 }

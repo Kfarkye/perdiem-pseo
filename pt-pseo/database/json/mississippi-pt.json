@@ -21,19 +21,21 @@
   "board": {
     "name": "Mississippi Board of Physical Therapy",
     "parent_dept": "Mississippi State Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "2478 S. Frontage Road, Suite 300, Vicksburg, MS 39180",
     "physical_address": "See board website",
-    "phone": "(601) 352-0613",
+    "phone": "(601) 987-6884",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.msbpt.ms.gov/"
+    "email": "info@msbpt.ms.gov",
+    "url": "https://www.msbpt.ms.gov/",
+    "contact_url": "https://www.msbpt.ms.gov/contact/",
+    "verify_url": "https://www.msbpt.ms.gov/verifysubject/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "30 contact hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create Account and Start Application",
+      "description": "Access the MSBPT Online Application Portal (msbpt.boardsofnursing.org), register for a new user account if you are a first-time applicant, and then log in to select the 'PT Licensure by Endorsement' application."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Register for and pass the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Complete Online Application and Pay Fees",
+      "description": "Fill out all required sections of the online application form within the MSBPT Online Application Portal. Pay the non-refundable $150 application fee and the $75 initial licensure fee directly through the portal."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application for licensure to the Mississippi Board of Physical Therapy, including all required documentation and fees."
+      "title": "Submit Required Documentation",
+      "description": "Upload or arrange for the submission of all necessary supporting documents, including official transcripts, NPTE scores, verification of current and past licenses from other states (VeriFied by Nursys or direct verification), and a criminal background check authorization form as instructed by the Board."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Follow the specific instructions provided by the Board to complete a fingerprint-based criminal background check through an approved vendor."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application and submitted documents via the MSBPT Online Application Portal. The Board will review your application once all required documentation has been received."
+    },
+    {
+      "title": "Receive Licensure",
+      "description": "Upon successful review and approval by the Mississippi State Board of Physical Therapy, your Mississippi Physical Therapist license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 225,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.msbpt.ms.gov/",
-    "endorsement_url": "https://www.msbpt.ms.gov/",
+    "endorsement_url": "https://msbpt.ms.gov/licensing/licensure-by-endorsement/",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "mississippi-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Mississippi",
-        "dek": "Mississippi Physical Therapist License requires graduation from an accredited program, passing the National Physical Therapy Examination (NPTE), and a criminal background check."
+        "dek": "To apply for a Physical Therapist license in Mississippi, applicants must complete the entire process through the MSBPT Online Application Portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MSBPT Online Application Portal",
+    "portal_url": "https://msbpt.boardsofnursing.org/",
+    "registration_steps": "Navigate to the MSBPT Online Application Portal, click 'Register' for first-time users, create an account with a valid email, username, and password, then log in to start an application.",
+    "provider_search": "https://www.msbpt.ms.gov/verifysubject/"
   }
 }

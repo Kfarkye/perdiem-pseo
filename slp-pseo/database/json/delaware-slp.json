@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech/Language Pathologists, Audiologists and Hearing Aid Dispensers",
     "parent_dept": "Delaware Division of Professional Regulation",
-    "mailing_address": "861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
+    "mailing_address": "Cannon Building, 861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
     "physical_address": "861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
-    "phone": "(302) 744-4500",
+    "phone": "302-744-4500",
     "fax": "(302) 739-2711",
-    "email": "mailto:customerservice.dpr@delaware.gov",
-    "url": "https://dpr.delaware.gov/boards/speechpath/"
+    "email": "customerservice.dpr@delaware.gov",
+    "url": "https://dpr.delaware.gov/boards/speechpath/",
+    "contact_url": "https://professions.delaware.gov/contact/",
+    "verify_url": "https://dpronline.delaware.gov/professional_license_search/"
   },
   "quick_facts": {
     "total_fee": "$141",
     "fee_breakdown": "$91 application + $50 license fee",
-    "renewal_fee": "$111",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 contact hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Educational Requirements",
-      "description": "Complete a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+      "title": "Create a DELPROS Account",
+      "description": "Register for a new account or log in to an existing one on the DELPROS online portal."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience (SPE) that meets the requirements outlined in Section 3.0 of the Board's Rules and Regulations."
+      "title": "Complete Online Application",
+      "description": "Submit the Speech-Language Pathologist license application through your DELPROS account and pay the required application and initial license fees."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application for licensure to the Delaware Board of Speech/Language Pathologists, Audiologists and Hearing Aid Dispensers and pay the required fees."
+      "title": "Submit Academic Transcripts",
+      "description": "Arrange for your official graduate degree transcripts to be sent directly from your university to the Delaware Board of Speech Pathologists, Audiologists and Hearing Aid Dispensers."
+    },
+    {
+      "title": "Submit Clinical Fellowship/ASHA CCCs",
+      "description": "Provide documentation of your supervised clinical fellowship (e.g., ASHA Certificate of Clinical Competence or a completed Verification of Clinical Fellowship Form) directly to the Board."
+    },
+    {
+      "title": "Submit Praxis Scores",
+      "description": "Arrange for official Praxis Series exam scores (Speech-Language Pathology, #5331) to be sent directly to the Board from ETS."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 141,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 129,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dpr.delaware.gov/boards/speechpath/",
-    "endorsement_url": "https://dpr.delaware.gov/boards/speechpath/",
+    "endorsement_url": "https://professions.delaware.gov/boards/speech/slp-licensure-requirements/",
     "notes": "Delaware is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Delaware through a compact privilege."
   },
   "slug": "delaware-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Delaware",
-        "dek": "Delaware Speech-Language Pathologist licenses require a master’s degree, passing the Praxis exam, and completing a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in Delaware, users must register and complete their application through the DELPROS online portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DELPROS",
+    "portal_url": "https://dpronline.delaware.gov/applications/",
+    "registration_steps": "On the DELPROS portal, click 'Register a New Account' if you don't have one, or 'Login to an Existing Account'. Follow the prompts to create your account and verify your email. Once logged in, navigate to 'Apply for a License' from your dashboard.",
+    "provider_search": "https://dpronline.delaware.gov/professional_license_search/"
   }
 }

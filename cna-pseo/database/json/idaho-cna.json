@@ -21,19 +21,21 @@
   "board": {
     "name": "Idaho Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Idaho Board of Nursing\nP.O. Box 83720\nBoise, ID 83720-0061",
     "physical_address": "See board website",
-    "phone": "(208) 577-2476",
+    "phone": "208-577-2476",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dopl.idaho.gov/nur/"
+    "email": "nursingaides@ibn.idaho.gov",
+    "url": "https://dopl.idaho.gov/nur/",
+    "contact_url": "https://ibn.idaho.gov/contact-us/",
+    "verify_url": "https://ibn.idaho.gov/online-verification/"
   },
   "quick_facts": {
     "total_fee": "$25",
     "fee_breakdown": "$25 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$25",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Unknown",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Idaho-approved CNA training program, usually 120 hours long."
+      "title": "Create Portal Account",
+      "description": "Go to the Idaho Board of Nursing Applicant Portal (ibn.idaho.gov/applicant-portal/) and create a new user account. You will need to provide personal details and set up your login credentials."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Idaho nurse aide exam."
+      "title": "Initiate Application",
+      "description": "Log in to your newly created Applicant Portal account. From your dashboard, click 'Begin a New Application' and select 'Nurse Aide' as the application type. Choose either 'Certification by Examination' or 'Certification by Endorsement' based on your eligibility."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Complete Application Form",
+      "description": "Proceed to fill out all required sections of the online application form. This includes providing your personal information, detailed education or training history, and answering background questions."
+    },
+    {
+      "title": "Upload Supporting Documents",
+      "description": "Electronically upload all necessary supporting documentation directly through the Applicant Portal. This may include proof of completion from an approved training program, official exam results, or verification of an out-of-state license for endorsement."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required non-refundable application fee of $40 for either certification by examination or endorsement. Payment is made securely via credit or debit card within the Applicant Portal."
+    },
+    {
+      "title": "Submit and Monitor Application",
+      "description": "Review your entire application and all uploaded documents for accuracy and completeness. Once satisfied, electronically submit your application. You can monitor the status and any communications regarding your application directly through your Idaho Board of Nursing Applicant Portal dashboard."
     }
   ],
   "documents": [
@@ -121,11 +135,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 25,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 40,
+    "processing_time": "Unknown",
     "processing_tier": "mid",
     "board_url": "https://dopl.idaho.gov/nur/",
-    "endorsement_url": "https://dopl.idaho.gov/nur/",
+    "endorsement_url": "https://ibn.idaho.gov/nurse-aide-registry/",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Idaho",
-        "dek": "Idaho CNA certification requires a 120-hour training program, Idaho Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for a Certified Nursing Assistant license in Idaho, you must create an account and submit your application through the Idaho Board of Nursing Applicant Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Idaho",
@@ -216,5 +230,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Idaho Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Idaho Board of Nursing Applicant Portal",
+    "portal_url": "https://ibn.idaho.gov/applicant-portal/",
+    "registration_steps": "Go to the Idaho Board of Nursing Applicant Portal and click on 'New users: Create Account' to register your profile. After creating your account, log in to your dashboard to begin a new application for a Nurse Aide certification.",
+    "provider_search": "https://ibn.idaho.gov/online-verification/"
   }
 }

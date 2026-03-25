@@ -21,18 +21,20 @@
   "board": {
     "name": "Board of Audiology and Speech-Language Pathology",
     "parent_dept": "DC Department of Health (DOH), Health Regulation and Licensing Administration",
-    "mailing_address": "899 North Capitol St. NE, Washington, DC 20002",
+    "mailing_address": "Health Regulation and Licensing Administration, 899 North Capitol Street NE, Washington, DC 20002",
     "physical_address": "899 North Capitol St. NE, Washington, DC 20002",
-    "phone": "(202) 724-8800",
+    "phone": "(202) 442-5955",
     "fax": "(202) 724-8677",
-    "email": "mailto:doh.hpla@dc.gov",
-    "url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing"
+    "email": "hpla.audiology-slp@dc.gov",
+    "url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+    "contact_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology",
+    "verify_url": "https://doh.force.com/dchealth/s/license-search"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$230",
+    "renewal_cycle": "Every 2 years (odd years)",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination administered by Praxis",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "You must have graduated with a doctoral degree in audiology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+      "title": "Create an Account",
+      "description": "Register for a new account on the DC Health Licensing Portal (doh.force.com/dchealth/s/login/) if you do not have one already, providing all necessary personal information."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "You must pass the Audiology Examination administered by Praxis."
+      "title": "Start Application for Endorsement",
+      "description": "Log in to the DC Health Licensing Portal and initiate a new application for Audiology licensure, specifically selecting the 'Application by Endorsement' option."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete the online application, pay the required fee, and submit all supporting documentation to the Board of Audiology and Speech-Language Pathology."
+      "title": "Complete Online Application Form",
+      "description": "Fill out the entire online application form thoroughly, providing all requested personal, professional, and licensure history information as required for endorsement."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Upload all required supporting documents directly to the DC Health Licensing Portal. This typically includes official transcripts, verification of all current/prior licenses in good standing from other states, professional liability insurance, and any other documents specified in the Audiology Application by Endorsement instructions."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required application fee of $230.00 through the secure payment system within the DC Health Licensing Portal."
+    },
+    {
+      "title": "Await Review and Approval",
+      "description": "Ensure any required criminal background check is completed if applicable and await review of your application by the Board of Audiology and Speech-Language Pathology. You may be contacted if additional information is needed."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 230,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
-    "endorsement_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+    "endorsement_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "dc-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in District of Columbia",
-        "dek": "District of Columbia Audiologist licenses require graduation from an approved program, passing the Audiology Examination administered by Praxis, and a completed application."
+        "dek": "Audiologists seeking licensure by endorsement in DC must apply through the DC Health Licensing Portal, which handles all professional licensing applications for the District."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DC Health Licensing Portal",
+    "portal_url": "https://doh.force.com/dchealth/s/login/",
+    "registration_steps": "Click 'Register for an Account' on the login page. Follow the prompts to enter your personal information, create a username and password, and complete the account setup process.",
+    "provider_search": "https://doh.force.com/dchealth/s/license-search"
   }
 }

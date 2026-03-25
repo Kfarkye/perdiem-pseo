@@ -21,19 +21,21 @@
   "board": {
     "name": "Montana Board of Medical Examiners",
     "parent_dept": "Department of Labor & Industry",
-    "mailing_address": "PO Box 200513<br>Helena, MT 59620-0513",
+    "mailing_address": "301 S. Park Ave., P.O. Box 200513, Helena MT 59620-0513",
     "physical_address": "301 S. Park Ave., 4th Floor<br>Helena, MT 59601",
     "phone": "(406) 444-6880",
     "fax": "(406) 841-2305",
-    "email": "mailto:dlibsdmed@mt.gov",
-    "url": "https://boards.bsd.dli.mt.gov/medical-examiners/"
+    "email": "dlibsdweb@mt.gov",
+    "url": "https://boards.bsd.dli.mt.gov/medical-examiners/",
+    "contact_url": "https://boards.mt.gov/contact-us",
+    "verify_url": "https://ebiz.mt.gov/pol/Default.aspx?mode=search"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$75 non-refundable application fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Annually, due July 1st",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Supervised Practice",
-      "description": "Complete a minimum of a bachelor's degree and supervised practice program approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Create an Account on Licensing Montana",
+      "description": "Navigate to the *Licensing Montana* portal at licensing.mt.gov and register for a new user account if you don't already have one. You will need to verify your email."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete the Online Application",
+      "description": "Log in to your *Licensing Montana* account, select 'Start New Application,' and choose the 'Dietitian/Nutritionist' application type. Fill out all required sections accurately."
     },
     {
-      "title": "Apply for a Dietitian License",
-      "description": "Submit a completed application, official transcripts, verification of supervised practice, examination results, and required fee to the Montana Board of Medical Examiners."
+      "title": "Upload Required Documentation",
+      "description": "Upload official transcripts verifying your qualifying degree (Bachelor's or Master's in a relevant field), documentation of your ACEND-approved supervised practice experience, and proof of passing the CDR Registration Examination."
+    },
+    {
+      "title": "Arrange for Official Verifications",
+      "description": "Ensure the Commission on Dietetic Registration (CDR) sends official verification of your registration directly to the Montana Board of Medical Examiners. If applying by endorsement, arrange for verification of your active, out-of-state license(s) to be sent directly from the issuing board(s)."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Pay the non-refundable initial application fee of $100.00 through the *Licensing Montana* portal using a credit/debit card."
     }
   ],
   "documents": [
@@ -136,11 +146,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "3 to 5 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://boards.bsd.dli.mt.gov/medical-examiners/",
-    "endorsement_url": "https://boards.bsd.dli.mt.gov/medical-examiners/",
+    "endorsement_url": "https://boards.mt.gov/medical/dietitian-nutritionist",
     "notes": "Out-of-state applicants with active CDR registration may readily obtain a Montana license by successfully completing the application packet, submitting the NPDB self-query, and ensuring their current state licenses are verified.",
     "requires_psv": false
   },
@@ -156,7 +166,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Montana",
-        "dek": "Montana Dietitian License requires completing an accredited educational program, passing the Registration Examination for Dietitians, and completing supervised practice."
+        "dek": "To apply for a Dietitian/Nutritionist license in Montana, submit your application through the official *Licensing Montana* online portal."
       }
     }
   },
@@ -182,5 +192,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Licensing Montana",
+    "portal_url": "https://licensing.mt.gov/",
+    "registration_steps": "Navigate to licensing.mt.gov and click 'Register for an Account' to create a new user profile. Follow the prompts to complete registration and verify your email, then log in to start a new application.",
+    "provider_search": "https://ebiz.mt.gov/pol/Default.aspx?mode=search"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "California Respiratory Care Board",
     "parent_dept": "Title Protection Only (Business and Professions Code Section 2585)",
-    "mailing_address": "See board website",
+    "mailing_address": "Respiratory Care Board of California\n3750 Kilroy Airport Way, Suite 325\nSacramento, CA 95826",
     "physical_address": "See board website",
     "phone": "(916) 999-2190",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.rcb.ca.gov"
+    "email": "info@rcb.ca.gov",
+    "url": "http://www.rcb.ca.gov",
+    "contact_url": "https://www.rcb.ca.gov/consumers/contact.shtml",
+    "verify_url": "https://search.dca.ca.gov/"
   },
   "quick_facts": {
     "total_fee": "$349",
     "fee_breakdown": "$300 application fee + $49 out-of-state fingerprint card fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "8 to 12 Weeks",
+    "renewal_fee": "$300",
+    "renewal_cycle": "Every 2 years, on birth month",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "training_hours": "620 hours",
     "exam_name": "National Board for Respiratory Care (NBRC) Entry Level Examination",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Approved Respiratory Care Educational Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or one that is deemed equivalent by the Respiratory Care Board (RCB)."
+      "title": "Create a BreEZe Account",
+      "description": "Register for a new user account on the California BreEZe online application system at breeze.ca.gov. This is the first step before you can access any application forms."
     },
     {
-      "title": "Pass the NBRC Entry Level Examination",
-      "description": "Successfully pass the National Board for Respiratory Care (NBRC) Entry Level Examination for Certified Respiratory Therapists (CRT)."
+      "title": "Submit Online Application via BreEZe",
+      "description": "Log in to your BreEZe account and complete the 'Application for Licensure' for Respiratory Care Practitioner. Ensure all sections are filled out accurately."
     },
     {
-      "title": "Submit a Completed Application to the RCB",
-      "description": "Complete and submit an application for licensure to the Respiratory Care Board (RCB) along with the required fee and documentation."
+      "title": "Provide Supporting Documents",
+      "description": "Arrange for official transcripts to be sent directly from your CoARC-approved respiratory care program to the Respiratory Care Board. If applying by endorsement with an RRT credential, submit proof of your NBRC RRT credential."
+    },
+    {
+      "title": "Complete Fingerprinting for Background Check",
+      "description": "Submit to a Live Scan fingerprinting process. Obtain the 'Request for Live Scan Service' form from the Board's website. If residing outside California, you can request fingerprint cards for submission."
+    },
+    {
+      "title": "Pass NBRC Examinations or Provide RRT Proof",
+      "description": "Ensure the National Board for Respiratory Care (NBRC) directly reports your passing scores for the Therapist Multiple-Choice (TMC) Examination and the Clinical Simulation Examination (CSE) to the California Respiratory Care Board, or provide proof of your current RRT credential if applying by endorsement."
+    },
+    {
+      "title": "Pay Application and Initial License Fees",
+      "description": "Pay the non-refundable Application Fee through your BreEZe account. Once your application is approved, you will be notified to pay the Initial License Fee before your license is issued."
     }
   ],
   "documents": [
@@ -125,11 +139,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 349,
-    "processing_time": "8 to 12 Weeks",
+    "endorsement_fee": 200,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "http://www.rcb.ca.gov",
-    "endorsement_url": "http://www.rcb.ca.gov",
+    "endorsement_url": "https://www.rcb.ca.gov/applicants/forms.shtml",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in California",
-        "dek": "California Respiratory Therapist License requires graduation from an approved school, passing the NBRC Entry Level Examination, and successful completion of the application process."
+        "dek": "To apply for a Respiratory Therapist license in California, users must create an account and submit their application through the BreEZe online application system."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "BreEZe",
+    "portal_url": "https://www.breeze.ca.gov/",
+    "registration_steps": "Navigate to breeze.ca.gov and click 'Register a New Account'. Follow the prompts to create your user profile, which includes providing personal information and setting up security questions, before you can start an application.",
+    "provider_search": "https://search.dca.ca.gov/"
   }
 }

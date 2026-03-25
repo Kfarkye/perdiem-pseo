@@ -21,19 +21,21 @@
   "board": {
     "name": "Missouri Board for Respiratory Care",
     "parent_dept": "Missouri Division of Professional Registration",
-    "mailing_address": "See board website",
+    "mailing_address": "3605 Missouri Boulevard, P.O. Box 1335, Jefferson City, MO 65102-1335",
     "physical_address": "See board website",
-    "phone": "(573) 751-0098",
+    "phone": "(573) 751-0096",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pr.mo.gov/healingarts.asp"
+    "email": "pr@pr.mo.gov",
+    "url": "https://pr.mo.gov/healingarts.asp",
+    "contact_url": "https://pr.mo.gov/respiratory-contact.asp",
+    "verify_url": "https://pr.mo.gov/licensing-search.asp"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "1.5 to 2 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Approved Respiratory Care Program",
-      "description": "Graduate from a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or another board-approved accrediting agency."
+      "title": "Create an Account",
+      "description": "Navigate to the Missouri Division of Professional Registration Online Application System and click \"First Time User? Register Now\" to create your applicant profile."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Complete Online Application",
+      "description": "Log into your account and select the \"Respiratory Care Practitioner\" application type. Thoroughly complete all required sections, including personal, educational, and professional background details."
     },
     {
-      "title": "Apply for a Respiratory Care License",
-      "description": "Submit an application, pay the $50 fee, and provide all required documentation to the Missouri Board for Respiratory Care."
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official transcripts from your COARC-accredited program and official NBRC score reports (CRT/RRT) to be sent directly to the Missouri Board of Respiratory Care."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Follow the instructions provided within the online application to complete the fingerprint-based criminal background check through the state's approved vendor, MACHS."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $125 via the secure payment portal within the Missouri Division of Professional Registration Online Application System."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status within the Online Application System. The Board will notify you of any missing documentation or additional requirements."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 40,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 125,
+    "processing_time": "1.5 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://pr.mo.gov/healingarts.asp",
-    "endorsement_url": "https://pr.mo.gov/healingarts.asp",
+    "endorsement_url": "https://pr.mo.gov/respiratory-online-application.asp",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Missouri",
-        "dek": "Missouri Respiratory Therapist licenses require graduation from an approved program, passing the NBRC exam, and a background check."
+        "dek": "To apply for a Respiratory Therapist license in Missouri, use the Missouri Division of Professional Registration Online Application System, which handles both initial and endorsement applications for Respiratory Care Practitioners."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Missouri Division of Professional Registration Online Application System",
+    "portal_url": "https://pr.mo.gov/respiratory-online-application.asp",
+    "registration_steps": "Visit the Online Application System and select \"First Time User? Register Now\" to create an account, then proceed with the application for Respiratory Care Practitioner.",
+    "provider_search": "https://pr.mo.gov/licensing-search.asp"
   }
 }

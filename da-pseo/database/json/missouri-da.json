@@ -15,18 +15,20 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Missouri Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Missouri — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Missouri \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license missouri, dental assistant certification missouri, RDA missouri, DANB CDA missouri, dental assistant radiography missouri"
   },
   "board": {
     "name": "Missouri Dental Board",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Missouri Dental Board\n3605 Missouri Blvd.\nP.O. Box 1367\nJefferson City, MO 65102",
     "physical_address": "See board website",
-    "phone": "(573) 751-0040",
+    "phone": "573-751-0040",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pr.mo.gov/dental.asp"
+    "email": "dental@pr.mo.gov",
+    "url": "https://pr.mo.gov/dental.asp",
+    "contact_url": "https://scm.dpr.mo.gov/contact-us.asp",
+    "verify_url": "https://scm.dpr.mo.gov/professions/licenselookup.asp"
   },
   "quick_facts": {
     "total_fee": "$10",
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Complete the Dental Assistant Registration Application provided by the Missouri Dental Board."
+      "title": "Understand Missouri's Requirements",
+      "description": "Confirm that Missouri does not require general dental assistant licensure. If seeking qualification for advanced functions (such as Nitrous Oxide Monitoring, Restorative I/II, or Local Anesthesia Administration), ensure you meet specific educational, examination, and/or experience criteria outlined by the Missouri Dental Board."
     },
     {
-      "title": "Submit Required Documentation and Fee",
-      "description": "Submit the completed application and any required documentation along with the $10 fee."
+      "title": "Download Application Form",
+      "description": "Navigate to the Missouri Dental Board Application Forms page (https://scm.dpr.mo.gov/dental/apply.asp) and download the specific PDF application form corresponding to the advanced function qualification you are seeking."
     },
     {
-      "title": "Maintain Registration",
-      "description": "Complete 2 hours of continuing education related to infection control or safety every two years to maintain your registration."
+      "title": "Complete Application and Gather Documents",
+      "description": "Fill out the downloaded PDF application thoroughly. Collect all necessary supporting documents, which typically include proof of approved course completion, examination results, and a current Basic Life Support (BLS) for healthcare providers certification."
+    },
+    {
+      "title": "Prepare Application Fee",
+      "description": "Include a check or money order, made payable to the Missouri Dental Board, for the non-refundable application fee (e.g., $30.00 for Nitrous Oxide Monitoring or Restorative I/II)."
+    },
+    {
+      "title": "Submit Application Packet",
+      "description": "Mail the completed application form, all original or certified copies of supporting documentation, and the application fee to the Missouri Dental Board's mailing address for processing."
     }
   ],
   "documents": [
@@ -127,7 +137,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://pr.mo.gov/dental.asp",
-    "endorsement_url": "https://pr.mo.gov/dental.asp",
+    "endorsement_url": "https://scm.dpr.mo.gov/dental/professions/dental-assistant.asp",
     "notes": "General dental assistants are not licensed. Expanded functions permit is $10.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Missouri",
-        "dek": "Missouri Dental Assistant registration requires completing the application, paying the fee, and maintaining continuing education requirements."
+        "dek": "To obtain qualification for advanced dental assistant functions (e.g., Nitrous Oxide Monitoring, Restorative I/II, Local Anesthesia Administration) in Missouri, you must download, complete, and submit the relevant PDF application form from the Missouri Dental Board Application Forms page."
       }
     }
   },
@@ -172,5 +182,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Missouri Dental Board Application Forms",
+    "portal_url": "https://scm.dpr.mo.gov/dental/apply.asp",
+    "registration_steps": "Missouri does not require general licensure for Dental Assistants. For specific advanced functions (e.g., Nitrous Oxide Monitoring, Restorative I/II, Local Anesthesia Administration), applicants must download, complete, and submit the relevant PDF application form by mail with all required supporting documentation and fees.",
+    "provider_search": "https://scm.dpr.mo.gov/professions/licenselookup.asp"
   }
 }

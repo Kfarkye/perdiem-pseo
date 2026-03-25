@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "West Virginia Board of Examiners for SLP and Audiology",
-    "mailing_address": "3507 MacCorkle Ave. SE, Charleston, WV 25304",
+    "mailing_address": "WV Board of Examiners for SLPA\n3306 Pennsylvania Ave\nSuite 201\nCharleston, WV 25302",
     "physical_address": "3507 MacCorkle Ave. SE, Charleston, WV 25304",
-    "phone": "(304) 558-3945",
+    "phone": "(304) 414-0414",
     "fax": "(304) 558-3946",
-    "email": "mailto:wvbespa@wv.gov",
-    "url": "https://wvbeslpa.com/"
+    "email": "wvbeslpa@wv.gov",
+    "url": "https://wvbeslpa.com/",
+    "contact_url": "https://wvbeslpa.org/contact-us/",
+    "verify_url": "https://wvbeslpa.org/license-verification/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$50 application + $50 license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "24 hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Complete a master's degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+      "title": "Create an Account and Start Application",
+      "description": "Access the WV Board's Online Licensing System (https://wvbeslpa.mylicense.com/), register as a new user, and initiate the Speech-Language Pathologist application."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience consisting of at least 1260 hours, with at least 36 weeks of full-time experience, under the supervision of a licensed speech-language pathologist."
+      "title": "Submit Required Documents",
+      "description": "Upload or ensure official submission of necessary documents, including official transcripts verifying a master's or doctoral degree in SLP, official proof of supervised clinical practicum, official verification of ASHA Clinical Fellowship (CF) completion or a CF plan, and passing Praxis examination scores."
     },
     {
-      "title": "Pass the Praxis Examination and Apply",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology and submit a completed application with the required fee to the West Virginia Board of Examiners for Speech-Language Pathology and Audiology."
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Arrange for a state and federal criminal background check through IDEMIA (formerly MorphoTrust). Specific instructions for scheduling are typically provided within the WV Board's Online Licensing System or on the board's website."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $75.00 directly through the WV Board's Online Licensing System as part of your application."
+    },
+    {
+      "title": "Board Review and Licensure",
+      "description": "The West Virginia Board of Examiners for Speech-Language Pathology and Audiology will review your complete application, supporting documents, and background check results. Upon approval, your license will be issued."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 75,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://wvbeslpa.com/",
-    "endorsement_url": "https://wvbeslpa.com/",
+    "endorsement_url": "https://wvbeslpa.org/endorsement/",
     "notes": "West Virginia is a member of the ASLP Interstate Compact and is actively issuing compact privileges."
   },
   "slug": "west-virginia-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in West Virginia",
-        "dek": "West Virginia Speech-Language Pathologist license requires a master's degree, passing the Praxis exam, and completion of a supervised professional experience."
+        "dek": "To apply for an SLP license in West Virginia, you must submit your application and all supporting documents through the WV Board's Online Licensing System."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "WV Board's Online Licensing System",
+    "portal_url": "https://wvbeslpa.mylicense.com/",
+    "registration_steps": "Navigate to the WV Board's Online Licensing System URL. Click on 'New Applicants Register Here' or 'Register for an Account'. Follow the prompts to create a user ID and password, then log in to begin a new application.",
+    "provider_search": "https://wvbeslpa.org/license-verification/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech Pathology and Audiology",
     "parent_dept": "Iowa Department of Inspections, Appeals and Licensing",
-    "mailing_address": "321 E. 12th St., Des Moines, IA 50319-0075",
+    "mailing_address": "Iowa Department of Health and Human Services\nProfessional Licensure\n321 East 12th Street\nDes Moines, IA 50319-0075",
     "physical_address": "321 E. 12th St., Des Moines, IA 50319",
-    "phone": "(515) 281-0254",
+    "phone": "(515) 281-0145",
     "fax": "(515) 281-3121",
-    "email": "mailto:amanda.breitbach@dia.iowa.gov",
-    "url": "https://dial.iowa.gov/licensing/professional-licenses/speech-pathology-and-audiology"
+    "email": "plpublic@iowa.gov",
+    "url": "https://dial.iowa.gov/licensing/professional-licenses/speech-pathology-and-audiology",
+    "contact_url": "https://hhs.iowa.gov/licensure/contact-us",
+    "verify_url": "https://hhs.iowa.gov/licensure/licensure-lookup"
   },
   "quick_facts": {
     "total_fee": "$120",
     "fee_breakdown": "$60 application + $60 license fee",
-    "renewal_fee": "$120",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Complete a master's degree or doctoral degree in speech-language pathology from an accredited program."
+      "title": "Create an Account and Apply Online",
+      "description": "Go to the MyIowa portal (myiowa.gov), create an account if you don't have one, and complete the online application for a Speech-Language Pathologist license, including paying the initial application fee."
     },
     {
-      "title": "Complete Supervised Clinical Practicum",
-      "description": "Complete a supervised clinical practicum experience as required by your educational program."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official graduate transcripts, showing a master's or doctorate in Speech-Language Pathology from an accredited college or university, to be sent directly to the Iowa Department of Health and Human Services."
     },
     {
-      "title": "Pass the Praxis Examination",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology with a score meeting the state's requirements."
+      "title": "Provide Verification of Clinical Experience or ASHA CCC",
+      "description": "Submit either a completed Verification of Supervised Clinical Experience Form (SLP-2) documenting 1225 clock hours of supervised experience, or official documentation of your Certificate of Clinical Competence (CCC) from the American Speech-Language-Hearing Association (ASHA)."
+    },
+    {
+      "title": "Submit Praxis Examination Scores",
+      "description": "Request that your official scores from the Praxis examination in Speech-Language Pathology (e.g., Praxis 5181) be sent directly to the Iowa Department of Health and Human Services."
+    },
+    {
+      "title": "Await License Issuance",
+      "description": "Once all required documents and fees are received and processed by the Iowa Department of Health and Human Services, your license will be issued. You can check the status of your application through the MyIowa portal."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 120,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dial.iowa.gov/licensing/professional-licenses/speech-pathology-and-audiology",
-    "endorsement_url": "https://dial.iowa.gov/licensing/professional-licenses/speech-pathology-and-audiology",
+    "endorsement_url": "https://hhs.iowa.gov/licensure/speech-pathology-audiology/licensure",
     "notes": "Iowa is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Iowa through a compact privilege."
   },
   "slug": "iowa-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Iowa",
-        "dek": "Iowa Speech-Language Pathologist licenses require a master's degree, passing the national exam, and completion of a supervised clinical practicum."
+        "dek": "To apply for a Speech-Language Pathologist license in Iowa, use the official MyIowa online portal provided by the Iowa Department of Health and Human Services."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyIowa",
+    "portal_url": "https://myiowa.gov/",
+    "registration_steps": "Visit the MyIowa portal (myiowa.gov), click 'Login,' then 'Create Account' to register with your email, create a password, and provide necessary personal information. Once logged in, navigate to 'Professional Licensure' to find and start your application for a Speech-Language Pathologist license.",
+    "provider_search": "https://hhs.iowa.gov/licensure/licensure-lookup"
   }
 }

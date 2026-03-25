@@ -21,19 +21,21 @@
   "board": {
     "name": "Nutrition and Dietetics Practice Board",
     "parent_dept": "New Mexico Regulation and Licensing Department",
-    "mailing_address": "P.O. Box 25101<br>Santa Fe, NM 87504",
+    "mailing_address": "RLD - Dietetics and Nutrition Practice Board, P.O. Box 25101, Santa Fe, NM 87504",
     "physical_address": "2550 Cerrillos Road, 2nd Floor<br>Santa Fe, NM 87505",
-    "phone": "(505) 476-4622",
+    "phone": "(505) 476-4620",
     "fax": "(505) 476-4565",
-    "email": "mailto:nutritiondieteticsbd@rld.nm.gov",
-    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/"
+    "email": "dietetics.board@rld.nm.gov",
+    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/",
+    "contact_url": "https://www.rld.nm.gov/boards-commissions/occupational-licensing-boards/dietetics-and-nutrition-practice-board/contact-us-dietetics-board/",
+    "verify_url": "https://www.rld.nm.gov/verify-a-license/"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$50 application + $150 license",
-    "renewal_fee": "$75",
-    "renewal_cycle": "Every 1 year + 15 CE hours or active CDR",
-    "processing_time": "Varies (~2 Weeks)",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "1 Year",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "15 hours per year or active CDR"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education and Experience Requirements",
-      "description": "Complete the academic requirements and supervised practice experience as mandated by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Register on the New Mexico Online Licensing System",
+      "description": "New applicants must first create an account on the RLD's online portal at https://www.rld.nm.gov/online-licensing/ before starting the application process."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete the Online Application",
+      "description": "Log in to your newly created account, select the appropriate 'Dietitian' or 'Nutritionist' licensure application, and accurately fill out all required sections within the New Mexico Online Licensing System."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application and all required documentation to the New Mexico Nutrition and Dietetics Practice Board, including the required fee."
+      "title": "Submit Supporting Documentation",
+      "description": "Upload all necessary documents, which typically include official transcripts from an accredited institution, verification of supervised practice (e.g., ACEND-accredited dietetic internship verification), and official scores from the Commission on Dietetic Registration (CDR) examination, through the New Mexico Online Licensing System."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable $100.00 application fee online via the New Mexico Online Licensing System using a credit or debit card."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "Once the complete application and all required documents and fees are submitted, the Board will review your submission. You can monitor the status of your application directly within the New Mexico Online Licensing System."
     }
   ],
   "documents": [
@@ -132,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "Varies (~2 Weeks)",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/",
-    "endorsement_url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/",
+    "endorsement_url": "https://www.rld.nm.gov/boards-commissions/occupational-licensing-boards/dietetics-and-nutrition-practice-board/licensure-information/",
     "notes": "New Mexico recognizes licensure from other states with standards at least as stringent as its own. Applicants must provide copies of all licenses and arrange for official verification to be sent directly to the Board.",
     "requires_psv": true
   },
@@ -152,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in New Mexico",
-        "dek": "New Mexico Dietitian license requires completing education and experience requirements, passing the Registration Examination for Dietitians, and submitting an application to the Nutrition and Dietetics Practice Board."
+        "dek": "To apply for a Dietitian or Nutritionist license in New Mexico, utilize the New Mexico Online Licensing System provided by the Regulation and Licensing Department."
       }
     }
   },
@@ -178,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "New Mexico Online Licensing System",
+    "portal_url": "https://www.rld.nm.gov/online-licensing/",
+    "registration_steps": "New applicants must first create an account on the RLD's online portal to begin their application.",
+    "provider_search": "https://www.rld.nm.gov/verify-a-license/"
   }
 }

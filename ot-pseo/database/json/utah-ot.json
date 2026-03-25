@@ -19,19 +19,21 @@
     "keywords": "occupational therapist license reciprocity utah, how to transfer occupational therapist license to utah, occupational therapist compact utah, utah occupational therapist endorsement application"
   },
   "board": {
-    "name": "Utah DOPL — Occupational Therapy",
+    "name": "Utah DOPL \u2014 Occupational Therapy",
     "parent_dept": "Department of Commerce",
-    "mailing_address": "See board website",
+    "mailing_address": "Utah Division of Occupational and Professional Licensing\n160 East 300 South\nSalt Lake City, UT 84111",
     "physical_address": "See board website",
     "phone": "(801) 530-6628",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dopl.utah.gov/ot/"
+    "email": "doplweb@utah.gov",
+    "url": "https://dopl.utah.gov/ot/",
+    "contact_url": "https://dopl.utah.gov/contact-us.html",
+    "verify_url": "https://dopl.utah.gov/licensing/lookup.html"
   },
   "quick_facts": {
     "total_fee": "$134",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$62",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Educational Program",
-      "description": "Graduate from an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create an Account",
+      "description": "Register or log in to the Utah's Professional Licensing Online System (eGov) to begin your application."
     },
     {
-      "title": "Pass the NBCOT Exam",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Online Application",
+      "description": "Complete and submit the Occupational Therapist licensure application through the eGov system, paying the associated application fee."
     },
     {
-      "title": "Apply for a Utah Occupational Therapy License",
-      "description": "Submit an application for licensure with the Utah Division of Occupational and Professional Licensing (DOPL), including required documentation and fees."
+      "title": "Provide Official Documentation",
+      "description": "Arrange for official transcripts from your ACOTE-accredited occupational therapy program and official NBCOT scores to be sent directly to DOPL."
+    },
+    {
+      "title": "Complete Utah Law and Rules Exam",
+      "description": "Pass the Utah DOPL Law and Rules Examination, which is typically taken online."
+    },
+    {
+      "title": "Undergo Criminal Background Check",
+      "description": "Fulfill the criminal background check requirement by submitting fingerprints as instructed by DOPL."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dopl.utah.gov/ot/",
-    "endorsement_url": "https://dopl.utah.gov/ot/",
+    "endorsement_url": "https://dopl.utah.gov/forms/ENDORSEMENT_INSTRUCTIONS_OT_OTA.pdf",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Utah",
-        "dek": "Utah Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a background check."
+        "dek": "To apply for an Occupational Therapist license in Utah, use the Utah's Professional Licensing Online System (eGov) provided by the Division of Occupational and Professional Licensing (DOPL)."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Utah's Professional Licensing Online System (eGov)",
+    "portal_url": "https://secure.utah.gov/account/login.html?returnURL=%2Flicensing%2F",
+    "registration_steps": "Visit the Utah's Professional Licensing Online System URL, click 'Create Account' if you don't already have one, then log in and select 'Start a New Application' for Occupational Therapy.",
+    "provider_search": "https://dopl.utah.gov/licensing/lookup.html"
   }
 }

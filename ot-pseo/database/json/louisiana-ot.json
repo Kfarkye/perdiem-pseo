@@ -19,21 +19,23 @@
     "keywords": "occupational therapist license reciprocity louisiana, how to transfer occupational therapist license to louisiana, occupational therapist compact louisiana, louisiana occupational therapist endorsement application"
   },
   "board": {
-    "name": "Louisiana State Board of Medical Examiners — OT",
+    "name": "Louisiana State Board of Medical Examiners \u2014 OT",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "1520 O'Neal Lane, Building 2, Suite B, Baton Rouge, LA 70816",
     "physical_address": "See board website",
-    "phone": "(504) 568-6820",
+    "phone": "(225) 756-3404",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.lsbme.la.gov/"
+    "email": "lsbote@lsbote.org",
+    "url": "https://www.lsbme.la.gov/",
+    "contact_url": "https://www.lsbote.org/contact-us/",
+    "verify_url": "https://www.lsbote.org/verify-a-license/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$75",
+    "renewal_cycle": "Every 1 year",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT)",
     "ce_requirement": "30 contact hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an accredited educational program.",
-      "description": "Graduate from an occupational therapy program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create an Accela Account",
+      "description": "Access the LSBOTE Accela Citizen Access Portal and click \"Register for an Account\" to establish your user profile, then verify your email address to activate your account."
     },
     {
-      "title": "Pass the NBCOT Exam",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Start New Application",
+      "description": "Log in to your Accela account and select \"Apply for a License\" or navigate to the 'OT/OTA Application' section to begin the online application form for initial licensure or endorsement."
     },
     {
-      "title": "Apply for a Louisiana Occupational Therapist License.",
-      "description": "Submit an application for licensure to the Louisiana State Board of Medical Examiners, including all required documentation and fees."
+      "title": "Complete Application Sections",
+      "description": "Accurately fill out all required sections of the online application, including personal details, educational history, examination information (NBCOT), criminal history, and any prior professional licensure."
+    },
+    {
+      "title": "Upload Supporting Documents",
+      "description": "Electronically submit all necessary documents through the Accela portal. This typically includes official transcripts from your OT program, NBCOT score reports, verification of licensure from any other states where you hold or have held a license, and any other requested forms."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee of $100.00 (for initial or endorsement) directly through the Accela system using a credit or debit card."
+    },
+    {
+      "title": "Submit and Monitor Application",
+      "description": "Review your complete application for accuracy, electronically submit it, and regularly check your Accela account for updates on the status of your application and any requests for additional information from LSBOTE staff."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.lsbme.la.gov/",
-    "endorsement_url": "https://www.lsbme.la.gov/",
+    "endorsement_url": "https://accela.lsbote.org/citizenaccess/",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Louisiana",
-        "dek": "Louisiana Occupational Therapist License requires graduation from an ACOTE accredited program, passing the NBCOT exam, and a criminal background check."
+        "dek": "Apply for an Occupational Therapist license in Louisiana through the Louisiana State Board of Occupational Therapy Examiners (LSBOTE) Accela Citizen Access Portal. This online system handles all new applications, including endorsement."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Accela Citizen Access Portal",
+    "portal_url": "https://accela.lsbote.org/citizenaccess/",
+    "registration_steps": "1. Navigate to the LSBOTE Accela Citizen Access Portal.\n2. Click on \"Register for an Account\" and follow the prompts to create your user profile, agreeing to the terms of use.\n3. Verify your email address by clicking the link sent to your registered email to complete the account activation.",
+    "provider_search": "https://www.lsbote.org/verify-a-license/"
   }
 }

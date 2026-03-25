@@ -21,17 +21,19 @@
   "board": {
     "name": "Idaho Board of Pharmacy",
     "parent_dept": "Idaho Division of Occupational and Professional Licenses (DOPL)",
-    "mailing_address": "See board website",
+    "mailing_address": "Idaho Board of Pharmacy\n11341 W Chinden Blvd, Bldg #4\nBoise, ID 83714",
     "physical_address": "See board website",
-    "phone": "(208) 334-3233",
+    "phone": "(208) 334-2356",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dopl.idaho.gov/bop/"
+    "email": "ibop@dopl.idaho.gov",
+    "url": "https://dopl.idaho.gov/bop/",
+    "contact_url": "https://bop.idaho.gov/contact-us/",
+    "verify_url": "https://proul.dopl.idaho.gov/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$125",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a professional degree program in pharmacy from a college or school of pharmacy approved by the Board."
+      "title": "Create Account & Start Application",
+      "description": "Register for an account on the DOPL Professional Online Licensing System and begin the 'Pharmacist by Endorsement' application."
     },
     {
-      "title": "Pass the NAPLEX and MPJE",
-      "description": "Successfully complete the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Exam (MPJE)."
+      "title": "Submit Required Documentation",
+      "description": "Upload all necessary documents, including official transcripts from your pharmacy school and an Affidavit of Licensure from your original state(s) of licensure, through the DOPL Professional Online Licensing System."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application for licensure and pay all applicable fees to the Idaho Board of Pharmacy."
+      "title": "Complete Criminal History Background Check (CHBC)",
+      "description": "Follow the instructions provided within the DOPL Professional Online Licensing System to complete the mandatory Criminal History Background Check through the Idaho State Police."
+    },
+    {
+      "title": "Arrange NABP Score Transfers",
+      "description": "Ensure your NABP e-Profile ID is current and arrange for the official transfer of your NABP NAPLEX and Idaho MPJE scores to the Idaho Board of Pharmacy."
+    },
+    {
+      "title": "Pay Application Fee & Monitor Status",
+      "description": "Remit the non-refundable application fee of $125.00 through the DOPL Professional Online Licensing System and regularly monitor your application status for any requests for additional information."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 125,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dopl.idaho.gov/bop/",
-    "endorsement_url": "https://dopl.idaho.gov/bop/",
+    "endorsement_url": "https://bop.idaho.gov/pharmacist-rph/licensure-by-endorsement-reciprocity/",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "idaho-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Idaho",
-        "dek": "Idaho Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing internship hours."
+        "dek": "Pharmacist licensure in Idaho is managed by the Idaho Board of Pharmacy, with applications submitted through the DOPL Professional Online Licensing System."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DOPL Professional Online Licensing System",
+    "portal_url": "https://proul.dopl.idaho.gov/",
+    "registration_steps": "Navigate to the DOPL Professional Online Licensing System, click 'Register' or 'Create an Account' on the login page. Complete the registration form with your personal details and create a username/password. Verify your email address. Once registered, log in to access the application options and select 'Pharmacist by Endorsement'.",
+    "provider_search": "https://proul.dopl.idaho.gov/"
   }
 }

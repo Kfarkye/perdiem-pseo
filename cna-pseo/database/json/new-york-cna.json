@@ -21,19 +21,21 @@
   "board": {
     "name": "New York State Dept of Health",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Prometric, NY Nurse Aide Program, 7941 Corporate Dr., Nottingham, MD 21090",
     "physical_address": "See board website",
-    "phone": "(518) 402-0996",
+    "phone": "800-829-6105",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.health.ny.gov/"
+    "url": "https://www.health.ny.gov/",
+    "contact_url": "https://www.prometric.com/nurseaide/ny",
+    "verify_url": "https://nysna.prometric.com/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 endorsement application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "No fee (requires documented work activity)",
+    "renewal_cycle": "Every 2 years (based on documented work activity)",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an New York-approved CNA training program, usually 120 hours long."
+      "title": "Complete a State-Approved Nurse Aide Training Program",
+      "description": "Enroll in and successfully complete a New York State Department of Health (NYS DOH) approved Nurse Aide Training Program (NATP). Your training program will provide you with the necessary application materials for the examination."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the New York nurse aide exam."
+      "title": "Register for the Competency Examination",
+      "description": "After completing your training, register for the New York State Nurse Aide Competency Examination through the Prometric New York State Nurse Aide Registry portal. You will need to submit your application and pay the required examination fee."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Pass the Competency Examination",
+      "description": "Successfully pass both the written (or oral) and clinical skills portions of the New York State Nurse Aide Competency Examination. The exam ensures you have the necessary knowledge and skills to provide safe and effective patient care."
+    },
+    {
+      "title": "Get Listed on the Registry",
+      "description": "Upon successful completion of both examination components, your name will be added to the New York State Nurse Aide Registry. You can verify your status using the Nurse Aide Registry Search portal."
+    },
+    {
+      "title": "Maintain Active Registry Status",
+      "description": "To remain active on the New York State Nurse Aide Registry, you must work at least one day for pay as a nurse aide providing nursing or nursing-related services every 24 months, under the supervision of a licensed nurse."
     }
   ],
   "documents": [
@@ -122,10 +132,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 50,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.health.ny.gov/professionals/nursing_home_administrator/nha_cna.htm",
-    "endorsement_url": "https://www.prometric.com/nurseaide/ny",
+    "endorsement_url": "https://www.health.ny.gov/professionals/nursing/certified_nurse_aide/",
     "notes": "Contact Prometric at the NY Nurse Aide portal to apply for reciprocity. Phone verification available 24/7 at 1-800-918-8818.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -175,7 +185,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in New York",
-        "dek": "New York CNA certification requires a 120-hour training program, New York State Dept of Health eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nursing Assistant in New York, you must apply through the **Prometric New York State Nurse Aide Registry** to schedule and pass the nurse aide competency examination."
       },
       "seo": {
         "title": "How to Become a CNA in New York",
@@ -221,5 +231,20 @@
     "transfer_term": "reciprocity",
     "registry_name": "NYS Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Prometric New York State Nurse Aide Registry",
+    "portal_url": "https://www.prometric.com/nurseaide/ny",
+    "registration_steps": "Candidates register for the competency examination through the Prometric website after completing a state-approved training program. This involves selecting an exam date and location and submitting the required application forms and fees online.",
+    "provider_search": "https://nysna.prometric.com/"
   }
 }

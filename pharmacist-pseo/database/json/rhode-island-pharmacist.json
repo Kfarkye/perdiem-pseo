@@ -21,19 +21,21 @@
   "board": {
     "name": "Rhode Island Board of Pharmacy",
     "parent_dept": "Rhode Island Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Rhode Island Department of Health\nBoard of Pharmacy\n3 Capitol Hill, Room 104\nProvidence, RI 02908-5097",
     "physical_address": "See board website",
-    "phone": "(401) 222-5960",
+    "phone": "(401) 222-2828",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://health.ri.gov/licenses/"
+    "email": "doh.elicense@health.ri.gov",
+    "url": "https://health.ri.gov/licenses/",
+    "contact_url": "https://health.ri.gov/licensing/detail.php?id=237",
+    "verify_url": "https://healthri.mylicense.com/verification_3_0/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$60",
+    "renewal_cycle": "Every 1 year",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
     "ce_requirement": "30 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "You must graduate from a pharmacy program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create an Account in eLicense Rhode Island",
+      "description": "Navigate to healthri.mylicense.com and click 'Register a Person'. Provide your personal details and create a unique username and password to establish your online licensing account."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "You must pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Exam (MPJE)."
+      "title": "Start a New Application for Pharmacist Licensure",
+      "description": "Log in to your eLicense Rhode Island account. From the main menu, select 'Apply for a New License' and choose 'Pharmacist' as your profession. Indicate if you are applying by examination or by reciprocity."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Submit a completed application, along with all required documentation and fees, to the Rhode Island Board of Pharmacy."
+      "title": "Complete the Online Application Form",
+      "description": "Fill out all required sections of the application form within the eLicense Rhode Island portal. This includes providing personal information, educational background, internship hours, and details of any other licenses held."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Upload all necessary documents as prompted by the eLicense Rhode Island system. This typically includes official transcripts from your pharmacy school, proof of internship hours, official NAPLEX and MPJE scores, and possibly a criminal background check authorization."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Remit the non-refundable application fee through the eLicense Rhode Island system using an accepted payment method (e.g., credit card) to finalize your submission."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status via your eLicense Rhode Island account for updates. Respond promptly to any requests for additional information or clarification from the Rhode Island Board of Pharmacy to avoid delays."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 125,
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.ri.gov/licenses/",
-    "endorsement_url": "https://health.ri.gov/licenses/",
+    "endorsement_url": "https://health.ri.gov/licensing/detail.php?id=237",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "rhode-island-pharmacist",
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Rhode Island",
-        "dek": "Rhode Island Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing required internship hours."
+        "dek": "To apply for a Pharmacist license in Rhode Island, use the eLicense Rhode Island online system, where you can register an account and submit your application."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense Rhode Island",
+    "portal_url": "https://healthri.mylicense.com/Default.aspx",
+    "registration_steps": "Go to healthri.mylicense.com and click 'Register a Person'. Enter your personal details (SSN, DOB, last name) and create a username and password. Verify your email to complete account creation. Once registered, log in to the portal to start your application.",
+    "provider_search": "https://healthri.mylicense.com/verification_3_0/"
   }
 }

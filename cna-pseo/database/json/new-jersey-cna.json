@@ -21,19 +21,21 @@
   "board": {
     "name": "New Jersey Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "New Jersey Department of Health, P.O. Box 367, Trenton, NJ 08625-0367",
     "physical_address": "See board website",
-    "phone": "(973) 504-6430",
+    "phone": "800-998-6014 (Prometric Candidate Services)",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.njconsumeraffairs.gov/nur/"
+    "url": "https://www.njconsumeraffairs.gov/nur/",
+    "contact_url": "https://www.prometric.com/nurseaide/nj",
+    "verify_url": "https://www.nj.gov/health/fhs/njnar/registry/verify/"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$200 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "training_hours": "100 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an New Jersey-approved CNA training program, usually 100 hours long."
+      "title": "Complete Approved Training",
+      "description": "Enroll in and successfully complete a New Jersey Department of Health approved Nurse Aide training program, which includes both classroom instruction and clinical practice."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the New Jersey nurse aide exam."
+      "title": "Create a Prometric Candidate Account",
+      "description": "Visit the Prometric NJ Nurse Aide website at https://www.prometric.com/nurseaide/nj, navigate to 'Registration Information', and create a candidate account."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Register for Competency Exam",
+      "description": "Log into your Prometric account and register for the Nurse Aide Competency Evaluation Program (NACEP) exam, which includes a written/oral portion and a clinical skills portion. Select your preferred test date and location."
+    },
+    {
+      "title": "Pass the Exam",
+      "description": "Successfully complete both parts of the Prometric Nurse Aide Competency Evaluation. You must pass both sections to be eligible for certification."
+    },
+    {
+      "title": "Placement on Registry",
+      "description": "Upon successful completion of the exam, Prometric will automatically process your results and place your name on the New Jersey Nurse Aide Registry, certifying you as a CNA."
     }
   ],
   "documents": [
@@ -113,11 +123,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.njconsumeraffairs.gov/nur/",
-    "endorsement_url": "https://www.nj.gov/health/healthfacilities/certification-nurse-aide/",
+    "endorsement_url": "https://www.prometric.com/nurseaide/nj",
     "notes": "Contact NJ DOH at (866) 561-5914 or CNA@doh.nj.gov, or PSI at (877) 774-4243 for reciprocity applications.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -167,7 +177,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in New Jersey",
-        "dek": "New Jersey CNA certification requires a 100-hour training program, New Jersey Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nurse Aide in New Jersey, you must apply for and pass the Nurse Aide Competency Evaluation through the Prometric NJ Nurse Aide Registry Portal."
       },
       "seo": {
         "title": "How to Become a CNA in New Jersey",
@@ -209,5 +219,20 @@
     "transfer_term": "endorsement",
     "registry_name": "New Jersey Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Prometric NJ Nurse Aide Registry Portal",
+    "portal_url": "https://www.prometric.com/nurseaide/nj",
+    "registration_steps": "Navigate to the Prometric NJ Nurse Aide website and click on 'Registration Information'. Then, follow the prompts to create a candidate account and register for the Nurse Aide Competency Evaluation.",
+    "provider_search": "https://www.nj.gov/health/fhs/njnar/registry/verify/"
   }
 }

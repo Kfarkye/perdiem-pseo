@@ -21,19 +21,21 @@
   "board": {
     "name": "New York State Board for Dietetics and Nutrition",
     "parent_dept": "NYSED Office of the Professions",
-    "mailing_address": "NYS Education Department<br>Office of the Professions<br>Registration Unit<br>State Education Building, 2nd Floor<br>Albany, NY 12234-1000",
+    "mailing_address": "New York State Education Department\nOffice of the Professions\nDietetics and Nutrition Unit\n89 Washington Avenue\nAlbany, NY 12234-1000",
     "physical_address": "89 Washington Avenue<br>Albany, NY 12234",
-    "phone": "(518) 474-3817",
+    "phone": "(518) 474-3817 ext. 270",
     "fax": "(518) 402-2323",
-    "email": "mailto:dietbd@nysed.gov",
-    "url": "https://www.op.nysed.gov/professions/dietetics-and-nutrition"
+    "email": "opunit4@nysed.gov",
+    "url": "https://www.op.nysed.gov/professions/dietetics-and-nutrition",
+    "contact_url": "http://www.op.nysed.gov/contact.htm",
+    "verify_url": "https://www.nysed.gov/verify-license"
   },
   "quick_facts": {
     "total_fee": "$294",
     "fee_breakdown": "$115 Application + $179 Registration",
-    "renewal_fee": "$179",
+    "renewal_fee": "$261",
     "renewal_cycle": "Every 3 years",
-    "processing_time": "~6 Weeks",
+    "processing_time": "8 to 12 Weeks",
     "license_duration": "3 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "15 hours every 3 years"
@@ -46,16 +48,20 @@
   ],
   "steps": [
     {
-      "title": "Meet Education and Experience Requirements",
-      "description": "Complete the educational and supervised practice requirements, as specified by the New York State Education Department."
+      "title": "Meet Education, Experience, and Examination Requirements",
+      "description": "Ensure you have completed an approved bachelor's or master's degree program, 800 hours of supervised experience, and passed the national examination administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Create NY.gov Account and Link Records",
+      "description": "If you don't have one, create a NY.gov account. Then, link your existing NYSED Office of the Professions records to your NY.gov account via the NYSED Online Applications portal to prepare for your application."
     },
     {
-      "title": "Apply for Certification",
-      "description": "Submit an application for certification, along with all required documentation and fees, to the New York State Education Department."
+      "title": "Submit Application and Fee Online",
+      "description": "Log in to the NYSED Online Applications system, complete the 'Application for Licensure' (Form 1) for Dietitians and Nutritionists, and pay the $292 licensure fee."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts (Form 2), verification of supervised experience (Form 4), and your national examination results (CDR sends directly) to be sent directly to the New York State Education Department by the issuing institutions or organizations."
     }
   ],
   "documents": [
@@ -132,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 294,
-    "processing_time": "~6 Weeks",
+    "endorsement_fee": 292,
+    "processing_time": "8 to 12 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.op.nysed.gov/professions/dietetics-and-nutrition",
-    "endorsement_url": "https://www.op.nysed.gov/professions/dietetics-and-nutrition",
+    "endorsement_url": "http://www.op.nysed.gov/prof/diet/dietlic.htm",
     "notes": "New York does not maintain automatic reciprocity agreements with other states. Out-of-state applicants must apply for a new license by equivalence, providing direct verification of their out-of-state license, CDR registration, and proof they meet all New York education and experience standards.",
     "requires_psv": true
   },
@@ -152,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in New York",
-        "dek": "New York Dietitian Certification requires completing the necessary education and experience requirements, passing the Registration Examination for Dietitians, and applying to the New York State Education Department."
+        "dek": "To apply for a Dietitian & Nutritionist license in New York, applicants must use the NYSED Online Applications system after meeting all education, experience, and examination requirements."
       }
     }
   },
@@ -178,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NYSED Online Applications",
+    "portal_url": "https://www.nysed.gov/online-licensing",
+    "registration_steps": "1. Create a NY.gov account if you do not already have one. 2. Link your existing NYSED Office of the Professions records (if any) to your NY.gov account. 3. Log in to the NYSED Online Applications system to access and submit your application.",
+    "provider_search": "https://www.nysed.gov/verify-license"
   }
 }

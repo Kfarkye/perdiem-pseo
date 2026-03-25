@@ -19,21 +19,23 @@
     "keywords": "dietitian license reciprocity connecticut, how to transfer dietitian license to connecticut, dietitian compact connecticut, connecticut dietitian endorsement application"
   },
   "board": {
-    "name": "Department of Public Health — Dietitian-Nutritionist Certification",
+    "name": "Department of Public Health \u2014 Dietitian-Nutritionist Certification",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
-    "mailing_address": "410 Capitol Avenue, MS#12APP<br>Hartford, CT 06134",
+    "mailing_address": "Connecticut Department of Public Health\nPractitioner Licensing and Investigations Section\n410 Capitol Ave., MS #12HLS\nP.O. Box 340308\nHartford, CT 06134-0308",
     "physical_address": "410 Capitol Avenue<br>Hartford, CT 06134",
     "phone": "(860) 509-7603",
     "fax": "",
-    "email": "",
-    "url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist"
+    "email": "dph.healingarts@ct.gov",
+    "url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist",
+    "contact_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/PLIS/Contact-the-Practitioner-Licensing-and-Investigations-Section",
+    "verify_url": "https://www.elicense.ct.gov/OLV/SearchLicense.aspx"
   },
   "quick_facts": {
     "total_fee": "$190",
     "fee_breakdown": "$190 initial certification fee",
-    "renewal_fee": "$105",
-    "renewal_cycle": "Annual + CDR 75 CPEUs per 5 years (no state-level CE mandate)",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Annually",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "1 Year",
     "exam_name": "Registration Examination for Dietitians"
   },
@@ -45,22 +47,34 @@
   ],
   "steps": [
     {
-      "title": "Meet Education and Experience Requirements",
-      "description": "Possess a minimum of a baccalaureate degree with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study, from a regionally accredited institution, and complete a planned, continuous pre-professional practice experience program that meets the requirements."
+      "title": "Obtain National Certification",
+      "description": "Ensure you hold current registration as a Registered Dietitian Nutritionist (RDN) or Dietetic Technician, Registered (DTR) from the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Create eLicensing Account",
+      "description": "Access the Connecticut eLicensing Portal at elicense.ct.gov and register for a new applicant account using your email address. Complete your user profile."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application form with all required documentation and the applicable fee to the Department of Public Health."
+      "title": "Complete Online Application",
+      "description": "Log into your eLicensing account, select 'Dietitian-Nutritionist' to start the application, and accurately complete all required sections of the online form."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $50 directly through the eLicensing Portal using a credit card or electronic check."
+    },
+    {
+      "title": "Submit CDR Verification",
+      "description": "Arrange for the Commission on Dietetic Registration (CDR) to send official verification of your current registration directly to the Connecticut Department of Public Health. This is typically done online through CDR's portal."
+    },
+    {
+      "title": "Provide Additional Documentation",
+      "description": "Upload any other supplementary documents or information required by the eLicensing system, such as proof of name change or other requested forms, to complete your application."
     }
   ],
   "documents": [
     {
       "item": "CDR Registration Verification",
-      "detail": "Must be sent directly from CDR to the Connecticut DPH — self-reported copies are not accepted."
+      "detail": "Must be sent directly from CDR to the Connecticut DPH \u2014 self-reported copies are not accepted."
     },
     {
       "item": "Completed eLicense Application",
@@ -127,11 +141,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 190,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist",
-    "endorsement_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/dietitian-nutritionist/dietitian-nutritionist",
+    "endorsement_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/Dietitian-Nutritionist/Dietitian-Nutritionist-Licensure-Information",
     "notes": "Connecticut does not have a formal endorsement or reciprocity process. Out-of-state dietitians with active CDR registration apply through the standard online process. Since Connecticut's certification is tied to CDR registration rather than state-specific exams, the process is straightforward for anyone holding an RD/RDN credential.",
     "requires_psv": false
   },
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Connecticut",
-        "dek": "Connecticut Dietitian-Nutritionist Certification requires a bachelor’s degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+        "dek": "To apply for a Dietitian-Nutritionist license in Connecticut, submit your application and all supporting documentation through the state's official eLicensing Portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicensing Portal",
+    "portal_url": "https://www.elicense.ct.gov/",
+    "registration_steps": "Access the eLicensing Portal. Select 'New Applicants' to register for an account using your email address. Follow the prompts to complete your user profile. Once registered, log in and select 'Dietitian-Nutritionist' from the list of professions to begin your online application.",
+    "provider_search": "https://www.elicense.ct.gov/OLV/SearchLicense.aspx"
   }
 }

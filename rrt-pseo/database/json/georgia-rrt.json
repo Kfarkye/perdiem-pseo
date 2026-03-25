@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity georgia, how to transfer respiratory therapist license to georgia, respiratory therapist compact georgia, georgia respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Georgia Composite Medical Board — RT",
+    "name": "Georgia Composite Medical Board \u2014 RT",
     "parent_dept": "Georgia Secretary of State",
-    "mailing_address": "See board website",
+    "mailing_address": "237 Coliseum Drive, Macon, Georgia 31217-3858",
     "physical_address": "See board website",
-    "phone": "(404) 656-3913",
+    "phone": "(404) 424-9966",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.medicalboard.georgia.gov/"
+    "email": "professional_licensing@sos.ga.gov",
+    "url": "http://www.medicalboard.georgia.gov/",
+    "contact_url": "https://sos.ga.gov/contact-us-page",
+    "verify_url": "https://verify.sos.ga.gov/"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours every two years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Respiratory Care Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or an equivalent organization."
+      "title": "Create an Account",
+      "description": "Register a new account on the Georgia Professional Licensing Boards Online Services portal if you are a new user."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully pass the entry-level examination administered by the National Board for Respiratory Care (NBRC)."
+      "title": "Submit Online Application",
+      "description": "Log in to the Georgia Professional Licensing Boards Online Services portal and complete the Respiratory Care Practitioner (RCP) application, selecting 'License by Endorsement' if applicable."
     },
     {
-      "title": "Apply for a Respiratory Therapist License",
-      "description": "Submit a completed application, official transcripts, NBRC verification, and required fee to the Georgia Composite Medical Board for licensure as a Respiratory Therapist."
+      "title": "Submit Transcripts",
+      "description": "Arrange for official transcripts from your approved Respiratory Care program to be sent directly from the educational institution to the Georgia Board of Respiratory Care."
+    },
+    {
+      "title": "Verify NBRC Credentials",
+      "description": "Request official verification of your NBRC credentials (CRT and RRT) to be sent directly from the National Board for Respiratory Care (NBRC) to the Georgia Board of Respiratory Care."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Register for and complete the required Georgia criminal background check via fingerprinting (LiveScan) as instructed by the Board."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee of $75 through the Georgia Professional Licensing Boards Online Services portal."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
+    "endorsement_fee": 75,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.medicalboard.georgia.gov/",
-    "endorsement_url": "http://www.medicalboard.georgia.gov/",
+    "endorsement_url": "https://sos.ga.gov/page/respiratory-care-practitioners-applications-forms",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Georgia",
-        "dek": "Georgia Respiratory Therapist licenses require graduation from an accredited program, passing the NBRC exam, and submitting an application to the Georgia Composite Medical Board."
+        "dek": "To apply for a Respiratory Therapist license in Georgia, you must submit your application and supporting documents through the Georgia Professional Licensing Boards Online Services portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Georgia Professional Licensing Boards Online Services",
+    "portal_url": "https://secure.sos.ga.gov/mylicense/login.aspx?juris=ga",
+    "registration_steps": "Visit the Georgia Professional Licensing Boards Online Services portal. New users should click 'Register A New Account' to create credentials and begin the application process.",
+    "provider_search": "https://verify.sos.ga.gov/"
   }
 }

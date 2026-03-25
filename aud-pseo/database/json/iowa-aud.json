@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Speech Pathology and Audiology",
     "parent_dept": "Iowa Department of Inspections, Appeals and Licensing",
-    "mailing_address": "321 E. 12th St., Des Moines, IA 50319-0075",
+    "mailing_address": "Iowa Department of Health and Human Services\nProfessional Licensure\nLucas State Office Building\n321 E 12th St\nDes Moines, IA 50319-0075",
     "physical_address": "321 E. 12th St., Des Moines, IA 50319",
     "phone": "(515) 281-0254",
     "fax": "(515) 281-3121",
-    "email": "mailto:amanda.breitbach@dia.iowa.gov",
-    "url": "https://dial.iowa.gov/licensing/professional-licenses/speech-pathology-and-audiology"
+    "email": "HHSLicensure@hhs.iowa.gov",
+    "url": "https://dial.iowa.gov/licensing/professional-licenses/speech-pathology-and-audiology",
+    "contact_url": "https://hhs.iowa.gov/Licensure/contact-us",
+    "verify_url": "https://ibplicense.iowa.gov/Search/SearchProfessionalLicensure.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$60",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Earn a Doctor of Audiology (AuD) degree from a regionally accredited educational institution."
+      "title": "Create an Online Account",
+      "description": "Register for a new user account on the Iowa Board of Professional Licensure's Online Services portal (ibplicense.iowa.gov) to begin your application."
     },
     {
-      "title": "Pass the Audiology Examination",
-      "description": "Successfully complete the Audiology Examination administered by a nationally recognized testing service."
+      "title": "Submit Online Application",
+      "description": "Log in to your IBPL Online Services account, select \"New Application,\" choose \"Audiologist,\" and complete all sections of the application form."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application to the Iowa Board of Speech Pathology and Audiology, including all required documentation and fees."
+      "title": "Pay Application Fee",
+      "description": "Pay the required $120 application fee online via the Iowa Board of Professional Licensure's Online Services portal."
+    },
+    {
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts confirming a Master's or Doctoral degree in Audiology from an accredited program to be sent directly from your educational institution to the Board."
+    },
+    {
+      "title": "Provide Examination Verification",
+      "description": "Submit verification of a passing score on the national examination in audiology (Praxis Series). If you hold the Certificate of Clinical Competence in Audiology (CCC-A) from ASHA, arrange for official verification to be sent directly to the Board, which often satisfies both examination and supervised experience requirements."
+    },
+    {
+      "title": "Await Board Review",
+      "description": "The Board will review your complete application and all supporting documents. Monitor your IBPL Online Services account for updates on your application status."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 120,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dial.iowa.gov/licensing/professional-licenses/speech-pathology-and-audiology",
-    "endorsement_url": "https://dial.iowa.gov/licensing/professional-licenses/speech-pathology-and-audiology",
+    "endorsement_url": "https://hhs.iowa.gov/Licensure/speech-pathology-and-audiology#tab-endorsement",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "iowa-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Iowa",
-        "dek": "Iowa Audiologist license requires a doctoral degree in audiology, passing the audiology examination, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Iowa, create an account and complete the application through the Iowa Board of Professional Licensure's Online Services portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Iowa Board of Professional Licensure's Online Services",
+    "portal_url": "https://ibplicense.iowa.gov/",
+    "registration_steps": "Navigate to the Iowa Board of Professional Licensure's Online Services portal, click on \"New Account Registration,\" and follow the prompts to create a new user account with a valid email and password. Once registered, log in to your account.",
+    "provider_search": "https://ibplicense.iowa.gov/Search/SearchProfessionalLicensure.aspx"
   }
 }

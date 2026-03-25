@@ -15,24 +15,26 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Texas Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Texas — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Texas \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license texas, dental assistant certification texas, RDA texas, DANB CDA texas, dental assistant radiography texas"
   },
   "board": {
     "name": "Texas State Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Texas State Board of Dental Examiners\n333 Guadalupe Street\nTower 3, Suite 800\nAustin, Texas 78701-3942",
     "physical_address": "See board website",
     "phone": "(512) 463-6400",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.tsbde.texas.gov/"
+    "email": "applications@tsbde.texas.gov",
+    "url": "https://www.tsbde.texas.gov/",
+    "contact_url": "https://tsbde.texas.gov/contact/",
+    "verify_url": "https://online.tsbde.texas.gov/licenselookup/"
   },
   "quick_facts": {
     "total_fee": "$48",
     "fee_breakdown": "$48 application/registration fee",
-    "renewal_fee": "$48",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$36",
+    "renewal_cycle": "Every 1 year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "6 hours per renewal cycle"
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a Jurisprudence Assessment",
-      "description": "Complete a Board-approved course in Texas jurisprudence and pass the assessment."
+      "title": "Create an Account and Apply Online",
+      "description": "Navigate to the TSBDE Licensing Portal, create a new user account if you don't have one, and then log in to complete and submit the 'Registered Dental Assistant' online application."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application for registration with the Texas State Board of Dental Examiners and pay the required fee."
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $36 through the TSBDE Licensing Portal as part of your online application."
     },
     {
-      "title": "Maintain Registration",
-      "description": "Complete required continuing education hours and renew your registration every two years."
+      "title": "Complete Jurisprudence Assessment",
+      "description": "Successfully complete the TSBDE-approved online Jurisprudence Assessment. This assessment covers the Texas Dental Practice Act and Board Rules."
+    },
+    {
+      "title": "Complete Basic Life Support (BLS) Course",
+      "description": "Complete a current, Board-approved course in Basic Life Support (BLS) for Healthcare Providers. You must upload both sides of your BLS certification card to your application in the TSBDE Licensing Portal."
+    },
+    {
+      "title": "Upload Required Documentation",
+      "description": "Upload a copy of your high school diploma or General Educational Development (GED) equivalent to your application in the TSBDE Licensing Portal. Ensure all other requested documents are submitted."
     }
   ],
   "documents": [
@@ -123,11 +133,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 48,
+    "endorsement_fee": 36,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.tsbde.texas.gov/",
-    "endorsement_url": "https://www.tsbde.texas.gov/",
+    "endorsement_url": "https://tsbde.texas.gov/licensing/apply-for-a-license/dental-assistant/",
     "notes": "Dental assistants can apply for Registered Dental Assistant (RDA) through the Texas State Board of Dental Examiners by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Texas",
-        "dek": "Texas Dental Assistant registration requires completing a Board-approved course in jurisprudence, submitting an application, and completing required continuing education."
+        "dek": "To become a Registered Dental Assistant (RDA) in Texas, applicants must register and apply through the TSBDE Licensing Portal."
       }
     }
   },
@@ -172,5 +182,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "TSBDE Licensing Portal",
+    "portal_url": "https://online.tsbde.texas.gov/",
+    "registration_steps": "Go to the TSBDE Licensing Portal, click 'Register a Person' to create a new account. Follow the prompts to complete registration. Once your account is created and you are logged in, select the 'Registered Dental Assistant' application type to begin your application.",
+    "provider_search": "https://online.tsbde.texas.gov/licenselookup/"
   }
 }

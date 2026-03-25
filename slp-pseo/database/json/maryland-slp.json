@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners for Audiologists, Hearing Aid Dispensers, Speech-Language Pathologists, and Music Therapists",
     "parent_dept": "Maryland Department of Health",
-    "mailing_address": "4201 Patterson Ave., Baltimore, MD 21215",
+    "mailing_address": "Maryland Board of Audiologists, Hearing Aid Dispensers, and Speech-Language Pathologists, 4201 Patterson Avenue, Baltimore, Maryland 21215-2299",
     "physical_address": "4201 Patterson Ave., Baltimore, MD 21215",
-    "phone": "(410) 764-4723",
+    "phone": "410-764-4725",
     "fax": "(410) 358-1610",
-    "email": "mailto:dhmh.mdboardaudslp@maryland.gov",
-    "url": "https://health.maryland.gov/boardsahs/"
+    "email": "maryland.bslpa@maryland.gov",
+    "url": "https://health.maryland.gov/boardsahs/",
+    "contact_url": "https://health.maryland.gov/bslpa/Pages/contact.aspx",
+    "verify_url": "https://mdbnc.maryland.gov/bslpaverification/default.aspx"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$100 application + $100 license fee",
-    "renewal_fee": "$200",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Clinical Fellowship",
-      "description": "Earn a master’s degree or doctorate in speech-language pathology and complete a supervised clinical fellowship."
+      "title": "Obtain a Graduate Degree",
+      "description": "Complete a Master's or Doctoral degree in Speech-Language Pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA) of the American Speech-Language-Hearing Association (ASHA)."
     },
     {
       "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology."
+      "description": "Achieve a passing score on the national examination in Speech-Language Pathology (Praxis\u00ae ETS Code 5331)."
     },
     {
-      "title": "Apply for a Speech-Language Pathologist License",
-      "description": "Submit an application for licensure to the Maryland Board of Examiners for Audiologists, Hearing Aid Dispensers, Speech-Language Pathologists, and Music Therapists."
+      "title": "Complete Clinical Requirements",
+      "description": "Fulfill the supervised clinical experience requirements by either completing a supervised clinical fellowship (CF) as specified by the Board, or by obtaining the Certificate of Clinical Competence in Speech-Language Pathology (CCC-SLP) from ASHA."
+    },
+    {
+      "title": "Apply Online via MOLN",
+      "description": "Register for an account and complete the online application for a Speech-Language Pathologist license through the Maryland Online Licensing System (MOLN). Be sure to select the correct application type (e.g., 'Application for a New License')."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Upload all necessary supporting documents through your MOLN account, including official transcripts, Praxis scores, verification of ASHA CCC-SLP (if applicable), and any other forms requested by the Board."
+    },
+    {
+      "title": "Pay Application and Licensure Fees",
+      "description": "Remit the non-refundable application fee and the initial licensure fee through the Maryland Online Licensing System (MOLN) as part of your application submission."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.maryland.gov/boardsahs/",
-    "endorsement_url": "https://health.maryland.gov/boardsahs/",
+    "endorsement_url": "https://health.maryland.gov/bslpa/Pages/how-to-apply.aspx",
     "notes": "Maryland is a member of the ASLP Interstate Compact."
   },
   "slug": "maryland-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Maryland",
-        "dek": "Maryland Speech-Language Pathologist licenses require a master's degree, supervised professional experience, and passing the national exam."
+        "dek": "Applicants for a Speech-Language Pathologist license in Maryland must apply online through the Maryland Online Licensing System (MOLN)."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Maryland Online Licensing System (MOLN)",
+    "portal_url": "https://mdbonc.maryland.gov/bslpaonline/default.aspx",
+    "registration_steps": "Navigate to the Maryland Online Licensing System (MOLN) portal. Click 'Register a Person' if you are a new user to create an account, or 'Log In' if you have an existing account. Follow the prompts to complete registration, including email verification. Once logged in, select 'Apply for a New License' and choose the appropriate Speech-Language Pathologist application type.",
+    "provider_search": "https://mdbnc.maryland.gov/bslpaverification/default.aspx"
   }
 }

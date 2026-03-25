@@ -21,19 +21,21 @@
   "board": {
     "name": "South Carolina LLR",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "2600 Bull Street, Columbia, SC 29201",
     "physical_address": "See board website",
-    "phone": "(803) 896-4550",
+    "phone": "1-877-336-3199",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://llr.sc.gov/"
+    "url": "https://llr.sc.gov/",
+    "contact_url": "https://www.scdhec.gov/contact-us",
+    "verify_url": "https://sc.credentia.com/registry"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 Week",
     "license_duration": "2 Years",
     "training_hours": "100 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an South Carolina-approved CNA training program, usually 100 hours long."
+      "title": "Complete an Approved Training Program",
+      "description": "Successfully complete a state-approved Nurse Aide training program in South Carolina. If you have equivalent out-of-state experience, you may qualify for endorsement."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the South Carolina nurse aide exam."
+      "title": "Create a Credentia Account",
+      "description": "Register for an account on the Credentia SC Nurse Aide Registry portal by clicking 'First-time user? Click here to register' on the homepage and following the prompts."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Apply for Competency Exam",
+      "description": "Submit an application through your Credentia SC Nurse Aide Registry account to register for the Nurse Aide Competency Evaluation Examination."
+    },
+    {
+      "title": "Schedule and Pass Exam",
+      "description": "Schedule and successfully pass both the written/oral and clinical skills components of the Nurse Aide Competency Evaluation Examination administered by Credentia."
+    },
+    {
+      "title": "Placement on Registry",
+      "description": "Upon successful completion of the examination, your name will be automatically added to the South Carolina Nurse Aide Registry."
     }
   ],
   "documents": [
@@ -122,10 +132,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 Week",
     "processing_tier": "fast",
     "board_url": "https://llr.sc.gov/",
-    "endorsement_url": "https://llr.sc.gov/",
+    "endorsement_url": "https://sc.credentia.com/information/out-of-state-na-endorsement",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in South Carolina",
-        "dek": "South Carolina CNA certification requires a 100-hour training program, South Carolina LLR eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for CNA certification in South Carolina, create an account and apply through the Credentia SC Nurse Aide Registry online portal, which administers the registry for the South Carolina Department of Health and Environmental Control (DHEC)."
       },
       "seo": {
         "title": "How to Become a CNA in South Carolina",
@@ -208,5 +218,20 @@
     "transfer_term": "endorsement",
     "registry_name": "South Carolina Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Credentia SC Nurse Aide Registry",
+    "portal_url": "https://sc.credentia.com/",
+    "registration_steps": "Click 'First-time user? Click here to register' on the Credentia SC Nurse Aide Registry homepage, then follow the prompts to create your account by providing personal details and setting a password.",
+    "provider_search": "https://sc.credentia.com/registry"
   }
 }

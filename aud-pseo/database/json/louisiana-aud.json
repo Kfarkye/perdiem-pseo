@@ -21,18 +21,20 @@
   "board": {
     "name": "Louisiana Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "LBESPA",
-    "mailing_address": "18550 Highland Road, Suite B, Baton Rouge, LA 70809",
+    "mailing_address": "P.O. Box 75505, Baton Rouge, LA 70879-5505",
     "physical_address": "18550 Highland Road, Suite B, Baton Rouge, LA 70809",
-    "phone": "(225) 756-3480",
+    "phone": "(225) 757-9321",
     "fax": "(225) 756-3472",
-    "email": "mailto:lbespa@lbespa.org",
-    "url": "https://www.lbespa.org/"
+    "email": "lbespa@lbespa.org",
+    "url": "https://www.lbespa.org/",
+    "contact_url": "https://lbespa.org/contact-us/",
+    "verify_url": "https://portal.lbespa.org/OnlineVerification"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Annually",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Praxis Examination",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Earn a doctoral degree in audiology from a regionally accredited institution."
+      "title": "Register for a New Applicant Account",
+      "description": "Create a new user account on the LBESPA Application Portal at the provided URL. You will need to click 'First Time User? Click Here to Register' to begin."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Audiology Praxis Examination administered by the Educational Testing Service (ETS)."
+      "title": "Complete the Online Application",
+      "description": "Log in to the LBESPA Application Portal using your new account credentials and complete the Audiology Initial Licensure Application form, ensuring all required information is provided."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application, official transcripts, Praxis scores, and fees to the Louisiana Board of Examiners for Speech-Language Pathology and Audiology."
+      "title": "Pay Application and Licensure Fees",
+      "description": "Submit the required initial application fee ($150) and the initial licensure fee ($150) directly through the LBESPA Application Portal."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official academic transcripts, proof of supervised professional practice (e.g., Supervisor's Report), and any other required documentation to be sent directly to the Louisiana Board of Examiners for Speech-Language Pathology and Audiology (LBESPA)."
+    },
+    {
+      "title": "Pass National Examination",
+      "description": "Ensure that official scores from the national Praxis examination in Audiology (test code 5245) are submitted directly to LBESPA from the testing agency."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "Monitor the status of your application through the LBESPA Application Portal and respond to any requests for additional information from the Board. Once approved, your license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.lbespa.org/",
-    "endorsement_url": "https://www.lbespa.org/",
+    "endorsement_url": "https://lbespa.org/licensure/audiology-licensure/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "louisiana-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Louisiana",
-        "dek": "Louisiana Audiologist license requires a doctoral degree in audiology, passing the Audiology Praxis Examination, and completion of a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Louisiana, you must use the LBESPA Application Portal to submit your online application and supporting documents."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "LBESPA Application Portal",
+    "portal_url": "https://portal.lbespa.org/applications/index.cfm?fuseaction=userlogin.newapplicant",
+    "registration_steps": "Navigate to the LBESPA Application Portal, click 'First Time User? Click Here to Register' to create a new applicant account, then log in to begin the Audiology licensure application.",
+    "provider_search": "https://portal.lbespa.org/OnlineVerification"
   }
 }

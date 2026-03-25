@@ -21,19 +21,21 @@
   "board": {
     "name": "Arkansas Dietetics Licensing Board",
     "parent_dept": "Arkansas Department of Health",
-    "mailing_address": "4815 West Markham Street, Slot 73<br>Little Rock, AR 72205",
+    "mailing_address": "Arkansas Dietetics Licensing Board\nc/o Arkansas Department of Health\n4815 W. Markham Street, Slot 24\nLittle Rock, AR 72205-3867",
     "physical_address": "4815 West Markham Street, Slot 73<br>Little Rock, AR 72205",
-    "phone": "(501) 683-1126",
+    "phone": "501-682-8610",
     "fax": "(501) 682-1596",
-    "email": null,
-    "url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board"
+    "email": "ardlb@arkansas.gov",
+    "url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board",
+    "contact_url": "https://ardlb.arkansas.gov/contact",
+    "verify_url": "https://www.healthy.arkansas.gov/programservices/resources/find-a-professional"
   },
   "quick_facts": {
     "total_fee": "$110",
     "fee_breakdown": "$110 standard initial application fee (temporarily reduced through June 30, 2026)",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Annual + 12 CE hours (*Renewal fee temporarily reduced to $3.00 for 2025-2026*)",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every year",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "1 Year",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "12 hours per year"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Complete a minimum of a baccalaureate degree granted by a U.S. regionally accredited college or university and completion of an Accreditation Council for Education in Nutrition and Dietetics (ACEND) accredited dietetic education program."
+      "title": "Register for an Account",
+      "description": "Navigate to the Arkansas Professional Licensing System (https://www.ark.org/ardlb_app/) and click 'REGISTER' under the 'New Applicant Registration' section to create your account with a username, password, and security questions."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete the Online Application",
+      "description": "Log in to the Arkansas Professional Licensing System, select the appropriate application type (e.g., 'Dietitian Initial Application' or 'Licensure by Endorsement'), and fill out all required sections of the application form."
+    },
+    {
+      "title": "Upload Required Documents",
+      "description": "Electronically attach all necessary supporting documents, such as official transcripts showing a bachelor's or master's degree in dietetics, verification of a supervised practice program (e.g., internship), and verification of passing the CDR examination, as specified in the application."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable initial application fee of $100 through the Arkansas Professional Licensing System using an accepted payment method."
     },
     {
       "title": "Submit Application",
-      "description": "Submit a completed application to the Arkansas Dietetics Licensing Board with all required documentation and fees."
+      "description": "Review your completed application and all uploaded documents for accuracy and completeness, then formally submit it through the online system."
     }
   ],
   "documents": [
@@ -136,11 +146,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 110,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board",
-    "endorsement_url": "https://www.healthy.arkansas.gov/programs-services/topics/arkansas-dietetics-licensing-board",
+    "endorsement_url": "https://ardlb.arkansas.gov/licensing/initial-application",
     "notes": "Dietitians applying for licensure in Arkansas who are currently licensed in another state must follow the standard application process and submit a copy of their active CDR registration card, which serves as proof of meeting the national standards recognized by the Arkansas board.",
     "requires_psv": false
   },
@@ -156,7 +166,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Arkansas",
-        "dek": "Arkansas Dietitian licensure requires completing an accredited dietetics program, passing the Registration Examination for Dietitians, and maintaining continuing education."
+        "dek": "To apply for a Dietitian license in Arkansas, you must use the Arkansas Professional Licensing System to submit your initial application, including licensure by endorsement."
       }
     }
   },
@@ -182,5 +192,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Arkansas Professional Licensing System",
+    "portal_url": "https://www.ark.org/ardlb_app/",
+    "registration_steps": "To create an account and begin your application, navigate to the Arkansas Professional Licensing System portal, click 'REGISTER' under the 'New Applicant Registration' section, and follow the prompts to set up your username, password, and security questions.",
+    "provider_search": "https://www.healthy.arkansas.gov/programservices/resources/find-a-professional"
   }
 }

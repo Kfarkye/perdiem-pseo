@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Minnesota Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Minnesota — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Minnesota \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license minnesota, dental assistant certification minnesota, RDA minnesota, DANB CDA minnesota, dental assistant radiography minnesota"
   },
   "board": {
     "name": "Minnesota Board of Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "2829 University Ave SE, Suite 450, Minneapolis, MN 55414-3249",
     "physical_address": "See board website",
-    "phone": "(612) 548-2129",
+    "phone": "(612) 617-2244",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://mn.gov/boards/dentistry/"
+    "email": "dental.board@state.mn.us",
+    "url": "https://mn.gov/boards/dentistry/",
+    "contact_url": "https://mn.gov/boards/dentistry/contact/",
+    "verify_url": "https://mn.gov/boards/dentistry/verify/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/registration fee",
-    "renewal_fee": "$75",
+    "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "25 hours per renewal cycle"
   },
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application for dental assistant registration to the Minnesota Board of Dentistry."
+      "title": "Complete Education and Required Examinations",
+      "description": "Graduate from a CODA-accredited dental assisting program or a Board-approved program. Pass the Dental Assisting National Board (DANB) Certified Dental Assistant (CDA) exam and an approved clinical examination (if applicable to your education pathway)."
     },
     {
-      "title": "Fulfill Continuing Education Requirements",
-      "description": "Complete 25 hours of continuing education every two years as required by the board."
+      "title": "Pass Minnesota Jurisprudence Exam",
+      "description": "Successfully complete the Minnesota Board of Dentistry jurisprudence examination. This exam may be administered online through the Minnesota Board of Dentistry's Applicant Portal or an approved external vendor."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Submit the required registration fee of $100 to the Minnesota Board of Dentistry."
+      "title": "Create Applicant Portal Account & Initiate Application",
+      "description": "Access the Minnesota Board of Dentistry\u2019s Applicant Portal and create a new account. Begin the online application for Licensed Dental Assistant (LDA) licensure, providing all required personal and professional information."
+    },
+    {
+      "title": "Submit Supporting Documentation and Background Check",
+      "description": "Upload all necessary documents, such as official transcripts, DANB scores, and clinical exam results, directly through the Applicant Portal. Complete the required background check as instructed within the application process."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Submit the required initial application and licensure fees through the Minnesota Board of Dentistry\u2019s Applicant Portal to finalize your application submission."
     }
   ],
   "documents": [
@@ -123,11 +133,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 130,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://mn.gov/boards/dentistry/",
-    "endorsement_url": "https://mn.gov/boards/dentistry/",
+    "endorsement_url": "https://mn.gov/boards/dentistry/licensure/dentalassistants.jsp",
     "notes": "Dental assistants can apply for Licensed Dental Assistant (LDA) through the Minnesota Board of Dentistry by license.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Minnesota",
-        "dek": "Minnesota Dental Assistant registration requires completion of application requirements, adherence to continuing education, and payment of fees."
+        "dek": "To apply for an initial Licensed Dental Assistant (LDA) license in Minnesota, applicants must create an account and submit their application through the Minnesota Board of Dentistry\u2019s Applicant Portal."
       }
     }
   },
@@ -172,5 +182,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Minnesota Board of Dentistry\u2019s Applicant Portal",
+    "portal_url": "https://mn.gov/boards/dentistry/licensure/applicant-portal/",
+    "registration_steps": "New applicants will create an account with a unique username and password. After account creation, applicants can log in to complete and submit the online application for licensure.",
+    "provider_search": "https://mn.gov/boards/dentistry/verify/"
   }
 }

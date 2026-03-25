@@ -21,19 +21,21 @@
   "board": {
     "name": "Massachusetts DPH",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Prometric, MA Nurse Aide Registry, 7941 Corporate Dr., Nottingham, MD 21236",
     "physical_address": "See board website",
-    "phone": "(617) 624-6000",
+    "phone": "800-811-2758",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.mass.gov/"
+    "email": "ma@prometric.com",
+    "url": "https://www.mass.gov/",
+    "contact_url": "https://www.prometric.com/nurseaide/ma#contact-us",
+    "verify_url": "https://registry.prometric.com/registry/publicMA"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "training_hours": "100 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Massachusetts-approved CNA training program, usually 100 hours long."
+      "title": "Complete Approved Training Program",
+      "description": "Successfully complete a state-approved Nurse Aide Training Program (NATP) in Massachusetts, as required by the Massachusetts Department of Public Health."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Massachusetts nurse aide exam."
+      "title": "Apply for Examination",
+      "description": "Create an account and submit your application to take the Nurse Aide Competency Examination (NACE) through the Prometric Massachusetts Nurse Aide Registry Portal."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Schedule Examination",
+      "description": "Once your application is approved, schedule both the written (or oral) and skills portions of the NACE via your Prometric account. The examination fee is $115 for both parts."
+    },
+    {
+      "title": "Pass Examination",
+      "description": "Take and successfully pass both the written/oral and skills components of the NACE."
+    },
+    {
+      "title": "Registry Listing",
+      "description": "Upon successful completion of the examination, Prometric will automatically add your name to the Massachusetts Nurse Aide Registry. No further action is required from the applicant for initial listing."
     }
   ],
   "documents": [
@@ -118,10 +128,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.mass.gov/",
-    "endorsement_url": "https://www.mass.gov/nurse-aide-testing",
+    "endorsement_url": "https://www.prometric.com/nurseaide/ma#reciprocity",
     "notes": "Contact the MA DPH Nurse Aide Testing Office at (781) 979-4010 or 1-800-962-4337 for reciprocity. A CORI (Criminal Offender Record Information) background check is required.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -171,7 +181,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Massachusetts",
-        "dek": "Massachusetts CNA certification requires a 100-hour training program, Massachusetts DPH eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nursing Assistant in Massachusetts, applicants must apply through the Prometric Massachusetts Nurse Aide Registry Portal for examination and certification."
       },
       "seo": {
         "title": "How to Become a CNA in Massachusetts",
@@ -217,5 +227,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Massachusetts Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Prometric Massachusetts Nurse Aide Registry Portal",
+    "portal_url": "https://www.prometric.com/nurseaide/ma",
+    "registration_steps": "Visit the Prometric Massachusetts Nurse Aide Registry Portal. Navigate to the 'Initial Certification' section and click on the 'Apply for the Examination' link to create a new user account and begin the online application process.",
+    "provider_search": "https://registry.prometric.com/registry/publicMA"
   }
 }

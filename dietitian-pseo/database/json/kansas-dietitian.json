@@ -21,19 +21,21 @@
   "board": {
     "name": "Health Occupations Credentialing",
     "parent_dept": "Kansas Department for Aging and Disability Services (KDADS)",
-    "mailing_address": "503 S. Kansas Ave.<br>Topeka, KS 66603",
+    "mailing_address": "Kansas Board of Healing Arts\n800 SW Jackson, Lower Level - Suite A\nTopeka, KS 66612",
     "physical_address": "503 S. Kansas Ave.<br>Topeka, KS 66603",
-    "phone": "(785) 296-0061",
+    "phone": "(785) 296-7413",
     "fax": "(785) 296-3075",
-    "email": "mailto:kdads.licensure@ks.gov",
-    "url": "https://kdads.ks.gov/kdads-commissions/survey-certification-and-credentialing-commission/health-occupations-credentialing"
+    "email": "ksbha_licensing@ks.gov",
+    "url": "https://kdads.ks.gov/kdads-commissions/survey-certification-and-credentialing-commission/health-occupations-credentialing",
+    "contact_url": "https://www.ksbha.org/contact.shtml",
+    "verify_url": "https://www.accesskansas.org/bha/verify.html"
   },
   "quick_facts": {
     "total_fee": "$140",
     "fee_breakdown": "$140 initial application fee",
-    "renewal_fee": "$135",
-    "renewal_cycle": "Every 2 years + 15 CE hours",
-    "processing_time": "3 to 4 Weeks",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Commission on Dietetic Registration examination",
     "ce_requirement": "15 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Complete a didactic program in dietetics and supervised practice program approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Create Account & Complete Online Application",
+      "description": "Navigate to The Board's Online Services portal at https://www.accesskansas.org/bha/. Create a new user account if you don't have one, then select the Registered Dietitian application, and complete all required sections online, including uploading a digital photograph."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Commission on Dietetic Registration examination."
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable $150 application fee through the online portal as part of your application submission."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application for licensure to the Kansas Department for Aging and Disability Services and pay the required fees."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official academic transcripts to be sent directly from your college or university to the Kansas Board of Healing Arts. Electronic submission is preferred."
+    },
+    {
+      "title": "Verify CDR Registration",
+      "description": "Contact the Commission on Dietetic Registration (CDR) to request that your verification statement of registration be sent directly to the Kansas Board of Healing Arts."
+    },
+    {
+      "title": "Complete Criminal History Background Check",
+      "description": "Follow the instructions provided within the online application to complete the required fingerprint-based criminal history background check. This typically involves submitting fingerprints through a designated service."
+    },
+    {
+      "title": "Submit Verification of Licensure (If Applicable)",
+      "description": "If you hold or have held a dietitian license in another state, complete the Verification of Licensure form provided within the online application, or arrange for verification to be sent directly from the issuing board."
     }
   ],
   "documents": [
@@ -136,11 +150,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 140,
-    "processing_time": "3 to 4 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "https://kdads.ks.gov/kdads-commissions/survey-certification-and-credentialing-commission/health-occupations-credentialing",
-    "endorsement_url": "https://kdads.ks.gov/kdads-commissions/survey-certification-and-credentialing-commission/health-occupations-credentialing",
+    "endorsement_url": "https://www.ksbha.org/professions/Dietitian/InstructionsforDietitian.pdf",
     "notes": "Kansas allows for licensure by reciprocity. Out-of-state applicants with a current, valid license from a state with equivalent or stricter standards, or holding active CDR registration, can apply using the standard application process to establish Kansas credentials.",
     "requires_psv": true
   },
@@ -156,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Kansas",
-        "dek": "Kansas Dietitian License requires completing an accredited dietetics program, passing the Commission on Dietetic Registration examination, and paying the required fees."
+        "dek": "To apply for a Registered Dietitian license in Kansas, prospective licensees must submit an online application through The Board's Online Services portal."
       }
     }
   },
@@ -182,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "The Board's Online Services",
+    "portal_url": "https://www.accesskansas.org/bha/",
+    "registration_steps": "Navigate to the portal, click 'Access Online Services', then 'Online Applications'. Select 'Registered Dietitian' and click 'Start Application'. Choose 'New Applicant' and follow the prompts to create an account and begin the application.",
+    "provider_search": "https://www.accesskansas.org/bha/verify.html"
   }
 }

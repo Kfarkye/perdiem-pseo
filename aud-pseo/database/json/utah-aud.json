@@ -21,17 +21,19 @@
   "board": {
     "name": "Utah Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Utah Department of Commerce, Division of Professional Licensing (DOPL)",
-    "mailing_address": "P.O. Box 146741, Salt Lake City, UT 84114-6741",
+    "mailing_address": "Utah Division of Professional Licensing\nHeber M. Wells Building, 4th Floor\n160 East 300 South\nP.O. Box 146741\nSalt Lake City, UT 84114-6741",
     "physical_address": "160 E. 300 South, Salt Lake City, UT 84111",
     "phone": "(801) 530-6628",
     "fax": "(801) 530-6511",
-    "email": "mailto:dopl@utah.gov",
-    "url": "https://dopl.utah.gov/slp/"
+    "email": "doplweb@utah.gov",
+    "url": "https://dopl.utah.gov/slp/",
+    "contact_url": "https://dopl.utah.gov/contact.html",
+    "verify_url": "https://dopl.utah.gov/license-lookup/index.html"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$85",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -47,15 +49,23 @@
   "steps": [
     {
       "title": "Meet Educational Requirements",
-      "description": "Earn a doctoral degree in audiology from an accredited educational institution."
+      "description": "Obtain a doctoral degree in audiology (Au.D.) or its equivalent from an accredited program recognized by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA) or other approved accrediting body."
     },
     {
-      "title": "Pass the National Exam",
-      "description": "Achieve a passing score on the Audiology Examination."
+      "title": "Pass the Praxis Exam",
+      "description": "Achieve a passing score on the Praxis Exam in Audiology (ETS Exam #5342). Ensure your official scores are sent directly to the Utah Department of Professional Licensing (DOPL)."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Utah Board of Speech-Language Pathology and Audiology, including all required documentation and fees."
+      "title": "Create a DOPL Online Services Account",
+      "description": "Navigate to the DOPL Online Services portal (dopl.utah.gov/online_applications.html) and create an account if you don't already have one. You will need to provide personal information and verify your email."
+    },
+    {
+      "title": "Complete the Online Application",
+      "description": "Log in to your DOPL Online Services account, select 'Apply for a New License,' and complete the Audiologist application form, providing all requested information and answering eligibility questions."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Upload or arrange for the submission of all required documentation directly to DOPL, which includes official transcripts from your educational program and official Praxis exam scores, as specified in your application checklist within the DOPL Online Services portal."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 85,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dopl.utah.gov/slp/",
-    "endorsement_url": "https://dopl.utah.gov/slp/",
+    "endorsement_url": "https://dopl.utah.gov/aud/index.html",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "utah-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Utah",
-        "dek": "Utah Audiologist license requires graduation from an approved program, passing the Audiology Examination, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Utah, complete the online application via the DOPL Online Services portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DOPL Online Services",
+    "portal_url": "https://dopl.utah.gov/online_applications.html",
+    "registration_steps": "Visit the DOPL Online Services portal, click 'New User? Create an Account', complete the registration form, and then log in to select 'Apply for a New License'.",
+    "provider_search": "https://dopl.utah.gov/license-lookup/index.html"
   }
 }

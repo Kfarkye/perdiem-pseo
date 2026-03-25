@@ -15,23 +15,25 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Nebraska Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Nebraska — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Nebraska \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license nebraska, dental assistant certification nebraska, RDA nebraska, DANB CDA nebraska, dental assistant radiography nebraska"
   },
   "board": {
     "name": "Nebraska DHHS",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Nebraska Department of Health and Human Services\nLicensure Unit\nPO Box 94986\nLincoln, NE 68509-4986",
     "physical_address": "See board website",
     "phone": "(402) 471-2115",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dhhs.ne.gov/licensure/Pages/Dental-Assisting.aspx"
+    "email": "DHHS.LicensureUnit@nebraska.gov",
+    "url": "https://dhhs.ne.gov/licensure/Pages/Dental-Assisting.aspx",
+    "contact_url": "https://dhhs.ne.gov/Pages/Regulation-and-Licensure.aspx",
+    "verify_url": "https://licensure.ne.gov/licensure-info/verify-license/"
   },
   "quick_facts": {
     "total_fee": "$95",
     "fee_breakdown": "$95 application/registration fee",
-    "renewal_fee": "$95",
+    "renewal_fee": "$10",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Basic Requirements",
-      "description": "Graduate from high school or equivalent and be at least 18 years old."
+      "title": "Complete a Board-Approved Nitrous Oxide Monitoring Course",
+      "description": "Successfully complete a Board-approved course specific to the monitoring of nitrous oxide administration. Ensure the course meets the requirements outlined in Title 172 NAC 71 of the Nebraska Rules and Regulations for the Board of Dentistry."
     },
     {
-      "title": "Complete Required Courses",
-      "description": "Complete a Board-approved course in radiation safety and maintain current certification in basic life support."
+      "title": "Download the Certification Application Form",
+      "description": "Obtain the official 'Dental Assistant - Nitrous Oxide Monitoring Certification Application' (Form 16-21) from the Nebraska Department of Health and Human Services (DHHS) Dentistry Forms page."
     },
     {
-      "title": "Submit Application and Fee",
-      "description": "Complete the application form and submit it along with the $95 fee to the Nebraska Department of Health and Human Services."
+      "title": "Complete Application and Gather Documentation",
+      "description": "Fill out the application form completely and accurately. Attach all required documentation, including official proof of completion from your Board-approved nitrous oxide monitoring course."
+    },
+    {
+      "title": "Prepare Certification Fee",
+      "description": "Include the non-refundable initial certification fee of $25. This fee should be submitted with your completed application."
+    },
+    {
+      "title": "Mail Application and Fee",
+      "description": "Mail the completed application form, all supporting documents, and the fee to the Nebraska Department of Health and Human Services, Licensure Unit, at PO Box 94986, Lincoln, NE 68509-4986."
+    },
+    {
+      "title": "Receive Certification",
+      "description": "Allow time for processing by the Licensure Unit. Once approved, the Board will issue your Nitrous Oxide Monitoring Certification."
     }
   ],
   "documents": [
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Nebraska",
-        "dek": "Nebraska Dental Assistant registration requires graduation from high school (or equivalent), completion of a Board-approved course in radiation safety, and current certification in basic life support."
+        "dek": "Nebraska does not require general licensing for Dental Assistants. However, dental assistants performing specific functions, such as monitoring nitrous oxide administration, must obtain certification by submitting a paper application (Form 16-21) to the Nebraska DHHS Licensure Unit."
       }
     }
   },
@@ -172,5 +186,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "timeline_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nebraska DHHS Licensure Unit (Paper Application for Nitrous Oxide Monitoring Certification)",
+    "portal_url": "https://dhhs.ne.gov/licensure/Forms/Form_16-21_Nitrous_Oxide_Monitoring_Certification_Application.pdf",
+    "registration_steps": "There is no online registration system for general Dental Assistant licensing in Nebraska. To apply for Nitrous Oxide Monitoring Certification, download the official application form (Form 16-21) from the Nebraska DHHS website, complete it, and mail it with the required fee to the Licensure Unit.",
+    "provider_search": "https://licensure.ne.gov/licensure-info/verify-license/"
   }
 }

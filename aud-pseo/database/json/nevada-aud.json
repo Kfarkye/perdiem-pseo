@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Examiners for Audiology and Speech-Language Pathology",
     "parent_dept": "Nevada Board of Examiners for Audiology and SLP",
-    "mailing_address": "5011 Meadowood Mall Way, Suite 300, Reno, NV 89502",
+    "mailing_address": "1755 E. Plumb Lane, Suite 237, Reno, NV 89502",
     "physical_address": "5011 Meadowood Mall Way, Suite 300, Reno, NV 89502",
-    "phone": "(775) 857-3500",
+    "phone": "(775) 434-2115",
     "fax": "(775) 857-3520",
-    "email": "mailto:board@nvaslp.org",
-    "url": "https://nvaslp.org/"
+    "email": "nvslp.nvau@gmail.com",
+    "url": "https://nvaslp.org/",
+    "contact_url": "https://nvboardofaudiology.nv.gov/contact-us/",
+    "verify_url": "https://nvboardofaudiology.nv.gov/licensee-search/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Educational Requirements",
-      "description": "Obtain a Doctor of Audiology (Au.D.) degree from an accredited educational institution."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official graduate transcripts, verifying the required degree, to be sent directly from your educational institution to the Board."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "Successfully complete the Audiology Examination of the Praxis Series."
+      "title": "Submit Praxis Exam Scores",
+      "description": "Have your official Praxis Audiology (Code 5343) exam scores sent directly from ETS to the Board."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application and all required documentation to the Nevada Board of Examiners for Audiology and Speech-Language Pathology."
+      "title": "Complete Jurisprudence Exam",
+      "description": "Download, complete, and submit the Nevada Audiology/Speech-Language Pathology Jurisprudence Exam, available on the Board's website under 'Forms,' along with your application."
+    },
+    {
+      "title": "Complete Fingerprint Background Check",
+      "description": "Undergo a fingerprint background check through the Nevada Department of Public Safety. Follow the specific instructions provided within the online application."
+    },
+    {
+      "title": "Submit Clinical Fellowship Verification (If Applicable)",
+      "description": "If applying for an initial or provisional license requiring supervised experience, ensure your Verification of Clinical Fellowship (VCF) form is submitted to the Board."
     }
   ],
   "documents": [
@@ -128,7 +138,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://nvaslp.org/",
-    "endorsement_url": "https://nvaslp.org/",
+    "endorsement_url": "https://nvboardofaudiology.nv.gov/apply-for-licensure/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "nevada-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Nevada",
-        "dek": "Nevada Audiologist License requires a doctorate in audiology, passing the Audiology Examination of the Praxis Series, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Nevada, register and submit your application through the Nevada Board of Examiners for Audiology and Speech-Language Pathology Online Portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nevada Board of Examiners for Audiology and Speech-Language Pathology Online Portal",
+    "portal_url": "https://nvboardofaudiology.nv.gov/apply/",
+    "registration_steps": "Navigate to the Nevada Board of Examiners for Audiology and Speech-Language Pathology Online Portal, click 'Register' at the top right, and follow the prompts to create your account. Once registered, log in to start a new application.",
+    "provider_search": "https://nvboardofaudiology.nv.gov/licensee-search/"
   }
 }

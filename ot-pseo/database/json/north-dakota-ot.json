@@ -21,19 +21,21 @@
   "board": {
     "name": "North Dakota Board of Occupational Therapy Practice",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "PO Box 5363, Fargo, ND 58105-5363",
     "physical_address": "See board website",
-    "phone": "(701) 250-0847",
+    "phone": "701-390-6712",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.ndotboard.com/"
+    "email": "info@ndbotp.org",
+    "url": "https://www.ndotboard.com/",
+    "contact_url": "https://www.ndbotp.org/contact-us",
+    "verify_url": "https://www.ndbotp.org/verify-a-license"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$125",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
     "ce_requirement": "24 contact hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE-Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create an Account and Complete Online Application",
+      "description": "Visit the ND Board of Occupational Therapy Practice Online Licensing System, create a new applicant account, and accurately complete the online application for licensure."
     },
     {
-      "title": "Pass the NBCOT Exam",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts and NBCOT Score",
+      "description": "Arrange for your official academic transcripts to be sent directly from your educational institution and your NBCOT score verification to be sent directly from NBCOT to the North Dakota Board of Occupational Therapy Practice."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit an application for licensure to the North Dakota Board of Occupational Therapy Practice, including all required documentation and fees."
+      "title": "Complete a Criminal History Record Check",
+      "description": "Follow the instructions on the NDBOTP website to complete a fingerprint-based criminal history record check through the North Dakota Bureau of Criminal Investigation (ND BCI)."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee of $125.00 through the ND Board of Occupational Therapy Practice Online Licensing System."
+    },
+    {
+      "title": "Await Board Review and Licensure",
+      "description": "Once all required documents and fees are received and processed, the Board will review your application and notify you of your licensure status."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 125,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.ndotboard.com/",
-    "endorsement_url": "https://www.ndotboard.com/",
+    "endorsement_url": "https://www.ndbotp.org/license-by-endorsement",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in North Dakota",
-        "dek": "North Dakota Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and submitting a completed application."
+        "dek": "To apply for an Occupational Therapist license in North Dakota, complete an application through the ND Board of Occupational Therapy Practice Online Licensing System."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ND Board of Occupational Therapy Practice Online Licensing System",
+    "portal_url": "https://ndbotp.online.proboard.com/",
+    "registration_steps": "Navigate to the portal URL, click 'New Applicant Registration', and follow the prompts to create an account with your email and password.",
+    "provider_search": "https://www.ndbotp.org/verify-a-license"
   }
 }

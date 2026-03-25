@@ -21,18 +21,20 @@
   "board": {
     "name": "Vermont Secretary of State",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "OPR - Licensing Division, 89 Main Street, 3rd Floor, Montpelier, VT 05609-1103",
     "physical_address": "See board website",
-    "phone": "(802) 828-2191",
+    "phone": "(802) 828-2363",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://sec.state.vt.us/"
+    "email": "sos.opr@vermont.gov",
+    "url": "https://sec.state.vt.us/",
+    "contact_url": "https://sos.vermont.gov/professional-regulation/contact-us/",
+    "verify_url": "https://sos.vermont.gov/professional-regulation/verify-a-license/"
   },
   "quick_facts": {
     "total_fee": "$25",
     "fee_breakdown": "$25 endorsement application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years, by September 30th of odd-numbered years",
     "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "training_hours": "75 hours",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Vermont-approved CNA training program, usually 75 hours long."
+      "title": "Create Account & Apply Online",
+      "description": "Register for an account on the Vermont Professional Regulation Portal (VPRP) and complete the online application for CNA licensure, selecting the appropriate application type (e.g., by examination or endorsement)."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Vermont nurse aide exam."
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $50 through the Vermont Professional Regulation Portal (VPRP) during the application process."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Verify Training Program Completion",
+      "description": "For licensure by examination, arrange for your state-approved nursing assistant training program to send official verification of your program completion directly to the Vermont Office of Professional Regulation."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow instructions within the Vermont Professional Regulation Portal (VPRP) application to complete any required criminal background checks."
+    },
+    {
+      "title": "Pass NNAAP Examination",
+      "description": "For licensure by examination, register with Pearson VUE and successfully pass the National Nurse Aide Assessment Program (NNAAP) examination."
+    },
+    {
+      "title": "Receive Licensure",
+      "description": "Upon successful completion of all requirements and review by the Office of Professional Regulation, your CNA license will be issued and added to the Vermont CNA Registry."
     }
   ],
   "documents": [
@@ -121,11 +135,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 25,
+    "endorsement_fee": 50,
     "processing_time": "4 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "https://sec.state.vt.us/",
-    "endorsement_url": "https://sec.state.vt.us/",
+    "endorsement_url": "https://sos.vermont.gov/nursing/certified-nursing-assistant/#reciprocity",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a LNA in Vermont",
-        "dek": "Vermont CNA certification requires a 75-hour training program, Vermont Secretary of State eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for a Certified Nursing Assistant (CNA) license in Vermont, candidates must submit their application through the Vermont Professional Regulation Portal (VPRP)."
       },
       "seo": {
         "title": "How to Become a LNA in Vermont",
@@ -212,5 +226,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Vermont Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "timeline_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Vermont Professional Regulation Portal (VPRP)",
+    "portal_url": "https://secure.vermont.gov/ProfessionalRegulationPortal",
+    "registration_steps": "Visit the Vermont Professional Regulation Portal (VPRP) at secure.vermont.gov/ProfessionalRegulationPortal. Click 'Register an Account' to create a new user profile with your email and password. Once registered, log in and select 'Apply for a New License' to start your CNA application.",
+    "provider_search": "https://sos.vermont.gov/professional-regulation/verify-a-license/"
   }
 }

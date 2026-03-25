@@ -21,17 +21,19 @@
   "board": {
     "name": "Arizona Board of Physical Therapy",
     "parent_dept": "Arizona does not mandate state dietitian licensure. The national CDR credential is the recognized standard.",
-    "mailing_address": "See board website",
+    "mailing_address": "1740 W Adams St #3045, Phoenix, AZ 85007",
     "physical_address": "See board website",
     "phone": "(602) 274-0236",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://ptboard.az.gov/"
+    "email": "info@ptboard.az.gov",
+    "url": "https://ptboard.az.gov/",
+    "contact_url": "https://ptboard.az.gov/contact-us",
+    "verify_url": "https://licensing.az.gov/lookup"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create Account & Start Application",
+      "description": "Register and create a user account on the Arizona State Board of Physical Therapy Online Licensing System (https://licensing.az.gov/). Log in, select 'Apply for a New License,' and choose 'Physical Therapist' from the available options."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE for Physical Therapists, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Complete Online Application",
+      "description": "Fill out all required sections of the online application, providing personal, educational, and professional history. Ensure all mandatory fields are completed accurately within the Arizona State Board of Physical Therapy Online Licensing System."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application, required documentation, and fees to the Arizona Board of Physical Therapy."
+      "title": "Submit Required Documents",
+      "description": "Upload necessary supporting documents, such as official transcripts from your physical therapy program, directly through the portal. Arrange for any required verification forms or letters to be sent to the Board."
+    },
+    {
+      "title": "Arrange for NPTE Scores & Background Check",
+      "description": "Have your official National Physical Therapy Examination (NPTE) scores sent directly to the Arizona State Board of Physical Therapy. Complete and submit the required fingerprint-based background check as instructed within your application or on the Board's website."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Pay the non-refundable application fee and any other associated licensing fees through the secure payment system within the Arizona State Board of Physical Therapy Online Licensing System."
+    },
+    {
+      "title": "Board Review & Licensure",
+      "description": "Monitor your application status within your online account. The Board will review your complete application and all submitted documentation. Once approved, your license will be issued and reflected in the online verification system."
     }
   ],
   "documents": [
@@ -128,7 +142,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://ptboard.az.gov/",
-    "endorsement_url": "https://ptboard.az.gov/",
+    "endorsement_url": "https://ptboard.az.gov/forms",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "arizona-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Arizona",
-        "dek": "Arizona Physical Therapist License requires graduation from an accredited program, passing the National Physical Therapy Examination (NPTE), and a jurisprudence exam."
+        "dek": "To apply for a Physical Therapist license in Arizona, applicants must create an account and submit their application through the Arizona State Board of Physical Therapy Online Licensing System."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Arizona State Board of Physical Therapy Online Licensing System",
+    "portal_url": "https://licensing.az.gov/",
+    "registration_steps": "Navigate to the Arizona State Board of Physical Therapy Online Licensing System, click 'Register for an Account' (if you don't have one), and follow the prompts to create your user profile with an email address and password. Verify your email to complete registration.",
+    "provider_search": "https://licensing.az.gov/lookup"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "Audiology and Speech-Language Pathology Advisory Committee",
     "parent_dept": "New Jersey Division of Consumer Affairs",
-    "mailing_address": "P.O. Box 45020, Newark, NJ 07101",
+    "mailing_address": "State Board of Audiology and Speech-Language Pathology\nP.O. Box 45042\nNewark, New Jersey 07101",
     "physical_address": "124 Halsey St., Newark, NJ 07102",
-    "phone": "(973) 504-6430",
+    "phone": "(973) 504-6370",
     "fax": "(973) 648-3355",
     "email": "mailto:askconsumeraffairs@dca.lps.state.nj.us",
-    "url": "https://www.njconsumeraffairs.gov/aud/"
+    "url": "https://www.njconsumeraffairs.gov/aud/",
+    "contact_url": "https://www.nj.gov/oag/dca/boards/audspeech/contact.html",
+    "verify_url": "https://www.nj.gov/oag/dca/license_verification/index.html"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "You must possess a doctoral degree in audiology or a master’s degree with completion of the equivalent doctoral level coursework."
+      "title": "Register and Complete Online Application",
+      "description": "Visit the MyLicense Online Application System to register as a 'First Time Registrant' or log in. Complete the online application for Audiologist licensure, providing all required personal, educational, and professional information."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series administered by the Educational Testing Service."
+      "title": "Arrange for Official Transcripts",
+      "description": "Have official transcripts, verifying your master's or doctoral degree in Audiology, sent directly from your educational institution to the State Board of Audiology and Speech-Language Pathology."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit an application for licensure to the Audiology and Speech-Language Pathology Advisory Committee, including all required documentation and fees."
+      "title": "Submit Official Praxis Exam Scores",
+      "description": "Ensure your official scores for the Audiology Praxis examination are sent directly from ETS to the New Jersey State Board of Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Complete Criminal History Background Check (CHBC)",
+      "description": "Follow the instructions provided on the Board's website to complete a Criminal History Background Check through MorphoTrust/IdentoGO, as required for all applicants."
+    },
+    {
+      "title": "Provide Verification of Clinical Experience (VCE)",
+      "description": "Submit a completed Verification of Clinical Experience (VCE) form, documenting your supervised post-doctoral experience or Clinical Fellowship Year (CFY), directly to the Board."
+    },
+    {
+      "title": "Pay Application and Licensure Fees",
+      "description": "Pay the required initial application fee and initial licensure fee through the MyLicense Online Application System. The fees vary based on the application type and the point in the biennial cycle."
     }
   ],
   "documents": [
@@ -128,7 +142,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.njconsumeraffairs.gov/aud/",
-    "endorsement_url": "https://www.njconsumeraffairs.gov/aud/",
+    "endorsement_url": "https://www.nj.gov/oag/dca/boards/audspeech/applform.html",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "new-jersey-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in New Jersey",
-        "dek": "New Jersey Audiologist licenses require a doctoral degree in audiology, passing the Audiology Examination of the Praxis Series, and completion of a supervised clinical experience."
+        "dek": "Users apply for an Audiologist license in New Jersey through the MyLicense Online Application System, which handles both initial and endorsement applications."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense Online Application System",
+    "portal_url": "https://newjersey.mylicense.com/",
+    "registration_steps": "Visit the MyLicense Online Application System and click 'First Time Registrant' to create an account. You will need to provide personal information and set up security questions before proceeding with your application.",
+    "provider_search": "https://www.nj.gov/oag/dca/license_verification/index.html"
   }
 }

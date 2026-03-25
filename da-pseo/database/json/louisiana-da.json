@@ -15,24 +15,26 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Louisiana Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Louisiana — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Louisiana \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license louisiana, dental assistant certification louisiana, RDA louisiana, DANB CDA louisiana, dental assistant radiography louisiana"
   },
   "board": {
     "name": "Louisiana State Board of Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Louisiana State Board of Dentistry\n1515 Poydras Street, Suite 1760\nNew Orleans, LA 70112",
     "physical_address": "See board website",
-    "phone": "(225) 219-7330",
+    "phone": "(504) 568-6820",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.lsbd.org/"
+    "email": "info@lsbd.la.gov",
+    "url": "https://www.lsbd.org/",
+    "contact_url": "https://lsbd.la.gov/contact-us/",
+    "verify_url": "https://elicense.lsbd.la.gov/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/registration fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$25",
+    "renewal_cycle": "Every year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years"
   },
@@ -44,16 +46,34 @@
   ],
   "steps": [
     {
-      "title": "Meet Basic Requirements",
-      "description": "Applicants must have a high school diploma or equivalent, and current CPR certification."
+      "title": "Create Account",
+      "description": "Navigate to the LSBD Online Licensure System and click 'Register'. Provide your Social Security Number, date of birth, last name, and email address to create your login credentials.",
+      "url": "https://elicense.lsbd.la.gov/login.aspx"
     },
     {
-      "title": "Find a Sponsoring Dentist",
-      "description": "You must be currently employed by a dentist licensed in Louisiana."
+      "title": "Complete Online Application",
+      "description": "Log in to the LSBD Online Licensure System and complete the Dental Assistant application form, providing all required personal and professional information.",
+      "url": "https://elicense.lsbd.la.gov/login.aspx"
     },
     {
-      "title": "Submit Application and Fee",
-      "description": "Complete the Dental Assistant Registration application and submit it with the $100 fee to the Louisiana State Board of Dentistry."
+      "title": "Submit Required Documentation",
+      "description": "Upload all necessary documents, including proof of age (minimum 18 years), official transcripts or training certificates, and current CPR/BLS certification, directly through the LSBD Online Licensure System.",
+      "url": "https://lsbd.la.gov/applicants/dental-assistants/"
+    },
+    {
+      "title": "Pass Jurisprudence Exam",
+      "description": "Successfully complete the Louisiana State Board of Dentistry Jurisprudence Exam. Information on scheduling and taking the exam is available on the LSBD website.",
+      "url": "https://lsbd.la.gov/applicants/dental-assistants/"
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Undergo a criminal background check as required by the Board. Follow the instructions provided by the LSBD regarding the specific procedures for obtaining and submitting your background check results.",
+      "url": "https://lsbd.la.gov/applicants/dental-assistants/"
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable initial application fee of $65.00 through the LSBD Online Licensure System.",
+      "url": "https://elicense.lsbd.la.gov/login.aspx"
     }
   ],
   "documents": [
@@ -122,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 65,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.lsbd.org/",
-    "endorsement_url": "https://www.lsbd.org/",
+    "endorsement_url": "https://lsbd.la.gov/applicants/endorsement/",
     "notes": "Louisiana does not regulate general dental assistants. EDDA certification required for expanded duties.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -145,7 +165,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Louisiana",
-        "dek": "Louisiana Dental Assistant registration requires graduation from high school (or equivalent), CPR certification, and employment by a Louisiana licensed dentist."
+        "dek": "To apply for a Dental Assistant license in Louisiana, applicants must create an account and complete the application through the LSBD Online Licensure System."
       }
     }
   },
@@ -171,5 +191,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "LSBD Online Licensure System",
+    "portal_url": "https://elicense.lsbd.la.gov/login.aspx",
+    "registration_steps": "Navigate to the LSBD Online Licensure System, click 'Register', and provide your Social Security Number, date of birth, last name, and email to create an account and set up login credentials.",
+    "provider_search": "https://elicense.lsbd.la.gov/Lookup/LicenseLookup.aspx"
   }
 }

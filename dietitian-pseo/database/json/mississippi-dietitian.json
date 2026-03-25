@@ -21,19 +21,21 @@
   "board": {
     "name": "Professional Licensure - Dietetics",
     "parent_dept": "Mississippi State Department of Health",
-    "mailing_address": "P.O. Box 1700<br>Jackson, MS 39215-1700",
+    "mailing_address": "Mississippi State Department of Health, Professional Licensure, P. O. Box 1700, Jackson, MS 39215-1700",
     "physical_address": "143B Lefleur's Square<br>Jackson, MS 39211",
     "phone": "(601) 364-7360",
     "fax": "(601) 364-5057",
-    "email": "mailto:ProfLicensure@msdh.ms.gov",
-    "url": "https://msdh.ms.gov/page/30,0,82.html"
+    "email": "professional.licensure@msdh.ms.gov",
+    "url": "https://msdh.ms.gov/page/30,0,82.html",
+    "contact_url": "https://msdh.ms.gov/msdhsite/_static/14,0,103,contacts.aspx",
+    "verify_url": "https://healthprof.ms.gov/verify"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 initial application and licensure fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years (by March 31 of odd years) + 30 CE hours",
-    "processing_time": "3 to 4 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "Varies, typically 4 to 6 Weeks after all documentation is received",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Dietetics Education",
-      "description": "Complete a didactic program in dietetics and supervised practice experience accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Complete Educational Requirements and Supervised Practice",
+      "description": "Ensure you have completed a qualifying bachelor's or master's degree program in dietetics, human nutrition, food and nutrition, or a related field from a regionally accredited college or university, along with an Accreditation Council for Education in Nutrition and Dietetics (ACEND) accredited supervised practice program."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the registration examination for dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application and pay the required fee to the Mississippi State Department of Health."
+      "title": "Initiate Online Application via Mississippi Professional Licensure Online Services",
+      "description": "Create an account or log in to the Mississippi Professional Licensure Online Services portal at healthprof.ms.gov. Select the \"Dietitian/Nutritionist\" licensure option, complete the online application form, and pay the non-refundable application fee."
+    },
+    {
+      "title": "Submit Required Supporting Documentation",
+      "description": "Arrange for official transcripts, verification of supervised practice program completion, and CDR exam scores to be sent directly to the Mississippi State Department of Health. Additionally, submit a notarized affidavit, a recent photograph, and complete the required criminal background check process (fingerprint cards usually provided by the board)."
+    },
+    {
+      "title": "Await Application Review and Licensure Issuance",
+      "description": "The Mississippi State Department of Health will review your complete application and all supporting documents. Once approved and all requirements are met, your Dietitian/Nutritionist license will be issued."
     }
   ],
   "documents": [
@@ -137,10 +147,10 @@
     "temp_license_available": true,
     "jurisprudence_required": true,
     "endorsement_fee": 100,
-    "processing_time": "3 to 4 Weeks",
+    "processing_time": "Varies, typically 4 to 6 Weeks after all documentation is received",
     "processing_tier": "slow",
     "board_url": "https://msdh.ms.gov/page/30,0,82.html",
-    "endorsement_url": "https://msdh.ms.gov/page/30,0,82.html",
+    "endorsement_url": "https://msdh.ms.gov/msdhsite/_static/30,0,103,Dietitian-Nutritionist.aspx",
     "notes": "Mississippi allows for licensure by reciprocity (endorsement) for applicants holding a current, active license in another state with requirements substantially equivalent to Mississippi's, provided the out-of-state license is in good standing.",
     "requires_psv": true
   },
@@ -156,7 +166,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Mississippi",
-        "dek": "Mississippi Dietitian licensure requires completion of a dietetics program, passing the Registration Examination for Dietitians, and paying the required fees."
+        "dek": "To apply for a Dietitian/Nutritionist license in Mississippi, submit your application through the Mississippi Professional Licensure Online Services portal."
       }
     }
   },
@@ -182,5 +192,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Mississippi Professional Licensure Online Services",
+    "portal_url": "https://healthprof.ms.gov/",
+    "registration_steps": "Go to healthprof.ms.gov, click \"New User Registration\" or \"Apply for Professional Licensure\", follow the prompts to create an account, verify your email, log in, and then select \"Dietitian/Nutritionist\" to begin your application.",
+    "provider_search": "https://healthprof.ms.gov/verify"
   }
 }

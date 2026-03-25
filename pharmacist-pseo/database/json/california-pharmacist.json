@@ -21,17 +21,19 @@
   "board": {
     "name": "California Board of Pharmacy",
     "parent_dept": "Title Protection Only (Business and Professions Code Section 2585)",
-    "mailing_address": "See board website",
+    "mailing_address": "1625 N Market Blvd, Suite S200, Sacramento, CA 95834-1929",
     "physical_address": "See board website",
-    "phone": "(916) 518-3100",
+    "phone": "(916) 574-7900",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.pharmacy.ca.gov"
+    "url": "https://www.pharmacy.ca.gov",
+    "contact_url": "https://www.pharmacy.ca.gov/forms_pubs/contact.shtml",
+    "verify_url": "https://search.dca.ca.gov/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$315",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a Doctor of Pharmacy (PharmD) degree from a pharmacy program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Register for a BreEZe Account",
+      "description": "Create a new user account on the BreEZe Online Services portal at breeze.ca.gov, providing personal details and confirming your email."
     },
     {
-      "title": "Pass the NAPLEX and CPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the California Practice Standards and Jurisprudence Examination (CPJE)."
+      "title": "Submit the Pharmacist Application",
+      "description": "Log into your BreEZe account, navigate to the California State Board of Pharmacy, and complete the online Pharmacist Application form for licensure by examination."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the California State Board of Pharmacy and pay the required fee."
+      "title": "Submit Required Documentation",
+      "description": "Electronically upload or mail official transcripts, intern hours affidavits, and any other required supporting documents as instructed within the BreEZe application or on the Board's website."
+    },
+    {
+      "title": "Complete Fingerprinting and Background Check",
+      "description": "Register for Live Scan (for CA residents) or submit fingerprint cards (for out-of-state applicants) for a criminal background check, ensuring the results are sent to the Board of Pharmacy."
+    },
+    {
+      "title": "Pass Licensing Examinations",
+      "description": "Register for and pass both the North American Pharmacist Licensure Examination (NAPLEX) and the California Practice Standards and Jurisprudence Examination (CPJE)."
+    },
+    {
+      "title": "Await Application Processing",
+      "description": "Monitor your application status via BreEZe and respond promptly to any requests for additional information from the Board of Pharmacy."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 260,
-    "processing_time": "6 to 8 Weeks",
+    "endorsement_fee": 415,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.pharmacy.ca.gov",
-    "endorsement_url": "https://www.pharmacy.ca.gov",
+    "endorsement_url": "https://www.pharmacy.ca.gov/applicants/endorsement.shtml",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -151,7 +165,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in California",
-        "dek": "California Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and CPJE exams, and completing the required internship hours."
+        "dek": "To apply for a pharmacist license in California, new applicants must create an account and submit their application through the BreEZe Online Services portal."
       }
     }
   },
@@ -177,5 +191,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "BreEZe Online Services",
+    "portal_url": "https://www.breeze.ca.gov/",
+    "registration_steps": "On the BreEZe homepage, click 'New Users: Register Here', create a user ID and password, provide personal information, and confirm your email address. Once registered, log in to access the application for the California State Board of Pharmacy.",
+    "provider_search": "https://search.dca.ca.gov/"
   }
 }

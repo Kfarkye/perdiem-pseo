@@ -21,18 +21,20 @@
   "board": {
     "name": "Dietitians",
     "parent_dept": "Vermont Office of Professional Regulation (OPR)",
-    "mailing_address": "89 Main Street, 3rd Floor<br>Montpelier, VT 05620-3402",
+    "mailing_address": "Office of Professional Regulation\n89 Main Street, 3rd Floor\nMontpelier, VT 05620-3402",
     "physical_address": "89 Main Street, 3rd Floor<br>Montpelier, VT 05620-3402",
-    "phone": "(802) 828-1505",
+    "phone": "(802) 828-1500",
     "fax": "(802) 828-2465",
-    "email": "mailto:sos.opr.professions@vermont.gov",
-    "url": "https://sos.vermont.gov/dietitians/"
+    "email": "OPR.Applications@vermont.gov",
+    "url": "https://sos.vermont.gov/dietitians/",
+    "contact_url": "https://sos.vermont.gov/opr/about-opr/contact-us/",
+    "verify_url": "https://sos.vermont.gov/opr/licensee-lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 non-refundable initial application fee",
     "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years + 30 CE hours",
+    "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education and Experience Requirements",
-      "description": "Complete the academic requirements and supervised practice experience as specified by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Create an OPR Account",
+      "description": "Register for a new user account on the My OPRB Online Services portal (secure.vermont.gov/myvoprb/) by providing your email and creating a password, then answering security questions."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete Online Application",
+      "description": "Log into your My OPRB Online Services account and select the 'Initial Dietitian License Application' to complete and submit all required sections of the application."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application, required documentation, and the appropriate fee to the Vermont Secretary of State Office of Professional Regulation."
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official transcripts confirming your qualifying degree, verification of your supervised practice hours, and official scores from the Commission on Dietetic Registration (CDR) examination to be sent directly to the Vermont Office of Professional Regulation."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the required $100 initial license application fee through the My OPRB Online Services portal as part of your application submission."
+    },
+    {
+      "title": "Await Review and Approval",
+      "description": "The Office of Professional Regulation will review your complete application and submitted documents. You will be notified of the licensing decision after the review process."
     }
   ],
   "documents": [
@@ -132,7 +142,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://sos.vermont.gov/dietitians/",
-    "endorsement_url": "https://sos.vermont.gov/dietitians/",
+    "endorsement_url": "https://sos.vermont.gov/opr/professions/dietitian/",
     "notes": "Applicants currently certified or licensed as a dietitian in good standing in another jurisdiction can apply for certification in Vermont via the online system if their jurisdiction's requirements are substantially equivalent to Vermont's (typically demonstrated by active CDR registration).",
     "requires_psv": false
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Vermont",
-        "dek": "Vermont Dietitian licenses require completion of specified education and experience, passing the Registration Examination for Dietitians, and paying the required fee."
+        "dek": "To apply for a Dietitian license in Vermont, navigate to the My OPRB Online Services portal, register for an account, and complete the initial license application."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "My OPRB Online Services",
+    "portal_url": "https://secure.vermont.gov/myvoprb/",
+    "registration_steps": "Create an account by clicking \"New User? Register here\" on the My OPRB Online Services portal login page. Provide an email, create a password, and set up security questions. Once registered, log in to access and complete the online application for a license.",
+    "provider_search": "https://sos.vermont.gov/opr/licensee-lookup/"
   }
 }

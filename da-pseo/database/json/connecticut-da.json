@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Connecticut Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant requirements in Connecticut — fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant requirements in Connecticut \u2014 fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license connecticut, dental assistant certification connecticut, RDA connecticut, DANB CDA connecticut, dental assistant radiography connecticut"
   },
   "board": {
     "name": "Connecticut Department of Public Health",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "410 Capitol Ave., MS #12HLS, P.O. Box 340308, Hartford, CT 06134-0308",
     "physical_address": "See board website",
-    "phone": "(860) 509-7603",
+    "phone": "860-509-7603",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://portal.ct.gov/DPH"
+    "email": "dph.licensinginfo@ct.gov",
+    "url": "https://portal.ct.gov/DPH",
+    "contact_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/Practitioner-Licensing-and-Investigations/Contact-Us",
+    "verify_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "N/A",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$105",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "N/A"
   },
   "license_types": [
@@ -44,16 +46,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Basic Requirements",
-      "description": "You must have graduated from a dental assisting program or have completed equivalent training approved by the Connecticut State Dental Commission."
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you are at least 18 years old and have a high school diploma or equivalent. You must also satisfy one of the following: 1) Complete a DPH-approved course in dental radiography (minimum 36 hours classroom and clinical), OR 2) Have at least six months of clinical experience in a dental office and complete a program of study in radiation health and safety and radiographic techniques, attested to by a licensed dentist."
     },
     {
-      "title": "Be Employed by a Licensed Dentist",
-      "description": "Registration as a dental assistant in Connecticut requires employment by a dentist licensed to practice in the state."
+      "title": "Access the eLicense Portal",
+      "description": "Navigate to the Connecticut eLicense portal at https://www.elicense.ct.gov/ and create an account if you do not already have one. This is where you will submit your application and supporting documents for Dental Radiographer certification."
     },
     {
-      "title": "Comply with Regulations",
-      "description": "Adhere to all applicable statutes and regulations governing the practice of dental assisting in Connecticut."
+      "title": "Complete the Online Application",
+      "description": "Log in to your eLicense account, select 'Dental Professions', and then locate the 'Dental Radiographer' application. Fill out all required sections accurately and completely, providing personal, educational, and experience details."
+    },
+    {
+      "title": "Upload Required Documentation",
+      "description": "Submit scanned copies of your official high school diploma/GED, proof of age, and either: the official transcript/certificate for your DPH-approved radiography course, OR a completed affidavit signed by a licensed dentist attesting to your training and experience. Applicants holding a current DANB Dental Radiography Certificate are exempt from these specific educational/experience requirements."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $105 through the eLicense portal using a credit card or electronic check. Your application will not be processed until the fee is received."
+    },
+    {
+      "title": "Await Department Review",
+      "description": "The Connecticut Department of Public Health will review your submitted application and all supporting documentation. You will be notified via the eLicense portal or email regarding the status of your application and any further steps required."
     }
   ],
   "documents": [
@@ -122,11 +136,11 @@
     "fingerprint_required": false,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 105,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://portal.ct.gov/DPH",
-    "endorsement_url": "https://portal.ct.gov/DPH",
+    "endorsement_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/Dental-Radiographer/Dental-Radiographer-Application-Requirements",
     "notes": "Connecticut does not issue a general dental assistant license. Radiography competency must be demonstrated.",
     "requires_psv": false,
     "board_fee_verified": true,
@@ -145,7 +159,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Connecticut",
-        "dek": "Connecticut Dental Assistant registration requires graduation from a dental assisting program or completion of equivalent training, employment by a licensed dentist, and adherence to specified regulations."
+        "dek": "Please note that Connecticut does not license general Dental Assistants. To become certified as a Dental Radiographer (a regulated function for dental assistants) in Connecticut, applicants must apply through the state's eLicense online system, administered by the Department of Public Health."
       }
     }
   },
@@ -171,5 +185,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense (Connecticut eLicense)",
+    "portal_url": "https://www.elicense.ct.gov/",
+    "registration_steps": "Navigate to the eLicense portal, click 'Register for a new account' and follow prompts to create an account with a valid email address and password. Once registered, log in to access application forms.",
+    "provider_search": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
   }
 }

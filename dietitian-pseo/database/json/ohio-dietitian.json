@@ -21,19 +21,21 @@
   "board": {
     "name": "State Medical Board of Ohio",
     "parent_dept": "State Medical Board of Ohio",
-    "mailing_address": "State Medical Board of Ohio<br>30 E. Broad Street, 3rd Floor<br>Columbus, OH 43215",
+    "mailing_address": "Ohio Board of Dietetics\n77 South High Street, 16th Floor\nColumbus, OH 43215-6108",
     "physical_address": "30 E. Broad Street, 3rd Floor<br>Columbus, OH 43215",
-    "phone": "(614) 466-3934",
+    "phone": "614-466-8800",
     "fax": "(614) 728-5946",
-    "email": "mailto:license@med.ohio.gov",
-    "url": "https://med.ohio.gov/publications/dietitian"
+    "email": "dietetics@dietetics.ohio.gov",
+    "url": "https://med.ohio.gov/publications/dietitian",
+    "contact_url": "https://dietetics.ohio.gov/contact-us",
+    "verify_url": "https://dietetics.ohio.gov/licensee-lookup"
   },
   "quick_facts": {
     "total_fee": "$228.50",
     "fee_breakdown": "$225 Application Fee + $3.50 eLicense Transaction Fee",
-    "renewal_fee": "$183.50",
-    "renewal_cycle": "Biennial (Every 2 years)",
-    "processing_time": "~2 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Complete a minimum of a baccalaureate degree and complete the academic requirements from an approved education program accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Meet Eligibility & Pass CDR Exam",
+      "description": "Ensure you meet the education and supervised practice requirements and have successfully passed the Commission on Dietetic Registration (CDR) examination, as these are prerequisites for licensure in Ohio."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Create an eLicense Ohio Account",
+      "description": "Navigate to the eLicense Ohio portal at elicense.ohio.gov and register for a new account by providing your personal information to establish your login credentials."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application and all required documentation to the State Medical Board of Ohio."
+      "title": "Complete Online Application",
+      "description": "Log in to your eLicense Ohio account, select the 'Dietitian Initial License' application, and accurately complete all required sections of the application form."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Electronically upload or arrange for official transcripts, verification of supervised practice completion, and your CDR exam scores to be sent directly to the Ohio Board of Dietetics through the eLicense Ohio system or via official institutional channels."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable $100.00 application fee using a credit card or electronic check directly within the eLicense Ohio portal to finalize your application submission."
+    },
+    {
+      "title": "Board Review and Licensure",
+      "description": "Await review by the Ohio Board of Dietetics; once all submitted requirements are verified and approved, your license will be issued and viewable on the eLicense Ohio portal."
     }
   ],
   "documents": [
@@ -136,11 +150,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 228,
-    "processing_time": "~2 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://med.ohio.gov/publications/dietitian",
-    "endorsement_url": "https://med.ohio.gov/publications/dietitian",
+    "endorsement_url": "https://dietetics.ohio.gov/licensure/endorsement",
     "notes": "Under Ohio's Universal Recognition path, out-of-state dietitians can apply for reciprocity if they have held a substantially similar, active, and good-standing license in another jurisdiction for at least one year immediately preceding the application.",
     "requires_psv": true
   },
@@ -156,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Ohio",
-        "dek": "Ohio Dietitian License requires completion of an accredited dietetics program, passing the Registration Examination for Dietitians, and meeting continuing education requirements."
+        "dek": "To apply for a Dietitian license in Ohio, applicants must use the eLicense Ohio portal for initial application, documentation submission, and fee payment."
       }
     }
   },
@@ -182,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense Ohio",
+    "portal_url": "https://elicense.ohio.gov/",
+    "registration_steps": "Navigate to elicense.ohio.gov, click 'Register a New Account', and follow the prompts to create your user ID and password. Once registered, log in to begin your application.",
+    "provider_search": "https://dietetics.ohio.gov/licensee-lookup"
   }
 }

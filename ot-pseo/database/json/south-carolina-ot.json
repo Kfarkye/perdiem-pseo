@@ -21,19 +21,21 @@
   "board": {
     "name": "South Carolina Board of Occupational Therapy",
     "parent_dept": "South Carolina Department of Labor, Licensing and Regulation (LLR)",
-    "mailing_address": "See board website",
+    "mailing_address": "South Carolina Board of Occupational Therapy\nPO Box 11329\nColumbia, SC 29211-1329",
     "physical_address": "See board website",
     "phone": "(803) 896-4683",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://llr.sc.gov/ot/"
+    "email": "Contact.LLR@llr.sc.gov",
+    "url": "https://llr.sc.gov/ot/",
+    "contact_url": "https://llr.sc.gov/bot/contact.aspx",
+    "verify_url": "https://verify.llronline.com/LicLookup/BOT/BOTLicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$100",
+    "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NBCOT Examination",
     "ce_requirement": "24 contact hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Account and Submit Online Application",
+      "description": "Register or log in to the LLR Online Services Portal, then complete and submit the application for Occupational Therapist licensure, choosing either 'Licensure by Examination' or 'Licensure by Endorsement'."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Request your accredited occupational therapy program to send official transcripts directly to the South Carolina Board of Occupational Therapy."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application for licensure to the South Carolina Board of Occupational Therapy, including required documentation and fees."
+      "title": "Verify NBCOT Certification",
+      "description": "Ensure your National Board for Certification in Occupational Therapy (NBCOT) certification is active and arrange for your scores or certification verification to be sent directly to the Board."
+    },
+    {
+      "title": "Provide License Verifications (Endorsement Only)",
+      "description": "If applying by endorsement, arrange for official verification of all current and past occupational therapy licenses to be sent directly from each state board to the SC Board of Occupational Therapy."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the required non-refundable application fee through the LLR Online Services Portal to finalize your application submission."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 120,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://llr.sc.gov/ot/",
-    "endorsement_url": "https://llr.sc.gov/ot/",
+    "endorsement_url": "https://llr.sc.gov/bot/licensing.aspx",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in South Carolina",
-        "dek": "South Carolina Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT examination, and completing a background check."
+        "dek": "To apply for an Occupational Therapist license in South Carolina, create an account and submit your application through the LLR Online Services Portal."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "LLR Online Services Portal",
+    "portal_url": "https://www.llr.sc.gov/online/",
+    "registration_steps": "Navigate to the LLR Online Services Portal, click 'New User Registration,' and follow the prompts to create an account. Once registered, log in and select the appropriate Occupational Therapist application type (e.g., 'Licensure by Examination' or 'Licensure by Endorsement').",
+    "provider_search": "https://verify.llronline.com/LicLookup/BOT/BOTLicenseLookup.aspx"
   }
 }

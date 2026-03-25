@@ -19,21 +19,23 @@
     "keywords": "speech-language pathologist license reciprocity connecticut, how to transfer speech-language pathologist license to connecticut, speech-language pathologist compact connecticut, connecticut speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Department of Public Health — Speech-Language Pathology",
+    "name": "Department of Public Health \u2014 Speech-Language Pathology",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
-    "mailing_address": "410 Capitol Ave., MS #12APP, Hartford, CT 06134",
+    "mailing_address": "Department of Public Health, Practitioner Licensing & Investigations Section, 410 Capitol Avenue, MS #12HLS, P.O. Box 340308, Hartford, CT 06134-0308",
     "physical_address": "410 Capitol Ave., Hartford, CT 06134",
     "phone": "(860) 509-7603",
     "fax": "(860) 509-7553",
-    "email": "mailto:dph.practitionerLicensing@ct.gov",
-    "url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/SLP/Speech-and-Language-Pathologist-Licensure"
+    "email": "dph.practitionerlicensing@ct.gov",
+    "url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/SLP/Speech-and-Language-Pathologist-Licensure",
+    "contact_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/Practitioner-Licensing-and-Investigations-Section/Contact-Us",
+    "verify_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$200 application and license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every year",
-    "processing_time": "4 to 6 weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "1 year",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal year"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Earn a master's degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+      "title": "Create an Account on eLicense",
+      "description": "Navigate to www.elicense.ct.gov and click 'Register a Person Account'. Follow the prompts to create your personal account, verify your email address, and set up your login credentials."
     },
     {
-      "title": "Complete Supervised Clinical Experience",
-      "description": "Fulfill a supervised clinical experience, as part of or in addition to your graduate work, meeting the requirements outlined by the Connecticut Department of Public Health."
+      "title": "Submit Initial Application via eLicense",
+      "description": "Log in to your newly created eLicense account, select 'Apply for a New License', choose 'Speech and Language Pathologist', and complete all required sections of the online application form."
     },
     {
-      "title": "Pass the Praxis Examination and Apply for Licensure",
-      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology and submit a complete application, including all required documentation and fees, to the Connecticut Department of Public Health."
+      "title": "Arrange for Transcript Submission",
+      "description": "Request your academic institution to send an official graduate transcript, verifying a master's or doctoral degree in speech-language pathology, directly to the Connecticut Department of Public Health."
+    },
+    {
+      "title": "Ensure Clinical Fellowship Verification",
+      "description": "Submit documentation of your supervised postgraduate professional experience (Clinical Fellowship Year), either by having your supervisor complete and submit the required forms to the DPH or by uploading proof of your ASHA Certificate of Clinical Competence (CCC) via eLicense."
+    },
+    {
+      "title": "Submit Praxis Examination Scores",
+      "description": "Request Educational Testing Service (ETS) to send your official Praxis Examination in Speech-Language Pathology (test code 5031 or 0330) score report directly to the Connecticut Department of Public Health (ETS code 7051)."
     }
   ],
   "documents": [
@@ -142,10 +152,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 200,
-    "processing_time": "4 to 6 weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/SLP/Speech-and-Language-Pathologist-Licensure",
-    "endorsement_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/SLP/Speech-and-Language-Pathologist-Licensure",
+    "endorsement_url": "https://portal.ct.gov/dph/Practitioner-Licensing--Investigations/SLP/Speech-and-Language-Pathologist-Licensure#Endorsement",
     "notes": "Connecticut does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full Connecticut licensure."
   },
   "slug": "connecticut-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Connecticut",
-        "dek": "Connecticut Speech-Language Pathologist license requires a master's degree, completion of supervised clinical experience, and passing the Praxis Examination in Speech-Language Pathology."
+        "dek": "To apply for a Speech-Language Pathologist license in Connecticut, new applicants must create an account and submit their application through the state's online eLicense system."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense",
+    "portal_url": "https://www.elicense.ct.gov/",
+    "registration_steps": "Go to www.elicense.ct.gov. Click 'Register a Person Account'. Follow the prompts to create your account, entering your email and creating a password. You will receive an email to activate your account.",
+    "provider_search": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "Arizona Board of Pharmacy",
     "parent_dept": "Arizona does not mandate state dietitian licensure. The national CDR credential is the recognized standard.",
-    "mailing_address": "See board website",
+    "mailing_address": "1740 W. Adams St., Suite 200, Phoenix, AZ 85007",
     "physical_address": "See board website",
     "phone": "(602) 771-2727",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pharmacy.az.gov/"
+    "email": "contact@azpharmacy.gov",
+    "url": "https://pharmacy.az.gov/",
+    "contact_url": "https://pharmacy.az.gov/contact",
+    "verify_url": "https://azmft.gov/azbplsearch/search.aspx"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$295.00",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program in pharmacy from a school or college of pharmacy accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create NABP e-Profile and Register for Exams",
+      "description": "Establish an e-Profile account with the National Association of Boards of Pharmacy (NABP) and register for the NAPLEX and MPJE examinations."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Submit Official Transcripts to NABP",
+      "description": "Arrange for official transcripts from your ACPE-accredited college of pharmacy to be sent directly to NABP."
     },
     {
-      "title": "Complete Internship Requirements and Apply for Licensure",
-      "description": "Satisfactorily complete the required internship hours and submit a completed application to the Arizona Board of Pharmacy along with all required documentation and fees."
+      "title": "Create an AZ BOP e-licensing Portal Account",
+      "description": "Go to the AZ BOP e-licensing portal at https://elicense.azbop.com/ and create a new user account."
+    },
+    {
+      "title": "Complete and Submit Online Application",
+      "description": "Log into your AZ BOP e-licensing portal account, complete the Pharmacist Application, and submit it along with the required application fee and your MPJE score."
+    },
+    {
+      "title": "Submit Fingerprint Card",
+      "description": "Obtain a fingerprint card and submit it to the Arizona Board of Pharmacy for a criminal background check as instructed by the board."
+    },
+    {
+      "title": "NABP Score Transfer",
+      "description": "NABP will electronically transfer your NAPLEX scores to the Arizona Board of Pharmacy upon completion of the exam."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 500,
-    "processing_time": "1 to 3 Weeks",
+    "endorsement_fee": 300,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://pharmacy.az.gov/",
-    "endorsement_url": "https://pharmacy.az.gov/",
+    "endorsement_url": "https://pharmacy.az.gov/pharmacist-endorsement-application",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -151,7 +165,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Arizona",
-        "dek": "Arizona Pharmacist licenses require graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completion of internship requirements."
+        "dek": "To apply for a pharmacist license in Arizona, you must create an account and submit your application through the AZ BOP e-licensing portal."
       }
     }
   },
@@ -177,5 +191,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "AZ BOP e-licensing portal",
+    "portal_url": "https://elicense.azbop.com/",
+    "registration_steps": "To create an account, click the 'New Users: Create an Account' link on the AZ BOP e-licensing portal homepage and follow the prompts. Once registered, log in and select the appropriate pharmacist application.",
+    "provider_search": "https://azmft.gov/azbplsearch/search.aspx"
   }
 }

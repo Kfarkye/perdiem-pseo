@@ -21,19 +21,21 @@
   "board": {
     "name": "Illinois Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
-    "mailing_address": "320 W. Washington St., 3rd Floor, Springfield, IL 62786",
+    "mailing_address": "Illinois Department of Financial and Professional Regulation\n320 W. Washington Street\nSpringfield, IL 62786",
     "physical_address": "320 W. Washington St., 3rd Floor, Springfield, IL 62786",
-    "phone": "(217) 785-0800",
+    "phone": "(800) 560-6420",
     "fax": "(217) 782-7645",
-    "email": "mailto:FPR.COREHelp@illinois.gov",
-    "url": "https://idfpr.illinois.gov/"
+    "email": "fpr.licensingspecialist@illinois.gov",
+    "url": "https://idfpr.illinois.gov/",
+    "contact_url": "https://idfpr.illinois.gov/contact.html",
+    "verify_url": "https://www.idfpr.com/licenselookup/licenseinfo.asp"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination",
     "ce_requirement": "20 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "You must have a doctoral degree in audiology from an accredited program."
+      "title": "Create an IDFPR Online Services Account",
+      "description": "Visit the IDFPR Online Services Portal and register for a new account if you do not already have one. This account will be used to submit your application, track its status, and manage your license."
     },
     {
-      "title": "Pass the Examination",
-      "description": "You must pass the Audiology Examination administered by a testing service approved by the Department."
+      "title": "Complete the Audiologist Application",
+      "description": "Log into your IDFPR Online Services Portal account and complete the 'Application for Licensure - Audiologist'. Ensure all required sections are filled out accurately, including personal information, education, and examination details."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit an application for licensure and pay the required fee to the Illinois Department of Financial and Professional Regulation."
+      "title": "Submit Required Documentation",
+      "description": "Upload or arrange for the submission of all necessary supporting documents directly through the IDFPR Online Services Portal or via mail if specified. This typically includes official transcripts, proof of ASHA CCC-A, and any required affidavits."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Pay the non-refundable application fee through the IDFPR Online Services Portal using a credit or debit card. The fee for licensure by examination or endorsement is currently $150."
+    },
+    {
+      "title": "Pass the Praxis Exam (if applicable)",
+      "description": "Ensure official scores for the Audiology Praxis Examination (5343) are sent directly to IDFPR from ETS, if required for your application type (e.g., licensure by examination)."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through your IDFPR Online Services Portal account. Respond promptly to any requests for additional information or clarification from IDFPR staff to avoid delays."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://idfpr.illinois.gov/",
-    "endorsement_url": "https://idfpr.illinois.gov/",
+    "endorsement_url": "https://idfpr.illinois.gov/profs/audi.html",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "illinois-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Illinois",
-        "dek": "Illinois Audiologist license requires an Au.D. degree, passing the Audiology Examination, and completion of the application process."
+        "dek": "To apply for an Audiologist license in Illinois, you must utilize the Illinois Department of Financial and Professional Regulation (IDFPR) Online Services Portal to submit your application and supporting documentation."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Illinois Department of Financial and Professional Regulation (IDFPR) Online Services Portal",
+    "portal_url": "https://idfpr.illinois.gov/profs/audi.html",
+    "registration_steps": "Navigate to the IDFPR Online Services Portal. Click 'Register for an Account' if you are a new user. Follow the prompts to create your account, providing personal information and security questions. Once registered, log in to access the online application system and select the appropriate Audiologist application.",
+    "provider_search": "https://www.idfpr.com/licenselookup/licenseinfo.asp"
   }
 }

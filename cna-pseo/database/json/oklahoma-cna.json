@@ -21,19 +21,21 @@
   "board": {
     "name": "Oklahoma State Dept of Health",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Oklahoma State Department of Health\nHealth Resources Development Services\nNurse Aide Registry\nP.O. Box 268815\nOklahoma City, OK 73126-8815",
     "physical_address": "See board website",
-    "phone": "(405) 271-5600",
+    "phone": "(405) 426-8480",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://oklahoma.gov/health/"
+    "email": "nar@health.ok.gov",
+    "url": "https://oklahoma.gov/health/",
+    "contact_url": "https://oklahoma.gov/health/services/health-resources-development-services/nurse-aide-registry/nurse-aide-registry-faq.html",
+    "verify_url": "https://apps.health.ok.gov/nurseaide/"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "training_hours": "95 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Oklahoma-approved CNA training program, usually 95 hours long."
+      "title": "Create a Nurse Aide Registry Account",
+      "description": "Navigate to the Nurse Aide Registry Management System at https://apps.health.ok.gov/NurseAide/login.aspx and click \"Create New Account\" to establish your applicant profile if you are a new user."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Oklahoma nurse aide exam."
+      "title": "Complete the Online Application",
+      "description": "Log into your Nurse Aide Registry Management System account, select the appropriate application type (e.g., Initial Certification, Reciprocity), and accurately fill out all required personal, educational, and work history information."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Upload Required Documentation",
+      "description": "Submit all necessary supporting documents, such as proof of training, competency exam results (if applicable), and any other required forms, directly through the Nurse Aide Registry Management System."
+    },
+    {
+      "title": "Pay Application Fees (if applicable)",
+      "description": "If your application type requires a fee (e.g., reciprocity), process the payment online using a credit or debit card within the Nurse Aide Registry Management System. Note that initial certification for new graduates from approved programs typically has no fee."
+    },
+    {
+      "title": "Schedule and Pass Competency Exam (if required)",
+      "description": "If you are pursuing initial certification without prior licensure, ensure you schedule and successfully pass both the written and skills portions of the Oklahoma state nurse aide competency examination."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through your account in the Nurse Aide Registry Management System for updates or any requests for additional information from the Nurse Aide Registry."
     }
   ],
   "documents": [
@@ -121,11 +135,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 10,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://oklahoma.gov/health/",
-    "endorsement_url": "https://oklahoma.gov/health/",
+    "endorsement_url": "https://oklahoma.gov/health/services/health-resources-development-services/nurse-aide-registry.html",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Oklahoma",
-        "dek": "Oklahoma CNA certification requires a 95-hour training program, Oklahoma State Dept of Health eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for or renew your Certified Nursing Assistant (CNA) license in Oklahoma, you must use the Oklahoma State Department of Health (OSDH) Nurse Aide Registry Management System."
       },
       "seo": {
         "title": "How to Become a CNA in Oklahoma",
@@ -216,5 +230,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Oklahoma Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nurse Aide Registry Management System",
+    "portal_url": "https://apps.health.ok.gov/NurseAide/login.aspx",
+    "registration_steps": "To create an account, navigate to the Nurse Aide Registry Management System login page and click the \"Create New Account\" link. You will need to provide personal information and create a unique username and password to establish your applicant profile before proceeding with any applications.",
+    "provider_search": "https://apps.health.ok.gov/nurseaide/"
   }
 }

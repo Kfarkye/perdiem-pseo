@@ -21,19 +21,21 @@
   "board": {
     "name": "Kentucky Board of Licensure for Occupational Therapy",
     "parent_dept": "Department of Professional Licensing (DPL)",
-    "mailing_address": "See board website",
+    "mailing_address": "Kentucky Board of Occupational Therapy, P.O. Box 1360, Frankfort, KY 40602",
     "physical_address": "See board website",
-    "phone": "(502) 564-3296",
+    "phone": "(502) 892-4217",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://bot.ky.gov/"
+    "email": "bot@ky.gov",
+    "url": "https://bot.ky.gov/",
+    "contact_url": "https://bot.ky.gov/contact/Pages/default.aspx",
+    "verify_url": "https://bot.ky.gov/LicenseeSearch/Pages/default.aspx"
   },
   "quick_facts": {
     "total_fee": "$175",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) exam",
     "ce_requirement": "24 contact hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Occupational Therapy Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create a KOG Account and Apply Online",
+      "description": "Go to the Kentucky Online Gateway (KOG) to create an account, log in, and complete the online application for licensure, paying the initial application fee of $75."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) exam."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your educational institution to send official transcripts directly to the Kentucky Board of Occupational Therapy."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Submit a completed application, required documentation, and fees to the Kentucky Board of Licensure for Occupational Therapy."
+      "title": "Submit NBCOT Scores",
+      "description": "Contact the National Board for Certification in Occupational Therapy (NBCOT) to have your official scores sent directly to the Kentucky Board of Occupational Therapy."
+    },
+    {
+      "title": "Pass the Jurisprudence Examination",
+      "description": "Complete and pass the Kentucky OT/OTA Jurisprudence Examination, which is an online, open-book test accessed after submitting your initial application through KOG."
+    },
+    {
+      "title": "Submit Affidavit of Good Moral Character",
+      "description": "Download and complete the Affidavit of Good Moral Character form, have it notarized, and submit it to the board."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Follow instructions provided by the board after application submission to complete both state and federal criminal background checks."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 75,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://bot.ky.gov/",
-    "endorsement_url": "https://bot.ky.gov/",
+    "endorsement_url": "https://bot.ky.gov/Licensees/Licensure-Process/Pages/Licensure-by-Endorsement.aspx",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Kentucky",
-        "dek": "Kentucky Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a criminal background check."
+        "dek": "To apply for an Occupational Therapist license in Kentucky, you must submit your application online through the Kentucky Online Gateway (KOG)."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Kentucky Online Gateway (KOG)",
+    "portal_url": "https://kog.chfs.ky.gov/Home/Login",
+    "registration_steps": "Go to the Kentucky Online Gateway (KOG) login page, click 'Create Account' if you don't have one, follow the prompts to register and verify your email. Once registered, log in to KOG and select the Kentucky Board of Occupational Therapy to begin your application.",
+    "provider_search": "https://bot.ky.gov/LicenseeSearch/Pages/default.aspx"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Pennsylvania DOH",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Prometric, PA Nurse Aide Registry, 7941 Corporate Drive, Nottingham, MD 21090",
     "physical_address": "See board website",
-    "phone": "(717) 787-8015",
+    "phone": "1-800-404-3186",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.health.pa.gov/"
+    "email": "NA_PA@prometric.com",
+    "url": "https://www.health.pa.gov/",
+    "contact_url": "https://www.prometric.com/contact-us",
+    "verify_url": "https://registry.prometric.com/registry/public-search"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "10 to 14 Business Days",
     "license_duration": "2 Years",
     "training_hours": "80 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,20 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Pennsylvania-approved CNA training program, usually 80 hours long."
+      "title": "Complete an Approved Nurse Aide Training Program (NATP)",
+      "description": "Successfully complete a Nurse Aide Training Program (NATP) approved by the Pennsylvania Department of Health. Your training program will provide information on how to register for the competency examination."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Pennsylvania nurse aide exam."
+      "title": "Register for the Competency Examination",
+      "description": "Register for the Pennsylvania Nurse Aide Competency Examination through the Prometric Pennsylvania Nurse Aide Registry website. This involves creating a test candidate account with Prometric if you don't already have one."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Pass the Competency Examination",
+      "description": "Pass both the written (or oral) portion and the skills demonstration portion of the Nurse Aide Competency Examination administered by Prometric."
+    },
+    {
+      "title": "Automatic Placement on the Registry",
+      "description": "Upon successful completion of both components of the Prometric Nurse Aide Competency Examination and meeting all state requirements, your name will be automatically added to the Pennsylvania Nurse Aide Registry by Prometric."
     }
   ],
   "documents": [
@@ -78,7 +84,7 @@
     },
     {
       "question": "How do I transfer my CNA to Pennsylvania?",
-      "answer": "Submit a reciprocity application through Credentia's CNA365 platform online, or mail the NNAAP Registration Application for Enrollment by Reciprocity to: Credentia – PA Nurse Aide Registry, PO Box 13785, Philadelphia, PA 19101-3785."
+      "answer": "Submit a reciprocity application through Credentia's CNA365 platform online, or mail the NNAAP Registration Application for Enrollment by Reciprocity to: Credentia \u2013 PA Nurse Aide Registry, PO Box 13785, Philadelphia, PA 19101-3785."
     },
     {
       "question": "Is PA CNA reciprocity free?",
@@ -121,11 +127,11 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 25,
+    "processing_time": "10 to 14 Business Days",
     "processing_tier": "fast",
     "board_url": "https://www.health.pa.gov/",
-    "endorsement_url": "https://www.credentia.com/test-takers/pa",
+    "endorsement_url": "https://www.prometric.com/nurseaide/pa",
     "notes": "Pennsylvania handles CNA reciprocity through Credentia's CNA365 platform. Reciprocity applications can be submitted online via CNA365 or by mail. No fee for reciprocity.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -174,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Pennsylvania",
-        "dek": "Pennsylvania CNA certification requires a 80-hour training program, Pennsylvania DOH eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nursing Assistant in Pennsylvania, applicants must complete an approved training program and pass the competency exam administered by Prometric, who also manages the Pennsylvania Nurse Aide Registry."
       },
       "seo": {
         "title": "How to Become a CNA in Pennsylvania",
@@ -220,5 +226,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Pennsylvania Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Prometric Pennsylvania Nurse Aide Registry",
+    "portal_url": "https://www.prometric.com/nurseaide/pa",
+    "registration_steps": "For initial certification, candidates must complete an approved training program and then register and schedule their competency examination directly through the Prometric Pennsylvania Nurse Aide Registry website. For endorsement, applicants download and complete the 'Application for Endorsement' form and mail it to Prometric.",
+    "provider_search": "https://registry.prometric.com/registry/public-search"
   }
 }

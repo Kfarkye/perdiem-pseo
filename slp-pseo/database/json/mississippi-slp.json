@@ -19,21 +19,23 @@
     "keywords": "speech-language pathologist license reciprocity mississippi, how to transfer speech-language pathologist license to mississippi, speech-language pathologist compact mississippi, mississippi speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Mississippi State Department of Health — Speech-Language Pathology",
+    "name": "Mississippi State Department of Health \u2014 Speech-Language Pathology",
     "parent_dept": "Mississippi State Department of Health (MSDH)",
-    "mailing_address": "P.O. Box 1700, Jackson, MS 39215-1700",
+    "mailing_address": "MBESLPA, P.O. Box 4508, Jackson, MS 39296-4508",
     "physical_address": "570 E. Woodrow Wilson Dr., Jackson, MS 39216",
-    "phone": "(601) 364-1100",
+    "phone": "(601) 977-6260",
     "fax": "(601) 364-5052",
-    "email": "mailto:licensure@msdh.ms.gov",
-    "url": "https://msdh.ms.gov/page/30,0,106.html"
+    "email": "mbeslpa@mbeslpa.ms.gov",
+    "url": "https://msdh.ms.gov/page/30,0,106.html",
+    "contact_url": "https://www.mbeslpa.ms.gov/contact",
+    "verify_url": "https://mbeslpa.ms.gov/license-verification"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application and license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every year (December 31)",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years (by June 30th of even-numbered years)",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "1 year",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 continuing education hours every year"
@@ -50,16 +52,34 @@
   ],
   "steps": [
     {
-      "title": "Complete a Master's Degree",
-      "description": "Earn a master's degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA)."
+      "title": "Register and Apply Online",
+      "description": "Create an account on the MBESLPA Portal, log in, and complete the online application for Speech-Language Pathologist licensure.",
+      "link_to_section": "https://ms.igovt.portal.prominencesoftware.com/mbeslpa/"
     },
     {
-      "title": "Pass the Praxis Examination",
-      "description": "Successfully complete the Praxis Examination in Speech-Language Pathology with a passing score."
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official graduate transcripts (demonstrating a master's or doctoral degree) and official Praxis Examination scores to be sent directly to the Mississippi Board of Examiners for Speech-Language Pathologists and Audiologists.",
+      "link_to_section": "https://www.mbeslpa.ms.gov/speech-language-pathologist"
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Mississippi State Department of Health, including all required documentation and fees."
+      "title": "Verify Clinical Experience",
+      "description": "Provide verification of a supervised Clinical Fellowship Experience (CFY) or submit proof of current ASHA Certificate of Clinical Competence (CCC-SLP) if applicable.",
+      "link_to_section": "https://www.mbeslpa.ms.gov/speech-language-pathologist"
+    },
+    {
+      "title": "Complete Jurisprudence Exam",
+      "description": "Access and pass the Mississippi Jurisprudence Examination, which is typically available through the MBESLPA Portal.",
+      "link_to_section": "https://ms.igovt.portal.prominencesoftware.com/mbeslpa/"
+    },
+    {
+      "title": "Undergo Background Check",
+      "description": "Follow instructions within the MBESLPA Portal to complete the required criminal background check.",
+      "link_to_section": "https://ms.igovt.portal.prominencesoftware.com/mbeslpa/"
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $100 as part of your online application in the MBESLPA Portal.",
+      "link_to_section": "https://ms.igovt.portal.prominencesoftware.com/mbeslpa/"
     }
   ],
   "documents": [
@@ -142,10 +162,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "fast",
     "board_url": "https://msdh.ms.gov/page/30,0,106.html",
-    "endorsement_url": "https://msdh.ms.gov/page/30,0,106.html",
+    "endorsement_url": "https://www.mbeslpa.ms.gov/licensure-by-endorsement",
     "notes": "Mississippi is a member of the ASLP Interstate Compact."
   },
   "slug": "mississippi-slp",
@@ -160,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Mississippi",
-        "dek": "Mississippi Speech-Language Pathologist license requires a master's degree, passing the Praxis exam, and completing a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in Mississippi, you must register and submit your application through the MBESLPA Portal."
       }
     }
   },
@@ -186,5 +206,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MBESLPA Portal",
+    "portal_url": "https://ms.igovt.portal.prominencesoftware.com/mbeslpa/",
+    "registration_steps": "Visit the MBESLPA Portal, click 'Register' for new users, enter your email and create a password, then confirm your email to log in and start your application.",
+    "provider_search": "https://mbeslpa.ms.gov/license-verification"
   }
 }

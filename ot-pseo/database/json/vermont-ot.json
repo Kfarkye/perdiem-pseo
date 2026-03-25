@@ -19,21 +19,23 @@
     "keywords": "occupational therapist license reciprocity vermont, how to transfer occupational therapist license to vermont, occupational therapist compact vermont, vermont occupational therapist endorsement application"
   },
   "board": {
-    "name": "Vermont Office of Professional Regulation — OT",
+    "name": "Vermont Office of Professional Regulation \u2014 OT",
     "parent_dept": "Vermont Office of Professional Regulation (OPR)",
-    "mailing_address": "See board website",
+    "mailing_address": "Office of Professional Regulation, 89 Main Street, 3rd Floor, Montpelier, VT 05620-3402",
     "physical_address": "See board website",
-    "phone": "(802) 828-2390",
+    "phone": "802-828-1505",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://sos.vermont.gov/opr/"
+    "email": "sos.opr@vermont.gov",
+    "url": "https://sos.vermont.gov/opr/",
+    "contact_url": "https://sos.vermont.gov/opr/contact/",
+    "verify_url": "https://sos.vermont.gov/opr/licensee-lookup/"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": " application/license fee",
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT)",
     "ce_requirement": "24 contact hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create an Account and Apply Online",
+      "description": "Register or log in to the Vermont OPR Online Services Portal and complete the Initial Application for Occupational Therapist Licensure. Pay the non-refundable application fee of $100."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official transcripts, verifying completion of an accredited Occupational Therapy program, to be sent directly from your educational institution to the Vermont Office of Professional Regulation."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit an application for licensure to the Vermont Office of Professional Regulation, including all required documentation and fees."
+      "title": "Verify NBCOT Certification",
+      "description": "Ensure your certification with the National Board for Certification in Occupational Therapy (NBCOT) is current and request NBCOT to electronically verify your certification directly to the Vermont Office of Professional Regulation."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "All applicants must complete a criminal history records check. This involves scheduling an appointment for fingerprinting after submitting your online application. Instructions for scheduling and required forms are available on the Vermont OPR website."
+    },
+    {
+      "title": "Provide Disciplinary History (if applicable)",
+      "description": "If you have ever been licensed in another state or jurisdiction, you must request a disciplinary history report from all relevant state licensing boards to be sent directly to the Vermont Office of Professional Regulation."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://sos.vermont.gov/opr/",
-    "endorsement_url": "https://sos.vermont.gov/opr/",
+    "endorsement_url": "https://sos.vermont.gov/opr/professions/occupational-therapists/",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Vermont",
-        "dek": "Vermont Occupational Therapist License requires graduation from an ACOTE accredited program, passing the NBCOT exam, and a completed application."
+        "dek": "To apply for an Occupational Therapist license in Vermont, you must submit your application and all supporting documents through the Vermont OPR Online Services Portal."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Vermont OPR Online Services Portal",
+    "portal_url": "https://opr.vermont.gov/",
+    "registration_steps": "Go to the Vermont OPR Online Services Portal, click 'Register Now' or 'Create Account', and follow the prompts to set up your user ID and password. You will need to provide personal details and verify your email.",
+    "provider_search": "https://sos.vermont.gov/opr/licensee-lookup/"
   }
 }

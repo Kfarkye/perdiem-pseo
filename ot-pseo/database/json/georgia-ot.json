@@ -21,17 +21,19 @@
   "board": {
     "name": "Georgia Board of Occupational Therapy",
     "parent_dept": "Georgia Secretary of State",
-    "mailing_address": "See board website",
+    "mailing_address": "Professional Licensing Boards Division, 237 Coliseum Drive, Macon, Georgia 31217-3858",
     "physical_address": "See board website",
-    "phone": "(404) 656-3913",
+    "phone": "(404) 424-9966",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://sos.ga.gov/PLB/acrobat/Forms/38%20Reference%20-%20Occupational%20Therapy.pdf"
+    "url": "https://sos.ga.gov/PLB/acrobat/Forms/38%20Reference%20-%20Occupational%20Therapy.pdf",
+    "contact_url": "https://sos.ga.gov/form/contact-professional-licensing-boards",
+    "verify_url": "https://verify.sos.ga.gov/"
   },
   "quick_facts": {
     "total_fee": "$60",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$64",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Occupational Therapy Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Account and Start Application",
+      "description": "Navigate to the Georgia SOS Professional Licensing Boards Online Services portal, select 'New Application' for Occupational Therapy, and either create a new user account or log in to begin the online application form."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Complete Online Application",
+      "description": "Fill out all required sections of the online application form within the Georgia SOS Professional Licensing Boards Online Services portal, providing personal, educational, and professional history."
     },
     {
-      "title": "Apply for a License with the Georgia Board",
-      "description": "Submit a completed application, official transcripts, NBCOT score verification, and required fees to the Georgia Board of Occupational Therapy."
+      "title": "Submit Supporting Documentation",
+      "description": "Upload all necessary documents, including official transcripts from your accredited OT program, verification of supervised fieldwork, and your NBCOT exam score report. Complete a criminal background check as required."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required application fee of $100 through the online portal using a credit or debit card."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log in to your account on the Georgia SOS Professional Licensing Boards Online Services portal to check the status of your application and respond promptly to any requests for additional information."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://sos.ga.gov/PLB/acrobat/Forms/38%20Reference%20-%20Occupational%20Therapy.pdf",
-    "endorsement_url": "https://sos.ga.gov/PLB/acrobat/Forms/38%20Reference%20-%20Occupational%20Therapy.pdf",
+    "endorsement_url": "https://gscc.ga.gov/online-services/new-application",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Georgia",
-        "dek": "Georgia Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT examination, and a criminal background check."
+        "dek": "To apply for an Occupational Therapist license in Georgia, submit your application through the Georgia SOS Professional Licensing Boards Online Services portal."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Georgia SOS Professional Licensing Boards Online Services",
+    "portal_url": "https://gscc.ga.gov/online-services/new-application",
+    "registration_steps": "Visit the Georgia SOS Professional Licensing Boards Online Services portal, select 'New Application', then choose 'Occupational Therapy' and 'Occupational Therapist'. You will be prompted to create a new user account if you do not already have one, or log in to proceed.",
+    "provider_search": "https://verify.sos.ga.gov/"
   }
 }

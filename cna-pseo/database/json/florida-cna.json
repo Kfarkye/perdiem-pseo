@@ -21,20 +21,20 @@
   "board": {
     "name": "Florida Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Florida Board of Nursing, 4052 Bald Cypress Way, BIN C-02, Tallahassee, FL 32399-3252",
     "physical_address": "See board website",
     "phone": "(850) 488-0595",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
     "url": "https://floridasnursing.gov/",
     "verify_url": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders",
-    "contact_url": "https://floridasnursing.gov/contact/",
+    "contact_url": "https://floridasnursing.gov/contact-us/",
     "website": "https://floridasnursing.gov/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$55",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
@@ -50,20 +50,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Florida requires a state-approved CNA training program. Florida also offers a unique 'Challenger Route' allowing individuals 18+ with a high school diploma to sit for the exam without formal training."
+      "title": "Review Eligibility and Candidate Handbook",
+      "description": "Before applying, ensure you meet Florida's eligibility requirements for CNA certification (e.g., completion of a state-approved training program). Thoroughly review the Florida Certified Nursing Assistant Candidate Handbook available on the Prometric Florida Nurse Aide website for detailed instructions."
     },
     {
-      "title": "Pass Background Screening",
-      "description": "All applicants must pass a Level II LiveScan background check through the AHCA Clearinghouse (ORI: EDOH0380Z)."
+      "title": "Create a Prometric Online Account",
+      "description": "Navigate to the Prometric Florida Nurse Aide Online Application Portal at https://www.prometric.com/florida/cna/online-application. Click 'New User? Register here' to create your applicant account with your email, password, and personal information."
     },
     {
-      "title": "Register for the State Competency Exam",
-      "description": "Register through Prometric at prometric.com/nurseaide/fl. The exam has both a written and skills component."
+      "title": "Submit Application and Pay Examination Fees",
+      "description": "Log in to your Prometric account, complete the online application for initial CNA certification, and pay the required examination fee. You will typically receive an Authorization to Test (ATT) within 24-48 hours via email."
     },
     {
-      "title": "Submit Application via FL Health Source",
-      "description": "Apply online at flhealthsource.gov to be added to the Florida Nurse Aide Registry."
+      "title": "Schedule and Take the CNA Examination",
+      "description": "Once you have your ATT, schedule both the Clinical Skills and Written/Oral portions of the CNA examination through the Prometric Florida Nurse Aide website. Take the examination at your chosen testing center."
+    },
+    {
+      "title": "Pass the Examination and Be Placed on Registry",
+      "description": "Achieve a passing score on both parts of the CNA examination. Your test results will typically be available online within 24 hours. Upon passing, Prometric will report your results to the Florida Board of Nursing, and your name will be added to the Florida Nurse Aide Registry within three business days."
     }
   ],
   "documents": [
@@ -140,7 +144,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://floridasnursing.gov/",
-    "endorsement_url": "https://flhealthsource.gov",
+    "endorsement_url": "https://floridasnursing.gov/licensing/certified-nursing-assistant-cna/",
     "notes": "Out-of-state CNAs apply for endorsement through the FL Health Source online portal. A Level II LiveScan background check is required. No state exam retake if approved.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -200,7 +204,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Florida",
-        "dek": "Florida CNA certification requires a 120-hour training program, Florida Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nursing Assistant (CNA) in Florida, you must apply for certification and schedule your examination directly through the Prometric Florida Nurse Aide Online Application Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Florida | Requirements & Steps",
@@ -260,5 +264,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Florida Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Prometric Florida Nurse Aide Online Application Portal",
+    "portal_url": "https://www.prometric.com/florida/cna/online-application",
+    "registration_steps": "Visit the Prometric Florida Nurse Aide Online Application Portal and click 'New User? Register here'. You will need to provide your email, create a password, enter personal details, and answer a security question to create your account.",
+    "provider_search": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders"
   }
 }

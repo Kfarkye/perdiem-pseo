@@ -21,17 +21,19 @@
   "board": {
     "name": "Indiana Board of Pharmacy",
     "parent_dept": "Indiana Professional Licensing Agency (IPLA)",
-    "mailing_address": "See board website",
+    "mailing_address": "Indiana Professional Licensing Agency, 402 W Washington Street, Room W072, Indianapolis, Indiana 46204",
     "physical_address": "See board website",
-    "phone": "(317) 234-2067",
+    "phone": "(317) 234-2060",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "http://www.bop.in.gov/"
+    "url": "http://www.bop.in.gov/",
+    "contact_url": "https://www.in.gov/pla/contact-us/",
+    "verify_url": "https://mylicense.in.gov/eGov/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "You must have graduated from a pharmacy program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create an Account and Apply Online",
+      "description": "Register for a new account on MyLicense.IN.gov and complete the online application for Pharmacist licensure by examination or endorsement."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "You must pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official Pharm.D. degree transcript to be sent directly from your accredited college or university to the Indiana Board of Pharmacy."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit an application for licensure to the Indiana Board of Pharmacy, including all required documentation and fees."
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided on MyLicense.IN.gov to complete the required criminal background check, which includes fingerprinting."
+    },
+    {
+      "title": "Pass Required Examinations",
+      "description": "Register with NABP and successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE) for Indiana."
+    },
+    {
+      "title": "Transfer Licensure (Endorsement Only)",
+      "description": "If applying by endorsement, complete the Official Licensure Transfer Application through NABP, providing proof of active licensure in another state and good standing."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.bop.in.gov/",
-    "endorsement_url": "http://www.bop.in.gov/",
+    "endorsement_url": "https://www.in.gov/pla/boards/pharmacy/licensing-information/pharmacists/",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "indiana-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Indiana",
-        "dek": "Indiana Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing an application."
+        "dek": "To apply for a Pharmacist license in Indiana, you must submit your application and all supporting documentation through the MyLicense.IN.gov online portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense.IN.gov",
+    "portal_url": "https://mylicense.in.gov/eGov/",
+    "registration_steps": "1. Go to MyLicense.IN.gov.\n2. Click 'Register a New Account' and follow the prompts.\n3. Create your user ID and password.\n4. Log in and select the option to apply for a new license.",
+    "provider_search": "https://mylicense.in.gov/eGov/"
   }
 }

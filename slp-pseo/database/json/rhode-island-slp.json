@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Rhode Island Department of Health",
-    "mailing_address": "3 Capitol Hill, Room 104, Providence, RI 02908-5097",
+    "mailing_address": "Rhode Island Department of Health, 3 Capitol Hill, Providence, RI 02908-5097",
     "physical_address": "3 Capitol Hill, Room 104, Providence, RI 02908",
-    "phone": "(401) 222-2828",
+    "phone": "401-222-2828",
     "fax": "(401) 222-1272",
-    "email": "mailto:health.licensing@health.ri.gov",
-    "url": "https://health.ri.gov/licenses/detail.php?id=225"
+    "email": "DOH.Licensing@health.ri.gov",
+    "url": "https://health.ri.gov/licenses/detail.php?id=225",
+    "contact_url": "https://ridoh.ri.gov/health-professionals/licensing-and-regulation",
+    "verify_url": "https://health.ri.gov/licensing/verify/"
   },
   "quick_facts": {
     "total_fee": "$115",
     "fee_breakdown": "$40 application + $75 license fee",
-    "renewal_fee": "$75",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "National Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a Graduate Degree",
-      "description": "Earn a graduate degree in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA)."
+      "title": "Create an account and start application",
+      "description": "Navigate to the RIDOH Health Professionals Portal, register for a new account if you don't have one, and initiate the Speech-Language Pathologist license application."
     },
     {
-      "title": "Complete Supervised Clinical Experience",
-      "description": "Fulfill the supervised clinical experience requirements as specified by the Rhode Island Board of Speech-Language Pathology and Audiology."
+      "title": "Submit official transcripts and application fee",
+      "description": "Arrange for official transcripts verifying a master's or doctoral degree in Speech-Language Pathology to be sent directly to the Board. Pay the required application fee of $100 through the RIDOH Health Professionals Portal."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Pass the National Examination in Speech-Language Pathology and submit a completed application with all required documentation and fees to the Board."
+      "title": "Provide ASHA CCC-SLP verification or detailed experience documentation",
+      "description": "If you hold an ASHA Certificate of Clinical Competence (CCC-SLP), provide verification directly to the Board. Otherwise, submit documentation of 400 clock hours of supervised clinical experience, verification of completed supervised postgraduate professional experience (Clinical Fellowship), and official passing scores from the Praxis examination."
+    },
+    {
+      "title": "Complete a Criminal Background Check (CBC)",
+      "description": "Follow the instructions provided by the RIDOH Health Professionals Portal for completing the mandatory Rhode Island State Police Criminal Background Check (CBC)."
+    },
+    {
+      "title": "Verify out-of-state licenses (if applicable)",
+      "description": "If you currently hold or have held an SLP license in another state, arrange for verification of those licenses to be sent directly to the Rhode Island Board."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 115,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.ri.gov/licenses/detail.php?id=225",
-    "endorsement_url": "https://health.ri.gov/licenses/detail.php?id=225",
+    "endorsement_url": "https://health.ri.gov/licenses/detail.php?id=255",
     "notes": "Rhode Island is a member of the ASLP Interstate Compact."
   },
   "slug": "rhode-island-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Rhode Island",
-        "dek": "Rhode Island Speech-Language Pathologist licenses require a graduate degree, supervised clinical experience, and passing the national exam."
+        "dek": "To apply for a Speech-Language Pathologist license in Rhode Island, use the RIDOH Health Professionals Portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "RIDOH Health Professionals Portal",
+    "portal_url": "https://ridoh.ri.gov/health-professionals/health-professionals-portal",
+    "registration_steps": "Navigate to the RIDOH Health Professionals Portal, click 'Register' or 'Create an Account,' and follow the prompts to set up your user profile before starting a new application.",
+    "provider_search": "https://health.ri.gov/licensing/verify/"
   }
 }

@@ -21,18 +21,20 @@
   "board": {
     "name": "Dietitians and Nutritionists Program",
     "parent_dept": "Division of Corporations, Business and Professional Licensing",
-    "mailing_address": "PO Box 110806<br>Juneau, AK 99811",
+    "mailing_address": "State of Alaska\nBoard of Dietitians and Nutritionists\nPO Box 110806\nJuneau AK 99811-0806",
     "physical_address": "State Office Building, 333 Willoughby Ave., 9th Fl.<br>Juneau, AK 99801",
-    "phone": "(907) 465-2550",
+    "phone": "907-465-2580",
     "fax": "(907) 465-2974",
-    "email": "mailto:DietitiansandNutritionists@Alaska.Gov",
-    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx"
+    "email": "dietitian@alaska.gov",
+    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx",
+    "contact_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofDietitiansandNutritionists/ContactUs.aspx",
+    "verify_url": "https://www.commerce.alaska.gov/cbp/lup/"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": "$100 nonrefundable application fee + $50 initial license fee",
-    "renewal_fee": "$125",
-    "renewal_cycle": "Every 2 years (expires Dec 31 of odd-numbered years)",
+    "renewal_fee": "$200",
+    "renewal_cycle": "Every 2 years (biennial)",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "Up to 2 Years (depending on issue date relative to the cycle)",
     "exam_name": "Registration Examination for Dietitians",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirement",
-      "description": "You must have completed a minimum of a baccalaureate degree granted by a U.S. regionally accredited college or university or foreign equivalent with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study, as approved by the board."
+      "title": "Create MyLicense Account",
+      "description": "Visit the MyLicense portal (https://www.commerce.alaska.gov/MyLicense) to register for a new account or log in with your MyAlaska credentials. This is the primary system for all professional licensing applications in Alaska."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "You must complete a pre-professional experience program approved by the board or the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Complete Online Application",
+      "description": "Within the MyLicense portal, select the Board of Dietitians and Nutritionists and fill out the initial application form, providing all required personal, educational, and supervised practice experience details."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "You must pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Submit Supporting Documentation",
+      "description": "Upload or arrange for official submission of all required documents, including official academic transcripts (e.g., bachelor's degree or higher in dietetics/nutrition), verification of 900 hours of supervised practice from an ACEND-accredited program, and proof of passing a national dietetic examination (e.g., CDR exam)."
+    },
+    {
+      "title": "Pay Application and Initial License Fees",
+      "description": "Pay the non-refundable application fee ($50) and the prorated initial biennial license fee ($200 for a full cycle) through the MyLicense portal using a credit card."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "The Alaska Board of Dietitians and Nutritionists will review your completed application and all supporting documents. Once approved, your license will be issued and accessible through the MyLicense portal."
     }
   ],
   "documents": [
@@ -132,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
+    "endorsement_fee": 50,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx",
-    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DietitiansNutritionists.aspx",
+    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofDietitiansandNutritionists/ApplicationsandForms.aspx",
     "notes": "Alaska offers licensure by endorsement for those already licensed in another state. Applicants must demonstrate that their current state's requirements are substantially equivalent to Alaska's and must submit verifications for all current and past licenses.",
     "requires_psv": false
   },
@@ -152,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Alaska",
-        "dek": "Alaska Dietitian License requires a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+        "dek": "To apply for a Dietitian and Nutritionist license in Alaska, users must complete the application process through the MyLicense portal, the state's online professional licensing system."
       }
     }
   },
@@ -178,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense",
+    "portal_url": "https://www.commerce.alaska.gov/MyLicense",
+    "registration_steps": "Go to the MyLicense portal (https://www.commerce.alaska.gov/MyLicense), click 'New Account Registration' or 'Login' if you have a MyAlaska account, and follow the prompts to create an account or link existing credentials. Once logged in, navigate to 'Professional Licensing' and select the Board of Dietitians and Nutritionists to initiate your application.",
+    "provider_search": "https://www.commerce.alaska.gov/cbp/lup/"
   }
 }

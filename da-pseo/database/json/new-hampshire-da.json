@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "New Hampshire Dental Assistant License (2026) | Fees & Guide",
-    "description": "Complete guide to dental assistant licensing in New Hampshire — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in New Hampshire \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license new hampshire, dental assistant certification new hampshire, RDA new hampshire, DANB CDA new hampshire, dental assistant radiography new hampshire"
   },
   "board": {
     "name": "New Hampshire Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "New Hampshire Board of Dental Examiners\nOffice of Professional Licensure and Certification\n7 Eagle Square\nConcord, NH 03301",
     "physical_address": "See board website",
-    "phone": "(603) 271-4561",
+    "phone": "603-271-2152",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.oplc.nh.gov/dental"
+    "email": "dental@oplc.nh.gov",
+    "url": "https://www.oplc.nh.gov/dental",
+    "contact_url": "https://www.nh.gov/dental/contact/index.htm",
+    "verify_url": "https://www.oplc.nh.gov/licensee-search"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 application/registration fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$90",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "12 hours per renewal cycle"
   },
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education/Experience Requirements",
-      "description": "Complete a CODA-accredited dental assisting program or receive equivalent on-the-job training as defined by the New Hampshire Board of Dental Examiners."
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you meet the state's requirements for an EFDA license, which include either graduation from a CODA-accredited dental assisting program or 3,000 hours of clinical dental assisting experience, a current DANB CDA or COA certification, and current healthcare provider BLS/CPR certification."
     },
     {
-      "title": "Complete Required Courses",
-      "description": "Complete a Board-approved course in radiation health and safety and maintain current certification in basic life support (BLS)."
+      "title": "Create an Account and Apply Online",
+      "description": "Visit the OPLC Online Application System, register for a new account, and then log in to select 'Start a New Application' for an Expanded Function Dental Auxiliary (EFDA) license."
     },
     {
-      "title": "Apply for Registration",
-      "description": "Submit a completed application, including required documentation and the applicable fee, to the New Hampshire Board of Dental Examiners."
+      "title": "Complete and Submit Application",
+      "description": "Fill out the online application form completely, upload all required supporting documentation such as transcripts, certifications, and BLS/CPR. Pay the non-refundable $125 application fee through the OPLC Online Application System."
+    },
+    {
+      "title": "Pass the NH EFDA Examination",
+      "description": "Upon Board approval of your application, schedule and successfully pass the New Hampshire Expanded Function Dental Auxiliary Examination. A separate examination fee of $200 will be required for this clinical exam."
+    },
+    {
+      "title": "Receive Your License",
+      "description": "Once all application requirements, documentation, and examination results are verified and approved by the New Hampshire Board of Dental Examiners, your EFDA license will be issued and accessible via your OPLC account."
     }
   ],
   "documents": [
@@ -123,11 +133,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 125,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.oplc.nh.gov/dental",
-    "endorsement_url": "https://www.oplc.nh.gov/dental",
+    "endorsement_url": "https://www.nh.gov/dental/licensing/index.htm",
     "notes": "Dental assistants can apply for Registered Dental Assistant through the New Hampshire Board of Dental Examiners by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in New Hampshire",
-        "dek": "New Hampshire Dental Assistant registration requires graduation from a CODA-accredited program or equivalent on-the-job training, completion of a Board-approved course in radiation health and safety, and current certification in basic life support."
+        "dek": "To become a licensed Expanded Function Dental Auxiliary (EFDA) in New Hampshire, applicants must apply through the OPLC Online Application System, which handles all professional licensure for the state. New Hampshire does not license traditional dental assistants for basic duties."
       }
     }
   },
@@ -172,5 +182,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "OPLC Online Application System",
+    "portal_url": "https://www.oplc.nh.gov/online-application-system",
+    "registration_steps": "Navigate to the OPLC Online Application System page, click 'Register a New Account', and follow the prompts to create a user ID and password. Once registered and logged in, select 'Start a New Application' and choose 'Expanded Function Dental Auxiliary (EFDA)'.",
+    "provider_search": "https://www.oplc.nh.gov/licensee-search"
   }
 }

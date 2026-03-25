@@ -21,18 +21,20 @@
   "board": {
     "name": "Ohio Dept of Health",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Ohio Department of Health\nNurse Aide Registry\n246 N. High Street\nColumbus, Ohio 43215",
     "physical_address": "See board website",
-    "phone": "(614) 466-3543",
+    "phone": "614-752-8778",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://odh.ohio.gov/"
+    "email": "NAR@odh.ohio.gov",
+    "url": "https://odh.ohio.gov/",
+    "contact_url": "https://odh.ohio.gov/know-our-programs/nurse-aide-registry/nurse-aide-registry",
+    "verify_url": "https://odhgateway.odh.ohio.gov/NARIS/NARISSearch.aspx"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "N/A (Work requirement)",
+    "renewal_cycle": "Every 2 years (Work requirement)",
     "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "training_hours": "75 hours",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Ohio-approved CNA training program, usually 75 hours long."
+      "title": "Complete Approved Training",
+      "description": "Successfully complete a state-approved Nurse Aide Training and Competency Evaluation Program (NATCEP)."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Ohio nurse aide exam."
+      "title": "Pass Competency Exam",
+      "description": "Pass both the written/oral and clinical skills portions of the Nurse Aide Competency Evaluation, typically administered by Prometric."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Obtain Background Checks (if applicable)",
+      "description": "If required due to specific circumstances (e.g., living out-of-state within the last 5 years, or if an applicant has a disqualifying offense, or hasn't worked as a CNA for over 1 year), obtain BCI&I and FBI background checks."
+    },
+    {
+      "title": "Download and Complete Application Form",
+      "description": "Access the Ohio Department of Health (ODH) Nurse Aide Registry website and download the relevant application form, such as the 'Initial Application for Ohio Nurse Aide Registry Listing' (ODH 3004)."
+    },
+    {
+      "title": "Submit Application and Documentation",
+      "description": "Mail or fax the completed application form (ODH 3004) along with any required supporting documentation (e.g., proof of training, exam scores, background check results) to the Ohio Department of Health, Nurse Aide Registry."
+    },
+    {
+      "title": "Verify Registry Listing",
+      "description": "After submission, regularly check the Ohio Department of Health's online Nurse Aide Registry search portal to confirm your listing."
     }
   ],
   "documents": [
@@ -125,7 +139,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://odh.ohio.gov/",
-    "endorsement_url": "https://ohio.gov",
+    "endorsement_url": "https://odh.ohio.gov/know-our-programs/nurse-aide-registry/nurse-aide-registry",
     "notes": "Ohio uses Form HEA 6907 (Nurse Aide Registry Request for Reciprocity). Submit by mail to Ohio Dept of Health, Nurse Aide Registry, 246 N. High Street, Attn: NAR, Columbus, OH 43215, or fax to (614) 564-2461, or email NAR@odh.ohio.gov. No fee. Note: Ohio is transitioning from 'STNA' to 'CNA' terminology as of October 2024.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -174,7 +188,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a STNA in Ohio",
-        "dek": "Ohio CNA certification requires a 75-hour training program, Ohio Dept of Health eligibility, and a passing score on the NNAAP (D&S Diversified) exam."
+        "dek": "To apply for initial listing or endorsement on the Ohio Nurse Aide Registry, download and complete the necessary forms from the Ohio Department of Health (ODH) Nurse Aide Registry website and submit them via mail or fax."
       },
       "seo": {
         "title": "How to Become a STNA in Ohio",
@@ -220,5 +234,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Ohio Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Ohio Department of Health Nurse Aide Registry Forms",
+    "portal_url": "https://odh.ohio.gov/know-our-programs/nurse-aide-registry/nurse-aide-registry",
+    "registration_steps": "There is no dedicated online application system or account creation process. To apply, download the appropriate application form (e.g., ODH 3004 for initial listing) from the Ohio Department of Health Nurse Aide Registry website, complete it, and submit it via mail or fax.",
+    "provider_search": "https://odhgateway.odh.ohio.gov/NARIS/NARISSearch.aspx"
   }
 }

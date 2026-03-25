@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Alaska Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Alaska — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Alaska \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license alaska, dental assistant certification alaska, RDA alaska, DANB CDA alaska, dental assistant radiography alaska"
   },
   "board": {
     "name": "Alaska Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Department of Commerce, Community, and Economic Development\nDivision of Corporations, Business and Professional Licensing\nPO Box 110806\nJuneau AK, 99811-0806",
     "physical_address": "See board website",
-    "phone": "(907) 465-2542",
+    "phone": "(907) 465-2544",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DentalBoardofExaminers.aspx"
+    "email": "license@alaska.gov",
+    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DentalBoardofExaminers.aspx",
+    "contact_url": "https://www.commerce.alaska.gov/web/cbpl/ContactUs.aspx",
+    "verify_url": "https://www.commerce.alaska.gov/cbpl/professional-license-search"
   },
   "quick_facts": {
     "total_fee": "$60",
     "fee_breakdown": "$60 application/registration fee",
-    "renewal_fee": "$60",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "Not Applicable (No State License Required)",
+    "renewal_cycle": "Not Applicable (No State License Required)",
+    "processing_time": "Not Applicable (No State License Required)",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -44,16 +46,24 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application for Dental Assistant Registration to the Alaska Board of Dental Examiners."
+      "title": "Understand Alaska's Dental Regulations",
+      "description": "Familiarize yourself with the Alaska Dental Practice Act (AS 08.36 and 12 AAC 28), which outlines the scope of practice for dentists and the duties they may legally delegate to dental assistants. No state license is required for dental assistants in Alaska."
     },
     {
-      "title": "Pay the Required Fee",
-      "description": "Submit the required fee of $60 along with your application."
+      "title": "Seek Employment with a Licensed Alaska Dentist",
+      "description": "Dental assistants in Alaska operate under the direct supervision and delegation of a licensed Alaska dentist. Employment is secured directly with dental practices, not through state licensing."
     },
     {
-      "title": "Meet Requirements for Specific Duties",
-      "description": "Provide proof of completion of required courses or certifications if performing coronal polishing or expanded functions, as specified by the board."
+      "title": "Receive On-the-Job Training",
+      "description": "Alaska does not mandate specific education or training requirements for dental assistants. Training for delegated procedures is typically provided on-the-job by the supervising dentist, consistent with state regulations."
+    },
+    {
+      "title": "Adhere to Delegated Duties",
+      "description": "Ensure that any procedures performed are within the scope of duties legally delegable by the supervising dentist, as defined by the Alaska Dental Practice Act and regulations enforced by the Alaska Board of Dental Examiners."
+    },
+    {
+      "title": "Consider Voluntary National Certification",
+      "description": "Although not state-mandated, dental assistants may pursue national certification through the Dental Assisting National Board (DANB) for professional development and to demonstrate competency. This is an optional credential."
     }
   ],
   "documents": [
@@ -123,7 +133,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 60,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Not Applicable (No State License Required)",
     "processing_tier": "mid",
     "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DentalBoardofExaminers.aspx",
     "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DentalBoardofExaminers.aspx",
@@ -145,7 +155,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Alaska",
-        "dek": "Alaska Dental Assistant registration requires submitting an application, paying a fee, and meeting specific requirements as outlined by the Alaska Board of Dental Examiners."
+        "dek": "Dental Assistants are not required to be state-licensed in Alaska. Therefore, there is no state application portal or formal licensing process through the Alaska Board of Dental Examiners."
       }
     }
   },
@@ -171,5 +181,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "No State Licensing Portal for Dental Assistants",
+    "portal_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofDentalExaminers.aspx",
+    "registration_steps": "There is no state-level online application portal or registration process for Dental Assistants in Alaska, as they are not state-licensed by the Alaska Board of Dental Examiners.",
+    "provider_search": "https://www.commerce.alaska.gov/cbpl/professional-license-search"
   }
 }

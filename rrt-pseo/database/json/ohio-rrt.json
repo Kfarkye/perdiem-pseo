@@ -21,17 +21,19 @@
   "board": {
     "name": "Ohio Respiratory Care Board",
     "parent_dept": "State Medical Board of Ohio",
-    "mailing_address": "See board website",
+    "mailing_address": "30 East Broad Street, 3rd Floor, Columbus, OH 43215-6120",
     "physical_address": "See board website",
-    "phone": "(614) 752-9500",
+    "phone": "(614) 466-3934",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://med.ohio.gov/"
+    "email": "contact.us@med.ohio.gov",
+    "url": "https://med.ohio.gov/",
+    "contact_url": "https://med.ohio.gov/Contact-Us",
+    "verify_url": "https://license.ohio.gov/lookup.html"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$125",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create an eLicense Ohio Account and Apply Online",
+      "description": "Navigate to elicense.ohio.gov, register a new account, and complete the online application for a Respiratory Care Professional license. This includes providing demographic information, educational history, and answering eligibility questions."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts from your accredited respiratory care program to be sent directly to the State Medical Board of Ohio."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, including required documentation and fees, to the Ohio Respiratory Care Board."
+      "title": "Provide NBRC Scores",
+      "description": "Ensure your National Board for Respiratory Care (NBRC) scores, demonstrating passage of the RRT credentialing requirements (Therapist Multiple-Choice (TMC) Examination at the RRT cut score and the Clinical Simulation Examination (CSE), or the RRT examination), are sent directly to the Board by authorizing NBRC to release them."
+    },
+    {
+      "title": "Complete a Criminal Background Check (CBC)",
+      "description": "Arrange for a fingerprint-based criminal background check. Ohio residents typically use WebCheck, while out-of-state applicants use physical fingerprint cards processed through the Ohio Bureau of Criminal Investigation and Identification (BCI&I)."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable $125 application fee through the eLicense Ohio portal as part of your online application."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 125,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://med.ohio.gov/",
-    "endorsement_url": "https://med.ohio.gov/",
+    "endorsement_url": "https://med.ohio.gov/Licensing/Apply-for-a-License/Respiratory-Care-Professional",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Ohio",
-        "dek": "Ohio Respiratory Therapist licensure requires graduation from an accredited program, passing the NBRC exam, and submitting an application to the Board."
+        "dek": "To apply for a Respiratory Care Professional license in Ohio, you must complete an online application through the State Medical Board of Ohio's **eLicense Ohio** portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense Ohio",
+    "portal_url": "https://elicense.ohio.gov/",
+    "registration_steps": "1. Navigate to the eLicense Ohio portal (elicense.ohio.gov). 2. Click 'Register a New Account' and follow the prompts to create your user ID and password. 3. Log in to your new account and select 'Apply for a New License' to begin the Respiratory Care Professional application.",
+    "provider_search": "https://license.ohio.gov/lookup.html"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Minnesota Board of Pharmacy",
     "parent_dept": "Minnesota Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "2829 University Ave SE, Suite 530, Minneapolis, MN 55414-3251",
     "physical_address": "See board website",
     "phone": "(651) 201-2825",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://mn.gov/boards/pharmacy/"
+    "email": "pharmacy.board@state.mn.us",
+    "url": "https://mn.gov/boards/pharmacy/",
+    "contact_url": "https://mn.gov/boards/pharmacy/contact/",
+    "verify_url": "https://mn.gov/boards/pharmacy/verify/index.jsp"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$105",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
     "ce_requirement": "30 hours every 2 years"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program from a pharmacy school accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create Account and Submit Application",
+      "description": "Access the Minnesota Board of Pharmacy Online Services Portal, register as a new user, and complete the online Pharmacist Application, paying the non-refundable application fee."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Exam (MPJE) for Minnesota."
+      "title": "Submit Official Transcripts",
+      "description": "Have your ACPE-accredited pharmacy school send official transcripts directly to the Minnesota Board of Pharmacy."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit the application for pharmacist licensure along with the required fee and supporting documentation to the Minnesota Board of Pharmacy."
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Follow the Board's instructions to complete a criminal background check, which typically involves fingerprinting."
+    },
+    {
+      "title": "Pass or Transfer Exam Scores",
+      "description": "If applying by examination, register with NABP to take and pass the NAPLEX and the Minnesota MPJE. If applying by endorsement, ensure your existing NAPLEX and MPJE (or equivalent) scores are transferred or verified by the Board."
+    },
+    {
+      "title": "Await Licensure",
+      "description": "Ensure all required documentation and fees are submitted and verified by the Board of Pharmacy. The Board will issue your license once all requirements are met and processed."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://mn.gov/boards/pharmacy/",
-    "endorsement_url": "https://mn.gov/boards/pharmacy/",
+    "endorsement_url": "https://mn.gov/boards/pharmacy/apply/endorsement/",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "minnesota-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Minnesota",
-        "dek": "Minnesota Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing the application process."
+        "dek": "To apply for a Pharmacist license in Minnesota, you must use the Minnesota Board of Pharmacy Online Services Portal to submit your application and supporting documents."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Minnesota Board of Pharmacy Online Services Portal",
+    "portal_url": "https://mn.gov/boards/pharmacy/online-services/",
+    "registration_steps": "Access the Minnesota Board of Pharmacy Online Services Portal, click 'Register' for new users, and complete the account creation process to begin your application.",
+    "provider_search": "https://mn.gov/boards/pharmacy/verify/index.jsp"
   }
 }

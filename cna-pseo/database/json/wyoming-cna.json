@@ -21,19 +21,21 @@
   "board": {
     "name": "Wyoming State Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "130 Hobbs Ave, Suite B, Cheyenne, WY 82002",
     "physical_address": "See board website",
-    "phone": "(307) 777-7601",
+    "phone": "(307) 777-7623",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://wsbn.wyo.gov/"
+    "email": "wsbon@wyo.gov",
+    "url": "https://wsbn.wyo.gov/",
+    "contact_url": "https://nursing.wyo.gov/contact-us/",
+    "verify_url": "https://wsbon.portal.professions.wyo.gov/professions-search/public-search"
   },
   "quick_facts": {
     "total_fee": "$60",
     "fee_breakdown": "$60 endorsement application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "6 to 8 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years (August 31st of odd-numbered years)",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Wyoming-approved CNA training program, usually 120 hours long."
+      "title": "Complete Approved Training",
+      "description": "Complete a Nurse Aide training program approved by the Wyoming State Board of Nursing."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Wyoming nurse aide exam."
+      "title": "Pass NNAAP Exam",
+      "description": "Register for and successfully pass both the written/oral and skills portions of the National Nurse Aide Assessment Program (NNAAP) exam, administered by Credentia."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Create WPLB Portal Account",
+      "description": "Access the Wyoming Professional Licensing Boards (WPLB) portal, register for a new user account, and then log in to the system."
+    },
+    {
+      "title": "Submit Online Application",
+      "description": "Navigate to the Nurse Aide Initial Certification application within the WPLB portal, complete all required sections, and submit it electronically."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee for initial certification directly through the WPLB portal."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Upload any required supporting documentation, such as proof of training or exam results, as specified in your application via the WPLB portal."
     }
   ],
   "documents": [
@@ -121,11 +135,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 60,
-    "processing_time": "6 to 8 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "slow",
     "board_url": "https://wsbn.wyo.gov/",
-    "endorsement_url": "https://wsbn.wyo.gov/",
+    "endorsement_url": "https://nursing.wyo.gov/license-information/nurse-aide-registry/certification-by-endorsement/",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Wyoming",
-        "dek": "Wyoming CNA certification requires a 120-hour training program, Wyoming State Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for a Certified Nursing Assistant (CNA) license in Wyoming, you must submit your application and supporting documents through the Wyoming Professional Licensing Boards (WPLB) portal."
       },
       "seo": {
         "title": "How to Become a CNA in Wyoming",
@@ -216,5 +230,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Wyoming Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Wyoming Professional Licensing Boards (WPLB) portal",
+    "portal_url": "https://wsbon.portal.professions.wyo.gov/",
+    "registration_steps": "Access the Wyoming Professional Licensing Boards (WPLB) portal, click 'Register an Account' to create a new user profile, and then log in to begin a new application.",
+    "provider_search": "https://wsbon.portal.professions.wyo.gov/professions-search/public-search"
   }
 }

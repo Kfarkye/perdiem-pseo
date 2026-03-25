@@ -21,18 +21,20 @@
   "board": {
     "name": "Board of Registration of Dietitians and Nutritionists",
     "parent_dept": "Massachusetts Department of Public Health (DPH)",
-    "mailing_address": "250 Washington Street<br>Boston, MA 02108",
+    "mailing_address": "Board of Registration of Dietitians and Nutritionists, 1000 Washington Street, Suite 710, Boston, MA 02118-6100",
     "physical_address": "250 Washington Street<br>Boston, MA 02108",
-    "phone": "(617) 624-6160",
+    "phone": "617-727-9925",
     "fax": "",
-    "email": "mailto:Dietitiansnutritionistsboard@mass.gov",
-    "url": "https://www.mass.gov/orgs/board-of-registration-of-dietitians-and-nutritionists"
+    "email": "DPL-Info@mass.gov",
+    "url": "https://www.mass.gov/orgs/board-of-registration-of-dietitians-and-nutritionists",
+    "contact_url": "https://www.mass.gov/orgs/board-of-registration-of-dietitians-and-nutritionists#contact-us",
+    "verify_url": "https://licensing.mass.gov/"
   },
   "quick_facts": {
     "total_fee": "$196",
     "fee_breakdown": "$196 combined application & initial license fee",
-    "renewal_fee": "$196",
-    "renewal_cycle": "Every 2 years (on birthday) + 30 CE units",
+    "renewal_fee": "$160",
+    "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Complete a didactic program in dietetics and supervised practice, both accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Create an ePLACE Account",
+      "description": "Register for an account on the Department of Professional Licensure's ePLACE portal at aca-prod.accela.com/MASSGOV/Default.aspx if you do not already have one."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Start New Application",
+      "description": "Log in to ePLACE, navigate to 'New Application,' and select the application for a Dietitian and Nutritionist license."
     },
     {
-      "title": "Apply for Registration",
-      "description": "Submit a completed application and all required documentation, including transcripts and exam results, to the Massachusetts Board of Registration of Dietitians and Nutritionists."
+      "title": "Submit Required Documentation",
+      "description": "Upload official transcripts showing a bachelor's or master's degree in nutrition, dietetics, or a related field, and verification of completion of a supervised practice experience (e.g., ACEND-accredited internship)."
+    },
+    {
+      "title": "Verify CDR Registration",
+      "description": "Provide proof of current registration with the Commission on Dietetic Registration (CDR) as a Registered Dietitian Nutritionist (RDN)."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $160 as prompted within the ePLACE system."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status within the ePLACE portal for updates or requests for additional information from the Board."
     }
   ],
   "documents": [
@@ -140,11 +154,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 196,
+    "endorsement_fee": 160,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.mass.gov/orgs/board-of-registration-of-dietitians-and-nutritionists",
-    "endorsement_url": "https://www.mass.gov/orgs/board-of-registration-of-dietitians-and-nutritionists",
+    "endorsement_url": "https://www.mass.gov/how-to/apply-for-a-dietitian-and-nutritionist-license-by-reciprocity",
     "notes": "The Massachusetts Board may grant reciprocal recognition to dietitians/nutritionists licensed in other jurisdictions, provided the standards of registration, certification, and licensure in the other state are 'reasonably equivalent' to Massachusetts requirements. Applicants must submit license verifications from all states where they hold or have held credentials.",
     "requires_psv": true
   },
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Massachusetts",
-        "dek": "Massachusetts Dietitian Registration requires completing an accredited dietetics program, passing the Registration Examination for Dietitians, and completing supervised practice hours."
+        "dek": "To apply for a Dietitian and Nutritionist license in Massachusetts, navigate to the Department of Professional Licensure's online ePLACE portal to submit your application and required documentation."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ePLACE",
+    "portal_url": "https://aca-prod.accela.com/MASSGOV/Default.aspx",
+    "registration_steps": "Go to the ePLACE portal and click 'Register for an Account' to create a user ID and password. Once registered, log in and select 'New Application' to begin the Dietitian and Nutritionist license application.",
+    "provider_search": "https://licensing.mass.gov/"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Examiners in Speech-Language Pathology and Audiology",
     "parent_dept": "South Carolina Department of Labor, Licensing and Regulation (LLR)",
-    "mailing_address": "P.O. Box 11329, Columbia, SC 29211-1329",
+    "mailing_address": "South Carolina Board of Examiners for Speech-Language Pathology and Audiology\nP.O. Box 11329\nColumbia, SC 29211-1329",
     "physical_address": "110 Centerview Dr., Columbia, SC 29210",
-    "phone": "(803) 896-4655",
+    "phone": "(803) 896-4654",
     "fax": "(803) 896-4719",
-    "email": "mailto:contactllr@llr.sc.gov",
-    "url": "https://llr.sc.gov/slpa/"
+    "email": "Contact.AUD@llr.sc.gov",
+    "url": "https://llr.sc.gov/slpa/",
+    "contact_url": "https://llr.sc.gov/aud/contact.aspx",
+    "verify_url": "https://verify.llronline.com/LicLookup/LookupMain.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "Complete a Doctor of Audiology (AuD) degree program from a regionally accredited educational institution."
+      "title": "Register and Apply Online",
+      "description": "Access the LLR Online Services Portal, create a new user account if you don't have one, and complete the Audiologist License application form."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series administered by the Educational Testing Service (ETS)."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official graduate transcripts, demonstrating completion of a master's or doctoral degree in Audiology with required academic and clinical practicum hours, to be sent directly to the Board."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Apply for licensure and submit all required documentation and fees to the South Carolina Board of Examiners in Speech-Language Pathology and Audiology."
+      "title": "Pass National Examination",
+      "description": "Ensure you have passed the national examination in Audiology (Praxis #5342) and have the official scores sent to the Board."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided within the LLR Online Services Portal application to complete the state and federal fingerprint-based criminal records check."
+    },
+    {
+      "title": "Submit Supporting Documents and Fees",
+      "description": "Upload any remaining required supporting documents and pay the non-refundable application fee through the LLR Online Services Portal to finalize your submission."
     }
   ],
   "documents": [
@@ -128,7 +138,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://llr.sc.gov/slpa/",
-    "endorsement_url": "https://llr.sc.gov/slpa/",
+    "endorsement_url": "https://llr.sc.gov/aud/reciprocity.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "south-carolina-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in South Carolina",
-        "dek": "South Carolina Audiologist license requires a doctoral degree in audiology, passing the Audiology Examination of the Praxis Series, and completion of a supervised professional experience."
+        "dek": "To apply for an Audiologist license in South Carolina, create an account and complete the application through the LLR Online Services Portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "LLR Online Services Portal",
+    "portal_url": "https://portal.llronline.com/LicenseApplications/CreateApplication/Login.aspx",
+    "registration_steps": "Navigate to the portal URL. If you have an existing account, log in using your user name and password. Otherwise, click 'Register a New User' to create an account and begin your application.",
+    "provider_search": "https://verify.llronline.com/LicLookup/LookupMain.aspx"
   }
 }

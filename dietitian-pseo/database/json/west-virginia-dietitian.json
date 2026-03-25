@@ -21,19 +21,21 @@
   "board": {
     "name": "West Virginia Board of Licensed Dietitians (WVBOLD)",
     "parent_dept": "Independent State Board",
-    "mailing_address": "722 Kanawha Blvd E<br>Charleston, WV 25301",
+    "mailing_address": "900 Lee Street, East, Suite 1000, Charleston, WV 25301",
     "physical_address": "722 Kanawha Blvd E<br>Charleston, WV 25301",
-    "phone": "(304) 558-1024",
+    "phone": "(304) 558-1021",
     "fax": "(304) 558-1025",
-    "email": "mailto:wvbold@wv.gov",
-    "url": "https://www.wvbold.com/"
+    "email": "WVBDietitians@wv.gov",
+    "url": "https://www.wvbold.com/",
+    "contact_url": "https://wvbd.org/contact-us/",
+    "verify_url": "https://wvelicense.wv.gov/Verification"
   },
   "quick_facts": {
     "total_fee": "$69",
     "fee_breakdown": "$69 initial application fee",
-    "renewal_fee": "$69",
-    "renewal_cycle": "Annual + 20 CE hours every two years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$75",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "1 Year",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "20 hours every two years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education and Supervised Practice",
-      "description": "Complete a minimum of a baccalaureate degree from a regionally accredited US college or university and complete a Commission on Accreditation for Dietetics Education (ACDE) accredited Dietetic Internship or its equivalent."
+      "title": "Meet Education and Supervised Practice Requirements",
+      "description": "Obtain a baccalaureate or post-baccalaureate degree with a major in human nutrition, dietetics, food and nutrition, public health nutrition, or equivalent from an accredited college/university, and complete an ACEND-approved supervised dietetic practice experience."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
+      "title": "Pass the CDR Registration Examination",
       "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Apply for West Virginia Dietitian Licensure",
-      "description": "Submit a completed application and all required documentation to the West Virginia Board of Licensed Dietitians (WVBOLD), including official transcripts, examination results, and payment of fees."
+      "title": "Create Account and Start Application on WV eLicense",
+      "description": "Navigate to the WV eLicense portal (wvelicense.wv.gov), register for a new user account, and then log in to select 'Apply for a New License' to start your Dietitian license application."
+    },
+    {
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Fill out the online application form completely through the WV eLicense portal and pay the non-refundable application fee of $150 at the time of submission."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts, verification of your ACEND-approved supervised practice, and official CDR examination results to be sent directly to the West Virginia Board of Dietitians as required by the WV eLicense portal."
+    },
+    {
+      "title": "Pass West Virginia Jurisprudence Exam",
+      "description": "Successfully complete and pass the West Virginia Dietetics Jurisprudence Examination, which may be part of the online application process or a final step prior to licensure."
     }
   ],
   "documents": [
@@ -136,11 +150,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 69,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.wvbold.com/",
-    "endorsement_url": "https://www.wvbold.com/",
+    "endorsement_url": "https://wvbd.org/applicants/",
     "notes": "Out-of-state applicants with active CDR registration or a current license in another state with equivalent standards may apply by submitting the standard application, fee, and proof of their active credential/license.",
     "requires_psv": true
   },
@@ -156,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in West Virginia",
-        "dek": "West Virginia Dietitian licensure requires completing an accredited dietetics program, passing the Registration Examination for Dietitians, and meeting continuing education requirements."
+        "dek": "To apply for a Dietitian license in West Virginia, you must create an account and submit your application along with all required supporting documents through the official WV eLicense portal."
       }
     }
   },
@@ -182,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "WV eLicense",
+    "portal_url": "https://wvelicense.wv.gov/",
+    "registration_steps": "To begin, visit the WV eLicense portal, click 'Register Now' to create a new user account by providing your email address and creating a password. Once registered, log in to your account and select 'Apply for a New License' to start the Dietitian application process.",
+    "provider_search": "https://wvelicense.wv.gov/Verification"
   }
 }

@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Montana Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant requirements in Montana — fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant requirements in Montana \u2014 fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license montana, dental assistant certification montana, RDA montana, DANB CDA montana, dental assistant radiography montana"
   },
   "board": {
     "name": "Montana Board of Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "301 S Park Ave, 4th Floor, P.O. Box 200513, Helena, MT 59620-0513",
     "physical_address": "See board website",
-    "phone": "(406) 841-2390",
+    "phone": "(406) 841-2300",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://boards.bsd.dli.mt.gov/dental"
+    "email": "DLIBSDHELP@mt.gov",
+    "url": "https://boards.bsd.dli.mt.gov/dental",
+    "contact_url": "https://boards.bsd.dli.mt.gov/contact-us",
+    "verify_url": "https://boards.bsd.dli.mt.gov/license-verification"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "N/A",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "N/A - Montana does not license general Dental Assistants",
+    "renewal_cycle": "N/A - Montana does not license general Dental Assistants",
+    "processing_time": "N/A - Montana does not license general Dental Assistants",
     "license_duration": "N/A"
   },
   "license_types": [
@@ -44,16 +46,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Basic Requirements",
-      "description": "You must have a high school diploma or its equivalent."
+      "title": "Understand Supervision Requirements",
+      "description": "Dental assistants in Montana perform duties under the direct or general supervision of a licensed dentist, depending on the specific task as defined by the Montana Board of Dentistry's administrative rules."
     },
     {
-      "title": "Pass the Jurisprudence Exam",
-      "description": "You must successfully complete the Montana Jurisprudence Exam."
+      "title": "Review Delegated Duties",
+      "description": "Familiarize yourself with the administrative rules of the Montana Board of Dentistry that outline the specific tasks a dental assistant can perform and the required level of supervision. These rules define the scope of practice for dental auxiliaries."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application form to the Montana Board of Dentistry."
+      "title": "Obtain Necessary Training and Competency",
+      "description": "While no general license exists, a dentist may only delegate tasks to a dental assistant whom they deem competent. Certain advanced functions (e.g., coronal polishing, sealant application) may require specific training or certification, as determined by the supervising dentist."
+    },
+    {
+      "title": "Consider National Certifications (Optional)",
+      "description": "For career advancement or to demonstrate proficiency, consider obtaining national certifications such as the Certified Dental Assistant (CDA) credential from the Dental Assisting National Board (DANB), although this is not a state requirement for general practice in Montana."
+    },
+    {
+      "title": "Comply with Dental Practice Act",
+      "description": "Ensure all duties performed comply with the Montana Dental Practice Act and associated administrative rules, which govern the practice of dentistry and the roles of auxiliary personnel in the state."
     }
   ],
   "documents": [
@@ -123,10 +133,10 @@
     "temp_license_available": false,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "N/A - Montana does not license general Dental Assistants",
     "processing_tier": "fast",
     "board_url": "https://boards.bsd.dli.mt.gov/dental",
-    "endorsement_url": "https://boards.bsd.dli.mt.gov/dental",
+    "endorsement_url": "N/A - Montana does not license general Dental Assistants",
     "notes": "Montana does not license dental assistants.",
     "requires_psv": false,
     "board_fee_verified": true,
@@ -145,7 +155,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Montana",
-        "dek": "Montana Dental Assistant registration requires graduation from high school (or equivalent), successful completion of the Jurisprudence Exam, and application to the Montana Board of Dentistry."
+        "dek": "Montana does not license or register general Dental Assistants. There is no state application portal for basic dental assisting practice; dental assistants perform duties under the supervision of a licensed dentist."
       }
     }
   },
@@ -171,5 +181,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "N/A - Montana does not license general Dental Assistants",
+    "portal_url": "N/A",
+    "registration_steps": "Montana does not license or register general dental assistants. Therefore, there is no state application portal or registration process for basic dental assisting practice. Dental assistants in Montana perform duties under the supervision of a licensed dentist, adhering to the state's Dental Practice Act and administrative rules.",
+    "provider_search": "https://boards.bsd.dli.mt.gov/license-verification"
   }
 }

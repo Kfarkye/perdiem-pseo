@@ -21,17 +21,19 @@
   "board": {
     "name": "Idaho Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Idaho Bureau of Occupational Licenses",
-    "mailing_address": "P.O. Box 83720, Boise, ID 83720-0063",
+    "mailing_address": "700 W. State St., PO Box 83720, Boise, ID 83720-0063",
     "physical_address": "700 W. State St., Boise, ID 83702",
     "phone": "(208) 334-3233",
     "fax": "(208) 334-3945",
-    "email": "mailto:ibol@ibol.idaho.gov",
-    "url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS"
+    "email": "ibol@ibol.idaho.gov",
+    "url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS",
+    "contact_url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SPAUD",
+    "verify_url": "https://ibol.idaho.gov/IBOL/OnlineServices/LicenseSearch.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Educational Program",
-      "description": "Earn a Doctor of Audiology (Au.D.) degree from an accredited educational program."
+      "title": "Create an Account and Submit Application Online",
+      "description": "Register for an account on the IBOL Online Services Portal, then select and complete the Audiologist initial license application."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "Successfully complete the Audiology Examination of the Praxis Series administered by the Educational Testing Service."
+      "title": "Submit Official Transcripts and Praxis Scores",
+      "description": "Arrange for official transcripts verifying a master's or doctoral degree in audiology to be sent directly to the Board. Also, submit an official score report for the Praxis exam in Audiology (5030)."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application to the Idaho Board of Speech-Language Pathology and Audiology with all required documentation and fees."
+      "title": "Provide Verification of Clinical Experience",
+      "description": "Ensure your supervising audiologist completes and submits the 'Verification of Completion of Clinical Experience' form directly to the Board."
+    },
+    {
+      "title": "Pass the Idaho Jurisprudence Exam",
+      "description": "Take and pass the Idaho Board's jurisprudence examination, which is accessible online through your IBOL Online Services Portal account after your application has been submitted."
+    },
+    {
+      "title": "Complete a Fingerprint Background Check",
+      "description": "Schedule and complete a fingerprint background check through IdentoGO, ensuring the results are submitted directly to the Idaho Bureau of Occupational Licenses (IBOL)."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Remit the non-refundable initial application fee of $75 through the IBOL Online Services Portal."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 75,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS",
-    "endorsement_url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS",
+    "endorsement_url": "https://ibol.idaho.gov/IBOL/ApplicationInfo.aspx?Bureau=SPAUD&Prof=AUD&AppType=ENDO",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "idaho-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Idaho",
-        "dek": "Idaho Audiologist License requires graduation from an accredited program, passing the Audiology Examination of the Praxis Series, and completion of supervised professional experience."
+        "dek": "To apply for an Audiologist license in Idaho, you must submit your application and all supporting documentation through the IBOL Online Services Portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "IBOL Online Services Portal",
+    "portal_url": "https://ibol.idaho.gov/IBOL/OnlineServices/Login.aspx",
+    "registration_steps": "Click \"New Users: Create an Account\" on the login page, then follow the prompts to register your account and begin a new application.",
+    "provider_search": "https://ibol.idaho.gov/IBOL/OnlineServices/LicenseSearch.aspx"
   }
 }

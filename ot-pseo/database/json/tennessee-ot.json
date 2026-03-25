@@ -21,19 +21,21 @@
   "board": {
     "name": "Tennessee Board of Occupational Therapy",
     "parent_dept": "Tennessee Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Tennessee Department of Health\nHealth Related Boards\n665 Mainstream Drive\nNashville, TN 37423",
     "physical_address": "See board website",
-    "phone": "(615) 532-3204",
+    "phone": "(615) 741-3810",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/ot-board.html"
+    "email": "Ask.Health@tn.gov",
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/ot-board.html",
+    "contact_url": "https://www.tn.gov/health/health-care-professionals/ot/ot-contact.html",
+    "verify_url": "https://apps.health.tn.gov/Licensure/"
   },
   "quick_facts": {
     "total_fee": "$165",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$130",
+    "renewal_fee": "$90",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
     "ce_requirement": "24 contact hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE accredited program",
-      "description": "You must complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Account & Apply Online",
+      "description": "Register for an account and complete the application via the Tennessee Department of Health Licensure System. Pay the required application fee of $100."
     },
     {
-      "title": "Pass the NBCOT Exam",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, verifying your degree and date conferred, to be sent directly from your educational institution to the Tennessee Board of Occupational Therapy."
     },
     {
-      "title": "Apply for a Tennessee Occupational Therapy License",
-      "description": "Submit an application to the Tennessee Board of Occupational Therapy with all required documentation and fees."
+      "title": "Verify NBCOT Certification",
+      "description": "Request verification of your certification from the National Board for Certification in Occupational Therapy (NBCOT) to be sent directly to the Tennessee Board of Occupational Therapy."
+    },
+    {
+      "title": "Complete Background Check",
+      "description": "Follow the instructions provided within the Tennessee Department of Health Licensure System to complete the required criminal background check."
+    },
+    {
+      "title": "Pass Jurisprudence Exam",
+      "description": "Take and pass the Tennessee Jurisprudence Exam online as part of your application process."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/ot-board.html",
-    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/ot-board.html",
+    "endorsement_url": "https://www.tn.gov/content/dam/tn/health/documents/health-professions/ot/OT-Endorsement_Instructions.pdf",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Tennessee",
-        "dek": "Tennessee Occupational Therapist license requires graduation from an ACOTE accredited program, passing the NBCOT exam, and a background check."
+        "dek": "To apply for an Occupational Therapist license in Tennessee, submit your application online through the Tennessee Department of Health Licensure System."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Tennessee Department of Health Licensure System",
+    "portal_url": "https://apps.health.tn.gov/Licensure/login.aspx",
+    "registration_steps": "Navigate to the portal URL and click on 'Register a New Account' at the bottom of the page to create your user account before starting the application.",
+    "provider_search": "https://apps.health.tn.gov/Licensure/"
   }
 }

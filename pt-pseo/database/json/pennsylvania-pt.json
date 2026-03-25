@@ -21,19 +21,21 @@
   "board": {
     "name": "Pennsylvania Board of Physical Therapy",
     "parent_dept": "Pennsylvania Department of State",
-    "mailing_address": "See board website",
+    "mailing_address": "State Board of Physical Therapy\nP.O. Box 2649\nHarrisburg, PA 17105-2649",
     "physical_address": "See board website",
-    "phone": "(717) 783-7134",
+    "phone": "717-783-1389",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/PhysicalTherapy/Pages/default.aspx"
+    "email": "ST-PHYSICALTHERAPY@pa.gov",
+    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/PhysicalTherapy/Pages/default.aspx",
+    "contact_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/PhysicalTherapy/Pages/Contact-the-Board.aspx",
+    "verify_url": "https://www.pals.pa.gov/verify"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$70",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Physical Therapy Program",
-      "description": "Graduate from a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create a PALS Account",
+      "description": "Go to the Pennsylvania Licensing System (PALS) portal at https://www.pals.pa.gov/ and register a new user account if you do not already have one, or log in to your existing account."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully complete the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Start New Application",
+      "description": "Once logged into your PALS account, click on 'New Application', then select the 'Physical Therapist' license type. Choose the appropriate application route, such as 'Initial Licensure by Examination' or 'Initial Licensure by Endorsement'."
     },
     {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit an application for licensure to the Pennsylvania State Board of Physical Therapy, including transcripts, NPTE scores, and required fees."
+      "title": "Complete Application and Pay Fee",
+      "description": "Fill out all required sections of the online application form within PALS, upload any necessary documents electronically, and pay the non-refundable application fee using a credit or debit card."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official transcripts from your physical therapy program to be sent directly to the Board. If applying by examination, ensure your National Physical Therapy Examination (NPTE) scores are submitted. If applying by endorsement, provide verification of licensure from any other state(s) where you hold or have held a license, sent directly from the issuing board."
+    },
+    {
+      "title": "Complete Fingerprint-Based Background Check",
+      "description": "Register for and complete a fingerprint-based criminal background check through the designated vendor, IdentoGO. Follow the specific instructions provided during the PALS application process to ensure your results are sent to the Pennsylvania State Board of Physical Therapy."
+    },
+    {
+      "title": "Board Review and Approval",
+      "description": "The Pennsylvania State Board of Physical Therapy will review your complete application and all submitted supporting documentation. Upon successful review and approval, your Physical Therapist license will be issued and viewable within your PALS account."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 45,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/PhysicalTherapy/Pages/default.aspx",
-    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/PhysicalTherapy/Pages/default.aspx",
+    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/PhysicalTherapy/Pages/Licensing-Requirements.aspx",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "pennsylvania-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Pennsylvania",
-        "dek": "Pennsylvania Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination, and a criminal background check."
+        "dek": "To apply for a Physical Therapist license in Pennsylvania, you must use the Pennsylvania Licensing System (PALS) online portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Pennsylvania Licensing System (PALS)",
+    "portal_url": "https://www.pals.pa.gov/",
+    "registration_steps": "1. Navigate to the PALS portal at https://www.pals.pa.gov/. \n2. Click 'Register New Account' if you are a new user, or 'Login' if you already have an account. \n3. Follow the prompts to create your account by providing personal information and setting up your username and password. \n4. Once logged in, click 'New Application' to begin the licensing process.",
+    "provider_search": "https://www.pals.pa.gov/verify"
   }
 }

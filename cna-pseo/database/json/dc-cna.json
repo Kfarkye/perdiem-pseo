@@ -21,17 +21,19 @@
   "board": {
     "name": "DC Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "899 North Capitol Street, NE, 1st Floor, Washington, DC 20002",
     "physical_address": "See board website",
     "phone": "(202) 442-5955",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dchealth.dc.gov/bon"
+    "email": "HRLA.DOH@dc.gov",
+    "url": "https://dchealth.dc.gov/bon",
+    "contact_url": "https://dchealth.dc.gov/node/1480021",
+    "verify_url": "https://doh.force.com/dchealth/s/license-lookup"
   },
   "quick_facts": {
     "total_fee": "$15",
     "fee_breakdown": "$15 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an District of Columbia-approved CNA training program, usually 75 hours long."
+      "title": "Complete an Approved Training Program",
+      "description": "Successfully complete a Nursing Assistant training and competency evaluation program approved by the District of Columbia Board of Nursing."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the District of Columbia nurse aide exam."
+      "title": "Create Account and Apply Online",
+      "description": "Register for an account on the DC Health Licensing Portal (https://doh.force.com/dchealth) and complete the Certified Nursing Assistant (CNA) application."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Submit Required Documentation",
+      "description": "Upload or mail all necessary documents as instructed within the DC Health Licensing Portal, including official transcripts/completion certificates from your training program, a 2x2 passport-size photo, and photo identification."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions within the online application to complete the required criminal background check."
+    },
+    {
+      "title": "Register for and Pass the Competency Exam",
+      "description": "Once your application is approved by the Board of Nursing, register with Prometric (https://www.prometric.com/nursing-aides/dc) to schedule and pass the National Nurse Aide Assessment Program (NNAAP) competency examination."
+    },
+    {
+      "title": "Receive Certification",
+      "description": "Upon successful completion of the competency examination, Prometric will notify the DC Board of Nursing, and your name will be added to the DC Nurse Aide Registry."
     }
   ],
   "documents": [
@@ -121,11 +135,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 15,
+    "endorsement_fee": 85,
     "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "https://dchealth.dc.gov/bon",
-    "endorsement_url": "https://dchealth.dc.gov/bon",
+    "endorsement_url": "https://dchealth.dc.gov/node/1480021",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in District of Columbia",
-        "dek": "District of Columbia CNA certification requires a 75-hour training program, DC Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "Applicants for Certified Nursing Assistant (CNA) licensure in the District of Columbia must apply online through the DC Health Licensing Portal."
       },
       "seo": {
         "title": "How to Become a CNA in District of Columbia",
@@ -208,5 +222,20 @@
     "transfer_term": "endorsement",
     "registry_name": "District of Columbia Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DC Health Licensing Portal",
+    "portal_url": "https://doh.force.com/dchealth",
+    "registration_steps": "New users must click 'Register for an Account' on the portal homepage, create a username and password, and follow the prompts to complete the registration process before starting an application.",
+    "provider_search": "https://doh.force.com/dchealth/s/license-lookup"
   }
 }

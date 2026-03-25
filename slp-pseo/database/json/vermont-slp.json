@@ -19,21 +19,23 @@
     "keywords": "speech-language pathologist license reciprocity vermont, how to transfer speech-language pathologist license to vermont, speech-language pathologist compact vermont, vermont speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Office of Professional Regulation — Speech-Language Pathology",
+    "name": "Office of Professional Regulation \u2014 Speech-Language Pathology",
     "parent_dept": "Vermont Secretary of State, Office of Professional Regulation",
-    "mailing_address": "89 Main St., 3rd Floor, Montpelier, VT 05620-3402",
+    "mailing_address": "OPR Licensing, 89 Main Street, 3rd Floor, Montpelier, VT 05620-3402",
     "physical_address": "89 Main St., 3rd Floor, Montpelier, VT 05620",
     "phone": "(802) 828-1505",
     "fax": "(802) 828-2465",
-    "email": "mailto:sos.opr@vermont.gov",
-    "url": "https://sos.vermont.gov/speech-language-pathologists/"
+    "email": "opr.info@vermont.gov",
+    "url": "https://sos.vermont.gov/speech-language-pathologists/",
+    "contact_url": "https://sos.vermont.gov/opr/contact-us/",
+    "verify_url": "https://sos.vermont.gov/opr/verify-a-license/"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": "$75 application + $75 license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years (March 31)",
-    "processing_time": "4 to 6 weeks",
+    "renewal_fee": "$170",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "3 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "You must hold a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+      "title": "Create Account and Submit Application",
+      "description": "Register for an account on the OPR Online Services Portal and complete the entire online application form for a Speech-Language Pathologist license."
     },
     {
-      "title": "Pass the Praxis Exam",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology."
+      "title": "Submit Official Transcripts and Exam Scores",
+      "description": "Arrange for your official graduate school transcripts, verifying a master's or higher degree in Speech-Language Pathology, and official Praxis examination scores (test code 5331) to be sent directly to the Vermont Office of Professional Regulation (OPR)."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience (clinical fellowship) that meets the requirements outlined in the application."
+      "title": "Provide Clinical Experience Documentation",
+      "description": "Submit documentation for the required 400 hours of supervised clinical practicum and complete the Clinical Fellowship Report/Verification Form (or equivalent experience) as required by OPR."
+    },
+    {
+      "title": "Furnish Professional References and Background Check Consent",
+      "description": "Provide contact information for two professional references to be contacted by OPR, and complete the Criminal History Record Information (CHRI) Consent Form to authorize a background check."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee of $125 through the OPR Online Services Portal to finalize your submission."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 125,
+    "processing_time": "3 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://sos.vermont.gov/speech-language-pathologists/",
-    "endorsement_url": "https://sos.vermont.gov/speech-language-pathologists/",
+    "endorsement_url": "https://sos.vermont.gov/opr/speech-language-pathologists-audiologists/",
     "notes": "Vermont is a member of the ASLP Interstate Compact."
   },
   "slug": "vermont-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Vermont",
-        "dek": "Vermont Speech-Language Pathologist licenses require a master's degree, passing the Praxis exam, and completing a clinical fellowship."
+        "dek": "To apply for a Speech-Language Pathologist license in Vermont, create an account and complete the online application through the OPR Online Services Portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "OPR Online Services Portal",
+    "portal_url": "https://vtopr.force.com/",
+    "registration_steps": "To begin, visit the OPR Online Services Portal. Click 'Register for an Account' to create your user profile, then log in and select 'Apply for a New License' to choose Speech-Language Pathologist.",
+    "provider_search": "https://sos.vermont.gov/opr/verify-a-license/"
   }
 }

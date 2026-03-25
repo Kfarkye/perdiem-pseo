@@ -21,17 +21,19 @@
   "board": {
     "name": "DC Board of Respiratory Care",
     "parent_dept": "DC Department of Health, Health Regulation and Licensing Administration (HRLA)",
-    "mailing_address": "See board website",
+    "mailing_address": "DC Department of Health\nHealth Regulation and Licensing Administration\nBoard of Respiratory Care\n899 North Capitol Street NE, 3rd Floor\nWashington, DC 20002",
     "physical_address": "See board website",
-    "phone": "(202) 442-8336",
+    "phone": "(202) 442-5955",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.dchealth.dc.gov/service/respiratory-care-licensing"
+    "email": "hpla.doh@dc.gov",
+    "url": "http://www.dchealth.dc.gov/service/respiratory-care-licensing",
+    "contact_url": "https://dchealth.dc.gov/page/contact-us-1",
+    "verify_url": "https://dchealth.dc.gov/node/157202"
   },
   "quick_facts": {
     "total_fee": "$188",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$230",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create Accela Citizen Access Account",
+      "description": "Register for a new user account on the Accela Citizen Access portal at access.dc.gov. You will use this account to manage all aspects of your licensure application."
     },
     {
-      "title": "Pass the NBRC Exam",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Submit Online Application",
+      "description": "Log in to your Accela Citizen Access account, select 'Professional Licensing', and complete the Respiratory Therapist licensure application form electronically."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, official transcripts, and required fees to the DC Board of Respiratory Care."
+      "title": "Submit Official Documents",
+      "description": "Arrange for official transcripts from your approved respiratory care educational program and verification of your RRT credential from the National Board for Respiratory Care (NBRC) to be sent directly to the District of Columbia Board of Respiratory Care."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Undergo a criminal background check (CBC) within six months of applying for licensure, following the instructions provided by the Board of Respiratory Care."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable initial application fee of $230 through the Accela Citizen Access portal to finalize your submission."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 254,
+    "endorsement_fee": 230,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.dchealth.dc.gov/service/respiratory-care-licensing",
-    "endorsement_url": "http://www.dchealth.dc.gov/service/respiratory-care-licensing",
+    "endorsement_url": "https://dchealth.dc.gov/node/148702",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in District of Columbia",
-        "dek": "District of Columbia Respiratory Therapist license requires graduation from an accredited program, passing the NBRC examination, and completing the application process."
+        "dek": "To apply for a Respiratory Therapist license in the District of Columbia, applicants must utilize the Accela Citizen Access portal to submit their application and required documentation."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Accela Citizen Access portal",
+    "portal_url": "https://access.dc.gov/",
+    "registration_steps": "Visit the Accela Citizen Access portal, click on 'Register for an Account' to create a new user account. Once registered, log in and select 'Create an Application' under the 'Professional Licensing' section to start your Respiratory Therapist license application.",
+    "provider_search": "https://dchealth.dc.gov/node/157202"
   }
 }

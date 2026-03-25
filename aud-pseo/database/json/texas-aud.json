@@ -21,17 +21,19 @@
   "board": {
     "name": "Speech-Language Pathologists and Audiologists Program",
     "parent_dept": "Texas Department of Licensing and Regulation (TDLR)",
-    "mailing_address": "P.O. Box 12157<br>Austin, TX 78711",
+    "mailing_address": "Texas Department of Licensing and Regulation, P.O. Box 12157, Austin, TX 78711",
     "physical_address": "920 Colorado St.<br>Austin, TX 78701",
-    "phone": "(800) 803-9202",
+    "phone": "512-463-6599",
     "fax": "(512) 463-9468",
     "email": "mailto:cs.speech@tdlr.texas.gov",
-    "url": "https://www.tdlr.texas.gov/slpa/"
+    "url": "https://www.tdlr.texas.gov/slpa/",
+    "contact_url": "https://www.tdlr.texas.gov/HelpDesk/ContactUs.aspx",
+    "verify_url": "https://www.tdlr.texas.gov/LicenseSearch/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$120",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,20 @@
   ],
   "steps": [
     {
-      "title": "Meet the Educational Requirements",
-      "description": "You must have a doctoral degree in audiology from an accredited educational institution."
+      "title": "Create Account and Apply Online",
+      "description": "Register for a new account and complete the Audiologist License application through the TDLR Online Licensing Services portal, paying the required application fee."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "Pass the Audiology Examination administered by Praxis with a score of 170 or higher."
+      "title": "Pass the Texas Jurisprudence Examination",
+      "description": "Successfully complete the online Texas State Board of Examiners for Speech-Language Pathology and Audiology Jurisprudence Examination."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application for licensure to the Texas Department of Licensing and Regulations (TDLR) and pay the required fee."
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official university transcripts verifying a doctoral degree in audiology, official Praxis Audiology (5043) exam scores from ETS, and a completed Verification of Supervised Experience (VSE) Form to be sent directly to TDLR."
+    },
+    {
+      "title": "Complete Fingerprint Background Check",
+      "description": "Undergo a criminal history background check by submitting fingerprints through the approved vendor as instructed by TDLR."
     }
   ],
   "documents": [
@@ -124,11 +130,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.tdlr.texas.gov/slpa/",
-    "endorsement_url": "https://www.tdlr.texas.gov/slpa/",
+    "endorsement_url": "https://www.tdlr.texas.gov/slpa/slpa_reciprocity.htm",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "texas-aud",
@@ -143,7 +149,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Texas",
-        "dek": "Texas Audiology license requires a doctoral degree in audiology, passing the Audiology Examination administered by Praxis, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Texas, submit your application and all required documentation through the TDLR Online Licensing Services portal."
       }
     }
   },
@@ -169,5 +175,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "TDLR Online Licensing Services",
+    "portal_url": "https://www.tdlr.texas.gov/AccountManager/Login.aspx",
+    "registration_steps": "Navigate to the TDLR Online Licensing Services portal, select 'Register for a new account', create a User ID and Password, verify your email, and then log in to select 'Apply for a new license'.",
+    "provider_search": "https://www.tdlr.texas.gov/LicenseSearch/"
   }
 }

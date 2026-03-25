@@ -21,19 +21,21 @@
   "board": {
     "name": "Speech-Language Pathology and Audiology and Hearing Aid Dispensers Board",
     "parent_dept": "California Department of Consumer Affairs (DCA)",
-    "mailing_address": "2005 Evergreen St., Suite 2100, Sacramento, CA 95815",
+    "mailing_address": "Speech-Language Pathology and Audiology and Hearing Aid Dispensers Board\n2005 Evergreen Street, Suite 2100\nSacramento, CA 95815-3817",
     "physical_address": "2005 Evergreen St., Suite 2100, Sacramento, CA 95815",
     "phone": "(916) 263-2666",
     "fax": "(916) 263-2668",
-    "email": "mailto:speechandhearing@dca.ca.gov",
-    "url": "https://www.speechandhearing.ca.gov/"
+    "email": "slpahadb@dca.ca.gov",
+    "url": "https://www.speechandhearing.ca.gov/",
+    "contact_url": "https://www.slpahadb.ca.gov/forms_pubs/contact.shtml",
+    "verify_url": "https://search.dca.ca.gov/"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": "$35 RPE application + $115 permanent license application",
-    "renewal_fee": "$150",
+    "renewal_fee": "$225",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "24 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Earn a master's degree or doctorate in speech-language pathology from an accredited educational institution."
+      "title": "Submit Online Application via BreEZe",
+      "description": "Complete and submit the Speech-Language Pathologist application form electronically through the BreEZe Online Services portal. This is the first step for all applicants, including those seeking licensure by endorsement."
     },
     {
-      "title": "Complete Supervised Clinical Experience",
-      "description": "Complete a supervised clinical practicum of at least 400 clock hours."
+      "title": "Provide Official Transcripts",
+      "description": "Arrange for official transcripts verifying a master's or doctorate degree in speech-language pathology (or its equivalent) to be sent directly from your educational institution to the Board."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit your application, required documentation, and fees to the Board."
+      "title": "Submit Verification of Supervised Professional Experience (SPE)",
+      "description": "Ensure the Verification of Supervised Professional Experience form, completed by your supervisor(s), is submitted to the Board to confirm the completion of required clinical hours and supervised experience."
+    },
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Speech-Language Pathology Praxis Examination (ETS SLP Praxis #5343) and ensure that your official scores are sent directly from ETS to the California Board."
+    },
+    {
+      "title": "Complete the California Law and Ethics Examination",
+      "description": "Successfully pass the California Law and Ethics Examination, which is a jurisprudence exam administered online by the Board once your application is deemed complete."
+    },
+    {
+      "title": "Undergo Criminal Background Check",
+      "description": "Complete a criminal background check by submitting your fingerprints. California residents must use Live Scan, while out-of-state applicants will submit fingerprint hard cards."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 300,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.speechandhearing.ca.gov/",
-    "endorsement_url": "https://www.speechandhearing.ca.gov/",
+    "endorsement_url": "https://www.slpahadb.ca.gov/applicants/slp_req.shtml",
     "notes": "California offers alternative licensure pathways for out-of-state SLPs. Applicants holding a current ASHA CCC-SLP or a valid license in another state may qualify for expedited review. However, California does not participate in the ASLP Interstate Compact. All out-of-state applicants must submit a full application with California-specific documentation."
   },
   "slug": "california-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in California",
-        "dek": "California Speech-Language Pathologist license requires a master's degree, supervised clinical experience, and passing the national exam."
+        "dek": "To apply for a Speech-Language Pathologist license in California, applicants must use the BreEZe Online Services portal to submit their application and required documentation."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "BreEZe Online Services",
+    "portal_url": "https://www.breeze.ca.gov/",
+    "registration_steps": "1. Navigate to the BreEZe Online Services website.\n2. Click on 'New User? Register Here' to create a new BreEZe account.\n3. Follow the prompts to enter your personal information and create a username and password.\n4. Once registered, log in to BreEZe and select the appropriate application type for Speech-Language Pathologist.",
+    "provider_search": "https://search.dca.ca.gov/"
   }
 }

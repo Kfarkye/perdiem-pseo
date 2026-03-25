@@ -21,19 +21,21 @@
   "board": {
     "name": "Louisiana Board of Examiners in Dietetics and Nutrition (LBEDN)",
     "parent_dept": "Independent State Board",
-    "mailing_address": "18435 Highland Road, Suite B<br>Baton Rouge, LA 70809",
+    "mailing_address": "600 North Street, Suite 210, Baton Rouge, LA 70802",
     "physical_address": "18435 Highland Road, Suite B<br>Baton Rouge, LA 70809",
-    "phone": "(225) 756-3480",
+    "phone": "(225) 298-1097",
     "fax": "",
-    "email": "",
-    "url": "https://www.lbedn.org/"
+    "email": "lbedn@lbedn.louisiana.gov",
+    "url": "https://www.lbedn.org/",
+    "contact_url": "https://lbedn.louisiana.gov/contact-us/",
+    "verify_url": "https://lbedn.louisiana.gov/verify-license/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "~$100 application fee (exact amount set by LBEDN; fingerprint fees additional)",
-    "renewal_fee": "$83",
-    "renewal_cycle": "Annual (by June 30) + 15 CE hours per year",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Annually, by December 31st",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "1 Year (expires June 30)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "15 hours per year"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Complete a minimum of a baccalaureate degree from a U.S. regionally accredited college or university with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study as determined by the board."
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you possess a bachelor's or master's degree in dietetics/nutrition from a regionally accredited institution, have completed an ACEND-accredited supervised practice program, and have successfully passed the CDR Registration Examination for Dietitians."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete a supervised practice program accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Create an Account on the Online Portal",
+      "description": "Access the LBEDN Online Licensing Portal (secure.lbedn.louisiana.gov) and initiate your application by clicking 'New User Registration' to establish an applicant account with your email and chosen password."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete and Submit Online Application",
+      "description": "Log in to your LBEDN Online Licensing Portal account, select the appropriate initial license application, and meticulously complete all required sections, providing personal, educational, and examination details accurately."
+    },
+    {
+      "title": "Upload Required Documentation",
+      "description": "Upload all necessary supporting documents, which typically include official transcripts (often sent directly from the institution), verification of supervised practice program completion, and CDR exam score verification. Specific requirements are outlined within the LBEDN Online Licensing Portal."
+    },
+    {
+      "title": "Pay Application and Initial License Fees",
+      "description": "Pay the non-refundable initial application fee of $50.00 and the initial license fee of $100.00 directly through the LBEDN Online Licensing Portal using a credit card."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application by logging into your LBEDN Online Licensing Portal account and promptly respond to any requests for additional information or clarification from the Louisiana Board of Examiners in Dietetics and Nutrition."
     }
   ],
   "documents": [
@@ -81,7 +95,7 @@
   "faqs": [
     {
       "question": "How much does a Louisiana dietitian license cost?",
-      "answer": "The initial application fee is approximately $100 (set by LBEDN; contact the Board for the current exact amount). Annual renewal submitted by June 30 is $83. Late renewal (July 1 – August 31) increases to $163. Fingerprint background check fees are additional."
+      "answer": "The initial application fee is approximately $100 (set by LBEDN; contact the Board for the current exact amount). Annual renewal submitted by June 30 is $83. Late renewal (July 1 \u2013 August 31) increases to $163. Fingerprint background check fees are additional."
     },
     {
       "question": "What continuing education does Louisiana require?",
@@ -89,7 +103,7 @@
     },
     {
       "question": "Does Louisiana enforce title protection for dietitians?",
-      "answer": "Yes. Louisiana law mandates that only individuals with a valid LDN license may use the titles 'dietitian,' 'dietician,' or 'nutritionist' — or practice dietetics/nutrition care services. Exemptions exist for certain licensed healthcare professionals performing nutrition work incidental to their scope."
+      "answer": "Yes. Louisiana law mandates that only individuals with a valid LDN license may use the titles 'dietitian,' 'dietician,' or 'nutritionist' \u2014 or practice dietetics/nutrition care services. Exemptions exist for certain licensed healthcare professionals performing nutrition work incidental to their scope."
     },
     {
       "question": "Does Louisiana have reciprocity for dietitians?",
@@ -136,11 +150,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.lbedn.org/",
-    "endorsement_url": "https://www.lbedn.org/",
+    "endorsement_url": "https://lbedn.louisiana.gov/endorsement/",
     "notes": "Louisiana does not have a formal reciprocity agreement for out-of-state dietitians. Applicants licensed in other states must apply for a new Louisiana LDN through the standard process. Louisiana is actively monitoring the Dietitian Licensure Compact initiative, which could enable interstate practice if adopted.",
     "requires_psv": true
   },
@@ -156,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Louisiana",
-        "dek": "Louisiana Dietitian license requires completing educational requirements, passing the Registration Examination for Dietitians, and completing supervised practice."
+        "dek": "To apply for an initial Dietitian/Nutritionist license in Louisiana, you must create an account and complete the application through the LBEDN Online Licensing Portal."
       }
     }
   },
@@ -182,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "LBEDN Online Licensing Portal",
+    "portal_url": "https://secure.lbedn.louisiana.gov/",
+    "registration_steps": "Navigate to the LBEDN Online Licensing Portal and click 'New User Registration'. Enter your email address and create a password to set up your account.",
+    "provider_search": "https://lbedn.louisiana.gov/verify-license/"
   }
 }

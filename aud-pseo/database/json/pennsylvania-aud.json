@@ -21,17 +21,19 @@
   "board": {
     "name": "State Board of Examiners in Speech-Language Pathology and Audiology",
     "parent_dept": "Pennsylvania Department of State, Bureau of Professional and Occupational Affairs",
-    "mailing_address": "P.O. Box 2649, Harrisburg, PA 17105-2649",
+    "mailing_address": "Department of State\nP.O. Box 2649\nHarrisburg, PA 17105-2649",
     "physical_address": "2601 North Third St., Harrisburg, PA 17110",
-    "phone": "(717) 783-1389",
+    "phone": "717-783-1389",
     "fax": "(717) 787-7769",
-    "email": "mailto:st-speech@pa.gov",
-    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/"
+    "email": "RA-STSPEECH@pa.gov",
+    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
+    "contact_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-LanguageandHearing/Pages/Contact-the-Board.aspx",
+    "verify_url": "https://www.pals.pa.gov/Verify"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$65",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "Obtain a master’s or doctoral degree in audiology from an accredited educational institution."
+      "title": "Meet Educational Requirements",
+      "description": "Complete a master's or doctoral degree in audiology from an approved educational institution, which must include a supervised clinical practicum of at least 375 clock hours."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Pass the Audiology Examination of the Praxis Series administered by the Educational Testing Service."
+      "title": "Complete Supervised Professional Experience",
+      "description": "Successfully complete a minimum of 9 months of full-time (or 18 months of part-time) supervised professional experience (SPE) or clinical fellowship."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the State Board of Examiners in Speech-Language Pathology and Audiology, including all required documentation and fees."
+      "title": "Pass National Examination",
+      "description": "Achieve a passing score on the Praxis Series Examination in Audiology (ETS Exam #5342)."
+    },
+    {
+      "title": "Register and Apply via PALS",
+      "description": "Create an account on the PALS (Pennsylvania Licensing System) website, then complete and submit the online application for an Audiologist license."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Upload all required supporting documents, including official transcripts, verification of supervised experience, and other necessary forms, directly through your PALS account."
+    },
+    {
+      "title": "Undergo Criminal History Record Check",
+      "description": "Complete the required Criminal History Record Check (CHRC) as part of the application process through the PALS system."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 45,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
-    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
+    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-LanguageandHearing/Pages/Licensure-Requirements.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "pennsylvania-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Pennsylvania",
-        "dek": "Pennsylvania Audiologist licenses require a qualifying degree, passing the Audiology Praxis exam, and completing the application process."
+        "dek": "To apply for an Audiologist license in Pennsylvania, navigate to the PALS (Pennsylvania Licensing System) portal and register for a new account to begin your application."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "PALS (Pennsylvania Licensing System)",
+    "portal_url": "https://www.pals.pa.gov/",
+    "registration_steps": "1. Navigate to the PALS (Pennsylvania Licensing System) homepage.\n2. Click 'New User Registration' or 'Register' to create a new PALS account.\n3. Follow the prompts to complete your registration, then log in and select 'New Application' to choose 'Audiologist' from the list of professions.",
+    "provider_search": "https://www.pals.pa.gov/Verify"
   }
 }

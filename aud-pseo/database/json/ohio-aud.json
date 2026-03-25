@@ -21,19 +21,21 @@
   "board": {
     "name": "Ohio Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Ohio Speech and Hearing Professionals Board (SHPB)",
-    "mailing_address": "77 S. High St., Suite 1659, Columbus, OH 43215",
+    "mailing_address": "Ohio Speech-Language Pathologists and Audiologists Board, 77 South High Street, Suite 1642, Columbus, Ohio 43215-6108",
     "physical_address": "77 S. High St., Suite 1659, Columbus, OH 43215",
     "phone": "(614) 466-3145",
     "fax": "(614) 995-2286",
-    "email": "mailto:board@shp.ohio.gov",
-    "url": "https://shp.ohio.gov/"
+    "email": "slpaa@slpaa.ohio.gov",
+    "url": "https://shp.ohio.gov/",
+    "contact_url": "https://slpaa.ohio.gov/contact-us",
+    "verify_url": "https://license.ohio.gov/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination of the Praxis Series administered by the Educational Testing Service",
     "ce_requirement": "20 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a Graduate Degree",
-      "description": "Obtain a graduate degree in audiology from an accredited educational institution."
+      "title": "Create an Account on the Ohio eLicense Portal",
+      "description": "Navigate to https://license.ohio.gov/ and click 'Register a new account' to create your login credentials."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Successfully complete the Audiology Examination of the Praxis Series administered by the Educational Testing Service."
+      "title": "Start the Audiologist Application",
+      "description": "Log in to the Ohio eLicense Portal, select 'Apply for a New License,' choose the 'Speech-Language Pathologists and Audiologists Board,' and then select the 'Audiologist' application type (or 'Audiologist - Licensure by Endorsement (Reciprocity)' if applicable)."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Ohio Board of Speech-Language Pathology and Audiology, including all required documentation and fees."
+      "title": "Complete the Online Application and Pay Fees",
+      "description": "Fill out the entire application form online, answer all questions truthfully, and pay the non-refundable application fee of $200."
+    },
+    {
+      "title": "Submit Required Supporting Documents",
+      "description": "Upload or arrange for the submission of official transcripts, verification of supervised professional experience, official PRAXIS scores, and complete a BCI/FBI criminal background check. Specific requirements are detailed on the Board's website."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through your account on the Ohio eLicense Portal and respond promptly to any requests for additional information from the Board."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 200,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://shp.ohio.gov/",
-    "endorsement_url": "https://shp.ohio.gov/",
+    "endorsement_url": "https://slpaa.ohio.gov/licensure-information/apply-for-a-license/audiologists",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "ohio-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Ohio",
-        "dek": "Ohio Audiologist license requires a graduate degree in audiology, passing the national audiology examination, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Ohio, you must register and submit your application through the Ohio eLicense Portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Ohio eLicense Portal",
+    "portal_url": "https://license.ohio.gov/",
+    "registration_steps": "Navigate to https://license.ohio.gov/ and click 'Register a new account' or 'Create a new account.' Follow the prompts to enter personal information, create a username and password, and verify your email address to complete registration.",
+    "provider_search": "https://license.ohio.gov/"
   }
 }

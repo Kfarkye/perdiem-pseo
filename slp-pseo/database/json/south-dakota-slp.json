@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Hearing Aid Dispensers and Audiologists",
     "parent_dept": "South Dakota Department of Health",
-    "mailing_address": "600 E. Capitol Ave., Pierre, SD 57501",
+    "mailing_address": "South Dakota Board of Examiners for Speech-Language Pathology and Audiology\n810 N. Main St., Suite 203\nSpearfish, SD 57783",
     "physical_address": "600 E. Capitol Ave., Pierre, SD 57501",
-    "phone": "(605) 773-3101",
+    "phone": "(605) 773-5006",
     "fax": "(605) 773-6667",
-    "email": "mailto:doh.info@state.sd.us",
-    "url": "https://doh.sd.gov/boards/audiology/"
+    "email": "sdbx@state.sd.us",
+    "url": "https://doh.sd.gov/boards/audiology/",
+    "contact_url": "https://sdbx.sd.gov/contact.aspx",
+    "verify_url": "https://sdbx.sd.gov/licenseesearch.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application and license fee",
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 5 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a Master's Degree",
-      "description": "Graduate from a speech-language pathology program accredited by the Council on Academic Accreditation (CAA) of the American Speech-Language-Hearing Association (ASHA)."
+      "title": "Register or Log In to MyLicense Portal",
+      "description": "Go to the South Dakota MyLicense Portal (mylc.sd.gov). New applicants must register for an account, while returning users can log in with their existing credentials."
     },
     {
-      "title": "Pass the Praxis Exam",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology."
+      "title": "Start a New Application",
+      "description": "Once logged in to the MyLicense Portal, locate the 'South Dakota Board of Examiners for Speech-Language Pathology and Audiology' and select 'Start a New Application' for the Speech-Language Pathologist license type."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application, official transcripts, Praxis scores, and the required fee to the South Dakota Board of Hearing Aid Dispensers and Audiologists."
+      "title": "Complete Application Form",
+      "description": "Fill out all required sections of the online application within the MyLicense Portal, including personal information, education history, supervised clinical experience details, and professional background."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Upload all necessary supporting documents directly through the MyLicense Portal. This typically includes official transcripts from your graduate program, documentation of supervised clinical experience (e.g., ASHA Clinical Fellowship Report), and any other forms specified by the Board."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee using a credit or debit card through the secure payment system integrated within the MyLicense Portal."
+    },
+    {
+      "title": "Ensure Praxis Exam Scores are Sent",
+      "description": "Arrange for your official Praxis exam scores (Speech-Language Pathology) to be sent directly to the South Dakota Board of Examiners for Speech-Language Pathology and Audiology. The ETS institution code for South Dakota is 7904."
     }
   ],
   "documents": [
@@ -142,10 +156,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 5 Weeks",
     "processing_tier": "fast",
     "board_url": "https://doh.sd.gov/boards/audiology/",
-    "endorsement_url": "https://doh.sd.gov/boards/audiology/",
+    "endorsement_url": "https://sdbx.sd.gov/endorsement.aspx",
     "notes": "South Dakota does not participate in the ASLP Interstate Compact."
   },
   "slug": "south-dakota-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in South Dakota",
-        "dek": "South Dakota Speech-Language Pathologist license requires graduation from an accredited program, passage of the Praxis Examination, and completion of a supervised professional experience."
+        "dek": "To apply for an SLP license in South Dakota, you must submit your application through the South Dakota MyLicense Portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "South Dakota MyLicense Portal",
+    "portal_url": "https://mylc.sd.gov/",
+    "registration_steps": "Navigate to the South Dakota MyLicense Portal URL. New users must click 'Register' to create an account by providing personal details and creating a password. Existing users should 'Login' with their credentials. Once logged in, select 'Start a New Application' under the South Dakota Board of Examiners for Speech-Language Pathology and Audiology, and choose the Speech-Language Pathologist license type.",
+    "provider_search": "https://sdbx.sd.gov/licenseesearch.aspx"
   }
 }

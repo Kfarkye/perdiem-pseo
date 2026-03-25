@@ -21,22 +21,22 @@
   "board": {
     "name": "California Dept of Public Health",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Aide and Technician Certification Section\nP.O. Box 997416, MS 3301\nSacramento, CA 95899-7416",
     "physical_address": "See board website",
     "phone": "(916) 327-2445",
     "fax": "N/A (contact by phone)",
     "email": "cna@cdph.ca.gov",
     "url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/CNA.aspx",
-    "verify_url": "https://cvl.cdph.ca.gov/SearchPage.aspx",
-    "contact_url": "mailto:cna@cdph.ca.gov",
+    "verify_url": "https://apps.cdph.ca.gov/Certlicensing/HealthcareWorkforce/Pages/CHWCertificationSearch.aspx",
+    "contact_url": "https://www.cdph.ca.gov/Programs/CHSI/LTC/Pages/CNA-HHA-Contact-Us.aspx",
     "website": "https://www.cdph.ca.gov/"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "training_hours": "150 hours",
     "exam_name": "State competency exam",
@@ -50,16 +50,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an California-approved CNA training program, usually 150 hours long."
+      "title": "Complete an Approved CNA Training Program",
+      "description": "Complete a minimum of 160 hours of training in a program approved by the California Department of Public Health (CDPH), including at least 60 hours of classroom instruction and 100 hours of supervised clinical training."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the California nurse aide exam."
+      "title": "Create a BreEZe Account",
+      "description": "Register for a new user account on the BreEZe Online Services portal at breeze.ca.gov, if you do not already have one."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Submit Your Application Online",
+      "description": "Log in to your BreEZe account and select the appropriate application for 'Certified Nursing Assistant Certification by Examination'. Complete all required sections and upload necessary documents, such as proof of training completion and the 'Request for Live Scan Service' form (CDPH 283B)."
+    },
+    {
+      "title": "Complete Live Scan Fingerprinting",
+      "description": "Submit your fingerprints electronically via Live Scan for a criminal background check. You must use the 'Request for Live Scan Service' form (CDPH 283B) provided by your training program or available from the CDPH website."
+    },
+    {
+      "title": "Pass the Competency Evaluation Examination",
+      "description": "Once your application is reviewed and approved, you will be notified of your eligibility to take the competency evaluation examination. Schedule and pass both the written (or oral) and skills portions of the exam through an approved vendor like Pearson VUE."
+    },
+    {
+      "title": "Receive Your CNA Certificate",
+      "description": "Upon successful completion of all requirements and passing the competency evaluation examination, the CDPH will issue your CNA certificate. You can view and print your certificate directly from your BreEZe account."
     }
   ],
   "documents": [
@@ -125,10 +137,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/CNA.aspx",
-    "endorsement_url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/CNA.aspx",
+    "endorsement_url": "https://www.cdph.ca.gov/Programs/CHSI/LTC/Pages/CNA-HHA.aspx#endorsement",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -181,7 +193,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in California",
-        "dek": "California CNA certification requires a 150-hour training program, California Dept of Public Health eligibility, and a passing score on the State competency exam exam."
+        "dek": "To apply for a Certified Nursing Assistant license in California, you must use the BreEZe Online Services portal for new applications, whether by examination or endorsement."
       },
       "seo": {
         "title": "How to Become a CNA in California | CDPH Requirements",
@@ -249,5 +261,20 @@
     "transfer_term": "reciprocity",
     "registry_name": "CDPH Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "BreEZe Online Services",
+    "portal_url": "https://breeze.ca.gov/",
+    "registration_steps": "Navigate to breeze.ca.gov, click 'New User Registration', follow the prompts to create an account, verify your email address, and then log in to access the application system.",
+    "provider_search": "https://apps.cdph.ca.gov/Certlicensing/HealthcareWorkforce/Pages/CHWCertificationSearch.aspx"
   }
 }

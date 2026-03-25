@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Dietetics/Nutrition",
     "parent_dept": "Delaware Division of Professional Regulation",
-    "mailing_address": "Cannon Building, 861 Silver Lake Blvd, Suite 203<br>Dover, DE 19904",
+    "mailing_address": "Cannon Building, 861 Silver Lake Blvd, Suite 203, Dover, DE 19904",
     "physical_address": "Cannon Building, 861 Silver Lake Blvd, Suite 203<br>Dover, DE 19904",
     "phone": "(302) 744-4500",
     "fax": "(302) 739-2711",
-    "email": "mailto:customerservice.dpr@delaware.gov",
-    "url": "https://dpr.delaware.gov/boards/dietetics/"
+    "email": "customerservice.dpr@delaware.gov",
+    "url": "https://dpr.delaware.gov/boards/dietetics/",
+    "contact_url": "https://dpr.delaware.gov/contact/",
+    "verify_url": "https://dpr.delaware.gov/licensing/lookup/"
   },
   "quick_facts": {
     "total_fee": "$235",
     "fee_breakdown": "$235 initial application processing fee",
-    "renewal_fee": "Varies (Prorated)",
-    "renewal_cycle": "Every 2 years (expires May 31 of odd years) + 30 CE hours",
-    "processing_time": "3 to 5 Weeks",
+    "renewal_fee": "$109",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "Up to 2 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education and Supervised Practice",
-      "description": "Earn a minimum of a bachelor's degree from a regionally accredited college or university with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study, and complete a supervised practice program."
+      "title": "Create a DELPROS Account",
+      "description": "Navigate to the DELPROS online portal (dpr.delaware.gov/delpros/) and create a new user account if you are a first-time applicant."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete the Online Application",
+      "description": "Log in to your DELPROS account, select the 'New Application' option, and complete the Dietitian/Nutritionist license application form electronically within the DELPROS system."
     },
     {
-      "title": "Apply for a Delaware Dietitian License",
-      "description": "Submit a completed application, official transcripts, verification of supervised practice, exam results, and the required fee to the Delaware Board of Dietetics/Nutrition."
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $109 through the DELPROS system as part of your online application."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Arrange for official transcripts, verification of ACEND-approved supervised experience, and CDR exam scores to be sent directly to the Delaware Board of Dietetics/Nutrition as required. Instructions for submission will be provided within DELPROS."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application within your DELPROS account and promptly respond to any requests for additional information from the Board or Division of Professional Regulation."
     }
   ],
   "documents": [
@@ -132,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 235,
-    "processing_time": "3 to 5 Weeks",
+    "endorsement_fee": 109,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://dpr.delaware.gov/boards/dietetics/",
-    "endorsement_url": "https://dpr.delaware.gov/boards/dietetics/",
+    "endorsement_url": "https://dpr.delaware.gov/boards/dietitian/applications/",
     "notes": "Delaware offers licensure by reciprocity. Out-of-state applicants with an active license in good standing from a jurisdiction with substantially equivalent standards (or those holding active CDR/CNS credentials) can apply via the DELPROS reciprocity application.",
     "requires_psv": true
   },
@@ -152,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Delaware",
-        "dek": "Delaware Dietitian License requires completing supervised practice, passing the Registration Examination for Dietitians, and paying the required fees."
+        "dek": "To apply for a Dietitian/Nutritionist license in Delaware, you must submit your application online through the DELPROS portal."
       }
     }
   },
@@ -178,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DELPROS",
+    "portal_url": "https://dpr.delaware.gov/delpros/",
+    "registration_steps": "Access the DELPROS system via the provided URL, click 'DELPROS System Login,' and follow the prompts to create a new user account if you don't have one, or log in to start an application.",
+    "provider_search": "https://dpr.delaware.gov/licensing/lookup/"
   }
 }

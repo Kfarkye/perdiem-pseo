@@ -21,19 +21,21 @@
   "board": {
     "name": "Kentucky Board of Respiratory Care",
     "parent_dept": "Department of Professional Licensing (DPL)",
-    "mailing_address": "See board website",
+    "mailing_address": "Kentucky Board of Respiratory Care\nP.O. Box 1360\nFrankfort, KY 40602",
     "physical_address": "See board website",
-    "phone": "(859) 246-2747",
+    "phone": "502-892-4217",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://respiratorycare.ky.gov/"
+    "email": "rcc@ky.gov",
+    "url": "https://respiratorycare.ky.gov/",
+    "contact_url": "https://rcc.ky.gov/contact-us/Pages/default.aspx",
+    "verify_url": "https://rcc.ky.gov/license-search/Pages/default.aspx"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "renewal_cycle": "Every year",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Care Program",
-      "description": "Graduate from a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create a Kentucky Online Gateway (KOG) Account",
+      "description": "Register and create a new account on the Kentucky Online Gateway at gateway.ky.gov if you don't already have one. This account is essential for accessing and submitting your license application."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Log in to your KOG account, select the 'Board of Respiratory Care,' and proceed with completing the 'Application for Licensure by Endorsement.' Pay the non-refundable application fee of $100 directly through the portal."
     },
     {
-      "title": "Apply for a Respiratory Therapist License",
-      "description": "Submit an application, official transcripts, and examination verification to the Kentucky Board of Respiratory Care and pay the required fee."
+      "title": "Arrange for License Verification",
+      "description": "Request official license verification from all states where you have ever held a respiratory therapy license. This can often be done through the NURSYS system or by contacting the respective state boards directly to have verifications sent to the Kentucky Board of Respiratory Care."
+    },
+    {
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your accredited respiratory therapy program to send official transcripts directly to the Kentucky Board of Respiratory Care. Transcripts must verify your graduation and program completion."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the specific instructions provided by the Board within the Kentucky Online Gateway to complete the required state and federal criminal background check. This typically involves fingerprinting."
+    },
+    {
+      "title": "Provide NBRC Examination Scores",
+      "description": "Ensure the Board can verify your passing scores on the NBRC examination. This may involve having the NBRC send official score reports directly to the Kentucky Board of Respiratory Care or providing information for the board to look them up."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://respiratorycare.ky.gov/",
-    "endorsement_url": "https://respiratorycare.ky.gov/",
+    "endorsement_url": "https://rcc.ky.gov/Licensing/Pages/Apply-for-a-License.aspx",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Kentucky",
-        "dek": "Kentucky Respiratory Therapist license requires graduation from a CoARC-accredited program, passing the NBRC examination, and submitting an application to the Kentucky Board of Respiratory Care."
+        "dek": "To apply for Respiratory Therapist licensure by endorsement in Kentucky, you must create an account and submit your application through the Kentucky Online Gateway (KOG) portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Kentucky Online Gateway (KOG)",
+    "portal_url": "https://gateway.ky.gov/Public/Login.aspx?request=ReturnUrl=%2fPublic%2fAccount%2fIndex%3freturnUrl%3d%2fPublic%2fBoards%2fBoard%3fboardId%3d42",
+    "registration_steps": "Navigate to gateway.ky.gov and click 'Register' or 'Create an Account'. Follow the prompts to enter your personal information, create a username and password, and confirm your account. Once registered, you can log in to access the Board of Respiratory Care application.",
+    "provider_search": "https://rcc.ky.gov/license-search/Pages/default.aspx"
   }
 }

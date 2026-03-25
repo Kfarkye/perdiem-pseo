@@ -21,17 +21,19 @@
   "board": {
     "name": "Maryland Board of Occupational Therapy Practice",
     "parent_dept": "Maryland Department of Health (MDH)",
-    "mailing_address": "See board website",
+    "mailing_address": "Maryland Board of Occupational Therapy Practice\n4201 Patterson Avenue\nBaltimore, MD 21215-2299",
     "physical_address": "See board website",
-    "phone": "(410) 764-4722",
+    "phone": "(410) 764-4752",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://health.maryland.gov/botp/Pages/index.aspx"
+    "email": "botp.licensing@maryland.gov",
+    "url": "https://health.maryland.gov/botp/Pages/index.aspx",
+    "contact_url": "https://health.maryland.gov/botp/Pages/Contact-Us.aspx",
+    "verify_url": "https://health.maryland.gov/botp/Pages/licensee-search.aspx"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$374",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE-Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create OPLS Account and Apply",
+      "description": "Register for an account on the Maryland Online Professional Licensing System (OPLS) portal and complete the online licensure application, submitting the required application fee."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official transcripts, verifying completion of an accredited occupational therapy program, to be sent directly from your educational institution to the Maryland Board of Occupational Therapy Practice."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, required documentation, and fees to the Maryland Board of Occupational Therapy Practice."
+      "title": "Verify NBCOT Scores",
+      "description": "Ensure your passing scores for the National Board for Certification in Occupational Therapy (NBCOT) examination are sent directly from NBCOT to the Maryland Board of Occupational Therapy Practice."
+    },
+    {
+      "title": "Complete Criminal History Records Check",
+      "description": "Undergo a criminal history records check by submitting fingerprints as directed by the Board. Specific instructions for fingerprinting will be provided during the OPLS application process."
+    },
+    {
+      "title": "Provide Required Documentation",
+      "description": "Submit any other supporting documentation requested by the Board, which may include verification of licensure from other states, professional liability insurance, or other forms, either through OPLS or directly to the Board."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "Once all required documentation and information are received and verified, the Board will review your application. Upon approval, your Maryland Occupational Therapist license will be issued."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.maryland.gov/botp/Pages/index.aspx",
-    "endorsement_url": "https://health.maryland.gov/botp/Pages/index.aspx",
+    "endorsement_url": "https://health.maryland.gov/botp/Pages/Apply-for-Licensure-by-Endorsement.aspx",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Maryland",
-        "dek": "Maryland Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and completing the application process."
+        "dek": "Users can apply for an Occupational Therapist license in Maryland by registering and submitting their application through the Maryland Online Professional Licensing System (OPLS)."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Maryland Online Professional Licensing System (OPLS)",
+    "portal_url": "https://www.mbp.state.md.us/portal/bp/MBPWelcome.aspx?board=OT",
+    "registration_steps": "To begin your application, visit the Maryland Online Professional Licensing System (OPLS) portal. If you are a new user, click 'Register for an Account' and follow the prompts to create your profile. Once registered, log in and select the appropriate application type (e.g., 'Initial Application' or 'Endorsement Application') to start.",
+    "provider_search": "https://health.maryland.gov/botp/Pages/licensee-search.aspx"
   }
 }

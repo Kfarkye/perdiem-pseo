@@ -21,19 +21,21 @@
   "board": {
     "name": "Speech-Language Pathology and Audiology and Hearing Aid Dispensers Board",
     "parent_dept": "California Department of Consumer Affairs (DCA)",
-    "mailing_address": "2005 Evergreen St., Suite 2100, Sacramento, CA 95815",
+    "mailing_address": "2005 Evergreen Street, Suite 2100, Sacramento, CA 95815",
     "physical_address": "2005 Evergreen St., Suite 2100, Sacramento, CA 95815",
     "phone": "(916) 263-2666",
     "fax": "(916) 263-2668",
-    "email": "mailto:speechandhearing@dca.ca.gov",
-    "url": "https://www.speechandhearing.ca.gov/"
+    "email": "aud@dca.ca.gov",
+    "url": "https://www.speechandhearing.ca.gov/",
+    "contact_url": "https://www.speechandhearing.ca.gov/forms_pubs/contact_us.shtml",
+    "verify_url": "https://search.dca.ca.gov/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "8 to 10 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination",
     "ce_requirement": "20 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Educational Requirements",
-      "description": "You must complete a doctoral degree in audiology from an accredited educational institution."
+      "title": "Create a BreEZe Account and Submit Application",
+      "description": "Navigate to www.breeze.ca.gov, create a new user account if you don't have one, then log in and select 'Start a New Application'. Choose 'Audiologist' and complete the online application form, paying the $120 application fee."
     },
     {
-      "title": "Pass the Audiology Examination",
-      "description": "You must pass the Audiology Examination administered by a board-approved testing entity."
+      "title": "Complete Fingerprint Background Check",
+      "description": "Complete a Live Scan fingerprinting appointment using the Board's specific 'Request for Live Scan Service' form (BCII 8016). Ensure the results are sent electronically to the Department of Justice (DOJ) and the FBI."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application to the Speech-Language Pathology and Audiology and Hearing Aid Dispensers Board along with all required documentation and fees."
+      "title": "Submit Official Transcripts and Supporting Documents",
+      "description": "Arrange for official transcripts from your qualifying educational institution to be sent directly to the Board. Also submit a Certificate of Completion of Supervised Professional Practice and any required professional references or verifications of licensure from other states."
+    },
+    {
+      "title": "Pass the National Examination",
+      "description": "Register for and pass the national examination in Audiology as required by the Board (e.g., PRAXIS exam for Audiology). Official scores must be sent directly to the Board."
+    },
+    {
+      "title": "Pay Initial License Fee",
+      "description": "Once your application, background check, and examination results are reviewed and approved by the Board, you will be notified to pay the $100 initial license fee through the BreEZe system."
+    },
+    {
+      "title": "Receive Your License",
+      "description": "Upon payment of the initial license fee, your Audiologist license will be issued and viewable on your BreEZe account. You may then begin practicing in California."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 120,
+    "processing_time": "8 to 10 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.speechandhearing.ca.gov/",
-    "endorsement_url": "https://www.speechandhearing.ca.gov/",
+    "endorsement_url": "https://www.speechandhearing.ca.gov/applicants/aud_app_inst.shtml",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "california-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in California",
-        "dek": "California Audiology licenses require a doctoral degree in audiology, passing the Audiology Examination, and completing a supervised professional experience."
+        "dek": "Audiologist licensing in California is handled through the BreEZe online system, where applicants can submit their application, track its status, and manage their license."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "BreEZe",
+    "portal_url": "https://www.breeze.ca.gov/",
+    "registration_steps": "Go to www.breeze.ca.gov and click on the 'New User' button to register for an account. Follow the instructions to create your BreEZe account. Once registered, log in and select 'Start a New Application' from the BreEZe homepage, then search for 'Audiologist' to begin your application.",
+    "provider_search": "https://search.dca.ca.gov/"
   }
 }

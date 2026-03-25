@@ -19,19 +19,21 @@
     "keywords": "physical therapist license reciprocity minnesota, how to transfer physical therapist license to minnesota, physical therapist compact minnesota, minnesota physical therapist endorsement application"
   },
   "board": {
-    "name": "Minnesota Board of Medical Practice — PT",
+    "name": "Minnesota Board of Medical Practice \u2014 PT",
     "parent_dept": "Minnesota Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Minnesota Board of Physical Therapy\n335 Randolph Avenue, Suite 170\nSt. Paul, MN 55102",
     "physical_address": "See board website",
-    "phone": "(612) 617-2130",
+    "phone": "612-617-2170",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://mn.gov/boards/medical-practice/"
+    "email": "physical.therapy@state.mn.us",
+    "url": "https://mn.gov/boards/medical-practice/",
+    "contact_url": "https://mn.gov/boards/physical-therapy/contact/",
+    "verify_url": "https://mn.gov/boards/physical-therapy/license/search/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create an Account and Start Application",
+      "description": "Register for a new user account on the Minnesota Online Services portal. Once registered and logged in, select 'Apply for a New License' and choose 'Physical Therapist by Endorsement'."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Register for and pass the NPTE, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Fill out the online application completely, providing all required personal and professional information, and submit the application with the initial application fee through the Minnesota Online Services portal."
     },
     {
-      "title": "Apply for a Physical Therapist License with the Minnesota Board of Physical Therapy",
-      "description": "Submit an online application, pay the required fee, and provide all required documentation to the Minnesota Board of Physical Therapy."
+      "title": "Request Official Transcripts",
+      "description": "Arrange for your physical therapy educational institution to send your official academic transcripts directly to the Minnesota Board of Physical Therapy."
+    },
+    {
+      "title": "Submit NBPTSE Scores",
+      "description": "Request the Federation of State Boards of Physical Therapy (FSBPT) to send your official National Board for Certification in Physical Therapy (NBPTSE) scores directly to the Minnesota Board of Physical Therapy."
+    },
+    {
+      "title": "Provide Licensure Verifications",
+      "description": "Complete the 'Verification of Licensure' form (available on the Board's website) and send it to all states where you currently hold or have previously held a PT license, instructing them to send the completed verification directly to the Minnesota Board of Physical Therapy."
     }
   ],
   "documents": [
@@ -128,7 +138,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://mn.gov/boards/medical-practice/",
-    "endorsement_url": "https://mn.gov/boards/medical-practice/",
+    "endorsement_url": "https://mn.gov/boards/physical-therapy/licensing/new-applicant.jsp",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "minnesota-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Minnesota",
-        "dek": "Minnesota Physical Therapist license requires graduation from an accredited program, passing the NPTE, and a criminal background check."
+        "dek": "To apply for a Physical Therapist license in Minnesota, you must use the Minnesota Online Services portal, which handles all new applications and renewals."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Minnesota Online Services",
+    "portal_url": "https://secure.hlb.state.mn.us/Online_Services/",
+    "registration_steps": "Navigate to the Minnesota Online Services portal, click 'New User Registration' or 'Create Account', and follow the prompts to set up your user profile.",
+    "provider_search": "https://mn.gov/boards/physical-therapy/license/search/"
   }
 }

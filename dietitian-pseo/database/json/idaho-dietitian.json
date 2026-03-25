@@ -21,19 +21,21 @@
   "board": {
     "name": "Dietetic Licensure Board",
     "parent_dept": "Idaho Division of Occupational and Professional Licenses (DOPL)",
-    "mailing_address": "P.O. Box 83720<br>Boise, ID 83720-0063",
+    "mailing_address": "P.O. Box 83712, Boise, ID 83720-0058",
     "physical_address": "11341 W Chinden Blvd, Bldg 4<br>Boise, ID 83714",
-    "phone": "(208) 334-3233",
+    "phone": "(208) 327-7000",
     "fax": "(208) 327-7005",
-    "email": "mailto:doplinfo@dopl.idaho.gov",
-    "url": "https://dopl.idaho.gov/boe/"
+    "email": "info@bom.idaho.gov",
+    "url": "https://dopl.idaho.gov/boe/",
+    "contact_url": "https://bom.idaho.gov/contact-us/",
+    "verify_url": "https://www.accessidaho.org/bom/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 initial application fee",
-    "renewal_fee": "$120",
-    "renewal_cycle": "Every 2 years (transitions from annual $60 to biennial $120 starting mid-2025)",
-    "processing_time": "3 to 4 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education and Supervised Practice",
-      "description": "Complete a minimum of a bachelor's degree granted by a U.S. regionally accredited college or university, complete a supervised practice program, and complete coursework requirements, all accredited by ACEND."
+      "title": "Fulfill Eligibility Requirements",
+      "description": "Ensure you meet Idaho's requirements, which include holding a bachelor's or master's degree in a relevant field, completing a supervised practice experience approved by ACEND, and passing the Commission on Dietetic Registration (CDR) examination."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully pass the Commission on Dietetic Registration's (CDR) Registration Examination for Dietitians."
+      "title": "Create an Access Idaho Account",
+      "description": "Navigate to the Idaho Board of Medicine's \"Access Idaho\" online portal at https://accessidaho.idaho.gov/apps/bom/ and register for a new user account if you do not already have one."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application, including required documentation and fees, to the Idaho Dietetic Licensure Board."
+      "title": "Complete the Online Application",
+      "description": "Log in to your \"Access Idaho\" account, select the option to 'Apply for a License,' and accurately complete all sections of the Licensed Dietitian application."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts, verification of supervised practice completion, and official CDR exam scores to be sent directly to the Idaho Board of Medicine from the respective institutions or organizations."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable initial application fee of $100 through the \"Access Idaho\" online portal using a valid payment method."
+    },
+    {
+      "title": "Await Board Review and Licensure",
+      "description": "The Board of Medicine will review your complete application and all supporting documents. Once approved, your Licensed Dietitian (LD) license will be issued."
     }
   ],
   "documents": [
@@ -137,10 +151,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "3 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://dopl.idaho.gov/boe/",
-    "endorsement_url": "https://dopl.idaho.gov/boe/",
+    "endorsement_url": "https://bom.idaho.gov/licensing/dietitian/endorsement-licensure/",
     "notes": "Idaho allows for licensure by endorsement. Out-of-state applicants with a current, valid license from a state with equivalent standards or those holding active CDR registration can apply by submitting the standard application, fee, and proof of out-of-state licensure.",
     "requires_psv": true
   },
@@ -156,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Idaho",
-        "dek": "Idaho Dietitian License requires completion of accredited education and supervised practice, passing the national Registration Examination for Dietitians, and paying the required fees."
+        "dek": "To apply for a Licensed Dietitian (LD) license in Idaho, new applicants must use the Idaho Board of Medicine's \"Access Idaho\" online portal to submit their application and required documentation."
       }
     }
   },
@@ -182,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Access Idaho",
+    "portal_url": "https://accessidaho.idaho.gov/apps/bom/",
+    "registration_steps": "Navigate to the Idaho Board of Medicine's online portal, click 'New User Registration' or 'Apply for a License,' and follow the prompts to create an account with a unique username and password to begin your application.",
+    "provider_search": "https://www.accessidaho.org/bom/"
   }
 }

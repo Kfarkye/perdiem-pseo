@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners on Audiology and Speech-Language Pathology",
     "parent_dept": "North Dakota Board of Examiners on Audiology and SLP",
-    "mailing_address": "3100 S. Columbia Rd., Suite 218, Grand Forks, ND 58201",
+    "mailing_address": "North Dakota Board of Examiners on Speech-Language Pathology and Audiology\nPO Box 5475\nBismarck, ND 58502-5475",
     "physical_address": "3100 S. Columbia Rd., Suite 218, Grand Forks, ND 58201",
-    "phone": "(701) 777-3232",
+    "phone": "(701) 328-9844",
     "fax": "(701) 777-4365",
-    "email": "mailto:ndboeaslp@gmail.com",
-    "url": "https://www.ndboeaslp.org/"
+    "email": "ndbeslpa@nd.gov",
+    "url": "https://www.ndboeaslp.org/",
+    "contact_url": "https://www.ndbeslpa.org/site/contact-us/",
+    "verify_url": "https://www.nd.gov/eforms/DoD/DoDSearch.aspx?ID=394"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$50 application + $25 license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every year (December 31)",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "1.5 to 2 Weeks",
     "license_duration": "1 year",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 contact hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a Master's Degree",
-      "description": "Earn a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+      "title": "Create an Account and Start Application",
+      "description": "Access the North Dakota Licensing Portal at https://www.nd.gov/eforms/DoD/DoDSearch.aspx?ID=394 and create a new user account if you do not already have one. Log in and select 'New Application' for Speech-Language Pathology."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience (SPE) that meets the requirements outlined by the North Dakota Board of Examiners on Audiology and Speech-Language Pathology."
+      "title": "Complete Online Application Form",
+      "description": "Fill out all required sections of the Speech-Language Pathology application form directly within the North Dakota Licensing Portal."
     },
     {
-      "title": "Pass the Praxis Exam and Apply for Licensure",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit a completed application for licensure with the required documentation and fees to the Board."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official graduate transcripts, showing the conferred degree, to be sent directly from your university to the NDBESLPA office."
+    },
+    {
+      "title": "Provide PRAXIS Exam Scores",
+      "description": "Have your official Speech-Language Pathology Praxis exam scores (Code 0017 or 5183) sent directly to the NDBESLPA from ETS."
+    },
+    {
+      "title": "Submit Clinical Fellowship (CF) Documentation",
+      "description": "Provide documentation of supervised postgraduate professional experience, such as the ASHA Clinical Fellowship Report and Rating Form, directly to the NDBESLPA."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required initial application fee through the North Dakota Licensing Portal to finalize your application."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "1.5 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.ndboeaslp.org/",
-    "endorsement_url": "https://www.ndboeaslp.org/",
+    "endorsement_url": "https://www.ndbeslpa.org/site/applicants/application-instructions/",
     "notes": "North Dakota does not participate in the ASLP Interstate Compact."
   },
   "slug": "north-dakota-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in North Dakota",
-        "dek": "North Dakota Speech-Language Pathologist license requires a master's degree, passing the Praxis exam, and completion of a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in North Dakota, you must submit your application online through the North Dakota Licensing Portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "North Dakota Licensing Portal",
+    "portal_url": "https://www.nd.gov/eforms/DoD/DoDSearch.aspx?ID=394",
+    "registration_steps": "Navigate to the North Dakota Licensing Portal and click 'Create Account' to register a new user account. Once registered, you can log in to access the application forms.",
+    "provider_search": "https://www.nd.gov/eforms/DoD/DoDSearch.aspx?ID=394"
   }
 }

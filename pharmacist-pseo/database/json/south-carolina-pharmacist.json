@@ -21,19 +21,21 @@
   "board": {
     "name": "South Carolina Board of Pharmacy",
     "parent_dept": "South Carolina Department of Labor, Licensing and Regulation (LLR)",
-    "mailing_address": "See board website",
+    "mailing_address": "South Carolina Board of Pharmacy, P.O. Box 11929, Columbia, SC 29211-1929",
     "physical_address": "See board website",
     "phone": "(803) 896-4700",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://llr.sc.gov/bop/"
+    "email": "contact.bop@llr.sc.gov",
+    "url": "https://llr.sc.gov/bop/",
+    "contact_url": "https://llr.sc.gov/bop/contactus.aspx",
+    "verify_url": "https://verify.llronline.com/LicLookup/LookupMain.aspx"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
     "ce_requirement": "30 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program from a recognized school or college of pharmacy that is accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Access the LLR Online Services Portal",
+      "description": "Navigate to the LLR Online Services Portal, select 'Board of Pharmacy' and 'Pharmacist' as your application type. Create an account or log in to begin the application process."
     },
     {
-      "title": "Complete Internship Hours",
-      "description": "Satisfactorily complete the required internship hours under the supervision of a licensed pharmacist."
+      "title": "Complete the Online Application",
+      "description": "Fill out the comprehensive online pharmacist application through the LLR Online Services Portal, providing personal, educational, and professional history details."
     },
     {
-      "title": "Pass the NAPLEX and MPJE",
-      "description": "Successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE) for South Carolina."
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable pharmacist application fee of $125 via the LLR Online Services Portal as part of the application submission."
+    },
+    {
+      "title": "Arrange for NABP E-licensure Verification",
+      "description": "If applying by endorsement, request NABP to send your official E-licensure verification directly to the South Carolina Board of Pharmacy from all states where you are or have been licensed."
+    },
+    {
+      "title": "Submit Official Transcripts",
+      "description": "Ensure your official pharmacy school transcripts are sent directly from your college or university to the South Carolina Board of Pharmacy."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided by the Board after your application submission to complete the mandatory criminal background check, which typically involves fingerprinting."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 375,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 125,
+    "processing_time": "3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://llr.sc.gov/bop/",
-    "endorsement_url": "https://llr.sc.gov/bop/",
+    "endorsement_url": "https://llr.sc.gov/bop/apps.aspx",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -151,7 +165,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in South Carolina",
-        "dek": "South Carolina Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing internship hours."
+        "dek": "To apply for a pharmacist license in South Carolina, applicants must use the LLR Online Services Portal to complete and submit their application, including all required documentation for licensure by endorsement (reciprocity) or examination."
       }
     }
   },
@@ -177,5 +191,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "LLR Online Services Portal",
+    "portal_url": "https://online.llr.sc.gov/OnlineServices/Begin/Start_NewApp.aspx",
+    "registration_steps": "Navigate to the LLR Online Services Portal, select 'Board of Pharmacy' from the board dropdown, and then 'Pharmacist' as the application type. Click 'Continue' and you will be prompted to log in or create a new user account if you do not have one.",
+    "provider_search": "https://verify.llronline.com/LicLookup/LookupMain.aspx"
   }
 }

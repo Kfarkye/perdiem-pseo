@@ -21,19 +21,21 @@
   "board": {
     "name": "South Dakota Board of Medical and Osteopathic Examiners (SDBMOE)",
     "parent_dept": "Department of Health",
-    "mailing_address": "101 N. Main Ave., Suite 301<br>Sioux Falls, SD 57104",
+    "mailing_address": "South Dakota Department of Health\nBoard of Examiners for Dietetic and Nutrition Practice\n600 East Capitol Avenue\nPierre, SD 57501-2536",
     "physical_address": "101 N. Main Ave., Suite 301<br>Sioux Falls, SD 57104",
-    "phone": "(605) 367-7781",
+    "phone": "605-773-4556",
     "fax": "(605) 367-7786",
-    "email": "mailto:sdbmoe@state.sd.us",
-    "url": "https://www.sdbmoe.gov/nutritionist-dietitian/"
+    "email": "DOH.Dietitians@state.sd.us",
+    "url": "https://www.sdbmoe.gov/nutritionist-dietitian/",
+    "contact_url": "https://doh.sd.gov/boards/dietitians/contact.aspx",
+    "verify_url": "https://doh.sd.gov/boards/mylicense/publicsearch.aspx"
   },
   "quick_facts": {
     "total_fee": "$70",
     "fee_breakdown": "$70 initial application fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years (expires May 31 of odd years)",
-    "processing_time": "3 to 4 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "Up to 2 Years",
     "exam_name": "Commission on Dietetic Registration (CDR) examination",
     "ce_requirement": "75 hours every 5 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Supervised Practice",
-      "description": "Complete a minimum of a bachelor's degree from a U.S. regionally accredited college or university and completion of an Accreditation Council for Education in Nutrition and Dietetics (ACEND) accredited supervised practice program."
+      "title": "Meet Educational Requirements",
+      "description": "Hold a bachelor's or master's degree with a major in dietetics, human nutrition, or food and nutrition, or an equivalent course of study, from an accredited college or university."
     },
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) examination to become a Registered Dietitian (RD) or Registered Dietitian Nutritionist (RDN)."
+      "title": "Complete Supervised Practice",
+      "description": "Complete a supervised dietetic practice experience approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit the application for licensure to the South Dakota Board of Medical and Osteopathic Examiners along with the required fee and documentation."
+      "title": "Pass the Examination",
+      "description": "Pass the registration examination for dietitians administered by the Commission on Dietetic Registration (CDR)."
+    },
+    {
+      "title": "Complete the Application Form",
+      "description": "Download and accurately complete the 'Initial Licensure Application' PDF from the South Dakota Department of Health's 'Forms & Applications' page."
+    },
+    {
+      "title": "Gather Supporting Documentation and Fee",
+      "description": "Compile all required documents, including official transcripts, verification of supervised practice, CDR exam score verification, a copy of your CDR card, and the non-refundable application fee. Payments can be made by check or money order payable to 'South Dakota Department of Health'."
+    },
+    {
+      "title": "Submit Application Package",
+      "description": "Mail the completed 'Initial Licensure Application' form and all supporting documentation with payment to the South Dakota Department of Health at the address provided on the form, or submit via email to DOH.Dietitians@state.sd.us."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 70,
-    "processing_time": "3 to 4 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.sdbmoe.gov/nutritionist-dietitian/",
-    "endorsement_url": "https://www.sdbmoe.gov/nutritionist-dietitian/",
+    "endorsement_url": "https://doh.sd.gov/boards/dietitians/documents/DietitianApp.pdf",
     "notes": "Applicants licensed in another state may be granted reciprocity if they hold an active license in good standing and can verify their Commission on Dietetic Registration status, demonstrating compliance with South Dakota's requirements.",
     "requires_psv": false
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in South Dakota",
-        "dek": "South Dakota Dietitian License requires successful completion of a Board-approved program, passing the CDR examination, and completing the application."
+        "dek": "To apply for a Dietitian or Nutritionist license in South Dakota, download and complete the 'South Dakota Dietetic and Nutrition Practice Licensure Application (PDF)' from the Department of Health's website and submit it via email or mail."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "South Dakota Dietetic and Nutrition Practice Licensure Application (PDF)",
+    "portal_url": "https://doh.sd.gov/boards/dietitians/forms.aspx",
+    "registration_steps": "To apply for initial licensure, download the 'Initial Licensure Application' PDF from the board's 'Forms & Applications' page. Complete the form electronically or by hand, gather all required supporting documentation, and submit the entire application package via email or postal mail to the South Dakota Department of Health.",
+    "provider_search": "https://doh.sd.gov/boards/mylicense/publicsearch.aspx"
   }
 }

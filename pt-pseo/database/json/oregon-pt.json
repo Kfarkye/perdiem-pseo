@@ -21,17 +21,19 @@
   "board": {
     "name": "Oregon Physical Therapist Licensing Board",
     "parent_dept": "Oregon Health Licensing Office (HLO)",
-    "mailing_address": "See board website",
+    "mailing_address": "Oregon Physical Therapist Licensing Board\n800 NE Oregon Street, Suite 407\nPortland, OR 97232-2187",
     "physical_address": "See board website",
-    "phone": "(971) 673-0197",
+    "phone": "(971) 673-0200",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.oregon.gov/ptlb"
+    "email": "physical.therapy@oregon.gov",
+    "url": "https://www.oregon.gov/ptlb",
+    "contact_url": "https://www.oregon.gov/opbt/Pages/Contact-Us.aspx",
+    "verify_url": "https://oarm.oregon.gov/lb_search_verify/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$215",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "You must graduate from a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Register and Apply Online",
+      "description": "Create an account on the Oregon Licensing Portal (OLP) at olpres.oregon.gov and complete the 'Physical Therapist Endorsement Application,' paying the required fee."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Apply and pass the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit License Verifications",
+      "description": "Arrange for direct verification of your initial and current PT licenses from all states where you have been licensed, sent directly from the respective state boards to the Oregon Physical Therapist Licensing Board."
     },
     {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit an application, pay the required fee, and complete a criminal background check to the Oregon Physical Therapist Licensing Board."
+      "title": "Complete the Oregon Jurisprudence Exam (OR-JE)",
+      "description": "Upon application submission and fee payment, the Oregon Physical Therapist Licensing Board will provide information to register for and complete the online Oregon Jurisprudence Examination."
+    },
+    {
+      "title": "Undergo Criminal Background Check (CBC)",
+      "description": "Follow instructions from the Oregon Physical Therapist Licensing Board to submit fingerprints for a criminal background check if you are an Oregon resident or have been in the past five years."
+    },
+    {
+      "title": "Receive License",
+      "description": "Once all requirements are met and verified, the Oregon Physical Therapist Licensing Board will issue your Oregon Physical Therapist license."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 195,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oregon.gov/ptlb",
-    "endorsement_url": "https://www.oregon.gov/ptlb",
+    "endorsement_url": "https://www.oregon.gov/opbt/Pages/Apply-for-a-License.aspx",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "oregon-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Oregon",
-        "dek": "Oregon Physical Therapist license requires graduation from an accredited program, passing the NPTE, and a criminal background check."
+        "dek": "To apply for a Physical Therapist license in Oregon, you must create an account and submit your application through the Oregon Licensing Portal (OLP)."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Oregon Licensing Portal (OLP)",
+    "portal_url": "https://olpres.oregon.gov/",
+    "registration_steps": "Go to the Oregon Licensing Portal (OLP) at olpres.oregon.gov. Click 'Register for an account' to create a new user profile. Once registered, log in and select 'Apply for a New License/Renewal' to start your PT application.",
+    "provider_search": "https://oarm.oregon.gov/lb_search_verify/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Arkansas Board of Examiners in Speech-Language Pathology and Audiology",
     "parent_dept": "ABESPA",
-    "mailing_address": "101 E. Capitol Ave., Suite 211, Little Rock, AR 72201",
+    "mailing_address": "P.O. Box 3821, Little Rock, AR 72203-3821",
     "physical_address": "101 E. Capitol Ave., Suite 211, Little Rock, AR 72201",
-    "phone": "(501) 682-9180",
+    "phone": "(501) 682-9442",
     "fax": "(501) 682-9181",
-    "email": "mailto:abespa@arkansas.gov",
-    "url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology"
+    "email": "abespa@arkansas.gov",
+    "url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology",
+    "contact_url": "https://abespa.arkansas.gov/contact/",
+    "verify_url": "https://www.armedicalboard.org/Public/VerifyLicense.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$75 application + $25 license fee",
     "renewal_fee": "$75",
     "renewal_cycle": "Every year",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "1 year",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "10 contact hours every year"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "You must hold a master's degree or its equivalent in speech-language pathology from an accredited educational institution."
+      "title": "Create Account and Submit Online Application",
+      "description": "Visit the Arkansas Medical Board's Online Licensure System, create an account, and complete the Speech-Language Pathology application. You will need to select 'SPEECH-LANGUAGE PATHOLOGY' as your application type and pay the $100 application fee."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience that meets the requirements outlined by the Arkansas Board of Examiners in Speech-Language Pathology and Audiology."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts verifying your master's or doctoral degree in Speech-Language Pathology to be sent directly from your university to ABESPA."
     },
     {
-      "title": "Pass the Praxis Exam and Apply for Licensure",
-      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology and submit a complete application to the Board, including all required documentation and fees."
+      "title": "Provide Proof of Clinical Competence",
+      "description": "Submit proof of your Certificate of Clinical Competence in Speech-Language Pathology (CCC-SLP) from the American Speech-Language-Hearing Association (ASHA) by having ASHA send verification directly to ABESPA. If not ASHA certified, submit a completed Supervised Professional Experience Report form."
+    },
+    {
+      "title": "Complete Jurisprudence Exam",
+      "description": "Complete the ABESPA Jurisprudence Exam. This is an open-book test on Arkansas Board laws and rules and is administered online as part of the application process."
+    },
+    {
+      "title": "Undergo Criminal Background Check",
+      "description": "Complete a state and federal criminal background check. Instructions and approved vendors for fingerprinting will be provided during the online application process."
     }
   ],
   "documents": [
@@ -142,10 +152,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology",
-    "endorsement_url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology",
+    "endorsement_url": "https://abespa.arkansas.gov/licensure/endorsement/",
     "notes": "Arkansas is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Arkansas through a compact privilege."
   },
   "slug": "arkansas-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Arkansas",
-        "dek": "Arkansas Speech-Language Pathologist License requires a master's degree in speech-language pathology, passing the Praxis exam, and completing a supervised professional experience."
+        "dek": "To apply for an SLP license in Arkansas, you must use the Arkansas Medical Board's Online Licensure System to submit your initial application and supporting documents."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Arkansas Medical Board's Online Licensure System",
+    "portal_url": "https://www.armedicalboard.org/Applications/UserLoginPage.aspx?ReturnUrl=%2fApplications%2fNewApplication.aspx%3fapptype%3d12",
+    "registration_steps": "To create an account and start your application, visit the Arkansas Medical Board's Online Licensure System, click 'Create Account' and follow the prompts. Once logged in, select 'SPEECH-LANGUAGE PATHOLOGY' from the 'Select the type of application you wish to start' dropdown menu.",
+    "provider_search": "https://www.armedicalboard.org/Public/VerifyLicense.aspx"
   }
 }

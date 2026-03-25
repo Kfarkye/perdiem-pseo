@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity connecticut, how to transfer respiratory therapist license to connecticut, respiratory therapist compact connecticut, connecticut respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Connecticut DPH — Respiratory Care",
+    "name": "Connecticut DPH \u2014 Respiratory Care",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
-    "mailing_address": "See board website",
+    "mailing_address": "Connecticut Department of Public Health\nPractitioner Licensing & Investigations Section\n410 Capitol Ave., MS #12HLS\nP.O. Box 340308\nHartford, CT 06134",
     "physical_address": "See board website",
     "phone": "(860) 509-7603",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://portal.ct.gov/DPH"
+    "email": "dph.practitionerlicensing@ct.gov",
+    "url": "https://portal.ct.gov/DPH",
+    "contact_url": "portal.ct.gov/DPH/Practitioner-Licensing--Investigations/Contact-Us",
+    "verify_url": "https://elicense.ct.gov/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "6 to 8 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "15 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Approved Respiratory Care Program",
-      "description": "Graduate from a respiratory care program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or another board-approved program."
+      "title": "Create an Account",
+      "description": "Visit the eLicense System at https://elicense.ct.gov/ and create a new user account by following the registration prompts."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Complete Online Application",
+      "description": "Log in to the eLicense System, select the 'Respiratory Care Practitioner' application, and complete all required sections of the online application form."
     },
     {
-      "title": "Apply for a Respiratory Therapist License",
-      "description": "Submit an application and all required documentation to the Connecticut Department of Public Health for licensure."
+      "title": "Pay Application Fee",
+      "description": "Submit the $200 application fee directly through the eLicense System using a credit card or other accepted payment method."
+    },
+    {
+      "title": "Submit Official Transcripts",
+      "description": "Request your official academic transcripts from your accredited respiratory care program to be sent directly from your educational institution to the Connecticut Department of Public Health."
+    },
+    {
+      "title": "Verify NBRC Credentials",
+      "description": "Arrange for the National Board for Respiratory Care (NBRC) to send official verification of your Registered Respiratory Therapist (RRT) or Certified Respiratory Therapist (CRT) credentials directly to the Connecticut Department of Public Health."
+    },
+    {
+      "title": "Submit License Verifications (Endorsement)",
+      "description": "If applying by endorsement, request official verification of all respiratory care licenses you have ever held from each state's licensing authority, sent directly to the Connecticut Department of Public Health."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 190,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/DPH",
-    "endorsement_url": "https://portal.ct.gov/DPH",
+    "endorsement_url": "portal.ct.gov/DPH/Practitioner-Licensing--Investigations/Respiratory-Care-Practitioner/Respiratory-Care-Practitioner-Licensure",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Connecticut",
-        "dek": "Connecticut Respiratory Therapist licenses require graduation from an approved program, passing the NBRC examination, and completing an application."
+        "dek": "To apply for a Respiratory Care Practitioner license in Connecticut, create an account and submit your application through the eLicense System."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense System",
+    "portal_url": "https://elicense.ct.gov/",
+    "registration_steps": "Visit the eLicense System portal, click 'Register' for a new account, and follow the prompts to create your login credentials.",
+    "provider_search": "https://elicense.ct.gov/Lookup/LicenseLookup.aspx"
   }
 }

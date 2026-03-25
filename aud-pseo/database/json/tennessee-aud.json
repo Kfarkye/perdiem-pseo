@@ -21,12 +21,14 @@
   "board": {
     "name": "Tennessee Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Tennessee Department of Health",
-    "mailing_address": "665 Mainstream Dr., Nashville, TN 37243",
+    "mailing_address": "665 Mainstream Drive, Nashville, TN 37243",
     "physical_address": "665 Mainstream Dr., Nashville, TN 37243",
-    "phone": "(615) 741-5735",
+    "phone": "(615) 532-5100",
     "fax": "(615) 741-6470",
     "email": "mailto:tn.health@tn.gov",
-    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/communication-disorders-board.html"
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/communication-disorders-board.html",
+    "contact_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/board-audiology-speech-language-pathology.html",
+    "verify_url": "https://licensure.tn.gov/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -46,16 +48,25 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Complete a graduate degree in audiology from an accredited educational institution."
+      "title": "Create Account and Apply Online",
+      "description": "Visit the Tennessee e-Licensure Portal (licensure.tn.gov), create a new user account, and complete the online application for Audiologist licensure. Pay the required non-refundable application fee of $75.",
+      "endorsement_fee": null
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series offered by the Educational Testing Service."
+      "title": "Submit Academic and Exam Verifications",
+      "description": "Arrange for official transcripts, verifying a doctoral degree in audiology from an ASHA-accredited program, to be sent directly from your university to the Board. Also, ensure official scores from the Praxis Exam in Audiology (5030) are sent directly from ETS to the Board."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application and all required documentation to the Tennessee Board of Communication Disorders."
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided within the e-Licensure Portal to register for and complete a criminal background check through IdentoGO, a state-approved vendor."
+    },
+    {
+      "title": "Pass the Jurisprudence Exam",
+      "description": "Access and successfully complete the Tennessee Jurisprudence Exam for Audiologists, which is available online through the e-Licensure Portal, covering state laws and regulations."
+    },
+    {
+      "title": "Board Review and Licensure Issuance",
+      "description": "The Tennessee Board of Communication Disorders and Sciences will review all submitted documents, exam results, and background check. Once all requirements are met and verified, your Audiologist license will be issued through the e-Licensure Portal."
     }
   ],
   "documents": [
@@ -124,11 +135,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 75,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/communication-disorders-board.html",
-    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/communication-disorders-board.html",
+    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/board-audiology-speech-language-pathology/apply-for-a-license/audiology.html",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "tennessee-aud",
@@ -143,7 +154,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Tennessee",
-        "dek": "Tennessee Audiologist license requires graduation from an accredited program, passing the required examination, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Tennessee, applicants must register and complete the application through the Tennessee e-Licensure Portal."
       }
     }
   },
@@ -169,5 +180,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "e-Licensure Portal",
+    "portal_url": "https://licensure.tn.gov/",
+    "registration_steps": "Access the Tennessee e-Licensure Portal, click 'Register' to create a new account using your email and password, then follow the prompts to complete your personal profile before starting an application.",
+    "provider_search": "https://licensure.tn.gov/"
   }
 }

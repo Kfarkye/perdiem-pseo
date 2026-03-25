@@ -21,19 +21,21 @@
   "board": {
     "name": "Ohio Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Ohio Speech and Hearing Professionals Board (SHPB)",
-    "mailing_address": "77 S. High St., Suite 1659, Columbus, OH 43215",
+    "mailing_address": "Ohio Board of Speech-Language Pathology and Audiology\n77 S. High St., 16th Floor\nColumbus, Ohio 43215-6108",
     "physical_address": "77 S. High St., Suite 1659, Columbus, OH 43215",
     "phone": "(614) 466-3145",
     "fax": "(614) 995-2286",
-    "email": "mailto:board@shp.ohio.gov",
-    "url": "https://shp.ohio.gov/"
+    "email": "slpa@slpa.ohio.gov",
+    "url": "https://shp.ohio.gov/",
+    "contact_url": "https://slpa.ohio.gov/contact-us",
+    "verify_url": "https://elicense.ohio.gov/oh_verifylicense"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$200 initial SLP license application",
-    "renewal_fee": "$120",
-    "renewal_cycle": "Every 2 years (December 31, even years)",
-    "processing_time": "4 to 6 weeks",
+    "renewal_fee": "$125",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Earn a master's degree or doctoral degree in speech-language pathology from an accredited educational institution."
+      "title": "Create an Ohio eLicense Account",
+      "description": "Register for an account on the Ohio eLicense portal (elicense.ohio.gov) if you are a first-time applicant. You will create a profile and establish your login credentials."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology."
+      "title": "Complete Online Application",
+      "description": "Log in to the Ohio eLicense portal and submit the application for Speech-Language Pathologist licensure. Pay the required application fee of $125 through the portal."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Ohio Board of Speech-Language Pathology and Audiology, including all required documentation and fees."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts verifying a master's or doctoral degree in Speech-Language Pathology to be sent directly from your academic institution to the Ohio Board of Speech-Language Pathology and Audiology."
+    },
+    {
+      "title": "Verify Supervised Professional Experience",
+      "description": "Ensure your supervisor submits the completed Verification of Supervised Professional Experience form directly to the Ohio Board of Speech-Language Pathology and Audiology."
+    },
+    {
+      "title": "Submit Praxis Scores",
+      "description": "Request the Educational Testing Service (ETS) to send your official Praxis Exam in Speech-Language Pathology (test code 5150) scores directly to the Ohio Board of Speech-Language Pathology and Audiology."
+    },
+    {
+      "title": "Await Application Review",
+      "description": "The Board will review your complete application and all supporting documents. Processing typically takes 2 to 3 weeks once all materials are received and verified."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 125,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://shp.ohio.gov/",
-    "endorsement_url": "https://shp.ohio.gov/",
+    "endorsement_url": "https://slpa.ohio.gov/speech-language-pathologists/licensure-by-endorsement",
     "notes": "Ohio does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Ohio license and meet all state-specific requirements. Applicants holding the ASHA CCC-SLP may qualify for the endorsement pathway. CE hours are tracked through CE Broker."
   },
   "slug": "ohio-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Ohio",
-        "dek": "Ohio Speech-Language Pathologist License requires a master's degree in speech-language pathology, passing the Praxis Examination, and completion of a supervised professional experience."
+        "dek": "To apply for an Ohio Speech-Language Pathologist license, begin by registering and submitting your application through the Ohio eLicense portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Ohio eLicense",
+    "portal_url": "https://elicense.ohio.gov/",
+    "registration_steps": "Navigate to the Ohio eLicense portal (elicense.ohio.gov), click 'Register a New Account' if you are a first-time applicant, and follow the prompts to create your profile by providing personal information and setting up login credentials.",
+    "provider_search": "https://elicense.ohio.gov/oh_verifylicense"
   }
 }

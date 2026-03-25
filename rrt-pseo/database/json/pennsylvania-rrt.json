@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity pennsylvania, how to transfer respiratory therapist license to pennsylvania, respiratory therapist compact pennsylvania, pennsylvania respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Pennsylvania Board of Medicine — RT",
+    "name": "Pennsylvania Board of Medicine \u2014 RT",
     "parent_dept": "Pennsylvania Department of State",
-    "mailing_address": "See board website",
+    "mailing_address": "PA State Board of Medicine\nP.O. Box 2649\nHarrisburg, PA 17105-2649",
     "physical_address": "See board website",
-    "phone": "(717) 787-1400",
+    "phone": "717-787-8503",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Medicine/Pages/default.aspx"
+    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Medicine/Pages/default.aspx",
+    "contact_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Medicine/Pages/Contact-the-Board.aspx",
+    "verify_url": "https://www.pals.pa.gov/Verify/"
   },
   "quick_facts": {
     "total_fee": "$30",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$55",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "6 to 8 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Respiratory Care Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or a comparable accrediting agency."
+      "title": "Create a PALS Account",
+      "description": "Navigate to PALS.pa.gov and select 'New Applicants' to register for an individual licensing account."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the entry-level examination administered by the National Board for Respiratory Care (NBRC)."
+      "title": "Start Your Application",
+      "description": "Log in to your PALS account, click on 'New Application,' and select 'Respiratory Therapist' from the available license types to begin."
     },
     {
-      "title": "Apply for a Respiratory Therapist License",
-      "description": "Submit an application to the Pennsylvania State Board of Medicine along with the required documentation and fees."
+      "title": "Complete Application Form",
+      "description": "Fill out all required sections of the online application form within the PALS system, providing accurate personal, educational, and professional history."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Upload or arrange for official submission of all supporting documents, including official transcripts directly from your accredited respiratory therapy program and your NBRC examination score reports, as specified in your PALS application."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee through the PALS system using a credit card to finalize your application submission."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your PALS account for updates on your application's status and promptly respond to any requests for additional information from the Pennsylvania State Board of Medicine."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 120,
-    "processing_time": "4 to 8 Weeks",
+    "endorsement_fee": 45,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Medicine/Pages/default.aspx",
-    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Medicine/Pages/default.aspx",
+    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Medicine/Pages/Licensure-by-Endorsement.aspx",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Pennsylvania",
-        "dek": "Pennsylvania Respiratory Therapist license requires graduation from an accredited respiratory care program, passing the NBRC examination, and completing the application process."
+        "dek": "Respiratory Therapists seeking initial licensure or licensure by endorsement in Pennsylvania must apply through the Pennsylvania Licensing System (PALS)."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Pennsylvania Licensing System (PALS)",
+    "portal_url": "https://www.pals.pa.gov/",
+    "registration_steps": "Visit PALS.pa.gov, click on \"New Applicants\" under \"Individual Licensing Services,\" and follow the prompts to create an account with a valid email address and password.",
+    "provider_search": "https://www.pals.pa.gov/Verify/"
   }
 }

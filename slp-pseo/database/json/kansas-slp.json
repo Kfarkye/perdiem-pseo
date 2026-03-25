@@ -19,21 +19,23 @@
     "keywords": "speech-language pathologist license reciprocity kansas, how to transfer speech-language pathologist license to kansas, speech-language pathologist compact kansas, kansas speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Kansas Department for Aging and Disability Services — Hearing Aid & SLP",
+    "name": "Kansas Department for Aging and Disability Services \u2014 Hearing Aid & SLP",
     "parent_dept": "Kansas Department for Aging and Disability Services (KDADS)",
-    "mailing_address": "503 S. Kansas Ave., Topeka, KS 66603-3404",
+    "mailing_address": "KDADS - Licensing\n503 S. Kansas Ave.\nTopeka, KS 66603-3404",
     "physical_address": "503 S. Kansas Ave., Topeka, KS 66603",
-    "phone": "(785) 296-1240",
+    "phone": "785-296-4986",
     "fax": "(785) 296-0511",
-    "email": "mailto:kdads.slpa@ks.gov",
-    "url": "https://www.kdads.ks.gov/commissions/survey-certification-and-credentialing-commission/credentialing/speech-language-pathology-and-audiology"
+    "email": "kdads.licensing@ks.gov",
+    "url": "https://www.kdads.ks.gov/commissions/survey-certification-and-credentialing-commission/credentialing/speech-language-pathology-and-audiology",
+    "contact_url": "https://www.kdads.ks.gov/commissions/board-of-examiners-fdhispa/board-contact-us",
+    "verify_url": "https://public.kdads.ks.gov/PublicLookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application fee",
-    "renewal_fee": "$75",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,20 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Clinical Experience",
-      "description": "Obtain a master's degree or doctorate in speech-language pathology and complete supervised clinical practicum experience."
+      "title": "Complete the Online Application and Pay Fee",
+      "description": "Fill out all required sections of the online application completely within the KDADS Public Access Portal and pay the initial application fee."
     },
     {
-      "title": "Pass the Praxis Examination",
-      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology with a score that meets Kansas requirements."
+      "title": "Submit Official Graduate Transcripts",
+      "description": "Arrange for official graduate transcripts, showing the degree conferred and date, to be sent directly from your university to the KDADS Licensing office via email (kdads.licensing@ks.gov) or mail."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the application for licensure with the Kansas Department for Aging and Disability Services and submit all required documentation and fees."
+      "title": "Submit Official Praxis Scores",
+      "description": "Request that official scores for the Speech-Language Pathology Praxis exam (ETS Code 7040) be sent directly from the Educational Testing Service (ETS) to KDADS."
+    },
+    {
+      "title": "Provide Clinical Fellowship (CF) Documentation",
+      "description": "If you hold the ASHA Certificate of Clinical Competence (CCC-SLP), submit a copy of your CCC directly to KDADS. If not, submit a completed and signed Clinical Fellowship Report form (available on the board's website) directly to KDADS."
     }
   ],
   "documents": [
@@ -141,11 +147,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 150,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.kdads.ks.gov/commissions/survey-certification-and-credentialing-commission/credentialing/speech-language-pathology-and-audiology",
-    "endorsement_url": "https://www.kdads.ks.gov/commissions/survey-certification-and-credentialing-commission/credentialing/speech-language-pathology-and-audiology",
+    "endorsement_url": "https://www.kdads.ks.gov/commissions/board-of-examiners-fdhispa/apply-for-licensure/speech-language-pathologists-audiologists",
     "notes": "Kansas is a member of the ASLP Interstate Compact."
   },
   "slug": "kansas-slp",
@@ -160,7 +166,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Kansas",
-        "dek": "Kansas Speech-Language Pathologist license requires a master's degree, supervised clinical experience, and passing the national examination."
+        "dek": "To apply for a Speech-Language Pathologist license in Kansas, users must create an account and submit their application through the KDADS Public Access Portal."
       }
     }
   },
@@ -186,5 +192,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "KDADS Public Access Portal",
+    "portal_url": "https://public.kdads.ks.gov/PublicAccess/",
+    "registration_steps": "Navigate to the KDADS Public Access Portal and click 'Register' to create a new user account. Follow the prompts to set up your username and password, then log in to begin a new application for licensure.",
+    "provider_search": "https://public.kdads.ks.gov/PublicLookup/LicenseLookup.aspx"
   }
 }

@@ -19,21 +19,23 @@
     "keywords": "occupational therapist license reciprocity rhode island, how to transfer occupational therapist license to rhode island, occupational therapist compact rhode island, rhode island occupational therapist endorsement application"
   },
   "board": {
-    "name": "Rhode Island DOH — OT Licensure",
+    "name": "Rhode Island DOH \u2014 OT Licensure",
     "parent_dept": "Rhode Island Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Rhode Island Department of Health, Health Professions Regulation, 3 Capitol Hill, Room 105, Providence, RI 02908-5097",
     "physical_address": "See board website",
     "phone": "(401) 222-2828",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://health.ri.gov/licenses/"
+    "email": "DOH.Licensing@health.ri.gov",
+    "url": "https://health.ri.gov/licenses/",
+    "contact_url": "https://health.ri.gov/licensing/",
+    "verify_url": "https://healthri.gov/licensing-portal/LookUpLicense.aspx"
   },
   "quick_facts": {
     "total_fee": "$110",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$60",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) exam",
     "ce_requirement": "24 contact hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Occupational Therapy Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Access the Online System",
+      "description": "Visit the RI Department of Health Online Licensing System, click 'Apply for Initial Licensure/Certification', select 'Occupational Therapist', and create a new user account if you do not have one."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Complete Application & Pay Fee",
+      "description": "Fill out all required sections of the online application form and pay the $100 initial licensure fee via the RI Department of Health Online Licensing System."
     },
     {
-      "title": "Apply for a Rhode Island Occupational Therapy License",
-      "description": "Submit a completed application, official transcripts, NBCOT score verification, and required fee to the Rhode Island Department of Health."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official academic transcripts, verifying your degree from an accredited occupational therapy program, to be sent directly from your institution to the RI Department of Health."
+    },
+    {
+      "title": "Verify NBCOT Certification",
+      "description": "Ensure that the National Board for Certification in Occupational Therapy (NBCOT) sends verification of your successful examination directly to the Rhode Island Department of Health."
+    },
+    {
+      "title": "Undergo Criminal Background Check",
+      "description": "Complete the required state and federal criminal background check as per instructions provided by the RI Department of Health after application submission."
+    },
+    {
+      "title": "Provide Supporting Documents",
+      "description": "Submit any additional required documentation, such as proof of name change or licensure verification from other states, as requested by the Department of Health."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 140,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.ri.gov/licenses/",
-    "endorsement_url": "https://health.ri.gov/licenses/",
+    "endorsement_url": "https://health.ri.gov/licenses/detail.php?id=255",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Rhode Island",
-        "dek": "Rhode Island Occupational Therapist licensure requires graduation from an accredited educational program, passing the NBCOT exam, and completing the application process."
+        "dek": "To apply for an Occupational Therapist license in Rhode Island, navigate to the RI Department of Health Online Licensing System and begin your initial application."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "RI Department of Health Online Licensing System",
+    "portal_url": "https://health.ri.gov/licensing-online-system/",
+    "registration_steps": "Visit the RI Department of Health Online Licensing System and click 'Apply for Initial Licensure/Certification'. Select 'Occupational Therapist', then create a new user account with your personal details and desired username/password. Once registered, log in to begin the application.",
+    "provider_search": "https://healthri.gov/licensing-portal/LookUpLicense.aspx"
   }
 }

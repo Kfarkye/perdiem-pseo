@@ -21,19 +21,21 @@
   "board": {
     "name": "Oregon State Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "17938 SW Upper Boones Ferry Road, Portland OR 97224",
     "physical_address": "See board website",
     "phone": "(971) 673-0685",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.oregon.gov/osbn/"
+    "email": "osbn.info@osbn.oregon.gov",
+    "url": "https://www.oregon.gov/osbn/",
+    "contact_url": "https://www.oregon.gov/osbn/Pages/Contact-Us.aspx",
+    "verify_url": "https://osbn.oregon.gov/onlineservices/Pages/lookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$60",
     "fee_breakdown": "$60 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$60",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 4 Weeks",
     "license_duration": "2 Years",
     "training_hours": "75 hours",
     "exam_name": "OSBN competency exam",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Oregon-approved CNA training program, usually 75 hours long."
+      "title": "Create Account & Submit Application",
+      "description": "Register and create an account on the OSBN Nurse Portal. Once logged in, submit the online application for CNA certification by examination or endorsement."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Oregon nurse aide exam."
+      "title": "Pay Application Fees",
+      "description": "Pay the required application fees securely through the OSBN Nurse Portal as part of your application submission."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided by the OSBN to complete a criminal background check, which includes fingerprinting."
+    },
+    {
+      "title": "Pass NNAAP Exam (Certification by Examination Only)",
+      "description": "If applying for certification by examination, register with Credentia and successfully pass the National Nurse Aide Assessment Program (NNAAP) exam."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Ensure all necessary supporting documents, such as training verification or out-of-state license verification (for endorsement), are submitted as instructed by the OSBN."
+    },
+    {
+      "title": "Receive Certification Decision",
+      "description": "Once all requirements are met and verified, the OSBN will issue your CNA certification, which can be viewed and verified through the OSBN Nurse Portal."
     }
   ],
   "documents": [
@@ -122,10 +136,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 60,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.oregon.gov/osbn/",
-    "endorsement_url": "https://www.oregon.gov/osbn/",
+    "endorsement_url": "https://www.oregon.gov/osbn/pages/cna-endorsement.aspx",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Oregon",
-        "dek": "Oregon CNA certification requires a 75-hour training program, Oregon State Board of Nursing eligibility, and a passing score on the OSBN competency exam exam."
+        "dek": "To apply for a Certified Nursing Assistant (CNA) license in Oregon, you must register and submit your application through the Oregon State Board of Nursing (OSBN) Nurse Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Oregon",
@@ -216,5 +230,20 @@
     "transfer_term": "endorsement",
     "registry_name": "OSBN Nursing Assistant Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "OSBN Nurse Portal",
+    "portal_url": "https://osbn.oregon.gov/onlineservices/Pages/default.aspx",
+    "registration_steps": "Applicants must create an account on the OSBN Nurse Portal by clicking 'Register' and following the prompts to set up a username and password before starting an application.",
+    "provider_search": "https://osbn.oregon.gov/onlineservices/Pages/lookup.aspx"
   }
 }

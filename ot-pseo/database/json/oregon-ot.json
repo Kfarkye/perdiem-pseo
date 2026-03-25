@@ -21,17 +21,19 @@
   "board": {
     "name": "Oregon Occupational Therapy Licensing Board",
     "parent_dept": "Oregon Health Licensing Office (HLO)",
-    "mailing_address": "See board website",
+    "mailing_address": "Oregon Board of Occupational Therapy\n3218 Pringle Road SE, Suite 230\nSalem, OR 97302-6320",
     "physical_address": "See board website",
-    "phone": "(971) 673-0197",
+    "phone": "(503) 986-6819",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.oregon.gov/otlb"
+    "email": "obot.info@obot.oregon.gov",
+    "url": "https://www.oregon.gov/otlb",
+    "contact_url": "https://www.oregon.gov/obot/Pages/Contact-Us.aspx",
+    "verify_url": "https://egov.oregon.gov/obls/licensing/lookup/"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$175",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Register for an Account and Submit Application",
+      "description": "Create an account on the Oregon Board of Occupational Therapy's Online Licensing Application System (egov.oregon.gov/obls/licensing/) and complete the online application for initial licensure by exam or endorsement."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, verifying graduation from an ACOTE-accredited occupational therapy program, to be sent directly to the Oregon Board of Occupational Therapy."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application, official transcripts, NBCOT score verification, and required fees to the Oregon Occupational Therapy Licensing Board."
+      "title": "Pass NBCOT Examination",
+      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination and request NBCOT to send official verification of your scores directly to the Oregon Board."
+    },
+    {
+      "title": "Complete Oregon Jurisprudence Examination",
+      "description": "Access and complete the Oregon Jurisprudence Examination, an open-book online exam, through the Online Licensing Application System."
+    },
+    {
+      "title": "Complete Fingerprint-Based Background Check",
+      "description": "Follow the instructions provided within the Online Licensing Application System to schedule and complete the required fingerprinting for a criminal background check."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 330,
-    "processing_time": "1 to 2 Weeks",
+    "endorsement_fee": 200,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oregon.gov/otlb",
-    "endorsement_url": "https://www.oregon.gov/otlb",
+    "endorsement_url": "https://www.oregon.gov/obot/licensing/Pages/How-to-Apply.aspx",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": false
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Oregon",
-        "dek": "Oregon Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a criminal background check."
+        "dek": "To apply for an Occupational Therapist license in Oregon, create an account and apply through the Oregon Board of Occupational Therapy's Online Licensing Application System."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Online Licensing Application System",
+    "portal_url": "https://egov.oregon.gov/obls/licensing/",
+    "registration_steps": "Navigate to the Online Licensing Application System URL and click on 'New Account Registration' to create a user profile before starting your application.",
+    "provider_search": "https://egov.oregon.gov/obls/licensing/lookup/"
   }
 }

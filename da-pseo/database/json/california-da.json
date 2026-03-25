@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "California Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in California — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in California \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license california, dental assistant certification california, RDA california, DANB CDA california, dental assistant radiography california"
   },
   "board": {
     "name": "Dental Board of California",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "2005 Evergreen Street, Suite 1350, Sacramento, CA 95815",
     "physical_address": "See board website",
     "phone": "(916) 263-2300",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.dbc.ca.gov/"
+    "email": "dentalboard@dca.ca.gov",
+    "url": "https://www.dbc.ca.gov/",
+    "contact_url": "https://www.dbc.ca.gov/formspubs/contact_us.shtml",
+    "verify_url": "https://search.dca.ca.gov/"
   },
   "quick_facts": {
     "total_fee": "$120",
     "fee_breakdown": "$120 application/registration fee",
-    "renewal_fee": "$100",
+    "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "6 to 12 Weeks",
+    "processing_time": "8 to 9 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "25 units of continuing education every two years"
   },
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Complete a board-approved educational program or qualify through equivalent work experience."
+      "title": "Meet Eligibility and Examination Requirements",
+      "description": "Complete an approved Registered Dental Assisting program or obtain 15 months of satisfactory work experience. You must also complete required courses in the Dental Practice Act, Infection Control, and Basic Life Support (BLS), and pass the California RDA Written Examination, Coronal Polishing, Sealants, and Oral Radiography exams."
     },
     {
-      "title": "Pass Exams",
-      "description": "Pass the California Registered Dental Assistant (RDA) Written Examination and the RDA Practical Examination."
+      "title": "Create a BreEZe Account",
+      "description": "If you are a new applicant, register for an account on the BreEZe Online Services portal at www.breeze.ca.gov. This system is used by various California boards for professional licensing."
     },
     {
-      "title": "Submit Application",
-      "description": "Submit a completed application, including required documentation and fees, to the Dental Board of California."
+      "title": "Submit Online Application",
+      "description": "Log in to your BreEZe account, select 'Start a New Application' from the main menu, and choose the 'Registered Dental Assistant (RDA)' application type. Complete all sections of the application form accurately."
+    },
+    {
+      "title": "Complete Live Scan Fingerprinting",
+      "description": "Download the Live Scan Request form from the Dental Board of California's website. Take the completed form to an authorized Live Scan provider in California for a criminal background check. Ensure the results are sent directly to the Board."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Electronically upload or mail all required documentation to the Dental Board, as specified in your BreEZe application or on the Board's website. This includes official transcripts, course completion certificates, and verification of examination results."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Pay the required application fee and the initial license fee through the BreEZe Online Services portal using a credit card. Your application will not be processed until all fees are received."
     }
   ],
   "documents": [
@@ -123,11 +137,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 120,
-    "processing_time": "6 to 12 Weeks",
+    "endorsement_fee": 125,
+    "processing_time": "8 to 9 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.dbc.ca.gov/",
-    "endorsement_url": "https://www.dbc.ca.gov/",
+    "endorsement_url": "https://www.dbc.ca.gov/applicants/out_state.shtml",
     "notes": "California requires RDA registration. DANB CDA holders may apply for RDA without repeating training as of July 2025.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in California",
-        "dek": "California Registered Dental Assistant registration requires completing required education, passing specified exams, and submitting an application."
+        "dek": "To apply for a Registered Dental Assistant (RDA) license in California, you must submit your application and supporting documentation through the BreEZe Online Services portal after meeting all eligibility and examination requirements."
       }
     }
   },
@@ -172,5 +186,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "BreEZe Online Services",
+    "portal_url": "https://www.breeze.ca.gov/",
+    "registration_steps": "Visit the BreEZe Online Services portal at www.breeze.ca.gov. Click 'New User? Register Here' to create an account, then log in and select 'Start a New Application' from the dropdown menu to find and begin the Registered Dental Assistant application.",
+    "provider_search": "https://search.dca.ca.gov/"
   }
 }

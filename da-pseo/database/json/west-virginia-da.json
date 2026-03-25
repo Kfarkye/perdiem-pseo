@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "W. Virginia Dental Assistant License (2026) | Fees & Guide",
-    "description": "Complete guide to dental assistant licensing in West Virginia — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in West Virginia \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license west virginia, dental assistant certification west virginia, RDA west virginia, DANB CDA west virginia, dental assistant radiography west virginia"
   },
   "board": {
     "name": "West Virginia Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "1615 Washington Street East, Charleston, WV 25311",
     "physical_address": "See board website",
-    "phone": "(304) 252-8266",
+    "phone": "(304) 558-8260",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://wvdentalboard.org/"
+    "email": "wvbde@wv.gov",
+    "url": "https://wvdentalboard.org/",
+    "contact_url": "https://www.wvdentalboard.org/Contact-Us/",
+    "verify_url": "https://wvbdx.us.thentiacloud.net/Public/Search"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 application/registration fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$30",
+    "renewal_cycle": "Annually",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "2 hours per renewal cycle"
   },
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Obtain CPR Certification",
-      "description": "Complete a current CPR certification course from an approved provider."
+      "title": "Create an Account",
+      "description": "Visit the WV Board of Dental Examiners Online Services Portal and create a new account by clicking 'Register Now' or 'Create an Account'. Complete the registration process, including email verification, to gain access to the application system."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit a dental assistant registration application to the West Virginia Board of Dental Examiners."
+      "title": "Complete Online Application",
+      "description": "Log in to the WV Board of Dental Examiners Online Services Portal and select the application for 'Dental Assistant Registration'. Fill out all required sections of the application completely and accurately."
     },
     {
-      "title": "Receive Registration",
-      "description": "Upon approval of your application and meeting all requirements, you will receive your West Virginia Dental Assistant registration."
+      "title": "Upload Supporting Documentation",
+      "description": "Upload all necessary documents through the WV Board of Dental Examiners Online Services Portal. This includes proof of being at least 18 years of age, a high school diploma or equivalent, completion of an accredited dental assisting program OR proof of at least 3 months of continuous employment as a dental assistant, and current CPR certification."
+    },
+    {
+      "title": "Attest to Knowledge of Rules",
+      "description": "Attest within the WV Board of Dental Examiners Online Services Portal that you have read and understood the Board's rules and statutes relevant to the practice of dental assisting in West Virginia."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required initial registration fee of $30.00 through the WV Board of Dental Examiners Online Services Portal using a credit/debit card or other accepted payment method."
+    },
+    {
+      "title": "Await Board Review",
+      "description": "After submitting your complete application and all required documents and fees via the Online Services Portal, await review and approval from the West Virginia Board of Dental Examiners. You will be notified of your registration status upon completion of the review process."
     }
   ],
   "documents": [
@@ -123,11 +137,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 30,
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "mid",
     "board_url": "https://wvdentalboard.org/",
-    "endorsement_url": "https://wvdentalboard.org/",
+    "endorsement_url": "https://www.wvdentalboard.org/upload/files/WV_5BCSR2_Dental_Assistants.pdf",
     "notes": "Dental assistants can apply for Registered Dental Assistant through the West Virginia Board of Dental Examiners by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in West Virginia",
-        "dek": "West Virginia Dental Assistant registration requires current CPR certification, registration application submission, and adherence to state regulations."
+        "dek": "To apply for a Dental Assistant registration in West Virginia, applicants must submit their application through the WV Board of Dental Examiners Online Services Portal."
       }
     }
   },
@@ -172,5 +186,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "WV Board of Dental Examiners Online Services Portal",
+    "portal_url": "https://wvbdx.us.thentiacloud.net/",
+    "registration_steps": "Visit the WV Board of Dental Examiners Online Services Portal and click 'Register Now' or 'Create an Account'. Follow the prompts to set up a new user ID and password, then verify your email address to activate your account before logging in to access application services.",
+    "provider_search": "https://wvbdx.us.thentiacloud.net/Public/Search"
   }
 }

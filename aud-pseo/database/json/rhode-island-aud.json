@@ -21,18 +21,20 @@
   "board": {
     "name": "Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Rhode Island Department of Health",
-    "mailing_address": "3 Capitol Hill, Room 104, Providence, RI 02908-5097",
+    "mailing_address": "RI Dept. of Health, 3 Capitol Hill, Room 104, Providence, RI 02908",
     "physical_address": "3 Capitol Hill, Room 104, Providence, RI 02908",
     "phone": "(401) 222-2828",
     "fax": "(401) 222-1272",
-    "email": "mailto:health.licensing@health.ri.gov",
-    "url": "https://health.ri.gov/licenses/detail.php?id=225"
+    "email": "DOH.Licensing@health.ri.gov",
+    "url": "https://health.ri.gov/licenses/detail.php?id=225",
+    "contact_url": "https://health.ri.gov/licensing/",
+    "verify_url": "https://healthri.mylicense.com/Verification/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$60",
+    "renewal_cycle": "Annually",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a Doctoral Degree",
-      "description": "Obtain a Doctor of Audiology (AuD) degree from an accredited educational institution."
+      "title": "Register on the Rhode Island Professional Online Portal",
+      "description": "Create a new user account at https://healthri.mylicense.com/ if you do not already have one."
     },
     {
-      "title": "Pass the Audiology Examination",
-      "description": "Achieve a passing score on the Audiology Examination administered by a professional testing service approved by the board."
+      "title": "Complete and Submit Online Application",
+      "description": "Log in to the Rhode Island Professional Online Portal, select \"New License Application\" for Audiologist, complete all required fields, upload necessary documents, and pay the $60 application fee."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete the application for licensure and submit all required documentation, including official transcripts and examination scores, to the Rhode Island Board of Speech-Language Pathology and Audiology."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official graduate transcripts, demonstrating a master's or doctoral degree in audiology from an accredited institution, to be sent directly to the Board of Examiners in Speech-Language Pathology and Audiology."
+    },
+    {
+      "title": "Provide Verification of Clinical Competence and Praxis Scores",
+      "description": "Submit proof of successful completion of supervised clinical experience (e.g., ASHA Certificate of Clinical Competence (CCC-A) or directly verified clinical fellowship hours) and official passing scores for the Praxis Examination in Audiology directly to the Board."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "The Board will review your completed application and all supporting documentation. Upon approval, your Audiologist license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 60,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.ri.gov/licenses/detail.php?id=225",
-    "endorsement_url": "https://health.ri.gov/licenses/detail.php?id=225",
+    "endorsement_url": "https://health.ri.gov/forms/licenses/AudiologistLicensureRequirements.pdf",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "rhode-island-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Rhode Island",
-        "dek": "Rhode Island Audiologist licenses require an AuD degree, a passing score on the Audiology Examination, and completion of supervised professional experience."
+        "dek": "To apply for an Audiologist license in Rhode Island, you must complete an application and submit all required documentation through the Rhode Island Professional Online Portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Rhode Island Professional Online Portal",
+    "portal_url": "https://healthri.mylicense.com/",
+    "registration_steps": "Go to https://healthri.mylicense.com/, click \"Register a New User\" and follow the prompts to create an account with a valid email address and password.",
+    "provider_search": "https://healthri.mylicense.com/Verification/"
   }
 }

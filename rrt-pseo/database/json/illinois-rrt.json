@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity illinois, how to transfer respiratory therapist license to illinois, respiratory therapist compact illinois, illinois respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Illinois IDFPR — Respiratory Care",
+    "name": "Illinois IDFPR \u2014 Respiratory Care",
     "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
-    "mailing_address": "See board website",
+    "mailing_address": "Illinois Department of Financial and Professional Regulation\nATTN: Division of Professional Regulation\n320 W. Washington, 3rd Floor\nSpringfield, IL 62786",
     "physical_address": "See board website",
-    "phone": "(888) 473-4858",
+    "phone": "1-888-4REGUL8 (1-888-473-4858)",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://idfpr.illinois.gov/dpr.html"
+    "url": "https://idfpr.illinois.gov/dpr.html",
+    "contact_url": "https://www.idfpr.com/ContactUs.asp",
+    "verify_url": "https://www.idfpr.com/licenselookup/licenselookup.asp"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$20",
+    "renewal_cycle": "Every 2 years (May 31 of odd-numbered years)",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) exam",
     "ce_requirement": "24 hours every 2 years"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Approved Respiratory Care Education Program",
-      "description": "Graduate from a respiratory care education program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or an equivalent accrediting body."
+      "title": "Create an IDFPR Online Services Portal Account",
+      "description": "Visit the IDFPR Online Services Portal at https://www.idfpr.com/Default.asp?redirect=true and register as a new user if you do not already have an IDFPR license or account. You will need to verify your email and set up security questions."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) Therapist Multiple-Choice Examination (TMC) and Clinical Simulation Examination (CSE)."
+      "title": "Complete and Submit the Online Application",
+      "description": "Log in to your IDFPR Online Services Portal account, select 'Apply for a new license', and complete the Respiratory Care Practitioner application. You will need to provide personal details, educational history, and attestations regarding child support and student loans."
     },
     {
-      "title": "Apply for an Illinois Respiratory Care License",
-      "description": "Submit an application to the Illinois Department of Financial and Professional Regulation (IDFPR) and pay the required fee."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your accredited respiratory care program to send official transcripts directly to the Illinois Department of Financial and Professional Regulation (IDFPR). The transcripts must confirm completion of a program meeting Illinois requirements."
+    },
+    {
+      "title": "Provide NBRC RRT Credential Verification",
+      "description": "Ensure the National Board for Respiratory Care (NBRC) verifies your Registered Respiratory Therapist (RRT) credential directly to IDFPR, confirming you have passed the required examination."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the required application fee of $20.00 through the IDFPR Online Services Portal during the application process. This fee covers initial licensure or licensure by endorsement."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 20,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://idfpr.illinois.gov/dpr.html",
-    "endorsement_url": "https://idfpr.illinois.gov/dpr.html",
+    "endorsement_url": "https://www.idfpr.com/profs/Forms/respiratory.asp",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Illinois",
-        "dek": "Illinois Respiratory Therapist License requires graduation from an approved respiratory care education program, passing the NBRC exam, and paying the required fees."
+        "dek": "To obtain your Respiratory Care Practitioner license in Illinois, you must apply online through the IDFPR Online Services Portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "IDFPR Online Services Portal",
+    "portal_url": "https://www.idfpr.com/Default.asp?redirect=true",
+    "registration_steps": "1. Navigate to the IDFPR Online Services Portal.\n2. Click 'New User? Register Now' to create an account.\n3. Follow the prompts to provide personal information, verify your email address, and set up security questions.\n4. Once your account is successfully created and verified, log in.\n5. Select 'Apply for a new license' to begin your Respiratory Care Practitioner application.",
+    "provider_search": "https://www.idfpr.com/licenselookup/licenselookup.asp"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Nevada State Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "4220 S. Maryland Parkway, Suite 300, Las Vegas, NV 89119-7561",
     "physical_address": "See board website",
     "phone": "(702) 486-5800",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://nevadanursingboard.org/"
+    "url": "https://nevadanursingboard.org/",
+    "contact_url": "https://nsbn.nv.gov/contact-us/",
+    "verify_url": "https://nv.my.site.com/nursys/s/license-verification"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "8 to 16 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "training_hours": "75 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,20 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Nevada-approved CNA training program, usually 75 hours long."
+      "title": "Register and Apply Online",
+      "description": "Create an account and submit your Certified Nursing Assistant (CNA) application online through the Nevada Nurse Portal."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Nevada nurse aide exam."
+      "title": "Submit Required Documentation",
+      "description": "Submit all required supporting documentation, such as official transcripts of your CNA training program, directly to the Nevada State Board of Nursing."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Complete Fingerprint Background Check",
+      "description": "Undergo the mandatory fingerprint background check as instructed by the Nevada State Board of Nursing."
+    },
+    {
+      "title": "Pass the Competency Examination",
+      "description": "Pass both the written and skills portions of the Nevada CNA competency examination, which is administered by Credentia."
     }
   ],
   "documents": [
@@ -121,11 +127,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
-    "processing_time": "8 to 16 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "slow",
     "board_url": "https://nevadanursingboard.org/",
-    "endorsement_url": "https://nevadanursingboard.org/",
+    "endorsement_url": "https://nsbn.nv.gov/licensure-certification/cna-certified-nursing-assistant/application-instructions-certification-by-endorsement/",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +176,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Nevada",
-        "dek": "Nevada CNA certification requires a 75-hour training program, Nevada State Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for a Certified Nursing Assistant (CNA) license in Nevada, users must register and submit their application through the Nevada Nurse Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Nevada",
@@ -216,5 +222,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Nevada Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nevada Nurse Portal",
+    "portal_url": "https://nv.my.site.com/nursys/s/",
+    "registration_steps": "Visit the Nevada Nurse Portal and click 'Register' for first-time users. Complete the registration form to create an account, then log in to start a new application.",
+    "provider_search": "https://nv.my.site.com/nursys/s/license-verification"
   }
 }

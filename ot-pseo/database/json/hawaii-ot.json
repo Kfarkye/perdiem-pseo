@@ -19,21 +19,23 @@
     "keywords": "occupational therapist license reciprocity hawaii, how to transfer occupational therapist license to hawaii, occupational therapist compact hawaii, hawaii occupational therapist endorsement application"
   },
   "board": {
-    "name": "Hawaii DCCA Professional & Vocational Licensing — OT",
+    "name": "Hawaii DCCA Professional & Vocational Licensing \u2014 OT",
     "parent_dept": "Hawaii Department of Health (DOH) Office of Health Care Assurance",
-    "mailing_address": "See board website",
+    "mailing_address": "DCCA, PVL Licensing Branch, P.O. Box 3469, Honolulu, HI 96801",
     "physical_address": "See board website",
     "phone": "(808) 586-3000",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://cca.hawaii.gov/pvl/"
+    "email": "pvl@dcca.hawaii.gov",
+    "url": "https://cca.hawaii.gov/pvl/",
+    "contact_url": "https://cca.hawaii.gov/pvl/contact/",
+    "verify_url": "https://pvl.ehawaii.gov/pvlsearch/"
   },
   "quick_facts": {
     "total_fee": "$279",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$186",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Every 2 years (by June 30th of odd-numbered years)",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT)",
     "ce_requirement": "36 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited OT Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create a MyPVL Account",
+      "description": "Visit the MyPVL portal at https://pvl.ehawaii.gov/pvl/ and register for a new user account if you do not already have one. You will need to provide an email and create a password."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Start Your Application Online",
+      "description": "Log in to your MyPVL account, select 'Board of Occupational Therapy' and then choose the appropriate application type, such as 'Occupational Therapist by Examination' or 'Occupational Therapist by Endorsement'."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit an application for licensure to the Hawaii Board of Occupational Therapy, including all required documentation and fees."
+      "title": "Complete Application and Upload Documents",
+      "description": "Fill out all required sections of the online application form. Upload necessary supporting documents, which may include official transcripts, NBCOT scores, and verification of licensure from other states."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Submit the required non-refundable application fee ($60) and the initial license fee through the MyPVL system using a credit card."
+    },
+    {
+      "title": "Arrange for Supporting Documentation Submission",
+      "description": "Ensure official NBCOT scores (for examination applicants) and/or official verifications of licensure from any state where you hold or have held a license (for endorsement applicants) are sent directly to the Hawaii Board of Occupational Therapy."
+    },
+    {
+      "title": "Await Board Review",
+      "description": "The Board meets once a month to review completed applications. You will be notified via MyPVL regarding the status of your application or if any further information is required."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 279,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 60,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://cca.hawaii.gov/pvl/",
-    "endorsement_url": "https://cca.hawaii.gov/pvl/",
+    "endorsement_url": "https://cca.hawaii.gov/pvl/boards/occupational_therapy/",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Hawaii",
-        "dek": "Hawaii Occupational Therapist license requires graduation from an ACOTE accredited program, passing the NBCOT exam, and completing the application process."
+        "dek": "To apply for an Occupational Therapist license in Hawaii, you must utilize the MyPVL online portal managed by the Department of Commerce and Consumer Affairs Professional & Vocational Licensing Division."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyPVL",
+    "portal_url": "https://pvl.ehawaii.gov/pvl/",
+    "registration_steps": "Navigate to the MyPVL portal, click on 'New User Registration' or 'Apply for a New License'. Follow the prompts to create an account using your email address, verify your account, and then log in to begin your application.",
+    "provider_search": "https://pvl.ehawaii.gov/pvlsearch/"
   }
 }

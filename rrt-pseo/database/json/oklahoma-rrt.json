@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity oklahoma, how to transfer respiratory therapist license to oklahoma, respiratory therapist compact oklahoma, oklahoma respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Oklahoma Board of Medical Licensure — RT",
+    "name": "Oklahoma Board of Medical Licensure \u2014 RT",
     "parent_dept": "Oklahoma State Board of Medical Licensure and Supervision",
-    "mailing_address": "See board website",
+    "mailing_address": "101 NE 51st Street, Oklahoma City, OK 73105-1821",
     "physical_address": "See board website",
     "phone": "(405) 962-1400",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.okmedicalboard.org/"
+    "email": "license@okmedicalboard.org",
+    "url": "https://www.okmedicalboard.org/",
+    "contact_url": "https://www.okmedicalboard.org/contact",
+    "verify_url": "https://www.okmedicalboard.org/verification"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Therapy Program",
-      "description": "Graduate from a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create an Account and Apply Online",
+      "description": "Register an account on the OK Medical Board Online Licensure System and complete the Respiratory Care Practitioner application, providing all necessary personal and professional information."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts from your CoARC-approved respiratory care program to be sent directly from your educational institution to the Oklahoma Board of Medical Licensure and Supervision."
     },
     {
-      "title": "Submit an Application to the Oklahoma Board of Medical Licensure",
-      "description": "Apply for licensure with the Oklahoma Board of Medical Licensure and pay the associated fee."
+      "title": "Provide NBRC Scores",
+      "description": "Request official RRT examination scores from the National Board for Respiratory Care (NBRC) to be sent directly to the Oklahoma Board of Medical Licensure and Supervision."
+    },
+    {
+      "title": "Complete Background Check",
+      "description": "Schedule and complete a national criminal history record check by submitting fingerprints through IdentoGO, ensuring the results are sent to the Board as required."
+    },
+    {
+      "title": "Pay Application and Initial License Fees",
+      "description": "Remit the non-refundable application fee ($150) and the initial license fee ($100) through the online portal or as instructed by the Board."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "The Board will review all submitted documentation. Upon successful verification of all requirements, your license will be issued, and you will be notified."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 100,
-    "processing_time": "6 to 8 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.okmedicalboard.org/",
-    "endorsement_url": "https://www.okmedicalboard.org/",
+    "endorsement_url": "https://www.okmedicalboard.org/respiratory-care-practitioners/licensing-requirements",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Oklahoma",
-        "dek": "Oklahoma Respiratory Therapist licenses require graduation from an accredited program, passing the NBRC examination, and completing a background check."
+        "dek": "To apply for an Oklahoma Respiratory Care Practitioner license, applicants must create an account and submit their application through the OK Medical Board Online Licensure System."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "OK Medical Board Online Licensure System",
+    "portal_url": "https://ok.igovtportal.com/",
+    "registration_steps": "Go to the OK Medical Board Online Licensure System, click 'Register Here' to create a new user account, follow the prompts to provide personal information and create login credentials, then log in to access the application options.",
+    "provider_search": "https://www.okmedicalboard.org/verification"
   }
 }

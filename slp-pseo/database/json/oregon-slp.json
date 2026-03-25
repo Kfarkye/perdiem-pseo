@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "Oregon Board of Examiners for SLP and Audiology",
-    "mailing_address": "800 NE Oregon St., Suite 407, Portland, OR 97232",
+    "mailing_address": "Oregon Board of Speech-Language Pathology and Audiology\n800 NE Oregon St, Suite 407\nPortland, OR 97232",
     "physical_address": "800 NE Oregon St., Suite 407, Portland, OR 97232",
-    "phone": "(971) 673-0220",
+    "phone": "(503) 947-2000",
     "fax": "(971) 673-0226",
-    "email": "mailto:oboeslpa@oregon.gov",
-    "url": "https://www.oregon.gov/oboeslpa/"
+    "email": "obslpa.info@oregon.gov",
+    "url": "https://www.oregon.gov/oboeslpa/",
+    "contact_url": "https://www.oregon.gov/obslpa/Pages/Contact-Us.aspx",
+    "verify_url": "https://www.oregon.gov/obslpa/Pages/Licensee-Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$100 application + $100 license fee",
-    "renewal_fee": "$100",
+    "renewal_fee": "$225",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Earn a master's degree or doctoral degree in speech-language pathology from an accredited educational institution."
+      "title": "Create Account and Submit Application",
+      "description": "Register for an account on the Oregon eLicense portal, log in, and complete the online application form for Speech-Language Pathologist licensure. Pay the required application fee through the system."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience (clinical fellowship) as specified by the board."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official graduate transcripts, verifying a master's or doctoral degree in Speech-Language Pathology, to be sent directly from your educational institution to the Oregon Board of Speech-Language Pathology and Audiology."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit an application for licensure to the Oregon Board of Examiners for Speech-Language Pathology and Audiology."
+      "title": "Provide Praxis Scores or ASHA CCC Verification",
+      "description": "Submit official scores for the Praxis Examination in Speech-Language Pathology directly from ETS to the Board, or arrange for ASHA to verify your Certificate of Clinical Competence (CCC) if you hold it."
+    },
+    {
+      "title": "Complete Clinical Fellowship Verification",
+      "description": "If you do not hold an ASHA CCC, complete and submit the Clinical Fellowship Report form. If you hold an ASHA CCC, arrange for ASHA to verify it directly with the Board."
+    },
+    {
+      "title": "Undergo Fingerprint-Based Background Check",
+      "description": "Follow the instructions provided by the Board to complete the fingerprinting process for a criminal background check."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 225,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oregon.gov/oboeslpa/",
-    "endorsement_url": "https://www.oregon.gov/oboeslpa/",
+    "endorsement_url": "https://www.oregon.gov/obslpa/Pages/SLP-Licensure.aspx",
     "notes": "Oregon does not participate in the ASLP Interstate Compact."
   },
   "slug": "oregon-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Oregon",
-        "dek": "Oregon Speech-Language Pathologist license requires a master's degree, supervised professional experience, and passing the Praxis examination."
+        "dek": "Apply for your Speech-Language Pathologist license in Oregon through the Oregon eLicense system, the state's online licensing portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Oregon eLicense",
+    "portal_url": "https://elicense.oregon.gov/eGov/Login.aspx",
+    "registration_steps": "1. Navigate to the Oregon eLicense portal URL.\n2. Click 'Register a New User Account' to create your profile.\n3. Follow the prompts to enter personal information, set up security questions, and create a username and password.\n4. Verify your email address, if required, to activate your account.\n5. Once registered, log in to your account to begin the application for an SLP license.",
+    "provider_search": "https://www.oregon.gov/obslpa/Pages/Licensee-Search.aspx"
   }
 }

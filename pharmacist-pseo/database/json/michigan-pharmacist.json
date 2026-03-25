@@ -21,19 +21,21 @@
   "board": {
     "name": "Michigan Board of Pharmacy",
     "parent_dept": "Michigan Department of Licensing and Regulatory Affairs (LARA)",
-    "mailing_address": "See board website",
+    "mailing_address": "Michigan Department of Licensing and Regulatory Affairs\nBureau of Professional Licensing\nBoard of Pharmacy\nP.O. Box 30670\nLansing, MI 48909",
     "physical_address": "See board website",
-    "phone": "(517) 241-0199",
+    "phone": "(517) 373-8068",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.michigan.gov/lara/0,4601,7-154-72600---,00.html"
+    "email": "LARA-BPL-Help@michigan.gov",
+    "url": "https://www.michigan.gov/lara/0,4601,7-154-72600---,00.html",
+    "contact_url": "https://www.michigan.gov/lara/bureau-list/bpl/board-of-pharmacy/contact-us",
+    "verify_url": "https://www.lara.michigan.gov/VOP/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional pharmacy degree program from an ACPE-accredited institution."
+      "title": "Create a MiPLUS Account",
+      "description": "Register for a new user account on the Michigan Professional Licensing User System (MiPLUS) at https://www.michigan.gov/lara/online-services/miplus if you do not already have one."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Submit Online Application via MiPLUS",
+      "description": "Log in to your MiPLUS account, select 'New Application,' choose the appropriate Pharmacist application type (e.g., 'Pharmacist - Original License' or 'Pharmacist - By Endorsement'), complete all required sections, and pay the application fee."
     },
     {
-      "title": "Apply for a Pharmacist License",
-      "description": "Submit an application for licensure to the Michigan Board of Pharmacy along with required documentation and fees."
+      "title": "Submit Required Documentation",
+      "description": "Upload necessary supporting documents directly to your MiPLUS application, which may include official transcripts (sent directly from your college of pharmacy), proof of internship hours, and any other requested materials."
+    },
+    {
+      "title": "Pass Licensure Examinations",
+      "description": "Register for and pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE). Ensure your scores are sent directly to the Michigan Board of Pharmacy by NABP."
+    },
+    {
+      "title": "Await Board Review and Issuance",
+      "description": "Once all application components, examination scores, and supporting documents are received and verified by the Michigan Board of Pharmacy, your application will be reviewed and a license will be issued if all requirements are met."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.michigan.gov/lara/0,4601,7-154-72600---,00.html",
-    "endorsement_url": "https://www.michigan.gov/lara/0,4601,7-154-72600---,00.html",
+    "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl/board-of-pharmacy/new-applicants",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "michigan-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Michigan",
-        "dek": "Michigan Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completion of practical experience hours."
+        "dek": "To apply for a Pharmacist license in Michigan, you must submit an application through the Michigan Professional Licensing User System (MiPLUS) after creating an account."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Michigan Professional Licensing User System (MiPLUS)",
+    "portal_url": "https://www.michigan.gov/lara/online-services/miplus",
+    "registration_steps": "To begin, navigate to the MiPLUS portal. If you are a new user, click 'Register for an Account' to create your profile. Once registered, log in to your account to access the licensing application options.",
+    "provider_search": "https://www.lara.michigan.gov/VOP/"
   }
 }

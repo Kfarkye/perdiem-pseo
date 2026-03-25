@@ -21,19 +21,21 @@
   "board": {
     "name": "Speech-Language Pathologist, Audiologist, and Hearing Instrument Dispenser Advisory Council",
     "parent_dept": "Minnesota Department of Health (MDH)",
-    "mailing_address": "P.O. Box 64975, St. Paul, MN 55164-0975",
+    "mailing_address": "Minnesota Department of Health, Health Regulation Division, P.O. Box 64970, St. Paul, MN 55164-0970",
     "physical_address": "85 E. 7th Place, Suite 220, St. Paul, MN 55164",
-    "phone": "(651) 201-3726",
+    "phone": "651-201-3725",
     "fax": "(651) 201-3839",
-    "email": "mailto:health.slp-aud@state.mn.us",
-    "url": "https://www.health.state.mn.us/facilities/providers/slp/index.html"
+    "email": "health.slpa@state.mn.us",
+    "url": "https://www.health.state.mn.us/facilities/providers/slp/index.html",
+    "contact_url": "https://www.health.state.mn.us/facilities/providers/slpaudio/contact.html",
+    "verify_url": "https://mneboard.health.state.mn.us/LicenseVerification"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$200 application and license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years (June 30)",
-    "processing_time": "4 to 6 weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Annually (by December 31st)",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Clinical Experience",
-      "description": "Earn a master’s degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in audiology and speech-language pathology, and complete the required supervised clinical experience."
+      "title": "Create an Account and Start Application",
+      "description": "Register for a new account on the MDH eLicense portal. Once logged in, select the application for Speech-Language Pathologist licensure."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Complete Online Application",
+      "description": "Fill out the entire application form within the MDH eLicense portal, providing all requested personal, educational, and professional history."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Minnesota Department of Health, including all required documentation and fees."
+      "title": "Submit Required Documentation",
+      "description": "Upload or arrange for official submission of all required documents, including official transcripts from your graduate program, official Praxis exam scores, and a completed Clinical Fellowship Report (if applying by examination). For endorsement, ensure current license verification."
+    },
+    {
+      "title": "Arrange for License Verification (Endorsement)",
+      "description": "If you hold an active license in another state, arrange for each issuing licensing board to send official verification of your license directly to the Minnesota Department of Health."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $100 through the MDH eLicense portal to finalize your application submission."
+    },
+    {
+      "title": "Await Review and Approval",
+      "description": "The Minnesota Department of Health will review your complete application and all submitted documentation. You will be notified of your licensure status once the review is complete."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.health.state.mn.us/facilities/providers/slp/index.html",
-    "endorsement_url": "https://www.health.state.mn.us/facilities/providers/slp/index.html",
+    "endorsement_url": "https://www.health.state.mn.us/facilities/providers/slpaudio/apply.html",
     "notes": "Minnesota is a member of the ASLP Interstate Compact."
   },
   "slug": "minnesota-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Minnesota",
-        "dek": "Minnesota Speech-Language Pathologist license requires a master’s degree, supervised clinical experience, and passing the national exam."
+        "dek": "To apply for Speech-Language Pathologist licensure in Minnesota, you must submit your application and all supporting documentation through the MDH eLicense portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MDH eLicense portal",
+    "portal_url": "https://mneboard.health.state.mn.us/Account/Login",
+    "registration_steps": "Visit the MDH eLicense portal and click 'Register' to create a new account using your email address and preferred password. Follow the prompts to verify your email and complete the initial profile setup before starting an application.",
+    "provider_search": "https://mneboard.health.state.mn.us/LicenseVerification"
   }
 }

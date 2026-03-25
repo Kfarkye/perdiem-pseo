@@ -15,24 +15,26 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Arizona Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant requirements in Arizona — fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant requirements in Arizona \u2014 fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license arizona, dental assistant certification arizona, RDA arizona, DANB CDA arizona, dental assistant radiography arizona"
   },
   "board": {
     "name": "Arizona State Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "1740 W Adams St, Suite 2400, Phoenix, AZ 85007",
     "physical_address": "See board website",
     "phone": "(602) 242-1492",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dentalboard.az.gov/"
+    "email": "dentalboard@az.gov",
+    "url": "https://dentalboard.az.gov/",
+    "contact_url": "https://dentalboard.az.gov/contact-us",
+    "verify_url": "https://elicense.az.gov/Verification/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "N/A",
+    "renewal_fee": "$0",
+    "renewal_cycle": "Not applicable (one-time notification)",
     "processing_time": "2 to 4 Weeks",
     "license_duration": "N/A",
     "ce_requirement": "12 hours every 3 years"
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Complete a dental assisting program accredited by the Commission on Dental Accreditation (CODA) or receive on-the-job training from a licensed dentist."
+      "title": "Review Expanded Functions Requirements",
+      "description": "Thoroughly review the Arizona State Board of Dental Examiners (ASBDE) website, particularly the 'Dental Assistant' section and the 'Dental Assistant Expanded Functions Reference Guide,' to understand the specific training, education, and certifications required for each expanded function you intend to perform."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit the Dental Assistant registration application to the Arizona State Board of Dental Examiners."
+      "title": "Complete Training and Obtain Certifications",
+      "description": "Successfully complete all necessary board-approved training programs and obtain required certifications, such as CPR/BLS and specific certifications for each expanded function (e.g., Coronal Polishing, Pit and Fissure Sealants, Nitrous Oxide Monitoring), as outlined by the ASBDE."
     },
     {
-      "title": "Maintain Registration",
-      "description": "Complete 12 hours of continuing education every three years to maintain your Dental Assistant registration."
+      "title": "Gather Supporting Documentation",
+      "description": "Compile all required supporting documentation, which may include official transcripts, course completion certificates, Dental Assisting National Board (DANB) certifications, and current CPR/BLS cards, to demonstrate fulfillment of all expanded function notification requirements."
+    },
+    {
+      "title": "Create an Online Account",
+      "description": "If you do not already have one, create a new applicant account on the ASBDE Online Services Portal (elicense.az.gov) by clicking 'Create Account' and providing the requested personal and login information."
+    },
+    {
+      "title": "Submit Expanded Function Notification",
+      "description": "Log in to your account on the ASBDE Online Services Portal (elicense.az.gov), navigate to the appropriate section for dental assistant expanded function notifications, complete the electronic form, and upload all prepared supporting documents for review by the Board."
     }
   ],
   "documents": [
@@ -127,7 +137,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dentalboard.az.gov/",
-    "endorsement_url": "https://dentalboard.az.gov/",
+    "endorsement_url": "https://dentalboard.az.gov/dental-assistants",
     "notes": "Arizona does not license general dental assistants. Certification required for expanded functions like radiography and coronal polishing.",
     "requires_psv": false,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Arizona",
-        "dek": "Arizona Dental Assistant Registration requires graduation from a CODA-accredited program or completion of on-the-job training, application to the Board, and compliance with continuing education requirements."
+        "dek": "Dental assistants in Arizona seeking to perform expanded functions must submit their notification, along with all supporting documentation, through the Arizona State Board of Dental Examiners' ASBDE Online Services Portal (elicense.az.gov) after meeting specific training requirements."
       }
     }
   },
@@ -172,5 +182,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ASBDE Online Services Portal (elicense.az.gov)",
+    "portal_url": "https://elicense.az.gov/",
+    "registration_steps": "Navigate to elicense.az.gov, click 'Create Account' from the left-hand menu, and follow the prompts to enter your personal information and create your login credentials.",
+    "provider_search": "https://elicense.az.gov/Verification/Search.aspx"
   }
 }

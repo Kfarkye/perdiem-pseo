@@ -21,18 +21,20 @@
   "board": {
     "name": "Dietitians Certification Board",
     "parent_dept": "Indiana Professional Licensing Agency (IPLA)",
-    "mailing_address": "402 West Washington Street, Room W072<br>Indianapolis, IN 46204",
+    "mailing_address": "Indiana Professional Licensing Agency, 402 W Washington Street, Room W072, Indianapolis, IN 46204",
     "physical_address": "402 West Washington Street, Room W072<br>Indianapolis, IN 46204",
     "phone": "(317) 234-2060",
     "fax": "",
-    "email": "mailto:pla3@pla.in.gov",
-    "url": "https://www.in.gov/pla/professions/dietitians/"
+    "email": "pla10@pla.in.gov",
+    "url": "https://www.in.gov/pla/professions/dietitians/",
+    "contact_url": "https://www.in.gov/pla/contact-us/",
+    "verify_url": "https://mylicense.in.gov/eGov/search/QuickLicenseSearch.aspx"
   },
   "quick_facts": {
     "total_fee": "$20",
     "fee_breakdown": "$20 application fee (fingerprint fees additional)",
-    "renewal_fee": "$20",
-    "renewal_cycle": "Every 2 years (by Dec 31, even years) + 30 CE hours",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years (expires Dec 31, even years)",
     "exam_name": "Registration Examination for Dietitians",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education and Supervised Practice",
-      "description": "You must complete a didactic program in dietetics and supervised practice accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Create a MyLicense.IN.gov Account",
+      "description": "Visit MyLicense.IN.gov and register for a new user account or log in if you already have one. This portal is used for all licensing applications and management."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "You must pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Initiate Online Application",
+      "description": "From your MyLicense.IN.gov dashboard, select 'Apply for a new license' and choose the 'Dietitian Certification' application type to begin filling out the required forms."
     },
     {
-      "title": "Apply for Certification",
-      "description": "Submit an application for certification to the Indiana Dietitians Certification Board and pay the required fee."
+      "title": "Complete Application & Upload Documents",
+      "description": "Fill out the entire online application thoroughly. Upload all necessary supporting documentation, which typically includes official transcripts from an approved didactic program, verification of supervised practice, and proof of passing the Commission on Dietetic Registration (CDR) exam."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required $100 application fee electronically through the secure MyLicense.IN.gov system using a credit or debit card."
+    },
+    {
+      "title": "Submit & Monitor Application Status",
+      "description": "Once all sections are complete and fees paid, formally submit your application. You can then monitor the processing status directly from your MyLicense.IN.gov account for updates."
     }
   ],
   "documents": [
@@ -81,7 +91,7 @@
   "faqs": [
     {
       "question": "How much does an Indiana dietitian certification cost?",
-      "answer": "The initial application fee is only $20 — one of the lowest in the country. The biennial renewal is also $20 (plus a $10 late fee if submitted after December 31). Fingerprint background check fees are paid separately to the vendor."
+      "answer": "The initial application fee is only $20 \u2014 one of the lowest in the country. The biennial renewal is also $20 (plus a $10 late fee if submitted after December 31). Fingerprint background check fees are paid separately to the vendor."
     },
     {
       "question": "Is Indiana dietitian certification required to practice?",
@@ -136,11 +146,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 20,
+    "endorsement_fee": 100,
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.in.gov/pla/professions/dietitians/",
-    "endorsement_url": "https://www.in.gov/pla/professions/dietitians/",
+    "endorsement_url": "https://www.in.gov/pla/boards/dietitians/apply-for-a-license/",
     "notes": "Indiana does not have a formal endorsement or reciprocity pathway. Out-of-state dietitians apply through the standard application process. Holding current CDR registration satisfies the education and examination requirements. You must still submit the application, $20 fee, transcripts, and complete the Indiana fingerprint background check.",
     "requires_psv": true
   },
@@ -156,7 +166,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Indiana",
-        "dek": "Indiana Dietitian certification requires completion of academic requirements, passing the Registration Examination for Dietitians, and paying the required fee."
+        "dek": "To apply for a Dietitian Certification in Indiana, navigate to MyLicense.IN.gov and create an account to begin the online application process."
       }
     }
   },
@@ -182,5 +192,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense.IN.gov",
+    "portal_url": "https://mylicense.in.gov/",
+    "registration_steps": "Navigate to MyLicense.IN.gov, click 'Register a New Account' if you don't have one, then follow the prompts to create your professional licensing profile.",
+    "provider_search": "https://mylicense.in.gov/eGov/search/QuickLicenseSearch.aspx"
   }
 }

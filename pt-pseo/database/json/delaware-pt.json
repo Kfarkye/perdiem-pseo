@@ -21,19 +21,21 @@
   "board": {
     "name": "Delaware Board of Physical Therapy",
     "parent_dept": "Delaware Division of Professional Regulation",
-    "mailing_address": "See board website",
+    "mailing_address": "Cannon Building, 861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
     "physical_address": "See board website",
     "phone": "(302) 744-4500",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dpr.delaware.gov/boards/physicaltherapy/"
+    "email": "customerservice.dpr@delaware.gov",
+    "url": "https://dpr.delaware.gov/boards/physicaltherapy/",
+    "contact_url": "https://professionallicensing.delaware.gov/contact-us/",
+    "verify_url": "https://professionallicensing.delaware.gov/licenselookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$130",
+    "renewal_cycle": "Every 2 years by March 31 of even-numbered years",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "30 contact hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Graduate from a CAPTE-accredited physical therapy program."
+      "title": "Create a DELPROS Account",
+      "description": "Register as a new user on the DELPROS online portal at delpros.delaware.gov to initiate your application process."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Achieve a passing score on the NPTE."
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Log into your DELPROS account, select the 'Physical Therapist' application type, complete all sections of the application, and pay the non-refundable application fee."
     },
     {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit a completed application, required documentation, and fees to the Delaware Board of Physical Therapy."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, verifying completion of your accredited physical therapy program, to be sent directly from your educational institution to the Delaware Board of Physical Therapy via DELPROS."
+    },
+    {
+      "title": "Provide Verification of Licensure (for Endorsement)",
+      "description": "If you hold or have held a PT license in another U.S. state or territory, request official verification of licensure from each jurisdiction, sent directly to DELPROS. This verification must include your NPTE scores."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Follow the instructions provided within DELPROS after submitting your application to complete both state and federal criminal background checks through approved vendors."
+    },
+    {
+      "title": "Review by the Board",
+      "description": "Once all required documents and fees are received and processed by DELPROS, your complete application will be reviewed by the Delaware Board of Physical Therapy for final approval."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 273,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dpr.delaware.gov/boards/physicaltherapy/",
-    "endorsement_url": "https://dpr.delaware.gov/boards/physicaltherapy/",
+    "endorsement_url": "https://professionallicensing.delaware.gov/boards/physical-therapy/apply-for-a-new-license/",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "delaware-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Delaware",
-        "dek": "Delaware Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination, and completing a criminal background check."
+        "dek": "Physical Therapists seeking licensure in Delaware must submit their application and all required supporting documentation through the state's DELPROS online system."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DELPROS",
+    "portal_url": "https://delpros.delaware.gov/",
+    "registration_steps": "To create an account, navigate to the DELPROS login page and click 'Register a New User'. Follow the prompts to set up your account and then log in to start your application.",
+    "provider_search": "https://professionallicensing.delaware.gov/licenselookup/"
   }
 }

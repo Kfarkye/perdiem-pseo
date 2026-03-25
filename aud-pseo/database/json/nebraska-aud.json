@@ -21,18 +21,20 @@
   "board": {
     "name": "Board of Audiology and Speech-Language Pathology",
     "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
-    "mailing_address": "P.O. Box 94986, Lincoln, NE 68509-4986",
+    "mailing_address": "Nebraska Department of Health and Human Services\nCredentialing Division\nP.O. Box 94986\nLincoln, NE 68509-4986",
     "physical_address": "301 Centennial Mall South, Lincoln, NE 68509",
-    "phone": "(402) 471-2117",
+    "phone": "(402) 471-2115",
     "fax": "(402) 471-3577",
-    "email": "mailto:dhhs.licensure@nebraska.gov",
-    "url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx"
+    "email": "dhhs.licensure@nebraska.gov",
+    "url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
+    "contact_url": "https://dhhs.ne.gov/Pages/Credentialing-Audiology-and-Speech-Language-Pathology.aspx",
+    "verify_url": "https://licensure.ne.gov/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$80",
+    "renewal_cycle": "Every 2 years (by September 1 of odd-numbered years)",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination (PRAXIS)",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Obtain a doctoral degree in audiology from an accredited educational institution."
+      "title": "Create NECO Account and Start Application",
+      "description": "Register and log in to the Nebraska Credentialing Online (NECO) system at https://ne.gov/go/NECO and initiate the Audiologist license application."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Audiology Examination (PRAXIS)."
+      "title": "Submit Application and Pay Fee",
+      "description": "Complete the online application form within NECO and pay the non-refundable $110.00 application fee."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application, required documentation, and fees to the Nebraska Board of Audiology and Speech-Language Pathology."
+      "title": "Arrange for Official Transcripts",
+      "description": "Request official transcripts from all post-secondary institutions where you completed audiology coursework to be sent directly to the Nebraska DHHS Credentialing Division."
+    },
+    {
+      "title": "Submit Verification of Clinical Experience",
+      "description": "Have your supervising audiologist complete and submit the official Verification of Clinical Experience (VCE) form directly to the Nebraska DHHS Credentialing Division."
+    },
+    {
+      "title": "Provide National Exam Scores and Criminal Background Check",
+      "description": "Arrange for official verification of your passing score on the national audiology examination (e.g., Praxis or ASHA CCC-A) to be sent, and complete the required fingerprint-based criminal background check through DHHS-approved channels."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 110,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
-    "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
+    "endorsement_url": "https://dhhs.ne.gov/Pages/Credentialing-Audiology-and-Speech-Language-Pathology.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "nebraska-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Nebraska",
-        "dek": "Nebraska Audiology license requires a qualifying doctoral degree in audiology, passing the Audiology Examination (PRAXIS), and completion of supervised professional experience."
+        "dek": "Audiologist licensing in Nebraska is managed through the Nebraska Credentialing Online (NECO) system, where all applications must be submitted."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nebraska Credentialing Online (NECO)",
+    "portal_url": "https://ne.gov/go/NECO",
+    "registration_steps": "To apply for an Audiologist license in Nebraska, create an account on the Nebraska Credentialing Online (NECO) system at https://ne.gov/go/NECO. Click 'Register' for a new user account, then log in to select 'Apply for a new license' and choose 'Audiologist'.",
+    "provider_search": "https://licensure.ne.gov/"
   }
 }

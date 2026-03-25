@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Examiners in Audiology and Speech-Language Pathology",
     "parent_dept": "Alaska Department of Commerce, Community, and Economic Development",
-    "mailing_address": "P.O. Box 110806, Juneau, AK 99811-0806",
+    "mailing_address": "State of Alaska\nDepartment of Commerce, Community, and Economic Development\nDivision of Corporations, Business and Professional Licensing\nPO Box 110806\nJuneau, AK 99811-0806",
     "physical_address": "333 Willoughby Ave., 9th Floor, Juneau, AK 99801",
-    "phone": "(907) 465-2580",
+    "phone": "907-465-2580",
     "fax": "(907) 465-2974",
-    "email": "mailto:audiology-slp@alaska.gov",
-    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofAudiologyandSpeechLanguagePathology.aspx"
+    "email": "license@alaska.gov",
+    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofAudiologyandSpeechLanguagePathology.aspx",
+    "contact_url": "https://www.commerce.alaska.gov/web/cbpl/ContactUs.aspx",
+    "verify_url": "https://www.commerce.alaska.gov/cbpl/license_lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "You must have graduated from an accredited educational program with a degree in audiology."
+      "title": "Obtain Required Degree",
+      "description": "Complete a master's or doctoral degree in audiology from an accredited educational institution."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "You must pass the Audiology Examination administered by the Praxis Examination Program."
+      "title": "Pass Praxis Examination",
+      "description": "Successfully pass the Praxis II in Audiology examination, administered by ETS."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application to the Board of Examiners in Audiology and Speech-Language Pathology with all required documentation and fees."
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete at least nine months of full-time (or 18 months part-time) supervised professional experience, as outlined in Alaska regulations. This may involve obtaining a temporary license prior to applying for full licensure."
+    },
+    {
+      "title": "Create Account and Apply Online",
+      "description": "Navigate to the MyLicense Online Services portal, register for an account if you don't have one, log in, and begin a new Audiologist license application."
+    },
+    {
+      "title": "Submit Application and Documentation",
+      "description": "Complete the online application form, upload all required supporting documents, including official transcripts, Praxis scores, and documentation of supervised professional experience, and pay the application and initial license fees through the MyLicense portal."
+    },
+    {
+      "title": "Board Review and Licensure",
+      "description": "The Board of Speech-Language Pathology and Audiology will review your complete application and credentials. Upon approval, your Alaska Audiologist license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 300,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofAudiologyandSpeechLanguagePathology.aspx",
-    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofAudiologyandSpeechLanguagePathology.aspx",
+    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/AudiologistsSpeech-LanguagePathologists.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "alaska-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Alaska",
-        "dek": "Alaska Audiologist license requires graduation from an accredited program, passing the required examination, and meeting other qualifications."
+        "dek": "Audiologists seeking initial licensure or licensure by endorsement in Alaska must apply through the MyLicense Online Services portal managed by the Division of Corporations, Business and Professional Licensing."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense Online Services",
+    "portal_url": "https://www.commerce.alaska.gov/cbpl/MyLicense",
+    "registration_steps": "Navigate to the MyLicense Online Services portal, select 'Apply for a License', and then 'Register for an Account' to create a user ID and password. Once registered, log in and select 'New Application' to begin the Audiologist licensure process.",
+    "provider_search": "https://www.commerce.alaska.gov/cbpl/license_lookup/"
   }
 }

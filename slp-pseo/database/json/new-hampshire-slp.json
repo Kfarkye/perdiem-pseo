@@ -21,19 +21,21 @@
   "board": {
     "name": "Allied Health Professionals Board",
     "parent_dept": "New Hampshire Office of Professional Licensure and Certification (OPLC)",
-    "mailing_address": "7 Eagle Square, Concord, NH 03301",
+    "mailing_address": "Office of Professional Licensure and Certification, 7 Eagle Square, Concord, NH 03301",
     "physical_address": "7 Eagle Square, Concord, NH 03301",
-    "phone": "(603) 271-0254",
+    "phone": "(603) 271-2152",
     "fax": "(603) 271-6702",
-    "email": "mailto:oplc@nh.gov",
-    "url": "https://www.oplc.nh.gov/allied-health-professionals"
+    "email": "customercare@oplc.nh.gov",
+    "url": "https://www.oplc.nh.gov/allied-health-professionals",
+    "contact_url": "https://www.oplc.nh.gov/contact-us",
+    "verify_url": "https://nh.us.thentiacloud.net/webs/nh/register/#/lookup"
   },
   "quick_facts": {
     "total_fee": "$110",
     "fee_breakdown": "$110 application and license fee",
-    "renewal_fee": "$110",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Supervised Experience",
-      "description": "Earn a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) and complete a supervised professional experience."
+      "title": "Create an elicensing Account",
+      "description": "Register for a new user account on the OPLC's elicensing portal at nh.us.thentiacloud.net/webs/nh/."
     },
     {
-      "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Submit Online Application",
+      "description": "Log in to your elicensing account, select 'New Application,' and complete all required sections for Speech-Language Pathologist licensure."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, official transcripts, Praxis scores, verification of supervised professional experience, and the required fee to the New Hampshire Allied Health Professionals Board."
+      "title": "Arrange for Official Transcripts",
+      "description": "Have your official graduate transcripts, verifying your Master's or Doctoral degree in SLP, sent directly from your academic institution to the Office of Professional Licensure and Certification (OPLC)."
+    },
+    {
+      "title": "Provide Praxis Scores",
+      "description": "Arrange for your official Praxis examination scores in Speech-Language Pathology to be sent directly from ETS to the OPLC."
+    },
+    {
+      "title": "Submit Clinical Experience Verification",
+      "description": "Provide documentation of your supervised clinical practicum and postgraduate professional experience (clinical fellowship year), typically through forms completed by your supervisors, as required by the Board."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable $100 initial licensure application fee through the elicensing portal."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 110,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.oplc.nh.gov/allied-health-professionals",
-    "endorsement_url": "https://www.oplc.nh.gov/allied-health-professionals",
+    "endorsement_url": "https://www.oplc.nh.gov/how-to-apply",
     "notes": "New Hampshire is a member of the ASLP Interstate Compact."
   },
   "slug": "new-hampshire-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in New Hampshire",
-        "dek": "New Hampshire Speech-Language Pathologist license requires graduation from an accredited program, passing the Praxis exam, and completion of a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in New Hampshire, create an account and submit your application through the OPLC's online elicensing portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "elicensing",
+    "portal_url": "https://nh.us.thentiacloud.net/webs/nh/",
+    "registration_steps": "Navigate to the OPLC's elicensing portal (nh.us.thentiacloud.net/webs/nh/). Click 'Register' if you are a new user. Follow the prompts to create an account by providing personal details and setting up login credentials.",
+    "provider_search": "https://nh.us.thentiacloud.net/webs/nh/register/#/lookup"
   }
 }

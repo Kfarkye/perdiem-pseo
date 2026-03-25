@@ -19,21 +19,23 @@
     "keywords": "occupational therapist license reciprocity connecticut, how to transfer occupational therapist license to connecticut, occupational therapist compact connecticut, connecticut occupational therapist endorsement application"
   },
   "board": {
-    "name": "Connecticut DPH — OT Licensure",
+    "name": "Connecticut DPH \u2014 OT Licensure",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
-    "mailing_address": "See board website",
+    "mailing_address": "Connecticut Department of Public Health, Practitioner Licensing and Investigations Section, 410 Capitol Ave., MS #12HLS, P.O. Box 340308, Hartford, CT 06134-0308",
     "physical_address": "See board website",
     "phone": "(860) 509-7603",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://portal.ct.gov/DPH"
+    "email": "dph.elicensing@ct.gov",
+    "url": "https://portal.ct.gov/DPH",
+    "contact_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/Occupational-Therapist/Occupational-Therapist-License",
+    "verify_url": "https://elicense.ct.gov/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$205",
+    "renewal_fee": "$100.00",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
     "ce_requirement": "24 contact hours of continuing education every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create a CT eLicense Portal Account",
+      "description": "Register for an account on the CT eLicense portal to begin your application process. You will need to provide personal information and set up login credentials."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Complete Online Application",
+      "description": "Log into your CT eLicense account and complete the application for Occupational Therapist licensure, ensuring all required fields are accurately filled out and necessary documents are uploaded."
     },
     {
-      "title": "Apply for a Connecticut Occupational Therapist License",
-      "description": "Submit an application, including required documentation and fees, to the Connecticut Department of Public Health for licensure."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, verifying the completion of an accredited occupational therapy program, to be sent directly from your educational institution to the Connecticut Department of Public Health."
+    },
+    {
+      "title": "Submit NBCOT Scores",
+      "description": "Request the National Board for Certification in Occupational Therapy (NBCOT) to send your official certification scores directly to the Connecticut Department of Public Health."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee as part of your online application through the CT eLicense portal."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/DPH",
-    "endorsement_url": "https://portal.ct.gov/DPH",
+    "endorsement_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/Occupational-Therapist/Occupational-Therapist-License",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Connecticut",
-        "dek": "Connecticut Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a background check."
+        "dek": "To apply for an Occupational Therapist license in Connecticut, you must submit your application and all required documentation through the CT eLicense portal."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "CT eLicense",
+    "portal_url": "https://elicense.ct.gov/",
+    "registration_steps": "To create an account, navigate to the CT eLicense portal and click on 'Register for an Account' or 'New User Registration'. Follow the prompts to provide your personal details, set up a username and password, and verify your email address to activate your account.",
+    "provider_search": "https://elicense.ct.gov/Lookup/LicenseLookup.aspx"
   }
 }

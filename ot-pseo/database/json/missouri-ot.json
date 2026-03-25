@@ -21,17 +21,19 @@
   "board": {
     "name": "Missouri Advisory Commission for Occupational Therapy",
     "parent_dept": "Missouri Division of Professional Registration",
-    "mailing_address": "See board website",
+    "mailing_address": "Missouri Board of Occupational Therapy\n3605 Missouri Boulevard\nP.O. Box 1335\nJefferson City, MO 65102",
     "physical_address": "See board website",
-    "phone": "(573) 751-0098",
+    "phone": "(573) 751-0018",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pr.mo.gov/occtherp.asp"
+    "email": "ProfessionalRegistration@pr.mo.gov",
+    "url": "https://pr.mo.gov/occtherp.asp",
+    "contact_url": "https://pr.mo.gov/contact.asp?board=OT",
+    "verify_url": "https://pr.mo.gov/licensedsearch.asp"
   },
   "quick_facts": {
     "total_fee": "$105",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$60",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE-accredited program",
-      "description": "You must complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Portal Account & Submit Application",
+      "description": "Register for an account on the Missouri Division of Professional Registration Portal (bsd.pr.mo.gov) and complete the online application for Occupational Therapist licensure."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Achieve a passing score on the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts from your accredited occupational therapy program (Bachelor's, Master's, or Doctoral) to be sent directly from your educational institution to the Missouri Board of Occupational Therapy."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete and submit an application for licensure to the Missouri Division of Professional Registration, along with the required fee and supporting documentation."
+      "title": "Submit NBCOT Certification",
+      "description": "Request an official score report or verification of certification directly from the National Board for Certification in Occupational Therapy (NBCOT) to be sent to the Missouri Board of Occupational Therapy."
+    },
+    {
+      "title": "Complete Missouri Jurisprudence Examination",
+      "description": "Successfully pass the Missouri Jurisprudence Examination. Information and access to this exam are typically provided within the online application portal or on the Board's website."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Undergo a state and federal criminal background check. Follow the instructions provided by the Board for fingerprinting through the MACHS Fingerprint System."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required application fee of $125 through the Missouri Division of Professional Registration Portal as part of your online application."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 125,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://pr.mo.gov/occtherp.asp",
-    "endorsement_url": "https://pr.mo.gov/occtherp.asp",
+    "endorsement_url": "https://pr.mo.gov/occupationaltherapy/ot-application.asp",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Missouri",
-        "dek": "Missouri Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and submitting a completed application."
+        "dek": "To apply for an Occupational Therapist license in Missouri, you must submit an online application through the Missouri Division of Professional Registration Portal."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Missouri Division of Professional Registration Portal",
+    "portal_url": "https://bsd.pr.mo.gov/",
+    "registration_steps": "1. Navigate to the Missouri Division of Professional Registration Portal at https://bsd.pr.mo.gov/. 2. Click on 'New User' to register for an account using a valid email address. 3. Follow the prompts to complete your user profile and create login credentials. 4. Once registered and logged in, select the appropriate application for Occupational Therapist licensure.",
+    "provider_search": "https://pr.mo.gov/licensedsearch.asp"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners in Speech-Language Pathology and Audiology",
     "parent_dept": "South Carolina Department of Labor, Licensing and Regulation (LLR)",
-    "mailing_address": "P.O. Box 11329, Columbia, SC 29211-1329",
+    "mailing_address": "SC Department of Labor, Licensing and Regulation, P.O. Box 11329, Columbia, SC 29211-1329",
     "physical_address": "110 Centerview Dr., Columbia, SC 29210",
-    "phone": "(803) 896-4655",
+    "phone": "(803) 896-4300",
     "fax": "(803) 896-4719",
     "email": "mailto:contactllr@llr.sc.gov",
-    "url": "https://llr.sc.gov/slpa/"
+    "url": "https://llr.sc.gov/slpa/",
+    "contact_url": "https://llr.sc.gov/contact",
+    "verify_url": "https://llr.sc.gov/lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application and license fee",
-    "renewal_fee": "$60",
-    "renewal_cycle": "Every 2 years (June 30)",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "24 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Earn a master’s degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA)."
+      "title": "Create an Online Services Account",
+      "description": "Register for a new user account on the SC LLR Online Services portal at https://eservice.llr.sc.gov/ to begin your application."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience that meets the requirements outlined in the application instructions."
+      "title": "Complete the Online Application",
+      "description": "Log in to your Online Services account, select the application for Speech-Language Pathologist licensure, and complete all required sections, paying the $120.00 application fee."
     },
     {
-      "title": "Pass the Praxis Exam and Apply",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology with a score that meets South Carolina requirements and submit your application along with all required documentation and fees to the Board."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official master's or doctoral degree transcripts from a regionally accredited institution to be sent directly to the SC Board of Examiners in Speech-Language Pathology and Audiology. Electronic submission is preferred."
+    },
+    {
+      "title": "Submit Clinical Experience Verification",
+      "description": "Ensure your supervisor completes and submits the \"Verification of Supervised Clinical Experience (Form SLP-2)\" directly to the Board office."
+    },
+    {
+      "title": "Submit Praxis Examination Scores",
+      "description": "Request that ETS send your official Praxis Examination in Speech-Language Pathology scores directly to the SC Board, using reporting code R7127."
+    },
+    {
+      "title": "Verify Out-of-State Licensure (if applicable)",
+      "description": "If you hold or have held an SLP license in another state, arrange for that state's licensing board to complete and send the \"Verification of Licensure in Other States (Form SLP-4)\" directly to the SC Board."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 120,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://llr.sc.gov/slpa/",
-    "endorsement_url": "https://llr.sc.gov/slpa/",
+    "endorsement_url": "https://llr.sc.gov/aud/slp.aspx",
     "notes": "South Carolina is a member of the ASLP Interstate Compact."
   },
   "slug": "south-carolina-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in South Carolina",
-        "dek": "South Carolina Speech-Language Pathologist licenses require a master's degree, passing the Praxis exam, and completing a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in South Carolina, you will submit your application and supporting documentation through the SC LLR's secure Online Services portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Online Services",
+    "portal_url": "https://eservice.llr.sc.gov/",
+    "registration_steps": "Go to https://eservice.llr.sc.gov/, click \"Register for an Account\" on the left navigation, and follow the prompts to create your user account before logging in to start your application.",
+    "provider_search": "https://llr.sc.gov/lookup/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Montana Board of Respiratory Care Practitioners",
     "parent_dept": "Department of Labor & Industry",
-    "mailing_address": "See board website",
+    "mailing_address": "Montana Board of Medical Examiners\nPO Box 200513\nHelena MT 59620-0513",
     "physical_address": "See board website",
     "phone": "(406) 444-6880",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://boards.bsd.dli.mt.gov/"
+    "email": "DLIBSDWebHelp@mt.gov",
+    "url": "https://boards.bsd.dli.mt.gov/",
+    "contact_url": "https://bme.mt.gov/Contact",
+    "verify_url": "https://ebiz.mt.gov/POL/LicenseVerification"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examinations",
     "ce_requirement": "24 hours every 2 years"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Approved Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create an eLicense Account",
+      "description": "Navigate to the Montana eLicense portal at ebiz.mt.gov/POL and register for a new user account if you do not already have one."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examinations."
+      "title": "Complete Online Application",
+      "description": "Log into your new eLicense account, select the Respiratory Care Practitioner application option, and meticulously fill out all required sections of the online form, providing accurate personal, educational, and professional history."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, including required documentation and fees, to the Montana Board of Respiratory Care Practitioners."
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee directly through the Montana eLicense system using an accepted payment method."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official transcripts to be sent directly from your educational institution, official verification of your NBRC credential (RRT or CRT) directly from NBRC, and official verifications of licensure from any other states where you hold or have held a license to be sent directly to the Board. Complete the required criminal background check process via fingerprinting."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log into your Montana eLicense account to track the progress of your application and respond promptly to any requests for additional information or clarification from the Montana Board of Medical Examiners."
     }
   ],
   "documents": [
@@ -125,10 +135,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 8 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://boards.bsd.dli.mt.gov/",
-    "endorsement_url": "https://boards.bsd.dli.mt.gov/",
+    "endorsement_url": "https://bme.mt.gov/respiratory-care-practitioners",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Montana",
-        "dek": "Montana Respiratory Therapist License requires graduation from an approved program, passing the NBRC exam, and submitting an application to the board."
+        "dek": "To apply for a Respiratory Therapist license in Montana, you must use the Montana eLicense online application system."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Montana eLicense",
+    "portal_url": "https://ebiz.mt.gov/POL",
+    "registration_steps": "Go to ebiz.mt.gov/POL, click on 'Register A New Account' on the left side menu, and follow the prompts to create your user profile with your personal details and desired login credentials.",
+    "provider_search": "https://ebiz.mt.gov/POL/LicenseVerification"
   }
 }

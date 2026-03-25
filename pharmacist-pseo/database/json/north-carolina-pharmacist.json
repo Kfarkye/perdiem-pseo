@@ -21,18 +21,20 @@
   "board": {
     "name": "North Carolina Board of Pharmacy",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "PO Box 459, Carrboro, NC 27510",
     "physical_address": "See board website",
     "phone": "(919) 246-1050",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.ncbop.org/"
+    "email": "contact@ncbop.org",
+    "url": "http://www.ncbop.org/",
+    "contact_url": "https://www.ncbop.org/contactus.htm",
+    "verify_url": "https://www.ncbop.org/verify/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$135",
+    "renewal_cycle": "Every year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program in pharmacy from an ACPE-accredited school or college of pharmacy."
+      "title": "Create Account and Submit Online Application",
+      "description": "Create an account or log in to the NCBOP Licensing Gateway. Complete the online 'Pharmacist by Endorsement' application form in its entirety and pay the non-refundable $350 application fee."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Complete NABP ELTP Process",
+      "description": "Register with the National Association of Boards of Pharmacy (NABP) and complete the Electronic Licensure Transfer Program (ELTP) application. NABP will verify your existing pharmacist license(s) and transmit the necessary information to the North Carolina Board of Pharmacy."
     },
     {
-      "title": "Complete Internship Requirements and Apply for Licensure",
-      "description": "Satisfy the required internship hours under the supervision of a licensed pharmacist and submit a complete application with all required documentation and fees to the North Carolina Board of Pharmacy."
+      "title": "Pass the North Carolina MPJE",
+      "description": "Register with NABP for the Multistate Pharmacy Jurisprudence Examination (MPJE) specific to North Carolina. After receiving an Authorization to Test (ATT) from NABP, schedule and successfully pass the NC MPJE through Pearson VUE."
+    },
+    {
+      "title": "Undergo Criminal Background Check",
+      "description": "Complete the required criminal background check (CBC) by following the specific instructions provided by the Board after your application submission, which will include fingerprinting."
+    },
+    {
+      "title": "Await Board Review and Licensure",
+      "description": "The North Carolina Board of Pharmacy will review all submitted documentation, including your online application, NABP ELTP results, MPJE scores, and criminal background check. Once all requirements are successfully met and verified, your North Carolina pharmacist license will be issued."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 350,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.ncbop.org/",
-    "endorsement_url": "http://www.ncbop.org/",
+    "endorsement_url": "https://www.ncbop.org/pharmacist_by_endorsement.htm",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "north-carolina-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in North Carolina",
-        "dek": "North Carolina Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing internship requirements."
+        "dek": "To apply for a Pharmacist license in North Carolina by endorsement, you must complete an application through the NCBOP Licensing Gateway and fulfill all state-specific requirements."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NCBOP Licensing Gateway",
+    "portal_url": "https://portal.ncbop.org/Login.aspx",
+    "registration_steps": "To begin your application, navigate to the NCBOP Licensing Gateway. If you are a new user, click 'New User' to create an account by providing your personal information and establishing your login credentials. Once registered, log in to your account and select the 'Pharmacist by Endorsement' application type to start your application.",
+    "provider_search": "https://www.ncbop.org/verify/"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "Delaware Board of Occupational Therapy Practice",
     "parent_dept": "Delaware Division of Professional Regulation",
-    "mailing_address": "See board website",
+    "mailing_address": "Delaware Division of Professional Regulation\nCannon Building\n861 Silver Lake Blvd., Suite 203\nDover, DE 19904",
     "physical_address": "See board website",
     "phone": "(302) 744-4500",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dpr.delaware.gov/boards/occupationaltherapy/"
+    "email": "customerservice.dpr@delaware.gov",
+    "url": "https://dpr.delaware.gov/boards/occupationaltherapy/",
+    "contact_url": "https://dpr.delaware.gov/contact/",
+    "verify_url": "https://delaware.gov/cgi-bin/license/lookup.cgi"
   },
   "quick_facts": {
     "total_fee": "$236",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "",
+    "renewal_fee": "$160",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create a DELPROS Account",
+      "description": "Access the DELPROS (Delaware Professional Regulation Online Services) portal at https://delpros.delaware.gov/ and register for a new user account if you do not already have one."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Online Application",
+      "description": "Log in to DELPROS, select \"New Application\" for Occupational Therapist licensure, and complete all required sections of the application, including uploading any necessary documents."
     },
     {
-      "title": "Apply for a Delaware Occupational Therapy License",
-      "description": "Submit an application for licensure with the Delaware Board of Occupational Therapy Practice, including required documentation and fees."
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable $160 application fee directly through the DELPROS system."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow instructions within DELPROS to schedule and complete a state and federal criminal background check. You will pay a separate fee to the state police for this service."
+    },
+    {
+      "title": "Arrange for Third-Party Verifications",
+      "description": "Request official transcripts from your OT program, official NBCOT score verification, and license verifications from all states where you hold or have held an OT license. These must be sent directly to the Delaware Board of Occupational Therapy Practice from the issuing institutions/boards."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log in to your DELPROS account to monitor the status of your application and respond promptly to any requests for additional information from the Board."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 160,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dpr.delaware.gov/boards/occupationaltherapy/",
-    "endorsement_url": "https://dpr.delaware.gov/boards/occupationaltherapy/",
+    "endorsement_url": "https://dpr.delaware.gov/boards/occupationaltherapy/applications/",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Delaware",
-        "dek": "Delaware Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a criminal background check."
+        "dek": "To apply for an Occupational Therapist license in Delaware, navigate to the DELPROS (Delaware Professional Regulation Online Services) portal and begin your online application."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DELPROS (Delaware Professional Regulation Online Services)",
+    "portal_url": "https://delpros.delaware.gov/",
+    "registration_steps": "1. Visit the DELPROS portal at https://delpros.delaware.gov/.\n2. Click the \"Register a New User\" button.\n3. Complete the registration form, verify your email address, and create your login credentials.\n4. Log in to your newly created DELPROS account.",
+    "provider_search": "https://delaware.gov/cgi-bin/license/lookup.cgi"
   }
 }

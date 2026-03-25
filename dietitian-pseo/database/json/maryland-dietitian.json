@@ -21,18 +21,20 @@
   "board": {
     "name": "Board of Dietetic Practice",
     "parent_dept": "Maryland Department of Health (MDH)",
-    "mailing_address": "Metro Executive Building<br>4201 Patterson Avenue<br>Baltimore, MD 21215-2299",
+    "mailing_address": "Maryland Board of Dietetic Practice\n4201 Patterson Avenue\nBaltimore, MD 21215-2299",
     "physical_address": "4201 Patterson Avenue<br>Baltimore, MD 21215",
-    "phone": "(410) 764-4733",
+    "phone": "(410) 764-4740",
     "fax": "(410) 358-1610",
-    "email": "mailto:Marie.Savage@maryland.gov",
-    "url": "https://health.maryland.gov/boardofdietetics/"
+    "email": "MDH.BOPDietetics@maryland.gov",
+    "url": "https://health.maryland.gov/boardofdietetics/",
+    "contact_url": "https://health.maryland.gov/bop/dietetics/pages/contact.aspx",
+    "verify_url": "https://verification.maryland.gov/"
   },
   "quick_facts": {
     "total_fee": "$300",
     "fee_breakdown": "$75 application + $225 licensure",
-    "renewal_fee": "$250",
-    "renewal_cycle": "Every 2 years + 30 CPE hours (incl. implicit bias)",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Obtain a bachelor's degree from a regionally accredited college or university with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study as approved by the Board."
+      "title": "Create Online Account",
+      "description": "Navigate to the Maryland Professional Online Licensing System at licensing.opl.health.maryland.gov/ and click \"New User? Create an Account\" to register with your email address and create a password."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete a Board-approved, pre-professional, supervised practice experience program."
+      "title": "Complete Online Application",
+      "description": "Log in to your newly created account, select the \"Dietitian/Nutritionist\" license application, and accurately complete all required sections of the online form."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Submit Required Documentation",
+      "description": "Upload all necessary supporting documents, which typically include official transcripts, verification of supervised practice hours, and Commission on Dietetic Registration (CDR) registration, directly through the Maryland Professional Online Licensing System."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee of $150 via credit card or other accepted payment methods through the online licensing system to finalize your submission."
+    },
+    {
+      "title": "Board Review",
+      "description": "The Maryland Board of Dietetic Practice will review your completed application and all submitted documentation for compliance with state licensure requirements."
+    },
+    {
+      "title": "Receive Licensure Notification",
+      "description": "Upon approval, you will receive notification of your issued license through the Maryland Professional Online Licensing System, and your license will be active."
     }
   ],
   "documents": [
@@ -136,11 +150,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 300,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.maryland.gov/boardofdietetics/",
-    "endorsement_url": "https://health.maryland.gov/boardofdietetics/",
+    "endorsement_url": "https://health.maryland.gov/bop/dietetics/pages/licensure.aspx",
     "notes": "Maryland requires state-specific licensure to practice, even if you are licensed in another state. However, the process is streamlined for Registered Dietitians who already hold CDR registration. Out-of-state licensees apply through the standard application process and can transfer their CDR registration. Contact the Board directly for specific reciprocity guidance.",
     "requires_psv": true
   },
@@ -156,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Maryland",
-        "dek": "Maryland Dietitian licenses require a bachelor's degree, completion of supervised practice, and passing the Registration Examination for Dietitians."
+        "dek": "To apply for a Dietitian or Nutritionist license in Maryland, visit the Maryland Professional Online Licensing System (also known as the OneStop Portal) and create an account to submit your application online."
       }
     }
   },
@@ -182,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Maryland Professional Online Licensing System",
+    "portal_url": "https://licensing.opl.health.maryland.gov/",
+    "registration_steps": "To create an account and start your application, navigate to the Maryland Professional Online Licensing System. Click on \"New User? Create an Account\" and follow the prompts to register with a valid email and create a password. Once logged in, you can select the application for Dietitian/Nutritionist.",
+    "provider_search": "https://verification.maryland.gov/"
   }
 }

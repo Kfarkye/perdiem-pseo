@@ -21,19 +21,21 @@
   "board": {
     "name": "Alaska Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "State of Alaska\nDepartment of Commerce, Community, and Economic Development\nDivision of Corporations, Business and Professional Licensing\nPO Box 110806\nJuneau, AK 99811-0806",
     "physical_address": "See board website",
-    "phone": "(907) 269-8161",
+    "phone": "(907) 465-2544",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/NurseAideRegistry.aspx"
+    "email": "license@alaska.gov",
+    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/NurseAideRegistry.aspx",
+    "contact_url": "https://www.commerce.alaska.gov/web/cbpl/contactus.aspx",
+    "verify_url": "https://www.commerce.alaska.gov/cbpl/licensequery/"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$200 endorsement application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years (by September 30th of even-numbered years)",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "training_hours": "140 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Alaska-approved CNA training program, usually 140 hours long."
+      "title": "Complete a State-Approved CNA Program",
+      "description": "Successfully complete a certified nursing assistant training program approved by the Alaska Board of Nursing. This is a prerequisite for examination and licensure."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Alaska nurse aide exam."
+      "title": "Pass the CNA Competency Examination",
+      "description": "Register for and pass both the written and skills portions of the Alaska state-approved CNA competency examination. Passing results must be received by the board prior to certification."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Create a MyLicense Account",
+      "description": "Go to the MyLicense Account Login portal (https://www.commerce.alaska.gov/cbpl/mylicense/) and click \"Register Here\" to create a new user account with a valid email address."
+    },
+    {
+      "title": "Submit Online Application",
+      "description": "Log in to your MyLicense account, select the \"Certified Nursing Assistant\" application (Application by Examination for initial licensure or Application by Endorsement for reciprocity), and complete all required sections."
+    },
+    {
+      "title": "Provide Required Documentation",
+      "description": "Upload any necessary supporting documents directly through the MyLicense portal, such as proof of education completion, and authorize a criminal background check (if required). The board will receive exam results directly from the testing vendor."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required application fee online via credit card within the MyLicense system to finalize your application."
     }
   ],
   "documents": [
@@ -121,11 +135,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/NurseAideRegistry.aspx",
-    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/NurseAideRegistry.aspx",
+    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofNursing/CertifiedNursingAssistant.aspx",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Alaska",
-        "dek": "Alaska CNA certification requires a 140-hour training program, Alaska Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for a CNA license in Alaska, candidates must register and apply through the MyLicense Account Login portal managed by the Alaska Board of Nursing."
       },
       "seo": {
         "title": "How to Become a CNA in Alaska",
@@ -208,5 +222,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Alaska Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense Account Login",
+    "portal_url": "https://www.commerce.alaska.gov/cbpl/mylicense/",
+    "registration_steps": "First Time Users: Click on the \"Register Here\" link below. You must have an email address to create an account.",
+    "provider_search": "https://www.commerce.alaska.gov/cbpl/licensequery/"
   }
 }

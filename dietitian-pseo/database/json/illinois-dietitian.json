@@ -21,18 +21,20 @@
   "board": {
     "name": "Dietetic and Nutrition Services Practice Board",
     "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
-    "mailing_address": "IDFPR<br>ATTN: Dietetic and Nutrition Services<br>P.O. Box 7007<br>Springfield, IL 62791",
+    "mailing_address": "Illinois Department of Financial and Professional Regulation\n320 W. Washington Street, 3rd Floor\nSpringfield, IL 62786",
     "physical_address": "IDFPR Chicago Office<br>555 West Monroe Street, 5th Floor<br>Chicago, IL 60661",
-    "phone": "(800) 560-6420",
+    "phone": "1-800-560-6420",
     "fax": "Not provided",
     "email": "mailto:FPR.LMFT@illinois.gov",
-    "url": "https://idfpr.illinois.gov/profs/dietnutrition.html"
+    "url": "https://idfpr.illinois.gov/profs/dietnutrition.html",
+    "contact_url": "https://idfpr.illinois.gov/contactus.html",
+    "verify_url": "https://www.idfpr.com/licenselookup/licenselookup.asp"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 Application Fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Biennial (Expires October 31 of odd-numbered years)",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education and Supervised Practice",
-      "description": "Earn a bachelor’s degree or higher from a regionally accredited U.S. college or university and complete a dietetics program accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Meet Education Requirements",
+      "description": "Complete a baccalaureate or master's degree in dietetics, human nutrition, food and nutrition, nutrition education, or public health nutrition from an accredited college or university, or an equivalent foreign degree."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete Supervised Practice Experience",
+      "description": "Fulfill a minimum of 1,000 hours of supervised practice experience approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND) or an equivalent program."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Illinois Department of Financial and Professional Regulation (IDFPR) along with required documentation and fees."
+      "title": "Pass the CDR Examination",
+      "description": "Successfully pass the Dietitian Registration Examination administered by the Commission on Dietetic Registration (CDR)."
+    },
+    {
+      "title": "Submit Online Application",
+      "description": "Access the IDFPR Online Application System at https://www.idfpr.com/Applications/prof_apps.asp?prof=dietetics, select 'Dietitian Nutritionist', and complete the initial online application form."
+    },
+    {
+      "title": "Provide Supporting Documentation",
+      "description": "Submit required documents, including official transcripts, verification of supervised practice, verification of passing the CDR examination, and a criminal history background check, as specified by the IDFPR."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable initial application fee of $50 through the IDFPR Online Application System."
     }
   ],
   "documents": [
@@ -132,11 +146,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 50,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://idfpr.illinois.gov/profs/dietnutrition.html",
-    "endorsement_url": "https://idfpr.illinois.gov/profs/dietnutrition.html",
+    "endorsement_url": "https://www.idfpr.com/Applications/prof_apps.asp?prof=dietetics",
     "notes": "Applicants licensed in other jurisdictions may file an Endorsement application through the IDFPR, provided the requirements of the other state were substantially equivalent to Illinois' requirements at the time of original licensure, and the license remains in active and good standing.",
     "requires_psv": true
   },
@@ -152,7 +166,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Illinois",
-        "dek": "Illinois Dietitian License requires completing accredited education and supervised practice, passing the Registration Examination for Dietitians, and submitting an application to the state."
+        "dek": "To apply for a Dietitian Nutritionist license in Illinois, applicants must use the IDFPR Online Application System to submit their initial application and supporting documents."
       }
     }
   },
@@ -178,5 +192,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "IDFPR Online Application System",
+    "portal_url": "https://www.idfpr.com/Applications/prof_apps.asp?prof=dietetics",
+    "registration_steps": "1. Navigate to https://www.idfpr.com/Applications/default.asp. 2. Select 'New Applicants'. 3. Click 'Start a new application'. 4. Select 'Health Professions Division' from the Board dropdown. 5. Select 'Dietitian Nutritionist' from the Profession dropdown. 6. Click 'Continue' to proceed with the online application.",
+    "provider_search": "https://www.idfpr.com/licenselookup/licenselookup.asp"
   }
 }

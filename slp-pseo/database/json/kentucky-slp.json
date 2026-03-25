@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Kentucky Board of SLP and Audiology",
-    "mailing_address": "P.O. Box 1360, Frankfort, KY 40602",
+    "mailing_address": "KBSLPA\nP.O. Box 1360\nFrankfort, KY 40602",
     "physical_address": "911 Leawood Dr., Frankfort, KY 40601",
-    "phone": "(502) 782-8808",
+    "phone": "502-892-4261",
     "fax": "(502) 564-4818",
-    "email": "mailto:BSLPA@ky.gov",
-    "url": "https://slpaud.ky.gov/"
+    "email": "kbslpa@ky.gov",
+    "url": "https://slpaud.ky.gov/",
+    "contact_url": "https://chfs.ky.gov/agencies/kbslpa/Pages/contactus.aspx",
+    "verify_url": "https://chfs.ky.gov/agencies/kbslpa/Pages/verification.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$50 application + $50 license fee",
-    "renewal_fee": "$75",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years (odd-numbered years)",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Complete a master’s degree or doctoral degree program in speech-language pathology from an accredited educational institution."
+      "title": "Create an eServices Account & Apply Online",
+      "description": "Register for an account on the Kentucky eServices portal (secure.kentucky.gov/wcl/Login.aspx) and complete the online application for initial Speech-Language Pathologist licensure."
     },
     {
-      "title": "Complete Supervised Clinical Experience",
-      "description": "Complete a supervised clinical practicum of at least 400 clock hours, including 325 hours at the graduate level, as part of your degree program."
+      "title": "Submit Transcripts & CFY Verification",
+      "description": "Upload official transcripts verifying your master's or doctoral degree in Speech-Language Pathology directly through the eServices portal. Also, upload either your ASHA Certificate of Clinical Competence (CCC) or the completed 'Verification of Supervised Postgraduate Professional Experience' form signed by your CF supervisor via the eServices portal."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology and submit a completed application with the required fee and documentation to the Kentucky Board of Speech-Language Pathology and Audiology."
+      "title": "Request Praxis Score Submission",
+      "description": "Arrange for your official Praxis Examination in Speech-Language Pathology scores to be sent directly from ETS to the Kentucky Board of Speech-Language Pathology and Audiology (ETS Code 7108)."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable initial application fee of $50 through the Kentucky eServices portal."
+    },
+    {
+      "title": "Receive Licensure Decision",
+      "description": "Once all required documentation and fees are received and reviewed, the Board will process your application and notify you of its decision regarding licensure."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 50,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://slpaud.ky.gov/",
-    "endorsement_url": "https://slpaud.ky.gov/",
+    "endorsement_url": "https://chfs.ky.gov/agencies/kbslpa/Pages/application.aspx",
     "notes": "Kentucky is a member of the ASLP Interstate Compact."
   },
   "slug": "kentucky-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Kentucky",
-        "dek": "Kentucky Speech-Language Pathologist license requires a master's degree, supervised clinical experience, and passing the national exam."
+        "dek": "To apply for an SLP license in Kentucky, you must register and submit your application and all supporting documents through the Kentucky eServices portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Kentucky eServices portal",
+    "portal_url": "https://secure.kentucky.gov/wcl/Login.aspx?bd=SLP",
+    "registration_steps": "On the Kentucky eServices portal, click 'Register a New Account' and follow the prompts to create your login using your Social Security Number, date of birth, and mother's maiden name for verification.",
+    "provider_search": "https://chfs.ky.gov/agencies/kbslpa/Pages/verification.aspx"
   }
 }

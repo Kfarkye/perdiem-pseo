@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Massachusetts Dental Assistant License (2026) | Fees & Guide",
-    "description": "Complete guide to dental assistant licensing in Massachusetts — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Massachusetts \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license massachusetts, dental assistant certification massachusetts, RDA massachusetts, DANB CDA massachusetts, dental assistant radiography massachusetts"
   },
   "board": {
     "name": "Massachusetts Board of Registration in Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "1000 Washington Street, Suite 710, Boston, MA 02118-6100",
     "physical_address": "See board website",
-    "phone": "(617) 727-9928",
+    "phone": "617-727-9925",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.mass.gov/orgs/board-of-registration-in-dentistry"
+    "email": "dentistry.board@mass.gov",
+    "url": "https://www.mass.gov/orgs/board-of-registration-in-dentistry",
+    "contact_url": "https://www.mass.gov/lists/contact-the-board-of-registration-in-dentistry",
+    "verify_url": "https://checkalicense.mass.gov/"
   },
   "quick_facts": {
     "total_fee": "$60",
     "fee_breakdown": "$60 application/registration fee",
-    "renewal_fee": "$60",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "12 hours per renewal cycle"
   },
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education or Training",
-      "description": "Graduate from a CODA-accredited dental assisting program or complete two years of full-time on-the-job training as a dental assistant."
+      "title": "Create an Account and Complete Online Application",
+      "description": "Register for a new account on the MassLicensing portal and complete the Dental Assistant online application in its entirety."
     },
     {
-      "title": "Obtain CPR Certification",
-      "description": "Hold current certification in Basic Life Support (BLS) or Cardiopulmonary Resuscitation (CPR)."
+      "title": "Mail Required CORI Acknowledgment Form (DA-1)",
+      "description": "Print and complete the DA-1 (Criminal Offender Record Information Acknowledgment Form) from the Board's website and mail it to the Board of Registration in Dentistry."
     },
     {
-      "title": "Submit Application and Fee",
-      "description": "Submit a completed application for dental assistant registration and the required fee to the Massachusetts Board of Registration in Dentistry."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official transcript from an ADA-accredited dental assisting program to be sent directly to the Board of Registration in Dentistry from your educational institution."
+    },
+    {
+      "title": "Verify DANB Certification",
+      "description": "Ensure your current Certified Dental Assistant (CDA) or Certified Orthodontic Assistant (COA) certificate from the Dental Assisting National Board (DANB) is verified directly to the Board."
+    },
+    {
+      "title": "Upload Supporting Documentation",
+      "description": "Upload proof of current Basic Life Support (BLS) for Healthcare Providers CPR certification and your complete immunization records directly to your MassLicensing application."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application on the MassLicensing portal and promptly respond to any requests for additional information or documentation from the Board."
     }
   ],
   "documents": [
@@ -123,11 +137,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 60,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 130,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.mass.gov/orgs/board-of-registration-in-dentistry",
-    "endorsement_url": "https://www.mass.gov/orgs/board-of-registration-in-dentistry",
+    "endorsement_url": "https://www.mass.gov/endorsement-application-for-dental-assistants",
     "notes": "Dental assistants can apply for Licensed Dental Assistant through the Massachusetts Board of Registration in Dentistry by license.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Massachusetts",
-        "dek": "Massachusetts Dental Assistant registration requires graduation from a CODA-accredited program or on-the-job training, CPR certification, and completion of continuing education requirements."
+        "dek": "To apply for a Dental Assistant license in Massachusetts, you must submit your application and supporting documents online through the official MassLicensing portal."
       }
     }
   },
@@ -172,5 +186,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MassLicensing",
+    "portal_url": "https://massmylicense.mass.gov/",
+    "registration_steps": "Go to the MassLicensing portal, select 'Register a New Account,' and follow the prompts to create your account. Once registered, log in to start your application.",
+    "provider_search": "https://checkalicense.mass.gov/"
   }
 }

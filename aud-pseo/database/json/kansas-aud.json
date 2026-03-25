@@ -21,18 +21,20 @@
   "board": {
     "name": "Kansas Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Kansas Department for Aging and Disability Services (KDADS)",
-    "mailing_address": "503 S. Kansas Ave., Topeka, KS 66603-3404",
+    "mailing_address": "Kansas Department for Aging and Disability Services, Behavioral Health Services, 800 SW Jackson St., Suite 500, Topeka, KS 66612",
     "physical_address": "503 S. Kansas Ave., Topeka, KS 66603",
     "phone": "(785) 296-1240",
     "fax": "(785) 296-0511",
-    "email": "mailto:kdads.slpa@ks.gov",
-    "url": "https://www.kdads.ks.gov/commissions/survey-certification-and-credentialing-commission/credentialing/speech-language-pathology-and-audiology"
+    "email": "KDADS.BHSHAB@ks.gov",
+    "url": "https://www.kdads.ks.gov/commissions/survey-certification-and-credentialing-commission/credentialing/speech-language-pathology-and-audiology",
+    "contact_url": "https://www.kdads.ks.gov/commissions/behavioral-health/providers-and-professionals/audiologists-and-speech-language-pathologists",
+    "verify_url": "https://www.accesskansas.org/kdads-bhs-search-engine/index.html"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination administered by Praxis",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a Doctoral Degree",
-      "description": "Earn a Doctor of Audiology (AuD) degree from an accredited educational program."
+      "title": "Create an Account on the KDADS eLicense Portal",
+      "description": "Navigate to the KDADS eLicense Portal (kdads.my.site.com/portal/s/) and click 'New Account' to register your user profile. You will need to provide your email address and create a password."
     },
     {
-      "title": "Pass the Audiology Examination",
-      "description": "Successfully complete the Audiology Examination administered by Praxis."
+      "title": "Initiate the Online Audiologist License Application",
+      "description": "Log into your newly created KDADS eLicense Portal account. From your dashboard, select the option to 'Apply for a License' and choose the Audiologist license application."
     },
     {
-      "title": "Submit an Application",
-      "description": "Apply for licensure with the Kansas Board of Speech-Language Pathology and Audiology, including all required documentation and fees."
+      "title": "Complete Application Sections and Upload Documents",
+      "description": "Fill out all required sections of the online application, including personal information, educational history, and supervised clinical practicum details. Upload any necessary supporting documents directly through the KDADS eLicense Portal as requested."
+    },
+    {
+      "title": "Arrange for Official Transcripts and Praxis Scores",
+      "description": "Contact your university to have official academic transcripts sent directly to the Kansas Department for Aging and Disability Services (KDADS). Also, ensure your Praxis Examination in Audiology scores are sent directly from ETS to KDADS."
+    },
+    {
+      "title": "Pay the Application Fee and Submit Your Application",
+      "description": "Once all sections are complete and documents are uploaded or arranged to be sent, pay the non-refundable $100 application fee through the KDADS eLicense Portal using a credit/debit card. Review your application thoroughly before final submission."
+    },
+    {
+      "title": "Monitor Application Status and Await Board Review",
+      "description": "After submission, you can track the status of your application within your KDADS eLicense Portal account. The board typically processes complete applications within 4 to 6 weeks once all required documents are received."
     }
   ],
   "documents": [
@@ -128,7 +142,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.kdads.ks.gov/commissions/survey-certification-and-credentialing-commission/credentialing/speech-language-pathology-and-audiology",
-    "endorsement_url": "https://www.kdads.ks.gov/commissions/survey-certification-and-credentialing-commission/credentialing/speech-language-pathology-and-audiology",
+    "endorsement_url": "https://www.kdads.ks.gov/commissions/behavioral-health/providers-and-professionals/audiologists-and-speech-language-pathologists/initial-application",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "kansas-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Kansas",
-        "dek": "Kansas Audiologist license requires a doctoral degree in audiology, passing the Audiology Examination administered by Praxis, and completion of a supervised professional experience."
+        "dek": "Audiologists in Kansas must apply for licensure through the KDADS eLicense Portal by creating an account and submitting an online application."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "KDADS eLicense Portal",
+    "portal_url": "https://kdads.my.site.com/portal/s/",
+    "registration_steps": "Visit the KDADS eLicense Portal, click 'New Account,' and follow the prompts to create your user profile, which includes providing your email, creating a password, and setting security questions. After registration, you will need to verify your email address before logging in.",
+    "provider_search": "https://www.accesskansas.org/kdads-bhs-search-engine/index.html"
   }
 }

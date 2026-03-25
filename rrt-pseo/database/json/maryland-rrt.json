@@ -19,7 +19,7 @@
     "keywords": "respiratory therapist license reciprocity maryland, how to transfer respiratory therapist license to maryland, respiratory therapist compact maryland, maryland respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Maryland DOH — Respiratory Care Practitioners",
+    "name": "Maryland DOH \u2014 Respiratory Care Practitioners",
     "parent_dept": "Maryland Department of Health (MDH)",
     "mailing_address": "See board website",
     "physical_address": "See board website",
@@ -173,5 +173,14 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "jurisprudence_fee_verified": true
   }
 }

@@ -21,18 +21,20 @@
   "board": {
     "name": "New Mexico Board of Occupational Therapy Practice",
     "parent_dept": "New Mexico Regulation and Licensing Department",
-    "mailing_address": "See board website",
+    "mailing_address": "New Mexico Board of Occupational Therapy, P.O. Box 25101, Santa Fe, NM 87504",
     "physical_address": "See board website",
-    "phone": "(505) 476-4622",
+    "phone": "(505) 476-4730",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.rld.nm.gov/"
+    "email": "occupational.therapy@rld.nm.gov",
+    "url": "https://www.rld.nm.gov/",
+    "contact_url": "https://rld.nm.gov/boards-commissions/boards/board-of-occupational-therapy/contact-the-board/",
+    "verify_url": "https://newmexico.accessgov.com/rld/Forms/Search"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$75",
+    "renewal_cycle": "Every 2 years (by July 1st of even-numbered years)",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE-Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Account and Submit Online Application",
+      "description": "Navigate to the RLD Online Licensing System, create an account, and complete the Occupational Therapist license application, providing all required personal and professional information."
     },
     {
-      "title": "Pass the NBCOT Exam",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Documentation",
+      "description": "Arrange for official transcripts from your professional OT program and verification of your NBCOT certification to be sent directly to the New Mexico Board of Occupational Therapy."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit an application to the New Mexico Board of Occupational Therapy Practice, including all required documentation and fees."
+      "title": "Complete Criminal Background Check",
+      "description": "Undergo a state and federal Criminal Background Check (CBC) by following the instructions provided by the Board after submitting your application."
+    },
+    {
+      "title": "Provide License Verifications (Endorsement Applicants)",
+      "description": "If applying by endorsement from another state, ensure verifications of any current or past OT licenses are sent directly from those respective state licensing boards to the New Mexico Board of Occupational Therapy."
+    },
+    {
+      "title": "Pay Application and Licensure Fees",
+      "description": "Submit all applicable application and initial licensure fees through the RLD Online Licensing System to finalize your application."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 110,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 325,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.rld.nm.gov/",
-    "endorsement_url": "https://www.rld.nm.gov/",
+    "endorsement_url": "https://rld.nm.gov/boards-commissions/boards/board-of-occupational-therapy/online-services/apply-for-a-license/",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in New Mexico",
-        "dek": "New Mexico Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a completed application."
+        "dek": "To apply for an Occupational Therapist license in New Mexico, create an account and complete the application through the RLD Online Licensing System."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "RLD Online Licensing System",
+    "portal_url": "https://newmexico.accessgov.com/rld/",
+    "registration_steps": "Navigate to the RLD Online Licensing System, click 'Sign up' to create an account with your email and password. Once registered, log in and select 'Apply for a New License' for Occupational Therapist.",
+    "provider_search": "https://newmexico.accessgov.com/rld/Forms/Search"
   }
 }

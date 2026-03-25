@@ -21,19 +21,21 @@
   "board": {
     "name": "Speech-Language Pathology and Audiology Board",
     "parent_dept": "Indiana Professional Licensing Agency (PLA)",
-    "mailing_address": "402 W. Washington St., Room W072, Indianapolis, IN 46204",
+    "mailing_address": "Indiana Professional Licensing Agency, 402 W. Washington Street, Room W072, Indianapolis, IN 46204",
     "physical_address": "402 W. Washington St., Room W072, Indianapolis, IN 46204",
-    "phone": "(317) 234-2054",
+    "phone": "(317) 234-2060",
     "fax": "(317) 233-4236",
-    "email": "mailto:pla4@pla.in.gov",
-    "url": "https://www.in.gov/pla/professions/speech-language-pathology-and-audiology-board/"
+    "email": "pla8@pla.in.gov",
+    "url": "https://www.in.gov/pla/professions/speech-language-pathology-and-audiology-board/",
+    "contact_url": "https://www.in.gov/pla/contact-us/",
+    "verify_url": "https://mylicense.in.gov/EVerification/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 application fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "36 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a Master's Degree",
-      "description": "Obtain a master’s degree or doctorate in speech-language pathology from an accredited educational institution."
+      "title": "Create an Account and Apply Online",
+      "description": "Register for an account on the MyLicense Indiana portal and complete the online application for initial Speech-Language Pathologist licensure. Pay the required application fee through the portal."
     },
     {
-      "title": "Complete Supervised Clinical Experience",
-      "description": "Complete a supervised clinical practicum experience that meets the requirements outlined by the board."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts verifying a master's or doctoral degree from an ASHA-accredited program to be sent directly from your university to the Indiana Speech-Language Pathology and Audiology Board."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit an application to the Indiana Speech-Language Pathology and Audiology Board."
+      "title": "Submit Praxis Exam Scores",
+      "description": "Request the Educational Testing Service (ETS) to send your official Praxis exam (Speech-Language Pathology, code 5331 or current equivalent) scores directly to the Indiana Speech-Language Pathology and Audiology Board. A minimum score of 162 is required."
+    },
+    {
+      "title": "Submit Clinical Fellowship Report",
+      "description": "Have your supervisor complete and submit the 'Verification of Supervised Post-Graduate Professional Experience (Clinical Fellowship Report Form)' directly to the Board, detailing your completed clinical fellowship (36 weeks full-time or 72 weeks part-time)."
+    },
+    {
+      "title": "Complete Jurisprudence Exam",
+      "description": "Access and pass the Indiana Jurisprudence Examination, which is typically administered online within your MyLicense Indiana account after application submission."
     }
   ],
   "documents": [
@@ -86,7 +96,7 @@
   "faqs": [
     {
       "question": "How much does an Indiana SLP license cost?",
-      "answer": "The application fee is $50 — one of the lowest in the country. Biennial renewal is also $50."
+      "answer": "The application fee is $50 \u2014 one of the lowest in the country. Biennial renewal is also $50."
     },
     {
       "question": "Is Indiana part of the ASLP Interstate Compact?",
@@ -142,10 +152,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 50,
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.in.gov/pla/professions/speech-language-pathology-and-audiology-board/",
-    "endorsement_url": "https://www.in.gov/pla/professions/speech-language-pathology-and-audiology-board/",
+    "endorsement_url": "https://www.in.gov/pla/files/51308.pdf",
     "notes": "Indiana is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Indiana through a compact privilege."
   },
   "slug": "indiana-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Indiana",
-        "dek": "Indiana Speech-Language Pathologist license requires a master's degree, supervised clinical experience, and passing the national exam."
+        "dek": "To apply for an Indiana Speech-Language Pathologist license, you must create an account and submit your application through the official MyLicense Indiana online portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense Indiana",
+    "portal_url": "https://mylicense.in.gov/",
+    "registration_steps": "New applicants must register for an account on the MyLicense Indiana portal by clicking 'Register a Person'. After creating a username and password, you can log in and select 'Start a New Application' for Speech-Language Pathologist licensure.",
+    "provider_search": "https://mylicense.in.gov/EVerification/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Arizona Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Arizona Department of Health Services (ADHS)",
-    "mailing_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
+    "mailing_address": "1740 West Adams Street, Suite 3006, Phoenix, AZ 85007",
     "physical_address": "150 N. 18th Ave., Suite 460, Phoenix, AZ 85007",
-    "phone": "(602) 364-2079",
+    "phone": "(602) 364-2898",
     "fax": "(602) 364-4769",
-    "email": "mailto:speechpathology@azdhs.gov",
-    "url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/"
+    "email": "boardinfo@azspeechhearing.az.gov",
+    "url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
+    "contact_url": "https://azspeechhearing.az.gov/contact-us",
+    "verify_url": "https://azspeechhearing.az.gov/lookup"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination",
     "ce_requirement": "20 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Graduate with a Doctor of Audiology (Au.D.) degree from a program accredited by the Accreditation Commission for Audiology Education (ACAE) or the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA)."
+      "title": "Create Account",
+      "description": "Register for an account on the Arizona State Licensing Portal at licensing.az.gov."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Successfully pass the Audiology Examination administered by a board-approved testing agency."
+      "title": "Start Application",
+      "description": "Log in to the Arizona State Licensing Portal, select the Board of Examiners for Speech-Language Pathology and Audiology, and initiate a new Audiologist License application."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application, including all required documentation and fees, to the Arizona Board of Speech-Language Pathology and Audiology."
+      "title": "Complete & Upload",
+      "description": "Fill out the online application form and upload all required supporting documents (e.g., transcripts, practicum verification) directly into the Online Application System."
+    },
+    {
+      "title": "Pay Fees",
+      "description": "Submit the non-refundable application fee and the initial license fee through the Online Application System."
+    },
+    {
+      "title": "Submit Transcripts/Scores",
+      "description": "Arrange for official transcripts, verification of practicum, and national exam scores (Praxis) to be sent directly to the Board by the issuing institutions."
+    },
+    {
+      "title": "Board Review",
+      "description": "The Board will review your complete application and notify you of your license status or any further requirements."
     }
   ],
   "documents": [
@@ -125,10 +139,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
-    "endorsement_url": "https://www.azdhs.gov/licensing/special/speech-language-pathology/",
+    "endorsement_url": "https://azspeechhearing.az.gov/apply-license/licensure-endorsement-and-reciprocity",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "arizona-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Arizona",
-        "dek": "Arizona Audiologist license requires graduation from an approved program, passing the Audiology Examination, and submitting an application to the board."
+        "dek": "To apply for an Audiologist license in Arizona, you must submit your application through the Arizona State Board of Examiners for Speech-Language Pathology and Audiology's Online Application System, accessible via licensing.az.gov."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Arizona State Board of Examiners for Speech-Language Pathology and Audiology Online Application System",
+    "portal_url": "https://licensing.az.gov/",
+    "registration_steps": "To apply for an Audiologist license in Arizona, navigate to licensing.az.gov. Click 'Create Account' in the top right corner, then follow the prompts to register with your email and chosen password. Once your account is verified and you are logged in, select 'Board of Examiners for Speech-Language Pathology and Audiology' from the agency list and choose to start a 'New Application' for an 'Audiologist License'.",
+    "provider_search": "https://azspeechhearing.az.gov/lookup"
   }
 }

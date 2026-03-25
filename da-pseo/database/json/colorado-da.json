@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Colorado Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant requirements in Colorado — fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant requirements in Colorado \u2014 fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license colorado, dental assistant certification colorado, RDA colorado, DANB CDA colorado, dental assistant radiography colorado"
   },
   "board": {
     "name": "Colorado Dental Board",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "1560 Broadway, Suite 1350, Denver, CO 80202",
     "physical_address": "See board website",
-    "phone": "(303) 894-7800",
+    "phone": "303-894-7800",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dpo.colorado.gov/Dental"
+    "email": "dora_dentalboard@state.co.us",
+    "url": "https://dpo.colorado.gov/Dental",
+    "contact_url": "https://dpo.colorado.gov/Dental/ContactUs",
+    "verify_url": "https://www.colorado.gov/dora/licensing/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state application fee",
     "renewal_fee": "N/A",
-    "renewal_cycle": "N/A",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_cycle": "N/A - No general license or renewal",
+    "processing_time": "N/A - No general license or application process",
     "license_duration": "N/A"
   },
   "license_types": [
@@ -44,16 +46,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education or Training",
-      "description": "Complete a CODA-accredited dental assisting program or receive on-the-job training while employed as a dental assistant."
+      "title": "Understand Colorado Dental Assistant Regulations",
+      "description": "Familiarize yourself with the Colorado Dental Board's statutes and rules concerning dental assistants, particularly Rule 1.16 on Expanded Duties. General dental assisting duties do not require a license, but are performed under a dentist's supervision."
     },
     {
-      "title": "Complete Required Courses",
-      "description": "Complete courses in Cardiopulmonary Resuscitation (CPR), Basic Life Support (BLS), and infection control."
+      "title": "Identify Required Training for Expanded Duties",
+      "description": "If you plan to perform expanded duties such as radiography, coronal polishing, or pit and fissure sealants, identify the specific training or examination requirements outlined by the Colorado Dental Board. These are qualifications you must possess, not an application process via a portal."
     },
     {
-      "title": "Apply for Registration",
-      "description": "Submit an application for registration to the Colorado Dental Board."
+      "title": "Complete Board-Approved Education or Examination",
+      "description": "Successfully complete a course of study approved by the Colorado Dental Board or pass a board-approved examination for each specific expanded duty you intend to perform. These courses are offered by educational institutions or testing bodies, not directly by the board."
+    },
+    {
+      "title": "Maintain Documentation of Qualifications",
+      "description": "Keep thorough records of all completed board-approved training, certifications, and examinations. Your supervising dentist is responsible for ensuring you meet all requirements for delegated duties, and this documentation may be requested during an audit."
+    },
+    {
+      "title": "Work Under Direct Supervision",
+      "description": "Ensure you always perform duties under the direct supervision of a licensed Colorado dentist, as required by state law. The dentist is ultimately responsible for your delegated functions."
     }
   ],
   "documents": [
@@ -83,7 +93,7 @@
     },
     {
       "question": "Can I take dental x-rays in Colorado?",
-      "answer": "Radiography requirements vary — check with the state board."
+      "answer": "Radiography requirements vary \u2014 check with the state board."
     },
     {
       "question": "How much does it cost to become a dental assistant in Colorado?",
@@ -123,10 +133,10 @@
     "temp_license_available": false,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "N/A - No general license or application process",
     "processing_tier": "fast",
     "board_url": "https://dpo.colorado.gov/Dental",
-    "endorsement_url": "https://dpo.colorado.gov/Dental",
+    "endorsement_url": "N/A - No general license or endorsement process",
     "notes": "Colorado does not license or register general dental assistants. Expanded duty registration may apply.",
     "requires_psv": false,
     "board_fee_verified": true,
@@ -145,7 +155,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Colorado",
-        "dek": "Colorado Dental Assistant registration requires graduation from a CODA-accredited dental assisting program or on-the-job training, completion of specified courses, and application to the Colorado Dental Board."
+        "dek": "Colorado does not license general dental assistants. Dental assistants operate under the direct supervision of a licensed dentist, but specific expanded duties such as radiography or coronal polishing require completion of board-approved training or exams, overseen by the Colorado Dental Board."
       }
     }
   },
@@ -171,5 +181,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "renewal_fee_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Colorado Dental Board Information (No General DA License Application)",
+    "portal_url": "https://dpo.colorado.gov/Dental",
+    "registration_steps": "The Colorado Dental Board does not license general dental assistants. There is no central online application system for a DA license. Information regarding requirements for specific expanded duties can be found on the board's website.",
+    "provider_search": "https://www.colorado.gov/dora/licensing/Lookup/LicenseLookup.aspx"
   }
 }

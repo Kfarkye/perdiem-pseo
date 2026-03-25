@@ -21,12 +21,14 @@
   "board": {
     "name": "Tennessee Board of Pharmacy",
     "parent_dept": "Tennessee Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Tennessee Board of Pharmacy\n665 Mainstream Drive\nNashville, TN 37243",
     "physical_address": "See board website",
-    "phone": "(615) 253-1299",
+    "phone": "(615) 532-5166",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html"
+    "email": "Ask.Health@tn.gov",
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html",
+    "contact_url": "https://www.tn.gov/health/health-program-areas/health-related-boards/health-related-boards-contact-us.html",
+    "verify_url": "https://apps.health.tn.gov/licensure/default.aspx"
   },
   "quick_facts": {
     "total_fee": "$250",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "You must graduate from a pharmacy program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create Account and Apply Online",
+      "description": "Create a user account on the Licensure and Regulatory System (LARS) if you do not have one. Log in, complete the 'Pharmacist Licensure by Endorsement' application, and pay the required fee through the LARS portal."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Achieve passing scores on both the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Provide NABP e-Profile ID",
+      "description": "Ensure your NABP e-Profile ID is provided during the LARS application process, as this is essential for transferring your licensure information."
     },
     {
-      "title": "Complete Internship Hours and Apply for Licensure",
-      "description": "Satisfactorily complete the required internship hours and submit your application for licensure with the Tennessee Board of Pharmacy."
+      "title": "Request NABP Licensure Transfer",
+      "description": "Request a Pharmacist Licensure Transfer Application through the National Association of Boards of Pharmacy (NABP) to be sent directly to the Tennessee Board of Pharmacy. This includes verification of your original licensure and all other licenses held."
+    },
+    {
+      "title": "Register for and Pass TN MPJE",
+      "description": "Once eligibility is confirmed by the Board, register for and pass the Tennessee Multistate Jurisprudence Examination (MPJE). Information on how to register is typically provided by NABP."
+    },
+    {
+      "title": "Submit Photograph",
+      "description": "Upload a current, passport-style photograph as part of your LARS application, or submit it separately as directed by the Board."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 300,
-    "processing_time": "8 to 12 Weeks",
+    "endorsement_fee": 250,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html",
-    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacy-board.html",
+    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pharmacists-board/licensing/pharmacist-licensure-by-endorsement.html",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -151,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Tennessee",
-        "dek": "Tennessee Pharmacist licenses require graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing internship hours."
+        "dek": "To apply for a Pharmacist license in Tennessee by endorsement, create an account and submit your application through the state's Licensure and Regulatory System (LARS) portal."
       }
     }
   },
@@ -177,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Licensure and Regulatory System (LARS)",
+    "portal_url": "https://lars.tn.gov/",
+    "registration_steps": "First-time users must register for a Person Account by selecting 'Register a Person Account' and verifying their email address. After successful registration and login, select 'Apply for a New License' and choose the 'Pharmacist Licensure by Endorsement' application.",
+    "provider_search": "https://apps.health.tn.gov/licensure/default.aspx"
   }
 }

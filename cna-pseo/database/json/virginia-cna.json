@@ -21,19 +21,21 @@
   "board": {
     "name": "Virginia Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Virginia Board of Nursing\nPerimeter Center\n9960 Mayland Drive, Suite 300\nRichmond, VA 23233-1463",
     "physical_address": "See board website",
     "phone": "(804) 367-4515",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.dhp.virginia.gov/"
+    "email": "boninfo@dhp.virginia.gov",
+    "url": "https://www.dhp.virginia.gov/",
+    "contact_url": "https://dpp.virginia.gov/boards/bon/contact-us/",
+    "verify_url": "https://dhp.virginia.gov/licenselookup/"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$20",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "NNAAP (Pearson VUE)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Virginia-approved CNA training program, usually 120 hours long."
+      "title": "Create Account and Submit Online Application",
+      "description": "Go to the DHP Online Licensing System (licenseda.dhp.virginia.gov/apply/), create a new account, and log in. Select and complete either the 'Application for Nursing Assistant Licensure by Examination' or 'Application for Nursing Assistant Licensure by Endorsement', and pay the required application fee."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Virginia nurse aide exam."
+      "title": "Submit Required Documentation",
+      "description": "If applying by examination, ensure your Virginia-approved nursing assistant program has submitted verification of completion to the Board. If applying by endorsement, arrange for official transcripts from your training program or verification of current, active licensure in another state to be sent directly to the Virginia Board of Nursing."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the specific instructions provided by the Virginia Board of Nursing after submitting your application to complete the state and federal criminal background check process through the approved vendor."
+    },
+    {
+      "title": "Pass the Nurse Aide Competency Examination (if applicable)",
+      "description": "If applying by examination, once deemed eligible by the Board, you must register with Credentia (the testing vendor) to schedule and successfully pass both the written/oral and skills components of the Virginia Nurse Aide Competency Examination."
+    },
+    {
+      "title": "License Issuance",
+      "description": "Upon successful completion of all requirements, including a clear background check and passing the competency exam (if applicable), the Virginia Board of Nursing will issue your Certified Nursing Assistant license."
     }
   ],
   "documents": [
@@ -113,11 +123,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 30,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.dhp.virginia.gov/",
-    "endorsement_url": "https://www.credentia.com/test-takers/va",
+    "endorsement_url": "https://dpp.virginia.gov/boards/bon/nursing-assistant/",
     "notes": "Virginia CNA endorsement is handled through the Credentia CNA365 platform or the VA Board of Nursing.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -167,7 +177,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Virginia",
-        "dek": "Virginia CNA certification requires a 120-hour training program, Virginia Board of Nursing eligibility, and a passing score on the NNAAP (Pearson VUE) exam."
+        "dek": "To become a Certified Nursing Assistant in Virginia, you must apply online through the DHP Online Licensing System by creating an account and submitting the appropriate application."
       },
       "seo": {
         "title": "How to Become a CNA in Virginia",
@@ -213,5 +223,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Virginia Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DHP Online Licensing System",
+    "portal_url": "https://licenseda.dhp.virginia.gov/apply/",
+    "registration_steps": "To create an account, visit the DHP Online Licensing System, click 'Register for a New Account', and follow the prompts to register using your email address. After successful registration and login, select the appropriate application type (e.g., 'Application for Nursing Assistant Licensure by Examination' or 'Application for Nursing Assistant Licensure by Endorsement') to begin your application.",
+    "provider_search": "https://dhp.virginia.gov/licenselookup/"
   }
 }

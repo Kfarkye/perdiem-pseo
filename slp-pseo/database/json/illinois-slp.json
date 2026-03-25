@@ -19,21 +19,23 @@
     "keywords": "speech-language pathologist license reciprocity illinois, how to transfer speech-language pathologist license to illinois, speech-language pathologist compact illinois, illinois speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Division of Professional Regulation — Speech-Language Pathology",
+    "name": "Division of Professional Regulation \u2014 Speech-Language Pathology",
     "parent_dept": "Illinois Department of Financial and Professional Regulation (IDFPR)",
-    "mailing_address": "320 W. Washington St., 3rd Floor, Springfield, IL 62786",
+    "mailing_address": "Illinois Department of Financial and Professional Regulation\n320 W. Washington Street\nSpringfield, IL 62786",
     "physical_address": "320 W. Washington St., 3rd Floor, Springfield, IL 62786",
-    "phone": "(217) 785-0800",
+    "phone": "1-800-560-6420",
     "fax": "(217) 782-7645",
     "email": "mailto:FPR.COREHelp@illinois.gov",
-    "url": "https://idfpr.illinois.gov/"
+    "url": "https://idfpr.illinois.gov/",
+    "contact_url": "https://idfpr.illinois.gov/contactus.html",
+    "verify_url": "https://idfpr.illinois.gov/licenselookup.html"
   },
   "quick_facts": {
     "total_fee": "$90",
     "fee_breakdown": "$90 application fee (by examination)",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years (October 31, odd years)",
-    "processing_time": "4 to 6 weeks",
+    "renewal_fee": "$95",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Clinical Experience",
-      "description": "Earn a master's degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) and complete supervised clinical experience."
+      "title": "Create an Account and Apply Online",
+      "description": "Register for an account on the IDFPR Online Services Portal and complete the application for a Speech-Language Pathologist license, providing all required personal and professional information."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your academic institution to send official transcripts directly to IDFPR, verifying your master's or doctoral degree in Speech-Language Pathology or an equivalent program."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Illinois Department of Financial and Professional Regulation (IDFPR) along with all required documentation and fees."
+      "title": "Complete Clinical Fellowship Experience",
+      "description": "Fulfill the supervised professional experience (clinical fellowship, CFY) requirement as mandated by Illinois regulations. Ensure proper documentation and verification of your experience are submitted to IDFPR."
+    },
+    {
+      "title": "Pass the National Examination",
+      "description": "Take and pass the national examination in Speech-Language Pathology administered by Praxis. Request that your official scores be sent directly to the Illinois Department of Financial and Professional Regulation."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee as part of your online application process through the IDFPR Online Services Portal."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 90,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 95,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://idfpr.illinois.gov/",
-    "endorsement_url": "https://idfpr.illinois.gov/",
+    "endorsement_url": "https://www.ilga.gov/commission/jcar/admincode/068/06801465sections.html#0680146500300R",
     "notes": "Illinois offers licensure by endorsement for SLPs licensed in other states. The endorsement application fee is $100. Applicants must demonstrate equivalent education, examination, and experience. ASHA CCC-SLP holders may have the review process streamlined but must still submit a full Illinois application."
   },
   "slug": "illinois-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Illinois",
-        "dek": "Illinois Speech-Language Pathologist License requires a master's degree, completion of supervised clinical experience, and passing the national examination."
+        "dek": "To apply for an Illinois Speech-Language Pathologist license, you must submit your application and supporting documentation through the IDFPR Online Services Portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "IDFPR Online Services Portal",
+    "portal_url": "https://www.idfpr.com/Applications/proflic.asp",
+    "registration_steps": "To begin, visit the IDFPR Online Services Portal. First-time users must click 'Register for an Account' to create a new profile. Follow the prompts to provide personal information and set up security questions. Once registered, log in and select 'Apply for a New License' to start your Speech-Language Pathologist application.",
+    "provider_search": "https://idfpr.illinois.gov/licenselookup.html"
   }
 }

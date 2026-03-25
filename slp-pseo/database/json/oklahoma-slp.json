@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "Oklahoma Board of Examiners for SLP and Audiology",
-    "mailing_address": "3700 N. Classen Blvd., Suite 248, Oklahoma City, OK 73118",
+    "mailing_address": "3700 N. Classen Blvd., Suite 258, Oklahoma City, OK 73118",
     "physical_address": "3700 N. Classen Blvd., Suite 248, Oklahoma City, OK 73118",
-    "phone": "(405) 524-4955",
+    "phone": "(405) 521-3701",
     "fax": "(405) 524-4957",
-    "email": "mailto:obespa@okbespa.org",
-    "url": "https://www.okbespa.org/"
+    "email": "info@obespa.ok.gov",
+    "url": "https://www.okbespa.org/",
+    "contact_url": "https://obespa.ok.gov/contact-us",
+    "verify_url": "https://obespa.ok.gov/licensee-search"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$50 application + $50 license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every year",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Every 1 year",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "1 year",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Obtain a master's degree or doctorate in speech-language pathology from an accredited educational institution."
+      "title": "Create eLicense Account and Start Application",
+      "description": "Register for an account on the OBESPA eLicense online system and select the appropriate initial license application for Speech-Language Pathologist (either Provisional or Full License)."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience (SPE) of at least 36 weeks, totaling 1260 hours, under the guidance of a licensed speech-language pathologist."
+      "title": "Submit Required Documents",
+      "description": "Arrange for official transcripts verifying a Master's or Doctoral degree in Speech-Language Pathology and official Praxis examination scores to be sent directly to OBESPA. Also, complete and upload any required forms, such as the Supervised Clinical Professional Experience (CPE) plan for provisional applicants."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology and submit a completed application to the Oklahoma Board of Examiners for Speech-Language Pathology and Audiology."
+      "title": "Complete Oklahoma Jurisprudence Exam",
+      "description": "Complete the Oklahoma Jurisprudence Examination module, which is typically integrated into the eLicense online application process."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee of $100 through the eLicense online application system."
+    },
+    {
+      "title": "Complete Supervised Clinical Professional Experience (if applicable)",
+      "description": "If applying for a Full License directly or converting from a Provisional License, ensure completion of the required 1260 hours of supervised clinical professional experience and have the supervisor submit the final evaluation directly to OBESPA."
+    },
+    {
+      "title": "Board Review and License Issuance",
+      "description": "Allow 4 to 6 weeks for processing of a Provisional License and 2 to 4 weeks for a Full License once all required documents, fees, and examination results have been received and reviewed by the Board."
     }
   ],
   "documents": [
@@ -142,10 +156,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.okbespa.org/",
-    "endorsement_url": "https://www.okbespa.org/",
+    "endorsement_url": "https://obespa.ok.gov/licensure-endorsement",
     "notes": "Oklahoma is a member of the ASLP Interstate Compact."
   },
   "slug": "oklahoma-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Oklahoma",
-        "dek": "Oklahoma Speech-Language Pathologist license requires a master's degree, passing the national exam, and completion of a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in Oklahoma, applicants must register and complete the application through the Oklahoma Board of Examiners for Speech-Language Pathology and Audiology's (OBESPA) eLicense online application system."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense",
+    "portal_url": "https://obespa.ok.gov/online-application-system",
+    "registration_steps": "Applicants must create an account on the OBESPA eLicense online system by selecting 'Register' to begin the application process.",
+    "provider_search": "https://obespa.ok.gov/licensee-search"
   }
 }

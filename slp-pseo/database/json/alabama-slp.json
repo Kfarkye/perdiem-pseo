@@ -21,19 +21,21 @@
   "board": {
     "name": "Alabama Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "ABESPA",
-    "mailing_address": "P.O. Box 304760, Montgomery, AL 36130-4760",
+    "mailing_address": "ABESPA, P.O. Box 302005, Montgomery, AL 36130-2005",
     "physical_address": "100 N. Union St., Suite 724, Montgomery, AL 36130",
-    "phone": "(334) 269-1434",
+    "phone": "(334) 261-0261",
     "fax": "(334) 834-9618",
-    "email": "mailto:abespa@abespa.org",
-    "url": "https://www.abespa.alabama.gov/"
+    "email": "abespa@abespa.alabama.gov",
+    "url": "https://www.abespa.alabama.gov/",
+    "contact_url": "https://abespa.alabama.gov/contact-us/",
+    "verify_url": "https://abin.alabama.gov/abin/LookupLicense.aspx?id=abespa"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": "$100 application + $50 license fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 weeks",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Every year",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "10 contact hours per year"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Earn a master’s degree or doctoral degree in speech-language pathology from an accredited educational institution."
+      "title": "Create an ABESPA eGovPlus Account",
+      "description": "Go to the ABESPA eGovPlus online application system and click 'New User Registration' to create an account using a valid email address and password."
     },
     {
-      "title": "Complete Supervised Clinical Practicum",
-      "description": "Complete a supervised clinical practicum of at least 400 clock hours."
+      "title": "Complete and Submit Online Application",
+      "description": "Log in to your eGovPlus account, complete the Speech-Language Pathologist Application, and pay the required application fee online."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit your application, fees, and supporting documentation to the Alabama Board of Examiners for Speech-Language Pathology and Audiology."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts confirming a graduate degree in Speech-Language Pathology to be sent directly from your university to ABESPA."
+    },
+    {
+      "title": "Provide Clinical Experience Documentation",
+      "description": "Ensure official documentation of your supervised clinical observation and supervised clinical practicum (e.g., ASHA Clinical Fellowship Report or ABESPA Clinical Fellowship Report) is submitted to ABESPA."
+    },
+    {
+      "title": "Submit Praxis Examination Scores",
+      "description": "Request official scores from the Praxis Examination in Speech-Language Pathology (ETS test code 5031) to be sent directly from ETS to ABESPA."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 200,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.abespa.alabama.gov/",
-    "endorsement_url": "https://www.abespa.alabama.gov/",
+    "endorsement_url": "https://abespa.alabama.gov/application-forms-instructions/",
     "notes": "Alabama is a member of the ASLP Interstate Compact, which allows SLPs licensed in other compact member states to obtain a compact privilege to practice in Alabama. Traditional endorsement pathways are also available for non-compact applicants."
   },
   "slug": "alabama-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Alabama",
-        "dek": "Alabama Speech-Language Pathologist license requires a master's degree in speech-language pathology, completion of a supervised clinical practicum, and passing the Praxis Examination."
+        "dek": "To apply for an SLP license in Alabama, you must submit your application through the ABESPA eGovPlus online application system."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eGovPlus",
+    "portal_url": "https://abin.alabama.gov/abin/Login.aspx?id=abespa",
+    "registration_steps": "Go to the ABESPA eGovPlus online application system and click 'New User Registration' to create an account using a valid email address and password.",
+    "provider_search": "https://abin.alabama.gov/abin/LookupLicense.aspx?id=abespa"
   }
 }

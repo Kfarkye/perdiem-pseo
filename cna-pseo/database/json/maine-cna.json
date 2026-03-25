@@ -21,19 +21,21 @@
   "board": {
     "name": "Maine DHHS",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "161 Capitol Street, 3rd Floor, 158 State House Station, Augusta, ME 04333-0158",
     "physical_address": "See board website",
-    "phone": "(207) 287-9300",
+    "phone": "(207) 287-1133",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.maine.gov/dhhs/"
+    "email": "maine.bon@maine.gov",
+    "url": "https://www.maine.gov/dhhs/",
+    "contact_url": "https://www.maine.gov/boardofnursing/contact/index.html",
+    "verify_url": "https://www.maine.gov/cgi-bin/online/proflic/verify_license.pl"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$25",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "training_hours": "180 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Maine-approved CNA training program, usually 180 hours long."
+      "title": "Create Professional Licensing Portal Account",
+      "description": "Navigate to the State of Maine's Professional Licensing Portal and create a new account, then log in to access the online application for Nursing Assistants."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Maine nurse aide exam."
+      "title": "Submit Online Application and Fee",
+      "description": "Complete the online application for Nursing Assistant certification through the Professional Licensing Portal and pay the $25 application fee."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certificate, complete any required background check steps, and pay the required fees."
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Submit fingerprints for a criminal background check as instructed during the application process. This is a mandatory requirement for certification."
+    },
+    {
+      "title": "Pass Competency Exam",
+      "description": "Register with Prometric (Maine's approved vendor) and pass the Maine State Board of Nursing-approved Nursing Assistant Competency Examination."
+    },
+    {
+      "title": "Receive Certification",
+      "description": "Upon successful completion of all requirements, the Maine State Board of Nursing will issue your CNA certification."
     }
   ],
   "documents": [
@@ -121,11 +131,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 25,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.maine.gov/dhhs/",
-    "endorsement_url": "https://www.maine.gov/dhhs/",
+    "endorsement_url": "https://www.maine.gov/boardofnursing/nursingassistant/howapplyendorsement.html",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Maine",
-        "dek": "Maine CNA certificate requires a 180-hour training program, Maine DHHS eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for your Certified Nursing Assistant (CNA) certification in Maine, you must submit your application through the State of Maine's Professional Licensing Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Maine | Registry Requirements",
@@ -212,5 +222,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Maine CNA Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Professional Licensing Portal",
+    "portal_url": "https://www.maine.gov/professionallicensing/",
+    "registration_steps": "Visit the State of Maine's Professional Licensing Portal, click 'New Registration' to create an account, verify your email, and log in. Once logged in, navigate to the Maine State Board of Nursing and select Nursing Assistant to start your application.",
+    "provider_search": "https://www.maine.gov/cgi-bin/online/proflic/verify_license.pl"
   }
 }

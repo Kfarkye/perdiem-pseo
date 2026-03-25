@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity colorado, how to transfer respiratory therapist license to colorado, respiratory therapist compact colorado, colorado respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Colorado DORA — Respiratory Therapy",
+    "name": "Colorado DORA \u2014 Respiratory Therapy",
     "parent_dept": "Colorado Department of Regulatory Agencies (DORA), Division of Professions and Occupations",
-    "mailing_address": "See board website",
+    "mailing_address": "Colorado Department of Regulatory Agencies, Division of Professions and Occupations, 1560 Broadway, Suite 1350, Denver, CO 80202",
     "physical_address": "See board website",
-    "phone": "(303) 894-7800",
+    "phone": "303-894-7800",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.colorado.gov/pacific/dora/Respiratory_Therapy"
+    "email": "DORA_DPO_Licensing@state.co.us",
+    "url": "http://www.colorado.gov/pacific/dora/Respiratory_Therapy",
+    "contact_url": "https://dpo.colorado.gov/ContactUs",
+    "verify_url": "https://www.colorado.gov/dora/licensing/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$60",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$72",
+    "renewal_cycle": "Every 2 years (expires December 31 of even-numbered years)",
+    "processing_time": "Up to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "30 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Therapy Program",
-      "description": "Graduate from a respiratory therapy education program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Access DORA Online Services",
+      "description": "Go to the DORA Online Services portal (https://www.colorado.gov/dora/professions), click 'Apply Online', and select 'Respiratory Care' to start your application or log in to an existing account."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully pass the National Board for Respiratory Care (NBRC) examination."
+      "title": "Complete Application and Pay Fee",
+      "description": "Fill out the online application form completely and pay the non-refundable application fee of $70 via the DORA Online Services portal."
     },
     {
-      "title": "Apply for a Respiratory Therapist License",
-      "description": "Submit an application for licensure to the Colorado Department of Regulatory Agencies (DORA) and pay the required fee."
+      "title": "Submit Required Documentation",
+      "description": "Arrange for official transcripts from your accredited respiratory care program and official NBRC score reports to be sent directly to the State Board of Respiratory Care."
+    },
+    {
+      "title": "Complete Fingerprint-Based Background Check",
+      "description": "Follow the instructions provided within the DORA Online Services portal to complete a fingerprint-based criminal history record check through an approved vendor."
+    },
+    {
+      "title": "Await Board Review",
+      "description": "The State Board of Respiratory Care will review your complete application, documentation, and background check results for approval."
+    },
+    {
+      "title": "Pay Initial License Fee",
+      "description": "Upon application approval, you will be prompted to pay the initial license fee (up to $72, depending on the biennial renewal schedule) through the DORA Online Services portal to activate your license."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 70,
+    "processing_time": "Up to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.colorado.gov/pacific/dora/Respiratory_Therapy",
-    "endorsement_url": "http://www.colorado.gov/pacific/dora/Respiratory_Therapy",
+    "endorsement_url": "https://dpo.colorado.gov/RespiratoryCare/ApplyForLicense",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Colorado",
-        "dek": "Colorado Respiratory Therapist License requires graduation from an accredited program, passing the NBRC examination, and completing the application process."
+        "dek": "To apply for a Respiratory Therapist license in Colorado, you must submit your application through the DORA Online Services portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DORA Online Services",
+    "portal_url": "https://www.colorado.gov/dora/professions",
+    "registration_steps": "Navigate to the DORA Online Services portal, click 'Apply Online', select 'Respiratory Care' from the list of professions, and follow the prompts to create a new user account or log in.",
+    "provider_search": "https://www.colorado.gov/dora/licensing/Lookup/LicenseLookup.aspx"
   }
 }

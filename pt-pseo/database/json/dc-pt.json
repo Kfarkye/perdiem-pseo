@@ -21,17 +21,19 @@
   "board": {
     "name": "DC Board of Physical Therapy",
     "parent_dept": "DC Department of Health, Health Regulation and Licensing Administration (HRLA)",
-    "mailing_address": "See board website",
+    "mailing_address": "DC Health\nHealth Regulation and Licensing Administration\nBoard of Physical Therapy\n899 North Capitol Street NE, 3rd Floor\nWashington, DC 20002",
     "physical_address": "See board website",
-    "phone": "(202) 442-8336",
+    "phone": "(202) 442-5955",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dchealth.dc.gov/service/physical-therapy-licensing"
+    "email": "HRLA.physicaltherapy@dc.gov",
+    "url": "https://dchealth.dc.gov/service/physical-therapy-licensing",
+    "contact_url": "https://dchealth.dc.gov/service/physical-therapy",
+    "verify_url": "https://dchealth.dc.gov/service/verify-health-professional-license"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$170",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "You must graduate from a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create Account on DC Health Licensing Portal",
+      "description": "Register for a new user account on the DC Health Licensing Portal at hrla.doh.dc.gov/hrla/default.asp if you do not already have one. You will need to verify your email address during this process."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "You must pass the NPTE, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Complete Online Application",
+      "description": "Log in to your newly created or existing account, select the 'Physical Therapist' application type (either 'By Examination' for new graduates or 'By Endorsement' for out-of-state licensees), and accurately complete all required sections of the application form."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit the online application, including all required documentation and fees, to the DC Board of Physical Therapy."
+      "title": "Submit Supporting Documentation",
+      "description": "Upload official transcripts verifying completion of an accredited physical therapy program. Arrange for official NPTE scores to be sent directly to the Board. If applying by endorsement, provide verification of licensure from all other states or jurisdictions where you have held a PT license."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Follow the specific instructions provided within the DC Health Licensing Portal or by the Board of Physical Therapy to complete the mandatory criminal background check."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Submit the non-refundable application fee of $200 (for both initial and endorsement applications) and any other associated fees through the DC Health Licensing Portal using a credit/debit card."
+    },
+    {
+      "title": "Board Review and Licensure",
+      "description": "The Board of Physical Therapy will review your complete application and all supporting documentation. Upon approval and verification that all requirements are met, your Physical Therapist license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dchealth.dc.gov/service/physical-therapy-licensing",
-    "endorsement_url": "https://dchealth.dc.gov/service/physical-therapy-licensing",
+    "endorsement_url": "https://dchealth.dc.gov/service/physical-therapy",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "dc-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in District of Columbia",
-        "dek": "DC Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination, and a completed application."
+        "dek": "To apply for a Physical Therapist license in the District of Columbia, navigate to the DC Health Licensing Portal and begin your application."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DC Health Licensing Portal",
+    "portal_url": "https://hrla.doh.dc.gov/hrla/default.asp",
+    "registration_steps": "On the DC Health Licensing Portal, click 'Register for an account' or 'New User Registration'. Follow the prompts to create your user account, verify your email, and then log in to start your application.",
+    "provider_search": "https://dchealth.dc.gov/service/verify-health-professional-license"
   }
 }

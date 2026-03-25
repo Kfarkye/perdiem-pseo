@@ -21,19 +21,21 @@
   "board": {
     "name": "Montana Board of Physical Therapy Examiners",
     "parent_dept": "Department of Labor & Industry",
-    "mailing_address": "See board website",
+    "mailing_address": "Montana Department of Labor & Industry\nBusiness Standards Division\nPO Box 200513\nHelena, MT 59620-0513",
     "physical_address": "See board website",
-    "phone": "(406) 841-2371",
+    "phone": "406-444-6880",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://boards.bsd.dli.mt.gov/physical-therapists"
+    "url": "https://boards.bsd.dli.mt.gov/physical-therapists",
+    "contact_url": "https://bsd.dli.mt.gov/contact",
+    "verify_url": "https://ebiz.mt.gov/POL/LicenseeSearch/SearchLicensee"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Annually (November 30th)",
+    "processing_time": "8 to 16 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "30 contact hours every 2 years"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a professional physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create a POL Account",
+      "description": "Register for a new user account on the Montana Professional Online Licensing System (POL) at https://ebiz.mt.gov/POL/Default.aspx."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Log into your POL account, initiate a new application for a Physical Therapist license (selecting 'Endorsement' if applicable), complete all required sections, and pay the application fee through the system."
     },
     {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit a completed application, required documentation, and the applicable fee to the Montana Board of Physical Therapy Examiners."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts from your professional physical therapy education program(s) to be sent directly from the institution to the Montana Board of Physical Therapy Examiners."
+    },
+    {
+      "title": "Verify Licensure and NPTE Scores",
+      "description": "Request official verification of all current and past PT licenses from other states/jurisdictions, ensuring they are sent directly to the Montana Board. If required, have your NPTE scores sent directly from FSBPT."
+    },
+    {
+      "title": "Complete Fingerprint Background Check",
+      "description": "Follow the instructions provided within the POL application or application packet to complete the required fingerprint background check."
     }
   ],
   "documents": [
@@ -125,10 +135,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "8 to 16 Weeks",
     "processing_tier": "mid",
     "board_url": "https://boards.bsd.dli.mt.gov/physical-therapists",
-    "endorsement_url": "https://boards.bsd.dli.mt.gov/physical-therapists",
+    "endorsement_url": "https://boards.mt.gov/_docs/pt/PT-Application-Endorsement.pdf",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "montana-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Montana",
-        "dek": "Montana Physical Therapist license requires graduation from an accredited program, passing the NPTE exam, and submitting an application to the board."
+        "dek": "To apply for a Physical Therapist license in Montana, navigate to the Montana Professional Online Licensing System (POL) to create an account and submit your initial application."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Montana Professional Online Licensing System (POL)",
+    "portal_url": "https://ebiz.mt.gov/POL/Default.aspx",
+    "registration_steps": "Navigate to the Montana Professional Online Licensing System (POL) at https://ebiz.mt.gov/POL/Default.aspx. Click 'New User Registration' to create a new account, then log in and select 'Apply for a new license' to begin your Physical Therapist application.",
+    "provider_search": "https://ebiz.mt.gov/POL/LicenseeSearch/SearchLicensee"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathologists and Audiologists",
     "parent_dept": "NC Board of Examiners for SLP and Audiology",
-    "mailing_address": "P.O. Box 16885, Greensboro, NC 27416",
+    "mailing_address": "PO Box 10227, Raleigh, NC 27605",
     "physical_address": "2222-C Wrightsville Ave., Wilmington, NC 28403",
-    "phone": "(336) 272-1828",
+    "phone": "(919) 942-1200",
     "fax": "(336) 272-1829",
-    "email": "mailto:info@ncboeslpa.org",
-    "url": "https://www.ncboeslpa.org/"
+    "email": "board@ncboeslpa.org",
+    "url": "https://www.ncboeslpa.org/",
+    "contact_url": "https://www.ncboeslpa.org/contactus.aspx",
+    "verify_url": "https://ncboeslpa.board.govos.com/licenselookup"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$60",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "8 to 12 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination of the Praxis Series administered by the Educational Testing Service",
     "ce_requirement": "20 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Complete a Doctor of Audiology (Au.D.) degree or its equivalent from a regionally accredited educational institution."
+      "title": "Create an Account",
+      "description": "Register for a new user account on the GovOS Professional Licensing Portal."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series administered by the Educational Testing Service."
+      "title": "Complete Online Application",
+      "description": "Log in to the GovOS Professional Licensing Portal, complete the Audiologist license application, and pay the $60 application fee and $25 jurisprudence exam fee."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure and all required documentation to the North Carolina Board of Examiners for Speech-Language Pathologists and Audiologists."
+      "title": "Submit Required Documents",
+      "description": "Arrange for official graduate transcripts, official Praxis exam scores, and verification of your ASHA Certificate of Clinical Competence (CCC-A) or American Board of Audiology (ABA) Certification to be sent directly to the Board."
+    },
+    {
+      "title": "Complete Jurisprudence Exam",
+      "description": "Successfully complete the North Carolina Jurisprudence Exam online, which is part of the application process within the GovOS Professional Licensing Portal."
+    },
+    {
+      "title": "Undergo Criminal Background Check",
+      "description": "Follow the Board's instructions to complete a criminal background check (CBC)."
+    },
+    {
+      "title": "Board Review and Approval",
+      "description": "Your complete application will be reviewed by Board staff and then presented to the Board at its next scheduled meeting for approval."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 60,
+    "processing_time": "8 to 12 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.ncboeslpa.org/",
-    "endorsement_url": "https://www.ncboeslpa.org/",
+    "endorsement_url": "https://www.ncboeslpa.org/licensure_audiology.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "north-carolina-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in North Carolina",
-        "dek": "North Carolina Audiologist license requires graduation from an accredited program, passing the national examination, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in North Carolina, new applicants must register and complete the online application through the GovOS Professional Licensing Portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "GovOS Professional Licensing Portal",
+    "portal_url": "https://ncboeslpa.board.govos.com/apply/",
+    "registration_steps": "Navigate to the GovOS Professional Licensing Portal, click 'Apply for a License' on the left sidebar, and then select 'New User?' to create an account with a valid email address and password.",
+    "provider_search": "https://ncboeslpa.board.govos.com/licenselookup"
   }
 }

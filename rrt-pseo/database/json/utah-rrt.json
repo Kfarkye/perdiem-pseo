@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity utah, how to transfer respiratory therapist license to utah, respiratory therapist compact utah, utah respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Utah DOPL — Respiratory Therapy",
+    "name": "Utah DOPL \u2014 Respiratory Therapy",
     "parent_dept": "Department of Commerce",
-    "mailing_address": "See board website",
+    "mailing_address": "Utah Division of Professional Licensing\nP.O. Box 146741\nSalt Lake City, UT 84114-6741",
     "physical_address": "See board website",
     "phone": "(801) 530-6628",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dopl.utah.gov/"
+    "email": "doplweb@utah.gov",
+    "url": "https://dopl.utah.gov/",
+    "contact_url": "https://dopl.utah.gov/contact/index.html",
+    "verify_url": "https://secure.utah.gov/professional-licensing-public-search/search.html"
   },
   "quick_facts": {
     "total_fee": "$90",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$55",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Approved Respiratory Care Program",
-      "description": "Complete a respiratory care program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create or Log In to Your Account",
+      "description": "Access the Utah DOPL Online Application System at secure.utah.gov. Create a new UtahID account if you don't have one, or log in with your existing credentials."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully pass the National Board for Respiratory Care (NBRC) examination."
+      "title": "Start a New License Application",
+      "description": "Once logged in, navigate to the 'Apply for a New License' section. Select 'Respiratory Care Practitioner' as the profession for which you are applying."
     },
     {
-      "title": "Apply for a Respiratory Therapist License",
-      "description": "Submit an application, pay the required fee, and pass a background check through the Utah Division of Occupational and Professional Licensing (DOPL)."
+      "title": "Complete the Online Application",
+      "description": "Fill out the comprehensive online application, providing all required personal, educational, examination, and professional history. Be sure to indicate if you are applying by endorsement from another state."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for all necessary supporting documents, such as official transcripts, verification of licensure from other states, and exam scores (if applicable), to be sent directly to DOPL."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable initial application fee of $85 through the Utah DOPL Online Application System. Your application will not be processed until the fee is paid."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through your account on the Utah DOPL Online Application System for updates or requests for additional information from the board."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 60,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 85,
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dopl.utah.gov/",
-    "endorsement_url": "https://dopl.utah.gov/",
+    "endorsement_url": "https://dopl.utah.gov/license/resp.html",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Utah",
-        "dek": "Utah Respiratory Therapist licenses require graduation from an approved respiratory care program, passing the NBRC examination, and a background check."
+        "dek": "To apply for a Respiratory Care Practitioner license in Utah, you must submit an application through the Utah DOPL Online Application System."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Utah DOPL Online Application System",
+    "portal_url": "https://secure.utah.gov/account/login.html?returnUrl=/dopl/apply/index.html",
+    "registration_steps": "Visit the Utah DOPL Online Application System, located at secure.utah.gov. Create a new account or log in with an existing UtahID account. Once logged in, navigate to 'Apply for a New License' to begin your application for a Respiratory Care Practitioner license.",
+    "provider_search": "https://secure.utah.gov/professional-licensing-public-search/search.html"
   }
 }

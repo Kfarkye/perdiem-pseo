@@ -21,17 +21,19 @@
   "board": {
     "name": "Speech-Language Pathologist, Audiologist, and Hearing Instrument Dispenser Advisory Council",
     "parent_dept": "Minnesota Department of Health (MDH)",
-    "mailing_address": "P.O. Box 64975, St. Paul, MN 55164-0975",
+    "mailing_address": "Minnesota Board of Examiners for Speech-Language Pathology and Audiology\nP.O. Box 64966\nSt. Paul, MN 55164-0966",
     "physical_address": "85 E. 7th Place, Suite 220, St. Paul, MN 55164",
-    "phone": "(651) 201-3726",
+    "phone": "651-201-2771",
     "fax": "(651) 201-3839",
-    "email": "mailto:health.slp-aud@state.mn.us",
-    "url": "https://www.health.state.mn.us/facilities/providers/slp/index.html"
+    "email": "slpa.board@state.mn.us",
+    "url": "https://www.health.state.mn.us/facilities/providers/slp/index.html",
+    "contact_url": "https://mn.gov/boards/speech-language-pathology-audiology/contact-us/",
+    "verify_url": "https://mn.gov/boards/speech-language-pathology-audiology/licensing/lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Doctoral Degree",
-      "description": "You must earn a Doctor of Audiology (AuD) degree from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA) or its equivalent."
+      "title": "Create an Online Services Account",
+      "description": "Navigate to the Minnesota Board of Examiners for Speech-Language Pathology and Audiology's Online Services portal and register as a 'New User' to create an account. This account will be used to submit and manage your application."
     },
     {
-      "title": "Pass the Audiology Examination",
-      "description": "You must pass the audiology examination, administered by a nationally recognized testing organization."
+      "title": "Complete and Submit Application Form",
+      "description": "Log into your Online Services account, select 'Application for Audiologist Licensure,' and complete all required sections of the online application form. Ensure all personal, educational, and professional details are accurate."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application to the Minnesota Department of Health, including all required documentation and fees."
+      "title": "Submit Required Documentation",
+      "description": "Upload all necessary supporting documents through the Online Services portal, which may include official transcripts, proof of supervised professional practice, verification of national certification (e.g., ASHA CCC-A), and any other supporting materials as required by the board."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee through the Online Services portal using a credit card. The current application fee for an Audiologist license is $150."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "Once the complete application and all supporting documents are received, the Minnesota Board of Examiners for Speech-Language Pathology and Audiology will review your submission. The board may contact you for additional information if needed."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.health.state.mn.us/facilities/providers/slp/index.html",
-    "endorsement_url": "https://www.health.state.mn.us/facilities/providers/slp/index.html",
+    "endorsement_url": "https://mn.gov/boards/speech-language-pathology-audiology/applicants/licensed-in-another-state/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "minnesota-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Minnesota",
-        "dek": "Minnesota Audiologist license requires a doctoral degree in audiology, passing the audiology examination, and completing the application process."
+        "dek": "To apply for an Audiologist license in Minnesota, applicants must submit their application through the Minnesota Board of Examiners for Speech-Language Pathology and Audiology Online Services portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Minnesota Board of Examiners for Speech-Language Pathology and Audiology Online Services",
+    "portal_url": "https://mn.gov/boards/speech-language-pathology-audiology/applicants/",
+    "registration_steps": "To create an account and start an application, navigate to the 'Online Services' button on the applicants page or the board's homepage. Select 'New Users' and follow the prompts to register. Once registered, log in and select the appropriate application type (e.g., 'Application for Audiologist Licensure').",
+    "provider_search": "https://mn.gov/boards/speech-language-pathology-audiology/licensing/lookup/"
   }
 }

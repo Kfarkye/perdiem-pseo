@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity arkansas, how to transfer respiratory therapist license to arkansas, respiratory therapist compact arkansas, arkansas respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Arkansas State Medical Board — RT",
+    "name": "Arkansas State Medical Board \u2014 RT",
     "parent_dept": "Arkansas Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Arkansas State Medical Board, 1401 West Capitol Avenue, Suite 340, Little Rock, AR 72201-2936",
     "physical_address": "See board website",
-    "phone": "(501) 296-1802",
+    "phone": "501-296-1800",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.armedicalboard.org/Professionals/RespiratoryTherapist.aspx"
+    "email": "ARMSB.Licensing@Arkansas.gov",
+    "url": "http://www.armedicalboard.org/Professionals/RespiratoryTherapist.aspx",
+    "contact_url": "https://armsb.arkansas.gov/contact",
+    "verify_url": "https://armsb.arkansas.gov/licensing/verification"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Annually, on the last day of the licensee's birth month",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours every 2 years"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create Account and Submit Online Application",
+      "description": "Register for an account on the Arkansas State Medical Board Online Application System and complete the Respiratory Care Practitioner Initial Application online."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully pass the National Board for Respiratory Care (NBRC) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts from your CoARC-approved respiratory care program to be sent directly from your school to the Arkansas State Medical Board."
     },
     {
-      "title": "Apply for an Arkansas Respiratory Therapist License",
-      "description": "Submit a completed application, required documentation, and the applicable fee to the Arkansas State Medical Board."
+      "title": "Submit Official NBRC Scores",
+      "description": "Request official score reports for both your Certified Respiratory Therapist (CRT) and Registered Respiratory Therapist (RRT) exams to be sent directly from the National Board for Respiratory Care (NBRC) to the Board."
+    },
+    {
+      "title": "Complete Criminal Background Checks",
+      "description": "Complete a state and federal criminal background check, which requires fingerprinting by the Arkansas State Police and FBI. Also, complete a Child Maltreatment Registry check through the Department of Human Services (DHS)."
+    },
+    {
+      "title": "Pay Application and License Fees",
+      "description": "Pay the required initial application fee and, upon approval, the initial license fee through the Arkansas State Medical Board Online Application System."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 4,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.armedicalboard.org/Professionals/RespiratoryTherapist.aspx",
-    "endorsement_url": "http://www.armedicalboard.org/Professionals/RespiratoryTherapist.aspx",
+    "endorsement_url": "https://armsb.arkansas.gov/licensing/account/login/default.aspx?ApplicationTypeId=8&BoardId=1",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Arkansas",
-        "dek": "Arkansas Respiratory Therapist license requires graduation from an accredited respiratory care program, passing the NBRC examination, and completion of continuing education hours."
+        "dek": "To apply for a Respiratory Care Practitioner license in Arkansas, you must create an account and complete the online application through the Arkansas State Medical Board Online Application System."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Arkansas State Medical Board Online Application System",
+    "portal_url": "https://armsb.arkansas.gov/licensing/account/login/default.aspx?BoardId=1",
+    "registration_steps": "Navigate to the portal URL, click 'Create an Account' and enter your first name, last name, and email address to register. Once registered, log in and select 'Respiratory Care Practitioner Initial Application' or 'Respiratory Care Practitioner Endorsement Application' to start your application.",
+    "provider_search": "https://armsb.arkansas.gov/licensing/verification"
   }
 }

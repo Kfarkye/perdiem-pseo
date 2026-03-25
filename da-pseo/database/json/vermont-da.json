@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Vermont Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Vermont — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Vermont \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license vermont, dental assistant certification vermont, RDA vermont, DANB CDA vermont, dental assistant radiography vermont"
   },
   "board": {
     "name": "Vermont Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "OPR, 89 Main Street, 3rd Floor, Montpelier, VT 05620-3402",
     "physical_address": "See board website",
-    "phone": "(802) 828-2390",
+    "phone": "802-828-2363",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://sos.vermont.gov/dental-examiners/"
+    "email": "sos.opr@vermont.gov",
+    "url": "https://sos.vermont.gov/dental-examiners/",
+    "contact_url": "https://sos.vermont.gov/contact-us/",
+    "verify_url": "https://sos.vermont.gov/contact-us/online-services/licensee-lookup/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 application/registration fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "12 hours per renewal cycle"
   },
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Basic Requirements",
-      "description": "Applicants must be at least 18 years old, have a high school diploma or equivalent, and be of good moral character."
+      "title": "Create Portal Account",
+      "description": "Create a new user account on the MyLicense Vermont online application portal."
     },
     {
-      "title": "Complete Required Training",
-      "description": "Complete a board-approved course in radiology and maintain current CPR certification."
+      "title": "Complete and Submit Application",
+      "description": "Complete the Dental Assistant registration application form through the MyLicense Vermont portal and pay the non-refundable $100 application fee."
     },
     {
-      "title": "Submit Application and Fee",
-      "description": "Submit a completed application and the $50 registration fee to the Vermont Board of Dental Examiners."
+      "title": "Provide Personal Documentation",
+      "description": "Submit proof of age (18 years or older) and proof of high school graduation or its equivalent."
+    },
+    {
+      "title": "Submit BLS Certification",
+      "description": "Provide documentation of current Basic Life Support (BLS) certification."
+    },
+    {
+      "title": "Demonstrate Professional Qualification",
+      "description": "Provide proof of graduation from a CODA-accredited dental assisting program OR provide proof of current Certified Dental Assistant (CDA) certification from the Dental Assisting National Board (DANB)."
+    },
+    {
+      "title": "Submit Experience Documentation (if applicable)",
+      "description": "If applying based on experience in another state, also submit documentation of 3,500 hours of practical clinical dental assisting experience over a two-year period and current CDA certification."
     }
   ],
   "documents": [
@@ -123,11 +137,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://sos.vermont.gov/dental-examiners/",
-    "endorsement_url": "https://sos.vermont.gov/dental-examiners/",
+    "endorsement_url": "https://sos.vermont.gov/dental-examiners/dental-assistants/",
     "notes": "Dental assistants can apply for Registered Dental Assistant through the Vermont Board of Dental Examiners by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Vermont",
-        "dek": "Vermont Dental Assistant registration requires completion of a board-approved course in radiology, current CPR certification, and adherence to renewal requirements."
+        "dek": "Dental Assistants seeking registration in Vermont must apply online through the MyLicense Vermont online application portal, managed by the Office of Professional Regulation."
       }
     }
   },
@@ -172,5 +186,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense Vermont",
+    "portal_url": "https://secure.vermont.gov/professionals/s/login/",
+    "registration_steps": "Navigate to the MyLicense Vermont portal and click 'New User? Create a new account.' Follow the prompts to enter your personal information, email, and set up your password.",
+    "provider_search": "https://sos.vermont.gov/contact-us/online-services/licensee-lookup/"
   }
 }

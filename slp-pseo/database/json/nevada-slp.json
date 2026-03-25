@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners for Audiology and Speech-Language Pathology",
     "parent_dept": "Nevada Board of Examiners for Audiology and SLP",
-    "mailing_address": "5011 Meadowood Mall Way, Suite 300, Reno, NV 89502",
+    "mailing_address": "2270 South Jones Blvd, Suite 120, Las Vegas, NV 89146",
     "physical_address": "5011 Meadowood Mall Way, Suite 300, Reno, NV 89502",
-    "phone": "(775) 857-3500",
+    "phone": "(702) 486-2185",
     "fax": "(775) 857-3520",
-    "email": "mailto:board@nvaslp.org",
-    "url": "https://nvaslp.org/"
+    "email": "slpaheadd@sphalive.nv.gov",
+    "url": "https://nvaslp.org/",
+    "contact_url": "https://sphalive.nv.gov/Contact.html",
+    "verify_url": "https://sphalive.nv.gov/Search.html"
   },
   "quick_facts": {
     "total_fee": "$300",
     "fee_breakdown": "$100 application + $200 license fee",
-    "renewal_fee": "$200",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "Complete a master’s degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+      "title": "Register on the Portal",
+      "description": "Create a new user account on the Nevada Online Licensing Portal by clicking 'Register' and following the prompts to establish your login credentials."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience consisting of at least 1260 hours, with at least 36 weeks of full-time experience."
+      "title": "Complete Online Application",
+      "description": "Log in to the Nevada Online Licensing Portal, select the Speech-Language Pathologist application type, and accurately complete all required sections of the application form."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Upload Supporting Documents",
+      "description": "Submit official transcripts verifying a master's or doctoral degree, official Praxis exam scores (passing score of 162), and documentation of your Supervised Professional Practice directly through the Nevada Online Licensing Portal."
+    },
+    {
+      "title": "Complete Background Check & Pay Fee",
+      "description": "Initiate a National Criminal History Background Check through fingerprinting as instructed by the Board. Pay the non-refundable initial application fee of $200 via the Nevada Online Licensing Portal."
+    },
+    {
+      "title": "Board Review and Approval",
+      "description": "The Nevada Board of Examiners for Speech-Language Pathology, Audiology, and Hearing Aid Dispensing will review your complete application and all submitted documentation. Upon approval, your license will be issued."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 300,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 200,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://nvaslp.org/",
-    "endorsement_url": "https://nvaslp.org/",
+    "endorsement_url": "https://sphalive.nv.gov/Applications.html",
     "notes": "Nevada is a member of the ASLP Interstate Compact."
   },
   "slug": "nevada-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Nevada",
-        "dek": "Nevada Speech-Language Pathology License requires a master's degree, supervised professional experience, and passing a national exam."
+        "dek": "To apply for a Speech-Language Pathologist (SLP) license in Nevada, create an account and submit your application through the Nevada Online Licensing Portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nevada Online Licensing Portal",
+    "portal_url": "https://online.nv.gov/application/",
+    "registration_steps": "New users must click the 'Register' button on the portal homepage to create an account using a valid email address before starting an application.",
+    "provider_search": "https://sphalive.nv.gov/Search.html"
   }
 }

@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "N. Dakota Dental Assistant License (2026) | Fees & Guide",
-    "description": "Complete guide to dental assistant licensing in North Dakota — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in North Dakota \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license north dakota, dental assistant certification north dakota, RDA north dakota, DANB CDA north dakota, dental assistant radiography north dakota"
   },
   "board": {
     "name": "North Dakota State Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "PO Box 310, Bismarck, ND 58502-0310",
     "physical_address": "See board website",
     "phone": "(701) 258-8600",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.nddentalboard.org/"
+    "email": "info@ndbod.org",
+    "url": "https://www.nddentalboard.org/",
+    "contact_url": "https://www.ndbod.org/contact-us/",
+    "verify_url": "https://ndbod.igovsolution.net/online/LicenseVerification"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 application/registration fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "3 to 6 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "12 hours per renewal cycle"
   },
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education or Training",
-      "description": "Graduate from a CODA-accredited dental assisting program or complete on-the-job training under a licensed dentist."
+      "title": "Create an Online Account",
+      "description": "Register for a new user account on the ND Board of Dental Examiners Online Portal."
     },
     {
-      "title": "Submit Application",
-      "description": "Complete the Dental Assistant Registration Application and submit it to the North Dakota State Board of Dental Examiners."
+      "title": "Complete the Application",
+      "description": "Log in to the ND Board of Dental Examiners Online Portal, select the 'Registered Dental Assistant' application, and complete all required sections, including uploading a current CPR certification card."
     },
     {
-      "title": "Pay Required Fee",
-      "description": "Submit the required registration fee to the North Dakota State Board of Dental Examiners."
+      "title": "Fulfill Educational/Experience & Exam Requirements",
+      "description": "Ensure official verification of graduation from a CODA-accredited program or two years of full-time clinical experience is sent, and have DANB send your Certified Dental Assistant (CDA) exam results directly to the Board."
+    },
+    {
+      "title": "Complete Jurisprudence Exam & Background Check",
+      "description": "Successfully complete the North Dakota State Jurisprudence Exam (available within the portal) and submit fingerprints for the required criminal background check (CBC)."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $75 through the online portal."
+    },
+    {
+      "title": "Submit and Monitor",
+      "description": "Submit your completed application and monitor its status via the ND Board of Dental Examiners Online Portal. The Board will notify you upon completion of review and verification of all supporting documents."
     }
   ],
   "documents": [
@@ -123,11 +137,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 75,
+    "processing_time": "3 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.nddentalboard.org/",
-    "endorsement_url": "https://www.nddentalboard.org/",
+    "endorsement_url": "https://www.ndbod.org/applicant/dental-assistant/",
     "notes": "Dental assistants can apply for Registered Dental Assistant through the North Dakota State Board of Dental Examiners by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in North Dakota",
-        "dek": "North Dakota Dental Assistant registration requires graduation from a CODA-accredited program or completion of on-the-job training, application submission, and payment of fees."
+        "dek": "To become a Registered Dental Assistant in North Dakota, apply online through the ND Board of Dental Examiners Online Portal."
       }
     }
   },
@@ -172,5 +186,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ND Board of Dental Examiners Online Portal",
+    "portal_url": "https://ndbod.igovsolution.net/",
+    "registration_steps": "Visit the ND Board of Dental Examiners Online Portal and click 'New User Registration' to create an account. Once registered, log in to access the application forms.",
+    "provider_search": "https://ndbod.igovsolution.net/online/LicenseVerification"
   }
 }

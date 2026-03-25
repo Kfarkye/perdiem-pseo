@@ -11,7 +11,7 @@
     "vendor_url": "https://uenroll.identogo.com/"
   },
   "profession_name": "Dietitian",
-  "credential_nomenclature": "Licensed Dietitian/Nutritionist — Regulations Pending",
+  "credential_nomenclature": "Licensed Dietitian/Nutritionist \u2014 Regulations Pending",
   "last_updated": "2026-02-25",
   "seo": {
     "title": "New Jersey Dietitian License Reciprocity - How to Transfer Your License (2026)",
@@ -21,19 +21,21 @@
   "board": {
     "name": "State Board of Dietetics and Nutrition",
     "parent_dept": "New Jersey Division of Consumer Affairs",
-    "mailing_address": "PO Box 45012<br>Newark, NJ 07101",
+    "mailing_address": "Division of Consumer Affairs\nPO Box 45021\nNewark, NJ 07101",
     "physical_address": "124 Halsey Street, 6th Floor<br>Newark, NJ 07101",
-    "phone": "(973) 504-6587",
+    "phone": "(973) 504-6200",
     "fax": "(973) 648-3536",
     "email": "mailto:askconsumeraffairs@dca.lps.state.nj.us",
-    "url": "https://www.njconsumeraffairs.gov/dn/"
+    "url": "https://www.njconsumeraffairs.gov/dn/",
+    "contact_url": "https://www.njconsumeraffairs.gov/Pages/Contact-Us.aspx",
+    "verify_url": "https://newjersey.mylicense.com/LicenseList.aspx"
   },
   "quick_facts": {
     "total_fee": "TBD (Regulations Pending)",
     "fee_breakdown": "State fees have not yet been finalized. CDR exam fee is $200 nationally.",
-    "renewal_fee": "TBD",
-    "renewal_cycle": "TBD (Regulations Pending)",
-    "processing_time": "TBD (Regulations Pending)",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "TBD",
     "exam_name": "Commission on Dietetic Registration (CDR) examination"
   },
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Supervised Practice",
-      "description": "Fulfill the academic requirements by completing a minimum of a bachelor's degree from an accredited institution and completing a supervised practice program."
+      "title": "Register and Apply Online",
+      "description": "Create an account on the Professional Licensing and Enforcement System (PLATES) portal and complete the online application for initial licensure. Pay the non-refundable application fee of $250.00."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts confirming a bachelor's or master's degree in nutrition or a related field from an accredited institution to be sent directly to the Board office."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application to the New Jersey State Board of Dietetics and Nutrition and pay all required fees."
+      "title": "Provide Supervised Practice Verification",
+      "description": "Submit the Verification of Supervised Practice (Form A) demonstrating completion of 900 hours of supervised practice in dietetics/nutrition."
+    },
+    {
+      "title": "Verify CDR Examination",
+      "description": "Provide verification of passing the Registration Examination for Dietitian Nutritionists (RDN exam) from the Commission on Dietetic Registration (CDR) using Form B."
+    },
+    {
+      "title": "Complete Criminal History Background Check",
+      "description": "Undergo a criminal history background check, which includes fingerprinting through IdentoGO. Instructions for this process will be provided during the online application."
+    },
+    {
+      "title": "Pay Initial Licensure Fee",
+      "description": "Upon approval of your application, pay the initial biennial licensure fee of $150 (or $75 if applying in the second year of the biennial cycle) through the PLATES system to activate your license."
     }
   ],
   "documents": [
@@ -127,11 +141,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "TBD (Regulations Pending)",
+    "endorsement_fee": 250,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.njconsumeraffairs.gov/dn/",
-    "endorsement_url": "https://www.njconsumeraffairs.gov/dn/",
+    "endorsement_url": "https://www.njconsumeraffairs.gov/atl/Pages/Instructions-for-Endorsement-Application.aspx",
     "notes": "Reciprocity provisions will be defined in the final regulations. Active CDR registration is expected to serve as the primary qualifying credential for licensure by endorsement.",
     "requires_psv": false
   },
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in New Jersey",
-        "dek": "New Jersey Dietitian licensure requires completing education and supervised practice requirements, passing the national registration examination, and meeting all application requirements."
+        "dek": "To apply for a Dietitian/Nutritionist license in New Jersey, submit your application and required documents through the Professional Licensing and Enforcement System (PLATES)."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Professional Licensing and Enforcement System (PLATES)",
+    "portal_url": "https://newjersey.mylicense.com/",
+    "registration_steps": "To create an account on the PLATES system, navigate to the portal URL and click 'New Users Register Here'. You will need to provide personal information, an email address, and create a password to set up your profile before starting an application.",
+    "provider_search": "https://newjersey.mylicense.com/LicenseList.aspx"
   }
 }

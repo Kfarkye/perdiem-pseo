@@ -21,19 +21,21 @@
   "board": {
     "name": "Advisory Commission for Speech-Language Pathologists and Audiologists",
     "parent_dept": "Missouri Division of Professional Registration",
-    "mailing_address": "P.O. Box 1335, Jefferson City, MO 65102-1335",
+    "mailing_address": "Division of Professional Registration\nP.O. Box 1335\nJefferson City, MO 65102-1335",
     "physical_address": "3605 Missouri Blvd., Jefferson City, MO 65109",
-    "phone": "(573) 751-0240",
+    "phone": "(573) 751-0322",
     "fax": "(573) 751-3166",
-    "email": "mailto:speechaud@pr.mo.gov",
-    "url": "https://pr.mo.gov/speechaudiology.asp"
+    "email": "slp_aud@pr.mo.gov",
+    "url": "https://pr.mo.gov/speechaudiology.asp",
+    "contact_url": "https://pr.mo.gov/contact-us.asp",
+    "verify_url": "https://pr.mo.gov/licensee-search-results.asp?board=SLP&search="
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$75 application fee",
-    "renewal_fee": "$60",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "National Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours of continuing education every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Clinical Practicum",
-      "description": "Earn a master’s degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) and complete the required clinical practicum."
+      "title": "Complete and Submit Online Application",
+      "description": "Create an account and complete your application through the Missouri Division of Professional Registration Online Application System (renew.pr.mo.gov/RenewSLP/Apply/Start.aspx). During this process, you will pay the non-refundable $50 application fee."
     },
     {
-      "title": "Complete Supervised Clinical Fellowship",
-      "description": "Complete a supervised clinical fellowship that meets the requirements outlined in the Missouri statutes and regulations."
+      "title": "Provide Official Transcripts",
+      "description": "Arrange for all official transcripts from your graduate program, verifying your master's or doctoral degree in Speech-Language Pathology from an accredited institution, to be sent directly from your university to the Missouri Division of Professional Registration."
     },
     {
-      "title": "Apply for and Pass the National Examination",
-      "description": "Apply to the Missouri Advisory Commission for Speech-Language Pathologists and Audiologists, pass the National Examination in Speech-Language Pathology, and pay the required fee."
+      "title": "Verify Supervised Professional Experience",
+      "description": "Ensure your Clinical Fellowship (Supervised Professional Experience) is verified by having your supervisor complete and submit the 'Speech-Language Pathologist Supervised Professional Experience Verification Form' directly to the Missouri Division of Professional Registration."
+    },
+    {
+      "title": "Submit Praxis Exam Scores",
+      "description": "Request that your official scores for the national Speech-Language Pathology examination (Praxis II, exam #5331) be sent directly from ETS to the Missouri Division of Professional Registration. The ETS institutional code for Missouri is 7352."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status within the Missouri Division of Professional Registration Online Application System for any updates or requests for additional information from the Board. An initial licensure fee (prorated) will be required upon approval."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 50,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://pr.mo.gov/speechaudiology.asp",
-    "endorsement_url": "https://pr.mo.gov/speechaudiology.asp",
+    "endorsement_url": "https://pr.mo.gov/speech-application-forms.asp",
     "notes": "Missouri is a member of the ASLP Interstate Compact."
   },
   "slug": "missouri-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Missouri",
-        "dek": "Missouri Speech-Language Pathologist licenses require a master's degree, completion of a supervised clinical fellowship, and passing the national examination."
+        "dek": "To apply for an SLP license in Missouri, you must use the Missouri Division of Professional Registration Online Application System to submit your initial application and all required supporting documents."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Missouri Division of Professional Registration Online Application System",
+    "portal_url": "https://renew.pr.mo.gov/RenewSLP/Apply/Start.aspx",
+    "registration_steps": "To start your application, visit the Missouri Division of Professional Registration Online Application System (pr.mo.gov/onlineapp.asp), click 'Apply for a New License', select 'Speech-Language Pathologist' from the list of professions, and then create an account or log in to proceed with your application.",
+    "provider_search": "https://pr.mo.gov/licensee-search-results.asp?board=SLP&search="
   }
 }

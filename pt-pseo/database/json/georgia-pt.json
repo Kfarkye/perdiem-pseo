@@ -21,17 +21,19 @@
   "board": {
     "name": "Georgia Board of Physical Therapy",
     "parent_dept": "Georgia Secretary of State",
-    "mailing_address": "See board website",
+    "mailing_address": "237 Coliseum Drive, Macon, Georgia 31217-3858",
     "physical_address": "See board website",
-    "phone": "(404) 656-3921",
+    "phone": "(404) 424-9966",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://sos.ga.gov/"
+    "url": "https://sos.ga.gov/",
+    "contact_url": "https://sos.ga.gov/form/contact-professional-licensing-boards",
+    "verify_url": "https://verify.sos.ga.gov/verification/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Graduate from an Accredited Program & Request Transcripts",
+      "description": "Successfully complete a physical therapy program from a CAPTE-accredited institution. Arrange for official transcripts to be sent directly from your educational institution to the Georgia State Board of Physical Therapy."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully complete the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Create Account and Apply Online",
+      "description": "Create an account on the **Georgia Online Licensing System** (secure.sos.state.ga.us/myverification/) and complete the Physical Therapist initial licensure application. Pay the required application fee online."
     },
     {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit an application, pay the required fees, and pass a criminal background check to the Georgia Board of Physical Therapy to obtain licensure."
+      "title": "Register for and Pass the Georgia Jurisprudence Exam",
+      "description": "Register for and pass the Georgia Physical Therapy Jurisprudence Examination. This exam is typically administered online and must be passed to be eligible for licensure."
+    },
+    {
+      "title": "Register for and Pass the National Physical Therapy Examination (NPTE)",
+      "description": "Register with the Federation of State Boards of Physical Therapy (FSBPT) for the National Physical Therapy Examination (NPTE) and pass it. Ensure your scores are sent directly to the Georgia State Board of Physical Therapy."
+    },
+    {
+      "title": "Fulfill Other Requirements & Await Approval",
+      "description": "Ensure all supporting documentation (e.g., transcripts, NPTE scores, Jurisprudence exam results) has been received by the Board. The Board will review your complete application and notify you of the decision."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 75,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://sos.ga.gov/",
-    "endorsement_url": "https://sos.ga.gov/",
+    "endorsement_url": "https://sos.ga.gov/page/physical-therapist-endorsement",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "georgia-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Georgia",
-        "dek": "Georgia Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination (NPTE), and a criminal background check."
+        "dek": "To apply for a Physical Therapist license in Georgia, begin by creating an account and completing the online application through the **Georgia Online Licensing System** (MyVerification portal)."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Georgia Online Licensing System (MyVerification portal)",
+    "portal_url": "https://secure.sos.state.ga.us/myverification/",
+    "registration_steps": "Visit the Georgia Online Licensing System, click 'Apply for a New License,' select 'Physical Therapist' from the dropdown, and create a new user account with your email address and password to begin the application.",
+    "provider_search": "https://verify.sos.ga.gov/verification/"
   }
 }

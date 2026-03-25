@@ -21,18 +21,20 @@
   "board": {
     "name": "New York Board of Pharmacy",
     "parent_dept": "NYSED Office of the Professions",
-    "mailing_address": "See board website",
+    "mailing_address": "New York State Education Department\nOffice of the Professions\nPharmacy Unit\n89 Washington Avenue\nAlbany, NY 12234-1000",
     "physical_address": "See board website",
-    "phone": "(518) 474-3817",
+    "phone": "(518) 474-3817, ext. 560",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.op.nysed.gov/professions-index/pharmacy"
+    "email": "opunit4@nysed.gov",
+    "url": "https://www.op.nysed.gov/professions-index/pharmacy",
+    "contact_url": "https://www.op.nysed.gov/contact-us",
+    "verify_url": "https://www.op.nysed.gov/verification-search"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$262",
+    "renewal_cycle": "Every 3 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional pharmacy program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Submit Application for Licensure and First Registration (Form 1)",
+      "description": "Register and log in to the New York Business Express (NYBE) portal to complete and submit your application for licensure and first registration (Form 1) online."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully complete the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE) for New York."
+      "title": "Submit Certification of Professional Education (Form 2)",
+      "description": "Have your pharmacy school complete and submit Form 2 (Certification of Professional Education) directly to the New York State Education Department."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit the Application for Licensure and First Registration along with the required fee and documentation to the New York State Board of Pharmacy."
+      "title": "Submit Certification of Approved Internships (Form 4)",
+      "description": "Have the Pharmacy Board where your internship was completed submit Form 4 (Certification of Approved Internships) directly to the New York State Education Department. A minimum of 1,500 internship hours is required."
+    },
+    {
+      "title": "Complete Examination Requirements",
+      "description": "Pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE). You must be approved by the NYSED to sit for these exams."
+    },
+    {
+      "title": "Await Approval and License Issuance",
+      "description": "Once all required documents and exam scores are received and reviewed by the New York State Education Department, your license will be issued."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 262,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.op.nysed.gov/professions-index/pharmacy",
-    "endorsement_url": "https://www.op.nysed.gov/professions-index/pharmacy",
+    "endorsement_url": "https://www.op.nysed.gov/professions/pharmacist/licensing-requirements",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "new-york-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in New York",
-        "dek": "New York Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing an application."
+        "dek": "To apply for a Pharmacist license in New York, you must complete the application process through the New York Business Express (NYBE) portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "New York Business Express (NYBE) portal",
+    "portal_url": "https://www.businessexpress.ny.gov/app/licensing/apply-for-license?licenseeType=Professional&profession=Pharmacy",
+    "registration_steps": "To apply, you will need to register and create an account on the New York Business Express (NYBE) website, then search for and select the Pharmacist license application.",
+    "provider_search": "https://www.op.nysed.gov/verification-search"
   }
 }

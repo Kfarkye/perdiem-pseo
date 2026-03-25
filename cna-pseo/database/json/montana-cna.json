@@ -21,19 +21,21 @@
   "board": {
     "name": "Montana Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Nurse Aide Registry, Licensure Bureau, P.O. Box 202953, Helena, MT 59620-2953",
     "physical_address": "See board website",
-    "phone": "(406) 841-2345",
+    "phone": "(406) 444-4900",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://boards.bsd.dli.mt.gov/nursing"
+    "email": "NAR@mt.gov",
+    "url": "https://boards.bsd.dli.mt.gov/nursing",
+    "contact_url": "https://dphhs.mt.gov/licensure/nursingassistant/",
+    "verify_url": "https://dphhs.mt.gov/licensure/nursingassistant/search"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 8 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -48,15 +50,23 @@
   "steps": [
     {
       "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Montana-approved CNA training program, usually 120 hours long."
+      "description": "Successfully complete a Nurse Aide Training Program approved by the Montana Department of Public Health and Human Services (DPHHS)."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Montana nurse aide exam."
+      "title": "Create an Account with Headmaster LLP",
+      "description": "Navigate to the Headmaster LLP website (https://www.hdmaster.com/), click 'Candidate Login', select Montana, and register for a new candidate account."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Apply for the Competency Examination",
+      "description": "Log into your Headmaster LLP account, select the 'Examination Application' option, and complete the application form, indicating your eligibility path."
+    },
+    {
+      "title": "Schedule and Pass the Examination",
+      "description": "Pay the required examination fees through Headmaster LLP, then schedule and successfully pass both the written (or oral) and skills competency examinations."
+    },
+    {
+      "title": "Be Added to the Montana Nurse Aide Registry",
+      "description": "Upon successful completion of the competency examination, Headmaster LLP will notify the Montana Nurse Aide Registry, and your name will be added to the registry, granting you CNA certification."
     }
   ],
   "documents": [
@@ -121,11 +131,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 8 Weeks",
+    "endorsement_fee": 35,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "slow",
     "board_url": "https://boards.bsd.dli.mt.gov/nursing",
-    "endorsement_url": "https://boards.bsd.dli.mt.gov/nursing",
+    "endorsement_url": "https://www.hdmaster.com/testing/cnatesting/montana/MTEXAM.htm",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Montana",
-        "dek": "Montana CNA certification requires a 120-hour training program, Montana Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for CNA certification in Montana, you must create an account and submit your application through the Headmaster LLP online system."
       },
       "seo": {
         "title": "How to Become a CNA in Montana",
@@ -216,5 +226,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Montana Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Headmaster LLP",
+    "portal_url": "https://www.hdmaster.com/",
+    "registration_steps": "1. Go to https://www.hdmaster.com/.\n2. Click on 'Candidate Login' (usually in the top right corner).\n3. Select 'Montana' as your state from the dropdown menu.\n4. Click 'Register' if you are a new user to create a new account.\n5. Follow the prompts to complete your registration and log in to your account.\n6. Once logged in, you can proceed to apply for initial certification by examination or certification by endorsement.",
+    "provider_search": "https://dphhs.mt.gov/licensure/nursingassistant/search"
   }
 }

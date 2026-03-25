@@ -19,21 +19,23 @@
     "keywords": "physical therapist license reciprocity vermont, how to transfer physical therapist license to vermont, physical therapist compact vermont, vermont physical therapist endorsement application"
   },
   "board": {
-    "name": "Vermont Office of Professional Regulation — PT",
+    "name": "Vermont Office of Professional Regulation \u2014 PT",
     "parent_dept": "Vermont Office of Professional Regulation (OPR)",
-    "mailing_address": "See board website",
+    "mailing_address": "Office of Professional Regulation, 89 Main Street, 3rd Floor, Montpelier, VT 05620-3402",
     "physical_address": "See board website",
-    "phone": "(802) 828-2390",
+    "phone": "(802) 828-1505",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://sos.vermont.gov/opr/"
+    "url": "https://sos.vermont.gov/opr/",
+    "contact_url": "https://sos.vermont.gov/opr/contact-us/",
+    "verify_url": "https://dfr.vermont.gov/licensing/verify-license"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "24 contact hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create OPR Online Services Account",
+      "description": "Navigate to the OPR Online Services Portal and register for a new account using your email address and a chosen password."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Register for and pass the NPTE, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Complete Online Application",
+      "description": "Log in to your OPR Online Services account, select the Physical Therapist application, and accurately complete all required sections, including personal, educational, and professional history."
     },
     {
-      "title": "Apply for a Vermont Physical Therapist License",
-      "description": "Submit an application to the Vermont Office of Professional Regulation, including required documentation and fees."
+      "title": "Submit Required Documentation",
+      "description": "Arrange for official transcripts from your accredited physical therapy program and official NPTE scores to be sent directly to the Office of Professional Regulation. Upload any other necessary supporting documents as prompted within the OPR Online Services Portal."
+    },
+    {
+      "title": "Pass Jurisprudence Examination",
+      "description": "Successfully complete the Vermont Physical Therapy Jurisprudence Examination, which is typically accessed through or linked from the online application system."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee of $100 through the OPR Online Services Portal using a credit or debit card."
+    },
+    {
+      "title": "Await Review and Issuance",
+      "description": "Once all required items are received and reviewed by the Office of Professional Regulation, your application will be processed, and you will be notified of your licensure status."
     }
   ],
   "documents": [
@@ -125,10 +139,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "mid",
     "board_url": "https://sos.vermont.gov/opr/",
-    "endorsement_url": "https://sos.vermont.gov/opr/",
+    "endorsement_url": "https://sos.vermont.gov/opr/professions/physical-therapists/",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "vermont-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Vermont",
-        "dek": "Vermont Physical Therapist license requires graduation from an accredited program, passing the NPTE, and a criminal background check."
+        "dek": "Apply for your Physical Therapist license through the Vermont Office of Professional Regulation's OPR Online Services Portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "OPR Online Services Portal",
+    "portal_url": "https://dfr.vermont.gov/opr-online-services/register",
+    "registration_steps": "Create an account using an email address and password, then log in to access the application options for Physical Therapists.",
+    "provider_search": "https://dfr.vermont.gov/licensing/verify-license"
   }
 }

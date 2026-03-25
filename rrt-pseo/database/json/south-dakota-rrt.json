@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity south dakota, how to transfer respiratory therapist license to south dakota, respiratory therapist compact south dakota, south dakota respiratory therapist endorsement application"
   },
   "board": {
-    "name": "South Dakota Board of Medical and Osteopathic Examiners — RT",
+    "name": "South Dakota Board of Medical and Osteopathic Examiners \u2014 RT",
     "parent_dept": "Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "101 N Main Ave., Suite 301, Sioux Falls, SD 57104",
     "physical_address": "See board website",
     "phone": "(605) 367-7781",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://doh.sd.gov/licensing-and-records/boards/medical/"
+    "email": "sdbmoe@state.sd.us",
+    "url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
+    "contact_url": "https://bmoe.sd.gov/ContactUs.aspx",
+    "verify_url": "https://sd.gov/sdlicensingportal/licenses/VerifyLicense.aspx"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Care Program",
-      "description": "Graduate from a respiratory care education program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create Account & Start Application",
+      "description": "Visit the South Dakota Online Licensing Portal, create a new account, and then log in. Select 'Board of Medical & Osteopathic Examiners' and 'Respiratory Care Practitioner' to begin your initial application for licensure."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Complete Online Application & Pay Fee",
+      "description": "Fill out the comprehensive online application form within the South Dakota Online Licensing Portal, providing all required personal, educational, and professional history. Pay the non-refundable $100 initial application fee during this step."
     },
     {
-      "title": "Submit an Application to the Board",
-      "description": "Complete the application form, pay the $75 fee, and submit required documentation to the South Dakota Board of Medical and Osteopathic Examiners."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts from your COARC-approved respiratory care program to be sent directly from your educational institution to the South Dakota Board of Medical and Osteopathic Examiners."
+    },
+    {
+      "title": "Verify NBRC Credentials",
+      "description": "Request official verification of your Registered Respiratory Therapist (RRT) credential directly from the National Board for Respiratory Care (NBRC) to be sent to the South Dakota Board of Medical and Osteopathic Examiners."
+    },
+    {
+      "title": "Complete Background Check",
+      "description": "Follow the instructions provided by the Board to complete a fingerprint-based background check through the designated vendor. Pay the associated state and federal background check fees (currently $57.50)."
+    },
+    {
+      "title": "Submit Verification of Other State Licenses (If Applicable)",
+      "description": "If you hold or have held a respiratory therapist license in any other state, jurisdiction, or country, arrange for official verification of licensure to be sent directly from the respective licensing board(s) to the South Dakota Board of Medical and Osteopathic Examiners."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
-    "endorsement_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
+    "endorsement_url": "https://bmoe.sd.gov/Licensure/RCP.aspx",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in South Dakota",
-        "dek": "South Dakota Respiratory Therapist license requires graduation from an accredited respiratory care program, passing the NBRC examination, and submitting an application to the board."
+        "dek": "Respiratory Therapists seeking initial or endorsement licensure in South Dakota must apply online through the South Dakota Online Licensing Portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "South Dakota Online Licensing Portal",
+    "portal_url": "https://www.sd.gov/sdlicensingportal/licenses/home.aspx",
+    "registration_steps": "To create an account, visit the South Dakota Online Licensing Portal, click 'Create New Account' and follow the prompts to register. Once registered, log in and select 'Board of Medical & Osteopathic Examiners' and 'Respiratory Care Practitioner' to start your application.",
+    "provider_search": "https://sd.gov/sdlicensingportal/licenses/VerifyLicense.aspx"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Wyoming Board of Respiratory Care",
     "parent_dept": "Wyoming Department of Administration & Information",
-    "mailing_address": "See board website",
+    "mailing_address": "130 Hobbs Ave., Suite A, Cheyenne, WY 82002",
     "physical_address": "See board website",
-    "phone": "(307) 777-6529",
+    "phone": "307-778-7053",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://wsbn.wyo.gov/"
+    "email": "wyomedboard@wyo.gov",
+    "url": "https://wsbn.wyo.gov/",
+    "contact_url": "https://wyomedboard.wyo.gov/about/contact-us",
+    "verify_url": "https://wyomedboard.wyo.gov/licensing/license-verification"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or its successor."
+      "title": "Create an Account",
+      "description": "Register for a new account on the Wyoming Board of Medicine Online Licensure System portal at wyomedboard.wyo.gov/portal/."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Start Application",
+      "description": "Log in to your newly created account and select the 'New Application' option for a Respiratory Care Practitioner."
     },
     {
-      "title": "Apply for a Wyoming License",
-      "description": "Submit a completed application form to the Wyoming Board of Respiratory Care, including required documentation and fees."
+      "title": "Complete Application & Pay Fee",
+      "description": "Fill out all required sections of the online application form, upload necessary documents, and pay the initial application fee via the Wyoming Board of Medicine Online Licensure System."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official transcripts from your educational program, verification of NBRC certification, and any other required documentation to be sent directly to the Wyoming Board of Medicine."
+    },
+    {
+      "title": "Pass Jurisprudence Exam",
+      "description": "Complete the Wyoming State Jurisprudence Exam, which is typically administered online as part of or upon review of your application."
+    },
+    {
+      "title": "Board Review & Approval",
+      "description": "Allow the Wyoming Board of Medicine time to review your complete application and all submitted documentation for approval. You will be notified of their decision, and if approved, instructed to pay the license fee."
     }
   ],
   "documents": [
@@ -128,7 +142,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://wsbn.wyo.gov/",
-    "endorsement_url": "https://wsbn.wyo.gov/",
+    "endorsement_url": "https://wyomedboard.wyo.gov/licensing/respiratory-care-practitioners/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Wyoming",
-        "dek": "Wyoming Respiratory Therapist license requires graduation from an accredited respiratory care program, passing the NBRC examination, and submitting an application to the board."
+        "dek": "To apply for a Respiratory Care Practitioner license in Wyoming, applicants must use the Wyoming Board of Medicine Online Licensure System to submit their initial application."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Wyoming Board of Medicine Online Licensure System",
+    "portal_url": "https://wyomedboard.wyo.gov/portal/",
+    "registration_steps": "1. Navigate to the Wyoming Board of Medicine Online Licensure System portal. 2. Click 'Register a New Account'. 3. Follow the prompts to create a user ID and password. 4. Once logged in, select the 'New Application' option for Respiratory Care Practitioner.",
+    "provider_search": "https://wyomedboard.wyo.gov/licensing/license-verification"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "Missouri Board of Pharmacy",
     "parent_dept": "Missouri Division of Professional Registration",
-    "mailing_address": "See board website",
+    "mailing_address": "3605 Missouri Boulevard, P.O. Box 625, Jefferson City, MO 65102",
     "physical_address": "See board website",
-    "phone": "(573) 751-0091",
+    "phone": "573.751.0091",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.pr.mo.gov/pharmacists.asp"
+    "email": "pharmacy@pr.mo.gov",
+    "url": "https://www.pr.mo.gov/pharmacists.asp",
+    "contact_url": "https://pr.mo.gov/pharmacist-contact.asp",
+    "verify_url": "https://pr.mo.gov/licensee-search.asp"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,29 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program in pharmacy from an ACPE-accredited institution."
+      "title": "Register and Apply Online",
+      "description": "Create an account on the Missouri Division of Professional Registration (DPR) Online Application System at professionals.mo.gov/Applications. Log in, select 'Apply for a New License', then choose 'Pharmacist' and 'Reciprocity' to complete the initial application.",
+      "description_html": "Create an account on the <a href=\"https://professionals.mo.gov/Applications\" target=\"_blank\">Missouri Division of Professional Registration (DPR) Online Application System</a>. Log in, select 'Apply for a New License', then choose 'Pharmacist' and 'Reciprocity' to complete the initial application."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Exam (NAPLEX) and the Missouri Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Submit NABP e-Transcript",
+      "description": "Request your official NABP e-Transcript to be sent directly to the Missouri Board of Pharmacy by the National Association of Boards of Pharmacy (NABP)."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit the application for licensure to the Missouri Board of Pharmacy along with the required fee and supporting documentation."
+      "title": "Complete Criminal Background Check",
+      "description": "Follow instructions provided in the online application to complete a fingerprint-based criminal background check through the Missouri State Highway Patrol and FBI. Authorization forms and instructions are available in the application portal."
+    },
+    {
+      "title": "Provide Verification of Licensure",
+      "description": "Provide verification of your pharmacist license(s) from all states where you are currently or have been licensed, usually via NABP's electronic verification service or by direct contact with the other state boards."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the required application fee of $85 using a credit or debit card through the Missouri Division of Professional Registration (DPR) Online Application System."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through the Missouri Division of Professional Registration (DPR) Online Application System. The Board will notify you if any additional information is required."
     }
   ],
   "documents": [
@@ -128,11 +143,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 85,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.pr.mo.gov/pharmacists.asp",
-    "endorsement_url": "https://www.pr.mo.gov/pharmacists.asp",
+    "endorsement_url": "https://pr.mo.gov/pharmacists-forms.asp",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "missouri-pharmacist",
@@ -147,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Missouri",
-        "dek": "Missouri Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing the application process."
+        "dek": "To apply for a Pharmacist license by endorsement in Missouri, submit your application through the Missouri Division of Professional Registration (DPR) Online Application System."
       }
     }
   },
@@ -173,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Missouri Division of Professional Registration (DPR) Online Application System",
+    "portal_url": "https://professionals.mo.gov/Applications",
+    "registration_steps": "Visit professionals.mo.gov/Applications, click 'New User Registration' to create an account with your email and a password. Once registered, log in to start a new application.",
+    "provider_search": "https://pr.mo.gov/licensee-search.asp"
   }
 }

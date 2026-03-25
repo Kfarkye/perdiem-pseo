@@ -19,21 +19,23 @@
     "keywords": "physical therapist license reciprocity new hampshire, how to transfer physical therapist license to new hampshire, physical therapist compact new hampshire, new hampshire physical therapist endorsement application"
   },
   "board": {
-    "name": "New Hampshire OPLC — Physical Therapy",
+    "name": "New Hampshire OPLC \u2014 Physical Therapy",
     "parent_dept": "New Hampshire Office of Professional Licensure and Certification (OPLC)",
-    "mailing_address": "See board website",
+    "mailing_address": "OPLC, 7 Eagle Square, Concord, NH 03301",
     "physical_address": "See board website",
-    "phone": "(603) 271-8389",
+    "phone": "(603) 271-2152",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.oplc.nh.gov/physical-therapy"
+    "email": "customerservice@oplc.nh.gov",
+    "url": "https://www.oplc.nh.gov/physical-therapy",
+    "contact_url": "https://www.oplc.nh.gov/contact-us",
+    "verify_url": "https://www.oplc.nh.gov/online-license-verification"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "24 contact hours every 2 years"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Graduate from a CAPTE-accredited physical therapy program."
+      "title": "Create an OPLC Online Licensing Portal Account",
+      "description": "Visit the OPLC Online Licensing Portal and complete the registration process for a new user account if you do not already have one."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Achieve a passing score on the NPTE administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Start a New Physical Therapist Application",
+      "description": "Log into your OPLC Online Licensing Portal account, navigate to the 'Apply for a New License' section, and select the Physical Therapist application."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, required documentation, and fees to the New Hampshire Office of Professional Licensure and Certification."
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Fill out all required sections of the online application form, upload necessary initial documents, and pay the $100 application fee through the portal."
+    },
+    {
+      "title": "Submit Required Supporting Documentation",
+      "description": "Arrange for official transcripts from your physical therapy program, NPTE scores, and verifications of licensure from any other states where you hold or have held a license, to be sent directly to the New Hampshire Office of Professional Licensure and Certification."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "The New Hampshire Physical Therapy Governing Board will review your complete application and all supporting documents. You can monitor the status of your application via your OPLC Online Licensing Portal account until approval and license issuance."
     }
   ],
   "documents": [
@@ -125,10 +135,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oplc.nh.gov/physical-therapy",
-    "endorsement_url": "https://www.oplc.nh.gov/physical-therapy",
+    "endorsement_url": "https://www.oplc.nh.gov/physical-therapy-governing-board-licensing-information",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "new-hampshire-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in New Hampshire",
-        "dek": "New Hampshire Physical Therapist License requires graduation from an accredited program, passing the National Physical Therapy Examination, and submitting an application to the board."
+        "dek": "To apply for a Physical Therapist license in New Hampshire, create an account and submit your application through the OPLC Online Licensing Portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "OPLC Online Licensing Portal",
+    "portal_url": "https://www.nh.gov/oplc/online/",
+    "registration_steps": "Visit the OPLC Online Licensing Portal and click 'New Users Register Here'. Follow the prompts to create your username and password, then verify your email address to complete registration.",
+    "provider_search": "https://www.oplc.nh.gov/online-license-verification"
   }
 }

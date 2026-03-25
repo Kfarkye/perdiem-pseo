@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners in Audiology and Speech-Language Pathology",
     "parent_dept": "Alaska Department of Commerce, Community, and Economic Development",
-    "mailing_address": "P.O. Box 110806, Juneau, AK 99811-0806",
+    "mailing_address": "Division of Corporations, Business and Professional Licensing\nP.O. Box 110806\nJuneau, AK 99811-0806",
     "physical_address": "333 Willoughby Ave., 9th Floor, Juneau, AK 99801",
     "phone": "(907) 465-2580",
     "fax": "(907) 465-2974",
-    "email": "mailto:audiology-slp@alaska.gov",
-    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofAudiologyandSpeechLanguagePathology.aspx"
+    "email": "license@alaska.gov",
+    "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofAudiologyandSpeechLanguagePathology.aspx",
+    "contact_url": "https://www.commerce.alaska.gov/web/cbpl/ContactUs.aspx",
+    "verify_url": "https://www.commerce.alaska.gov/cbpl/licensequery/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application and license fee",
-    "renewal_fee": "$250",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 8 weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 years",
     "exam_name": "National Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Possess a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+      "title": "Create a MyLicense Account and Submit Application",
+      "description": "Register for an account on the Alaska MyLicense portal and complete the online application for Speech-Language Pathologist licensure, ensuring all required personal and professional information is accurately entered."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience (SPE) that meets the requirements in the state's regulations."
+      "title": "Pass the Alaska Jurisprudence Examination",
+      "description": "After submitting your application, access and successfully pass the mandatory Alaska Jurisprudence Examination, which is available online through the MyLicense portal."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the National Examination in Speech-Language Pathology."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official master's or doctoral degree transcripts in Speech-Language Pathology to be sent directly from your accredited educational institution to the Division of Corporations, Business and Professional Licensing."
+    },
+    {
+      "title": "Provide ASHA Verification",
+      "description": "Request the American Speech-Language-Hearing Association (ASHA) to submit official verification of your current Certificate of Clinical Competence (CCC-SLP) directly to the Division of Corporations, Business and Professional Licensing."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Ensure all required application fees are paid through the MyLicense portal upon submission of your application to initiate the review process."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
-    "processing_time": "4 to 8 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofAudiologyandSpeechLanguagePathology.aspx",
-    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofAudiologyandSpeechLanguagePathology.aspx",
+    "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/SpeechLanguagePathologistsAudiologists/SpeechLanguagePathologistInitialLicensure.aspx",
     "notes": "Alaska is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Alaska through a compact privilege. Traditional endorsement pathways are also available."
   },
   "slug": "alaska-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Alaska",
-        "dek": "Alaska Speech-Language Pathologist licenses require a master's degree, passing the national exam, and completion of a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in Alaska, applicants must use the state's online MyLicense portal to submit their application and required documentation."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense",
+    "portal_url": "https://www.commerce.alaska.gov/cbpl/licensing/",
+    "registration_steps": "To create an account and start your application:\n1. Navigate to the Alaska Department of Commerce, Community, and Economic Development's licensing portal at the provided URL.\n2. Click on 'Apply Online'.\n3. Select 'Register a New Account' under the 'MyLicense' system options.\n4. Follow the prompts to complete your registration using your email address and personal information.\n5. Once registered, log in to the MyLicense portal to begin and submit your Speech-Language Pathologist license application.",
+    "provider_search": "https://www.commerce.alaska.gov/cbpl/licensequery/"
   }
 }

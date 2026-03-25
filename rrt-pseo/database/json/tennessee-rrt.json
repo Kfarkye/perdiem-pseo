@@ -19,19 +19,21 @@
     "keywords": "respiratory therapist license reciprocity tennessee, how to transfer respiratory therapist license to tennessee, respiratory therapist compact tennessee, tennessee respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Tennessee Board of Medical Examiners — RT",
+    "name": "Tennessee Board of Medical Examiners \u2014 RT",
     "parent_dept": "Tennessee Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Tennessee Department of Health\nHealth Professional Boards\n665 Mainstream Drive\nNashville, TN 37243",
     "physical_address": "See board website",
-    "phone": "(615) 532-3204",
+    "phone": "615-532-3204",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/me-board.html"
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/me-board.html",
+    "contact_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/me-board/contact-us.html",
+    "verify_url": "https://apps.tn.gov/hlrs/search.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or an equivalent."
+      "title": "Create an HLRS Account",
+      "description": "Navigate to the Tennessee Health Licensing & Regulatory System (HLRS) at https://apps.tn.gov/hlrs/ and register for a new user account if you do not already have one."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Complete and Submit Online Application",
+      "description": "Log in to your HLRS account, select the application for 'Respiratory Care Practitioner,' complete all required sections, and electronically submit the application along with the non-refundable application fee."
     },
     {
-      "title": "Apply for a Tennessee License",
-      "description": "Submit a completed application, including all required documentation and fees, to the Tennessee Board of Medical Examiners for licensure as a Respiratory Therapist."
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts from your CoARC-accredited respiratory care program to be sent directly to the Board. Also, ensure your RRT credential verification from the NBRC is available for Board review."
+    },
+    {
+      "title": "Pass the Tennessee Jurisprudence Exam",
+      "description": "Successfully complete the Tennessee Jurisprudence Exam, which may be accessible through the HLRS portal or via instructions provided by the Board."
+    },
+    {
+      "title": "Await Board Review and Licensure",
+      "description": "The Tennessee Board of Medical Examiners will review your complete application, submitted documentation, and exam results. You will be notified of your licensure status through your HLRS account."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 60,
-    "processing_time": "6 to 8 Weeks",
+    "endorsement_fee": 175,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/me-board.html",
-    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/me-board.html",
+    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/me-board/me-cpr/me-cpr-applications.html",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Tennessee",
-        "dek": "Tennessee Respiratory Therapist license requires graduation from an accredited respiratory care program, passing the NBRC examination, and submitting an application to the Tennessee Board of Medical Examiners."
+        "dek": "To apply for a Respiratory Care Practitioner license in Tennessee, applicants must use the Health Licensing & Regulatory System (HLRS) online portal to submit their application and required documentation."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Health Licensing & Regulatory System (HLRS)",
+    "portal_url": "https://apps.tn.gov/hlrs/NewLicenseApplication/",
+    "registration_steps": "1. Go to the Health Licensing & Regulatory System (HLRS) at https://apps.tn.gov/hlrs/.\n2. Click 'Register Here' in the top right corner.\n3. Agree to the terms and complete the registration form with your personal details, creating a username and password.\n4. Activate your account via the email link sent to your registered email address.\n5. Log in to your newly created HLRS account and click 'Start a New Application,' then select 'Respiratory Care Practitioner'.",
+    "provider_search": "https://apps.tn.gov/hlrs/search.aspx"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "New Jersey Board of Physical Therapy Examiners",
     "parent_dept": "New Jersey Division of Consumer Affairs",
-    "mailing_address": "See board website",
+    "mailing_address": "Board of Physical Therapy Examiners, PO Box 45014, Newark, New Jersey 07101",
     "physical_address": "See board website",
     "phone": "(973) 504-6455",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.njconsumeraffairs.gov/pt"
+    "url": "https://www.njconsumeraffairs.gov/pt",
+    "contact_url": "https://www.njconsumeraffairs.gov/Pages/ContactUs.aspx",
+    "verify_url": "https://newjersey.mylicense.com/boards/NJ/PT/Public/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$120",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create an Account",
+      "description": "Navigate to the **NJ Consumer Affairs Online Licensing System** (newjersey.mylicense.com/boards/NJ/PT/OnlineServices/AppLogin.aspx) and register a new user account if you are a first-time applicant."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Apply and pass the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit Online Application",
+      "description": "Log in to the **NJ Consumer Affairs Online Licensing System**, select 'Apply for a New License,' and complete the comprehensive Physical Therapist application form, providing all required personal, educational, and professional details."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete the online application and submit all required documents and fees to the New Jersey Board of Physical Therapy Examiners."
+      "title": "Arrange for Supporting Documents",
+      "description": "Ensure official transcripts from your physical therapy program are sent directly to the Board, submit your NPTE scores, complete the mandatory Criminal History Background Check (CHBC) as instructed after application, and successfully pass the online Jurisprudence Examination."
+    },
+    {
+      "title": "Pay Required Fees",
+      "description": "Remit the non-refundable application fee ($125) and the initial license fee (either $120 or $60, depending on the biennial cycle) through the **NJ Consumer Affairs Online Licensing System**."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application's progress and respond to any requests for additional information from the Board of Physical Therapy Examiners via your account on the **NJ Consumer Affairs Online Licensing System**."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 125,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.njconsumeraffairs.gov/pt",
-    "endorsement_url": "https://www.njconsumeraffairs.gov/pt",
+    "endorsement_url": "https://newjersey.mylicense.com/boards/NJ/PT/OnlineServices/AppLogin.aspx",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "new-jersey-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in New Jersey",
-        "dek": "New Jersey Physical Therapist License requires graduation from an accredited program, passing the NPTE, and completing a jurisprudence assessment."
+        "dek": "To apply for a Physical Therapist license in New Jersey, you must use the NJ Consumer Affairs Online Licensing System to submit your application, supporting documents, and fees."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NJ Consumer Affairs Online Licensing System",
+    "portal_url": "https://newjersey.mylicense.com/boards/NJ/PT/OnlineServices/AppLogin.aspx",
+    "registration_steps": "Navigate to the portal URL, click 'New Users Register Here', complete the registration form with personal details, and create a username and password.",
+    "provider_search": "https://newjersey.mylicense.com/boards/NJ/PT/Public/Search.aspx"
   }
 }

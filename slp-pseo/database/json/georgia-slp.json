@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "Professional Licensing Boards Division, Office of the Secretary of State",
-    "mailing_address": "237 Coliseum Drive, Macon, GA 31217",
+    "mailing_address": "237 Coliseum Drive, Macon, Georgia 31217-3858",
     "physical_address": "237 Coliseum Drive, Macon, GA 31217",
-    "phone": "(844) 753-7825",
+    "phone": "(478) 207-2440",
     "fax": "(478) 207-1363",
-    "email": "mailto:slpa@sos.ga.gov",
-    "url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology"
+    "email": "ExamBoards@sos.ga.gov",
+    "url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology",
+    "contact_url": "https://sos.ga.gov/page/georgia-board-speech-language-pathology-and-audiology-contact-us",
+    "verify_url": "https://verify.sos.ga.gov/"
   },
   "quick_facts": {
     "total_fee": "$120",
     "fee_breakdown": "$120 application fee (includes $10 mail-in processing)",
-    "renewal_fee": "$70",
-    "renewal_cycle": "Every 2 years (March 31, odd years)",
-    "processing_time": "4 to 8 weeks",
+    "renewal_fee": "$75",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Obtain a master's degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+      "title": "Create an Account and Apply Online",
+      "description": "Create an account on the Georgia Online Licensing System and complete the online application for a Speech-Language Pathologist license."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Satisfactorily complete a supervised professional experience, also known as a clinical fellowship, of at least 36 weeks of full-time employment or its equivalent in part-time employment under the supervision of a licensed speech-language pathologist."
+      "title": "Submit Official Transcripts",
+      "description": "Have your official graduate transcripts, verifying a Master's or Doctoral degree in Speech-Language Pathology, sent directly from your educational institution to the Georgia Board of Speech-Language Pathology and Audiology."
     },
     {
-      "title": "Pass the Praxis Examination and Apply for Licensure",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology and submit an application for licensure to the Georgia Board of Examiners for Speech-Language Pathology and Audiology."
+      "title": "Verify Clinical Fellowship",
+      "description": "Provide verification of your post-graduate professional experience (e.g., ASHA Clinical Fellowship Year) as required by the Board. This may involve submitting specific forms from your supervisor or ASHA directly to the Board."
+    },
+    {
+      "title": "Pass Praxis Examination",
+      "description": "Ensure your official scores for the Praxis Series Examination in Speech-Language Pathology (Test #5331) are sent directly to the Board from ETS."
+    },
+    {
+      "title": "Complete Background Check",
+      "description": "Register for a fingerprint-based background check through Gemalto Cogent, following the specific instructions and service code provided by the Board for applicants."
     }
   ],
   "documents": [
@@ -145,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 120,
-    "processing_time": "4 to 8 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "slow",
     "board_url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology",
-    "endorsement_url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology",
+    "endorsement_url": "https://secure.sos.ga.gov/mylicense/Login.aspx?facility=SLPAUD",
     "notes": "Georgia offers licensure by endorsement for SLPs licensed in other states, as well as for ASHA CCC-SLP holders. The endorsement application fee is $120 (same as by examination). Out-of-state applicants must have their existing license verified directly by the issuing state board."
   },
   "slug": "georgia-slp",
@@ -164,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Georgia",
-        "dek": "Georgia Speech-Language Pathology license requires a master's degree, supervised professional experience, and passing a national examination."
+        "dek": "To apply for a Speech-Language Pathologist license in Georgia, submit your application and all required supporting documentation through the Georgia Online Licensing System."
       }
     }
   },
@@ -190,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Georgia Online Licensing System",
+    "portal_url": "https://secure.sos.ga.gov/mylicense/Login.aspx?facility=SLPAUD",
+    "registration_steps": "Navigate to the Georgia Online Licensing System, click 'Register a Person', then 'Click Here to Register'. You will need to provide your Social Security Number, last name, and date of birth to create your account and login credentials.",
+    "provider_search": "https://verify.sos.ga.gov/"
   }
 }

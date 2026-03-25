@@ -21,18 +21,20 @@
   "board": {
     "name": "Arizona Board of Occupational Therapy Examiners",
     "parent_dept": "Arizona does not mandate state dietitian licensure. The national CDR credential is the recognized standard.",
-    "mailing_address": "See board website",
+    "mailing_address": "Arizona State Board of Occupational Therapy Examiners, 1740 W. Adams, Suite 3405, Phoenix, AZ 85007",
     "physical_address": "See board website",
-    "phone": "(602) 589-8353",
+    "phone": "(602) 589-8352",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://ot.az.gov"
+    "email": "info@otboard.az.gov",
+    "url": "http://ot.az.gov",
+    "contact_url": "https://otboard.az.gov/contact-us",
+    "verify_url": "https://az.mylicense.com/bop/Search.aspx?boardID=129"
   },
   "quick_facts": {
     "total_fee": "$235",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$135",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 1 year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Occupational Therapy Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Account and Submit Online Application",
+      "description": "Register for an account on the Arizona State Board of Occupational Therapy Examiners Online Portal (az.mylicense.com/bop) and complete the initial licensure application, including payment of the application fee."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Obtain Arizona Fingerprint Clearance Card",
+      "description": "Apply for and receive an Arizona Fingerprint Clearance Card through the Arizona Department of Public Safety (DPS). A valid card is required for licensure."
     },
     {
-      "title": "Apply for an Arizona Occupational Therapy License",
-      "description": "Submit a completed application, official transcripts, NBCOT exam scores, and required fees to the Arizona Board of Occupational Therapy Examiners."
+      "title": "Pass the NBCOT Exam",
+      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination. You must request NBCOT to send your official scores directly to the Arizona State Board of Occupational Therapy Examiners."
+    },
+    {
+      "title": "Pass the Arizona Jurisprudence Exam",
+      "description": "Complete and pass the Arizona Jurisprudence Exam. This exam is typically administered online as part of the application process within the Arizona State Board of Occupational Therapy Examiners Online Portal."
+    },
+    {
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official academic transcripts, verifying completion of an accredited occupational therapy program and supervised fieldwork, to be sent directly from your educational institution to the Arizona State Board of Occupational Therapy Examiners."
+    },
+    {
+      "title": "Await Application Review and Pay Initial License Fee",
+      "description": "Allow approximately 4 to 6 weeks for the Arizona State Board of Occupational Therapy Examiners to review your complete application. Upon approval, you will be notified to pay the initial license fee."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://ot.az.gov",
-    "endorsement_url": "http://ot.az.gov",
+    "endorsement_url": "https://otboard.az.gov/licensure-endorsement-information",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Arizona",
-        "dek": "Arizona Occupational Therapist licenses require graduation from an ACOTE-accredited program, passing the NBCOT exam, and a background check."
+        "dek": "To apply for an Occupational Therapist license in Arizona, submit your application through the Arizona State Board of Occupational Therapy Examiners Online Portal."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Arizona State Board of Occupational Therapy Examiners Online Portal",
+    "portal_url": "https://az.mylicense.com/bop/Login.aspx?boardID=129",
+    "registration_steps": "Navigate to the Arizona State Board of Occupational Therapy Examiners Online Portal and click 'Register Here' to create a new user account before starting your application.",
+    "provider_search": "https://az.mylicense.com/bop/Search.aspx?boardID=129"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Florida Department of Health (DOH)",
-    "mailing_address": "4052 Bald Cypress Way, Bin C-06, Tallahassee, FL 32399-3256",
+    "mailing_address": "Florida Board of Speech-Language Pathology and Audiology\n4052 Bald Cypress Way, Bin C-06\nTallahassee, FL 32399-3256",
     "physical_address": "4052 Bald Cypress Way, Tallahassee, FL 32399",
-    "phone": "(850) 245-4444",
+    "phone": "(850) 245-4235",
     "fax": "(850) 921-6184",
     "email": "mailto:MQA.SpeechLanguagePathology@flhealth.gov",
-    "url": "https://floridasspeechaudiology.gov/"
+    "url": "https://floridasspeechaudiology.gov/",
+    "contact_url": "https://flhealthsource.gov/contact-us/",
+    "verify_url": "https://mqa-public.flhealth.gov/PublicQuery/PhysicianDetail.aspx"
   },
   "quick_facts": {
     "total_fee": "$180",
     "fee_breakdown": "$100 application + $80 initial license",
-    "renewal_fee": "$80",
-    "renewal_cycle": "Every 2 years (December 31, odd years)",
-    "processing_time": "4 to 8 weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Earn a master's or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA)."
+      "title": "Create an Account in MQA Online Services",
+      "description": "Visit the MQA Online Services portal at https://mqaonline.flhealth.gov/ and register for a new account or log in if you already have one."
     },
     {
-      "title": "Complete Supervised Clinical Practicum",
-      "description": "Complete a supervised clinical practicum that meets the requirements of your graduate program and the Florida Board of Speech-Language Pathology and Audiology."
+      "title": "Complete the Online Application",
+      "description": "Within the MQA Online Services portal, select the application for Speech-Language Pathologist licensure, fill out all required sections accurately, and pay the $200 application fee."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit your application for licensure to the Florida Board of Speech-Language Pathology and Audiology."
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts confirming a master's or doctoral degree in Speech-Language Pathology, and proof of supervised postgraduate professional experience (Clinical Fellowship Year or equivalent) to be sent directly to the Florida Board of Speech-Language Pathology and Audiology office."
+    },
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Successfully complete the Praxis Examination in Speech-Language Pathology (SLP) (Test Code 5161) administered by ETS. Ensure your scores are sent directly to the Florida Department of Health (R7129)."
+    },
+    {
+      "title": "Application Review and Approval",
+      "description": "The Florida Board of Speech-Language Pathology and Audiology will review your complete application and all submitted documentation. Once approved, you will be notified to pay the initial licensure fee, and your license will be issued."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 180,
-    "processing_time": "4 to 8 weeks",
+    "endorsement_fee": 200,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://floridasspeechaudiology.gov/",
-    "endorsement_url": "https://floridasspeechaudiology.gov/",
+    "endorsement_url": "https://flhealthsource.gov/slpa/apply-for-a-license/",
     "notes": "Florida does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Florida license and meet all state-specific requirements. However, applicants holding the ASHA CCC-SLP may have some documentation requirements streamlined. Florida does not participate in the ASLP Interstate Compact."
   },
   "slug": "florida-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Florida",
-        "dek": "Florida Speech-Language Pathologist license requires graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+        "dek": "To apply for an SLP license in Florida, you must use the MQA Online Services portal to submit your application and all required supporting documentation."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MQA Online Services",
+    "portal_url": "https://mqaonline.flhealth.gov/",
+    "registration_steps": "1. Go to the MQA Online Services portal at https://mqaonline.flhealth.gov/. 2. Click 'Register' if you do not have an account. 3. Follow the prompts to create your account, providing required personal information and setting up security questions. 4. Once registered and logged in, select 'Apply for a New License' and choose the appropriate Speech-Language Pathologist application.",
+    "provider_search": "https://mqa-public.flhealth.gov/PublicQuery/PhysicianDetail.aspx"
   }
 }

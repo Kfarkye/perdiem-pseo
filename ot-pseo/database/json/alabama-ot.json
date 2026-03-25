@@ -21,17 +21,19 @@
   "board": {
     "name": "Alabama State Board of Occupational Therapy",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "Alabama State Board of Occupational Therapy\nRSA Union Building\n100 North Union Street, Suite 570\nMontgomery, AL 36104-3701",
     "physical_address": "See board website",
-    "phone": "(334) 353-4466",
+    "phone": "(334) 269-0096",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.ot.alabama.gov"
+    "email": "albot@albot.alabama.gov",
+    "url": "http://www.ot.alabama.gov",
+    "contact_url": "https://ot.alabama.gov/contact.aspx",
+    "verify_url": "https://ot.alabama.gov/license-verification.aspx"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$140",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE-accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Register for an Account and Submit Online Application",
+      "description": "Navigate to the Alabama State Board of Occupational Therapy's Online Services Portal, register for a new account, then log in to complete and submit the initial application for Occupational Therapist licensure."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $100 as part of the online application process."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete the application form and submit all required documentation and fees to the Alabama State Board of Occupational Therapy."
+      "title": "Request Official Transcripts",
+      "description": "Arrange for your official academic transcripts, verifying graduation from an ACOTE-accredited occupational therapy program, to be sent directly from your educational institution to the Alabama State Board of Occupational Therapy."
+    },
+    {
+      "title": "Submit Fieldwork Verification",
+      "description": "Ensure your fieldwork supervisor directly submits verification of your supervised fieldwork experience to the Board, confirming completion of all required hours."
+    },
+    {
+      "title": "Pass NBCOT Examination and Send Scores",
+      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination and request your official scores to be sent directly from NBCOT to the Alabama State Board of Occupational Therapy."
+    },
+    {
+      "title": "Pay Initial Licensure Fee and Await Issuance",
+      "description": "Once your application and all supporting documents are approved by the Board, pay the initial licensure fee of $100. Your license will then be issued."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.ot.alabama.gov",
-    "endorsement_url": "http://www.ot.alabama.gov",
+    "endorsement_url": "https://ot.alabama.gov/licensure-process.aspx",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Alabama",
-        "dek": "Alabama Occupational Therapist licenses require graduation from an ACOTE-accredited program, passing the NBCOT exam, and completing the application process."
+        "dek": "To apply for an Occupational Therapist license in Alabama, applicants must submit an electronic application through the Alabama State Board of Occupational Therapy's Online Services Portal."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Online Services Portal",
+    "portal_url": "https://albot.us.thentiacloud.net/webs/albot/",
+    "registration_steps": "Go to the Alabama State Board of Occupational Therapy's Online Services Portal and select 'Register for an Account' to create your user profile, then log in to begin your application.",
+    "provider_search": "https://ot.alabama.gov/license-verification.aspx"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "Ohio OT, PT, and Athletic Trainers Board",
     "parent_dept": "State Medical Board of Ohio",
-    "mailing_address": "See board website",
+    "mailing_address": "77 S. High Street, 16th Floor, Columbus, Ohio 43215-6108",
     "physical_address": "See board website",
     "phone": "(614) 466-3774",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://otptat.ohio.gov/"
+    "email": "board@otptat.ohio.gov",
+    "url": "https://otptat.ohio.gov/",
+    "contact_url": "https://otptat.ohio.gov/contact-the-board",
+    "verify_url": "https://license.ohio.gov/lookup"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$100",
+    "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE-accredited program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create an eLicense Ohio Account",
+      "description": "Register for a new account on the eLicense Ohio portal if you do not already have one. This is the primary system for all licensing activities."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Online Application and Fee",
+      "description": "Log in to eLicense Ohio and complete the online application for Occupational Therapist Licensure by Examination or Endorsement. Pay the required application and initial license fees through the portal."
     },
     {
-      "title": "Apply for an Ohio Occupational Therapist License",
-      "description": "Submit a completed application, including all required documentation and fees, to the Ohio Occupational Therapy, Physical Therapy, and Athletic Trainers Board."
+      "title": "Send Official Transcripts",
+      "description": "Arrange for official transcripts, verifying your occupational therapy degree, to be sent directly from your educational institution to the Ohio Occupational Therapy, Physical Therapy, and Athletic Trainers Board."
+    },
+    {
+      "title": "Submit NBCOT Exam Scores",
+      "description": "Ensure your official National Board for Certification in Occupational Therapy (NBCOT) exam scores are sent directly from NBCOT to the Ohio Occupational Therapy, Physical Therapy, and Athletic Trainers Board."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Complete a criminal background check, including both BCI (Ohio Bureau of Criminal Investigation) and FBI (Federal Bureau of Investigation) checks. The results must be sent directly to the Ohio Board."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application on your eLicense Ohio account. Respond promptly to any requests for additional information or clarification from the Board."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://otptat.ohio.gov/",
-    "endorsement_url": "https://otptat.ohio.gov/",
+    "endorsement_url": "https://otptat.ohio.gov/licensing/occupational-therapy/ot-licensure-by-endorsement",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Ohio",
-        "dek": "Ohio Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT examination, and submitting a completed application."
+        "dek": "Occupational Therapists in Ohio apply for licensure through the eLicense Ohio portal, which handles all new applications, renewals, and supporting document submissions."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense Ohio",
+    "portal_url": "https://elicense.ohio.gov/",
+    "registration_steps": "Navigate to the eLicense Ohio portal and click 'Register a New Account'. Follow the prompts to agree to terms, provide and verify your email, create a username and password, and set up security questions. Once registered, you can log in to start your application.",
+    "provider_search": "https://license.ohio.gov/lookup"
   }
 }

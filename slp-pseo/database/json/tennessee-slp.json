@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Communication Disorders and Sciences",
     "parent_dept": "Tennessee Department of Health",
-    "mailing_address": "665 Mainstream Dr., Nashville, TN 37243",
+    "mailing_address": "665 Mainstream Drive, Nashville, TN 37243",
     "physical_address": "665 Mainstream Dr., Nashville, TN 37243",
-    "phone": "(615) 741-5735",
+    "phone": "615-532-5136",
     "fax": "(615) 741-6470",
-    "email": "mailto:tn.health@tn.gov",
-    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/communication-disorders-board.html"
+    "email": "Ask.Health@tn.gov",
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/communication-disorders-board.html",
+    "contact_url": "https://www.tn.gov/health/health-profession-boards/cmds-board/contact.html",
+    "verify_url": "https://apps.health.tn.gov/Licensure/default.aspx"
   },
   "quick_facts": {
     "total_fee": "$165",
     "fee_breakdown": "$50 application + $115 state regulatory fee",
-    "renewal_fee": "$115",
-    "renewal_cycle": "Every 2 years (January 31)",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a Master's Degree",
-      "description": "Earn a master’s degree or doctoral degree in speech-language pathology from an accredited educational program."
+      "title": "Register and Apply via LARAS",
+      "description": "Navigate to the TN Department of Health Licensure and Regulatory System (LARAS) portal, register for a new account, and then log in to complete and submit the online application for Speech-Language Pathologist licensure."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience (clinical fellowship) that meets the requirements set by the Tennessee Board of Communication Disorders and Sciences."
+      "title": "Submit Supporting Documentation",
+      "description": "Upload official transcripts showing a master's or higher degree in Speech-Language Pathology from an accredited institution, and documentation of supervised clinical experience (e.g., ASHA Clinical Fellowship Report) through the LARAS portal."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Pass National Examination",
+      "description": "Arrange for your official scores from the Praxis Examination in Speech-Language Pathology (Praxis 5331) to be sent directly to the Tennessee Board of Communication Disorders and Sciences."
+    },
+    {
+      "title": "Complete Tennessee Jurisprudence Exam",
+      "description": "Take and pass the Tennessee Jurisprudence Examination for Speech-Language Pathologists and Audiologists, which can be accessed via CE Broker through a link provided on the Board's website."
+    },
+    {
+      "title": "Undergo Criminal Background Check",
+      "description": "Complete a fingerprint-based criminal background check through IdentoGO, as instructed during the LARAS application process."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the required application fee of $175 as part of your submission within the LARAS portal."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 165,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 175,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/communication-disorders-board.html",
-    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/communication-disorders-board.html",
+    "endorsement_url": "https://www.tn.gov/health/health-profession-boards/cmds-board/licensure/endorsement.html",
     "notes": "Tennessee is a member of the ASLP Interstate Compact."
   },
   "slug": "tennessee-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Tennessee",
-        "dek": "Tennessee Speech-Language Pathologist License requires a master's degree, passing the Praxis exam, and completion of a supervised professional experience."
+        "dek": "To apply for an SLP license in Tennessee, you must submit your application through the TN Department of Health Licensure and Regulatory System (LARAS)."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "TN Department of Health Licensure and Regulatory System (LARAS)",
+    "portal_url": "https://laras.tn.gov/",
+    "registration_steps": "Navigate to the LARAS portal and click 'New User' to register for an account. Once registered, log in and select the appropriate application type for Speech-Language Pathologist licensure.",
+    "provider_search": "https://apps.health.tn.gov/Licensure/default.aspx"
   }
 }

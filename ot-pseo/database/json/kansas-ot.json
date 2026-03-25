@@ -19,19 +19,21 @@
     "keywords": "occupational therapist license reciprocity kansas, how to transfer occupational therapist license to kansas, occupational therapist compact kansas, kansas occupational therapist endorsement application"
   },
   "board": {
-    "name": "Kansas Board of Healing Arts — OT",
+    "name": "Kansas Board of Healing Arts \u2014 OT",
     "parent_dept": "Kansas Department for Aging and Disability Services (KDADS)",
-    "mailing_address": "See board website",
+    "mailing_address": "800 SW Jackson, Lower Level \u2013 Suite A, Topeka, KS 66612",
     "physical_address": "See board website",
     "phone": "(785) 296-7413",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.ksbha.org/"
+    "email": "info@kbha.ks.gov",
+    "url": "https://www.ksbha.org/",
+    "contact_url": "https://www.healingarts.ks.gov/contact-us",
+    "verify_url": "https://www.healingarts.ks.gov/public-information/verify-a-license"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$80",
+    "renewal_fee": "$275",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited OT Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Register for an Online Account",
+      "description": "Visit the KBHA Online Portal at kbha.kansas.gov/onlineportal/ and click 'Register' to create a new user account if you do not already have one."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Start the Occupational Therapist Application",
+      "description": "Log in to your newly created or existing KBHA Online Portal account, navigate to the 'Application' section, and select the Occupational Therapist application."
     },
     {
-      "title": "Apply for a Kansas Occupational Therapy License",
-      "description": "Submit an application and all required documentation to the Kansas Board of Healing Arts for licensure."
+      "title": "Complete Online Application and Upload Documents",
+      "description": "Fill out all required sections of the online application, including personal, educational, and professional history. Upload any necessary supporting documents directly through the KBHA Online Portal."
+    },
+    {
+      "title": "Arrange for Official Documents Submission",
+      "description": "Ensure your official transcripts are sent directly from your educational institution and your NBCOT score verification is sent directly from NBCOT to the Kansas Board of Healing Arts."
+    },
+    {
+      "title": "Complete the Jurisprudence Exam",
+      "description": "Access and successfully complete the Kansas Jurisprudence Exam, which is a mandatory component of the application process, available through the KBHA Online Portal."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $275.00 through the KBHA Online Portal to finalize your application submission."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 275,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.ksbha.org/",
-    "endorsement_url": "https://www.ksbha.org/",
+    "endorsement_url": "https://www.healingarts.ks.gov/licensure/occupational-therapy/occupational-therapist/apply-for-licensure",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Kansas",
-        "dek": "Kansas Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT examination, and a background check."
+        "dek": "To apply for an Occupational Therapist license in Kansas, applicants must submit their application through the KBHA Online Portal."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "KBHA Online Portal",
+    "portal_url": "https://kbha.kansas.gov/onlineportal/",
+    "registration_steps": "To create an account, visit the KBHA Online Portal and click the 'Register' link. Complete the required registration form, verify your email address, and then log in. Once logged in, select 'Application' from the main menu to begin your application.",
+    "provider_search": "https://www.healingarts.ks.gov/public-information/verify-a-license"
   }
 }

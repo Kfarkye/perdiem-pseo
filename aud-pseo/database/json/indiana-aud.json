@@ -21,12 +21,14 @@
   "board": {
     "name": "Speech-Language Pathology and Audiology Board",
     "parent_dept": "Indiana Professional Licensing Agency (PLA)",
-    "mailing_address": "402 W. Washington St., Room W072, Indianapolis, IN 46204",
+    "mailing_address": "Indiana Professional Licensing Agency, 402 West Washington Street, Room W072, Indianapolis, IN 46204",
     "physical_address": "402 W. Washington St., Room W072, Indianapolis, IN 46204",
-    "phone": "(317) 234-2054",
+    "phone": "(317) 234-2060",
     "fax": "(317) 233-4236",
-    "email": "mailto:pla4@pla.in.gov",
-    "url": "https://www.in.gov/pla/professions/speech-language-pathology-and-audiology-board/"
+    "email": "pla11@pla.in.gov",
+    "url": "https://www.in.gov/pla/professions/speech-language-pathology-and-audiology-board/",
+    "contact_url": "https://www.in.gov/pla/contact-us/",
+    "verify_url": "https://mylicense.in.gov/eGov/"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "You must graduate from a program in audiology approved by the board."
+      "title": "Register and Complete Online Application",
+      "description": "Create an account on MyLicense.IN.gov and complete the Audiologist license application form online, providing all requested personal and professional information."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Audiology Examination (PRAXIS)."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official transcripts, verifying your Master's or Doctoral degree in Audiology from an accredited program, to be sent directly to the Indiana Professional Licensing Agency."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete the application for licensure and pay all applicable fees."
+      "title": "Verify National Examination Scores",
+      "description": "Request your official passing scores for the national examination in audiology (Praxis) to be sent directly from the testing service to the Indiana Professional Licensing Agency."
+    },
+    {
+      "title": "Provide Professional Certification Verification",
+      "description": "Have verification of your current Certificate of Clinical Competence in Audiology (CCC-A) from ASHA or Board Certified in Audiology from AAA sent directly to the Indiana Professional Licensing Agency."
+    },
+    {
+      "title": "Pass the Indiana Jurisprudence Exam",
+      "description": "Complete and pass the Indiana Jurisprudence Examination, which is typically accessible as part of the online application process or through a link provided by the Board."
     }
   ],
   "documents": [
@@ -128,7 +138,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.in.gov/pla/professions/speech-language-pathology-and-audiology-board/",
-    "endorsement_url": "https://www.in.gov/pla/professions/speech-language-pathology-and-audiology-board/",
+    "endorsement_url": "https://www.in.gov/pla/professions/speech-language-pathology-and-audiology-board/audiologist-application-requirements/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "indiana-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Indiana",
-        "dek": "Indiana Audiologist license requires graduation from an approved program, passing the Audiology Examination (PRAXIS), and a completed application."
+        "dek": "Audiologist license applicants in Indiana must apply online through the official MyLicense.IN.gov portal, which is managed by the Indiana Professional Licensing Agency."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense.IN.gov",
+    "portal_url": "https://mylicense.in.gov/eGov/",
+    "registration_steps": "Navigate to MyLicense.IN.gov, click 'Register a new User Account', complete the registration form with your personal details, email, and create a username and password. Once registered and logged in, select 'Professional Licensing' and then 'Apply for a new license' to begin your application for an Audiologist license.",
+    "provider_search": "https://mylicense.in.gov/eGov/"
   }
 }

@@ -21,12 +21,14 @@
   "board": {
     "name": "Advisory Commission for Speech-Language Pathologists and Audiologists",
     "parent_dept": "Missouri Division of Professional Registration",
-    "mailing_address": "P.O. Box 1335, Jefferson City, MO 65102-1335",
+    "mailing_address": "3605 Missouri Boulevard, P.O. Box 4, Jefferson City, MO 65102",
     "physical_address": "3605 Missouri Blvd., Jefferson City, MO 65109",
-    "phone": "(573) 751-0240",
+    "phone": "(573) 751-0096",
     "fax": "(573) 751-3166",
-    "email": "mailto:speechaud@pr.mo.gov",
-    "url": "https://pr.mo.gov/speechaudiology.asp"
+    "email": "healingarts@pr.mo.gov",
+    "url": "https://pr.mo.gov/speechaudiology.asp",
+    "contact_url": "https://health.mo.gov/licensing/healingarts/contact/",
+    "verify_url": "https://pr.mo.gov/license-lookup.asp"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a Doctoral Degree",
-      "description": "Obtain a Doctor of Audiology (AuD) degree from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA)."
+      "title": "Create an Account and Apply Online",
+      "description": "Register as a new user on the MO Professional Registration Portal. Once registered, log in and complete the online application for Audiologist licensure, providing all required personal and professional information."
     },
     {
-      "title": "Pass the Audiology Examination",
-      "description": "Successfully complete the Audiology Examination administered by a professional testing service approved by the Advisory Commission for Speech-Language Pathologists and Audiologists."
+      "title": "Submit Transcripts and Exam Scores",
+      "description": "Arrange for official transcripts verifying your master's or doctoral degree in audiology to be sent directly from your academic institution to the Missouri Board of Healing Arts. Also, ensure your passing scores for the Praxis Exam in Audiology are sent directly from ETS to the Board."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, including all required documentation and fees, to the Missouri Advisory Commission for Speech-Language Pathologists and Audiologists."
+      "title": "Complete Supervised Clinical Experience Verification (if applicable)",
+      "description": "If your degree program did not include one year of supervised clinical experience, submit Form A (Verification of Supervised Clinical Experience) completed by your supervisor to the Missouri Board of Healing Arts."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided by the Board to complete the required criminal background check via fingerprinting. Specific instructions and approved vendors are typically provided after starting the application."
+    },
+    {
+      "title": "Verify Out-of-State Licenses (if applicable)",
+      "description": "If you hold or have held audiologist licenses in other states, arrange for verification of those licenses using Form B to be sent directly from the respective licensing boards to the Missouri Board of Healing Arts."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee of $75 through the MO Professional Registration Portal as part of the online application process."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 75,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://pr.mo.gov/speechaudiology.asp",
-    "endorsement_url": "https://pr.mo.gov/speechaudiology.asp",
+    "endorsement_url": "https://health.mo.gov/licensing/healingarts/audiologists/reciprocity.php",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "missouri-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Missouri",
-        "dek": "Missouri Audiologist licenses require a doctoral degree in audiology, passing the Audiology Examination, and completing the application process."
+        "dek": "To apply for an Audiologist license in Missouri, you must submit your application and supporting documents through the MO Professional Registration Portal, managed by the Missouri Board of Healing Arts."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MO Professional Registration Portal",
+    "portal_url": "https://renew.pr.mo.gov/Default.aspx",
+    "registration_steps": "Navigate to the MO Professional Registration Portal URL, click 'New User? Register Now', and follow prompts to create an account using your email and personal information. Once registered, log in and select the application for Audiologist Licensure.",
+    "provider_search": "https://pr.mo.gov/license-lookup.asp"
   }
 }

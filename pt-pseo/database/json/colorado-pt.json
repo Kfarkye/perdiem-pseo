@@ -19,19 +19,21 @@
     "keywords": "physical therapist license reciprocity colorado, how to transfer physical therapist license to colorado, physical therapist compact colorado, colorado physical therapist endorsement application"
   },
   "board": {
-    "name": "Colorado DORA — Physical Therapy",
+    "name": "Colorado DORA \u2014 Physical Therapy",
     "parent_dept": "Colorado Department of Regulatory Agencies (DORA), Division of Professions and Occupations",
-    "mailing_address": "See board website",
+    "mailing_address": "Colorado Office of Physical Therapy\n1560 Broadway, Suite 1350\nDenver, CO 80202",
     "physical_address": "See board website",
-    "phone": "(303) 894-7800",
+    "phone": "303-894-7800",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.colorado.gov/pacific/dora/Physical_Therapy"
+    "email": "dora_physicaltherapy@state.co.us",
+    "url": "https://www.colorado.gov/pacific/dora/Physical_Therapy",
+    "contact_url": "https://dora.colorado.gov/professions/physical-therapy/contact-us",
+    "verify_url": "https://dora.colorado.gov/professions/licensing/lookup"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create Online Account and Start Application",
+      "description": "Navigate to the DORA Online Services portal (apps.colorado.gov/oss), create a new account, and then select 'Apply for a New License' to begin the Physical Therapist Endorsement application."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Complete Application and Pay Fee",
+      "description": "Fill out the entire online application for endorsement and pay the required application fee through the DORA Online Services portal."
     },
     {
-      "title": "Apply for a Colorado Physical Therapist License",
-      "description": "Submit an application for licensure to the Colorado Department of Regulatory Agencies (DORA) and pay the required fees."
+      "title": "Complete the Colorado Jurisprudence Examination",
+      "description": "Access and complete the open-book Colorado Jurisprudence Examination, which is typically found within the DORA Online Services portal or linked from the application."
+    },
+    {
+      "title": "Submit Verification of Licensure",
+      "description": "Arrange for official verification of licensure to be sent directly from all other states where you have ever held a physical therapist license (active or inactive) to the Colorado Office of Physical Therapy."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status via the DORA Online Services portal and respond promptly to any requests for additional information from the Colorado Office of Physical Therapy."
     }
   ],
   "documents": [
@@ -128,7 +138,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.colorado.gov/pacific/dora/Physical_Therapy",
-    "endorsement_url": "https://www.colorado.gov/pacific/dora/Physical_Therapy",
+    "endorsement_url": "https://dora.colorado.gov/professions/physical-therapy/new-applicants",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "colorado-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Colorado",
-        "dek": "Colorado Physical Therapist License requires graduation from an accredited program, passing the National Physical Therapy Examination, and a background check."
+        "dek": "To apply for a Physical Therapist license in Colorado by endorsement, you must use the DORA Online Services portal to submit your application and required documentation."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DORA Online Services",
+    "portal_url": "https://apps.colorado.gov/oss/",
+    "registration_steps": "On the DORA Online Services portal, select 'Register for an Account' to create your login credentials. Once logged in, navigate to 'Apply for a New License' and choose the Physical Therapist Endorsement application.",
+    "provider_search": "https://dora.colorado.gov/professions/licensing/lookup"
   }
 }

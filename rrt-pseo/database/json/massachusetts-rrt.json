@@ -21,19 +21,21 @@
   "board": {
     "name": "Massachusetts Board of Respiratory Care",
     "parent_dept": "Massachusetts Department of Public Health (DPH)",
-    "mailing_address": "See board website",
+    "mailing_address": "Board of Respiratory Care\n250 Washington Street\nBoston, MA 02108",
     "physical_address": "See board website",
-    "phone": "(800) 414-0168",
+    "phone": "(617) 727-9925",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.mass.gov/respiratory-care-licensing"
+    "email": "healthprof.licensing@mass.gov",
+    "url": "https://www.mass.gov/respiratory-care-licensing",
+    "contact_url": "https://www.mass.gov/orgs/board-of-respiratory-care#contact",
+    "verify_url": "https://checkalookup.mass.gov/"
   },
   "quick_facts": {
     "total_fee": "$152",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "6 to 8 Weeks",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Every 2 years on your birthday in even numbered years",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) exam",
     "ce_requirement": "20 contact hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create an ePLACE Account",
+      "description": "Navigate to the ePLACE Portal at https://eplace.mass.gov/ and click 'Register a New Account.' Follow the instructions to create your personal account, including setting up a username and password."
     },
     {
-      "title": "Pass the NBRC Exam",
-      "description": "Successfully pass the National Board for Respiratory Care (NBRC) Therapist Multiple Choice (TMC) examination and Clinical Simulation Examination (CSE)."
+      "title": "Start a New Application",
+      "description": "Log in to your newly created ePLACE account. From your 'My Licenses & Permits' dashboard, select 'New License Application' and choose 'Respiratory Therapist' from the list of available professions."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application for licensure to the Massachusetts Board of Respiratory Care, including required documentation and fees."
+      "title": "Complete Application Form",
+      "description": "Fill out all sections of the online application form within the ePLACE Portal. Provide accurate and complete information regarding your personal details, educational background, and professional history."
+    },
+    {
+      "title": "Upload Required Documents",
+      "description": "Digitally upload all necessary supporting documents directly to your ePLACE application. This typically includes official transcripts from your accredited respiratory therapy program and official verification of your NBRC credentials (CRT and RRT)."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $150.00 through the ePLACE Portal. Payment can typically be made using a credit card or electronic check."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application within the ePLACE Portal. Respond promptly to any requests for additional information or clarification from the Massachusetts Board of Respiratory Care to prevent delays."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 260,
-    "processing_time": "3 to 5 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.mass.gov/respiratory-care-licensing",
-    "endorsement_url": "https://www.mass.gov/respiratory-care-licensing",
+    "endorsement_url": "https://www.mass.gov/how-to/apply-for-a-respiratory-therapist-license",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Massachusetts",
-        "dek": "Massachusetts Respiratory Therapist licenses require graduation from an accredited respiratory care program, passing the NBRC exam, and completing an application."
+        "dek": "To apply for a Respiratory Therapist license in Massachusetts, use the ePLACE Portal to submit your application and all required supporting documentation."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ePLACE Portal",
+    "portal_url": "https://eplace.mass.gov/",
+    "registration_steps": "Go to the ePLACE Portal, click 'Register a New Account,' and follow the prompts to create your username and password for the system.",
+    "provider_search": "https://checkalookup.mass.gov/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Medical Nutrition Therapy Licensure",
     "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
-    "mailing_address": "P.O. Box 94986<br>Lincoln, NE 68509-4986",
+    "mailing_address": "DHHS, Credentialing Division, P.O. Box 94986, Lincoln, NE 68509-4986",
     "physical_address": "301 Centennial Mall South, 1st Floor<br>Lincoln, NE 68508",
-    "phone": "(402) 471-2115",
+    "phone": "402-471-2115",
     "fax": "(402) 742-1106",
-    "email": "mailto:dhhs.licensure2117@nebraska.gov",
-    "url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx"
+    "email": "DHHS.LicensureUnit@nebraska.gov",
+    "url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx",
+    "contact_url": "https://dhhs.ne.gov/pages/Dietitians-and-Nutritionists.aspx",
+    "verify_url": "https://dhhs.ne.gov/licsearch/Pages/License-Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$114",
     "fee_breakdown": "$114 initial application fee",
-    "renewal_fee": "$114",
-    "renewal_cycle": "Every 2 years (by Sept 1 of odd years) + 30 CE hours",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "You must complete academic requirements and supervised practice experience requirements established by the Accreditation Council for Education in Nutrition and Dietetics (ACEND) and be granted a degree from a regionally accredited college or university."
+      "title": "Create an Account and Submit Online Application",
+      "description": "Register for a new account on the NE DHHS Online Licensure Portal. Complete and submit the online application for initial Dietitian and Nutritionist licensure, ensuring all required fields are accurately filled."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts from all colleges and universities attended, demonstrating completion of a bachelor's or master's degree in dietetics, food and nutrition, or an equivalent course of study, to be sent directly to the Nebraska DHHS Credentialing Division."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Complete the application for licensure and submit all required documentation and fees to the Nebraska Department of Health and Human Services."
+      "title": "Verify CDR Exam Passage",
+      "description": "Provide official verification of passing the Commission on Dietetic Registration (CDR) examination. This typically involves authorizing CDR to send verification directly to the Nebraska DHHS Credentialing Division."
+    },
+    {
+      "title": "Verify Supervised Practice Completion",
+      "description": "Submit verification of successful completion of a supervised practice program accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND) or an equivalent pre-professional practice program, sent directly to the Credentialing Division."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow instructions provided by the Nebraska DHHS Credentialing Division to complete any required criminal background checks, which may include fingerprinting."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable initial application fee of $100 through the NE DHHS Online Licensure Portal to finalize your application submission."
     }
   ],
   "documents": [
@@ -132,11 +146,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 114,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx",
-    "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Medical-Nutrition-Therapy.aspx",
+    "endorsement_url": "https://dhhs.ne.gov/pages/Dietitians-and-Nutritionists.aspx",
     "notes": "Licensure by reciprocity is available for an applicant currently licensed in another state. The requirements of that state must be substantially equivalent to Nebraska's. Verification of all held licenses and active CDR registration is required, along with the $114 application fee.",
     "requires_psv": false
   },
@@ -152,7 +166,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Medical Nutrition Therapist in Nebraska",
-        "dek": "Nebraska Medical Nutrition Therapist license requires graduation from an approved educational program, passing the Registration Examination for Dietitians, and completing the application process."
+        "dek": "To apply for a Dietitian and Nutritionist license in Nebraska, create an account and complete the application through the NE DHHS Online Licensure Portal."
       }
     }
   },
@@ -178,5 +192,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NE DHHS Online Licensure Portal",
+    "portal_url": "https://nevrs.ne.gov/nebh_pvl_web/",
+    "registration_steps": "Navigate to the NE DHHS Online Licensure Portal and click 'Register' in the left menu. Enter your email, create a password, and verify your account via the email link provided.",
+    "provider_search": "https://dhhs.ne.gov/licsearch/Pages/License-Search.aspx"
   }
 }

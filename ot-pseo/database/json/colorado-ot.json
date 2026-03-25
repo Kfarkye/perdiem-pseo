@@ -19,19 +19,21 @@
     "keywords": "occupational therapist license reciprocity colorado, how to transfer occupational therapist license to colorado, occupational therapist compact colorado, colorado occupational therapist endorsement application"
   },
   "board": {
-    "name": "Colorado DORA — Occupational Therapy",
+    "name": "Colorado DORA \u2014 Occupational Therapy",
     "parent_dept": "Colorado Department of Regulatory Agencies (DORA), Division of Professions and Occupations",
-    "mailing_address": "See board website",
+    "mailing_address": "Colorado Department of Regulatory Agencies\nDivision of Professions and Occupations\n1560 Broadway, Suite 1350\nDenver, CO 80202",
     "physical_address": "See board website",
     "phone": "(303) 894-7800",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.colorado.gov/DORA/Occupational_Therapy"
+    "email": "dora_dpo_licensing@state.co.us",
+    "url": "http://www.colorado.gov/DORA/Occupational_Therapy",
+    "contact_url": "https://dpo.colorado.gov/ContactUs",
+    "verify_url": "https://www.colorado.gov/dora/licensing/lookup/licenselookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$60",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$80",
+    "renewal_fee": "$90",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Occupational Therapy Program",
-      "description": "Graduate from an occupational therapy program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create a DORA Online Services Account",
+      "description": "Navigate to the DORA Online Services portal and register as a new applicant by clicking 'Register' and completing the account setup."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Select Application Type",
+      "description": "Log in to your DORA Online Services account, go to the 'Applications' section, and select 'Occupational Therapist' for initial licensure or 'Endorsement Application' if applying by endorsement."
     },
     {
-      "title": "Apply for a Colorado Occupational Therapy License",
-      "description": "Submit an application for licensure to the Colorado Department of Regulatory Agencies (DORA) along with required documentation and fees."
+      "title": "Complete the Online Application",
+      "description": "Fill out all required sections of the application form within the DORA Online Services system, providing accurate personal, educational, and professional history."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Upload necessary documents such as official transcripts showing an entry-level occupational therapy degree, official NBCOT score reports, and verification of supervised fieldwork experience directly through the DORA Online Services portal."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Pay the non-refundable application fee using a credit card or electronic check through the DORA Online Services system."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status via your DORA Online Services account for updates, deficiency notices, or requests for additional information from the board."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 90,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.colorado.gov/DORA/Occupational_Therapy",
-    "endorsement_url": "http://www.colorado.gov/DORA/Occupational_Therapy",
+    "endorsement_url": "https://dpo.colorado.gov/OccupationalTherapy/Apply/Endorsement",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Colorado",
-        "dek": "Colorado Occupational Therapy License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a background check."
+        "dek": "To apply for an Occupational Therapist license in Colorado, you will use the DORA Online Services system for both initial and endorsement applications."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DORA Online Services",
+    "portal_url": "https://apps.colorado.gov/dora/licensing/Public/Login/ApplicantLogin.aspx?id=1",
+    "registration_steps": "Go to the DORA Online Services portal, click 'Register' for New Applicants, and follow the prompts to create your account using a valid email address and password.",
+    "provider_search": "https://www.colorado.gov/dora/licensing/lookup/licenselookup.aspx"
   }
 }

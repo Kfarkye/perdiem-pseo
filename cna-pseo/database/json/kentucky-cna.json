@@ -21,19 +21,21 @@
   "board": {
     "name": "Kentucky Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Kentucky Board of Nursing, 312 Whittington Pky, Suite 300, Louisville, KY 40222-5172",
     "physical_address": "See board website",
-    "phone": "(502) 429-3300",
+    "phone": "(502) 333-2818",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://kbn.ky.gov/"
+    "email": "kbn.cna@ky.gov",
+    "url": "https://kbn.ky.gov/",
+    "contact_url": "https://kbn.ky.gov/General/Pages/Contact-Us.aspx",
+    "verify_url": "https://kbn.ky.gov/General/Pages/Verify-a-License.aspx"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "training_hours": "80 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Kentucky-approved CNA training program, usually 80 hours long."
+      "title": "Complete Approved Training Program",
+      "description": "Enroll in and successfully complete a Kentucky Board of Nursing (KBN) approved Nurse Aide Training Program (NATP)."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Kentucky nurse aide exam."
+      "title": "Prepare for Competency Evaluation",
+      "description": "Review the Credentia Kentucky Nurse Aide Candidate Handbook to prepare for both the knowledge and skills components of the Kentucky Nurse Aide Competency Evaluation."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Create Credentia Account and Register for Exam",
+      "description": "Visit the Credentia Kentucky Nurse Aide Gateway, create an account, and register for the Kentucky Nurse Aide Competency Evaluation (which includes both a knowledge test and a skills test)."
+    },
+    {
+      "title": "Pass the Competency Evaluation",
+      "description": "Schedule and successfully pass both the knowledge and skills components of the Kentucky Nurse Aide Competency Evaluation administered by Credentia."
+    },
+    {
+      "title": "Registry Placement",
+      "description": "Upon successful completion of the exam, Credentia will automatically submit your results to the Kentucky Nurse Aide Registry, which is managed by the KBN."
+    },
+    {
+      "title": "Verify Certification",
+      "description": "Monitor your certification status and ensure your placement on the Kentucky Nurse Aide Registry by using the KBN License Verification Search after processing."
     }
   ],
   "documents": [
@@ -122,10 +136,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://kbn.ky.gov/",
-    "endorsement_url": "https://kbn.ky.gov/",
+    "endorsement_url": "https://kbn.ky.gov/General/Pages/Nurse-Aide-Registry.aspx",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become an SRNA in Kentucky",
-        "dek": "Kentucky CNA certification requires a 80-hour training program, Kentucky Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "Aspiring Certified Nursing Assistants in Kentucky must complete a KBN-approved training program and then register for and pass the Kentucky Nurse Aide Competency Evaluation administered by Credentia via their Credentia Kentucky Nurse Aide Gateway portal."
       },
       "seo": {
         "title": "How to Become an SRNA in Kentucky",
@@ -216,5 +230,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Kentucky Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Credentia Kentucky Nurse Aide Gateway",
+    "portal_url": "https://www.credentia.org/tests/nurse-aide/kentucky",
+    "registration_steps": "Create an account on the Credentia Kentucky Nurse Aide Gateway, then register for the Kentucky Nurse Aide Competency Evaluation (Knowledge and Skills tests).",
+    "provider_search": "https://kbn.ky.gov/General/Pages/Verify-a-License.aspx"
   }
 }

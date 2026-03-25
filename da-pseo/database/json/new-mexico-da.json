@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "New Mexico Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in New Mexico — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in New Mexico \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license new mexico, dental assistant certification new mexico, RDA new mexico, DANB CDA new mexico, dental assistant radiography new mexico"
   },
   "board": {
     "name": "New Mexico Board of Dental Health Care",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "P.O. Box 25101, Santa Fe, NM 87504",
     "physical_address": "See board website",
-    "phone": "(505) 476-4680",
+    "phone": "(505) 476-4622",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.rld.nm.gov/boards-and-commissions/dental-health-care/"
+    "email": "DentalBoard@rld.nm.gov",
+    "url": "https://www.rld.nm.gov/boards-and-commissions/dental-health-care/",
+    "contact_url": "https://www.rld.nm.gov/boards-commissions/boards/dental-health-care-board/contact-us/",
+    "verify_url": "https://licensing.rld.nm.gov/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 application/registration fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years (even-numbered years)",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "12 hours per renewal cycle"
   },
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed Dental Assistant Registration Application to the New Mexico Board of Dental Health Care."
+      "title": "Fulfill Eligibility & Examination Requirements",
+      "description": "Ensure you meet the educational or experience requirements (graduation from an ADA-accredited dental assisting program or 4000 hours of clinical work experience), possess current Basic Life Support (BLS) certification, pass a Dental Assisting National Board (DANB) exam (General Chairside Assisting, Certified Dental Assistant, or Certified Orthodontic Assistant), and pass the New Mexico Dental Jurisprudence Examination."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Pay the required registration fee of $50 to the New Mexico Board of Dental Health Care."
+      "title": "Register for an Online Account",
+      "description": "Create a new user account on the New Mexico Medical Board & Affiliated Boards Portal at licensing.rld.nm.gov to access the application system."
     },
     {
-      "title": "Complete Continuing Education",
-      "description": "Complete 12 hours of continuing education every two years to maintain your registration."
+      "title": "Complete the Online Application",
+      "description": "Log into your account, select the 'Board of Dental Health Care,' then choose 'Registered Dental Assistant,' and begin the 'Initial Application' process within the portal."
+    },
+    {
+      "title": "Upload Required Documentation",
+      "description": "Submit all necessary supporting documents, such as proof of education/experience, BLS certification, DANB exam scores, and New Mexico Jurisprudence exam results, directly through the online application portal."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee of $150.00 as prompted within the New Mexico Medical Board & Affiliated Boards Portal."
     }
   ],
   "documents": [
@@ -123,11 +133,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.rld.nm.gov/boards-and-commissions/dental-health-care/",
-    "endorsement_url": "https://www.rld.nm.gov/boards-and-commissions/dental-health-care/",
+    "endorsement_url": "https://www.rld.nm.gov/boards-commissions/boards/dental-health-care-board/registered-dental-assistants/",
     "notes": "Dental assistants can apply for Dental Assistant through the New Mexico Board of Dental Health Care by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in New Mexico",
-        "dek": "New Mexico Dental Assistant registration requires completing an application, paying the required fee, and completing continuing education requirements."
+        "dek": "To become a Registered Dental Assistant in New Mexico, applicants must apply online through the New Mexico Medical Board & Affiliated Boards Portal."
       }
     }
   },
@@ -172,5 +182,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "New Mexico Medical Board & Affiliated Boards Portal",
+    "portal_url": "https://licensing.rld.nm.gov/",
+    "registration_steps": "To begin your application, navigate to the portal URL, click 'Register for an Account' if you are a new user, or 'Login' if you have an existing account. Once logged in, select the 'Board of Dental Health Care' and choose the 'Registered Dental Assistant' license type to start the 'Initial Application' process.",
+    "provider_search": "https://licensing.rld.nm.gov/"
   }
 }

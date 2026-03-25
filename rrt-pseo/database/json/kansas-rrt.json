@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity kansas, how to transfer respiratory therapist license to kansas, respiratory therapist compact kansas, kansas respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Kansas Board of Healing Arts — RT",
+    "name": "Kansas Board of Healing Arts \u2014 RT",
     "parent_dept": "Kansas Department for Aging and Disability Services (KDADS)",
-    "mailing_address": "See board website",
+    "mailing_address": "Kansas State Board of Healing Arts\n800 SW Jackson, Lower Level - Suite A\nTopeka, KS 66612",
     "physical_address": "See board website",
     "phone": "(785) 296-7413",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.ksbha.org/"
+    "email": "BHA_Licensing@ksbha.org",
+    "url": "https://www.ksbha.org/",
+    "contact_url": "https://ksbha.org/Contact_Us.html",
+    "verify_url": "https://public.kansas.gov/bha/lic_lookup.shtml"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or another board-approved agency."
+      "title": "Create Account and Start Application",
+      "description": "Register and log in to the KSBHA Applicant Portal (https://ksbha.portal.kansas.gov/). From your dashboard, select the 'Respiratory Therapist Initial Licensure Application' to begin."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully pass the National Board for Respiratory Care (NBRC) examination."
+      "title": "Complete Online Application Form",
+      "description": "Fill out the comprehensive online application form within the KSBHA Applicant Portal, providing all required personal, educational, and professional history."
     },
     {
-      "title": "Apply for a Kansas Respiratory Therapist License",
-      "description": "Submit a completed application, required documentation, and the appropriate fee to the Kansas Board of Healing Arts."
+      "title": "Submit Required Documentation",
+      "description": "Upload or arrange for official transcripts from your respiratory therapy program and verification of your NBRC RRT credential to be sent directly to the Kansas State Board of Healing Arts."
+    },
+    {
+      "title": "Request License Verifications (if applicable)",
+      "description": "If you hold or have held a Respiratory Therapist license in another state, arrange for a verification of licensure to be sent directly from that state's licensing board to the Kansas State Board of Healing Arts."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable initial application fee of $200 via the secure payment system within the KSBHA Applicant Portal."
+    },
+    {
+      "title": "Await Board Review",
+      "description": "Once all required documentation and fees are received, the Kansas State Board of Healing Arts will review your complete application for approval."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 80,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.ksbha.org/",
-    "endorsement_url": "https://www.ksbha.org/",
+    "endorsement_url": "https://ksbha.org/Professions/Respiratory_Therapist/RT_Applications.html",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Kansas",
-        "dek": "Kansas Respiratory Therapist licenses require graduation from an accredited respiratory care program, passing the NBRC examination, and a completed application."
+        "dek": "To apply for Respiratory Therapist licensure in Kansas, applicants must utilize the KSBHA Applicant Portal, which serves as the primary system for all initial applications."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "KSBHA Applicant Portal",
+    "portal_url": "https://ksbha.portal.kansas.gov/",
+    "registration_steps": "1. Navigate to the KSBHA Applicant Portal.\n2. Click 'Register' to create a new user account if you don't have one.\n3. Follow the prompts to set up your User ID and password.\n4. Log in with your new credentials and select the 'Respiratory Therapist Initial Licensure Application' to begin.",
+    "provider_search": "https://public.kansas.gov/bha/lic_lookup.shtml"
   }
 }

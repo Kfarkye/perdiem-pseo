@@ -23,17 +23,19 @@
     "parent_dept": "Kentucky Board of SLP and Audiology",
     "mailing_address": "P.O. Box 1360, Frankfort, KY 40602",
     "physical_address": "911 Leawood Dr., Frankfort, KY 40601",
-    "phone": "(502) 782-8808",
+    "phone": "(502) 892-4263",
     "fax": "(502) 564-4818",
-    "email": "mailto:BSLPA@ky.gov",
-    "url": "https://slpaud.ky.gov/"
+    "email": "slpa@ky.gov",
+    "url": "https://slpaud.ky.gov/",
+    "contact_url": "https://slpa.ky.gov/contact/Pages/default.aspx",
+    "verify_url": "https://slpa.ky.gov/licensing/Pages/Verify-a-License.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination ( Praxis Examination in Audiology administered by ETS)",
     "ce_requirement": "30 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "You must graduate from an approved program in audiology."
+      "title": "Meet Education and Supervised Experience Requirements",
+      "description": "Complete a graduate degree from an accredited program and a minimum of nine (9) months of supervised post-degree experience as required by the Board."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Audiology Examination (Praxis Examination in Audiology administered by ETS)."
+      "title": "Pass the Praxis Examination",
+      "description": "Successfully pass the Praxis Examination in Audiology (ETS Code 5342)."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application to the Kentucky Board of Speech-Language Pathology and Audiology with all required documentation and fees."
+      "title": "Create an Account and Apply Online",
+      "description": "Register for an account on the 'Kentucky Board of Speech-Language Pathology and Audiology Licensure System' (portal.kentucky.gov/KOGA/SLPA) and complete the online application for Audiologist licensure."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official transcripts from your educational institution and official Praxis scores to be sent directly to the Board. Provide verification of your supervised clinical experience as required."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided by the Board through the application process to complete the required criminal background check."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Pay the initial licensure application fee of $50.00 through the Kentucky Board of Speech-Language Pathology and Audiology Licensure System."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://slpaud.ky.gov/",
-    "endorsement_url": "https://slpaud.ky.gov/",
+    "endorsement_url": "https://slpa.ky.gov/licensing/Pages/Audiologist.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "kentucky-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Kentucky",
-        "dek": "Kentucky Audiologist license requires graduation from an approved program, passage of the Audiology Examination, and completion of a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Kentucky, create an account and submit your application through the Kentucky Board of Speech-Language Pathology and Audiology Licensure System."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Kentucky Board of Speech-Language Pathology and Audiology Licensure System",
+    "portal_url": "https://portal.kentucky.gov/KOGA/SLPA/Pages/default.aspx",
+    "registration_steps": "Register a new account, then log in and select 'New License Application' to begin.",
+    "provider_search": "https://slpa.ky.gov/licensing/Pages/Verify-a-License.aspx"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "Nevada Board of Pharmacy",
     "parent_dept": "Department of Health and Human Services",
-    "mailing_address": "See board website",
+    "mailing_address": "431 W. Plumb Lane, Reno, NV 89509",
     "physical_address": "See board website",
     "phone": "(775) 850-1440",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://bop.nv.gov/"
+    "email": "pharmacy@pharmacy.nv.gov",
+    "url": "https://bop.nv.gov/",
+    "contact_url": "https://bop.nv.gov/Contact/Contact_Us/",
+    "verify_url": "https://nevada.mylicense.com/verification/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program from a school or college of pharmacy accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create an NABP e-Profile ID and Initiate Licensure Transfer",
+      "description": "Begin by obtaining an NABP e-Profile ID. If applying by endorsement, request the Official Pharmacist Licensure Transfer Application through the National Association of Boards of Pharmacy (NABP) and have verifications sent to the Nevada State Board of Pharmacy."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Register and Apply on the Nevada Online Licensing Portal",
+      "description": "Create an account on the Nevada Online Licensing Portal (https://nevada.mylicense.com/) and complete the comprehensive online pharmacist application for licensure by examination or endorsement."
     },
     {
-      "title": "Apply for a Pharmacist License",
-      "description": "Submit a completed application, along with required documentation and fees, to the Nevada State Board of Pharmacy."
+      "title": "Complete Fingerprint Background Check",
+      "description": "Submit your fingerprints for a criminal background check through the Nevada Department of Public Safety (DPS) and the FBI. Follow the specific instructions provided by the Nevada State Board of Pharmacy on their website."
+    },
+    {
+      "title": "Submit Required Documentation and Official Verifications",
+      "description": "Upload all necessary supporting documents through the Nevada Online Licensing Portal, including official pharmacy school transcripts. Arrange for official verification of licensure from all states where you are or have been licensed to be sent directly to the Board."
+    },
+    {
+      "title": "Pass the Nevada Multistate Pharmacy Jurisprudence Examination (MPJE)",
+      "description": "Register for and successfully pass the Multistate Pharmacy Jurisprudence Examination (MPJE), administered by NABP, unless you have previously passed it for Nevada licensure."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://bop.nv.gov/",
-    "endorsement_url": "https://bop.nv.gov/",
+    "endorsement_url": "https://bop.nv.gov/Licensing/Pharmacist/How_To_Apply_For_a_Pharmacist_License/",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "nevada-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Nevada",
-        "dek": "Nevada Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing internship hours."
+        "dek": "To apply for a pharmacist license in Nevada, including by endorsement, you must submit your application through the Nevada Online Licensing Portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nevada Online Licensing Portal",
+    "portal_url": "https://nevada.mylicense.com/",
+    "registration_steps": "Navigate to the Nevada Online Licensing Portal and click 'Register a New User Account' to create your profile and begin the application process.",
+    "provider_search": "https://nevada.mylicense.com/verification/Search.aspx"
   }
 }

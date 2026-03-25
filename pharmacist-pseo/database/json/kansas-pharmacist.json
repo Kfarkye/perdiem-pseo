@@ -21,18 +21,20 @@
   "board": {
     "name": "Kansas Board of Pharmacy",
     "parent_dept": "Kansas Department for Aging and Disability Services (KDADS)",
-    "mailing_address": "See board website",
+    "mailing_address": "Kansas Board of Pharmacy\n800 SW Jackson, Suite 1414\nTopeka, KS 66612-1231",
     "physical_address": "See board website",
-    "phone": "(785) 296-4056",
+    "phone": "785-296-4056",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.pharmacy.ks.gov/"
+    "email": "pharmacy@ks.gov",
+    "url": "https://www.pharmacy.ks.gov/",
+    "contact_url": "https://pharmacy.ks.gov/contact-us",
+    "verify_url": "https://kansas.mylicense.com/datamart/SearchForm.aspx"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$175",
+    "renewal_cycle": "Every 2 years (biennial)",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program in pharmacy from an ACPE-accredited institution."
+      "title": "Create Online Account",
+      "description": "Register for an account on the Kansas Board of Pharmacy Online Portal (MyLicense.com) using your email address and preferred password to begin the application process."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully complete the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Submit Application",
+      "description": "Complete and submit the 'Application for Pharmacist Licensure by Endorsement' or 'Application for Pharmacist Licensure by Examination' online through the Kansas Board of Pharmacy Online Portal."
     },
     {
-      "title": "Complete Internship Requirements",
-      "description": "Satisfactorily complete the required internship hours under the supervision of a licensed pharmacist."
+      "title": "Provide Documentation",
+      "description": "Arrange for official verification of your initial licensure by examination from the original state and any subsequent states where you've held a license. Submit authorization for a criminal background check (CBC)."
+    },
+    {
+      "title": "Pass MPJE",
+      "description": "Successfully complete the Kansas Multistate Pharmacy Jurisprudence Examination (MPJE) administered by NABP. Ensure your scores are sent to the Kansas Board of Pharmacy."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status through your Kansas Board of Pharmacy Online Portal account for updates and any requests for additional information or documents."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.pharmacy.ks.gov/",
-    "endorsement_url": "https://www.pharmacy.ks.gov/",
+    "endorsement_url": "https://pharmacy.ks.gov/licensure/pharmacist/pharmacist-by-endorsement",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "kansas-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Kansas",
-        "dek": "Kansas Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completion of internship requirements."
+        "dek": "To apply for a Pharmacist license in Kansas, create an account and submit your application through the Kansas Board of Pharmacy Online Portal (MyLicense.com)."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Kansas Board of Pharmacy Online Portal (MyLicense.com)",
+    "portal_url": "https://kansas.mylicense.com/Datamart/Login.aspx",
+    "registration_steps": "Navigate to the portal URL, click 'Register' or 'Create an Account', and follow the prompts to set up your profile with your email and chosen password.",
+    "provider_search": "https://kansas.mylicense.com/datamart/SearchForm.aspx"
   }
 }

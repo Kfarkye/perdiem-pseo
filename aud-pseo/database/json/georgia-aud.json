@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "Professional Licensing Boards Division, Office of the Secretary of State",
-    "mailing_address": "237 Coliseum Drive, Macon, GA 31217",
+    "mailing_address": "237 Coliseum Drive Macon, GA 31217-3858",
     "physical_address": "237 Coliseum Drive, Macon, GA 31217",
-    "phone": "(844) 753-7825",
+    "phone": "404-424-9966",
     "fax": "(478) 207-1363",
     "email": "mailto:slpa@sos.ga.gov",
-    "url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology"
+    "url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology",
+    "contact_url": "https://sos.ga.gov/form/speech-language-pathology-and-audiology-licensing-board-contact-form",
+    "verify_url": "https://secure.sos.ga.gov/MyLicenseEnterprise/PublicSearch.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "You must have earned an AuD or master’s degree in audiology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+      "title": "Create an Account and Apply Online",
+      "description": "Register for an account on the Georgia Online Licensing System (GALS) and complete the online application for Audiologist licensure, indicating if you are applying by examination or endorsement."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series offered by the Educational Testing Service."
+      "title": "Submit Supporting Documents",
+      "description": "Upload all required documents, including official transcripts verifying a doctorate degree from a CAA-accredited program, proof of U.S. citizenship or legal alien status, and any other forms specified in the Georgia Online Licensing System (GALS) application."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure with the Georgia Board of Examiners for Speech-Language Pathology and Audiology, including all required documentation and fees."
+      "title": "Arrange for Official Scores",
+      "description": "Request that official scores for the National Examination in Audiology (Praxis Exam) be sent directly to the Georgia State Board of Speech-Language Pathology and Audiology from the testing agency."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Remit all required application fees, including the initial application fee, through the Georgia Online Licensing System (GALS)."
+    },
+    {
+      "title": "Respond to Board Requests",
+      "description": "Monitor your application status within the Georgia Online Licensing System (GALS) and be prepared to provide any additional information or documentation requested by the Board during the review process."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 75,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology",
-    "endorsement_url": "https://sos.ga.gov/plb/speech-language-pathology-and-audiology",
+    "endorsement_url": "https://sos.ga.gov/audiologist-licensing-information",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "georgia-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Georgia",
-        "dek": "Georgia Audiology license requires an AuD or master’s degree in audiology, passing the Audiology Examination of the Praxis Series, and completion of a supervised professional experience."
+        "dek": "Applicants for Audiologist licensure in Georgia must apply online through the Georgia Online Licensing System (GALS)."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Georgia Online Licensing System (GALS)",
+    "portal_url": "https://secure.sos.ga.gov/MyLicenseEnterprise/",
+    "registration_steps": "Navigate to the Georgia Online Licensing System (GALS) and click 'Register a Person' to create a User ID and password. Once registered, log in and select 'New Application' to begin the Audiologist licensure application.",
+    "provider_search": "https://secure.sos.ga.gov/MyLicenseEnterprise/PublicSearch.aspx"
   }
 }

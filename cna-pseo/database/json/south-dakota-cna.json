@@ -21,19 +21,21 @@
   "board": {
     "name": "South Dakota DOH",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "4305 S. Louise Ave., Suite 201, Sioux Falls, SD 57106-3118",
     "physical_address": "See board website",
-    "phone": "(605) 773-3361",
+    "phone": "(605) 362-2760",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://doh.sd.gov/"
+    "email": "sdbon@state.sd.us",
+    "url": "https://doh.sd.gov/",
+    "contact_url": "https://bon.sd.gov/Contact.aspx",
+    "verify_url": "https://na.doh.sd.gov/"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "Not officially specified",
     "license_duration": "2 Years",
     "training_hours": "75 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an South Dakota-approved CNA training program, usually 75 hours long."
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you meet the South Dakota requirements for CNA registration, which typically involves completing a state-approved nurse aide training program and passing the competency evaluation, or qualifying for endorsement from another state."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the South Dakota nurse aide exam."
+      "title": "Download Application Packet",
+      "description": "Visit the South Dakota Board of Nursing's Nurse Aide Registry Information page (bon.sd.gov/Nurse-Aide-Registry-Information.aspx) and download the appropriate 'Nurse Aide Registry Application Packet' (Initial or Endorsement)."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Complete Application Form",
+      "description": "Fill out the downloaded application packet completely and accurately. Ensure all sections, including personal information, education/training details, and eligibility questions, are answered. Remember to sign the application."
+    },
+    {
+      "title": "Gather Supporting Documents",
+      "description": "Collect all required documentation as specified in the application packet. This may include proof of training, competency evaluation results, verification from other states (for endorsement), and any other requested materials."
+    },
+    {
+      "title": "Submit Application by Mail",
+      "description": "Mail the original signed application packet along with all required supporting documents to the South Dakota Board of Nursing at the address provided in the packet and on their contact page."
+    },
+    {
+      "title": "Receive Registry Confirmation",
+      "description": "Allow the Board time to process your application. Once approved, your name will be added to the South Dakota Nurse Aide Registry, and you can verify your status via the online verification portal."
     }
   ],
   "documents": [
@@ -122,10 +136,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "Not officially specified",
     "processing_tier": "fast",
     "board_url": "https://doh.sd.gov/",
-    "endorsement_url": "https://doh.sd.gov/",
+    "endorsement_url": "https://bon.sd.gov/Nurse-Aide-Registry-Information.aspx",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in South Dakota",
-        "dek": "South Dakota CNA certification requires a 75-hour training program, South Dakota DOH eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for initial CNA registration or endorsement in South Dakota, download and complete the official application packet from the South Dakota Board of Nursing Nurse Aide Registry Forms page and submit it via mail."
       },
       "seo": {
         "title": "How to Become a CNA in South Dakota",
@@ -216,5 +230,20 @@
     "transfer_term": "endorsement",
     "registry_name": "South Dakota Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "South Dakota Board of Nursing Nurse Aide Registry Forms Page",
+    "portal_url": "https://bon.sd.gov/Nurse-Aide-Registry-Information.aspx",
+    "registration_steps": "Download the appropriate application packet (initial or endorsement) from the SD Board of Nursing's Nurse Aide Registry Information page, complete it thoroughly, gather all required supporting documents, and mail the original signed application to the Board of Nursing.",
+    "provider_search": "https://na.doh.sd.gov/"
   }
 }

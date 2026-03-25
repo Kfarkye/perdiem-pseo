@@ -21,17 +21,19 @@
   "board": {
     "name": "Texas State Board of Pharmacy",
     "parent_dept": "Texas Department of Licensing and Regulation (TDLR)",
-    "mailing_address": "See board website",
+    "mailing_address": "Texas State Board of Pharmacy, 333 Guadalupe Street, Suite 3-600, Austin, Texas 78701",
     "physical_address": "See board website",
     "phone": "(512) 305-8000",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.pharmacy.texas.gov/"
+    "url": "https://www.pharmacy.texas.gov/",
+    "contact_url": "https://www.tsbp.texas.gov/contact-us/",
+    "verify_url": "https://vo.licensing.hpc.texas.gov/datamart/mainMenu.do"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$260",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program from a recognized school or college of pharmacy accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create Account and Submit Application",
+      "description": "Access the TSBP Online Licensing System to register for a new account, complete the Pharmacist Initial Application, and pay the application fee."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE) for Texas."
+      "title": "Complete Fingerprinting for Background Check",
+      "description": "Schedule and complete fingerprinting through IdentoGO following the instructions provided by TSBP to facilitate state and federal criminal history record checks."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit an application for licensure to the Texas State Board of Pharmacy along with the required fee and supporting documents."
+      "title": "Arrange for Official Transcripts",
+      "description": "Request your ACPE-accredited pharmacy school to send your official transcripts directly to the Texas State Board of Pharmacy, confirming your Doctor of Pharmacy degree."
+    },
+    {
+      "title": "Ensure Exam Scores are Reported",
+      "description": "Confirm with the National Association of Boards of Pharmacy (NABP) that your official NAPLEX and MPJE scores are sent directly to the Texas State Board of Pharmacy."
+    },
+    {
+      "title": "Await Application Review and Issuance",
+      "description": "Once all required documentation and scores are received and verified by TSBP, your application will be reviewed for licensure, and you will be notified of its status."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 255,
-    "processing_time": "12+ Weeks",
+    "endorsement_fee": 260,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.pharmacy.texas.gov/",
-    "endorsement_url": "https://www.pharmacy.texas.gov/",
+    "endorsement_url": "https://www.tsbp.texas.gov/licensing/pharmacist/endorsement-reciprocity-information/",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -151,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Texas",
-        "dek": "Texas Pharmacist License requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing an application."
+        "dek": "To apply for a Texas Pharmacist license, applicants must create an account and submit their application through the TSBP Online Licensing System."
       }
     }
   },
@@ -177,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "TSBP Online Licensing System",
+    "portal_url": "https://vo.licensing.hpc.texas.gov/datamart/login.do?board=TSBP",
+    "registration_steps": "Navigate to the TSBP Online Licensing System portal, click 'Register a New Account', and follow the prompts to create a new user ID and password. Once registered, log in to select the Pharmacist Initial Application.",
+    "provider_search": "https://vo.licensing.hpc.texas.gov/datamart/mainMenu.do"
   }
 }

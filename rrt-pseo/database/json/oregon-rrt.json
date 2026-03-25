@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity oregon, how to transfer respiratory therapist license to oregon, respiratory therapist compact oregon, oregon respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Oregon Medical Board — RT",
+    "name": "Oregon Medical Board \u2014 RT",
     "parent_dept": "Oregon Health Licensing Office (HLO)",
-    "mailing_address": "See board website",
+    "mailing_address": "Oregon Medical Board\n1500 SW 1st Ave, Suite 620\nPortland, OR 97201-5825",
     "physical_address": "See board website",
     "phone": "(971) 673-2700",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.oregon.gov/omb/"
+    "email": "license.applications@omb.oregon.gov",
+    "url": "https://www.oregon.gov/omb/",
+    "contact_url": "https://www.oregon.gov/omb/Contact/Pages/Contact-Us.aspx",
+    "verify_url": "https://www.oregon.gov/omb/Licensing/Pages/License-Verification.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) exam",
     "ce_requirement": "24 hours every two years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Therapy Program",
-      "description": "Graduate from a respiratory therapy education program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Register for an Applicant Portal Account",
+      "description": "Navigate to the Oregon Medical Board's Applicant Portal (omb.license.acendre.com), click 'Register Now,' and follow the prompts to create your account and verify your email address."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) entry-level examination."
+      "title": "Complete the Online Application",
+      "description": "Log in to your Applicant Portal account, select the Respiratory Therapist application, and meticulously fill out all required sections including personal, education, and professional history."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Apply to the Oregon Medical Board and include all required documentation and fees to obtain your Respiratory Therapist license."
+      "title": "Submit Required Documentation",
+      "description": "Upload all necessary documents such as official transcripts from an approved RT program, NBRC credentials verification (e.g., via NBRC Score Transfer Service), and any other forms or authorizations requested through the Applicant Portal."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Submit the non-refundable initial application fee ($100) and the background check fee ($52) directly through the Applicant Portal using a credit card."
+    },
+    {
+      "title": "Undergo Background Check",
+      "description": "Complete and submit to the fingerprint-based criminal background check process as instructed by the Oregon Medical Board after submitting your application."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status within the Applicant Portal and respond promptly to any requests for additional information or clarification from the Oregon Medical Board."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 250,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oregon.gov/omb/",
-    "endorsement_url": "https://www.oregon.gov/omb/",
+    "endorsement_url": "https://www.oregon.gov/omb/licensing/pages/respiratorytherapist.aspx",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Oregon",
-        "dek": "Oregon Respiratory Therapist license requires graduation from an approved program, passing the NBRC exam, and submitting an application to the Oregon Medical Board."
+        "dek": "To apply for a Respiratory Therapist license in Oregon, you must create an account and complete the application through the Oregon Medical Board's Applicant Portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Applicant Portal",
+    "portal_url": "https://omb.license.acendre.com/",
+    "registration_steps": "Go to the Applicant Portal and click 'Register Now'. You will need to provide your email, personal information (name, address, DOB, last 4 SSN, mother's maiden name), create a username and password, and then confirm your registration via email.",
+    "provider_search": "https://www.oregon.gov/omb/Licensing/Pages/License-Verification.aspx"
   }
 }

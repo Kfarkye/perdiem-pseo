@@ -21,20 +21,21 @@
   "board": {
     "name": "Delaware DHSS",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Cannon Building, 861 Silver Lake Blvd., Suite 203, Dover, DE 19904",
     "physical_address": "See board website",
     "phone": "(302) 744-4500",
     "fax": "N/A (contact by phone)",
-    "email": "DECNA@prometric.com",
+    "email": "customerservice.dpr@delaware.gov",
     "url": "https://dhss.delaware.gov/dhss/dhcq/cnareg.html",
-    "contact_url": "mailto:DECNA@prometric.com"
+    "contact_url": "https://dpr.delaware.gov/contact-us/",
+    "verify_url": "https://www.licenselookup.delaware.gov/"
   },
   "quick_facts": {
     "total_fee": "$30",
     "fee_breakdown": "$30 endorsement application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$40",
+    "renewal_cycle": "Every 2 years (on September 30th of odd years)",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "training_hours": "150 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -48,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Delaware-approved CNA training program, usually 150 hours long."
+      "title": "Complete an Approved Training Program",
+      "description": "Successfully complete a Delaware-approved Certified Nursing Assistant training program. For reciprocity applicants, hold an active and good standing CNA certification from another state."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Delaware nurse aide exam."
+      "title": "Apply Online via DENIS",
+      "description": "Create an account or log in to DENIS, Delaware's Enhanced Notification & Information System. Complete the online application for CNA certification (by Examination or by Reciprocity) and pay the application fee."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Undergo a Criminal Background Check",
+      "description": "Submit fingerprints for a state and federal criminal background check as instructed during the online application process. Detailed instructions for fingerprinting will be provided by the Board."
+    },
+    {
+      "title": "Pass the Competency Examination (if by Examination)",
+      "description": "For initial certification by examination, register for and pass the Delaware CNA competency examination. The Board will provide information on scheduling the exam upon receipt of your application."
+    },
+    {
+      "title": "Receive Certification",
+      "description": "Once all requirements, including the application, background check, and (if applicable) examination results, are reviewed and approved, the Delaware Board of Nursing will issue your CNA certification."
     }
   ],
   "documents": [
@@ -122,11 +131,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 30,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 40,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dhss.delaware.gov/dhss/dhcq/cnareg.html",
-    "endorsement_url": "https://dhss.delaware.gov/dhss/dhcq/cnareg.html",
+    "endorsement_url": "https://dpronline.delaware.gov/mylicense/",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -171,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Delaware",
-        "dek": "Delaware CNA certification requires a 150-hour training program, Delaware DHSS eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nursing Assistant in Delaware, applicants must create an account and apply online through DENIS, Delaware's Enhanced Notification & Information System."
       },
       "seo": {
         "title": "How to Become a CNA in Delaware | DHCQ Requirements",
@@ -213,5 +222,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Delaware Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DENIS: Delaware's Enhanced Notification & Information System",
+    "portal_url": "https://dpronline.delaware.gov/mylicense/",
+    "registration_steps": "Navigate to the DENIS portal, click 'Register a Person' or 'Create an Account'. Follow the prompts to enter your personal information, create a username and password, and verify your email address. Once registered, log in to start your application.",
+    "provider_search": "https://www.licenselookup.delaware.gov/"
   }
 }

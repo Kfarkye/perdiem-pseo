@@ -19,21 +19,23 @@
     "keywords": "occupational therapist license reciprocity nebraska, how to transfer occupational therapist license to nebraska, occupational therapist compact nebraska, nebraska occupational therapist endorsement application"
   },
   "board": {
-    "name": "Nebraska DHHS — Occupational Therapy",
+    "name": "Nebraska DHHS \u2014 Occupational Therapy",
     "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
-    "mailing_address": "See board website",
+    "mailing_address": "Nebraska Department of Health and Human Services, Division of Public Health, Licensure Unit, P.O. Box 94986, Lincoln, NE 68509-4986",
     "physical_address": "See board website",
-    "phone": "(402) 471-2115",
+    "phone": "(402) 471-2079",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx"
+    "email": "DHHS.LicensureUnit@nebraska.gov",
+    "url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
+    "contact_url": "https://dhhs.ne.gov/Pages/Contact-Us-Credentialing-Division.aspx",
+    "verify_url": "https://dhhs.ne.gov/Pages/Licensee-Lookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$175",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$133",
+    "renewal_fee": "$110",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT)",
     "ce_requirement": "24 contact hours of continuing education every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Occupational Therapy Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create an Account and Start Application",
+      "description": "Access the NE DHHS Online Licensing Portal and create a new account if you do not already have one. Once logged in, initiate an 'Initial Licensure Application' specifically for Occupational Therapy."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Fill out the comprehensive online application form with all required personal, educational, and professional details. Submit the non-refundable application fee of $110.00 directly through the portal."
     },
     {
-      "title": "Apply for a Nebraska Occupational Therapy License",
-      "description": "Submit a completed application, official transcripts, NBCOT score verification, and required fee to the Nebraska Department of Health and Human Services."
+      "title": "Submit Required Documents",
+      "description": "Arrange for official transcripts from your occupational therapy program to be sent directly from your educational institution. Additionally, ensure your official NBCOT (National Board for Certification in Occupational Therapy) score report is sent directly from NBCOT to the Nebraska Credentialing Division."
+    },
+    {
+      "title": "Complete Nebraska Jurisprudence Exam",
+      "description": "Access and successfully complete the Nebraska Occupational Therapy Jurisprudence Examination. This exam assesses knowledge of state laws and regulations governing OT practice and is typically guided or administered through the online application process."
+    },
+    {
+      "title": "Provide Verification of Licensure (if applicable)",
+      "description": "If you hold or have previously held an occupational therapy license in another state or jurisdiction, you must arrange for official verification of your licensure status to be sent directly from each respective licensing board to Nebraska."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log into your NE DHHS Online Licensing Portal account to track the progress of your application. Respond promptly to any requests for additional information or clarification from the Credentialing Division to avoid delays."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 110,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
-    "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
+    "endorsement_url": "https://dhhs.ne.gov/Pages/Occupational-Therapy.aspx#LicensurebyEndorsement",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Nebraska",
-        "dek": "Nebraska Occupational Therapist licenses require graduation from an ACOTE-accredited program, passing the NBCOT exam, and a completed application."
+        "dek": "Occupational Therapists wishing to practice in Nebraska must apply for initial licensure through the NE DHHS Online Licensing Portal, managed by the Credentialing Division of the Nebraska Department of Health and Human Services."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NE DHHS Online Licensing Portal",
+    "portal_url": "https://ne.igovsolution.net/online/Application/Login.aspx",
+    "registration_steps": "Navigate to the portal URL, click 'Need to create an account? Click here.' Provide your full legal name, date of birth, and email address. An email will be sent to confirm your email address. Once confirmed, you can proceed with creating a password and security questions to finalize your account setup.",
+    "provider_search": "https://dhhs.ne.gov/Pages/Licensee-Lookup.aspx"
   }
 }

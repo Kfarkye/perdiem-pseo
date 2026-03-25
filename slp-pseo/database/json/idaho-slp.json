@@ -19,21 +19,23 @@
     "keywords": "speech-language pathologist license reciprocity idaho, how to transfer speech-language pathologist license to idaho, speech-language pathologist compact idaho, idaho speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Bureau of Occupational Licenses — Speech and Hearing Services",
+    "name": "Bureau of Occupational Licenses \u2014 Speech and Hearing Services",
     "parent_dept": "Idaho Bureau of Occupational Licenses",
-    "mailing_address": "P.O. Box 83720, Boise, ID 83720-0063",
+    "mailing_address": "Bureau of Occupational Licenses\n700 W. State St.\nBoise, Idaho 83702",
     "physical_address": "700 W. State St., Boise, ID 83702",
     "phone": "(208) 334-3233",
     "fax": "(208) 334-3945",
-    "email": "mailto:ibol@ibol.idaho.gov",
-    "url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS"
+    "email": "speech@ibol.idaho.gov",
+    "url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS",
+    "contact_url": "https://ibol.idaho.gov/IBOL/ContactUs/ContactUs",
+    "verify_url": "https://ibol.idaho.gov/IBOL/LicenseLookup"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$75 application and license fee",
-    "renewal_fee": "$75",
-    "renewal_cycle": "Every year",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Annually by August 31st",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "1 year",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a master’s or doctoral degree program in speech-language pathology accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+      "title": "Access the IBOL Online Services Portal",
+      "description": "Navigate to the Idaho Bureau of Occupational Licenses (IBOL) Online Services portal at online.ibol.idaho.gov/IBOL/ to begin your application."
     },
     {
-      "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Create an Account and Start Application",
+      "description": "Register for a new user account or log in if you already have one. Once logged in, select 'New Application' and choose the Speech-Language Pathologist license type."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Fulfill the supervised professional experience (SPE) requirement, gaining clinical experience under the supervision of a licensed speech-language pathologist."
+      "title": "Complete the Online Application Form",
+      "description": "Fill out all required sections of the online application, providing personal, educational, and professional experience details, including information about your Clinical Fellowship (CF) if applicable."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts, Praxis examination scores, and any other required forms (e.g., Clinical Fellowship Report and Rating Form, verification of licensure from other states) to be sent directly to the Idaho Board of Speech-Language Pathology and Audiology. Some documents may be uploaded directly to the IBOL Online Services portal."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Pay the non-refundable initial licensure fee of $100 through the IBOL Online Services portal using a credit/debit card."
+    },
+    {
+      "title": "Submit and Monitor Application Status",
+      "description": "Review your completed application for accuracy, submit it electronically, and regularly check the IBOL Online Services portal for updates on your application status. The board will review your application once all required documentation is received."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS",
-    "endorsement_url": "https://ibol.idaho.gov/IBOL/BoardPage.aspx?Bureau=SHS",
+    "endorsement_url": "https://ibol.idaho.gov/IBOL/BoardPage/SLPA/speech_language_pathologists_audiologists/SLPA_Apply_For_Licensure",
     "notes": "Idaho is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Idaho through a compact privilege."
   },
   "slug": "idaho-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Idaho",
-        "dek": "Idaho Speech-Language Pathologist licenses require graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in Idaho, you must use the Idaho Bureau of Occupational Licenses (IBOL) Online Services portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "IBOL Online Services",
+    "portal_url": "https://online.ibol.idaho.gov/IBOL/",
+    "registration_steps": "Navigate to the IBOL Online Services portal, click 'Register a new User Account', and follow the prompts to create your account using your email and personal information. Once registered, log in to access the application system.",
+    "provider_search": "https://ibol.idaho.gov/IBOL/LicenseLookup"
   }
 }

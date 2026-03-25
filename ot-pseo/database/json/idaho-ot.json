@@ -19,21 +19,23 @@
     "keywords": "occupational therapist license reciprocity idaho, how to transfer occupational therapist license to idaho, occupational therapist compact idaho, idaho occupational therapist endorsement application"
   },
   "board": {
-    "name": "Idaho DOPL — Occupational Therapy Licensure Board",
+    "name": "Idaho DOPL \u2014 Occupational Therapy Licensure Board",
     "parent_dept": "Idaho Division of Occupational and Professional Licenses (DOPL)",
-    "mailing_address": "See board website",
+    "mailing_address": "Idaho Division of Occupational and Professional Licenses\nP.O. Box 83720\nBoise, ID 83720-0063",
     "physical_address": "See board website",
     "phone": "(208) 334-3233",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dopl.idaho.gov/"
+    "email": "info@dopl.idaho.gov",
+    "url": "https://dopl.idaho.gov/",
+    "contact_url": "https://dopl.idaho.gov/contact-us/",
+    "verify_url": "https://dopl.idaho.gov/license-search/"
   },
   "quick_facts": {
     "total_fee": "$110",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$40",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 15 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT)",
     "ce_requirement": "24 contact hours of continuing education per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Occupational Therapy Program",
-      "description": "You must graduate from an occupational therapy program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Account and Initiate Application",
+      "description": "Access the Idaho Division of Occupational and Professional Licenses Online Application Center, select 'Occupational Therapist,' and proceed to the Licensing Portal. Register for a new account or log in, then select the appropriate application type (e.g., 'Occupational Therapist by Examination' or 'Occupational Therapist by Endorsement') and complete all sections of the online application."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "You must pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official academic transcripts, verifying your occupational therapy degree, to be sent directly from your educational institution to the Idaho Board of Occupational Therapists."
     },
     {
-      "title": "Submit an Application to the Idaho Occupational Therapy Licensure Board",
-      "description": "Complete and submit the application for licensure along with all required documentation and fees to the Idaho Occupational Therapy Licensure Board."
+      "title": "Provide NBCOT Verification",
+      "description": "Ensure your certification by the National Board for Certification in Occupational Therapy (NBCOT) is active and request NBCOT to submit official verification of your certification directly to the Idaho Board."
+    },
+    {
+      "title": "Complete Fingerprint Background Check",
+      "description": "Follow the instructions provided within the Licensing Portal or on the board's website to complete the fingerprinting process for a state and federal criminal background check."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the required non-refundable application fee through the Licensing Portal using a credit or debit card."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "3 to 15 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dopl.idaho.gov/",
-    "endorsement_url": "https://dopl.idaho.gov/",
+    "endorsement_url": "https://dopl.idaho.gov/board-of-occupational-therapists/occupational-therapist-licensure-information/",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Idaho",
-        "dek": "Idaho Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and submitting a complete application."
+        "dek": "To apply for an Occupational Therapist license in Idaho, you must navigate to the Idaho Division of Occupational and Professional Licenses Online Application Center, select 'Occupational Therapist,' and begin your application through their online Licensing Portal."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Licensing Portal",
+    "portal_url": "https://dopl.idaho.gov/online-application-center/",
+    "registration_steps": "1. Go to the Idaho Division of Occupational and Professional Licenses Online Application Center.\n2. Select 'Occupational Therapist' from the list of professions.\n3. Click 'Start your Application,' which will redirect you to the Licensing Portal.\n4. Click 'Register' to create a new user account if you don't have one, or log in if you do.\n5. Follow the prompts to complete your registration and begin your online application.",
+    "provider_search": "https://dopl.idaho.gov/license-search/"
   }
 }

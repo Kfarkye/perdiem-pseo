@@ -23,17 +23,19 @@
     "parent_dept": "New Mexico Regulation and Licensing Department",
     "mailing_address": "P.O. Box 25101, Santa Fe, NM 87504",
     "physical_address": "2550 Cerrillos Road, Santa Fe, NM 87505",
-    "phone": "(505) 476-4622",
+    "phone": "(505) 476-4640",
     "fax": "(505) 476-4645",
-    "email": "mailto:slp.board@rld.nm.gov",
-    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/"
+    "email": "rld.boards@rld.nm.gov",
+    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/",
+    "contact_url": "https://rld.nm.gov/boards-commissions/boards/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/contact-us/",
+    "verify_url": "https://rld.nm.gov/verify-a-license/"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$200 application and license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "You must complete a master’s degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+      "title": "Register and Start Application",
+      "description": "Create an account on the RLD Online Licensing Portal, then log in and select the 'Speech-Language Pathologist Initial Application'."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience that includes at least 1260 hours, with at least 36 weeks of full-time experience."
+      "title": "Submit Application and Fees",
+      "description": "Complete all required sections of the online application form and pay the initial application fee of $100 and the licensure fee of $100."
     },
     {
-      "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Submit Academic Transcripts",
+      "description": "Arrange for official transcripts, verifying a master's or doctoral degree in Speech-Language Pathology from an accredited institution, to be sent directly to the Board office."
+    },
+    {
+      "title": "Submit Praxis Scores",
+      "description": "Request official scores for the Praxis examination in Speech-Language Pathology to be sent directly from ETS to the New Mexico Speech-Language Pathology, Audiology, and Hearing Aid Dispensing Practices Board."
+    },
+    {
+      "title": "Document Clinical Fellowship (CFY)",
+      "description": "Provide documentation of the supervised clinical fellowship experience (CFY), completed and signed by your supervisor, directly to the Board."
+    },
+    {
+      "title": "Complete Background Check",
+      "description": "Undergo a criminal background check via fingerprinting as required by the New Mexico Regulation and Licensing Department."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/",
-    "endorsement_url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/",
+    "endorsement_url": "https://rld.nm.gov/boards-commissions/boards/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/",
     "notes": "New Mexico does not participate in the ASLP Interstate Compact."
   },
   "slug": "new-mexico-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in New Mexico",
-        "dek": "New Mexico Speech-Language Pathology licenses require a master’s degree, passing the Praxis exam, and completion of a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in New Mexico, register and complete your application through the RLD Online Licensing Portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "RLD Online Licensing Portal",
+    "portal_url": "https://rld.state.nm.us/",
+    "registration_steps": "Click the \"Register\" button to create a new user account. Follow the prompts to enter your personal information, create a username and password. Once registered, log in and select the \"Speech-Language Pathology, Audiology, and Hearing Aid Dispensing Practices Board\" from the \"Boards and Commissions\" list, then choose the appropriate application type.",
+    "provider_search": "https://rld.nm.gov/verify-a-license/"
   }
 }

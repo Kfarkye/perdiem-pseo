@@ -19,19 +19,21 @@
     "keywords": "physical therapist license reciprocity connecticut, how to transfer physical therapist license to connecticut, physical therapist compact connecticut, connecticut physical therapist endorsement application"
   },
   "board": {
-    "name": "Connecticut DPH — PT Licensure",
+    "name": "Connecticut DPH \u2014 PT Licensure",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
-    "mailing_address": "See board website",
+    "mailing_address": "CT Department of Public Health, Practitioner Licensing and Investigations Section, 410 Capitol Ave., MS #12HOS, P.O. Box 340308, Hartford, CT 06134-0308",
     "physical_address": "See board website",
     "phone": "(860) 509-7603",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://portal.ct.gov/DPH"
+    "email": "dph.healingarts@ct.gov",
+    "url": "https://portal.ct.gov/DPH",
+    "contact_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/PLIS/Contact-Us---PLIS",
+    "verify_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/PLIS/Verify-a-License"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create an eLicense Account and Apply",
+      "description": "Register for an account on the CT DPH eLicense portal and complete the online application for initial PT licensure, paying the required $200 application fee."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your physical therapy educational institution to send official transcripts directly to the Connecticut DPH. Electronic transcripts are preferred if available."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Connecticut Department of Public Health and pay all required fees."
+      "title": "Pass National and Jurisprudence Exams",
+      "description": "Ensure official scores for the National Physical Therapy Examination (NPTE) are reported to Connecticut, typically through FSBPT. Additionally, pass the Connecticut Jurisprudence Exam, also administered through FSBPT."
+    },
+    {
+      "title": "Provide Licensure Verification (if applicable)",
+      "description": "If you are or have been licensed as a Physical Therapist in another state, arrange for a verification of licensure to be sent directly from each state's licensing authority to the CT DPH."
+    },
+    {
+      "title": "Await DPH Review and Licensure",
+      "description": "The Department will review your complete application and all supporting documentation. Once approved and verified, your Connecticut Physical Therapist license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/DPH",
-    "endorsement_url": "https://portal.ct.gov/DPH",
+    "endorsement_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/PLIS/Physical-Therapists",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "connecticut-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Connecticut",
-        "dek": "Connecticut Physical Therapist licensure requires graduation from an accredited program, passing the National Physical Therapy Examination, and completing the application process."
+        "dek": "To apply for a Physical Therapist license in Connecticut, submit your application and supporting documents through the Connecticut Department of Public Health's **eLicense** online system."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense",
+    "portal_url": "https://portal.ct.gov/DPH/eLicense-Help/DPH-eLicense",
+    "registration_steps": "Visit the CT DPH eLicense portal, click 'Register for a New Account', and follow the prompts to create your user ID and password before initiating a new license application.",
+    "provider_search": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/PLIS/Verify-a-License"
   }
 }

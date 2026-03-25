@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Maine Department of Professional and Financial Regulation",
-    "mailing_address": "35 State House Station, Augusta, ME 04333-0035",
+    "mailing_address": "Department of Professional and Financial Regulation\nOffice of Professional and Occupational Regulation\n35 State House Station\nAugusta, ME 04333-0035",
     "physical_address": "76 Northern Ave., Gardiner, ME 04345",
     "phone": "(207) 624-8603",
     "fax": "(207) 624-8637",
-    "email": "mailto:speech.aud@maine.gov",
-    "url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-audiology"
+    "email": "Professional.board@maine.gov",
+    "url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-audiology",
+    "contact_url": "https://www.maine.gov/pfr/professionallicensing/contact",
+    "verify_url": "https://www.pfr.maine.gov/almsonline/almsquery/SearchIndividual.aspx"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": "$50 application + $100 license fee",
-    "renewal_fee": "$100",
+    "renewal_fee": "$45",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a Master's Degree",
-      "description": "Obtain a master's degree or doctorate in speech-language pathology from an accredited educational institution."
+      "title": "Create a MyLicense Account and Apply Online",
+      "description": "Register for an account on the Maine MyLicense system and complete the online application for a Speech-Language Pathologist license."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Satisfactorily complete a supervised professional experience (clinical fellowship) as specified by the Board."
+      "title": "Pass the Jurisprudence Examination",
+      "description": "Complete and pass the Maine Board of Speech, Audiology and Hearing Aid Dealers' Jurisprudence Examination, which is typically integrated into the online application process."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology and submit a completed application to the Maine Board of Speech-Language Pathology and Audiology."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official transcripts, verifying a master's or doctoral degree in Speech-Language Pathology, to be sent directly from your university to the Board office."
+    },
+    {
+      "title": "Provide Praxis Examination Scores",
+      "description": "Have your official Praxis exam scores in Speech-Language Pathology (score of 162 or higher) sent directly from ETS to the Board office (Code R7540)."
+    },
+    {
+      "title": "Verify Clinical Competence",
+      "description": "Submit either the American Speech-Language-Hearing Association (ASHA) Clinical Fellowship Report & Rating Form, or provide a letter from ASHA verifying your Certificate of Clinical Competence (CCC)."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 21,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-audiology",
-    "endorsement_url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-audiology",
+    "endorsement_url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-audiology-hearing/speech-language-pathologist",
     "notes": "Maine is a member of the ASLP Interstate Compact."
   },
   "slug": "maine-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Maine",
-        "dek": "Maine Speech-Language Pathologist license requires a master's degree, passing the national exam, and completion of a supervised professional experience."
+        "dek": "To apply for an SLP license in Maine, navigate to the Maine MyLicense system and submit your application online."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense system",
+    "portal_url": "https://www.pfr.maine.gov/almsonline/almsquery/Default.aspx?board=481",
+    "registration_steps": "Visit the Maine MyLicense system, click 'Register a Person' to create an account, then log in and select 'Apply for a New License' to start the SLP application.",
+    "provider_search": "https://www.pfr.maine.gov/almsonline/almsquery/SearchIndividual.aspx"
   }
 }

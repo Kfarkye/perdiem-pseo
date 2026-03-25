@@ -21,19 +21,21 @@
   "board": {
     "name": "West Virginia Board of Respiratory Care",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "West Virginia Board of Respiratory Care Practitioners\n101 Dee Drive, Suite 120\nCharleston, WV 25311",
     "physical_address": "See board website",
-    "phone": "(304) 558-1383",
+    "phone": "(304) 558-1323",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://wvbort.com/"
+    "email": "wvbrc@wv.gov",
+    "url": "https://wvbort.com/",
+    "contact_url": "https://wvbrc.wv.gov/contact/Pages/default.aspx",
+    "verify_url": "https://wvbrc.wv.gov/Verification/Pages/default.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$75",
+    "renewal_cycle": "Annually (by December 31st)",
+    "processing_time": "2 to 3 Weeks (after all documents received)",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Care Program",
-      "description": "Graduate from a respiratory care program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or an equivalent accrediting agency."
+      "title": "Register and Initiate Application",
+      "description": "Visit the WVBRC Online Licensing System at https://apps.wv.gov/wvbrc/licenseapplication/licensetype. Create a user account if you are a new applicant, then log in. Select 'New Individual License Application' and choose 'Respiratory Care Practitioner' to begin your application."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) entry-level examination for Certified Respiratory Therapists (CRT) or Registered Respiratory Therapists (RRT)."
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Fill out all sections of the application accurately within the WVBRC Online Licensing System. This includes personal, educational, and professional history. Pay the required application fee online via credit/debit card."
     },
     {
-      "title": "Apply for a West Virginia Respiratory Therapist License",
-      "description": "Submit a completed application to the West Virginia Board of Respiratory Care, including all required documentation and fees."
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official transcripts from your COARC-accredited respiratory care program to be sent directly to the Board. Also, ensure your NBRC RRT credential verification is accessible or submitted as required."
+    },
+    {
+      "title": "Complete Background Check",
+      "description": "Follow the instructions provided by the Board to complete a state and federal background check, which typically involves fingerprinting through an approved vendor."
+    },
+    {
+      "title": "Monitor and Respond",
+      "description": "Regularly log into your WVBRC Online Licensing System account to monitor the status of your application and respond promptly to any requests for additional information or clarification from the Board."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "2 to 3 Weeks (after all documents received)",
     "processing_tier": "fast",
     "board_url": "https://wvbort.com/",
-    "endorsement_url": "https://wvbort.com/",
+    "endorsement_url": "https://wvbrc.wv.gov/Licensure/Pages/Endorsement.aspx",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in West Virginia",
-        "dek": "West Virginia Respiratory Therapist License requires graduation from an accredited respiratory care program, passing the NBRC examination, and completing the application process."
+        "dek": "To apply for a Respiratory Care Practitioner license in West Virginia, you must use the West Virginia Board of Respiratory Care Practitioners Online Licensing System."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "West Virginia Board of Respiratory Care Practitioners Online Licensing System",
+    "portal_url": "https://apps.wv.gov/wvbrc/licenseapplication/licensetype",
+    "registration_steps": "Visit the WVBRC Online Licensing System. Click on 'New Individual License Application', then select 'Respiratory Care Practitioner'. If you are a new user, you will be prompted to create an account before proceeding with the application.",
+    "provider_search": "https://wvbrc.wv.gov/Verification/Pages/default.aspx"
   }
 }

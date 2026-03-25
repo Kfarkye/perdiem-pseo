@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "West Virginia Board of Examiners for SLP and Audiology",
-    "mailing_address": "3507 MacCorkle Ave. SE, Charleston, WV 25304",
+    "mailing_address": "WV Board of Examiners for Speech-Language Pathology and Audiology\n950 Kanawha Blvd., E., Suite 300\nCharleston, WV 25301",
     "physical_address": "3507 MacCorkle Ave. SE, Charleston, WV 25304",
-    "phone": "(304) 558-3945",
+    "phone": "(304) 558-3069",
     "fax": "(304) 558-3946",
-    "email": "mailto:wvbespa@wv.gov",
-    "url": "https://wvbeslpa.com/"
+    "email": "wvbeslpa@wv.gov",
+    "url": "https://wvbeslpa.com/",
+    "contact_url": "https://www.wvbeslpa.org/contact-us/",
+    "verify_url": "https://www.wvbeslpa.org/licensees/licensee-search/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a Doctoral Degree",
-      "description": "Earn a Doctor of Audiology (AuD) degree from a regionally accredited educational institution."
+      "title": "Create an Account on the eLicense Portal",
+      "description": "Visit the West Virginia eLicense Portal (https://wvbeslpa.elicense.wv.gov/) and register for a new user account. You will need to provide an email address and create a password."
     },
     {
-      "title": "Pass the National Exam",
-      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series offered by the Educational Testing Service."
+      "title": "Complete the Online Application",
+      "description": "Log in to your newly created account on the West Virginia eLicense Portal and select the application for Audiologist licensure. Fill out all required sections, including personal information, educational history, and details of your supervised professional experience."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application to the West Virginia Board of Examiners for Speech-Language Pathology and Audiology, including all required documentation and fees."
+      "title": "Submit Supporting Documents",
+      "description": "Upload all necessary documentation directly through the West Virginia eLicense Portal. This typically includes official transcripts from your Master's or Doctoral program, verification of supervised professional experience (e.g., Clinical Fellowship Year), and official scores from the Praxis exam in Audiology."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Pay the initial application fee of $200 and any other associated fees as prompted through the secure payment system on the West Virginia eLicense Portal. This fee is required to process your application."
+    },
+    {
+      "title": "Await Board Review and Approval",
+      "description": "Once your complete application and all supporting documents are received, the West Virginia Board of Examiners for Speech-Language Pathology and Audiology will review your submission. You will be notified via the portal or email regarding the status and final approval of your license."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://wvbeslpa.com/",
-    "endorsement_url": "https://wvbeslpa.com/",
+    "endorsement_url": "https://www.wvbeslpa.org/audiologists/forms-applications/endorsement-licensure-audiologists/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "west-virginia-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in West Virginia",
-        "dek": "West Virginia Audiologist License requires graduation from an accredited program, passing the national exam, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in West Virginia, you must register and submit your application through the West Virginia eLicense Portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "West Virginia eLicense Portal",
+    "portal_url": "https://wvbeslpa.elicense.wv.gov/",
+    "registration_steps": "Navigate to the West Virginia eLicense Portal, click 'Register Now' to create a new user account with your email address and password. Once registered, log in to access the application options and apply for a new license.",
+    "provider_search": "https://www.wvbeslpa.org/licensees/licensee-search/"
   }
 }

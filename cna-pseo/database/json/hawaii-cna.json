@@ -21,19 +21,21 @@
   "board": {
     "name": "Hawaii Dept of Health",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Professional and Vocational Licensing Division\nDepartment of Commerce and Consumer Affairs\nP. O. Box 3469\nHonolulu, HI 96801",
     "physical_address": "See board website",
-    "phone": "(808) 692-7068",
+    "phone": "(808) 586-3000",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://health.hawaii.gov/"
+    "email": "pvl@dcca.hawaii.gov",
+    "url": "https://health.hawaii.gov/",
+    "contact_url": "https://cca.hawaii.gov/pvl/contact/",
+    "verify_url": "https://pvl.ehawaii.gov/pvlsearch/"
   },
   "quick_facts": {
     "total_fee": "$25",
     "fee_breakdown": "$25 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "training_hours": "140 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Hawaii-approved CNA training program, usually 140 hours long."
+      "title": "Review the Candidate Information Bulletin (CIB)",
+      "description": "Access and thoroughly read the current Hawaii Nurse Aide Candidate Information Bulletin (CIB) available on the Prometric Hawaii Nurse Aide Registry website for detailed instructions, eligibility requirements, and exam content."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Hawaii nurse aide exam."
+      "title": "Submit an Online Application",
+      "description": "Visit the Prometric Hawaii Nurse Aide Registry website, navigate to the 'Online Application' section, create a candidate account, and complete and submit the application for the Nurse Aide Competency Evaluation."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Schedule the Competency Evaluation",
+      "description": "Once your application is processed and you receive an Authorization to Test (ATT) email from Prometric, schedule your written/oral and skills competency evaluation exams through the Prometric online system or by phone."
+    },
+    {
+      "title": "Pass the Competency Evaluation Exams",
+      "description": "Successfully complete both the written (or oral) and skills portions of the Nurse Aide Competency Evaluation administered by Prometric."
+    },
+    {
+      "title": "Placement on the Registry",
+      "description": "Upon successful completion of both exams, your name will be added to the Hawaii Nurse Aide Registry, and you will receive a certificate from Prometric. Your certification is then viewable via the DCCA PVL license search."
     }
   ],
   "documents": [
@@ -121,11 +131,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 25,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 30,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://health.hawaii.gov/",
-    "endorsement_url": "https://health.hawaii.gov/",
+    "endorsement_url": "https://www.prometric.com/nurseaide/hi",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Hawaii",
-        "dek": "Hawaii CNA certification requires a 140-hour training program, Hawaii Dept of Health eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "Applicants for CNA licensure in Hawaii must apply through the **Prometric Hawaii Nurse Aide Registry** online system, which manages the competency evaluation and maintains the Nurse Aide Registry for the Hawaii Department of Commerce and Consumer Affairs (DCCA)."
       },
       "seo": {
         "title": "How to Become a CNA in Hawaii",
@@ -208,5 +218,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Hawaii Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Prometric Hawaii Nurse Aide Registry",
+    "portal_url": "https://www.prometric.com/nurseaide/hi",
+    "registration_steps": "Visit the Prometric Hawaii Nurse Aide Registry website, click on 'Online Application', and create a candidate account to submit your application for the Nurse Aide Competency Evaluation.",
+    "provider_search": "https://pvl.ehawaii.gov/pvlsearch/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "State Licensing Section - Dietitians",
     "parent_dept": "Hawaii Department of Health (DOH) Office of Health Care Assurance",
-    "mailing_address": "601 Kamokila Blvd., Room 361<br>Kapolei, HI 96707",
+    "mailing_address": "DCCA, PVL Licensing Branch\nP. O. Box 3469\nHonolulu, HI 96801",
     "physical_address": "601 Kamokila Blvd., Room 361<br>Kapolei, HI 96707",
-    "phone": "(808) 692-7400",
+    "phone": "(808) 586-3000",
     "fax": "(808) 692-7447",
-    "email": "mailto:doh.ohca@doh.hawaii.gov",
-    "url": "https://health.hawaii.gov/ohca/"
+    "email": "pvl@dcca.hawaii.gov",
+    "url": "https://health.hawaii.gov/ohca/",
+    "contact_url": "https://cca.hawaii.gov/pvl/contact/",
+    "verify_url": "N/A - No state license for dietitians or nutritionists to verify."
   },
   "quick_facts": {
     "total_fee": "$225",
     "fee_breakdown": "$225 initial license fee (non-refundable)",
     "renewal_fee": "Varies (Contact DOH)",
-    "renewal_cycle": "Every 3 years (Must maintain active CDR)",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_cycle": "N/A - No state license is required.",
+    "processing_time": "N/A - No state license is required.",
     "license_duration": "3 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "75 hours every 5 years, must maintain active CDR"
@@ -46,16 +48,20 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education and Supervised Practice",
-      "description": "Complete a didactic program in dietetics and supervised practice experiences approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "No State Licensure Required",
+      "description": "Hawaii state law does not mandate licensure for individuals practicing as dietitians or nutritionists. There is no state application process through the Department of Commerce and Consumer Affairs (DCCA) or any other state entity."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "National Certification is Voluntary",
+      "description": "While not a state requirement, many professionals pursue national certification, such as the Registered Dietitian Nutritionist (RDN) credential from the Commission on Dietetic Registration (CDR), for professional recognition and marketability. This is a national, not state, process."
     },
     {
-      "title": "Apply for a Hawaii Dietitian License",
-      "description": "Submit a completed application to the State Licensing Section - Dietitians, including required documentation and fees."
+      "title": "Employer and Payer Requirements",
+      "description": "Prospective employers or insurance providers in Hawaii may still require national certifications (e.g., RDN) or specific academic qualifications to hire dietitians or for reimbursement purposes, even without state licensure."
+    },
+    {
+      "title": "Review Professional Standards",
+      "description": "Even without state licensure, professionals are encouraged to adhere to ethical guidelines and standards of practice established by national professional organizations like the Academy of Nutrition and Dietetics."
     }
   ],
   "documents": [
@@ -133,10 +139,10 @@
     "temp_license_available": false,
     "jurisprudence_required": false,
     "endorsement_fee": 225,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "N/A - No state license is required.",
     "processing_tier": "mid",
     "board_url": "https://health.hawaii.gov/ohca/",
-    "endorsement_url": "https://health.hawaii.gov/ohca/",
+    "endorsement_url": "N/A - No state licensure or endorsement process.",
     "notes": "Hawaii allows for licensure by endorsement. Individuals holding a valid dietitian certification or license from another state, territory, or jurisdiction may be eligible if the requirements are equal to or greater than Hawaii's (maintaining an active CDR typically qualifies).",
     "requires_psv": true
   },
@@ -152,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Hawaii",
-        "dek": "Hawaii Dietitian License requires completing a dietetics program, passing the Registration Examination for Dietitians, and maintaining active CDR status."
+        "dek": "Hawaii does not require state-level licensure for dietitians or nutritionists. Therefore, there is no state application portal or board to apply through for this profession."
       }
     }
   },
@@ -178,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "renewal_fee_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "No State Licensing Required",
+    "portal_url": "N/A - Hawaii does not require state licensure for dietitians or nutritionists.",
+    "registration_steps": "No state licensing is required for dietitians or nutritionists in Hawaii. Therefore, there is no state application portal or registration process.",
+    "provider_search": "N/A - No state license for dietitians or nutritionists to verify."
   }
 }

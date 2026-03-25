@@ -21,19 +21,21 @@
   "board": {
     "name": "Examining Board of Speech-Language Pathologists and Audiologists",
     "parent_dept": "Wisconsin Department of Safety and Professional Services (DSPS)",
-    "mailing_address": "P.O. Box 8935, Madison, WI 53708-8935",
+    "mailing_address": "Department of Safety and Professional Services\nP.O. Box 8935\nMadison, WI 53708-8935",
     "physical_address": "4822 Madison Yards Way, Madison, WI 53705",
     "phone": "(608) 266-2112",
     "fax": "(608) 267-0644",
-    "email": "mailto:dsps@wisconsin.gov",
-    "url": "https://dsps.wi.gov/Pages/BoardsCouncils/SpeechLanguagePathology/Default.aspx"
+    "email": "dsps@wi.gov",
+    "url": "https://dsps.wi.gov/Pages/BoardsCouncils/SpeechLanguagePathology/Default.aspx",
+    "contact_url": "https://dsps.wi.gov/Pages/ContactUs.aspx",
+    "verify_url": "https://app.wi.gov/LicenseLookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$78",
     "fee_breakdown": "$78 application and license fee",
-    "renewal_fee": "$78",
-    "renewal_cycle": "Every 2 years (February 28)",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$108",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "36 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a master's or doctoral degree program in speech-language pathology accredited by the Council on Academic Accreditation (CAA)."
+      "title": "Create Account and Submit Online Application",
+      "description": "Access the Wisconsin DSPS Online Licensing Gateway at https://licenses.wi.gov/, register for an account (if you don't have one), and complete the online application for a Speech-Language Pathologist license."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Pay Application Fee",
+      "description": "Submit the required application fee through the Wisconsin DSPS Online Licensing Gateway during the online application process."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience (clinical fellowship) of at least 36 weeks of full-time experience (or its equivalent) under the supervision of a licensed speech-language pathologist."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, confirming a master's or higher degree in Speech-Language Pathology, to be sent directly from your educational institution to the Wisconsin DSPS."
+    },
+    {
+      "title": "Provide Verification of Experience and Praxis Scores",
+      "description": "Provide documentation of supervised clinical experience (e.g., ASHA Certificate of Clinical Competence in Speech-Language Pathology - CCC-SLP) and ensure your official Praxis examination scores in Speech-Language Pathology are sent directly to the Wisconsin DSPS from Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Request Out-of-State License Verification (for Endorsement)",
+      "description": "If licensed in other states, request official verification of all current and past Speech-Language Pathologist licenses held to be sent directly from the respective licensing boards to the Wisconsin DSPS."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application and any outstanding requirements by logging into your account on the Wisconsin DSPS Online Licensing Gateway."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 78,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 108,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dsps.wi.gov/Pages/BoardsCouncils/SpeechLanguagePathology/Default.aspx",
-    "endorsement_url": "https://dsps.wi.gov/Pages/BoardsCouncils/SpeechLanguagePathology/Default.aspx",
+    "endorsement_url": "https://dsps.wi.gov/Pages/Professions/SpeechLanguagePathologist/Default.aspx",
     "notes": "Wisconsin is a member of the ASLP Interstate Compact."
   },
   "slug": "wisconsin-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Wisconsin",
-        "dek": "Wisconsin Speech-Language Pathologist license requires graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+        "dek": "Applicants for a Speech-Language Pathologist license in Wisconsin must apply online through the Wisconsin DSPS Online Licensing Gateway."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Wisconsin DSPS Online Licensing Gateway",
+    "portal_url": "https://licenses.wi.gov/",
+    "registration_steps": "1. Go to the Wisconsin DSPS Online Licensing Gateway (https://licenses.wi.gov/).\n2. Click 'Register for an Account' to create a new user ID and password, or log in if you already have an account.\n3. Once logged in, select 'Start a New Application' from the menu.\n4. Follow the prompts to select 'Speech-Language Pathologist' as your desired credential type and complete the application.",
+    "provider_search": "https://app.wi.gov/LicenseLookup/LicenseLookup.aspx"
   }
 }

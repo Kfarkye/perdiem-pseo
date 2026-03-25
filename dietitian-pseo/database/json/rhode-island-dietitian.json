@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Dietetics Practice",
     "parent_dept": "Rhode Island Department of Health",
-    "mailing_address": "Center for Professional Licensing, Room 104, 3 Capitol Hill<br>Providence, RI 02908",
+    "mailing_address": "Rhode Island Department of Health, Office of Health Professionals Regulation, 3 Capitol Hill, Room 104, Providence, RI 02908-5097",
     "physical_address": "3 Capitol Hill<br>Providence, RI 02908",
     "phone": "(401) 222-2828",
     "fax": "(401) 222-1272",
-    "email": "mailto:doh.licensing@health.ri.gov",
-    "url": "https://health.ri.gov/licenses/detail.php?id=223"
+    "email": "DOH.HelpHPR@health.ri.gov",
+    "url": "https://health.ri.gov/licenses/detail.php?id=223",
+    "contact_url": "https://health.ri.gov/licensing/",
+    "verify_url": "https://health.ri.gov/licensing/verify/"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$75 non-refundable application fee",
-    "renewal_fee": "$170",
-    "renewal_cycle": "Every 2 years (expires Nov 1 of odd years) + 20 CE hours",
-    "processing_time": "3 to 5 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 1 year",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "Up to 2 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "20 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education and Supervised Practice",
-      "description": "Complete a didactic program in dietetics and supervised practice experiences approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Review Licensure Requirements",
+      "description": "Familiarize yourself with the educational, supervised practice, and examination requirements (e.g., CDR exam) for Dietitian/Nutritionist licensure in Rhode Island as outlined by the Department of Health."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Register for the RIDOH eLicensing Portal",
+      "description": "Create a new user account on the RIDOH eLicensing Portal by clicking 'Register Here' to access and manage your application."
     },
     {
-      "title": "Apply for a Dietitian License",
-      "description": "Submit a completed application, including all required documentation and fees, to the Rhode Island Board of Dietetics Practice."
+      "title": "Complete and Submit Online Application",
+      "description": "Log in to the RIDOH eLicensing Portal, initiate the Dietitian/Nutritionist application, complete all required fields, and electronically submit it."
+    },
+    {
+      "title": "Upload Required Documentation & Pay Fee",
+      "description": "Attach all necessary supporting documents (e.g., official transcripts, CDR verification, supervised practice verification, criminal background check) and pay the initial application fee through the RIDOH eLicensing Portal."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application via the RIDOH eLicensing Portal and respond promptly to any requests for further information from the Office of Health Professionals Regulation."
     }
   ],
   "documents": [
@@ -132,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 75,
-    "processing_time": "3 to 5 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://health.ri.gov/licenses/detail.php?id=223",
-    "endorsement_url": "https://health.ri.gov/licenses/detail.php?id=223",
+    "endorsement_url": "https://health.ri.gov/licensing/detail.php?id=255",
     "notes": "Rhode Island offers licensure by endorsement for dietitians/nutritionists actively licensed in other states, provided the requirements of the other state are equivalent to Rhode Island's. Applying via endorsement requires submitting the application, fee, and verification of all out-of-state licenses.",
     "requires_psv": false
   },
@@ -152,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Rhode Island",
-        "dek": "Rhode Island Dietitian licenses require successful completion of a Board-approved program, passing the Registration Examination for Dietitians, and application to the Board of Dietetics Practice."
+        "dek": "To apply for a Dietitian/Nutritionist license in Rhode Island, prospective licensees must use the RIDOH eLicensing Portal to submit their application and all required documentation."
       }
     }
   },
@@ -178,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "RIDOH eLicensing Portal",
+    "portal_url": "https://ridoh.imagetrendelite.com/elite/",
+    "registration_steps": "Click 'Register Here' on the RIDOH eLicensing Portal login page to create a new user account.",
+    "provider_search": "https://health.ri.gov/licensing/verify/"
   }
 }

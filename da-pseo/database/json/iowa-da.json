@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Iowa Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Iowa — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Iowa \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license iowa, dental assistant certification iowa, RDA iowa, DANB CDA iowa, dental assistant radiography iowa"
   },
   "board": {
     "name": "Iowa Dental Board",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Iowa Dental Board\n400 SW 8th Street, Suite D\nDes Moines, IA 50309-4687",
     "physical_address": "See board website",
-    "phone": "(515) 281-7485",
+    "phone": "(515) 281-5157",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dentalboard.iowa.gov/"
+    "email": "IDB@iowa.gov",
+    "url": "https://dentalboard.iowa.gov/",
+    "contact_url": "https://dentalboard.iowa.gov/contact-us",
+    "verify_url": "https://ibd.iowa.gov/license-verification"
   },
   "quick_facts": {
     "total_fee": "$40",
     "fee_breakdown": "$40 application/registration fee",
-    "renewal_fee": "$75",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -44,16 +46,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Complete a CODA-accredited dental assisting program or meet the requirements for on-the-job training as specified by the Iowa Dental Board."
+      "title": "Create an Account on the Iowa Dental Board Online Services Portal",
+      "description": "Navigate to https://ibd.iowa.gov/online-services and click 'New Account Registration' to establish your user profile."
     },
     {
-      "title": "Complete Application",
-      "description": "Submit a complete Dental Assistant Registration application to the Iowa Dental Board."
+      "title": "Start the Initial Registration Application",
+      "description": "Log in to your newly created account on the Iowa Dental Board Online Services Portal, select 'Initial Application,' and then choose 'Dental Assistant - Initial Registration.'"
     },
     {
-      "title": "Receive Registration",
-      "description": "Upon approval of your application, receive your Iowa Dental Assistant Registration."
+      "title": "Complete the Online Application and Upload Documents",
+      "description": "Fill out all required sections of the application. Upload necessary documentation, including proof of age, any name change documentation, proof of dental assistant course completion or training, and current CPR certification."
+    },
+    {
+      "title": "Consent to and Complete Criminal History Background Check",
+      "description": "Follow the instructions within the application to provide consent for a criminal history background check and submit any required forms, which may need to be mailed."
+    },
+    {
+      "title": "Pay the Required Application Fee",
+      "description": "Submit the non-refundable $50 application fee electronically through the Iowa Dental Board Online Services Portal."
+    },
+    {
+      "title": "Submit and Await Board Review",
+      "description": "Submit your complete application package. The Iowa Dental Board will review your submission, and you can monitor the status through your Online Services Portal account. Allow 4-6 weeks for processing."
     }
   ],
   "documents": [
@@ -122,11 +136,11 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 40,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dentalboard.iowa.gov/",
-    "endorsement_url": "https://dentalboard.iowa.gov/",
+    "endorsement_url": "https://dentalboard.iowa.gov/licensure/initial-application-information",
     "notes": "Dental assistants can apply for Registered Dental Assistant through the Iowa Dental Board by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -145,7 +159,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Iowa",
-        "dek": "Iowa Dental Assistant registration requires graduation from a CODA-accredited dental assisting program or completion of specific on-the-job training, and application to the Iowa Dental Board."
+        "dek": "To apply for Registered Dental Assistant (RDA) registration in Iowa, submit your initial application through the Iowa Dental Board Online Services Portal."
       }
     }
   },
@@ -171,5 +185,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Iowa Dental Board Online Services Portal",
+    "portal_url": "https://ibd.iowa.gov/online-services",
+    "registration_steps": "Navigate to the Iowa Dental Board Online Services Portal and click on 'New Account Registration' to create a user profile before starting an application.",
+    "provider_search": "https://ibd.iowa.gov/license-verification"
   }
 }

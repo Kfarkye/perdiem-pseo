@@ -21,18 +21,20 @@
   "board": {
     "name": "Kentucky Board of Licensure and Certification for Dietitians and Nutritionists",
     "parent_dept": "Department of Professional Licensing (DPL)",
-    "mailing_address": "P.O. Box 1360<br>Frankfort, KY 40602",
+    "mailing_address": "300 Sower Blvd, Suite 210, Frankfort, KY 40601",
     "physical_address": "500 Mero St, 2nd Floor, SC<br>Frankfort, KY 40601",
-    "phone": "(502) 892-4254",
+    "phone": "(502) 892-4217",
     "fax": "(502) 564-4818",
-    "email": "mailto:diet@ky.gov",
-    "url": "https://bldn.ky.gov/"
+    "email": "dln@ky.gov",
+    "url": "https://bldn.ky.gov/",
+    "contact_url": "https://dln.ky.gov/Contact-Us/Pages/default.aspx",
+    "verify_url": "https://elicensing.ky.gov/PublicServices/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 initial application fee",
     "renewal_fee": "$50",
-    "renewal_cycle": "Annual (by Oct 31st) + 15 CE hours",
+    "renewal_cycle": "Annually (between January 1st and March 31st)",
     "processing_time": "2 to 4 Weeks",
     "license_duration": "1 Year",
     "exam_name": "Registration Examination for Dietitians",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Supervised Practice",
-      "description": "Earn a bachelor's degree or higher from a regionally accredited institution with completion of a Didactic Program in Dietetics (DPD) and complete a supervised practice program."
+      "title": "Create Kentucky Online Gateway (KOG) Account",
+      "description": "Register for a KOG account to gain access to the Board's eServices Portal, which is required for all online applications."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Submit Online Application and Fee",
+      "description": "Log in to the eServices Portal via your KOG account, complete the online application form for new licensure, and pay the non-refundable application fee."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, official transcripts, exam results, and the required fee to the Kentucky Board of Licensure and Certification for Dietitians and Nutritionists."
+      "title": "Send Official Transcripts and Supervised Practice Verification",
+      "description": "Arrange for official transcripts from all post-secondary institutions and Form B (Verification of Supervised Practice Program) to be sent directly to the Kentucky Board of Licensure and Certification for Dietitians and Nutritionists."
+    },
+    {
+      "title": "Verify CDR Examination Scores",
+      "description": "Request the Commission on Dietetic Registration (CDR) to send your official examination scores directly to the Kentucky Board of Licensure and Certification for Dietitians and Nutritionists."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the provided instructions on the Board's website to complete the required fingerprint-based criminal background check through the designated vendor."
     }
   ],
   "documents": [
@@ -136,7 +146,7 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://bldn.ky.gov/",
-    "endorsement_url": "https://bldn.ky.gov/",
+    "endorsement_url": "https://dln.ky.gov/Apply-for-a-License/Pages/Endorsement-Applicants.aspx",
     "notes": "Kentucky allows licensure by endorsement. Applicants actively licensed in another state must provide verification of licensure and proof that they meet the same educational, supervised practice, and examination requirements (active CDR registration typically satisfies this).",
     "requires_psv": true
   },
@@ -152,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Kentucky",
-        "dek": "Kentucky Dietitian License requires a bachelor's degree, completion of supervised practice, and passing the Registration Examination for Dietitians."
+        "dek": "To apply for a Dietitian or Nutritionist license in Kentucky, register for a Kentucky Online Gateway (KOG) account and submit your application through the Board's eServices Portal."
       }
     }
   },
@@ -178,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "timeline_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eServices Portal",
+    "portal_url": "https://elicensing.ky.gov/",
+    "registration_steps": "First, register for a Kentucky Online Gateway (KOG) account. Once registered, log in to KOG and access the Board's eServices Portal through the provided link.",
+    "provider_search": "https://elicensing.ky.gov/PublicServices/Search.aspx"
   }
 }

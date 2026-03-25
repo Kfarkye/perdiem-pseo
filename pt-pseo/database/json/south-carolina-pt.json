@@ -21,17 +21,19 @@
   "board": {
     "name": "South Carolina Board of Physical Therapy Examiners",
     "parent_dept": "South Carolina Department of Labor, Licensing and Regulation (LLR)",
-    "mailing_address": "See board website",
+    "mailing_address": "SC Department of Labor, Licensing and Regulation\nBoard of Physical Therapy Examiners\nPO Box 11329\nColumbia, SC 29211-1329",
     "physical_address": "See board website",
-    "phone": "(803) 896-4655",
+    "phone": "(803) 896-4652",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://llr.sc.gov/pt/"
+    "url": "https://llr.sc.gov/pt/",
+    "contact_url": "https://llr.sc.gov/pt/pages/ContactUs.aspx",
+    "verify_url": "https://verify.llronline.com/LicLookup/LookupMain.aspx?sid=PT"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an accredited physical therapy program",
-      "description": "Complete a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create an SC LLR Online Services Portal Account & Apply",
+      "description": "Register for an account on the SC LLR Online Services Portal and complete the online application for a Physical Therapist license. Pay the required non-refundable application fee."
+    },
+    {
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts to be sent directly from your accredited physical therapy program to the South Carolina Board of Physical Therapy Examiners."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided during the online application process to complete the required criminal background check."
     },
     {
       "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE for Physical Therapists administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "description": "Register with the Federation of State Boards of Physical Therapy (FSBPT) and pass the NPTE. Ensure your scores are sent directly to the SC Board. For endorsement applicants, proof of passing may be verified through licensure verification from other states."
     },
     {
-      "title": "Submit an application to the South Carolina Board of Physical Therapy Examiners",
-      "description": "Apply for licensure and pay the required fee through the South Carolina Board of Physical Therapy Examiners online portal."
+      "title": "Verification of Licensure (for Endorsement Applicants)",
+      "description": "If applying by endorsement, arrange for official verification of all current and past physical therapy licenses held in other states/jurisdictions to be sent directly to the SC Board."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 145,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://llr.sc.gov/pt/",
-    "endorsement_url": "https://llr.sc.gov/pt/",
+    "endorsement_url": "https://llr.sc.gov/pt/pages/apply.aspx",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "south-carolina-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in South Carolina",
-        "dek": "South Carolina Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination, and completing a jurisprudence module."
+        "dek": "Applicants for a Physical Therapist license in South Carolina must apply through the SC LLR Online Services Portal, which handles the entire application process."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "SC LLR Online Services Portal",
+    "portal_url": "https://eservice.llr.sc.gov/Account/Login?ReturnUrl=%2F",
+    "registration_steps": "To create an account: Go to the SC LLR Online Services Portal, click on \"Register an Account,\" and follow the prompts to create your user ID and password. Once registered, log in to access the application system.",
+    "provider_search": "https://verify.llronline.com/LicLookup/LookupMain.aspx?sid=PT"
   }
 }

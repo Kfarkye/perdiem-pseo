@@ -19,20 +19,22 @@
     "keywords": "physical therapist license reciprocity oklahoma, how to transfer physical therapist license to oklahoma, physical therapist compact oklahoma, oklahoma physical therapist endorsement application"
   },
   "board": {
-    "name": "Oklahoma Board of Medical Licensure — PT",
+    "name": "Oklahoma Board of Medical Licensure \u2014 PT",
     "parent_dept": "Oklahoma State Board of Medical Licensure and Supervision",
-    "mailing_address": "See board website",
+    "mailing_address": "Oklahoma Board of Medical Licensure and Supervision, 101 NE 51st Street, Oklahoma City, OK 73105-1821",
     "physical_address": "See board website",
     "phone": "(405) 962-1400",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.okmedicalboard.org/"
+    "email": "info@okmedicalboard.org",
+    "url": "https://www.okmedicalboard.org/",
+    "contact_url": "https://ok.gov/medicalboard/Contact_Us/",
+    "verify_url": "https://ok.gov/medicalboard/Licensee_Search/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Every year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
@@ -46,16 +48,20 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "1. Create an Account and Submit Online Application",
+      "description": "Register for an account on the Board's Online Portal System (okmb.online/) and complete the appropriate application for initial licensure (by examination or endorsement), paying the required application fee."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Register and pass the NPTE for Physical Therapists, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "2. Submit Official Transcripts",
+      "description": "Arrange for official transcripts, verifying completion of your CAPTE-accredited physical therapy program, to be sent directly from your educational institution to the Oklahoma Board of Medical Licensure and Supervision."
     },
     {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit an application for licensure to the Oklahoma Board of Medical Licensure and Surgery, including required documentation and fees."
+      "title": "3. Complete Background Check and Jurisprudence Exam",
+      "description": "Undergo a fingerprint-based criminal background check through an approved vendor. Additionally, you must pass the Oklahoma Jurisprudence Examination, which is accessible through the Board's Online Portal System."
+    },
+    {
+      "title": "4. Provide NPTE Scores or License Verifications",
+      "description": "If applying by examination, have your official National Physical Therapy Examination (NPTE) scores sent directly to the Board by the Federation of State Boards of Physical Therapy (FSBPT). If applying by endorsement, arrange for official verification of all current and prior PT licenses to be sent directly from other state boards to Oklahoma, preferably through a service like VeriDoc."
     }
   ],
   "documents": [
@@ -124,11 +130,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.okmedicalboard.org/",
-    "endorsement_url": "https://www.okmedicalboard.org/",
+    "endorsement_url": "https://ok.gov/medicalboard/Physical_Therapy/Requirements_for_Initial_Licensure_by_Endorsement/",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "oklahoma-pt",
@@ -143,7 +149,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Oklahoma",
-        "dek": "Oklahoma Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination, and a background check."
+        "dek": "Physical Therapists applying for licensure in Oklahoma must use the Board's Online Portal System to submit their application."
       }
     }
   },
@@ -169,5 +175,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Board's Online Portal System",
+    "portal_url": "https://okmb.online/",
+    "registration_steps": "Navigate to the Board's Online Portal System, click 'Register' to create a new user account, and follow the prompts to set up your login credentials. Once registered and logged in, you can select the appropriate application type (e.g., 'Initial PT License by Examination' or 'Initial PT License by Endorsement') to begin.",
+    "provider_search": "https://ok.gov/medicalboard/Licensee_Search/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "No State Licensing Board",
     "parent_dept": "Title Protection Only (Business and Professions Code Section 2585)",
-    "mailing_address": "Not Applicable",
+    "mailing_address": "120 South Riverside Plaza, Suite 2000, Chicago, IL 60606-6995",
     "physical_address": "Not Applicable",
-    "phone": "Not Applicable",
+    "phone": "312-899-0040 ext 500",
     "fax": "Not Applicable",
-    "email": "",
-    "url": "https://www.cdrnet.org/"
+    "email": "info@cdrnet.org",
+    "url": "https://www.cdrnet.org/",
+    "contact_url": "https://www.cdrnet.org/contact",
+    "verify_url": "https://www.cdrnet.org/verify"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state fees (CDR national fees apply)",
-    "renewal_fee": "$0",
-    "renewal_cycle": "No state renewal required",
-    "processing_time": "Not Applicable",
+    "renewal_fee": "$65",
+    "renewal_cycle": "Annually",
+    "processing_time": "1 to 2 Weeks (for exam authorization after application submission)",
     "license_duration": "Not Applicable",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "75 hours every 5 years"
@@ -47,15 +49,19 @@
   "steps": [
     {
       "title": "Complete Academic Requirements",
-      "description": "Complete a didactic program in dietetics and supervised practice accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "description": "Successfully complete a minimum of a bachelor's degree (a graduate degree is required as of January 1, 2024) and all required coursework accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND\u00ae) at a U.S. regionally accredited university or college."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete Supervised Practice Program",
+      "description": "Successfully complete an ACEND\u00ae-accredited supervised practice program, typically referred to as a dietetic internship."
     },
     {
-      "title": "Maintain Registration",
-      "description": "Complete 75 hours of continuing professional education (CPE) every 5 years to maintain your RDN credential with the Commission on Dietetic Registration (CDR)."
+      "title": "Apply for and Pass the RDN Examination",
+      "description": "Apply for the Registered Dietitian Nutritionist (RDN) examination through the MyCDR portal once your education and supervised practice are verified. After receiving authorization, schedule and pass the RDN examination."
+    },
+    {
+      "title": "Maintain RDN Credential",
+      "description": "Maintain your RDN credential through the MyCDR portal by fulfilling continuing professional education requirements and paying the annual registration maintenance fee."
     }
   ],
   "documents": [
@@ -121,10 +127,10 @@
     "temp_license_available": false,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "N/A (No state application)",
+    "processing_time": "1 to 2 Weeks (for exam authorization after application submission)",
     "processing_tier": "none",
     "board_url": "https://www.cdrnet.org/",
-    "endorsement_url": "Not Applicable",
+    "endorsement_url": "https://www.cdrnet.org/credentials",
     "notes": "If you are a licensed dietitian moving to California from another state, you do not need to transfer your license. As long as your national CDR registration is active, you are legally permitted to practice.",
     "requires_psv": false
   },
@@ -140,7 +146,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in California",
-        "dek": "California Registered Dietitian Nutritionist registration requires completion of a dietetics program, passing the Registration Examination for Dietitians, and maintaining continuing education requirements."
+        "dek": "California does not issue a state license for Dietitians or Nutritionists. To practice as a Registered Dietitian Nutritionist (RDN) in California, you must obtain and maintain the national RDN credential from the Commission on Dietetic Registration (CDR) via their MyCDR portal."
       }
     }
   },
@@ -166,5 +172,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyCDR",
+    "portal_url": "https://www.cdrnet.org/mycdr-login",
+    "registration_steps": "Create an account on the MyCDR portal by selecting 'Register for an account' on the login page. You will then provide personal details and link your ACEND-accredited education and supervised practice experience to apply for the Registered Dietitian Nutritionist (RDN) examination.",
+    "provider_search": "https://www.cdrnet.org/verify"
   }
 }

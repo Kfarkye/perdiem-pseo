@@ -21,17 +21,19 @@
   "board": {
     "name": "West Virginia Board of Pharmacy",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "200 Association Drive, Charleston, WV 25311",
     "physical_address": "See board website",
     "phone": "(304) 558-0558",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.wvbop.com/"
+    "email": "pharmacy.board@wv.gov",
+    "url": "https://www.wvbop.com/",
+    "contact_url": "https://www.wvbp.com/contact-us/",
+    "verify_url": "https://wvbp.us.thentiacloud.net/webs/wvbp/register/#/lookup"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete and graduate from a pharmacy program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create an account on the WVBP Online Portal",
+      "description": "Navigate to the WVBP Online Portal at https://wvbp.us.thentiacloud.net/webs/wvbp/register/, click 'Register', and follow the prompts to create your professional account."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Exam (MPJE)."
+      "title": "Complete and submit the online application",
+      "description": "Log into your WVBP Online Portal account, select 'Apply for a License/Permit', choose the appropriate 'Pharmacist' application (e.g., Examination or Score Transfer), and complete all required sections."
     },
     {
-      "title": "Complete Internship Hours and Apply for Licensure",
-      "description": "Complete the required internship hours under the supervision of a licensed pharmacist and submit an application for licensure to the West Virginia Board of Pharmacy."
+      "title": "Register for and pass the NAPLEX and MPJE exams",
+      "description": "Register with the National Association of Boards of Pharmacy (NABP) for the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE). The Board will verify your eligibility once your online application is submitted."
+    },
+    {
+      "title": "Submit official transcripts and exam scores",
+      "description": "Arrange for official transcripts from your ACPE-accredited pharmacy program and your NAPLEX/MPJE scores from NABP to be sent directly to the West Virginia Board of Pharmacy."
+    },
+    {
+      "title": "Complete a criminal background check",
+      "description": "Follow instructions provided by the Board to complete the required fingerprint-based criminal background check through an approved vendor, such as IdentoGO."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 75,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.wvbop.com/",
-    "endorsement_url": "https://www.wvbop.com/",
+    "endorsement_url": "https://www.wvbp.com/licensing/pharmacist-reciprocity/",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "west-virginia-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in West Virginia",
-        "dek": "West Virginia Pharmacist License requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completion of internship hours."
+        "dek": "To become a licensed pharmacist in West Virginia, applicants must apply through the WVBP Online Portal powered by Thentia Cloud."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "WVBP Online Portal (Thentia Cloud)",
+    "portal_url": "https://wvbp.us.thentiacloud.net/webs/wvbp/register/",
+    "registration_steps": "On the WVBP Online Portal, click 'Register' to create a new professional account by providing your personal details and setting up login credentials.",
+    "provider_search": "https://wvbp.us.thentiacloud.net/webs/wvbp/register/#/lookup"
   }
 }

@@ -21,18 +21,20 @@
   "board": {
     "name": "Washington Pharmacy Quality Assurance Commission",
     "parent_dept": "Washington State Department of Health (DOH)",
-    "mailing_address": "See board website",
+    "mailing_address": "Washington State Board of Pharmacy\nDepartment of Health\nP.O. Box 47852\nOlympia, WA 98504-7852",
     "physical_address": "See board website",
-    "phone": "(360) 236-4946",
+    "phone": "360-236-4700",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information"
+    "email": "DOH.csc@doh.wa.gov",
+    "url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information",
+    "contact_url": "https://doh.wa.gov/licensing-regulations/professions-and-occupations/healthcare-professions-customer-service/contact-us",
+    "verify_url": "https://www.doh.wa.gov/licensespermitsandcertificates/providercredentialsearch"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$140",
+    "renewal_cycle": "Annually on birthdate",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program from a recognized school or college of pharmacy."
+      "title": "Create a SAW Account",
+      "description": "Register for a SecureAccess Washington (SAW) account at secureaccess.wa.gov and add the 'DOH Health Professions' service to begin your application."
     },
     {
-      "title": "Complete Internship Hours",
-      "description": "Satisfactorily complete the required internship hours under the supervision of a licensed pharmacist."
+      "title": "Complete Online Application",
+      "description": "Log into your SAW account, access the DOH Health Professions service, and submit the pharmacist license application form, providing all required personal and professional details."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Exam (MPJE) for Washington."
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official transcripts from your ACPE-accredited pharmacy program to be sent directly to the Board. Upload or submit proof of 1,500 internship hours as required within the SAW portal or as directed by the Board."
+    },
+    {
+      "title": "Pass Examinations",
+      "description": "Ensure your NAPLEX and MPJE scores are submitted directly from the National Association of Boards of Pharmacy (NABP) to the Washington State Board of Pharmacy."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Remit all required application and examination fees as instructed through the SecureAccess Washington (SAW) portal to finalize your application submission."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 140,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information",
-    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information",
+    "endorsement_url": "https://doh.wa.gov/licensing-regulations/professions-and-occupations/pharmacist/endorsement",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "washington-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Washington",
-        "dek": "Washington pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing internship hours."
+        "dek": "To apply for a pharmacist license in Washington, you must register and apply online through the Department of Health's SecureAccess Washington (SAW) portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "SecureAccess Washington (SAW)",
+    "portal_url": "https://fortress.wa.gov/doh/hpqa1/",
+    "registration_steps": "1. Go to secureaccess.wa.gov and click 'Register' to create a new SAW account.\n2. Follow the prompts to set up your username and password.\n3. After logging in, click 'Add a Service' and search for 'DOH Health Professions'.\n4. Select 'DOH Health Professions' and follow the instructions to link it to your account.\n5. Once added, you can access the online application system for your license.",
+    "provider_search": "https://www.doh.wa.gov/licensespermitsandcertificates/providercredentialsearch"
   }
 }

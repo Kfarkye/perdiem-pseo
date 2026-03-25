@@ -21,19 +21,21 @@
   "board": {
     "name": "Arkansas Board of Pharmacy",
     "parent_dept": "Arkansas Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "101 E. Capitol Ave., Suite 204, Little Rock, AR 72201",
     "physical_address": "See board website",
     "phone": "(501) 682-0190",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pharmacyboard.arkansas.gov/"
+    "email": "ASBP.Info@arkansas.gov",
+    "url": "https://pharmacyboard.arkansas.gov/",
+    "contact_url": "https://pharmacyboard.arkansas.gov/contact-us/",
+    "verify_url": "https://pharmacyboard.arkansas.gov/licensees/license-verification/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 1 year",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
     "ce_requirement": "30 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program in pharmacy from a school or college of pharmacy accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create Account and Submit Online Application",
+      "description": "Register and complete the appropriate pharmacist application (e.g., by examination, by endorsement, by score transfer) in the ASBP Online Licensing Portal and pay the required application fee."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Complete NABP Requirements and Exam Registration",
+      "description": "If applying by endorsement or score transfer, complete the NABP Record of Licensure Application. For all licensure types, register for the NAPLEX and/or the Arkansas Multistate Pharmacy Jurisprudence Examination (MPJE) with NABP."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit an application for licensure to the Arkansas Board of Pharmacy along with required documents and fees."
+      "title": "Provide Official Documents",
+      "description": "Arrange for official verification of all original pharmacist licenses from other states (if applicable, typically through NABP) and ensure official college transcripts are sent directly to the Arkansas State Board of Pharmacy."
+    },
+    {
+      "title": "Pass Jurisprudence Exam",
+      "description": "Take and pass the Arkansas Multistate Pharmacy Jurisprudence Examination (MPJE)."
+    },
+    {
+      "title": "Board Review and Approval",
+      "description": "The ASBP staff and Board will review your complete application and all supporting documentation once all requirements, including exam results, have been received."
+    },
+    {
+      "title": "License Issuance",
+      "description": "Upon successful review and approval by the Board, your Arkansas Pharmacist license will be issued."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 200,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://pharmacyboard.arkansas.gov/",
-    "endorsement_url": "https://pharmacyboard.arkansas.gov/",
+    "endorsement_url": "https://pharmacyboard.arkansas.gov/licensure/pharmacist/pharmacist-by-endorsement/",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -151,7 +165,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Arkansas",
-        "dek": "Arkansas Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and meeting character requirements."
+        "dek": "To apply for a pharmacist license in Arkansas, applicants must register and complete their application through the ASBP Online Licensing Portal."
       }
     }
   },
@@ -177,5 +191,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ASBP Online Licensing Portal",
+    "portal_url": "https://asbp.ark.org/Licensing/",
+    "registration_steps": "Navigate to the ASBP Online Licensing Portal, click 'Register' for new users, create an account with your personal details, and then select the appropriate pharmacist application type to begin.",
+    "provider_search": "https://pharmacyboard.arkansas.gov/licensees/license-verification/"
   }
 }

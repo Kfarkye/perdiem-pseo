@@ -21,19 +21,21 @@
   "board": {
     "name": "Rhode Island DOH",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Rhode Island Department of Health, 3 Capitol Hill, Providence, RI 02908-5097",
     "physical_address": "See board website",
     "phone": "(401) 222-5960",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://health.ri.gov/"
+    "url": "https://health.ri.gov/",
+    "contact_url": "https://health.ri.gov/licensing/detail.php?id=255",
+    "verify_url": "https://credentia.com/test-takers/rhode-island/ (Click 'Registry Search')"
   },
   "quick_facts": {
     "total_fee": "$35",
     "fee_breakdown": "$35 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$30",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "6 to 8 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Rhode Island-approved CNA training program, usually 120 hours long."
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you have successfully completed a Rhode Island Department of Health-approved Nurse Aide Training Program (NATP) or meet the requirements for endorsement/reciprocity from another state."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Rhode Island nurse aide exam."
+      "title": "Create a Credentia Account",
+      "description": "Visit the Credentia Rhode Island Nurse Aide Registry website (credentia.com/test-takers/rhode-island/) and click 'Create an Account' to establish your personal profile."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Complete Online Application",
+      "description": "Log in to your Credentia account and complete the appropriate online application for Nurse Aide certification, whether you are applying by examination or endorsement/reciprocity."
+    },
+    {
+      "title": "Schedule and Pass Examination (If Applicable)",
+      "description": "If applying by examination, schedule and pass both the written/oral and skills components of the Rhode Island Nurse Aide Examination through your Credentia account."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Upload all necessary supporting documents, such as proof of training, background check results, or verification of licensure from another state, directly through your Credentia account."
+    },
+    {
+      "title": "Receive Certification",
+      "description": "Once all requirements are met and processed by Credentia, your Rhode Island Nurse Aide certification will be issued, and your name will be added to the state's Nurse Aide Registry."
     }
   ],
   "documents": [
@@ -121,11 +135,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 35,
-    "processing_time": "6 to 8 Weeks",
+    "endorsement_fee": 30,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "slow",
     "board_url": "https://health.ri.gov/",
-    "endorsement_url": "https://health.ri.gov/",
+    "endorsement_url": "https://credentia.com/test-takers/rhode-island/ (Look for 'RI Nurse Aide Registry Application \u2013 By Reciprocity/Endorsement' under 'Forms')",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Rhode Island",
-        "dek": "Rhode Island CNA certification requires a 120-hour training program, Rhode Island DOH eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for Certified Nursing Assistant (CNA) certification in Rhode Island, candidates must create an account and apply through the Credentia Rhode Island Nurse Aide Registry online portal."
       },
       "seo": {
         "title": "How to Become a CNA in Rhode Island",
@@ -208,5 +222,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Rhode Island Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Credentia Rhode Island Nurse Aide Registry",
+    "portal_url": "https://credentia.com/test-takers/rhode-island/",
+    "registration_steps": "Visit the Credentia Rhode Island Nurse Aide Registry website, click 'Create an Account,' and follow the prompts to set up your personal profile, which allows you to manage examinations and certifications.",
+    "provider_search": "https://credentia.com/test-takers/rhode-island/ (Click 'Registry Search')"
   }
 }

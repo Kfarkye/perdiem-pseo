@@ -21,19 +21,21 @@
   "board": {
     "name": "Nebraska Board of Pharmacy",
     "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
-    "mailing_address": "See board website",
+    "mailing_address": "DHHS Credentialing Division, PO Box 94986, Lincoln, NE 68509-4986",
     "physical_address": "See board website",
     "phone": "(402) 471-2115",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx"
+    "email": "DHHS.Licensure@nebraska.gov",
+    "url": "http://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
+    "contact_url": "https://dhhs.ne.gov/Pages/Licensing-Credentialing.aspx",
+    "verify_url": "https://licensure.ne.gov/search/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$120",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX & MPJE",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "You must have successfully graduated from a pharmacy program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Complete Internship Hours",
+      "description": "Fulfill the Nebraska requirement of 1,500 pharmacy internship hours prior to licensure."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Achieve a passing score on both the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Create Account & Apply Online",
+      "description": "Register for an account and submit your initial pharmacist licensure application via the Nebraska Professional & Occupational Licensure System (NE e-Licensure System)."
     },
     {
-      "title": "Complete Internship Hours and Apply for Licensure",
-      "description": "Complete the required internship hours and submit a completed application to the Nebraska Board of Pharmacy."
+      "title": "Submit Required Documents",
+      "description": "Arrange for official transcripts to be sent directly from your ACPE-accredited pharmacy college, provide proof of age, and complete the fingerprint-based criminal background check as instructed."
+    },
+    {
+      "title": "Pass Examinations",
+      "description": "Register for and achieve passing scores on both the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+    },
+    {
+      "title": "Application Review",
+      "description": "Allow the Nebraska Board of Pharmacy and Credentialing Division to review your completed application and all submitted materials for final approval and license issuance."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "http://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
-    "endorsement_url": "http://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
+    "endorsement_url": "https://dhhs.ne.gov/Pages/Pharmacy-Pharmacists.aspx",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "nebraska-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Nebraska",
-        "dek": "Nebraska Pharmacist License requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing internship hours."
+        "dek": "To apply for a Pharmacist license in Nebraska, you must submit your application and supporting documents through the Nebraska Professional & Occupational Licensure System."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nebraska Professional & Occupational Licensure System",
+    "portal_url": "https://ne.igovsolution.net/online/",
+    "registration_steps": "1. Navigate to the Nebraska Professional & Occupational Licensure System.\n2. Click \"Apply for a New Credential.\"\n3. Click \"Register\" to create a new user account if you do not have one, or log in with existing credentials.\n4. Follow the prompts to create your profile and begin the application for a \"Pharmacist\" license.",
+    "provider_search": "https://licensure.ne.gov/search/"
   }
 }

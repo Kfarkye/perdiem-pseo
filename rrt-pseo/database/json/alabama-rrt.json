@@ -21,18 +21,20 @@
   "board": {
     "name": "Alabama State Board of Respiratory Therapy",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "Alabama State Board of Respiratory Therapy\nP.O. Box 242767\nMontgomery, AL 36124-2767",
     "physical_address": "See board website",
-    "phone": "(334) 265-7125",
+    "phone": "334-269-0004",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.asbrt.alabama.gov"
+    "email": "albrt@albrt.alabama.gov",
+    "url": "http://www.asbrt.alabama.gov",
+    "contact_url": "https://www.albrt.alabama.gov/contact-us/",
+    "verify_url": "https://www.albrt.alabama.gov/licensee-search/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_cycle": "Annually",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) entry level examination",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Therapy Program",
-      "description": "Graduate from a respiratory therapy education program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create an Account",
+      "description": "Access the ALBRT Online Application System and register for a new user account by selecting 'Register Now' and following the on-screen instructions to set up your login credentials."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) entry level examination."
+      "title": "Start Application",
+      "description": "Log in to your ALBRT Online Application System account and select the appropriate application type, such as 'New Licensure Application' or 'Licensure by Endorsement Application', to begin."
     },
     {
-      "title": "Apply for a Respiratory Therapist License",
-      "description": "Submit a completed application, required documents, and the applicable fee to the Alabama State Board of Respiratory Therapy."
+      "title": "Complete Online Form",
+      "description": "Fill out all required sections of the online application within the ALBRT Online Application System, providing accurate personal, educational, and professional history."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Upload all necessary supporting documents, which typically include official transcripts from your respiratory therapy program, verification of NBRC credentials (RRT or CRT), and verification of any active licenses held in other states, directly through the ALBRT Online Application System."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the required application fee, such as the $150 endorsement fee, securely through the ALBRT Online Application System."
+    },
+    {
+      "title": "Board Review and License Issuance",
+      "description": "The Alabama State Board of Respiratory Therapy will review your complete application and supporting documents. Upon approval, your Alabama Respiratory Therapist license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.asbrt.alabama.gov",
-    "endorsement_url": "http://www.asbrt.alabama.gov",
+    "endorsement_url": "https://www.albrt.alabama.gov/apply-for-a-license/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Alabama",
-        "dek": "Alabama Respiratory Therapist license requires graduation from an accredited program, passing the NBRC entry level examination, and submitting an application to the Board."
+        "dek": "To apply for a Respiratory Therapist license in Alabama, applicants must create an account and submit their application through the ALBRT Online Application System."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ALBRT Online Application System",
+    "portal_url": "https://albrt.us.thentiacloud.net/webs/albrt/",
+    "registration_steps": "Navigate to the ALBRT Online Application System URL, click 'Register Now' for a new user account, follow the prompts to create an account with an email address and password, then verify your account to log in and access application forms.",
+    "provider_search": "https://www.albrt.alabama.gov/licensee-search/"
   }
 }

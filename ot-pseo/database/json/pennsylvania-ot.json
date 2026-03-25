@@ -21,19 +21,21 @@
   "board": {
     "name": "Pennsylvania Board of Occupational Therapy Education and Licensure",
     "parent_dept": "Pennsylvania Department of State",
-    "mailing_address": "See board website",
+    "mailing_address": "Pennsylvania State Board of Occupational Therapy\nP.O. Box 2649\nHarrisburg, PA 17105-2649",
     "physical_address": "See board website",
-    "phone": "(717) 783-4849",
+    "phone": "(717) 783-1425",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/OccupationalTherapy/Pages/default.aspx"
+    "email": "ST-OCCUPATIONAL@PA.GOV",
+    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/OccupationalTherapy/Pages/default.aspx",
+    "contact_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/OccupationalTherapy/Pages/Contact-the-Board.aspx",
+    "verify_url": "https://www.pals.pa.gov/licenseVerification"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$85.00",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Unknown",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
     "ce_requirement": "24 hours of continuing education per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Occupational Therapy Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create an Account and Start Your Application",
+      "description": "Register or log in to the PA Licensing System (PALS) at www.pals.pa.gov to begin your online application for an Occupational Therapist license."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts and Fieldwork Verification",
+      "description": "Request your accredited occupational therapy program to send official transcripts directly to the Board, and ensure your program completes any required fieldwork verification as part of the PALS application process."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application for licensure to the Pennsylvania State Board of Occupational Therapy Education and Licensure, including required documentation and fees."
+      "title": "Provide NBCOT Exam Verification",
+      "description": "Arrange for the National Board for Certification in Occupational Therapy (NBCOT) to submit official verification of your exam passage directly to the Pennsylvania State Board of Occupational Therapy."
+    },
+    {
+      "title": "Complete Required Background Checks and Training",
+      "description": "Fulfill the Criminal History Record Information (CHRI) requirements and complete the Child Abuse Recognition and Reporting Training, providing documentation as required within the PALS application."
+    },
+    {
+      "title": "Submit Verification of Licensure from Other States (If Applicable)",
+      "description": "If you hold or have held an OT license in another state, arrange for official verification of licensure to be sent directly to the Pennsylvania Board."
+    },
+    {
+      "title": "Pay Application Fee and Submit Application",
+      "description": "Complete all sections of the application on PALS, upload any remaining required documents, and pay the non-refundable application fee to finalize your submission."
     }
   ],
   "documents": [
@@ -129,10 +143,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 30,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Unknown",
     "processing_tier": "mid",
     "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/OccupationalTherapy/Pages/default.aspx",
-    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/OccupationalTherapy/Pages/default.aspx",
+    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/OccupationalTherapy/Pages/Applying-for-a-License.aspx",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": false
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Pennsylvania",
-        "dek": "Pennsylvania Occupational Therapist License requires graduation from an accredited occupational therapy program, passing the NBCOT exam, and a criminal background check."
+        "dek": "To apply for an Occupational Therapist license in Pennsylvania, you must register and complete the application through the Pennsylvania Licensing System (PALS) portal."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "PA Licensing System (PALS)",
+    "portal_url": "https://www.pals.pa.gov/",
+    "registration_steps": "Go to pals.pa.gov, click 'Register an Individual' if you're a new user or 'Login' if you have an account. Follow the prompts to create a user ID and password, then select 'Initial Application' and choose the Occupational Therapist license type.",
+    "provider_search": "https://www.pals.pa.gov/licenseVerification"
   }
 }

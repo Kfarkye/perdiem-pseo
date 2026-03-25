@@ -11,7 +11,7 @@
     "vendor_url": "https://www.identogo.com/locations/colorado"
   },
   "profession_name": "Dietitian",
-  "credential_nomenclature": "Licensed Dietitian (LD) — Effective September 1, 2026",
+  "credential_nomenclature": "Licensed Dietitian (LD) \u2014 Effective September 1, 2026",
   "last_updated": "2026-02-25",
   "seo": {
     "title": "Colorado Dietitian License Reciprocity - How to Transfer Your License (2026)",
@@ -21,19 +21,21 @@
   "board": {
     "name": "State Board of Dietetics and Nutrition (New)",
     "parent_dept": "Colorado Department of Regulatory Agencies (DORA), Division of Professions and Occupations",
-    "mailing_address": "1560 Broadway Suite 1350<br>Denver, CO 80202",
+    "mailing_address": "Colorado Department of Regulatory Agencies\nOffice of Professions and Occupations\n1560 Broadway, Suite 1350\nDenver, CO 80202",
     "physical_address": "1560 Broadway Suite 1350<br>Denver, CO 80202",
     "phone": "(303) 894-7800",
     "fax": "(303) 894-7693",
-    "email": "mailto:dora_dpo@state.co.us",
-    "url": "https://dpo.colorado.gov/"
+    "email": "dora_dpo_licensing@state.co.us",
+    "url": "https://dpo.colorado.gov/",
+    "contact_url": "https://dpo.colorado.gov/ContactUs",
+    "verify_url": "https://dora.colorado.gov/professions/license-lookup"
   },
   "quick_facts": {
     "total_fee": "~$239.50 (Estimated)",
     "fee_breakdown": "~$200 initial registration fee + $39.50 CBI background check (Estimated for FY 2026-27)",
-    "renewal_fee": "~$125–$180 (Estimated)",
-    "renewal_cycle": "Annual (Estimated) + 75 CPE hours per 5-year CDR cycle",
-    "processing_time": "TBD (New program launching Sept 2026)",
+    "renewal_fee": "N/A - No State Licensure Required",
+    "renewal_cycle": "N/A - No State Licensure Required",
+    "processing_time": "N/A - No State Licensure Required",
     "license_duration": "1 Year (Estimated)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "75 continuing professional education (CPE) hours per 5-year CDR cycle"
@@ -50,16 +52,20 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Complete the education requirements from an ACEND-accredited program."
+      "title": "No State Licensure Required",
+      "description": "The State of Colorado does not regulate dietetics or nutrition services. Therefore, there are no state-mandated steps or an application process to practice as a dietitian or nutritionist within Colorado."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully pass the Registration Examination for Dietitians, administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Professional Certification (Optional)",
+      "description": "While not required by the state, many professionals pursue national certifications such as the Registered Dietitian Nutritionist (RDN) credential from the Commission on Dietetic Registration (CDR) to demonstrate competency and enhance professional standing."
     },
     {
-      "title": "Apply for Registration",
-      "description": "Submit an application for registration to the Colorado State Board of Dietetics and Nutrition after September 2026, when the program launches."
+      "title": "Employer Requirements",
+      "description": "Employers in Colorado may still require specific qualifications, certifications (like RDN), education, and experience for dietitian and nutritionist positions, even without state licensure."
+    },
+    {
+      "title": "Local Regulations (Check with Municipality)",
+      "description": "It is advisable to check with local county or city governments for any specific local business licenses or regulations that might apply, although state-level professional licensure is not applicable."
     }
   ],
   "documents": [
@@ -137,10 +143,10 @@
     "temp_license_available": false,
     "jurisprudence_required": false,
     "endorsement_fee": 0,
-    "processing_time": "N/A (No state application currently)",
+    "processing_time": "N/A - No State Licensure Required",
     "processing_tier": "none",
     "board_url": "https://dpo.colorado.gov/",
-    "endorsement_url": "https://dpo.colorado.gov/",
+    "endorsement_url": "https://dpo.colorado.gov/Professions/DieteticsNutrition",
     "notes": "Details on reciprocity or endorsement will be established by the new Board of Dietetics and Nutrition under DORA regulations. Active CDR registration will serve as the primary qualification for state licensure.",
     "requires_psv": false
   },
@@ -156,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Colorado",
-        "dek": "Colorado Dietitian Registration requires successful completion of an accredited education program, passing the Registration Examination for Dietitians, and meeting the State Board's requirements."
+        "dek": "Dietitians and Nutritionists are currently not licensed by the State of Colorado. There is no state application portal or registration system for these professions."
       }
     }
   },
@@ -182,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "N/A - No State Licensure Required",
+    "portal_url": "https://dpo.colorado.gov/Professions/DieteticsNutrition",
+    "registration_steps": "There is no state-level online application system or registration process as dietitians and nutritionists are not licensed by the State of Colorado.",
+    "provider_search": "https://dora.colorado.gov/professions/license-lookup"
   }
 }

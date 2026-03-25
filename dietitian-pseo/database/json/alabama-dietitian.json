@@ -21,19 +21,21 @@
   "board": {
     "name": "Alabama Board of Examiners for Dietetics/Nutrition Practice",
     "parent_dept": "Independent State Board",
-    "mailing_address": "P.O. Box 300500<br>Montgomery, AL 36130",
+    "mailing_address": "201 Monroe Street, Suite 1060, Montgomery, AL 36104",
     "physical_address": "400 South Union Street, Suite 445<br>Montgomery, AL 36104",
-    "phone": "(334) 242-4505",
+    "phone": "334-242-4022",
     "fax": "",
-    "email": "mailto:board@boed.alabama.gov",
-    "url": "http://www.boed.alabama.gov/"
+    "email": "asbedn@ala.gov",
+    "url": "http://www.boed.alabama.gov/",
+    "contact_url": "https://www.asbedn.alabama.gov/contact/",
+    "verify_url": "https://www.asbedn.alabama.gov/licensure-lookup/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$100 application fee + $150 initial license fee",
-    "renewal_fee": "$200",
-    "renewal_cycle": "Every 2 years + 30 CE hours",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Annually (by September 30th)",
+    "processing_time": "Up to 2 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education and Supervised Practice",
-      "description": "Earn a minimum of a bachelor's degree from a regionally accredited US college or university and complete a Commission on Accreditation for Dietetics Education (ACDE) accredited Dietetic Internship (DI) or Coordinated Program in Dietetics (CP)."
+      "title": "Create an ALISON Account",
+      "description": "Visit the Alabama Professional and Occupational Licensing Portal (ALISON) at https://alison.alabama.gov/ and click 'Register Here' to create a new user account."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Start Online Application",
+      "description": "Log in to your ALISON account, navigate to the Alabama State Board of Examiners for Dietetics/Nutrition (BEDN) section, and select 'Initial Application' to begin the online form."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application form and all required documentation, including official transcripts and exam results, to the Alabama Board of Examiners for Dietetics/Nutrition Practice."
+      "title": "Complete Online Application Form",
+      "description": "Fill out all required sections of the online application form within the ALISON portal, providing personal, educational, and professional information."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for official transcripts, verification of supervised practice, and Commission on Dietetic Registration (CDR) registration to be sent directly to the Board office (either mailed or electronically by the issuing institution/CDR)."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable $100.00 application fee via credit card through the ALISON portal."
+    },
+    {
+      "title": "Submit Application",
+      "description": "Review all application details for accuracy and completeness, then electronically submit your application through the ALISON portal."
     }
   ],
   "documents": [
@@ -136,11 +150,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 200,
+    "processing_time": "Up to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "http://www.boed.alabama.gov/",
-    "endorsement_url": "http://www.boed.alabama.gov/",
+    "endorsement_url": "https://www.asbedn.alabama.gov/endorsement-licensure/",
     "notes": "Alabama allows licensure by endorsement for dietitians who hold a current, valid license in another state with requirements equivalent to or stricter than Alabama's, provided the applicant holds active CDR registration.",
     "requires_psv": true
   },
@@ -156,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Alabama",
-        "dek": "Alabama Dietitian licensure requires completion of an accredited program, passing the national exam, and meeting the Board's application requirements."
+        "dek": "To apply for a Dietitian or Nutritionist license in Alabama, you must submit your application online through the Alabama Professional and Occupational Licensing Portal (ALISON)."
       }
     }
   },
@@ -182,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Alabama Professional and Occupational Licensing Portal (ALISON)",
+    "portal_url": "https://alison.alabama.gov/",
+    "registration_steps": "Visit the Alabama Professional and Occupational Licensing Portal (ALISON), click 'Register Here' to create a new user account, then log in and navigate to the Alabama State Board of Examiners for Dietetics/Nutrition (BEDN) to select 'Initial Application'.",
+    "provider_search": "https://www.asbedn.alabama.gov/licensure-lookup/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Wisconsin DHS",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Wisconsin Nurse Aide Registry, P.O. Box 8916, Madison, WI 53708-8916",
     "physical_address": "See board website",
-    "phone": "(608) 266-2112",
+    "phone": "(608) 261-8664",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.dhs.wisconsin.gov/"
+    "email": "dhsnurseaideregistry@dhs.wi.gov",
+    "url": "https://www.dhs.wisconsin.gov/",
+    "contact_url": "https://www.dhs.wisconsin.gov/cna/contact.htm",
+    "verify_url": "https://www.dhs.wisconsin.gov/cna/registry.htm"
   },
   "quick_facts": {
     "total_fee": "$25",
     "fee_breakdown": "$25 endorsement application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$0",
+    "renewal_cycle": "No expiration, maintained through work verification every 2 years",
+    "processing_time": "Typically within 1 week",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -48,15 +50,23 @@
   "steps": [
     {
       "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Wisconsin-approved CNA training program, usually 120 hours long."
+      "description": "Enroll in and successfully complete a state-approved Nurse Aide Training and Competency Evaluation Program (NATCEP) in Wisconsin. A list of approved programs is available on the Wisconsin Department of Health Services (DHS) website."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Wisconsin nurse aide exam."
+      "title": "Register and Schedule Competency Exam",
+      "description": "Register and schedule your Wisconsin Nurse Aide Competency Evaluation Exam through the official testing vendor, Pearson VUE, at www.pearsonvue.com/wi/nurseaides. Ensure your training program has submitted your completion information to Pearson VUE."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Pass the Competency Evaluation Exam",
+      "description": "Successfully complete both the written (or oral) and skills portions of the state-approved competency evaluation exam administered by Pearson VUE."
+    },
+    {
+      "title": "Automatic Registry Placement",
+      "description": "Upon successful completion of the exam and meeting all other state requirements, your name will be automatically added to the Wisconsin Nurse Aide Registry by the Wisconsin Department of Health Services (DHS). There is no separate application or fee directly to DHS for initial placement."
+    },
+    {
+      "title": "Verify Registry Status",
+      "description": "After passing the exam, check your official certification status on the Wisconsin Nurse Aide Registry lookup tool at https://www.dhs.wisconsin.gov/cna/registry.htm to confirm your active listing."
     }
   ],
   "documents": [
@@ -122,10 +132,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 25,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "Typically within 1 week",
     "processing_tier": "fast",
     "board_url": "https://www.dhs.wisconsin.gov/",
-    "endorsement_url": "https://www.dhs.wisconsin.gov/",
+    "endorsement_url": "https://www.dhs.wisconsin.gov/cna/out-of-state.htm",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Wisconsin",
-        "dek": "Wisconsin CNA certification requires a 120-hour training program, Wisconsin DHS eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "Certified Nursing Assistants (CNAs) in Wisconsin are listed on the Wisconsin Department of Health Services Nurse Aide Registry after completing an approved training program and passing the state competency exam."
       },
       "seo": {
         "title": "How to Become a CNA in Wisconsin",
@@ -216,5 +226,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Wisconsin Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Wisconsin Department of Health Services Nurse Aide Registry",
+    "portal_url": "https://www.dhs.wisconsin.gov/cna/index.htm",
+    "registration_steps": "For initial certification in Wisconsin, there is no direct online application portal to the Wisconsin Department of Health Services (DHS). Eligibility for the Nurse Aide Registry is automatically granted upon successful completion of a state-approved training program and passing the Wisconsin Nurse Aide Competency Evaluation Exam, which is scheduled through Pearson VUE. For out-of-state CNAs seeking endorsement, the application is submitted via a mailed or emailed PDF form (Wisconsin Nurse Aide Reciprocity Application, F-82017) to the DHS Nurse Aide Registry.",
+    "provider_search": "https://www.dhs.wisconsin.gov/cna/registry.htm"
   }
 }

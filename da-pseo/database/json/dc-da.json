@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "DC Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in District of Columbia — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in District of Columbia \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license district of columbia, dental assistant certification district of columbia, RDA district of columbia, DANB CDA district of columbia, dental assistant radiography district of columbia"
   },
   "board": {
     "name": "DC Board of Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "DC Health Licensing Division, 899 North Capitol Street NE, Washington, DC 20002",
     "physical_address": "See board website",
-    "phone": "(202) 442-5955",
+    "phone": "1-877-672-2174",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://dchealth.dc.gov/service/dental-licensing"
+    "url": "https://dchealth.dc.gov/service/dental-licensing",
+    "contact_url": "https://dchealth.dc.gov/service/board-dentistry",
+    "verify_url": "https://doh.force.com/doh/s/license-verification"
   },
   "quick_facts": {
     "total_fee": "$190",
     "fee_breakdown": "$190 application/registration fee",
-    "renewal_fee": "$75",
+    "renewal_fee": "$125",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "6 to 8 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "4 hours per renewal cycle"
   },
@@ -45,16 +47,20 @@
   ],
   "steps": [
     {
-      "title": "Meet Basic Requirements",
-      "description": "You must have a high school diploma or equivalency."
+      "title": "Create an Account and Apply Online",
+      "description": "Register for an account on the DOH Licensure Online Services Portal, complete the online application for Dental Assistant licensure, and pay the required fee."
     },
     {
-      "title": "Complete a Board-Approved Course",
-      "description": "Successfully complete a Board-approved course for dental assistants."
+      "title": "Complete Criminal Background Check",
+      "description": "Schedule and undergo a criminal background check (CBC) through an approved vendor as specified on the DC Health website. Results must be submitted directly to the Board."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the application, provide required documentation, and pay the applicable fee."
+      "title": "Submit Required Documentation",
+      "description": "Upload scanned copies of all necessary documents through the DOH Licensure Online Services Portal. This includes: a valid government-issued photo ID, proof of completion from a CODA-accredited dental assisting program (with official transcripts) or current certification from the Dental Assisting National Board (DANB), a high school diploma or GED, current Basic Life Support (BLS) or Cardiopulmonary Resuscitation (CPR) certification for healthcare providers, and a passport-style photograph."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application via the DOH Licensure Online Services Portal. Respond promptly to any requests for additional information or clarification from the Board of Dentistry to avoid delays."
     }
   ],
   "documents": [
@@ -123,11 +129,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 190,
-    "processing_time": "6 to 8 Weeks",
+    "endorsement_fee": 160,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://dchealth.dc.gov/service/dental-licensing",
-    "endorsement_url": "https://dchealth.dc.gov/service/dental-licensing",
+    "endorsement_url": "https://dchealth.dc.gov/service/dental-assistants-das-anesthesia-permitted-dental-assistants-apdas",
     "notes": "Dental assistants can apply for Licensed Dental Assistant through the DC Board of Dentistry by license.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +152,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in District of Columbia",
-        "dek": "DC Dental Assistant registration requires graduation from high school or equivalent, successful completion of a Board-approved course, and CPR certification."
+        "dek": "To apply for a Dental Assistant license in DC, applicants must register and submit their application through the DOH Licensure Online Services Portal."
       }
     }
   },
@@ -172,5 +178,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DOH Licensure Online Services Portal",
+    "portal_url": "https://doh.force.com/doh/s/",
+    "registration_steps": "1. Go to the DOH Licensure Online Services Portal.\n2. Click \"Register here\" to create a new account.\n3. Complete the registration form with your personal details and create login credentials.\n4. Verify your email address as instructed.\n5. Log in with your new credentials to access the application system.",
+    "provider_search": "https://doh.force.com/doh/s/license-verification"
   }
 }

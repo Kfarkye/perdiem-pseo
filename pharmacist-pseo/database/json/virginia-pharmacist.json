@@ -21,17 +21,19 @@
   "board": {
     "name": "Virginia Board of Pharmacy",
     "parent_dept": "Virginia Department of Health Professions (DHP)",
-    "mailing_address": "See board website",
+    "mailing_address": "Virginia Board of Pharmacy\nPerimeter Center\n9960 Mayland Drive, Suite 300\nHenrico, VA 23233-1463",
     "physical_address": "See board website",
-    "phone": "(804) 367-4456",
+    "phone": "(804) 367-4400",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.dhp.virginia.gov/pharmacy"
+    "email": "pharmlaw@dhp.virginia.gov",
+    "url": "https://www.dhp.virginia.gov/pharmacy",
+    "contact_url": "https://www.dhp.virginia.gov/Pharmacy/pharmacy_contact.htm",
+    "verify_url": "https://www.dhp.virginia.gov/Search/LicenseSearch.htm"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$90",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a professional degree program in pharmacy from a school or college of pharmacy accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Apply Online via DHP Portal",
+      "description": "Register for an account on the DHP Online Licensing Portal, complete the 'Application for Pharmacist by Examination,' and submit the required application fee."
     },
     {
-      "title": "Pass the NAPLEX and MPJE",
-      "description": "Successfully pass both the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Exam (MPJE) for Virginia."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts from your ACPE-accredited pharmacy program to be sent directly from the institution to the Virginia Board of Pharmacy."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit an application for licensure to the Virginia Board of Pharmacy with all required documentation and fees."
+      "title": "Register for NABP Exams",
+      "description": "Register with the National Association of Boards of Pharmacy (NABP) to take both the North American Pharmacist Licensure Examination (NAPLEX) and the Virginia Multistate Pharmacy Jurisprudence Examination (MPJE). Ensure your official scores are directed to the Virginia Board of Pharmacy."
+    },
+    {
+      "title": "Pass NAPLEX & MPJE",
+      "description": "Successfully pass both the NAPLEX and the Virginia MPJE with a satisfactory score as determined by the Board."
+    },
+    {
+      "title": "License Issuance",
+      "description": "Upon successful completion of all requirements, including passing scores and documentation verification, the Virginia Board of Pharmacy will issue your Pharmacist license."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 185,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.dhp.virginia.gov/pharmacy",
-    "endorsement_url": "https://www.dhp.virginia.gov/pharmacy",
+    "endorsement_url": "https://www.dhp.virginia.gov/Pharmacy/pharmacy_forms.htm",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "virginia-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Virginia",
-        "dek": "Virginia Pharmacist licenses require graduation from an accredited pharmacy program, successful completion of the NAPLEX and MPJE exams, and meeting criminal background check requirements."
+        "dek": "To apply for a Pharmacist license in Virginia, you must create an account and submit your application through the DHP Online Licensing Portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DHP Online Licensing Portal",
+    "portal_url": "https://www.dhp.virginia.gov/PublicLogin/Default.aspx",
+    "registration_steps": "On the DHP Online Licensing Portal, click 'Register a New Account' to create your user ID and password, then log in to access and submit your application.",
+    "provider_search": "https://www.dhp.virginia.gov/Search/LicenseSearch.htm"
   }
 }

@@ -19,21 +19,23 @@
     "keywords": "occupational therapist license reciprocity oklahoma, how to transfer occupational therapist license to oklahoma, occupational therapist compact oklahoma, oklahoma occupational therapist endorsement application"
   },
   "board": {
-    "name": "Oklahoma Board of Medical Licensure — OT",
+    "name": "Oklahoma Board of Medical Licensure \u2014 OT",
     "parent_dept": "Oklahoma State Board of Medical Licensure and Supervision",
-    "mailing_address": "See board website",
+    "mailing_address": "Oklahoma Board of Medical Licensure and Supervision, PO Box 18256, Oklahoma City, OK 73154-0256",
     "physical_address": "See board website",
-    "phone": "(405) 962-1400",
+    "phone": "405-962-1400",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.okmedicalboard.org/"
+    "email": "licensing@okmbms.org",
+    "url": "https://www.okmedicalboard.org/",
+    "contact_url": "https://www.ok.gov/ombms/Contact_Us/index.html",
+    "verify_url": "https://okmbms.us.thentiacloud.net/webs/okmbms/register/#/lookup-page"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$75",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$175",
+    "renewal_cycle": "Annually",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT)",
     "ce_requirement": "24 contact hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Occupational Therapy Program",
-      "description": "Graduate from an ACOTE-accredited occupational therapy educational program."
+      "title": "Register and Apply Online",
+      "description": "Create an account on the Oklahoma Board of Medical Licensure and Supervision's Thentia Cloud portal and complete the online Occupational Therapist application, including paying the initial application fee."
     },
     {
-      "title": "Pass the NBCOT Exam",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts from your accredited OT program and verification of NBCOT certification to be sent directly to the Board. Upload supervised fieldwork reports or other required documents within your Thentia Cloud application."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, required documentation, and fees to the Oklahoma Board of Medical Licensure and Supervision."
+      "title": "Complete Jurisprudence Exam",
+      "description": "Access and complete the Oklahoma Occupational Therapy Jurisprudence Exam, an open-book test available online through your Thentia Cloud account."
+    },
+    {
+      "title": "Undergo Background Check",
+      "description": "Follow the specific instructions provided within your Thentia Cloud application to complete the required criminal history records search and pay the associated fee."
+    },
+    {
+      "title": "Await Board Review",
+      "description": "The Board will review your complete application and all submitted documentation for approval. You will be notified via Thentia Cloud once a decision has been made."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 250,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.okmedicalboard.org/",
-    "endorsement_url": "https://www.okmedicalboard.org/",
+    "endorsement_url": "https://www.ok.gov/ombms/Licensing/Occupational_Therapy/index.html",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Oklahoma",
-        "dek": "Oklahoma Occupational Therapist license requires graduation from an accredited program, passing the NBCOT exam, and completion of the application process."
+        "dek": "To apply for an Occupational Therapist license in Oklahoma, new applicants must register and submit their application through the Oklahoma Board of Medical Licensure and Supervision's online system, Thentia Cloud."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Thentia Cloud (Oklahoma Board of Medical Licensure and Supervision's online application and licensing management system)",
+    "portal_url": "https://okmbms.us.thentiacloud.net/webs/okmbms/register/#/",
+    "registration_steps": "Create an account by clicking \"Register an Account\" on the Thentia Cloud portal, then follow the prompts to set up a user ID and password to access the application system.",
+    "provider_search": "https://okmbms.us.thentiacloud.net/webs/okmbms/register/#/lookup-page"
   }
 }

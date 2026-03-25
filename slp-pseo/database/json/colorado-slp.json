@@ -19,21 +19,23 @@
     "keywords": "speech-language pathologist license reciprocity colorado, how to transfer speech-language pathologist license to colorado, speech-language pathologist compact colorado, colorado speech-language pathologist endorsement application"
   },
   "board": {
-    "name": "Division of Professions and Occupations — Speech-Language Pathology",
+    "name": "Division of Professions and Occupations \u2014 Speech-Language Pathology",
     "parent_dept": "Colorado Department of Regulatory Agencies (DORA)",
-    "mailing_address": "1560 Broadway, Suite 1350, Denver, CO 80202",
+    "mailing_address": "Colorado Department of Regulatory Agencies\nDivision of Professions and Occupations\n1560 Broadway, Suite 1350\nDenver, CO 80202",
     "physical_address": "1560 Broadway, Suite 1350, Denver, CO 80202",
-    "phone": "(303) 894-7800",
+    "phone": "303-894-7800",
     "fax": "(303) 894-7764",
-    "email": "mailto:dora_dpo_licensing@state.co.us",
-    "url": "https://dpo.colorado.gov/SpeechLanguagePathology"
+    "email": "dora_audiology_slp@state.co.us",
+    "url": "https://dpo.colorado.gov/SpeechLanguagePathology",
+    "contact_url": "https://dpo.colorado.gov/ContactUs",
+    "verify_url": "https://dpo.colorado.gov/Lookup"
   },
   "quick_facts": {
     "total_fee": "$120",
     "fee_breakdown": "$120 application and license fee",
-    "renewal_fee": "$75",
+    "renewal_fee": "$128",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "Earn a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA)."
+      "title": "Create an Account on the DORA Applicant Portal",
+      "description": "Access the DORA Applicant Portal at https://www.colorado.gov/dora/licensing/applicant-login.action and select 'Register a New User' to establish your online account with the Division of Professions and Occupations."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience consisting of at least 1260 hours with at least 36 weeks of full-time employment or its equivalent in part-time employment."
+      "title": "Initiate Your Online Application",
+      "description": "Log into your DORA Applicant Portal account, click on 'Application' from the main menu, and then select 'Audiologist & Speech-Language Pathologist - Speech-Language Pathologist' to begin filling out the licensing application."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology with a score of 162 or higher."
+      "title": "Submit Required Documentation and Praxis Scores",
+      "description": "Complete all sections of the online application, including personal, educational, and examination history. Upload official transcripts verifying a master's or doctoral degree in SLP from an accredited institution and proof of successful completion of the Praxis Examination in Speech-Language Pathology."
+    },
+    {
+      "title": "Verify Supervised Post-Graduate Experience (CFY)",
+      "description": "Ensure your supervisor submits the necessary documentation to the Board, verifying your successful completion of 1,260 hours of supervised post-graduate professional experience (Clinical Fellowship Year or equivalent). The online application will provide guidance on this submission process."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the required application fee of $140 through the DORA Applicant Portal using a valid credit or debit card to finalize your application submission."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log into your DORA Applicant Portal account to track the status of your application, review any deficiencies, and respond promptly to requests for additional information from the Office of Audiology and Speech-Language Pathology Licensure."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 120,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 140,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dpo.colorado.gov/SpeechLanguagePathology",
-    "endorsement_url": "https://dpo.colorado.gov/SpeechLanguagePathology",
+    "endorsement_url": "https://dpo.colorado.gov/AudiologySpeechLanguagePathology/ApplyEndorsement",
     "notes": "Colorado is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Colorado through a compact privilege."
   },
   "slug": "colorado-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Colorado",
-        "dek": "Colorado Speech-Language Pathologist licenses require a master's degree, passing the Praxis exam, and completing a supervised professional experience."
+        "dek": "To apply for an SLP license in Colorado, applicants must create an account and complete the application process through the DORA Applicant Portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DORA Applicant Portal",
+    "portal_url": "https://www.colorado.gov/dora/licensing/applicant-login.action",
+    "registration_steps": "Navigate to the DORA Applicant Portal and click 'Register a New User'. Enter your personal information (name, DOB, SSN/ITIN, email), create a username and password, and follow the prompts to complete your account registration. Once registered, log in to start your application.",
+    "provider_search": "https://dpo.colorado.gov/Lookup"
   }
 }

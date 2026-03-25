@@ -11,7 +11,7 @@
     "vendor_url": "https://uenroll.identogo.com/"
   },
   "profession_name": "Dietitian Nutritionist",
-  "credential_nomenclature": "Licensed Dietitian Nutritionist (LDN) — Application Process Pending",
+  "credential_nomenclature": "Licensed Dietitian Nutritionist (LDN) \u2014 Application Process Pending",
   "last_updated": "2026-02-25",
   "seo": {
     "title": "Michigan Dietitian Nutritionist License Reciprocity - How to Transfer Your License (2026)",
@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Dietetics and Nutrition",
     "parent_dept": "Michigan Department of Licensing and Regulatory Affairs (LARA)",
-    "mailing_address": "PO Box 30670<br>Lansing, MI 48909",
+    "mailing_address": "Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing, P.O. Box 30670, Lansing, MI 48909-8170",
     "physical_address": "611 W. Ottawa St.<br>Lansing, MI 48909",
-    "phone": "(517) 335-0918",
+    "phone": "517-241-0199",
     "fax": "(517) 241-2760",
-    "email": "mailto:bplhelp@michigan.gov",
-    "url": "https://www.michigan.gov/lara/bureau-list/bpl"
+    "email": "BPLHelp@michigan.gov",
+    "url": "https://www.michigan.gov/lara/bureau-list/bpl",
+    "contact_url": "https://www.michigan.gov/lara/bureau-list/bpl/contact-us",
+    "verify_url": "https://lara.state.mi.us/VOD/"
   },
   "quick_facts": {
     "total_fee": "$130 (Estimated)",
     "fee_breakdown": "$75 application processing fee + $55 license fee (per year)",
-    "renewal_fee": "$55",
-    "renewal_cycle": "Annual (Estimated based on fee schedule)",
-    "processing_time": "TBD (Application process not yet open in early 2026)",
+    "renewal_fee": "$75",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "1 Year (Estimated)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "45 hours every 3 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Earn a bachelor's degree or higher from a regionally accredited U.S. college or university with a major in human nutrition, dietetics, foods and nutrition, or an equivalent major as determined by the board."
+      "title": "Create a MiPLUS Account",
+      "description": "Visit the Michigan Professional Licensing User System (MiPLUS) portal at aca-prod.accela.com/LARA/Default.aspx and click 'Register for an Account' to establish your user profile."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete a supervised practice program that meets the requirements of the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Initiate Online Application",
+      "description": "Log in to your newly created MiPLUS account, select 'Apply for a License,' and choose 'Dietitian' from the list of available license types to begin the application process."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete Application and Upload Documents",
+      "description": "Fill out all required sections of the online application within MiPLUS. This includes providing personal details, educational history, proof of supervised experience, and verification of your Commission on Dietetic Registration (CDR) certification. Ensure official transcripts are sent directly from your institution if required."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $75 as prompted within the MiPLUS system at the time of application submission."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log in to your MiPLUS account to track the status of your application. Respond promptly to any requests for additional information or documentation from the Bureau of Professional Licensing (BPL) to avoid delays."
     }
   ],
   "documents": [
@@ -132,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "N/A (No state application currently)",
+    "endorsement_fee": 75,
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "none",
     "board_url": "https://www.michigan.gov/lara/bureau-list/bpl",
-    "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl",
+    "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl/dietitians",
     "notes": "Reciprocity provisions will be defined by the newly formed Board. Active CDR registration will be the primary qualifying credential, making the transition straightforward for out-of-state licensees.",
     "requires_psv": false
   },
@@ -152,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian Nutritionist in Michigan",
-        "dek": "Michigan Dietitian Nutritionist licenses require a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+        "dek": "To apply for a Dietitian license in Michigan, navigate to the Michigan Professional Licensing User System (MiPLUS) to create an account and submit your online application."
       }
     }
   },
@@ -178,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Michigan Professional Licensing User System (MiPLUS)",
+    "portal_url": "https://aca-prod.accela.com/LARA/Default.aspx",
+    "registration_steps": "New users must visit the MiPLUS portal and click 'Register for an Account' to create a profile before starting an application.",
+    "provider_search": "https://lara.state.mi.us/VOD/"
   }
 }

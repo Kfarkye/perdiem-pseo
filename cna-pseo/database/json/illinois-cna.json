@@ -21,19 +21,21 @@
   "board": {
     "name": "Illinois Dept of Public Health",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Illinois Department of Public Health, Health Care Worker Registry, 525 West Jefferson Street, Springfield, Illinois 62761",
     "physical_address": "See board website",
-    "phone": "(217) 785-5133",
+    "phone": "217-785-5133",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://nursing.illinois.gov/"
+    "email": "dph.hcwr@illinois.gov",
+    "url": "http://nursing.illinois.gov/",
+    "contact_url": "https://dph.illinois.gov/topics-services/health-care-regulation/health-care-worker-registry.html",
+    "verify_url": "https://hcwrpub.dph.illinois.gov/"
   },
   "quick_facts": {
     "total_fee": "$25",
     "fee_breakdown": "$25 endorsement application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$0",
+    "renewal_cycle": "Every 2 years (based on employment and in-service education)",
+    "processing_time": "2 to 4 Weeks (for reciprocity applications)",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "Illinois CNA exam (SIU)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Illinois-approved CNA training program, usually 120 hours long."
+      "title": "Enroll in an Approved CNA Training Program",
+      "description": "Enroll in and successfully complete a state-approved Nurse Aide Training Program. The Illinois Department of Public Health (IDPH) maintains a list of approved programs."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Illinois nurse aide exam."
+      "title": "Complete Required Training Hours",
+      "description": "Fulfill all program requirements, which include a minimum of 120 hours of training, with at least 40 hours dedicated to clinical experience."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Pass the Nurse Aide Competency Exam",
+      "description": "Successfully pass the Illinois Nurse Aide Competency Exam within 24 months of completing your training program. This exam has both a written/oral portion and a skills demonstration portion."
+    },
+    {
+      "title": "Program Submits Documentation to Registry",
+      "description": "Your approved training program will submit all necessary documentation regarding your successful completion and exam pass directly to the Illinois Health Care Worker Registry on your behalf."
+    },
+    {
+      "title": "Verify Listing on Health Care Worker Registry",
+      "description": "Once your information has been processed by the IDPH, your certification will be active and listed on the Illinois Health Care Worker Registry. You can verify your status using the online search tool."
     }
   ],
   "documents": [
@@ -117,11 +127,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 25,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 0,
+    "processing_time": "2 to 4 Weeks (for reciprocity applications)",
     "processing_tier": "mid",
     "board_url": "http://nursing.illinois.gov/",
-    "endorsement_url": "https://www.nurseaidetesting.com",
+    "endorsement_url": "https://dph.illinois.gov/content/dam/soi/en/web/idph/files/forms/nurse-aide-reciprocity-app-form.pdf",
     "notes": "Illinois reciprocity is handled through SIU-C Nurse Aide Testing. Submit the Out-of-State CNA Application with a $25 money order. A written competency retest is usually required.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -171,7 +181,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Illinois",
-        "dek": "Illinois CNA certification requires a 120-hour training program, Illinois Dept of Public Health eligibility, and a passing score on the Illinois CNA exam (SIU) exam."
+        "dek": "To become a Certified Nursing Assistant in Illinois, you must complete an approved training program and pass the competency exam, after which your program will submit your information to the Illinois Health Care Worker Registry."
       },
       "seo": {
         "title": "How to Become a CNA in Illinois",
@@ -217,5 +227,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Illinois Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Illinois Health Care Worker Registry",
+    "portal_url": "https://dph.illinois.gov/topics-services/health-care-regulation/health-care-worker-registry.html",
+    "registration_steps": "For initial certification, individuals do not directly register on the Health Care Worker Registry. Instead, approved CNA training programs submit completion and competency exam pass information to the Registry on behalf of their students. The Registry is then used to verify an individual's certification status.",
+    "provider_search": "https://hcwrpub.dph.illinois.gov/"
   }
 }

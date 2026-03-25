@@ -21,19 +21,21 @@
   "board": {
     "name": "State Board of Examiners in Speech-Language Pathology and Audiology",
     "parent_dept": "Pennsylvania Department of State, Bureau of Professional and Occupational Affairs",
-    "mailing_address": "P.O. Box 2649, Harrisburg, PA 17105-2649",
+    "mailing_address": "Pennsylvania State Board of Examiners in Speech-Language Pathology and Audiology\nP.O. Box 2649\nHarrisburg, PA 17105-2649",
     "physical_address": "2601 North Third St., Harrisburg, PA 17110",
     "phone": "(717) 783-1389",
     "fax": "(717) 787-7769",
-    "email": "mailto:st-speech@pa.gov",
-    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/"
+    "email": "ST-AUD@pa.gov",
+    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
+    "contact_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-LanguagePathologyandAudiology/Pages/Contact-the-Board.aspx",
+    "verify_url": "https://www.pals.pa.gov/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 initial application fee",
-    "renewal_fee": "$65",
-    "renewal_cycle": "Every 2 years (July 31, odd years)",
-    "processing_time": "4 to 6 weeks",
+    "renewal_fee": "$95",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "National Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Clinical Practicum",
-      "description": "Earn a master's degree or doctoral degree in speech-language pathology from an accredited educational institution and complete a supervised clinical practicum."
+      "title": "Submit Online Application via PALS",
+      "description": "Register for an account on the Pennsylvania Licensing System (PALS) at pals.pa.gov, then complete and submit the online application for a Speech-Language Pathologist license. The initial application fee of $65 is paid at this time."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Successfully complete the National Examination in Speech-Language Pathology administered by Praxis."
+      "title": "Arrange for Official Transcripts",
+      "description": "Have your graduate institution send official transcripts, verifying the conferral of a master's or doctoral degree in Speech-Language Pathology, directly to the Board. Electronic transcripts are preferred and can be sent to RA-SLPAUDTRANSCRIPTS@pa.gov."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application, official transcripts, examination scores, and the required fee to the Pennsylvania State Board of Examiners in Speech-Language Pathology and Audiology."
+      "title": "Submit Praxis Exam Scores",
+      "description": "Arrange for official scores from the Praxis exam in Speech-Language Pathology (ETS code R733) to be sent directly from the Educational Testing Service (ETS) to the Pennsylvania State Board of Examiners in Speech-Language Pathology and Audiology."
+    },
+    {
+      "title": "Complete Supervised Clinical Experience Form",
+      "description": "Ensure your supervisor completes and submits the 'Supervised Clinical Experience Form' (Form S-LPA-2) directly to the Board, verifying successful completion of the equivalent of a clinical fellowship year (CFY)."
+    },
+    {
+      "title": "Complete Child Abuse Recognition and Reporting Training",
+      "description": "Complete a 3-hour Board-approved training in child abuse recognition and reporting. Proof of completion must be provided to the Board as required by law. Information on approved providers can be found on the Board's website."
     }
   ],
   "documents": [
@@ -145,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
-    "processing_time": "4 to 6 weeks",
+    "endorsement_fee": 65,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
-    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-Language-Pathology-and-Audiology/",
+    "endorsement_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Speech-LanguagePathologyandAudiology/Pages/How-to-Apply-for-a-License.aspx",
     "notes": "Pennsylvania does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Pennsylvania license through the PALS portal. ASHA CCC-SLP holders must still submit all required documentation, including transcripts, Praxis scores, and fellowship verification."
   },
   "slug": "pennsylvania-slp",
@@ -164,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Pennsylvania",
-        "dek": "Pennsylvania Speech-Language Pathologist license requires a master's degree, completion of a supervised clinical practicum, and passing the National Examination in Speech-Language Pathology."
+        "dek": "To apply for an initial Speech-Language Pathologist license in Pennsylvania, you must submit your application and all required supporting documentation through the Pennsylvania Licensing System (PALS) online portal."
       }
     }
   },
@@ -190,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Pennsylvania Licensing System (PALS)",
+    "portal_url": "https://www.pals.pa.gov/",
+    "registration_steps": "Go to the Pennsylvania Licensing System (PALS) website at pals.pa.gov, click on 'New Applicants', then 'Register here' to create a new account. Follow the prompts to enter your personal information and establish a username and password. Once registered, log in to your account and select 'Apply for a New License', then choose 'Speech-Language Pathologist' from the list of professions.",
+    "provider_search": "https://www.pals.pa.gov/"
   }
 }

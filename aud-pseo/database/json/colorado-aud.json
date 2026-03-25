@@ -21,19 +21,21 @@
   "board": {
     "name": "Colorado Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Colorado Department of Regulatory Agencies (DORA)",
-    "mailing_address": "1560 Broadway, Suite 1350, Denver, CO 80202",
+    "mailing_address": "Colorado Department of Regulatory Agencies\nOffice of Audiology and Speech-Language Pathology\n1560 Broadway, Suite 1350\nDenver, CO 80202",
     "physical_address": "1560 Broadway, Suite 1350, Denver, CO 80202",
-    "phone": "(303) 894-7800",
+    "phone": "303-894-7800",
     "fax": "(303) 894-7764",
     "email": "mailto:dora_dpo_licensing@state.co.us",
-    "url": "https://dpo.colorado.gov/SpeechLanguagePathology"
+    "url": "https://dpo.colorado.gov/SpeechLanguagePathology",
+    "contact_url": "https://dpo.colorado.gov/AudiologySpeechPathology/ContactUs",
+    "verify_url": "https://apps.colorado.gov/dora/licensing/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$40",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination (Praxis)",
     "ce_requirement": "20 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Graduate from an audiology program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+      "title": "Review Licensure Requirements",
+      "description": "Carefully review the Audiologist licensure requirements on the Colorado Office of Audiology and Speech-Language Pathology website, including educational, examination, and supervised experience or ASHA CCC requirements. This page also outlines the process for applicants licensed in other states."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Successfully complete the Audiology Examination (Praxis) with a passing score."
+      "title": "Prepare Required Documentation",
+      "description": "Gather all necessary documents such as official transcripts from your accredited audiology program, proof of passing the national Praxis exam, a current ASHA Certificate of Clinical Competence (CCC-A), and be prepared to consent to a criminal background check."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Colorado Board of Speech-Language Pathology and Audiology and pay the required fee."
+      "title": "Create a DORA Online Services Account",
+      "description": "Navigate to the DORA Online Services Portal. If you are a new user, click 'New User Registration' and complete the account creation process. Existing users can log in directly."
+    },
+    {
+      "title": "Complete Online Application",
+      "description": "Log in to your DORA Online Services account, select to 'Apply for a New Audiologist License', and accurately complete all sections of the application form, providing all requested personal and professional information."
+    },
+    {
+      "title": "Upload Documents and Pay Fee",
+      "description": "Upload all required supporting documents directly through the DORA Online Services Portal. Submit the non-refundable $80 application fee online using a credit or debit card."
+    },
+    {
+      "title": "Await Review and Background Check",
+      "description": "Submit to a criminal background check as required by the state. Monitor your application status through the DORA Online Services Portal for updates and any requests for additional information or clarification from the board."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 80,
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dpo.colorado.gov/SpeechLanguagePathology",
-    "endorsement_url": "https://dpo.colorado.gov/SpeechLanguagePathology",
+    "endorsement_url": "https://dpo.colorado.gov/AudiologySpeechPathology/AudiologistApplication",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "colorado-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Colorado",
-        "dek": "Colorado Audiologist License requires graduation from an accredited program, passing the Audiology Examination (Praxis), and completing the application process."
+        "dek": "Audiologists in Colorado apply for licensure through the DORA Online Services Portal, managed by the Colorado Office of Audiology and Speech-Language Pathology."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DORA Online Services Portal",
+    "portal_url": "https://apps.colorado.gov/dora/licensing/Default.aspx",
+    "registration_steps": "Navigate to the DORA Online Services Portal, click 'New User Registration' and follow the prompts to create an account. Once registered, log in to start a new application.",
+    "provider_search": "https://apps.colorado.gov/dora/licensing/Lookup/LicenseLookup.aspx"
   }
 }

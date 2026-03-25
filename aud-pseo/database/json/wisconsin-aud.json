@@ -21,17 +21,19 @@
   "board": {
     "name": "Examining Board of Speech-Language Pathologists and Audiologists",
     "parent_dept": "Wisconsin Department of Safety and Professional Services (DSPS)",
-    "mailing_address": "P.O. Box 8935, Madison, WI 53708-8935",
+    "mailing_address": "Wisconsin Department of Safety and Professional Services\nP.O. Box 8935\nMadison, WI 53708-8935",
     "physical_address": "4822 Madison Yards Way, Madison, WI 53705",
     "phone": "(608) 266-2112",
     "fax": "(608) 267-0644",
-    "email": "mailto:dsps@wisconsin.gov",
-    "url": "https://dsps.wi.gov/Pages/BoardsCouncils/SpeechLanguagePathology/Default.aspx"
+    "email": "dspscred@wisconsin.gov",
+    "url": "https://dsps.wi.gov/Pages/BoardsCouncils/SpeechLanguagePathology/Default.aspx",
+    "contact_url": "https://dsps.wi.gov/Pages/ContactUs/Default.aspx",
+    "verify_url": "https://app.wi.gov/LicenseSearch/Search/Search"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$66",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a graduate program in audiology from an institution approved by the board."
+      "title": "Create a WAMS ID and Access LicensE",
+      "description": "Establish a Wisconsin Access Management System (WAMS) ID, then log into the DSPS LicensE portal to begin your application."
     },
     {
-      "title": "Pass the Audiology Examination",
-      "description": "Achieve a passing score on the audiology examination administered by a nationally recognized testing organization."
+      "title": "Complete the Online Application",
+      "description": "Fill out the comprehensive Audiologist application form directly within the LicensE system, providing all requested personal and professional information."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the Examining Board of Speech-Language Pathologists and Audiologists with all required documentation and fees."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, confirming your doctoral or master's degree in audiology, to be sent directly to the Wisconsin Department of Safety and Professional Services (DSPS)."
+    },
+    {
+      "title": "Provide Proof of Competency",
+      "description": "Submit verification of your ASHA Certificate of Clinical Competence in Audiology (CCC-A) or official scores for the Praxis Exam (Audiology #5343) if taken after September 1, 2019."
+    },
+    {
+      "title": "Verify Supervised Clinical Experience",
+      "description": "Submit all required forms and documentation for verification of your supervised clinical experience, as specified by the board."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Pay the required initial credentialing fee of $75 through the LicensE portal to finalize your application submission."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 75,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dsps.wi.gov/Pages/BoardsCouncils/SpeechLanguagePathology/Default.aspx",
-    "endorsement_url": "https://dsps.wi.gov/Pages/BoardsCouncils/SpeechLanguagePathology/Default.aspx",
+    "endorsement_url": "https://dsps.wi.gov/Pages/Professions/Audiologist/Default.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "wisconsin-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Wisconsin",
-        "dek": "Wisconsin Audiologist license requires graduation from an accredited program, passing the Audiology Examination, and completing a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Wisconsin, navigate to the DSPS LicensE portal and complete the online application."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "LicensE",
+    "portal_url": "https://dsps.wi.gov/Pages/OnlineServices/LicensE.aspx",
+    "registration_steps": "Navigate to the LicensE portal. Click 'Access LicensE'. If you are a new user, you will need to create a Wisconsin Access Management System (WAMS) ID. Once logged in, select 'Apply for a Credential' from your dashboard to begin the application.",
+    "provider_search": "https://app.wi.gov/LicenseSearch/Search/Search"
   }
 }

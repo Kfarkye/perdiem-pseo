@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Utah Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Utah — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Utah \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license utah, dental assistant certification utah, RDA utah, DANB CDA utah, dental assistant radiography utah"
   },
   "board": {
     "name": "Utah Division of Professional Licensing",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Utah Division of Occupational and Professional Licensing, P.O. Box 146741, Salt Lake City, UT 84114-6741",
     "physical_address": "See board website",
     "phone": "(801) 530-6628",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dopl.utah.gov/dental/"
+    "email": "doplweb@utah.gov",
+    "url": "https://dopl.utah.gov/dental/",
+    "contact_url": "https://dopl.utah.gov/contact/",
+    "verify_url": "https://dopl.utah.gov/licensing/lookup.html"
   },
   "quick_facts": {
     "total_fee": "$55",
     "fee_breakdown": "$55 application/registration fee",
-    "renewal_fee": "$30",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "Not Applicable",
+    "renewal_cycle": "Not Applicable",
+    "processing_time": "Not Applicable",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -44,16 +46,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a CODA-Accredited Dental Assisting Program",
-      "description": "Complete a dental assisting program accredited by the Commission on Dental Accreditation (CODA)."
+      "title": "Understand Delegated Duties",
+      "description": "A dental assistant in Utah performs duties as delegated by a supervising licensed dentist, adhering to the scope outlined in the Utah Administrative Code Rule R156-69. There is no state application portal for general dental assistant licensing through the Utah DOPL."
     },
     {
-      "title": "Pass a Criminal Background Check",
-      "description": "Ensure you have a clean criminal background check, as required for registration."
+      "title": "Meet Dentist's Requirements",
+      "description": "The hiring dentist is responsible for ensuring the dental assistant has the necessary skills, training, and competency for the tasks delegated, as no state-mandated license is required for the general dental assistant role."
     },
     {
-      "title": "Submit an Application for Registration",
-      "description": "Apply for registration as a Dental Assistant with the Utah Division of Professional Licensing (DOPL) and pay the required fee."
+      "title": "Consider Expanded Functions (If applicable)",
+      "description": "For specific expanded functions (e.g., coronal polishing, fluoride application, monitoring nitrous oxide), additional training, education, or certification may be required as specified by the supervising dentist or relevant regulations. However, these are generally not state licenses issued for the dental assistant profession itself."
+    },
+    {
+      "title": "Maintain Professional Standards",
+      "description": "Adhere to the professional and ethical standards established for the dental profession in Utah, as outlined by the Utah Division of Occupational and Professional Licensing (DOPL) for all dental professionals."
+    },
+    {
+      "title": "Employment with a Licensed Dentist",
+      "description": "Work under the direct or indirect supervision of a dentist who is actively licensed by the Utah Division of Occupational and Professional Licensing (DOPL). You can verify a dentist's license using the DOPL License Lookup system."
     }
   ],
   "documents": [
@@ -123,7 +133,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 55,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "Not Applicable",
     "processing_tier": "fast",
     "board_url": "https://dopl.utah.gov/dental/",
     "endorsement_url": "https://dopl.utah.gov/dental/",
@@ -145,7 +155,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Utah",
-        "dek": "Utah Dental Assistant registration requires graduation from a CODA-accredited dental assisting program, a criminal background check, and completion of the application."
+        "dek": "In Utah, general dental assistants do not require a state license or registration from the Utah Division of Occupational and Professional Licensing (DOPL). Their duties are delegated by a licensed dentist according to the Utah Dentist and Dental Hygienist Practice Act Rule."
       }
     }
   },
@@ -171,5 +181,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": null,
+    "portal_url": null,
+    "registration_steps": null,
+    "provider_search": "https://dopl.utah.gov/licensing/lookup.html"
   }
 }

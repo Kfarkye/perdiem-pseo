@@ -21,17 +21,19 @@
   "board": {
     "name": "Speech-Language Pathology, Audiology and Hearing Aid Dispensing Practices Board",
     "parent_dept": "New Mexico Regulation and Licensing Department",
-    "mailing_address": "P.O. Box 25101, Santa Fe, NM 87504",
+    "mailing_address": "New Mexico Regulation & Licensing Department\nP.O. Box 25101\nSanta Fe, NM 87504",
     "physical_address": "2550 Cerrillos Road, Santa Fe, NM 87505",
-    "phone": "(505) 476-4622",
+    "phone": "(505) 476-4870",
     "fax": "(505) 476-4645",
-    "email": "mailto:slp.board@rld.nm.gov",
-    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/"
+    "email": "speech.hearing@rld.nm.gov",
+    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/",
+    "contact_url": "https://www.rld.nm.gov/boards-commissions/boards/speech-language-pathology-audiology-hearing-aid-dispensing-board/",
+    "verify_url": "https://public.rld.nm.gov/RLDPortals/OnlineSearch/OnlineSearchResult.aspx?SearchType=Professional"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Obtain a Doctor of Audiology (AuD) degree or its equivalent from an accredited educational institution."
+      "title": "Create Account and Start Application",
+      "description": "Navigate to the RLD Professional & Occupational Licensing Portal at https://rld.nm.gov/, create an account, log in, and select the Audiologist initial license application for the New Mexico Board of Examiners for Speech-Language Pathology, Audiology, and Hearing Aid Dispensing."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Successfully complete the Audiology Examination administered by the Praxis Examination Program."
+      "title": "Complete Online Application and Pay Fee",
+      "description": "Fill out the online application form within the RLD Professional & Occupational Licensing Portal and pay the $100 initial licensure fee."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application, official transcripts, Praxis exam scores, verification of supervised professional experience, and the required fee to the Speech-Language Pathology, Audiology and Hearing Aid Dispensing Practices Board."
+      "title": "Submit Required Documents",
+      "description": "Upload or arrange for official submission of all required supporting documents including official transcripts verifying your degree, official Praxis examination scores from ETS, verification of your ASHA Certificate of Clinical Competence (CCC-A), and verification of supervised clinical experience if applicable."
+    },
+    {
+      "title": "Complete New Mexico Jurisprudence Exam",
+      "description": "Access and complete the open-book New Mexico Jurisprudence Examination, which can be found on the board's 'Applications & Forms' page, and submit proof of completion as instructed."
+    },
+    {
+      "title": "Undergo Criminal Background Check",
+      "description": "Follow the specific instructions provided within the RLD Professional & Occupational Licensing Portal or on the board's website to complete a criminal background check (CBC) via fingerprinting."
     }
   ],
   "documents": [
@@ -128,7 +138,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/",
-    "endorsement_url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/",
+    "endorsement_url": "https://www.rld.nm.gov/boards-commissions/boards/speech-language-pathology-audiology-hearing-aid-dispensing-board/applications-forms/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "new-mexico-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in New Mexico",
-        "dek": "New Mexico Audiologist License requires an AuD degree or equivalent, passing the Praxis exam, and completion of a supervised professional experience."
+        "dek": "To apply for an Audiologist license in New Mexico, utilize the RLD Professional & Occupational Licensing Portal for initial application submission."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "RLD Professional & Occupational Licensing Portal",
+    "portal_url": "https://rld.nm.gov/",
+    "registration_steps": "1. Navigate to the RLD Professional & Occupational Licensing Portal at https://rld.nm.gov/. 2. Click on the 'Login / Create Account' link located in the top right corner. 3. Select 'Register for a new account' and follow the prompts to provide your personal details, create a username and password, and complete the registration process. 4. Once registered, log in to the portal to begin your audiologist license application.",
+    "provider_search": "https://public.rld.nm.gov/RLDPortals/OnlineSearch/OnlineSearchResult.aspx?SearchType=Professional"
   }
 }

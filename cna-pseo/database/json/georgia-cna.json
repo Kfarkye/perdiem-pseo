@@ -21,19 +21,21 @@
   "board": {
     "name": "Georgia Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Georgia Nurse Aide Registry, P.O. Box 105448, Atlanta, GA 30348-5448",
     "physical_address": "See board website",
-    "phone": "(478) 207-2440",
+    "phone": "678-527-3010",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://sos.ga.gov/"
+    "email": "NURSEAIDE@DCH.GA.GOV",
+    "url": "https://sos.ga.gov/",
+    "contact_url": "https://www.gmcf.org/Program-Services/Health-Care-Quality/Georgia-Nurse-Aide-Registry/Contact-Us.aspx",
+    "verify_url": "https://mmis.georgia.gov/portal/GNRPublicSearch/Portal.aspx"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "2 Weeks",
     "license_duration": "2 Years",
     "training_hours": "120 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Georgia-approved CNA training program, usually 120 hours long."
+      "title": "Complete an Approved Nurse Aide Training Program",
+      "description": "Successfully complete a Nurse Aide Training Program (NATP) approved by the Georgia Department of Community Health (DCH)."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Georgia nurse aide exam."
+      "title": "Register for the Competency Evaluation Examination",
+      "description": "Register for the Georgia Nurse Aide Competency Evaluation Examination through the approved testing vendor, Prometric. You can find information and register at www.prometric.com/nurseaide/ga."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Pass the Competency Evaluation Examination",
+      "description": "Successfully pass both the written/oral and skills portions of the examination administered by Prometric."
+    },
+    {
+      "title": "Automatic Listing on Registry",
+      "description": "Upon successful completion of both parts of the exam, Prometric will automatically submit your information for listing on the Georgia Nurse Aide Registry. You do not typically submit a separate application after passing the exam."
+    },
+    {
+      "title": "Verify Registry Listing",
+      "description": "Access the Georgia Nurse Aide Registry Portal to confirm your active status on the registry. Your name should appear within a few business days after passing the exam."
     }
   ],
   "documents": [
@@ -113,11 +123,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 30,
+    "processing_time": "2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://sos.ga.gov/",
-    "endorsement_url": "https://www.credentia.com/test-takers/ga",
+    "endorsement_url": "https://www.gmcf.org/Program-Services/Health-Care-Quality/Georgia-Nurse-Aide-Registry/Entry-via-Endorsement.aspx",
     "notes": "Georgia CNA reciprocity is managed through the Credentia CNA365 platform.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -166,7 +176,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Georgia",
-        "dek": "Georgia CNA certification requires a 120-hour training program, Georgia Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for initial entry or endorsement as a Certified Nursing Assistant in Georgia, you will typically go through the Georgia Nurse Aide Registry, which is managed by the Georgia Medical Care Foundation (GMCF) under contract with the Georgia Department of Community Health (DCH), with examinations administered by Prometric. Official listing verification and some applications occur via the Georgia Nurse Aide Registry Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Georgia",
@@ -212,5 +222,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Georgia Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Georgia Nurse Aide Registry Portal",
+    "portal_url": "https://mmis.georgia.gov/portal/gnr/Login.aspx",
+    "registration_steps": "To create a new account, click 'New User Registration' on the login page, then select 'Nurse Aide' as your account type. Follow the prompts to set up your login credentials.",
+    "provider_search": "https://mmis.georgia.gov/portal/GNRPublicSearch/Portal.aspx"
   }
 }

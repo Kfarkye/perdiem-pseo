@@ -19,19 +19,21 @@
     "keywords": "occupational therapist license reciprocity minnesota, how to transfer occupational therapist license to minnesota, occupational therapist compact minnesota, minnesota occupational therapist endorsement application"
   },
   "board": {
-    "name": "Minnesota Board of Medical Practice — OT",
+    "name": "Minnesota Board of Medical Practice \u2014 OT",
     "parent_dept": "Minnesota Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Minnesota Board of Occupational Therapy\nP.O. Box 64972\nSt. Paul, MN 55164-0972",
     "physical_address": "See board website",
-    "phone": "(612) 617-2130",
+    "phone": "(651) 201-2747",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://mn.gov/boards/medical-practice/"
+    "email": "occupational.therapy@state.mn.us",
+    "url": "https://mn.gov/boards/medical-practice/",
+    "contact_url": "https://mn.gov/boards/occupational-therapy/contact/",
+    "verify_url": "https://mn.gov/boards/occupational-therapy/licensees/verify.jsp"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$115",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create an Account and Apply Online",
+      "description": "Access the MN Online Licensing System, select 'Register a New Account,' and then complete and submit the initial application forms, paying the $150 application fee."
     },
     {
-      "title": "Pass the NBCOT Exam",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) exam."
+      "title": "Arrange for Transcript Submission",
+      "description": "Request your official transcripts, verifying graduation from an accredited occupational therapy program, to be sent directly from your educational institution to the Minnesota Board of Occupational Therapy."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application to the Minnesota Board of Occupational Therapy, including required documentation and fees."
+      "title": "Submit NBCOT Score Report",
+      "description": "Have your official NBCOT certification examination score report sent directly from NBCOT to the Minnesota Board of Occupational Therapy."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "After submitting your online application, follow the instructions on the Office of Justice Programs website (https://www.ojcc.state.mn.us/criminal-background-checks) to complete the required CBC process."
+    },
+    {
+      "title": "Pay Initial License Fee",
+      "description": "Upon approval of your application, log back into the MN Online Licensing System to pay the $100 initial license fee."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://mn.gov/boards/medical-practice/",
-    "endorsement_url": "https://mn.gov/boards/medical-practice/",
+    "endorsement_url": "https://mn.gov/boards/occupational-therapy/applicants/apply/#Endorsement",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Minnesota",
-        "dek": "Minnesota Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a background check."
+        "dek": "To apply for an Occupational Therapist license in Minnesota, you must register an account and complete the application through the MN Online Licensing System."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MN Online Licensing System",
+    "portal_url": "https://mn.gov/boards/otsystem/",
+    "registration_steps": "Navigate to the MN Online Licensing System and select 'Register a New Account' to create your login credentials.",
+    "provider_search": "https://mn.gov/boards/occupational-therapy/licensees/verify.jsp"
   }
 }

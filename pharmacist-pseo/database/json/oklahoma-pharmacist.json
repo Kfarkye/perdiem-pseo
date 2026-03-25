@@ -21,17 +21,19 @@
   "board": {
     "name": "Oklahoma Board of Pharmacy",
     "parent_dept": "Oklahoma State Board of Medical Licensure and Supervision",
-    "mailing_address": "See board website",
+    "mailing_address": "2920 N. Lincoln Blvd., Ste A, Oklahoma City, OK 73105",
     "physical_address": "See board website",
-    "phone": "(405) 521-3815",
+    "phone": "(405) 521-3784",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.pharmacy.ok.gov/"
+    "email": "pharmacy@ok.gov",
+    "url": "http://www.pharmacy.ok.gov/",
+    "contact_url": "https://ok.gov/pharmacy/Contact_Us/index.html",
+    "verify_url": "https://ok.gov/pharmacy/Online_Services/Licensee_Search/index.html"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$300",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program from a pharmacy school accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create NABP e-Profile and Access Licensure Gateway",
+      "description": "Establish an NABP e-Profile on the NABP website (nabp.pharmacy), then log in to the NABP Licensure Gateway to initiate your application for initial pharmacist licensure in Oklahoma."
     },
     {
-      "title": "Pass the NAPLEX and MPJE",
-      "description": "Successfully pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Exam (MPJE)."
+      "title": "Complete Oklahoma Application via Licensure Gateway",
+      "description": "Submit your comprehensive application through the NABP Licensure Gateway, selecting Oklahoma as your intended state of licensure. This involves providing personal details, educational history, and uploading any required documentation."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit an application for licensure to the Oklahoma Board of Pharmacy, including all required documentation and fees."
+      "title": "Undergo Criminal Background Check",
+      "description": "Schedule and complete fingerprinting services through IdentoGO for both state and national criminal background checks. Ensure the results are electronically transmitted directly to the Oklahoma Board of Pharmacy."
+    },
+    {
+      "title": "Pass NAPLEX and MPJE Examinations",
+      "description": "Register for, schedule, and successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE) via the NABP Licensure Gateway. Your scores will be sent directly to the Board."
+    },
+    {
+      "title": "Await Board Review and Licensure Issuance",
+      "description": "After all application requirements, examination scores, background check results, and applicable fees have been received and verified, the Oklahoma Board of Pharmacy will review your complete file and, upon approval, issue your pharmacist license."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 425,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.pharmacy.ok.gov/",
-    "endorsement_url": "http://www.pharmacy.ok.gov/",
+    "endorsement_url": "https://ok.gov/pharmacy/Licensing/Pharmacist_Initial_License.html",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "oklahoma-pharmacist",
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Oklahoma",
-        "dek": "Oklahoma Pharmacist licensure requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing an application."
+        "dek": "To apply for an initial pharmacist license in Oklahoma, applicants must use the **NABP Licensure Gateway** to complete their application and register for examinations."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NABP Licensure Gateway",
+    "portal_url": "https://nabp.pharmacy/programs/licensure-gateway/",
+    "registration_steps": "Create an NABP e-Profile at NABP.pharmacy, then log in to the NABP Licensure Gateway to begin your application.",
+    "provider_search": "https://ok.gov/pharmacy/Online_Services/Licensee_Search/index.html"
   }
 }

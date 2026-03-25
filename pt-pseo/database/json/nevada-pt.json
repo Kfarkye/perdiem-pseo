@@ -21,17 +21,19 @@
   "board": {
     "name": "Nevada Board of Physical Therapy Examiners",
     "parent_dept": "Department of Health and Human Services",
-    "mailing_address": "See board website",
+    "mailing_address": "3291 N. Buffalo Dr. Ste 100, Las Vegas, NV 89129",
     "physical_address": "See board website",
-    "phone": "(775) 687-7800",
+    "phone": "(702) 873-3585",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://ptboard.nv.gov/"
+    "email": "ptboard@pt.nv.gov",
+    "url": "https://ptboard.nv.gov/",
+    "contact_url": "https://pt.nv.gov/Contact_Us/",
+    "verify_url": "https://nvpt.pcshq.com/LicenseeSearch.asp"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Graduate from a CAPTE-accredited physical therapy program."
+      "title": "Create an Account and Complete Online Application",
+      "description": "Register as a first-time user on the Professional Credential Services (PCS) Nevada Online Application Portal and complete the comprehensive online application for PT licensure by endorsement."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Register and pass the NPTE through the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit Required Supporting Documents",
+      "description": "Arrange for official transcripts from your physical therapy program and official NPTE scores to be sent directly to PCS. Submit any other necessary professional verifications or documents as instructed within the PCS portal."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete and submit the application for licensure to the Nevada Board of Physical Therapy Examiners, including all required documentation and fees."
+      "title": "Complete Criminal Background Check",
+      "description": "Undergo a criminal background check as mandated by the state of Nevada. Follow the specific instructions provided within the PCS portal to complete this requirement."
+    },
+    {
+      "title": "Pass Nevada Jurisprudence Exam",
+      "description": "Successfully complete the online Nevada Jurisprudence Exam. Access to the exam and study materials will typically be provided through the PCS portal during your application process."
+    },
+    {
+      "title": "Board Review and Approval",
+      "description": "Allow the Nevada State Board of Physical Therapy Examiners 4 to 6 weeks to review your complete application and all submitted materials after all requirements have been met."
+    },
+    {
+      "title": "Receive License Notification",
+      "description": "Upon successful review and approval by the Board, you will be notified, and your Physical Therapist license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 250,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://ptboard.nv.gov/",
-    "endorsement_url": "https://ptboard.nv.gov/",
+    "endorsement_url": "https://pt.nv.gov/Licensure_Information/PT_Licensure/",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "nevada-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Nevada",
-        "dek": "Nevada Physical Therapist License requires graduation from an accredited program, passing the National Physical Therapy Examination, and a background check."
+        "dek": "To apply for a Physical Therapist license in Nevada, applicants must use the Professional Credential Services (PCS) Nevada Online Application Portal to submit their application and all required documentation."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Professional Credential Services (PCS) Nevada Online Application Portal",
+    "portal_url": "https://nvpt.pcshq.com/",
+    "registration_steps": "Navigate to the PCS Nevada Online Application Portal, click 'Apply Now', and then select 'First Time Users' to create a new account by providing your demographic information and setting up a unique username and password.",
+    "provider_search": "https://nvpt.pcshq.com/LicenseeSearch.asp"
   }
 }

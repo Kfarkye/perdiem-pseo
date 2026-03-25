@@ -21,17 +21,19 @@
   "board": {
     "name": "Florida Board of Occupational Therapy Practice",
     "parent_dept": "Florida Department of Health, Board of Medicine",
-    "mailing_address": "See board website",
+    "mailing_address": "Florida Department of Health\nBoard of Occupational Therapy\n4052 Bald Cypress Way, Bin C-05\nTallahassee, FL 32399-3255",
     "physical_address": "See board website",
-    "phone": "(850) 245-4474",
+    "phone": "(850) 488-0595",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://floridasoccupationaltherapy.gov/"
+    "url": "https://floridasoccupationaltherapy.gov/",
+    "contact_url": "https://www.floridashealth.gov/licensing-and-regulation/contact-us/index.html",
+    "verify_url": "https://mqa-internet.doh.state.fl.us/MQASearchServices/Home"
   },
   "quick_facts": {
     "total_fee": "$180",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$60",
+    "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Occupational Therapy Program",
-      "description": "Graduate from an occupational therapy program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Register and Apply Online",
+      "description": "Create an account and complete the initial application for Occupational Therapist licensure via the MQA Online Services portal at FLHealthSource.gov, and pay the non-refundable application fee."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts from your ACOTE-accredited occupational therapy program to be sent directly from the educational institution to the Florida Board of Occupational Therapy."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Apply for a Florida Occupational Therapy license through the Florida Board of Occupational Therapy Practice, including all required documentation and fees."
+      "title": "Submit NBCOT Scores",
+      "description": "Ensure your official passing scores for the National Board for Certification in Occupational Therapy (NBCOT) examination are sent directly from NBCOT to the Florida Board of Occupational Therapy."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Undergo a criminal background check by submitting electronic fingerprints through an approved Livescan vendor, which will be submitted to the Florida Department of Law Enforcement (FDLE) and the FBI."
+    },
+    {
+      "title": "Application Review and Approval",
+      "description": "Allow the Florida Board of Occupational Therapy to review your complete application package for compliance with all licensure requirements before a license is issued."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 180,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://floridasoccupationaltherapy.gov/",
-    "endorsement_url": "https://floridasoccupationaltherapy.gov/",
+    "endorsement_url": "https://floridashealth.gov/licensing-and-regulation/boards/ot/initial-licensure.html",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": false
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Florida",
-        "dek": "Florida Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and submitting a complete application."
+        "dek": "To apply for an Occupational Therapist license in Florida, you must use the Florida Department of Health's MQA Online Services portal."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MQA Online Services",
+    "portal_url": "https://www.flhealthsource.gov/mqa-services/",
+    "registration_steps": "1. Navigate to FLHealthSource.gov and click 'Apply for a License'.\n2. Click 'Register' to create a new user ID and password, or log in if you already have an account.\n3. Once logged in, select the option to start a new application for Occupational Therapist licensure.",
+    "provider_search": "https://mqa-internet.doh.state.fl.us/MQASearchServices/Home"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech Pathology and Audiology",
     "parent_dept": "Wyoming Mental Health Professions Licensing Board",
-    "mailing_address": "2001 Capitol Ave., Cheyenne, WY 82002",
+    "mailing_address": "Wyoming Board of Speech Pathology and Audiology, 2001 Capitol Ave, Suite 105, Cheyenne WY 82002",
     "physical_address": "2001 Capitol Ave., Cheyenne, WY 82002",
-    "phone": "(307) 777-3507",
+    "phone": "(307) 777-6529",
     "fax": "(307) 777-3508",
-    "email": "mailto:mentalhealth@wyo.gov",
-    "url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology"
+    "email": "slpa@wyo.gov",
+    "url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology",
+    "contact_url": "https://speech.wyo.gov/contact-us",
+    "verify_url": "https://proflic.wyo.gov/Search"
   },
   "quick_facts": {
     "total_fee": "$150",
     "fee_breakdown": "$100 application + $50 license fee",
-    "renewal_fee": "$100",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 weeks",
+    "processing_time": "4 to 8 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Supervised Experience",
-      "description": "Earn a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA) and complete a supervised professional experience."
+      "title": "Create a User Account",
+      "description": "Navigate to the Wyoming Professional Licensing System (proflic.wyo.gov) and select 'Register a New User' to establish your account with a unique username and password."
     },
     {
-      "title": "Pass the Praxis Examination",
-      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Start New Application",
+      "description": "Log in to your account on the Wyoming Professional Licensing System, select 'Apply for a New License' and choose the 'Speech-Language Pathologist' application type."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Submit a completed application, official transcripts, Praxis scores, supervised professional experience documentation, and the required fee to the Wyoming Board of Speech Pathology and Audiology."
+      "title": "Complete Application and Upload Documents",
+      "description": "Fill out all required sections of the online application thoroughly within the Wyoming Professional Licensing System and upload necessary supporting documentation, such as official transcripts showing a master's or doctoral degree in SLP and official Praxis scores."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Submit the non-refundable $100 application fee through the Wyoming Professional Licensing System using a credit card."
+    },
+    {
+      "title": "Request Third-Party Verifications",
+      "description": "Arrange for any necessary verification forms (e.g., Verification of Supervised Clinical Practicum, Verification of Previous Licensure) and official transcripts to be sent directly to the Wyoming Board of Speech Pathology and Audiology by the issuing institutions or boards."
+    },
+    {
+      "title": "Board Review and Initial Licensure Fee",
+      "description": "The Board will review your complete application during their scheduled meetings. Upon approval, you will be notified to pay the $200 initial licensure fee to finalize the licensing process."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 150,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 8 Weeks",
     "processing_tier": "fast",
     "board_url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology",
-    "endorsement_url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology",
+    "endorsement_url": "https://speech.wyo.gov/licensing-information/speech-pathologist-audiologist",
     "notes": "Wyoming is a member of the ASLP Interstate Compact."
   },
   "slug": "wyoming-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Wyoming",
-        "dek": "Wyoming Speech-Language Pathologist license requires a master's degree in speech-language pathology, passing the Praxis exam, and completing a supervised professional experience."
+        "dek": "To apply for an SLP license in Wyoming, applicants must register and complete their application through the Wyoming Professional Licensing System."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Wyoming Professional Licensing System",
+    "portal_url": "https://proflic.wyo.gov/",
+    "registration_steps": "Navigate to proflic.wyo.gov, click 'Register a New User' to create an account, then log in to start a new application, upload documents, and pay fees.",
+    "provider_search": "https://proflic.wyo.gov/Search"
   }
 }

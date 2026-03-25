@@ -15,23 +15,25 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Wyoming Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Wyoming — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Wyoming \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license wyoming, dental assistant certification wyoming, RDA wyoming, DANB CDA wyoming, dental assistant radiography wyoming"
   },
   "board": {
     "name": "Wyoming Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "2001 Capitol Avenue, Suite 107, Cheyenne, WY 82002",
     "physical_address": "See board website",
     "phone": "(307) 777-6529",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dental.wyo.gov/"
+    "email": "dental@wyo.gov",
+    "url": "https://dental.wyo.gov/",
+    "contact_url": "https://dental.wyo.gov/contact/",
+    "verify_url": "https://dental.wyo.gov/licensure/license-lookup/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 application/registration fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$25",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years"
@@ -44,16 +46,28 @@
   ],
   "steps": [
     {
-      "title": "Complete the Application",
-      "description": "Submit a completed application to the Wyoming Board of Dental Examiners."
+      "title": "Review Eligibility Requirements",
+      "description": "Confirm you meet the eligibility criteria for an Expanded Functions Dental Assistant (EFDA) registration. This includes possessing an active CPR certification, completing a board-approved EFDA training program (minimum 60 hours with a clinical component), and passing an EFDA written and clinical examination administered by the Western Regional Examining Board (WREB) or the Dental Assisting National Board (DANB)."
     },
     {
-      "title": "Pay the Required Fee",
-      "description": "Submit the required permit fee of $50 to the Wyoming Board of Dental Examiners."
+      "title": "Download Application Form",
+      "description": "Download and print the 'Expanded Functions Dental Assistant (EFDA) Application' form directly from the Wyoming Board of Dental Examiners EFDA Application page. Complete the form accurately and entirely."
     },
     {
-      "title": "Meet all Requirements",
-      "description": "Ensure you meet all requirements outlined in Chapter 7 of the Rules and Regulations of the Wyoming Board of Dental Examiners."
+      "title": "Gather Supporting Documents",
+      "description": "Collect all required supporting documents as specified in the application packet. These typically include a copy of your active CPR certification, an original or certified copy of your EFDA training program certificate, official proof of passing your EFDA examination (WREB or DANB), and a photocopy of your current photo identification."
+    },
+    {
+      "title": "Prepare Application Fee",
+      "description": "Prepare a payment of $25.00 for the application fee. Ensure the payment method complies with the instructions on the application form (e.g., check or money order made payable to the Wyoming Board of Dental Examiners)."
+    },
+    {
+      "title": "Mail Complete Application",
+      "description": "Assemble the completed application form, all supporting documents, and the application fee, and mail the entire package to the Wyoming Board of Dental Examiners at the address provided on the application form."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "After submission, allow time for the Board to process your application. You can use the Board's online License Lookup tool to verify your registration status once it has been issued."
     }
   ],
   "documents": [
@@ -122,11 +136,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
+    "endorsement_fee": 25,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dental.wyo.gov/",
-    "endorsement_url": "https://dental.wyo.gov/",
+    "endorsement_url": "https://dental.wyo.gov/licensure/dental-assistants/expanded-functions-efda/",
     "notes": "Dental assistants can apply for Dental Assistant through the Wyoming Board of Dental Examiners by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -145,7 +159,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Wyoming",
-        "dek": "Wyoming Dental Assistant permits require completion of the application, payment of fees, and meeting all requirements set forth by the board."
+        "dek": "In Wyoming, general dental assistants are not licensed. To register as an Expanded Functions Dental Assistant (EFDA), download the application form from the Wyoming Board of Dental Examiners EFDA Application page and submit it via mail."
       }
     }
   },
@@ -171,5 +185,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Wyoming Board of Dental Examiners EFDA Application",
+    "portal_url": "https://dental.wyo.gov/licensure/dental-assistants/expanded-functions-efda/",
+    "registration_steps": "Download the Expanded Functions Dental Assistant (EFDA) Application form and follow the instructions to complete and mail the application with supporting documents and fee.",
+    "provider_search": "https://dental.wyo.gov/licensure/license-lookup/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "North Carolina Respiratory Care Board",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "12000 Weston Parkway, Suite 100, Cary, NC 27513",
     "physical_address": "See board website",
     "phone": "(919) 878-5595",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.ncrcb.org/"
+    "email": "info@ncrcb.org",
+    "url": "https://www.ncrcb.org/",
+    "contact_url": "https://www.ncrcb.org/contact",
+    "verify_url": "https://www.ncrcb.org/search-licensee"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "renewal_cycle": "Annually",
+    "processing_time": "Varies based on completeness and third-party responses",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Care Program",
-      "description": "Graduate from a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or another board-approved program."
+      "title": "Create an Account on the NCRCB Online Application System",
+      "description": "Visit https://portal.ncrcb.org/ and click 'Register' to create a new user account. You will need to verify your email address before proceeding."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination to become a Certified Respiratory Therapist (CRT) or Registered Respiratory Therapist (RRT)."
+      "title": "Complete the Online Application",
+      "description": "Log into the NCRCB Online Application System, select 'Initial Licensure Application', and accurately fill out all required personal, educational, and professional information."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application and all required documentation to the North Carolina Respiratory Care Board (NCRCB) for licensure."
+      "title": "Submit Required Documentation",
+      "description": "Upload documents such as official transcripts (sent directly from your accredited program or uploaded if permitted), verification of NBRC credentials (RRT or CRT), and any other supporting documents as requested through the NCRCB Portal."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Pay the non-refundable initial application fee of $100 through the NCRCB Online Application System using a credit card."
+    },
+    {
+      "title": "Undergo Criminal Background Check",
+      "description": "Complete the required criminal background check procedures, including fingerprinting, as instructed by the North Carolina Respiratory Care Board."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through the NCRCB Online Application System and respond promptly to any requests for additional information from the North Carolina Respiratory Care Board to avoid delays."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 175,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "Varies based on completeness and third-party responses",
     "processing_tier": "fast",
     "board_url": "https://www.ncrcb.org/",
-    "endorsement_url": "https://www.ncrcb.org/",
+    "endorsement_url": "https://www.ncrcb.org/initial-licensure",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in North Carolina",
-        "dek": "North Carolina Respiratory Therapist licenses require graduation from an accredited respiratory care program, passing the NBRC examination, and completing a background check."
+        "dek": "To apply for a Respiratory Therapist license in North Carolina, new applicants must use the NCRCB Online Application System to submit their initial licensure application."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NCRCB Online Application System",
+    "portal_url": "https://portal.ncrcb.org/",
+    "registration_steps": "Visit https://portal.ncrcb.org/, click 'Register' to create a new user account. Provide your name, email, password, and security question, then verify your email address to complete registration and log in to start your application.",
+    "provider_search": "https://www.ncrcb.org/search-licensee"
   }
 }

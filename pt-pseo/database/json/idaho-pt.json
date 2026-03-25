@@ -19,19 +19,21 @@
     "keywords": "physical therapist license reciprocity idaho, how to transfer physical therapist license to idaho, physical therapist compact idaho, idaho physical therapist endorsement application"
   },
   "board": {
-    "name": "Idaho DOPL — Physical Therapy Licensure Board",
+    "name": "Idaho DOPL \u2014 Physical Therapy Licensure Board",
     "parent_dept": "Idaho Division of Occupational and Professional Licenses (DOPL)",
-    "mailing_address": "See board website",
+    "mailing_address": "Idaho Division of Occupational and Professional Licenses\nPO Box 83720\nBoise ID 83720-0063",
     "physical_address": "See board website",
     "phone": "(208) 334-3233",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dopl.idaho.gov/"
+    "email": "dopl@dopl.idaho.gov",
+    "url": "https://dopl.idaho.gov/",
+    "contact_url": "https://dopl.idaho.gov/contact-us/",
+    "verify_url": "https://www.accessdopl.idaho.gov/License/LicenseSearch"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$90",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create AccessDOPL Account and Submit Application",
+      "description": "Register for an account on AccessDOPL, complete the online application for a 'Physical Therapist Initial License,' and pay the required application fee of $150."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Apply for and pass the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Request Official Transcripts",
+      "description": "Have your official academic transcripts, verifying the completion of your accredited Physical Therapy program, sent directly from your educational institution to the Idaho Board of Physical Therapy."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete the application, pay the fees, and submit all required documentation to the Idaho Physical Therapy Licensure Board."
+      "title": "Submit NPTE Scores",
+      "description": "Arrange for your official National Physical Therapy Examination (NPTE) scores to be sent directly from the Federation of State Boards of Physical Therapy (FSBPT) to the Idaho Board of Physical Therapy."
+    },
+    {
+      "title": "Complete Idaho Jurisprudence Exam",
+      "description": "Pass the Idaho Physical Therapy Jurisprudence Examination online. This exam is typically accessed and completed after your initial application has been submitted through AccessDOPL."
+    },
+    {
+      "title": "Verify Out-of-State Licenses (Endorsement Only)",
+      "description": "If applying by endorsement, request verification of any active or inactive physical therapy licenses you hold or have held in other states. These verifications must be sent directly from the respective state boards to the Idaho Board of Physical Therapy."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dopl.idaho.gov/",
-    "endorsement_url": "https://dopl.idaho.gov/",
+    "endorsement_url": "https://dopl.idaho.gov/board-of-physical-therapy/licensing/",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "idaho-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Idaho",
-        "dek": "Idaho Physical Therapist license requires graduation from an accredited program, passing the NPTE, and a jurisprudence exam."
+        "dek": "To apply for a Physical Therapist license in Idaho, you must complete the application process through the state's online licensing system, AccessDOPL."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "AccessDOPL",
+    "portal_url": "https://www.accessdopl.idaho.gov/",
+    "registration_steps": "1. Navigate to AccessDOPL at www.accessdopl.idaho.gov. 2. Click on 'Register' to create a new user account. 3. Provide your personal details, email, and create a unique username and password. 4. Once your account is created and you are logged in, select 'Apply for a New License/Registration' and then choose 'Physical Therapist Initial License' to begin your application.",
+    "provider_search": "https://www.accessdopl.idaho.gov/License/LicenseSearch"
   }
 }

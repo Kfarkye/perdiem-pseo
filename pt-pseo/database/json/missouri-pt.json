@@ -19,14 +19,16 @@
     "keywords": "physical therapist license reciprocity missouri, how to transfer physical therapist license to missouri, physical therapist compact missouri, missouri physical therapist endorsement application"
   },
   "board": {
-    "name": "Missouri Board of Healing Arts — PT",
+    "name": "Missouri Board of Healing Arts \u2014 PT",
     "parent_dept": "Missouri Division of Professional Registration",
-    "mailing_address": "See board website",
+    "mailing_address": "3605 Missouri Boulevard, P.O. Box 4, Jefferson City, MO 65102",
     "physical_address": "See board website",
-    "phone": "(573) 751-0098",
+    "phone": "(573) 751-0096",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pr.mo.gov/healingarts.asp"
+    "email": "healingarts@pr.mo.gov",
+    "url": "https://pr.mo.gov/healingarts.asp",
+    "contact_url": "https://pr.mo.gov/healingarts-contact.asp",
+    "verify_url": "https://pr.mo.gov/licensee-search.asp"
   },
   "quick_facts": {
     "total_fee": "$100",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Register and Apply Online",
+      "description": "Create an account and complete the initial application for Physical Therapist licensure through the Missouri Division of Professional Registration Online Application System."
+    },
+    {
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, verifying your physical therapy education and degree, to be sent directly from your educational institution to the Missouri Board of Healing Arts."
+    },
+    {
+      "title": "Complete Fingerprinting and Background Check",
+      "description": "Follow the Board's instructions to schedule and complete fingerprinting for a criminal background check through the state-approved vendor."
+    },
+    {
+      "title": "Pass the Missouri Jurisprudence Examination",
+      "description": "Successfully complete the Missouri Physical Therapy Jurisprudence Examination, typically accessible online through the Board's system or a designated vendor."
     },
     {
       "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE for Physical Therapists."
-    },
-    {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit an application for licensure to the Missouri Board of Healing Arts and pay all required fees."
+      "description": "Register with the Federation of State Boards of Physical Therapy (FSBPT) and achieve a passing score on the National Physical Therapy Examination (NPTE)."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 80,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://pr.mo.gov/healingarts.asp",
-    "endorsement_url": "https://pr.mo.gov/healingarts.asp",
+    "endorsement_url": "https://pr.mo.gov/healingarts-apply.asp",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "missouri-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Missouri",
-        "dek": "Missouri Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination, and a criminal background check."
+        "dek": "To apply for a Physical Therapist license in Missouri, prospective applicants must use the Missouri Division of Professional Registration Online Application System to submit their application and required documentation."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Missouri Division of Professional Registration Online Application System",
+    "portal_url": "https://renew.pr.mo.gov/applications/healingarts/Login.asp?process=AppLogin",
+    "registration_steps": "1. Navigate to the Online Application System login page.\n2. Click the 'Register' button if you are a new applicant.\n3. Follow the prompts to create a user account, providing necessary personal details and creating a username and password.\n4. Log in with your new credentials to start a new application for physical therapist licensure.",
+    "provider_search": "https://pr.mo.gov/licensee-search.asp"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Maryland Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Maryland Board of Nursing, 4140 Patterson Avenue, Baltimore, Maryland 21215-2253",
     "physical_address": "See board website",
     "phone": "(410) 585-1900",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://mbon.maryland.gov/"
+    "email": "mbon.nap@maryland.gov",
+    "url": "https://mbon.maryland.gov/",
+    "contact_url": "https://mbon.maryland.gov/Pages/contactus.aspx",
+    "verify_url": "https://mbon.maryland.gov/Pages/license_lookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$20",
     "fee_breakdown": "$20 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$20",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "training_hours": "100 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Maryland-approved CNA training program, usually 100 hours long."
+      "title": "Complete Approved Training Program",
+      "description": "Successfully complete a Nursing Assistant training program approved by the Maryland Board of Nursing."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Maryland nurse aide exam."
+      "title": "Create Portal Account & Apply",
+      "description": "Register for an account on the Maryland Nurse Portal, then log in to complete and submit your initial Nursing Assistant certification application online."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Complete Background Check",
+      "description": "Undergo a fingerprint-based criminal history records check (CHRC) as directed by the Maryland Board of Nursing."
+    },
+    {
+      "title": "Pass NNAAP Exam",
+      "description": "Register for and pass the National Nurse Aide Assessment Program (NNAAP) examination, administered by Credentia in Maryland."
+    },
+    {
+      "title": "Await Certification",
+      "description": "Once all required documentation (including training verification, background check results, and NNAAP exam scores) is received and processed, the Maryland Board of Nursing will review your application and issue certification."
     }
   ],
   "documents": [
@@ -122,10 +132,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 20,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://mbon.maryland.gov/",
-    "endorsement_url": "https://mbon.maryland.gov/",
+    "endorsement_url": "https://mbon.maryland.gov/Pages/nursing-assistant-endorsement.aspx",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Maryland",
-        "dek": "Maryland CNA certification requires a 100-hour training program, Maryland Board of Nursing eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for Certified Nursing Assistant (CNA) certification in Maryland, you must complete an online application through the Maryland Nurse Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Maryland",
@@ -216,5 +226,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Maryland Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Maryland Nurse Portal",
+    "portal_url": "https://maryland.gov/nursing",
+    "registration_steps": "Navigate to the Maryland Nurse Portal, click 'Register an Account' or 'New User,' complete the registration form with your personal information, and then log in to select the Nursing Assistant application type.",
+    "provider_search": "https://mbon.maryland.gov/Pages/license_lookup.aspx"
   }
 }

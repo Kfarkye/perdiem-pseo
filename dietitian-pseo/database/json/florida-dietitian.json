@@ -21,19 +21,21 @@
   "board": {
     "name": "Dietetics and Nutrition Practice Council",
     "parent_dept": "Florida Department of Health, Board of Medicine",
-    "mailing_address": "P.O. Box 6330<br>Tallahassee, FL 32314-6330",
+    "mailing_address": "Florida Department of Health, Division of Medical Quality Assurance, 4052 Bald Cypress Way, Bin C-05, Tallahassee, FL 32399-3255",
     "physical_address": "4052 Bald Cypress Way, Bin C-05<br>Tallahassee, FL 32399-3255",
-    "phone": "(850) 245-4373",
+    "phone": "(850) 488-0595",
     "fax": "(850) 414-6860",
     "email": "mailto:mqa.dieteticsnutrition@flhealth.gov",
-    "url": "https://www.floridahealth.gov/licensing-regulations/regulated-professions/dietitian-nutritionist/"
+    "url": "https://www.floridahealth.gov/licensing-regulations/regulated-professions/dietitian-nutritionist/",
+    "contact_url": "https://flhealthsource.gov/contact-us/",
+    "verify_url": "https://mqa-internet.flhealth.gov/MyLicenseVerification/"
   },
   "quick_facts": {
     "total_fee": "$165",
     "fee_breakdown": "$80 application + $80 license + $5 unlicensed activity fee",
-    "renewal_fee": "$95",
-    "renewal_cycle": "Every 2 years + 30 CE hours",
-    "processing_time": "30 days (initial review)",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "Up to 2 Years (expires May 31 odd years)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Educational Requirements",
-      "description": "Earn a minimum of a bachelor’s degree from a regionally accredited college or university with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major."
+      "title": "Create an MQA Online Services Account",
+      "description": "Visit the MQA Online Services portal at https://www.flhealthsource.gov/mqa-online-services/ and register for an account if you don't already have one."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete a supervised practice program approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Submit Online Application and Fee",
+      "description": "Log in to your MQA Online Services account, select the Dietitian/Nutritionist application type (by examination or endorsement), complete all sections, and pay the non-refundable $100 application/initial licensure fee."
     },
     {
-      "title": "Pass the National Exam and Apply",
-      "description": "Pass the Commission on Dietetic Registration’s Registration Examination for Dietitians and submit an application with the Florida Department of Health."
+      "title": "Submit Academic Transcripts",
+      "description": "Arrange for official transcripts from your ACEND-accredited (or equivalent) college/university program to be sent directly to the Florida Department of Health."
+    },
+    {
+      "title": "Verify Supervised Practice",
+      "description": "Ensure that documentation verifying completion of your ACEND-accredited supervised practice program or equivalent experience is submitted to the Department."
+    },
+    {
+      "title": "Pass the CDR Examination",
+      "description": "For licensure by examination, pass the Commission on Dietetic Registration (CDR) examination. The results will be electronically transmitted to the Florida Department of Health."
+    },
+    {
+      "title": "Complete Human Trafficking Course",
+      "description": "Complete a board-approved 2-hour human trafficking course from a Florida-approved provider and submit proof of completion."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 165,
-    "processing_time": "30 days (initial review)",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.floridahealth.gov/licensing-regulations/regulated-professions/dietitian-nutritionist/",
-    "endorsement_url": "https://floridasdieteticsnutrition.gov/",
+    "endorsement_url": "https://flhealthsource.gov/dietetics-nutrition/apply-for-a-license/",
     "notes": "Florida allows Licensure by Endorsement for professionals who hold a current, active license in another state with equivalent or more stringent requirements.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Florida",
-        "dek": "Florida Dietitian Nutritionist licenses require completing an accredited educational program, passing the Registration Examination for Dietitians, and meeting supervised practice requirements."
+        "dek": "To apply for a Dietitian or Nutritionist license in Florida, applicants must submit their application and required documentation through the MQA Online Services portal."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MQA Online Services",
+    "portal_url": "https://www.flhealthsource.gov/mqa-online-services/",
+    "registration_steps": "Visit the MQA Online Services portal and click 'Register' to create a new account, then follow the prompts to complete your profile.",
+    "provider_search": "https://mqa-internet.flhealth.gov/MyLicenseVerification/"
   }
 }

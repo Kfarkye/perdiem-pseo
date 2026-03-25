@@ -21,19 +21,21 @@
   "board": {
     "name": "Florida Board of Respiratory Care",
     "parent_dept": "Florida Department of Health, Board of Medicine",
-    "mailing_address": "See board website",
+    "mailing_address": "Department of Health\nBoard of Respiratory Care\n4052 Bald Cypress Way, Bin C05\nTallahassee, FL 32399-3255",
     "physical_address": "See board website",
     "phone": "(850) 488-0595",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.floridasrespiratorycare.gov"
+    "email": "MQA_RespiratoryCare@flhealth.gov",
+    "url": "http://www.floridasrespiratorycare.gov",
+    "contact_url": "https://floridashealth.gov/licensing-and-regulation/respiratory-care/contact-us.html",
+    "verify_url": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders"
   },
   "quick_facts": {
     "total_fee": "$175",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 8 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) Examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Approved Respiratory Care Program",
-      "description": "Complete a respiratory care program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or its successor."
+      "title": "Create an Account and Apply Online",
+      "description": "Register and complete the online application for a Respiratory Therapist license via the MQA Online Services Portal. Pay the required application fee ($100) and initial licensure fee ($100)."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) Examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts to be sent directly from your accredited respiratory care program to the Florida Board of Respiratory Care."
     },
     {
-      "title": "Apply for a Florida Respiratory Therapist License",
-      "description": "Submit an application, required documentation, and fees to the Florida Board of Respiratory Care."
+      "title": "Submit NBRC Examination Scores",
+      "description": "Request the National Board for Respiratory Care (NBRC) to transmit official scores for both the Certified Respiratory Therapist (CRT) and Registered Respiratory Therapist (RRT) examinations directly to the Florida Board of Respiratory Care."
+    },
+    {
+      "title": "Complete Background Check",
+      "description": "Undergo a LiveScan fingerprinting service for a criminal background check. Instructions for selecting an approved vendor and submitting prints are available on the Board's website."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through your account on the MQA Online Services Portal and respond promptly to any requests for additional information from the Board."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 105,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.floridasrespiratorycare.gov",
-    "endorsement_url": "http://www.floridasrespiratorycare.gov",
+    "endorsement_url": "https://floridashealth.gov/licensing-and-regulation/respiratory-care/licensure-requirements.html",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Florida",
-        "dek": "Florida Respiratory Therapist licenses require graduation from an approved respiratory care program, passing the NBRC exam, and a background check."
+        "dek": "To apply for a Respiratory Therapist license in Florida, you must complete the online application through the Florida Department of Health's MQA Online Services Portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MQA Online Services Portal",
+    "portal_url": "https://mqa-internet.doh.state.fl.us/MQAServices/Default.aspx",
+    "registration_steps": "Navigate to the MQA Online Services Portal, click 'Register' for new users to create an account, and follow the prompts to complete registration. Once logged in, select 'Apply for a New License' and choose 'Respiratory Therapist' from the list of professions to begin your application.",
+    "provider_search": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders"
   }
 }

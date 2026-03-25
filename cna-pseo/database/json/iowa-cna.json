@@ -216,5 +216,14 @@
     "transfer_term": "endorsement",
     "registry_name": "Iowa Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "jurisprudence_fee_verified": true
   }
 }

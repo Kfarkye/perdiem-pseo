@@ -21,18 +21,20 @@
   "board": {
     "name": "Alabama Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "ABESPA",
-    "mailing_address": "P.O. Box 304760, Montgomery, AL 36130-4760",
+    "mailing_address": "201 S. Union Street, Suite 444, Montgomery, AL 36104",
     "physical_address": "100 N. Union St., Suite 724, Montgomery, AL 36130",
-    "phone": "(334) 269-1434",
+    "phone": "(334) 261-2917",
     "fax": "(334) 834-9618",
-    "email": "mailto:abespa@abespa.org",
-    "url": "https://www.abespa.alabama.gov/"
+    "email": "abespa@abespa.alabama.gov",
+    "url": "https://www.abespa.alabama.gov/",
+    "contact_url": "https://abespa.alabama.gov/contact-us/",
+    "verify_url": "https://al.aurajov.com/Search/SearchType/Licensee"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Annually",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination of the Praxis Series administered by the Educational Testing Service",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "You must have earned a doctoral degree in audiology from an accredited educational institution."
+      "title": "Obtain a Qualifying Degree",
+      "description": "Earn a Master's or Doctoral degree in Audiology from an accredited educational institution."
     },
     {
-      "title": "Pass the Examination",
-      "description": "You must achieve a passing score on the Audiology Examination of the Praxis Series administered by the Educational Testing Service."
+      "title": "Pass the National Examination",
+      "description": "Achieve a passing score on the Praxis II examination in Audiology (ETS Exam #5342)."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application form, official transcripts, Praxis scores, and the required fee to the Alabama Board of Examiners for Speech-Language Pathology and Audiology."
+      "title": "Create Account and Complete Application",
+      "description": "Access the ABESPA Online Services Portal, create a new user account, and begin the initial Audiologist license application."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Submit required documentation, such as official transcripts and national examination scores, either by uploading directly to the ABESPA Online Services Portal or arranging for official submission to ABESPA."
+    },
+    {
+      "title": "Pay Application and License Fees",
+      "description": "Pay the initial application fee ($75) and the license fee ($100) through the ABESPA Online Services Portal."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 175,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.abespa.alabama.gov/",
-    "endorsement_url": "https://www.abespa.alabama.gov/",
+    "endorsement_url": "https://abespa.alabama.gov/licensure-requirements/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "alabama-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Alabama",
-        "dek": "Alabama Audiologist License requires a doctoral degree in audiology, passing the Audiology Praxis exam, and completion of a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Alabama, applicants must use the ABESPA Online Services Portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ABESPA Online Services Portal",
+    "portal_url": "https://al.aurajov.com/",
+    "registration_steps": "Applicants must create an online account using a valid email address on the ABESPA Online Services Portal and then proceed to complete the initial application.",
+    "provider_search": "https://al.aurajov.com/Search/SearchType/Licensee"
   }
 }

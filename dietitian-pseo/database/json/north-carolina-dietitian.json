@@ -21,49 +21,63 @@
   "board": {
     "name": "North Carolina Board of Dietetics/Nutrition (NCBDN)",
     "parent_dept": "Independent State Board",
-    "mailing_address": "1135 Kildaire Farm Rd, Suite 200<br>Cary, NC 27511",
+    "mailing_address": "PO Box 96000, Raleigh, NC 27636",
     "physical_address": "1135 Kildaire Farm Rd, Suite 200<br>Cary, NC 27511",
-    "phone": "(919) 388-1931",
+    "phone": "(919) 833-0004",
     "fax": "",
-    "email": "mailto:info@ncbdn.org",
-    "url": "https://www.ncbdn.org/"
+    "email": "info@ncbdn.org",
+    "url": "https://www.ncbdn.org/",
+    "contact_url": "https://www.ncbdn.org/contact",
+    "verify_url": "https://www.ncbdn.org/verify-a-license"
   },
   "quick_facts": {
     "total_fee": "$248",
     "fee_breakdown": "$60 application + $150 issuance + $38 background check",
-    "renewal_fee": "$95",
-    "renewal_cycle": "Annual (by March 31) + 30 CE hours per 2 years",
-    "processing_time": "2 to 3 Business Days",
+    "renewal_fee": "$80",
+    "renewal_cycle": "Annually",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "1 Year (expires March 31)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours per 2 years"
   },
   "license_types": [
     {
-      "title": "Licensed Dietitian/Nutritionist (LDN) — Category A",
+      "title": "Licensed Dietitian/Nutritionist (LDN) \u2014 Category A",
       "description": "Full licensure for individuals currently registered with the Commission on Dietetic Registration (CDR) as an RDN. The primary credential for practicing dietetics in North Carolina."
     },
     {
-      "title": "Provisional Licensed Dietitian/Nutritionist (PLDN) — Category B",
+      "title": "Provisional Licensed Dietitian/Nutritionist (PLDN) \u2014 Category B",
       "description": "A 12-month provisional license for individuals who have completed an ACEND-accredited program and supervised practice and are preparing to take the CDR exam. Initial fee is $133. Cannot be renewed."
     },
     {
-      "title": "Licensed Nutritionist (LN) — Category F",
+      "title": "Licensed Nutritionist (LN) \u2014 Category F",
       "description": "For individuals holding a Certified Nutrition Specialist (CNS) or Diplomate of the American Clinical Board of Nutrition (DACBN) credential."
     }
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Complete a minimum of a bachelor's degree and meet the Accreditation Council for Education in Nutrition and Dietetics (ACEND) requirements."
+      "title": "Create an Account and Apply Online",
+      "description": "Create a new user account on the NCBDN Licensure Portal (https://ncbdn.elicensure.net/) and complete the online application for initial licensure."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete an ACEND-accredited supervised practice dietetic internship or Individual Supervised Practice Pathway (ISPP)."
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $130 through the NCBDN Licensure Portal as part of your online application."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Pass the Commission on Dietetic Registration's (CDR) Registration Examination for Dietitians."
+      "title": "Submit Education Verification",
+      "description": "Arrange for official transcripts from your degree-granting institution to be sent directly to the North Carolina Board of Dietetics/Nutrition."
+    },
+    {
+      "title": "Provide Supervised Practice & CDR Registration Proof",
+      "description": "Ensure verification of your supervised practice (e.g., CDR Verification Statement) and proof of current CDR registration (passing the RDN exam) are submitted to the board."
+    },
+    {
+      "title": "Complete Background Check & Declaration",
+      "description": "Complete a criminal background check through the approved vendor (IdentoGO) and submit a Declaration of Primary Residence, both as instructed by the NCBDN."
+    },
+    {
+      "title": "Application Review",
+      "description": "The board will review your completed application once all required materials are received. Processing typically takes 2 to 4 weeks, but may vary."
     }
   ],
   "documents": [
@@ -144,11 +158,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 248,
-    "processing_time": "2 to 3 Business Days",
+    "endorsement_fee": 130,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.ncbdn.org/",
-    "endorsement_url": "https://www.ncbdn.org/",
+    "endorsement_url": "https://www.ncbdn.org/licensure-by-endorsement",
     "notes": "North Carolina offers licensure by reciprocity under Category D for applicants currently licensed in another state whose qualifications do not fit into other categories (non-RD, non-CNS). Category D does not have an online application; applicants must contact the NCBDN directly. All RD/RDNs applying from out of state should apply under Category A, the standard pathway. The Board may grant a license if the other state's requirements are substantially the same as North Carolina's.",
     "requires_psv": true
   },
@@ -164,7 +178,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in North Carolina",
-        "dek": "North Carolina Dietitian licensure requires completing an accredited education program, passing the Registration Examination for Dietitians, and completing supervised practice experience."
+        "dek": "To apply for a Dietitian/Nutritionist license in North Carolina, submit your application and all supporting documentation through the NCBDN Licensure Portal."
       }
     }
   },
@@ -190,5 +204,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NCBDN Licensure Portal",
+    "portal_url": "https://ncbdn.elicensure.net/",
+    "registration_steps": "Visit the NCBDN Licensure Portal, click 'Register' to create a new user account, then log in and select 'Apply for a New License' to start your application.",
+    "provider_search": "https://www.ncbdn.org/verify-a-license"
   }
 }

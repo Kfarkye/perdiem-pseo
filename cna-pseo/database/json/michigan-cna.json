@@ -21,19 +21,21 @@
   "board": {
     "name": "Michigan LARA",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Bureau of Professional Licensing\nP.O. Box 30670\nLansing, MI 48909",
     "physical_address": "See board website",
-    "phone": "(517) 373-8068",
+    "phone": "517-335-9300",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.michigan.gov/lara/"
+    "url": "https://www.michigan.gov/lara/",
+    "contact_url": "https://www.michigan.gov/lara/bureau-list/bpl/contact-bpl",
+    "verify_url": "https://w2.lara.state.mi.us/NurseAideRegistry/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$20",
     "fee_breakdown": "$20 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "training_hours": "100 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,20 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Michigan-approved CNA training program, usually 100 hours long."
+      "title": "Complete Approved Training Program",
+      "description": "Enroll in and successfully complete a Nurse Aide Training Program approved by the Michigan Department of Licensing and Regulatory Affairs (LARA). You must receive at least 75 hours of training, including 16 hours of supervised practical training."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Michigan nurse aide exam."
+      "title": "Register for and Pass the Competency Exam",
+      "description": "Once training is complete, register for and successfully pass both parts (written/oral and skills) of the Michigan Nurse Aide Competency Evaluation Examination administered by Prometric. Visit Prometric.com/nurseaide/mi for exam registration and information."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Placement on the Nurse Aide Registry",
+      "description": "Upon successful completion of the Prometric examination, Prometric will report your results to LARA. Your name will then be added to the Michigan Nurse Aide Registry, certifying you as a CNA in Michigan. No separate application is generally required for initial certification by examination."
+    },
+    {
+      "title": "Apply for Endorsement (Out-of-State CNAs)",
+      "description": "If you are a CNA certified in another state, download and complete the 'Nurse Aide Registry Application' (LARA-NURS-APP-001) from the Michigan Department of Licensing and Regulatory Affairs (LARA) Nurse Aide Registry page. Submit the completed application with all required documentation, including proof of current certification in good standing from your previous state, to LARA via mail."
     }
   ],
   "documents": [
@@ -122,10 +128,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 20,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.michigan.gov/lara/",
-    "endorsement_url": "https://www.michigan.gov/lara/",
+    "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl/health-prof/nurs/nurse-aide-registry",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +176,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Michigan",
-        "dek": "Michigan CNA certification requires a 100-hour training program, Michigan LARA eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nursing Assistant (CNA) in Michigan, you must first complete an approved training program and pass the Michigan Nurse Aide Competency Evaluation Examination administered by Prometric. Out-of-state CNAs applying by endorsement must submit a paper application directly to the Michigan Department of Licensing and Regulatory Affairs (LARA)."
       },
       "seo": {
         "title": "How to Become a CNA in Michigan",
@@ -212,5 +218,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Michigan Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Michigan Department of Licensing and Regulatory Affairs (LARA) Nurse Aide Registry Page",
+    "portal_url": "https://www.michigan.gov/lara/bureau-list/bpl/health-prof/nurs/nurse-aide-registry",
+    "registration_steps": "For initial certification by examination, there is no direct online application portal with LARA; the process involves completing approved training and passing the Prometric exam. For endorsement (out-of-state CNAs), a paper application form must be downloaded, completed, and mailed to LARA.",
+    "provider_search": "https://w2.lara.state.mi.us/NurseAideRegistry/Search.aspx"
   }
 }

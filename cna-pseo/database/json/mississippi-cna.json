@@ -21,19 +21,21 @@
   "board": {
     "name": "Mississippi State Dept of Health",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Mississippi State Department of Health\nDivision of Health Facilities Licensure and Certification\nP.O. Box 1700\nJackson, MS 39215-1700",
     "physical_address": "See board website",
-    "phone": "(601) 576-7400",
+    "phone": "601-364-1100",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://credentia.com/test-takers/ms"
+    "url": "https://credentia.com/test-takers/ms",
+    "contact_url": "https://msdh.ms.gov/msdhsite/_static/30,0,82,c,NR.asp",
+    "verify_url": "https://msdh.ms.gov/msdhsite/_static/30,0,82.html"
   },
   "quick_facts": {
     "total_fee": "$26",
     "fee_breakdown": "$26 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "training_hours": "130 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Mississippi-approved CNA training program, usually 130 hours long."
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you meet Mississippi's eligibility criteria for CNA certification, including age, education, and criminal background requirements, as detailed in the Mississippi Nurse Aide Candidate Handbook."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Mississippi nurse aide exam."
+      "title": "Complete Approved Training Program",
+      "description": "Successfully complete a state-approved Nurse Aide Training and Competency Evaluation Program (NATCEP) in Mississippi. A list of approved programs may be available through the Mississippi State Department of Health."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Review Candidate Handbook",
+      "description": "Download and thoroughly read the Mississippi Nurse Aide Candidate Handbook from the Prometric Mississippi Nurse Aide Portal for comprehensive instructions on the application, examination, and certification process."
+    },
+    {
+      "title": "Apply for Examination",
+      "description": "Follow the instructions in the Candidate Handbook to submit your application for the Nurse Aide Competency Evaluation Examination through the Prometric Mississippi Nurse Aide Portal. This typically involves completing required forms and providing documentation of your training."
+    },
+    {
+      "title": "Schedule and Pass Exam",
+      "description": "Once your application is approved, schedule and pass both the written/oral and the skills portion of the Nurse Aide Competency Evaluation Exam administered by Prometric."
+    },
+    {
+      "title": "Get Listed on Registry",
+      "description": "Upon successful completion of both parts of the exam, Prometric will notify the Mississippi Nurse Aide Registry, and your name will be added to the registry, granting you CNA certification in Mississippi."
     }
   ],
   "documents": [
@@ -122,10 +136,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 26,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
     "board_url": "https://credentia.com/test-takers/ms",
-    "endorsement_url": "https://credentia.com/test-takers/ms",
+    "endorsement_url": "https://msdh.ms.gov/msdhsite/_static/30,0,82,c,NR.asp",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Mississippi",
-        "dek": "Mississippi CNA certification requires a 130-hour training program, Mississippi State Dept of Health eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nursing Assistant in Mississippi, candidates must apply for testing and certification through the Prometric Mississippi Nurse Aide Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Mississippi",
@@ -216,5 +230,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Mississippi Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Prometric Mississippi Nurse Aide Portal",
+    "portal_url": "https://www.prometric.com/nurseaide/ms",
+    "registration_steps": "Go to the Prometric Mississippi Nurse Aide Portal, download and review the Mississippi Nurse Aide Candidate Handbook. Follow the instructions within the handbook to create a Prometric online account (if needed) and submit your application for examination.",
+    "provider_search": "https://msdh.ms.gov/msdhsite/_static/30,0,82.html"
   }
 }

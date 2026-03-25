@@ -21,19 +21,21 @@
   "board": {
     "name": "Connecticut Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Connecticut Department of Public Health (DPH)",
-    "mailing_address": "410 Capitol Ave., MS #12APP, Hartford, CT 06134",
+    "mailing_address": "Connecticut Department of Public Health\nPractitioner Licensing and Investigations Section\n410 Capitol Ave., MS #12PL\nP.O. Box 340308\nHartford, CT 06134-0308",
     "physical_address": "410 Capitol Ave., Hartford, CT 06134",
     "phone": "(860) 509-7603",
     "fax": "(860) 509-7553",
-    "email": "mailto:dph.practitionerLicensing@ct.gov",
-    "url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/SLP/Speech-and-Language-Pathologist-Licensure"
+    "email": "dph.elicensingservices@ct.gov",
+    "url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/SLP/Speech-and-Language-Pathologist-Licensure",
+    "contact_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/audiologist/audiologist-licensure",
+    "verify_url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination administered by Praxis",
     "ce_requirement": "20 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Au.D. Degree",
-      "description": "Obtain a doctoral degree in audiology from an accredited educational institution."
+      "title": "Create an eLicense Account",
+      "description": "Navigate to the eLicense system at www.elicense.ct.gov and click 'Register a Person' to create a new user account if you do not have one already. You will need to provide personal information and set up login credentials."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Successfully complete the Audiology Examination administered by Praxis."
+      "title": "Start a New Application",
+      "description": "Log in to your newly created or existing eLicense account. From your dashboard, select the option to start a 'New Application' and choose 'Audiologist' as the profession for which you are applying."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure and all required documentation to the Connecticut Board of Speech-Language Pathology and Audiology."
+      "title": "Complete Application and Upload Documents",
+      "description": "Fill out all required sections of the online application within the eLicense system. Upload all necessary supporting documents, which typically include official transcripts showing a master's or doctoral degree, verification of supervised professional experience, and proof of passing the national examination in audiology (Praxis)."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee of $200 through the eLicense system. Payment can typically be made using a credit or debit card."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly log in to your eLicense account to check the status of your application. Be prepared to promptly respond to any requests for additional information or clarification from the Connecticut Department of Public Health."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 200,
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/SLP/Speech-and-Language-Pathologist-Licensure",
-    "endorsement_url": "https://portal.ct.gov/DPH/Practitioner-Licensing--Investigations/SLP/Speech-and-Language-Pathologist-Licensure",
+    "endorsement_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/audiologist/audiologist-licensure",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "connecticut-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Connecticut",
-        "dek": "Connecticut Audiologist licenses require a doctoral degree in audiology, passing the Audiology Examination administered by Praxis, and completing a supervised professional experience."
+        "dek": "Audiologists seeking initial licensure or licensure by endorsement in Connecticut must apply online through the state's eLicense system."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense",
+    "portal_url": "https://www.elicense.ct.gov/",
+    "registration_steps": "Navigate to https://www.elicense.ct.gov/, then click 'Register a Person' to create a new account. Follow the prompts to enter your personal information and create login credentials.",
+    "provider_search": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx"
   }
 }

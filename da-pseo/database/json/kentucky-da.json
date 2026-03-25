@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Kentucky Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant requirements in Kentucky — fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant requirements in Kentucky \u2014 fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license kentucky, dental assistant certification kentucky, RDA kentucky, DANB CDA kentucky, dental assistant radiography kentucky"
   },
   "board": {
     "name": "Kentucky Board of Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Kentucky Board of Dentistry, 11400 Decimal Drive, Suite 100, Louisville, KY 40223",
     "physical_address": "See board website",
-    "phone": "(502) 429-7280",
+    "phone": "(502) 429-7270",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dentistry.ky.gov/"
+    "email": "dentistry@ky.gov",
+    "url": "https://dentistry.ky.gov/",
+    "contact_url": "https://dentistry.ky.gov/contact-us",
+    "verify_url": "https://dentistry.ky.gov/Pages/Licensee-Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "N/A",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 2 years (by March 1st of even-numbered years)",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "N/A",
     "exam_name": "Kentucky Jurisprudence Examination"
   },
@@ -45,16 +47,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education/Experience Requirements",
-      "description": "You must have graduated from a CODA-accredited dental assisting program or have equivalent education, training and experience."
+      "title": "Create an Account on the eServices Portal",
+      "description": "Access the Kentucky Board of Dentistry's eServices Portal at kydental.mylicense.com/eGov/ and create a new user account, setting up your login credentials."
     },
     {
-      "title": "Pass the Kentucky Jurisprudence Examination",
-      "description": "Complete and pass the Kentucky Jurisprudence Examination."
+      "title": "Complete the Online Application",
+      "description": "Log into the eServices Portal and complete the application for Dental Assistant Registration, providing all required personal, educational, and employment information."
     },
     {
-      "title": "Submit Application",
-      "description": "Submit a complete application for registration to the Kentucky Board of Dentistry."
+      "title": "Submit Required Supporting Documents",
+      "description": "Upload or arrange for submission of official high school or GED transcripts, official transcripts from a Board-approved dental assisting program (or DANB CDA/COA certification, or verification of two years of employment as a dental assistant), a recent photograph, and current CPR certification for Healthcare Providers."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the specific instructions provided within the eServices Portal application for completing the mandatory criminal background check."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee of $50.00 through the eServices Portal to finalize your application submission."
     }
   ],
   "documents": [
@@ -123,11 +133,11 @@
     "fingerprint_required": false,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 50,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dentistry.ky.gov/",
-    "endorsement_url": "https://dentistry.ky.gov/",
+    "endorsement_url": "https://dentistry.ky.gov/Pages/Applications.aspx",
     "notes": "Kentucky does not license dental assistants. Employing dentists register DAs during their own renewal.",
     "requires_psv": false,
     "board_fee_verified": true,
@@ -146,7 +156,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Kentucky",
-        "dek": "Kentucky Dental Assistant registration requires graduation from a CODA-accredited dental assisting program (or equivalent experience), successful completion of the Kentucky Jurisprudence Examination, and completion of the application process."
+        "dek": "To apply for Dental Assistant registration in Kentucky, applicants must submit their application through the Kentucky Board of Dentistry's eServices Portal."
       }
     }
   },
@@ -172,5 +182,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eServices Portal",
+    "portal_url": "https://kydental.mylicense.com/eGov/",
+    "registration_steps": "Navigate to the Kentucky Board of Dentistry's eServices Portal and click 'New Users' or 'Register'. Follow the prompts to create an account with your email, username, and password, then verify your email to gain access to the application system.",
+    "provider_search": "https://dentistry.ky.gov/Pages/Licensee-Search.aspx"
   }
 }

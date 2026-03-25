@@ -21,22 +21,22 @@
   "board": {
     "name": "North Carolina Board of Nursing",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "North Carolina Nurse Aide Registry\n2710 Mail Service Center\nRaleigh, NC 27699-2710",
     "physical_address": "See board website",
-    "phone": "(919) 782-3211",
+    "phone": "(919) 855-3969",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
+    "email": "NCNR@dhhs.nc.gov",
     "url": "https://www.ncbon.com/",
-    "verify_url": "https://ncnar.ncdhhs.gov/verify_listings1.jsp",
-    "contact_url": "https://www.ncbon.com/contact-contact-information",
+    "verify_url": "https://nurseaide.nc.gov/registry-search/",
+    "contact_url": "https://www.ncdhhs.gov/divisions/dhhs-division-health-service-regulation-dhhs/north-carolina-nurse-aide-registry#contact-us",
     "website": "https://ncnar.ncdhhs.gov/index1.jsp"
   },
   "quick_facts": {
     "total_fee": "$24",
     "fee_breakdown": "$24 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$0",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "6 to 8 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "license_duration": "2 Years",
     "training_hours": "100 hours",
     "exam_name": "NNAAP (Pearson VUE)",
@@ -50,16 +50,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an North Carolina-approved CNA training program, usually 100 hours long."
+      "title": "Complete an Approved Training Program (Initial Applicants)",
+      "description": "Successfully complete a state-approved Nurse Aide I training program in North Carolina. (Out-of-state applicants applying by endorsement must have completed an approved program in another state)."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the North Carolina nurse aide exam."
+      "title": "Register for the NNAAP Exam (Initial Applicants)",
+      "description": "For initial listing, register and schedule your Nurse Aide I competency exam through the Pearson VUE website (home.pearsonvue.com/nc/nurse_aide)."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for listing, complete any required background check steps, and pay the required fees."
+      "title": "Apply for Endorsement (Out-of-State Applicants)",
+      "description": "If you are an out-of-state Nurse Aide applying by endorsement, create an account on the North Carolina Nurse Aide I Online Registry Services portal (nurseaide.nc.gov) and complete the online endorsement application."
+    },
+    {
+      "title": "Pass the NNAAP Exam (Initial Applicants)",
+      "description": "Successfully pass both parts of the NNAAP examination. Upon passing, your name will be automatically listed on the NC Nurse Aide Registry within 2-5 business days."
+    },
+    {
+      "title": "Registry Verification and Listing",
+      "description": "For endorsement applicants, the NC Nurse Aide Registry will verify your out-of-state listing and, upon approval, add you to the North Carolina Nurse Aide Registry. All applicants can verify their listing status on the North Carolina Nurse Aide I Online Registry Services portal (nurseaide.nc.gov)."
     }
   ],
   "documents": [
@@ -125,10 +133,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 24,
-    "processing_time": "6 to 8 Weeks",
+    "processing_time": "1 to 2 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.ncbon.com/",
-    "endorsement_url": "https://www.ncbon.com/",
+    "endorsement_url": "https://www.ncdhhs.gov/divisions/dhhs-division-health-service-regulation-dhhs/north-carolina-nurse-aide-registry#listing-by-endorsement-out-of-state-na-i",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -167,7 +175,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in North Carolina",
-        "dek": "North Carolina CNA listing requires a 100-hour training program, North Carolina Board of Nursing eligibility, and a passing score on the NNAAP (Pearson VUE) exam."
+        "dek": "To apply for Nurse Aide I listing by endorsement in North Carolina, use the North Carolina Nurse Aide I Online Registry Services portal. Initial applicants by exam are automatically listed after passing the NNAAP exam through Pearson VUE."
       },
       "seo": {
         "title": "How to Become a CNA in North Carolina",
@@ -236,5 +244,20 @@
     "transfer_term": "reciprocity",
     "registry_name": "NC Nurse Aide I Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "North Carolina Nurse Aide I Online Registry Services",
+    "portal_url": "https://nurseaide.nc.gov/",
+    "registration_steps": "Navigate to nurseaide.nc.gov and click 'Create Account'. Provide your Social Security Number, Name, and Date of Birth, then set up your username and password.",
+    "provider_search": "https://nurseaide.nc.gov/registry-search/"
   }
 }

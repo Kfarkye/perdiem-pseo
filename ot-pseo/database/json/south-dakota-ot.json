@@ -19,20 +19,22 @@
     "keywords": "occupational therapist license reciprocity south dakota, how to transfer occupational therapist license to south dakota, occupational therapist compact south dakota, south dakota occupational therapist endorsement application"
   },
   "board": {
-    "name": "South Dakota Board of Medical and Osteopathic Examiners — OT",
+    "name": "South Dakota Board of Medical and Osteopathic Examiners \u2014 OT",
     "parent_dept": "Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "101 N Main Ave, Suite 301, Sioux Falls, SD 57104",
     "physical_address": "See board website",
-    "phone": "(605) 367-7781",
+    "phone": "605-367-7781",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://doh.sd.gov/licensing-and-records/boards/medical/"
+    "email": "BMOE@state.sd.us",
+    "url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
+    "contact_url": "https://drs.sd.gov/boards/medical/contact.aspx",
+    "verify_url": "https://sdbmoe.mylicense.com/Verification/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$60",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$100.00",
+    "renewal_cycle": "Every 2 years (by July 1st of even-numbered years)",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) exam",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Occupational Therapy Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Account & Start Application",
+      "description": "Register for a new user account on the MyLicense Online Portal at https://sdbmoe.mylicense.com/ and select the 'Occupational Therapist Application (Initial and Endorsement)'."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Complete Online Application & Upload Documents",
+      "description": "Fill out all required sections of the online application form on the MyLicense Online Portal and upload necessary documents, including the Declaration of Primary State of Residence Form."
     },
     {
-      "title": "Apply for a South Dakota Occupational Therapy License",
-      "description": "Submit a completed application, official transcripts, NBCOT scores, and required fee to the South Dakota Board of Medical and Osteopathic Examiners."
+      "title": "Arrange for Supporting Documentation Submission",
+      "description": "Request official transcripts from your educational institution and your NBCOT score report to be sent directly to the South Dakota Board of Medical and Osteopathic Examiners. If endorsing, arrange for Verification of Licensure from other states to be sent directly from the issuing boards."
+    },
+    {
+      "title": "Complete Fingerprint Background Check",
+      "description": "Follow the instructions provided by the Board to complete the required fingerprint background check. This involves obtaining the necessary forms from the Board's website and submitting your fingerprints."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee of $100.00 through the MyLicense Online Portal at the time of submission."
+    },
+    {
+      "title": "Submit Application and Await Review",
+      "description": "Submit your completed application through the MyLicense Online Portal. The Board will review your application once all required materials, including direct submissions, are received. The Board meets monthly for review."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
-    "endorsement_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
+    "endorsement_url": "https://drs.sd.gov/boards/medical/ot.aspx",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in South Dakota",
-        "dek": "South Dakota Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a completed application."
+        "dek": "To apply for an Occupational Therapist license in South Dakota, applicants must utilize the South Dakota Board of Medical and Osteopathic Examiners' MyLicense Online Portal to complete and submit their application."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense Online Portal",
+    "portal_url": "https://sdbmoe.mylicense.com/",
+    "registration_steps": "Navigate to the MyLicense Online Portal. Click 'Register a New User' to create an account with a valid email address and password. Once registered, log in to start a new application for Occupational Therapist licensure.",
+    "provider_search": "https://sdbmoe.mylicense.com/Verification/"
   }
 }

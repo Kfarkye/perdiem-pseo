@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Indiana Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant requirements in Indiana — fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant requirements in Indiana \u2014 fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license indiana, dental assistant certification indiana, RDA indiana, DANB CDA indiana, dental assistant radiography indiana"
   },
   "board": {
     "name": "Indiana Board of Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Indiana Professional Licensing Agency, Attn: State Board of Dentistry, 402 West Washington Street, Room W072, Indianapolis, IN 46204",
     "physical_address": "See board website",
     "phone": "(317) 234-2054",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.in.gov/pla/professions/indiana-board-of-dentistry/"
+    "email": "pla2@pla.in.gov",
+    "url": "https://www.in.gov/pla/professions/indiana-board-of-dentistry/",
+    "contact_url": "https://www.in.gov/pla/professions/state-board-of-dentistry/",
+    "verify_url": "https://www.in.gov/pla/license-information-for-public/"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "N/A",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$10",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "N/A",
     "exam_name": "DANB CDA",
     "ce_requirement": "12 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Pass the DANB CDA Exam",
-      "description": "Successfully complete the Dental Assisting National Board Certified Dental Assistant (DANB CDA) examination."
+      "title": "Understand Indiana's Regulations",
+      "description": "Familiarize yourself with the Indiana State Board of Dentistry's regulations. Note that a general Dental Assistant license is not required, but specific certifications are mandated for Expanded Functions Dental Assistants (EFDA) and Dental Radiography."
     },
     {
-      "title": "Complete a CPR Course",
-      "description": "Obtain certification in cardiopulmonary resuscitation (CPR) from an approved provider."
+      "title": "Identify Required Certifications",
+      "description": "Determine if your intended duties require specific certifications, such as the Expanded Functions Dental Assistant (EFDA) Certificate or the Dental Radiography Certificate. Review the eligibility criteria for each on the Board of Dentistry's website."
     },
     {
-      "title": "Apply for Certification",
-      "description": "Submit a completed application, including required documentation and fees, to the Indiana Board of Dentistry for certification as a dental assistant."
+      "title": "Create a MyLicense.IN.gov Account",
+      "description": "Visit the MyLicense.IN.gov portal, select 'Register a Person Account,' and follow the instructions to set up your personal user ID and password, which will be used for all online applications."
+    },
+    {
+      "title": "Complete the Online Application for Certification",
+      "description": "Log into your MyLicense.IN.gov account, select the specific application for your desired certification (e.g., 'Expanded Functions Dental Assistant Certificate' or 'Dental Radiography Certificate'), and accurately complete all required sections, including uploading any necessary supporting documents like transcripts or national certification proof."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Submit the non-refundable application fee for your chosen certification through the MyLicense.IN.gov portal using a credit card or electronic check. (Note: These fees are for certifications, as no general DA license exists)."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application's status by logging into your MyLicense.IN.gov account and promptly respond to any requests for additional information or documentation from the Indiana State Board of Dentistry."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": false,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 20,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.in.gov/pla/professions/indiana-board-of-dentistry/",
-    "endorsement_url": "https://www.in.gov/pla/professions/indiana-board-of-dentistry/",
+    "endorsement_url": "https://www.in.gov/pla/professions/state-board-of-dentistry/forms-applications/",
     "notes": "Indiana does not license general dental assistants. Radiography certification required for x-rays.",
     "requires_psv": false,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Indiana",
-        "dek": "Indiana Dental Assistant certification requires passing the DANB CDA exam, completing a CPR course, and submitting an application to the Indiana Board of Dentistry."
+        "dek": "In Indiana, a general Dental Assistant license is not required. However, individuals performing Expanded Functions or Dental Radiography must obtain specific certifications through the MyLicense.IN.gov online portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense.IN.gov",
+    "portal_url": "https://mylicense.in.gov/eGov/",
+    "registration_steps": "Visit MyLicense.IN.gov, click 'Register a Person Account', and follow the prompts to create a user ID and password. Once registered, log in to select the appropriate application for certifications like Expanded Functions Dental Assistant or Dental Radiography.",
+    "provider_search": "https://www.in.gov/pla/license-information-for-public/"
   }
 }

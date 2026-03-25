@@ -21,19 +21,21 @@
   "board": {
     "name": "Wyoming Dietetics Licensing Board",
     "parent_dept": "Wyoming Department of Administration & Information",
-    "mailing_address": "2001 Capitol Ave, Room 104<br>Cheyenne, WY 82002",
+    "mailing_address": "Wyoming Board of Dietetics, 122 West 25th Street, Suite 106, Herschler Building, Cheyenne, WY 82002",
     "physical_address": "2001 Capitol Ave, Room 104<br>Cheyenne, WY 82002",
-    "phone": "(307) 777-7788",
+    "phone": "(307) 777-7647",
     "fax": "(307) 777-3508",
-    "email": "mailto:wyeboard@wyo.gov",
-    "url": "https://dietetics.wyo.gov/"
+    "email": "dietetics@wyo.gov",
+    "url": "https://dietetics.wyo.gov/",
+    "contact_url": "https://dietetics.wyo.gov/contact-us",
+    "verify_url": "https://www.wyoadmin.gov/search/licensing/lookup"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$200 initial application fee",
-    "renewal_fee": "$200",
-    "renewal_cycle": "Every 2 years + CE hours",
-    "processing_time": "1 to 2 Weeks",
+    "renewal_fee": "$150",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 12 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Obtain a minimum of a bachelor's degree from a regionally accredited college or university with completion of an ACEND-accredited Didactic Program in Dietetics (DPD)."
+      "title": "Create an Account on the Wyoming Professional Licensing Portal",
+      "description": "Navigate to the Wyoming Professional Licensing portal, select 'Dietetics', and register for a new user account if you do not have one already."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete an ACEND-accredited supervised practice program."
+      "title": "Start a New Dietetics License Application",
+      "description": "Log in to your account on the Wyoming Professional Licensing portal and initiate a new application for a Dietetics license. Be sure to indicate if you are applying by endorsement from another state."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+      "title": "Complete the Online Application Form",
+      "description": "Fill out all required sections of the application, providing accurate personal, educational, and professional background details."
+    },
+    {
+      "title": "Upload Required Documents",
+      "description": "Submit electronic copies of official transcripts verifying a bachelor's or master's degree, proof of supervised practice (e.g., dietetic internship verification), and verification of current registration as a Registered Dietitian (RD) with the Commission on Dietetic Registration (CDR)."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Remit the non-refundable initial application fee of $250.00 through the Wyoming Professional Licensing portal."
+    },
+    {
+      "title": "Submit and Monitor Your Application",
+      "description": "Electronically submit your completed application. The Board reviews applications at its regularly scheduled meetings, so monitor the Wyoming Professional Licensing portal for status updates or requests for additional information."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
-    "processing_time": "1 to 2 Weeks",
+    "endorsement_fee": 250,
+    "processing_time": "4 to 12 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dietetics.wyo.gov/",
-    "endorsement_url": "https://dietetics.wyo.gov/",
+    "endorsement_url": "https://dietetics.wyo.gov/licensing-information/apply-for-a-license",
     "notes": "Wyoming offers licensure by endorsement. Applicants holding a valid and unrestricted license in another state with equivalent requirements, or holding active CDR registration, can apply using the standard application method by demonstrating out-of-state verification.",
     "requires_psv": false
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Wyoming",
-        "dek": "Wyoming Dietitian License requires a bachelor's degree, completion of supervised practice, and passing the Registration Examination for Dietitians."
+        "dek": "To become a Licensed Dietitian (LD) in Wyoming, applicants must apply through the Wyoming Professional Licensing online portal."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Wyoming Professional Licensing",
+    "portal_url": "https://www.wyoming.gov/licensing/boards/dietetics",
+    "registration_steps": "Visit the Wyoming Professional Licensing portal, select 'Dietetics', and click on 'Register' to create a new user account.",
+    "provider_search": "https://www.wyoadmin.gov/search/licensing/lookup"
   }
 }

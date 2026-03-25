@@ -21,17 +21,19 @@
   "board": {
     "name": "West Virginia Board of Occupational Therapy",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "West Virginia Board of Occupational Therapy\n110 MacCorkle Ave. SE\nCharleston, WV 25301",
     "physical_address": "See board website",
-    "phone": "(304) 558-3512",
+    "phone": "304-558-6932",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://wvbot.org/"
+    "email": "otboard@wv.gov",
+    "url": "https://wvbot.org/",
+    "contact_url": "https://otboard.wv.gov/contact-us/Pages/default.aspx",
+    "verify_url": "https://apps.wv.gov/admin/otboard/licensees/search/default.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$66",
+    "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Account & Submit Application",
+      "description": "Create an account on the West Virginia Board of Occupational Therapy Online Portal and complete the appropriate application for licensure (e.g., by exam or endorsement), submitting all required forms and initial information."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts verifying graduation from an accredited occupational therapy program to be sent directly from your educational institution to the West Virginia Board of Occupational Therapy."
     },
     {
-      "title": "Apply for a West Virginia Occupational Therapy License",
-      "description": "Submit a completed application, official transcripts, NBCOT verification, and required fees to the West Virginia Board of Occupational Therapy."
+      "title": "Provide NBCOT Certification Verification",
+      "description": "Ensure the National Board for Certification in Occupational Therapy (NBCOT) sends official verification of your certification and score reports directly to the West Virginia Board of Occupational Therapy."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Undergo a state and federal fingerprint-based criminal background check through an authorized vendor, such as IdentoGO, following the instructions provided by the West Virginia Board of Occupational Therapy."
+    },
+    {
+      "title": "Pass Jurisprudence Exam",
+      "description": "Successfully pass the West Virginia Jurisprudence Exam with a score of 80% or better. This exam is administered online by the Board after your application has been submitted."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the required application fee of $150 through the West Virginia Board of Occupational Therapy Online Portal as part of your application submission."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://wvbot.org/",
-    "endorsement_url": "https://wvbot.org/",
+    "endorsement_url": "https://otboard.wv.gov/licensing/Pages/apply-for-a-license.aspx",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in West Virginia",
-        "dek": "West Virginia Occupational Therapist License requires graduation from an ACOTE accredited program, passing the NBCOT exam, and submitting a complete application."
+        "dek": "Occupational Therapist applicants in West Virginia must apply for licensure through the West Virginia Board of Occupational Therapy Online Portal, completing all necessary steps within the system."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "West Virginia Board of Occupational Therapy Online Portal",
+    "portal_url": "https://apps.wv.gov/admin/otboard/licenses/default.aspx",
+    "registration_steps": "Navigate to the portal URL, click 'Create New Account', provide personal information, create a username and password, then log in to select and begin your application (e.g., Initial OT License by Exam or Endorsement).",
+    "provider_search": "https://apps.wv.gov/admin/otboard/licensees/search/default.aspx"
   }
 }

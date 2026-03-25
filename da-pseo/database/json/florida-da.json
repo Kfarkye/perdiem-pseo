@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Florida Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Florida — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Florida \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license florida, dental assistant certification florida, RDA florida, DANB CDA florida, dental assistant radiography florida"
   },
   "board": {
     "name": "Florida Board of Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Department of Health, Board of Dentistry, P.O. Box 6330, Tallahassee, FL 32314-6330",
     "physical_address": "See board website",
-    "phone": "(850) 245-4474",
+    "phone": "(850) 488-0595",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://floridasdentistry.gov/"
+    "email": "DOH.Mail@flhealth.gov",
+    "url": "https://floridasdentistry.gov/",
+    "contact_url": "https://flhealthsource.gov/contact-us/",
+    "verify_url": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders"
   },
   "quick_facts": {
     "total_fee": "$35",
     "fee_breakdown": "$35 application/registration fee",
     "renewal_fee": "$35",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "24 hours per renewal cycle"
   },
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Expanded Duties Course",
-      "description": "Complete a Board-approved expanded duties course in order to be eligible for registration."
+      "title": "Understand Expanded Function Requirements",
+      "description": "Review the Florida Board of Dentistry's statutes and rules to understand the specific expanded functions you wish to perform and the qualifications required, such as formal training or certification."
     },
     {
-      "title": "Submit an Application",
-      "description": "Submit a completed application form to the Florida Board of Dentistry."
+      "title": "Access MQA Online Services",
+      "description": "Navigate to the Florida Department of Health's MQA Online Services portal, FLHealthSource.gov, which is the system used for all health-related applications and registrations."
     },
     {
-      "title": "Pay the Application Fee",
-      "description": "Submit the required application fee of $35."
+      "title": "Create or Log In to Your Account",
+      "description": "If you are a first-time applicant, create a new user account on FLHealthSource.gov. Existing users should log in with their credentials."
+    },
+    {
+      "title": "Complete the Online Application",
+      "description": "Select the 'Dental Assistant - Expanded Functions Registration' application. Fill out all required fields accurately and upload any necessary supporting documentation, such as proof of training, course completion, or DAARC certification."
+    },
+    {
+      "title": "Pay the Registration Fee",
+      "description": "Submit the non-refundable application fee of $35.00 through the secure online payment system within the FLHealthSource.gov portal."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status on FLHealthSource.gov. Be prepared to respond promptly to any requests for additional information or clarification from the Florida Board of Dentistry."
     }
   ],
   "documents": [
@@ -124,10 +138,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 35,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://floridasdentistry.gov/",
-    "endorsement_url": "https://floridasdentistry.gov/",
+    "endorsement_url": "https://floridaboardofdentistry.gov/licensing/dental-assistant/",
     "notes": "Florida does not license general dental assistants but requires registration for dental radiography.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -146,7 +160,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Florida",
-        "dek": "Florida Dental Assistant Registration requires completing a Board-approved expanded duties course, submitting an application, and paying a fee."
+        "dek": "In Florida, dental assistants are not generally licensed but must register for specific expanded functions through the Florida Department of Health's MQA Online Services portal, FLHealthSource.gov."
       }
     }
   },
@@ -172,5 +186,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MQA Online Services (FLHealthSource)",
+    "portal_url": "https://flhealthsource.gov/",
+    "registration_steps": "Visit FLHealthSource.gov, click 'Apply For A License', select 'Dental Assistant' then 'Expanded Function Registration', create a new account or log in, and complete the online application.",
+    "provider_search": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders"
   }
 }

@@ -19,21 +19,23 @@
     "keywords": "dietitian license reciprocity nevada, how to transfer dietitian license to nevada, dietitian compact nevada, nevada dietitian endorsement application"
   },
   "board": {
-    "name": "Nevada Division of Public and Behavioral Health — Dietitian Licensing",
+    "name": "Nevada Division of Public and Behavioral Health \u2014 Dietitian Licensing",
     "parent_dept": "Department of Health and Human Services",
-    "mailing_address": "4150 Technology Way, Suite 300<br>Carson City, NV 89706",
+    "mailing_address": "4150 Technology Way, Suite 300, Carson City, NV 89706",
     "physical_address": "4150 Technology Way, Suite 300<br>Carson City, NV 89706",
-    "phone": "(775) 684-1030",
+    "phone": "775-684-1033",
     "fax": "(775) 684-1073",
-    "email": "mailto:dpbh@dhhs.nv.gov",
-    "url": "https://dpbh.nv.gov/"
+    "email": "hfr@health.nv.gov",
+    "url": "https://dpbh.nv.gov/",
+    "contact_url": "https://dpbh.nv.gov/Reg/health_facilities/Dietitians_and_Nutritionists_Register/Dietitians_and_Nutritionists_Register_-_Home/#ContactInformation",
+    "verify_url": "https://dpbh.nv.gov/Reg/health_facilities/Dietitians_and_Nutritionists_Register/Dietitians_and_Nutritionists_Register_-_Search/"
   },
   "quick_facts": {
     "total_fee": "$237.50",
     "fee_breakdown": "$200 initial application fee + $37.50 fingerprint background check fee",
-    "renewal_fee": "$200",
-    "renewal_cycle": "Every 2 years (no state-mandated CE, but CDR requires 75 CPEUs per 5 years)",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$0",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "Undetermined",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians"
   },
@@ -53,16 +55,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Complete a minimum of a bachelor's degree from a regionally accredited college or university with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study, as approved by the Board."
+      "title": "Review Eligibility Requirements",
+      "description": "Ensure you meet the education and experience criteria for either a Dietitian or Nutritionist as outlined by the Nevada Department of Health and Human Services (DHHS). Dietitians typically need an approved internship or current CDR registration, while Nutritionists need a specific degree and 900 hours of supervised experience."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete a supervised practice program approved by the Board, which meets the requirements outlined in NAC 640B.120."
+      "title": "Download and Complete the Application Form",
+      "description": "Obtain the 'Nevada Dietitian and Nutritionist Register Application' form from the Nevada DHHS Health Facilities Regulation website under the 'Instructions for Registering' section. Fill out all required fields accurately."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Gather Required Documentation",
+      "description": "Prepare official academic transcripts showing your degree, proof of supervised practice (e.g., completion certificate, CDR registration card), and any other supporting documents specified in the application form."
+    },
+    {
+      "title": "Submit Your Application",
+      "description": "Submit the completed application form and all supporting documents to the Health Facilities Regulation section of the Nevada DHHS via mail or email as instructed on the form."
+    },
+    {
+      "title": "Verification and Placement on Register",
+      "description": "Allow time for the Department to review your application and verify your qualifications. Upon approval, your name will be added to the voluntary Nevada Dietitian and Nutritionist Register, and you will receive confirmation."
     }
   ],
   "documents": [
@@ -144,10 +154,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 237,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "Undetermined",
     "processing_tier": "mid",
     "board_url": "https://dpbh.nv.gov/",
-    "endorsement_url": "https://dpbh.nv.gov/",
+    "endorsement_url": "https://dpbh.nv.gov/Reg/health_facilities/Dietitians_and_Nutritionists_Register/Dietitians_and_Nutritionists_Register_-_Home/#InstructionsforRegistering",
     "notes": "Applicants actively licensed in another state can easily apply for Nevada endorsement by providing verification of their current active license, submitting the standard application, paying the $200 fee, and completing the fingerprint background check.",
     "requires_psv": true
   },
@@ -163,7 +173,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Nevada",
-        "dek": "Nevada Dietitian licenses require a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+        "dek": "Nevada does not license dietitians or nutritionists. Instead, professionals can voluntarily register through the Nevada Department of Health and Human Services by completing and submitting the Dietitian and Nutritionist Register Application Form."
       }
     }
   },
@@ -189,5 +199,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Nevada DHHS Dietitian and Nutritionist Register Application Form",
+    "portal_url": "https://dpbh.nv.gov/Reg/health_facilities/Dietitians_and_Nutritionists_Register/Dietitians_and_Nutritionists_Register_-_Home/#InstructionsforRegistering",
+    "registration_steps": "Download the Dietitian and Nutritionist Register Application form from the Nevada DHHS Health Facilities Regulation website. Complete the form and submit it along with all required documentation via mail or email.",
+    "provider_search": "https://dpbh.nv.gov/Reg/health_facilities/Dietitians_and_Nutritionists_Register/Dietitians_and_Nutritionists_Register_-_Search/"
   }
 }

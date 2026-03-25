@@ -21,19 +21,21 @@
   "board": {
     "name": "Louisiana Dept of Health",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Louisiana Department of Health, Health Standards Section, P. O. Box 3767, Baton Rouge, LA 70821",
     "physical_address": "See board website",
-    "phone": "(225) 342-0138",
+    "phone": "225-342-0498",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://ldh.la.gov/"
+    "email": "HSS.NAR@LA.GOV",
+    "url": "https://ldh.la.gov/",
+    "contact_url": "https://ldh.la.gov/page/626",
+    "verify_url": "https://ldh.la.gov/assets/hss/nar/NAR_Search.htm"
   },
   "quick_facts": {
     "total_fee": "$35",
     "fee_breakdown": "$35 endorsement application fee",
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks after passing the competency exam",
     "license_duration": "2 Years",
     "training_hours": "80 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Louisiana-approved CNA training program, usually 80 hours long."
+      "title": "Complete an Approved Training Program",
+      "description": "Enroll in and successfully complete a Nurse Aide Training and Competency Evaluation Program (NATCEP) approved by the Louisiana Department of Health. This program includes classroom instruction and hands-on clinical experience."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Louisiana nurse aide exam."
+      "title": "Register for the Competency Exam with Pearson VUE",
+      "description": "Visit the Pearson VUE - Louisiana Nurse Aide Testing website to create an account and register for the Nurse Aide Competency Exam (NACE). You will need to select both the written/oral and skills components of the exam."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Schedule and Pass the Competency Exam",
+      "description": "Schedule your NACE written/oral and skills exams at an approved testing center through your Pearson VUE account. You must pass both parts of the exam to be eligible for certification."
+    },
+    {
+      "title": "Automatic Placement on the Nurse Aide Registry",
+      "description": "Upon successful completion of both components of the NACE exam, your results will be automatically submitted to the Louisiana Department of Health, Health Standards Section. You will then be placed on the Louisiana Nurse Aide Registry."
+    },
+    {
+      "title": "Receive Confirmation of Certification",
+      "description": "After placement on the registry, you may receive confirmation of your certification. You can also verify your status anytime using the Louisiana Nurse Aide Registry search tool."
     }
   ],
   "documents": [
@@ -122,10 +132,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 35,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "1 to 2 Weeks after passing the competency exam",
     "processing_tier": "fast",
     "board_url": "https://ldh.la.gov/",
-    "endorsement_url": "https://ldh.la.gov/",
+    "endorsement_url": "https://ldh.la.gov/page/626",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Louisiana",
-        "dek": "Louisiana CNA certification requires a 80-hour training program, Louisiana Dept of Health eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To become a Certified Nursing Assistant in Louisiana, you must complete an approved training program and then register for and pass the competency exam administered by Pearson VUE."
       },
       "seo": {
         "title": "How to Become a CNA in Louisiana",
@@ -212,5 +222,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Louisiana Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "timeline_verified": true,
+    "renewal_cycle_verified": true,
+    "fee_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "renewal_fee_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Pearson VUE - Louisiana Nurse Aide Testing",
+    "portal_url": "https://home.pearsonvue.com/la/nurseaide",
+    "registration_steps": "To apply for the Nurse Aide Competency Exam (NACE), create an account on the Pearson VUE website, register for the NACE, and then schedule your written/oral and skills exams.",
+    "provider_search": "https://ldh.la.gov/assets/hss/nar/NAR_Search.htm"
   }
 }

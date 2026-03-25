@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Examiners for Audiologists, Hearing Aid Dispensers, Speech-Language Pathologists, and Music Therapists",
     "parent_dept": "Maryland Department of Health",
-    "mailing_address": "4201 Patterson Ave., Baltimore, MD 21215",
+    "mailing_address": "MDH - BSLHD, P.O. Box 2571, Baltimore, MD 21203-2571",
     "physical_address": "4201 Patterson Ave., Baltimore, MD 21215",
-    "phone": "(410) 764-4723",
+    "phone": "(410) 764-4725",
     "fax": "(410) 358-1610",
-    "email": "mailto:dhmh.mdboardaudslp@maryland.gov",
-    "url": "https://health.maryland.gov/boardsahs/"
+    "email": "mdh.bslhd@maryland.gov",
+    "url": "https://health.maryland.gov/boardsahs/",
+    "contact_url": "https://health.maryland.gov/bslhd/Pages/contact.aspx",
+    "verify_url": "https://mbol.maryland.gov/Public/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "Possess a Doctor of Audiology (AuD) degree from an accredited educational institution."
+      "title": "Create a Maryland OneStop Account and Apply",
+      "description": "Navigate to the Maryland OneStop Portal, create an account, log in, and complete the Audiologist New License online application. Pay the non-refundable $150 application fee."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Successfully complete the Audiology Examination (PRAXIS) administered by the Educational Testing Service."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official graduate transcripts to be sent directly from your educational institution to the Board's mailing address."
     },
     {
-      "title": "Apply for a Maryland Audiology License",
-      "description": "Submit a completed application, official transcripts, Praxis scores, and the required fee to the Maryland Board of Examiners for Audiologists, Hearing Aid Dispensers, and Speech-Language Pathologists."
+      "title": "Submit Official PRAXIS Scores",
+      "description": "Request that your official PRAXIS scores be sent directly from ETS to the Board."
+    },
+    {
+      "title": "Verify Supervised Experience",
+      "description": "Ensure your supervised experience (e.g., ASHA Certificate of Clinical Competence - CCC-A verification or completion of the 'Verification of Supervised Experience' form) is submitted directly to the Board."
+    },
+    {
+      "title": "Complete Criminal History Records Check",
+      "description": "Undergo a LiveScan fingerprinting for a criminal history records check. The results must be sent directly to the Board."
+    },
+    {
+      "title": "Provide Verification of Licensure (Endorsement Only)",
+      "description": "If you hold or have held an audiologist license in another state, complete the 'Verification of Licensure Form' and submit it to each state board, requesting they return it directly to the Maryland Board."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.maryland.gov/boardsahs/",
-    "endorsement_url": "https://health.maryland.gov/boardsahs/",
+    "endorsement_url": "https://health.maryland.gov/bslhd/Pages/audiologists-application.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "maryland-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Maryland",
-        "dek": "Maryland Audiologist licenses require a doctoral degree in audiology, passing the national audiology examination, and completing a supervised clinical practicum."
+        "dek": "To apply for an Audiologist license in Maryland, you must submit your application and supporting documents through the Maryland OneStop Portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Maryland OneStop Portal",
+    "portal_url": "https://onestop.md.gov/services/5e791b10a2f7c0001859600a",
+    "registration_steps": "Navigate to the Maryland OneStop portal, click 'Sign Up' to create an account, and then log in. Search for 'Audiologist' or navigate directly to the Audiologist New License application.",
+    "provider_search": "https://mbol.maryland.gov/Public/Search.aspx"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "New Hampshire Board of Pharmacy",
     "parent_dept": "New Hampshire Office of Professional Licensure and Certification (OPLC)",
-    "mailing_address": "See board website",
+    "mailing_address": "OPLC - Board of Pharmacy, 7 Eagle Square, Concord, NH 03301",
     "physical_address": "See board website",
     "phone": "(603) 271-2152",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.oplc.nh.gov/board-pharmacy"
+    "url": "https://www.oplc.nh.gov/board-pharmacy",
+    "contact_url": "https://www.oplc.nh.gov/contact-us",
+    "verify_url": "https://www.oplc.nh.gov/license-search"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an accredited pharmacy program",
-      "description": "You must graduate from a pharmacy program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
+      "title": "Create OPLC Online Licensing System Account",
+      "description": "Register for a new account or log in to your existing profile on the OPLC Online Licensing System at nh.virtreg.com."
     },
     {
-      "title": "Pass the NAPLEX and MPJE exams",
-      "description": "You must pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Initiate Endorsement Application",
+      "description": "From your OPLC Online Licensing System dashboard, select and begin the 'Pharmacist - Endorsement' application."
     },
     {
-      "title": "Apply for a Pharmacist License",
-      "description": "Submit a completed application to the New Hampshire Board of Pharmacy with all required documentation and fees."
+      "title": "Complete Application Sections",
+      "description": "Accurately fill out all required personal, professional, and disciplinary history information within the online application forms."
+    },
+    {
+      "title": "Upload Required Documentation",
+      "description": "Submit all necessary supporting documents, including official transcripts, license verifications from other states, and NABP e-Passport (for MPJE & NAPLEX scores), as specified in the application checklist."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable endorsement application fee of $200.00 through the OPLC Online Licensing System."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your application status within the OPLC Online Licensing System and promptly respond to any requests for additional information from the Board."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oplc.nh.gov/board-pharmacy",
-    "endorsement_url": "https://www.oplc.nh.gov/board-pharmacy",
+    "endorsement_url": "https://www.oplc.nh.gov/board-pharmacy/applications-forms",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "new-hampshire-pharmacist",
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in New Hampshire",
-        "dek": "New Hampshire Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing an internship."
+        "dek": "Pharmacists seeking licensure in New Hampshire must apply through the OPLC Online Licensing System, which is managed by the Office of Professional Licensure and Certification."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "OPLC Online Licensing System",
+    "portal_url": "https://nh.virtreg.com/",
+    "registration_steps": "Navigate to the OPLC Online Licensing System, click 'Register an Account' to create a new user profile, and then log in to access the application options.",
+    "provider_search": "https://www.oplc.nh.gov/license-search"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "Tennessee Board of Physical Therapy",
     "parent_dept": "Tennessee Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Tennessee Department of Health\nHealth Related Boards\n665 Mainstream Drive\nNashville, TN 37243",
     "physical_address": "See board website",
-    "phone": "(615) 532-3204",
+    "phone": "(615) 741-3807",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pt-board.html"
+    "email": "Health.RelatedBoards@tn.gov",
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pt-board.html",
+    "contact_url": "https://www.tn.gov/health/health-program-areas/health-related-boards/ot-pt-board/contact-us.html",
+    "verify_url": "https://apps.tn.gov/hlr/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete and graduate from a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create Account",
+      "description": "Visit the Licensure and Regulatory System (apps.tn.gov/health/) and create a new user account by clicking 'Create an Account' and following the registration prompts."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit Online Application",
+      "description": "Log in to the Licensure and Regulatory System, select the appropriate Physical Therapist application type (initial or endorsement), and complete all required sections of the application form."
     },
     {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit an application for licensure to the Tennessee Board of Physical Therapy, including all required documentation and fees, and complete a criminal background check."
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee of $175 through the Licensure and Regulatory System using an accepted payment method."
+    },
+    {
+      "title": "Complete Jurisprudence Exam & CBC",
+      "description": "Successfully complete the Tennessee Jurisprudence Examination online and fulfill the requirements for a Criminal Background Check (CBC) as instructed during the application process."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for all necessary supporting documentation, such as official transcripts, NPTE scores (if applicable), and verification of licensure from other states (for endorsement), to be sent directly to the Board."
+    },
+    {
+      "title": "Board Review and Approval",
+      "description": "The Tennessee Board of Occupational Therapy and Physical Therapy Examiners will review your complete application and all submitted documentation. Upon approval, your license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 175,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pt-board.html",
-    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/pt-board.html",
+    "endorsement_url": "https://www.tn.gov/health/health-program-areas/health-related-boards/ot-pt-board/licensure.html",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "tennessee-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Tennessee",
-        "dek": "Tennessee Physical Therapist License requires graduation from an accredited program, passing the National Physical Therapy Examination, and a criminal background check."
+        "dek": "To apply for a Physical Therapist license in Tennessee, visit the Tennessee Department of Health's Licensure and Regulatory System to create an account and submit your application online."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Licensure and Regulatory System",
+    "portal_url": "https://apps.tn.gov/health/",
+    "registration_steps": "Visit the Tennessee Department of Health's Licensure and Regulatory System (apps.tn.gov/health/) and click 'Create an Account' for new users. Follow the prompts to set up your profile, including contact information and security questions, then verify your email to activate your account.",
+    "provider_search": "https://apps.tn.gov/hlr/"
   }
 }

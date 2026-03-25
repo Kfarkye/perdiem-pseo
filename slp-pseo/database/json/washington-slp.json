@@ -21,19 +21,21 @@
   "board": {
     "name": "Speech-Language Pathology Advisory Committee",
     "parent_dept": "Washington Department of Health (DOH)",
-    "mailing_address": "P.O. Box 47852, Olympia, WA 98504-7852",
+    "mailing_address": "Department of Health, PO Box 47877, Olympia, WA 98504-7877",
     "physical_address": "111 Israel Road SE, Tumwater, WA 98501",
-    "phone": "(360) 236-4700",
+    "phone": "360-236-4700",
     "fax": "(360) 236-4818",
-    "email": "mailto:hpqa.csc@doh.wa.gov",
-    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/speech-language-pathologist"
+    "email": "SLPA@doh.wa.gov",
+    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/speech-language-pathologist",
+    "contact_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/speech-language-pathologists-and-audiologists#contactus",
+    "verify_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/verify-provider-license"
   },
   "quick_facts": {
     "total_fee": "$175",
     "fee_breakdown": "$75 application + $100 license fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every year (birthday)",
-    "processing_time": "2 to 4 weeks",
+    "renewal_fee": "$90",
+    "renewal_cycle": "Annually",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "1 year",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours every two years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education and Clinical Practicum",
-      "description": "Earn a master's degree or doctorate in speech-language pathology from an accredited educational institution and complete the required clinical practicum."
+      "title": "Meet Education Requirements",
+      "description": "Obtain a master's or doctoral degree in speech-language pathology from an accredited college or university program."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+      "title": "Complete Supervised Clinical Experience",
+      "description": "Successfully complete 36 weeks of full-time (or 48 weeks of part-time) supervised clinical experience in speech-language pathology."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit your application, official transcripts, verification of supervised professional experience, and examination scores to the Washington State Department of Health."
+      "title": "Pass National Examination",
+      "description": "Pass the Praxis II Speech-Language Pathology national examination administered by Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Apply Online via SAW Portal",
+      "description": "Log in to your SecureAccess Washington (SAW) account, add the 'Department of Health Professional Licensing' service, and select 'Apply for a new health care license' to complete and submit your application online."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Mail or electronically submit all required supporting documents, including official transcripts, verification of supervised clinical experience, and national exam scores, to the Washington State Department of Health."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee as part of your online application process through the SecureAccess Washington (SAW) portal."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 175,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 90,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/speech-language-pathologist",
-    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/speech-language-pathologist",
+    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/speech-language-pathologists-and-audiologists/apply-online",
     "notes": "Washington is a member of the ASLP Interstate Compact."
   },
   "slug": "washington-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Washington",
-        "dek": "Washington Speech-Language Pathologist license requires a master's degree, passing the national exam, and completion of a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in Washington, you must submit your application and supporting documentation through the SecureAccess Washington (SAW) portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "SecureAccess Washington (SAW) portal",
+    "portal_url": "https://secureaccess.wa.gov/",
+    "registration_steps": "1. Go to SecureAccess Washington (SAW) at secureaccess.wa.gov. 2. Create a new SAW account if you don't have one, or log in to your existing account. 3. Add the 'Department of Health Professional Licensing' service to your SAW account. 4. Within the DOH Professional Licensing service, select 'Apply for a new health care license' to start your Speech-Language Pathologist application.",
+    "provider_search": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/verify-provider-license"
   }
 }

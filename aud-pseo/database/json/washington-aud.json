@@ -21,19 +21,21 @@
   "board": {
     "name": "Washington Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Washington Department of Health (DOH)",
-    "mailing_address": "P.O. Box 47852, Olympia, WA 98504-7852",
+    "mailing_address": "Washington State Department of Health\nPO Box 47877\nOlympia, WA 98504-7877",
     "physical_address": "111 Israel Road SE, Tumwater, WA 98501",
     "phone": "(360) 236-4700",
     "fax": "(360) 236-4818",
-    "email": "mailto:hpqa.csc@doh.wa.gov",
-    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/speech-language-pathologist"
+    "email": "hsqa.csc@doh.wa.gov",
+    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/speech-language-pathologist",
+    "contact_url": "https://doh.wa.gov/contact-us",
+    "verify_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/verify-provider-credential"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 1 year",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination of the American Academy of Audiology or its equivalent",
     "ce_requirement": "30 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Complete a Doctor of Audiology (AuD) degree program from an accredited educational institution."
+      "title": "Create a SecureAccess Washington (SAW) Account",
+      "description": "Navigate to the SecureAccess Washington (SAW) portal at secureaccess.wa.gov and create a new account, which is required to access state online services."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the Audiology Examination of the American Academy of Audiology or its equivalent."
+      "title": "Add the Credentialing System Service",
+      "description": "Log into your newly created SAW account. Select 'Add a Service' and then search for and add the 'WA Health Professions Licensing & Credentialing System' to your list of services."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application and all required documentation to the Washington State Department of Health."
+      "title": "Complete the Online Audiologist Application",
+      "description": "Access the WA Health Professions Licensing & Credentialing System through your SAW account. Complete the online application for Audiologist licensure, providing all required personal, educational, and professional history."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Upload or mail all necessary supporting documents, which typically include official transcripts showing your Au.D. or equivalent degree, official Praxis exam scores, and verification of supervised practice experience."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Pay the non-refundable application fee of $100 through the WA Health Professions Licensing & Credentialing System. This fee applies to both initial and endorsement applications."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application within the WA Health Professions Licensing & Credentialing System. Respond promptly to any requests for additional information or clarification from the Department of Health to avoid delays."
     }
   ],
   "documents": [
@@ -125,10 +139,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/speech-language-pathologist",
-    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/speech-language-pathologist",
+    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/audiologist-and-speech-language-pathologist/application-forms-and-fees",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "washington-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Washington",
-        "dek": "Washington Audiologist license requires a doctoral degree in audiology, passing the national audiology exam, and completion of a supervised professional experience."
+        "dek": "Audiologists in Washington State must apply for licensure through the Washington State Department of Health's online 'WA Health Professions Licensing & Credentialing System', accessed via SecureAccess Washington (SAW)."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "WA Health Professions Licensing & Credentialing System",
+    "portal_url": "https://secureaccess.wa.gov/doh/hpcs/",
+    "registration_steps": "First, create an account on SecureAccess Washington (SAW). Then, log into SAW and add the 'WA Health Professions Licensing & Credentialing System' to your services to access the application portal.",
+    "provider_search": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/verify-provider-credential"
   }
 }

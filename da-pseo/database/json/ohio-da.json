@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Ohio Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Ohio — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Ohio \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license ohio, dental assistant certification ohio, RDA ohio, DANB CDA ohio, dental assistant radiography ohio"
   },
   "board": {
     "name": "Ohio State Dental Board",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "77 S. High St., 17th Floor, Columbus, OH 43215-6135",
     "physical_address": "See board website",
     "phone": "(614) 466-2580",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dental.ohio.gov/"
+    "email": "dental.board@den.ohio.gov",
+    "url": "https://dental.ohio.gov/",
+    "contact_url": "https://dental.ohio.gov/About-the-Board/Contact-Us",
+    "verify_url": "https://elicense.ohio.gov/OH_HomePage"
   },
   "quick_facts": {
     "total_fee": "$45",
     "fee_breakdown": "$45 application/registration fee",
-    "renewal_fee": "$45",
+    "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Radiography Exam (if performing radiography)",
     "ce_requirement": "12 hours per renewal cycle (if radiography qualified)"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a CODA-accredited dental assisting program (if radiography qualified)",
-      "description": "If you intend to perform radiography, you must graduate from a dental assisting program accredited by the Commission on Dental Accreditation (CODA)."
+      "title": "Graduate from an Approved EFDA Program",
+      "description": "Complete a comprehensive Expanded Function Dental Auxiliary (EFDA) program that is approved by the Ohio State Dental Board."
     },
     {
-      "title": "Pass the Radiography Exam (if performing radiography)",
-      "description": "If you intend to perform radiography, you must pass a radiography exam acceptable to the Ohio State Dental Board."
+      "title": "Pass Required Examinations",
+      "description": "Successfully pass the EFDA clinical examination administered by the Commission on Dental Competency Assessments (CDCA) or another board-approved testing agency. Additionally, pass the Ohio State Dental Board Jurisprudence Examination."
     },
     {
-      "title": "Submit your Dental Assistant Registration Application",
-      "description": "Complete and submit the Dental Assistant Registration Application to the Ohio State Dental Board, including the required fee."
+      "title": "Submit Application via eLicense Ohio",
+      "description": "Create an account on the eLicense Ohio portal and submit your initial EFDA registration application. Ensure all required documentation, including transcripts and exam scores, are uploaded or sent as instructed."
+    },
+    {
+      "title": "Complete Criminal Records Check",
+      "description": "Submit fingerprints for a state and federal criminal records check. Detailed instructions for this process are typically provided during your application on the eLicense Ohio portal."
+    },
+    {
+      "title": "Board Review and Registration Issuance",
+      "description": "The Ohio State Dental Board will review your complete application and all submitted materials. Upon successful verification of all requirements, your EFDA registration will be issued via eLicense Ohio."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 45,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 75,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dental.ohio.gov/",
-    "endorsement_url": "https://dental.ohio.gov/",
+    "endorsement_url": "https://dental.ohio.gov/Licensees/Expanded-Function-Dental-Auxiliary-EFDA",
     "notes": "Dental assistants can apply for Certified Dental Assistant through the Ohio State Dental Board by certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Ohio",
-        "dek": "Ohio Dental Assistant registration requires graduation from a CODA-accredited program (if radiography qualified), passing the radiography exam (if performing radiography), and completing the registration application."
+        "dek": "Ohio does not license general Dental Assistants. However, if you wish to perform expanded functions as an Expanded Function Dental Auxiliary (EFDA), you must register through the eLicense Ohio portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "eLicense Ohio",
+    "portal_url": "https://elicense.ohio.gov/OH_HomePage",
+    "registration_steps": "Go to the eLicense Ohio homepage, click 'New User/Register Now', and follow the prompts to create a new user account with a User ID and password. Once registered, log in to start your application.",
+    "provider_search": "https://elicense.ohio.gov/OH_HomePage"
   }
 }

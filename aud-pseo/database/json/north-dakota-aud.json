@@ -21,18 +21,20 @@
   "board": {
     "name": "Board of Examiners on Audiology and Speech-Language Pathology",
     "parent_dept": "North Dakota Board of Examiners on Audiology and SLP",
-    "mailing_address": "3100 S. Columbia Rd., Suite 218, Grand Forks, ND 58201",
+    "mailing_address": "ND Board of Examiners on Audiology and Speech-Language Pathology\nPO Box 475\nBismarck, ND 58502-0475",
     "physical_address": "3100 S. Columbia Rd., Suite 218, Grand Forks, ND 58201",
-    "phone": "(701) 777-3232",
+    "phone": "(701) 328-9900",
     "fax": "(701) 777-4365",
-    "email": "mailto:ndboeaslp@gmail.com",
-    "url": "https://www.ndboeaslp.org/"
+    "email": "ndbeaslp@nd.gov",
+    "url": "https://www.ndboeaslp.org/",
+    "contact_url": "https://www.ndslpboard.com/contact-us/",
+    "verify_url": "https://www.ndslpboard.com/license-verification/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 1 year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination (Praxis)",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "You must have a doctoral degree in audiology from an accredited educational institution."
+      "title": "Create Account and Initiate Application",
+      "description": "Register for an account on the *Licensing Made Easy* portal (ndbeaslp.us.thentiacloud.net) and complete the initial online application form for Audiologist licensure, paying the required application fee."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "Achieve a passing score on the Audiology Examination (Praxis)."
+      "title": "Submit Official Transcripts and Exam Scores",
+      "description": "Arrange for official graduate transcripts to be sent directly from your university to the NDBEASLP, and official Praxis Audiology examination scores (Praxis Subject Assessment #5343) to be sent directly from ETS to the board."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Complete and submit the application for licensure to the North Dakota Board of Examiners on Audiology and Speech-Language Pathology, including all required documentation and fees."
+      "title": "Complete Supervised Professional Practice Verification",
+      "description": "If applicable, submit a Verification of Supervised Professional Practice Form, demonstrating completion of your clinical fellowship or equivalent, directly to the board."
+    },
+    {
+      "title": "Undergo a Criminal History Record Check",
+      "description": "Follow the instructions provided by the NDBEASLP for completing a criminal history record check, which typically involves fingerprinting."
+    },
+    {
+      "title": "Provide Verifications of Other Licenses",
+      "description": "If you currently hold or have held licenses in other states, request official Verification of Licensure forms to be sent directly from those state boards to the NDBEASLP."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.ndboeaslp.org/",
-    "endorsement_url": "https://www.ndboeaslp.org/",
+    "endorsement_url": "https://www.ndslpboard.com/new-license-application/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "north-dakota-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in North Dakota",
-        "dek": "North Dakota Audiologist licenses require a doctoral degree in audiology, passing the Audiology Examination (Praxis), and completion of the application process."
+        "dek": "Applicants for an Audiologist license in North Dakota must apply online through the official *Licensing Made Easy* portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Licensing Made Easy",
+    "portal_url": "https://ndbeaslp.us.thentiacloud.net/webs/ndbeaslp/account/login",
+    "registration_steps": "To create an account and start your application, visit the Licensing Made Easy portal. Click 'Create an Account' and provide your first name, last name, and email address. Follow the prompts to complete your account registration and log in. Once logged in, navigate to the 'Apply for a License' section to begin your application.",
+    "provider_search": "https://www.ndslpboard.com/license-verification/"
   }
 }

@@ -19,19 +19,21 @@
     "keywords": "physical therapist license reciprocity rhode island, how to transfer physical therapist license to rhode island, physical therapist compact rhode island, rhode island physical therapist endorsement application"
   },
   "board": {
-    "name": "Rhode Island DOH — PT Licensure",
+    "name": "Rhode Island DOH \u2014 PT Licensure",
     "parent_dept": "Rhode Island Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Rhode Island Department of Health, Health Professions Regulation, 3 Capitol Hill, Room 104, Providence, RI 02908-5097",
     "physical_address": "See board website",
-    "phone": "(401) 222-2828",
+    "phone": "401-222-5960",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://health.ri.gov/licenses/"
+    "email": "doh.elicense@health.ri.gov",
+    "url": "https://health.ri.gov/licenses/",
+    "contact_url": "https://health.ri.gov/licensing/",
+    "verify_url": "https://health.ri.gov/licensing/verify/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$75.00",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Graduate from a CAPTE-accredited physical therapy program."
+      "title": "Create Account and Start Online Application",
+      "description": "Register an account on the RI Department of Health's Online Licensing Services Portal and initiate a new Physical Therapist application, carefully completing all sections."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Achieve a passing score on the NPTE for Physical Therapists."
+      "title": "Submit Official Transcripts and NPTE Scores",
+      "description": "Arrange for official transcripts from your accredited physical therapy program to be sent directly from the educational institution to the RI Department of Health. Also, ensure your National Physical Therapy Examination (NPTE) scores are sent directly from the Federation of State Boards of Physical Therapy (FSBPT)."
     },
     {
-      "title": "Apply for a Rhode Island Physical Therapist License",
-      "description": "Submit a completed application, required documentation, and fees to the Rhode Island Department of Health."
+      "title": "Provide Verification of Licensure (If Applicable)",
+      "description": "If you hold or have held a physical therapist license in another state, arrange for verification of licensure to be sent directly from each state's licensing board to the RI Department of Health."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "Undergo a state and national criminal background check, including fingerprinting, as mandated by the Rhode Island Department of Health. Follow the instructions provided during the application process to complete this step."
+    },
+    {
+      "title": "Upload Supporting Documents and Pay Fee",
+      "description": "Upload any additional required documents, such as proof of identity, a passport-style photo, and an affidavit of good moral character, through the Online Licensing Services Portal. Pay the non-refundable $100 application fee."
+    },
+    {
+      "title": "Application Review and Licensure",
+      "description": "The Rhode Island Board of Physical Therapy will review your complete application and all supporting documentation. Upon approval, your physical therapist license will be issued."
     }
   ],
   "documents": [
@@ -128,7 +142,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.ri.gov/licenses/",
-    "endorsement_url": "https://health.ri.gov/licenses/",
+    "endorsement_url": "https://health.ri.gov/licensing/detail.php?id=255",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "rhode-island-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Rhode Island",
-        "dek": "Rhode Island Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination, and meeting other qualifications."
+        "dek": "To apply for a Physical Therapist license in Rhode Island, you must submit your initial application and all required documentation through the RI Department of Health's Online Licensing Services Portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Online Licensing Services Portal",
+    "portal_url": "https://health.ri.gov/applications/online/",
+    "registration_steps": "Navigate to the RI Department of Health's Online Licensing Services Portal, click 'Apply Online' for Health Professionals, then select 'Physical Therapists' from the dropdown to start a new application. If you do not have an existing account, you will be prompted to create one by providing your email address and setting up a password.",
+    "provider_search": "https://health.ri.gov/licensing/verify/"
   }
 }

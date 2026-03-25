@@ -21,18 +21,20 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "Oklahoma Board of Examiners for SLP and Audiology",
-    "mailing_address": "3700 N. Classen Blvd., Suite 248, Oklahoma City, OK 73118",
+    "mailing_address": "3000 North Stiles Ave., Suite 203\nOklahoma City, OK 73105",
     "physical_address": "3700 N. Classen Blvd., Suite 248, Oklahoma City, OK 73118",
-    "phone": "(405) 524-4955",
+    "phone": "(405) 522-3610",
     "fax": "(405) 524-4957",
-    "email": "mailto:obespa@okbespa.org",
-    "url": "https://www.okbespa.org/"
+    "email": "obespa@ok.gov",
+    "url": "https://www.okbespa.org/",
+    "contact_url": "https://www.ok.gov/obespa/Contact_Us/index.html",
+    "verify_url": "https://licensing.ok.gov/licenseesearch/obespa"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every year, by birth month",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination ( Praxis Exam)",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Obtain a doctoral degree in audiology from a regionally accredited institution."
+      "title": "Register and Initiate Application",
+      "description": "Create an account on the Oklahoma Licensing Portal (licensing.ok.gov), log in, and begin the Audiologist license application."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Audiology Examination ( Praxis Exam)."
+      "title": "Complete Application & Upload Documents",
+      "description": "Fill out the online application completely and upload all required documents, including official transcripts and verification of ASHA CCC-A or ABAA certification."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application to the Oklahoma Board of Examiners for Speech-Language Pathology and Audiology with all required documentation and fees."
+      "title": "Arrange for Third-Party Submissions",
+      "description": "Request official transcripts to be sent directly from your educational institution to OBESPA, and ensure your Praxis Examination score report is sent directly from ETS to OBESPA."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $100 through the Oklahoma Licensing Portal."
+    },
+    {
+      "title": "Submit Application for Review",
+      "description": "Electronically submit your completed application and monitor its status in the Oklahoma Licensing Portal. An initial license fee of $100 will be billed upon approval, and a fingerprint background check fee of $43.25 is also required."
     }
   ],
   "documents": [
@@ -128,7 +138,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.okbespa.org/",
-    "endorsement_url": "https://www.okbespa.org/",
+    "endorsement_url": "https://www.ok.gov/obespa/Licensing/License_by_Reciprocity.html",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "oklahoma-aud",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Oklahoma",
-        "dek": "Oklahoma Audiologist licenses require a doctoral degree in audiology, a passing score on the Audiology Examination, and completion of a supervised professional experience."
+        "dek": "To apply for an Audiologist license in Oklahoma, create an account and submit your application through the Oklahoma Licensing Portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Oklahoma Licensing Portal",
+    "portal_url": "https://licensing.ok.gov/",
+    "registration_steps": "Visit licensing.ok.gov, click 'Register' for a new account, and follow the prompts to create your profile before starting an application.",
+    "provider_search": "https://licensing.ok.gov/licenseesearch/obespa"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Utah DOPL",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Utah Department of Commerce\nDivision of Occupational and Professional Licensing\nP.O. Box 146741\nSalt Lake City, Utah 84114-6741",
     "physical_address": "See board website",
     "phone": "(801) 530-6628",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://utahcnaregistry.com/"
+    "email": "doplweb@utah.gov",
+    "url": "https://utahcnaregistry.com/",
+    "contact_url": "https://dopl.utah.gov/contact/",
+    "verify_url": "https://dopl.utah.gov/license-lookup/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 endorsement application fee",
-    "renewal_fee": "N/A",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "2 Years",
     "training_hours": "75 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Utah-approved CNA training program, usually 75 hours long."
+      "title": "Complete Approved Training Program",
+      "description": "Successfully complete a Utah Department of Commerce, Division of Occupational and Professional Licensing (DOPL) approved Nurse Aide Training and Competency Evaluation Program (NATCEP)."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Utah nurse aide exam."
+      "title": "Pass the NNAAP Examination",
+      "description": "Register for and pass both the written/oral and skills portions of the National Nurse Aide Assessment Program (NNAAP) examination, administered by Pearson VUE."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Create Utah.gov Account",
+      "description": "Navigate to the DOPL Online Services portal and create a my.utah.gov account if you don't have one, or log in using your existing credentials."
+    },
+    {
+      "title": "Submit Online Application",
+      "description": "Access the 'New Application' section within the DOPL Online Portal, select 'Nurse Aide' as the application type, and complete all required fields and declarations."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee of $40.00 through the DOPL Online Portal as part of your application submission."
+    },
+    {
+      "title": "Verify Application Status",
+      "description": "Monitor the status of your application and any requests for additional information through your my.utah.gov account on the DOPL Online Portal."
     }
   ],
   "documents": [
@@ -121,11 +135,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 40,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "fast",
     "board_url": "https://utahcnaregistry.com/",
-    "endorsement_url": "https://utahcnaregistry.com/",
+    "endorsement_url": "https://dopl.utah.gov/nurse-aide/#tab-reciprocity",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -170,7 +184,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Utah",
-        "dek": "Utah CNA certification requires a 75-hour training program, Utah DOPL eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for a Certified Nursing Assistant (CNA) license in Utah, applicants must complete approved training, pass the NNAAP exam, and then submit their application through the DOPL Online Portal."
       },
       "seo": {
         "title": "How to Become a CNA in Utah",
@@ -216,5 +230,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Utah Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DOPL Online Portal",
+    "portal_url": "https://secure.utah.gov/account/login.html?returnURL=/dopl-ewebapp/app-selection.html",
+    "registration_steps": "Navigate to the DOPL Online Services portal, click on 'New Application'. You will be redirected to the Utah.gov login page. Create a my.utah.gov account if you don't have one, or log in with your existing account. Once logged in, select 'Division of Occupational and Professional Licensing (DOPL)' and then choose the 'Nurse Aide' application type to begin.",
+    "provider_search": "https://dopl.utah.gov/license-lookup/"
   }
 }

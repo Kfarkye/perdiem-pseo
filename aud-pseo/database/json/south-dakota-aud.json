@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Hearing Aid Dispensers and Audiologists",
     "parent_dept": "South Dakota Department of Health",
-    "mailing_address": "600 E. Capitol Ave., Pierre, SD 57501",
+    "mailing_address": "South Dakota Board of Hearing Aid Dispensers and Audiologists\n300 E. Broadway Ave.\nPierre, SD 57501",
     "physical_address": "600 E. Capitol Ave., Pierre, SD 57501",
-    "phone": "(605) 773-3101",
+    "phone": "605-773-3123",
     "fax": "(605) 773-6667",
-    "email": "mailto:doh.info@state.sd.us",
-    "url": "https://doh.sd.gov/boards/audiology/"
+    "email": "doh.boards@state.sd.us",
+    "url": "https://doh.sd.gov/boards/audiology/",
+    "contact_url": "https://doh.sd.gov/boards/contact.aspx",
+    "verify_url": "https://doh.sd.gov/boards/search.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Graduate with a Doctor of Audiology (AuD) degree from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology or its equivalent."
+      "title": "Create an Account and Start Application",
+      "description": "Register on the South Dakota Department of Health Professional Licensure Portal and initiate the Audiologist application."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the Audiology Examination (PRAXIS)."
+      "title": "Complete Application & Pay Fee",
+      "description": "Fill out the online application completely, upload required documents, and pay the initial application fee of $100 through the Professional Licensure Portal."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application to the South Dakota Board of Hearing Aid Dispensers and Audiologists, including all required documentation and fees."
+      "title": "Submit Transcripts & Exam Scores",
+      "description": "Arrange for official transcripts from your educational institution and official Praxis Exam scores to be sent directly to the Board."
+    },
+    {
+      "title": "Complete Supervised Experience Verification",
+      "description": "Submit documentation of your supervised professional experience, such as a Clinical Fellowship Year (CFY), as required by the Board."
+    },
+    {
+      "title": "Undergo Background Check & Jurisprudence Exam",
+      "description": "Complete the necessary criminal background check and pass the South Dakota Audiologist Jurisprudence Exam."
+    },
+    {
+      "title": "Provide Verification of Licensure (if applicable)",
+      "description": "If previously licensed in another state, arrange for verification of licensure to be sent directly from that state's board to the South Dakota Board of Hearing Aid Dispensers and Audiologists."
     }
   ],
   "documents": [
@@ -128,7 +142,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://doh.sd.gov/boards/audiology/",
-    "endorsement_url": "https://doh.sd.gov/boards/audiology/",
+    "endorsement_url": "https://doh.sd.gov/boards/professional-licensure-portal/default.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "south-dakota-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in South Dakota",
-        "dek": "South Dakota Audiologist License requires graduation from an approved program, passing the national exam, and completing the application process."
+        "dek": "To apply for an Audiologist license in South Dakota, navigate to the South Dakota Department of Health Professional Licensure Portal, register for an account, and begin your application."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Professional Licensure Portal",
+    "portal_url": "https://doh.sd.gov/boards/professional-licensure-portal/default.aspx",
+    "registration_steps": "Click 'First-Time Applicants: Click Here to Register', then follow prompts to create an account with a unique email and password. Once registered, log in to start a new application.",
+    "provider_search": "https://doh.sd.gov/boards/search.aspx"
   }
 }

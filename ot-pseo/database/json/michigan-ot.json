@@ -19,19 +19,21 @@
     "keywords": "occupational therapist license reciprocity michigan, how to transfer occupational therapist license to michigan, occupational therapist compact michigan, michigan occupational therapist endorsement application"
   },
   "board": {
-    "name": "Michigan LARA — Occupational Therapy",
+    "name": "Michigan LARA \u2014 Occupational Therapy",
     "parent_dept": "Michigan Department of Licensing and Regulatory Affairs (LARA)",
-    "mailing_address": "See board website",
+    "mailing_address": "Michigan Department of Licensing and Regulatory Affairs\nBureau of Professional Licensing\nP.O. Box 30670\nLansing, MI 48909",
     "physical_address": "See board website",
-    "phone": "(517) 335-0918",
+    "phone": "517-241-0199",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.michigan.gov/lara/bureau-list/bpl/occ/professions/occupational-therapists"
+    "email": "healthlic@michigan.gov",
+    "url": "https://www.michigan.gov/lara/bureau-list/bpl/occ/professions/occupational-therapists",
+    "contact_url": "https://www.michigan.gov/lara/contact/contact-lara/bpl-contact",
+    "verify_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/verify-a-license"
   },
   "quick_facts": {
     "total_fee": "$188",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$141",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create a MiPLUS Account",
+      "description": "Begin by creating a MiLogin account, which is required to then register for a MiPLUS account. The MiPLUS portal is where you will submit your application and track its progress."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Submit Online Application",
+      "description": "Complete and submit the 'Application for Occupational Therapist Licensure by Examination' through the MiPLUS online system. You will be required to pay the application fee at this stage."
     },
     {
-      "title": "Apply for a Michigan Occupational Therapist License",
-      "description": "Submit an application for licensure, pay the required fee, and provide all required documentation to the Michigan Board of Occupational Therapy."
+      "title": "Complete Fingerprinting for Background Check",
+      "description": "Undergo a criminal background check by completing fingerprinting through an approved vendor. Ensure the results are electronically submitted directly to the Michigan Department of Licensing and Regulatory Affairs (LARA)."
+    },
+    {
+      "title": "Request Official Transcripts",
+      "description": "Arrange for official transcripts from your Accreditation Council for Occupational Therapy Education (ACOTE)-accredited occupational therapy program to be sent directly to LARA from your educational institution."
+    },
+    {
+      "title": "Verify NBCOT Certification",
+      "description": "Ensure your certification and examination scores from the National Board for Certification in Occupational Therapy (NBCOT) are officially verified and sent directly to LARA."
     }
   ],
   "documents": [
@@ -128,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 187,
+    "endorsement_fee": 50,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.michigan.gov/lara/bureau-list/bpl/occ/professions/occupational-therapists",
-    "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl/occ/professions/occupational-therapists",
+    "endorsement_url": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-boards/ot/applications-and-forms",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +158,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Michigan",
-        "dek": "Michigan Occupational Therapist License requires graduation from an accredited program, passing the NBCOT exam, and completing the application process."
+        "dek": "To apply for an Occupational Therapist license in Michigan, you must submit your application and all required documentation through the MiPLUS online system, managed by the Michigan Department of Licensing and Regulatory Affairs (LARA)."
       }
     }
   },
@@ -174,5 +184,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MiPLUS",
+    "portal_url": "https://www.michigan.gov/mipulse",
+    "registration_steps": "Navigate to the MiPLUS portal, select 'Register for an Account', and follow the prompts to create a MiLogin account first, then your MiPLUS account. Once registered, you can start a new application for licensure.",
+    "provider_search": "https://www.michigan.gov/lara/bureau-list/bpl/health/verify-a-license"
   }
 }

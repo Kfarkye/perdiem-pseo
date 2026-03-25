@@ -19,21 +19,23 @@
     "keywords": "physical therapist license reciprocity hawaii, how to transfer physical therapist license to hawaii, physical therapist compact hawaii, hawaii physical therapist endorsement application"
   },
   "board": {
-    "name": "Hawaii DCCA — Physical Therapy",
+    "name": "Hawaii DCCA \u2014 Physical Therapy",
     "parent_dept": "Hawaii Department of Health (DOH) Office of Health Care Assurance",
-    "mailing_address": "See board website",
+    "mailing_address": "Department of Commerce and Consumer Affairs\nProfessional and Vocational Licensing Division\nP.O. Box 3469\nHonolulu, HI 96801",
     "physical_address": "See board website",
-    "phone": "(808) 586-3000",
+    "phone": "808-586-3000",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://cca.hawaii.gov/pvl/"
+    "email": "pvl@dcca.hawaii.gov",
+    "url": "https://cca.hawaii.gov/pvl/",
+    "contact_url": "https://cca.hawaii.gov/pvl/contact/",
+    "verify_url": "https://pvl.ehawaii.gov/pvlsearch/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$200",
+    "renewal_cycle": "Every 2 years (by December 31 of odd-numbered years)",
+    "processing_time": "4 to 6 Weeks (after all documents received)",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Physical Therapy Program",
-      "description": "Graduate from a CAPTE-accredited physical therapy program."
+      "title": "Create a MyPVL Account",
+      "description": "Navigate to https://myrli.cca.hawaii.gov/ and register for a MyPVL account by selecting 'Create a New Account' and completing the registration process."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit Online Application & Pay Fees",
+      "description": "Log into your MyPVL account, select the Physical Therapist application type (either by examination or endorsement), fill out the required information, and pay the initial $100 application and compliance resolution fund fees."
     },
     {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit an application for licensure to the Hawaii Board of Physical Therapy, including all required documentation and fees."
+      "title": "Request Official Transcripts",
+      "description": "Arrange for all official transcripts from your accredited physical therapy program(s) to be sent directly from the institution to the Hawaii DCCA Professional & Vocational Licensing Division."
+    },
+    {
+      "title": "Submit NPTE Scores or Verification",
+      "description": "For initial licensure by examination, arrange for the Federation of State Boards of Physical Therapy (FSBPT) to send your official National Physical Therapy Examination (NPTE) scores directly to the Hawaii DCCA. For licensure by endorsement, arrange for verification of current and past licenses to be sent from other states where you hold or have held a PT license."
+    },
+    {
+      "title": "Complete Background Check",
+      "description": "Follow the instructions provided by the DCCA PVL upon application submission for completing a criminal background check, which typically includes fingerprinting."
     }
   ],
   "documents": [
@@ -125,10 +135,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "4 to 6 Weeks (after all documents received)",
     "processing_tier": "mid",
     "board_url": "https://cca.hawaii.gov/pvl/",
-    "endorsement_url": "https://cca.hawaii.gov/pvl/",
+    "endorsement_url": "https://cca.hawaii.gov/pvl/boards/physical_therapy/",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "hawaii-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Hawaii",
-        "dek": "Hawaii Physical Therapist license requires graduation from an accredited physical therapy program, passing the National Physical Therapy Examination, and a jurisprudence exam."
+        "dek": "To apply for a Physical Therapist license in Hawaii, you must submit your application online through the MyPVL system."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyPVL",
+    "portal_url": "https://myrli.cca.hawaii.gov/",
+    "registration_steps": "Go to https://myrli.cca.hawaii.gov/, click 'Create a New Account', and follow the prompts to register your profile and create login credentials.",
+    "provider_search": "https://pvl.ehawaii.gov/pvlsearch/"
   }
 }

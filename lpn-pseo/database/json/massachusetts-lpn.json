@@ -1,155 +1,165 @@
 {
-    "state_slug": "massachusetts",
-    "state_name": "Massachusetts",
-    "fingerprints": {
-        "required": false,
-        "method_in_state": "N/A — Massachusetts uses a CORI (Criminal Offender Record Information) background check instead of fingerprinting",
-        "method_out_of_state": "N/A — CORI Acknowledgement Form must be notarized and uploaded to the online application",
-        "vendor": "N/A (CORI through Mass.gov)",
-        "fee": "$0 (included in application)",
-        "delay_out_of_state_weeks": "0",
-        "vendor_url": "https://www.mass.gov/how-to/apply-for-a-nursing-license-by-reciprocity"
+  "state_slug": "massachusetts",
+  "state_name": "Massachusetts",
+  "fingerprints": {
+    "required": false,
+    "method_in_state": "N/A \u2014 Massachusetts uses a CORI (Criminal Offender Record Information) background check instead of fingerprinting",
+    "method_out_of_state": "N/A \u2014 CORI Acknowledgement Form must be notarized and uploaded to the online application",
+    "vendor": "N/A (CORI through Mass.gov)",
+    "fee": "$0 (included in application)",
+    "delay_out_of_state_weeks": "0",
+    "vendor_url": "https://www.mass.gov/how-to/apply-for-a-nursing-license-by-reciprocity"
+  },
+  "profession_name": "Licensed Practical Nurse",
+  "credential_nomenclature": "Practical Nurse (PN)",
+  "last_updated": "2026-02-26",
+  "seo": {
+    "title": "Massachusetts LPN License by Endorsement \u2014 Requirements & Fees (2026)",
+    "description": "Apply for a Massachusetts Practical Nurse (PN) license by reciprocity through the Board of Registration in Nursing. $305 estimated total fee. COG form, Nursys verification, CE courses, and notarized CORI required.",
+    "keywords": "Massachusetts LPN license, MA practical nurse license, Massachusetts nursing license by reciprocity, MA Board of Registration in Nursing, LPN endorsement Massachusetts"
+  },
+  "board": {
+    "name": "Board of Registration in Nursing",
+    "parent_dept": "Commonwealth of Massachusetts",
+    "mailing_address": "Board of Registration in Nursing\n250 Washington Street\nBoston, MA 02108",
+    "physical_address": "250 Washington Street<br>Boston, MA 02108",
+    "phone": "(617) 973-0900",
+    "fax": "(617) 973-0984",
+    "email": "licensure.bon@mass.gov",
+    "url": "https://www.mass.gov/how-to/apply-for-a-nursing-license-by-reciprocity",
+    "contact_url": "https://www.mass.gov/info-details/contact-us-health-professions-licensing-dph",
+    "verify_url": "https://www.mass.gov/massachusetts-nursing-license-lookup"
+  },
+  "quick_facts": {
+    "total_fee": "$305",
+    "fee_breakdown": "$275 application + $30 Nursys verification",
+    "renewal_fee": "$80",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "2 to 3 Weeks",
+    "license_duration": "2 Years"
+  },
+  "license_types": [
+    {
+      "title": "Practical Nurse (PN) License by Reciprocity",
+      "description": "The endorsement pathway for LPNs already licensed in another state. Requires Nursys license verification, Certification of Graduation (COG) form, official transcripts, CE courses (Domestic & Sexual Violence + Cognitive Impairment), a notarized CORI form, and a 2x2 passport-style photo."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Create a Plus Portal Account",
+      "description": "Register for an account on the Massachusetts Department of Public Health's Health Professions Licensing System, known as the Plus Portal, and select the 'Board of Registration in Nursing' to begin your application."
     },
-    "profession_name": "Licensed Practical Nurse",
-    "credential_nomenclature": "Practical Nurse (PN)",
-    "last_updated": "2026-02-26",
-    "seo": {
-        "title": "Massachusetts LPN License by Endorsement — Requirements & Fees (2026)",
-        "description": "Apply for a Massachusetts Practical Nurse (PN) license by reciprocity through the Board of Registration in Nursing. $305 estimated total fee. COG form, Nursys verification, CE courses, and notarized CORI required.",
-        "keywords": "Massachusetts LPN license, MA practical nurse license, Massachusetts nursing license by reciprocity, MA Board of Registration in Nursing, LPN endorsement Massachusetts"
+    {
+      "title": "Complete and Submit Online Application",
+      "description": "Fill out the LPN application form on the Plus Portal, provide all required information and documentation, and pay the initial licensure application fee."
     },
-    "board": {
-        "name": "Board of Registration in Nursing",
-        "parent_dept": "Commonwealth of Massachusetts",
-        "mailing_address": "250 Washington Street<br>Boston, MA 02108",
-        "physical_address": "250 Washington Street<br>Boston, MA 02108",
-        "phone": "(800) 414-0168",
-        "fax": "(617) 973-0984",
-        "email": "mailto:nursing.admin@state.ma.us",
-        "url": "https://www.mass.gov/how-to/apply-for-a-nursing-license-by-reciprocity"
+    {
+      "title": "Register for NCLEX-PN and Submit Transcripts",
+      "description": "Register with Pearson VUE for the NCLEX-PN examination and arrange for your official transcripts to be sent directly from your approved nursing program to the Massachusetts Board of Registration in Nursing."
     },
-    "quick_facts": {
-        "total_fee": "$305",
-        "fee_breakdown": "$275 application + $30 Nursys verification",
-        "renewal_fee": "See board",
-        "renewal_cycle": "Every 2 years",
-        "processing_time": "6 to 8 Weeks",
-        "license_duration": "2 Years"
+    {
+      "title": "Pass the NCLEX-PN Examination",
+      "description": "Schedule and successfully pass the NCLEX-PN examination. The Board of Registration in Nursing will issue your LPN license once all application requirements are met and you have passed the exam."
+    }
+  ],
+  "documents": [
+    {
+      "item": "Certification of Graduation (COG) Form",
+      "detail": "Must be completed by your nursing program administrator and mailed directly to PCS. Use the out-of-state form if applicable."
     },
-    "license_types": [
-        {
-            "title": "Practical Nurse (PN) License by Reciprocity",
-            "description": "The endorsement pathway for LPNs already licensed in another state. Requires Nursys license verification, Certification of Graduation (COG) form, official transcripts, CE courses (Domestic & Sexual Violence + Cognitive Impairment), a notarized CORI form, and a 2x2 passport-style photo."
-        }
-    ],
-    "steps": [
-        {
-            "title": "Request Certification of Graduation (COG) Form",
-            "description": "Contact the nursing program that made you eligible to take the NCLEX. The program administrator must complete and mail the COG form directly to Professional Credential Services (PCS) at: ATTN: MA Board of Registration in Nursing, C/O MA Nurse Coordinator, P.O. Box 198788, Nashville, TN 37219. PCS will not accept a COG form from the applicant. Use the out-of-state form if your program was outside Massachusetts."
-        },
-        {
-            "title": "Request Official Transcripts to PCS",
-            "description": "Have your nursing program send official transcripts directly to PCS. Electronic transcripts are preferred — send via Parchment or National Student Clearinghouse to transcripts@pcshq.com. Paper transcripts must be mailed in a sealed envelope to the PCS address above. PCS will not accept transcripts from the applicant."
-        },
-        {
-            "title": "Complete Continuing Education Courses",
-            "description": "Complete the mandatory Domestic & Sexual Violence training (free, 4-section online course per Chapter 260). Also complete the Cognitive Impairment / Alzheimer's training if not already met through your nursing education. Save certificates for your records."
-        },
-        {
-            "title": "Request Nursys License Verification",
-            "description": "Submit Nursys license verification for all professional licenses held (RN, PN, APRN — both active and inactive, temporary and permanent). Go to www.nursys.com, click 'Request Verification,' and select Massachusetts. Fee is $30 per verification."
-        },
-        {
-            "title": "Prepare & Notarize CORI Form",
-            "description": "Print the Criminal Offender Record Information (CORI) Acknowledgement Form. Take it to a Notary Public — do not fill it out until you are in their presence. Sign and date page 1, complete Subject Information and Current Address on page 2, and have the Notary complete page 3. Dates on pages 1 and 3 must match. No scribbles, cross-outs, or white-out allowed."
-        },
-        {
-            "title": "Obtain a 2x2 Passport-Style Photo",
-            "description": "Take a color photo against a solid white background, clearly showing your face and shoulders. Must be taken within the last year. Driver's license photos or photos of ID cards are not accepted."
-        },
-        {
-            "title": "Create Mass.gov Account & Submit Application",
-            "description": "Create an account at healthprofessionlicensing.mass.gov. Navigate to Board of Registration in Nursing → Practical Nurse (PN) License → Start Application. Select 'Reciprocity' as the application method. Upload your notarized CORI form, passport photo, and list all licenses held. Pay the $275 application fee."
-        }
-    ],
-    "documents": [
-        {
-            "item": "Certification of Graduation (COG) Form",
-            "detail": "Must be completed by your nursing program administrator and mailed directly to PCS. Use the out-of-state form if applicable."
-        },
-        {
-            "item": "Official Transcripts",
-            "detail": "Sent directly to PCS electronically (transcripts@pcshq.com via Parchment or National Student Clearinghouse) or by mail in a sealed envelope."
-        },
-        {
-            "item": "Nursys License Verification",
-            "detail": "For all professional nursing licenses held (RN, PN, APRN), active or inactive."
-        },
-        {
-            "item": "Notarized CORI Acknowledgement Form",
-            "detail": "Must be manually signed (no electronic signatures), notarized, with matching dates on pages 1 and 3. No cross-outs or white-out."
-        },
-        {
-            "item": "2x2 Passport-Style Photo",
-            "detail": "Color photo, white background, taken within the last year. Face and shoulders clearly visible."
-        },
-        {
-            "item": "Domestic & Sexual Violence CE Certificate",
-            "detail": "Free online training (Chapter 260). Save certificate for audit purposes."
-        },
-        {
-            "item": "VALOR Act Documentation (if applicable)",
-            "detail": "Active military, military spouse, or veteran status requires a notarized affidavit form."
-        }
-    ],
-    "provisional_text": "Massachusetts does not issue a provisional or temporary LPN license for endorsement applicants. Applications are reviewed only after all required documents and fees are received by PCS.",
-    "reciprocity_text": "Massachusetts grants LPN licensure by reciprocity. Out-of-state LPNs must submit via the Mass.gov online system, provide Nursys verification of all nursing licenses held, submit a Certification of Graduation (COG) form and official transcripts through PCS, complete mandatory CE courses, and upload a notarized CORI form. Foreign-educated nurses face an additional 6–8 week delay and must complete a credential evaluation through TruMerit, Josef Silny & Associates, or The Evaluation Company.",
-    "faqs": [
-        {
-            "question": "How much does a Massachusetts LPN license by endorsement cost?",
-            "answer": "The total estimated cost is $305: $275 for the application fee, plus $30 for Nursys license verification. Additional costs may apply for transcripts, notarization, and CE courses depending on the vendor."
-        },
-        {
-            "question": "What is the COG form and why is it so important?",
-            "answer": "The Certification of Graduation (COG) form is the most important and time-sensitive document. It must be completed by the program administrator at your original nursing school and mailed directly to PCS. Your application will not be reviewed until PCS receives it."
-        },
-        {
-            "question": "Can I submit the COG form or transcripts myself?",
-            "answer": "No. PCS will not accept the COG form or transcripts directly from the applicant. Both must be sent directly from your educational institution."
-        },
-        {
-            "question": "Do I need fingerprints for a Massachusetts nursing license?",
-            "answer": "No. Massachusetts uses a CORI (Criminal Offender Record Information) background check instead of fingerprinting. You must submit a notarized CORI Acknowledgement Form with your application."
-        },
-        {
-            "question": "How long does it take to get a Massachusetts LPN license?",
-            "answer": "Standard processing is 6 to 8 weeks after PCS receives all required documents. Delays are common if the COG form or transcripts are missing. Foreign-educated nurses may experience additional delays."
-        },
-        {
-            "question": "Will I receive a paper license in the mail?",
-            "answer": "No. A paper license will NOT be mailed. You and your employer can print a copy of your license verification from the Board's website at checkahealthlicense.mass.gov."
-        }
-    ],
-    "compact": {
-        "is_compact_member": false,
-        "compact_name": "Nurse Licensure Compact (NLC)",
-        "compact_privilege_fee": "N/A"
+    {
+      "item": "Official Transcripts",
+      "detail": "Sent directly to PCS electronically (transcripts@pcshq.com via Parchment or National Student Clearinghouse) or by mail in a sealed envelope."
     },
-    "fees_endorsement": {
-        "app_fee": "$275",
-        "background_check_fee": "$0 (CORI included in application)",
-        "jurisprudence_exam_fee": "$0",
-        "nursys_verification_fee": "$30",
-        "total_estimated_cost": "$305"
+    {
+      "item": "Nursys License Verification",
+      "detail": "For all professional nursing licenses held (RN, PN, APRN), active or inactive."
     },
-    "temp_license": {
-        "available": false,
-        "fee": "N/A",
-        "processing_time": "N/A",
-        "duration": "N/A"
+    {
+      "item": "Notarized CORI Acknowledgement Form",
+      "detail": "Must be manually signed (no electronic signatures), notarized, with matching dates on pages 1 and 3. No cross-outs or white-out."
     },
-    "last_verified_date": "2026-02-26",
-    "board_source_url": "https://www.mass.gov/how-to/apply-for-a-nursing-license-by-reciprocity",
-    "license_pathway": "endorsement",
-    "profession_overrides": {}
+    {
+      "item": "2x2 Passport-Style Photo",
+      "detail": "Color photo, white background, taken within the last year. Face and shoulders clearly visible."
+    },
+    {
+      "item": "Domestic & Sexual Violence CE Certificate",
+      "detail": "Free online training (Chapter 260). Save certificate for audit purposes."
+    },
+    {
+      "item": "VALOR Act Documentation (if applicable)",
+      "detail": "Active military, military spouse, or veteran status requires a notarized affidavit form."
+    }
+  ],
+  "provisional_text": "Massachusetts does not issue a provisional or temporary LPN license for endorsement applicants. Applications are reviewed only after all required documents and fees are received by PCS.",
+  "reciprocity_text": "Massachusetts grants LPN licensure by reciprocity. Out-of-state LPNs must submit via the Mass.gov online system, provide Nursys verification of all nursing licenses held, submit a Certification of Graduation (COG) form and official transcripts through PCS, complete mandatory CE courses, and upload a notarized CORI form. Foreign-educated nurses face an additional 6\u20138 week delay and must complete a credential evaluation through TruMerit, Josef Silny & Associates, or The Evaluation Company.",
+  "faqs": [
+    {
+      "question": "How much does a Massachusetts LPN license by endorsement cost?",
+      "answer": "The total estimated cost is $305: $275 for the application fee, plus $30 for Nursys license verification. Additional costs may apply for transcripts, notarization, and CE courses depending on the vendor."
+    },
+    {
+      "question": "What is the COG form and why is it so important?",
+      "answer": "The Certification of Graduation (COG) form is the most important and time-sensitive document. It must be completed by the program administrator at your original nursing school and mailed directly to PCS. Your application will not be reviewed until PCS receives it."
+    },
+    {
+      "question": "Can I submit the COG form or transcripts myself?",
+      "answer": "No. PCS will not accept the COG form or transcripts directly from the applicant. Both must be sent directly from your educational institution."
+    },
+    {
+      "question": "Do I need fingerprints for a Massachusetts nursing license?",
+      "answer": "No. Massachusetts uses a CORI (Criminal Offender Record Information) background check instead of fingerprinting. You must submit a notarized CORI Acknowledgement Form with your application."
+    },
+    {
+      "question": "How long does it take to get a Massachusetts LPN license?",
+      "answer": "Standard processing is 6 to 8 weeks after PCS receives all required documents. Delays are common if the COG form or transcripts are missing. Foreign-educated nurses may experience additional delays."
+    },
+    {
+      "question": "Will I receive a paper license in the mail?",
+      "answer": "No. A paper license will NOT be mailed. You and your employer can print a copy of your license verification from the Board's website at checkahealthlicense.mass.gov."
+    }
+  ],
+  "compact": {
+    "is_compact_member": false,
+    "compact_name": "Nurse Licensure Compact (NLC)",
+    "compact_privilege_fee": "N/A"
+  },
+  "fees_endorsement": {
+    "app_fee": "$275",
+    "background_check_fee": "$0 (CORI included in application)",
+    "jurisprudence_exam_fee": "$0",
+    "nursys_verification_fee": "$30",
+    "total_estimated_cost": "$305"
+  },
+  "temp_license": {
+    "available": false,
+    "fee": "N/A",
+    "processing_time": "N/A",
+    "duration": "N/A"
+  },
+  "last_verified_date": "2026-02-26",
+  "board_source_url": "https://www.mass.gov/how-to/apply-for-a-nursing-license-by-reciprocity",
+  "license_pathway": "endorsement",
+  "profession_overrides": {},
+  "reciprocity": {
+    "endorsement_url": "https://www.mass.gov/how-to/apply-for-a-practical-nurse-lpn-license-by-endorsement",
+    "endorsement_fee": 230,
+    "processing_time": "2 to 3 Weeks"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Plus Portal (Health Professions Licensing System)",
+    "portal_url": "https://plus.mass.gov/",
+    "registration_steps": "Create an account on the Plus Portal, select the Board of Registration in Nursing, and initiate a new LPN application.",
+    "provider_search": "https://www.mass.gov/massachusetts-nursing-license-lookup"
+  }
 }

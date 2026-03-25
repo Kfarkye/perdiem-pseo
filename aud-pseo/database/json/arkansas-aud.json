@@ -21,18 +21,20 @@
   "board": {
     "name": "Arkansas Board of Examiners in Speech-Language Pathology and Audiology",
     "parent_dept": "ABESPA",
-    "mailing_address": "101 E. Capitol Ave., Suite 211, Little Rock, AR 72201",
+    "mailing_address": "ABESPA, P.O. Box 2011, Little Rock, AR 72203-2011",
     "physical_address": "101 E. Capitol Ave., Suite 211, Little Rock, AR 72201",
-    "phone": "(501) 682-9180",
+    "phone": "(501) 682-9218",
     "fax": "(501) 682-9181",
-    "email": "mailto:abespa@arkansas.gov",
-    "url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology"
+    "email": "info@abespa.arkansas.gov",
+    "url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology",
+    "contact_url": "https://www.arkansas.gov/board-of-examiners-in-speech-language-pathology-and-audiology/contact-us/",
+    "verify_url": "https://licensing.arkansas.gov/Lookup/LicenseLookup.aspx?lcid=2"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_cycle": "Every year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination (Praxis)",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Possess a Doctor of Audiology (AuD) degree from a regionally accredited educational institution."
+      "title": "Create an Account",
+      "description": "Register for a new account on the ABESPA Licensing Portal by clicking 'Register for a New Account' on the login page and following the prompts."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Achieve a passing score on the Audiology Examination (Praxis)."
+      "title": "Complete Online Application",
+      "description": "Log in to your newly created account on the ABESPA Licensing Portal and complete the Audiologist Licensure Application."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application and pay the required fees to the Arkansas Board of Examiners in Speech-Language Pathology and Audiology."
+      "title": "Pay Application and Licensure Fees",
+      "description": "Pay the non-refundable $100 application fee and the $100 initial licensure fee through the ABESPA Licensing Portal."
+    },
+    {
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official graduate transcripts, reflecting your Master's or Doctoral degree in audiology, to be sent directly from your university to ABESPA."
+    },
+    {
+      "title": "Submit Praxis Scores",
+      "description": "Arrange for official Praxis II Audiology (5030) examination scores to be sent directly from ETS to ABESPA."
+    },
+    {
+      "title": "Provide Verification (Endorsement)",
+      "description": "For endorsement, provide verification of licensure in good standing from all states where you have previously held a license, or submit proof of your ASHA Certificate of Clinical Competence in Audiology (CCC-A)."
     }
   ],
   "documents": [
@@ -128,7 +142,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology",
-    "endorsement_url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology",
+    "endorsement_url": "https://www.arkansas.gov/board-of-examiners-in-speech-language-pathology-and-audiology/applicants/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "arkansas-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Arkansas",
-        "dek": "Arkansas Audiologist license requires a doctoral degree in audiology, passing the Audiology Examination (Praxis), and completion of the application process."
+        "dek": "To apply for an Audiologist license in Arkansas, you must submit your application and supporting documents through the ABESPA Licensing Portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ABESPA Licensing Portal",
+    "portal_url": "https://licensing.arkansas.gov/Account/Login.aspx?lcid=2",
+    "registration_steps": "Navigate to the ABESPA Licensing Portal URL and click 'Register for a New Account'. Follow the prompts to create your username and password.",
+    "provider_search": "https://licensing.arkansas.gov/Lookup/LicenseLookup.aspx?lcid=2"
   }
 }

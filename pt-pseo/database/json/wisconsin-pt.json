@@ -19,21 +19,23 @@
     "keywords": "physical therapist license reciprocity wisconsin, how to transfer physical therapist license to wisconsin, physical therapist compact wisconsin, wisconsin physical therapist endorsement application"
   },
   "board": {
-    "name": "Wisconsin DSPS — Physical Therapist",
+    "name": "Wisconsin DSPS \u2014 Physical Therapist",
     "parent_dept": "Wisconsin Department of Safety and Professional Services (DSPS)",
-    "mailing_address": "See board website",
+    "mailing_address": "Department of Safety and Professional Services, P.O. Box 8368, Madison, WI 53708-8368",
     "physical_address": "See board website",
     "phone": "(608) 266-2112",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dsps.wi.gov/"
+    "email": "dsps@wisconsin.gov",
+    "url": "https://dsps.wi.gov/",
+    "contact_url": "https://dsps.wi.gov/Pages/AboutUs/ContactUs.aspx",
+    "verify_url": "https://dsps.wi.gov/Pages/OnlineServices/LicenseLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$78",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "30 hours of continuing education per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create a LicensE Account",
+      "description": "Register for an account on the Wisconsin DSPS LicensE portal at licenserequired.wi.gov. Provide your personal information and verify your email to gain access to the application system."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE for Physical Therapists."
+      "title": "Complete the Online Application",
+      "description": "Log in to your LicensE account and select the application for 'Physical Therapist'. Fill out all required sections, including personal details, educational history, and respond to background questions."
     },
     {
-      "title": "Apply for a Wisconsin Physical Therapist License",
-      "description": "Submit an application for licensure to the Wisconsin Department of Safety and Professional Services (DSPS) and pay the required fee."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts verifying the completion of your accredited physical therapy program to be sent directly from your educational institution to the Wisconsin DSPS."
+    },
+    {
+      "title": "Request NPTE Scores",
+      "description": "Ensure your official National Physical Therapy Examination (NPTE) scores are sent directly from the Federation of State Boards of Physical Therapy (FSBPT) to the Wisconsin DSPS."
+    },
+    {
+      "title": "Provide Licensure Verification (if applicable)",
+      "description": "If you hold or have held a PT license in another state, arrange for verification of licensure to be sent directly from that state's licensing board to the Wisconsin DSPS."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee through the LicensE portal using a credit card or other accepted payment method to finalize your application submission."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 135,
+    "processing_time": "3 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dsps.wi.gov/",
-    "endorsement_url": "https://dsps.wi.gov/",
+    "endorsement_url": "https://dsps.wi.gov/Pages/Professions/PhysicalTherapist/Default.aspx",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "wisconsin-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Wisconsin",
-        "dek": "Wisconsin Physical Therapist License requires graduation from an accredited program, passing the National Physical Therapy Examination, and completing the application process."
+        "dek": "To apply for a Physical Therapist license in Wisconsin, you must submit your application through the Wisconsin Department of Safety and Professional Services (DSPS) online LicensE portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "LicensE",
+    "portal_url": "https://licenserequired.wi.gov/",
+    "registration_steps": "To create an account and start an application on the LicensE portal, visit the portal URL and click 'Register for an Account'. Follow the prompts to provide personal information, set up security questions, and verify your email address. Once registered, log in to access the application dashboard and initiate a new Physical Therapist licensure application.",
+    "provider_search": "https://dsps.wi.gov/Pages/OnlineServices/LicenseLookup.aspx"
   }
 }

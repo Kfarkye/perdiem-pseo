@@ -21,12 +21,14 @@
   "board": {
     "name": "Iowa Board of Physical and Occupational Therapy",
     "parent_dept": "Department of Inspections, Appeals, and Licensing (DIAL)",
-    "mailing_address": "See board website",
+    "mailing_address": "Iowa Board of Physical and Occupational Therapy, Iowa Department of Health and Human Services, Bureau of Professional Licensure, Lucas State Office Building, 321 E. 12th Street, Des Moines, Iowa 50319-0075",
     "physical_address": "See board website",
-    "phone": "(515) 281-7074",
+    "phone": "(515) 281-0254",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.idph.iowa.gov/"
+    "email": "plpublic@hhs.iowa.gov",
+    "url": "https://www.idph.iowa.gov/",
+    "contact_url": "https://hhs.iowa.gov/contact-us-bl",
+    "verify_url": "https://hhs.iowa.gov/licensure/verify-license"
   },
   "quick_facts": {
     "total_fee": "$135",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Register for an Online Account",
+      "description": "Go to the Iowa HHS Online Services portal (ibplicense.iowa.gov) and click 'Register' to create a new user account. You will need to provide personal information and verify your email."
     },
     {
-      "title": "Pass the NBCOT Exam",
-      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Initiate Your Application",
+      "description": "Log in to your Iowa HHS Online Services account. Select 'Initial Application' and choose the 'Occupational Therapist (OT)' license type to begin the application for licensure by endorsement."
     },
     {
-      "title": "Apply for an Iowa Occupational Therapist License",
-      "description": "Submit an application for licensure to the Iowa Board of Physical and Occupational Therapy, including required documentation and fees."
+      "title": "Complete the Online Application",
+      "description": "Fill out all required sections of the online application form within the Iowa HHS Online Services portal, including personal details, educational history, and professional experience."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Arrange for official transcripts to be sent directly from your educational institution to the Iowa Board of Physical and Occupational Therapy. Submit verification of licensure from all states where you currently hold or have held a license. Complete any necessary criminal background check authorization as prompted by the Iowa HHS Online Services portal."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Pay the non-refundable $120 endorsement application fee electronically through the Iowa HHS Online Services portal."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application and respond promptly to any requests for additional information or clarification from the Iowa Board of Physical and Occupational Therapy via the Iowa HHS Online Services portal."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 120,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.idph.iowa.gov/",
-    "endorsement_url": "https://www.idph.iowa.gov/",
+    "endorsement_url": "https://hhs.iowa.gov/licensure/physical-and-occupational-therapy",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Iowa",
-        "dek": "Iowa Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and completing the application process."
+        "dek": "To apply for an Occupational Therapist license in Iowa, you must create an account and submit your application and all supporting documents through the Iowa HHS Online Services portal."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Iowa HHS Online Services",
+    "portal_url": "https://ibplicense.iowa.gov/",
+    "registration_steps": "Navigate to the Iowa HHS Online Services portal and click 'Register' to create a new user account. Follow the prompts to enter your information, create a username and password, and verify your email address before logging in to start an application.",
+    "provider_search": "https://hhs.iowa.gov/licensure/verify-license"
   }
 }

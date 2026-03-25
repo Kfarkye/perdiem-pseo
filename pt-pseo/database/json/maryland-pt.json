@@ -21,17 +21,19 @@
   "board": {
     "name": "Maryland Board of Physical Therapy Examiners",
     "parent_dept": "Maryland Department of Health (MDH)",
-    "mailing_address": "See board website",
+    "mailing_address": "Maryland Board of Physical Therapy Examiners\n4201 Patterson Avenue, 4th Floor\nBaltimore, MD 21215-2299",
     "physical_address": "See board website",
-    "phone": "(410) 764-4752",
+    "phone": "410-764-4752",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://health.maryland.gov/bphte/Pages/index.aspx"
+    "email": "mdh.bpte@maryland.gov",
+    "url": "https://health.maryland.gov/bphte/Pages/index.aspx",
+    "contact_url": "https://health.maryland.gov/bpte/Pages/contact.aspx",
+    "verify_url": "https://mdelect.md.gov/licensing/default.aspx?agency=PT"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create an elicensing account",
+      "description": "Navigate to the Maryland elicensing portal (mdelect.md.gov/licensing/default.aspx) and click 'Register for an Account' to create your user ID and password."
+    },
+    {
+      "title": "Submit the online application",
+      "description": "Log into your elicensing account, select 'Apply for a New License,' and complete the Physical Therapist application form, paying the associated application fee."
+    },
+    {
+      "title": "Submit official transcripts",
+      "description": "Arrange for official transcripts confirming your physical therapy education to be sent directly from your educational institution to the Maryland Board of Physical Therapy Examiners."
+    },
+    {
+      "title": "Complete a criminal history records check",
+      "description": "Undergo a criminal history records check by submitting fingerprints to an approved vendor, as instructed by the Board, and ensure results are sent to the Board."
     },
     {
       "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully complete the National Physical Therapy Examination (NPTE) for Physical Therapists."
+      "description": "Register for and pass the NPTE, administered by the Federation of State Boards of Physical Therapy (FSBPT). The Board will receive your scores directly from FSBPT."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit an application for licensure to the Maryland Board of Physical Therapy Examiners along with required documentation and fees."
+      "title": "Receive license",
+      "description": "The Maryland Board of Physical Therapy Examiners will review all submitted documents. Once all requirements are met and verified, your license will be issued, and you will receive notification."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 75,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.maryland.gov/bphte/Pages/index.aspx",
-    "endorsement_url": "https://health.maryland.gov/bphte/Pages/index.aspx",
+    "endorsement_url": "https://health.maryland.gov/bpte/Pages/newapplicant.aspx",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "maryland-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Maryland",
-        "dek": "Maryland Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination, and a background check."
+        "dek": "Applicants for Physical Therapist licensure in Maryland must apply online through the state's elicensing system."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "elicensing",
+    "portal_url": "https://mdelect.md.gov/licensing/default.aspx",
+    "registration_steps": "Navigate to the elicensing portal, click 'Register for an Account,' and follow the prompts to create a user ID and password. Once registered, log in and select 'Apply for a New License.'",
+    "provider_search": "https://mdelect.md.gov/licensing/default.aspx?agency=PT"
   }
 }

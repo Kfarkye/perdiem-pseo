@@ -21,18 +21,20 @@
   "board": {
     "name": "Louisiana Board of Pharmacy",
     "parent_dept": "Independent State Board",
-    "mailing_address": "See board website",
+    "mailing_address": "3388 Brentwood Drive, Baton Rouge, LA 70809",
     "physical_address": "See board website",
     "phone": "(225) 925-6496",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "http://www.pharmacy.la.gov/"
+    "url": "http://www.pharmacy.la.gov/",
+    "contact_url": "https://www.labp.com/ContactUs",
+    "verify_url": "https://portal.labp.com/Lookup/LicenseeLookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Annually",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "NAPLEX and MPJE",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program in pharmacy from an ACPE-accredited school or college of pharmacy."
+      "title": "Register for an Account",
+      "description": "Navigate to the LABP Online Portal and click 'Click Here to Register for Online Services'. Provide your email, create a password, and enter personal details including your Social Security Number and Date of Birth to establish your online account."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Successfully complete the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Log in and Start Application",
+      "description": "Log into your newly created account on the LABP Online Portal. From the dashboard, select the appropriate application type (e.g., 'Pharmacist - Examination' for new licenses or 'Pharmacist - Reciprocity' for endorsement)."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Apply to the Louisiana Board of Pharmacy, including all required documentation and fees, to obtain your pharmacist license."
+      "title": "Complete Online Application Form",
+      "description": "Fill out all required sections of the online application form within the LABP Online Portal, providing personal information, educational background, and professional history as requested."
+    },
+    {
+      "title": "Submit Required Documents",
+      "description": "Upload all necessary supporting documents directly through the LABP Online Portal as specified in the application instructions, which may include official transcripts, internship affidavits, and score transfer requests for NAPLEX/MPJE from NABP."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required non-refundable application fee using a credit or debit card through the secure payment system within the LABP Online Portal."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided by the Louisiana Board of Pharmacy to complete a mandatory criminal background check through their designated vendor. This process typically requires fingerprint submission."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 200,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.pharmacy.la.gov/",
-    "endorsement_url": "http://www.pharmacy.la.gov/",
+    "endorsement_url": "https://www.labp.com/Reciprocity",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "louisiana-pharmacist",
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in Louisiana",
-        "dek": "Louisiana Pharmacist License requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing application requirements."
+        "dek": "To apply for a pharmacist license in Louisiana, create an account and submit your application through the LABP Online Portal."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "LABP Online Portal",
+    "portal_url": "https://portal.labp.com/Account/Login.aspx?ReturnUrl=%2fDefault.aspx",
+    "registration_steps": "On the LABP Online Portal login page, click 'Click Here to Register for Online Services'. Provide an email address, create a password, and enter personal details including your Social Security Number and Date of Birth to create your account.",
+    "provider_search": "https://portal.labp.com/Lookup/LicenseeLookup.aspx"
   }
 }

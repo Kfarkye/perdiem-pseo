@@ -21,18 +21,20 @@
   "board": {
     "name": "Mississippi Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Mississippi State Department of Health (MSDH)",
-    "mailing_address": "P.O. Box 1700, Jackson, MS 39215-1700",
+    "mailing_address": "Mississippi State Department of Health, Professional Licensure, P.O. Box 1700, Jackson, MS 39215-1700",
     "physical_address": "570 E. Woodrow Wilson Dr., Jackson, MS 39216",
-    "phone": "(601) 364-1100",
+    "phone": "(601) 364-7360",
     "fax": "(601) 364-5052",
-    "email": "mailto:licensure@msdh.ms.gov",
-    "url": "https://msdh.ms.gov/page/30,0,106.html"
+    "email": "Professional.Licensure@msdh.ms.gov",
+    "url": "https://msdh.ms.gov/page/30,0,106.html",
+    "contact_url": "https://msdh.ms.gov/msdhsite/_static/4,0,108.html",
+    "verify_url": "https://www.healthregulation.ms.gov/search.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_cycle": "Every year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination (administered by Praxis)",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Obtain a doctoral degree in audiology from an accredited educational institution."
+      "title": "Create an Account",
+      "description": "Register for a new account on the MSDH Online Licensing System at https://www.healthregulation.ms.gov/Default.aspx using a valid email address and setting up security questions."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Pass the Audiology Examination (administered by Praxis)."
+      "title": "Complete Online Application",
+      "description": "Log in to the MSDH Online Licensing System, select the \"Audiologist\" application, and accurately complete all sections, including personal, educational, and professional history."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application and all required documentation to the Mississippi Board of Speech-Language Pathology and Audiology."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for all official academic transcripts, verifying a qualifying master's or doctoral degree in Audiology from an accredited institution, to be sent directly to the Mississippi State Department of Health, Professional Licensure."
+    },
+    {
+      "title": "Provide Praxis Examination Scores",
+      "description": "Request official scores for the Audiology Praxis Examination (ETS Code 7041) to be sent directly from ETS to the Mississippi State Department of Health, Professional Licensure."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Upload any additional required documents through the MSDH Online Licensing System or arrange for third-party verification, such as professional experience forms or current state licenses if applying by endorsement."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee securely through the MSDH Online Licensing System to finalize your application submission."
     }
   ],
   "documents": [
@@ -128,7 +142,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://msdh.ms.gov/page/30,0,106.html",
-    "endorsement_url": "https://msdh.ms.gov/page/30,0,106.html",
+    "endorsement_url": "https://msdh.ms.gov/msdhsite/_static/30,0,108.html",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "mississippi-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Mississippi",
-        "dek": "Mississippi Audiology license requires graduation from an accredited program, passing the national exam, and completion of supervised professional experience."
+        "dek": "To apply for an Audiologist license in Mississippi, applicants must register and complete their application through the MSDH Online Licensing System."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MSDH Online Licensing System",
+    "portal_url": "https://www.healthregulation.ms.gov/Default.aspx",
+    "registration_steps": "Create an account by clicking \"Register a New Account\", provide personal details, set up email and password, then verify your email to log in and start a new application.",
+    "provider_search": "https://www.healthregulation.ms.gov/search.aspx"
   }
 }

@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity delaware, how to transfer respiratory therapist license to delaware, respiratory therapist compact delaware, delaware respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Delaware Division of Professional Regulation — RT",
+    "name": "Delaware Division of Professional Regulation \u2014 RT",
     "parent_dept": "Delaware Division of Professional Regulation",
-    "mailing_address": "See board website",
+    "mailing_address": "Cannon Building, Suite 203, 861 Silver Lake Blvd., Dover, DE 19904",
     "physical_address": "See board website",
     "phone": "(302) 744-4500",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dpr.delaware.gov/boards/medicalpractice/respiratory_license/"
+    "email": "customerservice.dpr@delaware.gov",
+    "url": "https://dpr.delaware.gov/boards/medicalpractice/respiratory_license/",
+    "contact_url": "https://dpr.delaware.gov/boards/medical/contact/",
+    "verify_url": "https://dpronline.delaware.gov/mylicense/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$134",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$154",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "4 to 13 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours every two years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Care Program",
-      "description": "Graduate from a respiratory care education program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create a DELPROS Account",
+      "description": "Register for a new user account on the DELPROS online portal at delpros.delaware.gov if you do not already have one."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Start New Application",
+      "description": "Log in to your DELPROS account, select 'Apply for a New License/Permit' from the menu, and choose 'Respiratory Care Practitioner' from the list of professions."
     },
     {
-      "title": "Apply for a Delaware Respiratory Therapist License",
-      "description": "Submit an application, required documentation, and fees to the Delaware Division of Professional Regulation."
+      "title": "Complete Application Form",
+      "description": "Fill out all required sections of the online application within DELPROS, providing personal information, educational background, and examination details."
+    },
+    {
+      "title": "Upload Required Documentation",
+      "description": "Upload all necessary supporting documents directly through DELPROS, including official transcripts from an accredited respiratory care program and official NBRC exam scores. Request any required verifications from other states or institutions to be sent directly to the Board."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required application fee (currently $117.00 for endorsement) online via credit card through the DELPROS system."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check your DELPROS account for updates on your application status and respond promptly to any requests for additional information or documentation from the Board."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 153,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 117,
+    "processing_time": "4 to 13 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dpr.delaware.gov/boards/medicalpractice/respiratory_license/",
-    "endorsement_url": "https://dpr.delaware.gov/boards/medicalpractice/respiratory_license/",
+    "endorsement_url": "https://dpr.delaware.gov/boards/medical/rcp/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Delaware",
-        "dek": "Delaware Respiratory Therapist license requires graduation from an accredited respiratory care education program, passing the NBRC examination, and a criminal background check."
+        "dek": "To apply for a Respiratory Therapist license in Delaware, navigate to the DELPROS online portal to create an account and begin your application."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DELPROS (Delaware Professional Regulation Online Services)",
+    "portal_url": "https://delpros.delaware.gov/",
+    "registration_steps": "Navigate to the DELPROS portal, click on 'Register' to create a new user account with a valid email address and password. Once registered, log in to start your application.",
+    "provider_search": "https://dpronline.delaware.gov/mylicense/Search.aspx"
   }
 }

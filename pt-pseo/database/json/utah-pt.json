@@ -19,20 +19,22 @@
     "keywords": "physical therapist license reciprocity utah, how to transfer physical therapist license to utah, physical therapist compact utah, utah physical therapist endorsement application"
   },
   "board": {
-    "name": "Utah DOPL — Physical Therapy",
+    "name": "Utah DOPL \u2014 Physical Therapy",
     "parent_dept": "Department of Commerce",
-    "mailing_address": "See board website",
+    "mailing_address": "160 East 300 South, Salt Lake City, UT 84111",
     "physical_address": "See board website",
     "phone": "(801) 530-6628",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dopl.utah.gov/pt/"
+    "email": "doplweb@utah.gov",
+    "url": "https://dopl.utah.gov/pt/",
+    "contact_url": "https://dopl.utah.gov/contact/",
+    "verify_url": "https://dopl.utah.gov/verify-a-license/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$65",
+    "renewal_cycle": "Every 2 years (even numbered years)",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Physical Therapy Program",
-      "description": "Graduate from a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create Account and Submit Online Application",
+      "description": "Create an account on the Department of Commerce online licensing system and complete the online application for a Physical Therapist license. Pay the non-refundable application fee of $120."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, verifying receipt of your physical therapy degree, to be sent directly from your educational institution to the Utah Division of Occupational and Professional Licensing (DOPL)."
     },
     {
-      "title": "Apply for a Physical Therapist License in Utah",
-      "description": "Submit an application for licensure to the Utah Division of Occupational and Professional Licensing (DOPL) along with required documentation and fees."
+      "title": "Submit NPTE Scores",
+      "description": "Ensure your official National Physical Therapy Examination (NPTE) scores are sent directly from the Federation of State Boards of Physical Therapy (FSBPT) to DOPL."
+    },
+    {
+      "title": "Pass Utah Jurisprudence Exam",
+      "description": "Complete and pass the Utah Physical Therapist/Physical Therapist Assistant Jurisprudence Examination, which is administered online through the DOPL system once your application is submitted."
+    },
+    {
+      "title": "Await Licensure Review and Issuance",
+      "description": "Once all required documentation and examination results have been received and verified by DOPL, your application will be reviewed for final approval and your license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 120,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dopl.utah.gov/pt/",
-    "endorsement_url": "https://dopl.utah.gov/pt/",
+    "endorsement_url": "https://dopl.utah.gov/physical-therapy/docs/PT_Endorsement_Application_Requirements.pdf",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "utah-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Utah",
-        "dek": "Utah Physical Therapist License requires graduation from an accredited program, passing the NPTE, and a background check."
+        "dek": "To apply for a Physical Therapist license in Utah, you must create an account and complete the application through the Department of Commerce online licensing system."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Department of Commerce online licensing system",
+    "portal_url": "https://secure.utah.gov/account/login.html?returnURL=/apps/license/index.html",
+    "registration_steps": "Navigate to the Department of Commerce online licensing system. Click 'Register for an account' if you are a new user, then follow the prompts to create your account with a user ID and password. Once registered, log in and select 'Apply for a New License'.",
+    "provider_search": "https://dopl.utah.gov/verify-a-license/"
   }
 }

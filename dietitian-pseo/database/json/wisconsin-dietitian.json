@@ -21,19 +21,21 @@
   "board": {
     "name": "Dietitians Affiliated Credentialing Board",
     "parent_dept": "Wisconsin Department of Safety and Professional Services (DSPS)",
-    "mailing_address": "4822 Madison Yards Way<br>Madison, WI 53705",
+    "mailing_address": "Wisconsin Department of Safety and Professional Services\nP.O. Box 8935\nMadison, WI 53708-8935",
     "physical_address": "4822 Madison Yards Way<br>Madison, WI 53705",
     "phone": "(608) 266-2112",
     "fax": "",
-    "email": "",
-    "url": "https://dsps.wi.gov/pages/Professions/Dietitian/Default.aspx"
+    "email": "dsps@wisconsin.gov",
+    "url": "https://dsps.wi.gov/pages/Professions/Dietitian/Default.aspx",
+    "contact_url": "https://dsps.wi.gov/Pages/ContactUs/Default.aspx",
+    "verify_url": "https://licenses.wi.gov/"
   },
   "quick_facts": {
     "total_fee": "$60",
     "fee_breakdown": "$60 credential fee",
-    "renewal_fee": "$60",
-    "renewal_cycle": "Every 2 years (by Oct 31, even years)",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$85",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "6 to 9 Weeks",
     "license_duration": "2 Years (expires Oct 31, even years)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours every 2 years"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "You must obtain a bachelor's degree or post-baccalaureate degree from a regionally accredited college or university with completion of a didactic program in dietetics accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Create a WAMS ID",
+      "description": "Visit the Wisconsin Access Management System (WAMS) website to create a personal user ID and password, which is required for accessing state online services."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "You must complete a ACEND-accredited supervised practice dietetic internship or coordinated program."
+      "title": "Access the DSPS Online Licensing Services Portal",
+      "description": "Log in to the DSPS Online Licensing Services portal using your WAMS ID. If it's your first time, you will link your WAMS ID to the DSPS system to proceed with credentialing."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Commission on Dietetic Registration's (CDR) Registration Examination for Dietitians."
+      "title": "Initiate a New Application",
+      "description": "Within the DSPS Online Licensing Services portal, select the option to apply for a new Dietitian credential and complete the online application form (e.g., Form #2837 for new applicants or #2854 for endorsement)."
+    },
+    {
+      "title": "Upload Required Documents",
+      "description": "Electronically submit all necessary supporting documentation. This typically includes official transcripts verifying completion of an ACEND-accredited program, verification of supervised practice experience, and proof of passing the Commission on Dietetic Registration (CDR) examination."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Submit the non-refundable application fee and the initial credentialing fee through the DSPS Online Licensing Services portal using a credit card or electronic check."
     }
   ],
   "documents": [
@@ -81,7 +91,7 @@
     },
     {
       "question": "What are Wisconsin's supervised practice hour requirements?",
-      "answer": "Wisconsin requires a minimum of 900 hours of supervised dietetics practice, including at least 300 hours in clinical dietetics, 120 hours in food service administration, and 120 hours in community nutrition — all under approved supervision."
+      "answer": "Wisconsin requires a minimum of 900 hours of supervised dietetics practice, including at least 300 hours in clinical dietetics, 120 hours in food service administration, and 120 hours in community nutrition \u2014 all under approved supervision."
     },
     {
       "question": "Is Wisconsin transitioning to licensure?",
@@ -132,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 60,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 170,
+    "processing_time": "6 to 9 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dsps.wi.gov/pages/Professions/Dietitian/Default.aspx",
-    "endorsement_url": "https://dsps.wi.gov/pages/Professions/Dietitian/Default.aspx",
+    "endorsement_url": "https://dsps.wi.gov/Pages/Professions/Dietitian/Applications.aspx",
     "notes": "Wisconsin does not offer formal licensure by reciprocity. Out-of-state dietitians must apply through the standard process via the DSPS LicensE portal. Holding current CDR registration typically satisfies the education and examination requirements. Wisconsin's supervised practice hour requirements (900 hours with specific clinical/food service/community breakdowns) may differ from other states.",
     "requires_psv": true
   },
@@ -152,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Wisconsin",
-        "dek": "Wisconsin Dietitian Certification requires a bachelor's degree, completion of supervised practice, and passing the Registration Examination for Dietitians."
+        "dek": "To apply for a Dietitian license in Wisconsin, navigate to the Department of Safety and Professional Services (DSPS) Online Licensing Services portal after creating a WAMS ID."
       }
     }
   },
@@ -178,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DSPS Online Licensing Services",
+    "portal_url": "https://online.drl.wi.gov/",
+    "registration_steps": "Applicants must first create a Wisconsin Access Management System (WAMS) ID. Once created, this WAMS ID is used to register and log in to the DSPS Online Licensing Services portal to begin an application.",
+    "provider_search": "https://licenses.wi.gov/"
   }
 }

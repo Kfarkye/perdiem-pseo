@@ -21,19 +21,21 @@
   "board": {
     "name": "Physical Therapy Board of California",
     "parent_dept": "Title Protection Only (Business and Professions Code Section 2585)",
-    "mailing_address": "See board website",
+    "mailing_address": "2005 Evergreen Street, Suite 1350, Sacramento, CA 95815",
     "physical_address": "See board website",
     "phone": "(916) 561-8200",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.ptbc.ca.gov/"
+    "email": "ptboard@dca.ca.gov",
+    "url": "https://www.ptbc.ca.gov/",
+    "contact_url": "https://ptbc.ca.gov/contact_us.shtml",
+    "verify_url": "https://search.dca.ca.gov/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$300",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "8 to 9 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "30 hours every 2 years"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Physical Therapy Program",
-      "description": "Graduate from a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create BreEZe Account and Submit Application",
+      "description": "Register on the BreEZe online services portal (breeze.ca.gov), log in, select \"Start a New Application\" for Physical Therapist, and submit the application along with the $300 application fee."
+    },
+    {
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for your official transcripts to be sent directly from your accredited physical therapy program to the Physical Therapy Board of California."
+    },
+    {
+      "title": "Complete Fingerprint Background Check",
+      "description": "Follow the instructions on the PTBC website to complete a Live Scan (for CA residents) or submit fingerprint cards (for out-of-state applicants) for a criminal background check."
     },
     {
       "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Apply for and pass the NPTE, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "description": "Once authorized by the PTBC after application review, register with the Federation of State Boards of Physical Therapy (FSBPT) and pass the NPTE."
     },
     {
-      "title": "Pass the California Law Examination",
-      "description": "Pass the California Law Examination, assessing knowledge of California physical therapy laws and regulations."
+      "title": "Pass the California Law Examination (CLE)",
+      "description": "After receiving authorization from the PTBC, schedule and pass the state-specific California Law Examination."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 300,
+    "processing_time": "8 to 9 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.ptbc.ca.gov/",
-    "endorsement_url": "https://www.ptbc.ca.gov/",
+    "endorsement_url": "https://ptbc.ca.gov/applicants/endorsement.shtml",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "california-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in California",
-        "dek": "California Physical Therapist License requires graduation from an accredited program, passing the National Physical Therapy Examination (NPTE), and a jurisprudence exam."
+        "dek": "To apply for a Physical Therapist license in California, submit your application and required documents through the state's BreEZe Online Services portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "BreEZe Online Services",
+    "portal_url": "https://www.breeze.ca.gov/",
+    "registration_steps": "To apply for a Physical Therapist license, visit breeze.ca.gov. Select \"New User? Register Here\" and follow the prompts to create your account. Once registered, log in, select \"Start a New Application,\" and search for the \"Physical Therapist\" application under the Physical Therapy Board of California.",
+    "provider_search": "https://search.dca.ca.gov/"
   }
 }

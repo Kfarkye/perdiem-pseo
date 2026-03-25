@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity minnesota, how to transfer respiratory therapist license to minnesota, respiratory therapist compact minnesota, minnesota respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Minnesota Board of Medical Practice — RT",
+    "name": "Minnesota Board of Medical Practice \u2014 RT",
     "parent_dept": "Minnesota Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "Minnesota Board of Medical Practice, University Park Plaza, 2829 University Ave. S.E., Suite 500, Minneapolis, MN 55414-3246",
     "physical_address": "See board website",
     "phone": "(612) 617-2130",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://mn.gov/boards/medical-practice/"
+    "email": "medical.board@state.mn.us",
+    "url": "https://mn.gov/boards/medical-practice/",
+    "contact_url": "https://mn.gov/boards/medical-practice/contact/",
+    "verify_url": "https://mn.gov/boards/medical-practice/licensing/verify/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$110",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "processing_time": "8 to 12 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) examination",
     "ce_requirement": "24 hours every two years"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Educational Program",
-      "description": "Graduate from a respiratory therapy education program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or an equivalent."
+      "title": "Create Account and Submit Online Application",
+      "description": "Register for an account and complete the Respiratory Therapist Initial Application via the **Board's Online Services Portal** at https://bbp.hlb.state.mn.us/."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+      "title": "Arrange for Official Transcripts and NBRC Verification",
+      "description": "Request your official academic transcripts be sent directly from your educational institution and your NBRC credential verification (CRT and/or RRT) be sent directly from the National Board for Respiratory Care (NBRC) to the Minnesota Board of Medical Practice."
     },
     {
-      "title": "Apply for a Respiratory Therapist License",
-      "description": "Submit a completed application and required documentation to the Minnesota Board of Medical Practice."
+      "title": "Complete Verification of Supervised Clinical Practice",
+      "description": "If you are applying for licensure after January 1, 2017, ensure your program director completes and submits the 'Verification of Supervised Clinical Practice for Respiratory Therapist Licensure' form, confirming completion of 1500 hours of supervised clinical practice."
+    },
+    {
+      "title": "Complete Criminal Background Check (CBC)",
+      "description": "After submitting your online application and paying the required fee, await email instructions from the Board regarding the fingerprinting process for the mandatory Criminal Background Check (CBC)."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Pay the non-refundable initial application fee and Criminal Background Check fee through the **Board's Online Services Portal** during the application submission process."
     }
   ],
   "documents": [
@@ -124,11 +134,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 222,
-    "processing_time": "8 to 10 Weeks",
+    "endorsement_fee": 183.25,
+    "processing_time": "8 to 12 Weeks",
     "processing_tier": "slow",
     "board_url": "https://mn.gov/boards/medical-practice/",
-    "endorsement_url": "https://mn.gov/boards/medical-practice/",
+    "endorsement_url": "https://mn.gov/boards/medical-practice/applicants/apply/respiratory-therapists/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Minnesota",
-        "dek": "Minnesota Respiratory Therapist license requires graduation from an accredited respiratory therapy education program, passing the NBRC examination, and completing the application."
+        "dek": "To apply for a Respiratory Therapist license in Minnesota, applicants must create an account and submit their application online through the Board's Online Services Portal."
       }
     }
   },
@@ -173,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Board's Online Services Portal",
+    "portal_url": "https://bbp.hlb.state.mn.us/",
+    "registration_steps": "To start your application, navigate to the Board's Online Services Portal. Click 'Register Now' to create a new user account using your email address and a password. Once registered, log in to the portal and select the 'Initial Application' for Respiratory Therapists to begin the application process.",
+    "provider_search": "https://mn.gov/boards/medical-practice/licensing/verify/"
   }
 }

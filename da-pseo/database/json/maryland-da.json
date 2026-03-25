@@ -15,23 +15,25 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Maryland Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Maryland — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Maryland \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license maryland, dental assistant certification maryland, RDA maryland, DANB CDA maryland, dental assistant radiography maryland"
   },
   "board": {
     "name": "Maryland State Board of Dental Examiners",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Maryland Board of Dental Examiners\n4201 Patterson Avenue\nBaltimore, Maryland 21215-2299",
     "physical_address": "See board website",
-    "phone": "(410) 402-8510",
+    "phone": "410-402-8501",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://health.maryland.gov/dhmh/dentalboard/"
+    "email": "mdbde.info@maryland.gov",
+    "url": "https://health.maryland.gov/dhmh/dentalboard/",
+    "contact_url": "https://health.maryland.gov/mdbde/Pages/contact.aspx",
+    "verify_url": "https://mdbde.health.maryland.gov/license_lookup/pages/lookup.aspx"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": "$200 application/registration fee",
-    "renewal_fee": "$80",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years"
@@ -44,16 +46,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Graduate from a CODA-accredited dental assisting program or complete a Board-approved course."
+      "title": "Create a Maryland OneStop Portal Account",
+      "description": "Navigate to the Maryland OneStop Portal and create a new account or log in if you already have one."
     },
     {
-      "title": "Obtain CPR Certification",
-      "description": "Hold a current CPR certification from an approved provider."
+      "title": "Start the Dental Assistant Application",
+      "description": "Access the Dental Assistant Application page on the Maryland OneStop Portal and click 'Apply' to begin the process."
     },
     {
-      "title": "Apply for Registration",
-      "description": "Submit a completed application to the Maryland State Board of Dental Examiners with the required fee."
+      "title": "Complete the Online Application Form",
+      "description": "Fill out all required sections of the application form, providing accurate personal, educational, and professional information."
+    },
+    {
+      "title": "Upload Supporting Documents",
+      "description": "Upload all necessary documentation, which may include transcripts, proof of certifications (e.g., DANB exams), and radiography competency documentation, as specified on the Maryland OneStop Portal."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the required application fee of $50.00 through the Maryland OneStop Portal using an accepted payment method."
+    },
+    {
+      "title": "Submit and Monitor Application Status",
+      "description": "Review your entire application for accuracy, submit it electronically, and regularly check the Maryland OneStop Portal for updates on its status."
     }
   ],
   "documents": [
@@ -122,11 +136,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
+    "endorsement_fee": 50,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://health.maryland.gov/dhmh/dentalboard/",
-    "endorsement_url": "https://health.maryland.gov/dhmh/dentalboard/",
+    "endorsement_url": "https://health.maryland.gov/mdbde/Pages/dentala_apply.aspx",
     "notes": "Dental assistants can apply for Registered Dental Assistant (RDA) through the Maryland State Board of Dental Examiners by registration.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -145,7 +159,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Maryland",
-        "dek": "Maryland Dental Assistant registration requires graduation from a CODA-accredited program or successful completion of a Board-approved course, a current CPR certification, and a completed application."
+        "dek": "To apply for a Dental Assistant license in Maryland, you must use the Maryland OneStop Portal."
       }
     }
   },
@@ -171,5 +185,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Maryland OneStop Portal",
+    "portal_url": "https://onestop.maryland.gov/licenses/dental-assistant-application",
+    "registration_steps": "Go to the Maryland OneStop Portal, click 'Apply', and create a new account or log in with an existing account.",
+    "provider_search": "https://mdbde.health.maryland.gov/license_lookup/pages/lookup.aspx"
   }
 }

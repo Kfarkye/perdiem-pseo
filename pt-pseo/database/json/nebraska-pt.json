@@ -19,19 +19,21 @@
     "keywords": "physical therapist license reciprocity nebraska, how to transfer physical therapist license to nebraska, physical therapist compact nebraska, nebraska physical therapist endorsement application"
   },
   "board": {
-    "name": "Nebraska DHHS — Physical Therapy",
+    "name": "Nebraska DHHS \u2014 Physical Therapy",
     "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
-    "mailing_address": "See board website",
+    "mailing_address": "Nebraska Department of Health and Human Services, Credentialing Division, P.O. Box 94986, Lincoln, NE 68509-4986",
     "physical_address": "See board website",
     "phone": "(402) 471-2115",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx"
+    "email": "dhhs.licensureunit@nebraska.gov",
+    "url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
+    "contact_url": "https://dhhs.ne.gov/Pages/Contact-DHHS.aspx",
+    "verify_url": "https://dhhs-licensure.ne.gov/Verify/Search.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$130",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,20 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create Account and Submit Application",
+      "description": "Access the NE DHHS Online Application Portal at https://ne.gov/go/DHHS-Apply, create an account, and complete the Physical Therapist application form, selecting the appropriate application type (e.g., Initial Licensure by Exam or Licensure by Endorsement)."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Register for and pass the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts from your CAPTE-accredited physical therapy program to be sent directly to the Nebraska DHHS Credentialing Division. If applying by examination, ensure your official National Physical Therapy Examination (NPTE) scores are sent directly from FSBPT. For endorsement, arrange for verification of all out-of-state licenses to be sent to DHHS."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete the online application, pay the fee, and submit all required documentation to the Nebraska Department of Health and Human Services."
+      "title": "Pass Nebraska Jurisprudence Exam",
+      "description": "Complete and pass the Nebraska Jurisprudence Examination, which is typically accessed online after submitting your application through the portal."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided by DHHS to complete the required fingerprint-based criminal background check."
     }
   ],
   "documents": [
@@ -124,11 +130,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 130,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
-    "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Licensing-Home-Page.aspx",
+    "endorsement_url": "https://dhhs.ne.gov/Pages/Physical-Therapy.aspx",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "nebraska-pt",
@@ -143,7 +149,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Nebraska",
-        "dek": "Nebraska Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination (NPTE), and a criminal background check."
+        "dek": "Physical Therapist licensure in Nebraska is processed through the NE DHHS Online Application Portal, which handles all applications for initial licensure and endorsement."
       }
     }
   },
@@ -169,5 +175,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NE DHHS Online Application Portal",
+    "portal_url": "https://ne.gov/go/DHHS-Apply",
+    "registration_steps": "To begin, visit the NE DHHS Online Application Portal and click 'Sign Up Now' to create a new user account. Once registered, log in with your User ID and Password to select the Physical Therapy profession and initiate your application.",
+    "provider_search": "https://dhhs-licensure.ne.gov/Verify/Search.aspx"
   }
 }

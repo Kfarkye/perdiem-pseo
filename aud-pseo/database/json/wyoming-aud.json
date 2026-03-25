@@ -21,18 +21,20 @@
   "board": {
     "name": "Board of Speech Pathology and Audiology",
     "parent_dept": "Wyoming Mental Health Professions Licensing Board",
-    "mailing_address": "2001 Capitol Ave., Cheyenne, WY 82002",
+    "mailing_address": "Wyoming Board of Speech-Language Pathology and Audiology\nProfessional Licensing Boards\n2020 Carey Avenue, Suite 200\nCheyenne, WY 82002",
     "physical_address": "2001 Capitol Ave., Cheyenne, WY 82002",
-    "phone": "(307) 777-3507",
+    "phone": "(307) 777-7613",
     "fax": "(307) 777-3508",
-    "email": "mailto:mentalhealth@wyo.gov",
-    "url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology"
+    "email": "slpa@wyo.gov",
+    "url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology",
+    "contact_url": "https://slpa.wyo.gov/contact-us",
+    "verify_url": "https://slpa.wyo.gov/licensing/verify-a-license"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
+    "renewal_fee": "$200",
+    "renewal_cycle": "Every year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "You must have a doctoral degree in audiology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+      "title": "Register for an Account",
+      "description": "Navigate to the Wyoming eGov Licenses Portal (wybop.license.pro.hps.state.wy.us) and click 'Register' to create a new user account if you do not already have one. Complete the registration process by providing all required personal information."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "Achieve a passing score on the Audiology Examination administered by Praxis."
+      "title": "Start New Application",
+      "description": "Log in to your account on the Wyoming eGov Licenses Portal, navigate to the 'Apply for a License' section, and select the Audiologist application form to begin."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Complete the application for licensure through the Wyoming Board of Speech Pathology and Audiology."
+      "title": "Submit Required Documentation",
+      "description": "Complete the online application form and upload all necessary supporting documents, including official transcripts verifying a qualifying degree in audiology, verification of supervised clinical practice (e.g., Clinical Fellowship Year report), and official verification of a passing score on the national examination (Praxis)."
+    },
+    {
+      "title": "Pass Jurisprudence Exam",
+      "description": "Successfully complete the Wyoming State Jurisprudence Examination, which is typically administered online as part of the application process within the Wyoming eGov Licenses Portal."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable initial Audiologist license application fee of $250.00 through the Wyoming eGov Licenses Portal using an accepted payment method."
+    },
+    {
+      "title": "Await Board Review and Issuance",
+      "description": "After submitting all required items, the Board will review your application. Once approved, your Audiologist license will be issued. You can check the status of your application through the Wyoming eGov Licenses Portal."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
+    "endorsement_fee": 250,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology",
-    "endorsement_url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology",
+    "endorsement_url": "https://slpa.wyo.gov/licensing/application-information",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "wyoming-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Wyoming",
-        "dek": "Wyoming Audiologist licenses require a qualifying degree, passing the Audiology Examination, and completion of the application process."
+        "dek": "To apply for an Audiologist license in Wyoming, create an account and submit your application through the Wyoming eGov Licenses Portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Wyoming eGov Licenses Portal",
+    "portal_url": "https://wybop.license.pro.hps.state.wy.us/Login.aspx",
+    "registration_steps": "Go to the Wyoming eGov Licenses Portal, click 'Register' for new users, and follow the prompts to create an account. Once registered, log in and select 'Apply for a License' for Audiologists.",
+    "provider_search": "https://slpa.wyo.gov/licensing/verify-a-license"
   }
 }

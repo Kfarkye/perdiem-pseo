@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Oregon Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant licensing in Oregon — endorsement steps, fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant licensing in Oregon \u2014 endorsement steps, fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license oregon, dental assistant certification oregon, RDA oregon, DANB CDA oregon, dental assistant radiography oregon"
   },
   "board": {
     "name": "Oregon Board of Dentistry",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Oregon Board of Dentistry, 1500 SW 1st Ave, Suite 770, Portland OR 97201",
     "physical_address": "See board website",
     "phone": "(971) 673-3200",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.oregon.gov/dentistry/"
+    "url": "https://www.oregon.gov/dentistry/",
+    "contact_url": "https://www.oregon.gov/dentistry/pages/contact.aspx",
+    "verify_url": "https://obd.oregon.gov/licenselookup/"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$75 application/registration fee",
-    "renewal_fee": "$60",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$75",
+    "renewal_cycle": "Annually",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Oregon Expanded Functions Examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete a Board-Approved Course",
-      "description": "Complete a CODA accredited dental assisting program or a board-approved EFDA course."
+      "title": "Create a Licensing Gateway Account",
+      "description": "Register for a new account on the Oregon Board of Dentistry's online Licensing Gateway portal to begin your application."
     },
     {
-      "title": "Pass the Oregon Expanded Functions Examination",
-      "description": "Successfully pass the Oregon Expanded Functions Examination administered by the Oregon Board of Dentistry."
+      "title": "Submit Initial Application",
+      "description": "Log in to the Licensing Gateway and select 'Initial Application' for the specific Dental Assistant certificate you are seeking (e.g., Dental Assistant Certificate, Radiology Health and Safety (RHS), Expanded Function Dental Assistant (EFDA))."
     },
     {
-      "title": "Apply for Certification",
-      "description": "Submit an application and pay the required fee to the Oregon Board of Dentistry."
+      "title": "Provide Required Documentation",
+      "description": "Upload all necessary supporting documents, which may include official transcripts from approved programs, proof of out-of-state certification, verification of work experience, and/or official DANB exam results, directly through the Licensing Gateway."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable application fee for your selected Dental Assistant certificate through the Licensing Gateway."
+    },
+    {
+      "title": "Board Review and Approval",
+      "description": "The Oregon Board of Dentistry will review your complete application and all submitted documentation for compliance with state requirements."
+    },
+    {
+      "title": "Receive Certificate",
+      "description": "Upon successful review and approval by the Board, your Dental Assistant certificate will be issued, and you can typically view and print it from your Licensing Gateway account."
     }
   ],
   "documents": [
@@ -125,10 +139,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 75,
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oregon.gov/dentistry/",
-    "endorsement_url": "https://www.oregon.gov/dentistry/",
+    "endorsement_url": "https://www.oregon.gov/dentistry/pages/dentalassistants.aspx",
     "notes": "Dental assistants can apply for Expanded Function Dental Assistant (EFDA) through the Oregon Board of Dentistry by certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Oregon",
-        "dek": "Oregon Expanded Function Dental Assistant (EFDA) certification requires successful completion of a board-approved course, passing the Oregon Expanded Functions Examination, and maintaining current CPR certification."
+        "dek": "Oregon does not license 'basic' dental assistants; however, certifications for specific expanded functions and radiology are required and handled by the Oregon Board of Dentistry's Licensing Gateway."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Licensing Gateway",
+    "portal_url": "https://obd.oregon.gov/gateway/",
+    "registration_steps": "To create an account, visit the Licensing Gateway URL and click on the 'Create Account' link located in the upper right corner of the page. Once logged in, select 'Initial Application' for the desired Dental Assistant certificate.",
+    "provider_search": "https://obd.oregon.gov/licenselookup/"
   }
 }

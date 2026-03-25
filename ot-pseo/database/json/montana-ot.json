@@ -21,17 +21,19 @@
   "board": {
     "name": "Montana Board of Occupational Therapy Practice",
     "parent_dept": "Department of Labor & Industry",
-    "mailing_address": "See board website",
+    "mailing_address": "301 S Park Ave, P.O. Box 200513, Helena MT 59620-0513",
     "physical_address": "See board website",
-    "phone": "(406) 841-2371",
+    "phone": "(406) 841-2300",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://boards.bsd.dli.mt.gov/occupational-therapists"
+    "email": "dlibsdweb@mt.gov",
+    "url": "https://boards.bsd.dli.mt.gov/occupational-therapists",
+    "contact_url": "https://dli.mt.gov/boards/occupational-therapy-practice",
+    "verify_url": "https://ebiz.mt.gov/lookup/"
   },
   "quick_facts": {
     "total_fee": "$200",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Occupational Therapy Program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Create Account & Start Online Application",
+      "description": "Navigate to the Montana Professional Licensing E-Portal (https://ebiz.mt.gov/POL/) and register for a new user account. Once logged in, select 'Start a New Application' for an Occupational Therapist license and complete the required fields."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee as part of your online application through the Montana Professional Licensing E-Portal."
     },
     {
-      "title": "Apply for a Montana Occupational Therapy License",
-      "description": "Submit a completed application, required documentation, and fees to the Montana Board of Occupational Therapy Practice."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts verifying your occupational therapy degree to be sent directly from your educational institution to the Board of Occupational Therapy Practice."
+    },
+    {
+      "title": "Verify NBCOT Exam Results",
+      "description": "Ensure your NBCOT (National Board for Certification in Occupational Therapy) exam results are verifiable by the Board; typically, you'll need to arrange for NBCOT to send verification directly to the Montana Board."
+    },
+    {
+      "title": "Complete Fingerprint Background Check",
+      "description": "Follow the instructions provided by the Board to complete a fingerprint-based criminal background check, which may involve using specific vendors or law enforcement agencies."
+    },
+    {
+      "title": "Provide Verification of Licensure (for Endorsement)",
+      "description": "If applying by endorsement and you hold or have held an OT license in another state, arrange for verification of licensure to be sent directly from each state's licensing board to the Montana Board of Occupational Therapy Practice."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
+    "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://boards.bsd.dli.mt.gov/occupational-therapists",
-    "endorsement_url": "https://boards.bsd.dli.mt.gov/occupational-therapists",
+    "endorsement_url": "https://dli.mt.gov/boards/occupational-therapy-practice/forms-applications",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in Montana",
-        "dek": "Montana Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and submitting a completed application."
+        "dek": "To apply for an Occupational Therapist license in Montana, navigate to the Montana Professional Licensing E-Portal, create an account, and complete the online application."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Montana Professional Licensing E-Portal",
+    "portal_url": "https://ebiz.mt.gov/POL/",
+    "registration_steps": "1. Navigate to the Montana Professional Licensing E-Portal (https://ebiz.mt.gov/POL/). 2. Click 'Register' to create a new user account if you do not have one. 3. Follow the prompts to set up your account with a username and password. 4. Once logged in, select 'Start a New Application' for an Occupational Therapist license.",
+    "provider_search": "https://ebiz.mt.gov/lookup/"
   }
 }

@@ -21,17 +21,19 @@
   "board": {
     "name": "California Board of Occupational Therapy",
     "parent_dept": "Title Protection Only (Business and Professions Code Section 2585)",
-    "mailing_address": "See board website",
+    "mailing_address": "California Board of Occupational Therapy\n2005 Evergreen Street, Suite 2250\nSacramento, CA 95815",
     "physical_address": "See board website",
     "phone": "(916) 263-2294",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "http://www.bot.ca.gov/"
+    "email": "bot@dca.ca.gov",
+    "url": "http://www.bot.ca.gov/",
+    "contact_url": "https://www.bot.ca.gov/forms_pubs/contact.shtml",
+    "verify_url": "https://search.dca.ca.gov/"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": " application/license fee",
-    "renewal_fee": "$270",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an ACOTE-accredited program",
-      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+      "title": "Register for a BreEZe Account",
+      "description": "Create a new user account on the BreEZe online system at https://www.breeze.ca.gov/. If you already have an account, log in."
     },
     {
-      "title": "Pass the NBCOT Examination",
-      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+      "title": "Start a New Application",
+      "description": "Once logged into BreEZe, navigate to your dashboard, select 'Start a New Application,' and choose the 'Occupational Therapist' license application."
     },
     {
-      "title": "Apply for a California Occupational Therapy License",
-      "description": "Submit a completed application, official transcripts, NBCOT scores, and pay the required fees to the California Board of Occupational Therapy."
+      "title": "Submit Required Documentation",
+      "description": "Upload or arrange for the submission of official transcripts directly from an accredited occupational therapy program, proof of NBCOT certification, and any other required supporting documents as requested within the BreEZe application."
+    },
+    {
+      "title": "Complete Fingerprint Background Check",
+      "description": "Undergo a Live Scan (for California residents) or submit fingerprint cards (for out-of-state applicants) for a criminal background check. Follow the instructions provided in the BreEZe application for the appropriate forms and procedures."
+    },
+    {
+      "title": "Pay Application and Initial License Fees",
+      "description": "Submit the non-refundable application fee and the initial license fee through the BreEZe online system at the time of application submission."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application within your BreEZe account and promptly respond to any requests for additional information or clarification from the California Board of Occupational Therapy."
     }
   ],
   "documents": [
@@ -129,10 +143,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 150,
-    "processing_time": "6 to 8 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.bot.ca.gov/",
-    "endorsement_url": "http://www.bot.ca.gov/",
+    "endorsement_url": "https://www.bot.ca.gov/applicants/licensure_by_endors.shtml",
     "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
     "requires_psv": true
   },
@@ -148,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Occupational Therapist in California",
-        "dek": "California Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and submitting a completed application with required fees."
+        "dek": "To apply for an Occupational Therapist license in California, applicants must use the BreEZe online system, managed by the California Board of Occupational Therapy."
       }
     }
   },
@@ -174,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "BreEZe",
+    "portal_url": "https://www.breeze.ca.gov/",
+    "registration_steps": "To apply for an Occupational Therapist license, you will first need to register for an account on the BreEZe online system. Click 'New User? Register Here' to create your account, then select 'Start a New Application' from your BreEZe dashboard and choose the Occupational Therapist application.",
+    "provider_search": "https://search.dca.ca.gov/"
   }
 }

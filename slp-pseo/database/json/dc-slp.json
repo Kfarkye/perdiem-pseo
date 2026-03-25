@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Audiology and Speech-Language Pathology",
     "parent_dept": "DC Department of Health (DOH), Health Regulation and Licensing Administration",
-    "mailing_address": "899 North Capitol St. NE, Washington, DC 20002",
+    "mailing_address": "DC Department of Health, Health Regulation and Licensing Administration, 899 North Capitol Street NE, Washington, DC 20002",
     "physical_address": "899 North Capitol St. NE, Washington, DC 20002",
-    "phone": "(202) 724-8800",
+    "phone": "(202) 442-5955",
     "fax": "(202) 724-8677",
     "email": "mailto:doh.hpla@dc.gov",
-    "url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing"
+    "url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+    "contact_url": "https://dchealth.dc.gov/node/1484121",
+    "verify_url": "https://dchealth.dc.gov/service/license-lookup"
   },
   "quick_facts": {
     "total_fee": "$187",
     "fee_breakdown": "$85 application + $102 license fee",
-    "renewal_fee": "$164",
+    "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 8 weeks",
+    "processing_time": "Up to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "National Examination in Speech-Language Pathology administered by Praxis",
     "ce_requirement": "20 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Earn a graduate degree in speech-language pathology from an accredited educational institution."
+      "title": "Register and Apply Online",
+      "description": "Register for an account on the DC Health Licensing Online Services portal. Once logged in, select 'New Application' and choose 'Speech-Language Pathologist' as your profession. Complete the application form thoroughly."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience, as specified by the Board."
+      "title": "Pay the Application Fee",
+      "description": "Submit the non-refundable application fee of $200 directly through the DC Health Licensing Online Services portal upon completion of your application."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the National Examination in Speech-Language Pathology administered by Praxis."
+      "title": "Submit Official Transcripts",
+      "description": "Arrange for official transcripts, verifying a master's or doctoral degree in Speech-Language Pathology, to be sent directly from your educational institution to the DC Health Licensing Administration."
+    },
+    {
+      "title": "Verify ASHA CCC-SLP or Clinical Fellowship",
+      "description": "Ensure your Certificate of Clinical Competence (CCC-SLP) from the American Speech-Language-Hearing Association (ASHA) is verifiable. If not yet holding CCC-SLP, submit documentation of your post-graduate Clinical Fellowship (CFY) directly through ASHA or as instructed by the Board."
+    },
+    {
+      "title": "Submit Praxis Examination Scores",
+      "description": "Arrange for your official scores from the Praxis Examination in Speech-Language Pathology to be sent directly from Educational Testing Service (ETS) to the DC Health Licensing Administration (ETS code for DC is 7064)."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided by the DC Health Licensing Administration to complete a fingerprint-based criminal background check (CBC)."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 187,
-    "processing_time": "4 to 8 weeks",
+    "endorsement_fee": 200,
+    "processing_time": "Up to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
-    "endorsement_url": "https://dchealth.dc.gov/service/audiology-and-speech-language-pathology-licensing",
+    "endorsement_url": "https://dchealth.dc.gov/service/speech-language-pathology-licensing",
     "notes": "DC does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full DC licensure."
   },
   "slug": "dc-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in District of Columbia",
-        "dek": "District of Columbia Speech-Language Pathologist licenses require a graduate degree, passing the national exam, and supervised professional experience."
+        "dek": "Apply for a Speech-Language Pathologist license in DC through the DC Health Licensing Online Services portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DC Health Licensing Online Services",
+    "portal_url": "https://dchealth.dc.gov/node/1473851",
+    "registration_steps": "On the DC Health Licensing Online Services portal, click 'New Applicants Apply Here' then select 'Register here' to create a new account. Follow the prompts to complete registration and verify your email. Once registered, log in to begin a 'New Application' for Speech-Language Pathology.",
+    "provider_search": "https://dchealth.dc.gov/service/license-lookup"
   }
 }

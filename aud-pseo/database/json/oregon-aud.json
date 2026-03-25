@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Examiners for Speech-Language Pathology and Audiology",
     "parent_dept": "Oregon Board of Examiners for SLP and Audiology",
-    "mailing_address": "800 NE Oregon St., Suite 407, Portland, OR 97232",
+    "mailing_address": "Oregon Health Licensing Office, PO Box 14470, Salem, OR 97309-5056",
     "physical_address": "800 NE Oregon St., Suite 407, Portland, OR 97232",
-    "phone": "(971) 673-0220",
+    "phone": "(503) 378-8667",
     "fax": "(971) 673-0226",
-    "email": "mailto:oboeslpa@oregon.gov",
-    "url": "https://www.oregon.gov/oboeslpa/"
+    "email": "hlo.info@hlo.oregon.gov",
+    "url": "https://www.oregon.gov/oboeslpa/",
+    "contact_url": "https://www.oregon.gov/oha/HLO/Pages/Contact-Us.aspx",
+    "verify_url": "https://public.hlo.oregon.gov/LicenseLookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 15 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination of the Praxis Series administered by the Educational Testing Service",
     "ce_requirement": "20 hours every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "You must have a doctoral degree in audiology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA) or its equivalent."
+      "title": "Prepare Required Documents",
+      "description": "Gather official transcripts verifying a doctoral degree in Audiology (Au.D., Ph.D., Sc.D., or equivalent) from a regionally accredited institution and proof of passing the Praxis Examination in Audiology (5041 or 5030 for previous versions)."
     },
     {
-      "title": "Pass the National Exam",
-      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series administered by the Educational Testing Service."
+      "title": "Create an Account",
+      "description": "Register and create a new account on the Oregon Health Licensing Office's (HLO) Applicant and Licensee Portal to begin your application."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit a completed application, official transcripts, Praxis scores, and pay the required fees to the Oregon Board of Examiners for Speech-Language Pathology and Audiology."
+      "title": "Complete Online Application",
+      "description": "Log in to the HLO Applicant and Licensee Portal, select the Audiologist application type, and accurately complete all required sections, uploading your official transcripts and Praxis examination scores."
+    },
+    {
+      "title": "Submit Fingerprints for Background Check",
+      "description": "Follow the instructions provided within the HLO Applicant and Licensee Portal to complete the mandatory criminal background check via fingerprinting, ensuring compliance with state requirements."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $150 through the HLO Applicant and Licensee Portal. The initial license fee of $100 will be due upon approval of your license."
+    },
+    {
+      "title": "Await Board Review",
+      "description": "Your complete application will first undergo an initial review by HLO staff (typically within 10 business days), followed by formal review and approval by the Oregon Board of Examiners for Speech-Language Pathology and Audiology during their quarterly meetings."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "2 to 15 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.oregon.gov/oboeslpa/",
-    "endorsement_url": "https://www.oregon.gov/oboeslpa/",
+    "endorsement_url": "https://www.oregon.gov/oha/HLO/Pages/SLP-AUD-Apply-for-License.aspx",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "oregon-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Oregon",
-        "dek": "Oregon Audiologist licenses require a doctoral degree in audiology, passing the national audiology exam, and completing the application process."
+        "dek": "Audiologists in Oregon must apply for initial licensure through the Oregon Health Licensing Office's (HLO) Applicant and Licensee Portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Oregon Health Licensing Office's (HLO) Applicant and Licensee Portal",
+    "portal_url": "https://public.hlo.oregon.gov/Login.aspx?APPTYPE=Initial",
+    "registration_steps": "Visit the HLO Applicant and Licensee Portal, click 'Register Here' (or 'Register Now'), and follow the prompts to create an account by providing personal information and setting up a username and password.",
+    "provider_search": "https://public.hlo.oregon.gov/LicenseLookup/"
   }
 }

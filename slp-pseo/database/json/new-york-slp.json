@@ -21,19 +21,21 @@
   "board": {
     "name": "State Board for Speech-Language Pathology and Audiology",
     "parent_dept": "New York State Education Department (NYSED), Office of the Professions",
-    "mailing_address": "89 Washington Avenue, Albany, NY 12234",
+    "mailing_address": "New York State Education Department, Office of the Professions, Speech-Language Pathologists and Audiologists Unit, 89 Washington Avenue, Albany, NY 12234-1000",
     "physical_address": "89 Washington Avenue, Albany, NY 12234",
-    "phone": "(518) 474-3817 x340",
+    "phone": "(518) 474-3817 ext. 570",
     "fax": "(518) 486-4846",
-    "email": "mailto:slpbd@nysed.gov",
-    "url": "http://www.op.nysed.gov/prof/slpa/"
+    "email": "opunit1@nysed.gov",
+    "url": "http://www.op.nysed.gov/prof/slpa/",
+    "contact_url": "https://www.nysed.gov/contact-us",
+    "verify_url": "https://www.nysed.gov/verify-license"
   },
   "quick_facts": {
     "total_fee": "$294",
     "fee_breakdown": "$294 application + initial registration fee",
-    "renewal_fee": "$155",
+    "renewal_fee": "$210",
     "renewal_cycle": "Every 3 years",
-    "processing_time": "6 to 8 weeks",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "3 years",
     "exam_name": "National Examination in Speech-Language Pathology",
     "ce_requirement": "36 hours every three years"
@@ -51,15 +53,27 @@
   "steps": [
     {
       "title": "Meet Education Requirements",
-      "description": "Earn a master's degree or doctorate in speech-language pathology from a program registered by the New York State Education Department or determined to be equivalent."
+      "description": "Complete a Master's or Doctor's degree in Speech-Language Pathology from a program registered by the NYSED or determined by the Department to be equivalent. This education must include at least 400 clock hours of supervised clinical practicum."
     },
     {
-      "title": "Complete Supervised Professional Experience (SPE)",
-      "description": "Complete a supervised professional experience (SPE) of at least 350 clock hours under the supervision of a licensed speech-language pathologist."
+      "title": "Pass Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Subject Assessment in Speech-Language Pathology (Code 5031) administered by ETS. You must request ETS to send your official score report directly to the NYSED Office of the Professions."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Pass the National Examination in Speech-Language Pathology administered by the Praxis Series."
+      "title": "Complete Supervised Experience",
+      "description": "Complete a supervised clinical experience, often referred to as a Clinical Fellowship Year (CFY), consisting of 1200 hours over a minimum of 36 weeks. This experience must be attested to on Form 4B by your supervisor and submitted directly to NYSED."
+    },
+    {
+      "title": "Submit Application and Fee",
+      "description": "Download and complete the 'Application for Licensure' (Form 1) from the NYSED Office of the Professions website. Include the required application fee of $294. Mail the complete form and fee to the Office of the Professions."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for your college or university to send official transcripts, verifying your degree and supervised practicum hours, directly to NYSED using 'Certification of Professional Education' (Form 2). Ensure your supervisor submits 'Verification of Supervised Experience' (Form 4B) directly to NYSED."
+    },
+    {
+      "title": "Await License Issuance",
+      "description": "The NYSED Office of the Professions will review your complete application and all supporting documents. Allow adequate time for processing; you will be notified of your license status upon completion of the review."
     }
   ],
   "documents": [
@@ -142,10 +156,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 294,
-    "processing_time": "6 to 8 weeks",
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "http://www.op.nysed.gov/prof/slpa/",
-    "endorsement_url": "http://www.op.nysed.gov/prof/slpa/",
+    "endorsement_url": "https://www.op.nysed.gov/professions/speech-language-pathologists-and-audiologists/licensing-requirements",
     "notes": "New York does not have formal reciprocity agreements or participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full New York licensure and meet all state-specific requirements. ASHA CCC-SLP holders must still submit all required forms and documentation to NYSED."
   },
   "slug": "new-york-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in New York",
-        "dek": "New York Speech-Language Pathology license requires graduation from an approved program, passing the National Examination, and completion of a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in New York, download and complete the required forms from the New York State Education Department (NYSED) Office of the Professions website and mail them in."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NYSED Office of the Professions Forms",
+    "portal_url": "https://www.op.nysed.gov/professions/speech-language-pathologists-and-audiologists/licensing-requirements",
+    "registration_steps": "To start your application for a Speech-Language Pathologist license in New York, you must download and complete the required forms (such as Form 1 for initial application) from the NYSED Office of the Professions website. Mail the completed forms, along with all supporting documentation and the application fee, to the Office of the Professions. After licensure, you can create an account on NYSED Online Services for managing your license, including renewals.",
+    "provider_search": "https://www.nysed.gov/verify-license"
   }
 }

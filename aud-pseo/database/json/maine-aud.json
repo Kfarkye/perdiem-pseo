@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Maine Department of Professional and Financial Regulation",
-    "mailing_address": "35 State House Station, Augusta, ME 04333-0035",
+    "mailing_address": "Department of Professional and Financial Regulation\nOffice of Professional and Occupational Regulation\n35 State House Station\nAugusta, ME 04333-0035",
     "physical_address": "76 Northern Ave., Gardiner, ME 04345",
     "phone": "(207) 624-8603",
     "fax": "(207) 624-8637",
-    "email": "mailto:speech.aud@maine.gov",
-    "url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-audiology"
+    "email": "professional.licensing@maine.gov",
+    "url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-audiology",
+    "contact_url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-and-audiology/contact-board",
+    "verify_url": "https://www.maine.gov/pfr/professionallicensing/lookup"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$250",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "3 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination",
     "ce_requirement": "20 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "You must have a doctoral degree in audiology from an accredited educational institution."
+      "title": "Create a User Account",
+      "description": "Navigate to the Maine Online Licensing System (https://www.pfr.maine.gov/ALMSOnline/ALMSQuery/Welcome.aspx?board=SLPA) and click 'Click Here to Register' to establish your personal user account."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "Successfully complete the Audiology Examination administered by a nationally recognized testing organization."
+      "title": "Initiate New Application",
+      "description": "Log in to your newly created account on the Maine Online Licensing System. Select 'Apply for a New License' from the menu and choose 'Audiologist' as your profession."
     },
     {
-      "title": "Submit an Application",
-      "description": "Complete the application for licensure and submit it to the Maine Board of Speech-Language Pathology and Audiology along with the required fee."
+      "title": "Complete Online Application",
+      "description": "Fill out all mandatory sections of the application form within the Maine Online Licensing System, providing comprehensive details on your personal information, education, and professional experience, including any required supervised practice."
+    },
+    {
+      "title": "Upload Supporting Documentation",
+      "description": "Electronically submit all necessary documents as specified in the application checklist, which typically includes official transcripts from your graduate program and other verification forms, directly through the Maine Online Licensing System."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Remit the non-refundable $250 application fee using a credit or debit card through the secure payment portal within the Maine Online Licensing System."
+    },
+    {
+      "title": "Submit Application",
+      "description": "Carefully review all entered information and uploaded documents for accuracy and completeness before formally submitting your application online to the Maine Board of Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 250,
+    "processing_time": "3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-audiology",
-    "endorsement_url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-audiology",
+    "endorsement_url": "https://www.maine.gov/pfr/professionallicensing/professions/speech-language-pathology-and-audiology/applications-forms/audiologist.pdf",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "maine-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Maine",
-        "dek": "Maine Audiologist license requires a doctoral degree in audiology, passing the Audiology Examination, and completion of the application process."
+        "dek": "Applicants for Audiologist licensure in Maine must apply through the Maine Online Licensing System, managed by the Office of Professional and Occupational Regulation (OPOR)."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Maine Online Licensing System",
+    "portal_url": "https://www.pfr.maine.gov/ALMSOnline/ALMSQuery/Welcome.aspx?board=SLPA",
+    "registration_steps": "Visit the Maine Online Licensing System, click 'Click Here to Register' for new users, and follow the prompts to create your user account.",
+    "provider_search": "https://www.maine.gov/pfr/professionallicensing/lookup"
   }
 }

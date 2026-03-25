@@ -19,19 +19,21 @@
     "keywords": "physical therapist license reciprocity south dakota, how to transfer physical therapist license to south dakota, physical therapist compact south dakota, south dakota physical therapist endorsement application"
   },
   "board": {
-    "name": "South Dakota Board of Medical and Osteopathic Examiners — PT",
+    "name": "South Dakota Board of Medical and Osteopathic Examiners \u2014 PT",
     "parent_dept": "Department of Health",
-    "mailing_address": "See board website",
+    "mailing_address": "101 N. Main Avenue, Suite 303, Sioux Falls, SD 57104",
     "physical_address": "See board website",
-    "phone": "(605) 367-7781",
+    "phone": "605-367-7781",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://doh.sd.gov/licensing-and-records/boards/medical/"
+    "email": "sdbmoe@state.sd.us",
+    "url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
+    "contact_url": "https://sdbmoe.sd.gov/contact-us/",
+    "verify_url": "https://sdbmoe.sd.gov/license-lookup/"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "Complete a physical therapy education program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Create Portal Account & Start Application",
+      "description": "Visit the South Dakota Board of Medical and Osteopathic Examiners Online Application Portal (online.sdbmoe.sd.gov/onlineapp/Login.aspx), click 'Register Here', and follow the prompts to create your account. Once registered, log in and select the appropriate \"Physical Therapist Application\" (Initial Licensure by Examination or Licensure by Endorsement)."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "Successfully pass the NPTE, administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Submit Required Documentation",
+      "description": "Arrange for official transcripts from your physical therapy program to be sent directly to the Board from your educational institution. Also, have your official NPTE scores sent directly from the Federation of State Boards of Physical Therapy (FSBPT). For endorsement, also arrange for verification of licensure from all states where you currently hold or have held a PT license, sent directly from those respective boards."
     },
     {
-      "title": "Apply for a Physical Therapist License",
-      "description": "Submit a completed application, including official transcripts, NPTE scores, jurisprudence exam attestation, and required fees to the South Dakota Board of Medical and Osteopathic Examiners."
+      "title": "Complete Criminal Background Check",
+      "description": "Follow the instructions provided within the online application to complete a fingerprint-based criminal background check through the South Dakota Division of Criminal Investigation (DCI) and the FBI."
+    },
+    {
+      "title": "Pass Jurisprudence Exam & Pay Fees",
+      "description": "Complete the online, open-book South Dakota Jurisprudence Exam, which is accessible through your application portal. Pay the non-refundable $100 application fee through the online system."
+    },
+    {
+      "title": "Board Review & Approval",
+      "description": "The Board will review your completed application and all supporting documentation. Once your application is deemed complete and approved by the Board, your South Dakota Physical Therapist license will be issued."
     }
   ],
   "documents": [
@@ -128,7 +138,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
-    "endorsement_url": "https://doh.sd.gov/licensing-and-records/boards/medical/",
+    "endorsement_url": "https://sdbmoe.sd.gov/physical-therapy/application-process/",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "south-dakota-pt",
@@ -143,7 +153,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in South Dakota",
-        "dek": "South Dakota Physical Therapist license requires graduation from an accredited program, passing the NPTE, and completing a jurisprudence exam."
+        "dek": "To apply for a Physical Therapist license in South Dakota, you must create an account and complete the application through the South Dakota Board of Medical and Osteopathic Examiners Online Application Portal."
       }
     }
   },
@@ -169,5 +179,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "South Dakota Board of Medical and Osteopathic Examiners Online Application Portal",
+    "portal_url": "https://online.sdbmoe.sd.gov/onlineapp/Login.aspx",
+    "registration_steps": "Visit the portal, click 'Register Here', complete the registration form with your personal details, create a password, and verify your email. Once registered, log in and select 'New Application'.",
+    "provider_search": "https://sdbmoe.sd.gov/license-lookup/"
   }
 }

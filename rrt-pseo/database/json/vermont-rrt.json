@@ -19,21 +19,23 @@
     "keywords": "respiratory therapist license reciprocity vermont, how to transfer respiratory therapist license to vermont, respiratory therapist compact vermont, vermont respiratory therapist endorsement application"
   },
   "board": {
-    "name": "Vermont Office of Professional Regulation — RT",
+    "name": "Vermont Office of Professional Regulation \u2014 RT",
     "parent_dept": "Vermont Office of Professional Regulation (OPR)",
-    "mailing_address": "See board website",
+    "mailing_address": "Office of Professional Regulation\nSecretary of State\n128 State Street\nMontpelier, VT 05633-1101",
     "physical_address": "See board website",
-    "phone": "(802) 828-2390",
+    "phone": "(802) 828-1500",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://sos.vermont.gov/opr/"
+    "email": "sos.opr@vermont.gov",
+    "url": "https://sos.vermont.gov/opr/",
+    "contact_url": "https://sos.vermont.gov/opr/contact-us/",
+    "verify_url": "https://sos.vermont.gov/online-services/verify-a-license/"
   },
   "quick_facts": {
     "total_fee": "$75",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "3 to 5 Weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Board for Respiratory Care (NBRC) Entry Level Examination",
     "ce_requirement": "24 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete an Accredited Respiratory Therapy Program",
-      "description": "Graduate from a respiratory therapy education program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+      "title": "Create VOPLS Account",
+      "description": "Register for a new user account on the Vermont Online Professional Licensing System (VOPLS) at secure.vermont.gov/elicensing."
     },
     {
-      "title": "Pass the NBRC Examination",
-      "description": "Successfully complete the National Board for Respiratory Care (NBRC) Entry Level Examination."
+      "title": "Start Online Application",
+      "description": "Log in to VOPLS, select 'Apply for a New License' from the dropdown menu, and choose the Respiratory Care Practitioner application."
     },
     {
-      "title": "Apply for a Vermont Respiratory Therapist License",
-      "description": "Submit a completed application, including required documentation and fees, to the Vermont Office of Professional Regulation."
+      "title": "Complete Application & Pay Fee",
+      "description": "Fill out all required sections of the online application form and pay the $100 initial application fee."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Upload or arrange for official transcripts and NBRC verification to be sent directly to the Office of Professional Regulation."
+    },
+    {
+      "title": "Await OPR Review",
+      "description": "The Office of Professional Regulation will review your complete application and supporting materials. You can monitor your application status within VOPLS."
+    },
+    {
+      "title": "Receive License",
+      "description": "Upon approval, your Vermont Respiratory Care Practitioner license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": false,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 115,
-    "processing_time": "6 to 12 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://sos.vermont.gov/opr/",
-    "endorsement_url": "https://sos.vermont.gov/opr/",
+    "endorsement_url": "https://sos.vermont.gov/opr/professions/respiratory-care-practitioners/application-forms-fees/",
     "notes": "Respiratory Therapists licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Respiratory Therapist in Vermont",
-        "dek": "Vermont Respiratory Therapist license requires graduation from an accredited respiratory therapy program, passing the NBRC Entry Level Examination, and a completed application."
+        "dek": "To apply for an initial Respiratory Care Practitioner license in Vermont, use the Vermont Online Professional Licensing System (VOPLS). Endorsement applications require submission of a paper form."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Vermont Online Professional Licensing System (VOPLS)",
+    "portal_url": "https://secure.vermont.gov/elicensing/",
+    "registration_steps": "To apply for an initial license, create an account, log in to the Vermont Online Professional Licensing System (VOPLS) and select 'Apply for a New License' from the dropdown menu.",
+    "provider_search": "https://sos.vermont.gov/online-services/verify-a-license/"
   }
 }

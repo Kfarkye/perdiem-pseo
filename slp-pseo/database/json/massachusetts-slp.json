@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Registration of Speech-Language Pathology and Audiology",
     "parent_dept": "Massachusetts Division of Professional Licensure",
-    "mailing_address": "1000 Washington St., Suite 710, Boston, MA 02118",
+    "mailing_address": "Board of Speech-Language Pathology and Audiology, 250 Washington Street, Boston, MA 02108",
     "physical_address": "1000 Washington St., Suite 710, Boston, MA 02118",
-    "phone": "(617) 701-8600",
+    "phone": "617-701-8600",
     "fax": "(617) 701-8652",
-    "email": "mailto:dpl.boards@mass.gov",
-    "url": "https://www.mass.gov/orgs/board-of-registration-of-speech-language-pathology-and-audiology"
+    "email": "healthprofessions.licensing@mass.gov",
+    "url": "https://www.mass.gov/orgs/board-of-registration-of-speech-language-pathology-and-audiology",
+    "contact_url": "https://mass.gov/info-details/contact-us-1",
+    "verify_url": "https://mass.gov/massachusetts-license-verification"
   },
   "quick_facts": {
     "total_fee": "$225",
     "fee_breakdown": "$150 application + $75 license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 8 weeks",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 hours every 2 years"
@@ -50,16 +52,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Earn a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+      "title": "Register on the ePLACE Portal",
+      "description": "Go to https://mass.gov/ePLACE/eplcs/portal/login.jsp and create a new user account if you don't already have one. You will need to provide personal information and set up security questions."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience, which includes a minimum of 400 clock hours."
+      "title": "Start a New Application",
+      "description": "Log in to your ePLACE Portal account, select 'New Application' from your dashboard, and then choose 'Speech-Language Pathologist' from the list of available professions to start the application process."
     },
     {
-      "title": "Pass the National Examination and Apply",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit an application for licensure with the required fee to the Massachusetts Board of Registration of Speech-Language Pathology and Audiology."
+      "title": "Complete the Online Application",
+      "description": "Fill out all required sections of the application within the ePLACE Portal, including details about your education, clinical experience, and examination results."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Upload all necessary documents directly through the ePLACE Portal. This includes official transcripts from your graduate program, verification of your supervised clinical experience (Clinical Fellowship Year, CFY), and proof of passing the Praxis Examination in Speech-Language Pathology."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Pay the required initial application fee of $120 online via credit card within the ePLACE Portal to finalize your submission."
+    },
+    {
+      "title": "Await Board Review",
+      "description": "The Board will review your complete application and all supporting documents. You can monitor the status of your application at any time by logging into your ePLACE Portal account."
     }
   ],
   "documents": [
@@ -141,11 +155,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 225,
-    "processing_time": "4 to 8 weeks",
+    "endorsement_fee": 120,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.mass.gov/orgs/board-of-registration-of-speech-language-pathology-and-audiology",
-    "endorsement_url": "https://www.mass.gov/orgs/board-of-registration-of-speech-language-pathology-and-audiology",
+    "endorsement_url": "https://mass.gov/how-to/apply-for-a-speech-language-pathologist-license",
     "notes": "Massachusetts does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full Massachusetts licensure."
   },
   "slug": "massachusetts-slp",
@@ -160,7 +174,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Massachusetts",
-        "dek": "Massachusetts Speech-Language Pathologist licenses require a master's degree, passing the national exam, and completing a supervised professional experience."
+        "dek": "To apply for a Speech-Language Pathologist license in Massachusetts, applicants must submit their application online through the Massachusetts ePLACE Portal."
       }
     }
   },
@@ -186,5 +200,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "ePLACE Portal",
+    "portal_url": "https://mass.gov/ePLACE/eplcs/portal/login.jsp",
+    "registration_steps": "Navigate to the ePLACE Portal, click 'New User? Register for an Account,' and follow the prompts to create your login. Once registered, log in and select 'New Application' from your dashboard to begin.",
+    "provider_search": "https://mass.gov/massachusetts-license-verification"
   }
 }

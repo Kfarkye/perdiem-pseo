@@ -21,19 +21,21 @@
   "board": {
     "name": "Washington DOH",
     "parent_dept": "State Health Department",
-    "mailing_address": "See board website",
+    "mailing_address": "Washington State Department of Health\nP.O. Box 47865\nOlympia, WA 98504-7865",
     "physical_address": "See board website",
     "phone": "(360) 236-4700",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://doh.wa.gov/"
+    "url": "https://doh.wa.gov/",
+    "contact_url": "https://doh.wa.gov/contact-us",
+    "verify_url": "https://fortress.wa.gov/doh/hpqa-licensing/Search/App/LicenseSearch.aspx"
   },
   "quick_facts": {
     "total_fee": "$85",
     "fee_breakdown": "$85 endorsement application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Annually",
+    "processing_time": "Up to 1 Week",
     "license_duration": "2 Years",
     "training_hours": "85 hours",
     "exam_name": "NNAAP (Prometric)",
@@ -47,16 +49,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a State-Approved Training Program",
-      "description": "Finish an Washington-approved CNA training program, usually 85 hours long."
+      "title": "Complete an Approved Training Program",
+      "description": "Successfully complete a Washington State Department of Health (DOH) approved Nursing Assistant training program, or demonstrate equivalent training and experience."
     },
     {
-      "title": "Pass the Competency Exam",
-      "description": "Pass both the written and clinical skills portions of the Washington nurse aide exam."
+      "title": "Apply Online through the e-Service",
+      "description": "Create or log in to your account on the Washington State Licensing e-Service portal. Complete the online application for Nursing Assistant Certified (NA-C) and pay the required application fee."
     },
     {
-      "title": "Submit Your Application",
-      "description": "Apply for certification, complete any required background check steps, and pay the required fees."
+      "title": "Submit Required Documentation",
+      "description": "Upload any necessary documents directly through the Washington State Licensing e-Service, such as proof of training program completion. Ensure all documentation is complete and accurate as specified by the DOH."
+    },
+    {
+      "title": "Schedule and Pass NNAAP Exams",
+      "description": "After your application is approved, register and pass both the written/oral and skills portions of the National Nurse Aide Assessment Program (NNAAP) examination administered by Pearson VUE."
+    },
+    {
+      "title": "Receive Your Credential",
+      "description": "Once all requirements, including passing the NNAAP exams, are met and processed by the Washington State Department of Health, your NA-C credential will be issued, and your name will be added to the Nurse Aide Registry."
     }
   ],
   "documents": [
@@ -78,7 +88,7 @@
     },
     {
       "question": "How do I verify a Washington CNA/NAC?",
-      "answer": "Use the WA DOH Provider Credential Search at fortress.wa.gov/doh/providercredentialsearch/. Search for credential type 'Nursing Assistant Certification – NC'."
+      "answer": "Use the WA DOH Provider Credential Search at fortress.wa.gov/doh/providercredentialsearch/. Search for credential type 'Nursing Assistant Certification \u2013 NC'."
     }
   ],
   "compact": {
@@ -114,10 +124,10 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 85,
-    "processing_time": "2 to 4 Weeks",
+    "processing_time": "Up to 1 Week",
     "processing_tier": "fast",
     "board_url": "https://doh.wa.gov/",
-    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/nursing-assistant",
+    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/nursing-assistant-certified-na-c",
     "notes": "Washington uses the NAC Application Packet for endorsement. The endorsement section of the packet covers out-of-state transfers. An Authorization to Test may be required.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -167,7 +177,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a NAC in Washington",
-        "dek": "Washington CNA certification requires a 85-hour training program, Washington DOH eligibility, and a passing score on the NNAAP (Prometric) exam."
+        "dek": "To apply for your Certified Nursing Assistant (CNA) license in Washington, you must create an account and submit your application through the Washington State Licensing e-Service portal."
       },
       "seo": {
         "title": "How to Become a NAC in Washington",
@@ -209,5 +219,20 @@
     "transfer_term": "endorsement",
     "registry_name": "Washington Nurse Aide Registry",
     "page_title_term": "Certification"
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Washington State Licensing e-Service",
+    "portal_url": "https://professions.doh.wa.gov/applications/",
+    "registration_steps": "1. Navigate to the Washington State Licensing e-Service portal.\n2. Click 'Register' to create a SecureAccess Washington (SAW) account, or 'Login' if you already have one.\n3. Follow the prompts to set up your SAW account and link it to the DOH Professional Licensing Services.\n4. Once logged in, select the application for 'Nursing Assistant Certified (NA-C)' to begin.",
+    "provider_search": "https://fortress.wa.gov/doh/hpqa-licensing/Search/App/LicenseSearch.aspx"
   }
 }

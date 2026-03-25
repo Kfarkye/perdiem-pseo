@@ -21,19 +21,21 @@
   "board": {
     "name": "Iowa Board of Dietetics",
     "parent_dept": "Department of Inspections, Appeals, and Licensing (DIAL)",
-    "mailing_address": "6200 Park Ave., Ste. 100<br>Des Moines, IA 50321",
+    "mailing_address": "Iowa Department of Health and Human Services, Board of Dietetic Examiners, Lucas State Office Building, 321 E 12th St, Des Moines, IA 50319-0075",
     "physical_address": "6200 Park Ave., Ste. 100<br>Des Moines, IA 50321",
-    "phone": "(515) 281-0254",
+    "phone": "515-281-0171",
     "fax": "(515) 281-3121",
     "email": "mailto:PLPublic@idph.iowa.gov",
-    "url": "https://dial.iowa.gov/licenses/medical/dietitian"
+    "url": "https://dial.iowa.gov/licenses/medical/dietitian",
+    "contact_url": "https://hhs.iowa.gov/contact-us/licensure",
+    "verify_url": "https://hhs.iowa.gov/licensure/search-licensee"
   },
   "quick_facts": {
     "total_fee": "$120",
     "fee_breakdown": "$120 initial application fee (nonrefundable)",
-    "renewal_fee": "$120",
-    "renewal_cycle": "Every 2 years + 30 CE hours",
-    "processing_time": "3 to 4 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Commission on Dietetic Registration Examination",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Complete Required Education and Supervised Practice",
-      "description": "Complete a minimum of a bachelor’s degree from a U.S. regionally accredited college or university or foreign equivalent and complete a supervised practice program."
+      "title": "Create an Account",
+      "description": "Register for a new account on the Iowa HHS Regulatory Licensure portal at h.iowa.gov."
     },
     {
-      "title": "Pass the Commission on Dietetic Registration Examination",
-      "description": "Successfully complete the Commission on Dietetic Registration examination."
+      "title": "Start Application",
+      "description": "Log in to the Iowa HHS Regulatory Licensure portal, navigate to 'Applications,' and select 'Dietitian' to begin your new license application."
     },
     {
-      "title": "Apply for a License",
-      "description": "Submit a completed application, required documentation, and fees to the Iowa Board of Dietetics."
+      "title": "Complete Application Form & Pay Fee",
+      "description": "Fill out all required sections of the online application form and submit the non-refundable application fee through the portal."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Upload official transcripts verifying didactic program completion, documentation of supervised practice (e.g., DPD Verification Statement, DI Certificate), and proof of passing the Commission on Dietetic Registration (CDR) examination (e.g., CDR card or verification letter)."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through your account on the Iowa HHS Regulatory Licensure portal for any updates or requests for additional information."
     }
   ],
   "documents": [
@@ -132,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 120,
-    "processing_time": "3 to 4 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://dial.iowa.gov/licenses/medical/dietitian",
-    "endorsement_url": "https://dial.iowa.gov/licenses/medical/dietitian",
+    "endorsement_url": "https://hhs.iowa.gov/licensure/dietetics",
     "notes": "Out-of-state applicants with active CDR registration may apply via endorsement. Verification of licensure from any state where you hold or have held a license is required, along with proof of your CDR credential.",
     "requires_psv": true
   },
@@ -152,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Iowa",
-        "dek": "Iowa Dietitian License requires a completed application, passing the Commission on Dietetic Registration examination, and payment of fees."
+        "dek": "To apply for a Dietitian license in Iowa, create an account and submit your application through the Iowa HHS Regulatory Licensure portal at h.iowa.gov."
       }
     }
   },
@@ -178,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Iowa HHS Regulatory Licensure",
+    "portal_url": "https://h.iowa.gov/",
+    "registration_steps": "Navigate to https://h.iowa.gov/, click 'Register,' complete the registration form to create an account, and then log in to start a new application for Dietitian licensure.",
+    "provider_search": "https://hhs.iowa.gov/licensure/search-licensee"
   }
 }

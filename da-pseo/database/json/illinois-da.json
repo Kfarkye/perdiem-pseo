@@ -15,25 +15,27 @@
   "last_updated": "2026-03-22",
   "seo": {
     "title": "Illinois Dental Assistant License (2026) | Requirements & Fees",
-    "description": "Complete guide to dental assistant requirements in Illinois — fees, DANB certification, and radiography permits.",
+    "description": "Complete guide to dental assistant requirements in Illinois \u2014 fees, DANB certification, and radiography permits.",
     "keywords": "dental assistant license illinois, dental assistant certification illinois, RDA illinois, DANB CDA illinois, dental assistant radiography illinois"
   },
   "board": {
     "name": "Illinois Division of Professional Regulation",
     "parent_dept": "State Board of Dentistry",
-    "mailing_address": "See board website",
+    "mailing_address": "Illinois Department of Financial and Professional Regulation, 320 W. Washington Street, 3rd Floor, Springfield, IL 62786",
     "physical_address": "See board website",
-    "phone": "(217) 785-0800",
+    "phone": "(800) 560-6420",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://idfpr.illinois.gov/profs/dentalsurgeon.asp"
+    "url": "https://idfpr.illinois.gov/profs/dentalsurgeon.asp",
+    "contact_url": "https://idfpr.com/ContactUs.asp",
+    "verify_url": "https://www.idfpr.com/licenselookup/licenselookup.asp"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state application fee",
-    "renewal_fee": "N/A",
-    "renewal_cycle": "N/A",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$30",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "N/A"
   },
   "license_types": [
@@ -44,16 +46,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Basic Requirements",
-      "description": "Applicants must be at least 18 years old and of good moral character."
+      "title": "Create an IDFPR Online Services Account",
+      "description": "Visit the IDFPR Online Services portal, select 'Apply for a License', and follow the prompts for 'New User Registration' to create your account."
     },
     {
-      "title": "Complete Application",
-      "description": "Submit a completed application for Dental Assistant Registration to the Illinois Department of Financial and Professional Regulation (IDFPR)."
+      "title": "Complete the Online Application",
+      "description": "Log in to your IDFPR Online Services account, select 'Apply for a New License', and choose 'Dental Assistant' from the profession list. Complete all sections of the application accurately."
     },
     {
-      "title": "Receive Registration",
-      "description": "Upon approval of your application, IDFPR will issue your Dental Assistant Registration."
+      "title": "Submit Supporting Documentation",
+      "description": "Provide proof of eligibility, which includes either graduation from a Board-approved dental assisting program or verification of 1000 hours of clinical experience. You must also submit proof of current CPR certification."
+    },
+    {
+      "title": "Pass Required Examination",
+      "description": "Either provide proof of successful completion of a national examination (e.g., DANB CDA or COA) or pass the Illinois Dental Assistant Jurisprudence Examination, as specified in your chosen pathway."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the required $30 application fee through the IDFPR Online Services portal."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application through your IDFPR Online Services account and respond promptly to any requests for additional information."
     }
   ],
   "documents": [
@@ -122,11 +136,11 @@
     "fingerprint_required": false,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 0,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 30,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://idfpr.illinois.gov/profs/dentalsurgeon.asp",
-    "endorsement_url": "https://idfpr.illinois.gov/profs/dentalsurgeon.asp",
+    "endorsement_url": "https://www.idfpr.com/profs/Dentistry.asp",
     "notes": "Illinois does not require licensure for general dental assistants. EFDA credential available for expanded duties.",
     "requires_psv": false,
     "board_fee_verified": true,
@@ -145,7 +159,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dental Assistant in Illinois",
-        "dek": "Illinois Dental Assistant registration requires application through the Illinois Department of Financial and Professional Regulation."
+        "dek": "To register as a Dental Assistant in Illinois, apply online through the IDFPR Online Services portal, where you will complete your application and submit supporting documentation."
       }
     }
   },
@@ -171,5 +185,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "IDFPR Online Services",
+    "portal_url": "https://www.idfpr.com/applications/applyonline.asp",
+    "registration_steps": "Visit the IDFPR Online Services portal, click 'Apply for a License', then 'New User Registration' to create an account. After registration, log in and select 'Apply for a New License' and choose 'Dental Assistant'.",
+    "provider_search": "https://www.idfpr.com/licenselookup/licenselookup.asp"
   }
 }

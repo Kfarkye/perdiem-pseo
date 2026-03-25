@@ -21,19 +21,21 @@
   "board": {
     "name": "Speech-Language Pathologists and Audiologists Program",
     "parent_dept": "Texas Department of Licensing and Regulation (TDLR)",
-    "mailing_address": "P.O. Box 12157<br>Austin, TX 78711",
+    "mailing_address": "Texas Department of Licensing and Regulation, P.O. Box 12157, Austin, TX 78711-2157",
     "physical_address": "920 Colorado St.<br>Austin, TX 78701",
-    "phone": "(800) 803-9202",
+    "phone": "1-800-803-9202",
     "fax": "(512) 463-9468",
-    "email": "mailto:cs.speech@tdlr.texas.gov",
-    "url": "https://www.tdlr.texas.gov/slpa/"
+    "email": "CS.SpeechPathologyAndAudiology@tdlr.texas.gov",
+    "url": "https://www.tdlr.texas.gov/slpa/",
+    "contact_url": "https://www.tdlr.texas.gov/help/contact.htm",
+    "verify_url": "https://www.tdlr.texas.gov/LicenseSearch/"
   },
   "quick_facts": {
     "total_fee": "$117",
     "fee_breakdown": "$80 application + $37 fingerprint/background",
-    "renewal_fee": "$80",
-    "renewal_cycle": "Every 2 years + 20 CE hours",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 1 year",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "You must have a master’s degree or doctoral degree in speech-language pathology from an accredited educational institution."
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you have completed a master's or doctoral degree in Speech-Language Pathology, a supervised clinical fellowship year (CFY), and passed the Praxis examination in Speech-Language Pathology."
     },
     {
-      "title": "Complete Supervised Experience",
-      "description": "You must complete a supervised clinical practicum and a supervised postgraduate professional employment experience (Clinical Fellowship)."
+      "title": "Create or Log In to TDLR Online Account",
+      "description": "Navigate to the TDLR Online Licensing Services portal at https://www.tdlr.texas.gov/applyonline.htm. Click 'Register Now' to create a new account, or log in to your existing account."
     },
     {
-      "title": "Pass the Examination",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and apply for licensure with the Texas Department of Licensing and Regulations."
+      "title": "Submit Online Application and Fee",
+      "description": "From your TDLR Online Licensing Services account, select the Speech-Language Pathologist license application, complete all required fields, and pay the non-refundable $150 application fee."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts to be sent directly from your university to TDLR. Submit the Verification of Supervised Clinical Experience (Form SLPA004). Ensure your official Praxis examination scores are sent directly from ETS to TDLR (TDLR's ETS recipient code is 7812)."
+    },
+    {
+      "title": "TDLR Review and Approval",
+      "description": "TDLR staff will review your completed application and all submitted documents. Once approved, your Texas SLP license will be issued. You can check the status of your application via the TDLR Online Licensing Services portal."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 117,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.tdlr.texas.gov/slpa/",
-    "endorsement_url": "https://www.tdlr.texas.gov/slpa/",
+    "endorsement_url": "https://www.tdlr.texas.gov/slpa/slpa_reciprocity.htm",
     "notes": "Texas does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Texas license, submit proof of their master's degree, Praxis score, and completed Clinical Fellowship. If you hold current ASHA CCC-SLP certification, this streamlines the process as it demonstrates you have met national standards."
   },
   "slug": "texas-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Texas",
-        "dek": "Texas Speech-Language Pathologist License requires a master's degree in speech-language pathology, passing the Praxis exam, and completing a supervised clinical practicum."
+        "dek": "To apply for a Speech-Language Pathologist license in Texas, you must submit your application through the TDLR Online Licensing Services portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "TDLR Online Licensing Services",
+    "portal_url": "https://www.tdlr.texas.gov/applyonline.htm",
+    "registration_steps": "Navigate to the TDLR Online Licensing Services page and click 'Register Now' to create a new account, or log in if you have an existing account. You will need to provide personal details, email, and create security questions. Once registered, you can proceed to apply for a new license.",
+    "provider_search": "https://www.tdlr.texas.gov/LicenseSearch/"
   }
 }

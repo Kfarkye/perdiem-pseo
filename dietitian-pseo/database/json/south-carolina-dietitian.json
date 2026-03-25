@@ -21,18 +21,20 @@
   "board": {
     "name": "Panel for Dietetics",
     "parent_dept": "South Carolina Department of Labor, Licensing and Regulation (LLR)",
-    "mailing_address": "110 Centerview Dr<br>Columbia, SC 29210",
+    "mailing_address": "LLR\nPO Box 11329\nColumbia, SC 29211-1329",
     "physical_address": "110 Centerview Dr<br>Columbia, SC 29210",
-    "phone": "(803) 896-4651",
+    "phone": "(803) 896-4300",
     "fax": "",
     "email": "mailto:Contact.Dietetics@llr.sc.gov",
-    "url": "https://llr.sc.gov/diet/"
+    "url": "https://llr.sc.gov/diet/",
+    "contact_url": "https://llr.sc.gov/contact-us",
+    "verify_url": "https://verify.llronline.com/LicLookup/LookupMain.aspx"
   },
   "quick_facts": {
     "total_fee": "$175",
     "fee_breakdown": "$175 application fee (non-refundable)",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years (by May 31, odd years) + 30 CE hours",
+    "renewal_fee": "$50",
+    "renewal_cycle": "Every 1 year",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians",
@@ -40,26 +42,38 @@
   },
   "license_types": [
     {
-      "title": "Licensed Dietitian (LD) — Licensure by Registration",
+      "title": "Licensed Dietitian (LD) \u2014 Licensure by Registration",
       "description": "For applicants currently registered with the Commission on Dietetic Registration (CDR). The most common pathway."
     },
     {
-      "title": "Licensed Dietitian (LD) — Licensure by Examination",
+      "title": "Licensed Dietitian (LD) \u2014 Licensure by Examination",
       "description": "For applicants who have passed a Panel-approved examination and hold a baccalaureate or master's degree in an approved nutrition field from a regionally accredited institution."
     }
   ],
   "steps": [
     {
-      "title": "Complete Required Education",
-      "description": "Complete a minimum of a baccalaureate degree and meet the academic requirements from an ACEND-accredited program."
+      "title": "Review Licensure Requirements",
+      "description": "Before applying, review the specific educational, supervised practice, and examination requirements for Dietitian licensure on the SC LLR Dietitian website."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete a supervised practice program accredited by ACEND."
+      "title": "Register on MyLicense Portal",
+      "description": "Create a new user account on the South Carolina MyLicense Portal at eservice.llr.sc.gov. You will need a valid email address to register and set up your login credentials."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+      "title": "Complete Online Application",
+      "description": "Log in to the MyLicense Portal and complete the Dietitian application form. Provide all required personal, educational, and professional history information accurately."
+    },
+    {
+      "title": "Upload Supporting Documentation",
+      "description": "Submit all necessary supporting documents, such as official transcripts, verification of supervised practice, and official Commission on Dietetic Registration (CDR) examination results, directly through the MyLicense Portal as instructed."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $50.00 via credit card or other accepted payment methods through the MyLicense Portal to process your application."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the MyLicense Portal for updates on your application status. Respond promptly to any requests for additional information or clarification from the South Carolina Board of Examiners."
     }
   ],
   "documents": [
@@ -144,11 +158,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 175,
+    "endorsement_fee": 50,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://llr.sc.gov/diet/",
-    "endorsement_url": "https://llr.sc.gov/diet/",
+    "endorsement_url": "https://llr.sc.gov/dietitian/forms.aspx",
     "notes": "Out-of-state dietitians applying for South Carolina licensure must submit a license verification from their current state board, in addition to the standard application materials. South Carolina is considering a Dietitian Licensure Compact (Bill 160) that would enable interstate practice. If previously licensed in another state, the Panel may consider your credentials under the existing application framework. Applicants with foreign education must have credentials independently validated.",
     "requires_psv": true
   },
@@ -164,7 +178,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in South Carolina",
-        "dek": "South Carolina Dietitian licensure requires completing an accredited education program, passing the Registration Examination for Dietitians, and fulfilling supervised practice requirements."
+        "dek": "To apply for a Dietitian and Nutritionist license in South Carolina, create an account and submit your application through the MyLicense Portal."
       }
     }
   },
@@ -190,5 +204,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense Portal",
+    "portal_url": "https://eservice.llr.sc.gov/",
+    "registration_steps": "New users must first register for an account on the MyLicense Portal using a valid email address and creating a password before starting an application.",
+    "provider_search": "https://verify.llronline.com/LicLookup/LookupMain.aspx"
   }
 }

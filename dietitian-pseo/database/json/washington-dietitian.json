@@ -21,19 +21,21 @@
   "board": {
     "name": "Dietitian and Nutritionist Credentialing Program",
     "parent_dept": "Washington State Department of Health (DOH)",
-    "mailing_address": "P.O. Box 47877<br>Olympia, WA 98504-7877",
+    "mailing_address": "Washington State Department of Health, PO Box 47877, Olympia, WA 98504-7877",
     "physical_address": "111 Israel Rd SE<br>Tumwater, WA 98501",
-    "phone": "(360) 236-4700",
+    "phone": "360-236-4700",
     "fax": "",
     "email": "mailto:HSQACustomerService@doh.wa.gov",
-    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renewal/dietitian-and-nutritionist"
+    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renewal/dietitian-and-nutritionist",
+    "contact_url": "https://doh.wa.gov/about-us/contact-us",
+    "verify_url": "https://doh.wa.gov/licenses-permits-and-certificates/providers-patients-and-public/verify-a-credential-or-facility"
   },
   "quick_facts": {
     "total_fee": "$81",
     "fee_breakdown": "$65 application + $16 HEAL-WA surcharge",
-    "renewal_fee": "$61",
-    "renewal_cycle": "Annual (on birthday) + No state CE requirement",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$90",
+    "renewal_cycle": "Annually",
+    "processing_time": "2 to 3 Weeks",
     "license_duration": "1 Year",
     "exam_name": "Registration Examination for Dietitians"
   },
@@ -49,16 +51,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Complete a didactic program in dietetics accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+      "title": "Create a SecureAccess Washington (SAW) Account",
+      "description": "Navigate to secureaccess.wa.gov and create a new SAW account if you do not already have one."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete a supervised practice program accredited by ACEND."
+      "title": "Add PLQA Service to SAW",
+      "description": "Log in to your SAW account, then add the Department of Health\u2019s Professional Licensing and Quality Assurance (PLQA) service to access the licensing application system."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Complete Online Application",
+      "description": "Access the PLQA system through your SAW account and complete the online Dietitian application form."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Provide official transcripts verifying a bachelor's or higher degree and verification of your registration as a dietitian from the Commission on Dietetic Registration (CDR). These can often be uploaded directly to the PLQA system or sent electronically/by mail as instructed."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Pay the non-refundable application fee of $90 through the online PLQA system."
+    },
+    {
+      "title": "Application Review",
+      "description": "Monitor your application status online through the PLQA system. The Department of Health will review your application and notify you if additional information is required."
     }
   ],
   "documents": [
@@ -139,11 +153,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 81,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 90,
+    "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
     "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renewal/dietitian-and-nutritionist",
-    "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renewal/dietitian-and-nutritionist",
+    "endorsement_url": "https://doh.wa.gov/licensing-and-regulation/professions/dietitian",
     "notes": "Washington allows certification without examination for dietitians licensed or certified in another jurisdiction, provided the DOH determines that the other state's requirements are equivalent to or exceed Washington's. Applicants must provide a letter from their previous state confirming no outstanding disciplinary orders, plus verification of current CDR registration status.",
     "requires_psv": true
   },
@@ -159,7 +173,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Washington",
-        "dek": "Washington Dietitian Certification requires completion of a didactic program, supervised practice, and passing the Registration Examination for Dietitians."
+        "dek": "To apply for a Dietitian license in Washington, you must submit your application online through the Professional Licensing and Quality Assurance (PLQA) system, accessed via your SecureAccess Washington (SAW) account."
       }
     }
   },
@@ -185,5 +199,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Professional Licensing and Quality Assurance (PLQA) system via SecureAccess Washington (SAW)",
+    "portal_url": "https://fortress.wa.gov/doh/hpqa1/",
+    "registration_steps": "First, create a SecureAccess Washington (SAW) account at secureaccess.wa.gov. Then, add the Department of Health\u2019s Professional Licensing and Quality Assurance (PLQA) service to your SAW account to access and complete the online application.",
+    "provider_search": "https://doh.wa.gov/licenses-permits-and-certificates/providers-patients-and-public/verify-a-credential-or-facility"
   }
 }

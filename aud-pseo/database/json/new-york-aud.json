@@ -21,19 +21,21 @@
   "board": {
     "name": "State Board for Speech-Language Pathology and Audiology",
     "parent_dept": "New York State Education Department (NYSED), Office of the Professions",
-    "mailing_address": "89 Washington Avenue, Albany, NY 12234",
+    "mailing_address": "New York State Education Department\nOffice of the Professions\nSpeech-Language Pathology & Audiology Unit\n89 Washington Avenue\nAlbany, NY 12234-1000",
     "physical_address": "89 Washington Avenue, Albany, NY 12234",
-    "phone": "(518) 474-3817 x340",
+    "phone": "518-474-3817 Ext. 560",
     "fax": "(518) 486-4846",
-    "email": "mailto:slpbd@nysed.gov",
-    "url": "http://www.op.nysed.gov/prof/slpa/"
+    "email": "opunit4@nysed.gov",
+    "url": "http://www.op.nysed.gov/prof/slpa/",
+    "contact_url": "https://www.nysed.gov/professional-licensing/contact-office-professions",
+    "verify_url": "https://www.nysed.gov/verify-license"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$294",
+    "renewal_cycle": "Every 3 years",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Audiology Examination of the National Examination in Audiology",
     "ce_requirement": "30 hours per renewal cycle"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Education Requirements",
-      "description": "Earn a doctoral degree in audiology from a program registered by the New York State Education Department or determined to be substantially equivalent."
+      "title": "Create NY.gov ID and Access Portal",
+      "description": "Establish your NY.gov ID account (if necessary) and access the NYSED Application Portal to begin your 'Application for Licensure and First Registration'."
     },
     {
-      "title": "Pass the Required Examination",
-      "description": "Successfully complete the Audiology Examination of the National Examination in Audiology."
+      "title": "Submit Online Application and Fee",
+      "description": "Complete and submit your initial licensure application online through the NYSED Application Portal and pay the required fee."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application for licensure to the New York State Education Department along with the required fee and documentation."
+      "title": "Arrange for Official Transcripts",
+      "description": "Request your educational institution to send official transcripts, verifying your master's or doctoral degree in audiology, directly to the NYSED Office of the Professions."
+    },
+    {
+      "title": "Document Supervised Experience",
+      "description": "Have your supervisor(s) complete and submit Form 4B, 'Verification of Supervised Clinical Experience,' directly to the NYSED Office of the Professions."
+    },
+    {
+      "title": "Verify Praxis Examination Score",
+      "description": "Ensure your official passing score on the Praxis Examination in Audiology (5041) is sent directly to the NYSED Office of the Professions by Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Complete Required Training",
+      "description": "Complete the New York State required training in Child Abuse Identification and Reporting and Infection Control, and ensure your completion is reported to NYSED."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 294,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "mid",
     "board_url": "http://www.op.nysed.gov/prof/slpa/",
-    "endorsement_url": "http://www.op.nysed.gov/prof/slpa/",
+    "endorsement_url": "https://www.nysed.gov/professional-licensing/audiology-licensing-requirements#endorsement",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "new-york-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in New York",
-        "dek": "New York Audiology license requires graduation from an approved program, passing the required examination, and meeting good moral character requirements."
+        "dek": "To apply for an Audiologist license in New York, create a NY.gov ID and submit your application through the NYSED Application Portal on the New York State Education Department, Office of the Professions website."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NYSED Application Portal",
+    "portal_url": "https://www.op.nysed.gov/apply-online-first-registration",
+    "registration_steps": "Create a NY.gov ID account (if you don't have one), then log in to the NYSED Application Portal. Select 'Audiologist' and 'Application for Licensure and First Registration' to begin.",
+    "provider_search": "https://www.nysed.gov/verify-license"
   }
 }

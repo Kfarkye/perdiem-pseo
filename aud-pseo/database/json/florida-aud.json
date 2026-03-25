@@ -21,17 +21,19 @@
   "board": {
     "name": "Board of Speech-Language Pathology and Audiology",
     "parent_dept": "Florida Department of Health (DOH)",
-    "mailing_address": "4052 Bald Cypress Way, Bin C-06, Tallahassee, FL 32399-3256",
+    "mailing_address": "Board of Speech-Language Pathology and Audiology\n4052 Bald Cypress Way, Bin C-06\nTallahassee, FL 32399-3256",
     "physical_address": "4052 Bald Cypress Way, Tallahassee, FL 32399",
-    "phone": "(850) 245-4444",
+    "phone": "(850) 488-0595",
     "fax": "(850) 921-6184",
-    "email": "mailto:MQA.SpeechLanguagePathology@flhealth.gov",
-    "url": "https://floridasspeechaudiology.gov/"
+    "email": "MQA_SpeechPath_Audio@flhealth.gov",
+    "url": "https://floridasspeechaudiology.gov/",
+    "contact_url": "https://flhealthsource.gov/slpa/contact-us/",
+    "verify_url": "https://mqa-internet.floridahealth.gov/MyLicenseVerification.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$105.00",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational Requirements",
-      "description": "Complete a Doctor of Audiology (Au.D.) or equivalent degree from an accredited educational program."
+      "title": "Review Licensure Requirements",
+      "description": "Visit the Florida Board of Speech-Language Pathology and Audiology website at flhealthsource.gov/slpa/ to thoroughly review the current educational, examination (Praxis II: Audiology (5263)), and supervised clinical experience requirements for audiologist licensure."
     },
     {
-      "title": "Pass the National Examination",
-      "description": "Achieve a passing score on the Audiology Examination (Praxis Examination in Audiology)."
+      "title": "Create Online Account",
+      "description": "Access the Florida Health Source Online Services portal at flhealthsource.gov/licensing/ and register for a new user account if you do not already have one. This account will be used to submit and manage your application."
     },
     {
-      "title": "Apply for Licensure",
-      "description": "Submit an application to the Florida Board of Speech-Language Pathology and Audiology, including all required documentation and fees."
+      "title": "Complete Online Application",
+      "description": "Log in to your Florida Health Source Online Services account, select 'Apply for a License', and choose the audiologist licensure application. Complete all required sections, accurately providing your personal, educational, and professional history."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Arrange for official transcripts verifying your doctoral degree in Audiology to be sent directly from your educational institution to the Board. Ensure official Praxis II scores and any other required verification of supervised practice or experience are submitted as specified by the Board."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $100.00 through the Florida Health Source Online Services portal. An additional initial licensure fee of $100.00 will be required upon application approval to activate your license."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application within your Florida Health Source Online Services account. Respond promptly to any requests for additional information or clarification from the Board to avoid delays in processing."
     }
   ],
   "documents": [
@@ -128,7 +142,7 @@
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://floridasspeechaudiology.gov/",
-    "endorsement_url": "https://floridasspeechaudiology.gov/",
+    "endorsement_url": "https://flhealthsource.gov/slpa/licensing-information/",
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "florida-aud",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Audiologist in Florida",
-        "dek": "Florida Audiology license requires graduation from an accredited program, passing the Audiology Examination, and completing a supervised experience."
+        "dek": "Audiologists seeking initial licensure in Florida must apply online through the Florida Health Source Online Services portal."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Florida Health Source Online Services",
+    "portal_url": "https://flhealthsource.gov/licensing/",
+    "registration_steps": "Navigate to the Florida Health Source Online Services portal, click on 'Apply for a License', and then select 'Register' to create a new user account. Follow the prompts to provide personal information, set up a username and password, and verify your account before proceeding with your application.",
+    "provider_search": "https://mqa-internet.floridahealth.gov/MyLicenseVerification.aspx"
   }
 }

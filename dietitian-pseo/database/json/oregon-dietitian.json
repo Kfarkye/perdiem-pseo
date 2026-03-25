@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Licensed Dietitians",
     "parent_dept": "Oregon Health Licensing Office (HLO)",
-    "mailing_address": "1430 Tansy Boegel Rd. SE, Suite 220<br>Salem, OR 97302",
+    "mailing_address": "Oregon Health Licensing Office, PO Box 14470, Salem, OR 97309-5077",
     "physical_address": "1430 Tansy Boegel Rd. SE, Suite 220<br>Salem, OR 97302",
-    "phone": "(503) 378-8667",
+    "phone": "503-378-8667",
     "fax": "(503) 585-9114",
-    "email": "mailto:hlo.info@state.or.us",
-    "url": "https://www.oregon.gov/oha/ph/hlo/pages/board-licensed-dietitians.aspx"
+    "email": "hlo.info@hlo.oregon.gov",
+    "url": "https://www.oregon.gov/oha/ph/hlo/pages/board-licensed-dietitians.aspx",
+    "contact_url": "https://www.oregon.gov/oha/HLO/Pages/Dietitian.aspx",
+    "verify_url": "https://hlo.oregon.gov/OnlineLicensing/"
   },
   "quick_facts": {
     "total_fee": "$110",
     "fee_breakdown": "$50 application fee + $60 initial 1-year license fee (background check fee extra)",
-    "renewal_fee": "$60",
-    "renewal_cycle": "Annual + 15 CE hours (plus 1 hr cultural competency every other year)",
-    "processing_time": "3 to 4 Weeks",
+    "renewal_fee": "$200",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "1 Year",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "15 hours per year"
@@ -46,16 +48,24 @@
   ],
   "steps": [
     {
-      "title": "Earn a Bachelor's Degree",
-      "description": "Complete a minimum of a baccalaureate degree from a U.S. regionally accredited college or university or foreign equivalent."
+      "title": "Meet Educational and Examination Requirements",
+      "description": "Ensure you have completed an Accreditation Council for Education in Nutrition and Dietetics (ACEND)-accredited dietetics program (Bachelor's or Master's) and an ACEND-approved supervised practice program, and have passed the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
     },
     {
-      "title": "Complete Supervised Practice",
-      "description": "Complete supervised practice through an Accreditation Council for Education in Nutrition and Dietetics (ACEND) accredited program."
+      "title": "Gather Required Documentation",
+      "description": "Prepare official transcripts from your degree program, verification of your CDR registration, and any other supporting documents as outlined by the Board of Licensed Dietitians."
     },
     {
-      "title": "Pass the Registration Examination",
-      "description": "Pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+      "title": "Register for an Account",
+      "description": "Create a user account on the Oregon Health Licensing Office (HLO) Online Licensing System at https://hlo.oregon.gov/OnlineLicensing/ by clicking 'Register Here'."
+    },
+    {
+      "title": "Complete and Submit Application",
+      "description": "Log in to the Online Licensing System, select the 'Dietitian' application, complete all required sections, upload supporting documents, and pay the application fee."
+    },
+    {
+      "title": "Board Review and Approval",
+      "description": "The Oregon Board of Licensed Dietitians, managed by the HLO, will review your complete application and documentation. You will be notified of the decision and next steps once processing is complete."
     }
   ],
   "documents": [
@@ -132,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 110,
-    "processing_time": "3 to 4 Weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.oregon.gov/oha/ph/hlo/pages/board-licensed-dietitians.aspx",
-    "endorsement_url": "https://www.oregon.gov/oha/ph/hlo/pages/board-licensed-dietitians.aspx",
+    "endorsement_url": "https://www.oregon.gov/oha/HLO/Pages/Dietitian.aspx",
     "notes": "Applicants currently licensed in another state may apply via reciprocity by submitting the standard application, fee, and an official Verification of Licensure from their current state board. The applicant must still have active CDR registration.",
     "requires_psv": true
   },
@@ -152,7 +162,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Oregon",
-        "dek": "Oregon Dietitian License requires a bachelor’s degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+        "dek": "Dietitians and nutritionists seeking licensure in Oregon must apply through the Oregon Health Licensing Office's Online Licensing System."
       }
     }
   },
@@ -178,5 +188,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Online Licensing System",
+    "portal_url": "https://hlo.oregon.gov/OnlineLicensing/",
+    "registration_steps": "Navigate to the Online Licensing System URL and click 'Register Here' to create a new user account by following the prompts for personal information and login credentials.",
+    "provider_search": "https://hlo.oregon.gov/OnlineLicensing/"
   }
 }

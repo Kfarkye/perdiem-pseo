@@ -21,19 +21,21 @@
   "board": {
     "name": "State Committee of Dietitians",
     "parent_dept": "Missouri Division of Professional Registration",
-    "mailing_address": "P.O. Box 1335<br>Jefferson City, MO 65102",
+    "mailing_address": "Missouri Board of Healing Arts\n3605 Missouri Boulevard\nP.O. Box 4\nJefferson City, MO 65102",
     "physical_address": "3605 Missouri Blvd<br>Jefferson City, MO 65109",
-    "phone": "(573) 522-3438",
+    "phone": "(573) 751-0098",
     "fax": "",
-    "email": "mailto:diet@pr.mo.gov",
-    "url": "https://pr.mo.gov/dietitians.asp"
+    "email": "healingarts@pr.mo.gov",
+    "url": "https://pr.mo.gov/dietitians.asp",
+    "contact_url": "https://pr.mo.gov/healingarts-contact.asp",
+    "verify_url": "https://pr.mo.gov/licensing.asp"
   },
   "quick_facts": {
     "total_fee": "$50",
     "fee_breakdown": "$50 application fee",
-    "renewal_fee": "$20",
-    "renewal_cycle": "Every 2 years (by April 1, even years) — no CE required",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$50.00",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians"
   },
@@ -45,16 +47,28 @@
   ],
   "steps": [
     {
-      "title": "Complete Educational Requirements",
-      "description": "Earn a bachelor's degree or higher from a regionally accredited college or university with a major in dietetics, food and nutrition, or a related field approved by the Missouri State Committee of Dietitians."
+      "title": "Create MoRLD Account and Submit Online Application",
+      "description": "Access the Missouri Board of Healing Arts initial application page and click the 'Apply Online' link to the MoRLD (Missouri Real-time Licensing Database) system. If you're a new user, create an account, then log in and complete the Dietitian application."
     },
     {
-      "title": "Pass the Registration Examination for Dietitians",
-      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+      "title": "Submit Transcripts and Supervised Practice Verification",
+      "description": "Arrange for official transcripts confirming your degree in dietetics or nutrition to be sent directly to the Board. Upload or mail documentation of your supervised practice experience (e.g., Verification Statement from a dietetic internship)."
     },
     {
-      "title": "Apply for a Dietitian License",
-      "description": "Submit a completed application, official transcripts, examination verification, and the required fee to the Missouri State Committee of Dietitians."
+      "title": "Provide CDR Examination Verification",
+      "description": "Ensure the Missouri Board of Healing Arts receives verification of your successful completion of the Commission on Dietetic Registration (CDR) examination. This is often done by providing a copy of your CDR registration card within the MoRLD system."
+    },
+    {
+      "title": "Complete a Criminal Background Check",
+      "description": "Follow the instructions provided within the MoRLD system to complete a fingerprint-based criminal background check through an approved vendor. This typically involves registering with a state-approved service and having your fingerprints taken."
+    },
+    {
+      "title": "Pay Application Fee",
+      "description": "Submit the non-refundable application fee of $30.00 via the MoRLD online payment system or by mail, as specified in your application."
+    },
+    {
+      "title": "Board Review and License Issuance",
+      "description": "The Missouri Board of Healing Arts will review your complete application and all supporting documents. Upon approval, your Dietitian license will be issued and mailed to your address on file."
     }
   ],
   "documents": [
@@ -135,11 +149,11 @@
     "fingerprint_required": true,
     "temp_license_available": false,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
-    "processing_time": "2 to 4 Weeks",
+    "endorsement_fee": 30,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://pr.mo.gov/dietitians.asp",
-    "endorsement_url": "https://pr.mo.gov/dietitians.asp",
+    "endorsement_url": "https://pr.mo.gov/dietitians-endorsement.asp",
     "notes": "Missouri does not have a formal reciprocity agreement with other states. Out-of-state dietitians must apply for a new Missouri license through the standard application process. Holding current CDR registration (RD/RDN) satisfies the core requirements. Note: Missouri is actively pursuing the Dietitian Licensure Compact (Senate Bill 412/1339), which would enable interstate practice without additional licenses if enacted.",
     "requires_psv": true
   },
@@ -155,7 +169,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Dietitian in Missouri",
-        "dek": "Missouri Dietitian License requires completing an accredited education program, passing the Registration Examination for Dietitians, and submitting an application to the State Committee of Dietitians."
+        "dek": "To apply for an initial Dietitian license in Missouri, prospective licensees must apply online through the state's MoRLD (Missouri Real-time Licensing Database) system, managed by the Missouri Board of Healing Arts."
       }
     }
   },
@@ -181,5 +195,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MoRLD (Missouri Real-time Licensing Database)",
+    "portal_url": "https://pr.mo.gov/healingarts-initial.asp",
+    "registration_steps": "Navigate to the Missouri Board of Healing Arts initial application page and click the 'Apply Online' link to access the MoRLD system. If you are a new user, click 'New User Registration' to create an account. Follow the prompts to set up your profile, then log in to select and complete the Dietitian license application.",
+    "provider_search": "https://pr.mo.gov/licensing.asp"
   }
 }

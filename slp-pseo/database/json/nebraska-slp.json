@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Audiology and Speech-Language Pathology",
     "parent_dept": "Nebraska Department of Health and Human Services (DHHS)",
-    "mailing_address": "P.O. Box 94986, Lincoln, NE 68509-4986",
+    "mailing_address": "Nebraska Department of Health and Human Services\nLicensure Unit\nPO Box 94986\nLincoln, NE 68509-4986",
     "physical_address": "301 Centennial Mall South, Lincoln, NE 68509",
-    "phone": "(402) 471-2117",
+    "phone": "402-471-2115",
     "fax": "(402) 471-3577",
-    "email": "mailto:dhhs.licensure@nebraska.gov",
-    "url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx"
+    "email": "DHHS.LicensureUnit@Nebraska.gov",
+    "url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
+    "contact_url": "https://dhhs.ne.gov/Pages/Licensing-Audiology-and-Speech-Language-Pathology.aspx",
+    "verify_url": "https://ne.verify.licensing.online/"
   },
   "quick_facts": {
     "total_fee": "$175",
     "fee_breakdown": "$75 application + $100 license fee",
     "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years (October 31)",
-    "processing_time": "2 to 4 weeks",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "30 contact hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet Education Requirements",
-      "description": "Earn a master’s or doctoral degree in speech-language pathology from an accredited program."
+      "title": "Create an Account and Submit Online Application",
+      "description": "Navigate to the NE.licensing.online portal, create an account, and complete the online application for initial licensure as a Speech-Language Pathologist. Ensure you pay the required application fee."
     },
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete a supervised professional experience (SPE) consisting of at least 1260 hours under the supervision of a licensed speech-language pathologist."
+      "title": "Submit Official Transcripts",
+      "description": "Request your university to send official transcripts, verifying a master's or doctoral degree in Speech-Language Pathology from an accredited program, directly to the Nebraska DHHS Licensure Unit."
     },
     {
-      "title": "Pass the National Examination and Apply for Licensure",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit a completed application with the required fee to the Nebraska Board of Audiology and Speech-Language Pathology."
+      "title": "Submit Praxis Examination Scores",
+      "description": "Arrange for the Educational Testing Service (ETS) to send your official Praxis examination scores directly to the Nebraska DHHS Licensure Unit."
+    },
+    {
+      "title": "Verify Clinical Clock Hours",
+      "description": "Complete and submit the \"Verification of Clinical Clock Hours\" form (Form 17-640) outlining the completion of 300 clinical clock hours as part of your application."
+    },
+    {
+      "title": "Submit Postgraduate Professional Experience Verification",
+      "description": "Complete and submit the \"Verification of Postgraduate Professional Experience\" form (Form 17-640) detailing your 9-month (36-week) supervised postgraduate professional employment experience (Clinical Fellowship Year)."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 175,
-    "processing_time": "2 to 4 weeks",
+    "endorsement_fee": 100,
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
-    "endorsement_url": "https://dhhs.ne.gov/licensure/Pages/Speech-Language-Pathology-and-Audiology.aspx",
+    "endorsement_url": "https://dhhs.ne.gov/Pages/Licensing-Audiology-and-Speech-Language-Pathology.aspx#Endorsement",
     "notes": "Nebraska is a member of the ASLP Interstate Compact."
   },
   "slug": "nebraska-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Nebraska",
-        "dek": "Nebraska Speech-Language Pathologist licensure requires graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+        "dek": "Apply for your Speech-Language Pathologist license in Nebraska through the NE.licensing.online portal, where all applications are submitted online."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "NE.licensing.online",
+    "portal_url": "https://ne.verify.licensing.online/",
+    "registration_steps": "Navigate to the NE.licensing.online portal and select \"Create Account\" on the homepage to begin your online application.",
+    "provider_search": "https://ne.verify.licensing.online/"
   }
 }

@@ -21,19 +21,21 @@
   "board": {
     "name": "Audiology and Speech-Language Pathology Advisory Committee",
     "parent_dept": "New Jersey Division of Consumer Affairs",
-    "mailing_address": "P.O. Box 45020, Newark, NJ 07101",
+    "mailing_address": "State Board of Audiology and Speech-Language Pathology\nP.O. Box 45002\nNewark, New Jersey 07101",
     "physical_address": "124 Halsey St., Newark, NJ 07102",
-    "phone": "(973) 504-6430",
+    "phone": "(973) 504-6200",
     "fax": "(973) 648-3355",
-    "email": "mailto:askconsumeraffairs@dca.lps.state.nj.us",
-    "url": "https://www.njconsumeraffairs.gov/aud/"
+    "email": "AskConsumerAffairs@dca.njoag.gov",
+    "url": "https://www.njconsumeraffairs.gov/aud/",
+    "contact_url": "https://www.njconsumeraffairs.gov/aud/Pages/contact.aspx",
+    "verify_url": "https://newjersey.mylicense.com/verification_3_0/"
   },
   "quick_facts": {
     "total_fee": "$120",
     "fee_breakdown": "$120 application and license fee",
-    "renewal_fee": "$120",
+    "renewal_fee": "$260",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 8 weeks",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "20 hours per renewal cycle"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Complete a Master's Degree",
-      "description": "Obtain a master’s degree or doctorate in speech-language pathology from an accredited educational institution."
+      "title": "Register and Complete Online Application",
+      "description": "Visit the New Jersey Division of Consumer Affairs' MyLicense portal at https://newjersey.mylicense.com/web/, register as a new user, and complete the comprehensive online application for a Speech-Language Pathologist license."
     },
     {
-      "title": "Complete Supervised Clinical Experience",
-      "description": "Complete a supervised clinical practicum, including 400 clock hours, as part of your graduate program."
+      "title": "Submit Official Academic Transcripts",
+      "description": "Arrange for official transcripts, verifying the completion of a master's or doctoral degree in Speech-Language Pathology from an accredited institution, to be sent directly to the Board."
     },
     {
-      "title": "Pass the National Examination and Apply",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit your application for licensure to the New Jersey Audiology and Speech-Language Pathology Advisory Committee."
+      "title": "Provide Praxis Examination Scores",
+      "description": "Ensure your official scores from the Praxis examination in Speech-Language Pathology (ETS test code 5331) are sent directly to the Board from ETS."
+    },
+    {
+      "title": "Document Clinical Fellowship Experience",
+      "description": "Submit detailed documentation of your supervised postgraduate professional experience (Clinical Fellowship Year or its equivalent), including verification from your clinical supervisor, directly to the Board."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Undergo a criminal history background check, which includes fingerprinting, by following the specific instructions provided by the Board after your application has been initiated through the MyLicense portal."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 120,
-    "processing_time": "4 to 8 weeks",
+    "endorsement_fee": 255,
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.njconsumeraffairs.gov/aud/",
-    "endorsement_url": "https://www.njconsumeraffairs.gov/aud/",
+    "endorsement_url": "https://www.njconsumeraffairs.gov/aud/Pages/applications.aspx",
     "notes": "New Jersey does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full New Jersey licensure."
   },
   "slug": "new-jersey-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in New Jersey",
-        "dek": "New Jersey Speech-Language Pathologist licenses require a master's degree, supervised clinical experience, and passing the national exam."
+        "dek": "To apply for an initial Speech-Language Pathologist license in New Jersey, users must submit their application and all supporting documents through the New Jersey Division of Consumer Affairs' MyLicense portal."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyLicense portal",
+    "portal_url": "https://newjersey.mylicense.com/web/",
+    "registration_steps": "To apply, visit the MyLicense portal URL, click 'Apply for a New License' or 'Register as a New User' to create an account with a username and password. Once logged in, select the Speech-Language Pathologist application type to begin the online application.",
+    "provider_search": "https://newjersey.mylicense.com/verification_3_0/"
   }
 }

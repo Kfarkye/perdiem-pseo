@@ -21,17 +21,19 @@
   "board": {
     "name": "District of Columbia Board of Pharmacy",
     "parent_dept": "DC Department of Health, Health Regulation and Licensing Administration (HRLA)",
-    "mailing_address": "See board website",
+    "mailing_address": "DC Health, Health Regulation & Licensing Administration, 899 North Capitol Street NE, Washington, DC 20002",
     "physical_address": "See board website",
-    "phone": "(202) 724-8800",
+    "phone": "(202) 442-5955",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dchealth.dc.gov/bop"
+    "email": "hpla.doh@dc.gov",
+    "url": "https://dchealth.dc.gov/bop",
+    "contact_url": "https://dchealth.dc.gov/service/health-regulation-and-licensing-administration-hrla",
+    "verify_url": "https://app.hpla.doh.dc.gov/Weblookup/"
   },
   "quick_facts": {
     "total_fee": "$250",
     "fee_breakdown": "$250 application/license fee",
-    "renewal_fee": "$150",
+    "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Pharmacy Program",
-      "description": "Complete a professional degree program in pharmacy from a college or university approved by the Board."
+      "title": "Create an Account",
+      "description": "Register as a new user on the DC Health Licensing Portal (https://app.hpla.doh.dc.gov/Applicant/Default.aspx) by clicking 'New User' and following the prompts to set up your profile."
     },
     {
-      "title": "Pass the NAPLEX and MPJE Exams",
-      "description": "Achieve passing scores on both the North American Pharmacy Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+      "title": "Initiate Application",
+      "description": "Log in to your newly created account, select 'New Application' from the dashboard, and choose 'Pharmacist' from the profession list. Then, specify your application type (e.g., 'Pharmacist by Examination' or 'Pharmacist by Endorsement')."
     },
     {
-      "title": "Submit an Application for Licensure",
-      "description": "Complete the application form, provide all required documentation, and pay the required fee to the District of Columbia Board of Pharmacy."
+      "title": "Complete Online Application",
+      "description": "Fill out all required sections of the electronic application form within the DC Health Licensing Portal, providing your personal, educational, and professional history, including any previous licenses."
+    },
+    {
+      "title": "Submit Supporting Documentation",
+      "description": "Upload all necessary documents directly to the DC Health Licensing Portal. This may include official transcripts, proof of intern hours, NABP e-Profile ID, NAPLEX/MPJE scores (if applicable), and verification of licensure from all states where you have ever held a license."
+    },
+    {
+      "title": "Pay Application Fees",
+      "description": "Remit the non-refundable application fee of $230 through the DC Health Licensing Portal using a credit/debit card."
+    },
+    {
+      "title": "Complete Criminal Background Check",
+      "description": "Follow instructions provided in the DC Health Licensing Portal or by the Board of Pharmacy to complete the required fingerprint-based criminal background check (CBC)."
     }
   ],
   "documents": [
@@ -128,11 +142,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 250,
+    "endorsement_fee": 230,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://dchealth.dc.gov/bop",
-    "endorsement_url": "https://dchealth.dc.gov/bop",
+    "endorsement_url": "https://app.hpla.doh.dc.gov/Applicant/Default.aspx",
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "dc-pharmacist",
@@ -147,7 +161,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in District of Columbia",
-        "dek": "District of Columbia Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing application requirements."
+        "dek": "To become a licensed Pharmacist in the District of Columbia, applicants must apply through the DC Health Licensing Portal, completing all required sections and submitting supporting documentation."
       }
     }
   },
@@ -173,5 +187,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "DC Health Licensing Portal",
+    "portal_url": "https://app.hpla.doh.dc.gov/Applicant/Default.aspx",
+    "registration_steps": "Navigate to the DC Health Licensing Portal, click 'New User' to create an account by providing personal details, security questions, and creating a username and password.",
+    "provider_search": "https://app.hpla.doh.dc.gov/Weblookup/"
   }
 }

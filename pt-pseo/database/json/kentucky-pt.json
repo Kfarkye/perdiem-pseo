@@ -21,19 +21,21 @@
   "board": {
     "name": "Kentucky Board of Physical Therapy",
     "parent_dept": "Department of Professional Licensing (DPL)",
-    "mailing_address": "See board website",
+    "mailing_address": "312 Whittington Parkway, Suite 100, Louisville, KY 40222-4911",
     "physical_address": "See board website",
-    "phone": "(502) 564-3296",
+    "phone": "(502) 892-4215",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://pt.ky.gov/"
+    "email": "kbpt@ky.gov",
+    "url": "https://pt.ky.gov/",
+    "contact_url": "https://kbpt.ky.gov/Contact-Us/Pages/default.aspx",
+    "verify_url": "https://kbpt.ky.gov/Licensure/Pages/License-Verification.aspx"
   },
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "$100 application/license fee",
-    "renewal_fee": "$50",
+    "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "National Physical Therapy Examination (NPTE)",
     "ce_requirement": "30 contact hours of continuing education every 2 years"
@@ -46,16 +48,28 @@
   ],
   "steps": [
     {
-      "title": "Graduate from an Accredited Physical Therapy Program",
-      "description": "You must graduate from a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+      "title": "Register for an Account",
+      "description": "Create a new user account on the Kentucky Medical Licensing Portal (kymedical.ky.gov) by clicking 'Register Now' and following the prompts."
     },
     {
-      "title": "Pass the National Physical Therapy Examination (NPTE)",
-      "description": "You must pass the NPTE administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+      "title": "Complete Online Application",
+      "description": "Log in to the Kentucky Medical Licensing Portal, select the appropriate Physical Therapist application (e.g., initial licensure by exam or endorsement), and accurately complete all required sections."
     },
     {
-      "title": "Submit an Application to the Kentucky Board of Physical Therapy",
-      "description": "Complete and submit the Application for Licensure along with all required documentation and fees to the Kentucky Board of Physical Therapy."
+      "title": "Pay Application Fee",
+      "description": "Submit the $150.00 non-refundable application fee electronically through the Kentucky Medical Licensing Portal."
+    },
+    {
+      "title": "Submit Supporting Documents",
+      "description": "Arrange for all required supporting documents, such as official transcripts, verification of licensure from other states, and National Physical Therapy Examination (NPTE) scores, to be sent directly to the Kentucky Board of Physical Therapy (KBPT)."
+    },
+    {
+      "title": "Monitor Application Status",
+      "description": "Regularly check the status of your application and respond to any requests for additional information through your account on the Kentucky Medical Licensing Portal."
+    },
+    {
+      "title": "Receive License",
+      "description": "Upon review and approval by the KBPT, your Kentucky PT license will be issued."
     }
   ],
   "documents": [
@@ -124,11 +138,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 100,
-    "processing_time": "4 to 6 Weeks",
+    "endorsement_fee": 150,
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://pt.ky.gov/",
-    "endorsement_url": "https://pt.ky.gov/",
+    "endorsement_url": "https://kbpt.ky.gov/Licensure/Pages/Initial-Licensure-by-Endorsement.aspx",
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "kentucky-pt",
@@ -143,7 +157,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Physical Therapist in Kentucky",
-        "dek": "Kentucky Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination (NPTE), and submitting a completed application to the Kentucky Board of Physical Therapy."
+        "dek": "To apply for a Physical Therapist license in Kentucky, navigate to the Kentucky Medical Licensing Portal to register for an account and begin your application."
       }
     }
   },
@@ -169,5 +183,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "Kentucky Medical Licensing Portal",
+    "portal_url": "https://kymedical.ky.gov/",
+    "registration_steps": "Navigate to the Kentucky Medical Licensing Portal, click 'Register Now', and follow the prompts to create a new user account.",
+    "provider_search": "https://kbpt.ky.gov/Licensure/Pages/License-Verification.aspx"
   }
 }

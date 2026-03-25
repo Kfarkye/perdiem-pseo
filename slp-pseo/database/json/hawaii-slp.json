@@ -21,19 +21,21 @@
   "board": {
     "name": "Board of Speech Pathology and Audiology",
     "parent_dept": "Hawaii Department of Commerce and Consumer Affairs (DCCA)",
-    "mailing_address": "P.O. Box 3469, Honolulu, HI 96801",
+    "mailing_address": "Professional and Vocational Licensing Division\nDCCA, PVL\nP. O. Box 3469\nHonolulu, HI 96801",
     "physical_address": "335 Merchant St., Room 301, Honolulu, HI 96813",
     "phone": "(808) 586-3000",
     "fax": "(808) 586-2689",
-    "email": "mailto:pvl@dcca.hawaii.gov",
-    "url": "https://cca.hawaii.gov/pvl/boards/speech/"
+    "email": "pvl@dcca.hawaii.gov",
+    "url": "https://cca.hawaii.gov/pvl/boards/speech/",
+    "contact_url": "https://cca.hawaii.gov/pvl/contact/",
+    "verify_url": "https://pvl.ehawaii.gov/pvlsearch/"
   },
   "quick_facts": {
     "total_fee": "$175",
     "fee_breakdown": "$25 application + $150 license fee",
-    "renewal_fee": "$120",
-    "renewal_cycle": "Every 2 years (odd years)",
-    "processing_time": "4 to 8 weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years",
+    "processing_time": "6 to 12 Weeks",
     "license_duration": "2 years",
     "exam_name": "Praxis Examination in Speech-Language Pathology",
     "ce_requirement": "24 hours every 2 years"
@@ -50,16 +52,24 @@
   ],
   "steps": [
     {
-      "title": "Meet the Education Requirements",
-      "description": "You must have a master's degree or its equivalent in speech-language pathology from an accredited educational institution."
+      "title": "Meet Educational Requirements",
+      "description": "Obtain a master's or doctoral degree in Speech-Language Pathology or its equivalent from an accredited institution. Arrange for official transcripts to be sent directly from your university to the Hawaii Board of Speech Pathology and Audiology."
     },
     {
-      "title": "Complete Supervised Clinical Experience",
-      "description": "Complete supervised clinical practicum experience as part of your graduate program as specified by the Board."
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a minimum of 36 weeks of full-time (or equivalent part-time) supervised professional experience and at least 300 hours of supervised clinical experience (Clinical Fellowship). Have your supervisor submit verification directly to the Board."
     },
     {
-      "title": "Pass the Praxis Examination and Apply for Licensure",
-      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit a completed application, including all required documentation and fees, to the Board of Speech Pathology and Audiology."
+      "title": "Pass the National Examination",
+      "description": "Achieve a passing score of 162 or higher on the Praxis Examination in Speech-Language Pathology. Request that your official scores be sent directly from ETS to the Hawaii Board of Speech Pathology and Audiology."
+    },
+    {
+      "title": "Submit Online Application via MyPVL",
+      "description": "Create an account or log in to the MyPVL portal, complete the online application for a Speech Pathologist license, and pay the non-refundable application fee ($50) and initial license fee ($50)."
+    },
+    {
+      "title": "Provide Supporting Documentation",
+      "description": "Ensure all required supporting documents, including official transcripts, Praxis scores, and verification of supervised experience, are sent directly to the Board from the respective institutions or supervisors. Monitor your application status within your MyPVL account."
     }
   ],
   "documents": [
@@ -141,11 +151,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 175,
-    "processing_time": "4 to 8 weeks",
+    "endorsement_fee": 50,
+    "processing_time": "6 to 12 Weeks",
     "processing_tier": "slow",
     "board_url": "https://cca.hawaii.gov/pvl/boards/speech/",
-    "endorsement_url": "https://cca.hawaii.gov/pvl/boards/speech/",
+    "endorsement_url": "https://cca.hawaii.gov/pvl/boards/speech/forms-publications/",
     "notes": "Hawaii does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full Hawaii licensure."
   },
   "slug": "hawaii-slp",
@@ -160,7 +170,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Speech-Language Pathologist in Hawaii",
-        "dek": "Hawaii Speech-Language Pathologist license requires a master's degree in speech-language pathology, completion of supervised clinical experience, and passing the Praxis Examination in Speech-Language Pathology."
+        "dek": "To apply for a Speech-Language Pathologist license in Hawaii, you must submit your application and supporting documents through the state's online licensing portal, MyPVL."
       }
     }
   },
@@ -186,5 +196,20 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true,
+    "renewal_fee_verified": true,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true,
+    "jurisprudence_fee_verified": true
+  },
+  "official_links": {
+    "portal_name": "MyPVL",
+    "portal_url": "https://pvl.ehawaii.gov/pvlweb/",
+    "registration_steps": "1. Go to the MyPVL portal and click 'New User Registration'. 2. Create an account by providing your personal information and setting up a username and password. 3. Log in to your new account. 4. Select 'Apply for a License' from the main menu. 5. Choose 'Speech Pathology and Audiology' as the Board/Commission and 'Speech Pathologist' as the profession to begin your application.",
+    "provider_search": "https://pvl.ehawaii.gov/pvlsearch/"
   }
 }
