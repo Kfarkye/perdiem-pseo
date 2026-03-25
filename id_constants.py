@@ -85,6 +85,26 @@ class SLUGS:
 
     LEAGUES = ["NBA", "NFL", "MLB", "NHL", "NCAAB", "SOCCER"]
 
+    # ── Source keys: describe function, not URL or page title ──
+    # Rule: UPPERCASE_SNAKE. Describes what the source DOES for the user.
+    # Stable even if the URL changes. One key per functional purpose.
+    SOURCE_KEYS = [
+        "BOARD_WEBSITE",         # Board homepage
+        "BOARD_CNA_PAGE",        # Board's profession-specific landing page
+        "BOARD_APPLICATION",     # Application/endorsement page
+        "BOARD_CONTACT",         # Contact page (non-email)
+        "REGISTRY_LOOKUP",       # License/certification verification search
+        "EXAM_PORTAL",           # Exam registration / scheduling
+        "FEE_SCHEDULE",          # Official fee schedule page
+        "FINGERPRINT_VENDOR",    # Fingerprint/background check vendor
+        "COMPACT_PORTAL",        # Interstate compact portal
+        "RENEWAL_PORTAL",        # Online renewal page
+        "CE_PROVIDER",           # Continuing education provider/tracker
+        "STATUTE",               # State statute or administrative code
+        "BOARD_OF_PHARMACY",     # Pharmacy board (RX-specific)
+        "TRANSFER_FORM",        # Downloadable transfer/endorsement form
+    ]
+
 
 def make_object_id(namespace: str, obj_type: str, *keys: str) -> str:
     """Build a canonical object ID.
@@ -103,6 +123,58 @@ def make_event_id(namespace: str, event_type: str, target_id: str, date: str, se
     'QC.EVT.BROKEN_LINK.SLR.OBJ.PAGE.CA.CNA.20260324.001'
     """
     return f"{namespace}.EVT.{event_type}.{target_id}.{date}.{seq:03d}"
+
+
+def make_source_id(property_ns: str, state_abbr: str, source_key: str) -> str:
+    """Build a canonical source object ID.
+
+    >>> make_source_id("SLR", "CA", "BOARD_WEBSITE")
+    'SRC.OBJ.SOURCE.SLR.CA.BOARD_WEBSITE'
+
+    >>> make_source_id("RX", "FL", "BOARD_OF_PHARMACY")
+    'SRC.OBJ.SOURCE.RX.FL.BOARD_OF_PHARMACY'
+    """
+    return make_object_id(NS.SRC, OBJ.SOURCE, property_ns, state_abbr.upper(), source_key.upper())
+
+
+def normalize_source_key(field_path: str) -> str:
+    """Map a JSON field path to a canonical SOURCE_KEY.
+
+    This is the normalization layer that prevents drift.
+    Field paths from data files map to stable functional names.
+
+    >>> normalize_source_key("board.url")
+    'BOARD_WEBSITE'
+    >>> normalize_source_key("board.verify_url")
+    'REGISTRY_LOOKUP'
+    >>> normalize_source_key("reciprocity.endorsement_url")
+    'BOARD_APPLICATION'
+    """
+    FIELD_TO_SOURCE = {
+        # Board fields
+        "board.url": "BOARD_WEBSITE",
+        "board.website": "BOARD_WEBSITE",
+        "board_source_url": "BOARD_CNA_PAGE",
+        "board.verify_url": "REGISTRY_LOOKUP",
+        "board.contact_url": "BOARD_CONTACT",
+        # Reciprocity fields
+        "reciprocity.board_url": "BOARD_CNA_PAGE",
+        "reciprocity.endorsement_url": "BOARD_APPLICATION",
+        "reciprocity.board_source_url": "BOARD_CNA_PAGE",
+        "reciprocity.compact_url": "COMPACT_PORTAL",
+        "reciprocity.compact_portal_url": "COMPACT_PORTAL",
+        # Verification sources
+        "board_verification_sources.fee": "FEE_SCHEDULE",
+        "board_verification_sources.timeline": "BOARD_APPLICATION",
+        "board_verification_sources.registry": "REGISTRY_LOOKUP",
+        "board_verification_sources.exam_portal": "EXAM_PORTAL",
+        "board_verification_sources.info_page": "BOARD_CNA_PAGE",
+        # Fingerprints
+        "fingerprints.vendor_url": "FINGERPRINT_VENDOR",
+        # Compact
+        "compact.compact_source_url": "COMPACT_PORTAL",
+    }
+    return FIELD_TO_SOURCE.get(field_path, "BOARD_WEBSITE")
 
 
 # ── Vertical slug → profession slug mapping ──
