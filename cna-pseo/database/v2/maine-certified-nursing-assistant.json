@@ -1,0 +1,153 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "maine-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "me::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Maine",
+    "abbr": "ME"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nursing Assistant",
+    "short_label": "CNA",
+    "aliases": [
+      "C.N.A."
+    ]
+  },
+  "container": {
+    "label": "Becoming a CNA in Maine",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 180 hours of state-approved training and pass the competency exam to be listed on the Maine Registry of Certified Nursing Assistants.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Matches top informational query."
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in ME.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard task variant."
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Maine registry exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard application intent."
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to Maine.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard reciprocity intent."
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Maine Registry of Certified Nursing Assistants",
+      "phone": "",
+      "fax": "",
+      "contact_url": "",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Maine",
+        "dek": "Learn Maine CNA Registry requirements, complete a robust 180-hour training program, and prepare for the state evaluation."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Maine | Registry Requirements",
+        "description": "Step-by-step guide to getting your CNA license in ME. Learn about the 180-hour training requirement and testing.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "180 hours (90 theory, 20 lab, 70 clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Maine CNA State Exam Application",
+        "dek": "Apply to take the Maine Nurse Aide competency evaluation."
+      },
+      "seo": {
+        "title": "Maine CNA Exam Application | Registry Guide",
+        "description": "Apply for ME CNA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Maine",
+        "dek": "Contact the Maine Department of Education for bridging requirements to transfer an out-of-state CNA."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Maine | Reciprocity",
+        "description": "Learn how to transfer your active out-of-state CNA license to ME.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [
+      "board phone and URL",
+      "exact reciprocal forms"
+    ],
+    "source_backed_only": true
+  }
+}

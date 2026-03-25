@@ -197,7 +197,7 @@
       overflow: hidden;
       border-bottom: 1px solid var(--line);
       background: var(--paper);
-      margin-bottom: 40px;
+      margin-bottom: 0;
     }
     /* FIX F4: Skeleton only on image pages */
     .hero-with-image { min-height: 380px; background: #eae8e4; }
@@ -241,26 +241,115 @@
     }
     
     .hero-no-image .hero-inner { padding: 72px 0 52px; }
-    .breadcrumbs { margin-bottom: 12px; font-size: 13px; font-weight: 500; }
+    .breadcrumbs { margin-bottom: 12px; font-size: 12px; font-weight: 500; letter-spacing: 0.03em; text-transform: uppercase; }
     .breadcrumbs ol { display: flex; gap: 8px; list-style: none; padding: 0; margin: 0; }
-    .breadcrumbs li { display: flex; align-items: center; gap: 8px; color: var(--soft); }
-    .breadcrumbs li::after { content: "/"; color: #ccc; }
+    .breadcrumbs li { display: flex; align-items: center; gap: 8px; color: #b0a99e; }
+    .breadcrumbs li::after { content: "/"; color: #d0cbc4; }
     .breadcrumbs li:last-child::after { content: none; }
-    .breadcrumbs a { color: var(--soft); text-decoration: none; padding: 4px 0; display: inline-block; }
+    .breadcrumbs a { color: #b0a99e; text-decoration: none; padding: 4px 0; display: inline-block; }
     .breadcrumbs a:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); }
-    .breadcrumbs span { color: var(--ink); }
+    .breadcrumbs span { color: #8a8279; }
 
     /* Hero-with-image text overrides: darken all text for legibility over photos */
-    .hero-with-image .breadcrumbs li { color: #1f1f1f; }
+    .hero-with-image .breadcrumbs li { color: #5a5249; }
     .hero-with-image .breadcrumbs li::after { color: #999; }
-    .hero-with-image .breadcrumbs a { color: #1f1f1f; font-weight: 600; text-shadow: 0 0 8px rgba(255,255,255,0.8); }
-    .hero-with-image .breadcrumbs span { color: #000; font-weight: 600; text-shadow: 0 0 8px rgba(255,255,255,0.8); }
+    .hero-with-image .breadcrumbs a { color: #5a5249; font-weight: 600; text-shadow: 0 0 8px rgba(255,255,255,0.8); }
+    .hero-with-image .breadcrumbs span { color: #5a5249; font-weight: 600; text-shadow: 0 0 8px rgba(255,255,255,0.8); }
     .hero-with-image h1 { text-shadow: 0 1px 6px rgba(255,255,255,0.6); }
 
-    .hero-sub { margin-top: 8px; color: var(--soft); max-width: 39ch; font-size: 18px; }
-    .hero-with-image .hero-sub { color: #333; text-shadow: 0 0 6px rgba(255,255,255,0.7); }
-    .updated { display: inline-block; margin-top: 14px; font-size: 13px; color: var(--soft); letter-spacing: 0.01em; }
-    .hero-with-image .updated { color: #444; text-shadow: 0 0 6px rgba(255,255,255,0.7); }
+    .hero-sub { margin-top: 6px; color: var(--soft); max-width: 52ch; font-size: 16px; line-height: 1.55; }
+    .hero-with-image .hero-sub { color: #444; text-shadow: 0 0 6px rgba(255,255,255,0.7); }
+    .updated { display: inline-block; margin-top: 10px; font-size: 12px; color: var(--soft); letter-spacing: 0.02em; }
+    .hero-with-image .updated { color: #555; text-shadow: 0 0 6px rgba(255,255,255,0.7); }
+
+    @media (max-width: 720px) {
+      .hero-image { height: min(42vh, 320px); min-height: 220px; }
+      .hero-with-image .hero-inner { padding-bottom: 28px; }
+      .hero-no-image .hero-inner { padding: 48px 0 36px; }
+    }
+
+    /* ==========================================================================
+       4b. Intent Selector (3-phase navigation)
+       ========================================================================== */
+    .intent-selector {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 56px;
+      z-index: 90;
+    }
+    .intent-selector-inner {
+      width: min(var(--shell), calc(100% - 48px));
+      margin: 0 auto;
+      padding: 16px 0;
+    }
+    .selector-list {
+      display: inline-flex;
+      background: #f3f1ed;
+      border-radius: 10px;
+      padding: 4px;
+      gap: 2px;
+      list-style: none;
+    }
+    .selector-pill {
+      font-family: 'Karla', sans-serif;
+      font-size: 14.5px;
+      font-weight: 500;
+      padding: 8px 20px;
+      border-radius: 8px;
+      background: transparent;
+      color: #6a6054;
+      text-decoration: none;
+      transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+      white-space: nowrap;
+      display: block;
+      cursor: pointer;
+      border: none;
+      letter-spacing: 0.01em;
+    }
+    .selector-pill:hover {
+      color: var(--ink);
+    }
+    .selector-pill.is-active {
+      background: #ffffff;
+      color: var(--ink);
+      font-weight: 700;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 2px 12px rgba(0,0,0,0.04);
+      letter-spacing: -0.005em;
+    }
+    .selector-pill:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: 2px;
+    }
+    
+    .variant-panel, .rail-variant { display: none; }
+    .variant-panel.is-active, .rail-variant.is-active { display: block; }
+    .variant-panel-enter { animation: variantFadeIn 280ms ease-out; }
+    @keyframes variantFadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .variant-hero-title {
+      font-size: clamp(28px, 4.2vw, 34px);
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+      color: #111;
+    }
+    .variant-hero-dek {
+      font-size: 19px;
+      line-height: 1.6;
+      color: #383838;
+      max-width: 65ch;
+    }
+    
+    @media (max-width: 720px) {
+      .intent-selector-inner { width: calc(100% - 32px); padding: 12px 0; }
+      .selector-list { width: 100%; display: flex; }
+      .selector-pill { flex: 1; padding: 10px 8px; font-size: 13.5px; text-align: center; }
+    }
 
     /* ==========================================================================
        5. Core Containers
@@ -268,6 +357,7 @@
     #main-content {
       width: min(var(--shell), calc(100% - 48px));
       margin: 0 auto;
+      padding-top: 48px;
       padding-bottom: 104px;
     }
     
@@ -612,17 +702,46 @@
       </nav>
       
       <h1 id="hero-title">Virginia Physical Therapist License</h1>
-      <p class="hero-sub">Here's what you need to know.</p>
+      <p class="hero-sub">Requirements, fees, and steps for Virginia physical therapist licensing.</p>
       <time class="updated" datetime="2026-02-25">Last updated 2026-02-25 &middot; Sources verified</time>
     </div>
   </section>
+
+  
+  
 
   <main id="main-content" tabindex="-1">
     <div class="page-layout">
       
       <aside class="context-rail" aria-labelledby="quick-reference-heading">
-        <div class="section-box context-card">
+        
+        <div class="section-box context-card rail-variant is-active" data-variant-rail="new_applicant">
           <h2 id="quick-reference-heading">At a glance</h2>
+          <dl class="facts-grid facts-grid-rail">
+            <dt>Initial fee</dt>
+            <dd>$100</dd>
+
+            <dt>Training</dt>
+            <dd>State-approved program</dd>
+
+            <dt>Exam</dt>
+            <dd>State competency exam</dd>
+
+            <dt>Processing time</dt>
+            <dd>4 to 6 Weeks</dd>
+
+            <dt>Board</dt>
+            <dd>Virginia Board of Medicine — PT</dd>
+          </dl>
+          <div class="context-links">
+            <a href="https://www.dhp.virginia.gov/medicine/" target="_blank" rel="noopener noreferrer">Primary board page <span class="sr-only">(opens in new tab)</span></a>
+          </div>
+          <p class="source-note">Last updated <time datetime="2026-02-25">2026-02-25</time>.</p>
+        </div>
+
+        
+        <div class="section-box context-card rail-variant" data-variant-rail="reciprocity">
+          <h2>At a glance</h2>
           <dl class="facts-grid facts-grid-rail">
             <dt>Endorsement fee</dt>
             <dd>
@@ -640,14 +759,11 @@
               
             </dd>
 
-            <dt>Renewal fee</dt>
-            <dd>$50</dd>
-
             <dt>Fingerprinting</dt>
             <dd>Required</dd>
 
-            <dt>Board</dt>
-            <dd>Virginia Board of Medicine — PT</dd>
+            <dt>Temp license</dt>
+            <dd>Available</dd>
 
             <dt>Path</dt>
             <dd>
@@ -655,6 +771,9 @@
                 PT Compact active
               
             </dd>
+
+            <dt>Board</dt>
+            <dd>Virginia Board of Medicine — PT</dd>
           </dl>
           <div class="context-links">
             <a href="#endorsement">See the steps</a>
@@ -664,9 +783,35 @@
             <p class="source-note">Last updated <time datetime="2026-02-25">2026-02-25</time>.</p>
           
         </div>
+
+        
+        <div class="section-box context-card rail-variant" data-variant-rail="renewal">
+          <h2>At a glance</h2>
+          <dl class="facts-grid facts-grid-rail">
+            <dt>Renewal cycle</dt>
+            <dd>Every 2 years</dd>
+
+            <dt>Renewal fee</dt>
+            <dd>$50</dd>
+
+            <dt>CE required</dt>
+            <dd>See board</dd>
+
+            <dt>Board</dt>
+            <dd>Virginia Board of Medicine — PT</dd>
+          </dl>
+          <div class="context-links">
+            <a href="https://www.dhp.virginia.gov/medicine/" target="_blank" rel="noopener noreferrer">Renew on board site <span class="sr-only">(opens in new tab)</span></a>
+          </div>
+          <p class="source-note">Last updated <time datetime="2026-02-25">2026-02-25</time>.</p>
+        </div>
       </aside>
       
       <article class="content-column" aria-label="Licensing Guide">
+
+        
+        
+
         <section id="reciprocity" class="section-shell" aria-labelledby="reciprocity-heading">
           <div class="section-copy">
             <h2 id="reciprocity-heading">Out-of-State Physical Therapists</h2>
@@ -810,7 +955,27 @@
             </dl>
           </div>
 
-          <div class="section-box">
+          
+        </section>
+
+        
+        <section id="temp-license" class="section-shell" aria-labelledby="temp-license-heading">
+          <div class="section-copy">
+            <h2 id="temp-license-heading">Temporary License</h2>
+            <p>Virginia offers a temporary or provisional licensing so you can start working while your full endorsement application is processing.</p>
+          </div>
+        </section>
+        
+
+        
+
+        <section id="renewal" class="section-shell" aria-labelledby="renewal-heading">
+          <div class="section-copy">
+            <h2 class="variant-hero-title" id="renewal-heading">Virginia Physical Therapist License Renewal</h2>
+            <p class="variant-hero-dek">Maintain your active licensing and stay compliant with the Virginia Board of Medicine — PT.</p>
+          </div>
+          
+          <div class="section-box" style="margin-top: 32px;">
             <h3>Ongoing License Renewal</h3>
             <dl class="facts-grid">
               <dt>Renewal cycle</dt>
@@ -820,17 +985,8 @@
               <dd>$50</dd>
             </dl>
           </div>
-
-          
         </section>
 
-        
-        <section id="temp-license" class="section-shell" aria-labelledby="temp-license-heading">
-          <div class="section-copy">
-            <h2 id="temp-license-heading">Temporary License</h2>
-            <p>Virginia offers a temporary or provisional license so you can start working while your full endorsement application is processing.</p>
-          </div>
-        </section>
         
 
         <section id="contact" class="section-shell" aria-labelledby="contact-heading">
@@ -963,7 +1119,6 @@
           </div>
           <div class="related-guides-grid">
             <article class="related-guides-card">
-              <h3>Trending states</h3>
               <ul class="related-guides-list" role="list">
                 
                 <li><a href="/district-of-columbia-pt">District of Columbia</a></li>
@@ -989,6 +1144,7 @@
             <p><a href="https://ptcompact.org/ptc-states/" target="_blank" rel="noopener noreferrer">PT Compact</a></p>
           </div>
         </section>
+
       </article>
     </div>
   </main>
@@ -997,5 +1153,8 @@
     <p>This page is maintained as a reference for physical therapists and recruiters evaluating Virginia assignments.</p>
     <p><a href="https://www.statelicensingreference.com" target="_blank" rel="noopener noreferrer" aria-label="Visit State Licensing Reference home page">statelicensingreference.com <span class="sr-only">(opens in new tab)</span></a></p>
   </footer>
+
+  
+
 </body>
 </html>

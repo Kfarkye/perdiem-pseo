@@ -1,0 +1,148 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "hawaii-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "hi::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Hawaii",
+    "abbr": "HI"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nurse Aide",
+    "short_label": "CNA",
+    "aliases": []
+  },
+  "container": {
+    "label": "Becoming a CNA in Hawaii",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 100 hours of state-approved training and pass the Prometric competency exam to join the Hawaii Nurse Aide Registry.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Standard intent"
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "How to become a CNA in HI.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Prometric exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Application intent"
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Hawaii.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Hawaii Department of Health",
+      "phone": "808-453-6453",
+      "fax": "",
+      "contact_url": "",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Hawaii",
+        "dek": "Learn Hawaii DOH requirements, complete a 100-hour program, and pass the Prometric exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Hawaii",
+        "description": "Step-by-step guide to Hawaii CNA certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "100 hours (classroom + clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Hawaii CNA State Exam Application",
+        "dek": "Apply to take the Prometric Nurse Aide evaluation."
+      },
+      "seo": {
+        "title": "Hawaii CNA Exam Application",
+        "description": "Apply for HI CNA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Hawaii",
+        "dek": "Transfer via Reciprocity using the Hawaii Nurse Aide Registry."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Hawaii",
+        "description": "Transfer your active out-of-state CNA to HI.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

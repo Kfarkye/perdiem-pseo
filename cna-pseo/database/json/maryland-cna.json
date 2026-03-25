@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-22",
   "seo": {
-    "title": "Maryland CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "Maryland CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Maryland - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity maryland, how to transfer CNA license to maryland, maryland CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "100 hours",
+    "exam_name": "NNAAP (Prometric)",
+    "ce_requirement": "10 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -130,5 +133,88 @@
     "board_source_url": "https://mbon.maryland.gov/"
   },
   "slug": "maryland-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become a CNA in MD.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Maryland.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a CNA in Maryland",
+        "dek": "Learn MD Board of Nursing requirements, complete a 100-hour program, and pass the Pearson VUE exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Maryland",
+        "description": "Step-by-step guide to Maryland CNA certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "100 hours (classroom + clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "Virginia",
+      "url": "virginia-cna.html"
+    },
+    {
+      "label": "Pennsylvania",
+      "url": "pennsylvania-cna.html"
+    },
+    {
+      "label": "Delaware",
+      "url": "delaware-cna.html"
+    },
+    {
+      "label": "District of Columbia",
+      "url": "dc-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "certification",
+    "display_label": "CNA Certification",
+    "credential_short": "CNA Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement",
+    "registry_name": "Maryland Nurse Aide Registry",
+    "page_title_term": "Certification"
+  }
 }

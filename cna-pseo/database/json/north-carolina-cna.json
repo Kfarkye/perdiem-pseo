@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-22",
   "seo": {
-    "title": "North Carolina CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "North Carolina CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to North Carolina - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity north carolina, how to transfer CNA license to north carolina, north carolina CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "6 to 8 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "100 hours",
+    "exam_name": "NNAAP (Pearson VUE)",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -130,5 +133,105 @@
     "board_source_url": "https://www.ncbon.com/"
   },
   "slug": "north-carolina-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "search",
+        "description": "Starting your path as a new applicant."
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "search",
+        "description": "Moving in from another state."
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a CNA in North Carolina",
+        "dek": "Start with the training, testing, and registry requirements."
+      },
+      "seo": {
+        "title": "How to Become a CNA in North Carolina",
+        "description": "North Carolina CNA requirements, training, testing, and registry steps.",
+        "target_queries": [
+          "how to become a cna in north carolina",
+          "north carolina cna requirements"
+        ]
+      },
+      "cards": [
+        {
+          "key": "training_path",
+          "label": "Training Path",
+          "value": "State-approved program",
+          "status": "confirmed"
+        },
+        {
+          "key": "exam",
+          "label": "Exam",
+          "value": "Competency evaluation required",
+          "status": "confirmed"
+        },
+        {
+          "key": "fee",
+          "label": "Fee",
+          "value": "Check provider",
+          "status": "unknown"
+        }
+      ],
+      "sections": [],
+      "faq": [
+        {
+          "q": "What training is required to become a CNA in North Carolina?",
+          "a": "A state-approved program is required."
+        },
+        {
+          "q": "Is an exam required to become a CNA in North Carolina?",
+          "a": "Yes, a competency evaluation is required."
+        }
+      ]
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "South Carolina",
+      "url": "south-carolina-cna.html"
+    },
+    {
+      "label": "Virginia",
+      "url": "virginia-cna.html"
+    },
+    {
+      "label": "Tennessee",
+      "url": "tennessee-cna.html"
+    },
+    {
+      "label": "Georgia",
+      "url": "georgia-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "listing",
+    "display_label": "CNA Certification",
+    "credential_short": "Nurse Aide I Listing",
+    "renewal_term": "registry renewal",
+    "transfer_term": "reciprocity",
+    "registry_name": "NC Nurse Aide I Registry",
+    "page_title_term": "Certification"
+  }
 }

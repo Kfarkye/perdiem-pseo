@@ -1,0 +1,236 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "florida-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": ["becoming", "state_application", "transfer"]
+  },
+  "analytics": {
+    "entity_key": "fl::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Florida",
+    "abbr": "FL"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nursing Assistant",
+    "short_label": "CNA",
+    "aliases": ["Nurse Aide"]
+  },
+  "container": {
+    "label": "Becoming a CNA in Florida",
+    "label_source": "google_autocomplete",
+    "intro": "Pass a Level II background check and complete a state-approved program or challenge the exam to become a Certified Nursing Assistant in Florida.",
+    "evidence_considered": ["High search volume for 'how to become a cna in florida'"],
+    "rejected_alternatives": ["CNA Certification FL"],
+    "selection_reason": "Matches top-of-funnel informational query."
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in Florida.",
+        "evidence_considered": ["Search volume heavily favors 'become a CNA'"],
+        "rejected_alternatives": ["Initial Certification"],
+        "selection_reason": "Aligns with task-based search intent."
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Florida state exam.",
+        "evidence_considered": ["Board searches for Prometric and exam application"],
+        "rejected_alternatives": ["Exam Route"],
+        "selection_reason": "Captures the administrative application task."
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to Florida.",
+        "evidence_considered": ["Search queries heavily favor 'transfer CNA license to Florida'"],
+        "rejected_alternatives": ["Reciprocity", "Endorsement"],
+        "selection_reason": "User intent vocabulary dominates."
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Florida Board of Nursing",
+      "phone": "850-488-0595",
+      "fax": "",
+      "contact_url": "https://floridasnursing.gov/contact/",
+      "website": "https://floridasnursing.gov/",
+      "verify_url": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders"
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [
+    {
+      "task_key": "verification",
+      "public_label": "CNA Registry Lookup",
+      "label_source": "top_ranking_sites",
+      "evidence_considered": ["Employers search 'Florida CNA registry lookup'"],
+      "selection_reason": "Standard verification syntax.",
+      "likely_needed": true
+    },
+    {
+      "task_key": "renewal",
+      "public_label": "CNA Renewal",
+      "label_source": "google_autocomplete",
+      "evidence_considered": ["'Florida CNA license renewal' is a top query"],
+      "selection_reason": "Matches established lifecycle term.",
+      "likely_needed": true
+    }
+  ],
+  "candidate_supporting_pages": [
+    {
+      "task_key": "verification",
+      "slug": "florida-certified-nursing-assistant/lookup",
+      "title": "Florida CNA Registry Lookup & License Verification",
+      "reason": "High-volume employer query."
+    },
+    {
+      "task_key": "renewal",
+      "slug": "florida-certified-nursing-assistant/renewal",
+      "title": "How to Renew Your Florida CNA License",
+      "reason": "Retention/lifecycle topic."
+    }
+  ],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Florida",
+        "dek": "Learn Florida Board of Nursing requirements, find state-approved programs, and prepare for the state exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Florida | Requirements & Steps",
+        "description": "Step-by-step guide to getting your CNA license in Florida. Learn about Level 2 Background checks, Prometric exam challenge routes, and training.",
+        "target_queries": ["how to become a cna in florida", "florida cna requirements", "challenge cna exam in florida"]
+      },
+      "faq_heading": "Common Questions about Getting a CNA in Florida",
+      "cards": [
+        {
+          "key": "background",
+          "label": "Background Check",
+          "value": "Level II Live Scan required",
+          "status": "confirmed"
+        },
+        {
+          "key": "pathways",
+          "label": "Routes",
+          "value": "Training Program or Challenger Route",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "requirements",
+          "label": "Basic Requirements",
+          "body": "Florida offers a unique 'Challenger Route' where candidates 18 or older with a high school diploma can take the state exam without completing a formal program, though passing the Level II background check is mandatory regardless of route.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I challenge the CNA exam in Florida?",
+          "a": "Yes, Florida allows individuals 18 or older with a high school diploma to challenge the CNA exam without attending a formal CNA program."
+        }
+      ]
+    },
+    "state_application": {
+      "hero": {
+        "title": "Florida CNA State Exam Application",
+        "dek": "Apply to take the Florida CNA competency evaluation."
+      },
+      "seo": {
+        "title": "Florida CNA Exam Application & Registry Guide",
+        "description": "How to apply for the Florida CNA state exam via Prometric and get listed on the Florida Nurse Aide Registry.",
+        "target_queries": ["florida cna exam application", "prometric florida cna apply"]
+      },
+      "faq_heading": "Application & Registration Questions",
+      "cards": [
+        {
+          "key": "exam_provider",
+          "label": "Testing Vendor",
+          "value": "Prometric",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "process",
+          "label": "Application Steps",
+          "body": "Submit your application to the Board and Prometric, pass the Level II background screening, and schedule your exam.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Who administers the Florida CNA exam?",
+          "a": "The CNA certification exam in Florida is administered by Prometric."
+        }
+      ]
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Florida",
+        "dek": "Florida allows out-of-state CNAs to transfer via Reciprocity (Endorsement) if they hold an active certificate and pass a background check."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Florida | Endorsement Steps",
+        "description": "Learn how to transfer your active out-of-state CNA license to the Florida Nurse Aide Registry via Endorsement.",
+        "target_queries": ["transfer cna license to florida", "florida cna reciprocity"]
+      },
+      "faq_heading": "Questions about Transferring your CNA to Florida",
+      "cards": [
+        {
+          "key": "process",
+          "label": "Process",
+          "value": "Endorsement (Reciprocity)",
+          "status": "confirmed"
+        },
+        {
+          "key": "background",
+          "label": "Background Check",
+          "value": "Level II Live Scan required",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "eligibility",
+          "label": "Transfer Requirements",
+          "body": "You must hold a clear, active out-of-state CNA license, pass the Florida Level II background screening, and submit an Endorsement application. No state exam retake is required if approved.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does Florida accept out of state CNAs?",
+          "a": "Yes, Florida accepts active CNAs from other states via the Endorsement process, provided you clear their Level II background check with no disqualifying findings."
+        }
+      ],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

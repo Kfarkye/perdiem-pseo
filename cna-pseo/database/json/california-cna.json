@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-22",
   "seo": {
-    "title": "California CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "California CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to California - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity california, how to transfer CNA license to california, california CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "150 hours",
+    "exam_name": "State competency exam",
+    "ce_requirement": "48 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -130,5 +133,118 @@
     "board_source_url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/CNA.aspx"
   },
   "slug": "california-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in California.",
+        "evidence_considered": [
+          "Search volume heavily favors 'become a CNA'"
+        ],
+        "rejected_alternatives": [
+          "Initial Certification"
+        ],
+        "selection_reason": "Aligns with task-based search intent."
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to California.",
+        "evidence_considered": [
+          "Search queries heavily favor 'transfer CNA license to California' over 'CNA endorsement CA'"
+        ],
+        "rejected_alternatives": [
+          "Endorsement"
+        ],
+        "selection_reason": "User intent vocabulary dominates over CDPH ATCS board terms."
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a CNA in California",
+        "dek": "Learn CDPH requirements, find a 150-hour approved training program, and prepare for the state evaluation."
+      },
+      "seo": {
+        "title": "How to Become a CNA in California | CDPH Requirements",
+        "description": "Step-by-step guide to getting your CNA license in California. Learn about the 150-hour training requirement, Live Scan background checks, and the CDPH exam.",
+        "target_queries": [
+          "how to become a cna in california",
+          "california cna requirements",
+          "cna classes in california"
+        ]
+      },
+      "faq_heading": "Common Questions about Getting a CNA in California",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "150 hours (60 classroom, 100 clinical)",
+          "status": "confirmed"
+        },
+        {
+          "key": "background",
+          "label": "Background Check",
+          "value": "Live Scan fingerprinting",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "requirements",
+          "label": "Basic Requirements",
+          "body": "To train as a CNA in California, you must be 16 years old, complete Live Scan fingerprinting, and clear a background check.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many hours of training do I need to be a CNA in California?",
+          "a": "California requires more training than the federal minimum: a total of 150 hours, consisting of 50 hours of theory and 100 hours of clinical training."
+        }
+      ]
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "Arizona",
+      "url": "arizona-cna.html"
+    },
+    {
+      "label": "Nevada",
+      "url": "nevada-cna.html"
+    },
+    {
+      "label": "Oregon",
+      "url": "oregon-cna.html"
+    },
+    {
+      "label": "Washington",
+      "url": "washington-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "certification",
+    "display_label": "CNA Certification",
+    "credential_short": "CNA Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "reciprocity",
+    "registry_name": "CDPH Nurse Aide Registry",
+    "page_title_term": "Certification"
+  }
 }

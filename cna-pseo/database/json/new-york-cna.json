@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-24",
   "seo": {
-    "title": "New York CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "New York CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to New York - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity new york, how to transfer CNA license to new york, new york CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "120 hours",
+    "exam_name": "NNAAP (Prometric)",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -135,5 +138,88 @@
     "registry": "https://www.prometric.com/nurseaide/ny",
     "exam_portal": "https://www.prometric.com/nurseaide/ny",
     "info_page": "https://www.health.ny.gov/professionals/nursing_home_administrator/nha_cna.htm"
+  },
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become a CNA in NY.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to New York.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a CNA in New York",
+        "dek": "Learn NYS DOH requirements, complete a 100-hour program, and pass the Prometric exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in New York",
+        "description": "Step-by-step guide to New York CNA certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "100 hours (classroom + clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "New Jersey",
+      "url": "new-jersey-cna.html"
+    },
+    {
+      "label": "Connecticut",
+      "url": "connecticut-cna.html"
+    },
+    {
+      "label": "Pennsylvania",
+      "url": "pennsylvania-cna.html"
+    },
+    {
+      "label": "Massachusetts",
+      "url": "massachusetts-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "certification",
+    "display_label": "CNA Certification",
+    "credential_short": "Nurse Aide Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "reciprocity",
+    "registry_name": "NYS Nurse Aide Registry",
+    "page_title_term": "Certification"
   }
 }

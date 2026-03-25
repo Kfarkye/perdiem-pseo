@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "90 hours",
+    "exam_name": "NNAAP (Prometric)",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -130,5 +133,84 @@
     "board_source_url": "https://www.oplc.nh.gov/nursing"
   },
   "slug": "new-hampshire-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become a LNA in NH.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to New Hampshire.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a LNA in New Hampshire",
+        "dek": "Learn NH Board of Nursing requirements, complete a 100-hour program, and pass the Prometric exam."
+      },
+      "seo": {
+        "title": "How to Become a LNA in New Hampshire",
+        "description": "Step-by-step guide to New Hampshire LNA certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "100 hours (classroom + clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "Vermont",
+      "url": "vermont-cna.html"
+    },
+    {
+      "label": "Maine",
+      "url": "maine-cna.html"
+    },
+    {
+      "label": "Massachusetts",
+      "url": "massachusetts-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "license",
+    "display_label": "Licensed Nursing Assistant (LNA)",
+    "credential_short": "LNA License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement",
+    "registry_name": "Board of Nursing Registry",
+    "page_title_term": "License"
+  }
 }

@@ -1,0 +1,150 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "new-hampshire-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "nh::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "New Hampshire",
+    "abbr": "NH"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Licensed Nursing Assistant",
+    "short_label": "LNA",
+    "aliases": [
+      "CNA"
+    ]
+  },
+  "container": {
+    "label": "Becoming a LNA in New Hampshire",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 100 hours of Board-approved training and pass the Prometric competency exam.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Standard intent"
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "How to become a LNA in NH.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Prometric exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Application intent"
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to New Hampshire.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "New Hampshire Board of Nursing",
+      "phone": "603-271-6282",
+      "fax": "",
+      "contact_url": "",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a LNA in New Hampshire",
+        "dek": "Learn NH Board of Nursing requirements, complete a 100-hour program, and pass the Prometric exam."
+      },
+      "seo": {
+        "title": "How to Become a LNA in New Hampshire",
+        "description": "Step-by-step guide to New Hampshire LNA certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "100 hours (classroom + clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "New Hampshire LNA State Exam Application",
+        "dek": "Apply to take the Prometric Nursing Assistant evaluation."
+      },
+      "seo": {
+        "title": "New Hampshire LNA Exam Application",
+        "description": "Apply for NH LNA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to New Hampshire",
+        "dek": "Transfer via Endorsement through the NH Board of Nursing."
+      },
+      "seo": {
+        "title": "Transfer CNA License to New Hampshire",
+        "description": "Transfer your active out-of-state CNA to NH.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

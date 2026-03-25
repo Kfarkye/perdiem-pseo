@@ -1,0 +1,236 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "texas-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": ["becoming", "state_application", "transfer"]
+  },
+  "analytics": {
+    "entity_key": "tx::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Texas",
+    "abbr": "TX"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nursing Assistant",
+    "short_label": "CNA",
+    "aliases": ["Nurse Aide"]
+  },
+  "container": {
+    "label": "Becoming a CNA in Texas",
+    "label_source": "google_autocomplete",
+    "intro": "Complete a 100-hour NATCEP program, pass your background check, and pass the state exam to join the Texas Nurse Aide Registry.",
+    "evidence_considered": ["High search volume for 'how to become a cna in texas'"],
+    "rejected_alternatives": ["CNA Certification TX"],
+    "selection_reason": "Matches top-of-funnel informational query."
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in Texas.",
+        "evidence_considered": ["Search volume heavily favors 'become a CNA'"],
+        "rejected_alternatives": ["Initial Certification"],
+        "selection_reason": "Aligns with task-based search intent."
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Texas state exam and registry.",
+        "evidence_considered": ["Current CNA students search for 'Texas CNA exam application'"],
+        "rejected_alternatives": ["Exam Route"],
+        "selection_reason": "Captures the administrative application task."
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to Texas.",
+        "evidence_considered": ["Search queries heavily favor 'transfer CNA license to Texas'", "Texas official term 'reciprocity' has lower search volume"],
+        "rejected_alternatives": ["Reciprocity"],
+        "selection_reason": "User intent vocabulary dominates over legal board terms."
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Texas Health and Human Services Commission (HHSC)",
+      "phone": "512-438-2050",
+      "fax": "",
+      "contact_url": "mailto:nurseaideregistry@hhs.texas.gov",
+      "website": "https://www.hhs.texas.gov/",
+      "verify_url": "https://tulip.hhs.texas.gov/tuliplogin/"
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [
+    {
+      "task_key": "verification",
+      "public_label": "CNA Registry Lookup",
+      "label_source": "top_ranking_sites",
+      "evidence_considered": ["Employers search 'Texas CNA registry lookup'"],
+      "selection_reason": "Standard verification syntax.",
+      "likely_needed": true
+    },
+    {
+      "task_key": "renewal",
+      "public_label": "CNA Renewal",
+      "label_source": "google_autocomplete",
+      "evidence_considered": ["'Texas CNA license renewal' is a top query"],
+      "selection_reason": "Matches established lifecycle term.",
+      "likely_needed": true
+    }
+  ],
+  "candidate_supporting_pages": [
+    {
+      "task_key": "verification",
+      "slug": "texas-certified-nursing-assistant/lookup",
+      "title": "Texas CNA Registry Lookup & License Verification",
+      "reason": "High-volume employer query."
+    },
+    {
+      "task_key": "renewal",
+      "slug": "texas-certified-nursing-assistant/renewal",
+      "title": "How to Renew Your Texas CNA License",
+      "reason": "Retention/lifecycle topic."
+    }
+  ],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Texas",
+        "dek": "Learn Texas HHSC requirements, find a 100-hour NATCEP program, and prepare for the state competency exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Texas | Full Requirements & Steps",
+        "description": "Step-by-step guide to getting your CNA license in Texas. Learn about NATCEP training hours, DPS background check, and the state competency exam.",
+        "target_queries": ["how to become a cna in texas", "texas cna requirements", "cna classes in texas"]
+      },
+      "faq_heading": "Common Questions about Getting a CNA in Texas",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "100 total hours (60 classroom, 40 clinical)",
+          "status": "confirmed"
+        },
+        {
+          "key": "exam",
+          "label": "Exam Provider",
+          "value": "State Competency Evaluation",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "requirements",
+          "label": "Basic Requirements",
+          "body": "To enroll in a Texas NATCEP program, you must be 18 years old and pass a DPS criminal background check.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many hours of training do I need to be a CNA in Texas?",
+          "a": "Texas requires 100 hours of training: 60 hours of classroom instruction and 40 hours of clinical practice in a state-approved NATCEP."
+        }
+      ]
+    },
+    "state_application": {
+      "hero": {
+        "title": "Texas CNA State Exam Application",
+        "dek": "Apply to take the Texas Nurse Aide written and skills competency exam."
+      },
+      "seo": {
+        "title": "Texas CNA Exam Application & Registry Guide",
+        "description": "How to apply for the Texas CNA state exam and get listed on the Nurse Aide Registry after finishing your NATCEP.",
+        "target_queries": ["texas cna exam application", "texas nurse aide registry application"]
+      },
+      "faq_heading": "Application & Registration Questions",
+      "cards": [
+        {
+          "key": "background_check",
+          "label": "Background Check",
+          "value": "DPS Fingerprint Required",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "process",
+          "label": "Application Steps",
+          "body": "After completing your training, you must pass the competency exam within 24 months to be added to the registry.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "How long do I have to take the exam after CNA classes in Texas?",
+          "a": "You must pass the state exam within 24 months of completing your state-approved training program."
+        }
+      ]
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Texas",
+        "dek": "Texas allows out-of-state CNAs to transfer via Reciprocity if they hold an active certificate and pass a DPS background check."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Texas | Reciprocity Steps",
+        "description": "Learn how to transfer your active out-of-state CNA license to the Texas Nurse Aide Registry via reciprocity form 5505-NAR using the TULIP system.",
+        "target_queries": ["transfer cna license to texas", "texas cna reciprocity application"]
+      },
+      "faq_heading": "Questions about Transferring your CNA to Texas",
+      "cards": [
+        {
+          "key": "process",
+          "label": "Process",
+          "value": "Reciprocity (Endorsement)",
+          "status": "confirmed"
+        },
+        {
+          "key": "timeline",
+          "label": "Processing Time",
+          "value": "4 to 8 weeks",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "eligibility",
+          "label": "Transfer Requirements",
+          "body": "Submit Form 5505-NAR through TULIP, complete a DPS fingerprint background check, and show an active out-of-state certification in good standing.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I transfer my CNA to Texas?",
+          "a": "You must apply for reciprocity using Form 5505-NAR, submit proof of active certification, and pass a Texas DPS fingerprint background check."
+        }
+      ],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

@@ -61,7 +61,7 @@ STATE_ABBR_TO_NAME = {abbr: name for name, abbr in STATE_NAME_TO_ABBR.items()}
 
 STATE_NEIGHBORS = {
     "AL": ("FL", "GA", "MS", "TN"),
-    "AK": (),
+    "AK": ("WA", "CA", "HI"),
     "AZ": ("CA", "CO", "NM", "NV", "UT"),
     "AR": ("LA", "MO", "MS", "OK", "TN", "TX"),
     "CA": ("AZ", "NV", "OR"),
@@ -71,7 +71,7 @@ STATE_NEIGHBORS = {
     "DE": ("MD", "NJ", "PA"),
     "FL": ("AL", "GA"),
     "GA": ("AL", "FL", "NC", "SC", "TN"),
-    "HI": (),
+    "HI": ("CA", "WA", "AK"),
     "IA": ("IL", "MN", "MO", "NE", "SD", "WI"),
     "ID": ("MT", "NV", "OR", "UT", "WA", "WY"),
     "IL": ("IA", "IN", "KY", "MO", "WI"),
@@ -81,7 +81,7 @@ STATE_NEIGHBORS = {
     "LA": ("AR", "MS", "TX"),
     "MA": ("CT", "NH", "NY", "RI", "VT"),
     "MD": ("DC", "DE", "PA", "VA", "WV"),
-    "ME": ("NH"),
+    "ME": ("NH", "VT", "MA"),
     "MI": ("IN", "OH", "WI"),
     "MN": ("IA", "ND", "SD", "WI"),
     "MO": ("AR", "IA", "IL", "KS", "KY", "NE", "OK", "TN"),

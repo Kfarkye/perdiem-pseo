@@ -1,0 +1,148 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "michigan-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "mi::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Michigan",
+    "abbr": "MI"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nursing Assistant",
+    "short_label": "CNA",
+    "aliases": []
+  },
+  "container": {
+    "label": "Becoming a CNA in Michigan",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 75 hours of LARA-approved training and pass the Prometric competency exam to join the Michigan Nurse Aide Registry.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Standard intent"
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "How to become a CNA in MI.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Prometric exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Application intent"
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Michigan.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Michigan Department of Licensing and Regulatory Affairs (LARA)",
+      "phone": "517-335-0918",
+      "fax": "",
+      "contact_url": "",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Michigan",
+        "dek": "Learn LARA requirements, complete a 75-hour program, and pass the Prometric exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Michigan",
+        "description": "Step-by-step guide to Michigan CNA certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "75 hours (classroom + clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Michigan CNA State Exam Application",
+        "dek": "Apply to take the Prometric Nurse Aide evaluation."
+      },
+      "seo": {
+        "title": "Michigan CNA Exam Application",
+        "description": "Apply for MI CNA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Michigan",
+        "dek": "Transfer via Reciprocity using the Michigan Nurse Aide Registry."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Michigan",
+        "description": "Transfer your active out-of-state CNA to MI.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

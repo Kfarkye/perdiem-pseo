@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-24",
   "seo": {
-    "title": "Georgia CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "Georgia CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Georgia - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity georgia, how to transfer CNA license to georgia, georgia CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "120 hours",
+    "exam_name": "NNAAP (Prometric)",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -126,5 +129,88 @@
   "board_verification_sources": {
     "registry": "https://www.mmis.georgia.gov/portal_nar/",
     "exam_portal": "https://www.credentia.com/test-takers/ga"
+  },
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become a CNA in GA.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Georgia.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a CNA in Georgia",
+        "dek": "Learn DCH requirements, complete an 85-hour program, and pass the Credentia exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Georgia",
+        "description": "Step-by-step guide.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "85 hours",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "Florida",
+      "url": "florida-cna.html"
+    },
+    {
+      "label": "Alabama",
+      "url": "alabama-cna.html"
+    },
+    {
+      "label": "South Carolina",
+      "url": "south-carolina-cna.html"
+    },
+    {
+      "label": "Tennessee",
+      "url": "tennessee-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "certification",
+    "display_label": "CNA Certification",
+    "credential_short": "CNA Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement",
+    "registry_name": "Georgia Nurse Aide Registry",
+    "page_title_term": "Certification"
   }
 }

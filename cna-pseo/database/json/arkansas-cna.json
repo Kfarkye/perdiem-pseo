@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-22",
   "seo": {
-    "title": "Arkansas CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "Arkansas CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Arkansas - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity arkansas, how to transfer CNA license to arkansas, arkansas CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "90 hours",
+    "exam_name": "NNAAP (Prometric)",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -130,5 +133,88 @@
     "board_source_url": "https://humanservices.arkansas.gov/"
   },
   "slug": "arkansas-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become a CNA in AR.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a CNA in Arkansas",
+        "dek": "Learn OLTC requirements, complete a 90-hour program, and pass the Prometric exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Arkansas",
+        "description": "Step-by-step guide.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "90 hours",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "Texas",
+      "url": "texas-cna.html"
+    },
+    {
+      "label": "Tennessee",
+      "url": "tennessee-cna.html"
+    },
+    {
+      "label": "Missouri",
+      "url": "missouri-cna.html"
+    },
+    {
+      "label": "Louisiana",
+      "url": "louisiana-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "certification",
+    "display_label": "CNA Certification",
+    "credential_short": "CNA Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement",
+    "registry_name": "Arkansas Nurse Aide Registry",
+    "page_title_term": "Certification"
+  }
 }

@@ -7,8 +7,13 @@
   <meta name="theme-color" content="#faf9f7" />
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
   
-  {%- set safe_title = seo.title | default(state_name ~ ' ' ~ profession_name ~ ' License', true) | string | trim | e -%}
-  {%- set safe_desc = seo.description | default('Complete guide and requirements for the ' ~ state_name ~ ' ' ~ profession_name ~ ' license.', true) | string | trim | e -%}
+  {%- set _ct = credential_type | default({}) -%}
+  {%- set cred_label = _ct.page_title_term | default('License', true) -%}
+  {%- set cred_official = _ct.official_term | default('licensing', true) -%}
+  {%- set cred_renewal = _ct.renewal_term | default('License Renewal', true) -%}
+  {%- set cred_transfer = _ct.transfer_term | default('endorsement', true) -%}
+  {%- set safe_title = seo.title | default(state_name ~ ' ' ~ profession_name ~ ' ' ~ cred_label, true) | string | trim | e -%}
+  {%- set safe_desc = seo.description | default('Complete guide and requirements for the ' ~ state_name ~ ' ' ~ profession_name ~ ' ' ~ cred_official ~ '.', true) | string | trim | e -%}
   
   <title>{{ safe_title }}</title>
   <meta name="description" content="{{ safe_desc }}" />
@@ -217,7 +222,7 @@
       overflow: hidden;
       border-bottom: 1px solid var(--line);
       background: var(--paper);
-      margin-bottom: 40px;
+      margin-bottom: 0;
     }
     /* FIX F4: Skeleton only on image pages */
     .hero-with-image { min-height: 380px; background: #eae8e4; }
@@ -261,26 +266,115 @@
     }
     
     .hero-no-image .hero-inner { padding: 72px 0 52px; }
-    .breadcrumbs { margin-bottom: 12px; font-size: 13px; font-weight: 500; }
+    .breadcrumbs { margin-bottom: 12px; font-size: 12px; font-weight: 500; letter-spacing: 0.03em; text-transform: uppercase; }
     .breadcrumbs ol { display: flex; gap: 8px; list-style: none; padding: 0; margin: 0; }
-    .breadcrumbs li { display: flex; align-items: center; gap: 8px; color: var(--soft); }
-    .breadcrumbs li::after { content: "/"; color: #ccc; }
+    .breadcrumbs li { display: flex; align-items: center; gap: 8px; color: #b0a99e; }
+    .breadcrumbs li::after { content: "/"; color: #d0cbc4; }
     .breadcrumbs li:last-child::after { content: none; }
-    .breadcrumbs a { color: var(--soft); text-decoration: none; padding: 4px 0; display: inline-block; }
+    .breadcrumbs a { color: #b0a99e; text-decoration: none; padding: 4px 0; display: inline-block; }
     .breadcrumbs a:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); }
-    .breadcrumbs span { color: var(--ink); }
+    .breadcrumbs span { color: #8a8279; }
 
     /* Hero-with-image text overrides: darken all text for legibility over photos */
-    .hero-with-image .breadcrumbs li { color: #1f1f1f; }
+    .hero-with-image .breadcrumbs li { color: #5a5249; }
     .hero-with-image .breadcrumbs li::after { color: #999; }
-    .hero-with-image .breadcrumbs a { color: #1f1f1f; font-weight: 600; text-shadow: 0 0 8px rgba(255,255,255,0.8); }
-    .hero-with-image .breadcrumbs span { color: #000; font-weight: 600; text-shadow: 0 0 8px rgba(255,255,255,0.8); }
+    .hero-with-image .breadcrumbs a { color: #5a5249; font-weight: 600; text-shadow: 0 0 8px rgba(255,255,255,0.8); }
+    .hero-with-image .breadcrumbs span { color: #5a5249; font-weight: 600; text-shadow: 0 0 8px rgba(255,255,255,0.8); }
     .hero-with-image h1 { text-shadow: 0 1px 6px rgba(255,255,255,0.6); }
 
-    .hero-sub { margin-top: 8px; color: var(--soft); max-width: 39ch; font-size: 18px; }
-    .hero-with-image .hero-sub { color: #333; text-shadow: 0 0 6px rgba(255,255,255,0.7); }
-    .updated { display: inline-block; margin-top: 14px; font-size: 13px; color: var(--soft); letter-spacing: 0.01em; }
-    .hero-with-image .updated { color: #444; text-shadow: 0 0 6px rgba(255,255,255,0.7); }
+    .hero-sub { margin-top: 6px; color: var(--soft); max-width: 52ch; font-size: 16px; line-height: 1.55; }
+    .hero-with-image .hero-sub { color: #444; text-shadow: 0 0 6px rgba(255,255,255,0.7); }
+    .updated { display: inline-block; margin-top: 10px; font-size: 12px; color: var(--soft); letter-spacing: 0.02em; }
+    .hero-with-image .updated { color: #555; text-shadow: 0 0 6px rgba(255,255,255,0.7); }
+
+    @media (max-width: 720px) {
+      .hero-image { height: min(42vh, 320px); min-height: 220px; }
+      .hero-with-image .hero-inner { padding-bottom: 28px; }
+      .hero-no-image .hero-inner { padding: 48px 0 36px; }
+    }
+
+    /* ==========================================================================
+       4b. Intent Selector (3-phase navigation)
+       ========================================================================== */
+    .intent-selector {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 56px;
+      z-index: 90;
+    }
+    .intent-selector-inner {
+      width: min(var(--shell), calc(100% - 48px));
+      margin: 0 auto;
+      padding: 16px 0;
+    }
+    .selector-list {
+      display: inline-flex;
+      background: #f3f1ed;
+      border-radius: 10px;
+      padding: 4px;
+      gap: 2px;
+      list-style: none;
+    }
+    .selector-pill {
+      font-family: 'Karla', sans-serif;
+      font-size: 14.5px;
+      font-weight: 500;
+      padding: 8px 20px;
+      border-radius: 8px;
+      background: transparent;
+      color: #6a6054;
+      text-decoration: none;
+      transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+      white-space: nowrap;
+      display: block;
+      cursor: pointer;
+      border: none;
+      letter-spacing: 0.01em;
+    }
+    .selector-pill:hover {
+      color: var(--ink);
+    }
+    .selector-pill.is-active {
+      background: #ffffff;
+      color: var(--ink);
+      font-weight: 700;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 2px 12px rgba(0,0,0,0.04);
+      letter-spacing: -0.005em;
+    }
+    .selector-pill:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: 2px;
+    }
+    
+    .variant-panel, .rail-variant { display: none; }
+    .variant-panel.is-active, .rail-variant.is-active { display: block; }
+    .variant-panel-enter { animation: variantFadeIn 280ms ease-out; }
+    @keyframes variantFadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .variant-hero-title {
+      font-size: clamp(28px, 4.2vw, 34px);
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+      color: #111;
+    }
+    .variant-hero-dek {
+      font-size: 19px;
+      line-height: 1.6;
+      color: #383838;
+      max-width: 65ch;
+    }
+    
+    @media (max-width: 720px) {
+      .intent-selector-inner { width: calc(100% - 32px); padding: 12px 0; }
+      .selector-list { width: 100%; display: flex; }
+      .selector-pill { flex: 1; padding: 10px 8px; font-size: 13.5px; text-align: center; }
+    }
 
     /* ==========================================================================
        5. Core Containers
@@ -288,6 +382,7 @@
     #main-content {
       width: min(var(--shell), calc(100% - 48px));
       margin: 0 auto;
+      padding-top: 48px;
       padding-bottom: 104px;
     }
     
@@ -632,22 +727,67 @@
       
       <h1 id="hero-title">
         {%- if profession_name | lower == "pharmacy technician" -%}
-          {{ state_name | e }} Pharmacy Tech License
+          {{ state_name | e }} Pharmacy Tech {{ cred_label }}
         {%- else -%}
-          {{ state_name | e }} {{ profession_name | e }} License
+          {{ state_name | e }} {{ profession_name | e }} {{ cred_label }}
         {%- endif -%}
       </h1>
-      <p class="hero-sub">Here's what you need to know.</p>
+      <p class="hero-sub">Requirements, fees, and steps for {{ state_name }} {{ profession_name | lower }} {{ cred_official }}.</p>
       <time class="updated" datetime="{{ iso_date | e }}">Last updated {{ raw_date | e }} &middot; Sources verified</time>
     </div>
   </section>
+
+  {# ── Intent Selector: only renders when selector data exists ── #}
+  {% if selector is defined and selector.variants is defined %}
+  <nav class="intent-selector" aria-label="{{ cred_label }} Paths">
+    <div class="intent-selector-inner">
+      <ul class="selector-list">
+        {%- for v_meta in selector.variants %}
+        <li>
+          <button type="button"
+             class="selector-pill{% if loop.first %} is-active{% endif %}"
+             {% if loop.first %}aria-current="page"{% endif %}
+             data-variant="{{ v_meta.key }}"
+          >{{ v_meta.label | e }}</button>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </nav>
+  {% endif %}
 
   <main id="main-content" tabindex="-1">
     <div class="page-layout">
       
       <aside class="context-rail" aria-labelledby="quick-reference-heading">
-        <div class="section-box context-card">
+        {# ── New Applicant rail ── #}
+        <div class="section-box context-card rail-variant is-active" data-variant-rail="new_applicant">
           <h2 id="quick-reference-heading">At a glance</h2>
+          <dl class="facts-grid facts-grid-rail">
+            <dt>Initial fee</dt>
+            <dd>{{ 'See board' if verify_fee_and_timing_with_board and not fee_verified else quick_facts.total_fee | default(fees_endorsement.app_fee | default('See board', true), true) }}</dd>
+
+            <dt>Training</dt>
+            <dd>{{ quick_facts.training_hours | default('State-approved program', true) }}</dd>
+
+            <dt>Exam</dt>
+            <dd>{{ quick_facts.exam_name | default('State competency exam', true) }}</dd>
+
+            <dt>Processing time</dt>
+            <dd>{{ 'See board' if verify_fee_and_timing_with_board and not timeline_verified else quick_facts.processing_time | default('See board', true) }}</dd>
+
+            <dt>Board</dt>
+            <dd>{{ board.name }}</dd>
+          </dl>
+          <div class="context-links">
+            <a href="{{ reciprocity.board_url or board.url | default('#', true) }}" target="_blank" rel="noopener noreferrer">Primary board page <span class="sr-only">(opens in new tab)</span></a>
+          </div>
+          <p class="source-note">Last updated <time datetime="{{ iso_date }}">{{ raw_date }}</time>.</p>
+        </div>
+
+        {# ── Reciprocity rail ── #}
+        <div class="section-box context-card rail-variant" data-variant-rail="reciprocity">
+          <h2>At a glance</h2>
           <dl class="facts-grid facts-grid-rail">
             <dt>Endorsement fee</dt>
             <dd>
@@ -675,14 +815,11 @@
               {% endif %}
             </dd>
 
-            <dt>Renewal fee</dt>
-            <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_fee_verified else quick_facts.renewal_fee | default('See board', true) }}</dd>
-
             <dt>Fingerprinting</dt>
             <dd>{{ 'Required' if reciprocity.fingerprint_required else 'Not clearly required' }}</dd>
 
-            <dt>Board</dt>
-            <dd>{{ board.name }}</dd>
+            <dt>Temp license</dt>
+            <dd>{{ 'Available' if reciprocity.temp_license_available else 'Not listed' }}</dd>
 
             <dt>Path</dt>
             <dd>
@@ -694,6 +831,9 @@
                 Endorsement through {{ board.name }}
               {% endif %}
             </dd>
+
+            <dt>Board</dt>
+            <dd>{{ board.name }}</dd>
           </dl>
           <div class="context-links">
             <a href="#endorsement">{% if reciprocity.license_required %}See the steps{% else %}See the checklist{% endif %}</a>
@@ -702,14 +842,111 @@
           {% if verify_fee_and_timing_with_board and has_verified_board_data %}
             <p class="source-note">Board-checked <time datetime="{{ iso_date }}">{{ raw_date }}</time>. Any field still marked "See board" has not been confirmed yet.</p>
           {% elif verify_fee_and_timing_with_board %}
-            <p class="source-note">Fee and timing details are still being re-checked state by state. Check the board page before you count on a fee or timeline for a start date.</p>
+            <p class="source-note">Fee and timing details are still being re-checked. Check the board page before you rely on a fee or timeline.</p>
           {% else %}
             <p class="source-note">Last updated <time datetime="{{ iso_date }}">{{ raw_date }}</time>.</p>
           {% endif %}
         </div>
+
+        {# ── Renewal rail ── #}
+        <div class="section-box context-card rail-variant" data-variant-rail="renewal">
+          <h2>At a glance</h2>
+          <dl class="facts-grid facts-grid-rail">
+            <dt>Renewal cycle</dt>
+            <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_cycle_verified else quick_facts.renewal_cycle | default('See board', true) }}</dd>
+
+            <dt>Renewal fee</dt>
+            <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_fee_verified else quick_facts.renewal_fee | default('See board', true) }}</dd>
+
+            <dt>CE required</dt>
+            <dd>{{ quick_facts.ce_requirement | default('See board', true) }}</dd>
+
+            <dt>Board</dt>
+            <dd>{{ board.name }}</dd>
+          </dl>
+          <div class="context-links">
+            <a href="{{ reciprocity.board_url or board.url | default('#', true) }}" target="_blank" rel="noopener noreferrer">Renew on board site <span class="sr-only">(opens in new tab)</span></a>
+          </div>
+          <p class="source-note">Last updated <time datetime="{{ iso_date }}">{{ raw_date }}</time>.</p>
+        </div>
       </aside>
       
       <article class="content-column" aria-label="Licensing Guide">
+
+        {# ── New Applicant panel: V2 variant data + V1 training steps ── #}
+        {% if variants is defined and selector is defined %}
+          {% if 'new_applicant' in variants %}
+            {% set vcontent = variants['new_applicant'] %}
+            <div class="variant-panel is-active" data-variant-panel="new_applicant">
+              {% if vcontent.hero is defined %}
+              <section class="section-shell">
+                <div class="section-copy">
+                  <h2 class="variant-hero-title">{{ vcontent.hero.title | e }}</h2>
+                  {% if vcontent.hero.dek %}<p class="variant-hero-dek">{{ vcontent.hero.dek | e }}</p>{% endif %}
+                </div>
+              </section>
+              {% endif %}
+
+              {# V1 training steps rendered as numbered list #}
+              {% if steps and steps | length > 0 %}
+              <section class="section-shell">
+                <div class="section-copy">
+                  <h2>Steps to Get Certified</h2>
+                  <p>Follow these steps to earn your {{ state_name }} {{ profession_name }} credential.</p>
+                </div>
+                <ol class="steps" role="list">
+                  {% for step in steps %}
+                  <li>
+                    <span class="step-kicker" aria-hidden="true">Step {{ loop.index }}</span>
+                    <h3 class="step-title">{{ step.title }}</h3>
+                    {% if step.description %}<p>{{ step.description }}</p>{% endif %}
+                  </li>
+                  {% endfor %}
+                </ol>
+              </section>
+              {% endif %}
+
+              {% for section in vcontent.sections | default([]) %}
+              <section class="section-shell">
+                <div class="section-copy">
+                  <h2>{{ section.label | e }}</h2>
+                  {% if section.body %}<p>{{ section.body | e }}</p>{% endif %}
+                </div>
+                {% if section['items'] is defined and section['items'] %}
+                <ul class="docs" role="list">
+                  {% for item in section['items'] %}
+                  <li>{{ item | e }}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </section>
+              {% endfor %}
+
+              {% if vcontent.faq is defined and vcontent.faq | length > 0 %}
+              <section class="section-shell">
+                <div class="section-copy">
+                  <h2>{{ vcontent.faq_heading | default('Frequently Asked Questions') | e }}</h2>
+                </div>
+                {% for faq in vcontent.faq %}
+                <details>
+                  <summary>
+                    <h3>{{ faq.q | e }}</h3>
+                    <svg class="faq-icon" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="24" height="24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <p>{{ faq.a | e }}</p>
+                </details>
+                {% endfor %}
+              </section>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {# ── Reciprocity panel: wraps the existing V1 reciprocity and timeline content ── #}
+          <div class="variant-panel" data-variant-panel="reciprocity">
+        {% endif %}
+
         <section id="reciprocity" class="section-shell" aria-labelledby="reciprocity-heading">
           <div class="section-copy">
             <h2 id="reciprocity-heading">Out-of-State {{ profession_name }}s</h2>
@@ -723,7 +960,7 @@
             {% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}
               <p>{{ state_name }} has enacted the {{ reciprocity.compact_name }}, but the compact is not live for clinicians yet. For now, out-of-state applicants still use endorsement.</p>
             {% else %}
-              <p>There is no active interstate compact route for {{ profession_name.lower() }} licensing in {{ state_name }}. Plan on endorsement through {{ board.name }}.</p>
+              <p>There is no active interstate compact route for {{ profession_name.lower() }} {{ cred_official }} in {{ state_name }}. Plan on {{ cred_transfer }} through {{ board.name }}.</p>
             {% endif %}
           </div>
         </section>
@@ -886,8 +1123,39 @@
             </dl>
           </div>
 
-          <div class="section-box">
-            <h3>Ongoing License Renewal</h3>
+          {% if verify_fee_and_timing_with_board %}
+            {% if has_verified_board_data %}
+              <p class="source-note">Any fee field still marked "See board" has not been confirmed from the board yet.</p>
+            {% else %}
+              <p class="source-note">Fee details are still being checked against the board for this specialty. Verify the current amount before you apply.</p>
+            {% endif %}
+          {% endif %}
+        </section>
+
+        {% if temp_license.available %}
+        <section id="temp-license" class="section-shell" aria-labelledby="temp-license-heading">
+          <div class="section-copy">
+            <h2 id="temp-license-heading">Temporary {{ cred_label }}</h2>
+            <p>{{ state_name }} offers a temporary or provisional {{ cred_official }} so you can start working while your full {{ cred_transfer }} application is processing.</p>
+          </div>
+        </section>
+        {% endif %}
+
+        {% if variants is defined and selector is defined %}
+          </div>{# close reciprocity panel #}
+
+          {# ── Renewal panel ── #}
+          <div class="variant-panel" data-variant-panel="renewal">
+        {% endif %}
+
+        <section id="renewal" class="section-shell" aria-labelledby="renewal-heading">
+          <div class="section-copy">
+            <h2 class="variant-hero-title" id="renewal-heading">{{ state_name }} {{ profession_name }} {{ cred_renewal | title }}</h2>
+            <p class="variant-hero-dek">Maintain your active {{ cred_official }} and stay compliant with the {{ board.name }}.</p>
+          </div>
+          
+          <div class="section-box" style="margin-top: 32px;">
+            <h3>Ongoing {{ cred_renewal | title }}</h3>
             <dl class="facts-grid">
               <dt>Renewal cycle</dt>
               <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_cycle_verified else quick_facts.renewal_cycle | default('See board', true) }}</dd>
@@ -896,23 +1164,10 @@
               <dd>{{ 'See board' if verify_fee_and_timing_with_board and not renewal_fee_verified else quick_facts.renewal_fee | default('See board', true) }}</dd>
             </dl>
           </div>
-
-          {% if verify_fee_and_timing_with_board %}
-            {% if has_verified_board_data %}
-              <p class="source-note">Any fee field still marked "See board" has not been confirmed from the board yet.</p>
-            {% else %}
-              <p class="source-note">Fee and renewal details are still being checked against the board for this specialty. Verify the current amount before you apply.</p>
-            {% endif %}
-          {% endif %}
         </section>
 
-        {% if temp_license.available %}
-        <section id="temp-license" class="section-shell" aria-labelledby="temp-license-heading">
-          <div class="section-copy">
-            <h2 id="temp-license-heading">Temporary License</h2>
-            <p>{{ state_name }} offers a temporary or provisional license so you can start working while your full endorsement application is processing.</p>
-          </div>
-        </section>
+        {% if variants is defined and selector is defined %}
+          </div>{# close renewal panel #}
         {% endif %}
 
         <section id="contact" class="section-shell" aria-labelledby="contact-heading">
@@ -987,7 +1242,6 @@
           </div>
           <div class="related-guides-grid">
             <article class="related-guides-card">
-              <h3>Trending states</h3>
               <ul class="related-guides-list" role="list">
                 {% for item in nearby_state_links %}
                 {% if item.url %}<li><a href="{{ item.url }}">{{ item.label }}</a></li>{% endif %}
@@ -1011,6 +1265,7 @@
             {% if compact.compact_source_url %}<p><a href="{{ compact.compact_source_url }}" target="_blank" rel="noopener noreferrer">{{ compact.compact_name }}</a></p>{% endif %}
           </div>
         </section>
+
       </article>
     </div>
   </main>
@@ -1019,5 +1274,53 @@
     <p>This page is maintained as a reference for {{ profession_name | lower | e }}s and recruiters evaluating {{ state_name | e }} assignments.</p>
     <p><a href="https://www.statelicensingreference.com" target="_blank" rel="noopener noreferrer" aria-label="Visit State Licensing Reference home page">statelicensingreference.com <span class="sr-only">(opens in new tab)</span></a></p>
   </footer>
+
+  {% if selector is defined and selector.variants is defined %}
+  <script>
+  (function() {
+    var pills = document.querySelectorAll('.selector-pill[data-variant]');
+    var panels = document.querySelectorAll('[data-variant-panel]');
+    var rails = document.querySelectorAll('[data-variant-rail]');
+    if (!pills.length || !panels.length) return;
+
+    pills.forEach(function(pill) {
+      pill.addEventListener('click', function(e) {
+        e.preventDefault();
+        var target = this.getAttribute('data-variant');
+
+        pills.forEach(function(p) {
+          p.classList.remove('is-active');
+          p.removeAttribute('aria-current');
+        });
+        this.classList.add('is-active');
+        this.setAttribute('aria-current', 'page');
+
+        panels.forEach(function(panel) {
+          if (panel.getAttribute('data-variant-panel') === target) {
+            panel.classList.add('is-active', 'variant-panel-enter');
+            panel.addEventListener('animationend', function handler() {
+              panel.classList.remove('variant-panel-enter');
+              panel.removeEventListener('animationend', handler);
+            });
+          } else {
+            panel.classList.remove('is-active', 'variant-panel-enter');
+          }
+        });
+
+        rails.forEach(function(rail) {
+          if (rail.getAttribute('data-variant-rail') === target) {
+            rail.classList.add('is-active');
+          } else {
+            rail.classList.remove('is-active');
+          }
+        });
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  })();
+  </script>
+  {% endif %}
+
 </body>
 </html>

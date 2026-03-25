@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-22",
   "seo": {
-    "title": "Texas CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "Texas CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Texas - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity texas, how to transfer CNA license to texas, texas CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 8 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "100 hours",
+    "exam_name": "NNAAP (Prometric)",
+    "ce_requirement": "24 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -130,5 +133,119 @@
     "board_source_url": "https://www.hhs.texas.gov/"
   },
   "slug": "texas-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in Texas.",
+        "evidence_considered": [
+          "Search volume heavily favors 'become a CNA'"
+        ],
+        "rejected_alternatives": [
+          "Initial Certification"
+        ],
+        "selection_reason": "Aligns with task-based search intent."
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to Texas.",
+        "evidence_considered": [
+          "Search queries heavily favor 'transfer CNA license to Texas'",
+          "Texas official term 'reciprocity' has lower search volume"
+        ],
+        "rejected_alternatives": [
+          "Reciprocity"
+        ],
+        "selection_reason": "User intent vocabulary dominates over legal board terms."
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a CNA in Texas",
+        "dek": "Learn Texas HHSC requirements, find a 100-hour NATCEP program, and prepare for the state competency exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Texas | Full Requirements & Steps",
+        "description": "Step-by-step guide to getting your CNA license in Texas. Learn about NATCEP training hours, DPS background check, and the state competency exam.",
+        "target_queries": [
+          "how to become a cna in texas",
+          "texas cna requirements",
+          "cna classes in texas"
+        ]
+      },
+      "faq_heading": "Common Questions about Getting a CNA in Texas",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "100 total hours (60 classroom, 40 clinical)",
+          "status": "confirmed"
+        },
+        {
+          "key": "exam",
+          "label": "Exam Provider",
+          "value": "State Competency Evaluation",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "requirements",
+          "label": "Basic Requirements",
+          "body": "To enroll in a Texas NATCEP program, you must be 18 years old and pass a DPS criminal background check.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many hours of training do I need to be a CNA in Texas?",
+          "a": "Texas requires 100 hours of training: 60 hours of classroom instruction and 40 hours of clinical practice in a state-approved NATCEP."
+        }
+      ]
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "Louisiana",
+      "url": "louisiana-cna.html"
+    },
+    {
+      "label": "Oklahoma",
+      "url": "oklahoma-cna.html"
+    },
+    {
+      "label": "New Mexico",
+      "url": "new-mexico-cna.html"
+    },
+    {
+      "label": "Arkansas",
+      "url": "arkansas-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "certification",
+    "display_label": "CNA Certification",
+    "credential_short": "CNA Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement",
+    "registry_name": "Texas Nurse Aide Registry",
+    "page_title_term": "Certification"
+  }
 }

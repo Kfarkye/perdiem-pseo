@@ -1,0 +1,152 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "delaware-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "de::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Delaware",
+    "abbr": "DE"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nursing Assistant",
+    "short_label": "CNA",
+    "aliases": [
+      "C.N.A."
+    ]
+  },
+  "container": {
+    "label": "Becoming a CNA in Delaware",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 150 hours of training, pass the Prometric exams, and get listed on the Delaware Nurse Aide Registry via DHCQ.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Matches top informational query."
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in DE.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard task variant."
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the DHCQ exam via Prometric.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard application intent."
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to Delaware.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard reciprocity intent."
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Delaware Division of Health Care Quality (DHCQ)",
+      "phone": "302-577-6666",
+      "fax": "",
+      "contact_url": "mailto:DECNA@prometric.com",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Delaware",
+        "dek": "Learn Delaware DHCQ requirements, complete a 150-hour approved training program, and prepare for the Prometric skills and knowledge tests."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Delaware | DHCQ Requirements",
+        "description": "Step-by-step guide to getting your CNA license in DE. Learn about the 150-hour training requirement and Prometric testing.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "150 hours (75 classroom, 75 clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Delaware CNA State Exam Application",
+        "dek": "Apply via Prometric to take the Delaware Nurse Aide competency evaluation."
+      },
+      "seo": {
+        "title": "Delaware CNA Exam Application | Prometric Guide",
+        "description": "Apply for DE CNA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Delaware",
+        "dek": "Transfer an active out-of-state CNA to DE."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Delaware | Reciprocity",
+        "description": "Learn how to transfer your active out-of-state CNA license to DE.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [
+      "transfer reciprocity detailed forms"
+    ],
+    "source_backed_only": true
+  }
+}

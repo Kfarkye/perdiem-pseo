@@ -1,0 +1,148 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "iowa-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "ia::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Iowa",
+    "abbr": "IA"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nursing Assistant",
+    "short_label": "CNA",
+    "aliases": []
+  },
+  "container": {
+    "label": "Becoming a CNA in Iowa",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 75 hours of DIA-approved training and pass the Prometric competency exam to join the Iowa Direct Care Worker Registry.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Standard intent"
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "How to become a CNA in IA.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Prometric exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Application intent"
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Iowa.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Iowa Department of Inspections and Appeals (DIA)",
+      "phone": "515-281-4115",
+      "fax": "",
+      "contact_url": "",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Iowa",
+        "dek": "Learn DIA requirements, complete a 75-hour program, and pass the Prometric exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Iowa",
+        "description": "Step-by-step guide to Iowa CNA certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "75 hours (45 classroom, 30 clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Iowa CNA State Exam Application",
+        "dek": "Apply to take the Prometric Nurse Aide evaluation."
+      },
+      "seo": {
+        "title": "Iowa CNA Exam Application",
+        "description": "Apply for IA CNA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Iowa",
+        "dek": "Transfer via Interstate Endorsement using the Iowa Direct Care Worker Registry."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Iowa",
+        "description": "Transfer your active out-of-state CNA to IA.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

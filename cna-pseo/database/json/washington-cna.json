@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-24",
   "seo": {
-    "title": "Washington CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "Washington CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Washington - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity washington, how to transfer CNA license to washington, washington CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "85 hours",
+    "exam_name": "NNAAP (Prometric)",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -127,5 +130,84 @@
     "registry": "https://fortress.wa.gov/doh/providercredentialsearch/",
     "exam_portal": "https://www.credentia.com/test-takers/wa",
     "info_page": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702/nursing-assistant"
+  },
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become a NAC in WA.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Washington.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a NAC in Washington",
+        "dek": "Learn WA DOH requirements, complete an 85-hour program, and pass the Pearson VUE exam."
+      },
+      "seo": {
+        "title": "How to Become a NAC in Washington",
+        "description": "Step-by-step guide to Washington NAC certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "85 hours (35 classroom, 50 clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "Oregon",
+      "url": "oregon-cna.html"
+    },
+    {
+      "label": "Idaho",
+      "url": "idaho-cna.html"
+    },
+    {
+      "label": "California",
+      "url": "california-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "certification",
+    "display_label": "CNA Certification",
+    "credential_short": "CNA Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement",
+    "registry_name": "Washington Nurse Aide Registry",
+    "page_title_term": "Certification"
   }
 }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CNA License Requirements by State | Nurse Aide Registry Guide</title>
+  <meta name="description" content="Find the training, transfer, and competency exam requirements to become a Certified Nursing Assistant (CNA) in your state. A complete A-Z registry guide.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://dist-v2-two.vercel.app/">
+  
+  <style>
+    /* Obsidian Weissach Tokens */
+    :root {
+      --font-serif: "Source Serif 4", serif;
+      --font-sans: "Karla", sans-serif;
+      --color-bg: #fafafa;
+      --color-surface: #ffffff;
+      --color-text: #111111;
+      --color-text-muted: #666666;
+      --color-border: #e2e8f0;
+      --color-accent: #0f172a;
+      --radius-md: 8px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 4rem 2rem;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      text-align: center;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .dek {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .state-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .state-card {
+      display: block;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      text-decoration: none;
+      color: var(--color-text);
+      transition: all 0.2s ease;
+    }
+    .state-card:hover {
+      border-color: var(--color-accent);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transform: translateY(-2px);
+    }
+    .state-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem 0;
+    }
+    .profession-label {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin: 0;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {% for state in states_list %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "url": "{{ base_url }}/{{ state.slug }}"
+      }{{ ',' if not loop.last }}
+      {% endfor %}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Certified Nursing Assistant License Requirements by State</h1>
+    <p class="dek">Select your state below to find official nurse aide training hours, state exam processes, and out-of-state transfer requirements.</p>
+  </header>
+  
+  <main>
+    <div class="state-grid">
+      {% for state in states_list %}
+      <a href="{{ base_url }}/{{ state.slug }}" class="state-card" data-state="{{ state.abbr }}">
+        <h2 class="state-name">{{ state.name }}</h2>
+        <p class="profession-label">{{ state.profession_label }} Requirements →</p>
+      </a>
+      {% endfor %}
+    </div>
+  </main>
+</body>
+</html>

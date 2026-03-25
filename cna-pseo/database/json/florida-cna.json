@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-24",
   "seo": {
-    "title": "Florida CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "Florida CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Florida - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity florida, how to transfer CNA license to florida, florida CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "120 hours",
+    "exam_name": "NNAAP (Prometric)",
+    "ce_requirement": "24 hours in-service required"
   },
   "license_types": [
     {
@@ -148,5 +151,111 @@
     "exam_portal": "https://www.prometric.com/nurseaide/fl",
     "application_portal": "https://www.flhealthsource.gov",
     "transfer_portal": "https://www.flhealthsource.gov"
+  },
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in Florida.",
+        "evidence_considered": [
+          "Search volume heavily favors 'become a CNA'"
+        ],
+        "rejected_alternatives": [
+          "Initial Certification"
+        ],
+        "selection_reason": "Aligns with task-based search intent."
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to Florida.",
+        "evidence_considered": [
+          "Search queries heavily favor 'transfer CNA license to Florida'"
+        ],
+        "rejected_alternatives": [
+          "Reciprocity",
+          "Endorsement"
+        ],
+        "selection_reason": "User intent vocabulary dominates."
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a CNA in Florida",
+        "dek": "Learn Florida Board of Nursing requirements, find state-approved programs, and prepare for the state exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Florida | Requirements & Steps",
+        "description": "Step-by-step guide to getting your CNA license in Florida. Learn about Level 2 Background checks, Prometric exam challenge routes, and training.",
+        "target_queries": [
+          "how to become a cna in florida",
+          "florida cna requirements",
+          "challenge cna exam in florida"
+        ]
+      },
+      "faq_heading": "Common Questions about Getting a CNA in Florida",
+      "cards": [
+        {
+          "key": "background",
+          "label": "Background Check",
+          "value": "Level II Live Scan required",
+          "status": "confirmed"
+        },
+        {
+          "key": "pathways",
+          "label": "Routes",
+          "value": "Training Program or Challenger Route",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "requirements",
+          "label": "Basic Requirements",
+          "body": "Florida offers a unique 'Challenger Route' where candidates 18 or older with a high school diploma can take the state exam without completing a formal program, though passing the Level II background check is mandatory regardless of route.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I challenge the CNA exam in Florida?",
+          "a": "Yes, Florida allows individuals 18 or older with a high school diploma to challenge the CNA exam without attending a formal CNA program."
+        }
+      ]
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "Georgia",
+      "url": "georgia-cna.html"
+    },
+    {
+      "label": "Alabama",
+      "url": "alabama-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "certification",
+    "display_label": "CNA Certification",
+    "credential_short": "CNA Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement",
+    "registry_name": "Florida Nurse Aide Registry",
+    "page_title_term": "Certification"
   }
 }

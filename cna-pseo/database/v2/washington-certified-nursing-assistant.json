@@ -1,0 +1,150 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "washington-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "wa::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Washington",
+    "abbr": "WA"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Nursing Assistant Certified",
+    "short_label": "NAC",
+    "aliases": [
+      "CNA"
+    ]
+  },
+  "container": {
+    "label": "Becoming a NAC in Washington",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 85 hours of DOH-approved training and pass the Pearson VUE competency exam.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Standard intent"
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "How to become a NAC in WA.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Pearson VUE exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Application intent"
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Washington.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Washington Department of Health (DOH)",
+      "phone": "360-236-4700",
+      "fax": "",
+      "contact_url": "",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a NAC in Washington",
+        "dek": "Learn WA DOH requirements, complete an 85-hour program, and pass the Pearson VUE exam."
+      },
+      "seo": {
+        "title": "How to Become a NAC in Washington",
+        "description": "Step-by-step guide to Washington NAC certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "85 hours (35 classroom, 50 clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Washington NAC State Exam Application",
+        "dek": "Apply to take the Pearson VUE Nursing Assistant evaluation."
+      },
+      "seo": {
+        "title": "Washington NAC Exam Application",
+        "description": "Apply for WA NAC testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Washington",
+        "dek": "Transfer via Endorsement through the WA DOH Nursing Commission."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Washington",
+        "description": "Transfer your active out-of-state CNA to WA.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

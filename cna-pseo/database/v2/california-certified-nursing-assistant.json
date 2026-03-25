@@ -1,0 +1,236 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "california-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": ["becoming", "state_application", "transfer"]
+  },
+  "analytics": {
+    "entity_key": "ca::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "California",
+    "abbr": "CA"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nurse Assistant",
+    "short_label": "CNA",
+    "aliases": ["C.N.A."]
+  },
+  "container": {
+    "label": "Becoming a CNA in California",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 150 hours of state-approved training, submit a Live Scan background check, and pass the competency evaluation in California.",
+    "evidence_considered": ["High search volume for 'how to become a cna in california'"],
+    "rejected_alternatives": ["CNA Certification CA"],
+    "selection_reason": "Matches top-of-funnel informational query."
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in California.",
+        "evidence_considered": ["Search volume heavily favors 'become a CNA'"],
+        "rejected_alternatives": ["Initial Certification"],
+        "selection_reason": "Aligns with task-based search intent."
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the CDPH registry and exam.",
+        "evidence_considered": ["CDPH initial certification form 283B searches"],
+        "rejected_alternatives": ["Exam Route"],
+        "selection_reason": "Captures the application submission task via CDPH 283B."
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to California.",
+        "evidence_considered": ["Search queries heavily favor 'transfer CNA license to California' over 'CNA endorsement CA'"],
+        "rejected_alternatives": ["Endorsement"],
+        "selection_reason": "User intent vocabulary dominates over CDPH ATCS board terms."
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "CDPH Aide and Technician Certification Section (ATCS)",
+      "phone": "916-327-2445",
+      "fax": "",
+      "contact_url": "mailto:cna@cdph.ca.gov",
+      "website": "https://www.cdph.ca.gov/",
+      "verify_url": "https://cvl.cdph.ca.gov/SearchPage.aspx"
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [
+    {
+      "task_key": "verification",
+      "public_label": "CNA Registry Lookup",
+      "label_source": "top_ranking_sites",
+      "evidence_considered": ["Employers search 'California CNA registry lookup'"],
+      "selection_reason": "Standard verification syntax.",
+      "likely_needed": true
+    },
+    {
+      "task_key": "renewal",
+      "public_label": "CNA Renewal",
+      "label_source": "google_autocomplete",
+      "evidence_considered": ["'California CNA license renewal CDPH 283C' is a top query"],
+      "selection_reason": "Matches established CDPH lifecycle term.",
+      "likely_needed": true
+    }
+  ],
+  "candidate_supporting_pages": [
+    {
+      "task_key": "verification",
+      "slug": "california-certified-nursing-assistant/lookup",
+      "title": "California CNA Registry Lookup & License Verification",
+      "reason": "High-volume employer query."
+    },
+    {
+      "task_key": "renewal",
+      "slug": "california-certified-nursing-assistant/renewal",
+      "title": "How to Renew Your California CNA License",
+      "reason": "Retention/lifecycle topic."
+    }
+  ],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in California",
+        "dek": "Learn CDPH requirements, find a 150-hour approved training program, and prepare for the state evaluation."
+      },
+      "seo": {
+        "title": "How to Become a CNA in California | CDPH Requirements",
+        "description": "Step-by-step guide to getting your CNA license in California. Learn about the 150-hour training requirement, Live Scan background checks, and the CDPH exam.",
+        "target_queries": ["how to become a cna in california", "california cna requirements", "cna classes in california"]
+      },
+      "faq_heading": "Common Questions about Getting a CNA in California",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "150 hours (60 classroom, 100 clinical)",
+          "status": "confirmed"
+        },
+        {
+          "key": "background",
+          "label": "Background Check",
+          "value": "Live Scan fingerprinting",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "requirements",
+          "label": "Basic Requirements",
+          "body": "To train as a CNA in California, you must be 16 years old, complete Live Scan fingerprinting, and clear a background check.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many hours of training do I need to be a CNA in California?",
+          "a": "California requires more training than the federal minimum: a total of 150 hours, consisting of 50 hours of theory and 100 hours of clinical training."
+        }
+      ]
+    },
+    "state_application": {
+      "hero": {
+        "title": "California CNA State Exam Application",
+        "dek": "Apply via CDPH form 283B to take the Nurse Assistant competency evaluation."
+      },
+      "seo": {
+        "title": "California CNA Exam Application (CDPH 283B) | Registry Guide",
+        "description": "How to apply for the California CNA state exam using form CDPH 283B and get your official Nurse Assistant certification.",
+        "target_queries": ["california cna exam application", "cdph 283b form"]
+      },
+      "faq_heading": "Application & Registration Questions",
+      "cards": [
+        {
+          "key": "form_name",
+          "label": "Application Form",
+          "value": "CDPH 283B",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "process",
+          "label": "Application Steps",
+          "body": "Submit the Initial Application (CDPH 283B) before or during your training program, complete Live Scan, and pass both parts of the competency test.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "What form is required to apply for CNA testing in California?",
+          "a": "You must submit the CDPH 283B Certified Nurse Assistant Initial Application to the Aide and Technician Certification Section."
+        }
+      ]
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to California",
+        "dek": "California allows active out-of-state CNAs to transfer via Endorsement (Reciprocity) without retaking the training."
+      },
+      "seo": {
+        "title": "Transfer CNA License to California | Endorsement Steps",
+        "description": "Learn how to transfer your active out-of-state CNA license to CDPH in California using forms 283B and 931 for Nurse Assistant endorsement.",
+        "target_queries": ["transfer cna license to california", "california cna reciprocity form 931"]
+      },
+      "faq_heading": "Questions about Transferring your CNA to California",
+      "cards": [
+        {
+          "key": "process",
+          "label": "Process Name",
+          "value": "Endorsement (Reciprocity)",
+          "status": "confirmed"
+        },
+        {
+          "key": "proof_of_work",
+          "label": "Proof of Work required",
+          "value": "W2 or Paystub (if certified > 2 years)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [
+        {
+          "key": "eligibility",
+          "label": "Transfer Requirements",
+          "body": "Submit forms CDPH 283B and CDPH 931. You must show an active out-of-state certification and clear a California Live Scan background check. If certified out-of-state for more than 2 years, proof of recent paid work is required.",
+          "items": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I transfer my CNA license to California?",
+          "a": "Submit the CDPH 283B Initial Application and CDPH 931 Verification form, pass a Live Scan background check, and provide proof of recent work if your license is over two years old."
+        }
+      ],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

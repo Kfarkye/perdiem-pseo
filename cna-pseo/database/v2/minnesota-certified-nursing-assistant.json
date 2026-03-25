@@ -1,0 +1,150 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "minnesota-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "mn::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Minnesota",
+    "abbr": "MN"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Nursing Assistant",
+    "short_label": "NA",
+    "aliases": [
+      "CNA"
+    ]
+  },
+  "container": {
+    "label": "Becoming a NA in Minnesota",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 75 hours of MDH-approved training and pass the Pearson VUE competency exam to join the Minnesota Nursing Assistant Registry.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Standard intent"
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "How to become a NA in MN.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Pearson VUE exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Application intent"
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Minnesota.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Minnesota Department of Health (MDH)",
+      "phone": "651-201-3731",
+      "fax": "",
+      "contact_url": "",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a NA in Minnesota",
+        "dek": "Learn MDH requirements, complete a 75-hour program, and pass the Pearson VUE exam."
+      },
+      "seo": {
+        "title": "How to Become a NA in Minnesota",
+        "description": "Step-by-step guide to Minnesota NA certification.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "75 hours (16 classroom, 59 clinical)",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Minnesota NA State Exam Application",
+        "dek": "Apply to take the Pearson VUE Nursing Assistant evaluation."
+      },
+      "seo": {
+        "title": "Minnesota NA Exam Application",
+        "description": "Apply for MN NA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Minnesota",
+        "dek": "Transfer via Interstate Endorsement using the Minnesota NA Registry."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Minnesota",
+        "description": "Transfer your active out-of-state CNA to MN.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

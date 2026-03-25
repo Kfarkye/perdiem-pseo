@@ -1,0 +1,148 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "mississippi-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "ms::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Mississippi",
+    "abbr": "MS"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nurse Aide",
+    "short_label": "CNA",
+    "aliases": []
+  },
+  "container": {
+    "label": "Becoming a CNA in Mississippi",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 75 hours of state-approved training and pass the Credentia exam.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Standard intent"
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "How to become a CNA in MS.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Credentia exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Application intent"
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Mississippi.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Mississippi State Department of Health",
+      "phone": "601-364-1100",
+      "fax": "",
+      "contact_url": "",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Mississippi",
+        "dek": "Learn MSDH requirements, complete a 75-hour program, and pass the Credentia exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Mississippi",
+        "description": "Step-by-step guide.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "75 hours",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Mississippi CNA State Exam Application",
+        "dek": "Apply to take the Credentia Nurse Aide evaluation."
+      },
+      "seo": {
+        "title": "Mississippi CNA Exam Application",
+        "description": "Apply for MS CNA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Mississippi",
+        "dek": "Transfer via Reciprocity using the Nurse Aide Registry."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Mississippi",
+        "description": "Transfer your active out-of-state CNA to MS.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

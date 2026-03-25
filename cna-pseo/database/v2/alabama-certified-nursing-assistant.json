@@ -1,0 +1,150 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "alabama-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "al::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Alabama",
+    "abbr": "AL"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nurse Aide",
+    "short_label": "CNA",
+    "aliases": [
+      "N.A."
+    ]
+  },
+  "container": {
+    "label": "Becoming a CNA in Alabama",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 120 hours of training and pass the Prometric competency exam to join the Alabama Nurse Aide Registry.",
+    "evidence_considered": [],
+    "rejected_alternatives": [],
+    "selection_reason": "Standard intent"
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "How to become a CNA in AL.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Task variant"
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Alabama Prometric exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Application intent"
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA to Alabama.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Reciprocity intent"
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Alabama Department of Public Health (ADPH)",
+      "phone": "334-206-5169",
+      "fax": "",
+      "contact_url": "mailto:NARegistry@adph.state.al.us",
+      "website": "",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Alabama",
+        "dek": "Learn ADPH requirements, complete a 120-hour program, and pass the Prometric exam."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Alabama",
+        "description": "Step-by-step guide to the 120-hour training requirement and testing.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "120 hours",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Alabama CNA State Exam Application",
+        "dek": "Apply to take the evaluation via Prometric."
+      },
+      "seo": {
+        "title": "Alabama CNA Exam Application",
+        "description": "Apply for AL CNA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Alabama",
+        "dek": "Transfer via Reciprocity using the ADPH Nurse Aide Registry."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Alabama",
+        "description": "Transfer your active out-of-state CNA to AL.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [],
+    "source_backed_only": true
+  }
+}

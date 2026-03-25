@@ -14,7 +14,7 @@
   "credential_nomenclature": "CNA",
   "last_updated": "2026-03-22",
   "seo": {
-    "title": "Connecticut CNA License Reciprocity - How to Transfer Your Certification (2026)",
+    "title": "Connecticut CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Connecticut - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity connecticut, how to transfer CNA license to connecticut, connecticut CNA endorsement application"
   },
@@ -34,7 +34,10 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "training_hours": "100 hours",
+    "exam_name": "NNAAP (Prometric)",
+    "ce_requirement": "No CE required; must work 8+ hours"
   },
   "license_types": [
     {
@@ -130,5 +133,84 @@
     "board_source_url": "https://portal.ct.gov/DPH"
   },
   "slug": "connecticut-cna",
-  "specialty": "cna"
+  "specialty": "cna",
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in CT.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard task variant."
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to Connecticut.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard reciprocity intent."
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "manual",
+        "description": "Renew your active license.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard phase"
+      }
+    ]
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Becoming a CNA in Connecticut",
+        "dek": "Learn Connecticut DPH requirements, find a 100-hour approved training program, and prepare for the Prometric evaluation."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Connecticut | DPH Requirements",
+        "description": "Step-by-step guide to getting your CNA license in CT. Learn about the 100-hour training requirement and the Prometric exam.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "100 hours",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    }
+  },
+  "nearby_state_links": [
+    {
+      "label": "New York",
+      "url": "new-york-cna.html"
+    },
+    {
+      "label": "Massachusetts",
+      "url": "massachusetts-cna.html"
+    },
+    {
+      "label": "Rhode Island",
+      "url": "rhode-island-cna.html"
+    }
+  ],
+  "credential_type": {
+    "official_term": "certification",
+    "display_label": "CNA Certification",
+    "credential_short": "CNA Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement",
+    "registry_name": "Connecticut Nurse Aide Registry",
+    "page_title_term": "Certification"
+  }
 }

@@ -1,0 +1,154 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "connecticut-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": [
+      "becoming",
+      "state_application",
+      "transfer"
+    ]
+  },
+  "analytics": {
+    "entity_key": "ct::cna",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "Connecticut",
+    "abbr": "CT"
+  },
+  "profession": {
+    "key": "cna",
+    "display_label": "Certified Nurse Aide",
+    "short_label": "CNA",
+    "aliases": [
+      "C.N.A."
+    ]
+  },
+  "container": {
+    "label": "Becoming a CNA in Connecticut",
+    "label_source": "google_autocomplete",
+    "intro": "Complete 100 hours of state-approved training, pass the Prometric competency exam, and get listed on the Connecticut DPH Nurse Aide Registry.",
+    "evidence_considered": [
+      "High search volume for 'how to become a cna in ct'"
+    ],
+    "rejected_alternatives": [],
+    "selection_reason": "Matches top informational query."
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "google_autocomplete",
+        "description": "Information on how to become a CNA in CT.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard task variant."
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "search_console_intent",
+        "description": "Apply for the Prometric exam.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard application intent."
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "google_autocomplete",
+        "description": "Transfer an active out-of-state CNA license to Connecticut.",
+        "evidence_considered": [],
+        "rejected_alternatives": [],
+        "selection_reason": "Standard reciprocity intent."
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "Connecticut Department of Public Health (DPH) & Prometric",
+      "phone": "866-499-7485",
+      "fax": "",
+      "contact_url": "mailto:CTCNA@Prometric.com",
+      "website": "https://portal.ct.gov/DPH",
+      "verify_url": ""
+    },
+    "last_verified": "2026-03-24",
+    "source_count": 3
+  },
+  "task_signals": [],
+  "candidate_supporting_pages": [],
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in Connecticut",
+        "dek": "Learn Connecticut DPH requirements, find a 100-hour approved training program, and prepare for the Prometric evaluation."
+      },
+      "seo": {
+        "title": "How to Become a CNA in Connecticut | DPH Requirements",
+        "description": "Step-by-step guide to getting your CNA license in CT. Learn about the 100-hour training requirement and the Prometric exam.",
+        "target_queries": []
+      },
+      "faq_heading": "Common Questions",
+      "cards": [
+        {
+          "key": "training_hours",
+          "label": "Required Training",
+          "value": "100 hours",
+          "status": "confirmed"
+        }
+      ],
+      "sections": [],
+      "faq": []
+    },
+    "state_application": {
+      "hero": {
+        "title": "Connecticut CNA State Exam Application",
+        "dek": "Apply to take the Nurse Aide competency evaluation via Prometric."
+      },
+      "seo": {
+        "title": "Connecticut CNA Exam Application | Prometric Registry Guide",
+        "description": "Apply for CT CNA testing.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": []
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to Connecticut",
+        "dek": "Transfer an active out-of-state CNA to CT via Route 8 Endorsement."
+      },
+      "seo": {
+        "title": "Transfer CNA License to Connecticut | CT CNA Endorsement",
+        "description": "Learn how to transfer your active out-of-state CNA license to CT.",
+        "target_queries": []
+      },
+      "faq_heading": "",
+      "cards": [],
+      "sections": [],
+      "faq": [],
+      "temporary_license": {
+        "enabled": false,
+        "hero": {
+          "title": "",
+          "dek": ""
+        },
+        "cards": [],
+        "sections": []
+      }
+    }
+  },
+  "validation_notes": {
+    "materially_distinct_variant_warning": "",
+    "uncertain_fields": [
+      "transfer reciprocity details"
+    ],
+    "source_backed_only": true
+  }
+}

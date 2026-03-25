@@ -1,0 +1,138 @@
+{
+  "page_type": "license_path_detail",
+  "routing": {
+    "canonical_slug": "north-carolina-certified-nursing-assistant",
+    "variant_param": "path",
+    "allowed_variants": ["becoming", "state_application", "transfer"]
+  },
+  "analytics": {
+    "entity_key": "north-carolina::certified-nursing-assistant",
+    "default_variant": "becoming"
+  },
+  "state": {
+    "name": "North Carolina",
+    "abbr": "NC"
+  },
+  "profession": {
+    "key": "certified-nursing-assistant",
+    "display_label": "Certified Nursing Assistant",
+    "short_label": "CNA",
+    "aliases": ["nurse aide", "nursing assistant", "cna"]
+  },
+  "container": {
+    "label": "Becoming a Certified Nursing Assistant",
+    "label_source": "search",
+    "intro": "Choose the path that matches your situation."
+  },
+  "selector": {
+    "default_variant": "becoming",
+    "variants": [
+      {
+        "key": "becoming",
+        "label": "Becoming",
+        "label_source": "search",
+        "description": "Starting your path as a new applicant."
+      },
+      {
+        "key": "state_application",
+        "label": "State Application",
+        "label_source": "aya",
+        "description": "Applying through this state's standard process."
+      },
+      {
+        "key": "transfer",
+        "label": "Transfer",
+        "label_source": "search",
+        "description": "Moving in from another state."
+      }
+    ]
+  },
+  "shared_facts": {
+    "board": {
+      "name": "North Carolina Board of Nursing: Nurse Aide",
+      "phone": "919-782-3211",
+      "fax": "919-733-9764",
+      "contact_url": "https://www.ncbon.com/contact-contact-information",
+      "website": "https://ncnar.ncdhhs.gov/index1.jsp",
+      "verify_url": "https://ncnar.ncdhhs.gov/verify_listings1.jsp"
+    },
+    "last_verified": "2026-03-23",
+    "source_count": 1
+  },
+  "variants": {
+    "becoming": {
+      "hero": {
+        "title": "Becoming a CNA in North Carolina",
+        "dek": "Start with the training, testing, and registry requirements."
+      },
+      "seo": {
+        "title": "How to Become a CNA in North Carolina",
+        "description": "North Carolina CNA requirements, training, testing, and registry steps.",
+        "target_queries": ["how to become a cna in north carolina", "north carolina cna requirements"]
+      },
+      "cards": [
+        { "key": "training_path", "label": "Training Path", "value": "State-approved program", "status": "confirmed" },
+        { "key": "exam", "label": "Exam", "value": "Competency evaluation required", "status": "confirmed" },
+        { "key": "fee", "label": "Fee", "value": "Check provider", "status": "unknown" }
+      ],
+      "sections": [],
+      "faq": [
+        {
+          "q": "What training is required to become a CNA in North Carolina?",
+          "a": "A state-approved program is required."
+        },
+        {
+          "q": "Is an exam required to become a CNA in North Carolina?",
+          "a": "Yes, a competency evaluation is required."
+        }
+      ]
+    },
+    "state_application": {
+      "hero": {
+        "title": "North Carolina CNA State Application",
+        "dek": "Use the state's standard route if you are applying directly in North Carolina."
+      },
+      "seo": {
+        "title": "North Carolina CNA State Application",
+        "description": "Apply for CNA certification in North Carolina through the standard state process.",
+        "target_queries": ["north carolina cna application", "north carolina nurse aide application"]
+      },
+      "cards": [
+        { "key": "timeline", "label": "Timeline", "value": "Varies by training and test completion", "status": "estimated" },
+        { "key": "required_steps", "label": "Required Steps", "value": "Training, exam, registry listing", "status": "confirmed" },
+        { "key": "fee", "label": "Fee", "value": "Check approved provider", "status": "unknown" }
+      ],
+      "sections": [],
+      "faq": [
+        {
+          "q": "What is the standard CNA application path in North Carolina?",
+          "a": "Complete approved training, pass the competency evaluation, then complete registry listing requirements."
+        }
+      ]
+    },
+    "transfer": {
+      "hero": {
+        "title": "Transfer a CNA License to North Carolina",
+        "dek": "North Carolina may allow registry listing by reciprocity if you meet the out-of-state criteria."
+      },
+      "seo": {
+        "title": "North Carolina CNA Reciprocity and Transfer",
+        "description": "Transfer a CNA license to North Carolina, including fee, timing, and eligibility.",
+        "target_queries": ["transfer cna license to north carolina", "north carolina cna reciprocity"]
+      },
+      "cards": [
+        { "key": "timeline", "label": "Timeline", "value": "10 business days", "status": "confirmed" },
+        { "key": "extra_steps", "label": "Extra Steps", "value": "Registry check, ID match, work-history review", "status": "confirmed" },
+        { "key": "fee", "label": "Fee", "value": "No fee", "status": "confirmed" }
+      ],
+      "temporary_license": { "enabled": false, "cards": [], "sections": [] },
+      "sections": [],
+      "faq": [
+        {
+          "q": "Is there a fee to transfer a CNA license to North Carolina?",
+          "a": "No, there is currently no fee."
+        }
+      ]
+    }
+  }
+}
