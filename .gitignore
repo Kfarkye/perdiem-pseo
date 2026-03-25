@@ -23,3 +23,4 @@ qa_*.csv
 .vscode/
 .idea/
 .vercel
+.env
