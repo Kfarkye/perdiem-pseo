@@ -547,6 +547,1153 @@
         "cost": "Oregon\u2019s pharmacy technician application totals $115: a $70 application fee plus a $45 national fingerprint background check fee. The board\u2019s renewal FAQ lists a $104 renewal total before late fees.",
         "timeline": "The Oregon Board of Pharmacy says pharmacy technician applications usually take about 4 to 6 weeks to process once all materials are in."
       }
+    },
+    "alabama-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://albop.com/technician-application/",
+      "sources": {
+        "fee": "https://albop.com/technician-application/",
+        "timeline": "https://albop.com/technician-application/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "Registration fee (includes criminal background check): $100.00",
+        "renewal_fee": "$40",
+        "renewal_cycle": "Annually",
+        "processing_time": "Not published by board",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 100,
+        "processing_time": "Not published by board",
+        "board_url": "https://albop.com/technician-application/",
+        "endorsement_url": "https://albop.com/technician-application/"
+      }
+    },
+    "alaska-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx",
+      "sources": {
+        "fee": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx",
+        "timeline": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$200",
+        "fee_breakdown": "Application Fee: $100, Initial License Fee: $100",
+        "renewal_fee": "$100",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 200,
+        "processing_time": "Not published by board",
+        "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx",
+        "endorsement_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx"
+      }
+    },
+    "arkansas-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.arkansas.gov/pharmacy/",
+      "sources": {
+        "fee": "https://www.arkansas.gov/pharmacy/PDFs/techpacket.pdf",
+        "timeline": "https://www.arkansas.gov/pharmacy/PDFs/techpacket.pdf"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "New Registration: $100.00",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Annually",
+        "processing_time": "4 to 6 Weeks",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 100,
+        "processing_time": "4 to 6 Weeks",
+        "board_url": "https://www.arkansas.gov/pharmacy/",
+        "endorsement_url": "https://www.arkansas.gov/pharmacy/"
+      }
+    },
+    "colorado-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://dpo.colorado.gov/Pharmacy/Applications",
+      "sources": {
+        "fee": "https://dpo.colorado.gov/Pharmacy/Applications",
+        "timeline": "https://dpo.colorado.gov/Pharmacy/Applications"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$33",
+        "fee_breakdown": "$30.00 Application Fee, $3.00 Background Check Fee",
+        "renewal_fee": "$30.00",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "0.6 to 1 Week",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 33,
+        "processing_time": "0.6 to 1 Week",
+        "board_url": "https://dpo.colorado.gov/Pharmacy/Applications",
+        "endorsement_url": "https://dpo.colorado.gov/Pharmacy/Applications"
+      }
+    },
+    "connecticut-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration",
+      "sources": {
+        "fee": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration",
+        "timeline": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "Initial/Endorsement Application Fee: $100.00",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Annually",
+        "processing_time": "3 to 4 Weeks",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 100,
+        "processing_time": "3 to 4 Weeks",
+        "board_url": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration",
+        "endorsement_url": "https://portal.ct.gov/dph/licensing/pt/pharmacy-technician-registration"
+      }
+    },
+    "delaware-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://dpr.delaware.gov/boards/pharmacy/forms/pharmtech/",
+      "sources": {
+        "fee": "https://dpr.delaware.gov/boards/pharmacy/",
+        "timeline": "https://dpr.delaware.gov/boards/pharmacy/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$40",
+        "fee_breakdown": "Application fee: $40.00",
+        "renewal_fee": "$40",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 40,
+        "processing_time": "Not published by board",
+        "board_url": "https://dpr.delaware.gov/boards/pharmacy/forms/pharmtech/",
+        "endorsement_url": "https://dpr.delaware.gov/boards/pharmacy/forms/pharmtech/"
+      }
+    },
+    "dc-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://dchealth.dc.gov/node/1523456",
+      "sources": {
+        "fee": "https://dchealth.dc.gov/node/1523456",
+        "timeline": "https://dchealth.dc.gov/node/1523456"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$200",
+        "fee_breakdown": "Application for Licensure by Endorsement/Reciprocity: $200",
+        "renewal_fee": "$200",
+        "renewal_cycle": "Every 2 years (expires Dec 31 of odd-numbered years)",
+        "processing_time": "4 to 6 Weeks",
+        "license_duration": "Up to 2 Years (expires Dec 31 of odd-numbered years)"
+      },
+      "reciprocity": {
+        "endorsement_fee": 200,
+        "processing_time": "4 to 6 Weeks",
+        "board_url": "https://dchealth.dc.gov/node/1523456",
+        "endorsement_url": "https://dchealth.dc.gov/node/1523456"
+      }
+    },
+    "georgia-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://gbp.georgia.gov/pharmacy-technician-information",
+      "sources": {
+        "fee": "https://gbp.georgia.gov/laws-rules-and-policies",
+        "timeline": "https://gbp.georgia.gov/laws-rules-and-policies"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "Initial Registration Fee: $100",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 100,
+        "processing_time": "Not published by board",
+        "board_url": "https://gbp.georgia.gov/pharmacy-technician-information",
+        "endorsement_url": "https://gbp.georgia.gov/pharmacy-technician-information"
+      }
+    },
+    "hawaii-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/application_forms/",
+      "sources": {
+        "fee": "https://cca.hawaii.gov/pvl/files/2024/01/PHAR_Tech_InitialInstructions_01.2024.pdf",
+        "timeline": "https://cca.hawaii.gov/pvl/files/2024/01/PHAR_Tech_InitialInstructions_01.2024.pdf"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$65",
+        "fee_breakdown": "Application fee: $40.00, Compliance Resolution Fund fee: $25.00",
+        "renewal_fee": "$65",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 65,
+        "processing_time": "Not published by board",
+        "board_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/application_forms/",
+        "endorsement_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/application_forms/"
+      }
+    },
+    "idaho-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://bop.idaho.gov/licensing/pharmacy-technicians/",
+      "sources": {
+        "fee": "https://bop.idaho.gov/licensing/pharmacy-technicians/",
+        "timeline": "https://bop.idaho.gov/licensing/pharmacy-technicians/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$35",
+        "fee_breakdown": "Application (Initial Registration): $35.00",
+        "renewal_fee": "$35",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "2 to 3 Weeks",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 35,
+        "processing_time": "2 to 3 Weeks",
+        "board_url": "https://bop.idaho.gov/licensing/pharmacy-technicians/",
+        "endorsement_url": "https://bop.idaho.gov/licensing/pharmacy-technicians/"
+      }
+    },
+    "indiana-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.in.gov/pla/professions/board-of-pharmacy/pharmacy-technicians/",
+      "sources": {
+        "fee": "https://www.in.gov/pla/professions/board-of-pharmacy/pharmacy-technicians/",
+        "timeline": "https://www.in.gov/pla/professions/board-of-pharmacy/pharmacy-technicians/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$25",
+        "fee_breakdown": "Application Fee: $25.00",
+        "renewal_fee": "$25.00",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "1 to 2 Weeks",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 25,
+        "processing_time": "1 to 2 Weeks",
+        "board_url": "https://www.in.gov/pla/professions/board-of-pharmacy/pharmacy-technicians/",
+        "endorsement_url": "https://www.in.gov/pla/professions/board-of-pharmacy/pharmacy-technicians/"
+      }
+    },
+    "iowa-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://pharmacy.iowa.gov/licensing/license-type-information/pharmacy-technician",
+      "sources": {
+        "fee": "https://pharmacy.iowa.gov/licensing/license-type-information/pharmacy-technician",
+        "timeline": "https://pharmacy.iowa.gov/licensing/license-type-information/pharmacy-technician"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$35",
+        "fee_breakdown": "Initial registration fee: $35",
+        "renewal_fee": "$35",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "1 to 2 Weeks",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 35,
+        "processing_time": "1 to 2 Weeks",
+        "board_url": "https://pharmacy.iowa.gov/licensing/license-type-information/pharmacy-technician",
+        "endorsement_url": "https://pharmacy.iowa.gov/licensing/license-type-information/pharmacy-technician"
+      }
+    },
+    "kansas-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://pharmacy.ks.gov/licenses-registrations/technician-registration",
+      "sources": {
+        "fee": "https://pharmacy.ks.gov/licenses-registrations/technician-registration",
+        "timeline": "https://pharmacy.ks.gov/licenses-registrations/technician-registration"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$50",
+        "fee_breakdown": "New Pharmacy Technician Registration Fee: $50, Annual Renewal Fee: $50, Late Renewal Fee: $100",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every 1 year",
+        "processing_time": "Not published by board",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 50,
+        "processing_time": "Not published by board",
+        "board_url": "https://pharmacy.ks.gov/licenses-registrations/technician-registration",
+        "endorsement_url": "https://pharmacy.ks.gov/licenses-registrations/technician-registration"
+      }
+    },
+    "kentucky-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://kycba.ky.gov/boards/pharmacy",
+      "sources": {
+        "fee": "https://kycba.ky.gov/boards/pharmacy/Pages/Pharmacy-Technician.aspx",
+        "timeline": "https://kycba.ky.gov/boards/pharmacy/Pages/Pharmacy-Technician.aspx"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$25",
+        "fee_breakdown": "Initial Registration Fee: $25",
+        "renewal_fee": "$25",
+        "renewal_cycle": "Every 1 year",
+        "processing_time": "Not published by board",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 25,
+        "processing_time": "Not published by board",
+        "board_url": "https://kycba.ky.gov/boards/pharmacy",
+        "endorsement_url": "https://kycba.ky.gov/boards/pharmacy"
+      }
+    },
+    "louisiana-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.pharmacy.la.gov/page/initial-licensure-for-pharmacy-technicians",
+      "sources": {
+        "fee": "https://www.pharmacy.la.gov/page/initial-licensure-for-pharmacy-technicians",
+        "timeline": "https://www.pharmacy.la.gov/page/initial-licensure-for-pharmacy-technicians"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$136",
+        "fee_breakdown": "Application Fee: $100.00; Criminal Background Check (CBC): $36.00",
+        "renewal_fee": "$50.00",
+        "renewal_cycle": "Annually",
+        "processing_time": "1 to 2 Weeks",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 136,
+        "processing_time": "1 to 2 Weeks",
+        "board_url": "https://www.pharmacy.la.gov/page/initial-licensure-for-pharmacy-technicians",
+        "endorsement_url": "https://www.pharmacy.la.gov/page/initial-licensure-for-pharmacy-technicians"
+      }
+    },
+    "maine-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.maine.gov/pfr/professionallicensing/professions/pharmacy/",
+      "sources": {
+        "fee": "https://www.maine.gov/pfr/professionallicensing/professions/pharmacy/",
+        "timeline": "https://www.maine.gov/pfr/professionallicensing/professions/pharmacy/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$25",
+        "fee_breakdown": "Pharmacy Technician Initial Application Fee: $25.00",
+        "renewal_fee": "$25",
+        "renewal_cycle": "Annually",
+        "processing_time": "4 to 6 Weeks",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 25,
+        "processing_time": "4 to 6 Weeks",
+        "board_url": "https://www.maine.gov/pfr/professionallicensing/professions/pharmacy/",
+        "endorsement_url": "https://www.maine.gov/pfr/professionallicensing/professions/pharmacy/"
+      }
+    },
+    "maryland-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://health.maryland.gov/pharmacy/Pages/pharmacists_techs.aspx",
+      "sources": {
+        "fee": "https://health.maryland.gov/pharmacy/Pages/FeeSchedule.aspx",
+        "timeline": "https://health.maryland.gov/pharmacy/Pages/FeeSchedule.aspx"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$45",
+        "fee_breakdown": "Initial Registration: $45.00",
+        "renewal_fee": "$45",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "2 to 4 Weeks",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 45,
+        "processing_time": "2 to 4 Weeks",
+        "board_url": "https://health.maryland.gov/pharmacy/Pages/pharmacists_techs.aspx",
+        "endorsement_url": "https://health.maryland.gov/pharmacy/Pages/pharmacists_techs.aspx"
+      }
+    },
+    "massachusetts-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.mass.gov/info-details/pharmacy-technician-registration-application-information",
+      "sources": {
+        "fee": "https://www.mass.gov/info-details/pharmacy-technician-registration-application-information",
+        "timeline": "https://www.mass.gov/info-details/pharmacy-technician-registration-application-information"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$25",
+        "fee_breakdown": "Initial application fee: $25",
+        "renewal_fee": "$25",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "4 to 6 Weeks",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 25,
+        "processing_time": "4 to 6 Weeks",
+        "board_url": "https://www.mass.gov/info-details/pharmacy-technician-registration-application-information",
+        "endorsement_url": "https://www.mass.gov/info-details/pharmacy-technician-registration-application-information"
+      }
+    },
+    "minnesota-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://mn.gov/boards/pharmacy/pharmacyprofessionals/pharmtechs/",
+      "sources": {
+        "fee": "https://mn.gov/boards/pharmacy/pharmacyprofessionals/pharmtechs/",
+        "timeline": "https://mn.gov/boards/pharmacy/pharmacyprofessionals/pharmtechs/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$50",
+        "fee_breakdown": "Initial Application Fee: $50",
+        "renewal_fee": "$35",
+        "renewal_cycle": "Every 1 year",
+        "processing_time": "1 to 4 Weeks",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 50,
+        "processing_time": "1 to 4 Weeks",
+        "board_url": "https://mn.gov/boards/pharmacy/pharmacyprofessionals/pharmtechs/",
+        "endorsement_url": "https://mn.gov/boards/pharmacy/pharmacyprofessionals/pharmtechs/"
+      }
+    },
+    "mississippi-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://msbop.ms.gov/pharmacy-technicians",
+      "sources": {
+        "fee": "https://msbop.ms.gov/pharmacy-technicians",
+        "timeline": "https://msbop.ms.gov/pharmacy-technicians"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$100",
+        "fee_breakdown": "Application Fee: $100.00. (Additionally, a $75.00 background check fee is paid directly to the vendor, for a total initial cost of $175.00).",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "2 Weeks",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 100,
+        "processing_time": "2 Weeks",
+        "board_url": "https://msbop.ms.gov/pharmacy-technicians",
+        "endorsement_url": "https://msbop.ms.gov/pharmacy-technicians"
+      }
+    },
+    "missouri-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://pr.mo.gov/pharmacists-technicians-registration.asp",
+      "sources": {
+        "fee": "https://pr.mo.gov/pharmacists-technicians-registration.asp",
+        "timeline": "https://pr.mo.gov/pharmacists-technicians-registration.asp"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$76.75",
+        "fee_breakdown": "Application: $35.00, Background Check: $41.75",
+        "renewal_fee": "$20.00",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 76.75,
+        "processing_time": "Not published by board",
+        "board_url": "https://pr.mo.gov/pharmacists-technicians-registration.asp",
+        "endorsement_url": "https://pr.mo.gov/pharmacists-technicians-registration.asp"
+      }
+    },
+    "nebraska-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://dhhs.ne.gov/Pages/Pharmacy-Technician.aspx",
+      "sources": {
+        "fee": "https://dhhs.ne.gov/Pages/Pharmacy-Technician.aspx",
+        "timeline": "https://dhhs.ne.gov/Pages/Pharmacy-Technician.aspx"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$60",
+        "fee_breakdown": "Application Fee: $25.00, Initial Credential Fee: $35.00",
+        "renewal_fee": "$35",
+        "renewal_cycle": "Annually",
+        "processing_time": "1 to 2 Weeks",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 60,
+        "processing_time": "1 to 2 Weeks",
+        "board_url": "https://dhhs.ne.gov/Pages/Pharmacy-Technician.aspx",
+        "endorsement_url": "https://dhhs.ne.gov/Pages/Pharmacy-Technician.aspx"
+      }
+    },
+    "new-hampshire-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.oplc.nh.gov/board-pharmacy",
+      "sources": {
+        "fee": "https://www.oplc.nh.gov/board-pharmacy",
+        "timeline": "https://www.oplc.nh.gov/board-pharmacy"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$30",
+        "fee_breakdown": "Initial Registration Fee: $30.00",
+        "renewal_fee": "$30.00",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 30,
+        "processing_time": "Not published by board",
+        "board_url": "https://www.oplc.nh.gov/board-pharmacy",
+        "endorsement_url": "https://www.oplc.nh.gov/board-pharmacy"
+      }
+    },
+    "new-jersey-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.njconsumeraffairs.gov/bop/Pages/pharmtechapps.aspx",
+      "sources": {
+        "fee": "https://www.njconsumeraffairs.gov/bop/Pages/pharmtechapps.aspx",
+        "timeline": "https://www.njconsumeraffairs.gov/bop/Pages/pharmtechapps.aspx"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$70",
+        "fee_breakdown": "Initial Application Fee: $70.00",
+        "renewal_fee": "$70",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 70,
+        "processing_time": "Not published by board",
+        "board_url": "https://www.njconsumeraffairs.gov/bop/Pages/pharmtechapps.aspx",
+        "endorsement_url": "https://www.njconsumeraffairs.gov/bop/Pages/pharmtechapps.aspx"
+      }
+    },
+    "new-mexico-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.rld.nm.gov/boards-commissions/boards-commissions/board-of-pharmacy/",
+      "sources": {
+        "fee": "https://www.rld.nm.gov/wp-content/uploads/2023/12/Pharmacy_Technician_Application_12.19.23.pdf",
+        "timeline": "https://www.rld.nm.gov/wp-content/uploads/2023/12/Pharmacy_Technician_Application_12.19.23.pdf"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$74",
+        "fee_breakdown": "Initial Application Fee: $30.00, Criminal Background Check Fee: $44.00",
+        "renewal_fee": "$30",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 74,
+        "processing_time": "Not published by board",
+        "board_url": "https://www.rld.nm.gov/boards-commissions/boards-commissions/board-of-pharmacy/",
+        "endorsement_url": "https://www.rld.nm.gov/boards-commissions/boards-commissions/board-of-pharmacy/"
+      }
+    },
+    "north-dakota-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.nodakpharmacy.com/licensing-registration/technician/",
+      "sources": {
+        "fee": "https://www.nodakpharmacy.com/licensing-registration/technician/",
+        "timeline": "https://www.nodakpharmacy.com/licensing-registration/technician/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$35",
+        "fee_breakdown": "Initial Pharmacy Technician Registration Fee: $35",
+        "renewal_fee": "$35",
+        "renewal_cycle": "Annually (July 1st to June 30th)",
+        "processing_time": "1 to 2 Weeks",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 35,
+        "processing_time": "1 to 2 Weeks",
+        "board_url": "https://www.nodakpharmacy.com/licensing-registration/technician/",
+        "endorsement_url": "https://www.nodakpharmacy.com/licensing-registration/technician/"
+      }
+    },
+    "oklahoma-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.ok.gov/pharmacy/Licensure/Technician/index.html",
+      "sources": {
+        "fee": "https://www.ok.gov/pharmacy/Forms_&_Documents/Licensing_Fees.html",
+        "timeline": "https://www.ok.gov/pharmacy/Forms_&_Documents/Licensing_Fees.html"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$60",
+        "fee_breakdown": "Initial Registration Fee: $60",
+        "renewal_fee": "$60",
+        "renewal_cycle": "Every 1 year",
+        "processing_time": "Not published by board",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 60,
+        "processing_time": "Not published by board",
+        "board_url": "https://www.ok.gov/pharmacy/Licensure/Technician/index.html",
+        "endorsement_url": "https://www.ok.gov/pharmacy/Licensure/Technician/index.html"
+      }
+    },
+    "rhode-island-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://health.ri.gov/licensing/detail.php?id=233",
+      "sources": {
+        "fee": "https://health.ri.gov/licensing/detail.php?id=233",
+        "timeline": "https://health.ri.gov/licensing/detail.php?id=233"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$25",
+        "fee_breakdown": "Initial Application Fee: $25",
+        "renewal_fee": "$25",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 25,
+        "processing_time": "Not published by board",
+        "board_url": "https://health.ri.gov/licensing/detail.php?id=233",
+        "endorsement_url": "https://health.ri.gov/licensing/detail.php?id=233"
+      }
+    },
+    "south-carolina-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://llr.sc.gov/bod/licensees/pharmacy-technician",
+      "sources": {
+        "fee": "https://llr.sc.gov/bod/licensees/pharmacy-technician",
+        "timeline": "https://llr.sc.gov/bod/licensees/pharmacy-technician"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$75",
+        "fee_breakdown": "Application Fee: $50.00, SC State Criminal Background Check Fee: $25.00",
+        "renewal_fee": "$10",
+        "renewal_cycle": "Annually",
+        "processing_time": "Not published by board",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 75,
+        "processing_time": "Not published by board",
+        "board_url": "https://llr.sc.gov/bod/licensees/pharmacy-technician",
+        "endorsement_url": "https://llr.sc.gov/bod/licensees/pharmacy-technician"
+      }
+    },
+    "south-dakota-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://dhp.sd.gov/sdboardofpharmacy/Licensees/PharmTechs.aspx",
+      "sources": {
+        "fee": "https://dhp.sd.gov/sdboardofpharmacy/Licensees/PharmTechs.aspx",
+        "timeline": "https://dhp.sd.gov/sdboardofpharmacy/Licensees/PharmTechs.aspx"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$25",
+        "fee_breakdown": "Initial Application Fee: $25.00",
+        "renewal_fee": "$25.00",
+        "renewal_cycle": "Annually by January 1st",
+        "processing_time": "2 to 4 Weeks",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 25,
+        "processing_time": "2 to 4 Weeks",
+        "board_url": "https://dhp.sd.gov/sdboardofpharmacy/Licensees/PharmTechs.aspx",
+        "endorsement_url": "https://dhp.sd.gov/sdboardofpharmacy/Licensees/PharmTechs.aspx"
+      }
+    },
+    "tennessee-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.tn.gov/health/health-professionals/pharmacy-board.html",
+      "sources": {
+        "fee": "https://www.tn.gov/health/health-professionals/pharmacy-board.html",
+        "timeline": "https://www.tn.gov/health/health-professionals/pharmacy-board.html"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$50",
+        "fee_breakdown": "Initial application fee",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 50,
+        "processing_time": "Not published by board",
+        "board_url": "https://www.tn.gov/health/health-professionals/pharmacy-board.html",
+        "endorsement_url": "https://www.tn.gov/health/health-professionals/pharmacy-board.html"
+      }
+    },
+    "utah-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://dopl.utah.gov/pharmacy-technician/",
+      "sources": {
+        "fee": "https://dopl.utah.gov/pharmacy-technician/",
+        "timeline": "https://dopl.utah.gov/pharmacy-technician/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$60",
+        "fee_breakdown": "Initial Application Fee: $60.00",
+        "renewal_fee": "$47.00",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "1 to 3 Weeks",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 60,
+        "processing_time": "1 to 3 Weeks",
+        "board_url": "https://dopl.utah.gov/pharmacy-technician/",
+        "endorsement_url": "https://dopl.utah.gov/pharmacy-technician/"
+      }
+    },
+    "vermont-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://sos.vermont.gov/opr/professions/pharmacy-technicians/",
+      "sources": {
+        "fee": "https://sos.vermont.gov/opr/professions/pharmacy-technicians/",
+        "timeline": "https://sos.vermont.gov/opr/professions/pharmacy-technicians/"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$75",
+        "fee_breakdown": "Application Fee: $25.00, Initial License Fee: $50.00",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 75,
+        "processing_time": "Not published by board",
+        "board_url": "https://sos.vermont.gov/opr/professions/pharmacy-technicians/",
+        "endorsement_url": "https://sos.vermont.gov/opr/professions/pharmacy-technicians/"
+      }
+    },
+    "virginia-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.dhp.virginia.gov/pharmacy/pharmacy_technician.htm",
+      "sources": {
+        "fee": "https://www.dhp.virginia.gov/pharmacy/pharmacy_technician.htm",
+        "timeline": "https://www.dhp.virginia.gov/pharmacy/pharmacy_technician.htm"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$25",
+        "fee_breakdown": "Initial application fee: $25",
+        "renewal_fee": "$25",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "1 to 6 Weeks",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 25,
+        "processing_time": "1 to 6 Weeks",
+        "board_url": "https://www.dhp.virginia.gov/pharmacy/pharmacy_technician.htm",
+        "endorsement_url": "https://www.dhp.virginia.gov/pharmacy/pharmacy_technician.htm"
+      }
+    },
+    "west-virginia-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://www.wvbop.com/technicians/newapplication.html",
+      "sources": {
+        "fee": "https://www.wvbop.com/technicians/newapplication.html",
+        "timeline": "https://www.wvbop.com/technicians/newapplication.html"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$35",
+        "fee_breakdown": "Initial registration fee: $35.00",
+        "renewal_fee": "$35",
+        "renewal_cycle": "Every 1 year",
+        "processing_time": "Not published by board",
+        "license_duration": "1 Year"
+      },
+      "reciprocity": {
+        "endorsement_fee": 35,
+        "processing_time": "Not published by board",
+        "board_url": "https://www.wvbop.com/technicians/newapplication.html",
+        "endorsement_url": "https://www.wvbop.com/technicians/newapplication.html"
+      }
+    },
+    "wisconsin-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://dsps.wi.gov/pages/professions/pharmacytechnician.aspx",
+      "sources": {
+        "fee": "https://dsps.wi.gov/pages/professions/pharmacytechnician.aspx",
+        "timeline": "https://dsps.wi.gov/pages/professions/pharmacytechnician.aspx"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": false,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$70",
+        "fee_breakdown": "Application Fee: $10.00, Initial Licensure Fee: $60.00",
+        "renewal_fee": "$60",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "Not published by board",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 70,
+        "processing_time": "Not published by board",
+        "board_url": "https://dsps.wi.gov/pages/professions/pharmacytechnician.aspx",
+        "endorsement_url": "https://dsps.wi.gov/pages/professions/pharmacytechnician.aspx"
+      }
+    },
+    "wyoming-pharm": {
+      "verified_date": "2026-03-25",
+      "board_source_url": "https://pharmacy.wyo.gov/",
+      "sources": {
+        "fee": "https://pharmacy.wyo.gov/assets/docs/technician/Pharmacy%20Technician%20Application%20Packet%2007.2023.pdf",
+        "timeline": "https://pharmacy.wyo.gov/assets/docs/technician/Pharmacy%20Technician%20Application%20Packet%2007.2023.pdf"
+      },
+      "board_verification": {
+        "fee_verified": true,
+        "timeline_verified": true,
+        "renewal_fee_verified": true,
+        "renewal_cycle_verified": true,
+        "background_check_fee_verified": false,
+        "jurisprudence_fee_verified": true,
+        "total_estimated_cost_verified": true
+      },
+      "quick_facts": {
+        "total_fee": "$50",
+        "fee_breakdown": "Initial Pharmacy Technician Registration Fee: $50.00",
+        "renewal_fee": "$50",
+        "renewal_cycle": "Every 2 years",
+        "processing_time": "1 to 2 Weeks",
+        "license_duration": "2 Years"
+      },
+      "reciprocity": {
+        "endorsement_fee": 50,
+        "processing_time": "1 to 2 Weeks",
+        "board_url": "https://pharmacy.wyo.gov/",
+        "endorsement_url": "https://pharmacy.wyo.gov/"
+      }
     }
   }
 }
