@@ -29,8 +29,8 @@
     "url": "https://www.nodakpharmacy.com/"
   },
   "quick_facts": {
-    "total_fee": "$35",
-    "fee_breakdown": "Initial Pharmacy Technician Registration Fee: $35",
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$35",
     "renewal_cycle": "Annually (July 1st to June 30th)",
     "processing_time": "1 to 2 Weeks",
@@ -126,8 +126,8 @@
     "endorsement_fee": 35,
     "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
-    "board_url": "https://www.nodakpharmacy.com/licensing-registration/technician/",
-    "endorsement_url": "https://www.nodakpharmacy.com/licensing-registration/technician/",
+    "board_url": "https://www.nodakpharmacy.com/",
+    "endorsement_url": "https://www.nodakpharmacy.com/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -175,12 +175,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://www.nodakpharmacy.com/licensing-registration/technician/",

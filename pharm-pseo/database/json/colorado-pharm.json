@@ -29,8 +29,8 @@
     "url": "https://www.colorado.gov/pacific/dora/Pharmacy"
   },
   "quick_facts": {
-    "total_fee": "$33",
-    "fee_breakdown": "$30.00 Application Fee, $3.00 Background Check Fee",
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$30.00",
     "renewal_cycle": "Every 2 years",
     "processing_time": "3 to 5 Business Days",
@@ -123,11 +123,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 33,
+    "endorsement_fee": 57,
     "processing_time": "3 to 5 Business Days",
     "processing_tier": "fast",
-    "board_url": "https://dpo.colorado.gov/Pharmacy/Applications",
-    "endorsement_url": "https://dpo.colorado.gov/Pharmacy/Applications",
+    "board_url": "https://www.colorado.gov/pacific/dora/Pharmacy",
+    "endorsement_url": "https://www.colorado.gov/pacific/dora/Pharmacy",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -175,12 +175,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://dpo.colorado.gov/Pharmacy/Applications",

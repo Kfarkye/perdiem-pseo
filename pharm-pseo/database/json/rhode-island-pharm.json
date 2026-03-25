@@ -29,8 +29,8 @@
     "url": "https://health.ri.gov/licenses/"
   },
   "quick_facts": {
-    "total_fee": "$25",
-    "fee_breakdown": "Initial Application Fee: $25",
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$25",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
@@ -126,8 +126,8 @@
     "endorsement_fee": 25,
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
-    "board_url": "https://health.ri.gov/licensing/detail.php?id=233",
-    "endorsement_url": "https://health.ri.gov/licensing/detail.php?id=233",
+    "board_url": "https://health.ri.gov/licenses/",
+    "endorsement_url": "https://health.ri.gov/licenses/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -175,12 +175,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://health.ri.gov/licensing/detail.php?id=233",

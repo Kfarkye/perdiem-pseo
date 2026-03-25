@@ -29,8 +29,8 @@
     "url": "https://pharmacyboard.wyo.gov"
   },
   "quick_facts": {
-    "total_fee": "$50",
-    "fee_breakdown": "Initial Pharmacy Technician Registration Fee: $50.00",
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "1 to 2 Weeks",
@@ -123,11 +123,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
+    "endorsement_fee": 15,
     "processing_time": "1 to 2 Weeks",
     "processing_tier": "mid",
-    "board_url": "https://pharmacy.wyo.gov/",
-    "endorsement_url": "https://pharmacy.wyo.gov/",
+    "board_url": "https://pharmacyboard.wyo.gov",
+    "endorsement_url": "https://pharmacyboard.wyo.gov",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -175,12 +175,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://pharmacy.wyo.gov/assets/docs/technician/Pharmacy%20Technician%20Application%20Packet%2007.2023.pdf",

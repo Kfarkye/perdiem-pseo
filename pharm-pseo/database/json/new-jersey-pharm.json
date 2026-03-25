@@ -29,8 +29,8 @@
     "url": "https://www.njconsumeraffairs.gov/phar"
   },
   "quick_facts": {
-    "total_fee": "$70",
-    "fee_breakdown": "Initial Application Fee: $70.00",
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$70",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
@@ -123,11 +123,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 70,
+    "endorsement_fee": 50,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
-    "board_url": "https://www.njconsumeraffairs.gov/bop/Pages/pharmtechapps.aspx",
-    "endorsement_url": "https://www.njconsumeraffairs.gov/bop/Pages/pharmtechapps.aspx",
+    "board_url": "https://www.njconsumeraffairs.gov/phar",
+    "endorsement_url": "https://www.njconsumeraffairs.gov/phar",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -175,12 +175,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://www.njconsumeraffairs.gov/bop/Pages/pharmtechapps.aspx",

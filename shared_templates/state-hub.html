@@ -966,7 +966,7 @@
             {% elif reciprocity.compact_status == 'enacted' and reciprocity.state_is_member %}
               <p>{{ state_name }} has enacted the {{ reciprocity.compact_name }}, but the compact is not live for clinicians yet. For now, out-of-state applicants still use endorsement.</p>
             {% else %}
-              <p>There is no active interstate compact route for {{ profession_name.lower() }} {{ cred_official }} in {{ state_name }}. Plan on {{ cred_transfer }} through {{ board.name }}.</p>
+              <p>To practice as a {{ profession_name.lower() }} in {{ state_name }}, apply for {{ cred_transfer }} directly through the {{ board.name }}. Here's everything you need to get started.</p>
             {% endif %}
           </div>
         </section>

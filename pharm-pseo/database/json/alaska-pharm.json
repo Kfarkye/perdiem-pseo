@@ -29,8 +29,8 @@
     "url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx"
   },
   "quick_facts": {
-    "total_fee": "$200",
-    "fee_breakdown": "Application Fee: $100, Initial License Fee: $100",
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
@@ -123,7 +123,7 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 200,
+    "endorsement_fee": 25,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx",
@@ -175,12 +175,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/BoardofPharmacy.aspx",

@@ -29,8 +29,8 @@
     "url": "https://www.pr.mo.gov/pharmacists.asp"
   },
   "quick_facts": {
-    "total_fee": "$76.75",
-    "fee_breakdown": "Application: $35.00, Background Check: $41.75",
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$20.00",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
@@ -122,11 +122,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 76.75,
+    "endorsement_fee": 40,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
-    "board_url": "https://pr.mo.gov/pharmacists-technicians-registration.asp",
-    "endorsement_url": "https://pr.mo.gov/pharmacists-technicians-registration.asp",
+    "board_url": "https://www.pr.mo.gov/pharmacists.asp",
+    "endorsement_url": "https://www.pr.mo.gov/pharmacists.asp",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -174,12 +174,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://pr.mo.gov/pharmacists-technicians-registration.asp",

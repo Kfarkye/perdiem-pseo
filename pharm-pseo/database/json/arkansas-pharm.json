@@ -30,7 +30,7 @@
   },
   "quick_facts": {
     "total_fee": "$100",
-    "fee_breakdown": "New Registration: $100.00",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Annually",
     "processing_time": "4 to 6 Weeks",
@@ -123,11 +123,11 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 100,
+    "endorsement_fee": 70,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
-    "board_url": "https://www.arkansas.gov/pharmacy/",
-    "endorsement_url": "https://www.arkansas.gov/pharmacy/",
+    "board_url": "https://pharmacyboard.arkansas.gov/",
+    "endorsement_url": "https://pharmacyboard.arkansas.gov/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -175,12 +175,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://www.arkansas.gov/pharmacy/PDFs/techpacket.pdf",

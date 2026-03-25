@@ -29,8 +29,8 @@
     "url": "https://www.oplc.nh.gov/board-pharmacy"
   },
   "quick_facts": {
-    "total_fee": "$30",
-    "fee_breakdown": "Initial Registration Fee: $30.00",
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$30.00",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
@@ -122,7 +122,7 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": true,
-    "endorsement_fee": 30,
+    "endorsement_fee": 25,
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.oplc.nh.gov/board-pharmacy",
@@ -174,12 +174,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://www.oplc.nh.gov/board-pharmacy",

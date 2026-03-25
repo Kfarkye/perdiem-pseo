@@ -29,8 +29,8 @@
     "url": "https://dopl.idaho.gov/bop/"
   },
   "quick_facts": {
-    "total_fee": "$35",
-    "fee_breakdown": "Application (Initial Registration): $35.00",
+    "total_fee": "$100",
+    "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$35",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 3 Weeks",
@@ -126,8 +126,8 @@
     "endorsement_fee": 35,
     "processing_time": "2 to 3 Weeks",
     "processing_tier": "mid",
-    "board_url": "https://bop.idaho.gov/licensing/pharmacy-technicians/",
-    "endorsement_url": "https://bop.idaho.gov/licensing/pharmacy-technicians/",
+    "board_url": "https://dopl.idaho.gov/bop/",
+    "endorsement_url": "https://dopl.idaho.gov/bop/",
     "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -175,12 +175,10 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": true
+    "timeline_verified": true
   },
   "board_verification_sources": {
     "fee": "https://bop.idaho.gov/licensing/pharmacy-technicians/",
