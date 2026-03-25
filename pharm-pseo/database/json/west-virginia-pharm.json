@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "5 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete the Application",
+      "description": "Submit a complete application for registration as a pharmacy technician to the West Virginia Board of Pharmacy."
+    },
+    {
+      "title": "Pay the Required Fee",
+      "description": "Submit the required registration fee of $100 to the West Virginia Board of Pharmacy."
+    },
+    {
+      "title": "Complete Continuing Education",
+      "description": "Complete 5 hours of continuing education every two years to maintain active registration."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://www.wvbop.com/"
   },
   "slug": "west-virginia-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in West Virginia",
+        "dek": "West Virginia Pharmacy Technician registration requires submitting an application, paying a fee, and completing continuing education."
+      }
+    }
+  }
 }

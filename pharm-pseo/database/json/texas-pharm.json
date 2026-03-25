@@ -34,7 +34,8 @@
     "renewal_fee": "See board",
     "renewal_cycle": "Every 2 years, on or before the last day of the original issue month",
     "processing_time": "Allow a minimum of 6 weeks for review and processing",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete the Application",
+      "description": "Submit a completed online application through the Texas State Board of Pharmacy website."
+    },
+    {
+      "title": "Pass a Criminal Background Check",
+      "description": "Complete the required fingerprinting process for a criminal background check."
+    },
+    {
+      "title": "Complete Required Continuing Education",
+      "description": "Fulfill 20 hours of continuing education every two years to maintain your registration."
     }
   ],
   "documents": [
@@ -140,5 +149,19 @@
     "fee": "https://www.pharmacy.texas.gov/files_pdf/BN/May24/F.1.4.pdf",
     "timeline": "https://www.pharmacy.texas.gov/applicants/tech.asp",
     "renewal": "https://www.pharmacy.texas.gov/licensees/renew-pharm-tech.asp"
+  },
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Texas",
+        "dek": "Texas Pharmacy Technician registration requires completing an application, passing a background check, and completing required continuing education."
+      }
+    }
   }
 }

@@ -34,7 +34,8 @@
     "renewal_fee": "See board",
     "renewal_cycle": "Annual, expires March 31",
     "processing_time": "Not published by board",
-    "license_duration": "Valid through March 31"
+    "license_duration": "Valid through March 31",
+    "ce_requirement": "20 hours of continuing education per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Eligibility Requirements",
+      "description": "Applicants must be at least 16 years of age and of good moral character."
+    },
+    {
+      "title": "Complete the Application",
+      "description": "Submit an application and pay the $40 registration fee to the Illinois Department of Financial and Professional Regulation."
+    },
+    {
+      "title": "Complete Required Training",
+      "description": "Complete either a Board-approved Pharmacy Technician Training Program or 500 hours of on-the-job training under the supervision of a licensed pharmacist."
     }
   ],
   "documents": [
@@ -140,5 +149,19 @@
     "fee": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
     "timeline": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
     "renewal": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf"
+  },
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "transfer"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Illinois",
+        "dek": "Illinois Pharmacy Technician registration requires completion of an application, meeting educational requirements, and completing continuing education."
+      }
+    }
   }
 }

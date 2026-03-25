@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "2 hours per year"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Requirements",
+      "description": "Ensure you meet the minimum qualifications, including being at least 17 years of age and having a high school diploma or equivalent."
+    },
+    {
+      "title": "Complete the Application",
+      "description": "Submit a completed Pharmacy Technician Registration Application to the Maine Board of Pharmacy."
+    },
+    {
+      "title": "Pay the Fee",
+      "description": "Pay the required registration fee of $100 to the Maine Board of Pharmacy."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://www.maine.gov/professionallicensing/professions/pharmacy/"
   },
   "slug": "maine-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Maine",
+        "dek": "Maine Pharmacy Technician registration requires a completed application, payment of fees, and meeting all qualifications as outlined by the Maine Board of Pharmacy."
+      }
+    }
+  }
 }

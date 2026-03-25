@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Basic Requirements",
+      "description": "You must be at least 18 years old, have a high school diploma or equivalent, and be able to read, speak, and understand the English language."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Complete and submit the Pharmacy Technician Registration Application to the Nevada State Board of Pharmacy along with the required fee and documentation."
+    },
+    {
+      "title": "Complete Continuing Education",
+      "description": "Complete at least 12 hours of continuing education every two years to maintain your registration."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://bop.nv.gov/"
   },
   "slug": "nevada-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Nevada",
+        "dek": "Nevada Pharmacy Technician registration requires submitting an application, passing a background check, and completing continuing education."
+      }
+    }
+  }
 }

@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "12 hours per renewal cycle, including 1 hour of pharmacy law and 1 hour of patient safety/error prevention"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Basic Requirements",
+      "description": "Applicants must be at least 18 years old and possess a high school diploma or its equivalent."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Complete the online application form on the North Dakota Board of Pharmacy website."
+    },
+    {
+      "title": "Pay the Required Fee",
+      "description": "Submit the required registration fee to the North Dakota Board of Pharmacy."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://www.nodakpharmacy.com/"
   },
   "slug": "north-dakota-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in North Dakota",
+        "dek": "North Dakota Pharmacy Technician registration requires completing an application, submitting required documentation, and paying the required fee."
+      }
+    }
+  }
 }

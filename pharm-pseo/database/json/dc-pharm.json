@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Qualifications",
+      "description": "Applicants must be at least 18 years old and have a high school diploma or equivalent."
+    },
+    {
+      "title": "Complete the Application",
+      "description": "Submit a completed Pharmacy Technician Registration Application to the D.C. Board of Pharmacy."
+    },
+    {
+      "title": "Pay the Fee",
+      "description": "Pay the required registration fee to the D.C. Board of Pharmacy."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://dchealth.dc.gov/service/pharmacy-licensing"
   },
   "slug": "dc-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in District of Columbia",
+        "dek": "District of Columbia Pharmacy Technician registration requires completing an application, paying the required fee, and meeting the qualifications."
+      }
+    }
+  }
 }

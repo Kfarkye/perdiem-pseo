@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet Eligibility Requirements",
+      "description": "You must be at least 18 years old, have a high school diploma or equivalent, and be of good moral character."
+    },
+    {
+      "title": "Complete the Application",
+      "description": "Submit a completed application for registration as a Pharmacy Technician to the Michigan Board of Pharmacy."
+    },
+    {
+      "title": "Pay the Required Fee",
+      "description": "Pay the required registration fee to the Michigan Board of Pharmacy."
     }
   ],
   "documents": [
@@ -140,5 +148,19 @@
     "fee": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy",
     "timeline": "https://www.michigan.gov/lara/-/media/Project/Websites/lara/about/Legislative-Reports/Boilerplate-Required-Reports/FY2025/Section-225-Revenue-and-Expenditure-Data-Report.pdf",
     "renewal": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy"
+  },
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Michigan",
+        "dek": "Michigan Pharmacy Technician registration requires completing an application, meeting education or experience requirements, and paying the required fee."
+      }
+    }
   }
 }

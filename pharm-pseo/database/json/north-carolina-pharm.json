@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Eligibility Requirements",
+      "description": "You must be at least 18 years of age and possess a high school diploma or equivalent."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Complete the online application for registration with the North Carolina Board of Pharmacy."
+    },
+    {
+      "title": "Pay the Required Fee",
+      "description": "Submit the required registration fee of $30 to the North Carolina Board of Pharmacy."
     }
   ],
   "documents": [
@@ -140,5 +148,19 @@
     "fee": "https://www.ncbop.org/pharmacy-technicians.html",
     "timeline": "https://www.ncbop.org/pharmacy-technicians.html",
     "renewal": "https://www.ncbop.org/renewal.html"
+  },
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "transfer"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in North Carolina",
+        "dek": "North Carolina Pharmacy Technician registration requires submitting an application, paying a fee, and meeting eligibility requirements."
+      }
+    }
   }
 }

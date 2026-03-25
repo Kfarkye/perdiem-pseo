@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "null"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete the Application",
+      "description": "Submit a completed online application for Pharmacy Technician Registration through the Wisconsin Department of Safety and Professional Services."
+    },
+    {
+      "title": "Pay the Registration Fee",
+      "description": "Pay the required registration fee of $100 to the Wisconsin Department of Safety and Professional Services."
+    },
+    {
+      "title": "Background Check",
+      "description": "Ensure you meet all background check requirements as outlined by the Wisconsin Pharmacy Examining Board."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://dsps.wi.gov/pages/BoardsCouncils/Pharmacy/Default.aspx"
   },
   "slug": "wisconsin-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "transfer"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Wisconsin",
+        "dek": "Wisconsin Pharmacy Technician registration requires completing an application, paying a fee, and meeting background check requirements."
+      }
+    }
+  }
 }

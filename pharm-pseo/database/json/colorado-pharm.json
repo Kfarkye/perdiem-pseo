@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Basic Requirements",
+      "description": "Applicants must be at least 18 years old and have a high school diploma or equivalent."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Apply for registration as a pharmacy technician through the Colorado Department of Regulatory Agencies (DORA) online portal."
+    },
+    {
+      "title": "Complete a Criminal Background Check",
+      "description": "Applicants must submit to a criminal background check."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://dpo.colorado.gov/Pharmacy"
   },
   "slug": "colorado-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Colorado",
+        "dek": "Colorado Pharmacy Technician registration requires submitting an application, completing a criminal background check, and paying the required fee."
+      }
+    }
+  }
 }

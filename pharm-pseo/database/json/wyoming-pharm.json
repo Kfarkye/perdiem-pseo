@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete the Application",
+      "description": "Submit a completed application form to the Wyoming Board of Pharmacy."
+    },
+    {
+      "title": "Meet Eligibility Requirements",
+      "description": "Ensure you meet all eligibility criteria as determined by the Wyoming Board of Pharmacy, including age and education requirements."
+    },
+    {
+      "title": "Renew Your Registration",
+      "description": "Complete 12 hours of continuing education every 2 years to maintain your Wyoming Pharmacy Technician registration."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://pharmacyboard.wyo.gov/professionals/technicians"
   },
   "slug": "wyoming-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "transfer"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Wyoming",
+        "dek": "Wyoming Pharmacy Technician registration requires completing an application, meeting eligibility criteria, and completing continuing education for renewal."
+      }
+    }
+  }
 }

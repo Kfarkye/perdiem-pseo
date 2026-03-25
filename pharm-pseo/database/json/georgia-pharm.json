@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "15 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Basic Requirements",
+      "description": "Applicants must be at least 17 years of age and have a high school diploma or its equivalent."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Apply for registration as a Pharmacy Technician with the Georgia Board of Pharmacy through their online portal and pay the applicable fee."
+    },
+    {
+      "title": "Complete a Criminal Background Check",
+      "description": "Satisfy the criminal background check requirements as determined by the Georgia Board of Pharmacy."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://sos.ga.gov/index.php/licensing/plb/45"
   },
   "slug": "georgia-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Georgia",
+        "dek": "Georgia Pharmacy Technician registration requires applying to the State Board of Pharmacy, completing a criminal background check, and completing continuing education."
+      }
+    }
+  }
 }

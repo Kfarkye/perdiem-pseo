@@ -34,7 +34,8 @@
     "renewal_fee": "$55",
     "renewal_cycle": "Every 2 years",
     "processing_time": "Please allow 30 days for initial review",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Eligibility Requirements",
+      "description": "You must be at least 17 years of age and have a high school diploma or equivalent."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Complete the online application and pay the required fee of $105."
+    },
+    {
+      "title": "Complete Continuing Education",
+      "description": "Maintain your registration by completing 20 hours of continuing education every two years."
     }
   ],
   "documents": [
@@ -139,5 +148,19 @@
   "board_verification_sources": {
     "fee": "https://floridaspharmacy.gov/registered-pharmacy-technician/",
     "timeline": "https://floridaspharmacy.gov/registered-pharmacy-technician/"
+  },
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Florida",
+        "dek": "Florida Pharmacy Technician registration requires submitting an application, paying the required fee, and completing continuing education."
+      }
+    }
   }
 }

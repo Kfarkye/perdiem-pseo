@@ -34,7 +34,8 @@
     "renewal_fee": "$140",
     "renewal_cycle": "Every 2 years, on or before your birthday",
     "processing_time": "Not published by board",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Eligibility Requirements",
+      "description": "You must be 18 years of age, have a high school diploma or equivalent, and have good moral character."
+    },
+    {
+      "title": "Complete the Application",
+      "description": "Submit a complete application and pay the required fee to the Washington State Department of Health."
+    },
+    {
+      "title": "Renew Your Registration",
+      "description": "Complete 20 hours of continuing education every two years and submit your renewal application and fee."
     }
   ],
   "documents": [
@@ -140,5 +149,19 @@
     "fee": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
     "timeline": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
     "renewal": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information"
+  },
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Washington",
+        "dek": "Washington Pharmacy Technician registration requires completing an application, paying a fee, and completing continuing education to renew."
+      }
+    }
   }
 }

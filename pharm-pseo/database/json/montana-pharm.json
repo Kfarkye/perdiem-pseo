@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete the Application",
+      "description": "Submit a complete Pharmacy Technician Registration application to the Montana Board of Pharmacy."
+    },
+    {
+      "title": "Pay the Registration Fee",
+      "description": "Pay the $35 registration fee to the Montana Board of Pharmacy."
+    },
+    {
+      "title": "Meet the Qualifications",
+      "description": "Ensure you meet all qualifications, including having a high school diploma or GED and not having any disqualifying criminal convictions."
     }
   ],
   "documents": [
@@ -140,5 +148,19 @@
     "fee": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
     "timeline": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
     "renewal": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician"
+  },
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "transfer"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Montana",
+        "dek": "Montana Pharmacy Technician registration requires completing an application, paying a fee, and meeting all qualifications."
+      }
+    }
   }
 }

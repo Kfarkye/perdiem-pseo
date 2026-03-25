@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "16 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Basic Requirements",
+      "description": "You must be at least 17 years old, of good moral character, and have a high school diploma or equivalent."
+    },
+    {
+      "title": "Complete a Board-Approved Training Program",
+      "description": "Complete a training program that meets the requirements outlined by the Maryland Board of Pharmacy."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit your application, required documentation, and the fee to the Maryland Board of Pharmacy."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://health.maryland.gov/pharmacy/"
   },
   "slug": "maryland-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "registration"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Maryland",
+        "dek": "Maryland Pharmacy Technician registration requires registering with the Maryland Board of Pharmacy, completing a training program, and passing an exam."
+      }
+    }
+  }
 }

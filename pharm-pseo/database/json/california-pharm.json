@@ -34,7 +34,8 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "Allow 45 days for board processing",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet Eligibility Requirements",
+      "description": "Possess a high school diploma or equivalent (GED or foreign diploma evaluation)."
+    },
+    {
+      "title": "Complete Training or Examination",
+      "description": "Complete a board-approved training program or pass an examination (PTCB or ExCPT)."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit a completed application to the California Board of Pharmacy with the required fee."
     }
   ],
   "documents": [
@@ -139,5 +148,19 @@
   "board_verification_sources": {
     "fee": "https://pharmacy.ca.gov/about/fee_schedule.shtml",
     "timeline": "https://www.pharmacy.ca.gov/applicants/tch.shtml"
+  },
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "transfer"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in California",
+        "dek": "California Pharmacy Technician registration requires a high school diploma or equivalent, submission of an application, and completion of required training or passing an examination."
+      }
+    }
   }
 }

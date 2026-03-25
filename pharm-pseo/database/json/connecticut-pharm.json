@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "5 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet the Basic Requirements",
+      "description": "You must be at least 18 years old and have a high school diploma or equivalent."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Complete and submit the Pharmacy Technician Registration application to the Connecticut Commission of Pharmacy."
+    },
+    {
+      "title": "Pay the Fee",
+      "description": "Pay the $100 registration fee."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://portal.ct.gov/dcp/license-services-division/license-services-division/pharmacy-technician"
   },
   "slug": "connecticut-pharm",
-  "specialty": "pharm"
+  "specialty": "pharm",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacy Technician in Connecticut",
+        "dek": "Connecticut Pharmacy Technician registration requires applying to the Commission of Pharmacy, completing the application requirements, and paying the required fee."
+      }
+    }
+  }
 }
