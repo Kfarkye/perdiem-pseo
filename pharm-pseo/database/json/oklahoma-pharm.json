@@ -50,11 +50,11 @@
     },
     {
       "title": "Submit an Application",
-      "description": "Complete the Pharmacy Technician Registration Application and submit it to the Oklahoma Board of Pharmacy with all required documentation."
+      "description": "Complete the Pharmacy Technician License Application and submit it to the Oklahoma Board of Pharmacy with all required documentation."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Submit the required registration fee of $100 to the Oklahoma Board of Pharmacy."
+      "title": "Pay the License Fee",
+      "description": "Submit the required license fee of $100 to the Oklahoma Board of Pharmacy."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "oklahoma-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Oklahoma",
-        "dek": "Oklahoma Pharmacy Technician registration requires completing an application, submitting required documentation, and paying the associated fee."
+        "dek": "Oklahoma Pharmacy Technician licensure requires completing an application, submitting required documentation, and paying the associated fee."
       }
     }
   },

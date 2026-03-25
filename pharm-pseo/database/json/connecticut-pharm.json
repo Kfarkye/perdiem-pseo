@@ -50,11 +50,11 @@
     },
     {
       "title": "Submit an Application",
-      "description": "Complete and submit the Pharmacy Technician Registration application to the Connecticut Commission of Pharmacy."
+      "description": "Complete and submit the Pharmacy Technician License application to the Connecticut Commission of Pharmacy."
     },
     {
       "title": "Pay the Fee",
-      "description": "Pay the $100 registration fee."
+      "description": "Pay the $100 license fee."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "connecticut-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Connecticut",
-        "dek": "Connecticut Pharmacy Technician registration requires applying to the Commission of Pharmacy, completing the application requirements, and paying the required fee."
+        "dek": "Connecticut Pharmacy Technician licensure requires applying to the Commission of Pharmacy, completing the application requirements, and paying the required fee."
       }
     }
   },

@@ -46,15 +46,15 @@
   "steps": [
     {
       "title": "Complete the Application",
-      "description": "Complete the Pharmacy Technician Registration Application on the Kentucky Board of Pharmacy website."
+      "description": "Complete the Pharmacy Technician License Application on the Kentucky Board of Pharmacy website."
     },
     {
       "title": "Submit Required Documentation",
       "description": "Provide all required documentation, including a copy of your high school diploma or GED certificate."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Submit the required registration fee of $100 to the Kentucky Board of Pharmacy."
+      "title": "Pay the License Fee",
+      "description": "Submit the required license fee of $100 to the Kentucky Board of Pharmacy."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "kentucky-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "registration"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Kentucky",
-        "dek": "Kentucky Pharmacy Technician registration requires completing an application, submitting required documentation, and paying the registration fee."
+        "dek": "Kentucky Pharmacy Technician licensure requires completing an application, submitting required documentation, and paying the licensure fee."
       }
     }
   },

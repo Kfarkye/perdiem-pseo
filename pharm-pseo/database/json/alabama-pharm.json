@@ -53,8 +53,8 @@
       "description": "Complete a Board-approved training program, or an employer-based training program in accordance with state regulations."
     },
     {
-      "title": "Apply for Registration",
-      "description": "Submit an application for registration to the Alabama Board of Pharmacy, including all required documentation and fees."
+      "title": "Apply for License",
+      "description": "Submit an application for license to the Alabama Board of Pharmacy, including all required documentation and fees."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "alabama-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Alabama",
-        "dek": "Alabama Pharmacy Technician registration requires applying to the Board, completing a training program, and passing a background check."
+        "dek": "Alabama Pharmacy Technician licensure requires applying to the Board, completing a training program, and passing a background check."
       }
     }
   },

@@ -46,15 +46,15 @@
   "steps": [
     {
       "title": "Complete the Application",
-      "description": "Submit a completed Pharmacy Technician Registration Application to the Arizona Board of Pharmacy."
+      "description": "Submit a completed Pharmacy Technician License Application to the Arizona Board of Pharmacy."
     },
     {
       "title": "Pass a Background Check",
       "description": "Undergo a criminal background check, including fingerprinting, as part of the application process."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Submit the required registration fee to the Arizona Board of Pharmacy."
+      "title": "Pay the License Fee",
+      "description": "Submit the required license fee to the Arizona Board of Pharmacy."
     }
   ],
   "documents": [
@@ -150,16 +150,16 @@
     "timeline": "https://pharmacy.az.gov/technician-license-information"
   },
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
     "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Arizona",
-        "dek": "Arizona Pharmacy Technician registration requires completing an application, passing a background check, and paying a fee."
+        "dek": "Arizona Pharmacy Technician licensure requires completing an application, passing a background check, and paying a fee."
       }
     }
   },

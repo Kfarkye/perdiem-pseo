@@ -50,7 +50,7 @@
     },
     {
       "title": "Submit an Application",
-      "description": "Apply for registration as a Pharmacy Technician with the Georgia Board of Pharmacy through their online portal and pay the applicable fee."
+      "description": "Apply for license as a Pharmacy Technician with the Georgia Board of Pharmacy through their online portal and pay the applicable fee."
     },
     {
       "title": "Complete a Criminal Background Check",
@@ -137,16 +137,16 @@
   "slug": "georgia-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Georgia",
-        "dek": "Georgia Pharmacy Technician registration requires applying to the State Board of Pharmacy, completing a criminal background check, and completing continuing education."
+        "dek": "Georgia Pharmacy Technician licensure requires applying to the State Board of Pharmacy, completing a criminal background check, and completing continuing education."
       }
     }
   },

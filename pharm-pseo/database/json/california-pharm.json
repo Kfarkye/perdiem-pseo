@@ -53,7 +53,7 @@
       "description": "Complete a board-approved training program or pass an examination (PTCB or ExCPT)."
     },
     {
-      "title": "Apply for Registration",
+      "title": "Apply for License",
       "description": "Submit a completed application to the California Board of Pharmacy with the required fee."
     }
   ],
@@ -150,16 +150,16 @@
     "timeline": "https://www.pharmacy.ca.gov/applicants/tch.shtml"
   },
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
     "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in California",
-        "dek": "California Pharmacy Technician registration requires a high school diploma or equivalent, submission of an application, and completion of required training or passing an examination."
+        "dek": "California Pharmacy Technician licensure requires a high school diploma or equivalent, submission of an application, and completion of required training or passing an examination."
       }
     }
   },

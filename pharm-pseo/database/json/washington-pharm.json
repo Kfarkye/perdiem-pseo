@@ -53,7 +53,7 @@
       "description": "Submit a complete application and pay the required fee to the Washington State Department of Health."
     },
     {
-      "title": "Renew Your Registration",
+      "title": "Renew Your License",
       "description": "Complete 20 hours of continuing education every two years and submit your renewal application and fee."
     }
   ],
@@ -151,16 +151,16 @@
     "renewal": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information"
   },
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "endorsement"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Washington",
-        "dek": "Washington Pharmacy Technician registration requires completing an application, paying a fee, and completing continuing education to renew."
+        "dek": "Washington Pharmacy Technician licensure requires completing an application, paying a fee, and completing continuing education to renew."
       }
     }
   },

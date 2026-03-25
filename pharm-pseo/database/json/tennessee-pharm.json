@@ -50,11 +50,11 @@
     },
     {
       "title": "Submit an Application",
-      "description": "Apply for registration as a Pharmacy Technician with the Tennessee Board of Pharmacy."
+      "description": "Apply for license as a Pharmacy Technician with the Tennessee Board of Pharmacy."
     },
     {
       "title": "Pay the Required Fee",
-      "description": "Submit the required registration fee of $100 to the Tennessee Board of Pharmacy."
+      "description": "Submit the required license fee of $100 to the Tennessee Board of Pharmacy."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "tennessee-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Tennessee",
-        "dek": "Tennessee Pharmacy Technician registration requires completing an application, paying a fee, and meeting specific eligibility criteria."
+        "dek": "Tennessee Pharmacy Technician licensure requires completing an application, paying a fee, and meeting specific eligibility criteria."
       }
     }
   },

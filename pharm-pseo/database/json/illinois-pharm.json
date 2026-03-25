@@ -50,7 +50,7 @@
     },
     {
       "title": "Complete the Application",
-      "description": "Submit an application and pay the $40 registration fee to the Illinois Department of Financial and Professional Regulation."
+      "description": "Submit an application and pay the $40 license fee to the Illinois Department of Financial and Professional Regulation."
     },
     {
       "title": "Complete Required Training",
@@ -151,16 +151,16 @@
     "renewal": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf"
   },
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
     "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Illinois",
-        "dek": "Illinois Pharmacy Technician registration requires completion of an application, meeting educational requirements, and completing continuing education."
+        "dek": "Illinois Pharmacy Technician licensure requires completion of an application, meeting educational requirements, and completing continuing education."
       }
     }
   },

@@ -50,11 +50,11 @@
     },
     {
       "title": "Submit an Application",
-      "description": "Complete and submit the Pharmacy Technician Registration Application to the Nevada State Board of Pharmacy along with the required fee and documentation."
+      "description": "Complete and submit the Pharmacy Technician License Application to the Nevada State Board of Pharmacy along with the required fee and documentation."
     },
     {
       "title": "Complete Continuing Education",
-      "description": "Complete at least 12 hours of continuing education every two years to maintain your registration."
+      "description": "Complete at least 12 hours of continuing education every two years to maintain your license."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "nevada-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Nevada",
-        "dek": "Nevada Pharmacy Technician registration requires submitting an application, passing a background check, and completing continuing education."
+        "dek": "Nevada Pharmacy Technician licensure requires submitting an application, passing a background check, and completing continuing education."
       }
     }
   },

@@ -49,11 +49,11 @@
     },
     {
       "title": "Submit an Application",
-      "description": "Complete the online application for registration with the North Carolina Board of Pharmacy."
+      "description": "Complete the online application for license with the North Carolina Board of Pharmacy."
     },
     {
       "title": "Pay the Required Fee",
-      "description": "Submit the required registration fee of $30 to the North Carolina Board of Pharmacy."
+      "description": "Submit the required license fee of $30 to the North Carolina Board of Pharmacy."
     }
   ],
   "documents": [
@@ -150,16 +150,16 @@
     "renewal": "https://www.ncbop.org/renewal.html"
   },
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
     "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in North Carolina",
-        "dek": "North Carolina Pharmacy Technician registration requires submitting an application, paying a fee, and meeting eligibility requirements."
+        "dek": "North Carolina Pharmacy Technician licensure requires submitting an application, paying a fee, and meeting eligibility requirements."
       }
     }
   },

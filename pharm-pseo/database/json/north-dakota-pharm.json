@@ -54,7 +54,7 @@
     },
     {
       "title": "Pay the Required Fee",
-      "description": "Submit the required registration fee to the North Dakota Board of Pharmacy."
+      "description": "Submit the required license fee to the North Dakota Board of Pharmacy."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "north-dakota-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in North Dakota",
-        "dek": "North Dakota Pharmacy Technician registration requires completing an application, submitting required documentation, and paying the required fee."
+        "dek": "North Dakota Pharmacy Technician licensure requires completing an application, submitting required documentation, and paying the required fee."
       }
     }
   },

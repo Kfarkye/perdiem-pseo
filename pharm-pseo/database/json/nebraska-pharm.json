@@ -46,15 +46,15 @@
   "steps": [
     {
       "title": "Complete the Application",
-      "description": "Submit a completed application for Pharmacy Technician Registration to the Nebraska Board of Pharmacy."
+      "description": "Submit a completed application for Pharmacy Technician License to the Nebraska Board of Pharmacy."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Pay the required registration fee of $100 to the Nebraska Board of Pharmacy."
+      "title": "Pay the License Fee",
+      "description": "Pay the required license fee of $100 to the Nebraska Board of Pharmacy."
     },
     {
-      "title": "Maintain Registration",
-      "description": "Complete 20 hours of continuing education every two years and renew your registration to maintain active status."
+      "title": "Maintain License",
+      "description": "Complete 20 hours of continuing education every two years and renew your license to maintain active status."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "nebraska-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Nebraska",
-        "dek": "Nebraska Pharmacy Technician registration requires completing an application, paying a fee, and completing continuing education requirements."
+        "dek": "Nebraska Pharmacy Technician licensure requires completing an application, paying a fee, and completing continuing education requirements."
       }
     }
   },

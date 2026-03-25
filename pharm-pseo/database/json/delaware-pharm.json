@@ -49,12 +49,12 @@
       "description": "You must be at least 18 years of age and have a high school diploma or equivalent."
     },
     {
-      "title": "Apply for Registration",
+      "title": "Apply for License",
       "description": "Submit a completed application and the required fee to the Delaware Board of Pharmacy."
     },
     {
       "title": "Complete Continuing Education",
-      "description": "Complete 2 hours of continuing education every two years to maintain your registration."
+      "description": "Complete 2 hours of continuing education every two years to maintain your license."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "delaware-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Delaware",
-        "dek": "Delaware Pharmacy Technician registration requires applying to the Board of Pharmacy, paying the required fee, and completing continuing education."
+        "dek": "Delaware Pharmacy Technician licensure requires applying to the Board of Pharmacy, paying the required fee, and completing continuing education."
       }
     }
   },

@@ -53,8 +53,8 @@
       "description": "Submit a completed application and all required documentation to the Massachusetts Board of Pharmacy."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Pay the non-refundable registration fee of $100."
+      "title": "Pay the License Fee",
+      "description": "Pay the non-refundable license fee of $100."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "massachusetts-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Massachusetts",
-        "dek": "Massachusetts Pharmacy Technician registration requires completing an application, paying the required fee, and meeting all qualifications."
+        "dek": "Massachusetts Pharmacy Technician licensure requires completing an application, paying the required fee, and meeting all qualifications."
       }
     }
   },

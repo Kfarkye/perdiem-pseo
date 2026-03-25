@@ -46,7 +46,7 @@
   "steps": [
     {
       "title": "Submit an Application",
-      "description": "Complete the online application for Pharmacy Technician registration through the South Dakota Board of Pharmacy."
+      "description": "Complete the online application for Pharmacy Technician license through the South Dakota Board of Pharmacy."
     },
     {
       "title": "Pass a Background Check",
@@ -54,7 +54,7 @@
     },
     {
       "title": "Complete Continuing Education",
-      "description": "Maintain active registration by completing 20 hours of continuing education every two years."
+      "description": "Maintain active license by completing 20 hours of continuing education every two years."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "south-dakota-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in South Dakota",
-        "dek": "South Dakota Pharmacy Technician registration requires completing an application, passing a background check, and completing continuing education credits."
+        "dek": "South Dakota Pharmacy Technician licensure requires completing an application, passing a background check, and completing continuing education credits."
       }
     }
   },

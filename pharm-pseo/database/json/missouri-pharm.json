@@ -49,11 +49,11 @@
     },
     {
       "title": "Complete the Application",
-      "description": "Submit a completed Pharmacy Technician Registration Application to the Missouri Board of Pharmacy."
+      "description": "Submit a completed Pharmacy Technician License Application to the Missouri Board of Pharmacy."
     },
     {
       "title": "Pay the Fee",
-      "description": "Pay the $100 registration fee to the Missouri Board of Pharmacy."
+      "description": "Pay the $100 license fee to the Missouri Board of Pharmacy."
     }
   ],
   "documents": [
@@ -136,16 +136,16 @@
   "slug": "missouri-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Missouri",
-        "dek": "Missouri Pharmacy Technician registration requires completing an application, paying the required fee, and meeting the board's qualifications."
+        "dek": "Missouri Pharmacy Technician licensure requires completing an application, paying the required fee, and meeting the board's qualifications."
       }
     }
   },

@@ -46,15 +46,15 @@
   "steps": [
     {
       "title": "Complete the Application",
-      "description": "Submit a completed application for registration as a pharmacy technician to the Minnesota Board of Pharmacy."
+      "description": "Submit a completed application for license as a pharmacy technician to the Minnesota Board of Pharmacy."
     },
     {
       "title": "Pass a Background Check",
       "description": "Complete a criminal background check as required by the Minnesota Board of Pharmacy."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Submit the required registration fee to the Minnesota Board of Pharmacy."
+      "title": "Pay the License Fee",
+      "description": "Submit the required license fee to the Minnesota Board of Pharmacy."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "minnesota-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
     "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Minnesota",
-        "dek": "Minnesota Pharmacy Technician registration requires completing an application, passing a background check, and paying the registration fee."
+        "dek": "Minnesota Pharmacy Technician licensure requires completing an application, passing a background check, and paying the licensure fee."
       }
     }
   },

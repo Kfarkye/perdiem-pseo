@@ -53,8 +53,8 @@
       "description": "Submit a completed application form and pay the required fee to the Virginia Board of Pharmacy."
     },
     {
-      "title": "Receive Your Registration",
-      "description": "Upon approval of your application, you will receive your Virginia Pharmacy Technician registration."
+      "title": "Receive Your License",
+      "description": "Upon approval of your application, you will receive your Virginia Pharmacy Technician license."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "virginia-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "endorsement"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Virginia",
-        "dek": "Virginia Pharmacy Technician registration requires completing an application, meeting educational requirements, and paying a fee."
+        "dek": "Virginia Pharmacy Technician licensure requires completing an application, meeting educational requirements, and paying a fee."
       }
     }
   },

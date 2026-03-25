@@ -48,12 +48,12 @@
       "description": "You must be at least 18 years of age, of good moral character, and possess a high school diploma or its equivalent."
     },
     {
-      "title": "Submit an Application for Registration",
-      "description": "Complete the Application for Registration as a Pharmacy Technician (Form 8) and submit it to the New York State Board of Pharmacy."
+      "title": "Submit an Application for License",
+      "description": "Complete the Application for License as a Pharmacy Technician (Form 8) and submit it to the New York State Board of Pharmacy."
     },
     {
       "title": "Pay the Required Fee",
-      "description": "Submit the required registration fee of $175 along with your application."
+      "description": "Submit the required license fee of $175 along with your application."
     }
   ],
   "documents": [
@@ -150,16 +150,16 @@
     "renewal": "https://www.op.nysed.gov/about/fees"
   },
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
     "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in New York",
-        "dek": "New York Pharmacy Technician registration requires meeting minimum qualifications, submitting an application, and paying the required fee."
+        "dek": "New York Pharmacy Technician licensure requires meeting minimum qualifications, submitting an application, and paying the required fee."
       }
     }
   },

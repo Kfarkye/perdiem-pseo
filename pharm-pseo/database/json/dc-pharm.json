@@ -49,11 +49,11 @@
     },
     {
       "title": "Complete the Application",
-      "description": "Submit a completed Pharmacy Technician Registration Application to the D.C. Board of Pharmacy."
+      "description": "Submit a completed Pharmacy Technician License Application to the D.C. Board of Pharmacy."
     },
     {
       "title": "Pay the Fee",
-      "description": "Pay the required registration fee to the D.C. Board of Pharmacy."
+      "description": "Pay the required license fee to the D.C. Board of Pharmacy."
     }
   ],
   "documents": [
@@ -136,16 +136,16 @@
   "slug": "dc-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in District of Columbia",
-        "dek": "District of Columbia Pharmacy Technician registration requires completing an application, paying the required fee, and meeting the qualifications."
+        "dek": "District of Columbia Pharmacy Technician licensure requires completing an application, paying the required fee, and meeting the qualifications."
       }
     }
   },

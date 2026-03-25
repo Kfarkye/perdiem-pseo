@@ -50,7 +50,7 @@
     },
     {
       "title": "Submit an Application",
-      "description": "Apply for registration as a pharmacy technician through the Colorado Department of Regulatory Agencies (DORA) online portal."
+      "description": "Apply for license as a pharmacy technician through the Colorado Department of Regulatory Agencies (DORA) online portal."
     },
     {
       "title": "Complete a Criminal Background Check",
@@ -137,16 +137,16 @@
   "slug": "colorado-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "endorsement"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Colorado",
-        "dek": "Colorado Pharmacy Technician registration requires submitting an application, completing a criminal background check, and paying the required fee."
+        "dek": "Colorado Pharmacy Technician licensure requires submitting an application, completing a criminal background check, and paying the required fee."
       }
     }
   },

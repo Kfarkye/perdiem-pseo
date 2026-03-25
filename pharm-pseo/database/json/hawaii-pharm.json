@@ -137,16 +137,16 @@
   "slug": "hawaii-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "endorsement"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Hawaii",
-        "dek": "Hawaii Pharmacy Technician registration requires completing an application, providing required documentation, and paying the applicable fee."
+        "dek": "Hawaii Pharmacy Technician licensure requires completing an application, providing required documentation, and paying the applicable fee."
       }
     }
   },

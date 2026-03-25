@@ -54,7 +54,7 @@
     },
     {
       "title": "Complete Continuing Education",
-      "description": "Maintain your registration by completing 20 hours of continuing education every two years."
+      "description": "Maintain your license by completing 20 hours of continuing education every two years."
     }
   ],
   "documents": [
@@ -150,16 +150,16 @@
     "timeline": "https://floridaspharmacy.gov/registered-pharmacy-technician/"
   },
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "endorsement"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Florida",
-        "dek": "Florida Pharmacy Technician registration requires submitting an application, paying the required fee, and completing continuing education."
+        "dek": "Florida Pharmacy Technician licensure requires submitting an application, paying the required fee, and completing continuing education."
       }
     }
   },

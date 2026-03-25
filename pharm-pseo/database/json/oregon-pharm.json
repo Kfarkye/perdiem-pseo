@@ -46,7 +46,7 @@
   "steps": [
     {
       "title": "Submit an Application",
-      "description": "Complete the Pharmacy Technician Registration application through the Oregon Board of Pharmacy."
+      "description": "Complete the Pharmacy Technician License application through the Oregon Board of Pharmacy."
     },
     {
       "title": "Pass a Criminal Background Check",
@@ -54,7 +54,7 @@
     },
     {
       "title": "Complete Continuing Education",
-      "description": "Complete required continuing education hours prior to each registration renewal."
+      "description": "Complete required continuing education hours prior to each license renewal."
     }
   ],
   "documents": [
@@ -151,16 +151,16 @@
     "renewal": "https://www.oregon.gov/pharmacy/Documents/Technician_Renewal_FAQs.pdf"
   },
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Oregon",
-        "dek": "Oregon Pharmacy Technician Registration requires submitting an application, passing a background check, and completing continuing education credits to renew."
+        "dek": "Oregon Pharmacy Technician Licensure requires submitting an application, passing a background check, and completing continuing education credits to renew."
       }
     }
   },

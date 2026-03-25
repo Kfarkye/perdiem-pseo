@@ -46,15 +46,15 @@
   "steps": [
     {
       "title": "Submit an Application",
-      "description": "Complete the Pharmacy Technician Registration Application and submit it to the Vermont Board of Pharmacy."
+      "description": "Complete the Pharmacy Technician License Application and submit it to the Vermont Board of Pharmacy."
     },
     {
       "title": "Pay the Required Fee",
-      "description": "Pay the $100 registration fee to the Vermont Board of Pharmacy."
+      "description": "Pay the $100 license fee to the Vermont Board of Pharmacy."
     },
     {
       "title": "Complete Continuing Education",
-      "description": "Complete 20 hours of continuing education every two years to maintain your registration."
+      "description": "Complete 20 hours of continuing education every two years to maintain your license."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "vermont-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Vermont",
-        "dek": "Vermont Pharmacy Technician registration requires submitting an application, paying a fee, and completing continuing education."
+        "dek": "Vermont Pharmacy Technician licensure requires submitting an application, paying a fee, and completing continuing education."
       }
     }
   },

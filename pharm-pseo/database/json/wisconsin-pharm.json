@@ -46,11 +46,11 @@
   "steps": [
     {
       "title": "Complete the Application",
-      "description": "Submit a completed online application for Pharmacy Technician Registration through the Wisconsin Department of Safety and Professional Services."
+      "description": "Submit a completed online application for Pharmacy Technician License through the Wisconsin Department of Safety and Professional Services."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Pay the required registration fee of $100 to the Wisconsin Department of Safety and Professional Services."
+      "title": "Pay the License Fee",
+      "description": "Pay the required license fee of $100 to the Wisconsin Department of Safety and Professional Services."
     },
     {
       "title": "Background Check",
@@ -137,16 +137,16 @@
   "slug": "wisconsin-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
     "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Wisconsin",
-        "dek": "Wisconsin Pharmacy Technician registration requires completing an application, paying a fee, and meeting background check requirements."
+        "dek": "Wisconsin Pharmacy Technician licensure requires completing an application, paying a fee, and meeting background check requirements."
       }
     }
   },

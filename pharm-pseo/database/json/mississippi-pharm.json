@@ -46,15 +46,15 @@
   "steps": [
     {
       "title": "Submit an Application",
-      "description": "Complete the Pharmacy Technician Registration Application provided by the Mississippi Board of Pharmacy."
+      "description": "Complete the Pharmacy Technician License Application provided by the Mississippi Board of Pharmacy."
     },
     {
       "title": "Pay Required Fees",
-      "description": "Submit the required registration fee to the Mississippi Board of Pharmacy."
+      "description": "Submit the required license fee to the Mississippi Board of Pharmacy."
     },
     {
       "title": "Complete Continuing Education",
-      "description": "Maintain active registration by completing 20 hours of continuing education every two years."
+      "description": "Maintain active license by completing 20 hours of continuing education every two years."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "mississippi-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Mississippi",
-        "dek": "Mississippi Pharmacy Technician registration requires a completed application, payment of fees, and completion of continuing education."
+        "dek": "Mississippi Pharmacy Technician licensure requires a completed application, payment of fees, and completion of continuing education."
       }
     }
   },

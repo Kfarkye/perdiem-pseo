@@ -53,7 +53,7 @@
       "description": "Complete a training program that meets the requirements outlined by the Maryland Board of Pharmacy."
     },
     {
-      "title": "Apply for Registration",
+      "title": "Apply for License",
       "description": "Submit your application, required documentation, and the fee to the Maryland Board of Pharmacy."
     }
   ],
@@ -137,16 +137,16 @@
   "slug": "maryland-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "registration"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Maryland",
-        "dek": "Maryland Pharmacy Technician registration requires registering with the Maryland Board of Pharmacy, completing a training program, and passing an exam."
+        "dek": "Maryland Pharmacy Technician licensure requires registering with the Maryland Board of Pharmacy, completing a training program, and passing an exam."
       }
     }
   },

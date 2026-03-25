@@ -46,15 +46,15 @@
   "steps": [
     {
       "title": "Complete the Application",
-      "description": "Submit a completed Pharmacy Technician Registration Application to the Kansas Board of Pharmacy."
+      "description": "Submit a completed Pharmacy Technician License Application to the Kansas Board of Pharmacy."
     },
     {
       "title": "Pass a Background Check",
-      "description": "Undergo a criminal background check as part of the registration process."
+      "description": "Undergo a criminal background check as part of the license process."
     },
     {
-      "title": "Pay the Registration Fee",
-      "description": "Submit the required registration fee to the Kansas Board of Pharmacy."
+      "title": "Pay the License Fee",
+      "description": "Submit the required license fee to the Kansas Board of Pharmacy."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "kansas-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Kansas",
-        "dek": "Kansas Pharmacy Technician registration requires completing an application, passing a background check, and paying the required fee."
+        "dek": "Kansas Pharmacy Technician licensure requires completing an application, passing a background check, and paying the required fee."
       }
     }
   },

@@ -46,15 +46,15 @@
   "steps": [
     {
       "title": "Submit an Application",
-      "description": "Complete the Pharmacy Technician Registration application online or by mail through the Louisiana Board of Pharmacy website."
+      "description": "Complete the Pharmacy Technician License application online or by mail through the Louisiana Board of Pharmacy website."
     },
     {
       "title": "Pass Criminal Background Check",
       "description": "Complete the fingerprinting process as instructed by the Louisiana Board of Pharmacy to undergo a criminal background check."
     },
     {
-      "title": "Pay Registration Fee",
-      "description": "Submit the required registration fee to the Louisiana Board of Pharmacy."
+      "title": "Pay License Fee",
+      "description": "Submit the required license fee to the Louisiana Board of Pharmacy."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "louisiana-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Louisiana",
-        "dek": "Louisiana Pharmacy Technician registration requires completing an application, passing a criminal background check, and paying a fee."
+        "dek": "Louisiana Pharmacy Technician licensure requires completing an application, passing a criminal background check, and paying a fee."
       }
     }
   },

@@ -54,7 +54,7 @@
     },
     {
       "title": "Complete Required Continuing Education",
-      "description": "Fulfill 20 hours of continuing education every two years to maintain your registration."
+      "description": "Fulfill 20 hours of continuing education every two years to maintain your license."
     }
   ],
   "documents": [
@@ -151,16 +151,16 @@
     "renewal": "https://www.pharmacy.texas.gov/licensees/renew-pharm-tech.asp"
   },
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Texas",
-        "dek": "Texas Pharmacy Technician registration requires completing an application, passing a background check, and completing required continuing education."
+        "dek": "Texas Pharmacy Technician licensure requires completing an application, passing a background check, and completing required continuing education."
       }
     }
   },

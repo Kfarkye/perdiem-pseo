@@ -50,7 +50,7 @@
     },
     {
       "title": "Submit an Application",
-      "description": "Complete the online application for registration with the New Jersey Board of Pharmacy."
+      "description": "Complete the online application for license with the New Jersey Board of Pharmacy."
     },
     {
       "title": "Pass a Criminal Background Check",
@@ -137,16 +137,16 @@
   "slug": "new-jersey-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
     "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in New Jersey",
-        "dek": "New Jersey Pharmacy Technician registration requires completing an application, passing a background check, and paying a fee."
+        "dek": "New Jersey Pharmacy Technician licensure requires completing an application, passing a background check, and paying a fee."
       }
     }
   },

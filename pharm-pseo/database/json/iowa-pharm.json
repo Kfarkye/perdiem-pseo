@@ -46,15 +46,15 @@
   "steps": [
     {
       "title": "Complete the Application",
-      "description": "Submit a completed application for registration as a pharmacy technician to the Iowa Board of Pharmacy."
+      "description": "Submit a completed application for license as a pharmacy technician to the Iowa Board of Pharmacy."
     },
     {
       "title": "Pay the Required Fee",
-      "description": "Pay the required registration fee to the Iowa Board of Pharmacy."
+      "description": "Pay the required license fee to the Iowa Board of Pharmacy."
     },
     {
       "title": "Complete Continuing Education",
-      "description": "Complete the required 20 hours of continuing education every two years to maintain active registration."
+      "description": "Complete the required 20 hours of continuing education every two years to maintain active license."
     }
   ],
   "documents": [
@@ -137,16 +137,16 @@
   "slug": "iowa-pharm",
   "specialty": "pharm",
   "credential_type": {
-    "official_term": "registration",
-    "page_title_term": "Registration",
-    "renewal_term": "registration renewal",
-    "transfer_term": "reciprocity"
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "transfer"
   },
   "variants": {
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacy Technician in Iowa",
-        "dek": "Iowa Pharmacy Technician registration requires completing an application, paying a fee, and completing continuing education for renewal."
+        "dek": "Iowa Pharmacy Technician licensure requires completing an application, paying a fee, and completing continuing education for renewal."
       }
     }
   },
