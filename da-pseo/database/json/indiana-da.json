@@ -150,5 +150,28 @@
         "dek": "Indiana Dental Assistant certification requires passing the DANB CDA exam, completing a CPR course, and submitting an application to the Indiana Board of Dentistry."
       }
     }
+  },
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become licensed/certified for the first time"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "How to transfer your existing credential from another state"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "google_autocomplete",
+        "description": "How to renew your existing credential"
+      }
+    ]
   }
 }

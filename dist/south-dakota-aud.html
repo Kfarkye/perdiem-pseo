@@ -709,6 +709,34 @@
 
   
   
+  <nav class="intent-selector" aria-label="License Paths">
+    <div class="intent-selector-inner">
+      <ul class="selector-list">
+        <li>
+          <button type="button"
+             class="selector-pill is-active"
+             aria-current="page"
+             data-variant="new_applicant"
+          >New Applicant</button>
+        </li>
+        <li>
+          <button type="button"
+             class="selector-pill"
+             
+             data-variant="reciprocity"
+          >Reciprocity</button>
+        </li>
+        <li>
+          <button type="button"
+             class="selector-pill"
+             
+             data-variant="renewal"
+          >Renewal</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
 
   <main id="main-content" tabindex="-1">
     <div class="page-layout">
@@ -810,6 +838,58 @@
       <article class="content-column" aria-label="Licensing Guide">
 
         
+        
+          
+            
+            <div class="variant-panel is-active" data-variant-panel="new_applicant">
+              
+              <section class="section-shell">
+                <div class="section-copy">
+                  <h2 class="variant-hero-title">Become a Audiologist in South Dakota</h2>
+                  <p class="variant-hero-dek">South Dakota Audiologist License requires graduation from an approved program, passing the national exam, and completing the application process.</p>
+                </div>
+              </section>
+              
+
+              
+              
+              <section class="section-shell">
+                <div class="section-copy">
+                  <h2>Steps to Get Certified</h2>
+                  <p>Follow these steps to become a Audiologist in South Dakota.</p>
+                </div>
+                <ol class="steps" role="list">
+                  
+                  <li>
+                    <span class="step-kicker" aria-hidden="true">Step 1</span>
+                    <h3 class="step-title">Meet Educational Requirements</h3>
+                    <p>Graduate with a Doctor of Audiology (AuD) degree from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology or its equivalent.</p>
+                  </li>
+                  
+                  <li>
+                    <span class="step-kicker" aria-hidden="true">Step 2</span>
+                    <h3 class="step-title">Pass the National Examination</h3>
+                    <p>Achieve a passing score on the Audiology Examination (PRAXIS).</p>
+                  </li>
+                  
+                  <li>
+                    <span class="step-kicker" aria-hidden="true">Step 3</span>
+                    <h3 class="step-title">Apply for Licensure</h3>
+                    <p>Submit a completed application to the South Dakota Board of Hearing Aid Dispensers and Audiologists, including all required documentation and fees.</p>
+                  </li>
+                  
+                </ol>
+              </section>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+          <div class="variant-panel" data-variant-panel="reciprocity">
         
 
         <section id="reciprocity" class="section-shell" aria-labelledby="reciprocity-heading">
@@ -981,6 +1061,11 @@
         
 
         
+          </div>
+
+          
+          <div class="variant-panel" data-variant-panel="renewal">
+        
 
         <section id="renewal" class="section-shell" aria-labelledby="renewal-heading">
           <div class="section-copy">
@@ -1000,6 +1085,8 @@
           </div>
         </section>
 
+        
+          </div>
         
 
         <section id="contact" class="section-shell" aria-labelledby="contact-heading">
@@ -1167,6 +1254,51 @@
     <p><a href="https://www.statelicensingreference.com" target="_blank" rel="noopener noreferrer" aria-label="Visit State Licensing Reference home page">statelicensingreference.com <span class="sr-only">(opens in new tab)</span></a></p>
   </footer>
 
+  
+  <script>
+  (function() {
+    var pills = document.querySelectorAll('.selector-pill[data-variant]');
+    var panels = document.querySelectorAll('[data-variant-panel]');
+    var rails = document.querySelectorAll('[data-variant-rail]');
+    if (!pills.length || !panels.length) return;
+
+    pills.forEach(function(pill) {
+      pill.addEventListener('click', function(e) {
+        e.preventDefault();
+        var target = this.getAttribute('data-variant');
+
+        pills.forEach(function(p) {
+          p.classList.remove('is-active');
+          p.removeAttribute('aria-current');
+        });
+        this.classList.add('is-active');
+        this.setAttribute('aria-current', 'page');
+
+        panels.forEach(function(panel) {
+          if (panel.getAttribute('data-variant-panel') === target) {
+            panel.classList.add('is-active', 'variant-panel-enter');
+            panel.addEventListener('animationend', function handler() {
+              panel.classList.remove('variant-panel-enter');
+              panel.removeEventListener('animationend', handler);
+            });
+          } else {
+            panel.classList.remove('is-active', 'variant-panel-enter');
+          }
+        });
+
+        rails.forEach(function(rail) {
+          if (rail.getAttribute('data-variant-rail') === target) {
+            rail.classList.add('is-active');
+          } else {
+            rail.classList.remove('is-active');
+          }
+        });
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  })();
+  </script>
   
 
 </body>

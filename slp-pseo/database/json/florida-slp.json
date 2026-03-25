@@ -163,5 +163,28 @@
         "dek": "Florida Speech-Language Pathologist license requires graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
       }
     }
+  },
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become licensed/certified for the first time"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "How to transfer your existing credential from another state"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "google_autocomplete",
+        "description": "How to renew your existing credential"
+      }
+    ]
   }
 }

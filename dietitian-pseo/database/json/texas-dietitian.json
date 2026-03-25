@@ -147,5 +147,28 @@
         "dek": "Texas Dietitian license requires completing a dietetics program, passing the Registration Examination for Dietitians, and meeting continuing education requirements."
       }
     }
+  },
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become licensed/certified for the first time"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "How to transfer your existing credential from another state"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "google_autocomplete",
+        "description": "How to renew your existing credential"
+      }
+    ]
   }
 }

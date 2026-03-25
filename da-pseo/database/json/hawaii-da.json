@@ -148,5 +148,28 @@
         "dek": "Hawaii Dental Assistant registration requires graduation from an accredited program or equivalent experience, current CPR certification, and successful application to the Hawaii Board of Dental Examiners."
       }
     }
+  },
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become licensed/certified for the first time"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "How to transfer your existing credential from another state"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "google_autocomplete",
+        "description": "How to renew your existing credential"
+      }
+    ]
   }
 }

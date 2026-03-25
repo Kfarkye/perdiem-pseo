@@ -148,5 +148,28 @@
         "dek": "Pennsylvania Dental Assistant registration requires graduation from an approved dental assistant school or completion of an approved on-the-job training program, successful completion of the DANB RHS exam, and a criminal background check."
       }
     }
+  },
+  "selector": {
+    "default_variant": "new_applicant",
+    "variants": [
+      {
+        "key": "new_applicant",
+        "label": "New Applicant",
+        "label_source": "google_autocomplete",
+        "description": "How to become licensed/certified for the first time"
+      },
+      {
+        "key": "reciprocity",
+        "label": "Reciprocity",
+        "label_source": "google_autocomplete",
+        "description": "How to transfer your existing credential from another state"
+      },
+      {
+        "key": "renewal",
+        "label": "Renewal",
+        "label_source": "google_autocomplete",
+        "description": "How to renew your existing credential"
+      }
+    ]
   }
 }
