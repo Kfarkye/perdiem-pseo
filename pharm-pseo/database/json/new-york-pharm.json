@@ -33,7 +33,7 @@
     "fee_breakdown": "$75 application fee + $100 first registration fee",
     "renewal_fee": "$100",
     "renewal_cycle": "Every 3 years",
-    "processing_time": "Allow 6 weeks before requesting a status update",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "3 Years"
   },
   "license_types": [
@@ -123,7 +123,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 175,
-    "processing_time": "Allow 6 weeks before requesting a status update",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms",
     "endorsement_url": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms",

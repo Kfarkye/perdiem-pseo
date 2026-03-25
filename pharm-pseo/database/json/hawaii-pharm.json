@@ -33,7 +33,7 @@
     "fee_breakdown": "Application fee: $40.00, Compliance Resolution Fund fee: $25.00",
     "renewal_fee": "$65",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "4 hours per renewal cycle"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 65,
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/application_forms/",
     "endorsement_url": "https://cca.hawaii.gov/pvl/boards/pharmacy/application_forms/",
@@ -175,7 +175,7 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,

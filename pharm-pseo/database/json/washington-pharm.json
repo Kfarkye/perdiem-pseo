@@ -33,7 +33,7 @@
     "fee_breakdown": "$140 original credential fee",
     "renewal_fee": "$140",
     "renewal_cycle": "Every 2 years, on or before your birthday",
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "20 hours per renewal cycle"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": true,
     "endorsement_fee": 140,
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "mid",
     "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
     "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
@@ -138,7 +138,7 @@
   "specialty": "pharm",
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,

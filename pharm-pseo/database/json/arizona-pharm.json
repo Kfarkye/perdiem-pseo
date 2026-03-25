@@ -33,7 +33,7 @@
     "fee_breakdown": "$82 pharmacy technician license application fee",
     "renewal_fee": "$72",
     "renewal_cycle": "See board",
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "See board",
     "ce_requirement": "20 hours per renewal cycle"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 82,
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://pharmacy.az.gov/technician-license-information",
     "endorsement_url": "https://pharmacy.az.gov/technician-license-information",

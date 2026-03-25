@@ -33,7 +33,7 @@
     "fee_breakdown": "$120 pharmacy technician application fee (effective January 1, 2025)",
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "Allow 45 days for board processing",
+    "processing_time": "6 to 8 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "20 hours per renewal cycle"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 120,
-    "processing_time": "Allow 45 days for board processing",
+    "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml",
     "endorsement_url": "https://www.pharmacy.ca.gov/applicants/tch.shtml",

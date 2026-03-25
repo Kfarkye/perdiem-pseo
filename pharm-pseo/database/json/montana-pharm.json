@@ -33,7 +33,7 @@
     "fee_breakdown": "$35 application fee",
     "renewal_fee": "$30",
     "renewal_cycle": "Annual renewal window May 2 to June 30",
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "1 Year"
   },
   "license_types": [
@@ -123,7 +123,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 35,
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
     "endorsement_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",

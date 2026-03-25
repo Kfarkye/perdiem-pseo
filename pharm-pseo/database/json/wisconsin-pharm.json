@@ -33,7 +33,7 @@
     "fee_breakdown": "Application Fee: $10.00, Initial Licensure Fee: $60.00",
     "renewal_fee": "$60",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "null"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 70,
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://dsps.wi.gov/pages/professions/pharmacytechnician.aspx",
     "endorsement_url": "https://dsps.wi.gov/pages/professions/pharmacytechnician.aspx",
@@ -175,7 +175,7 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,

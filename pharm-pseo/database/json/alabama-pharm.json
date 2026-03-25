@@ -33,7 +33,7 @@
     "fee_breakdown": "Registration fee (includes criminal background check): $100.00",
     "renewal_fee": "$40",
     "renewal_cycle": "Annually",
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "1 Year",
     "ce_requirement": "3 hours per renewal cycle"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 100,
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://albop.com/technician-application/",
     "endorsement_url": "https://albop.com/technician-application/",
@@ -175,7 +175,7 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,

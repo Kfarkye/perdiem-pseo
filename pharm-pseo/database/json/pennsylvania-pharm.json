@@ -33,7 +33,7 @@
     "fee_breakdown": "$30 initial registration fee",
     "renewal_fee": "$70",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -123,7 +123,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 30,
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
     "endorsement_url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/pharmacy/pharmacy-technician-registration-snapshot",
@@ -137,7 +137,7 @@
   "specialty": "pharm",
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,

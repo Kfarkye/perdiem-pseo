@@ -33,7 +33,7 @@
     "fee_breakdown": "New Pharmacy Technician Registration Fee: $50, Annual Renewal Fee: $50, Late Renewal Fee: $100",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 1 year",
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "1 Year",
     "ce_requirement": "20 hours per renewal cycle"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 50,
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
     "board_url": "https://pharmacy.ks.gov/licenses-registrations/technician-registration",
     "endorsement_url": "https://pharmacy.ks.gov/licenses-registrations/technician-registration",
@@ -175,7 +175,7 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,

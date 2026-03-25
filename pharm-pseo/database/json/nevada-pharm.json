@@ -29,7 +29,7 @@
     "url": "https://bop.nv.gov/"
   },
   "quick_facts": {
-    "total_fee": "$100",
+    "total_fee": "$90",
     "fee_breakdown": "$100 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
@@ -123,7 +123,7 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 50,
+    "endorsement_fee": 90,
     "processing_time": "6 to 8 Weeks",
     "processing_tier": "slow",
     "board_url": "https://bop.nv.gov/",
@@ -172,5 +172,9 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "board_verification": {
+    "fee_verified": true,
+    "timeline_verified": true
   }
 }

@@ -33,7 +33,7 @@
     "fee_breakdown": "Initial Registration Fee: $25",
     "renewal_fee": "$25",
     "renewal_cycle": "Every 1 year",
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "1 Year",
     "ce_requirement": "At least 20 hours of Board-approved continuing education per renewal cycle, including at least one (1) hour must be in pharmacy law and one (1) hour must be in patient safety/medication error prevention."
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 25,
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://kycba.ky.gov/boards/pharmacy",
     "endorsement_url": "https://kycba.ky.gov/boards/pharmacy",
@@ -175,7 +175,7 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,

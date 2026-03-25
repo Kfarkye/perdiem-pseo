@@ -33,7 +33,7 @@
     "fee_breakdown": "Initial Registration Fee: $60",
     "renewal_fee": "$60",
     "renewal_cycle": "Every 1 year",
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "license_duration": "1 Year",
     "ce_requirement": "10 hours per renewal cycle"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 60,
-    "processing_time": "Not published by board",
+    "processing_time": "2 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.ok.gov/pharmacy/Licensure/Technician/index.html",
     "endorsement_url": "https://www.ok.gov/pharmacy/Licensure/Technician/index.html",
@@ -175,7 +175,7 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,

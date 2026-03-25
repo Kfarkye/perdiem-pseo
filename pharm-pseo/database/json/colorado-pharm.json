@@ -33,7 +33,7 @@
     "fee_breakdown": "$30.00 Application Fee, $3.00 Background Check Fee",
     "renewal_fee": "$30.00",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "0.6 to 1 Week",
+    "processing_time": "3 to 5 Business Days",
     "license_duration": "2 Years",
     "ce_requirement": "20 hours every 2 years"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 33,
-    "processing_time": "0.6 to 1 Week",
+    "processing_time": "3 to 5 Business Days",
     "processing_tier": "fast",
     "board_url": "https://dpo.colorado.gov/Pharmacy/Applications",
     "endorsement_url": "https://dpo.colorado.gov/Pharmacy/Applications",

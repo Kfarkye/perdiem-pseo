@@ -33,7 +33,7 @@
     "fee_breakdown": "$81 initial registration fee",
     "renewal_fee": "See board",
     "renewal_cycle": "Every 2 years, on or before the last day of the original issue month",
-    "processing_time": "Allow a minimum of 6 weeks for review and processing",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years",
     "ce_requirement": "20 hours per renewal cycle"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 81,
-    "processing_time": "Allow a minimum of 6 weeks for review and processing",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.pharmacy.texas.gov/applicants/tech.asp",
     "endorsement_url": "https://www.pharmacy.texas.gov/applicants/tech.asp",

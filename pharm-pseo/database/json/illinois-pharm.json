@@ -33,7 +33,7 @@
     "fee_breakdown": "$40 online application fee",
     "renewal_fee": "See board",
     "renewal_cycle": "Annual, expires March 31",
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "Valid through March 31",
     "ce_requirement": "20 hours of continuing education per renewal cycle"
   },
@@ -124,7 +124,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 40,
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
     "endorsement_url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
@@ -138,7 +138,7 @@
   "specialty": "pharm",
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": false,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,

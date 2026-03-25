@@ -33,7 +33,7 @@
     "fee_breakdown": "Application: $35.00, Background Check: $41.75",
     "renewal_fee": "$20.00",
     "renewal_cycle": "Every 2 years",
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "2 Years"
   },
   "license_types": [
@@ -123,7 +123,7 @@
     "temp_license_available": true,
     "jurisprudence_required": false,
     "endorsement_fee": 76.75,
-    "processing_time": "Not published by board",
+    "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
     "board_url": "https://pr.mo.gov/pharmacists-technicians-registration.asp",
     "endorsement_url": "https://pr.mo.gov/pharmacists-technicians-registration.asp",
@@ -174,7 +174,7 @@
   },
   "board_verification": {
     "fee_verified": true,
-    "timeline_verified": false,
+    "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "background_check_fee_verified": false,
