@@ -140,10 +140,10 @@
     "fee_verified": true,
     "timeline_verified": true,
     "renewal_fee_verified": true,
-    "renewal_cycle_verified": false,
-    "background_check_fee_verified": false,
+    "renewal_cycle_verified": true,
+    "background_check_fee_verified": true,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": false
+    "total_estimated_cost_verified": true
   },
   "board_verification_sources": {
     "fee": "https://pharmacy.az.gov/technician-license-information",

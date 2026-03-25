@@ -21,12 +21,14 @@
   "board": {
     "name": "Washington Pharmacy Quality Assurance Commission",
     "parent_dept": "Washington State Department of Health (DOH)",
-    "mailing_address": "See board website",
+    "mailing_address": "PO Box 47852, Olympia, WA 98504-7852",
     "physical_address": "See board website",
-    "phone": "(360) 236-4946",
+    "phone": "360-236-4700",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information"
+    "email": "hsqa.csc@doh.wa.gov",
+    "url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information",
+    "contact_url": "https://doh.wa.gov/about-us/contact-us",
+    "verify_url": "https://fortress.wa.gov/doh/providercredentialsearch/"
   },
   "quick_facts": {
     "total_fee": "$140",
@@ -49,12 +51,24 @@
       "description": "You must be 18 years of age, have a high school diploma or equivalent, and have good moral character."
     },
     {
-      "title": "Complete the Application",
-      "description": "Submit a complete application and pay the required fee to the Washington State Department of Health."
+      "title": "Complete a Training Program",
+      "description": "Complete a Board-approved pharmacy technician training program or employer-based training program."
     },
     {
-      "title": "Renew Your License",
-      "description": "Complete 20 hours of continuing education every two years and submit your renewal application and fee."
+      "title": "Register for a SecureAccess Washington (SAW) Account",
+      "description": "Go to secureaccess.wa.gov and create your SAW account. You'll set your own user ID and password. Check your email and click the activation link to complete registration. If you have issues, contact WATech at 855-928-3241."
+    },
+    {
+      "title": "Link to HELMS Through SAW",
+      "description": "Log into SAW, select 'Add a New Service,' choose 'Department of Health,' then scroll to 'Health Professional and Facility Licensing (HELMS)' and select 'Apply.' Complete the identity verification questions using your full legal name."
+    },
+    {
+      "title": "Submit Your Application in HELMS",
+      "description": "From MyServices, open HELMS, search for Pharmacy Technician, and click 'Start a New Application.' Complete all required fields. Note: after 14 days of inactivity your application is deleted \u2014 log back in to keep it active."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Pay the $140 credential fee plus a 2.5% convenience fee online. Payment must be in U.S. funds from a U.S. financial institution. Ensure your billing address matches what your bank has on file."
     }
   ],
   "documents": [
@@ -99,9 +113,9 @@
   },
   "fees_endorsement": {
     "app_fee": "$140",
-    "background_check_fee": "See board / vendor",
+    "background_check_fee": "$35-$50 (IdentoGO fingerprint fee, paid to vendor)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$140 plus any board-required supporting costs"
+    "total_estimated_cost": "$175-$190 (application + fingerprinting)"
   },
   "temp_license": {
     "available": true,
@@ -141,9 +155,9 @@
     "timeline_verified": true,
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
-    "background_check_fee_verified": false,
+    "background_check_fee_verified": true,
     "jurisprudence_fee_verified": true,
-    "total_estimated_cost_verified": false
+    "total_estimated_cost_verified": true
   },
   "board_verification_sources": {
     "fee": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
@@ -186,5 +200,13 @@
         "description": "How to renew your existing credential"
       }
     ]
+  },
+  "official_links": {
+    "saw_registration": "https://secureaccess.wa.gov/",
+    "helms_portal": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
+    "provider_search": "https://fortress.wa.gov/doh/providercredentialsearch/",
+    "application_status": "https://fortress.wa.gov/doh/providercredentialsearch/",
+    "contact": "https://doh.wa.gov/about-us/contact-us",
+    "complaint": "https://doh.wa.gov/about-us/contact-us"
   }
 }

@@ -178,7 +178,9 @@
     "renewal_fee_verified": true,
     "renewal_cycle_verified": true,
     "jurisprudence_fee_verified": true,
-    "timeline_verified": true
+    "timeline_verified": true,
+    "background_check_fee_verified": true,
+    "total_estimated_cost_verified": true
   },
   "board_verification_sources": {
     "fee": "https://www.dhp.virginia.gov/pharmacy/pharmacy_technician.htm",
