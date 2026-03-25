@@ -46,6 +46,9 @@
   
   {%- set raw_date = last_verified_date | default(last_updated, true) | string | trim -%}
   {%- set iso_date = raw_date | replace('/', '-') -%}
+  {%- set MONTH_NAMES = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'December'} -%}
+  {%- set _dp = iso_date.split('-') -%}
+  {%- set pretty_date = MONTH_NAMES.get(_dp[1]|default('01'), _dp[1]|default('')) ~ ' ' ~ (_dp[2]|default('01')|int|string) ~ ', ' ~ _dp[0]|default('2026') if _dp|length >= 3 else raw_date -%}
   <meta property="article:modified_time" content="{{ iso_date | e }}" />
   
   <meta name="twitter:card" content="summary_large_image" />
@@ -733,7 +736,7 @@
         {%- endif -%}
       </h1>
       <p class="hero-sub">Requirements, fees, and steps for {{ state_name }} {{ profession_name | lower }} {{ cred_official }}.</p>
-      <time class="updated" datetime="{{ iso_date | e }}">Last updated {{ raw_date | e }} &middot; Sources verified</time>
+      <time class="updated" datetime="{{ iso_date | e }}">Last updated {{ pretty_date | e }} &middot; Sources verified</time>
     </div>
   </section>
 
@@ -764,25 +767,25 @@
         <div class="section-box context-card rail-variant is-active" data-variant-rail="new_applicant">
           <h2 id="quick-reference-heading">At a glance</h2>
           <dl class="facts-grid facts-grid-rail">
-            <dt>Initial fee</dt>
+            <dt>Application fee</dt>
             <dd>{{ 'See board' if verify_fee_and_timing_with_board and not fee_verified else quick_facts.total_fee | default(fees_endorsement.app_fee | default('See board', true), true) }}</dd>
 
-            <dt>Training</dt>
+            <dt>Required training</dt>
             <dd>{{ quick_facts.training_hours | default('State-approved program', true) }}</dd>
 
-            <dt>Exam</dt>
+            <dt>Required exam</dt>
             <dd>{{ quick_facts.exam_name | default('State competency exam', true) }}</dd>
 
-            <dt>Processing time</dt>
+            <dt>Estimated processing time</dt>
             <dd>{{ 'See board' if verify_fee_and_timing_with_board and not timeline_verified else quick_facts.processing_time | default('See board', true) }}</dd>
 
-            <dt>Board</dt>
+            <dt>Licensing board</dt>
             <dd>{{ board.name }}</dd>
           </dl>
           <div class="context-links">
-            <a href="{{ reciprocity.board_url or board.url | default('#', true) }}" target="_blank" rel="noopener noreferrer">Primary board page <span class="sr-only">(opens in new tab)</span></a>
+            <a href="{{ reciprocity.board_url or board.url | default('#', true) }}" target="_blank" rel="noopener noreferrer">Board website <span class="sr-only">(opens in new tab)</span></a>
           </div>
-          <p class="source-note">Last updated <time datetime="{{ iso_date }}">{{ raw_date }}</time>.</p>
+          <p class="source-note">Last updated <time datetime="{{ iso_date }}">{{ pretty_date }}</time>.</p>
         </div>
 
         {# ── Reciprocity rail ── #}
@@ -804,7 +807,7 @@
               {% endif %}
             </dd>
 
-            <dt>Processing time</dt>
+            <dt>Estimated processing time</dt>
             <dd>
               {% if not reciprocity.license_required %}
                 No state application
@@ -818,7 +821,7 @@
             <dt>Fingerprinting</dt>
             <dd>{{ 'Required' if reciprocity.fingerprint_required else 'Not clearly required' }}</dd>
 
-            <dt>Temp license</dt>
+            <dt>Temporary {{ cred_label | lower }}</dt>
             <dd>{{ 'Available' if reciprocity.temp_license_available else 'Not listed' }}</dd>
 
             <dt>Path</dt>
@@ -832,19 +835,19 @@
               {% endif %}
             </dd>
 
-            <dt>Board</dt>
+            <dt>Licensing board</dt>
             <dd>{{ board.name }}</dd>
           </dl>
           <div class="context-links">
             <a href="#endorsement">{% if reciprocity.license_required %}See the steps{% else %}See the checklist{% endif %}</a>
-            <a href="{{ reciprocity.board_url or board.url | default('#', true) }}" target="_blank" rel="noopener noreferrer">Primary board page <span class="sr-only">(opens in new tab)</span></a>
+            <a href="{{ reciprocity.board_url or board.url | default('#', true) }}" target="_blank" rel="noopener noreferrer">Board website <span class="sr-only">(opens in new tab)</span></a>
           </div>
           {% if verify_fee_and_timing_with_board and has_verified_board_data %}
-            <p class="source-note">Board-checked <time datetime="{{ iso_date }}">{{ raw_date }}</time>. Any field still marked "See board" has not been confirmed yet.</p>
+            <p class="source-note">Board-checked <time datetime="{{ iso_date }}">{{ pretty_date }}</time>. Any field still marked "See board" has not been confirmed yet.</p>
           {% elif verify_fee_and_timing_with_board %}
             <p class="source-note">Fee and timing details are still being re-checked. Check the board page before you rely on a fee or timeline.</p>
           {% else %}
-            <p class="source-note">Last updated <time datetime="{{ iso_date }}">{{ raw_date }}</time>.</p>
+            <p class="source-note">Last updated <time datetime="{{ iso_date }}">{{ pretty_date }}</time>.</p>
           {% endif %}
         </div>
 
@@ -861,13 +864,13 @@
             <dt>CE required</dt>
             <dd>{{ quick_facts.ce_requirement | default('See board', true) }}</dd>
 
-            <dt>Board</dt>
+            <dt>Licensing board</dt>
             <dd>{{ board.name }}</dd>
           </dl>
           <div class="context-links">
             <a href="{{ reciprocity.board_url or board.url | default('#', true) }}" target="_blank" rel="noopener noreferrer">Renew on board site <span class="sr-only">(opens in new tab)</span></a>
           </div>
-          <p class="source-note">Last updated <time datetime="{{ iso_date }}">{{ raw_date }}</time>.</p>
+          <p class="source-note">Last updated <time datetime="{{ iso_date }}">{{ pretty_date }}</time>.</p>
         </div>
       </aside>
       
