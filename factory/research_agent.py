@@ -12,9 +12,10 @@ Takes a specialty slug (e.g. 'pharm', 'aud', 'dietitian') and enriches all
 Uses Gemini 2.0 Flash for structured research.
 
 Usage:
-  python3 factory/research_agent.py pharm          # enrich all 51 pharm states
-  python3 factory/research_agent.py pharm --state AZ  # enrich just Arizona
-  python3 factory/research_agent.py pharm --dry-run    # preview without writing
+  python3 factory/research_agent.py pharm              # enrich all 51 pharm states
+  python3 factory/research_agent.py pharm --state AZ   # enrich just Arizona
+  python3 factory/research_agent.py pharm --dry-run     # preview without writing
+  python3 factory/research_agent.py cna --from-audit   # consume audit re-research queue
 """
 
 import argparse
@@ -24,6 +25,11 @@ import sys
 import time
 import glob
 from pathlib import Path
+from datetime import datetime
+
+# ── Cross-project ID system ──
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from id_constants import NS, OBJ, EVT, VERTICAL_TO_PROF, make_object_id, make_event_id
 
 # ── Gemini client ──
 from google import genai
@@ -200,7 +206,10 @@ def main():
     parser.add_argument("--state", help="Single state abbreviation (e.g. AZ). If omitted, runs all 51.")
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing files")
     parser.add_argument("--delay", type=float, default=1.5, help="Delay between API calls (seconds)")
+    parser.add_argument("--from-audit", action="store_true", help="Consume audit_reresearch_<slug>.json queue")
     args = parser.parse_args()
+
+    today = datetime.now().strftime("%Y%m%d")
 
     slug = args.slug
     json_dir = Path(__file__).resolve().parent.parent / f"{slug}-pseo" / "database" / "json"
@@ -242,22 +251,41 @@ def main():
     success = 0
     errors = 0
 
+    # ── Event tracking ──
+    event_log = []
+    event_seq = {}
+
     for i, fpath in enumerate(json_files, 1):
         data = json.loads(fpath.read_text(encoding="utf-8"))
         state = data.get("state_name", fpath.stem)
         profession = data.get("profession_name", slug)
 
-        # Skip if already enriched
-        if data.get("credential_type", {}).get("official_term"):
-            print(f"  ⏭️  [{i}/{len(json_files)}] {state} — already enriched")
+        # ── Derive canonical target_id ──
+        abbr = STATE_ABBR.get(state, state[:2].upper())
+        prof_slug = VERTICAL_TO_PROF.get(slug, slug.upper())
+        target_id = make_object_id(NS.SLR, OBJ.PAGE, abbr, prof_slug)
+
+        # Skip if already enriched (unless --from-audit forces re-check)
+        if not args.from_audit and data.get("credential_type", {}).get("official_term"):
+            print(f"  ⏭️  [{i}/{len(json_files)}] {state} ({target_id}) — already enriched")
             success += 1
             continue
 
-        print(f"  🔍 [{i}/{len(json_files)}] {state}...", end=" ", flush=True)
+        print(f"  🔍 [{i}/{len(json_files)}] {state} ({target_id})...", end=" ", flush=True)
+
+        # ── Emit BOT.EVT.RESEARCH_TASK ──
+        if target_id not in event_seq:
+            event_seq[target_id] = 0
+        event_seq[target_id] += 1
+        research_event_id = make_event_id(NS.BOT, EVT.RESEARCH_TASK, target_id, today, event_seq[target_id])
 
         try:
             research = research_state(client, state, profession, data)
             enriched = apply_enrichment(data, research)
+
+            # ── Stamp canonical ID on the record ──
+            enriched["_target_id"] = target_id
+            enriched["_last_research_event"] = research_event_id
 
             if args.dry_run:
                 ct = research.get("credential_type", {})
@@ -270,10 +298,25 @@ def main():
                 ct = enriched.get("credential_type", {})
                 print(f"✅ {ct.get('official_term', '?')}")
 
+            event_log.append({
+                "event_id": research_event_id,
+                "target_id": target_id,
+                "status": "SUCCESS",
+                "state": state,
+                "timestamp": datetime.now().isoformat(),
+            })
             success += 1
 
         except Exception as e:
             print(f"❌ {e}")
+            event_log.append({
+                "event_id": research_event_id,
+                "target_id": target_id,
+                "status": "ERROR",
+                "state": state,
+                "error": str(e),
+                "timestamp": datetime.now().isoformat(),
+            })
             errors += 1
 
         # Rate limit
@@ -282,6 +325,14 @@ def main():
 
     print("=" * 60)
     print(f"  Done: {success} enriched, {errors} errors")
+
+    # ── Write event log ──
+    if event_log:
+        log_path = Path(f"research_events_{slug}_{today}.jsonl")
+        with open(log_path, "a", encoding="utf-8") as f:
+            for evt in event_log:
+                f.write(json.dumps(evt) + "\n")
+        print(f"  Events written to {log_path}")
 
 
 if __name__ == "__main__":
