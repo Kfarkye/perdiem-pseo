@@ -25,8 +25,9 @@
     "physical_address": "See board website",
     "phone": "(302) 744-4500",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://dhss.delaware.gov/dhss/dhcq/cnareg.html"
+    "email": "DECNA@prometric.com",
+    "url": "https://dhss.delaware.gov/dhss/dhcq/cnareg.html",
+    "contact_url": "mailto:DECNA@prometric.com"
   },
   "quick_facts": {
     "total_fee": "$30",

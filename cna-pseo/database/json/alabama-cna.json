@@ -25,8 +25,9 @@
     "physical_address": "See board website",
     "phone": "(334) 293-5200",
     "fax": "N/A (contact by phone)",
-    "email": "See board website",
-    "url": "https://www.abn.alabama.gov/"
+    "email": "NARegistry@adph.state.al.us",
+    "url": "https://www.abn.alabama.gov/",
+    "contact_url": "mailto:NARegistry@adph.state.al.us"
   },
   "quick_facts": {
     "total_fee": "$125",

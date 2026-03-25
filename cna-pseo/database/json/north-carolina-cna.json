@@ -26,7 +26,10 @@
     "phone": "(919) 782-3211",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://www.ncbon.com/"
+    "url": "https://www.ncbon.com/",
+    "verify_url": "https://ncnar.ncdhhs.gov/verify_listings1.jsp",
+    "contact_url": "https://www.ncbon.com/contact-contact-information",
+    "website": "https://ncnar.ncdhhs.gov/index1.jsp"
   },
   "quick_facts": {
     "total_fee": "$24",

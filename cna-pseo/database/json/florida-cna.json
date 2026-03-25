@@ -3,8 +3,8 @@
   "state_name": "Florida",
   "fingerprints": {
     "required": true,
-    "method_in_state": "LiveScan (Level II — AHCA Clearinghouse)",
-    "method_out_of_state": "AHCA Clearinghouse (CHAI) at flclearinghouse.com — ORI: EDOH0380Z",
+    "method_in_state": "LiveScan (Level II \u2014 AHCA Clearinghouse)",
+    "method_out_of_state": "AHCA Clearinghouse (CHAI) at flclearinghouse.com \u2014 ORI: EDOH0380Z",
     "vendor": "AHCA / FDLE",
     "fee": "$35-$50 (varies by state)",
     "delay_out_of_state_weeks": "2-4",
@@ -26,7 +26,10 @@
     "phone": "(850) 488-0595",
     "fax": "N/A (contact by phone)",
     "email": "See board website",
-    "url": "https://floridasnursing.gov/"
+    "url": "https://floridasnursing.gov/",
+    "verify_url": "https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders",
+    "contact_url": "https://floridasnursing.gov/contact/",
+    "website": "https://floridasnursing.gov/"
   },
   "quick_facts": {
     "total_fee": "$50",

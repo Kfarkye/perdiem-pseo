@@ -729,7 +729,10 @@
       </nav>
       
       <h1 id="hero-title">
-        {%- if profession_name | lower == "pharmacy technician" -%}
+        {%- set short_name = credential_nomenclature | default('', true) | string | trim -%}
+        {%- if short_name and short_name | length <= 5 -%}
+          {{ state_name | e }} {{ short_name | e }} {{ cred_label }}
+        {%- elif profession_name | lower == "pharmacy technician" -%}
           {{ state_name | e }} Pharmacy Tech {{ cred_label }}
         {%- else -%}
           {{ state_name | e }} {{ profession_name | e }} {{ cred_label }}
@@ -1194,21 +1197,47 @@
                 <dd><a href="tel:{{ safe_phone | replace(' ', '') | replace('-', '') | replace('.', '') | replace('(', '') | replace(')', '') }}">{{ board.phone }}</a></dd>
               {% endif %}
 
-              {% if board.email %}
-                {% set safe_email = (board.email | default('', true) | string) %}
+              {# ── Email: prefer board.email, skip "See board website" placeholder ── #}
+              {% set raw_email = (board.email | default('', true) | string | trim) %}
+              {% if raw_email and raw_email != 'See board website' and raw_email != 'N/A' %}
                 <dt>Email</dt>
-                <dd><a href="mailto:{{ safe_email | replace('mailto:', '') }}">{{ safe_email | replace('mailto:', '') }}</a></dd>
+                <dd><a href="mailto:{{ raw_email | replace('mailto:', '') }}">{{ raw_email | replace('mailto:', '') }}</a></dd>
+              {% elif board.contact_url is defined and board.contact_url and board.contact_url.startswith('mailto:') %}
+                <dt>Email</dt>
+                <dd><a href="{{ board.contact_url }}">{{ board.contact_url | replace('mailto:', '') }}</a></dd>
               {% endif %}
 
-              <dt>Board site</dt>
-              <dd><a href="{{ reciprocity.board_url or board.url | default('#', true) }}" target="_blank" rel="noopener noreferrer">Primary board page <span class="sr-only">(opens in new tab)</span></a></dd>
+              {# ── Verify a License / Registry Lookup ── #}
+              {% if board.verify_url is defined and board.verify_url %}
+                <dt>Verify a {{ cred_label | lower }}</dt>
+                <dd><a href="{{ board.verify_url }}" target="_blank" rel="noopener noreferrer">Registry lookup <span class="sr-only">(opens in new tab)</span></a></dd>
+              {% endif %}
+
+              {# ── Application / Endorsement Page (distinct from board homepage) ── #}
+              {% set endorse_url = reciprocity.endorsement_url | default('', true) %}
+              {% set board_url = board.url | default('', true) %}
+              {% if endorse_url and endorse_url != board_url %}
+                <dt>Application page</dt>
+                <dd><a href="{{ endorse_url }}" target="_blank" rel="noopener noreferrer">{{ profession_name }} {{ cred_transfer }} application <span class="sr-only">(opens in new tab)</span></a></dd>
+              {% endif %}
+
+              {# ── Board Contact Page (non-email contact URL) ── #}
+              {% if board.contact_url is defined and board.contact_url and not board.contact_url.startswith('mailto:') %}
+                <dt>Contact page</dt>
+                <dd><a href="{{ board.contact_url }}" target="_blank" rel="noopener noreferrer">Board contact information <span class="sr-only">(opens in new tab)</span></a></dd>
+              {% endif %}
+
+              {# ── Board Homepage ── #}
+              {% set homepage = board.website | default(board_url, true) %}
+              <dt>Board homepage</dt>
+              <dd><a href="{{ homepage or '#' }}" target="_blank" rel="noopener noreferrer">{{ board.name | default('Official board site', true) }} <span class="sr-only">(opens in new tab)</span></a></dd>
 
               {% if compact.compact_source_url %}
                 <dt>Compact source</dt>
                 <dd><a href="{{ compact.compact_source_url }}" target="_blank" rel="noopener noreferrer">{{ compact.compact_name or "Compact status page" }} <span class="sr-only">(opens in new tab)</span></a></dd>
               {% endif %}
             </dl>
-            <p class="source-note">Source: <a href="{{ reciprocity.board_url or board.url | default('#', true) }}" target="_blank" rel="noopener noreferrer">Primary board website <span class="sr-only">(opens in new tab)</span></a></p>
+            <p class="source-note">Sources verified {{ pretty_date }}. Links go directly to official {{ board.name | default('board', true) }} pages.</p>
           </address>
         </section>
 
