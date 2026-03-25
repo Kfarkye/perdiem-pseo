@@ -1014,7 +1014,7 @@
                 {% set step_ns.number = step_ns.number + 1 %}
                 <li>
                   <span class="step-kicker" aria-hidden="true">Step {{ step_ns.number }}</span>
-                  <h3 class="step-title">{% if 'transcript' in (document.item | default('', true)) | lower %}Request {{ document.item }}{% elif 'score' in (document.item | default('', true)) | lower or 'exam' in (document.item | default('', true)) | lower or 'praxis' in (document.item | default('', true)) | lower %}Submit Your {{ document.item }}{% elif 'fellowship' in (document.item | default('', true)) | lower or 'verification' in (document.item | default('', true)) | lower or 'registration' in (document.item | default('', true)) | lower %}Verify Your {{ document.item }}{% else %}Provide {{ document.item }}{% endif %}</h3>
+                  <h3 class="step-title">{% if 'transcript' in (document.item | default('', true)) | lower %}Request {{ document.item }}{% elif 'score' in (document.item | default('', true)) | lower or 'exam' in (document.item | default('', true)) | lower or 'praxis' in (document.item | default('', true)) | lower %}Submit Your {{ document.item }}{% elif 'verification' in (document.item | default('', true)) | lower %}Provide {{ document.item }}{% elif 'fellowship' in (document.item | default('', true)) | lower or 'registration' in (document.item | default('', true)) | lower %}Confirm Your {{ document.item }}{% else %}Provide {{ document.item }}{% endif %}</h3>
                   {% if document.detail %}<p>{{ document.detail }}</p>{% endif %}
                 </li>
               {% endfor %}
@@ -1047,7 +1047,7 @@
 
             {% for step in steps %}
               {% set step_title = (step.title | default('', true)) | lower %}
-              {% if 'education' not in step_title and 'fieldwork' not in step_title and 'exam' not in step_title and 'nbcot' not in step_title and 'nbrc' not in step_title and 'praxis' not in step_title and 'naplex' not in step_title and 'cdr' not in step_title and 'application' not in step_title and 'fee' not in step_title and 'fingerprint' not in step_title and 'background' not in step_title and 'verification' not in step_title and 'compact' not in step_title and 'temporary' not in step_title and 'temp ' not in step_title and 'jurisprudence' not in step_title and 'processing' not in step_title %}
+              {% if 'education' not in step_title and 'fieldwork' not in step_title and 'exam' not in step_title and 'nbcot' not in step_title and 'nbrc' not in step_title and 'praxis' not in step_title and 'naplex' not in step_title and 'cdr' not in step_title and 'application' not in step_title and 'fee' not in step_title and 'fingerprint' not in step_title and 'background' not in step_title and 'verification' not in step_title and 'compact' not in step_title and 'temporary' not in step_title and 'temp ' not in step_title and 'jurisprudence' not in step_title and 'processing' not in step_title and 'submit' not in step_title %}
                 {% set step_ns.number = step_ns.number + 1 %}
                 <li>
                   <span class="step-kicker" aria-hidden="true">Step {{ step_ns.number }}</span>
