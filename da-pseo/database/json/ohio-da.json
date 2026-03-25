@@ -34,7 +34,9 @@
     "renewal_fee": "$45",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Radiography Exam (if performing radiography)",
+    "ce_requirement": "12 hours per renewal cycle (if radiography qualified)"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Ohio State Dental Board with required documentation and fees."
+      "title": "Complete a CODA-accredited dental assisting program (if radiography qualified)",
+      "description": "If you intend to perform radiography, you must graduate from a dental assisting program accredited by the Commission on Dental Accreditation (CODA)."
+    },
+    {
+      "title": "Pass the Radiography Exam (if performing radiography)",
+      "description": "If you intend to perform radiography, you must pass a radiography exam acceptable to the Ohio State Dental Board."
+    },
+    {
+      "title": "Submit your Dental Assistant Registration Application",
+      "description": "Complete and submit the Dental Assistant Registration Application to the Ohio State Dental Board, including the required fee."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://dental.ohio.gov/"
   },
   "slug": "ohio-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Ohio",
+        "dek": "Ohio Dental Assistant registration requires graduation from a CODA-accredited program (if radiography qualified), passing the radiography exam (if performing radiography), and completing the registration application."
+      }
+    }
+  }
 }

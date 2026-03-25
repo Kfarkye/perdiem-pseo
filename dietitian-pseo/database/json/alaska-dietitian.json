@@ -34,7 +34,9 @@
     "renewal_fee": "$125",
     "renewal_cycle": "Every 2 years (expires Dec 31 of odd-numbered years)",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "Up to 2 Years (depending on issue date relative to the cycle)"
+    "license_duration": "Up to 2 Years (depending on issue date relative to the cycle)",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+      "title": "Meet the Education Requirement",
+      "description": "You must have completed a minimum of a baccalaureate degree granted by a U.S. regionally accredited college or university or foreign equivalent with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study, as approved by the board."
     },
     {
-      "title": "Submit the Application via MY LICENSE",
-      "description": "Complete the 'Application for Dietitian License' (Form #08-4400) online through the MY LICENSE self-service portal or via mail. Ensure your signature is notarized if applying via paper, and pay the $150 fee."
+      "title": "Complete Supervised Practice",
+      "description": "You must complete a pre-professional experience program approved by the board or the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Arrange for the CDR to send official registration verification directly to the Alaska licensing office. Provide a recent passport-style photograph."
+      "title": "Pass the Registration Examination",
+      "description": "You must pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": false
   },
   "slug": "alaska-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Alaska",
+        "dek": "Alaska Dietitian License requires a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years + 30 CE hours",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this."
+      "title": "Meet Education and Experience Requirements",
+      "description": "Complete the academic requirements and supervised practice experience as specified by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit the Online Application via OPR",
-      "description": "Create an account on the Vermont OPR Online Services Platform, select the Dietitian application, and pay the $100 fee."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Upload a copy of your active CDR card or ensure verification is requested from the CDR during the online application process."
+      "title": "Apply for Licensure",
+      "description": "Submit a completed application, required documentation, and the appropriate fee to the Vermont Secretary of State Office of Professional Regulation."
     }
   ],
   "documents": [
@@ -135,5 +137,19 @@
     "requires_psv": false
   },
   "slug": "vermont-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Vermont",
+        "dek": "Vermont Dietitian licenses require completion of specified education and experience, passing the Registration Examination for Dietitians, and paying the required fee."
+      }
+    }
+  }
 }

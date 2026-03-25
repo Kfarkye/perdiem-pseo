@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Tennessee Board of Dentistry with required documentation and fees."
+      "title": "Meet Eligibility Requirements",
+      "description": "You must graduate from a CODA-accredited dental assisting program or complete on-the-job training."
+    },
+    {
+      "title": "Pass the Registered Dental Assistant (RDA) Exam",
+      "description": "Successfully pass the Tennessee Registered Dental Assistant (RDA) examination."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit your application and required documents to the Tennessee Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dentistry-board.html"
   },
   "slug": "tennessee-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Tennessee",
+        "dek": "Tennessee Dental Assistant registration requires graduation from a CODA-accredited dental assisting program or completion of on-the-job training and passage of the RDA exam."
+      }
+    }
+  }
 }

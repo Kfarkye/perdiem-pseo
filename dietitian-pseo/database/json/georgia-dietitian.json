@@ -34,7 +34,9 @@
     "renewal_fee": "$60",
     "renewal_cycle": "Every 2 years (by March 31, even years) + 30 CE hours",
     "processing_time": "15 to 20 Business Days",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) national Registration Examination for Dietitians."
+      "title": "Meet the Educational Requirements",
+      "description": "Complete a minimum of a bachelor's degree from a US regionally accredited college or university and complete the required coursework as approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit the Online Application",
-      "description": "Create an account on the Georgia Secretary of State's online licensing portal and submit the completed application with the non-refundable $85 fee (includes $10 processing fee)."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Supporting Documentation",
-      "description": "Upload official transcripts, a copy of your current CDR registration card or award letter, and your ACEND Verification Statement. If applying by endorsement, include license verification from all other states."
+      "title": "Submit an Application for Licensure",
+      "description": "Apply for licensure with the Georgia Board of Examiners of Licensed Dietitians and pay the required fee."
     }
   ],
   "documents": [
@@ -147,5 +149,19 @@
     "requires_psv": true
   },
   "slug": "georgia-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Georgia",
+        "dek": "Georgia Dietitian licensure requires completing educational requirements, passing the Registration Examination for Dietitians, and submitting an application."
+      }
+    }
+  }
 }

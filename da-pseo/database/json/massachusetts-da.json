@@ -34,7 +34,8 @@
     "renewal_fee": "$60",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Massachusetts Board of Registration in Dentistry with required documentation and fees."
+      "title": "Complete Required Education or Training",
+      "description": "Graduate from a CODA-accredited dental assisting program or complete two years of full-time on-the-job training as a dental assistant."
+    },
+    {
+      "title": "Obtain CPR Certification",
+      "description": "Hold current certification in Basic Life Support (BLS) or Cardiopulmonary Resuscitation (CPR)."
+    },
+    {
+      "title": "Submit Application and Fee",
+      "description": "Submit a completed application for dental assistant registration and the required fee to the Massachusetts Board of Registration in Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://www.mass.gov/orgs/board-of-registration-in-dentistry"
   },
   "slug": "massachusetts-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Massachusetts",
+        "dek": "Massachusetts Dental Assistant registration requires graduation from a CODA-accredited program or on-the-job training, CPR certification, and completion of continuing education requirements."
+      }
+    }
+  }
 }

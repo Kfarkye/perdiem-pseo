@@ -34,7 +34,8 @@
     "renewal_fee": "$90",
     "renewal_cycle": "Every 2 years (by birth month) — no CE required for state renewal",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians"
   },
   "license_types": [
     {
@@ -48,16 +49,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. The CDR exam fee is $200."
+      "title": "Complete Education and Supervised Practice",
+      "description": "You must earn a bachelor's degree or higher and complete a supervised practice program approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit the Online Application",
-      "description": "Apply through the Tennessee Online Application system. Pay the non-refundable $140 application fee. Include a passport-style photo and declaration of citizenship form."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Complete Background Check & Provide Documentation",
-      "description": "Authorize and complete a criminal background check. Submit official transcripts, proof of CDR registration, verification of supervised practice completion, and a letter of recommendation."
+      "title": "Apply for a Tennessee License",
+      "description": "Submit an application and required documentation to the Tennessee Board of Dietitian/Nutritionist Examiners."
     }
   ],
   "documents": [
@@ -151,5 +152,19 @@
     "requires_psv": true
   },
   "slug": "tennessee-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Tennessee",
+        "dek": "Tennessee Dietitian licenses require a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

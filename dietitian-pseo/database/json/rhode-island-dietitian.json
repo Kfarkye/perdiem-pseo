@@ -34,7 +34,9 @@
     "renewal_fee": "$170",
     "renewal_cycle": "Every 2 years (expires Nov 1 of odd years) + 20 CE hours",
     "processing_time": "3 to 5 Weeks",
-    "license_duration": "Up to 2 Years"
+    "license_duration": "Up to 2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status is required."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Complete a didactic program in dietetics and supervised practice experiences approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit the Application and Fee",
-      "description": "Complete, sign, and notarize the official application. Submit it to the Department of Health with the $75 fee (payable to the RI General Treasurer) and a 2x3 portrait photograph."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Complete Background Check & Verifications",
-      "description": "Obtain an original Bureau of Criminal Identification (BCI) report from the Attorney General's Office. Ensure CDR verification is sent directly to the Board."
+      "title": "Apply for a Dietitian License",
+      "description": "Submit a completed application, including all required documentation and fees, to the Rhode Island Board of Dietetics Practice."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": false
   },
   "slug": "rhode-island-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Rhode Island",
+        "dek": "Rhode Island Dietitian licenses require successful completion of a Board-approved program, passing the Registration Examination for Dietitians, and application to the Board of Dietetics Practice."
+      }
+    }
+  }
 }

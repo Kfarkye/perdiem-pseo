@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "NAPLEX and MPJE",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Board Exams",
-      "description": "Successfully pass the expected board examinations, typically the NAPLEX and MPJE."
+      "title": "Graduate from an Accredited Pharmacy Program",
+      "description": "Complete a professional degree program in pharmacy from a school or college of pharmacy accredited by the Accreditation Council for Pharmacy Education (ACPE)."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check, and submit the necessary licensing fees."
+      "title": "Pass the NAPLEX and MPJE Exams",
+      "description": "Successfully pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Exam (MPJE)."
+    },
+    {
+      "title": "Complete Internship Requirements and Apply for Licensure",
+      "description": "Satisfactorily complete the required internship hours under the supervision of a licensed pharmacist and submit a complete application for licensure to the Massachusetts Board of Pharmacy."
     }
   ],
   "documents": [
@@ -130,5 +136,19 @@
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "massachusetts-pharmacist",
-  "specialty": "pharmacist"
+  "specialty": "pharmacist",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacist in Massachusetts",
+        "dek": "Massachusetts Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing internship requirements."
+      }
+    }
+  }
 }

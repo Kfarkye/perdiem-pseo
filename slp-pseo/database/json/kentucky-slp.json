@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit application with fees to the Board."
+      "title": "Meet Educational Requirements",
+      "description": "Complete a master’s degree or doctoral degree program in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Clinical Experience",
+      "description": "Complete a supervised clinical practicum of at least 400 clock hours, including 325 hours at the graduate level, as part of your degree program."
+    },
+    {
+      "title": "Pass the National Examination and Apply for Licensure",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology and submit a completed application with the required fee and documentation to the Kentucky Board of Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Kentucky is a member of the ASLP Interstate Compact."
   },
   "slug": "kentucky-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Kentucky",
+        "dek": "Kentucky Speech-Language Pathologist license requires a master's degree, supervised clinical experience, and passing the national exam."
+      }
+    }
+  }
 }

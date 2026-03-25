@@ -34,7 +34,9 @@
     "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "NBCOT",
+    "ce_requirement": "30 contact hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an ACOTE-accredited program",
+      "description": "Complete an occupational therapy program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+    },
+    {
+      "title": "Pass the NBCOT exam",
+      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+    },
+    {
+      "title": "Apply for a Wyoming Occupational Therapy License",
+      "description": "Submit a completed application, including required documentation and fees, to the Wyoming Board of Occupational Therapy."
     }
   ],
   "documents": [
@@ -127,5 +137,19 @@
     "requires_psv": true
   },
   "slug": "wyoming-ot",
-  "specialty": "ot"
+  "specialty": "ot",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Occupational Therapist in Wyoming",
+        "dek": "Wyoming Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a background check."
+      }
+    }
+  }
 }

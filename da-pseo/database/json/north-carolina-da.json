@@ -34,7 +34,9 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "N/A",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "N/A"
+    "license_duration": "N/A",
+    "exam_name": "National Entry Level Dental Assistant (NELDA) exam, or the Certified Dental Assistant (CDA) exam, or successful completion of a CODA-accredited dental assisting program",
+    "ce_requirement": "N/A"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet Education or Exam Requirements",
+      "description": "Complete a CODA-accredited dental assisting program or pass the National Entry Level Dental Assistant (NELDA) exam or the Certified Dental Assistant (CDA) exam."
+    },
+    {
+      "title": "Complete the Application",
+      "description": "Complete the Dental Assistant II registration application on the North Carolina State Board of Dental Examiners website."
+    },
+    {
+      "title": "Submit Required Documentation",
+      "description": "Submit official transcripts or exam results and any other required documentation to the North Carolina State Board of Dental Examiners."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://www.ncdentalboard.org/"
   },
   "slug": "north-carolina-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in North Carolina",
+        "dek": "North Carolina Dental Assistant registration requires graduation from a CODA-accredited program or passing the NELDA or CDA exam, submitting an application to the board, and providing supporting documentation."
+      }
+    }
+  }
 }

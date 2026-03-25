@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every year",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "1 year"
+    "license_duration": "1 year",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per renewal year"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to DPH",
-      "description": "Submit application with $200 fee to CT DPH."
+      "title": "Complete Required Education",
+      "description": "Earn a master's degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Complete Supervised Clinical Experience",
+      "description": "Fulfill a supervised clinical experience, as part of or in addition to your graduate work, meeting the requirements outlined by the Connecticut Department of Public Health."
+    },
+    {
+      "title": "Pass the Praxis Examination and Apply for Licensure",
+      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology and submit a complete application, including all required documentation and fees, to the Connecticut Department of Public Health."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Connecticut does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full Connecticut licensure."
   },
   "slug": "connecticut-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Connecticut",
+        "dek": "Connecticut Speech-Language Pathologist license requires a master's degree, completion of supervised clinical experience, and passing the Praxis Examination in Speech-Language Pathology."
+      }
+    }
+  }
 }

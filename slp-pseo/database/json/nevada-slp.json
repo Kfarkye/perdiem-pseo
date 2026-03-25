@@ -34,7 +34,9 @@
     "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit application with fees to the Board."
+      "title": "Meet the Education Requirements",
+      "description": "Complete a master’s degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience consisting of at least 1260 hours, with at least 36 weeks of full-time experience."
+    },
+    {
+      "title": "Pass the National Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Nevada is a member of the ASLP Interstate Compact."
   },
   "slug": "nevada-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Nevada",
+        "dek": "Nevada Speech-Language Pathology License requires a master's degree, supervised professional experience, and passing a national exam."
+      }
+    }
+  }
 }

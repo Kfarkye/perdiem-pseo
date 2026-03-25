@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every year",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "1 year"
+    "license_duration": "1 year",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit with fees to the Board."
+      "title": "Meet Education Requirements",
+      "description": "Obtain a master's degree or doctorate in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience (SPE) of at least 36 weeks, totaling 1260 hours, under the guidance of a licensed speech-language pathologist."
+    },
+    {
+      "title": "Pass the National Examination and Apply for Licensure",
+      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology and submit a completed application to the Oklahoma Board of Examiners for Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Oklahoma is a member of the ASLP Interstate Compact."
   },
   "slug": "oklahoma-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Oklahoma",
+        "dek": "Oklahoma Speech-Language Pathologist license requires a master's degree, passing the national exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

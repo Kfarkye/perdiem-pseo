@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Iowa Dental Board with required documentation and fees."
+      "title": "Meet Education Requirements",
+      "description": "Complete a CODA-accredited dental assisting program or meet the requirements for on-the-job training as specified by the Iowa Dental Board."
+    },
+    {
+      "title": "Complete Application",
+      "description": "Submit a complete Dental Assistant Registration application to the Iowa Dental Board."
+    },
+    {
+      "title": "Receive Registration",
+      "description": "Upon approval of your application, receive your Iowa Dental Assistant Registration."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://dentalboard.iowa.gov/"
   },
   "slug": "iowa-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Iowa",
+        "dek": "Iowa Dental Assistant registration requires graduation from a CODA-accredited dental assisting program or completion of specific on-the-job training, and application to the Iowa Dental Board."
+      }
+    }
+  }
 }

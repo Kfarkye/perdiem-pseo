@@ -34,7 +34,8 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Delaware Board of Dentistry and Dental Hygiene with required documentation and fees."
+      "title": "Meet Education and Training Requirements",
+      "description": "Complete a CODA-accredited dental assisting program or complete on-the-job training under a licensed dentist."
+    },
+    {
+      "title": "Complete CPR Certification",
+      "description": "Obtain and maintain current CPR certification from an approved provider."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit a completed application, required documentation, and fees to the Delaware Board of Dentistry and Dental Hygiene."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://dpr.delaware.gov/boards/dental/"
   },
   "slug": "delaware-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Delaware",
+        "dek": "Delaware Dental Assistant registration requires graduation from an approved program or successful completion of on-the-job training, completion of CPR certification, and successful application to the Board."
+      }
+    }
+  }
 }

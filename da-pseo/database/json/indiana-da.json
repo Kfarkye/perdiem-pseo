@@ -34,7 +34,9 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "N/A",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "N/A"
+    "license_duration": "N/A",
+    "exam_name": "DANB CDA",
+    "ce_requirement": "12 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Pass the DANB CDA Exam",
+      "description": "Successfully complete the Dental Assisting National Board Certified Dental Assistant (DANB CDA) examination."
+    },
+    {
+      "title": "Complete a CPR Course",
+      "description": "Obtain certification in cardiopulmonary resuscitation (CPR) from an approved provider."
+    },
+    {
+      "title": "Apply for Certification",
+      "description": "Submit a completed application, including required documentation and fees, to the Indiana Board of Dentistry for certification as a dental assistant."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://www.in.gov/pla/professions/indiana-board-of-dentistry/"
   },
   "slug": "indiana-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "certificate",
+    "page_title_term": "Certificate",
+    "renewal_term": "certificate renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Indiana",
+        "dek": "Indiana Dental Assistant certification requires passing the DANB CDA exam, completing a CPR course, and submitting an application to the Indiana Board of Dentistry."
+      }
+    }
+  }
 }

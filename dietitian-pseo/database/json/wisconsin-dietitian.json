@@ -34,7 +34,9 @@
     "renewal_fee": "$60",
     "renewal_cycle": "Every 2 years (by Oct 31, even years)",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years (expires Oct 31, even years)"
+    "license_duration": "2 Years (expires Oct 31, even years)",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the registration examination for dietitians established by the Commission on Dietetic Registration (CDR), or an equivalent examination approved by the Wisconsin Dietitians Affiliated Credentialing Board."
+      "title": "Complete Required Education",
+      "description": "You must obtain a bachelor's degree or post-baccalaureate degree from a regionally accredited college or university with completion of a didactic program in dietetics accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit the Online Application",
-      "description": "Apply online through the DSPS LicensE portal. Pay the $60 credential fee. Upload proof of CDR exam passage or current CDR registration verification."
+      "title": "Complete Supervised Practice",
+      "description": "You must complete a ACEND-accredited supervised practice dietetic internship or coordinated program."
     },
     {
-      "title": "Provide Education & Practice Documentation",
-      "description": "Submit satisfactory evidence of your qualifying education and completion of the supervised practice requirements, including official transcripts and internship verification."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Commission on Dietetic Registration's (CDR) Registration Examination for Dietitians."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "wisconsin-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "certification",
+    "page_title_term": "Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "credentialing by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Wisconsin",
+        "dek": "Wisconsin Dietitian Certification requires a bachelor's degree, completion of supervised practice, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

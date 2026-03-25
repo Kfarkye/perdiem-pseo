@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Complete Education/Training",
+      "description": "Complete a CODA-accredited dental assisting program or equivalent on-the-job training."
+    },
+    {
+      "title": "Pass the DANB RHS Exam",
+      "description": "Successfully complete the Dental Assisting National Board (DANB) Radiation Health and Safety (RHS) examination."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit a completed application and all required documentation to the Virginia Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://www.dhp.virginia.gov/dentistry/"
   },
   "slug": "virginia-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Virginia",
+        "dek": "Virginia Dental Assistant registration requires graduation from an accredited dental assisting program or completion of equivalent on-the-job training, successful completion of the DANB RHS exam, and submission of an application to the Virginia Board of Dentistry."
+      }
+    }
+  }
 }

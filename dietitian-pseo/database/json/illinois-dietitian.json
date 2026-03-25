@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Biennial (Expires October 31 of odd-numbered years)",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "75 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Meet Educational & Experience Prerequisites",
-      "description": "Complete a baccalaureate or higher degree (Master's required for CDR exam as of 2024), alongside a documented 900 hours of continuous supervised practice experience."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Earn a bachelor’s degree or higher from a regionally accredited U.S. college or university and complete a dietetics program accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Pass National Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registered Dietitian Nutritionist examination."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Submit the IDFPR Application via CORE",
-      "description": "Submit a new licensure application online using the state's new CORE licensing portal, and pay the non-refundable $100 application fee."
+      "title": "Apply for Licensure",
+      "description": "Submit an application for licensure to the Illinois Department of Financial and Professional Regulation (IDFPR) along with required documentation and fees."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "illinois-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Illinois",
+        "dek": "Illinois Dietitian License requires completing accredited education and supervised practice, passing the Registration Examination for Dietitians, and submitting an application to the state."
+      }
+    }
+  }
 }

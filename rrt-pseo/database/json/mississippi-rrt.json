@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) examination",
+    "ce_requirement": "24 contact hours of continuing education every two years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an Accredited Respiratory Care Program",
+      "description": "Complete a respiratory care program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+    },
+    {
+      "title": "Pass the NBRC Examination",
+      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+    },
+    {
+      "title": "Apply for a Respiratory Therapist License",
+      "description": "Submit a completed application, official transcripts, NBRC verification, and required fees to the Mississippi State Board of Medical Licensure."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://www.msbrc.ms.gov/"
   },
   "slug": "mississippi-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Mississippi",
+        "dek": "Mississippi Respiratory Therapist license requires graduation from an accredited respiratory care program, passing the NBRC examination, and submitting an application to the Mississippi State Board of Medical Licensure."
+      }
+    }
+  }
 }

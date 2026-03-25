@@ -34,7 +34,9 @@
     "renewal_fee": "$71",
     "renewal_cycle": "Biennial (Every 2 years)",
     "processing_time": "4 to 8 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,20 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Fulfill Education & Experience Standards",
-      "description": "Complete a Bachelor's degree (or higher) from a regionally accredited institution with a major in human nutrition, food and nutrition, dietetics, or food systems management, and complete a minimum of 900 hours of continuous supervised preprofessional experience."
+      "title": "Complete Education and Supervised Practice",
+      "description": "Complete a didactic program in dietetics and supervised practice experiences accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Pass Written Examination",
-      "description": "Pass a Board-approved examination, such as the Commission on Dietetic Registration (CDR) or the Board for Certification of Nutrition Specialists (BCNS) examination."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Take the Child Abuse Recognition Course",
-      "description": "Pennsylvania law mandates that all health-related licensees complete 3 hours of Board-approved training in child abuse recognition and reporting before applying for an initial license."
-    },
-    {
-      "title": "Submit the Online Application",
-      "description": "Create an account on the Pennsylvania Licensing System (PALS), complete the LDN application, upload your child abuse training certificate, and pay the non-refundable $95 fee."
+      "title": "Apply for a Dietitian License",
+      "description": "Submit an application for licensure to the Pennsylvania State Board of Nursing along with required documentation and fees."
     }
   ],
   "documents": [
@@ -143,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "pennsylvania-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Pennsylvania",
+        "dek": "Pennsylvania Dietitian License requires completion of an accredited education program, passing the Registration Examination for Dietitians, and completing supervised practice hours."
+      }
+    }
+  }
 }

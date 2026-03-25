@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination of the Praxis Series",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Meet the Educational Requirements",
+      "description": "Obtain a Doctor of Audiology (Au.D.) degree from an accredited educational institution."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the Required Examination",
+      "description": "Successfully complete the Audiology Examination of the Praxis Series."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit a completed application and all required documentation to the Nevada Board of Examiners for Audiology and Speech-Language Pathology."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "nevada-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in Nevada",
+        "dek": "Nevada Audiologist License requires a doctorate in audiology, passing the Audiology Examination of the Praxis Series, and completing a supervised professional experience."
+      }
+    }
+  }
 }

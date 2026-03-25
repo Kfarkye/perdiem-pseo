@@ -34,7 +34,8 @@
     "renewal_fee": "$61",
     "renewal_cycle": "Annual (on birthday) + No state CE requirement",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "1 Year"
+    "license_duration": "1 Year",
+    "exam_name": "Registration Examination for Dietitians"
   },
   "license_types": [
     {
@@ -48,20 +49,16 @@
   ],
   "steps": [
     {
-      "title": "Meet Education & Experience Requirements",
-      "description": "Earn a baccalaureate degree or higher in human nutrition, foods and nutrition, dietetics, or food management from an accredited institution. Complete a minimum of 900 hours of continuous supervised pre-professional experience."
+      "title": "Complete Education Requirements",
+      "description": "Complete a didactic program in dietetics accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) national Registration Examination for Dietitians."
+      "title": "Complete Supervised Practice",
+      "description": "Complete a supervised practice program accredited by ACEND."
     },
     {
-      "title": "Complete HIV/AIDS Training",
-      "description": "Complete a minimum of 4 hours of HIV/AIDS training from a Washington State-approved provider. This is a one-time requirement."
-    },
-    {
-      "title": "Submit Application to DOH",
-      "description": "Apply online through the Washington DOH HELMS portal or submit a paper application by mail. Pay the non-refundable $81 fee ($65 application + $16 HEAL-WA surcharge). Include official transcripts sent directly from your institution."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     }
   ],
   "documents": [
@@ -151,5 +148,19 @@
     "requires_psv": true
   },
   "slug": "washington-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "certification",
+    "page_title_term": "Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "credentialing by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Washington",
+        "dek": "Washington Dietitian Certification requires completion of a didactic program, supervised practice, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

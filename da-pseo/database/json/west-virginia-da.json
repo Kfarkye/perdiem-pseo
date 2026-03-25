@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "2 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the West Virginia Board of Dental Examiners with required documentation and fees."
+      "title": "Obtain CPR Certification",
+      "description": "Complete a current CPR certification course from an approved provider."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Complete and submit a dental assistant registration application to the West Virginia Board of Dental Examiners."
+    },
+    {
+      "title": "Receive Registration",
+      "description": "Upon approval of your application and meeting all requirements, you will receive your West Virginia Dental Assistant registration."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://wvdentalboard.org/"
   },
   "slug": "west-virginia-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in West Virginia",
+        "dek": "West Virginia Dental Assistant registration requires current CPR certification, registration application submission, and adherence to state regulations."
+      }
+    }
+  }
 }

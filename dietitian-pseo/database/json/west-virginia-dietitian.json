@@ -34,7 +34,9 @@
     "renewal_fee": "$69",
     "renewal_cycle": "Annual + 20 CE hours every two years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "1 Year"
+    "license_duration": "1 Year",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "20 hours every two years"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Complete a minimum of a baccalaureate degree from a regionally accredited US college or university and complete a Commission on Accreditation for Dietetics Education (ACDE) accredited Dietetic Internship or its equivalent."
     },
     {
-      "title": "Submit the Application to WVBOLD",
-      "description": "Download and complete the application form from the WVBOLD website. Submit it with the $69 fee."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Submit a copy of your active CDR card or have verification sent directly to the board. Ensure you meet the age (18+) and citizenship or legal alien requirements."
+      "title": "Apply for West Virginia Dietitian Licensure",
+      "description": "Submit a completed application and all required documentation to the West Virginia Board of Licensed Dietitians (WVBOLD), including official transcripts, examination results, and payment of fees."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "west-virginia-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in West Virginia",
+        "dek": "West Virginia Dietitian licensure requires completing an accredited dietetics program, passing the Registration Examination for Dietitians, and meeting continuing education requirements."
+      }
+    }
+  }
 }

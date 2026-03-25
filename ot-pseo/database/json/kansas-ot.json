@@ -34,7 +34,9 @@
     "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
+    "ce_requirement": "36 contact hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an Accredited OT Program",
+      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+    },
+    {
+      "title": "Pass the NBCOT Examination",
+      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+    },
+    {
+      "title": "Apply for a Kansas Occupational Therapy License",
+      "description": "Submit an application and all required documentation to the Kansas Board of Healing Arts for licensure."
     }
   ],
   "documents": [
@@ -127,5 +137,19 @@
     "requires_psv": true
   },
   "slug": "kansas-ot",
-  "specialty": "ot"
+  "specialty": "ot",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Occupational Therapist in Kansas",
+        "dek": "Kansas Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT examination, and a background check."
+      }
+    }
+  }
 }

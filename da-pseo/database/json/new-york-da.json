@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "6 to 8 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "15 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the New York State Education Department with required documentation and fees."
+      "title": "Meet Basic Requirements",
+      "description": "You must be of good moral character and at least 17 years of age, as well as have graduated from high school or its equivalent."
+    },
+    {
+      "title": "Complete Required Coursework",
+      "description": "Complete coursework in infection control and barrier precautions and child abuse reporting."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit an application for registration and pay the $60 fee to the New York State Education Department."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "http://www.op.nysed.gov/professions/dental-assisting/"
   },
   "slug": "new-york-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in New York",
+        "dek": "New York Dental Assistant registration requires graduation from high school, completion of required infection control and child abuse reporting coursework, and biennial registration renewal."
+      }
+    }
+  }
 }

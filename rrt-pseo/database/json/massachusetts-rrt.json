@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "6 to 8 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) exam",
+    "ce_requirement": "20 contact hours every 2 years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an Accredited Program",
+      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+    },
+    {
+      "title": "Pass the NBRC Exam",
+      "description": "Successfully pass the National Board for Respiratory Care (NBRC) Therapist Multiple Choice (TMC) examination and Clinical Simulation Examination (CSE)."
+    },
+    {
+      "title": "Apply for a License",
+      "description": "Submit an application for licensure to the Massachusetts Board of Respiratory Care, including required documentation and fees."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://www.mass.gov/respiratory-care-licensure"
   },
   "slug": "massachusetts-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Massachusetts",
+        "dek": "Massachusetts Respiratory Therapist licenses require graduation from an accredited respiratory care program, passing the NBRC exam, and completing an application."
+      }
+    }
+  }
 }

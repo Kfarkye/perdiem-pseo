@@ -34,7 +34,9 @@
     "renewal_fee": "$90",
     "renewal_cycle": "Every 2 years + 12 CE hours",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Texas Jurisprudence Exam",
-      "description": "Before applying, you must take and pass the online Texas Jurisprudence Exam covering state laws. You will pay a $34 fee to the third-party provider."
+      "title": "Complete Education and Supervised Practice",
+      "description": "Complete a minimum of a bachelor’s degree and a dietetics program that meets the accreditation standards of the Accreditation Council for Education in Nutrition and Dietetics (ACEND), as well as supervised practice."
     },
     {
-      "title": "Apply Online via TDLR",
-      "description": "Create an account in the TDLR Online Licensing System. Submit your application for a new Dietitian License and pay the $108 fee."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Pass the DPS Background Check",
-      "description": "TDLR conducts a criminal background check through the Texas Department of Public Safety (DPS). You will be sent a 'FAST Pass' to complete fingerprinting."
+      "title": "Apply for a Dietitian License",
+      "description": "Submit an application for licensure to the Texas Department of Licensing and Regulations (TDLR), including required documentation and fees."
     }
   ],
   "documents": [
@@ -131,5 +133,19 @@
     "requires_psv": false
   },
   "slug": "texas-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Texas",
+        "dek": "Texas Dietitian license requires completing a dietetics program, passing the Registration Examination for Dietitians, and meeting continuing education requirements."
+      }
+    }
+  }
 }

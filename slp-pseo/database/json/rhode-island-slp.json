@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "National Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit with fees to RI DOH."
+      "title": "Complete a Graduate Degree",
+      "description": "Earn a graduate degree in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA)."
+    },
+    {
+      "title": "Complete Supervised Clinical Experience",
+      "description": "Fulfill the supervised clinical experience requirements as specified by the Rhode Island Board of Speech-Language Pathology and Audiology."
+    },
+    {
+      "title": "Pass the National Examination and Apply for Licensure",
+      "description": "Pass the National Examination in Speech-Language Pathology and submit a completed application with all required documentation and fees to the Board."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Rhode Island is a member of the ASLP Interstate Compact."
   },
   "slug": "rhode-island-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Rhode Island",
+        "dek": "Rhode Island Speech-Language Pathologist licenses require a graduate degree, supervised clinical experience, and passing the national exam."
+      }
+    }
+  }
 }

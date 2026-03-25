@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every 1 year + 15 CE hours or active CDR",
     "processing_time": "Varies (~2 Weeks)",
-    "license_duration": "1 Year"
+    "license_duration": "1 Year",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "15 hours per year or active CDR"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Register & Apply Online",
-      "description": "Create an account and submit your application through the NM RLD Boards & Commissions portal."
+      "title": "Meet Education and Experience Requirements",
+      "description": "Complete the academic requirements and supervised practice experience as mandated by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit Required Documents",
-      "description": "Upload or arrange delivery of your CDR card, official transcripts, and complete the mandatory background check."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Pay Fees",
-      "description": "Submit the $50 non-refundable application fee. Upon board approval, you will be prompted to pay the $150 initial license fee to activate your license."
+      "title": "Apply for Licensure",
+      "description": "Submit a completed application and all required documentation to the New Mexico Nutrition and Dietetics Practice Board, including the required fee."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "new-mexico-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in New Mexico",
+        "dek": "New Mexico Dietitian license requires completing education and experience requirements, passing the Registration Examination for Dietitians, and submitting an application to the Nutrition and Dietetics Practice Board."
+      }
+    }
+  }
 }

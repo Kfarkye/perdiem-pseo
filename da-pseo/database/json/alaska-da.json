@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Alaska Board of Dental Examiners with required documentation and fees."
+      "title": "Complete the Application",
+      "description": "Submit a completed application for Dental Assistant Registration to the Alaska Board of Dental Examiners."
+    },
+    {
+      "title": "Pay the Required Fee",
+      "description": "Submit the required fee of $60 along with your application."
+    },
+    {
+      "title": "Meet Requirements for Specific Duties",
+      "description": "Provide proof of completion of required courses or certifications if performing coronal polishing or expanded functions, as specified by the board."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/DentalBoardofExaminers.aspx"
   },
   "slug": "alaska-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Alaska",
+        "dek": "Alaska Dental Assistant registration requires submitting an application, paying a fee, and meeting specific requirements as outlined by the Alaska Board of Dental Examiners."
+      }
+    }
+  }
 }

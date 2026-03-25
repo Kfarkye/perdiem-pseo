@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 8 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit application with fees to the Board of Registration."
+      "title": "Complete Education Requirements",
+      "description": "Earn a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience, which includes a minimum of 400 clock hours."
+    },
+    {
+      "title": "Pass the National Examination and Apply",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit an application for licensure with the required fee to the Massachusetts Board of Registration of Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Massachusetts does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full Massachusetts licensure."
   },
   "slug": "massachusetts-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Massachusetts",
+        "dek": "Massachusetts Speech-Language Pathologist licenses require a master's degree, passing the national exam, and completing a supervised professional experience."
+      }
+    }
+  }
 }

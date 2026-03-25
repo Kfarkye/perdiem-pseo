@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Annual (by Oct 31st) + 15 CE hours",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "1 Year"
+    "license_duration": "1 Year",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "15 hours per year"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+      "title": "Complete Education and Supervised Practice",
+      "description": "Earn a bachelor's degree or higher from a regionally accredited institution with completion of a Didactic Program in Dietetics (DPD) and complete a supervised practice program."
     },
     {
-      "title": "Submit the Application via eServices",
-      "description": "Create an account on the Kentucky DPL eServices portal, submit the online application, and pay the $50 application fee."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Documentation",
-      "description": "Upload or mail a copy of your current active CDR registration card, official transcripts, and proof of supervised practice."
+      "title": "Apply for a License",
+      "description": "Submit a completed application, official transcripts, exam results, and the required fee to the Kentucky Board of Licensure and Certification for Dietitians and Nutritionists."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "kentucky-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Kentucky",
+        "dek": "Kentucky Dietitian License requires a bachelor's degree, completion of supervised practice, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

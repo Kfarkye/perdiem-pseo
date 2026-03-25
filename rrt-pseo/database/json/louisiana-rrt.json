@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) entry-level examination",
+    "ce_requirement": "24 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an Accredited Program",
+      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or its successor."
+    },
+    {
+      "title": "Pass the NBRC Examination",
+      "description": "Successfully complete the National Board for Respiratory Care (NBRC) entry-level examination."
+    },
+    {
+      "title": "Apply for a License",
+      "description": "Submit a completed application, including all required documentation and fees, to the Louisiana State Board of Medical Examiners."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://www.lsbme.la.gov/content/respiratory-therapists"
   },
   "slug": "louisiana-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Louisiana",
+        "dek": "Louisiana Respiratory Therapist License requires graduation from an accredited respiratory care program, passing the NBRC entry-level examination, and submitting an application to the Louisiana State Board of Medical Examiners."
+      }
+    }
+  }
 }

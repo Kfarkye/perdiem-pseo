@@ -34,7 +34,9 @@
     "renewal_fee": "~$125–$180 (Estimated)",
     "renewal_cycle": "Annual (Estimated) + 75 CPE hours per 5-year CDR cycle",
     "processing_time": "TBD (New program launching Sept 2026)",
-    "license_duration": "1 Year (Estimated)"
+    "license_duration": "1 Year (Estimated)",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "75 continuing professional education (CPE) hours per 5-year CDR cycle"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination (or Provide Active RD Status)",
-      "description": "Successfully pass the CDR Registration Examination for Dietitians and obtain active registration, OR provide proof of holding valid, current CDR registration."
+      "title": "Complete Education Requirements",
+      "description": "Complete the education requirements from an ACEND-accredited program."
     },
     {
-      "title": "Complete CBI Background Check",
-      "description": "Submit to a Colorado Bureau of Investigation (CBI) fingerprint-based background check ($39.50 fee), required at initial registration."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully pass the Registration Examination for Dietitians, administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "File Application with DORA",
-      "description": "Submit the application to the Director of the Division of Professions and Occupations with proof of education, supervised practice, examination/CDR status, and the estimated $200 registration fee."
+      "title": "Apply for Registration",
+      "description": "Submit an application for registration to the Colorado State Board of Dietetics and Nutrition after September 2026, when the program launches."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": false
   },
   "slug": "colorado-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Colorado",
+        "dek": "Colorado Dietitian Registration requires successful completion of an accredited education program, passing the Registration Examination for Dietitians, and meeting the State Board's requirements."
+      }
+    }
+  }
 }

@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet Basic Requirements",
+      "description": "Applicants must be at least 18 years old and of good moral character."
+    },
+    {
+      "title": "Complete Application",
+      "description": "Submit a completed application for Dental Assistant Registration to the Illinois Department of Financial and Professional Regulation (IDFPR)."
+    },
+    {
+      "title": "Receive Registration",
+      "description": "Upon approval of your application, IDFPR will issue your Dental Assistant Registration."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://idfpr.illinois.gov/profs/dentalsurgeon.asp"
   },
   "slug": "illinois-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Illinois",
+        "dek": "Illinois Dental Assistant registration requires application through the Illinois Department of Financial and Professional Regulation."
+      }
+    }
+  }
 }

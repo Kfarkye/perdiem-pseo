@@ -34,7 +34,9 @@
     "renewal_fee": "$65",
     "renewal_cycle": "Every 2 years (July 31, odd years)",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "National Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Apply through PALS Portal",
-      "description": "Submit the application through the Pennsylvania Licensing System (PALS). Pay the $50 application fee. Include official transcripts, Praxis scores, clinical fellowship verification, child abuse training certificate, and FBI fingerprint background check (effective July 7, 2025)."
+      "title": "Complete Education and Clinical Practicum",
+      "description": "Earn a master's degree or doctoral degree in speech-language pathology from an accredited educational institution and complete a supervised clinical practicum."
+    },
+    {
+      "title": "Pass the National Examination",
+      "description": "Successfully complete the National Examination in Speech-Language Pathology administered by Praxis."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit an application, official transcripts, examination scores, and the required fee to the Pennsylvania State Board of Examiners in Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -143,5 +153,19 @@
     "notes": "Pennsylvania does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Pennsylvania license through the PALS portal. ASHA CCC-SLP holders must still submit all required documentation, including transcripts, Praxis scores, and fellowship verification."
   },
   "slug": "pennsylvania-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Pennsylvania",
+        "dek": "Pennsylvania Speech-Language Pathologist license requires a master's degree, completion of a supervised clinical practicum, and passing the National Examination in Speech-Language Pathology."
+      }
+    }
+  }
 }

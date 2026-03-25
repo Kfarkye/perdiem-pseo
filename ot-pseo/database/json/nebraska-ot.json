@@ -34,7 +34,9 @@
     "renewal_fee": "$133",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Certification in Occupational Therapy (NBCOT)",
+    "ce_requirement": "24 contact hours of continuing education every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an Accredited Occupational Therapy Program",
+      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+    },
+    {
+      "title": "Pass the NBCOT Examination",
+      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+    },
+    {
+      "title": "Apply for a Nebraska Occupational Therapy License",
+      "description": "Submit a completed application, official transcripts, NBCOT score verification, and required fee to the Nebraska Department of Health and Human Services."
     }
   ],
   "documents": [
@@ -127,5 +137,19 @@
     "requires_psv": true
   },
   "slug": "nebraska-ot",
-  "specialty": "ot"
+  "specialty": "ot",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Occupational Therapist in Nebraska",
+        "dek": "Nebraska Occupational Therapist licenses require graduation from an ACOTE-accredited program, passing the NBCOT exam, and a completed application."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination (PRAXIS)",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Meet the Education Requirements",
+      "description": "Possess a Doctor of Audiology (AuD) degree from an accredited educational institution."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the National Examination",
+      "description": "Successfully complete the Audiology Examination (PRAXIS) administered by the Educational Testing Service."
+    },
+    {
+      "title": "Apply for a Maryland Audiology License",
+      "description": "Submit a completed application, official transcripts, Praxis scores, and the required fee to the Maryland Board of Examiners for Audiologists, Hearing Aid Dispensers, and Speech-Language Pathologists."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "maryland-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in Maryland",
+        "dek": "Maryland Audiologist licenses require a doctoral degree in audiology, passing the national audiology examination, and completing a supervised clinical practicum."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$111",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 contact hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit application with fees to the Delaware Division of Professional Regulation."
+      "title": "Meet the Educational Requirements",
+      "description": "Complete a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience (SPE) that meets the requirements outlined in Section 3.0 of the Board's Rules and Regulations."
+    },
+    {
+      "title": "Apply for a License",
+      "description": "Submit an application for licensure to the Delaware Board of Speech/Language Pathologists, Audiologists and Hearing Aid Dispensers and pay the required fees."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Delaware is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Delaware through a compact privilege."
   },
   "slug": "delaware-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Delaware",
+        "dek": "Delaware Speech-Language Pathologist licenses require a master’s degree, passing the Praxis exam, and completing a supervised professional experience."
+      }
+    }
+  }
 }

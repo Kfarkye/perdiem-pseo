@@ -34,7 +34,8 @@
     "renewal_fee": "TBD",
     "renewal_cycle": "TBD (Regulations Pending)",
     "processing_time": "TBD (Regulations Pending)",
-    "license_duration": "TBD"
+    "license_duration": "TBD",
+    "exam_name": "Commission on Dietetic Registration (CDR) examination"
   },
   "license_types": [
     {
@@ -44,16 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the CDR Registration Examination for Dietitians. Active CDR registration will automatically qualify individuals for NJ state licensure once the process opens."
+      "title": "Complete Education and Supervised Practice",
+      "description": "Fulfill the academic requirements by completing a minimum of a bachelor's degree from an accredited institution and completing a supervised practice program."
     },
     {
-      "title": "Monitor the Board for Application Opening",
-      "description": "The NJ Board of Dietetics and Nutrition is holding public sessions (e.g., February 5, 2026) to finalize regulations. Check the NJ Consumer Affairs website for when applications begin."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) examination."
     },
     {
-      "title": "Submit Application (When Available)",
-      "description": "Once regulations are adopted, submit a written application with the required fee to the Board."
+      "title": "Apply for Licensure",
+      "description": "Submit an application to the New Jersey State Board of Dietetics and Nutrition and pay all required fees."
     }
   ],
   "documents": [
@@ -135,5 +136,19 @@
     "requires_psv": false
   },
   "slug": "new-jersey-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "Licensed Dietitian",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in New Jersey",
+        "dek": "New Jersey Dietitian licensure requires completing education and supervised practice requirements, passing the national registration examination, and meeting all application requirements."
+      }
+    }
+  }
 }

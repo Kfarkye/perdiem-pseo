@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the New Jersey State Board of Dentistry with required documentation and fees."
+      "title": "Complete a CODA-accredited Program",
+      "description": "Graduate from a dental assisting program accredited by the Commission on Dental Accreditation (CODA)."
+    },
+    {
+      "title": "Complete a Radiology Course",
+      "description": "Successfully complete a Board-approved course in dental radiology."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Submit a completed application to the New Jersey State Board of Dentistry and pay the required fee."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://www.njconsumeraffairs.gov/den/"
   },
   "slug": "new-jersey-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in New Jersey",
+        "dek": "New Jersey Dental Assistant registration requires graduating from a CODA-accredited dental assisting program, completing a Board-approved course in radiology, and submitting an application."
+      }
+    }
+  }
 }

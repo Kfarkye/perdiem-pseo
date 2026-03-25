@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination (Praxis)",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Meet Education Requirements",
+      "description": "Graduate from an audiology program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the Examination",
+      "description": "Successfully complete the Audiology Examination (Praxis) with a passing score."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit an application for licensure to the Colorado Board of Speech-Language Pathology and Audiology and pay the required fee."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "colorado-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in Colorado",
+        "dek": "Colorado Audiologist License requires graduation from an accredited program, passing the Audiology Examination (Praxis), and completing the application process."
+      }
+    }
+  }
 }

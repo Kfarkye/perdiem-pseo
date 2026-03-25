@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Utah Division of Professional Licensing with required documentation and fees."
+      "title": "Complete a CODA-Accredited Dental Assisting Program",
+      "description": "Complete a dental assisting program accredited by the Commission on Dental Accreditation (CODA)."
+    },
+    {
+      "title": "Pass a Criminal Background Check",
+      "description": "Ensure you have a clean criminal background check, as required for registration."
+    },
+    {
+      "title": "Submit an Application for Registration",
+      "description": "Apply for registration as a Dental Assistant with the Utah Division of Professional Licensing (DOPL) and pay the required fee."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://dopl.utah.gov/dental/"
   },
   "slug": "utah-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Utah",
+        "dek": "Utah Dental Assistant registration requires graduation from a CODA-accredited dental assisting program, a criminal background check, and completion of the application."
+      }
+    }
+  }
 }

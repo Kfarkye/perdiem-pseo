@@ -34,7 +34,9 @@
     "renewal_fee": "$120",
     "renewal_cycle": "Every 2 years (transitions from annual $60 to biennial $120 starting mid-2025)",
     "processing_time": "3 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies exam requirements."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Complete a minimum of a bachelor's degree granted by a U.S. regionally accredited college or university, complete a supervised practice program, and complete coursework requirements, all accredited by ACEND."
     },
     {
-      "title": "Submit the Application to DOPL",
-      "description": "Complete the application form online or via paper. Have it notarized, and submit it with the $100 fee to DOPL."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully pass the Commission on Dietetic Registration's (CDR) Registration Examination for Dietitians."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Submit a copy of your active CDR card or ensure verification is sent directly. A current CDR card generally confirms both education and examination completion."
+      "title": "Apply for Licensure",
+      "description": "Submit a completed application, including required documentation and fees, to the Idaho Dietetic Licensure Board."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "idaho-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Idaho",
+        "dek": "Idaho Dietitian License requires completion of accredited education and supervised practice, passing the national Registration Examination for Dietitians, and paying the required fees."
+      }
+    }
+  }
 }

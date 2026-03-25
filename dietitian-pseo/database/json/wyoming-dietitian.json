@@ -34,7 +34,9 @@
     "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years + CE hours",
     "processing_time": "1 to 2 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this."
+      "title": "Complete Education Requirements",
+      "description": "Obtain a minimum of a bachelor's degree from a regionally accredited college or university with completion of an ACEND-accredited Didactic Program in Dietetics (DPD)."
     },
     {
-      "title": "Submit the Application to the Board",
-      "description": "Complete the application form, gather required proof of citizenship, and submit the packet along with the $200 fee to the Wyoming Dietetics Licensing Board."
+      "title": "Complete Supervised Practice",
+      "description": "Complete an ACEND-accredited supervised practice program."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Ensure that the Commission on Dietetic Registration sends official verification of your active RD status directly to the Board."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
     }
   ],
   "documents": [
@@ -135,5 +137,19 @@
     "requires_psv": false
   },
   "slug": "wyoming-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Wyoming",
+        "dek": "Wyoming Dietitian License requires a bachelor's degree, completion of supervised practice, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

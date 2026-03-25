@@ -32,9 +32,10 @@
     "total_fee": "$50",
     "fee_breakdown": "$50 application fee",
     "renewal_fee": "$20",
-    "renewal_cycle": "Every 2 years (by April 1, even years) \u2014 no CE required",
+    "renewal_cycle": "Every 2 years (by April 1, even years) — no CE required",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians"
   },
   "license_types": [
     {
@@ -44,20 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Obtain CDR Registration",
-      "description": "Complete an ACEND-accredited degree program and 900+ hours of supervised practice. Pass the CDR Registration Examination for Dietitians. You must hold active CDR registration before applying for Missouri licensure."
+      "title": "Complete Educational Requirements",
+      "description": "Earn a bachelor's degree or higher from a regionally accredited college or university with a major in dietetics, food and nutrition, or a related field approved by the Missouri State Committee of Dietitians."
     },
     {
-      "title": "Create a MOPRO Account",
-      "description": "Register for an account on the MOPRO online portal (Missouri's Professional Registration Online system), available since January 2025 for application and license management."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Submit the Application",
-      "description": "Complete the online application through MOPRO. Pay the non-refundable $50 application fee. Include your CDR registration card number and academic transcripts."
-    },
-    {
-      "title": "Provide Supporting Documentation",
-      "description": "Submit a copy of your current CDR registration card, official academic transcripts from your degree-granting institution, and verification of supervised practice completion."
+      "title": "Apply for a Dietitian License",
+      "description": "Submit a completed application, official transcripts, examination verification, and the required fee to the Missouri State Committee of Dietitians."
     }
   ],
   "documents": [
@@ -147,5 +144,19 @@
     "requires_psv": true
   },
   "slug": "missouri-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Missouri",
+        "dek": "Missouri Dietitian License requires completing an accredited education program, passing the Registration Examination for Dietitians, and submitting an application to the State Committee of Dietitians."
+      }
+    }
+  }
 }

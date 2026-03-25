@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet the Basic Requirements",
+      "description": "You must have graduated from a dental assisting program or have completed equivalent training approved by the Connecticut State Dental Commission."
+    },
+    {
+      "title": "Be Employed by a Licensed Dentist",
+      "description": "Registration as a dental assistant in Connecticut requires employment by a dentist licensed to practice in the state."
+    },
+    {
+      "title": "Comply with Regulations",
+      "description": "Adhere to all applicable statutes and regulations governing the practice of dental assisting in Connecticut."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://portal.ct.gov/DPH"
   },
   "slug": "connecticut-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Connecticut",
+        "dek": "Connecticut Dental Assistant registration requires graduation from a dental assisting program or completion of equivalent training, employment by a licensed dentist, and adherence to specified regulations."
+      }
+    }
+  }
 }

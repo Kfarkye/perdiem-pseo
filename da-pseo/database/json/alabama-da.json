@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Board of Dental Examiners of Alabama with required documentation and fees."
+      "title": "Meet Basic Requirements",
+      "description": "You must have graduated from high school or possess an equivalent certificate."
+    },
+    {
+      "title": "Complete Required Courses",
+      "description": "Complete a Board-approved course in radiation safety and a Basic Life Support (CPR) course."
+    },
+    {
+      "title": "Submit Application",
+      "description": "Submit a completed application and the required fee to the Board of Dental Examiners of Alabama."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://www.dentalboard.org/"
   },
   "slug": "alabama-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Alabama",
+        "dek": "Alabama Dental Assistant registration requires graduation from high school or equivalent, completion of a Board-approved course in radiation safety, and CPR certification."
+      }
+    }
+  }
 }

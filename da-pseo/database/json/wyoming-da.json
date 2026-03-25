@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Wyoming Board of Dental Examiners with required documentation and fees."
+      "title": "Complete the Application",
+      "description": "Submit a completed application to the Wyoming Board of Dental Examiners."
+    },
+    {
+      "title": "Pay the Required Fee",
+      "description": "Submit the required permit fee of $50 to the Wyoming Board of Dental Examiners."
+    },
+    {
+      "title": "Meet all Requirements",
+      "description": "Ensure you meet all requirements outlined in Chapter 7 of the Rules and Regulations of the Wyoming Board of Dental Examiners."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://dental.wyo.gov/"
   },
   "slug": "wyoming-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "permit",
+    "page_title_term": "Permit",
+    "renewal_term": "permit renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Wyoming",
+        "dek": "Wyoming Dental Assistant permits require completion of the application, payment of fees, and meeting all requirements set forth by the board."
+      }
+    }
+  }
 }

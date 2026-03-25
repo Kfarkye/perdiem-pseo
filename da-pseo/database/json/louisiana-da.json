@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Louisiana State Board of Dentistry with required documentation and fees."
+      "title": "Meet Basic Requirements",
+      "description": "Applicants must have a high school diploma or equivalent, and current CPR certification."
+    },
+    {
+      "title": "Find a Sponsoring Dentist",
+      "description": "You must be currently employed by a dentist licensed in Louisiana."
+    },
+    {
+      "title": "Submit Application and Fee",
+      "description": "Complete the Dental Assistant Registration application and submit it with the $100 fee to the Louisiana State Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://www.lsbd.org/"
   },
   "slug": "louisiana-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Louisiana",
+        "dek": "Louisiana Dental Assistant registration requires graduation from high school (or equivalent), CPR certification, and employment by a Louisiana licensed dentist."
+      }
+    }
+  }
 }

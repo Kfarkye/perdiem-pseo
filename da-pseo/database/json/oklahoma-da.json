@@ -34,7 +34,8 @@
     "renewal_fee": "$25",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Oklahoma Board of Dentistry with required documentation and fees."
+      "title": "Meet Educational Requirements",
+      "description": "Graduate from a CODA-accredited dental assisting program or complete a board-approved expanded duty course."
+    },
+    {
+      "title": "Obtain CPR Certification",
+      "description": "Complete and maintain current certification in Basic Life Support (CPR)."
+    },
+    {
+      "title": "Submit Application",
+      "description": "Complete and submit the dental assistant permit application to the Oklahoma Board of Dentistry along with the required fee."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://www.ok.gov/dentistry/"
   },
   "slug": "oklahoma-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "permit",
+    "page_title_term": "Permit",
+    "renewal_term": "permit renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Oklahoma",
+        "dek": "Oklahoma Dental Assistant permit requires graduation from an accredited school or successful completion of an expanded duty course, CPR certification, and submission of an application."
+      }
+    }
+  }
 }

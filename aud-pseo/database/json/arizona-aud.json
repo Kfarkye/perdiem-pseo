@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Meet Educational Requirements",
+      "description": "Graduate with a Doctor of Audiology (Au.D.) degree from a program accredited by the Accreditation Commission for Audiology Education (ACAE) or the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA)."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the Examination",
+      "description": "Successfully pass the Audiology Examination administered by a board-approved testing agency."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit a completed application, including all required documentation and fees, to the Arizona Board of Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "arizona-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in Arizona",
+        "dek": "Arizona Audiologist license requires graduation from an approved program, passing the Audiology Examination, and submitting an application to the board."
+      }
+    }
+  }
 }

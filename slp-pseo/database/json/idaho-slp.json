@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every year",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "1 year"
+    "license_duration": "1 year",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit application with $75 fee to Bureau of Occupational Licenses."
+      "title": "Graduate from an Accredited Program",
+      "description": "Complete a master’s or doctoral degree program in speech-language pathology accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Fulfill the supervised professional experience (SPE) requirement, gaining clinical experience under the supervision of a licensed speech-language pathologist."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Idaho is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Idaho through a compact privilege."
   },
   "slug": "idaho-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Idaho",
+        "dek": "Idaho Speech-Language Pathologist licenses require graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

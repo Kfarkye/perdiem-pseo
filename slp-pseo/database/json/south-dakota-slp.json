@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit with $100 fee."
+      "title": "Complete a Master's Degree",
+      "description": "Graduate from a speech-language pathology program accredited by the Council on Academic Accreditation (CAA) of the American Speech-Language-Hearing Association (ASHA)."
+    },
+    {
+      "title": "Pass the Praxis Exam",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology."
+    },
+    {
+      "title": "Apply for a License",
+      "description": "Submit an application, official transcripts, Praxis scores, and the required fee to the South Dakota Board of Hearing Aid Dispensers and Audiologists."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "South Dakota does not participate in the ASLP Interstate Compact."
   },
   "slug": "south-dakota-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in South Dakota",
+        "dek": "South Dakota Speech-Language Pathologist license requires graduation from an accredited program, passage of the Praxis Examination, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

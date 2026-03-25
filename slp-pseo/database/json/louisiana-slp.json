@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every year (December 31)",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "1 year"
+    "license_duration": "1 year",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per year"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to LBESPA",
-      "description": "Submit application with fees."
+      "title": "Meet Educational Requirements",
+      "description": "Obtain a master's degree or doctoral degree in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience (clinical fellowship) as specified by the Louisiana Board of Examiners for Speech-Language Pathology and Audiology."
+    },
+    {
+      "title": "Pass the National Examination and Apply",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit a completed application to the Louisiana Board of Examiners for Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Louisiana is a member of the ASLP Interstate Compact and is actively issuing compact privileges. SLPs from other compact member states can practice in Louisiana through a compact privilege."
   },
   "slug": "louisiana-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Louisiana",
+        "dek": "Louisiana Speech-Language Pathology license requires a master's degree, passing the Praxis exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

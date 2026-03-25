@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) examination",
+    "ce_requirement": "24 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet Educational Requirements",
+      "description": "Graduate from a respiratory care education program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or a comparable accrediting body."
+    },
+    {
+      "title": "Pass the NBRC Examination",
+      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+    },
+    {
+      "title": "Apply for a License",
+      "description": "Submit a completed application, required documentation, and the necessary fee to the Nevada Board of Medical Examiners - RT."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://medboard.nv.gov/Licensure/Respiratory_Care/"
   },
   "slug": "nevada-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Nevada",
+        "dek": "Nevada Respiratory Therapist license requires graduation from an approved school, passing the NBRC examination, and submitting an application to the board."
+      }
+    }
+  }
 }

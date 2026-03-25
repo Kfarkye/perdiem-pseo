@@ -34,7 +34,9 @@
     "renewal_fee": "$95",
     "renewal_cycle": "Every 2 years + 30 CE hours",
     "processing_time": "30 days (initial review)",
-    "license_duration": "Up to 2 Years (expires May 31 odd years)"
+    "license_duration": "Up to 2 Years (expires May 31 odd years)",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Registration and Education",
-      "description": "Complete your degree and supervised practice. Most applicants use their active CDR registration as proof of passing a recognized examination."
+      "title": "Complete Educational Requirements",
+      "description": "Earn a minimum of a bachelor’s degree from a regionally accredited college or university with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major."
     },
     {
-      "title": "Apply Online",
-      "description": "Submit your application for Licensure by Endorsement or Examination through the Florida Department of Health MQA Services portal and pay the $165 total fee."
+      "title": "Complete Supervised Practice",
+      "description": "Complete a supervised practice program approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Background Screening",
-      "description": "Undergo fingerprinting for a criminal history background check through a Livescan service provider."
+      "title": "Pass the National Exam and Apply",
+      "description": "Pass the Commission on Dietetic Registration’s Registration Examination for Dietitians and submit an application with the Florida Department of Health."
     }
   ],
   "documents": [
@@ -135,5 +137,19 @@
     "requires_psv": true
   },
   "slug": "florida-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Florida",
+        "dek": "Florida Dietitian Nutritionist licenses require completing an accredited educational program, passing the Registration Examination for Dietitians, and meeting supervised practice requirements."
+      }
+    }
+  }
 }

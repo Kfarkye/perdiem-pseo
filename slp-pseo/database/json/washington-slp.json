@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every year (birthday)",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "1 year"
+    "license_duration": "1 year",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours every two years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to DOH",
-      "description": "Submit with fees to Washington DOH."
+      "title": "Complete Education and Clinical Practicum",
+      "description": "Earn a master's degree or doctorate in speech-language pathology from an accredited educational institution and complete the required clinical practicum."
+    },
+    {
+      "title": "Pass the National Examination",
+      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit your application, official transcripts, verification of supervised professional experience, and examination scores to the Washington State Department of Health."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Washington is a member of the ASLP Interstate Compact."
   },
   "slug": "washington-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Washington",
+        "dek": "Washington Speech-Language Pathologist license requires a master's degree, passing the national exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

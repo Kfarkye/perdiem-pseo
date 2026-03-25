@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination (Praxis)",
+    "ce_requirement": "30 contact hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Meet Educational Requirements",
+      "description": "You must have a doctoral degree in audiology from an accredited educational institution."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the Required Examination",
+      "description": "Achieve a passing score on the Audiology Examination (Praxis)."
+    },
+    {
+      "title": "Submit Your Application",
+      "description": "Complete and submit the application for licensure to the North Dakota Board of Examiners on Audiology and Speech-Language Pathology, including all required documentation and fees."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "north-dakota-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in North Dakota",
+        "dek": "North Dakota Audiologist licenses require a doctoral degree in audiology, passing the Audiology Examination (Praxis), and completion of the application process."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Physical Therapy Examination (NPTE)",
+    "ce_requirement": "24 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Meet Education Requirements",
+      "description": "Graduate from a CAPTE-accredited physical therapy program."
+    },
+    {
+      "title": "Pass the National Physical Therapy Examination (NPTE)",
+      "description": "Achieve a passing score on the NPTE for Physical Therapists."
+    },
+    {
+      "title": "Apply for a Rhode Island Physical Therapist License",
+      "description": "Submit a completed application, required documentation, and fees to the Rhode Island Department of Health."
     }
   ],
   "documents": [
@@ -122,5 +132,19 @@
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "rhode-island-pt",
-  "specialty": "pt"
+  "specialty": "pt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Physical Therapist in Rhode Island",
+        "dek": "Rhode Island Physical Therapist license requires graduation from an accredited program, passing the National Physical Therapy Examination, and meeting other qualifications."
+      }
+    }
+  }
 }

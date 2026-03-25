@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit with fees to the Board."
+      "title": "Complete Education and Clinical Practicum",
+      "description": "Earn a master's degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) of the American Speech-Language-Hearing Association (ASHA) that includes a clinical practicum."
+    },
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Apply for and Complete Supervised Professional Experience (SPE)",
+      "description": "Apply for licensure and complete a supervised professional experience (SPE) of at least 1260 clock hours within 36 months from the date of initial licensure."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "North Carolina is a member of the ASLP Interstate Compact."
   },
   "slug": "north-carolina-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in North Carolina",
+        "dek": "North Carolina Speech-Language Pathologist license requires graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

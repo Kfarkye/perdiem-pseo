@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "6 to 8 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) examination",
+    "ce_requirement": "15 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete an Approved Respiratory Care Program",
+      "description": "Graduate from a respiratory care program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or another board-approved program."
+    },
+    {
+      "title": "Pass the NBRC Examination",
+      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+    },
+    {
+      "title": "Apply for a Respiratory Therapist License",
+      "description": "Submit an application and all required documentation to the Connecticut Department of Public Health for licensure."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://portal.ct.gov/dph/practitioner-licensing--investigations/respiratorycare/respiratory-care-practitioner"
   },
   "slug": "connecticut-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Connecticut",
+        "dek": "Connecticut Respiratory Therapist licenses require graduation from an approved program, passing the NBRC examination, and completing an application."
+      }
+    }
+  }
 }

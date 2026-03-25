@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Washington Department of Health with required documentation and fees."
+      "title": "Graduate from an Accredited Program",
+      "description": "Complete a CODA-accredited dental assisting program or meet the requirements for on-the-job training."
+    },
+    {
+      "title": "Obtain BLS Certification",
+      "description": "Provide proof of current Basic Life Support (BLS) certification."
+    },
+    {
+      "title": "Submit Your Application",
+      "description": "Complete the Dental Assistant Registration application and pay the required fee."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-702-update/dental-professions"
   },
   "slug": "washington-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Washington",
+        "dek": "Washington Dental Assistant registration requires graduation from an accredited program, holding a current BLS certificate, and completing the application process."
+      }
+    }
+  }
 }

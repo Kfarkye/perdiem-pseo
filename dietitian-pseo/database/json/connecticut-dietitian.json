@@ -34,7 +34,8 @@
     "renewal_fee": "$105",
     "renewal_cycle": "Annual + CDR 75 CPEUs per 5 years (no state-level CE mandate)",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "1 Year"
+    "license_duration": "1 Year",
+    "exam_name": "Registration Examination for Dietitians"
   },
   "license_types": [
     {
@@ -44,16 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination & Obtain Registration",
-      "description": "Successfully pass the CDR Registration Examination for Dietitians ($200 fee). Obtain active CDR registration (RD/RDN credential)."
+      "title": "Meet Education and Experience Requirements",
+      "description": "Possess a minimum of a baccalaureate degree with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study, from a regionally accredited institution, and complete a planned, continuous pre-professional practice experience program that meets the requirements."
     },
     {
-      "title": "Apply via the eLicense Portal",
-      "description": "Submit your application online through the Connecticut eLicense system. Pay the $190 initial certification fee."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Request CDR Verification",
-      "description": "Have the CDR send verification of your current registration directly to the Connecticut Department of Public Health. DPH will not accept self-reported verification."
+      "title": "Submit an Application",
+      "description": "Submit a completed application form with all required documentation and the applicable fee to the Department of Public Health."
     }
   ],
   "documents": [
@@ -135,5 +136,19 @@
     "requires_psv": false
   },
   "slug": "connecticut-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "certification",
+    "page_title_term": "Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Connecticut",
+        "dek": "Connecticut Dietitian-Nutritionist Certification requires a bachelor’s degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

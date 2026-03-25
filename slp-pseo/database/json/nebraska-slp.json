@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years (October 31)",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 contact hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to DHHS",
-      "description": "Submit application with fees."
+      "title": "Meet Education Requirements",
+      "description": "Earn a master’s or doctoral degree in speech-language pathology from an accredited program."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience (SPE) consisting of at least 1260 hours under the supervision of a licensed speech-language pathologist."
+    },
+    {
+      "title": "Pass the National Examination and Apply for Licensure",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit a completed application with the required fee to the Nebraska Board of Audiology and Speech-Language Pathology."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Nebraska is a member of the ASLP Interstate Compact."
   },
   "slug": "nebraska-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Nebraska",
+        "dek": "Nebraska Speech-Language Pathologist licensure requires graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

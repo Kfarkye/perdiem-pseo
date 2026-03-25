@@ -34,7 +34,9 @@
     "renewal_fee": "$60",
     "renewal_cycle": "Every 2 years (June 30)",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "24 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to LLR",
-      "description": "Submit with $100 fee."
+      "title": "Meet Educational Requirements",
+      "description": "Earn a master’s degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA)."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience that meets the requirements outlined in the application instructions."
+    },
+    {
+      "title": "Pass the Praxis Exam and Apply",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology with a score that meets South Carolina requirements and submit your application along with all required documentation and fees to the Board."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "South Carolina is a member of the ASLP Interstate Compact."
   },
   "slug": "south-carolina-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in South Carolina",
+        "dek": "South Carolina Speech-Language Pathologist licenses require a master's degree, passing the Praxis exam, and completing a supervised professional experience."
+      }
+    }
+  }
 }

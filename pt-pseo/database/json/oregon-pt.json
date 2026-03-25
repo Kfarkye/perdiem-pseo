@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Physical Therapy Examination (NPTE)",
+    "ce_requirement": "24 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an Accredited Physical Therapy Program",
+      "description": "You must graduate from a physical therapy program accredited by the Commission on Accreditation in Physical Therapy Education (CAPTE)."
+    },
+    {
+      "title": "Pass the National Physical Therapy Examination (NPTE)",
+      "description": "Apply and pass the National Physical Therapy Examination (NPTE) administered by the Federation of State Boards of Physical Therapy (FSBPT)."
+    },
+    {
+      "title": "Apply for a Physical Therapist License",
+      "description": "Submit an application, pay the required fee, and complete a criminal background check to the Oregon Physical Therapist Licensing Board."
     }
   ],
   "documents": [
@@ -122,5 +132,19 @@
     "notes": "Physical Therapists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "oregon-pt",
-  "specialty": "pt"
+  "specialty": "pt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Physical Therapist in Oregon",
+        "dek": "Oregon Physical Therapist license requires graduation from an accredited program, passing the NPTE, and a criminal background check."
+      }
+    }
+  }
 }

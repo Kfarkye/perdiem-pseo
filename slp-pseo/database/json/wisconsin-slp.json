@@ -34,7 +34,9 @@
     "renewal_fee": "$78",
     "renewal_cycle": "Every 2 years (February 28)",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "36 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to DSPS",
-      "description": "Submit with $78 fee."
+      "title": "Graduate from an Accredited Program",
+      "description": "Complete a master's or doctoral degree program in speech-language pathology accredited by the Council on Academic Accreditation (CAA)."
+    },
+    {
+      "title": "Pass the National Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience (clinical fellowship) of at least 36 weeks of full-time experience (or its equivalent) under the supervision of a licensed speech-language pathologist."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Wisconsin is a member of the ASLP Interstate Compact."
   },
   "slug": "wisconsin-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Wisconsin",
+        "dek": "Wisconsin Speech-Language Pathologist license requires graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

@@ -34,7 +34,8 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the New Mexico Board of Dental Health Care with required documentation and fees."
+      "title": "Complete the Application",
+      "description": "Submit a completed Dental Assistant Registration Application to the New Mexico Board of Dental Health Care."
+    },
+    {
+      "title": "Pay the Registration Fee",
+      "description": "Pay the required registration fee of $50 to the New Mexico Board of Dental Health Care."
+    },
+    {
+      "title": "Complete Continuing Education",
+      "description": "Complete 12 hours of continuing education every two years to maintain your registration."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://www.rld.nm.gov/boards-and-commissions/dental-health-care/"
   },
   "slug": "new-mexico-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in New Mexico",
+        "dek": "New Mexico Dental Assistant registration requires completing an application, paying the required fee, and completing continuing education requirements."
+      }
+    }
+  }
 }

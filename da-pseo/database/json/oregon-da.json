@@ -34,7 +34,9 @@
     "renewal_fee": "$60",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Oregon Expanded Functions Examination",
+    "ce_requirement": "24 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Oregon Board of Dentistry with required documentation and fees."
+      "title": "Complete a Board-Approved Course",
+      "description": "Complete a CODA accredited dental assisting program or a board-approved EFDA course."
+    },
+    {
+      "title": "Pass the Oregon Expanded Functions Examination",
+      "description": "Successfully pass the Oregon Expanded Functions Examination administered by the Oregon Board of Dentistry."
+    },
+    {
+      "title": "Apply for Certification",
+      "description": "Submit an application and pay the required fee to the Oregon Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://www.oregon.gov/dentistry/"
   },
   "slug": "oregon-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "expanded function dental assistant (EFDA) certificate",
+    "page_title_term": "Certification",
+    "renewal_term": "certificate renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Oregon",
+        "dek": "Oregon Expanded Function Dental Assistant (EFDA) certification requires successful completion of a board-approved course, passing the Oregon Expanded Functions Examination, and maintaining current CPR certification."
+      }
+    }
+  }
 }

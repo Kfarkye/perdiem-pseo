@@ -34,7 +34,9 @@
     "renewal_fee": "$70",
     "renewal_cycle": "Every 2 years (March 31, odd years)",
     "processing_time": "4 to 8 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,12 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Complete Professional Experience (PCE/RPE)",
-      "description": "Complete the required Paid Clinical Experience (PCE) or Required Professional Experience (RPE) under supervision. Obtain the PCE/RPE license ($40) first to practice during this period."
+      "title": "Complete Required Education",
+      "description": "Obtain a master's degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
     },
     {
-      "title": "Submit Full License Application",
-      "description": "Submit the SLP application ($120) to the Board. Include official transcripts, Praxis scores, professional experience verification, and criminal background check with fingerprinting."
+      "title": "Complete Supervised Professional Experience",
+      "description": "Satisfactorily complete a supervised professional experience, also known as a clinical fellowship, of at least 36 weeks of full-time employment or its equivalent in part-time employment under the supervision of a licensed speech-language pathologist."
+    },
+    {
+      "title": "Pass the Praxis Examination and Apply for Licensure",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology and submit an application for licensure to the Georgia Board of Examiners for Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -147,5 +153,19 @@
     "notes": "Georgia offers licensure by endorsement for SLPs licensed in other states, as well as for ASHA CCC-SLP holders. The endorsement application fee is $120 (same as by examination). Out-of-state applicants must have their existing license verified directly by the issuing state board."
   },
   "slug": "georgia-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Georgia",
+        "dek": "Georgia Speech-Language Pathology license requires a master's degree, supervised professional experience, and passing a national examination."
+      }
+    }
+  }
 }

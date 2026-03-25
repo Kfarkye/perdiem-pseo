@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "NAPLEX and MPJE",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Board Exams",
-      "description": "Successfully pass the expected board examinations, typically the NAPLEX and MPJE."
+      "title": "Graduate from an Accredited Pharmacy Program",
+      "description": "Complete a professional degree program in pharmacy from an ACPE-accredited school or college of pharmacy."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check, and submit the necessary licensing fees."
+      "title": "Pass the NAPLEX and MPJE Exams",
+      "description": "Successfully complete the North American Pharmacist Licensure Examination (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE)."
+    },
+    {
+      "title": "Submit an Application for Licensure",
+      "description": "Apply to the Louisiana Board of Pharmacy, including all required documentation and fees, to obtain your pharmacist license."
     }
   ],
   "documents": [
@@ -130,5 +136,19 @@
     "notes": "Pharmacists licensed in another state can often apply via license transfer (reciprocity) through the NABP, though most states still require passing their specific MPJE."
   },
   "slug": "louisiana-pharmacist",
-  "specialty": "pharmacist"
+  "specialty": "pharmacist",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacist in Louisiana",
+        "dek": "Louisiana Pharmacist License requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing application requirements."
+      }
+    }
+  }
 }

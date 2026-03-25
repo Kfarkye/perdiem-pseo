@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit with $200 fee to the Board."
+      "title": "Meet Educational Requirements",
+      "description": "You must complete a master’s degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience that includes at least 1260 hours, with at least 36 weeks of full-time experience."
+    },
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "New Mexico does not participate in the ASLP Interstate Compact."
   },
   "slug": "new-mexico-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in New Mexico",
+        "dek": "New Mexico Speech-Language Pathology licenses require a master’s degree, passing the Praxis exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

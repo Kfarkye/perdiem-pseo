@@ -34,7 +34,9 @@
     "renewal_fee": "$37",
     "renewal_cycle": "Every 2 years (expires Sept 30 of even-numbered years)",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "Up to 2 Years (depending on issue date relative to Sept 30 even-year cycle)"
+    "license_duration": "Up to 2 Years (depending on issue date relative to Sept 30 even-year cycle)",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Utah requires you to hold active CDR registration."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Complete a didactic program in dietetics and supervised practice accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit the Application via DOPL",
-      "description": "Apply online through the Utah DOPL eGov portal or submit a paper application. Pay the $60 nonrefundable application fee."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Verification",
-      "description": "Submit a copy of your current active CDR Registration Card along with your application. Utah relies heavily on CDR registration to verify you have met the education and exam requirements."
+      "title": "Apply for a Utah Dietitian License",
+      "description": "Submit an application for licensure to the Utah Division of Occupational and Professional Licensing (DOPL), including required documentation and fees."
     }
   ],
   "documents": [
@@ -135,5 +137,19 @@
     "requires_psv": false
   },
   "slug": "utah-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Utah",
+        "dek": "Utah Dietitian License requires completing an accredited dietetics program, passing the Registration Examination for Dietitians, and submitting an application to the Division of Occupational and Professional Licensing."
+      }
+    }
+  }
 }

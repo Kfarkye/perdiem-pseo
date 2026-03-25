@@ -34,7 +34,9 @@
     "renewal_fee": "$52",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to DOPL",
-      "description": "Submit with $100 fee through DOPL."
+      "title": "Meet Educational Requirements",
+      "description": "Complete a master's degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) of the American Speech-Language-Hearing Association (ASHA)."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience consisting of at least 36 weeks of full-time (or equivalent part-time) experience and 1260 clock hours under the supervision of a licensed speech-language pathologist."
+    },
+    {
+      "title": "Pass the Praxis Examination and Apply",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology with a qualifying score and submit an application for licensure to the Utah Division of Professional Licensing along with all required documentation and fees."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Utah is a member of the ASLP Interstate Compact."
   },
   "slug": "utah-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Utah",
+        "dek": "Utah Speech-Language Pathology license requires a master's degree, passing the Praxis exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

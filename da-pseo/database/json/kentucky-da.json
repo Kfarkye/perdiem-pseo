@@ -34,7 +34,8 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "N/A",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "N/A"
+    "license_duration": "N/A",
+    "exam_name": "Kentucky Jurisprudence Examination"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet Education/Experience Requirements",
+      "description": "You must have graduated from a CODA-accredited dental assisting program or have equivalent education, training and experience."
+    },
+    {
+      "title": "Pass the Kentucky Jurisprudence Examination",
+      "description": "Complete and pass the Kentucky Jurisprudence Examination."
+    },
+    {
+      "title": "Submit Application",
+      "description": "Submit a complete application for registration to the Kentucky Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://dentistry.ky.gov/"
   },
   "slug": "kentucky-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Kentucky",
+        "dek": "Kentucky Dental Assistant registration requires graduation from a CODA-accredited dental assisting program (or equivalent experience), successful completion of the Kentucky Jurisprudence Examination, and completion of the application process."
+      }
+    }
+  }
 }

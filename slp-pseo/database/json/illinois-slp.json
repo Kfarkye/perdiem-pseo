@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years (October 31, odd years)",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,12 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Complete the Clinical Fellowship Year (CFY)",
-      "description": "Complete a supervised Clinical Fellowship Year under a licensed SLP. A Temporary SLP License ($75) must be obtained first to practice during the CFY in Illinois."
+      "title": "Complete Education and Clinical Experience",
+      "description": "Earn a master's degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) and complete supervised clinical experience."
     },
     {
-      "title": "Apply through IDFPR CORE Portal",
-      "description": "Submit the application through the IDFPR CORE online licensing system. Pay the $90 application fee. Include official transcripts, Praxis scores, CFY verification, and background check."
+      "title": "Pass the Examination",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit an application for licensure to the Illinois Department of Financial and Professional Regulation (IDFPR) along with all required documentation and fees."
     }
   ],
   "documents": [
@@ -143,5 +149,19 @@
     "notes": "Illinois offers licensure by endorsement for SLPs licensed in other states. The endorsement application fee is $100. Applicants must demonstrate equivalent education, examination, and experience. ASHA CCC-SLP holders may have the review process streamlined but must still submit a full Illinois application."
   },
   "slug": "illinois-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Illinois",
+        "dek": "Illinois Speech-Language Pathologist License requires a master's degree, completion of supervised clinical experience, and passing the national examination."
+      }
+    }
+  }
 }

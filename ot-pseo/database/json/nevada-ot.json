@@ -34,7 +34,9 @@
     "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
+    "ce_requirement": "24 contact hours of continuing education every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an Accredited Program",
+      "description": "Complete an occupational therapy educational program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+    },
+    {
+      "title": "Pass the NBCOT Exam",
+      "description": "Successfully pass the National Board for Certification in Occupational Therapy (NBCOT) examination."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Complete and submit an application for licensure to the Nevada Board of Occupational Therapy, including all required documentation and fees."
     }
   ],
   "documents": [
@@ -127,5 +137,19 @@
     "requires_psv": false
   },
   "slug": "nevada-ot",
-  "specialty": "ot"
+  "specialty": "ot",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Occupational Therapist in Nevada",
+        "dek": "Nevada Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a completed application."
+      }
+    }
+  }
 }

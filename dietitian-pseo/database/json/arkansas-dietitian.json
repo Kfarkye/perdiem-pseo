@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Annual + 12 CE hours (*Renewal fee temporarily reduced to $3.00 for 2025-2026*)",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "1 Year"
+    "license_duration": "1 Year",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "12 hours per year"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians (for full LD licensure)."
+      "title": "Complete Required Education",
+      "description": "Complete a minimum of a baccalaureate degree granted by a U.S. regionally accredited college or university and completion of an Accreditation Council for Education in Nutrition and Dietetics (ACEND) accredited dietetic education program."
     },
     {
-      "title": "Submit the Application and Fee",
-      "description": "Complete, sign, and date the application form. Your signature must be notarized. Mail the completed application with the appropriate fee (check or money order) to the ADLB."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Documentation",
-      "description": "Include a copy of your current CDR registration card. If applying for a provisional license, include verification of internship completion and a letter from your employment supervisor."
+      "title": "Submit Application",
+      "description": "Submit a completed application to the Arkansas Dietetics Licensing Board with all required documentation and fees."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": false
   },
   "slug": "arkansas-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Arkansas",
+        "dek": "Arkansas Dietitian licensure requires completing an accredited dietetics program, passing the Registration Examination for Dietitians, and maintaining continuing education."
+      }
+    }
+  }
 }

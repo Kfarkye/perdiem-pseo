@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years (June 30)",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to DHP",
-      "description": "Submit with $130 fee."
+      "title": "Complete a Master's Degree",
+      "description": "Obtain a master's degree or doctoral degree in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Clinical Experience",
+      "description": "Complete a supervised clinical practicum consistent with requirements found in 18VAC30-20-100 of the Virginia Administrative Code."
+    },
+    {
+      "title": "Pass the National Examination and Apply",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit a completed application with all required documentation and fees to the Virginia Board of Audiology and Speech-Language Pathology."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Virginia is a member of the ASLP Interstate Compact."
   },
   "slug": "virginia-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Virginia",
+        "dek": "Virginia Speech-Language Pathology licenses require a master's degree, supervised clinical experience, and passing the national examination."
+      }
+    }
+  }
 }

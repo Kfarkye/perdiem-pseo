@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "NAPLEX and MPJE",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Board Exams",
-      "description": "Successfully pass the expected board examinations, typically the NAPLEX and MPJE."
+      "title": "Graduate from an Accredited Pharmacy Program",
+      "description": "Complete a professional degree program from a recognized school or college of pharmacy accredited by the Accreditation Council for Pharmacy Education (ACPE)."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check, and submit the necessary licensing fees."
+      "title": "Pass the NAPLEX and MPJE Exams",
+      "description": "Successfully pass the North American Pharmacist Licensure Exam (NAPLEX) and the Multistate Pharmacy Jurisprudence Examination (MPJE) for Texas."
+    },
+    {
+      "title": "Submit an Application for Licensure",
+      "description": "Complete and submit an application for licensure to the Texas State Board of Pharmacy along with the required fee and supporting documents."
     }
   ],
   "documents": [
@@ -134,5 +140,19 @@
     "board_source_url": "https://www.pharmacy.texas.gov/"
   },
   "slug": "texas-pharmacist",
-  "specialty": "pharmacist"
+  "specialty": "pharmacist",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacist in Texas",
+        "dek": "Texas Pharmacist License requires graduation from an accredited pharmacy program, passing the NAPLEX and MPJE exams, and completing an application."
+      }
+    }
+  }
 }

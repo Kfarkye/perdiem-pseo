@@ -34,7 +34,9 @@
     "renewal_fee": "$105",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
+    "ce_requirement": "36 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete an Approved Educational Program",
+      "description": "Graduate from an occupational therapy education program approved by the New York State Education Department or determined to be substantially equivalent."
+    },
+    {
+      "title": "Pass the NBCOT Examination",
+      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+    },
+    {
+      "title": "Apply for a License",
+      "description": "Submit an application for licensure to the New York State Education Department along with the required fee and documentation."
     }
   ],
   "documents": [
@@ -127,5 +137,19 @@
     "requires_psv": true
   },
   "slug": "new-york-ot",
-  "specialty": "ot"
+  "specialty": "ot",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Occupational Therapist in New York",
+        "dek": "New York Occupational Therapist License requires graduation from an approved educational program, passing the NBCOT exam, and meeting good moral character requirements."
+      }
+    }
+  }
 }

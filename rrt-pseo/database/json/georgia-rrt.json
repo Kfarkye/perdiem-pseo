@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "3 to 5 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) examination",
+    "ce_requirement": "24 hours every two years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an Accredited Respiratory Care Program",
+      "description": "Complete a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or an equivalent organization."
+    },
+    {
+      "title": "Pass the NBRC Examination",
+      "description": "Successfully pass the entry-level examination administered by the National Board for Respiratory Care (NBRC)."
+    },
+    {
+      "title": "Apply for a Respiratory Therapist License",
+      "description": "Submit a completed application, official transcripts, NBRC verification, and required fee to the Georgia Composite Medical Board for licensure as a Respiratory Therapist."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://gcmb.georgia.gov/respiratory-care"
   },
   "slug": "georgia-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Georgia",
+        "dek": "Georgia Respiratory Therapist licenses require graduation from an accredited program, passing the NBRC exam, and submitting an application to the Georgia Composite Medical Board."
+      }
+    }
+  }
 }

@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Arkansas State Board of Dental Examiners with required documentation and fees."
+      "title": "Complete an approved dental assisting program",
+      "description": "Graduation from a dental assisting program approved by the Arkansas State Board of Dental Examiners is required."
+    },
+    {
+      "title": "Submit an application for registration",
+      "description": "Complete and submit the official application form to the Arkansas State Board of Dental Examiners."
+    },
+    {
+      "title": "Pay the registration fee",
+      "description": "Submit the required registration fee to the Arkansas State Board of Dental Examiners."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://www.asbde.org/"
   },
   "slug": "arkansas-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Arkansas",
+        "dek": "Arkansas Dental Assistant Registration requires graduation from an approved program, submission of an application, and payment of fees."
+      }
+    }
+  }
 }

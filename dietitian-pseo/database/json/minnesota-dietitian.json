@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Annual (by Nov 30) + 45 CE hours per 3 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "1 Year (expires Nov 30)"
+    "license_duration": "1 Year (expires Nov 30)",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "45 hours per 3 years"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the CDR Registration Examination for Dietitians. The CDR exam fee is $250. Obtain current CDR registration."
+      "title": "Complete Education Requirements",
+      "description": "Earn a bachelor's degree from a regionally accredited college or university with a major in human nutrition, dietetics, food and nutrition, or equivalent, meeting the Accreditation Council for Education in Nutrition and Dietetics (ACEND) requirements."
     },
     {
-      "title": "Submit the Online Application",
-      "description": "Complete the online application through the Minnesota Board of Dietetics and Nutrition Practice portal. Paper applications are no longer accepted. Pay the $100 application fee and $150 initial license fee."
+      "title": "Complete Supervised Practice",
+      "description": "Complete a supervised practice program accredited by ACEND or approved by the Board of Dietetics and Nutrition Practice."
     },
     {
-      "title": "Complete Background Check & Provide Documentation",
-      "description": "Authorize and complete a criminal background check ($32 fee). Submit a notarized copy of your current CDR registration card, official transcripts, and supervised practice documentation."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     }
   ],
   "documents": [
@@ -147,5 +149,19 @@
     "requires_psv": true
   },
   "slug": "minnesota-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "licensed dietitian",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Minnesota",
+        "dek": "Minnesota Dietitian License requires a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

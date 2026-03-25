@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Complete a CODA-accredited Dental Assistant Program",
+      "description": "Graduate from a dental assistant program accredited by the Commission on Dental Accreditation (CODA)."
+    },
+    {
+      "title": "Pass the DANB RHS Exam",
+      "description": "Successfully complete the Dental Assisting National Board (DANB) Radiation Health and Safety (RHS) exam."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit an application for Dental Assistant registration to the Wisconsin Dentistry Examining Board."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://dsps.wi.gov/pages/BoardsCouncils/Dentistry/Default.aspx"
   },
   "slug": "wisconsin-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Wisconsin",
+        "dek": "Wisconsin Dental Assistant registration requires graduation from a CODA-accredited program, successful completion of the DANB RHS exam, and application to the board."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Annual (by Dec 31st) + 15 CE hours",
     "processing_time": "3 to 5 Weeks",
-    "license_duration": "1 Year"
+    "license_duration": "1 Year",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "15 hours per year"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies this."
+      "title": "Complete Educational Requirements",
+      "description": "Complete a minimum of a baccalaureate degree from a U.S. regionally accredited college or university with completion of an Accreditation Council for Education in Nutrition and Dietetics (ACEND) accredited didactic program in dietetics."
     },
     {
-      "title": "Submit the Application via Maine OPOR",
-      "description": "Create an account on the Maine OPOR online portal, complete the initial application, and pay the required fees ($150 license + $21 background check)."
+      "title": "Complete Supervised Practice",
+      "description": "Complete an ACEND-accredited supervised practice dietetics program."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Submit a copy of your active CDR card or ensure verification is sent directly. A criminal history records check is conducted automatically with the submission of your application and fee."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "maine-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Maine",
+        "dek": "Maine Dietitian License requires completing an accredited dietetics program, passing the Registration Examination for Dietitians, and paying the required fees."
+      }
+    }
+  }
 }

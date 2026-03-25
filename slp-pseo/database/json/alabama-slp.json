@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "10 contact hours per year"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to ABESPA",
-      "description": "Submit the application with the $100 fee plus $50 license fee. Include official transcripts, Praxis scores, CF verification, and background check."
+      "title": "Complete Required Education",
+      "description": "Earn a master’s degree or doctoral degree in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Clinical Practicum",
+      "description": "Complete a supervised clinical practicum of at least 400 clock hours."
+    },
+    {
+      "title": "Pass the National Examination and Apply for Licensure",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit your application, fees, and supporting documentation to the Alabama Board of Examiners for Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Alabama is a member of the ASLP Interstate Compact, which allows SLPs licensed in other compact member states to obtain a compact privilege to practice in Alabama. Traditional endorsement pathways are also available for non-compact applicants."
   },
   "slug": "alabama-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Alabama",
+        "dek": "Alabama Speech-Language Pathologist license requires a master's degree in speech-language pathology, completion of a supervised clinical practicum, and passing the Praxis Examination."
+      }
+    }
+  }
 }

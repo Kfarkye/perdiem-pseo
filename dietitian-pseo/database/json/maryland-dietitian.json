@@ -34,7 +34,9 @@
     "renewal_fee": "$250",
     "renewal_cycle": "Every 2 years + 30 CPE hours (incl. implicit bias)",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours per renewal cycle (incl. implicit bias)"
   },
   "license_types": [
     {
@@ -44,20 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Obtain CDR Registration or CNS Certification",
-      "description": "Complete all requirements to become a Registered Dietitian (RD/RDN) through the Commission on Dietetic Registration, or obtain Certified Nutrition Specialist (CNS) certification. This includes a master's degree (as of 2024), 1,200 hours of supervised practice, and passing the national exam."
+      "title": "Meet Education Requirements",
+      "description": "Obtain a bachelor's degree from a regionally accredited college or university with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study as approved by the Board."
     },
     {
-      "title": "Complete the Maryland Application",
-      "description": "Submit the application online through the Board of Dietetic Practice portal or download and mail a paper application. If submitting by paper, the signature page must be notarized."
+      "title": "Complete Supervised Practice",
+      "description": "Complete a Board-approved, pre-professional, supervised practice experience program."
     },
     {
-      "title": "Pay the $300 Initial Fee",
-      "description": "Submit the non-refundable $300 combined application and licensure fee. Online payments accept Visa/MasterCard. Paper applications accept check or money order payable to the Maryland Board of Dietetic Practice."
-    },
-    {
-      "title": "Submit Official Transcripts & Documentation",
-      "description": "Have official transcripts sent directly from your accredited institution to the Board. Provide your CDR or CNS registration number for verification. A criminal history records check may be required."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     }
   ],
   "documents": [
@@ -147,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "maryland-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Maryland",
+        "dek": "Maryland Dietitian licenses require a bachelor's degree, completion of supervised practice, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

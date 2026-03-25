@@ -34,7 +34,9 @@
     "renewal_fee": "$120",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 8 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit to Division of Consumer Affairs with fees."
+      "title": "Complete a Master's Degree",
+      "description": "Obtain a master’s degree or doctorate in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Clinical Experience",
+      "description": "Complete a supervised clinical practicum, including 400 clock hours, as part of your graduate program."
+    },
+    {
+      "title": "Pass the National Examination and Apply",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit your application for licensure to the New Jersey Audiology and Speech-Language Pathology Advisory Committee."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "New Jersey does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full New Jersey licensure."
   },
   "slug": "new-jersey-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in New Jersey",
+        "dek": "New Jersey Speech-Language Pathologist licenses require a master's degree, supervised clinical experience, and passing the national exam."
+      }
+    }
+  }
 }

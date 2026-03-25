@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination ( Praxis Exam)",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Meet Education Requirements",
+      "description": "Obtain a doctoral degree in audiology from a regionally accredited institution."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the Examination",
+      "description": "Achieve a passing score on the Audiology Examination ( Praxis Exam)."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit an application to the Oklahoma Board of Examiners for Speech-Language Pathology and Audiology with all required documentation and fees."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "oklahoma-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in Oklahoma",
+        "dek": "Oklahoma Audiologist licenses require a doctoral degree in audiology, a passing score on the Audiology Examination, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet Basic Requirements",
+      "description": "You must have a high school diploma or its equivalent."
+    },
+    {
+      "title": "Pass the Jurisprudence Exam",
+      "description": "You must successfully complete the Montana Jurisprudence Exam."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Submit a completed application form to the Montana Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://boards.bsd.dli.mt.gov/dental"
   },
   "slug": "montana-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Montana",
+        "dek": "Montana Dental Assistant registration requires graduation from high school (or equivalent), successful completion of the Jurisprudence Exam, and application to the Montana Board of Dentistry."
+      }
+    }
+  }
 }

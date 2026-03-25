@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination of the Praxis Series",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Meet the Education Requirements",
+      "description": "Complete a Doctor of Audiology (AuD) degree program from a regionally accredited educational institution."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the Required Examination",
+      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series administered by the Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Submit an Application for Licensure",
+      "description": "Apply for licensure and submit all required documentation and fees to the South Carolina Board of Examiners in Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "south-carolina-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in South Carolina",
+        "dek": "South Carolina Audiologist license requires a doctoral degree in audiology, passing the Audiology Examination of the Praxis Series, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

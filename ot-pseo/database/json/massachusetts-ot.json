@@ -34,7 +34,9 @@
     "renewal_fee": "$108",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Certification in Occupational Therapy (NBCOT) examination",
+    "ce_requirement": "24 contact hours of continuing education per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete an accredited educational program",
+      "description": "Graduate from an occupational therapy program accredited by the Accreditation Council for Occupational Therapy Education (ACOTE)."
+    },
+    {
+      "title": "Pass the NBCOT exam",
+      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+    },
+    {
+      "title": "Submit your application and fee",
+      "description": "Apply for licensure with the Massachusetts Board of Allied Health Professions and pay the required fee."
     }
   ],
   "documents": [
@@ -127,5 +137,19 @@
     "requires_psv": true
   },
   "slug": "massachusetts-ot",
-  "specialty": "ot"
+  "specialty": "ot",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Occupational Therapist in Massachusetts",
+        "dek": "Massachusetts Occupational Therapist license requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a completed application."
+      }
+    }
+  }
 }

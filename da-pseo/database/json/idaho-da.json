@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Complete Education or Training",
+      "description": "Graduate from a Commission on Dental Accreditation (CODA)-accredited dental assisting program or complete on-the-job training."
+    },
+    {
+      "title": "Obtain CPR Certification",
+      "description": "Hold current certification in cardiopulmonary resuscitation (CPR)."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit a completed application for registration to the Idaho State Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://isbd.idaho.gov/"
   },
   "slug": "idaho-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Idaho",
+        "dek": "Idaho Dental Assistant registration requires graduation from a CODA-accredited dental assisting program or completion of on-the-job training, current CPR certification, and application to the Idaho State Board of Dentistry."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years (by May 31, odd years) + 30 CE hours",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the CDR Registration Examination for Dietitians ($200 fee). Obtain current CDR registration."
+      "title": "Complete Required Education",
+      "description": "Complete a minimum of a baccalaureate degree and meet the academic requirements from an ACEND-accredited program."
     },
     {
-      "title": "Submit the Application",
-      "description": "Complete and submit the licensure application to the South Carolina Panel for Dietetics. Pay the non-refundable $175 application fee. Include all required supporting documents."
+      "title": "Complete Supervised Practice",
+      "description": "Complete a supervised practice program accredited by ACEND."
     },
     {
-      "title": "Provide Supporting Documentation",
-      "description": "Submit a copy of your current signed CDR card, valid photo ID, signed Social Security card, official transcripts (sent directly from the university), notarized Verification of Lawful Presence, and any name-change documentation if applicable."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
     }
   ],
   "documents": [
@@ -151,5 +153,19 @@
     "requires_psv": true
   },
   "slug": "south-carolina-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in South Carolina",
+        "dek": "South Carolina Dietitian licensure requires completing an accredited education program, passing the Registration Examination for Dietitians, and fulfilling supervised practice requirements."
+      }
+    }
+  }
 }

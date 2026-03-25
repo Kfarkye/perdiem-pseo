@@ -34,7 +34,9 @@
     "renewal_fee": "$110",
     "renewal_cycle": "Every 2 years + 20 CE hours",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. A letter verifying your RD status must be sent directly from the CDR."
+      "title": "Complete Academic Requirements",
+      "description": "You must complete academic requirements as outlined in the NH statutes."
     },
     {
-      "title": "Submit the Online Application via OPLC",
-      "description": "Create an account on the New Hampshire OPLC online portal, complete the initial application, and pay the $110 fee."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "You must pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Ensure the CDR sends your verification. Additionally, if you received your RD card on or after January 1, 2001, you must provide official transcripts and verification of internship hours directly from your supervisor."
+      "title": "Apply for a Dietitian License",
+      "description": "Submit a completed application, including required documentation and fees, to the New Hampshire Board of Licensed Dietitians."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "new-hampshire-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in New Hampshire",
+        "dek": "New Hampshire Dietitian License requires completion of academic requirements, passing the Registration Examination for Dietitians, and completing supervised practice."
+      }
+    }
+  }
 }

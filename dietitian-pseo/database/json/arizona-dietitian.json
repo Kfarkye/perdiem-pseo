@@ -34,7 +34,9 @@
     "renewal_fee": "$0 (State Fee)",
     "renewal_cycle": "No state renewal. CDR registration renews every 5 years with 75 CPE hours.",
     "processing_time": "N/A (No state application)",
-    "license_duration": "N/A"
+    "license_duration": "N/A",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "75 CPE hours every 5 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians ($200 fee)."
+      "title": "Complete Required Education",
+      "description": "Complete a didactic program in dietetics and a supervised practice program accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Maintain CDR Registration",
-      "description": "Maintain your CDR credential by completing 75 hours of continuing professional education (CPE) every five years and paying the CDR annual maintenance fee."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+    },
+    {
+      "title": "Maintain Registration",
+      "description": "Maintain registration with the Commission on Dietetic Registration (CDR) by completing 75 hours of continuing professional education (CPE) every 5 years."
     }
   ],
   "documents": [
@@ -131,5 +137,19 @@
     "requires_psv": true
   },
   "slug": "arizona-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Arizona",
+        "dek": "Arizona Dietitian Registration requires completing an accredited educational program, passing the Registration Examination for Dietitians, and maintaining continuing professional education."
+      }
+    }
+  }
 }

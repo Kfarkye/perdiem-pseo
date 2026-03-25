@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination of the Praxis Series offered by the Educational Testing Service",
+    "ce_requirement": "24 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Complete a Doctoral Degree",
+      "description": "Earn a Doctor of Audiology (AuD) degree from a regionally accredited educational institution."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the National Exam",
+      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series offered by the Educational Testing Service."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit a completed application to the West Virginia Board of Examiners for Speech-Language Pathology and Audiology, including all required documentation and fees."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "west-virginia-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in West Virginia",
+        "dek": "West Virginia Audiologist License requires graduation from an accredited program, passing the national exam, and completing a supervised professional experience."
+      }
+    }
+  }
 }

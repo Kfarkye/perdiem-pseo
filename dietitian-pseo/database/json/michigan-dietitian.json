@@ -34,7 +34,9 @@
     "renewal_fee": "$55",
     "renewal_cycle": "Annual (Estimated based on fee schedule)",
     "processing_time": "TBD (Application process not yet open in early 2026)",
-    "license_duration": "1 Year (Estimated)"
+    "license_duration": "1 Year (Estimated)",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "45 hours every 3 years"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the CDR Registration Examination for Dietitians and obtain active RD/RDN status. This is the primary qualification."
+      "title": "Complete Education Requirements",
+      "description": "Earn a bachelor's degree or higher from a regionally accredited U.S. college or university with a major in human nutrition, dietetics, foods and nutrition, or an equivalent major as determined by the board."
     },
     {
-      "title": "Await Application Opening",
-      "description": "As of early 2026, the state application process is not yet open. Monitor the LARA website and the Michigan Academy of Nutrition and Dietetics for announcements."
+      "title": "Complete Supervised Practice",
+      "description": "Complete a supervised practice program that meets the requirements of the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit Application via LARA (When Available)",
-      "description": "Once open, submit your application to LARA with the $75 processing fee and $55 license fee, along with proof of CDR registration."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": false
   },
   "slug": "michigan-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian Nutritionist in Michigan",
+        "dek": "Michigan Dietitian Nutritionist licenses require a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

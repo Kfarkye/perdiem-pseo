@@ -34,7 +34,9 @@
     "renewal_fee": "$179",
     "renewal_cycle": "Every 3 years",
     "processing_time": "~6 Weeks",
-    "license_duration": "3 Years"
+    "license_duration": "3 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "15 hours every 3 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Take the Child Abuse Identification Course",
-      "description": "New York State requires all healthcare professionals to complete state-approved coursework in identifying and reporting child abuse before applying for certification."
+      "title": "Meet Education and Experience Requirements",
+      "description": "Complete the educational and supervised practice requirements, as specified by the New York State Education Department."
     },
     {
-      "title": "Apply Online via NYSED",
-      "description": "Submit your application for a new CDN certification through the Office of the Professions online portal and pay the combined $294 application and initial registration fee."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+    },
+    {
+      "title": "Apply for Certification",
+      "description": "Submit an application for certification, along with all required documentation and fees, to the New York State Education Department."
     }
   ],
   "documents": [
@@ -135,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "new-york-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "certification",
+    "page_title_term": "Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in New York",
+        "dek": "New York Dietitian Certification requires completing the necessary education and experience requirements, passing the Registration Examination for Dietitians, and applying to the New York State Education Department."
+      }
+    }
+  }
 }

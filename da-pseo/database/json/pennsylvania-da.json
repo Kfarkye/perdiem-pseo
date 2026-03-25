@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Pennsylvania State Board of Dentistry with required documentation and fees."
+      "title": "Complete Education/Training",
+      "description": "Graduate from a Board-approved dental assistant school or complete a Board-approved on-the-job training program."
+    },
+    {
+      "title": "Pass Required Examination",
+      "description": "Successfully complete the Dental Assisting National Board (DANB) Radiation Health and Safety (RHS) examination."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit an application for registration and pay the required fee to the Pennsylvania State Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Dentistry/"
   },
   "slug": "pennsylvania-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Pennsylvania",
+        "dek": "Pennsylvania Dental Assistant registration requires graduation from an approved dental assistant school or completion of an approved on-the-job training program, successful completion of the DANB RHS exam, and a criminal background check."
+      }
+    }
+  }
 }

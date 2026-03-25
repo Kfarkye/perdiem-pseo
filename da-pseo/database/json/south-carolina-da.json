@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Complete a CODA-accredited Dental Assisting Program",
+      "description": "Successfully graduate from a Commission on Dental Accreditation (CODA) accredited dental assisting program."
+    },
+    {
+      "title": "Pass the DANB RHS Exam",
+      "description": "Pass the Dental Assisting National Board (DANB) Radiation Health and Safety (RHS) exam."
+    },
+    {
+      "title": "Submit the Application",
+      "description": "Submit the completed Dental Assistant Registration Application to the South Carolina State Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://llr.sc.gov/den/"
   },
   "slug": "south-carolina-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "N/A"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in South Carolina",
+        "dek": "South Carolina Dental Assistant registration requires graduation from a CODA-accredited dental assisting program, successfully passing the DANB RHS exam, and completing the application."
+      }
+    }
+  }
 }

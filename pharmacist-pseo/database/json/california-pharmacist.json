@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "NAPLEX and CPJE",
+    "ce_requirement": "30 hours every two years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Board Exams",
-      "description": "Successfully pass the expected board examinations, typically the NAPLEX and MPJE."
+      "title": "Graduate from an Accredited Pharmacy Program",
+      "description": "Complete a Doctor of Pharmacy (PharmD) degree from a pharmacy program accredited by the Accreditation Council for Pharmacy Education (ACPE)."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check, and submit the necessary licensing fees."
+      "title": "Pass the NAPLEX and CPJE Exams",
+      "description": "Successfully pass the North American Pharmacist Licensure Examination (NAPLEX) and the California Practice Standards and Jurisprudence Examination (CPJE)."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit an application for licensure to the California State Board of Pharmacy and pay the required fee."
     }
   ],
   "documents": [
@@ -134,5 +140,19 @@
     "board_source_url": "https://www.pharmacy.ca.gov/"
   },
   "slug": "california-pharmacist",
-  "specialty": "pharmacist"
+  "specialty": "pharmacist",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Pharmacist in California",
+        "dek": "California Pharmacist license requires graduation from an accredited pharmacy program, passing the NAPLEX and CPJE exams, and completing the required internship hours."
+      }
+    }
+  }
 }

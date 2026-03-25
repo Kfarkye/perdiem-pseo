@@ -34,7 +34,9 @@
     "renewal_fee": "$120",
     "renewal_cycle": "Every 2 years (December 31, even years)",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,12 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Obtain a Conditional SLP License",
-      "description": "Apply for the Conditional SLP License ($210) to begin your clinical fellowship. Complete 9 months full-time or 18 months part-time of supervised clinical practice under an experienced SLP."
+      "title": "Complete Education Requirements",
+      "description": "Earn a master's degree or doctoral degree in speech-language pathology from an accredited educational institution."
     },
     {
-      "title": "Apply for Full SLP Licensure",
-      "description": "Submit the full SLP license application ($200) via the eLicense Ohio portal. Include official transcripts, Praxis scores, clinical fellowship verification, headshot photograph, and background check results."
+      "title": "Pass the National Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit an application for licensure to the Ohio Board of Speech-Language Pathology and Audiology, including all required documentation and fees."
     }
   ],
   "documents": [
@@ -143,5 +149,19 @@
     "notes": "Ohio does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Ohio license and meet all state-specific requirements. Applicants holding the ASHA CCC-SLP may qualify for the endorsement pathway. CE hours are tracked through CE Broker."
   },
   "slug": "ohio-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Ohio",
+        "dek": "Ohio Speech-Language Pathologist License requires a master's degree in speech-language pathology, passing the Praxis Examination, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

@@ -34,7 +34,8 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "N/A",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "N/A"
+    "license_duration": "N/A",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Complete Education or Training",
+      "description": "Complete a CODA-accredited dental assisting program or receive on-the-job training by a licensed dentist."
+    },
+    {
+      "title": "Obtain CPR Certification",
+      "description": "Obtain and maintain current CPR certification from an approved provider."
+    },
+    {
+      "title": "Register with the Kansas Dental Board",
+      "description": "Submit a completed application for registration to the Kansas Dental Board along with required documentation."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://www.dental.ks.gov/"
   },
   "slug": "kansas-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Kansas",
+        "dek": "Kansas Dental Assistant registration requires graduation from an accredited dental assisting program or on-the-job training, current CPR certification, and registration with the Kansas Dental Board."
+      }
+    }
+  }
 }

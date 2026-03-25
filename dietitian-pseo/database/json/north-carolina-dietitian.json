@@ -34,38 +34,36 @@
     "renewal_fee": "$95",
     "renewal_cycle": "Annual (by March 31) + 30 CE hours per 2 years",
     "processing_time": "2 to 3 Business Days",
-    "license_duration": "1 Year (expires March 31)"
+    "license_duration": "1 Year (expires March 31)",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours per 2 years"
   },
   "license_types": [
     {
-      "title": "Licensed Dietitian/Nutritionist (LDN) \u2014 Category A",
+      "title": "Licensed Dietitian/Nutritionist (LDN) — Category A",
       "description": "Full licensure for individuals currently registered with the Commission on Dietetic Registration (CDR) as an RDN. The primary credential for practicing dietetics in North Carolina."
     },
     {
-      "title": "Provisional Licensed Dietitian/Nutritionist (PLDN) \u2014 Category B",
+      "title": "Provisional Licensed Dietitian/Nutritionist (PLDN) — Category B",
       "description": "A 12-month provisional license for individuals who have completed an ACEND-accredited program and supervised practice and are preparing to take the CDR exam. Initial fee is $133. Cannot be renewed."
     },
     {
-      "title": "Licensed Nutritionist (LN) \u2014 Category F",
+      "title": "Licensed Nutritionist (LN) — Category F",
       "description": "For individuals holding a Certified Nutrition Specialist (CNS) or Diplomate of the American Clinical Board of Nutrition (DACBN) credential."
     }
   ],
   "steps": [
     {
-      "title": "Create an Account on the NCBDN Gateway",
-      "description": "Register for an account on the NCBDN Gateway online portal, which is used for all application submissions and document uploads."
+      "title": "Complete Required Education",
+      "description": "Complete a minimum of a bachelor's degree and meet the Accreditation Council for Education in Nutrition and Dietetics (ACEND) requirements."
     },
     {
-      "title": "Complete the Online Application",
-      "description": "Select the appropriate licensure category (e.g., Category A for RDNs) and fill out the online application. Pay the non-refundable fees: $60 application, $150 issuance, and $38 background check ($248 total)."
+      "title": "Complete Supervised Practice",
+      "description": "Complete an ACEND-accredited supervised practice dietetic internship or Individual Supervised Practice Pathway (ISPP)."
     },
     {
-      "title": "Upload Required Documents",
-      "description": "After submitting the application, you will receive an email checklist. Upload official transcripts, CDR registration verification, government-issued photo ID, and any other required documents through the Gateway."
-    },
-    {
-      "title": "Complete the Criminal Background Check",
-      "description": "Authorization for a criminal background check is mandatory. The $38 fee covers this check, which is processed through the NCBDN."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Pass the Commission on Dietetic Registration's (CDR) Registration Examination for Dietitians."
     }
   ],
   "documents": [
@@ -155,5 +153,19 @@
     "requires_psv": true
   },
   "slug": "north-carolina-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in North Carolina",
+        "dek": "North Carolina Dietitian licensure requires completing an accredited education program, passing the Registration Examination for Dietitians, and completing supervised practice experience."
+      }
+    }
+  }
 }

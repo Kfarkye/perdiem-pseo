@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination of the Praxis Series administered by the Educational Testing Service",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Complete Doctoral Degree",
+      "description": "Earn a doctoral degree in audiology from an accredited educational institution."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the National Exam",
+      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Submit a completed application, including all required documentation and fees, to the Massachusetts Board of Registration of Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "massachusetts-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in Massachusetts",
+        "dek": "Massachusetts Audiologist License requires a doctoral degree in audiology, passing the national audiology exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

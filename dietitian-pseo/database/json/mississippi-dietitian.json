@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years (by March 31 of odd years) + 30 CE hours",
     "processing_time": "3 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status is required."
+      "title": "Complete Dietetics Education",
+      "description": "Complete a didactic program in dietetics and supervised practice experience accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Pass the Jurisprudence Exam",
-      "description": "All applicants must successfully complete an examination testing their knowledge of Mississippi's dietetic statutes and administrative rules."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Submit the Application via LEMS",
-      "description": "Create an account on Mississippi's Licensure and Enforcement Management System (LEMS) portal. Complete the application and pay the $100 fee."
+      "title": "Apply for Licensure",
+      "description": "Submit a completed application and pay the required fee to the Mississippi State Department of Health."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "mississippi-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Mississippi",
+        "dek": "Mississippi Dietitian licensure requires completion of a dietetics program, passing the Registration Examination for Dietitians, and paying the required fees."
+      }
+    }
+  }
 }

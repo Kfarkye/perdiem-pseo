@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Complete a Doctoral Degree",
+      "description": "Obtain a Doctor of Audiology (AuD) degree from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology (CAA)."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the Audiology Examination",
+      "description": "Successfully complete the Audiology Examination administered by a professional testing service approved by the Advisory Commission for Speech-Language Pathologists and Audiologists."
+    },
+    {
+      "title": "Apply for a License",
+      "description": "Submit a completed application, including all required documentation and fees, to the Missouri Advisory Commission for Speech-Language Pathologists and Audiologists."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "missouri-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in Missouri",
+        "dek": "Missouri Audiologist licenses require a doctoral degree in audiology, passing the Audiology Examination, and completing the application process."
+      }
+    }
+  }
 }

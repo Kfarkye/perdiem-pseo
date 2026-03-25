@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Annual (by Oct 31st)",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "1 Year"
+    "license_duration": "1 Year",
+    "exam_name": "Commission on Dietetic Registration Examination",
+    "ce_requirement": "10 hours per year"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) national examination."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "You must complete a didactic program in dietetics and supervised practice accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit the Online Application",
-      "description": "Apply through the Oklahoma State Board of Medical Licensure online portal and pay the $120 application fee."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully pass the Commission on Dietetic Registration Examination."
     },
     {
-      "title": "Complete Background Check & Provide Documents",
-      "description": "All applicants must submit to an Extended Background Check. You must also submit primary source verification of your education and passing CDR exam score."
+      "title": "Apply for an Oklahoma Dietitian License",
+      "description": "Submit an application to the Oklahoma Licensed Dietitians Committee with the required documentation and fees."
     }
   ],
   "documents": [
@@ -147,5 +149,19 @@
     "requires_psv": true
   },
   "slug": "oklahoma-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Oklahoma",
+        "dek": "Oklahoma Dietitian License requires completing an accredited dietetics program, passing the Commission on Dietetic Registration Examination, and meeting continuing education requirements."
+      }
+    }
+  }
 }

@@ -34,7 +34,8 @@
     "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 8 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "12 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Nevada State Board of Dental Examiners with required documentation and fees."
+      "title": "Meet Basic Requirements",
+      "description": "You must be at least 18 years of age and of good moral character to apply for registration."
+    },
+    {
+      "title": "Complete the Application",
+      "description": "Submit a completed application form to the Nevada State Board of Dental Examiners."
+    },
+    {
+      "title": "Submit Required Documentation and Fees",
+      "description": "Provide proof of graduation from an accredited dental assisting program or equivalent experience, along with the required fee."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://dental.nv.gov/"
   },
   "slug": "nevada-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Nevada",
+        "dek": "Nevada Dental Assistant registration requires completion of an application, proof of graduation from an accredited school, and payment of fees."
+      }
+    }
+  }
 }

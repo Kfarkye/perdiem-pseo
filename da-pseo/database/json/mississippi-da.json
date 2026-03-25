@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet Basic Requirements",
+      "description": "Ensure you meet the minimum requirements, such as being at least 18 years old and having a high school diploma or equivalent."
+    },
+    {
+      "title": "Complete Required Training",
+      "description": "Complete training in Expanded Functions as a Dental Assistant (EFDA) if seeking EFDA registration or complete required training for other allowable duties."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit a complete application to the Mississippi State Board of Dental Examiners along with all required documentation."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://www.dental.ms.gov/"
   },
   "slug": "mississippi-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "registration by credentials"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Mississippi",
+        "dek": "Mississippi Dental Assistant registration requires graduation from a CODA-accredited program for EFDA registration, documentation of training, and application to the Board."
+      }
+    }
+  }
 }

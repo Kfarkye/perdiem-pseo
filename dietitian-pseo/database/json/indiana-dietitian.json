@@ -34,7 +34,9 @@
     "renewal_fee": "$20",
     "renewal_cycle": "Every 2 years (by Dec 31, even years) + 30 CE hours",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years (expires Dec 31, even years)"
+    "license_duration": "2 Years (expires Dec 31, even years)",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "You must complete a didactic program in dietetics and supervised practice accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit the Online Application",
-      "description": "Apply online through the IPLA licensing portal. Pay the $20 non-refundable application fee. Include two passport-style photographs and a copy of your current CDR registration card."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "You must pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Complete Fingerprint Background Check",
-      "description": "Submit to a mandatory fingerprint-based criminal background check. The fingerprinting fee is paid separately to the designated vendor."
+      "title": "Apply for Certification",
+      "description": "Submit an application for certification to the Indiana Dietitians Certification Board and pay the required fee."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "indiana-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "certification",
+    "page_title_term": "Certification",
+    "renewal_term": "certification renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Indiana",
+        "dek": "Indiana Dietitian certification requires completion of academic requirements, passing the Registration Examination for Dietitians, and paying the required fee."
+      }
+    }
+  }
 }

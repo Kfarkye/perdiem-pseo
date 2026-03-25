@@ -34,7 +34,9 @@
     "renewal_fee": "$120",
     "renewal_cycle": "Every 2 years (odd years)",
     "processing_time": "4 to 8 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "24 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to DCCA",
-      "description": "Submit application with fees to DCCA Professional and Vocational Licensing Division."
+      "title": "Meet the Education Requirements",
+      "description": "You must have a master's degree or its equivalent in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Clinical Experience",
+      "description": "Complete supervised clinical practicum experience as part of your graduate program as specified by the Board."
+    },
+    {
+      "title": "Pass the Praxis Examination and Apply for Licensure",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit a completed application, including all required documentation and fees, to the Board of Speech Pathology and Audiology."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Hawaii does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full Hawaii licensure."
   },
   "slug": "hawaii-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Hawaii",
+        "dek": "Hawaii Speech-Language Pathologist license requires a master's degree in speech-language pathology, completion of supervised clinical experience, and passing the Praxis Examination in Speech-Language Pathology."
+      }
+    }
+  }
 }

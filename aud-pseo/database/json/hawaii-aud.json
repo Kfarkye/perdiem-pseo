@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination administered by Praxis",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Meet the Education Requirements",
+      "description": "Earn a doctoral degree in audiology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a minimum of nine months of supervised professional experience as outlined in the application instructions."
+    },
+    {
+      "title": "Pass the Examination and Apply",
+      "description": "Pass the Audiology Examination administered by Praxis and submit a completed application with the required fee and supporting documentation to the Board."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "hawaii-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in Hawaii",
+        "dek": "Hawaii Audiologist license requires graduation from an accredited program, passing the required examination, and completing a supervised professional experience."
+      }
+    }
+  }
 }

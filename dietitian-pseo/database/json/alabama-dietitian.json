@@ -34,7 +34,9 @@
     "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years + 30 CE hours",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) national examination."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Earn a minimum of a bachelor's degree from a regionally accredited US college or university and complete a Commission on Accreditation for Dietetics Education (ACDE) accredited Dietetic Internship (DI) or Coordinated Program in Dietetics (CP)."
     },
     {
-      "title": "Submit the Application",
-      "description": "Complete the licensure application and submit it to the Board with the $100 application fee and $150 initial license fee ($250 total)."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Verification",
-      "description": "Submit a copy of your current, active CDR registration card or verification letter directly from CDR."
+      "title": "Apply for Licensure",
+      "description": "Submit a completed application form and all required documentation, including official transcripts and exam results, to the Alabama Board of Examiners for Dietetics/Nutrition Practice."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "alabama-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Alabama",
+        "dek": "Alabama Dietitian licensure requires completion of an accredited program, passing the national exam, and meeting the Board's application requirements."
+      }
+    }
+  }
 }

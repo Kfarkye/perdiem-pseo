@@ -34,7 +34,9 @@
     "renewal_fee": "$164",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 8 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "National Examination in Speech-Language Pathology administered by Praxis",
+    "ce_requirement": "20 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to DC DOH",
-      "description": "Submit application with fees to DC Health."
+      "title": "Complete Education Requirements",
+      "description": "Earn a graduate degree in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience, as specified by the Board."
+    },
+    {
+      "title": "Pass the National Examination",
+      "description": "Achieve a passing score on the National Examination in Speech-Language Pathology administered by Praxis."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "DC does not participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full DC licensure."
   },
   "slug": "dc-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in District of Columbia",
+        "dek": "District of Columbia Speech-Language Pathologist licenses require a graduate degree, passing the national exam, and supervised professional experience."
+      }
+    }
+  }
 }

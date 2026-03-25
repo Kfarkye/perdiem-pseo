@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination of the Praxis Series administered by the Educational Testing Service",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Meet Education Requirements",
+      "description": "Complete a Doctor of Audiology (Au.D.) degree or its equivalent from a regionally accredited educational institution."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the National Examination",
+      "description": "Achieve a passing score on the Audiology Examination of the Praxis Series administered by the Educational Testing Service."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit an application for licensure and all required documentation to the North Carolina Board of Examiners for Speech-Language Pathologists and Audiologists."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "north-carolina-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in North Carolina",
+        "dek": "North Carolina Audiologist license requires graduation from an accredited program, passing the national examination, and completing a supervised professional experience."
+      }
+    }
+  }
 }

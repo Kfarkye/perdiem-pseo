@@ -34,7 +34,9 @@
     "renewal_fee": "$183.50",
     "renewal_cycle": "Biennial (Every 2 years)",
     "processing_time": "~2 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,20 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Satisfy Education & Supervised Practice",
-      "description": "Earn a degree (Master's level required by CDR as of 2024) from an ACEND-accredited program, and complete a minimum of 1,000 hours of monitored dietetic experience such as a Dietetic Internship (DI)."
+      "title": "Complete Required Education",
+      "description": "Complete a minimum of a baccalaureate degree and complete the academic requirements from an approved education program accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
       "title": "Pass the Registration Examination",
-      "description": "Score a passing grade on the Commission on Dietetic Registration (CDR) national Registration Examination for Dietitians."
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Submit Background Checks",
-      "description": "Complete fingerprinting for state (BCI) and federal (FBI) criminal records checks. Background check results must be routed directly to the Medical Board."
-    },
-    {
-      "title": "Apply via eLicense Ohio",
-      "description": "Create an account in the comprehensive eLicense portal to submit the full application, documentation, and non-refundable $228.50 fee."
+      "title": "Apply for Licensure",
+      "description": "Submit a completed application and all required documentation to the State Medical Board of Ohio."
     }
   ],
   "documents": [
@@ -147,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "ohio-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Ohio",
+        "dek": "Ohio Dietitian License requires completion of an accredited dietetics program, passing the Registration Examination for Dietitians, and meeting continuing education requirements."
+      }
+    }
+  }
 }

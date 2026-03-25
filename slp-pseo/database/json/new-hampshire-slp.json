@@ -34,7 +34,9 @@
     "renewal_fee": "$110",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit to OPLC with $110 fee."
+      "title": "Complete Education and Supervised Experience",
+      "description": "Earn a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) and complete a supervised professional experience."
+    },
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Apply for a License",
+      "description": "Submit a completed application, official transcripts, Praxis scores, verification of supervised professional experience, and the required fee to the New Hampshire Allied Health Professionals Board."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "New Hampshire is a member of the ASLP Interstate Compact."
   },
   "slug": "new-hampshire-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in New Hampshire",
+        "dek": "New Hampshire Speech-Language Pathologist license requires graduation from an accredited program, passing the Praxis exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

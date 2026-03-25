@@ -34,7 +34,9 @@
     "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit application with fees to the Board."
+      "title": "Complete Education and Clinical Fellowship",
+      "description": "Earn a master’s degree or doctorate in speech-language pathology and complete a supervised clinical fellowship."
+    },
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology."
+    },
+    {
+      "title": "Apply for a Speech-Language Pathologist License",
+      "description": "Submit an application for licensure to the Maryland Board of Examiners for Audiologists, Hearing Aid Dispensers, Speech-Language Pathologists, and Music Therapists."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Maryland is a member of the ASLP Interstate Compact."
   },
   "slug": "maryland-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Maryland",
+        "dek": "Maryland Speech-Language Pathologist licenses require a master's degree, supervised professional experience, and passing the national exam."
+      }
+    }
+  }
 }

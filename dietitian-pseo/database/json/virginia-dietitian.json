@@ -34,7 +34,9 @@
     "renewal_fee": "$0 (No State Renewal)",
     "renewal_cycle": "No state renewal. CDR registration renews every 5 years with 75 CPE hours.",
     "processing_time": "N/A (No state application)",
-    "license_duration": "N/A"
+    "license_duration": "N/A",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "75 CPE hours every 5 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the CDR Registration Examination for Dietitians and obtain active RD/RDN status."
+      "title": "Meet Education Requirements",
+      "description": "Complete the academic requirements and supervised practice experience as mandated by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Use the Protected Title",
-      "description": "With active CDR registration, you are qualified to use the legally protected titles 'dietitian' or 'nutritionist' in Virginia. No separate state application is needed."
+      "title": "Pass the Registration Examination",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+    },
+    {
+      "title": "Maintain Registration",
+      "description": "Maintain active registration with the Commission on Dietetic Registration (CDR) and fulfill their continuing professional education requirements."
     }
   ],
   "documents": [
@@ -131,5 +137,19 @@
     "requires_psv": true
   },
   "slug": "virginia-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "title protection",
+    "page_title_term": "Title Protection",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Virginia",
+        "dek": "Virginia Dietitian title protection requires registration with the Commission on Dietetic Registration, successful completion of the Registration Examination for Dietitians, and adherence to the CDR's continuing professional education requirements."
+      }
+    }
+  }
 }

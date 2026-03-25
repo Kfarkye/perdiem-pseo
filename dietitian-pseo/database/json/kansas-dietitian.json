@@ -34,7 +34,9 @@
     "renewal_fee": "$135",
     "renewal_cycle": "Every 2 years + 15 CE hours",
     "processing_time": "3 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Commission on Dietetic Registration examination",
+    "ce_requirement": "15 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status is required."
+      "title": "Complete Required Education",
+      "description": "Complete a didactic program in dietetics and supervised practice program approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Submit the Application to KDADS",
-      "description": "Download and complete the application form. Have it notarized, and mail it with the $140 fee to KDADS in Topeka."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Commission on Dietetic Registration examination."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Ensure your official transcripts are sent directly from the issuing institution. Include a copy of your CDR card as proof of examination and supervised training."
+      "title": "Submit an Application",
+      "description": "Submit a completed application for licensure to the Kansas Department for Aging and Disability Services and pay the required fees."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "kansas-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Kansas",
+        "dek": "Kansas Dietitian License requires completing an accredited dietetics program, passing the Commission on Dietetic Registration examination, and paying the required fees."
+      }
+    }
+  }
 }

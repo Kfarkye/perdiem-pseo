@@ -34,7 +34,8 @@
     "renewal_fee": "$10",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "2 hours of continuing education per renewal cycle related to infection control or safety."
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Missouri Dental Board with required documentation and fees."
+      "title": "Complete the Application",
+      "description": "Complete the Dental Assistant Registration Application provided by the Missouri Dental Board."
+    },
+    {
+      "title": "Submit Required Documentation and Fee",
+      "description": "Submit the completed application and any required documentation along with the $10 fee."
+    },
+    {
+      "title": "Maintain Registration",
+      "description": "Complete 2 hours of continuing education related to infection control or safety every two years to maintain your registration."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://pr.mo.gov/dental.asp"
   },
   "slug": "missouri-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Missouri",
+        "dek": "Missouri Dental Assistant registration requires completing the application, paying the fee, and maintaining continuing education requirements."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "8 to 12 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) examination",
+    "ce_requirement": "24 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete a Respiratory Care Program",
+      "description": "Graduate from a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+    },
+    {
+      "title": "Pass the NBRC Examination",
+      "description": "Successfully pass the National Board for Respiratory Care (NBRC) examination."
+    },
+    {
+      "title": "Apply for a Hawaii Respiratory Therapist License",
+      "description": "Submit a completed application, required documentation, and fees to the Hawaii Board of Respiratory Therapy."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://cca.hawaii.gov/pvl/boards/respiratory/"
   },
   "slug": "hawaii-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Hawaii",
+        "dek": "Hawaii Respiratory Therapist License requires graduation from an accredited respiratory care program, passing the NBRC examination, and a completed application."
+      }
+    }
+  }
 }

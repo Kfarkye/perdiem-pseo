@@ -34,7 +34,9 @@
     "renewal_fee": "Varies (Contact DOH)",
     "renewal_cycle": "Every 3 years (Must maintain active CDR)",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "3 Years"
+    "license_duration": "3 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "75 hours every 5 years, must maintain active CDR"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Complete a didactic program in dietetics and supervised practice experiences approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Request Application Packet",
-      "description": "Contact the Hawaii DOH State Licensing Section directly at (808) 692-7400 to request an application packet, as it is not generally available online."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Submit Application and Fee",
-      "description": "Return the completed application along with the $225 non-refundable fee and required verification documents by mail."
+      "title": "Apply for a Hawaii Dietitian License",
+      "description": "Submit a completed application to the State Licensing Section - Dietitians, including required documentation and fees."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "hawaii-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Hawaii",
+        "dek": "Hawaii Dietitian License requires completing a dietetics program, passing the Registration Examination for Dietitians, and maintaining active CDR status."
+      }
+    }
+  }
 }

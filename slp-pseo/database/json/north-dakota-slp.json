@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every year (December 31)",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "1 year"
+    "license_duration": "1 year",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 contact hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit with fees to the Board."
+      "title": "Complete a Master's Degree",
+      "description": "Earn a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience (SPE) that meets the requirements outlined by the North Dakota Board of Examiners on Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Pass the Praxis Exam and Apply for Licensure",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit a completed application for licensure with the required documentation and fees to the Board."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "North Dakota does not participate in the ASLP Interstate Compact."
   },
   "slug": "north-dakota-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in North Dakota",
+        "dek": "North Dakota Speech-Language Pathologist license requires a master's degree, passing the Praxis exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit with fees to the Board."
+      "title": "Complete Education Requirements",
+      "description": "Earn a master's degree or doctoral degree in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience (clinical fellowship) as specified by the board."
+    },
+    {
+      "title": "Pass the National Examination and Apply for Licensure",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit an application for licensure to the Oregon Board of Examiners for Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Oregon does not participate in the ASLP Interstate Compact."
   },
   "slug": "oregon-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Oregon",
+        "dek": "Oregon Speech-Language Pathologist license requires a master's degree, supervised professional experience, and passing the Praxis examination."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years (March 31)",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "20 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit with fees to OPR."
+      "title": "Meet Educational Requirements",
+      "description": "You must hold a master’s degree or doctorate in speech-language pathology from a program accredited by the Council on Academic Accreditation in Audiology and Speech-Language Pathology."
+    },
+    {
+      "title": "Pass the Praxis Exam",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience (clinical fellowship) that meets the requirements outlined in the application."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Vermont is a member of the ASLP Interstate Compact."
   },
   "slug": "vermont-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Vermont",
+        "dek": "Vermont Speech-Language Pathologist licenses require a master's degree, passing the Praxis exam, and completing a clinical fellowship."
+      }
+    }
+  }
 }

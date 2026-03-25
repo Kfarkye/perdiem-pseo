@@ -34,7 +34,8 @@
     "renewal_fee": "$35",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "24 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Florida Board of Dentistry with required documentation and fees."
+      "title": "Complete an Expanded Duties Course",
+      "description": "Complete a Board-approved expanded duties course in order to be eligible for registration."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Submit a completed application form to the Florida Board of Dentistry."
+    },
+    {
+      "title": "Pay the Application Fee",
+      "description": "Submit the required application fee of $35."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://floridasdentistry.gov/"
   },
   "slug": "florida-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Florida",
+        "dek": "Florida Dental Assistant Registration requires completing a Board-approved expanded duties course, submitting an application, and paying a fee."
+      }
+    }
+  }
 }

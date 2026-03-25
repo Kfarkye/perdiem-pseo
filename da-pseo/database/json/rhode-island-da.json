@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Rhode Island Board of Examiners in Dentistry with required documentation and fees."
+      "title": "Meet Education/Training Requirements",
+      "description": "Complete a CODA-accredited dental assisting program or receive equivalent on-the-job training as determined by the Board."
+    },
+    {
+      "title": "Submit Application",
+      "description": "Complete and submit the Dental Assistant Registration Application to the Rhode Island Board of Examiners in Dentistry."
+    },
+    {
+      "title": "Pay the Fee",
+      "description": "Submit the required registration fee of $25."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://health.ri.gov/licenses/detail.php?id=216"
   },
   "slug": "rhode-island-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Rhode Island",
+        "dek": "Rhode Island Dental Assistant registration requires graduation from a CODA-accredited dental assisting program or equivalent on-the-job training, application to the board, and payment of fees."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) entry level examination",
+    "ce_requirement": "24 contact hours every 2 years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete an Accredited Respiratory Therapy Program",
+      "description": "Graduate from a respiratory therapy education program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+    },
+    {
+      "title": "Pass the NBRC Examination",
+      "description": "Successfully complete the National Board for Respiratory Care (NBRC) entry level examination."
+    },
+    {
+      "title": "Apply for a Respiratory Therapist License",
+      "description": "Submit a completed application, required documents, and the applicable fee to the Alabama State Board of Respiratory Therapy."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://www.asbrt.alabama.gov/"
   },
   "slug": "alabama-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Alabama",
+        "dek": "Alabama Respiratory Therapist license requires graduation from an accredited program, passing the NBRC entry level examination, and submitting an application to the Board."
+      }
+    }
+  }
 }

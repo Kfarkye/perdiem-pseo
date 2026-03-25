@@ -34,7 +34,8 @@
     "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years (no state-mandated CE, but CDR requires 75 CPEUs per 5 years)",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians"
   },
   "license_types": [
     {
@@ -52,16 +53,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
+      "title": "Meet Education Requirements",
+      "description": "Complete a minimum of a bachelor's degree from a regionally accredited college or university with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study, as approved by the Board."
     },
     {
-      "title": "Submit the Application via Nevada eLicensing",
-      "description": "Create an account on the Nevada online portal, complete the application, and pay the $200 initial application fee."
+      "title": "Complete Supervised Practice",
+      "description": "Complete a supervised practice program approved by the Board, which meets the requirements outlined in NAC 640B.120."
     },
     {
-      "title": "Complete Background Check & Provide Documents",
-      "description": "Submit fingerprints to the Central Repository for Nevada Records of Criminal History ($37.50 fee). Upload a copy of your current CDR registration card and official transcripts."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     }
   ],
   "documents": [
@@ -151,5 +152,19 @@
     "requires_psv": true
   },
   "slug": "nevada-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Nevada",
+        "dek": "Nevada Dietitian licenses require a bachelor's degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

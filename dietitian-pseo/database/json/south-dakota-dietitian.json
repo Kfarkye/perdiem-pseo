@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years (expires May 31 of odd years)",
     "processing_time": "3 to 4 Weeks",
-    "license_duration": "Up to 2 Years"
+    "license_duration": "Up to 2 Years",
+    "exam_name": "Commission on Dietetic Registration (CDR) examination",
+    "ce_requirement": "75 hours every 5 years"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
+      "title": "Complete Education and Supervised Practice",
+      "description": "Complete a minimum of a bachelor's degree from a U.S. regionally accredited college or university and completion of an Accreditation Council for Education in Nutrition and Dietetics (ACEND) accredited supervised practice program."
+    },
+    {
       "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD status satisfies the state's exam requirement."
+      "description": "Successfully pass the Commission on Dietetic Registration (CDR) examination to become a Registered Dietitian (RD) or Registered Dietitian Nutritionist (RDN)."
     },
     {
-      "title": "Submit the Application via SDBMOE",
-      "description": "Apply online through the South Dakota Board of Medical and Osteopathic Examiners portal and pay the $70 application fee."
-    },
-    {
-      "title": "Provide Verification Documents",
-      "description": "Submit a copy of your active CDR registration to verify that you meet the educational, examination, and supervised practice requirements."
+      "title": "Submit an Application",
+      "description": "Complete and submit the application for licensure to the South Dakota Board of Medical and Osteopathic Examiners along with the required fee and documentation."
     }
   ],
   "documents": [
@@ -135,5 +137,19 @@
     "requires_psv": false
   },
   "slug": "south-dakota-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in South Dakota",
+        "dek": "South Dakota Dietitian License requires successful completion of a Board-approved program, passing the CDR examination, and completing the application."
+      }
+    }
+  }
 }

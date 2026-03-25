@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Audiology Examination",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,12 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the Praxis",
-      "description": "Successfully pass the required Praxis Exam in Audiology."
+      "title": "Graduate from an Accredited Program",
+      "description": "Complete a graduate program in audiology from an institution approved by the board."
     },
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Pass the Audiology Examination",
+      "description": "Achieve a passing score on the audiology examination administered by a nationally recognized testing organization."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit an application for licensure to the Examining Board of Speech-Language Pathologists and Audiologists with all required documentation and fees."
     }
   ],
   "documents": [
@@ -126,5 +132,19 @@
     "notes": "Audiologists licensed in another state can often apply via endorsement by providing license verification and current certification."
   },
   "slug": "wisconsin-aud",
-  "specialty": "aud"
+  "specialty": "aud",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Audiologist in Wisconsin",
+        "dek": "Wisconsin Audiologist license requires graduation from an accredited program, passing the Audiology Examination, and completing a supervised professional experience."
+      }
+    }
+  }
 }

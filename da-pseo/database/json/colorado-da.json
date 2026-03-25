@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Complete Education or Training",
+      "description": "Complete a CODA-accredited dental assisting program or receive on-the-job training while employed as a dental assistant."
+    },
+    {
+      "title": "Complete Required Courses",
+      "description": "Complete courses in Cardiopulmonary Resuscitation (CPR), Basic Life Support (BLS), and infection control."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit an application for registration to the Colorado Dental Board."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://dpo.colorado.gov/Dental"
   },
   "slug": "colorado-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Colorado",
+        "dek": "Colorado Dental Assistant registration requires graduation from a CODA-accredited dental assisting program or on-the-job training, completion of specified courses, and application to the Colorado Dental Board."
+      }
+    }
+  }
 }

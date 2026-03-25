@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet the Requirements",
+      "description": "Complete a CODA-accredited dental assisting program or demonstrate equivalent experience, including on-the-job training."
+    },
+    {
+      "title": "Obtain CPR Certification",
+      "description": "Hold a current certification in Basic Life Support (BLS) or Cardiopulmonary Resuscitation (CPR) from an accepted provider."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit a completed application form to the Hawaii Board of Dental Examiners, along with all required documentation and applicable fees."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://cca.hawaii.gov/pvl/boards/dentistry/"
   },
   "slug": "hawaii-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Hawaii",
+        "dek": "Hawaii Dental Assistant registration requires graduation from an accredited program or equivalent experience, current CPR certification, and successful application to the Hawaii Board of Dental Examiners."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "36 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to PLA",
-      "description": "Submit application with $50 fee through PLA online portal."
+      "title": "Complete a Master's Degree",
+      "description": "Obtain a master’s degree or doctorate in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Clinical Experience",
+      "description": "Complete a supervised clinical practicum experience that meets the requirements outlined by the board."
+    },
+    {
+      "title": "Pass the National Examination and Apply for Licensure",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit an application to the Indiana Speech-Language Pathology and Audiology Board."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Indiana is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Indiana through a compact privilege."
   },
   "slug": "indiana-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Indiana",
+        "dek": "Indiana Speech-Language Pathologist license requires a master's degree, supervised clinical experience, and passing the national exam."
+      }
+    }
+  }
 }

@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "24 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,12 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Obtain an RPE Temporary License",
-      "description": "Apply for the RPE temporary license ($35 fee) to begin your Required Professional Experience. Complete 36 weeks full-time or 72 weeks part-time of supervised clinical practice under a licensed SLP."
+      "title": "Complete Education Requirements",
+      "description": "Earn a master's degree or doctorate in speech-language pathology from an accredited educational institution."
     },
     {
-      "title": "Apply for Permanent Licensure",
-      "description": "Submit the permanent license application with the remaining $115 fee. Include official transcripts, RPE completion verification, Praxis score report, and fingerprint background check results."
+      "title": "Complete Supervised Clinical Experience",
+      "description": "Complete a supervised clinical practicum of at least 400 clock hours."
+    },
+    {
+      "title": "Pass the National Examination and Apply for Licensure",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit your application, required documentation, and fees to the Board."
     }
   ],
   "documents": [
@@ -143,5 +149,19 @@
     "notes": "California offers alternative licensure pathways for out-of-state SLPs. Applicants holding a current ASHA CCC-SLP or a valid license in another state may qualify for expedited review. However, California does not participate in the ASLP Interstate Compact. All out-of-state applicants must submit a full application with California-specific documentation."
   },
   "slug": "california-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in California",
+        "dek": "California Speech-Language Pathologist license requires a master's degree, supervised clinical experience, and passing the national exam."
+      }
+    }
+  }
 }

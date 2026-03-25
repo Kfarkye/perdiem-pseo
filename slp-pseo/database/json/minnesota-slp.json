@@ -34,7 +34,9 @@
     "renewal_fee": "$150",
     "renewal_cycle": "Every 2 years (June 30)",
     "processing_time": "4 to 6 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to MDH",
-      "description": "Submit application with $200 fee to MDH."
+      "title": "Complete Education and Clinical Experience",
+      "description": "Earn a master’s degree or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA) in audiology and speech-language pathology, and complete the required supervised clinical experience."
+    },
+    {
+      "title": "Pass the National Examination",
+      "description": "Achieve a passing score on the Praxis Examination in Speech-Language Pathology administered by the Educational Testing Service (ETS)."
+    },
+    {
+      "title": "Apply for Licensure",
+      "description": "Submit an application for licensure to the Minnesota Department of Health, including all required documentation and fees."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Minnesota is a member of the ASLP Interstate Compact."
   },
   "slug": "minnesota-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Minnesota",
+        "dek": "Minnesota Speech-Language Pathologist license requires a master’s degree, supervised clinical experience, and passing the national exam."
+      }
+    }
+  }
 }

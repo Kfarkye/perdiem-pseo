@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Maryland State Board of Dental Examiners with required documentation and fees."
+      "title": "Meet Education Requirements",
+      "description": "Graduate from a CODA-accredited dental assisting program or complete a Board-approved course."
+    },
+    {
+      "title": "Obtain CPR Certification",
+      "description": "Hold a current CPR certification from an approved provider."
+    },
+    {
+      "title": "Apply for Registration",
+      "description": "Submit a completed application to the Maryland State Board of Dental Examiners with the required fee."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://health.maryland.gov/dhmh/dentalboard/"
   },
   "slug": "maryland-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Maryland",
+        "dek": "Maryland Dental Assistant registration requires graduation from a CODA-accredited program or successful completion of a Board-approved course, a current CPR certification, and a completed application."
+      }
+    }
+  }
 }

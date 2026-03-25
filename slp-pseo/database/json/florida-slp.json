@@ -34,7 +34,9 @@
     "renewal_fee": "$80",
     "renewal_cycle": "Every 2 years (December 31, odd years)",
     "processing_time": "4 to 8 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,12 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Complete Supervised Professional Employment",
-      "description": "Complete nine months of supervised professional employment experience. If the Praxis has not been passed, a provisional license must be obtained first to begin supervised practice in Florida."
+      "title": "Graduate from an Accredited Program",
+      "description": "Earn a master's or doctoral degree in speech-language pathology from a program accredited by the Council on Academic Accreditation (CAA)."
     },
     {
-      "title": "Submit Application via MQA Portal",
-      "description": "Apply online through the Florida MQA Services Portal. Pay the $100 application fee and $80 initial license fee. Submit official transcripts, Praxis scores, and complete electronic fingerprinting/background screening."
+      "title": "Complete Supervised Clinical Practicum",
+      "description": "Complete a supervised clinical practicum that meets the requirements of your graduate program and the Florida Board of Speech-Language Pathology and Audiology."
+    },
+    {
+      "title": "Pass the National Examination and Apply for Licensure",
+      "description": "Pass the Praxis Examination in Speech-Language Pathology and submit your application for licensure to the Florida Board of Speech-Language Pathology and Audiology."
     }
   ],
   "documents": [
@@ -143,5 +149,19 @@
     "notes": "Florida does not have formal reciprocity agreements. Out-of-state SLPs must apply for a new Florida license and meet all state-specific requirements. However, applicants holding the ASHA CCC-SLP may have some documentation requirements streamlined. Florida does not participate in the ASLP Interstate Compact."
   },
   "slug": "florida-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Florida",
+        "dek": "Florida Speech-Language Pathologist license requires graduation from an accredited program, passing the national exam, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

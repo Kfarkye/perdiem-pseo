@@ -34,7 +34,9 @@
     "renewal_fee": "$0",
     "renewal_cycle": "No state renewal required",
     "processing_time": "Not Applicable",
-    "license_duration": "Not Applicable"
+    "license_duration": "Not Applicable",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "75 hours every 5 years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Obtain CDR Registration",
-      "description": "Because California does not have a state application, you only need to complete your ACEND-accredited master's program, finish your internship, and pass the national CDR exam."
+      "title": "Complete Academic Requirements",
+      "description": "Complete a didactic program in dietetics and supervised practice accredited by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
+    },
+    {
+      "title": "Pass the Registration Examination",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
+    },
+    {
+      "title": "Maintain Registration",
+      "description": "Complete 75 hours of continuing professional education (CPE) every 5 years to maintain your RDN credential with the Commission on Dietetic Registration (CDR)."
     }
   ],
   "documents": [
@@ -119,5 +129,19 @@
     "requires_psv": false
   },
   "slug": "california-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "Registered Dietitian Nutritionist",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "transfer"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in California",
+        "dek": "California Registered Dietitian Nutritionist registration requires completion of a dietetics program, passing the Registration Examination for Dietitians, and maintaining continuing education requirements."
+      }
+    }
+  }
 }

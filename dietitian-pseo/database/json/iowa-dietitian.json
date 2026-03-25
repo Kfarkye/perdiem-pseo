@@ -34,7 +34,9 @@
     "renewal_fee": "$120",
     "renewal_cycle": "Every 2 years + 30 CE hours",
     "processing_time": "3 to 4 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Commission on Dietetic Registration Examination",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Iowa requires you to hold active CDR registration."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Complete a minimum of a bachelor’s degree from a U.S. regionally accredited college or university or foreign equivalent and complete a supervised practice program."
     },
     {
-      "title": "Submit the Online Application",
-      "description": "Create an account on the DIAL online licensing portal, complete the dietitian application, and pay the $120 application fee."
+      "title": "Pass the Commission on Dietetic Registration Examination",
+      "description": "Successfully complete the Commission on Dietetic Registration examination."
     },
     {
-      "title": "Provide Verification and Training",
-      "description": "Provide proof of your active CDR registration and complete verification of U.S. citizenship or lawful presence (SAVE program). Additionally, Iowa dietitians must complete Mandatory Reporter Training."
+      "title": "Apply for a License",
+      "description": "Submit a completed application, required documentation, and fees to the Iowa Board of Dietetics."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "iowa-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Iowa",
+        "dek": "Iowa Dietitian License requires a completed application, passing the Commission on Dietetic Registration examination, and payment of fees."
+      }
+    }
+  }
 }

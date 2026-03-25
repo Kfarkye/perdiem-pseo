@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every year",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "1 year"
+    "license_duration": "1 year",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "10 contact hours every year"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application to the Board",
-      "description": "Submit application with $75 fee plus $25 license fee. Include transcripts, Praxis scores, and CF verification."
+      "title": "Meet the Education Requirements",
+      "description": "You must hold a master's degree or its equivalent in speech-language pathology from an accredited educational institution."
+    },
+    {
+      "title": "Complete Supervised Professional Experience",
+      "description": "Complete a supervised professional experience that meets the requirements outlined by the Arkansas Board of Examiners in Speech-Language Pathology and Audiology."
+    },
+    {
+      "title": "Pass the Praxis Exam and Apply for Licensure",
+      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology and submit a complete application to the Board, including all required documentation and fees."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Arkansas is a member of the ASLP Interstate Compact. SLPs from other compact member states can practice in Arkansas through a compact privilege."
   },
   "slug": "arkansas-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Arkansas",
+        "dek": "Arkansas Speech-Language Pathologist License requires a master's degree in speech-language pathology, passing the Praxis exam, and completing a supervised professional experience."
+      }
+    }
+  }
 }

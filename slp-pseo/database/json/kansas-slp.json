@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 weeks",
-    "license_duration": "2 years"
+    "license_duration": "2 years",
+    "exam_name": "Praxis Examination in Speech-Language Pathology",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application",
-      "description": "Submit application with $100 fee to KDADS."
+      "title": "Complete Education and Clinical Experience",
+      "description": "Obtain a master's degree or doctorate in speech-language pathology and complete supervised clinical practicum experience."
+    },
+    {
+      "title": "Pass the Praxis Examination",
+      "description": "Successfully pass the Praxis Examination in Speech-Language Pathology with a score that meets Kansas requirements."
+    },
+    {
+      "title": "Submit Application and Fees",
+      "description": "Complete the application for licensure with the Kansas Department for Aging and Disability Services and submit all required documentation and fees."
     }
   ],
   "documents": [
@@ -139,5 +149,19 @@
     "notes": "Kansas is a member of the ASLP Interstate Compact."
   },
   "slug": "kansas-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in Kansas",
+        "dek": "Kansas Speech-Language Pathologist license requires a master's degree, supervised clinical experience, and passing the national examination."
+      }
+    }
+  }
 }

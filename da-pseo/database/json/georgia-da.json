@@ -44,8 +44,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet Basic Requirements",
+      "description": "Ensure you have graduated from high school or hold a GED."
+    },
+    {
+      "title": "Complete Required Courses",
+      "description": "Complete a Board-approved course in radiation safety and a Board-approved CPR course."
+    },
+    {
+      "title": "Submit Application for Registration",
+      "description": "Submit the application for registration to the Georgia Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +134,19 @@
     "board_source_url": "https://sos.ga.gov/PLB/acrobat/Forms/09%20Reference%20-%20Dentistry.pdf"
   },
   "slug": "georgia-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Georgia",
+        "dek": "Georgia Dental Assistant registration requires graduation from high school, completion of a Board-approved course in radiation safety, and completion of a Board-approved CPR course."
+      }
+    }
+  }
 }

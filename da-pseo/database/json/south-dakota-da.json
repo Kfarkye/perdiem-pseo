@@ -34,7 +34,8 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "N/A",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "N/A"
+    "license_duration": "N/A",
+    "exam_name": "DANB CDA or ND Exam"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet Eligibility Requirements",
+      "description": "You must have graduated from a CODA-accredited dental assisting program, or be certified by the Dental Assisting National Board (DANB), or have successfully completed the North Dakota State Board of Dental Examiners Dental Assistant Examination."
+    },
+    {
+      "title": "Complete CPR Certification",
+      "description": "Provide documentation of current CPR certification."
+    },
+    {
+      "title": "Submit Application",
+      "description": "Submit a completed application form to the South Dakota State Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://doh.sd.gov/boards/dentistry/"
   },
   "slug": "south-dakota-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "reciprocity"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in South Dakota",
+        "dek": "South Dakota Dental Assistant registration requires graduation from an accredited dental assisting program or successful completion of the ND Exam, documentation of current CPR certification, and submission of an application to the Board."
+      }
+    }
+  }
 }

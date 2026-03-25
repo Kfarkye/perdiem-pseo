@@ -34,7 +34,9 @@
     "renewal_fee": "$155",
     "renewal_cycle": "Every 3 years",
     "processing_time": "6 to 8 weeks",
-    "license_duration": "3 years"
+    "license_duration": "3 years",
+    "exam_name": "National Examination in Speech-Language Pathology",
+    "ce_requirement": "36 hours every three years"
   },
   "license_types": [
     {
@@ -48,12 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Complete Supervised Professional Experience",
-      "description": "Complete 36 weeks of supervised professional experience after degree completion. May be completed full-time or part-time within a four-year window. A Limited License ($70) is available for this period."
+      "title": "Meet Education Requirements",
+      "description": "Earn a master's degree or doctorate in speech-language pathology from a program registered by the New York State Education Department or determined to be equivalent."
     },
     {
-      "title": "Submit Application to NYSED",
-      "description": "Submit Form 1 (Application for Licensure), Form 2 (Certification of Professional Education), and Forms 4A/4B (Supervised Experience) with the $294 fee. Must also complete mandated training in child abuse identification and harassment prevention."
+      "title": "Complete Supervised Professional Experience (SPE)",
+      "description": "Complete a supervised professional experience (SPE) of at least 350 clock hours under the supervision of a licensed speech-language pathologist."
+    },
+    {
+      "title": "Pass the National Examination",
+      "description": "Pass the National Examination in Speech-Language Pathology administered by the Praxis Series."
     }
   ],
   "documents": [
@@ -143,5 +149,19 @@
     "notes": "New York does not have formal reciprocity agreements or participate in the ASLP Interstate Compact. Out-of-state SLPs must apply for full New York licensure and meet all state-specific requirements. ASHA CCC-SLP holders must still submit all required forms and documentation to NYSED."
   },
   "slug": "new-york-slp",
-  "specialty": "slp"
+  "specialty": "slp",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Speech-Language Pathologist in New York",
+        "dek": "New York Speech-Language Pathology license requires graduation from an approved program, passing the National Examination, and completion of a supervised professional experience."
+      }
+    }
+  }
 }

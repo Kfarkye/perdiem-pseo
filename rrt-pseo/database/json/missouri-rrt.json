@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) examination",
+    "ce_requirement": "24 hours every 2 years"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete an Approved Respiratory Care Program",
+      "description": "Graduate from a respiratory care educational program accredited by the Commission on Accreditation for Respiratory Care (CoARC) or another board-approved accrediting agency."
+    },
+    {
+      "title": "Pass the NBRC Examination",
+      "description": "Successfully complete the National Board for Respiratory Care (NBRC) examination."
+    },
+    {
+      "title": "Apply for a Respiratory Care License",
+      "description": "Submit an application, pay the $50 fee, and provide all required documentation to the Missouri Board for Respiratory Care."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://pr.mo.gov/respiratorycare.asp"
   },
   "slug": "missouri-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Missouri",
+        "dek": "Missouri Respiratory Therapist licenses require graduation from an approved program, passing the NBRC exam, and a background check."
+      }
+    }
+  }
 }

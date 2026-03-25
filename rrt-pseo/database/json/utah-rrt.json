@@ -34,7 +34,9 @@
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "3 to 5 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Respiratory Care (NBRC) examination",
+    "ce_requirement": "24 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Graduate from an Approved Respiratory Care Program",
+      "description": "Complete a respiratory care program accredited by the Commission on Accreditation for Respiratory Care (CoARC)."
+    },
+    {
+      "title": "Pass the NBRC Examination",
+      "description": "Successfully pass the National Board for Respiratory Care (NBRC) examination."
+    },
+    {
+      "title": "Apply for a Respiratory Therapist License",
+      "description": "Submit an application, pay the required fee, and pass a background check through the Utah Division of Occupational and Professional Licensing (DOPL)."
     }
   ],
   "documents": [
@@ -126,5 +136,19 @@
     "board_source_url": "https://dopl.utah.gov/respiratory-care/"
   },
   "slug": "utah-rrt",
-  "specialty": "rrt"
+  "specialty": "rrt",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Respiratory Therapist in Utah",
+        "dek": "Utah Respiratory Therapist licenses require graduation from an approved respiratory care program, passing the NBRC examination, and a background check."
+      }
+    }
+  }
 }

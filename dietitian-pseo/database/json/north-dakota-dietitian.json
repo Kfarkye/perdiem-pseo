@@ -34,7 +34,9 @@
     "renewal_fee": "$45",
     "renewal_cycle": "Every 5 years (matches CDR cycle)",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "Up to 5 Years"
+    "license_duration": "Up to 5 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "75 hours every 5 years"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Active RD or RDN status is required for the LRD credential."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Complete an accredited dietetics education program and supervised practice experience, meeting the requirements for registration as a dietitian."
     },
     {
-      "title": "Submit the Application to NDBODP",
-      "description": "Complete the application form provided by the NDBODP, have it notarized if required, and submit it with the $75 fee."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully pass the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Include a copy of your active CDR card or ensure verification is sent directly. A background check may be requested by the board."
+      "title": "Apply for a Dietitian License",
+      "description": "Submit a completed application, official transcripts, exam results, and the required fee to the North Dakota Board of Dietetic Practice (NDBODP)."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": true
   },
   "slug": "north-dakota-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in North Dakota",
+        "dek": "North Dakota Dietitian licensure requires completing an accredited dietetics program, passing the Registration Examination for Dietitians, and meeting continuing education requirements."
+      }
+    }
+  }
 }

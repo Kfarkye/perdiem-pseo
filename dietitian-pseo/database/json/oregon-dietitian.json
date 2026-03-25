@@ -34,7 +34,9 @@
     "renewal_fee": "$60",
     "renewal_cycle": "Annual + 15 CE hours (plus 1 hr cultural competency every other year)",
     "processing_time": "3 to 4 Weeks",
-    "license_duration": "1 Year"
+    "license_duration": "1 Year",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "15 hours per year"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) national examination."
+      "title": "Earn a Bachelor's Degree",
+      "description": "Complete a minimum of a baccalaureate degree from a U.S. regionally accredited college or university or foreign equivalent."
     },
     {
-      "title": "Submit the Application and Background Check",
-      "description": "Apply through the Oregon HLO. You must undergo a fingerprint-based criminal background check specifically for the Oregon HLO."
+      "title": "Complete Supervised Practice",
+      "description": "Complete supervised practice through an Accreditation Council for Education in Nutrition and Dietetics (ACEND) accredited program."
     },
     {
-      "title": "Provide Documentation",
-      "description": "Submit verification of your passing CDR exam score (or active registration), official college transcripts, and verification of any out-of-state licenses held."
+      "title": "Pass the Registration Examination",
+      "description": "Pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "oregon-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Oregon",
+        "dek": "Oregon Dietitian License requires a bachelor’s degree, completion of a supervised practice program, and passing the Registration Examination for Dietitians."
+      }
+    }
+  }
 }

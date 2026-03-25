@@ -34,7 +34,8 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "6 to 8 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "4 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the DC Board of Dentistry with required documentation and fees."
+      "title": "Meet Basic Requirements",
+      "description": "You must have a high school diploma or equivalency."
+    },
+    {
+      "title": "Complete a Board-Approved Course",
+      "description": "Successfully complete a Board-approved course for dental assistants."
+    },
+    {
+      "title": "Submit Application and Fees",
+      "description": "Complete the application, provide required documentation, and pay the applicable fee."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://dchealth.dc.gov/service/dental-licensing"
   },
   "slug": "dc-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in District of Columbia",
+        "dek": "DC Dental Assistant registration requires graduation from high school or equivalent, successful completion of a Board-approved course, and CPR certification."
+      }
+    }
+  }
 }

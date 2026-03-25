@@ -34,7 +34,8 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "25 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Minnesota Board of Dentistry with required documentation and fees."
+      "title": "Complete the Application",
+      "description": "Submit a completed application for dental assistant registration to the Minnesota Board of Dentistry."
+    },
+    {
+      "title": "Fulfill Continuing Education Requirements",
+      "description": "Complete 25 hours of continuing education every two years as required by the board."
+    },
+    {
+      "title": "Pay the Registration Fee",
+      "description": "Submit the required registration fee of $100 to the Minnesota Board of Dentistry."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://mn.gov/boards/dentistry/"
   },
   "slug": "minnesota-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "registration"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Minnesota",
+        "dek": "Minnesota Dental Assistant registration requires completion of application requirements, adherence to continuing education, and payment of fees."
+      }
+    }
+  }
 }

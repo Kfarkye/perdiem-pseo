@@ -34,7 +34,9 @@
     "renewal_fee": "Varies (Prorated)",
     "renewal_cycle": "Every 2 years (expires May 31 of odd years) + 30 CE hours",
     "processing_time": "3 to 5 Weeks",
-    "license_duration": "Up to 2 Years"
+    "license_duration": "Up to 2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians (or the CNS exam for Nutritionists). Verification of current RD/CNS status is required."
+      "title": "Complete Required Education and Supervised Practice",
+      "description": "Earn a minimum of a bachelor's degree from a regionally accredited college or university with a major course of study in human nutrition, dietetics, food and nutrition, or an equivalent major course of study, and complete a supervised practice program."
     },
     {
-      "title": "Submit the Application via DELPROS",
-      "description": "Create an account in the Delaware Professional Regulation Online Services (DELPROS) system, complete the application, and pay the $235 fee."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Verification Documents",
-      "description": "Upload or have primary source verification sent for your active CDR card or CNS certification. Any existing out-of-state licenses must be verified as well."
+      "title": "Apply for a Delaware Dietitian License",
+      "description": "Submit a completed application, official transcripts, verification of supervised practice, exam results, and the required fee to the Delaware Board of Dietetics/Nutrition."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": true
   },
   "slug": "delaware-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Delaware",
+        "dek": "Delaware Dietitian License requires completing supervised practice, passing the Registration Examination for Dietitians, and paying the required fees."
+      }
+    }
+  }
 }

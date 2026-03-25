@@ -34,7 +34,9 @@
     "renewal_fee": "$114",
     "renewal_cycle": "Every 2 years (by Sept 1 of odd years) + 30 CE hours",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours per renewal cycle"
   },
   "license_types": [
     {
@@ -44,16 +46,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Verification of current RD or RDN status satisfies this and the education requirements."
+      "title": "Meet Education Requirements",
+      "description": "You must complete academic requirements and supervised practice experience requirements established by the Accreditation Council for Education in Nutrition and Dietetics (ACEND) and be granted a degree from a regionally accredited college or university."
     },
     {
-      "title": "Submit the Application to DHHS",
-      "description": "Complete the application form for Medical Nutrition Therapy Licensure and submit it with the $114 fee, proof of age (minimum 19), and proof of U.S. citizenship or lawful presence."
+      "title": "Pass the Examination",
+      "description": "Achieve a passing score on the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Provide Verification & Fingerprints",
-      "description": "Send a copy of your active CDR card or have primary source verification sent. Starting January 1, 2026, all DHHS applicants must undergo a fingerprint-based criminal background check."
+      "title": "Submit Your Application",
+      "description": "Complete the application for licensure and submit all required documentation and fees to the Nebraska Department of Health and Human Services."
     }
   ],
   "documents": [
@@ -139,5 +141,19 @@
     "requires_psv": false
   },
   "slug": "nebraska-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Medical Nutrition Therapist in Nebraska",
+        "dek": "Nebraska Medical Nutrition Therapist license requires graduation from an approved educational program, passing the Registration Examination for Dietitians, and completing the application process."
+      }
+    }
+  }
 }

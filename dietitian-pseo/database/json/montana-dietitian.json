@@ -34,7 +34,9 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "3 to 5 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "Registration Examination for Dietitians",
+    "ce_requirement": "30 hours every 2 years"
   },
   "license_types": [
     {
@@ -48,16 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Pass the CDR Examination",
-      "description": "Successfully pass the Commission on Dietetic Registration (CDR) Registration Examination for Dietitians. Active RD or RDN status is required."
+      "title": "Complete Education and Supervised Practice",
+      "description": "Complete a minimum of a bachelor's degree and supervised practice program approved by the Accreditation Council for Education in Nutrition and Dietetics (ACEND)."
     },
     {
-      "title": "Perform an NPDB Self-Query",
-      "description": "Applicants must complete a self-query of the National Practitioner Data Bank (NPDB) and provide the results to the Montana Board."
+      "title": "Pass the Registration Examination for Dietitians",
+      "description": "Successfully complete the Registration Examination for Dietitians administered by the Commission on Dietetic Registration (CDR)."
     },
     {
-      "title": "Submit the Application to the Board",
-      "description": "Apply online or via paper application through the Montana Board of Medical Examiners, pay the $75 fee, and submit primary source verification of your CDR credentials."
+      "title": "Apply for a Dietitian License",
+      "description": "Submit a completed application, official transcripts, verification of supervised practice, examination results, and required fee to the Montana Board of Medical Examiners."
     }
   ],
   "documents": [
@@ -143,5 +145,19 @@
     "requires_psv": false
   },
   "slug": "montana-dietitian",
-  "specialty": "dietitian"
+  "specialty": "dietitian",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "licensure by endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dietitian in Montana",
+        "dek": "Montana Dietitian License requires completing an accredited educational program, passing the Registration Examination for Dietitians, and completing supervised practice."
+      }
+    }
+  }
 }

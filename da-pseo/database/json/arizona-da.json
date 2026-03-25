@@ -34,7 +34,8 @@
     "renewal_fee": "N/A",
     "renewal_cycle": "N/A",
     "processing_time": "2 to 4 Weeks",
-    "license_duration": "N/A"
+    "license_duration": "N/A",
+    "ce_requirement": "12 hours every 3 years"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "No state application required for general dental assistants. Check expanded function requirements."
+      "title": "Meet Education Requirements",
+      "description": "Complete a dental assisting program accredited by the Commission on Dental Accreditation (CODA) or receive on-the-job training from a licensed dentist."
+    },
+    {
+      "title": "Submit an Application",
+      "description": "Complete and submit the Dental Assistant registration application to the Arizona State Board of Dental Examiners."
+    },
+    {
+      "title": "Maintain Registration",
+      "description": "Complete 12 hours of continuing education every three years to maintain your Dental Assistant registration."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://dentalboard.az.gov/"
   },
   "slug": "arizona-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in Arizona",
+        "dek": "Arizona Dental Assistant Registration requires graduation from a CODA-accredited program or completion of on-the-job training, application to the Board, and compliance with continuing education requirements."
+      }
+    }
+  }
 }

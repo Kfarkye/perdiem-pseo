@@ -34,7 +34,9 @@
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "exam_name": "National Board for Certification in Occupational Therapy (NBCOT)",
+    "ce_requirement": "24 contact hours every 2 years"
   },
   "license_types": [
     {
@@ -48,8 +50,16 @@
   ],
   "steps": [
     {
-      "title": "Submit Application and Fees",
-      "description": "Complete the state application, undergo a background check if required, and submit the necessary licensing fees."
+      "title": "Complete an Accredited Occupational Therapy Program",
+      "description": "Graduate from an ACOTE-accredited occupational therapy educational program."
+    },
+    {
+      "title": "Pass the NBCOT Exam",
+      "description": "Successfully complete the National Board for Certification in Occupational Therapy (NBCOT) examination."
+    },
+    {
+      "title": "Apply for a License",
+      "description": "Submit a completed application, required documentation, and fees to the Oklahoma Board of Medical Licensure and Supervision."
     }
   ],
   "documents": [
@@ -127,5 +137,19 @@
     "requires_psv": true
   },
   "slug": "oklahoma-ot",
-  "specialty": "ot"
+  "specialty": "ot",
+  "credential_type": {
+    "official_term": "license",
+    "page_title_term": "License",
+    "renewal_term": "license renewal",
+    "transfer_term": "endorsement"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Occupational Therapist in Oklahoma",
+        "dek": "Oklahoma Occupational Therapist license requires graduation from an accredited program, passing the NBCOT exam, and completion of the application process."
+      }
+    }
+  }
 }

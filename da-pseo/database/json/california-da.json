@@ -34,7 +34,8 @@
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "6 to 12 Weeks",
-    "license_duration": "2 Years"
+    "license_duration": "2 Years",
+    "ce_requirement": "25 units of continuing education every two years"
   },
   "license_types": [
     {
@@ -44,8 +45,16 @@
   ],
   "steps": [
     {
-      "title": "Apply for State Credential",
-      "description": "Submit application to the Dental Board of California with required documentation and fees."
+      "title": "Complete Required Education",
+      "description": "Complete a board-approved educational program or qualify through equivalent work experience."
+    },
+    {
+      "title": "Pass Exams",
+      "description": "Pass the California Registered Dental Assistant (RDA) Written Examination and the RDA Practical Examination."
+    },
+    {
+      "title": "Submit Application",
+      "description": "Submit a completed application, including required documentation and fees, to the Dental Board of California."
     }
   ],
   "documents": [
@@ -126,5 +135,19 @@
     "board_source_url": "https://www.dbc.ca.gov/"
   },
   "slug": "california-da",
-  "specialty": "da"
+  "specialty": "da",
+  "credential_type": {
+    "official_term": "registration",
+    "page_title_term": "Registration",
+    "renewal_term": "registration renewal",
+    "transfer_term": "licensure by credential"
+  },
+  "variants": {
+    "new_applicant": {
+      "hero": {
+        "title": "Become a Dental Assistant in California",
+        "dek": "California Registered Dental Assistant registration requires completing required education, passing specified exams, and submitting an application."
+      }
+    }
+  }
 }
