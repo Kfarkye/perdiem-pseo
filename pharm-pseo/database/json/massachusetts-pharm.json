@@ -26,7 +26,7 @@
     "phone": "(617) 973-0935",
     "fax": "N/A (contact by phone)",
     "email": "dpl.info@mass.gov",
-    "url": "https://www.mass.gov/dph/boards/pharmacy",
+    "url": "https://www.mass.gov/info-details/pharmacy-technician-registration-application-information",
     "contact_url": "https://www.mass.gov/orgs/board-of-registration-in-pharmacy",
     "verify_url": "https://checkalicense.mass.gov/"
   },
@@ -81,8 +81,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "Massachusetts offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the Massachusetts Board of Pharmacy for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in Massachusetts by submitting a new application to the Massachusetts Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Massachusetts-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
   "faqs": [
     {
       "question": "How much does a Massachusetts pharmacy technician license cost?",
@@ -140,9 +140,9 @@
     "endorsement_fee": 150,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
-    "board_url": "https://www.mass.gov/dph/boards/pharmacy",
+    "board_url": "https://www.mass.gov/info-details/pharmacy-technician-registration-application-information",
     "endorsement_url": "https://www.mass.gov/pharmacy-technicians#how-to-apply-for-a-reciprocal-license-(out-of-state-pharmacy-technician-license)",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in Massachusetts by submitting a new application to the Massachusetts Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Massachusetts-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": false,

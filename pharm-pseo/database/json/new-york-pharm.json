@@ -26,7 +26,7 @@
     "phone": "518-474-3817, option 1, then extension 570",
     "fax": "N/A (contact by phone)",
     "email": "opunit1@nysed.gov",
-    "url": "https://www.op.nysed.gov/professions-index/pharmacy",
+    "url": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms",
     "contact_url": "https://www.op.nysed.gov/contact-us/contact-us-professions",
     "verify_url": "https://www.nysed.gov/verify-license"
   },
@@ -80,8 +80,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "New York offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the New York Board of Pharmacy for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in New York by submitting a new application to the New York Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any New York-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
   "faqs": [
     {
       "question": "How much does a New York pharmacy technician license cost?",
@@ -101,7 +101,7 @@
     },
     {
       "question": "Can I start working in New York while my endorsement application is processing?",
-      "answer": "The New York Office of the Professions asks applicants to allow six weeks before requesting a status update on a pharmacy technician application."
+      "answer": "Contact the New York Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in New York."
     }
   ],
   "compact": {
@@ -141,7 +141,7 @@
     "processing_tier": "fast",
     "board_url": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms",
     "endorsement_url": "https://www.op.nysed.gov/licensing/licensing-general-information/endorsement",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in New York by submitting a new application to the New York Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any New York-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": false,

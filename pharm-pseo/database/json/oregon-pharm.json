@@ -26,7 +26,7 @@
     "phone": "503-731-4032",
     "fax": "N/A (contact by phone)",
     "email": "pharmacy.board@oregon.gov",
-    "url": "https://www.oregon.gov/pharmacy/Pages/index.aspx",
+    "url": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx",
     "contact_url": "https://www.oregon.gov/pharmacy/Pages/ContactUs.aspx",
     "verify_url": "https://licensing.oregon.gov/opoli/LicenseVerification.aspx"
   },
@@ -77,8 +77,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "Oregon offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the Oregon Board of Pharmacy for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in Oregon by submitting a new application to the Oregon Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Oregon-specific requirements, and pass a criminal background check. Processing typically takes Approximately 4 to 6 weeks.",
   "faqs": [
     {
       "question": "How much does a Oregon pharmacy technician license cost?",
@@ -98,7 +98,7 @@
     },
     {
       "question": "Can I start working in Oregon while my endorsement application is processing?",
-      "answer": "The Oregon Board of Pharmacy says pharmacy technician applications usually take about 4 to 6 weeks to process once all materials are in."
+      "answer": "Contact the Oregon Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Oregon."
     }
   ],
   "compact": {
@@ -138,7 +138,7 @@
     "processing_tier": "mid",
     "board_url": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx",
     "endorsement_url": "https://licensing.oregon.gov/opoli/Default.aspx",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in Oregon by submitting a new application to the Oregon Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Oregon-specific requirements, and pass a criminal background check. Processing typically takes Approximately 4 to 6 weeks.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,

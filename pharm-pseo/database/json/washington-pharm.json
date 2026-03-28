@@ -26,7 +26,7 @@
     "phone": "360-236-4700",
     "fax": "N/A (contact by phone)",
     "email": "hsqa.csc@doh.wa.gov",
-    "url": "https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/pharmacies-and-pharmaceutical-firms/commission-information",
+    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
     "contact_url": "https://doh.wa.gov/about-us/contact-us",
     "verify_url": "https://fortress.wa.gov/doh/providercredentialsearch/"
   },
@@ -81,8 +81,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "Washington offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the Washington Pharmacy Quality Assurance Commission for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in Washington by submitting a new application to the Washington Pharmacy Quality Assurance Commission. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Washington-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
   "faqs": [
     {
       "question": "How much does a Washington pharmacy technician license cost?",
@@ -102,7 +102,7 @@
     },
     {
       "question": "Can I start working in Washington while my endorsement application is processing?",
-      "answer": "Washington does not publish a public pharmacy technician processing timeline on its licensing information page. Use the board application tools and provider search to check status."
+      "answer": "Contact the Washington Pharmacy Quality Assurance Commission to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Washington."
     }
   ],
   "compact": {
@@ -142,7 +142,7 @@
     "processing_tier": "mid",
     "board_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
     "endorsement_url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renew-or-update/pharmacy-professions/licensing-information",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in Washington by submitting a new application to the Washington Pharmacy Quality Assurance Commission. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Washington-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,

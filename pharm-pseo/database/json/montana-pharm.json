@@ -26,7 +26,7 @@
     "phone": "(406) 444-6880",
     "fax": "N/A (contact by phone)",
     "email": "dlibsdpha@mt.gov",
-    "url": "https://boards.bsd.dli.mt.gov/pharmacy/",
+    "url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
     "contact_url": "https://boards.mt.gov/license-type/pharmacy/",
     "verify_url": "https://boards.mt.gov/lookup/"
   },
@@ -80,8 +80,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "Montana offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the Montana Board of Pharmacy for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in Montana by submitting a new application to the Montana Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Montana-specific requirements, and pass a criminal background check. Processing typically takes 2 to 4 Weeks.",
   "faqs": [
     {
       "question": "How much does a Montana pharmacy technician license cost?",
@@ -101,7 +101,7 @@
     },
     {
       "question": "Can I start working in Montana while my endorsement application is processing?",
-      "answer": "The Montana Board of Pharmacy does not publish a public pharmacy technician processing timeline on its licensing page."
+      "answer": "Contact the Montana Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Montana."
     }
   ],
   "compact": {
@@ -141,7 +141,7 @@
     "processing_tier": "mid",
     "board_url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
     "endorsement_url": "https://ebiz.mt.gov/pol",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in Montana by submitting a new application to the Montana Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Montana-specific requirements, and pass a criminal background check. Processing typically takes 2 to 4 Weeks.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,

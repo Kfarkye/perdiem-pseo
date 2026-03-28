@@ -26,7 +26,7 @@
     "phone": "(573) 751-0091",
     "fax": "N/A (contact by phone)",
     "email": "pharmacy@pr.mo.gov",
-    "url": "https://www.pr.mo.gov/pharmacists.asp",
+    "url": "https://pr.mo.gov/pharmacists-technicians-registration.asp",
     "contact_url": "https://pr.mo.gov/pharmacy-contact.asp",
     "verify_url": "https://www.pr.mo.gov/licenseselect.asp?board=pharm"
   },
@@ -80,8 +80,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "Missouri offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the Missouri Board of Pharmacy for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in Missouri by submitting a new application to the Missouri Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Missouri-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
   "faqs": [
     {
       "question": "How much does a Missouri pharmacy technician license cost?",
@@ -139,9 +139,9 @@
     "endorsement_fee": 40,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
-    "board_url": "https://www.pr.mo.gov/pharmacists.asp",
+    "board_url": "https://pr.mo.gov/pharmacists-technicians-registration.asp",
     "endorsement_url": "https://pr.mo.gov/pharmacist-tech-endorsement.asp",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in Missouri by submitting a new application to the Missouri Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Missouri-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,

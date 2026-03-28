@@ -26,7 +26,7 @@
     "phone": "(515) 281-5944",
     "fax": "N/A (contact by phone)",
     "email": "pharmacy@iowa.gov",
-    "url": "https://pharmacy.iowa.gov/",
+    "url": "https://pharmacy.iowa.gov/licensing/license-type-information/pharmacy-technician",
     "contact_url": "https://pharmacy.iowa.gov/about/contact-us",
     "verify_url": "https://ibpl.force.com/portal/s/license-search"
   },
@@ -81,8 +81,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "Iowa offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the Iowa Board of Pharmacy for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in Iowa by submitting a new application to the Iowa Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Iowa-specific requirements, and pass a criminal background check. Processing typically takes 1 to 2 Weeks.",
   "faqs": [
     {
       "question": "How much does a Iowa pharmacy technician license cost?",
@@ -140,9 +140,9 @@
     "endorsement_fee": 40,
     "processing_time": "1 to 2 Weeks",
     "processing_tier": "fast",
-    "board_url": "https://pharmacy.iowa.gov/",
+    "board_url": "https://pharmacy.iowa.gov/licensing/license-type-information/pharmacy-technician",
     "endorsement_url": "https://pharmacy.iowa.gov/licensing/licensee-information/new-applications/pharmacy-technician-registration",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in Iowa by submitting a new application to the Iowa Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Iowa-specific requirements, and pass a criminal background check. Processing typically takes 1 to 2 Weeks.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,

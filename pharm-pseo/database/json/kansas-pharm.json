@@ -26,7 +26,7 @@
     "phone": "(785) 296-4056",
     "fax": "N/A (contact by phone)",
     "email": "ksbop@ks.gov",
-    "url": "https://www.pharmacy.ks.gov/",
+    "url": "https://pharmacy.ks.gov/licenses-registrations/technician-registration",
     "contact_url": "https://pharmacy.ks.gov/about-us/contact-us",
     "verify_url": "https://www.kansas.gov/bop/licenseSearch.html"
   },
@@ -77,8 +77,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "Kansas offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the Kansas Board of Pharmacy for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in Kansas by submitting a new application to the Kansas Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Kansas-specific requirements, and pass a criminal background check. Processing typically takes 2 to 4 Weeks.",
   "faqs": [
     {
       "question": "How much does a Kansas pharmacy technician license cost?",
@@ -136,9 +136,9 @@
     "endorsement_fee": 77,
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "mid",
-    "board_url": "https://www.pharmacy.ks.gov/",
+    "board_url": "https://pharmacy.ks.gov/licenses-registrations/technician-registration",
     "endorsement_url": "https://pharmacy.ks.gov/licensing/pharmacy-technician#tab-Out%20of%20State%20Pharmacy%20Technicians",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in Kansas by submitting a new application to the Kansas Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Kansas-specific requirements, and pass a criminal background check. Processing typically takes 2 to 4 Weeks.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,

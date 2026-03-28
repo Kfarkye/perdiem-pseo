@@ -26,7 +26,7 @@
     "phone": "(302) 744-4500",
     "fax": "N/A (contact by phone)",
     "email": "customerservice.dpr@delaware.gov",
-    "url": "https://dpr.delaware.gov/boards/pharmacy/",
+    "url": "https://dpr.delaware.gov/boards/pharmacy/forms/pharmtech/",
     "contact_url": "https://dpr.delaware.gov/contact/",
     "verify_url": "https://delpro.delaware.gov/licensure/lookup/"
   },
@@ -81,8 +81,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "Delaware offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the Delaware Board of Pharmacy for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in Delaware by submitting a new application to the Delaware Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Delaware-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
   "faqs": [
     {
       "question": "How much does a Delaware pharmacy technician license cost?",
@@ -140,9 +140,9 @@
     "endorsement_fee": 0,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "fast",
-    "board_url": "https://dpr.delaware.gov/boards/pharmacy/",
+    "board_url": "https://dpr.delaware.gov/boards/pharmacy/forms/pharmtech/",
     "endorsement_url": "https://delpro.delaware.gov/ (Select 'Apply for a License' and choose 'Pharmacy Technician via Reciprocity' application type)",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in Delaware by submitting a new application to the Delaware Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Delaware-specific requirements, and pass a criminal background check. Processing typically takes 4 to 6 Weeks.",
     "requires_psv": false,
     "board_fee_verified": true,
     "board_timeline_verified": true,

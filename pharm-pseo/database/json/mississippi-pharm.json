@@ -26,7 +26,7 @@
     "phone": "(601) 899-8880",
     "fax": "N/A (contact by phone)",
     "email": "info@mbop.ms.gov",
-    "url": "http://www.mbp.state.ms.us/",
+    "url": "https://msbop.ms.gov/pharmacy-technicians",
     "contact_url": "https://www.mbop.ms.gov/contact-us",
     "verify_url": "https://portal.mbop.ms.gov/LicenseVerification"
   },
@@ -77,8 +77,8 @@
       "detail": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the PTCB. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+  "provisional_text": "Mississippi offers a temporary or trainee pharmacy technician permit that allows new applicants to begin working in a pharmacy setting under direct pharmacist supervision while completing their certification requirements. Contact the Mississippi Board of Pharmacy for specific temporary permit restrictions and duration.",
+  "reciprocity_text": "Pharmacy technicians registered in another state may apply for registration in Mississippi by submitting a new application to the Mississippi Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Mississippi-specific requirements, and pass a criminal background check. Processing typically takes 2 Weeks.",
   "faqs": [
     {
       "question": "How much does a Mississippi pharmacy technician license cost?",
@@ -136,9 +136,9 @@
     "endorsement_fee": 50,
     "processing_time": "2 Weeks",
     "processing_tier": "slow",
-    "board_url": "http://www.mbp.state.ms.us/",
+    "board_url": "https://msbop.ms.gov/pharmacy-technicians",
     "endorsement_url": "https://www.mbop.ms.gov/pharmacy-technicians",
-    "notes": "Pharmacy Technicians licensed in another state can often apply via endorsement by providing license verification and current certification.",
+    "notes": "Pharmacy technicians registered in another state may apply for registration in Mississippi by submitting a new application to the Mississippi Board of Pharmacy. There is no interstate compact for pharmacy technicians. Applicants must provide proof of current national certification (PTCB or ExCPT), complete any Mississippi-specific requirements, and pass a criminal background check. Processing typically takes 2 Weeks.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,
