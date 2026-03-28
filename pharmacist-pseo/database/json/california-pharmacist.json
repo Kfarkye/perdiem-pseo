@@ -12,11 +12,11 @@
   },
   "profession_name": "Pharmacist",
   "credential_nomenclature": "RPh, PharmD",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-03-28",
   "seo": {
-    "title": "California Pharmacist License Reciprocity - How to Transfer Your License (2026)",
-    "description": "Already licensed as a pharmacist? Here's whether your license transfers to California - compact status, endorsement steps, fees, and processing time.",
-    "keywords": "pharmacist license reciprocity california, how to transfer pharmacist license to california, pharmacist compact california, california pharmacist endorsement application"
+    "title": "How to Become a Pharmacist in California (2026)",
+    "description": "Become a pharmacist in California. $250 application fee, NAPLEX and CPJE required. Steps, fees, and board contact info.",
+    "keywords": "how to become a pharmacist in california, california pharmacist license, california pharmacist application, NAPLEX CPJE california, california board of pharmacy"
   },
   "board": {
     "name": "California Board of Pharmacy",
@@ -48,38 +48,38 @@
   ],
   "steps": [
     {
-      "title": "Register for a BreEZe Account",
-      "description": "Create a new user account on the BreEZe Online Services portal at breeze.ca.gov, providing personal details and confirming your email."
+      "title": "Create Your BreEZe Account",
+      "description": "Create a user account through the BreEZe Online Services portal at breeze.ca.gov."
     },
     {
-      "title": "Submit the Pharmacist Application",
-      "description": "Log into your BreEZe account, navigate to the California State Board of Pharmacy, and complete the online Pharmacist Application form for licensure by examination."
+      "title": "Submit Your Pharmacist Application",
+      "description": "Log in to BreEZe, find the California State Board of Pharmacy, and complete the online pharmacist application for licensure by examination."
     },
     {
-      "title": "Submit Required Documentation",
-      "description": "Electronically upload or mail official transcripts, intern hours affidavits, and any other required supporting documents as instructed within the BreEZe application or on the Board's website."
+      "title": "Send Required Documents",
+      "description": "Submit all required supporting documents, including official transcripts, intern hours affidavits, and any other materials requested by the Board."
     },
     {
       "title": "Complete Fingerprinting and Background Check",
-      "description": "Register for Live Scan (for CA residents) or submit fingerprint cards (for out-of-state applicants) for a criminal background check, ensuring the results are sent to the Board of Pharmacy."
+      "description": "Complete Live Scan if you are in California, or submit fingerprint cards if you are applying from out of state. Make sure the results are sent to the California State Board of Pharmacy."
     },
     {
-      "title": "Pass Licensing Examinations",
-      "description": "Register for and pass both the North American Pharmacist Licensure Examination (NAPLEX) and the California Practice Standards and Jurisprudence Examination (CPJE)."
+      "title": "Pass the Required Exams",
+      "description": "Pass both the NAPLEX and the CPJE."
     },
     {
-      "title": "Await Application Processing",
-      "description": "Monitor your application status via BreEZe and respond promptly to any requests for additional information from the Board of Pharmacy."
+      "title": "Wait for Board Review",
+      "description": "Track your application through BreEZe and respond quickly if the Board asks for additional information."
     }
   ],
   "documents": [
     {
-      "item": "Official Transcripts",
-      "detail": "Sent directly from your educational institution."
+      "item": "Official transcripts",
+      "detail": "Sent directly from your school."
     },
     {
-      "item": "Exam Score Reports",
-      "detail": "Official verification of passing the NAPLEX and MPJE."
+      "item": "Exam score reports",
+      "detail": "Official verification of passing the NAPLEX and CPJE."
     }
   ],
   "provisional_text": "Some states offer an intern or provisional license for graduates actively accumulating required hours or waiting to take the NAPLEX.",
@@ -87,23 +87,23 @@
   "faqs": [
     {
       "question": "How much does a California pharmacist license cost?",
-      "answer": "The initial application and licensing fee varies by state. Check the specific fee breakdown above."
+      "answer": "The California Board of Pharmacy charges a $250 application fee for new pharmacist applicants."
     },
     {
-      "question": "Is the MPJE required in all states?",
-      "answer": "Almost all states require passing their state-specific Multistate Pharmacy Jurisprudence Examination (MPJE) to verify knowledge of local pharmacy laws."
+      "question": "What exams are required for a California pharmacist license?",
+      "answer": "California requires both the NAPLEX and the CPJE. The CPJE is California's own jurisprudence and practice standards exam. Schedule it early so it does not delay your license."
     },
     {
       "question": "Does California have reciprocity for pharmacists?",
       "answer": "No interstate compact currently covers pharmacist practice in California. To work in California, apply for licensure by endorsement through the state board."
     },
     {
-      "question": "How long does it take to transfer my pharmacist license to California?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks."
+      "question": "How long does it take to get a pharmacist license in California?",
+      "answer": "Processing typically takes 4 to 6 weeks once all documents and fingerprints have been received by the Board."
     },
     {
-      "question": "Can I start working in California while my endorsement application is processing?",
-      "answer": "A temporary or provisional credential is available while the full endorsement application is pending."
+      "question": "What usually slows down a California pharmacist application?",
+      "answer": "Out-of-state fingerprinting can add 2-4 weeks. Missing or incomplete documents, exam timing (especially scheduling the CPJE), and name mismatches across documents are also common causes of delays."
     }
   ],
   "compact": {
@@ -124,7 +124,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
+  "last_verified_date": "2026-03-28",
   "board_source_url": "https://www.pharmacy.ca.gov",
   "license_pathway": "endorsement",
   "profession_overrides": {
@@ -165,7 +165,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a Pharmacist in California",
-        "dek": "To apply for a pharmacist license in California, new applicants must create an account and submit their application through the BreEZe Online Services portal."
+        "dek": "New pharmacist applicants in California must apply through the BreEZe Online Services portal by creating an account and submitting their license application online."
       }
     }
   },
