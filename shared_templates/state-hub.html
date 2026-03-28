@@ -671,8 +671,9 @@
         "@type": "BreadcrumbList",
         "@id": "{{ canonical_url }}#breadcrumb",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "All States", "item": "{{ clean_domain }}/"},
-          {"@type": "ListItem", "position": 2, "name": {{ state_name | default('', true) | string | trim | tojson }}, "item": "{{ canonical_url }}"}
+          {"@type": "ListItem", "position": 1, "name": "All Specialties", "item": "{{ clean_domain }}/"},
+          {"@type": "ListItem", "position": 2, "name": {{ profession_name | default('', true) | string | trim | tojson }}, "item": "{{ clean_domain }}/{{ specialty }}"},
+          {"@type": "ListItem", "position": 3, "name": {{ state_name | default('', true) | string | trim | tojson }}, "item": "{{ canonical_url }}"}
         ]
       }
       {%- if faqs and faqs|length > 0 %}
@@ -709,8 +710,8 @@
     <nav class="site-nav-inner" aria-label="Global navigation">
       <a href="/" class="site-nav-brand">State Licensing Reference</a>
       <ul class="site-nav-links" role="list">
-        <li><a href="/">All States</a></li>
-        <li><a href="https://www.statelicensingreference.com" target="_blank" rel="noopener noreferrer">Specialties <span class="sr-only">(opens in new tab)</span></a></li>
+        <li><a href="/">All Specialties</a></li>
+        <li><a href="/{{ specialty }}">All States</a></li>
       </ul>
     </nav>
   </header>
@@ -723,7 +724,8 @@
     <div class="hero-inner">
       <nav aria-label="Breadcrumb" class="breadcrumbs">
         <ol role="list">
-          <li><a href="/">All States</a></li>
+          <li><a href="/">All Specialties</a></li>
+          <li><a href="/{{ specialty }}">{{ profession_name | e }}</a></li>
           <li><span aria-current="page">{{ state_name | e }}</span></li>
         </ol>
       </nav>
