@@ -15,7 +15,7 @@
   "last_updated": "2026-02-25",
   "seo": {
     "title": "Iowa Occupational Therapist License Reciprocity - How to Transfer Your License (2026)",
-    "description": "Already licensed as a occupational therapist? Here's whether your license transfers to Iowa - compact status, endorsement steps, fees, and processing time.",
+    "description": "Already licensed as an occupational therapist? Here's whether your license transfers to Iowa - compact status, endorsement steps, fees, and processing time.",
     "keywords": "occupational therapist license reciprocity iowa, how to transfer occupational therapist license to iowa, occupational therapist compact iowa, iowa occupational therapist endorsement application"
   },
   "board": {
@@ -32,7 +32,7 @@
   },
   "quick_facts": {
     "total_fee": "$135",
-    "fee_breakdown": " application/license fee",
+    "fee_breakdown": "$135 application/license fee",
     "renewal_fee": "$90",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
@@ -86,12 +86,12 @@
       "detail": "Official verification of passing the NBCOT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NBCOT exam. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+  "provisional_text": "Iowa offers a temporary occupational therapy permit for new graduates who have completed an ACOTE-accredited program and are awaiting their NBCOT exam results. The temporary permit allows practice under the direct supervision of a licensed OTR. Contact the Iowa Board of Physical and Occupational Therapy for current temporary permit requirements and duration limits.",
+  "reciprocity_text": "Iowa is a member of the OT Licensure Compact (OTC). Occupational therapists holding an active compact privilege may practice in Iowa without a separate state license. For those not eligible for compact privileges, Iowa also accepts standard endorsement applications with proof of current NBCOT certification and license verification from your home state.",
   "faqs": [
     {
       "question": "How much does a Iowa OT license cost?",
-      "answer": "The initial application and licensing fee varies, often around  to . Check the specific fee breakdown."
+      "answer": "The total initial application and licensing fee is approximately $135. Check the board website for the latest fee schedule."
     },
     {
       "question": "Is NBCOT certification required?",
@@ -147,7 +147,7 @@
     "processing_tier": "mid",
     "board_url": "https://www.idph.iowa.gov/",
     "endorsement_url": "https://hhs.iowa.gov/licensure/physical-and-occupational-therapy",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "notes": "Iowa is a member of the OT Licensure Compact (OTC). Occupational therapists holding an active compact privilege may practice in Iowa without a separate state license. For those not eligible for compact privileges, Iowa also accepts standard endorsement applications with proof of current NBCOT certification and license verification from your home state.",
     "requires_psv": true
   },
   "slug": "iowa-ot",
@@ -161,7 +161,7 @@
   "variants": {
     "new_applicant": {
       "hero": {
-        "title": "Become a Occupational Therapist in Iowa",
+        "title": "Become an Occupational Therapist in Iowa",
         "dek": "To apply for an Occupational Therapist license in Iowa, you must create an account and submit your application and all supporting documents through the Iowa HHS Online Services portal."
       }
     }

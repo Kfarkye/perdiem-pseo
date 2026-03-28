@@ -15,7 +15,7 @@
   "last_updated": "2026-02-25",
   "seo": {
     "title": "Indiana Occupational Therapist License Reciprocity - How to Transfer Your License (2026)",
-    "description": "Already licensed as a occupational therapist? Here's whether your license transfers to Indiana - compact status, endorsement steps, fees, and processing time.",
+    "description": "Already licensed as an occupational therapist? Here's whether your license transfers to Indiana - compact status, endorsement steps, fees, and processing time.",
     "keywords": "occupational therapist license reciprocity indiana, how to transfer occupational therapist license to indiana, occupational therapist compact indiana, indiana occupational therapist endorsement application"
   },
   "board": {
@@ -32,7 +32,7 @@
   },
   "quick_facts": {
     "total_fee": "$50",
-    "fee_breakdown": " application/license fee",
+    "fee_breakdown": "$50 application/license fee",
     "renewal_fee": "$50",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
@@ -82,12 +82,12 @@
       "detail": "Official verification of passing the NBCOT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NBCOT exam. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+  "provisional_text": "Indiana offers a temporary occupational therapy permit for new graduates who have completed an ACOTE-accredited program and are awaiting their NBCOT exam results. The temporary permit allows practice under the direct supervision of a licensed OTR. Contact the Indiana PLA \u2014 Occupational Therapy for current temporary permit requirements and duration limits.",
+  "reciprocity_text": "Indiana is a member of the OT Licensure Compact (OTC). Occupational therapists holding an active compact privilege may practice in Indiana without a separate state license. For those not eligible for compact privileges, Indiana also accepts standard endorsement applications with proof of current NBCOT certification and license verification from your home state.",
   "faqs": [
     {
       "question": "How much does a Indiana OT license cost?",
-      "answer": "The initial application and licensing fee varies, often around  to . Check the specific fee breakdown."
+      "answer": "The total initial application and licensing fee is approximately $50. Check the board website for the latest fee schedule."
     },
     {
       "question": "Is NBCOT certification required?",
@@ -143,7 +143,7 @@
     "processing_tier": "mid",
     "board_url": "https://www.in.gov/pla/professions/occupational-therapy/",
     "endorsement_url": "https://www.in.gov/pla/professions/occupational-therapy-board/occupational-therapy-application-information/",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "notes": "Indiana is a member of the OT Licensure Compact (OTC). Occupational therapists holding an active compact privilege may practice in Indiana without a separate state license. For those not eligible for compact privileges, Indiana also accepts standard endorsement applications with proof of current NBCOT certification and license verification from your home state.",
     "requires_psv": true
   },
   "slug": "indiana-ot",
@@ -157,7 +157,7 @@
   "variants": {
     "new_applicant": {
       "hero": {
-        "title": "Become a Occupational Therapist in Indiana",
+        "title": "Become an Occupational Therapist in Indiana",
         "dek": "To apply for an Occupational Therapist license in Indiana, you must submit your application online through the MyLicense.IN.gov portal, managed by the Indiana Professional Licensing Agency."
       }
     }

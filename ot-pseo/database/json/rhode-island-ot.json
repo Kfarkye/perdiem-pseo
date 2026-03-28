@@ -15,7 +15,7 @@
   "last_updated": "2026-02-25",
   "seo": {
     "title": "Rhode Island Occupational Therapist License Reciprocity - How to Transfer Your License (2026)",
-    "description": "Already licensed as a occupational therapist? Here's whether your license transfers to Rhode Island - compact status, endorsement steps, fees, and processing time.",
+    "description": "Already licensed as an occupational therapist? Here's whether your license transfers to Rhode Island - compact status, endorsement steps, fees, and processing time.",
     "keywords": "occupational therapist license reciprocity rhode island, how to transfer occupational therapist license to rhode island, occupational therapist compact rhode island, rhode island occupational therapist endorsement application"
   },
   "board": {
@@ -32,7 +32,7 @@
   },
   "quick_facts": {
     "total_fee": "$110",
-    "fee_breakdown": " application/license fee",
+    "fee_breakdown": "$110 application/license fee",
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 8 Weeks",
@@ -86,12 +86,12 @@
       "detail": "Official verification of passing the NBCOT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NBCOT exam. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+  "provisional_text": "Rhode Island offers a temporary occupational therapy permit for new graduates who have completed an ACOTE-accredited program and are awaiting their NBCOT exam results. The temporary permit allows practice under the direct supervision of a licensed OTR. Contact the Rhode Island DOH \u2014 OT Licensure for current temporary permit requirements and duration limits.",
+  "reciprocity_text": "Occupational therapists licensed in another state may apply for licensure in Rhode Island through endorsement. Submit a completed application to the Rhode Island DOH \u2014 OT Licensure, along with official license verification from your current state and proof of active NBCOT certification. Processing typically takes 4 to 8 Weeks.",
   "faqs": [
     {
       "question": "How much does a Rhode Island OT license cost?",
-      "answer": "The initial application and licensing fee varies, often around  to . Check the specific fee breakdown."
+      "answer": "The total initial application and licensing fee is approximately $110. Check the board website for the latest fee schedule."
     },
     {
       "question": "Is NBCOT certification required?",
@@ -147,7 +147,7 @@
     "processing_tier": "mid",
     "board_url": "https://health.ri.gov/licenses/",
     "endorsement_url": "https://health.ri.gov/licenses/detail.php?id=255",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "notes": "Occupational therapists licensed in another state may apply for licensure in Rhode Island through endorsement. Submit a completed application to the Rhode Island DOH \u2014 OT Licensure, along with official license verification from your current state and proof of active NBCOT certification. Processing typically takes 4 to 8 Weeks.",
     "requires_psv": true
   },
   "slug": "rhode-island-ot",
@@ -161,7 +161,7 @@
   "variants": {
     "new_applicant": {
       "hero": {
-        "title": "Become a Occupational Therapist in Rhode Island",
+        "title": "Become an Occupational Therapist in Rhode Island",
         "dek": "To apply for an Occupational Therapist license in Rhode Island, navigate to the RI Department of Health Online Licensing System and begin your initial application."
       }
     }

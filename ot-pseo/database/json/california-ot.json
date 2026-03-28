@@ -15,7 +15,7 @@
   "last_updated": "2026-02-25",
   "seo": {
     "title": "California Occupational Therapist License Reciprocity - How to Transfer Your License (2026)",
-    "description": "Already licensed as a occupational therapist? Here's whether your license transfers to California - compact status, endorsement steps, fees, and processing time.",
+    "description": "Already licensed as an occupational therapist? Here's whether your license transfers to California - compact status, endorsement steps, fees, and processing time.",
     "keywords": "occupational therapist license reciprocity california, how to transfer occupational therapist license to california, occupational therapist compact california, california occupational therapist endorsement application"
   },
   "board": {
@@ -32,7 +32,7 @@
   },
   "quick_facts": {
     "total_fee": "$50",
-    "fee_breakdown": " application/license fee",
+    "fee_breakdown": "$50 application/license fee",
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
@@ -86,12 +86,12 @@
       "detail": "Official verification of passing the NBCOT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NBCOT exam. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+  "provisional_text": "California offers a temporary occupational therapy permit for new graduates who have completed an ACOTE-accredited program and are awaiting their NBCOT exam results. The temporary permit allows practice under the direct supervision of a licensed OTR. Contact the California Board of Occupational Therapy for current temporary permit requirements and duration limits.",
+  "reciprocity_text": "Occupational therapists licensed in another state may apply for licensure in California through endorsement. Submit a completed application to the California Board of Occupational Therapy, along with official license verification from your current state and proof of active NBCOT certification. Processing typically takes 4 to 6 Weeks.",
   "faqs": [
     {
       "question": "How much does a California OT license cost?",
-      "answer": "The initial application and licensing fee varies, often around  to . Check the specific fee breakdown."
+      "answer": "The total initial application and licensing fee is approximately $50. Check the board website for the latest fee schedule."
     },
     {
       "question": "Is NBCOT certification required?",
@@ -147,7 +147,7 @@
     "processing_tier": "mid",
     "board_url": "http://www.bot.ca.gov/",
     "endorsement_url": "https://www.bot.ca.gov/applicants/licensure_by_endors.shtml",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "notes": "Occupational therapists licensed in another state may apply for licensure in California through endorsement. Submit a completed application to the California Board of Occupational Therapy, along with official license verification from your current state and proof of active NBCOT certification. Processing typically takes 4 to 6 Weeks.",
     "requires_psv": true
   },
   "slug": "california-ot",
@@ -161,7 +161,7 @@
   "variants": {
     "new_applicant": {
       "hero": {
-        "title": "Become a Occupational Therapist in California",
+        "title": "Become an Occupational Therapist in California",
         "dek": "To apply for an Occupational Therapist license in California, applicants must use the BreEZe online system, managed by the California Board of Occupational Therapy."
       }
     }

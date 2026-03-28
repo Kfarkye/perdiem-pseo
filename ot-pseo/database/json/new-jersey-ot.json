@@ -15,7 +15,7 @@
   "last_updated": "2026-02-25",
   "seo": {
     "title": "New Jersey Occupational Therapist License Reciprocity - How to Transfer Your License (2026)",
-    "description": "Already licensed as a occupational therapist? Here's whether your license transfers to New Jersey - compact status, endorsement steps, fees, and processing time.",
+    "description": "Already licensed as an occupational therapist? Here's whether your license transfers to New Jersey - compact status, endorsement steps, fees, and processing time.",
     "keywords": "occupational therapist license reciprocity new jersey, how to transfer occupational therapist license to new jersey, occupational therapist compact new jersey, new jersey occupational therapist endorsement application"
   },
   "board": {
@@ -32,7 +32,7 @@
   },
   "quick_facts": {
     "total_fee": "$120",
-    "fee_breakdown": " application/license fee",
+    "fee_breakdown": "$120 application/license fee",
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
@@ -86,12 +86,12 @@
       "detail": "Official verification of passing the NBCOT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NBCOT exam. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+  "provisional_text": "New Jersey offers a temporary occupational therapy permit for new graduates who have completed an ACOTE-accredited program and are awaiting their NBCOT exam results. The temporary permit allows practice under the direct supervision of a licensed OTR. Contact the New Jersey Board of Occupational Therapy for current temporary permit requirements and duration limits.",
+  "reciprocity_text": "Occupational therapists licensed in another state may apply for licensure in New Jersey through endorsement. Submit a completed application to the New Jersey Board of Occupational Therapy, along with official license verification from your current state and proof of active NBCOT certification. Processing typically takes 4 to 6 Weeks.",
   "faqs": [
     {
       "question": "How much does a New Jersey OT license cost?",
-      "answer": "The initial application and licensing fee varies, often around  to . Check the specific fee breakdown."
+      "answer": "The total initial application and licensing fee is approximately $120. Check the board website for the latest fee schedule."
     },
     {
       "question": "Is NBCOT certification required?",
@@ -147,7 +147,7 @@
     "processing_tier": "mid",
     "board_url": "https://www.njconsumeraffairs.gov/ot",
     "endorsement_url": "https://www.njconsumeraffairs.gov/ot/Pages/apply.aspx",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "notes": "Occupational therapists licensed in another state may apply for licensure in New Jersey through endorsement. Submit a completed application to the New Jersey Board of Occupational Therapy, along with official license verification from your current state and proof of active NBCOT certification. Processing typically takes 4 to 6 Weeks.",
     "requires_psv": true
   },
   "slug": "new-jersey-ot",
@@ -161,7 +161,7 @@
   "variants": {
     "new_applicant": {
       "hero": {
-        "title": "Become a Occupational Therapist in New Jersey",
+        "title": "Become an Occupational Therapist in New Jersey",
         "dek": "To apply for an Occupational Therapist license in New Jersey, register and submit your application through the New Jersey Division of Consumer Affairs - Online Licensing Services portal."
       }
     }

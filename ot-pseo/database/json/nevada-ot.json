@@ -15,7 +15,7 @@
   "last_updated": "2026-02-25",
   "seo": {
     "title": "Nevada Occupational Therapist License Reciprocity - How to Transfer Your License (2026)",
-    "description": "Already licensed as a occupational therapist? Here's whether your license transfers to Nevada - compact status, endorsement steps, fees, and processing time.",
+    "description": "Already licensed as an occupational therapist? Here's whether your license transfers to Nevada - compact status, endorsement steps, fees, and processing time.",
     "keywords": "occupational therapist license reciprocity nevada, how to transfer occupational therapist license to nevada, occupational therapist compact nevada, nevada occupational therapist endorsement application"
   },
   "board": {
@@ -30,7 +30,7 @@
   },
   "quick_facts": {
     "total_fee": "$200",
-    "fee_breakdown": " application/license fee",
+    "fee_breakdown": "$200 application/license fee",
     "renewal_fee": "$200",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
@@ -72,12 +72,12 @@
       "detail": "Official verification of passing the NBCOT exam."
     }
   ],
-  "provisional_text": "Many states offer a limited permit or provisional license for new graduates waiting to take the NBCOT exam. Check specific board rules for supervisory requirements.",
-  "reciprocity_text": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+  "provisional_text": "Nevada offers a temporary occupational therapy permit for new graduates who have completed an ACOTE-accredited program and are awaiting their NBCOT exam results. The temporary permit allows practice under the direct supervision of a licensed OTR. Contact the Nevada Board of Occupational Therapy for current temporary permit requirements and duration limits.",
+  "reciprocity_text": "Occupational therapists licensed in another state may apply for licensure in Nevada through endorsement. Submit a completed application to the Nevada Board of Occupational Therapy, along with official license verification from your current state and proof of active NBCOT certification. Applicants must also pass the Nevada jurisprudence examination. Processing typically takes 4 to 6 Weeks.",
   "faqs": [
     {
       "question": "How much does a Nevada OT license cost?",
-      "answer": "The initial application and licensing fee varies, often around  to . Check the specific fee breakdown."
+      "answer": "The total initial application and licensing fee is approximately $200. Check the board website for the latest fee schedule."
     },
     {
       "question": "Is NBCOT certification required?",
@@ -133,7 +133,7 @@
     "processing_tier": "mid",
     "board_url": "https://bop.nv.gov/",
     "endorsement_url": "https://bop.nv.gov/",
-    "notes": "Occupational therapists licensed in another state can often apply via endorsement by providing license verification and current NBCOT certification.",
+    "notes": "Occupational therapists licensed in another state may apply for licensure in Nevada through endorsement. Submit a completed application to the Nevada Board of Occupational Therapy, along with official license verification from your current state and proof of active NBCOT certification. Applicants must also pass the Nevada jurisprudence examination. Processing typically takes 4 to 6 Weeks.",
     "requires_psv": false
   },
   "slug": "nevada-ot",
@@ -147,7 +147,7 @@
   "variants": {
     "new_applicant": {
       "hero": {
-        "title": "Become a Occupational Therapist in Nevada",
+        "title": "Become an Occupational Therapist in Nevada",
         "dek": "Nevada Occupational Therapist License requires graduation from an ACOTE-accredited program, passing the NBCOT exam, and a completed application."
       }
     }
