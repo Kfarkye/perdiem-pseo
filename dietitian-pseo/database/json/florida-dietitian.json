@@ -26,16 +26,16 @@
     "phone": "(850) 488-0595",
     "fax": "(850) 414-6860",
     "email": "mailto:mqa.dieteticsnutrition@flhealth.gov",
-    "url": "https://www.floridahealth.gov/licensing-regulations/regulated-professions/dietitian-nutritionist/",
+    "url": "https://floridasdieteticsnutrition.gov/",
     "contact_url": "https://flhealthsource.gov/contact-us/",
     "verify_url": "https://mqa-internet.flhealth.gov/MyLicenseVerification/"
   },
   "quick_facts": {
     "total_fee": "$165",
     "fee_breakdown": "$80 application + $80 license + $5 unlicensed activity fee",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$95",
+    "renewal_cycle": "Every 2 years + 30 CE hours",
+    "processing_time": "10 to 13 Business Days",
     "license_duration": "Up to 2 Years (expires May 31 odd years)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours every 2 years"
@@ -145,7 +145,7 @@
     "endorsement_fee": 100,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
-    "board_url": "https://www.floridahealth.gov/licensing-regulations/regulated-professions/dietitian-nutritionist/",
+    "board_url": "https://floridasdieteticsnutrition.gov/",
     "endorsement_url": "https://flhealthsource.gov/dietetics-nutrition/apply-for-a-license/",
     "notes": "Florida allows Licensure by Endorsement for professionals who hold a current, active license in another state with equivalent or more stringent requirements.",
     "requires_psv": true

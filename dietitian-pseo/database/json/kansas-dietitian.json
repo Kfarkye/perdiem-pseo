@@ -33,9 +33,9 @@
   "quick_facts": {
     "total_fee": "$140",
     "fee_breakdown": "$140 initial application fee",
-    "renewal_fee": "$150",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "6 to 8 Weeks",
+    "renewal_fee": "$135",
+    "renewal_cycle": "Every 2 years + 15 CE hours",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "2 Years",
     "exam_name": "Commission on Dietetic Registration examination",
     "ce_requirement": "15 hours per renewal cycle"

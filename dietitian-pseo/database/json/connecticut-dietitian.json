@@ -33,9 +33,9 @@
   "quick_facts": {
     "total_fee": "$190",
     "fee_breakdown": "$190 initial certification fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Annually",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$105",
+    "renewal_cycle": "Annual + CDR 75 CPEUs per 5 years (no state-level CE mandate)",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "1 Year",
     "exam_name": "Registration Examination for Dietitians"
   },

@@ -33,9 +33,9 @@
   "quick_facts": {
     "total_fee": "$100",
     "fee_breakdown": "~$100 application fee (exact amount set by LBEDN; fingerprint fees additional)",
-    "renewal_fee": "$100",
-    "renewal_cycle": "Annually, by December 31st",
-    "processing_time": "4 to 8 Weeks",
+    "renewal_fee": "$83",
+    "renewal_cycle": "Annual (by June 30) + 15 CE hours per year",
+    "processing_time": "4 to 6 Weeks",
     "license_duration": "1 Year (expires June 30)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "15 hours per year"

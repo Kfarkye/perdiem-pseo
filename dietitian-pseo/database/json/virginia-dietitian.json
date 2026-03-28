@@ -33,9 +33,9 @@
   "quick_facts": {
     "total_fee": "$0 (No State License Fee)",
     "fee_breakdown": "No state application fee. CDR exam fee is $200 nationally.",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$0 (No State Renewal)",
+    "renewal_cycle": "No state renewal. CDR registration renews every 5 years with 75 CPE hours.",
+    "processing_time": "N/A \u2014 No State License Required",
     "license_duration": "N/A",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "75 CPE hours every 5 years"

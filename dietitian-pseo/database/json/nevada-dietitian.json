@@ -33,9 +33,9 @@
   "quick_facts": {
     "total_fee": "$237.50",
     "fee_breakdown": "$200 initial application fee + $37.50 fingerprint background check fee",
-    "renewal_fee": "$0",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "Undetermined",
+    "renewal_fee": "$200",
+    "renewal_cycle": "Every 2 years (no state-mandated CE, but CDR requires 75 CPEUs per 5 years)",
+    "processing_time": "30 Working Days",
     "license_duration": "2 Years",
     "exam_name": "Registration Examination for Dietitians"
   },

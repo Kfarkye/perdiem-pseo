@@ -33,9 +33,9 @@
   "quick_facts": {
     "total_fee": "$248",
     "fee_breakdown": "$60 application + $150 issuance + $38 background check",
-    "renewal_fee": "$80",
-    "renewal_cycle": "Annually",
-    "processing_time": "2 to 4 Weeks",
+    "renewal_fee": "$95",
+    "renewal_cycle": "Annual (by March 31) + 30 CE hours per 2 years",
+    "processing_time": "3 to 5 Weeks",
     "license_duration": "1 Year (expires March 31)",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "30 hours per 2 years"

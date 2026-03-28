@@ -26,16 +26,16 @@
     "phone": "312-899-0040 ext 500",
     "fax": "Not Applicable",
     "email": "info@cdrnet.org",
-    "url": "https://www.cdrnet.org/",
+    "url": "N/A",
     "contact_url": "https://www.cdrnet.org/contact",
     "verify_url": "https://www.cdrnet.org/verify"
   },
   "quick_facts": {
     "total_fee": "$0",
     "fee_breakdown": "No state fees (CDR national fees apply)",
-    "renewal_fee": "$65",
-    "renewal_cycle": "Annually",
-    "processing_time": "1 to 2 Weeks (for exam authorization after application submission)",
+    "renewal_fee": "$0",
+    "renewal_cycle": "No state renewal required",
+    "processing_time": "N/A \u2014 No State License Required",
     "license_duration": "Not Applicable",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "75 hours every 5 years"
@@ -129,7 +129,7 @@
     "endorsement_fee": 0,
     "processing_time": "1 to 2 Weeks (for exam authorization after application submission)",
     "processing_tier": "none",
-    "board_url": "https://www.cdrnet.org/",
+    "board_url": "N/A",
     "endorsement_url": "https://www.cdrnet.org/credentials",
     "notes": "If you are a licensed dietitian moving to California from another state, you do not need to transfer your license. As long as your national CDR registration is active, you are legally permitted to practice.",
     "requires_psv": false

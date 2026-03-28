@@ -33,9 +33,9 @@
   "quick_facts": {
     "total_fee": "$70",
     "fee_breakdown": "$70 initial application fee",
-    "renewal_fee": "$50",
-    "renewal_cycle": "Every 2 years",
-    "processing_time": "4 to 6 Weeks",
+    "renewal_fee": "$100",
+    "renewal_cycle": "Every 2 years (expires May 31 of odd years)",
+    "processing_time": "3 to 4 Weeks",
     "license_duration": "Up to 2 Years",
     "exam_name": "Commission on Dietetic Registration (CDR) examination",
     "ce_requirement": "75 hours every 5 years"

@@ -34,8 +34,8 @@
     "total_fee": "$225",
     "fee_breakdown": "$225 initial license fee (non-refundable)",
     "renewal_fee": "Varies (Contact DOH)",
-    "renewal_cycle": "N/A - No state license is required.",
-    "processing_time": "N/A - No state license is required.",
+    "renewal_cycle": "Every 3 years (Must maintain active CDR)",
+    "processing_time": "60 Calendar Days",
     "license_duration": "3 Years",
     "exam_name": "Registration Examination for Dietitians",
     "ce_requirement": "75 hours every 5 years, must maintain active CDR"
