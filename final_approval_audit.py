@@ -17,6 +17,8 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent
 PROFILES_PATH = REPO / "vertical_profiles.json"
 VERCEL_PATH = REPO / "vercel.json"
+FIREBASE_PATH = REPO / "firebase.json"
+FIREBASERC_PATH = REPO / ".firebaserc"
 DEPLOY_CHECKLIST_PATH = REPO / "DEPLOY_CHECKLIST_ROOT_DIST.md"
 
 DIST_DIR = REPO / "dist"
@@ -306,6 +308,46 @@ def gate_deploy_config_transition() -> None:
 
     if not DEPLOY_CHECKLIST_PATH.exists():
         fail(f"Missing deploy checklist: {DEPLOY_CHECKLIST_PATH.name}")
+
+    if not FIREBASE_PATH.exists():
+        fail("Missing root firebase.json")
+    else:
+        firebase = json.loads(FIREBASE_PATH.read_text(encoding="utf-8"))
+        hosting = firebase.get("hosting", {})
+        if not isinstance(hosting, dict):
+            fail("firebase.json hosting config must be an object")
+        else:
+            if hosting.get("public") != "dist":
+                fail("firebase.json hosting.public must be 'dist'")
+            if hosting.get("site") != "state-licensing-ref":
+                fail("firebase.json hosting.site must be 'state-licensing-ref'")
+            if hosting.get("cleanUrls") is not True:
+                fail("firebase.json hosting.cleanUrls must be true")
+
+            redirects = hosting.get("redirects", [])
+            required_aliases = [
+                ("/api/v1/:slug.json", "/api/:slug.json"),
+                ("/:vertical-pseo/api/:slug.json", "/api/:slug.json"),
+            ]
+            for source, destination in required_aliases:
+                found = any(
+                    isinstance(rule, dict)
+                    and rule.get("source") == source
+                    and rule.get("destination") == destination
+                    for rule in redirects
+                )
+                if not found:
+                    fail(
+                        f"firebase.json missing legacy API alias redirect: {source} -> {destination}"
+                    )
+
+    if not FIREBASERC_PATH.exists():
+        fail("Missing root .firebaserc")
+    else:
+        firebaserc = json.loads(FIREBASERC_PATH.read_text(encoding="utf-8"))
+        project_default = firebaserc.get("projects", {}).get("default")
+        if project_default != "state-licensing-ref":
+            fail(".firebaserc projects.default must be 'state-licensing-ref'")
 
     if len(errors) == start_errors:
         ok("deploy config enforces root dist")

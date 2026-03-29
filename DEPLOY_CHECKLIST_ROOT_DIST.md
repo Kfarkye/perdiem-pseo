@@ -61,3 +61,17 @@ Confirm:
 
 Deploy only if all checks above pass from root repo.
 Do not deploy per-vertical `dist/` or legacy `dist-v2/` artifacts.
+
+## 7) Post-deploy live trust guard
+
+Run:
+
+```bash
+python3 live_trust_guard.py --base-url https://www.statelicensingreference.com
+```
+
+Pass when all are true:
+- Critical smoke URLs return `200` and expected content types.
+- DC/New Mexico canonical + `og:url` match live slugs (no `-license` residue).
+- PT contradiction phrases are absent across live `*-pt` pages.
+- Sampled live HTML/API pairs stay aligned (`identifier`, `url`, canonical, and alternate API link).
