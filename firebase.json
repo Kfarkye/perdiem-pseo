@@ -1,0 +1,49 @@
+{
+  "hosting": {
+    "site": "state-licensing-ref",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "headers": [
+      {
+        "source": "/sitemap.xml",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/xml; charset=utf-8"
+          }
+        ]
+      },
+      {
+        "source": "/robots.txt",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain; charset=utf-8"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/api/v1/:slug.json",
+        "destination": "/api/:slug.json",
+        "type": 301
+      },
+      {
+        "source": "/:vertical-pseo/api/:slug.json",
+        "destination": "/api/:slug.json",
+        "type": 301
+      },
+      {
+        "source": "/:vertical/api/:slug.json",
+        "destination": "/api/:slug.json",
+        "type": 301
+      }
+    ]
+  }
+}

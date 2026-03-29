@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "state-licensing-ref"
+  },
+  "targets": {
+    "state-licensing-ref": {
+      "hosting": {
+        "site": [
+          "state-licensing-ref"
+        ]
+      }
+    }
+  }
+}
