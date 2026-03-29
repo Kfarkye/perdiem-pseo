@@ -1,0 +1,102 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-jersey-cna",
+  "identifier": "new-jersey-cna",
+  "name": "New Jersey Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to New Jersey - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-jersey-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "New Jersey Board of Nursing",
+    "parentOrganization": "State Health Department",
+    "url": "https://www.njconsumeraffairs.gov/nur/",
+    "telephone": "800-998-6014 (Prometric Candidate Services)",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "New Jersey Department of Health, P.O. Box 367, Trenton, NJ 08625-0367"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New Jersey"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who administers the New Jersey CNA exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The NJ Nurse Aide exam is administered by PSI. Schedule at psiexams.com or call 1-800-733-9267."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I transfer my CNA to New Jersey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the NJ DOH at (866) 561-5914 or email CNA@doh.nj.gov, or contact PSI at (877) 774-4243 / njna@psionline.com."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "https://www.njconsumeraffairs.gov/nur/"
+  }
+}

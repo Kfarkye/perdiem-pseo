@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/vermont-pharmacist",
+  "identifier": "vermont-pharmacist",
+  "name": "Vermont Pharmacist License",
+  "description": "Already licensed as a pharmacist? Here's whether your license transfers to Vermont - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/vermont-pharmacist",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Vermont Board of Pharmacy",
+    "parentOrganization": "Vermont Office of Professional Regulation (OPR)",
+    "url": "https://sos.vermont.gov/pharmacy/",
+    "telephone": "(802) 828-2363",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "sos.opr@vermont.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Office of Professional Regulation, 89 Main Street, 3rd Floor, Montpelier, VT 05620-3402"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Vermont"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacist",
+  "additionalType": "RPh, PharmD",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$250",
+      "price": 250.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$175",
+      "price": 175.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "Varies, typically 4-8 weeks once all documentation is complete",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Reports",
+      "description": "Official verification of passing the NAPLEX and MPJE."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Vermont pharmacist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and licensing fee varies by state. Check the specific fee breakdown above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the MPJE required in all states?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost all states require passing their state-specific Multistate Pharmacy Jurisprudence Examination (MPJE) to verify knowledge of local pharmacy laws."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Vermont have reciprocity for pharmacists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacist practice in Vermont. To work in Vermont, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacist license to Vermont?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Vermont while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://sos.vermont.gov/pharmacy/"
+  }
+}

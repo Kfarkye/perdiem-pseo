@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/alabama-ot",
+  "identifier": "alabama-ot",
+  "name": "Alabama Occupational Therapist License",
+  "description": "Already licensed as an occupational therapist? Here's whether your license transfers to Alabama - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/alabama-ot",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Alabama State Board of Occupational Therapy",
+    "parentOrganization": "Independent State Board",
+    "url": "http://www.ot.alabama.gov",
+    "telephone": "(334) 269-0096",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "albot@albot.alabama.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Alabama State Board of Occupational Therapy\nRSA Union Building\n100 North Union Street, Suite 570\nMontgomery, AL 36104-3701"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Alabama"
+  },
+  "serviceType": "Professional License",
+  "category": "Occupational Therapist",
+  "additionalType": "Occupational Therapist Registered (OTR)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "N/A"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "NBCOT Score Report",
+      "description": "Official verification of passing the NBCOT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "OT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Alabama OT license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial application and licensing fee is approximately $150. Check the board website for the latest fee schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is NBCOT certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NBCOT exam is a standard requirement for initial licensure across all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Alabama have reciprocity for occupational therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alabama has enacted the OT Compact, but compact privileges are not yet issuing. For now, occupational therapists still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my occupational therapist license to Alabama?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Alabama while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "http://www.ot.alabama.gov"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/rhode-island-dietitian",
+  "identifier": "rhode-island-dietitian",
+  "name": "Rhode Island Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Rhode Island - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/rhode-island-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Dietetics Practice",
+    "parentOrganization": "Rhode Island Department of Health",
+    "url": "https://health.ri.gov/licenses/detail.php?id=223",
+    "telephone": "(401) 222-2828",
+    "faxNumber": "(401) 222-1272",
+    "email": "DOH.HelpHPR@health.ri.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3 Capitol Hill<br>Providence, RI 02908",
+      "description": "Rhode Island Department of Health, Office of Health Professionals Regulation, 3 Capitol Hill, Room 104, Providence, RI 02908-5097"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Rhode Island"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian/Nutritionist (LDN)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$170",
+      "price": 170.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "Up to 2 Years",
+  "renewalCycle": "Every 2 years (expires Nov 1 of odd years) + 20 CE hours",
+  "requiredDocuments": [
+    {
+      "name": "Notarized Application & Photo",
+      "description": "Application form with a notarized signature and a recent 2x3 head-and-shoulders photograph."
+    },
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of active registration sent directly from the CDR to the Board."
+    },
+    {
+      "name": "Criminal Background Check",
+      "description": "An original BCI report from the Rhode Island Attorney General's Office."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Rhode Island dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial cost is a $75 application fee, which does not include the cost of the BCI background check."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Rhode Island license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rhode Island LDN licenses expire on November 1st of odd-numbered years. The biennial renewal fee is $170."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Rhode Island use the title 'Nutritionist'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Rhode Island uses the combined title of Licensed Dietitian/Nutritionist (LDN) to license both professionals under one standard for medical nutrition therapy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Rhode Island have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Rhode Island. To work in Rhode Island, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Rhode Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 3 to 5 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Rhode Island while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://health.ri.gov/licenses/detail.php?id=223"
+  }
+}

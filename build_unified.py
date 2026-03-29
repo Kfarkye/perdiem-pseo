@@ -8,6 +8,7 @@ import runpy
 import shutil
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
@@ -26,6 +27,7 @@ from site_linking import (
 
 REPO = Path(__file__).resolve().parent
 DIST_DIR = REPO / "dist"
+API_DIR = DIST_DIR / "api"
 PORTAL_DIR = REPO / "portal"
 CANONICAL_HOST = "https://www.statelicensingreference.com"
 TODAY = datetime.now().strftime("%Y-%m-%d")
@@ -48,6 +50,152 @@ def clean_dist() -> None:
     if DIST_DIR.exists():
         shutil.rmtree(DIST_DIR)
     DIST_DIR.mkdir(parents=True)
+    API_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _parse_money(value: object) -> float | None:
+    if isinstance(value, (int, float)):
+        return float(value)
+    if isinstance(value, str):
+        cleaned = value.replace("$", "").replace(",", "").strip()
+        try:
+            return float(cleaned)
+        except ValueError:
+            return None
+    return None
+
+
+def build_api_payload(*, data: dict[str, Any], slug_value: str) -> dict[str, Any]:
+    state_name = data.get("state_name", "")
+    profession_name = data.get("profession_name", "")
+    canonical_url = f"{CANONICAL_HOST}/{slug_value}"
+
+    board = data.get("board", {}) if isinstance(data.get("board"), dict) else {}
+    quick_facts = data.get("quick_facts", {}) if isinstance(data.get("quick_facts"), dict) else {}
+    fees_endorsement = data.get("fees_endorsement", {}) if isinstance(data.get("fees_endorsement"), dict) else {}
+    reciprocity = data.get("reciprocity", {}) if isinstance(data.get("reciprocity"), dict) else {}
+    compact = data.get("compact", {}) if isinstance(data.get("compact"), dict) else {}
+    temp_license = data.get("temp_license", {}) if isinstance(data.get("temp_license"), dict) else {}
+    fingerprints = data.get("fingerprints", {}) if isinstance(data.get("fingerprints"), dict) else {}
+
+    title_term = (
+        data.get("credential_type", {}).get("page_title_term")
+        if isinstance(data.get("credential_type"), dict)
+        else None
+    ) or "License"
+    service_name = f"{state_name} {profession_name} {title_term}".strip()
+
+    app_fee_display = (
+        fees_endorsement.get("app_fee")
+        or quick_facts.get("total_fee")
+        or reciprocity.get("endorsement_fee")
+        or "See board"
+    )
+    renewal_fee_display = quick_facts.get("renewal_fee") or "See board"
+    app_fee_num = _parse_money(app_fee_display)
+    renewal_fee_num = _parse_money(renewal_fee_display)
+
+    offers: list[dict[str, Any]] = []
+    initial_offer: dict[str, Any] = {
+        "@type": "Offer",
+        "name": "Initial Application Fee",
+        "description": str(app_fee_display),
+    }
+    if app_fee_num is not None:
+        initial_offer["price"] = app_fee_num
+        initial_offer["priceCurrency"] = "USD"
+    offers.append(initial_offer)
+
+    renewal_offer: dict[str, Any] = {
+        "@type": "Offer",
+        "name": "Renewal Fee",
+        "description": str(renewal_fee_display),
+    }
+    if renewal_fee_num is not None:
+        renewal_offer["price"] = renewal_fee_num
+        renewal_offer["priceCurrency"] = "USD"
+    offers.append(renewal_offer)
+
+    payload: dict[str, Any] = {
+        "@context": "https://schema.org",
+        "@type": "GovernmentService",
+        "@id": canonical_url,
+        "identifier": slug_value,
+        "name": service_name,
+        "description": data.get("seo", {}).get("description", "") if isinstance(data.get("seo"), dict) else "",
+        "url": canonical_url,
+        "provider": {
+            "@type": "GovernmentOrganization",
+            "name": board.get("name", "State Board"),
+            "parentOrganization": board.get("parent_dept", ""),
+            "url": board.get("url", ""),
+            "telephone": board.get("phone", ""),
+            "faxNumber": board.get("fax", ""),
+            "email": board.get("email", ""),
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": board.get("physical_address") or board.get("mailing_address") or "",
+                "description": board.get("mailing_address", ""),
+            },
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": state_name,
+        },
+        "serviceType": "Professional License",
+        "category": profession_name,
+        "additionalType": data.get("credential_nomenclature", ""),
+        "offers": offers,
+        "processingTime": reciprocity.get("processing_time") or quick_facts.get("processing_time") or "See board",
+        "licenseDuration": quick_facts.get("license_duration", ""),
+        "renewalCycle": quick_facts.get("renewal_cycle", ""),
+        "requiredDocuments": [
+            {
+                "name": doc.get("item", ""),
+                "description": doc.get("detail", ""),
+            }
+            for doc in (data.get("documents") or [])
+            if isinstance(doc, dict)
+        ],
+        "fingerprinting": fingerprints,
+        "compactStatus": {
+            "isCompactMember": bool(compact.get("is_compact_member", reciprocity.get("state_is_member", False))),
+            "compactName": compact.get("compact_name") or reciprocity.get("compact_name") or "",
+            "compactPrivilegeFee": compact.get("compact_privilege_fee", ""),
+        },
+        "temporaryLicense": {
+            "available": bool(temp_license.get("available", reciprocity.get("temp_license_available", False))),
+            "fee": temp_license.get("fee", "See board"),
+            "processingTime": temp_license.get("processing_time", "See board"),
+            "duration": temp_license.get("duration", "See board"),
+        },
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": faq.get("question", ""),
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.get("answer", ""),
+                },
+            }
+            for faq in (data.get("faqs") or [])
+            if isinstance(faq, dict)
+        ],
+        "sourceMetadata": {
+            "lastUpdated": data.get("last_updated", TODAY),
+            "lastVerifiedDate": data.get("last_verified_date") or data.get("last_updated", TODAY),
+            "boardSourceUrl": data.get("board_source_url") or board.get("url", ""),
+        },
+    }
+    return payload
+
+
+def write_api_payload(*, data: dict[str, Any], slug_value: str) -> None:
+    payload = build_api_payload(data=data, slug_value=slug_value)
+    (API_DIR / f"{slug_value}.json").write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
 
 def copy_portal_assets() -> None:
@@ -129,6 +277,8 @@ def build_verticals() -> tuple[list[str], list[str]]:
                     template.render(**render_data),
                     encoding="utf-8",
                 )
+
+            write_api_payload(data=data, slug_value=slug_value)
 
             processing_time = data["reciprocity"].get("processing_time", "TBD")
             fee = data["reciprocity"].get("endorsement_fee", 0)

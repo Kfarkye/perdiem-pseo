@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/oregon-pharm",
+  "identifier": "oregon-pharm",
+  "name": "Oregon Pharmacy Technician Registration",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Oregon - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/oregon-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Oregon Board of Pharmacy",
+    "parentOrganization": "Oregon Health Licensing Office (HLO)",
+    "url": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx",
+    "telephone": "503-731-4032",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "pharmacy.board@oregon.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "1445 SW 12th Avenue, Suite 210, Portland, OR 97201"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Oregon"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$115",
+      "price": 115.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$104",
+      "price": 104.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "Approximately 4 to 6 weeks",
+  "licenseDuration": "Through June 30 of even-numbered years",
+  "renewalCycle": "Expires June 30 of even-numbered years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Oregon pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oregon’s pharmacy technician application totals $115: a $70 application fee plus a $45 national fingerprint background check fee. The board’s renewal FAQ lists a $104 renewal total before late fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Oregon have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in Oregon. To work in Oregon, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to Oregon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Oregon Board of Pharmacy says pharmacy technician applications usually take about 4 to 6 weeks to process once all materials are in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Oregon while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the Oregon Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Oregon."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://www.oregon.gov/pharmacy/pages/pharmacy-technician.aspx"
+  }
+}

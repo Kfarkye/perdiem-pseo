@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/rhode-island-ot",
+  "identifier": "rhode-island-ot",
+  "name": "Rhode Island Occupational Therapist License",
+  "description": "Already licensed as an occupational therapist? Here's whether your license transfers to Rhode Island - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/rhode-island-ot",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Rhode Island DOH — OT Licensure",
+    "parentOrganization": "Rhode Island Department of Health",
+    "url": "https://health.ri.gov/licenses/",
+    "telephone": "(401) 222-2828",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "DOH.Licensing@health.ri.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Rhode Island Department of Health, Health Professions Regulation, 3 Capitol Hill, Room 105, Providence, RI 02908-5097"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Rhode Island"
+  },
+  "serviceType": "Professional License",
+  "category": "Occupational Therapist",
+  "additionalType": "Occupational Therapist Registered (OTR)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "N/A"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 8 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "NBCOT Score Report",
+      "description": "Official verification of passing the NBCOT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "OT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Rhode Island OT license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial application and licensing fee is approximately $110. Check the board website for the latest fee schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is NBCOT certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NBCOT exam is a standard requirement for initial licensure across all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Rhode Island have reciprocity for occupational therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers occupational therapist practice in Rhode Island. To work in Rhode Island, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my occupational therapist license to Rhode Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Rhode Island while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://health.ri.gov/licenses/"
+  }
+}

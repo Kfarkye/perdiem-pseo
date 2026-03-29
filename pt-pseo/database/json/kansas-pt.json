@@ -19,9 +19,9 @@
     "keywords": "physical therapist license reciprocity kansas, how to transfer physical therapist license to kansas, physical therapist compact kansas, kansas physical therapist endorsement application"
   },
   "board": {
-    "name": "Kansas Board of Healing Arts \u2014 PT",
+    "name": "Kansas Board of Healing Arts — PT",
     "parent_dept": "Kansas Department for Aging and Disability Services (KDADS)",
-    "mailing_address": "800 SW Jackson, Lower Level \u2013 Suite A, Topeka, KS 66612",
+    "mailing_address": "800 SW Jackson, Lower Level – Suite A, Topeka, KS 66612",
     "physical_address": "See board website",
     "phone": "785-296-7413",
     "fax": "N/A (contact by phone)",
@@ -31,8 +31,8 @@
     "verify_url": "https://www.healingarts.kansas.gov/license-search"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
+    "total_fee": "$90",
+    "fee_breakdown": "$90 endorsement application fee",
     "renewal_fee": "$75",
     "renewal_cycle": "Every 2 years",
     "processing_time": "4 to 6 Weeks",
@@ -83,7 +83,7 @@
   "faqs": [
     {
       "question": "How much does a Kansas physical therapist license cost?",
-      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      "answer": "For endorsement applicants, the state licensing fee is $90. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
     },
     {
       "question": "Is national certification required?",
@@ -95,7 +95,7 @@
     },
     {
       "question": "How long does it take to transfer my physical therapist license to Kansas?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      "answer": "Current board processing time is 4 to 6 Weeks once your file is complete."
     },
     {
       "question": "Can I start working in Kansas while my endorsement application is processing?",
@@ -109,10 +109,10 @@
     "compact_source_url": "https://ptcompact.org/ptc-states/"
   },
   "fees_endorsement": {
-    "app_fee": "$100",
+    "app_fee": "$90",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$90"
   },
   "temp_license": {
     "available": true,

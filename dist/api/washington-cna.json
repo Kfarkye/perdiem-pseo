@@ -1,0 +1,102 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/washington-cna",
+  "identifier": "washington-cna",
+  "name": "Washington Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Washington - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/washington-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Washington DOH",
+    "parentOrganization": "State Health Department",
+    "url": "https://doh.wa.gov/",
+    "telephone": "(360) 236-4700",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Washington State Department of Health\nP.O. Box 47865\nOlympia, WA 98504-7865"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Washington"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$85",
+      "price": 85.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "Up to 1 Week",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Annually",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who administers the Washington NAC exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The WA Nursing Assistant Certified exam is administered by Credentia. Register at credentia.com/test-takers/wa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify a Washington CNA/NAC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the WA DOH Provider Credential Search at fortress.wa.gov/doh/providercredentialsearch/. Search for credential type 'Nursing Assistant Certification – NC'."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "https://doh.wa.gov/"
+  }
+}

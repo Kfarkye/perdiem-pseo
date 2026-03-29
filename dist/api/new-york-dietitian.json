@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-york-dietitian",
+  "identifier": "new-york-dietitian",
+  "name": "New York Dietitian Certification",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to New York - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-york-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "New York State Board for Dietetics and Nutrition",
+    "parentOrganization": "NYSED Office of the Professions",
+    "url": "https://www.op.nysed.gov/professions/dietetics-and-nutrition",
+    "telephone": "(518) 474-3817 ext. 270",
+    "faxNumber": "(518) 402-2323",
+    "email": "opunit4@nysed.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "89 Washington Avenue<br>Albany, NY 12234",
+      "description": "New York State Education Department\nOffice of the Professions\nDietetics and Nutrition Unit\n89 Washington Avenue\nAlbany, NY 12234-1000"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New York"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Certified Dietitian-Nutritionist (CDN)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$115",
+      "price": 115.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$179",
+      "price": 179.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "8 to 12 Weeks",
+  "licenseDuration": "3 Years",
+  "renewalCycle": "Every 3 years",
+  "requiredDocuments": [
+    {
+      "name": "Official College Transcripts",
+      "description": "Must be sent directly from your degree-granting university to the NYSED."
+    },
+    {
+      "name": "CDR Certification Verification",
+      "description": "Proof of active registration sent directly from the Commission on Dietetic Registration."
+    },
+    {
+      "name": "Child Abuse Training Certificate",
+      "description": "Certificate of completion for the mandatory NYS child abuse identification coursework."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "MorphoTrust / IdentoGO",
+    "fee": "$102.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a New York dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial cost is $294, which covers the NYSED's $115 application fee and the $179 fee for your first three-year registration period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a master's degree to become a CDN in New York?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. As of January 1, 2024, a minimum of a master's degree is required by the Commission on Dietetic Registration (CDR) to sit for the national RDN exam, which serves as the exam basis for NY state certification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is continuing education required to renew a New York CDN license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The NYSED does not mandate additional state-level continuing education for renewal, but you must maintain your active CDR registration, which requires completing 75 hours of continuing professional education every 5 years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New York have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in New York. To work in New York, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to New York?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take ~6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in New York while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.op.nysed.gov/professions/dietetics-and-nutrition"
+  }
+}

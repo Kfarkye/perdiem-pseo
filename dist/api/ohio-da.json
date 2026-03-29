@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/ohio-da",
+  "identifier": "ohio-da",
+  "name": "Ohio Dental Assistant Registration",
+  "description": "Complete guide to dental assistant licensing in Ohio — endorsement steps, fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/ohio-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Ohio State Dental Board",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://dental.ohio.gov/",
+    "telephone": "(614) 466-2580",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "dental.board@den.ohio.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "77 S. High St., 17th Floor, Columbus, OH 43215-6135"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Ohio"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Certified Dental Assistant",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$45",
+      "price": 45.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 3 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Ohio require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Ohio requires Certified Dental Assistant through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in Ohio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in Ohio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in Ohio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but a radiography permit or certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in Ohio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "State application fees are $45. Additional costs may include DANB CDA exam ($450), radiography certification, and background check fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://dental.ohio.gov/"
+  }
+}

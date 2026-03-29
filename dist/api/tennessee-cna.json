@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/tennessee-cna",
+  "identifier": "tennessee-cna",
+  "name": "Tennessee Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Tennessee - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/tennessee-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Tennessee Dept of Health",
+    "parentOrganization": "State Health Department",
+    "url": "https://www.tn.gov/health/",
+    "telephone": "(615) 532-5221",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "HCF.Health@tn.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Tennessee Department of Health, Health Care Facilities, 665 Mainstream Drive, Nashville, TN 37243"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Tennessee"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$25",
+      "price": 25.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "1 to 2 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": ""
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Tennessee CNA endorsement cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The endorsement application fee is $25. Additional costs may include background check fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a background check required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, fingerprints are generally not required for CNA endorsement in Tennessee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my CNA certification to Tennessee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Tennessee while waiting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://www.tn.gov/health/"
+  }
+}

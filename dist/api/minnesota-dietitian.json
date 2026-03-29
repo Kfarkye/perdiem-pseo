@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/minnesota-dietitian",
+  "identifier": "minnesota-dietitian",
+  "name": "Minnesota Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Minnesota - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/minnesota-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Dietetics and Nutrition Practice",
+    "parentOrganization": "Minnesota Department of Health",
+    "url": "https://mn.gov/boards/dietetics-and-nutrition/",
+    "telephone": "651-201-2747",
+    "faxNumber": "",
+    "email": "board.dietetics@state.mn.us",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2829 University Avenue SE, Suite 440<br>Minneapolis, MN 55414",
+      "description": "Minnesota Board of Dietetics and Nutrition Practice, 335 Randolph Avenue, Suite 170, St. Paul, MN 55102"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Minnesota"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "10 to 14 Weeks",
+  "licenseDuration": "1 Year (expires Nov 30)",
+  "renewalCycle": "Annual (by Nov 30) + 45 CE hours per 3 years",
+  "requiredDocuments": [
+    {
+      "name": "Notarized CDR Registration Card",
+      "description": "A notarized copy of your current, active CDR registration card or official exam results."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Showing a master's or doctoral degree from an ACEND-accredited program."
+    },
+    {
+      "name": "Supervised Practice Documentation",
+      "description": "Verification of at least 900 hours of supervised pre-professional practice."
+    },
+    {
+      "name": "Criminal Background Check",
+      "description": "Completed background check ($32 fee paid as part of the application)."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / BCA",
+    "fee": "$32.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/minnesota"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Minnesota dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial cost is $282: $100 application fee, $150 initial license fee, and $32 criminal background check fee. Annual renewal is $75, due by November 30 each year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for Minnesota dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minnesota requires 45 continuing education units (CEUs) every three years for state license renewal. Additionally, CDR registration requires 75 CPEUs every five years — many activities satisfy both requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Minnesota require a notarized CDR card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Minnesota specifically requires a notarized copy of your current CDR registration card or official examination results as part of the license application. This is an unusual requirement among states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Minnesota have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Minnesota. To work in Minnesota, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Minnesota?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Minnesota while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://mn.gov/boards/dietetics-and-nutrition/"
+  }
+}

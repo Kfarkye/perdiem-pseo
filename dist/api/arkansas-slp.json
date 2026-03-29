@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/arkansas-slp",
+  "identifier": "arkansas-slp",
+  "name": "Arkansas Speech-Language Pathologist License",
+  "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Arkansas - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/arkansas-slp",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Arkansas Board of Examiners in Speech-Language Pathology and Audiology",
+    "parentOrganization": "ABESPA",
+    "url": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology",
+    "telephone": "(501) 682-9442",
+    "faxNumber": "(501) 682-9181",
+    "email": "abespa@arkansas.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "101 E. Capitol Ave., Suite 211, Little Rock, AR 72201",
+      "description": "P.O. Box 3821, Little Rock, AR 72203-3821"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Arkansas"
+  },
+  "serviceType": "Professional License",
+  "category": "Speech-Language Pathologist",
+  "additionalType": "Licensed Speech-Language Pathologist (SLP)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "1 year",
+  "renewalCycle": "Every year",
+  "requiredDocuments": [
+    {
+      "name": "Official graduate transcripts",
+      "description": "From a CAA-accredited program."
+    },
+    {
+      "name": "Praxis exam score report",
+      "description": "Score of 162 or higher on test 5331."
+    },
+    {
+      "name": "Clinical Fellowship verification",
+      "description": "CF completion documentation."
+    },
+    {
+      "name": "Background check",
+      "description": "Criminal background check as required."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does an Arkansas SLP license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial cost is approximately $100. Annual renewal is $75. Note that Arkansas requires annual rather than biennial renewal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Arkansas part of the ASLP Interstate Compact?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Arkansas has enacted ASLP-IC legislation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Arkansas allow telepractice for SLPs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Arkansas permits telepractice for licensed SLPs and compact privilege holders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Arkansas have reciprocity for speech-language pathologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Arkansas participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Arkansas without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my speech-language pathologist license to Arkansas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Arkansas while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.healthy.arkansas.gov/programs-services/topics/speech-language-pathology-and-audiology"
+  }
+}

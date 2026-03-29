@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/indiana-dietitian",
+  "identifier": "indiana-dietitian",
+  "name": "Indiana Dietitian Certification",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Indiana - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/indiana-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Dietitians Certification Board",
+    "parentOrganization": "Indiana Professional Licensing Agency (IPLA)",
+    "url": "https://www.in.gov/pla/professions/dietitians/",
+    "telephone": "(317) 234-2060",
+    "faxNumber": "",
+    "email": "pla10@pla.in.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "402 West Washington Street, Room W072<br>Indianapolis, IN 46204",
+      "description": "Indiana Professional Licensing Agency, 402 W Washington Street, Room W072, Indianapolis, IN 46204"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Indiana"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Certified Dietitian (CD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$20",
+      "price": 20.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$20",
+      "price": 20.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 Years (expires Dec 31, even years)",
+  "renewalCycle": "Every 2 years (by Dec 31, even years) + 30 CE hours",
+  "requiredDocuments": [
+    {
+      "name": "Official College Transcripts",
+      "description": "Sent directly from the university, showing degree in an approved field and date awarded."
+    },
+    {
+      "name": "CDR Registration Card",
+      "description": "Copy of your current, active Commission on Dietetic Registration credential."
+    },
+    {
+      "name": "Two Passport-Style Photographs",
+      "description": "Recent photographs meeting standard passport specifications."
+    },
+    {
+      "name": "Fingerprint Background Check",
+      "description": "Mandatory fingerprint-based criminal background screening."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / State Police",
+    "fee": "$28.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/indiana"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does an Indiana dietitian certification cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application fee is only $20 — one of the lowest in the country. The biennial renewal is also $20 (plus a $10 late fee if submitted after December 31). Fingerprint background check fees are paid separately to the vendor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Indiana dietitian certification required to practice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Indiana's Certified Dietitian (CD) credential is technically optional for practicing as a Registered Dietitian (RD). However, most employers in Indiana require both the national RD credential and the state CD certification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What continuing education is required in Indiana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Indiana requires 30 hours of continuing education during each two-year licensure period for active renewal. Continuing education is not required for inactive renewal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Indiana have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Indiana. To work in Indiana, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Indiana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Indiana while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.in.gov/pla/professions/dietitians/"
+  }
+}

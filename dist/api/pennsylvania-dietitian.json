@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/pennsylvania-dietitian",
+  "identifier": "pennsylvania-dietitian",
+  "name": "Pennsylvania Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Pennsylvania - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/pennsylvania-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Pennsylvania State Board of Nursing",
+    "parentOrganization": "Pennsylvania Department of State",
+    "url": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Nursing",
+    "telephone": "(717) 783-1400",
+    "faxNumber": "(717) 783-0822",
+    "email": "st-medicine@pa.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "One Penn Center<br>2601 N. 3rd Street<br>Harrisburg, PA 17110",
+      "description": "State Board of Medicine\nP.O. Box 2649\nHarrisburg, PA 17105-2649"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Pennsylvania"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian-Nutritionist (LDN)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$95",
+      "price": 95.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$71",
+      "price": 71.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 3 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Biennial (Every 2 years)",
+  "requiredDocuments": [
+    {
+      "name": "Official College Transcripts",
+      "description": "Must be sent directly from your degree-granting university to the State Board of Nursing."
+    },
+    {
+      "name": "Examination Verification",
+      "description": "Verification of a passing score on the CDR or BCNS exam, sent directly from the testing agency."
+    },
+    {
+      "name": "Child Abuse CE Certificate",
+      "description": "A certificate proving completion of the mandatory 3-hour Pennsylvania child abuse recognition and reporting course."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / PA State Police",
+    "fee": "$22.60",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/pennsylvania"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to get an LDN license in Pennsylvania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application fee for a Licensed Dietitian-Nutritionist in Pennsylvania is $95. After issuance, it costs $71 to renew the license biennially."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Pennsylvania board issues the dietitian license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlike many states with dedicated dietetics boards, Pennsylvania regulates Licensed Dietitian-Nutritionists under the State Board of Nursing within the broader Department of State."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for Pennsylvania dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To renew biennially, you must complete 30 hours of continuing professional education. Of those 30 hours, 2 hours must strictly be a Board-approved course in child abuse recognition and reporting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Pennsylvania have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Pennsylvania. To work in Pennsylvania, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Pennsylvania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 8 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Pennsylvania while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.dos.pa.gov/ProfessionalLicensing/BoardsCommissions/Nursing"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-york-cna",
+  "identifier": "new-york-cna",
+  "name": "New York Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to New York - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-york-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "New York State Dept of Health",
+    "parentOrganization": "State Health Department",
+    "url": "https://www.health.ny.gov/",
+    "telephone": "800-829-6105",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Prometric, NY Nurse Aide Program, 7941 Corporate Dr., Nottingham, MD 21090"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New York"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "No fee (requires documented work activity)"
+    }
+  ],
+  "processingTime": "1 to 2 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (based on documented work activity)",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who administers the New York CNA exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The NYS Nurse Aide exam is administered by Prometric. Register at prometric.com/nurseaide/ny."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify a New York CNA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Prometric NY Nurse Aide Registry portal or call the 24/7 IVR line at 1-800-918-8818."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I transfer my CNA to New York?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact Prometric at the NY Nurse Aide Portal to apply for reciprocity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does New York CNA endorsement take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 weeks. Contact the registry for current timelines."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "https://www.health.ny.gov/"
+  }
+}

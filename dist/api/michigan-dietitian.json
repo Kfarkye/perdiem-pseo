@@ -1,0 +1,134 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/michigan-dietitian",
+  "identifier": "michigan-dietitian",
+  "name": "Michigan Dietitian Nutritionist License",
+  "description": "Already licensed as a dietitian nutritionist? Here's whether your license transfers to Michigan - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/michigan-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Dietetics and Nutrition",
+    "parentOrganization": "Michigan Department of Licensing and Regulatory Affairs (LARA)",
+    "url": "https://www.michigan.gov/lara/bureau-list/bpl",
+    "telephone": "517-241-0199",
+    "faxNumber": "(517) 241-2760",
+    "email": "BPLHelp@michigan.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "611 W. Ottawa St.<br>Lansing, MI 48909",
+      "description": "Michigan Department of Licensing and Regulatory Affairs, Bureau of Professional Licensing, P.O. Box 30670, Lansing, MI 48909-8170"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Michigan"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian Nutritionist",
+  "additionalType": "Licensed Dietitian Nutritionist (LDN) — Application Process Pending",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$55",
+      "price": 55.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "3 to 4 Weeks",
+  "licenseDuration": "1 Year (Estimated)",
+  "renewalCycle": "Annual (Estimated based on fee schedule)",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Card",
+      "description": "Proof of active registration with the Commission on Dietetic Registration (RD/RDN)."
+    },
+    {
+      "name": "LARA Application (Pending)",
+      "description": "Application form will be available through the LARA online licensing portal."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "$55",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Michigan currently accepting dietitian license applications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet. Although Public Act 39 of 2024 reinstated licensure and the Board approved administrative rules in October 2025, applications are expected to open approximately 18 months after the rules are formally promulgated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much will a Michigan dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The established fees are a $75 application processing fee and a $55 annual license fee, for a total initial cost of $130."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I practice in Michigan without a state license right now?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Until the application process opens and the law is fully enforced, practicing with a CDR credential in Michigan remains the standard. Most employers require the RD/RDN credential."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Michigan have reciprocity for dietitian nutritionists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Michigan is currently a CDR State. There is no separate state endorsement transfer pathway right now; maintain an active CDR credential to practice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian nutritionist license to Michigan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is currently a CDR State, so there is no state transfer timeline. You can usually start once your CDR credential and employer onboarding are complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Michigan while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no active state endorsement application to wait on right now. Start dates are typically driven by employer credentialing and onboarding requirements."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.michigan.gov/lara/bureau-list/bpl"
+  }
+}

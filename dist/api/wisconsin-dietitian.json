@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/wisconsin-dietitian",
+  "identifier": "wisconsin-dietitian",
+  "name": "Wisconsin Dietitian Certification",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Wisconsin - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/wisconsin-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Dietitians Affiliated Credentialing Board",
+    "parentOrganization": "Wisconsin Department of Safety and Professional Services (DSPS)",
+    "url": "https://dsps.wi.gov/pages/Professions/Dietitian/Default.aspx",
+    "telephone": "(608) 266-2112",
+    "faxNumber": "",
+    "email": "dsps@wisconsin.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4822 Madison Yards Way<br>Madison, WI 53705",
+      "description": "Wisconsin Department of Safety and Professional Services\nP.O. Box 8935\nMadison, WI 53708-8935"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Wisconsin"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Certified Dietitian (CD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$60",
+      "price": 60.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$60",
+      "price": 60.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "6 to 9 Weeks",
+  "licenseDuration": "2 Years (expires Oct 31, even years)",
+  "renewalCycle": "Every 2 years (by Oct 31, even years)",
+  "requiredDocuments": [
+    {
+      "name": "Official College Transcripts",
+      "description": "From a regionally accredited institution, showing degree in an approved field."
+    },
+    {
+      "name": "CDR Registration Verification or Exam Results",
+      "description": "Proof of passing the CDR registration examination or current CDR credential."
+    },
+    {
+      "name": "Supervised Practice Documentation",
+      "description": "Verification of 900+ hours, including breakdown of clinical (300 hrs), food service (120 hrs), and community nutrition (120 hrs) components."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Wisconsin dietitian certification cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial credential fee is $60. Renewal is also $60, due by October 31 of even-numbered years. Late renewal after five years incurs an additional $25 fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Wisconsin's supervised practice hour requirements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wisconsin requires a minimum of 900 hours of supervised dietetics practice, including at least 300 hours in clinical dietetics, 120 hours in food service administration, and 120 hours in community nutrition — all under approved supervision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Wisconsin transitioning to licensure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. There are active legislative discussions about transitioning from 'certification' to 'licensure,' which would change the credential to Licensed Dietitian Nutritionist (LDN) and potentially update fees. Monitor the DSPS website for updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wisconsin have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wisconsin has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Wisconsin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Wisconsin while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://dsps.wi.gov/pages/Professions/Dietitian/Default.aspx"
+  }
+}

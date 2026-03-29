@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/montana-pharm",
+  "identifier": "montana-pharm",
+  "name": "Montana Pharmacy Technician License",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Montana - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/montana-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Montana Board of Pharmacy",
+    "parentOrganization": "Department of Labor & Industry",
+    "url": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician",
+    "telephone": "(406) 444-6880",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "dlibsdpha@mt.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "301 South Park\nPO Box 200513\nHelena MT 59620-0513"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Montana"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$35",
+      "price": 35.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$30",
+      "price": 30.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "1 Year",
+  "renewalCycle": "Annual renewal window May 2 to June 30",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Montana pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Montana Board of Pharmacy lists a $35 application fee for a certified pharmacy technician. The active renewal fee is $30."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Montana have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in Montana. To work in Montana, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to Montana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Montana Board of Pharmacy does not publish a public pharmacy technician processing timeline on its licensing page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Montana while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the Montana Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Montana."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://boards.bsd.dli.mt.gov/pharmacy/license-information/pharmacy-technician"
+  }
+}

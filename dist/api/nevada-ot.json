@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/nevada-ot",
+  "identifier": "nevada-ot",
+  "name": "Nevada Occupational Therapist License",
+  "description": "Already licensed as an occupational therapist? Here's whether your license transfers to Nevada - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/nevada-ot",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Nevada Board of Occupational Therapy",
+    "parentOrganization": "Department of Health and Human Services",
+    "url": "https://bop.nv.gov/",
+    "telephone": "(775) 688-2559",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "See board website"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Nevada"
+  },
+  "serviceType": "Professional License",
+  "category": "Occupational Therapist",
+  "additionalType": "Occupational Therapist Registered (OTR)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "N/A"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "3 to 5 Business Days",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "NBCOT Score Report",
+      "description": "Official verification of passing the NBCOT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO",
+    "fee": "$37.50",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/nevada"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "OT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Nevada OT license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial application and licensing fee is approximately $200. Check the board website for the latest fee schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is NBCOT certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NBCOT exam is a standard requirement for initial licensure across all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Nevada have reciprocity for occupational therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers occupational therapist practice in Nevada. To work in Nevada, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my occupational therapist license to Nevada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Nevada while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://bop.nv.gov/"
+  }
+}

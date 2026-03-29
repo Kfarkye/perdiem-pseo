@@ -1,0 +1,116 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/ohio-cna",
+  "identifier": "ohio-cna",
+  "name": "Ohio Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Ohio - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/ohio-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Ohio Dept of Health",
+    "parentOrganization": "State Health Department",
+    "url": "https://odh.ohio.gov/",
+    "telephone": "614-752-8778",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "NAR@odh.ohio.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Ohio Department of Health\nNurse Aide Registry\n246 N. High Street\nColumbus, Ohio 43215"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Ohio"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "N/A (Work requirement)"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (Work requirement)",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who administers the Ohio CNA/STNA exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Ohio nurse aide exam is administered by D&S Headmaster. Contact them at (877) 851-2355 or visit hdmaster.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I transfer my CNA to Ohio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Submit Form HEA 6907 (Reciprocity Request) by mail, fax (614-564-2461), or email (NAR@odh.ohio.gov). There is no fee for Ohio CNA reciprocity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Ohio calling it CNA or STNA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ohio is transitioning from 'STNA' (State Tested Nursing Assistant) to 'CNA' terminology as of October 24, 2024. Some forms may still use STNA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify an Ohio CNA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Ohio Nurse Aide Registry Inquiry at nurseaideinquiry.odh.ohio.gov or call (800) 582-5908."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "https://odh.ohio.gov/"
+  }
+}

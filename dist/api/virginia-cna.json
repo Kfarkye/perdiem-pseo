@@ -1,0 +1,102 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/virginia-cna",
+  "identifier": "virginia-cna",
+  "name": "Virginia Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Virginia - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/virginia-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Virginia Board of Nursing",
+    "parentOrganization": "State Health Department",
+    "url": "https://www.dhp.virginia.gov/",
+    "telephone": "(804) 367-4515",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "boninfo@dhp.virginia.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Virginia Board of Nursing\nPerimeter Center\n9960 Mayland Drive, Suite 300\nRichmond, VA 23233-1463"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Virginia"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$20",
+      "price": 20.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who administers the Virginia CNA exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The VA nurse aide exam is administered by Credentia. Register at credentia.com/test-takers/va."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify a Virginia CNA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the DHP License Lookup at dhp.virginiainteractive.org/Lookup/Index or contact VBON at (804) 367-4515 or nurseaide@dhp.virginia.gov."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "https://www.dhp.virginia.gov/"
+  }
+}

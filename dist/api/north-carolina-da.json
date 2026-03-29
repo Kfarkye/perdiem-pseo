@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/north-carolina-da",
+  "identifier": "north-carolina-da",
+  "name": "North Carolina Dental Assistant Registration",
+  "description": "Complete guide to dental assistant requirements in North Carolina — fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/north-carolina-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "North Carolina State Board of Dental Examiners",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://www.ncdentalboard.org/",
+    "telephone": "(919) 678-8223",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "contact@ncdentalboard.org",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "1500 Sunday Drive, Suite 102, Raleigh, NC 27607"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "North Carolina"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Dental Assistant (classification based)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "1 to 2 Weeks",
+  "licenseDuration": "N/A",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": ""
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does North Carolina require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, North Carolina does not require state licensure for general dental assistants. However, expanded functions and radiography may require permits or certifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in North Carolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in North Carolina."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in North Carolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but a radiography permit or certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in North Carolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no state application fee for general dental assistants in North Carolina. However, DANB CDA exam costs $450, and radiography certifications may have additional fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://www.ncdentalboard.org/"
+  }
+}

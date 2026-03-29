@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/west-virginia-dietitian",
+  "identifier": "west-virginia-dietitian",
+  "name": "West Virginia Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to West Virginia - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/west-virginia-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "West Virginia Board of Licensed Dietitians (WVBOLD)",
+    "parentOrganization": "Independent State Board",
+    "url": "https://www.wvbold.com/",
+    "telephone": "(304) 558-1021",
+    "faxNumber": "(304) 558-1025",
+    "email": "WVBDietitians@wv.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "722 Kanawha Blvd E<br>Charleston, WV 25301",
+      "description": "900 Lee Street, East, Suite 1000, Charleston, WV 25301"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "West Virginia"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$69",
+      "price": 69.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$69",
+      "price": 69.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "1 Year",
+  "renewalCycle": "Annual + 20 CE hours every two years",
+  "requiredDocuments": [
+    {
+      "name": "Official Application",
+      "description": "Application form filled out accurately and completely, confirming age and citizenship."
+    },
+    {
+      "name": "CDR Registration Card",
+      "description": "Proof of active registration with the Commission on Dietetic Registration."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Sent directly from the university showing your conferred degree (may be satisfied by CDR card, check with board)."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "$46",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a West Virginia dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial license application fee is $69. A provisional permit application costs $46."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the West Virginia license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "West Virginia dietitian licenses are renewed annually. The renewal fee is $69."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for West Virginia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To maintain licensure, West Virginia requires 20 hours of continuing professional education (CPE) every two years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does West Virginia have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "West Virginia has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to West Virginia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in West Virginia while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.wvbold.com/"
+  }
+}

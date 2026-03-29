@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/alabama-pharm",
+  "identifier": "alabama-pharm",
+  "name": "Alabama Pharmacy Technician Registration",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Alabama - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/alabama-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Alabama Board of Pharmacy",
+    "parentOrganization": "Independent State Board",
+    "url": "https://albop.com/technician-application/",
+    "telephone": "(334) 242-5049",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "tech@albop.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "P.O. Box 241031\nMontgomery, AL 36124-1031"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Alabama"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$40",
+      "price": 40.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "1 Year",
+  "renewalCycle": "Annually",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Alabama pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Alabama have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in Alabama. To work in Alabama, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to Alabama?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Alabama while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-25",
+    "lastVerifiedDate": "2026-03-25",
+    "boardSourceUrl": "https://albop.com/technician-application/"
+  }
+}

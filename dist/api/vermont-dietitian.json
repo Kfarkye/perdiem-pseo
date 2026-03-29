@@ -1,0 +1,134 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/vermont-dietitian",
+  "identifier": "vermont-dietitian",
+  "name": "Vermont Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Vermont - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/vermont-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Dietitians",
+    "parentOrganization": "Vermont Office of Professional Regulation (OPR)",
+    "url": "https://sos.vermont.gov/dietitians/",
+    "telephone": "(802) 828-1500",
+    "faxNumber": "(802) 828-2465",
+    "email": "OPR.Applications@vermont.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "89 Main Street, 3rd Floor<br>Montpelier, VT 05620-3402",
+      "description": "Office of Professional Regulation\n89 Main Street, 3rd Floor\nMontpelier, VT 05620-3402"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Vermont"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Certified Dietitian (CD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years + 30 CE hours",
+  "requiredDocuments": [
+    {
+      "name": "OPR Online Application",
+      "description": "Application submitted electronically with the required fee."
+    },
+    {
+      "name": "CDR Registration Card",
+      "description": "Proof of active registration with the Commission on Dietetic Registration."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Vermont dietitian certification cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial cost is a $100 application fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Vermont certification need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vermont dietitian certifications must be renewed every two years. The renewal fee is $100."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a license required to practice dietetics in Vermont?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vermont uses a certification model, protecting the title 'Certified Dietitian'. While individuals can provide certain nutrition services without certification, only those meeting state standards and obtaining certification can use the CD title."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Vermont have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Vermont. To work in Vermont, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Vermont?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Vermont while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://sos.vermont.gov/dietitians/"
+  }
+}

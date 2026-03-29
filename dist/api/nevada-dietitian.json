@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/nevada-dietitian",
+  "identifier": "nevada-dietitian",
+  "name": "Nevada Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Nevada - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/nevada-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Nevada Division of Public and Behavioral Health — Dietitian Licensing",
+    "parentOrganization": "Department of Health and Human Services",
+    "url": "https://dpbh.nv.gov/",
+    "telephone": "775-684-1033",
+    "faxNumber": "(775) 684-1073",
+    "email": "hfr@health.nv.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4150 Technology Way, Suite 300<br>Carson City, NV 89706",
+      "description": "4150 Technology Way, Suite 300, Carson City, NV 89706"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Nevada"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "Undetermined",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (no state-mandated CE, but CDR requires 75 CPEUs per 5 years)",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Card",
+      "description": "Proof of active registration with the Commission on Dietetic Registration."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Sent directly from the university showing your conferred degree."
+    },
+    {
+      "name": "Fingerprint Background Check",
+      "description": "Verification sent directly from the Nevada Department of Public Safety."
+    },
+    {
+      "name": "Photo ID & Proof of Citizenship",
+      "description": "Valid government-issued photo identification and evidence of lawful presence."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO",
+    "fee": "$37.50",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/nevada"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "$200",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Nevada dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial license application fee is $200, plus a $37.50 fee for the fingerprint background check. The provisional license also costs $200."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Nevada license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nevada dietitian licenses are renewed biennially (every two years). The renewal fee is $200."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for Nevada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nevada currently relies on the Commission on Dietetic Registration (CDR) for continuing education tracking. There are no additional state-mandated CE hours beyond the 75 CPEUs required every five years to maintain active CDR registration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Nevada have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Nevada. To work in Nevada, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Nevada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Nevada while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://dpbh.nv.gov/"
+  }
+}

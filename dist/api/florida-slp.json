@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/florida-slp",
+  "identifier": "florida-slp",
+  "name": "Florida Speech-Language Pathologist License",
+  "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Florida - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/florida-slp",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Speech-Language Pathology and Audiology",
+    "parentOrganization": "Florida Department of Health (DOH)",
+    "url": "https://floridasspeechaudiology.gov/",
+    "telephone": "(850) 245-4235",
+    "faxNumber": "(850) 921-6184",
+    "email": "mailto:MQA.SpeechLanguagePathology@flhealth.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4052 Bald Cypress Way, Tallahassee, FL 32399",
+      "description": "Florida Board of Speech-Language Pathology and Audiology\n4052 Bald Cypress Way, Bin C-06\nTallahassee, FL 32399-3256"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Florida"
+  },
+  "serviceType": "Professional License",
+  "category": "Speech-Language Pathologist",
+  "additionalType": "Licensed Speech-Language Pathologist (SLP)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official graduate transcripts",
+      "description": "Sent directly from the degree-granting institution to the Board office."
+    },
+    {
+      "name": "Praxis exam score report",
+      "description": "Score of 162 or higher on test 5331. Must be dated within three years of application."
+    },
+    {
+      "name": "Supervised employment verification",
+      "description": "Documentation of nine months of supervised professional employment experience."
+    },
+    {
+      "name": "Electronic fingerprinting/background screening",
+      "description": "Required as of July 1, 2025 (HB 975). Both initial applicants and renewals must comply."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Florida SLP license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial licensure cost is approximately $180, which includes a $100 nonrefundable application fee and an $80 initial license fee. Biennial renewal is $80 if renewed before expiration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the new fingerprinting requirements for Florida SLPs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Effective July 1, 2025, all healthcare professionals in Florida, including SLPs, must complete electronic fingerprinting and background screening for both initial licensure and renewal. This applies to HB 975 passed during the 2024 legislative session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I practice SLP in Florida with a provisional license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Florida issues a Provisional SLP License for graduates who have not yet passed the Praxis exam. This allows supervised practice for up to one year while you complete remaining licensure requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Florida have reciprocity for speech-language pathologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers speech-language pathologist practice in Florida. To work in Florida, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my speech-language pathologist license to Florida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 8 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Florida while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://floridasspeechaudiology.gov/"
+  }
+}

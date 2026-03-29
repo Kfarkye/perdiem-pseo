@@ -1,0 +1,116 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/alabama-cna",
+  "identifier": "alabama-cna",
+  "name": "Alabama Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Alabama - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/alabama-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Alabama Board of Nursing",
+    "parentOrganization": "State Health Department",
+    "url": "https://www.abn.alabama.gov/",
+    "telephone": "(334) 206-5166 (option 1 for Nurse Aide Registry)",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "nar@adph.state.al.us",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Nurse Aide Registry\nAlabama Department of Public Health\nThe RSA Tower\nP.O. Box 303017\nMontgomery, AL 36130-3017"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Alabama"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$125",
+      "price": 125.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "N/A"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Alabama CNA endorsement cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The endorsement application fee is $125. Additional costs may include background check fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a background check required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, a fingerprint-based background check is required in Alabama."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my CNA certification to Alabama?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 8 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Alabama while waiting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://www.abn.alabama.gov/"
+  }
+}

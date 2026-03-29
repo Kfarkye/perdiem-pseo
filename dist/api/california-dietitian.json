@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/california-dietitian",
+  "identifier": "california-dietitian",
+  "name": "California Dietitian Registration",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to California - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/california-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "No State Licensing Board",
+    "parentOrganization": "Title Protection Only (Business and Professions Code Section 2585)",
+    "url": "N/A",
+    "telephone": "312-899-0040 ext 500",
+    "faxNumber": "Not Applicable",
+    "email": "info@cdrnet.org",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Not Applicable",
+      "description": "120 South Riverside Plaza, Suite 2000, Chicago, IL 60606-6995"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "California"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Registered Dietitian (RD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "1 to 2 Weeks (for exam authorization after application submission)",
+  "licenseDuration": "Not Applicable",
+  "renewalCycle": "No state renewal required",
+  "requiredDocuments": [
+    {
+      "name": "Proof of CDR Registration",
+      "description": "Employers will require proof of your active CDR credential."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": "N/A"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a California dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "California does not charge a state licensing fee because the state does not issue dietitian licenses. You only pay your standard national registration and exam fees directly to the CDR."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for a California Dietitian?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because there is no state board, there are no state-mandated CE hours. You simply follow the national CDR requirement of completing 75 CPEUs every five years to maintain your credential."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does California have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "California is currently a CDR State. There is no separate state endorsement transfer pathway right now; maintain an active CDR credential to practice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is currently a CDR State, so there is no state transfer timeline. You can usually start once your CDR credential and employer onboarding are complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in California while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no active state endorsement application to wait on right now. Start dates are typically driven by employer credentialing and onboarding requirements."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "N/A"
+  }
+}

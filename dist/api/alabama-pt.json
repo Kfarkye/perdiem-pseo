@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/alabama-pt",
+  "identifier": "alabama-pt",
+  "name": "Alabama Physical Therapist License",
+  "description": "Already licensed as a physical therapist? Here's whether your license transfers to Alabama - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/alabama-pt",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Alabama Board of Physical Therapy",
+    "parentOrganization": "Independent State Board",
+    "url": "https://pt.alabama.gov/",
+    "telephone": "(334) 242-5143",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "info@abpt.alabama.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Alabama Board of Physical Therapy, P.O. Box 241361, Montgomery, AL 36124-1361"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Alabama"
+  },
+  "serviceType": "Professional License",
+  "category": "Physical Therapist",
+  "additionalType": "PT, DPT",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$150",
+      "price": 150.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$90",
+      "price": 90.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 8 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (odd-numbered years)",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the NPTE (National Physical Therapy Examination)."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "PT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Alabama physical therapist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For endorsement applicants, the state licensing fee is $150. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NPTE (National Physical Therapy Examination) is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Alabama have reciprocity for physical therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Alabama participates in the PT Compact. If your home state and license qualify for compact privilege, you can typically practice in Alabama without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my physical therapist license to Alabama?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Current board processing time is 4 to 8 Weeks once your file is complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Alabama while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://pt.alabama.gov/"
+  }
+}

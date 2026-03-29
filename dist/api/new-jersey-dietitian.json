@@ -1,0 +1,132 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-jersey-dietitian",
+  "identifier": "new-jersey-dietitian",
+  "name": "New Jersey Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to New Jersey - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-jersey-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "State Board of Dietetics and Nutrition",
+    "parentOrganization": "New Jersey Division of Consumer Affairs",
+    "url": "https://www.njconsumeraffairs.gov/dn/",
+    "telephone": "(973) 504-6200",
+    "faxNumber": "(973) 648-3536",
+    "email": "mailto:askconsumeraffairs@dca.lps.state.nj.us",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "124 Halsey Street, 6th Floor<br>Newark, NJ 07101",
+      "description": "Division of Consumer Affairs\nPO Box 45021\nNewark, NJ 07101"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New Jersey"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian/Nutritionist — Regulations Pending",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "TBD"
+    }
+  ],
+  "processingTime": "6 to 8 Weeks",
+  "licenseDuration": "TBD",
+  "renewalCycle": "TBD (Regulations Pending)",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Card",
+      "description": "Active CDR registration as an RD/RDN will be the primary qualifying credential."
+    },
+    {
+      "name": "Application Form (Pending)",
+      "description": "Application materials will be released by the Board once regulations are finalized."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is New Jersey currently issuing dietitian licenses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Although NJ enacted a licensure law in 2020, the Board of Dietetics and Nutrition is still drafting the implementing regulations. Licenses will be issued once these regulations are officially adopted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When will New Jersey start accepting license applications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No firm date has been announced. The Board is holding public sessions to finalize regulations. Monitor the NJ Division of Consumer Affairs website for updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I practice as a dietitian in New Jersey now?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Until the regulations are fully enacted, practicing with a CDR credential (RD/RDN) in New Jersey remains the standard. Employers generally require active CDR registration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New Jersey have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in New Jersey. To work in New Jersey, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to New Jersey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take TBD (Regulations Pending)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in New Jersey while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.njconsumeraffairs.gov/dn/"
+  }
+}

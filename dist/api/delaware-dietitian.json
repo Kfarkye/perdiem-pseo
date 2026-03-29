@@ -1,0 +1,136 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/delaware-dietitian",
+  "identifier": "delaware-dietitian",
+  "name": "Delaware Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Delaware - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/delaware-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Dietetics/Nutrition",
+    "parentOrganization": "Delaware Division of Professional Regulation",
+    "url": "https://dpr.delaware.gov/boards/dietetics/",
+    "telephone": "(302) 744-4500",
+    "faxNumber": "(302) 739-2711",
+    "email": "customerservice.dpr@delaware.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cannon Building, 861 Silver Lake Blvd, Suite 203<br>Dover, DE 19904",
+      "description": "Cannon Building, 861 Silver Lake Blvd, Suite 203, Dover, DE 19904"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Delaware"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian/Nutritionist (LDN)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$235",
+      "price": 235.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "Varies (Prorated)"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "Up to 2 Years",
+  "renewalCycle": "Every 2 years (expires May 31 of odd years) + 30 CE hours",
+  "requiredDocuments": [
+    {
+      "name": "DELPROS Online Application",
+      "description": "Completed application submitted electronically with the $235 fee."
+    },
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of active registration with the Commission on Dietetic Registration."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Verification of your accredited degree, usually requested directly through DELPROS processing."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Delaware dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial cost is a $235 application processing fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Delaware license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Delaware dietitian licenses expire biennially on May 31 of odd-numbered years. Renewal fees are determined dynamically based on administrative costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Delaware license Nutritionists distinct from Dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Delaware uses the combined title of Licensed Dietitian/Nutritionist. Applicants can qualify via either the Registered Dietitian (CDR) pathway or the Certified Nutrition Specialist (CNS) pathway."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Delaware have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Delaware. To work in Delaware, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Delaware?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 3 to 5 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Delaware while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://dpr.delaware.gov/boards/dietetics/"
+  }
+}

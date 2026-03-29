@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-hampshire-dietitian",
+  "identifier": "new-hampshire-dietitian",
+  "name": "New Hampshire Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to New Hampshire - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-hampshire-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Licensed Dietitians",
+    "parentOrganization": "New Hampshire Office of Professional Licensure and Certification (OPLC)",
+    "url": "https://www.oplc.nh.gov/board-licensed-dietitians",
+    "telephone": "(603) 271-2152",
+    "faxNumber": "(603) 271-6702",
+    "email": "CustomerService@oplc.nh.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 Eagle Square<br>Concord, NH 03301",
+      "description": "Office of Professional Licensure and Certification\n7 Eagle Square\nConcord, NH 03301"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New Hampshire"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$110",
+      "price": 110.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$110",
+      "price": 110.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years + 20 CE hours",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Verification",
+      "description": "A letter verifying RD status sent directly from the Commission on Dietetic Registration to the Board."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Required if RD card was obtained on or after 1/1/2001. Must be sent from the degree-granting institution."
+    },
+    {
+      "name": "Verification of Internship Hours",
+      "description": "Required if RD card was obtained on or after 1/1/2001. Sent directly from the internship supervisor."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a New Hampshire dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial license application fee is $110."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the New Hampshire license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "New Hampshire dietitian licenses must be renewed biennially (every two years). The renewal fee is $110. A $150 reinstatement fee applies to late submissions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for New Hampshire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Licensees must complete 20 hours of approved continuing education within the preceding two years to qualify for license renewal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New Hampshire have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "New Hampshire has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to New Hampshire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in New Hampshire while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.oplc.nh.gov/board-licensed-dietitians"
+  }
+}

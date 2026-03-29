@@ -28,6 +28,20 @@
       "permanent": true
     }
   ],
+  "rewrites": [
+    {
+      "source": "/api/v1/:slug.json",
+      "destination": "/api/:slug.json"
+    },
+    {
+      "source": "/:vertical-pseo/api/:slug.json",
+      "destination": "/api/:slug.json"
+    },
+    {
+      "source": "/:vertical/api/:slug.json",
+      "destination": "/api/:slug.json"
+    }
+  ],
   "headers": [
     {
       "source": "/sitemap.xml",

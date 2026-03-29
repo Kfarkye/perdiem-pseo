@@ -19,7 +19,7 @@
     "keywords": "physical therapist license reciprocity wisconsin, how to transfer physical therapist license to wisconsin, physical therapist compact wisconsin, wisconsin physical therapist endorsement application"
   },
   "board": {
-    "name": "Wisconsin DSPS \u2014 Physical Therapist",
+    "name": "Wisconsin DSPS — Physical Therapist",
     "parent_dept": "Wisconsin Department of Safety and Professional Services (DSPS)",
     "mailing_address": "Department of Safety and Professional Services, P.O. Box 8368, Madison, WI 53708-8368",
     "physical_address": "See board website",
@@ -31,8 +31,8 @@
     "verify_url": "https://dsps.wi.gov/Pages/OnlineServices/LicenseLookup.aspx"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
+    "total_fee": "$135",
+    "fee_breakdown": "$135 endorsement application fee",
     "renewal_fee": "$78",
     "renewal_cycle": "Every 2 years",
     "processing_time": "3 to 4 Weeks",
@@ -87,7 +87,7 @@
   "faqs": [
     {
       "question": "How much does a Wisconsin physical therapist license cost?",
-      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      "answer": "For endorsement applicants, the state licensing fee is $135. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
     },
     {
       "question": "Is national certification required?",
@@ -99,7 +99,7 @@
     },
     {
       "question": "How long does it take to transfer my physical therapist license to Wisconsin?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      "answer": "Current board processing time is 3 to 4 Weeks once your file is complete."
     },
     {
       "question": "Can I start working in Wisconsin while my endorsement application is processing?",
@@ -113,10 +113,10 @@
     "compact_source_url": "https://ptcompact.org/ptc-states/"
   },
   "fees_endorsement": {
-    "app_fee": "$100",
+    "app_fee": "$135",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$135"
   },
   "temp_license": {
     "available": true,

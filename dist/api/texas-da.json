@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/texas-da",
+  "identifier": "texas-da",
+  "name": "Texas Dental Assistant Registration",
+  "description": "Complete guide to dental assistant licensing in Texas — endorsement steps, fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/texas-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Texas State Board of Dental Examiners",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://www.tsbde.texas.gov/",
+    "telephone": "(512) 463-6400",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "applications@tsbde.texas.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Texas State Board of Dental Examiners\n333 Guadalupe Street\nTower 3, Suite 800\nAustin, Texas 78701-3942"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Texas"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Registered Dental Assistant (RDA)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$48",
+      "price": 48.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$36",
+      "price": 36.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 1 year",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Texas require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Texas requires Registered Dental Assistant (RDA) through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in Texas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but a radiography permit or certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "State application fees are $48. Additional costs may include DANB CDA exam ($450), radiography certification, and background check fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://www.tsbde.texas.gov/"
+  }
+}

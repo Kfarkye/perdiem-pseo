@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/california-pharmacist",
+  "identifier": "california-pharmacist",
+  "name": "California Pharmacist License",
+  "description": "Become a pharmacist in California. $250 application fee, NAPLEX and CPJE required. Steps, fees, and board contact info.",
+  "url": "https://www.statelicensingreference.com/california-pharmacist",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "California Board of Pharmacy",
+    "parentOrganization": "Title Protection Only (Business and Professions Code Section 2585)",
+    "url": "https://www.pharmacy.ca.gov",
+    "telephone": "(916) 574-7900",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "1625 N Market Blvd, Suite S200, Sacramento, CA 95834-1929"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "California"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacist",
+  "additionalType": "RPh, PharmD",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$250",
+      "price": 250.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$315",
+      "price": 315.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official transcripts",
+      "description": "Sent directly from your school."
+    },
+    {
+      "name": "Exam score reports",
+      "description": "Official verification of passing the NAPLEX and CPJE."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "California DOJ LiveScan",
+    "fee": "$49.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://oag.ca.gov/fingerprints/locations"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a California pharmacist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The California Board of Pharmacy charges a $250 application fee for new pharmacist applicants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What exams are required for a California pharmacist license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "California requires both the NAPLEX and the CPJE. The CPJE is California's own jurisprudence and practice standards exam. Schedule it early so it does not delay your license."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does California have reciprocity for pharmacists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacist practice in California. To work in California, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to get a pharmacist license in California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Processing typically takes 4 to 6 weeks once all documents and fingerprints have been received by the Board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What usually slows down a California pharmacist application?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Out-of-state fingerprinting can add 2-4 weeks. Missing or incomplete documents, exam timing (especially scheduling the CPJE), and name mismatches across documents are also common causes of delays."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-28",
+    "lastVerifiedDate": "2026-03-28",
+    "boardSourceUrl": "https://www.pharmacy.ca.gov"
+  }
+}

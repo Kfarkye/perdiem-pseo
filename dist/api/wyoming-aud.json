@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/wyoming-aud",
+  "identifier": "wyoming-aud",
+  "name": "Wyoming Audiologist License",
+  "description": "Already licensed as a audiologist? Here's whether your license transfers to Wyoming - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/wyoming-aud",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Speech Pathology and Audiology",
+    "parentOrganization": "Wyoming Mental Health Professions Licensing Board",
+    "url": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology",
+    "telephone": "(307) 777-7613",
+    "faxNumber": "(307) 777-3508",
+    "email": "slpa@wyo.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2001 Capitol Ave., Cheyenne, WY 82002",
+      "description": "Wyoming Board of Speech-Language Pathology and Audiology\nProfessional Licensing Boards\n2020 Carey Avenue, Suite 200\nCheyenne, WY 82002"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Wyoming"
+  },
+  "serviceType": "Professional License",
+  "category": "Audiologist",
+  "additionalType": "AuD, CCC-A",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every year",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the Praxis Exam in Audiology."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Wyoming audiologist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the Praxis Exam in Audiology is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wyoming have reciprocity for audiologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Wyoming participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Wyoming without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my audiologist license to Wyoming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Wyoming while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://mentalhealth.wyo.gov/professions/speech-pathology-and-audiology"
+  }
+}

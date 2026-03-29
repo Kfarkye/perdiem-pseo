@@ -1,0 +1,134 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/wyoming-dietitian",
+  "identifier": "wyoming-dietitian",
+  "name": "Wyoming Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Wyoming - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/wyoming-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Wyoming Dietetics Licensing Board",
+    "parentOrganization": "Wyoming Department of Administration & Information",
+    "url": "https://dietetics.wyo.gov/",
+    "telephone": "(307) 777-7647",
+    "faxNumber": "(307) 777-3508",
+    "email": "dietetics@wyo.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2001 Capitol Ave, Room 104<br>Cheyenne, WY 82002",
+      "description": "Wyoming Board of Dietetics, 122 West 25th Street, Suite 106, Herschler Building, Cheyenne, WY 82002"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Wyoming"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 12 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years + CE hours",
+  "requiredDocuments": [
+    {
+      "name": "Official Application Packet",
+      "description": "Application accurately filled out along with proof of U.S. citizenship or lawful presence."
+    },
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of active registration sent directly from the CDR."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Wyoming dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial license application fee is $200."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Wyoming license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wyoming dietitian licenses expire biennially. The renewal fee is $200."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is licensure required to practice in Wyoming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Wyoming has a Practice Act that legally mandates obtaining a state license to practice dietetics and to use the protected title of Dietitian."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wyoming have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wyoming has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Wyoming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 1 to 2 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Wyoming while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://dietetics.wyo.gov/"
+  }
+}

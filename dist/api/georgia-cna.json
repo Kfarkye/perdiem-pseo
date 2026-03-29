@@ -1,0 +1,102 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/georgia-cna",
+  "identifier": "georgia-cna",
+  "name": "Georgia Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Georgia - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/georgia-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Georgia Board of Nursing",
+    "parentOrganization": "State Health Department",
+    "url": "https://sos.ga.gov/",
+    "telephone": "678-527-3010",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "NURSEAIDE@DCH.GA.GOV",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Georgia Nurse Aide Registry, P.O. Box 105448, Atlanta, GA 30348-5448"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Georgia"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who administers the Georgia CNA exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Georgia nurse aide exam is administered by Credentia. Register at credentia.com/test-takers/ga."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify a Georgia CNA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Georgia CareConnect portal (Alliant Health Solutions) at mmis.georgia.gov/portal_nar/ or search on georgia.gov."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "https://sos.ga.gov/"
+  }
+}

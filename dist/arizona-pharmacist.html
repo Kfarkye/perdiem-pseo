@@ -12,6 +12,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   
   <link rel="canonical" href="https://www.statelicensingreference.com/arizona-pharmacist" />
+  <link rel="alternate" type="application/json" href="/api/arizona-pharmacist.json" title="Machine-readable licensing data" />
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=1200&amp;q=80&amp;auto=format" fetchpriority="high" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -614,6 +615,12 @@
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["#quick-facts", "#faq"]
+        },
+        "additionalProperty": {
+          "@type": "PropertyValue",
+          "name": "machineReadablePayload",
+          "value": "https://www.statelicensingreference.com/api/arizona-pharmacist.json",
+          "description": "Full structured JSON payload for AI agents and API consumers"
         }
       },
       {

@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/florida-pharm",
+  "identifier": "florida-pharm",
+  "name": "Florida Pharmacy Technician Registration",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Florida - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/florida-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Florida Board of Pharmacy",
+    "parentOrganization": "Florida Department of Health, Board of Medicine",
+    "url": "https://floridaspharmacy.gov/registered-pharmacy-technician/",
+    "telephone": "850-245-4292",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "MQA.PharmacyTechnician@flhealthsource.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Department of Health, Board of Pharmacy, 4052 Bald Cypress Way, Bin C04, Tallahassee, FL 32399-3254"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Florida"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$105",
+      "price": 105.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$55",
+      "price": 55.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "FDLE / Cogent Systems",
+    "fee": "$37.25",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.fdle.state.fl.us/Criminal-History-Records/Obtaining-Criminal-History-Records/Submitting-Fingerprints.aspx"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Florida pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Florida Board of Pharmacy lists a total initial registered pharmacy technician fee of $105: $50 application, $50 licensure, and a $5 unlicensed activity fee. The biennial renewal fee is $55."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Florida have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in Florida. To work in Florida, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to Florida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Florida Board of Pharmacy says to allow 30 days for initial review of a registered pharmacy technician application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Florida while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the Florida Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Florida."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://floridaspharmacy.gov/registered-pharmacy-technician/"
+  }
+}

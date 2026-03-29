@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/maryland-slp",
+  "identifier": "maryland-slp",
+  "name": "Maryland Speech-Language Pathologist License",
+  "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Maryland - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/maryland-slp",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Examiners for Audiologists, Hearing Aid Dispensers, Speech-Language Pathologists, and Music Therapists",
+    "parentOrganization": "Maryland Department of Health",
+    "url": "https://health.maryland.gov/boardsahs/",
+    "telephone": "410-764-4725",
+    "faxNumber": "(410) 358-1610",
+    "email": "maryland.bslpa@maryland.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4201 Patterson Ave., Baltimore, MD 21215",
+      "description": "Maryland Board of Audiologists, Hearing Aid Dispensers, and Speech-Language Pathologists, 4201 Patterson Avenue, Baltimore, Maryland 21215-2299"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Maryland"
+  },
+  "serviceType": "Professional License",
+  "category": "Speech-Language Pathologist",
+  "additionalType": "Licensed Speech-Language Pathologist (SLP)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$150",
+      "price": 150.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official graduate transcripts",
+      "description": "From a CAA-accredited program."
+    },
+    {
+      "name": "Praxis exam score report",
+      "description": "Score of 162 or higher."
+    },
+    {
+      "name": "Clinical Fellowship verification",
+      "description": "CF completion documentation."
+    },
+    {
+      "name": "Background check",
+      "description": "Criminal background check."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Maryland SLP license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "$200 initial. $200 biennial renewal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Maryland part of the ASLP Interstate Compact?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Maryland allow telepractice for SLPs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Maryland have reciprocity for speech-language pathologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Maryland participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Maryland without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my speech-language pathologist license to Maryland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Maryland while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://health.maryland.gov/boardsahs/"
+  }
+}

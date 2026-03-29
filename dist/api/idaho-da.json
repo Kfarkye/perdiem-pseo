@@ -1,0 +1,120 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/idaho-da",
+  "identifier": "idaho-da",
+  "name": "Idaho Dental Assistant Registration",
+  "description": "Complete guide to dental assistant requirements in Idaho — fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/idaho-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Idaho State Board of Dentistry",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://isbd.idaho.gov/",
+    "telephone": "(208) 334-2369",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Idaho State Board of Dentistry\n11341 W. Chinden Blvd.\nBuilding #4\nBoise, ID 83714"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Idaho"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Dental Assistant (no state license required)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "N/A - No State Licensure Required"
+    }
+  ],
+  "processingTime": "N/A - No State Licensure Required",
+  "licenseDuration": "N/A",
+  "renewalCycle": "N/A - No State Licensure Required",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": ""
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Idaho require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, Idaho does not require state licensure for general dental assistants. However, expanded functions and radiography may require permits or certifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in Idaho?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in Idaho."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in Idaho?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but a radiography permit or certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in Idaho?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no state application fee for general dental assistants in Idaho. However, DANB CDA exam costs $450, and radiography certifications may have additional fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://isbd.idaho.gov/"
+  }
+}

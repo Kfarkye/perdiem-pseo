@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/illinois-pharm",
+  "identifier": "illinois-pharm",
+  "name": "Illinois Pharmacy Technician License",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Illinois - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/illinois-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Illinois Board of Pharmacy",
+    "parentOrganization": "Illinois Department of Financial and Professional Regulation (IDFPR)",
+    "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf",
+    "telephone": "1-888-473-4858",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Illinois Department of Financial and Professional Regulation, 320 West Washington Street, Springfield, Illinois 62786"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Illinois"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$40",
+      "price": 40.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "See board"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "Valid through March 31",
+  "renewalCycle": "Annual, expires March 31",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / Illinois State Police",
+    "fee": "$60.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/illinois"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Illinois pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Illinois lists a $40 online application fee for pharmacy technician registration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Illinois have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in Illinois. To work in Illinois, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to Illinois?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Illinois does not publish a public pharmacy technician processing timeline in the application checklist. Check the IDFPR portal for status updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Illinois while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the Illinois Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Illinois."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/online/pharmacy-technician.pdf"
+  }
+}

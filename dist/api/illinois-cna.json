@@ -1,0 +1,110 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/illinois-cna",
+  "identifier": "illinois-cna",
+  "name": "Illinois Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Illinois - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/illinois-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Illinois Dept of Public Health",
+    "parentOrganization": "State Health Department",
+    "url": "http://nursing.illinois.gov/",
+    "telephone": "217-785-5133",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "dph.hcwr@illinois.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Illinois Department of Public Health, Health Care Worker Registry, 525 West Jefferson Street, Springfield, Illinois 62761"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Illinois"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$25",
+      "price": 25.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks (for reciprocity applications)",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (based on employment and in-service education)",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who administers the Illinois CNA exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Illinois nurse aide exam is administered by SIU-C (Southern Illinois University Carbondale) via nurseaidetesting.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I transfer my CNA to Illinois?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Submit the Out-of-State CNA Application on nurseaidetesting.com with a $25 money order payable to SIU-C. A written competency retest is usually required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify an Illinois CNA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Search the Illinois Health Care Worker Registry (HCWR) at hcwr.illinois.gov or call (844) 789-3676 (M-F 8:30am-5pm CT)."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "http://nursing.illinois.gov/"
+  }
+}

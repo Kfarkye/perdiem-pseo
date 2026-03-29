@@ -1,0 +1,146 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/tennessee-dietitian",
+  "identifier": "tennessee-dietitian",
+  "name": "Tennessee Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Tennessee - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/tennessee-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Dietitian/Nutritionist Examiners",
+    "parentOrganization": "Tennessee Department of Health",
+    "url": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html",
+    "telephone": "(615) 532-5166",
+    "faxNumber": "",
+    "email": "Ask.Health@tn.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "665 Mainstream Drive<br>Nashville, TN 37243",
+      "description": "Tennessee Department of Health\nHealth Related Boards\n665 Mainstream Drive\nNashville, TN 37243"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Tennessee"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian/Nutritionist (LDN)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$140",
+      "price": 140.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$90",
+      "price": 90.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (by birth month) — no CE required for state renewal",
+  "requiredDocuments": [
+    {
+      "name": "Official College Transcripts",
+      "description": "Sent directly from the degree-granting institution, showing degree and date awarded."
+    },
+    {
+      "name": "CDR Registration Card",
+      "description": "Copy of your current, active Commission on Dietetic Registration credential."
+    },
+    {
+      "name": "Supervised Practice Verification",
+      "description": "Documentation verifying completion of ACEND-accredited supervised practice hours."
+    },
+    {
+      "name": "Passport-Style Photograph",
+      "description": "Recent photo meeting standard passport specifications."
+    },
+    {
+      "name": "Criminal Background Check Authorization",
+      "description": "Mandatory background screening as part of the application process."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Tennessee dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application fee is $140, which includes the state regulatory fee. The CDR exam costs an additional $200. The biennial renewal fee is $90, due by the last day of your birth month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Tennessee require continuing education for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tennessee does not mandate state-level continuing education for license renewal. However, to maintain your CDR registration — which is required for state licensure — you must complete 75 continuing professional education units every five years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I practice in Tennessee while waiting for my license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tennessee offers a temporary permit for $5 for applicants who have CDR authorization to test. This permit allows practice while you await your exam results, provided your application is complete and on file with the Board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Tennessee have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tennessee has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Tennessee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Tennessee while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.tn.gov/health/health-program-areas/health-professional-boards/dietitian-board.html"
+  }
+}

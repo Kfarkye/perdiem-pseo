@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/oregon-dietitian",
+  "identifier": "oregon-dietitian",
+  "name": "Oregon Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Oregon - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/oregon-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Licensed Dietitians",
+    "parentOrganization": "Oregon Health Licensing Office (HLO)",
+    "url": "https://www.oregon.gov/oha/ph/hlo/pages/board-licensed-dietitians.aspx",
+    "telephone": "503-378-8667",
+    "faxNumber": "(503) 585-9114",
+    "email": "hlo.info@hlo.oregon.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1430 Tansy Boegel Rd. SE, Suite 220<br>Salem, OR 97302",
+      "description": "Oregon Health Licensing Office, PO Box 14470, Salem, OR 97309-5077"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Oregon"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$60",
+      "price": 60.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "1 Year",
+  "renewalCycle": "Annual + 15 CE hours (plus 1 hr cultural competency every other year)",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of active registration with the Commission on Dietetic Registration."
+    },
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from the university showing your conferred degree."
+    },
+    {
+      "name": "Background Check Authorization",
+      "description": "Fingerprint cards and authorization for the HLO background check."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does an Oregon dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial cost is $110, which includes a $50 application fee and a $60 license fee. There are additional fees for the fingerprint-based background check."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Oregon license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Oregon dietitian license is renewed annually. The renewal fee is $60."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for Oregon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oregon requires 15 continuing education (CE) hours every year. In addition, beginning with your second renewal, 1 hour of cultural competency CE is required every other year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Oregon have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Oregon. To work in Oregon, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Oregon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 3 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Oregon while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.oregon.gov/oha/ph/hlo/pages/board-licensed-dietitians.aspx"
+  }
+}

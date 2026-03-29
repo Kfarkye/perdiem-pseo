@@ -19,7 +19,7 @@
     "keywords": "physical therapist license reciprocity new york, how to transfer physical therapist license to new york, physical therapist compact new york, new york physical therapist endorsement application"
   },
   "board": {
-    "name": "New York Office of the Professions \u2014 PT",
+    "name": "New York Office of the Professions — PT",
     "parent_dept": "NYSED Office of the Professions",
     "mailing_address": "New York State Education Department\nOffice of the Professions\nPhysical Therapy Unit\n89 Washington Avenue\nAlbany, NY 12234-1000",
     "physical_address": "See board website",
@@ -31,8 +31,8 @@
     "verify_url": "https://www.op.nysed.gov/verification-search"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
+    "total_fee": "$294",
+    "fee_breakdown": "$294 endorsement application fee",
     "renewal_fee": "$294",
     "renewal_cycle": "Every 3 years",
     "processing_time": "6 to 8 Weeks",
@@ -87,7 +87,7 @@
   "faqs": [
     {
       "question": "How much does a New York physical therapist license cost?",
-      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      "answer": "For endorsement applicants, the state licensing fee is $294. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
     },
     {
       "question": "Is national certification required?",
@@ -99,7 +99,7 @@
     },
     {
       "question": "How long does it take to transfer my physical therapist license to New York?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks."
+      "answer": "Current board processing time is 6 to 8 Weeks once your file is complete."
     },
     {
       "question": "Can I start working in New York while my endorsement application is processing?",
@@ -113,10 +113,10 @@
     "compact_source_url": "https://ptcompact.org/ptc-states/"
   },
   "fees_endorsement": {
-    "app_fee": "$100",
+    "app_fee": "$294",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$294"
   },
   "temp_license": {
     "available": true,

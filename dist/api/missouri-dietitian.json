@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/missouri-dietitian",
+  "identifier": "missouri-dietitian",
+  "name": "Missouri Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Missouri - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/missouri-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "State Committee of Dietitians",
+    "parentOrganization": "Missouri Division of Professional Registration",
+    "url": "https://pr.mo.gov/dietitians.asp",
+    "telephone": "(573) 751-0098",
+    "faxNumber": "",
+    "email": "healingarts@pr.mo.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3605 Missouri Blvd<br>Jefferson City, MO 65109",
+      "description": "Missouri Board of Healing Arts\n3605 Missouri Boulevard\nP.O. Box 4\nJefferson City, MO 65102"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Missouri"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$20",
+      "price": 20.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (by April 1, even years) — no CE required",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Card",
+      "description": "Copy of your current, active Commission on Dietetic Registration (RD or RDN) credential."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Sent from the degree-granting institution showing completion of an ACEND-accredited program."
+    },
+    {
+      "name": "Supervised Practice Verification",
+      "description": "Documentation of completed ACEND-accredited dietetic internship hours."
+    },
+    {
+      "name": "Background Check Authorization",
+      "description": "Completed authorization for the state background screening process."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Missouri dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application fee is $50. The biennial renewal fee is only $20, due by April 1 of even-numbered years. A $50 late fee applies if renewal is submitted after the 29-day grace period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Missouri require continuing education for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The State Committee of Dietitians does not mandate continuing education for state license renewal. However, you must maintain your national CDR registration, which requires 75 CPE units every five years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum age to apply for a Missouri dietitian license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Missouri requires applicants to be at least 21 years old to be eligible for a Licensed Dietitian credential."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Missouri have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Missouri. To work in Missouri, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Missouri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Missouri while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://pr.mo.gov/dietitians.asp"
+  }
+}

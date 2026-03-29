@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/west-virginia-aud",
+  "identifier": "west-virginia-aud",
+  "name": "West Virginia Audiologist License",
+  "description": "Already licensed as a audiologist? Here's whether your license transfers to West Virginia - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/west-virginia-aud",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Examiners for Speech-Language Pathology and Audiology",
+    "parentOrganization": "West Virginia Board of Examiners for SLP and Audiology",
+    "url": "https://wvbeslpa.com/",
+    "telephone": "(304) 558-3069",
+    "faxNumber": "(304) 558-3946",
+    "email": "wvbeslpa@wv.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3507 MacCorkle Ave. SE, Charleston, WV 25304",
+      "description": "WV Board of Examiners for Speech-Language Pathology and Audiology\n950 Kanawha Blvd., E., Suite 300\nCharleston, WV 25301"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "West Virginia"
+  },
+  "serviceType": "Professional License",
+  "category": "Audiologist",
+  "additionalType": "AuD, CCC-A",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the Praxis Exam in Audiology."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a West Virginia audiologist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the Praxis Exam in Audiology is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does West Virginia have reciprocity for audiologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. West Virginia participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in West Virginia without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my audiologist license to West Virginia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in West Virginia while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://wvbeslpa.com/"
+  }
+}

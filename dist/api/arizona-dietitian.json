@@ -1,0 +1,132 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/arizona-dietitian",
+  "identifier": "arizona-dietitian",
+  "name": "Arizona Dietitian Registration",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Arizona - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/arizona-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "No Dedicated State Licensing Board",
+    "parentOrganization": "Arizona does not mandate state dietitian licensure. The national CDR credential is the recognized standard.",
+    "url": "https://www.cdrnet.org/",
+    "telephone": "N/A",
+    "faxNumber": "",
+    "email": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "N/A",
+      "description": "N/A"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Arizona"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Registered Dietitian (RD/RDN) — No State License Required",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$0 (State Fee)"
+    }
+  ],
+  "processingTime": "N/A - No State Licensure",
+  "licenseDuration": "N/A",
+  "renewalCycle": "No state renewal. CDR registration renews every 5 years with 75 CPE hours.",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Card",
+      "description": "Your active CDR card serves as your primary credential in Arizona."
+    },
+    {
+      "name": "ACEND Verification Statement",
+      "description": "Proof of completion of your accredited degree program and supervised practice."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": "N/A"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Arizona require a state dietitian license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Arizona does not mandate state-specific licensure for dietitians. Your national CDR registration as a Registered Dietitian (RD) or Registered Dietitian Nutritionist (RDN) is the recognized credential."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it cost to practice as a dietitian in Arizona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no state application or renewal fee. The CDR national exam costs $200, and the annual CDR maintenance fee is $80 (increasing to $90 in 2027)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there pending legislation to require state licensure in Arizona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As of 2026, Arizona does not have an active, enacted state licensure law for dietitians. Legislative efforts (such as H.B. 2820 from 2021) have been introduced in the past."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Arizona have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Arizona is currently a CDR State. There is no separate state endorsement transfer pathway right now; maintain an active CDR credential to practice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Arizona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is currently a CDR State, so there is no state transfer timeline. You can usually start once your CDR credential and employer onboarding are complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Arizona while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no active state endorsement application to wait on right now. Start dates are typically driven by employer credentialing and onboarding requirements."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.cdrnet.org/"
+  }
+}

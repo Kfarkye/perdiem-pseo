@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/texas-aud",
+  "identifier": "texas-aud",
+  "name": "Texas Audiologist License",
+  "description": "Already licensed as a audiologist? Here's whether your license transfers to Texas - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/texas-aud",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Speech-Language Pathologists and Audiologists Program",
+    "parentOrganization": "Texas Department of Licensing and Regulation (TDLR)",
+    "url": "https://www.tdlr.texas.gov/slpa/",
+    "telephone": "512-463-6599",
+    "faxNumber": "(512) 463-9468",
+    "email": "mailto:cs.speech@tdlr.texas.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "920 Colorado St.<br>Austin, TX 78701",
+      "description": "Texas Department of Licensing and Regulation, P.O. Box 12157, Austin, TX 78711"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Texas"
+  },
+  "serviceType": "Professional License",
+  "category": "Audiologist",
+  "additionalType": "AuD, CCC-A",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$120",
+      "price": 120.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the Praxis Exam in Audiology."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (FAST Pass via DPS)",
+    "fee": "$38.25",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/texas"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Texas audiologist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the Praxis Exam in Audiology is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Texas have reciprocity for audiologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Texas participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Texas without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my audiologist license to Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Texas while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.tdlr.texas.gov/slpa/"
+  }
+}

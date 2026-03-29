@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/wyoming-pt",
+  "identifier": "wyoming-pt",
+  "name": "Wyoming Physical Therapist License",
+  "description": "Already licensed as a physical therapist? Here's whether your license transfers to Wyoming - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/wyoming-pt",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Wyoming Board of Physical Therapy",
+    "parentOrganization": "Wyoming Department of Administration & Information",
+    "url": "https://physicaltherapy.wyo.gov/",
+    "telephone": "(307) 777-6529",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "physical.therapy@wyo.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "2001 Capitol Ave, Suite 105, Cheyenne WY 82002"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Wyoming"
+  },
+  "serviceType": "Professional License",
+  "category": "Physical Therapist",
+  "additionalType": "PT, DPT",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$150",
+      "price": 150.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the NPTE (National Physical Therapy Examination)."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "PT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Wyoming physical therapist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For endorsement applicants, the state licensing fee is $200. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NPTE (National Physical Therapy Examination) is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Wyoming have reciprocity for physical therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Wyoming participates in the PT Compact. If your home state and license qualify for compact privilege, you can typically practice in Wyoming without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my physical therapist license to Wyoming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Current board processing time is 4 to 6 Weeks once your file is complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Wyoming while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://physicaltherapy.wyo.gov/"
+  }
+}

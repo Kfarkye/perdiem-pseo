@@ -1,0 +1,136 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/hawaii-dietitian",
+  "identifier": "hawaii-dietitian",
+  "name": "Hawaii Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Hawaii - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/hawaii-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "State Licensing Section - Dietitians",
+    "parentOrganization": "Hawaii Department of Health (DOH) Office of Health Care Assurance",
+    "url": "https://health.hawaii.gov/ohca/",
+    "telephone": "(808) 586-3000",
+    "faxNumber": "(808) 692-7447",
+    "email": "pvl@dcca.hawaii.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "601 Kamokila Blvd., Room 361<br>Kapolei, HI 96707",
+      "description": "DCCA, PVL Licensing Branch\nP. O. Box 3469\nHonolulu, HI 96801"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Hawaii"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$225",
+      "price": 225.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "Varies (Contact DOH)"
+    }
+  ],
+  "processingTime": "N/A - No state license is required.",
+  "licenseDuration": "3 Years",
+  "renewalCycle": "Every 3 years (Must maintain active CDR)",
+  "requiredDocuments": [
+    {
+      "name": "Paper Application",
+      "description": "Obtained by calling the DOH and completed accurately."
+    },
+    {
+      "name": "CDR Registration Card",
+      "description": "A copy of your active Commission on Dietetic Registration card."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Proof of the required accredited degree (foreign degrees require validation)."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Hawaii dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial non-refundable fee for a Hawaii Dietitian License is $225."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Hawaii license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hawaii dietitian licenses are valid for three years from the date of issue and must be renewed triennially. You should contact the DOH to confirm current renewal fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I apply for a Hawaii dietitian license online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You must contact the State Licensing Section directly at (808) 692-7400 to request the application packet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Hawaii have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Hawaii. To work in Hawaii, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Hawaii?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Hawaii while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://health.hawaii.gov/ohca/"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-hampshire-pt",
+  "identifier": "new-hampshire-pt",
+  "name": "New Hampshire Physical Therapist License",
+  "description": "Already licensed as a physical therapist? Here's whether your license transfers to New Hampshire - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-hampshire-pt",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "New Hampshire OPLC — Physical Therapy",
+    "parentOrganization": "New Hampshire Office of Professional Licensure and Certification (OPLC)",
+    "url": "https://www.oplc.nh.gov/physical-therapy",
+    "telephone": "(603) 271-2152",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "customerservice@oplc.nh.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "OPLC, 7 Eagle Square, Concord, NH 03301"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New Hampshire"
+  },
+  "serviceType": "Professional License",
+  "category": "Physical Therapist",
+  "additionalType": "PT, DPT",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the NPTE (National Physical Therapy Examination)."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "PT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a New Hampshire physical therapist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For endorsement applicants, the state licensing fee is $100. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NPTE (National Physical Therapy Examination) is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New Hampshire have reciprocity for physical therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. New Hampshire participates in the PT Compact. If your home state and license qualify for compact privilege, you can typically practice in New Hampshire without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my physical therapist license to New Hampshire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Current board processing time is 2 to 4 Weeks once your file is complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in New Hampshire while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.oplc.nh.gov/physical-therapy"
+  }
+}

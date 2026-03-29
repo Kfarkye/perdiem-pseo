@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/louisiana-dietitian",
+  "identifier": "louisiana-dietitian",
+  "name": "Louisiana Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Louisiana - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/louisiana-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Louisiana Board of Examiners in Dietetics and Nutrition (LBEDN)",
+    "parentOrganization": "Independent State Board",
+    "url": "https://www.lbedn.org/",
+    "telephone": "(225) 298-1097",
+    "faxNumber": "",
+    "email": "lbedn@lbedn.louisiana.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "18435 Highland Road, Suite B<br>Baton Rouge, LA 70809",
+      "description": "600 North Street, Suite 210, Baton Rouge, LA 70802"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Louisiana"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian-Nutritionist (LDN)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$83",
+      "price": 83.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 8 Weeks",
+  "licenseDuration": "1 Year (expires June 30)",
+  "renewalCycle": "Annual (by June 30) + 15 CE hours per year",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of current, active registration with the Commission on Dietetic Registration."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "From an ACEND-accredited program showing degree completion."
+    },
+    {
+      "name": "Supervised Practice Verification",
+      "description": "Documentation of 1,200+ hours of ACEND-accredited supervised practice."
+    },
+    {
+      "name": "Fingerprint Background Check",
+      "description": "Fingerprint-based background check as mandated by 2025 legislation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Louisiana dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application fee is approximately $100 (set by LBEDN; contact the Board for the current exact amount). Annual renewal submitted by June 30 is $83. Late renewal (July 1 – August 31) increases to $163. Fingerprint background check fees are additional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What continuing education does Louisiana require?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Louisiana requires a minimum of 15 continuing education hours annually in dietetics and nutrition, submitted with your renewal. Alternatively, you may provide a copy of your current CDR identification card to satisfy the CE requirement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Louisiana enforce title protection for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Louisiana law mandates that only individuals with a valid LDN license may use the titles 'dietitian,' 'dietician,' or 'nutritionist' — or practice dietetics/nutrition care services. Exemptions exist for certain licensed healthcare professionals performing nutrition work incidental to their scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Louisiana have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Louisiana. To work in Louisiana, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Louisiana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Louisiana while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.lbedn.org/"
+  }
+}

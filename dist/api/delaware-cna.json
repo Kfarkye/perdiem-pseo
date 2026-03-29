@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/delaware-cna",
+  "identifier": "delaware-cna",
+  "name": "Delaware Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Delaware - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/delaware-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Delaware DHSS",
+    "parentOrganization": "State Health Department",
+    "url": "https://dhss.delaware.gov/dhss/dhcq/cnareg.html",
+    "telephone": "(302) 744-4500",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "customerservice.dpr@delaware.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Cannon Building, 861 Silver Lake Blvd., Suite 203, Dover, DE 19904"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Delaware"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$30",
+      "price": 30.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$40",
+      "price": 40.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (on September 30th of odd years)",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Delaware CNA endorsement cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The endorsement application fee is $30. Additional costs may include background check fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a background check required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, a fingerprint-based background check is required in Delaware."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my CNA certification to Delaware?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Delaware while waiting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://dhss.delaware.gov/dhss/dhcq/cnareg.html"
+  }
+}

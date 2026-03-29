@@ -1,0 +1,146 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/south-carolina-dietitian",
+  "identifier": "south-carolina-dietitian",
+  "name": "South Carolina Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to South Carolina - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/south-carolina-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Panel for Dietetics",
+    "parentOrganization": "South Carolina Department of Labor, Licensing and Regulation (LLR)",
+    "url": "https://llr.sc.gov/diet/",
+    "telephone": "(803) 896-4300",
+    "faxNumber": "",
+    "email": "mailto:Contact.Dietetics@llr.sc.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "110 Centerview Dr<br>Columbia, SC 29210",
+      "description": "LLR\nPO Box 11329\nColumbia, SC 29211-1329"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "South Carolina"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$175",
+      "price": 175.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (by May 31, odd years) + 30 CE hours",
+  "requiredDocuments": [
+    {
+      "name": "Current Signed CDR Card",
+      "description": "Copy of your signed, active Commission on Dietetic Registration credential (for licensure by registration)."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Sent directly to the Panel office from the degree-granting institution."
+    },
+    {
+      "name": "Valid Photo ID",
+      "description": "Copy of a driver's license, state-issued ID, or passport."
+    },
+    {
+      "name": "Signed Social Security Card",
+      "description": "Copy of your signed Social Security card."
+    },
+    {
+      "name": "Notarized Verification of Lawful Presence",
+      "description": "Required by South Carolina law for professional licensing."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a South Carolina dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application fee is $175 (non-refundable). The biennial renewal fee is $100, due by May 31 of odd-numbered years. Late renewal incurs a $50 fee, and reinstatement costs an additional $50."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What continuing education does South Carolina require?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "South Carolina requires 30 hours of continuing professional education per biennial renewal period. Additionally, maintaining CDR registration requires 75 CE hours every five years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does South Carolina require tele-dietetics practitioners to be licensed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. South Carolina requires all individuals practicing dietetics or tele-dietetics within the state to hold a valid South Carolina dietitian license, regardless of where they are physically located."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does South Carolina have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in South Carolina. To work in South Carolina, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to South Carolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in South Carolina while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://llr.sc.gov/diet/"
+  }
+}

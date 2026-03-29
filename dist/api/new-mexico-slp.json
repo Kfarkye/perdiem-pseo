@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-mexico-slp",
+  "identifier": "new-mexico-slp",
+  "name": "New Mexico Speech-Language Pathologist License",
+  "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to New Mexico - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-mexico-slp",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Speech-Language Pathology, Audiology and Hearing Aid Dispensing Practices Board",
+    "parentOrganization": "New Mexico Regulation and Licensing Department",
+    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/",
+    "telephone": "(505) 476-4640",
+    "faxNumber": "(505) 476-4645",
+    "email": "rld.boards@rld.nm.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2550 Cerrillos Road, Santa Fe, NM 87505",
+      "description": "P.O. Box 25101, Santa Fe, NM 87504"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New Mexico"
+  },
+  "serviceType": "Professional License",
+  "category": "Speech-Language Pathologist",
+  "additionalType": "Licensed Speech-Language Pathologist (SLP)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official graduate transcripts",
+      "description": "From a CAA-accredited program."
+    },
+    {
+      "name": "Praxis exam score report",
+      "description": "Score of 162 or higher."
+    },
+    {
+      "name": "Clinical Fellowship verification",
+      "description": "CF completion documentation."
+    },
+    {
+      "name": "Background check",
+      "description": "Criminal background check."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a New Mexico SLP license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "$200 initial. $150 biennial renewal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is New Mexico part of the ASLP Interstate Compact?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New Mexico allow telepractice for SLPs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with a valid NM license."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New Mexico have reciprocity for speech-language pathologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers speech-language pathologist practice in New Mexico. To work in New Mexico, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my speech-language pathologist license to New Mexico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in New Mexico while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/"
+  }
+}

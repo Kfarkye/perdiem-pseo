@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/missouri-da",
+  "identifier": "missouri-da",
+  "name": "Missouri Dental Assistant Registration",
+  "description": "Complete guide to dental assistant licensing in Missouri — endorsement steps, fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/missouri-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Missouri Dental Board",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://pr.mo.gov/dental.asp",
+    "telephone": "573-751-0040",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "dental@pr.mo.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Missouri Dental Board\n3605 Missouri Blvd.\nP.O. Box 1367\nJefferson City, MO 65102"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Missouri"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Expanded Functions Dental Assistant",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$10",
+      "price": 10.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$10",
+      "price": 10.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": ""
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Missouri require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Missouri requires Expanded Functions Dental Assistant through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in Missouri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in Missouri."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in Missouri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but a radiography permit or certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in Missouri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "State application fees are $10. Additional costs may include DANB CDA exam ($450), radiography certification, and background check fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://pr.mo.gov/dental.asp"
+  }
+}

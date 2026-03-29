@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/west-virginia-pt",
+  "identifier": "west-virginia-pt",
+  "name": "West Virginia Physical Therapist License",
+  "description": "Already licensed as a physical therapist? Here's whether your license transfers to West Virginia - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/west-virginia-pt",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "West Virginia Board of Physical Therapy",
+    "parentOrganization": "Independent State Board",
+    "url": "https://wvbopt.com/",
+    "telephone": "(304) 558-0334",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "1411 Kanawha Boulevard East, Charleston, WV 25301"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "West Virginia"
+  },
+  "serviceType": "Professional License",
+  "category": "Physical Therapist",
+  "additionalType": "PT, DPT",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$125",
+      "price": 125.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 1 year",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the NPTE (National Physical Therapy Examination)."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "PT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a West Virginia physical therapist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For endorsement applicants, the state licensing fee is $200. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NPTE (National Physical Therapy Examination) is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does West Virginia have reciprocity for physical therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. West Virginia participates in the PT Compact. If your home state and license qualify for compact privilege, you can typically practice in West Virginia without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my physical therapist license to West Virginia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Current board processing time is 4 to 6 Weeks once your file is complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in West Virginia while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://wvbopt.com/"
+  }
+}

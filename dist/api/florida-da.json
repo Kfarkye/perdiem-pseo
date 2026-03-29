@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/florida-da",
+  "identifier": "florida-da",
+  "name": "Florida Dental Assistant Registration",
+  "description": "Complete guide to dental assistant licensing in Florida — endorsement steps, fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/florida-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Florida Board of Dentistry",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://floridasdentistry.gov/",
+    "telephone": "(850) 488-0595",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "DOH.Mail@flhealth.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Department of Health, Board of Dentistry, P.O. Box 6330, Tallahassee, FL 32314-6330"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Florida"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Dental Radiographer",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$35",
+      "price": 35.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$35",
+      "price": 35.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "3 to 4 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Florida require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Florida requires Dental Radiographer through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in Florida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in Florida."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in Florida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but a radiography permit or certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in Florida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "State application fees are $35. Additional costs may include DANB CDA exam ($450), radiography certification, and background check fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://floridasdentistry.gov/"
+  }
+}

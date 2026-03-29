@@ -12,6 +12,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   
   <link rel="canonical" href="https://www.statelicensingreference.com/pennsylvania-rrt" />
+  <link rel="alternate" type="application/json" href="/api/pennsylvania-rrt.json" title="Machine-readable licensing data" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -611,6 +612,12 @@
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["#quick-facts", "#faq"]
+        },
+        "additionalProperty": {
+          "@type": "PropertyValue",
+          "name": "machineReadablePayload",
+          "value": "https://www.statelicensingreference.com/api/pennsylvania-rrt.json",
+          "description": "Full structured JSON payload for AI agents and API consumers"
         }
       },
       {

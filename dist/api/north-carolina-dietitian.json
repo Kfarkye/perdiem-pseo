@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/north-carolina-dietitian",
+  "identifier": "north-carolina-dietitian",
+  "name": "North Carolina Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to North Carolina - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/north-carolina-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "North Carolina Board of Dietetics/Nutrition (NCBDN)",
+    "parentOrganization": "Independent State Board",
+    "url": "https://www.ncbdn.org/",
+    "telephone": "(919) 833-0004",
+    "faxNumber": "",
+    "email": "info@ncbdn.org",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1135 Kildaire Farm Rd, Suite 200<br>Cary, NC 27511",
+      "description": "PO Box 96000, Raleigh, NC 27636"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "North Carolina"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian/Nutritionist (LDN)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$60",
+      "price": 60.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$95",
+      "price": 95.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "1 Year (expires March 31)",
+  "renewalCycle": "Annual (by March 31) + 30 CE hours per 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official College Transcripts",
+      "description": "Must show a master's or doctoral degree in nutrition or a related field from a regionally accredited institution."
+    },
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of current, active registration with the Commission on Dietetic Registration (for Category A applicants)."
+    },
+    {
+      "name": "Government-Issued Photo ID",
+      "description": "A clear copy of a valid, government-issued identification."
+    },
+    {
+      "name": "Criminal Background Check Authorization",
+      "description": "Completed authorization form and associated $38 fee."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / SBI",
+    "fee": "$38.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/north-carolina"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "$133,",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a North Carolina dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial cost for a Category A (RDN) license is $248, which comprises a $60 application fee, a $150 issuance fee, and a $38 criminal background check fee. Annual renewal is $95."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the North Carolina dietitian license expire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All North Carolina dietitian/nutritionist licenses expire on March 31st each year, regardless of when they were issued. Annual renewal must be submitted between January 1st and March 31st."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for NC dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Licensees must complete 30 hours of continuing education every two years. For RDNs (Category A), meeting the CDR's continuing education standards (75 hours per 5-year cycle) fulfills the state requirement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does North Carolina have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in North Carolina. To work in North Carolina, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to North Carolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 3 Business Days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in North Carolina while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.ncbdn.org/"
+  }
+}

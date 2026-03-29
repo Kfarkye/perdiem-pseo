@@ -1,0 +1,120 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/montana-da",
+  "identifier": "montana-da",
+  "name": "Montana Dental Assistant Registration",
+  "description": "Complete guide to dental assistant requirements in Montana — fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/montana-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Montana Board of Dentistry",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://boards.bsd.dli.mt.gov/dental",
+    "telephone": "(406) 841-2300",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "DLIBSDHELP@mt.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "301 S Park Ave, 4th Floor, P.O. Box 200513, Helena, MT 59620-0513"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Montana"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Dental Assistant (no state license required)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "N/A - Montana does not license general Dental Assistants"
+    }
+  ],
+  "processingTime": "N/A - Montana does not license general Dental Assistants",
+  "licenseDuration": "N/A",
+  "renewalCycle": "N/A - Montana does not license general Dental Assistants",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": ""
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Montana require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, Montana does not require state licensure for general dental assistants. However, expanded functions and radiography may require permits or certifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in Montana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in Montana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in Montana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but a radiography permit or certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in Montana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no state application fee for general dental assistants in Montana. However, DANB CDA exam costs $450, and radiography certifications may have additional fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://boards.bsd.dli.mt.gov/dental"
+  }
+}

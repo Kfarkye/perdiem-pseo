@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/georgia-da",
+  "identifier": "georgia-da",
+  "name": "Georgia Dental Assistant Registration",
+  "description": "Complete guide to dental assistant requirements in Georgia — fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/georgia-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Georgia Board of Dentistry",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://sos.ga.gov/PLB/acrobat/Forms/09%20Reference%20-%20Dentistry.pdf",
+    "telephone": "(404) 424-9966",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Professional Licensing Boards Division\n237 Coliseum Drive\nMacon, Georgia 31217-3858"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Georgia"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Dental Assistant (no state license required)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$25",
+      "price": 25.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "3 to 4 Weeks",
+  "licenseDuration": "N/A",
+  "renewalCycle": "Every 2 years (for Radiology Certificate)",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": ""
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Georgia require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, Georgia does not require state licensure for general dental assistants. However, expanded functions and radiography may require permits or certifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in Georgia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in Georgia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in Georgia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but a radiography permit or certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in Georgia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no state application fee for general dental assistants in Georgia. However, DANB CDA exam costs $450, and radiography certifications may have additional fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://sos.ga.gov/PLB/acrobat/Forms/09%20Reference%20-%20Dentistry.pdf"
+  }
+}

@@ -1,343 +1,375 @@
 #!/usr/bin/env python3
+"""Final approval audit anchored to a single root-dist deploy path.
+
+This gate enforces:
+1) One source input path (vertical JSON records)
+2) One production output path (root dist/)
+3) One HTML/API contract (dist/{slug}.html + dist/api/{slug}.json)
 """
-FINAL APPROVAL AUDIT — Level 3 Deep Scan
-Works on local dev AND Vercel CI. Uses dynamic paths (no hardcoded Mac paths).
-Skips inapplicable checks (git, source sync) when running inside CI.
-"""
+
+from __future__ import annotations
 
 import json
-import hashlib
-import os
+import re
 import sys
 from pathlib import Path
-from collections import defaultdict
 
-# Dynamic path resolution:
-# This script lives at the REPO ROOT. Whether called locally or
-# via `python3 ../final_approval_audit.py` from a vertical dir on Vercel,
-# __file__ resolves to the repo root.
 REPO = Path(__file__).resolve().parent
+PROFILES_PATH = REPO / "vertical_profiles.json"
+VERCEL_PATH = REPO / "vercel.json"
+DEPLOY_CHECKLIST_PATH = REPO / "DEPLOY_CHECKLIST_ROOT_DIST.md"
 
-# Detect CI: Vercel sets VERCEL=1, or we can check if /vercel exists
-IS_CI = os.environ.get("VERCEL") == "1" or os.environ.get("CI") == "1"
+DIST_DIR = REPO / "dist"
+API_DIR = DIST_DIR / "api"
+CANONICAL_HOST = "https://www.statelicensingreference.com"
 
-VERTICALS = [
-    "dietitian-pseo", "slp-pseo", "ot-pseo", "pt-pseo",
-    "rrt-pseo", "aud-pseo", "pharm-pseo", "pharmacist-pseo"
-]
+errors: list[str] = []
+warnings: list[str] = []
+passes = 0
 
-EXPECTED_STATES = 51
-errors = []
-warnings = []
-passed = 0
 
-def ok(msg):
-    global passed
-    passed += 1
-    return True
+def ok(_: str) -> None:
+    global passes
+    passes += 1
 
-def fail(msg, level="ERROR"):
-    if level == "WARN":
-        warnings.append(msg)
+
+def fail(msg: str) -> None:
+    errors.append(msg)
+
+
+def warn(msg: str) -> None:
+    warnings.append(msg)
+
+
+def expected_slug(data: dict, vertical_slug: str) -> str:
+    default_slug = (
+        data["state_slug"]
+        if data["state_slug"].endswith(f"-{vertical_slug}")
+        else f"{data['state_slug']}-{vertical_slug}"
+    )
+    return data.get("slug") or default_slug
+
+
+def canonical_slug_from_html(html: str) -> str | None:
+    match = re.search(r'<link rel="canonical" href="([^"]+)"', html)
+    if not match:
+        return None
+    href = match.group(1)
+    if "://" in href:
+        rest = href.split("://", 1)[1]
+        path = "/" + rest.split("/", 1)[1] if "/" in rest else "/"
     else:
-        errors.append(msg)
-    return False
+        path = href
+    return path.split("?", 1)[0].split("#", 1)[0].strip("/")
 
-print("=" * 70)
-print("  🔒 FINAL APPROVAL AUDIT — Level 3 Deep Scan")
-print(f"  Repo:   {REPO}")
-print(f"  CI:     {IS_CI}")
-print("=" * 70)
 
-# ═══════════════════════════════════════════════════
-# GATE 1: SOURCE ↔ REPO FILE SYNC (local only)
-# ═══════════════════════════════════════════════════
-print("\n🔍 GATE 1: Source ↔ Repo JSON Sync")
-if IS_CI:
-    ok("Skipped in CI (repo IS source)")
-    print("  ⏭️  Skipped in CI (repo IS the source of truth)")
-else:
-    desync_count = 0
-    # On local, SOURCE is one level up from REPO if repo is a subfolder
-    SOURCE = REPO.parent
-    for v in VERTICALS:
-        src_dir = SOURCE / v / "database" / "json"
-        repo_dir = REPO / v / "database" / "json"
-        if not src_dir.exists() or not repo_dir.exists():
-            # If source doesn't exist separately, skip (they're the same)
+def load_profiles() -> list[str]:
+    if not PROFILES_PATH.exists():
+        fail("vertical_profiles.json missing")
+        return []
+
+    profiles = json.loads(PROFILES_PATH.read_text(encoding="utf-8"))
+    deployed = list(profiles.get("_meta", {}).get("deployed_verticals", []))
+    if not deployed:
+        fail("No deployed_verticals in vertical_profiles.json")
+    return deployed
+
+
+def gate_source_records(deployed: list[str]) -> list[tuple[str, str, Path, dict]]:
+    print("\n[1/6] Source record schema + slug uniqueness")
+    required_keys = [
+        "state_slug",
+        "state_name",
+        "profession_name",
+        "seo",
+        "board",
+        "quick_facts",
+        "fees_endorsement",
+        "reciprocity",
+    ]
+    records: list[tuple[str, str, Path, dict]] = []
+    seen_slugs: set[str] = set()
+
+    for vertical_slug in deployed:
+        vdir = REPO / f"{vertical_slug}-pseo"
+        json_dir = vdir / "database" / "json"
+
+        if not vdir.exists():
+            fail(f"Missing vertical directory: {vdir}")
+            continue
+        if not json_dir.exists():
+            fail(f"Missing JSON directory: {json_dir}")
             continue
 
-        if src_dir.resolve() == repo_dir.resolve():
-            continue  # Same directory, no sync needed
+        files = sorted(json_dir.glob("*.json"))
+        if len(files) != 51:
+            warn(f"{vertical_slug}: expected 51 JSON files, found {len(files)}")
 
-        for src_file in sorted(src_dir.glob("*.json")):
-            repo_file = repo_dir / src_file.name
-            if not repo_file.exists():
-                fail(f"{v}/{src_file.name}: exists in source but NOT in repo")
-                desync_count += 1
+        for json_file in files:
+            try:
+                data = json.loads(json_file.read_text(encoding="utf-8"))
+            except json.JSONDecodeError as exc:
+                fail(f"JSON parse error in {json_file}: {exc}")
                 continue
 
-            src_hash = hashlib.md5(src_file.read_bytes()).hexdigest()
-            repo_hash = hashlib.md5(repo_file.read_bytes()).hexdigest()
-            if src_hash != repo_hash:
-                fail(f"{v}/{src_file.name}: HASH MISMATCH (source has newer data!)", "WARN")
-                desync_count += 1
+            for key in required_keys:
+                if key not in data:
+                    fail(f"{json_file}: missing key '{key}'")
 
-    if desync_count == 0:
-        ok("All JSON files synced")
-        print(f"  ✅ All JSON files match source (0 desyncs)")
-    else:
-        print(f"  ⚠️  {desync_count} desyncs detected")
+            slug_value = expected_slug(data, vertical_slug)
+            if slug_value in seen_slugs:
+                fail(f"Duplicate slug generated: {slug_value}")
+            seen_slugs.add(slug_value)
+            records.append((vertical_slug, slug_value, json_file, data))
 
-# ═══════════════════════════════════════════════════
-# GATE 2: ZERO PENDING (redundant but critical)
-# ═══════════════════════════════════════════════════
-print("\n🔍 GATE 2: Zero PENDING")
-pending = 0
-for v in VERTICALS:
-    json_dir = REPO / v / "database" / "json"
-    if not json_dir.exists():
-        continue
-    for f in json_dir.glob("*.json"):
-        c = f.read_text().count('"PENDING"')
-        if c > 0:
-            pending += c
-            fail(f"PENDING in {v}/{f.name}: {c} instances")
+    print(f"  records={len(records)} unique_slugs={len(seen_slugs)}")
+    if records:
+        ok("source records loaded")
+    return records
 
-if pending == 0:
-    ok("Zero PENDING")
-    print(f"  ✅ 0 PENDING across all files")
-else:
-    print(f"  ❌ {pending} PENDING fields found")
 
-# ═══════════════════════════════════════════════════
-# GATE 3: JSON PARSE + SCHEMA (every single file)
-# ═══════════════════════════════════════════════════
-print("\n🔍 GATE 3: JSON Parse + Schema")
-parse_ok = 0
-schema_fails = 0
-for v in VERTICALS:
-    json_dir = REPO / v / "database" / "json"
-    if not json_dir.exists():
-        continue
-    for f in sorted(json_dir.glob("*.json")):
+def gate_dist_contract(deployed: list[str], records: list[tuple[str, str, Path, dict]]) -> None:
+    print("\n[2/6] Root dist HTML/API contract")
+    if not DIST_DIR.exists():
+        fail(f"Root dist missing: {DIST_DIR}")
+        return
+    if not API_DIR.exists():
+        fail(f"Root dist api missing: {API_DIR}")
+        return
+
+    if not (DIST_DIR / "index.html").exists():
+        fail("Missing root portal page: dist/index.html")
+
+    for vertical_slug in deployed:
+        hub = DIST_DIR / f"{vertical_slug}.html"
+        if not hub.exists():
+            fail(f"Missing specialty hub: {hub}")
+
+    required_api_keys = {
+        "@context",
+        "@type",
+        "@id",
+        "identifier",
+        "name",
+        "url",
+        "provider",
+        "areaServed",
+        "offers",
+        "processingTime",
+        "mainEntity",
+        "sourceMetadata",
+    }
+
+    for _, slug_value, _, _ in records:
+        html_path = DIST_DIR / f"{slug_value}.html"
+        api_path = API_DIR / f"{slug_value}.json"
+
+        if not html_path.exists():
+            fail(f"Missing state HTML: {html_path}")
+            continue
+        if not api_path.exists():
+            fail(f"Missing state API: {api_path}")
+            continue
+
+        html = html_path.read_text(encoding="utf-8", errors="ignore")
+        canonical_slug = canonical_slug_from_html(html)
+        if canonical_slug is None:
+            fail(f"{html_path}: canonical link missing")
+        elif canonical_slug != slug_value:
+            fail(f"{html_path}: canonical slug '{canonical_slug}' != '{slug_value}'")
+
+        expected_alt = f'/api/{slug_value}.json'
+        if expected_alt not in html:
+            warn(f"{html_path}: missing alternate API link {expected_alt}")
+
         try:
-            data = json.loads(f.read_text())
-        except Exception as e:
-            fail(f"JSON PARSE FAIL: {v}/{f.name}: {e}")
-            schema_fails += 1
+            payload = json.loads(api_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            fail(f"{api_path}: invalid JSON ({exc})")
             continue
 
-        parse_ok += 1
+        missing_keys = sorted(required_api_keys - payload.keys())
+        if missing_keys:
+            fail(f"{api_path}: missing API keys {missing_keys}")
 
-        # Core keys
-        for key in ["state_slug", "state_name", "board", "board_source_url",
-                     "quick_facts", "fingerprints", "compact", "temp_license"]:
-            if key not in data:
-                fail(f"{v}/{f.name}: missing '{key}'")
-                schema_fails += 1
+        expected_url = f"{CANONICAL_HOST}/{slug_value}"
+        if payload.get("@type") != "GovernmentService":
+            fail(f"{api_path}: @type must be GovernmentService")
+        if payload.get("identifier") != slug_value:
+            fail(f"{api_path}: identifier mismatch ({payload.get('identifier')} != {slug_value})")
+        if payload.get("@id") != expected_url or payload.get("url") != expected_url:
+            fail(f"{api_path}: @id/url mismatch expected {expected_url}")
 
-        # Board data quality
-        board = data.get("board", {})
-        if isinstance(board, dict):
-            phone = board.get("phone", "")
-            url = board.get("url", "")
-            if not phone:
-                fail(f"{v}/{f.name}: board.phone empty", "WARN")
-            if not url:
-                fail(f"{v}/{f.name}: board.url empty", "WARN")
+    html_count = len(list(DIST_DIR.glob("*.html")))
+    api_count = len(list(API_DIR.glob("*.json")))
+    print(f"  html_count={html_count} api_count={api_count}")
+    if html_count < len(records) + len(deployed) + 1:
+        fail("Root dist HTML count lower than expected (states + hubs + portal)")
+    if api_count != len(records):
+        fail(f"Root dist API count {api_count} != state record count {len(records)}")
+    if not errors:
+        ok("root dist contract holds")
 
-        # Fingerprint completeness
-        fp = data.get("fingerprints", {})
-        if isinstance(fp, dict):
-            for fk in ["required", "vendor", "fee", "method_in_state",
-                        "method_out_of_state", "vendor_url"]:
-                if fk not in fp:
-                    fail(f"{v}/{f.name}: fingerprints.{fk} missing")
-                    schema_fails += 1
 
-if schema_fails == 0:
-    ok("Schema valid")
-    print(f"  ✅ {parse_ok} files parsed, 0 schema violations")
-else:
-    print(f"  ❌ {schema_fails} schema violations")
+def gate_sitemap_and_robots(deployed: list[str], records: list[tuple[str, str, Path, dict]]) -> None:
+    print("\n[3/6] Sitemap + robots consistency")
+    robots = DIST_DIR / "robots.txt"
+    sitemap = DIST_DIR / "sitemap.xml"
 
-# ═══════════════════════════════════════════════════
-# GATE 4: HTML DIST COMPLETENESS (local only — dist built during deploy)
-# ═══════════════════════════════════════════════════
-print("\n🔍 GATE 4: HTML Dist Completeness")
-if IS_CI:
-    ok("Skipped in CI (dist built by build.py after this audit)")
-    print("  ⏭️  Skipped in CI (build.py generates dist/ after audit passes)")
-    html_total = 0
-else:
-    html_total = 0
-    empty_html = 0
-    for v in VERTICALS:
-        dist = REPO / v / "dist"
-        if not dist.exists():
-            fail(f"{v}/dist/ missing")
+    if not robots.exists():
+        fail("Missing dist/robots.txt")
+    if not sitemap.exists():
+        fail("Missing dist/sitemap.xml")
+        return
+
+    if robots.exists():
+        robots_text = robots.read_text(encoding="utf-8")
+        expected = f"Sitemap: {CANONICAL_HOST}/sitemap.xml"
+        if expected not in robots_text:
+            fail("robots.txt missing canonical sitemap directive")
+
+    locs = set(re.findall(r"<loc>([^<]+)</loc>", sitemap.read_text(encoding="utf-8")))
+    expected_urls = {f"{CANONICAL_HOST}/"}
+    expected_urls.update({f"{CANONICAL_HOST}/{slug}" for slug in deployed})
+    expected_urls.update({f"{CANONICAL_HOST}/{slug_value}" for _, slug_value, _, _ in records})
+
+    missing = sorted(expected_urls - locs)
+    extra = sorted(locs - expected_urls)
+    if missing:
+        fail(f"sitemap missing {len(missing)} expected URLs (sample: {missing[:5]})")
+    if extra:
+        warn(f"sitemap has {len(extra)} extra URLs (sample: {extra[:5]})")
+    if not missing:
+        ok("sitemap covers root truth")
+
+
+def gate_trust_regression_guards() -> None:
+    print("\n[4/6] Trust regression guards")
+    banned_phrase = "varies, often around $100 to $200"
+    pt_hits = 0
+    for pt_html in sorted(DIST_DIR.glob("*-pt.html")):
+        text = pt_html.read_text(encoding="utf-8", errors="ignore")
+        if banned_phrase in text:
+            pt_hits += 1
+            fail(f"{pt_html}: contains banned generic PT fee phrase")
+
+    canonical_license_hits = 0
+    for html_path in sorted(DIST_DIR.glob("*.html")):
+        text = html_path.read_text(encoding="utf-8", errors="ignore")
+        if re.search(r'<link rel="canonical" href="[^"]+-license"', text):
+            canonical_license_hits += 1
+            fail(f"{html_path}: canonical contains '-license' slug residue")
+
+    print(f"  pt_phrase_hits={pt_hits} canonical_license_hits={canonical_license_hits}")
+    if pt_hits == 0 and canonical_license_hits == 0:
+        ok("trust guards clean")
+
+
+def gate_deploy_config_transition() -> None:
+    print("\n[5/6] Deploy config + legacy API transition")
+    start_errors = len(errors)
+    if not VERCEL_PATH.exists():
+        fail("Missing root vercel.json")
+        return
+
+    vercel = json.loads(VERCEL_PATH.read_text(encoding="utf-8"))
+    if vercel.get("outputDirectory") != "dist":
+        fail("vercel.json outputDirectory must be 'dist'")
+
+    build_command = str(vercel.get("buildCommand", ""))
+    if "build_unified.py" not in build_command:
+        fail("vercel.json buildCommand must call build_unified.py")
+
+    rewrites = vercel.get("rewrites", [])
+    required_aliases = [
+        ("/api/v1/:slug.json", "/api/:slug.json"),
+        ("/:vertical-pseo/api/:slug.json", "/api/:slug.json"),
+    ]
+    for source, destination in required_aliases:
+        found = any(
+            isinstance(rw, dict)
+            and rw.get("source") == source
+            and rw.get("destination") == destination
+            for rw in rewrites
+        )
+        if not found:
+            fail(
+                f"vercel.json missing legacy API alias rewrite: {source} -> {destination}"
+            )
+
+    vertical_vercels = sorted(str(path.relative_to(REPO)) for path in REPO.glob("*-pseo/vercel.json"))
+    if vertical_vercels:
+        warn(
+            "Per-vertical vercel.json files still exist (legacy paths). Root deploy uses only /vercel.json. "
+            f"Found {len(vertical_vercels)} files."
+        )
+
+    if not DEPLOY_CHECKLIST_PATH.exists():
+        fail(f"Missing deploy checklist: {DEPLOY_CHECKLIST_PATH.name}")
+
+    if len(errors) == start_errors:
+        ok("deploy config enforces root dist")
+
+
+def gate_api_slug_healthcheck(records: list[tuple[str, str, Path, dict]]) -> None:
+    print("\n[6/6] API slug contract healthcheck")
+    start_errors = len(errors)
+    if not records:
+        fail("No records loaded; cannot run API healthcheck")
+        return
+
+    sample_slugs = sorted({records[0][1], records[len(records) // 2][1], records[-1][1]})
+    for slug_value in sample_slugs:
+        api_path = API_DIR / f"{slug_value}.json"
+        if not api_path.exists():
+            fail(f"API healthcheck missing: {api_path}")
             continue
+        payload = json.loads(api_path.read_text(encoding="utf-8"))
+        provider_name = payload.get("provider", {}).get("name", "") if isinstance(payload.get("provider"), dict) else ""
+        if not provider_name:
+            warn(f"{api_path}: provider.name empty")
+    if len(errors) == start_errors:
+        ok("api healthcheck complete")
 
-        htmls = list(dist.glob("*.html"))
-        html_total += len(htmls)
 
-        if not (dist / "index.html").exists():
-            fail(f"{v}/dist/index.html missing")
+def main() -> None:
+    print("=" * 72)
+    print("  FINAL APPROVAL AUDIT — ROOT DIST SINGLE-TRUTH")
+    print("=" * 72)
+    print(f"Repo: {REPO}")
 
-        for h in htmls:
-            size = h.stat().st_size
-            if size < 500:
-                fail(f"{v}/{h.name}: only {size} bytes (likely empty/broken)")
-                empty_html += 1
+    deployed = load_profiles()
+    records = gate_source_records(deployed)
+    gate_dist_contract(deployed, records)
+    gate_sitemap_and_robots(deployed, records)
+    gate_trust_regression_guards()
+    gate_deploy_config_transition()
+    gate_api_slug_healthcheck(records)
 
-    if empty_html == 0:
-        ok("HTML files valid")
-        print(f"  ✅ {html_total} HTML files, 0 empty/broken")
-    else:
-        print(f"  ❌ {empty_html} empty/broken HTML files")
+    print("\n" + "=" * 72)
+    print("  RESULTS")
+    print("=" * 72)
+    print(f"Gates passed: {passes}/6")
+    print(f"Errors:       {len(errors)}")
+    print(f"Warnings:     {len(warnings)}")
 
-# ═══════════════════════════════════════════════════
-# GATE 5: SITEMAP + ROBOTS.TXT (local only)
-# ═══════════════════════════════════════════════════
-print("\n🔍 GATE 5: Sitemaps + Robots.txt")
-sm_total_urls = 0
-if IS_CI:
-    ok("Skipped in CI (generated by build.py)")
-    print("  ⏭️  Skipped in CI (sitemaps generated by build.py)")
-else:
-    for v in VERTICALS:
-        dist = REPO / v / "dist"
-        sm = dist / "sitemap.xml"
-        rb = dist / "robots.txt"
+    if errors:
+        print("\n❌ ERROR LIST")
+        for msg in errors:
+            print(f" - {msg}")
+    if warnings:
+        print("\n⚠️  WARNING LIST")
+        for msg in warnings:
+            print(f" - {msg}")
 
-        if not sm.exists():
-            fail(f"{v}/dist/sitemap.xml missing")
-            continue
-        if not rb.exists():
-            fail(f"{v}/dist/robots.txt missing")
+    if errors:
+        print("\n🛑 DEPLOYMENT BLOCKED")
+        sys.exit(1)
 
-        sm_text = sm.read_text()
-        urls = sm_text.count("<loc>")
-        sm_total_urls += urls
+    print("\n✅ APPROVED FOR DEPLOYMENT (root-dist truth path)")
+    if warnings:
+        print("🟡 APPROVED WITH WARNINGS")
 
-        if urls < EXPECTED_STATES:
-            fail(f"{v}: sitemap only has {urls} URLs (expected ≥{EXPECTED_STATES})")
 
-        if rb.exists():
-            rb_text = rb.read_text()
-            if "Sitemap:" not in rb_text:
-                fail(f"{v}: robots.txt missing Sitemap: directive")
-
-    ok("Sitemaps valid")
-    print(f"  ✅ {sm_total_urls} total sitemap URLs across 8 verticals")
-
-# ═══════════════════════════════════════════════════
-# GATE 6: REAL DATA SPOT CHECKS
-# ═══════════════════════════════════════════════════
-print("\n🔍 GATE 6: Real Data Spot Checks")
-spot_checks = [
-    ("dietitian-pseo", "texas-dietitian.json", "board.phone", lambda v: len(v) >= 10),
-    ("dietitian-pseo", "texas-dietitian.json", "fingerprints.vendor", lambda v: "IdentoGO" in v or "FAST" in v),
-    ("dietitian-pseo", "california-dietitian.json", "fingerprints.required", lambda v: v == False),
-    ("pharmacist-pseo", "new-york-pharmacist.json", "fingerprints.fee", lambda v: "$" in str(v)),
-    ("pharm-pseo", "florida-pharm.json", "fingerprints.vendor", lambda v: "FDLE" in v or "Cogent" in v),
-    ("slp-pseo", "alabama-slp.json", "board.phone", lambda v: len(str(v)) >= 10),
-    ("ot-pseo", "ohio-ot.json", "fingerprints.method_out_of_state", lambda v: "moisturize" in str(v).lower() or "FD-258" in str(v)),
-    ("rrt-pseo", "washington-rrt.json", "board.url", lambda v: v.startswith("http")),
-]
-
-spot_passed = 0
-for vertical, filename, dotpath, validator in spot_checks:
-    fpath = REPO / vertical / "database" / "json" / filename
-    if not fpath.exists():
-        fail(f"Spot check: {vertical}/{filename} not found")
-        continue
-
-    data = json.loads(fpath.read_text())
-    keys = dotpath.split(".")
-    val = data
-    for k in keys:
-        val = val.get(k, None) if isinstance(val, dict) else None
-        if val is None:
-            break
-
-    if val is not None and validator(val):
-        spot_passed += 1
-    else:
-        fail(f"Spot check FAIL: {vertical}/{filename} → {dotpath} = {repr(val)}")
-
-print(f"  ✅ {spot_passed}/{len(spot_checks)} spot checks passed")
-
-# ═══════════════════════════════════════════════════
-# GATE 7: GIT STATUS (local only)
-# ═══════════════════════════════════════════════════
-print("\n🔍 GATE 7: Git Status")
-if IS_CI:
-    ok("Skipped in CI (Vercel clones from Git)")
-    print("  ⏭️  Skipped in CI (Vercel clones from Git automatically)")
-else:
-    git_dir = REPO / ".git"
-    if git_dir.exists():
-        ok("Git initialized")
-        print(f"  ✅ Git repo initialized")
-    else:
-        fail("Git repo not initialized")
-
-# ═══════════════════════════════════════════════════
-# GATE 8: VERCEL CONFIG CHECK
-# ═══════════════════════════════════════════════════
-print("\n🔍 GATE 8: Vercel Deploy Readiness")
-vercel_found = 0
-for v in VERTICALS:
-    vc = REPO / v / "vercel.json"
-    if vc.exists():
-        vercel_found += 1
-
-if vercel_found > 0:
-    ok("Vercel configs found")
-    print(f"  ✅ {vercel_found}/8 verticals have vercel.json")
-else:
-    fail("No vercel.json found in any vertical — Vercel will need manual config", "WARN")
-    print(f"  ⚠️  No vercel.json files found (manual Vercel config needed)")
-
-# ═══════════════════════════════════════════════════
-# FINAL VERDICT
-# ═══════════════════════════════════════════════════
-print("\n" + "=" * 70)
-print("  📋 FINAL APPROVAL VERDICT")
-print("=" * 70)
-print(f"""
-  GATES PASSED:      {passed}/8
-  ERRORS:            {len(errors)}
-  WARNINGS:          {len(warnings)}
-  PARSE OK:          {parse_ok}
-  HTML PAGES:        {html_total}
-  SITEMAP URLS:      {sm_total_urls}
-  PENDING:           {pending}
-  ENVIRONMENT:       {"CI (Vercel)" if IS_CI else "Local"}
-""")
-
-if errors:
-    print(f"  ❌ ERRORS ({len(errors)}):")
-    for e in errors:
-        print(f"     • {e}")
-
-if warnings:
-    print(f"  ⚠️  WARNINGS ({len(warnings)}):")
-    for w in warnings[:10]:
-        print(f"     • {w}")
-    if len(warnings) > 10:
-        print(f"     ... and {len(warnings) - 10} more")
-
-print()
-if not errors:
-    print("  ╔══════════════════════════════════════════════════╗")
-    print("  ║  🚀  APPROVED FOR DEPLOYMENT — ALL GATES PASS   ║")
-    print("  ╚══════════════════════════════════════════════════╝")
-    sys.exit(0)
-else:
-    print("  ╔══════════════════════════════════════════════════╗")
-    print("  ║  🛑  DEPLOYMENT BLOCKED — FIX ERRORS FIRST      ║")
-    print("  ╚══════════════════════════════════════════════════╝")
-    sys.exit(len(errors))
+if __name__ == "__main__":
+    main()

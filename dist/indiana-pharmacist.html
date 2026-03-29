@@ -12,6 +12,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   
   <link rel="canonical" href="https://www.statelicensingreference.com/indiana-pharmacist" />
+  <link rel="alternate" type="application/json" href="/api/indiana-pharmacist.json" title="Machine-readable licensing data" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -611,6 +612,12 @@
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["#quick-facts", "#faq"]
+        },
+        "additionalProperty": {
+          "@type": "PropertyValue",
+          "name": "machineReadablePayload",
+          "value": "https://www.statelicensingreference.com/api/indiana-pharmacist.json",
+          "description": "Full structured JSON payload for AI agents and API consumers"
         }
       },
       {

@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-york-pharm",
+  "identifier": "new-york-pharm",
+  "name": "New York Pharmacy Technician Registration",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to New York - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-york-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "New York Board of Pharmacy",
+    "parentOrganization": "NYSED Office of the Professions",
+    "url": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms",
+    "telephone": "518-474-3817, option 1, then extension 570",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "opunit1@nysed.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "New York State Education Department, Office of the Professions, P.O. Box 22000, Albany, NY 12201"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New York"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$175",
+      "price": 175.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "3 Years",
+  "renewalCycle": "Every 3 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "MorphoTrust / IdentoGO",
+    "fee": "$102.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a New York pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "New York charges a $75 application fee plus a $100 first registration fee for registered pharmacy technicians. The triennial renewal fee is $100."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New York have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in New York. To work in New York, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to New York?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The New York Office of the Professions asks applicants to allow six weeks before requesting a status update on a pharmacy technician application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in New York while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the New York Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in New York."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://www.op.nysed.gov/professions/registered-pharmacy-technicians/license-application-forms"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/colorado-da",
+  "identifier": "colorado-da",
+  "name": "Colorado Dental Assistant Registration",
+  "description": "Complete guide to dental assistant requirements in Colorado — fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/colorado-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Colorado Dental Board",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://dpo.colorado.gov/Dental",
+    "telephone": "303-894-7800",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "dora_dentalboard@state.co.us",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "1560 Broadway, Suite 1350, Denver, CO 80202"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Colorado"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Dental Assistant (no state license required)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "N/A"
+    }
+  ],
+  "processingTime": "N/A - No general license or application process",
+  "licenseDuration": "N/A",
+  "renewalCycle": "N/A - No general license or renewal",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Not required in this state."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": ""
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Colorado require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, Colorado does not require state licensure for general dental assistants. However, expanded functions and radiography may require permits or certifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in Colorado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in Colorado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in Colorado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Radiography requirements vary — check with the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in Colorado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no state application fee for general dental assistants in Colorado. However, DANB CDA exam costs $450, and radiography certifications may have additional fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://dpo.colorado.gov/Dental"
+  }
+}

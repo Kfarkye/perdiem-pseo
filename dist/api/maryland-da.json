@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/maryland-da",
+  "identifier": "maryland-da",
+  "name": "Maryland Dental Assistant Registration",
+  "description": "Complete guide to dental assistant licensing in Maryland — endorsement steps, fees, DANB certification, and radiography permits.",
+  "url": "https://www.statelicensingreference.com/maryland-da",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Maryland State Board of Dental Examiners",
+    "parentOrganization": "State Board of Dentistry",
+    "url": "https://health.maryland.gov/dhmh/dentalboard/",
+    "telephone": "410-402-8501",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "mdbde.info@maryland.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Maryland Board of Dental Examiners\n4201 Patterson Avenue\nBaltimore, Maryland 21215-2299"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Maryland"
+  },
+  "serviceType": "Professional License",
+  "category": "Dental Assistant",
+  "additionalType": "Registered Dental Assistant (RDA)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from CODA-accredited program or documentation of on-the-job training hours."
+    },
+    {
+      "name": "DANB Certification",
+      "description": "Official CDA certification from the Dental Assisting National Board, if applicable."
+    },
+    {
+      "name": "Radiography Certification",
+      "description": "Proof of radiography competency/certification required for taking x-rays."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Maryland require a dental assistant license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Maryland requires Registered Dental Assistant (RDA) through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DANB certification recognized in Maryland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, DANB CDA certification is recognized and often preferred by employers in Maryland."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I take dental x-rays in Maryland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but a radiography permit or certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to become a dental assistant in Maryland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "State application fees are $200. Additional costs may include DANB CDA exam ($450), radiography certification, and background check fees."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://health.maryland.gov/dhmh/dentalboard/"
+  }
+}

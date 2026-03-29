@@ -25,6 +25,7 @@
   {%- set raw_url = site_domain ~ '/' ~ slug -%}
   {%- set canonical_url = raw_url | replace('//', '/') | replace('http:/', 'http://') | replace('https:/', 'https://') | string | trim -%}
   <link rel="canonical" href="{{ canonical_url | e }}" />
+  <link rel="alternate" type="application/json" href="/api/{{ slug | e }}.json" title="Machine-readable licensing data" />
   
   {%- if hero_image_url %}
   <link rel="preload" as="image" href="{{ hero_image_url | string | trim | e }}" fetchpriority="high" />
@@ -650,6 +651,12 @@
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["#quick-facts", "#faq"]
+        },
+        "additionalProperty": {
+          "@type": "PropertyValue",
+          "name": "machineReadablePayload",
+          "value": "{{ clean_domain }}/api/{{ slug }}.json",
+          "description": "Full structured JSON payload for AI agents and API consumers"
         }
       },
       {

@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/north-dakota-dietitian",
+  "identifier": "north-dakota-dietitian",
+  "name": "North Dakota Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to North Dakota - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/north-dakota-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "North Dakota Board of Dietetic Practice (NDBODP)",
+    "parentOrganization": "Independent State Board",
+    "url": "https://www.ndbodp.com/",
+    "telephone": "(701) 328-9988",
+    "faxNumber": "(701) 852-2103",
+    "email": "ndbodp@nd.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "810 4th Ave S Ste 1<br>Moorhead, MN 56560",
+      "description": "North Dakota Board of Dietetic Practice\nPO Box 7079\nBismarck, ND 58507-7079"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "North Dakota"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Registered Dietitian (LRD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$45",
+      "price": 45.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "Up to 5 Years",
+  "renewalCycle": "Every 5 years (matches CDR cycle)",
+  "requiredDocuments": [
+    {
+      "name": "Official Application",
+      "description": "Application form accurately and completely filled out."
+    },
+    {
+      "name": "CDR Registration Card",
+      "description": "Proof of active registration with the Commission on Dietetic Registration (for LRDs)."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Required, especially if applying via the Licensed Nutritionist pathway."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "$25.",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a North Dakota dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial cost is a $75 application fee for both LRDs and LNs. A provisional license is $25."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the North Dakota license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "North Dakota has a 5-year renewal cycle that typically matches your CDR registration cycle, ensuring continuing education hours align. The renewal fee is $45."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does North Dakota have a temporary license for non-residents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, North Dakota offers a 'Limited Practice Without a License' option for $25. This is intended for dietitians practicing in the state for fewer than 30 days per year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does North Dakota have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in North Dakota. To work in North Dakota, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to North Dakota?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in North Dakota while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.ndbodp.com/"
+  }
+}

@@ -19,7 +19,7 @@
     "keywords": "physical therapist license reciprocity utah, how to transfer physical therapist license to utah, physical therapist compact utah, utah physical therapist endorsement application"
   },
   "board": {
-    "name": "Utah DOPL \u2014 Physical Therapy",
+    "name": "Utah DOPL — Physical Therapy",
     "parent_dept": "Department of Commerce",
     "mailing_address": "160 East 300 South, Salt Lake City, UT 84111",
     "physical_address": "See board website",
@@ -31,8 +31,8 @@
     "verify_url": "https://dopl.utah.gov/verify-a-license/"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
+    "total_fee": "$120",
+    "fee_breakdown": "$120 endorsement application fee",
     "renewal_fee": "$65",
     "renewal_cycle": "Every 2 years (even numbered years)",
     "processing_time": "4 to 6 Weeks",
@@ -83,7 +83,7 @@
   "faqs": [
     {
       "question": "How much does a Utah physical therapist license cost?",
-      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      "answer": "For endorsement applicants, the state licensing fee is $120. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
     },
     {
       "question": "Is national certification required?",
@@ -95,7 +95,7 @@
     },
     {
       "question": "How long does it take to transfer my physical therapist license to Utah?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      "answer": "Current board processing time is 4 to 6 Weeks once your file is complete."
     },
     {
       "question": "Can I start working in Utah while my endorsement application is processing?",
@@ -109,10 +109,10 @@
     "compact_source_url": "https://ptcompact.org/ptc-states/"
   },
   "fees_endorsement": {
-    "app_fee": "$100",
+    "app_fee": "$120",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$120"
   },
   "temp_license": {
     "available": true,

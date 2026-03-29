@@ -1,0 +1,110 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/massachusetts-cna",
+  "identifier": "massachusetts-cna",
+  "name": "Massachusetts Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Massachusetts - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/massachusetts-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Massachusetts DPH",
+    "parentOrganization": "State Health Department",
+    "url": "https://www.mass.gov/",
+    "telephone": "800-811-2758",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "ma@prometric.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Prometric, MA Nurse Aide Registry, 7941 Corporate Dr., Nottingham, MD 21236"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Massachusetts"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "1 to 2 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who administers the Massachusetts CNA exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The MA CNA exam is administered by D&S Headmaster. Contact them at (888) 401-0462 or visit hdmaster.com (Massachusetts CNA section)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I transfer my CNA to Massachusetts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the MA DPH Nurse Aide Testing Office at (781) 979-4010 or 1-800-962-4337 for reciprocity applications. A CORI background check is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify a Massachusetts CNA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the NARIS (Nurse Aide Registry Information System) at nars.dph.mass.gov or call (617) 753-8144 / email nars@mass.gov."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "https://www.mass.gov/"
+  }
+}

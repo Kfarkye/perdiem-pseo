@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/maryland-dietitian",
+  "identifier": "maryland-dietitian",
+  "name": "Maryland Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Maryland - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/maryland-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Dietetic Practice",
+    "parentOrganization": "Maryland Department of Health (MDH)",
+    "url": "https://health.maryland.gov/boardofdietetics/",
+    "telephone": "(410) 764-4740",
+    "faxNumber": "(410) 358-1610",
+    "email": "MDH.BOPDietetics@maryland.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4201 Patterson Avenue<br>Baltimore, MD 21215",
+      "description": "Maryland Board of Dietetic Practice\n4201 Patterson Avenue\nBaltimore, MD 21215-2299"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Maryland"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian Nutritionist (LDN)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$250",
+      "price": 250.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years + 30 CPE hours (incl. implicit bias)",
+  "requiredDocuments": [
+    {
+      "name": "Official College Transcripts",
+      "description": "From an accredited college or university, may be emailed to Lenelle.Cooper@maryland.gov or mailed to the Board."
+    },
+    {
+      "name": "CDR or CNS Registration Number",
+      "description": "Your Commission on Dietetic Registration (RD/RDN) or Board for Certification of Nutrition Specialists (CNS) number for direct verification."
+    },
+    {
+      "name": "Completed Application Form",
+      "description": "Paper applications require notarized signature page."
+    },
+    {
+      "name": "Criminal History Records Check",
+      "description": "May be required at the Board's discretion during the application process."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Maryland dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial combined application and licensure fee is $300 (a non-refundable one-time payment). Biennial renewal costs $250, which may include a $26 MHCC user fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Maryland agency regulates dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Board of Dietetic Practice, which operates under the Maryland Department of Health (MDH), is the regulatory body for dietitian licensure in Maryland."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for Maryland dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Licensees must complete a minimum of 30 hours of continuing professional education (CPE) during each two-year renewal cycle. This must include a one-time implicit bias CEU, which can count toward the 30-hour total. The Board may conduct random audits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Maryland have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Maryland. To work in Maryland, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Maryland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Maryland while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://health.maryland.gov/boardofdietetics/"
+  }
+}

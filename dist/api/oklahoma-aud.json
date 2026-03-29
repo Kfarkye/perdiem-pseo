@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/oklahoma-aud",
+  "identifier": "oklahoma-aud",
+  "name": "Oklahoma Audiologist License",
+  "description": "Already licensed as a audiologist? Here's whether your license transfers to Oklahoma - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/oklahoma-aud",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Examiners for Speech-Language Pathology and Audiology",
+    "parentOrganization": "Oklahoma Board of Examiners for SLP and Audiology",
+    "url": "https://www.okbespa.org/",
+    "telephone": "(405) 522-3610",
+    "faxNumber": "(405) 524-4957",
+    "email": "obespa@ok.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3700 N. Classen Blvd., Suite 248, Oklahoma City, OK 73118",
+      "description": "3000 North Stiles Ave., Suite 203\nOklahoma City, OK 73105"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Oklahoma"
+  },
+  "serviceType": "Professional License",
+  "category": "Audiologist",
+  "additionalType": "AuD, CCC-A",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every year, by birth month",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the Praxis Exam in Audiology."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Oklahoma audiologist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the Praxis Exam in Audiology is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Oklahoma have reciprocity for audiologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Oklahoma participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Oklahoma without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my audiologist license to Oklahoma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Oklahoma while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.okbespa.org/"
+  }
+}

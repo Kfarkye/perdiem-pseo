@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/texas-pharm",
+  "identifier": "texas-pharm",
+  "name": "Texas Pharmacy Technician Registration",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Texas - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/texas-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Texas State Board of Pharmacy",
+    "parentOrganization": "Texas Department of Licensing and Regulation (TDLR)",
+    "url": "https://www.pharmacy.texas.gov/applicants/tech.asp",
+    "telephone": "(512) 305-8000",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "Help@tsbp.texas.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Texas State Board of Pharmacy, 333 Guadalupe St, Ste 3-600, Austin TX 78701"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Texas"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$81",
+      "price": 81.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "See board"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years, on or before the last day of the original issue month",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (FAST Pass via DPS)",
+    "fee": "$38.25",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/texas"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Texas pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Texas State Board of Pharmacy lists an $81 initial pharmacy technician registration fee in its current fee materials. Fingerprinting is paid separately to the vendor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Texas have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in Texas. To work in Texas, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Texas State Board of Pharmacy says to allow a minimum of six weeks for a pharmacy technician application to be reviewed and processed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Texas while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Texas does not issue a temporary pharmacy technician registration while your endorsement application is pending. You must wait until your registration is fully approved before practicing. The board advises allowing a minimum of six weeks for processing."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://www.pharmacy.texas.gov/applicants/tech.asp"
+  }
+}

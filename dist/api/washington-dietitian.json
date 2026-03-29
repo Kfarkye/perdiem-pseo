@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/washington-dietitian",
+  "identifier": "washington-dietitian",
+  "name": "Washington Dietitian Certification",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Washington - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/washington-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Dietitian and Nutritionist Credentialing Program",
+    "parentOrganization": "Washington State Department of Health (DOH)",
+    "url": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renewal/dietitian-and-nutritionist",
+    "telephone": "360-236-4700",
+    "faxNumber": "",
+    "email": "mailto:HSQACustomerService@doh.wa.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111 Israel Rd SE<br>Tumwater, WA 98501",
+      "description": "Washington State Department of Health, PO Box 47877, Olympia, WA 98504-7877"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Washington"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Certified Dietitian (CD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$65",
+      "price": 65.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$61",
+      "price": 61.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 3 Weeks",
+  "licenseDuration": "1 Year",
+  "renewalCycle": "Annual (on birthday) + No state CE requirement",
+  "requiredDocuments": [
+    {
+      "name": "Official College Transcripts",
+      "description": "Must be sent directly from the educational institution to the Washington DOH."
+    },
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of current, active registration with the Commission on Dietetic Registration."
+    },
+    {
+      "name": "HIV/AIDS Training Certificate",
+      "description": "Documentation of at least 4 hours of approved HIV/AIDS training."
+    },
+    {
+      "name": "Credential Verification from Other States",
+      "description": "If you hold credentials in other states, verification must be sent directly from each state's licensing authority."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / WSP",
+    "fee": "$35.50",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/washington"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Washington dietitian certification cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application fee is $81 ($65 application + $16 mandatory HEAL-WA surcharge). Annual renewal is $61 ($45 renewal + $16 HEAL-WA surcharge)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there continuing education requirements for Washington dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Washington State does not require continuing education for state certification renewal. However, to maintain the CDR registration that is a prerequisite for certification, you must complete 75 continuing professional education units every five years through the CDR."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Washington dietitian certification need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Certification must be renewed annually on or before your birthday. As of May 2025, the DOH no longer sends printed renewal notices; all notifications are electronic through the HELMS portal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Washington have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Washington has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Washington?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Washington while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://doh.wa.gov/licenses-permits-and-certificates/professions-new-renewal/dietitian-and-nutritionist"
+  }
+}

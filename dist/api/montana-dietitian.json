@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/montana-dietitian",
+  "identifier": "montana-dietitian",
+  "name": "Montana Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Montana - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/montana-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Montana Board of Medical Examiners",
+    "parentOrganization": "Department of Labor & Industry",
+    "url": "https://boards.bsd.dli.mt.gov/medical-examiners/",
+    "telephone": "(406) 444-6880",
+    "faxNumber": "(406) 841-2305",
+    "email": "dlibsdweb@mt.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "301 S. Park Ave., 4th Floor<br>Helena, MT 59601",
+      "description": "301 S. Park Ave., P.O. Box 200513, Helena MT 59620-0513"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Montana"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian / Nutritionist",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "NPDB Self-Query Report",
+      "description": "Required for all applicants. Conducted via the National Practitioner Data Bank."
+    },
+    {
+      "name": "CDR Registration Verification",
+      "description": "Must be sent directly from the Commission on Dietetic Registration."
+    },
+    {
+      "name": "Verification of Out-of-State Licenses",
+      "description": "If licensed in other jurisdictions, you must arrange for official verifications to be sent to Montana."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Montana dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial cost is a $75 application fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Montana license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Montana dietitian and nutritionist licenses expire biennially. The renewal fee is $100."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is it through the Board of Medical Examiners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Montana, the regulation of dietitians and nutritionists is structured under the Board of Medical Examiners, which oversees various allied health professions to ensure public safety in medical nutrition therapy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Montana have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Montana. To work in Montana, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Montana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 3 to 5 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Montana while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://boards.bsd.dli.mt.gov/medical-examiners/"
+  }
+}

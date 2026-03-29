@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/connecticut-pt",
+  "identifier": "connecticut-pt",
+  "name": "Connecticut Physical Therapist License",
+  "description": "Already licensed as a physical therapist? Here's whether your license transfers to Connecticut - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/connecticut-pt",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Connecticut DPH — PT Licensure",
+    "parentOrganization": "Connecticut Department of Public Health (DPH)",
+    "url": "https://portal.ct.gov/DPH",
+    "telephone": "(860) 509-7603",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "dph.healingarts@ct.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "CT Department of Public Health, Practitioner Licensing and Investigations Section, 410 Capitol Ave., MS #12HOS, P.O. Box 340308, Hartford, CT 06134-0308"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Connecticut"
+  },
+  "serviceType": "Professional License",
+  "category": "Physical Therapist",
+  "additionalType": "PT, DPT",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the NPTE (National Physical Therapy Examination)."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "PT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Connecticut physical therapist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For endorsement applicants, the state licensing fee is $200. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NPTE (National Physical Therapy Examination) is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Connecticut have reciprocity for physical therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers physical therapist practice in Connecticut. To work in Connecticut, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my physical therapist license to Connecticut?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Current board processing time is 4 to 6 Weeks once your file is complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Connecticut while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://portal.ct.gov/DPH"
+  }
+}

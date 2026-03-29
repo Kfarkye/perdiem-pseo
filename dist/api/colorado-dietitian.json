@@ -1,0 +1,136 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/colorado-dietitian",
+  "identifier": "colorado-dietitian",
+  "name": "Colorado Dietitian Registration",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Colorado - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/colorado-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "State Board of Dietetics and Nutrition (New)",
+    "parentOrganization": "Colorado Department of Regulatory Agencies (DORA), Division of Professions and Occupations",
+    "url": "https://dpo.colorado.gov/",
+    "telephone": "(303) 894-7800",
+    "faxNumber": "(303) 894-7693",
+    "email": "dora_dpo_licensing@state.co.us",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1560 Broadway Suite 1350<br>Denver, CO 80202",
+      "description": "Colorado Department of Regulatory Agencies\nOffice of Professions and Occupations\n1560 Broadway, Suite 1350\nDenver, CO 80202"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Colorado"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD) — Effective September 1, 2026",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "~$125–$180 (Estimated)"
+    }
+  ],
+  "processingTime": "N/A - No State Licensure Required",
+  "licenseDuration": "1 Year (Estimated)",
+  "renewalCycle": "Annual (Estimated) + 75 CPE hours per 5-year CDR cycle",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of active registration with the Commission on Dietetic Registration."
+    },
+    {
+      "name": "CBI Background Check Fingerprints",
+      "description": "Colorado Bureau of Investigation background check, processed at a DORA-approved provider."
+    },
+    {
+      "name": "Proof of Supervised Practice",
+      "description": "Verification of at least 1,000 hours of supervised practice from an ACEND-accredited program."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / CBI",
+    "fee": "$39.50",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/colorado"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When does Colorado's dietitian license requirement take effect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The new licensure requirement takes effect on September 1, 2026. After this date, no person may practice or offer medical nutrition therapy without a state license."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much will a Colorado dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The estimated initial registration fee is approximately $200 for FY 2026-27, plus a $39.50 CBI background check. Annual renewal is estimated between $125 and $180."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a license before September 1, 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Before September 1, 2026, Colorado does not mandate state licensure. The CDR credential (RD/RDN) remains the recognized standard until the new law takes effect."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Colorado have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Colorado is currently a CDR State. There is no separate state endorsement transfer pathway right now; maintain an active CDR credential to practice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Colorado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is currently a CDR State, so there is no state transfer timeline. You can usually start once your CDR credential and employer onboarding are complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Colorado while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no active state endorsement application to wait on right now. Start dates are typically driven by employer credentialing and onboarding requirements."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://dpo.colorado.gov/"
+  }
+}

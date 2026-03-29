@@ -1,0 +1,146 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/massachusetts-dietitian",
+  "identifier": "massachusetts-dietitian",
+  "name": "Massachusetts Dietitian Registration",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Massachusetts - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/massachusetts-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Registration of Dietitians and Nutritionists",
+    "parentOrganization": "Massachusetts Department of Public Health (DPH)",
+    "url": "https://www.mass.gov/orgs/board-of-registration-of-dietitians-and-nutritionists",
+    "telephone": "617-727-9925",
+    "faxNumber": "",
+    "email": "DPL-Info@mass.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "250 Washington Street<br>Boston, MA 02108",
+      "description": "Board of Registration of Dietitians and Nutritionists, 1000 Washington Street, Suite 710, Boston, MA 02118-6100"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Massachusetts"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian/Nutritionist (LDN)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$196",
+      "price": 196.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$196",
+      "price": 196.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (on birthday) + 30 CE units",
+  "requiredDocuments": [
+    {
+      "name": "Official College Transcript (Sealed)",
+      "description": "Sealed by the registrar, verifying the highest degree earned. If your degree is not in a directly related field, include a completed 'Course Summary Form' with transcripts."
+    },
+    {
+      "name": "CDR Card or BCNS Letter",
+      "description": "A copy of your current CDR registration card (for RDs) or an official sealed letter from BCNS confirming passage (for CNS applicants)."
+    },
+    {
+      "name": "Verification of Supervised Experience",
+      "description": "A 'Verification by Supervisor' form signed by your supervising dietitian, plus your professional resume."
+    },
+    {
+      "name": "CORI Acknowledgment Form",
+      "description": "Criminal Offender Record Information acknowledgment is required as part of the application."
+    },
+    {
+      "name": "License Verification from Other States",
+      "description": "If you hold or have held licenses in other jurisdictions, a certificate of standing must be obtained from each."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Massachusetts dietitian/nutritionist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The combined application and initial license fee is $196, payable to the Commonwealth of Massachusetts. The biennial renewal fee is also $196."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Massachusetts agency regulates dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Board of Registration of Dietitians and Nutritionists, which operates under the Massachusetts Department of Public Health (DPH), is the regulatory body."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for Massachusetts dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Licensees must complete a minimum of 30 units (each unit = 50 minutes of organized learning) of continuing education in the field of dietetics and nutrition during each two-year renewal cycle. The Board may conduct random audits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Massachusetts have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Massachusetts. To work in Massachusetts, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Massachusetts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Massachusetts while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.mass.gov/orgs/board-of-registration-of-dietitians-and-nutritionists"
+  }
+}

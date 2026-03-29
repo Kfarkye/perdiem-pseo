@@ -31,8 +31,8 @@
     "verify_url": "https://kbpt.ky.gov/Licensure/Pages/License-Verification.aspx"
   },
   "quick_facts": {
-    "total_fee": "$100",
-    "fee_breakdown": "$100 application/license fee",
+    "total_fee": "$150",
+    "fee_breakdown": "$150 endorsement application fee",
     "renewal_fee": "$100",
     "renewal_cycle": "Every 2 years",
     "processing_time": "2 to 4 Weeks",
@@ -87,7 +87,7 @@
   "faqs": [
     {
       "question": "How much does a Kentucky physical therapist license cost?",
-      "answer": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      "answer": "For endorsement applicants, the state licensing fee is $150. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
     },
     {
       "question": "Is national certification required?",
@@ -99,7 +99,7 @@
     },
     {
       "question": "How long does it take to transfer my physical therapist license to Kentucky?",
-      "answer": "Most endorsement applications take 4 to 6 Weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      "answer": "Current board processing time is 2 to 4 Weeks once your file is complete."
     },
     {
       "question": "Can I start working in Kentucky while my endorsement application is processing?",
@@ -113,10 +113,10 @@
     "compact_source_url": "https://ptcompact.org/ptc-states/"
   },
   "fees_endorsement": {
-    "app_fee": "$100",
+    "app_fee": "$150",
     "background_check_fee": "$0 (included in application)",
     "jurisprudence_exam_fee": "$0",
-    "total_estimated_cost": "$100"
+    "total_estimated_cost": "$150"
   },
   "temp_license": {
     "available": true,

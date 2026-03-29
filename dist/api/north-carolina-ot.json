@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/north-carolina-ot",
+  "identifier": "north-carolina-ot",
+  "name": "North Carolina Occupational Therapist License",
+  "description": "Already licensed as an occupational therapist? Here's whether your license transfers to North Carolina - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/north-carolina-ot",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "North Carolina Board of Occupational Therapy",
+    "parentOrganization": "Independent State Board",
+    "url": "https://www.ncbot.org/",
+    "telephone": "(919) 832-1380",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "info@ncbot.org",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "North Carolina Board of Occupational Therapy\nPO Box 7006\nRaleigh, NC 27628-7006"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "North Carolina"
+  },
+  "serviceType": "Professional License",
+  "category": "Occupational Therapist",
+  "additionalType": "Occupational Therapist Registered (OTR)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "N/A"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "1 to 2 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "NBCOT Score Report",
+      "description": "Official verification of passing the NBCOT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / SBI",
+    "fee": "$38.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/north-carolina"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "OT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a North Carolina OT license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial application and licensing fee is approximately $125. Check the board website for the latest fee schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is NBCOT certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NBCOT exam is a standard requirement for initial licensure across all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does North Carolina have reciprocity for occupational therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "North Carolina has enacted the OT Compact, but compact privileges are not yet issuing. For now, occupational therapists still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my occupational therapist license to North Carolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in North Carolina while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://www.ncbot.org/"
+  }
+}

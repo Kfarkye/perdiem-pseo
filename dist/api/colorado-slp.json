@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/colorado-slp",
+  "identifier": "colorado-slp",
+  "name": "Colorado Speech-Language Pathologist License",
+  "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Colorado - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/colorado-slp",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Division of Professions and Occupations — Speech-Language Pathology",
+    "parentOrganization": "Colorado Department of Regulatory Agencies (DORA)",
+    "url": "https://dpo.colorado.gov/SpeechLanguagePathology",
+    "telephone": "303-894-7800",
+    "faxNumber": "(303) 894-7764",
+    "email": "dora_audiology_slp@state.co.us",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1560 Broadway, Suite 1350, Denver, CO 80202",
+      "description": "Colorado Department of Regulatory Agencies\nDivision of Professions and Occupations\n1560 Broadway, Suite 1350\nDenver, CO 80202"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Colorado"
+  },
+  "serviceType": "Professional License",
+  "category": "Speech-Language Pathologist",
+  "additionalType": "Licensed Speech-Language Pathologist (SLP)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$120",
+      "price": 120.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$128",
+      "price": 128.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official graduate transcripts",
+      "description": "From a CAA-accredited program."
+    },
+    {
+      "name": "Praxis exam score report",
+      "description": "Score of 162 or higher on test 5331."
+    },
+    {
+      "name": "Clinical Fellowship verification",
+      "description": "CF completion documentation."
+    },
+    {
+      "name": "Background check",
+      "description": "Criminal background check via CBI."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Colorado SLP license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and license fee is $120. Biennial renewal is $75."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Colorado part of the ASLP Interstate Compact?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Colorado has enacted ASLP-IC legislation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Colorado allow telepractice for SLPs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Colorado permits telepractice for licensed SLPs and compact privilege holders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Colorado have reciprocity for speech-language pathologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Colorado participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Colorado without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my speech-language pathologist license to Colorado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Colorado while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://dpo.colorado.gov/SpeechLanguagePathology"
+  }
+}

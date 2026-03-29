@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/pennsylvania-cna",
+  "identifier": "pennsylvania-cna",
+  "name": "Pennsylvania Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Pennsylvania - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/pennsylvania-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Pennsylvania DOH",
+    "parentOrganization": "State Health Department",
+    "url": "https://www.health.pa.gov/",
+    "telephone": "1-800-404-3186",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "NA_PA@prometric.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Prometric, PA Nurse Aide Registry, 7941 Corporate Drive, Nottingham, MD 21090"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Pennsylvania"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "10 to 14 Business Days",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": false,
+    "method_in_state": "N/A",
+    "method_out_of_state": "N/A",
+    "vendor": "N/A",
+    "fee": "N/A",
+    "delay_out_of_state_weeks": "N/A",
+    "vendor_url": ""
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who administers the Pennsylvania CNA exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The PA nurse aide competency exam is administered by Credentia. Register at credentia.com/test-takers/pa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I transfer my CNA to Pennsylvania?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Submit a reciprocity application through Credentia's CNA365 platform online, or mail the NNAAP Registration Application for Enrollment by Reciprocity to: Credentia – PA Nurse Aide Registry, PO Box 13785, Philadelphia, PA 19101-3785."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is PA CNA reciprocity free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Pennsylvania CNA reciprocity is free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify a Pennsylvania CNA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Credentia CNA365 platform or call Credentia support at (888) 204-6249. You can also call PA DOH at (800) 852-0518."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "https://www.health.pa.gov/"
+  }
+}

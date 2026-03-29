@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/missouri-slp",
+  "identifier": "missouri-slp",
+  "name": "Missouri Speech-Language Pathologist License",
+  "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to Missouri - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/missouri-slp",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Advisory Commission for Speech-Language Pathologists and Audiologists",
+    "parentOrganization": "Missouri Division of Professional Registration",
+    "url": "https://pr.mo.gov/speechaudiology.asp",
+    "telephone": "(573) 751-0322",
+    "faxNumber": "(573) 751-3166",
+    "email": "slp_aud@pr.mo.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3605 Missouri Blvd., Jefferson City, MO 65109",
+      "description": "Division of Professional Registration\nP.O. Box 1335\nJefferson City, MO 65102-1335"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Missouri"
+  },
+  "serviceType": "Professional License",
+  "category": "Speech-Language Pathologist",
+  "additionalType": "Licensed Speech-Language Pathologist (SLP)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official graduate transcripts",
+      "description": "From a CAA-accredited program."
+    },
+    {
+      "name": "Praxis exam score report",
+      "description": "Score of 162 or higher."
+    },
+    {
+      "name": "Clinical Fellowship verification",
+      "description": "CF completion documentation."
+    },
+    {
+      "name": "Background check",
+      "description": "Criminal background check."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Missouri SLP license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "$75 initial. $60 biennial renewal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Missouri part of the ASLP Interstate Compact?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Missouri allow telepractice for SLPs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Missouri have reciprocity for speech-language pathologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Missouri participates in the ASLP-IC. If your home state and license qualify for compact privilege, you can typically practice in Missouri without a separate endorsement application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my speech-language pathologist license to Missouri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 weeks. If you qualify for an active compact privilege, there may be no separate wait to start practicing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Missouri while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://pr.mo.gov/speechaudiology.asp"
+  }
+}

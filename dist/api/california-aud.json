@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/california-aud",
+  "identifier": "california-aud",
+  "name": "California Audiologist License",
+  "description": "Already licensed as a audiologist? Here's whether your license transfers to California - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/california-aud",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Speech-Language Pathology and Audiology and Hearing Aid Dispensers Board",
+    "parentOrganization": "California Department of Consumer Affairs (DCA)",
+    "url": "https://www.speechandhearing.ca.gov/",
+    "telephone": "(916) 263-2666",
+    "faxNumber": "(916) 263-2668",
+    "email": "aud@dca.ca.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2005 Evergreen St., Suite 2100, Sacramento, CA 95815",
+      "description": "2005 Evergreen Street, Suite 2100, Sacramento, CA 95815"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "California"
+  },
+  "serviceType": "Professional License",
+  "category": "Audiologist",
+  "additionalType": "AuD, CCC-A",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "8 to 10 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the Praxis Exam in Audiology."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "California DOJ LiveScan",
+    "fee": "$49.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://oag.ca.gov/fingerprints/locations"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a California audiologist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the Praxis Exam in Audiology is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does California have reciprocity for audiologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers audiologist practice in California. To work in California, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my audiologist license to California?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in California while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.speechandhearing.ca.gov/"
+  }
+}

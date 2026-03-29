@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/rhode-island-pharmacist",
+  "identifier": "rhode-island-pharmacist",
+  "name": "Rhode Island Pharmacist License",
+  "description": "Already licensed as a pharmacist? Here's whether your license transfers to Rhode Island - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/rhode-island-pharmacist",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Rhode Island Board of Pharmacy",
+    "parentOrganization": "Rhode Island Department of Health",
+    "url": "https://health.ri.gov/licenses/",
+    "telephone": "(401) 222-2828",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "doh.elicense@health.ri.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Rhode Island Department of Health\nBoard of Pharmacy\n3 Capitol Hill, Room 104\nProvidence, RI 02908-5097"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Rhode Island"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacist",
+  "additionalType": "RPh, PharmD",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$250",
+      "price": 250.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$60",
+      "price": 60.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "3 to 4 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 1 year",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Reports",
+      "description": "Official verification of passing the NAPLEX and MPJE."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Rhode Island pharmacist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and licensing fee varies by state. Check the specific fee breakdown above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the MPJE required in all states?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost all states require passing their state-specific Multistate Pharmacy Jurisprudence Examination (MPJE) to verify knowledge of local pharmacy laws."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Rhode Island have reciprocity for pharmacists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacist practice in Rhode Island. To work in Rhode Island, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacist license to Rhode Island?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Rhode Island while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://health.ri.gov/licenses/"
+  }
+}

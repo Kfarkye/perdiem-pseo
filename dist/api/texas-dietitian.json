@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/texas-dietitian",
+  "identifier": "texas-dietitian",
+  "name": "Texas Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Texas - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/texas-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Dietitians Program",
+    "parentOrganization": "Texas Department of Licensing and Regulation (TDLR)",
+    "url": "https://www.tdlr.texas.gov/diet/",
+    "telephone": "(512) 463-6599",
+    "faxNumber": "(512) 463-9468",
+    "email": "mailto:cs.dietitians@tdlr.texas.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "920 Colorado St.<br>Austin, TX 78701",
+      "description": "Texas Department of Licensing and Regulation\nP.O. Box 12157\nAustin, TX 78711"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Texas"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$108",
+      "price": 108.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$90",
+      "price": 90.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 8 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years + 12 CE hours",
+  "requiredDocuments": [
+    {
+      "name": "Copy of current CDR registration card",
+      "description": "Must be in active status."
+    },
+    {
+      "name": "Texas Jurisprudence Exam Certificate",
+      "description": "Proof of successful completion."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (FAST Pass via DPS)",
+    "fee": "$38.25",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/texas"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Texas dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial license application fee is $108, paid to TDLR. You must also pay a $34 fee to a third-party vendor to take the mandatory Texas Jurisprudence Examination, bringing the total to $142."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Texas Jurisprudence Exam for Dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a mandatory, online examination covering state laws, rules, and regulations relating to the practice of dietetics in Texas. All initial applicants must pass it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Texas have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Texas. To work in Texas, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 2 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Texas while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.tdlr.texas.gov/diet/"
+  }
+}

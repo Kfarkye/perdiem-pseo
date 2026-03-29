@@ -1,0 +1,134 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/south-dakota-dietitian",
+  "identifier": "south-dakota-dietitian",
+  "name": "South Dakota Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to South Dakota - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/south-dakota-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "South Dakota Board of Medical and Osteopathic Examiners (SDBMOE)",
+    "parentOrganization": "Department of Health",
+    "url": "https://www.sdbmoe.gov/nutritionist-dietitian/",
+    "telephone": "605-773-4556",
+    "faxNumber": "(605) 367-7786",
+    "email": "DOH.Dietitians@state.sd.us",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "101 N. Main Ave., Suite 301<br>Sioux Falls, SD 57104",
+      "description": "South Dakota Department of Health\nBoard of Examiners for Dietetic and Nutrition Practice\n600 East Capitol Avenue\nPierre, SD 57501-2536"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "South Dakota"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Nutritionist (LN) / Licensed Dietitian",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$70",
+      "price": 70.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "Up to 2 Years",
+  "renewalCycle": "Every 2 years (expires May 31 of odd years)",
+  "requiredDocuments": [
+    {
+      "name": "Official Online Application",
+      "description": "Application submitted via the SDBMOE portal."
+    },
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of active registration with the Commission on Dietetic Registration. Usually submitted directly or verified online by the Board."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a South Dakota dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial license application fee is $70."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the South Dakota license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "South Dakota dietitian licenses expire biennially on May 31st of odd-numbered years. The renewal fee is $100."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does South Dakota use the 'Nutritionist' title for Dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "South Dakota codified its practice act using the term 'Licensed Nutritionist' for professionals providing medical nutrition therapy, but the requirements parallel those for Registered Dietitians nationally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does South Dakota have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "South Dakota has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to South Dakota?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 3 to 4 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in South Dakota while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.sdbmoe.gov/nutritionist-dietitian/"
+  }
+}

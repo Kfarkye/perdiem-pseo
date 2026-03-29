@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/maine-dietitian",
+  "identifier": "maine-dietitian",
+  "name": "Maine Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Maine - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/maine-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Licensing of Dietetic Practice",
+    "parentOrganization": "Maine Office of Professional and Occupational Regulation (OPOR)",
+    "url": "https://www.maine.gov/pfr/professionallicensing/professions/board-licensing-dietetic-practice",
+    "telephone": "(207) 624-8603",
+    "faxNumber": "(207) 624-8637",
+    "email": "professional.licensing@maine.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "76 Northern Ave.<br>Gardiner, ME 04345",
+      "description": "Department of Professional and Financial Regulation\nOffice of Professional and Occupational Regulation\n35 State House Station\nAugusta, Maine 04333-0035"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Maine"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$150",
+      "price": 150.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$150",
+      "price": 150.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "1 Year",
+  "renewalCycle": "Annual (by Dec 31st) + 15 CE hours",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Card",
+      "description": "Proof of active registration with the Commission on Dietetic Registration."
+    },
+    {
+      "name": "Criminal History Records Check",
+      "description": "Processed internally by the Board upon receipt of the $21 fee with an application."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "May be required if not submitting primary source verification via the CDR."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / State Police",
+    "fee": "$21.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/maine"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Maine dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial cost is $171, which includes a $150 license fee and a $21 criminal history records check fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Maine license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maine dietitian licenses expire annually on December 31st. The renewal fee is $150. A $50 late fee is added if renewed after the expiration date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for Maine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Licensees must complete 15 hours of approved continuing education annually. At least 4 of these hours must be from approved Category 1 programs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Maine have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in Maine. To work in Maine, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Maine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 3 to 5 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Maine while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.maine.gov/pfr/professionallicensing/professions/board-licensing-dietetic-practice"
+  }
+}

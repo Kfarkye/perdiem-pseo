@@ -1,0 +1,130 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/florida-cna",
+  "identifier": "florida-cna",
+  "name": "Florida Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Florida - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/florida-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Florida Board of Nursing",
+    "parentOrganization": "State Health Department",
+    "url": "https://floridasnursing.gov/",
+    "telephone": "(850) 488-0595",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "See board website",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Florida Board of Nursing, 4052 Bald Cypress Way, BIN C-02, Tallahassee, FL 32399-3252"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Florida"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$55",
+      "price": 55.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate from your state-approved CNA program, or high school diploma/GED if using the Challenger Route."
+    },
+    {
+      "name": "Prometric Exam Results",
+      "description": "Official results from your Prometric competency exam."
+    },
+    {
+      "name": "Level II Background Screening",
+      "description": "Completed via AHCA Clearinghouse (flclearinghouse.com) using ORI: EDOH0380Z."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (Level II — AHCA Clearinghouse)",
+    "method_out_of_state": "AHCA Clearinghouse (CHAI) at flclearinghouse.com — ORI: EDOH0380Z",
+    "vendor": "AHCA / FDLE",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.flclearinghouse.com"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I challenge the CNA exam in Florida without training?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Florida's Challenger Route lets individuals 18 or older with a high school diploma take the CNA exam without completing a formal training program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who administers the Florida CNA exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Florida CNA competency exam is administered by Prometric. Register at prometric.com/nurseaide/fl."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify a Florida CNA license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the FL DOH MQA Provider Search at mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I transfer my CNA to Florida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apply for endorsement through the FL Health Source portal (flhealthsource.gov). You must hold an active out-of-state CNA certificate and pass a Level II background check."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does Florida CNA endorsement take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications are processed in 2 to 4 weeks once your file is complete."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-24",
+    "lastVerifiedDate": "2026-03-24",
+    "boardSourceUrl": "https://floridasnursing.gov/"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/arizona-pharm",
+  "identifier": "arizona-pharm",
+  "name": "Arizona Pharmacy Technician License",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Arizona - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/arizona-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Arizona Board of Pharmacy",
+    "parentOrganization": "Arizona does not mandate state dietitian licensure. The national CDR credential is the recognized standard.",
+    "url": "https://pharmacy.az.gov/technician-license-information",
+    "telephone": "(602) 771-2727",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "contact@azboardofpharmacy.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "1700 W. Washington Street, Suite 250, Phoenix, AZ 85007"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Arizona"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$82",
+      "price": 82.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$72",
+      "price": 72.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 to 4 Weeks",
+  "licenseDuration": "See board",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Arizona pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Arizona State Board of Pharmacy lists an $82 pharmacy technician application fee and a $72 renewal fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Arizona have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in Arizona. To work in Arizona, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to Arizona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Arizona State Board of Pharmacy does not publish a public pharmacy technician processing timeline on its licensing page. Use the board's application status tools to check progress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Arizona while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the Arizona Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Arizona."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://pharmacy.az.gov/technician-license-information"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/oklahoma-dietitian",
+  "identifier": "oklahoma-dietitian",
+  "name": "Oklahoma Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to Oklahoma - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/oklahoma-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Oklahoma Licensed Dietitians Committee",
+    "parentOrganization": "Oklahoma State Board of Medical Licensure and Supervision",
+    "url": "https://www.okmedicalboard.org/dietitians",
+    "telephone": "(405) 962-1400",
+    "faxNumber": "(405) 962-1499",
+    "email": "contact@mslb.ok.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "101 NE 51st Street<br>Oklahoma City, OK 73105",
+      "description": "101 NE 51st Street, Oklahoma City, OK 73105-1821"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Oklahoma"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian (LD)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$120",
+      "price": 120.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "1 Year",
+  "renewalCycle": "Annual (by Oct 31st)",
+  "requiredDocuments": [
+    {
+      "name": "CDR Registration Verification",
+      "description": "Proof of active registration with the Commission on Dietetic Registration sent directly to the Board."
+    },
+    {
+      "name": "Official College Transcripts",
+      "description": "Sent directly from the university showing your conferred degree."
+    },
+    {
+      "name": "Extended Background Check",
+      "description": "Processed through the Oklahoma State Bureau of Investigation (OSBI)."
+    },
+    {
+      "name": "Evidence of Legal Status",
+      "description": "Form documenting your citizenship or qualified alien status."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": true,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does an Oklahoma dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial license application fee is $120. Additional fees apply for the required background check."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the Oklahoma license need to be renewed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Oklahoma licensed dietitian credential expires annually on October 31st. The renewal fee is $100."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Oklahoma license Nutritionists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, Oklahoma only issues licenses for Dietitians (Licensed Dietitian). There are no specific licensing requirements or title protections for individuals claiming to be 'nutritionists' in the state."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Oklahoma have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oklahoma has enacted the Dietitian Compact, but compact privileges are not yet issuing. For now, dietitians still apply by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to Oklahoma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Oklahoma while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.okmedicalboard.org/dietitians"
+  }
+}

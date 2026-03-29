@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/hawaii-pt",
+  "identifier": "hawaii-pt",
+  "name": "Hawaii Physical Therapist License",
+  "description": "Already licensed as a physical therapist? Here's whether your license transfers to Hawaii - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/hawaii-pt",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Hawaii DCCA — Physical Therapy",
+    "parentOrganization": "Hawaii Department of Health (DOH) Office of Health Care Assurance",
+    "url": "https://cca.hawaii.gov/pvl/",
+    "telephone": "808-586-3000",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "pvl@dcca.hawaii.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Department of Commerce and Consumer Affairs\nProfessional and Vocational Licensing Division\nP.O. Box 3469\nHonolulu, HI 96801"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Hawaii"
+  },
+  "serviceType": "Professional License",
+  "category": "Physical Therapist",
+  "additionalType": "PT, DPT",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$200",
+      "price": 200.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks (after all documents received)",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years (by December 31 of odd-numbered years)",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the NPTE (National Physical Therapy Examination)."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "PT Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Hawaii physical therapist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For endorsement applicants, the state licensing fee is $100. Additional third-party costs (fingerprinting, transcripts, or verification) may apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the NPTE (National Physical Therapy Examination) is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Hawaii have reciprocity for physical therapists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers physical therapist practice in Hawaii. To work in Hawaii, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my physical therapist license to Hawaii?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Current board processing time is 4 to 6 Weeks (after all documents received) once your file is complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Hawaii while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://cca.hawaii.gov/pvl/"
+  }
+}

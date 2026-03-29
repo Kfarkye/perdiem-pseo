@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-jersey-slp",
+  "identifier": "new-jersey-slp",
+  "name": "New Jersey Speech-Language Pathologist License",
+  "description": "Already licensed as a speech-language pathologist? Here's whether your license transfers to New Jersey - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-jersey-slp",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Audiology and Speech-Language Pathology Advisory Committee",
+    "parentOrganization": "New Jersey Division of Consumer Affairs",
+    "url": "https://www.njconsumeraffairs.gov/aud/",
+    "telephone": "(973) 504-6200",
+    "faxNumber": "(973) 648-3355",
+    "email": "AskConsumerAffairs@dca.njoag.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "124 Halsey St., Newark, NJ 07102",
+      "description": "State Board of Audiology and Speech-Language Pathology\nP.O. Box 45002\nNewark, New Jersey 07101"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New Jersey"
+  },
+  "serviceType": "Professional License",
+  "category": "Speech-Language Pathologist",
+  "additionalType": "Licensed Speech-Language Pathologist (SLP)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$120",
+      "price": 120.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$260",
+      "price": 260.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "6 to 8 Weeks",
+  "licenseDuration": "2 years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official graduate transcripts",
+      "description": "From a CAA-accredited program."
+    },
+    {
+      "name": "Praxis exam score report",
+      "description": "Score of 162 or higher."
+    },
+    {
+      "name": "Clinical Fellowship verification",
+      "description": "CF completion documentation."
+    },
+    {
+      "name": "Background check",
+      "description": "Criminal background check and fingerprinting."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a New Jersey SLP license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "$120 initial. $120 biennial renewal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is New Jersey part of the ASLP Interstate Compact?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New Jersey allow telepractice for SLPs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with a valid NJ license."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New Jersey have reciprocity for speech-language pathologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers speech-language pathologist practice in New Jersey. To work in New Jersey, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my speech-language pathologist license to New Jersey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 8 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in New Jersey while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.njconsumeraffairs.gov/aud/"
+  }
+}

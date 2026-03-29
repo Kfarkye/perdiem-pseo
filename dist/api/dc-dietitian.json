@@ -1,0 +1,162 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/dc-dietitian",
+  "identifier": "dc-dietitian",
+  "name": "District of Columbia Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to District of Columbia - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/dc-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Board of Dietetics & Nutrition",
+    "parentOrganization": "DC Department of Health, Health Regulation and Licensing Administration (HRLA)",
+    "url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-licensing",
+    "telephone": "202-442-5955",
+    "faxNumber": "(202) 442-4795",
+    "email": "hpla.doh@dc.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2201 Shannon Place SE<br>Washington, DC 20020",
+      "description": "DC Department of Health, Health Regulation and Licensing Administration, 899 North Capitol Street NE, 3rd Floor, Washington, DC 20002"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "District of Columbia"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$85",
+      "price": 85.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$144",
+      "price": 144.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years (expires Nov 1, odd years)",
+  "renewalCycle": "Every 2 years + 30 CEUs (incl. 2 LGBTQ Cultural Competency)",
+  "requiredDocuments": [
+    {
+      "name": "Government-issued photo ID",
+      "description": "Driver's license, passport, or equivalent."
+    },
+    {
+      "name": "Two passport-type photographs (2\" × 2\")",
+      "description": "Original photos with applicant's name on back."
+    },
+    {
+      "name": "Current CDR registration card",
+      "description": "Showing active RD/RDN status."
+    },
+    {
+      "name": "Supplemental Information Form",
+      "description": "Available in the DC Health initial license application package."
+    },
+    {
+      "name": "Moral Character Reference Form",
+      "description": "Available in the DC Health initial license application package."
+    },
+    {
+      "name": "Supervision Verification Form",
+      "description": "Supervisor verifies at least satisfactory performance."
+    },
+    {
+      "name": "Official transcripts (sealed)",
+      "description": "From each accredited institution."
+    },
+    {
+      "name": "Letter(s) of good standing",
+      "description": "From each jurisdiction where you hold or held a license — required for endorsement applicants."
+    },
+    {
+      "name": "Criminal background check & fingerprinting",
+      "description": "FBI fingerprinting via FieldPrint, initiated through the online portal."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": false,
+    "fee": "N/A",
+    "processingTime": "N/A",
+    "duration": "N/A"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a DC dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial fee is $229, consisting of an $85 application fee and a $144 license fee. The license fee is refundable if denied or withdrawn. A separate criminal background check fee is paid through the portal. Nutritionist applicants pay $264 (includes $26 exam fee). Duplicate licenses cost $34 each."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a criminal background check required for a DC dietitian license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Per D.C. Code § 3-1205.22 and 17 DCMR 85, a criminal background check with FBI fingerprinting is required for all initial license applicants. U.S.-based applicants schedule through FieldPrint via the online portal. International applicants use FBI FD-258 fingerprint cards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the continuing education requirements for DC dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DC requires 30 CEUs per biennial renewal cycle, including a mandatory 2 CEUs in LGBTQ Cultural Competency. Licenses expire November 1 of odd-numbered years. First-time renewals are exempt from CE requirements. CDR registration requires 75 CPEUs every five years separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does District of Columbia have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in District of Columbia. To work in District of Columbia, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to District of Columbia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take ~3–5 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in District of Columbia while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants need to wait for full approval before starting work because the state does not clearly offer a temporary or provisional credential."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://dchealth.dc.gov/service/dietetics-and-nutrition-licensing"
+  }
+}

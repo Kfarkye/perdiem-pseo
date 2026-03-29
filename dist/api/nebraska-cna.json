@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/nebraska-cna",
+  "identifier": "nebraska-cna",
+  "name": "Nebraska Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Nebraska - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/nebraska-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Nebraska DHHS",
+    "parentOrganization": "State Health Department",
+    "url": "https://dhhs.ne.gov/",
+    "telephone": "(402) 471-0534",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "DHHS.NurseAideRegistry@nebraska.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Nebraska Department of Health and Human Services\nLicensure Unit – Nurse Aide Registry\nP.O. Box 94986\nLincoln, NE 68509-4986"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Nebraska"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "2 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Nebraska CNA endorsement cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no application fee for CNA endorsement in Nebraska. However, background check fees may apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a background check required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, a fingerprint-based background check is required in Nebraska."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my CNA certification to Nebraska?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Nebraska while waiting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://dhhs.ne.gov/"
+  }
+}

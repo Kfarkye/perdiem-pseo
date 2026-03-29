@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/arkansas-cna",
+  "identifier": "arkansas-cna",
+  "name": "Arkansas Certified Nursing Assistant Certification",
+  "description": "Already certified as a CNA? Here's whether your certification transfers to Arkansas - endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/arkansas-cna",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Arkansas State Board of Nursing",
+    "parentOrganization": "State Health Department",
+    "url": "https://humanservices.arkansas.gov/",
+    "telephone": "501-320-6072",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "NurseAideRegistry@dhs.arkansas.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Arkansas Department of Human Services\nOffice of Long Term Care\nP.O. Box 8100\nLittle Rock, AR 72203-8100"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Arkansas"
+  },
+  "serviceType": "Professional License",
+  "category": "Certified Nursing Assistant",
+  "additionalType": "CNA",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$25",
+      "price": 25.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$0",
+      "price": 0.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "Not specified",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Proof of Training",
+      "description": "Certificate of completion from your approved CNA training program."
+    },
+    {
+      "name": "State Competency Exam Results",
+      "description": "Official verification of passing your state's nurse aide competency evaluation."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan OR FD-258 hard card via mail",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Arkansas CNA endorsement cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The endorsement application fee is $25. Additional costs may include background check fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a background check required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, a fingerprint-based background check is required in Arkansas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my CNA certification to Arkansas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Arkansas while waiting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check with the state board about temporary practice permits while your endorsement is being processed."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-22",
+    "lastVerifiedDate": "2026-03-22",
+    "boardSourceUrl": "https://humanservices.arkansas.gov/"
+  }
+}

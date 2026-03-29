@@ -12,6 +12,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   
   <link rel="canonical" href="https://www.statelicensingreference.com/california-pharmacist" />
+  <link rel="alternate" type="application/json" href="/api/california-pharmacist.json" title="Machine-readable licensing data" />
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=1200&amp;q=80&amp;auto=format" fetchpriority="high" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -614,6 +615,12 @@
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["#quick-facts", "#faq"]
+        },
+        "additionalProperty": {
+          "@type": "PropertyValue",
+          "name": "machineReadablePayload",
+          "value": "https://www.statelicensingreference.com/api/california-pharmacist.json",
+          "description": "Full structured JSON payload for AI agents and API consumers"
         }
       },
       {

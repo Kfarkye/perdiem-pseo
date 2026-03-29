@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/michigan-pharm",
+  "identifier": "michigan-pharm",
+  "name": "Michigan Pharmacy Technician Registration",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Michigan - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/michigan-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Michigan Board of Pharmacy",
+    "parentOrganization": "Michigan Department of Licensing and Regulatory Affairs (LARA)",
+    "url": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy",
+    "telephone": "517-335-0918",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "LARA-BPL-Help@michigan.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "Bureau of Professional Licensing\nP.O. Box 30670\nLansing, MI 48909"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Michigan"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$137.70",
+      "price": 137.7,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$61.20",
+      "price": 61.2,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "10 to 12 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Michigan pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Michigan lists a $137.70 pharmacy technician application and initial licensure fee, with a $61.20 renewal fee for the two-year cycle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Michigan have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in Michigan. To work in Michigan, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to Michigan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Michigan’s current licensing report says pharmacy technician applications average about 90 days from receipt to issuance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Michigan while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the Michigan Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Michigan."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://www.michigan.gov/lara/bureau-list/bpl/health/hp-lic-health-prof/pharmacy"
+  }
+}

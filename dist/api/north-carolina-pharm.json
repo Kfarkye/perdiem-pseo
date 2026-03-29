@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/north-carolina-pharm",
+  "identifier": "north-carolina-pharm",
+  "name": "North Carolina Pharmacy Technician Registration",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to North Carolina - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/north-carolina-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "North Carolina Board of Pharmacy",
+    "parentOrganization": "Independent State Board",
+    "url": "https://www.ncbop.org/pharmacy-technicians.html",
+    "telephone": "(919) 246-1050",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "contact@ncbop.org",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "PO Box 459, Carrboro, NC 27510"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "North Carolina"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$30",
+      "price": 30.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$30",
+      "price": 30.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "Allow 3 to 5 business days for board review",
+  "licenseDuration": "1 Year",
+  "renewalCycle": "Annual renewal period November 1 through December 31",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO / SBI",
+    "fee": "$38.00",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://www.identogo.com/locations/north-carolina"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a North Carolina pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The North Carolina Board of Pharmacy lists a $30 pharmacy technician registration fee and a $30 annual renewal fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does North Carolina have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in North Carolina. To work in North Carolina, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to North Carolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The North Carolina Board of Pharmacy says pharmacy technician applications are usually reviewed within 3 to 5 business days once all required materials are in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in North Carolina while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the North Carolina Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in North Carolina."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://www.ncbop.org/pharmacy-technicians.html"
+  }
+}

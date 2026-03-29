@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-mexico-aud",
+  "identifier": "new-mexico-aud",
+  "name": "New Mexico Audiologist License",
+  "description": "Already licensed as a audiologist? Here's whether your license transfers to New Mexico - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-mexico-aud",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Speech-Language Pathology, Audiology and Hearing Aid Dispensing Practices Board",
+    "parentOrganization": "New Mexico Regulation and Licensing Department",
+    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/",
+    "telephone": "(505) 476-4870",
+    "faxNumber": "(505) 476-4645",
+    "email": "speech.hearing@rld.nm.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2550 Cerrillos Road, Santa Fe, NM 87505",
+      "description": "New Mexico Regulation & Licensing Department\nP.O. Box 25101\nSanta Fe, NM 87504"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New Mexico"
+  },
+  "serviceType": "Professional License",
+  "category": "Audiologist",
+  "additionalType": "AuD, CCC-A",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$100",
+      "price": 100.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the Praxis Exam in Audiology."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "ASLP-IC",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a New Mexico audiologist license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial application and licensing fee varies, often around $100 to $200. Check the specific fee breakdown above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the Praxis Exam in Audiology is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New Mexico have reciprocity for audiologists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers audiologist practice in New Mexico. To work in New Mexico, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my audiologist license to New Mexico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take 4 to 6 Weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in New Mexico while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/speech-language-pathology-audiology-and-hearing-aid-dispensing-practices-board/"
+  }
+}

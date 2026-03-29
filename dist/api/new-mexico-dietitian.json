@@ -1,0 +1,130 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/new-mexico-dietitian",
+  "identifier": "new-mexico-dietitian",
+  "name": "New Mexico Dietitian License",
+  "description": "Already licensed as a dietitian? Here's whether your license transfers to New Mexico - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/new-mexico-dietitian",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Nutrition and Dietetics Practice Board",
+    "parentOrganization": "New Mexico Regulation and Licensing Department",
+    "url": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/",
+    "telephone": "(505) 476-4620",
+    "faxNumber": "(505) 476-4565",
+    "email": "dietetics.board@rld.nm.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2550 Cerrillos Road, 2nd Floor<br>Santa Fe, NM 87505",
+      "description": "RLD - Dietetics and Nutrition Practice Board, P.O. Box 25101, Santa Fe, NM 87504"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New Mexico"
+  },
+  "serviceType": "Professional License",
+  "category": "Dietitian",
+  "additionalType": "Licensed Dietitian",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$50",
+      "price": 50.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$75",
+      "price": 75.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "4 to 6 Weeks",
+  "licenseDuration": "1 Year",
+  "renewalCycle": "Every 1 year + 15 CE hours or active CDR",
+  "requiredDocuments": [
+    {
+      "name": "Copy of current CDR registration card",
+      "description": "Required for all dietitian applicants."
+    },
+    {
+      "name": "Background check",
+      "description": "Must be conducted within the past 90 days per 16.14.3.8 NMAC."
+    },
+    {
+      "name": "Official academic transcript",
+      "description": "Must be sent directly from the college or university to the Board."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "Dietitian Compact",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a New Mexico dietitian license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The total initial cost for a New Mexico dietitian license is $200, broken down as a $50 non-refundable application fee plus a $150 initial license fee. Annual renewal costs $75."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a background check required for a New Mexico dietitian license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Per current NMAC regulations, a background check conducted within the past 90 days is required for initial dietitian and nutritionist licensure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does New Mexico have reciprocity for dietitians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers dietitian practice in New Mexico. To work in New Mexico, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my dietitian license to New Mexico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most endorsement applications take Varies (~2 Weeks)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in New Mexico while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A temporary or provisional credential is available while the full endorsement application is pending."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-02-25",
+    "lastVerifiedDate": "2026-02-25",
+    "boardSourceUrl": "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/nutrition-and-dietetics/"
+  }
+}

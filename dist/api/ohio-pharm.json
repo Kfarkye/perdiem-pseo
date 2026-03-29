@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "@id": "https://www.statelicensingreference.com/ohio-pharm",
+  "identifier": "ohio-pharm",
+  "name": "Ohio Pharmacy Technician Registration",
+  "description": "Already licensed as a pharmacy technician? Here's whether your license transfers to Ohio - compact status, endorsement steps, fees, and processing time.",
+  "url": "https://www.statelicensingreference.com/ohio-pharm",
+  "provider": {
+    "@type": "GovernmentOrganization",
+    "name": "Ohio Board of Pharmacy",
+    "parentOrganization": "State Medical Board of Ohio",
+    "url": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech",
+    "telephone": "614-466-4143",
+    "faxNumber": "N/A (contact by phone)",
+    "email": "contact@pharmacy.ohio.gov",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "See board website",
+      "description": "State of Ohio Board of Pharmacy\n77 South High Street, 17th Floor\nColumbus, Ohio 43215-6126"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Ohio"
+  },
+  "serviceType": "Professional License",
+  "category": "Pharmacy Technician",
+  "additionalType": "Certified Pharmacy Technician (CPhT)",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Initial Application Fee",
+      "description": "$65",
+      "price": 65.0,
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Renewal Fee",
+      "description": "$65",
+      "price": 65.0,
+      "priceCurrency": "USD"
+    }
+  ],
+  "processingTime": "10 to 15 business days",
+  "licenseDuration": "2 Years",
+  "renewalCycle": "Every 2 years",
+  "requiredDocuments": [
+    {
+      "name": "Official Transcripts",
+      "description": "Sent directly from your educational institution."
+    },
+    {
+      "name": "Exam Score Report",
+      "description": "Official verification of passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam."
+    }
+  ],
+  "fingerprinting": {
+    "required": true,
+    "method_in_state": "LiveScan (IdentoGO)",
+    "method_out_of_state": "IdentoGO Out-of-State Live Scan (adds ~$39.95 fee) OR FD-258 hard card via mail (tip: moisturize hands for days prior to reduce smudge rejects)",
+    "vendor": "IdentoGO (IDEMIA)",
+    "fee": "$35-$50 (varies by state)",
+    "delay_out_of_state_weeks": "2-4",
+    "vendor_url": "https://uenroll.identogo.com/"
+  },
+  "compactStatus": {
+    "isCompactMember": false,
+    "compactName": "N/A",
+    "compactPrivilegeFee": "N/A"
+  },
+  "temporaryLicense": {
+    "available": true,
+    "fee": "See board",
+    "processingTime": "See board",
+    "duration": "See board"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Ohio pharmacy technician license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Ohio Board of Pharmacy fee schedule lists a $65 registration fee for registered and certified pharmacy technicians. The board's September 2025 fee notice says the same amount applies to initial, renewal, and reinstatement applications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is national certification required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, passing the PTCB (Pharmacy Technician Certification Board) or ExCPT exam is a standard requirement for initial licensure across almost all states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Ohio have reciprocity for pharmacy technicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No interstate compact currently covers pharmacy technician practice in Ohio. To work in Ohio, apply for licensure by endorsement through the state board."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to transfer my pharmacy technician license to Ohio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Ohio Board of Pharmacy says the application review process for registered pharmacy technician applications normally occurs within 10 to 15 business days of submission."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start working in Ohio while my endorsement application is processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the Ohio Board of Pharmacy to determine whether a temporary or trainee permit is available while your endorsement application is being processed. Requirements vary, and some applicants may need to wait for full approval before beginning work in Ohio."
+      }
+    }
+  ],
+  "sourceMetadata": {
+    "lastUpdated": "2026-03-18",
+    "lastVerifiedDate": "2026-03-18",
+    "boardSourceUrl": "https://www.pharmacy.ohio.gov/licensing/techs/registeredtech"
+  }
+}
