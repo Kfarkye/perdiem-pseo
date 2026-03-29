@@ -61,6 +61,7 @@ Confirm:
 
 Deploy only if all checks above pass from root repo.
 Do not deploy per-vertical `dist/` or legacy `dist-v2/` artifacts.
+Do not keep or reintroduce `*-pseo/vercel.json` files; only root `vercel.json` is allowed.
 
 ## 7) Post-deploy live trust guard
 

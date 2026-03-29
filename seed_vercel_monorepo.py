@@ -1,60 +1,48 @@
 #!/usr/bin/env python3
+"""Root deploy config hygiene guard.
+
+Legacy behavior wrote per-vertical `*-pseo/vercel.json` files.
+This is now intentionally blocked because production deploys from root config only.
 """
-Pristine Vercel Config Seeder
-Ensures identical SEO and routing rules across all 8 verticals.
-"""
+
+from __future__ import annotations
+
 import json
+import sys
 from pathlib import Path
 
-# Automatically targets the folder this script lives in (the repo root)
 REPO_ROOT = Path(__file__).resolve().parent
+ROOT_VERCEL = REPO_ROOT / "vercel.json"
 
-VERTICALS = [
-    "dietitian-pseo", "slp-pseo", "ot-pseo", "pt-pseo",
-    "rrt-pseo", "aud-pseo", "pharm-pseo", "pharmacist-pseo"
-]
 
-# Bulletproof SEO Settings:
-# - cleanUrls: Forces /state-name instead of /state-name.html
-# - trailingSlash: Removes end slashes (prevents Google indexing duplicate content)
-# - headers: Forces browsers/crawlers to parse sitemap & robots correctly
-VERCEL_JSON = {
-    "cleanUrls": True,
-    "trailingSlash": False,
-    "headers": [
-        {
-            "source": "/sitemap.xml",
-            "headers": [{"key": "Content-Type", "value": "application/xml; charset=utf-8"}]
-        },
-        {
-            "source": "/robots.txt",
-            "headers": [{"key": "Content-Type", "value": "text/plain; charset=utf-8"}]
-        }
-    ]
-}
-
-def main():
-    print("Standardizing Vercel configs across all verticals...")
+def main() -> None:
+    print("Root deploy hygiene check")
     print("-" * 50)
-    
-    written, skipped, missing = 0, 0, 0
 
-    for v in VERTICALS:
-        v_dir = REPO_ROOT / v
-        if not v_dir.exists():
-            print(f"  [WARN] Missing directory, skipping: {v}/")
-            missing += 1
-            continue
-            
-        config_path = v_dir / "vercel.json"
-        
-        # Always overwrite to ensure absolute consistency across the monorepo
-        config_path.write_text(json.dumps(VERCEL_JSON, indent=2) + "\n", encoding="utf-8")
-        print(f"  [ OK ] Synced: {v}/vercel.json")
-        written += 1
+    if not ROOT_VERCEL.exists():
+        print("ERROR: Missing root vercel.json")
+        sys.exit(1)
 
-    print("-" * 50)
-    print(f"✅ Synced: {written} | ⏭️ Skipped: {skipped} | ⚠️ Missing Folders: {missing}")
+    try:
+        root_config = json.loads(ROOT_VERCEL.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        print(f"ERROR: Invalid root vercel.json ({exc})")
+        sys.exit(1)
+
+    output_dir = root_config.get("outputDirectory")
+    if output_dir != "dist":
+        print(f"ERROR: root vercel.json outputDirectory must be 'dist' (found {output_dir!r})")
+        sys.exit(1)
+
+    legacy_files = sorted(REPO_ROOT.glob("*-pseo/vercel.json"))
+    if legacy_files:
+        print("ERROR: Legacy per-vertical vercel.json files are not allowed:")
+        for path in legacy_files:
+            print(f" - {path.relative_to(REPO_ROOT)}")
+        sys.exit(1)
+
+    print("PASS: root vercel.json is canonical and no legacy per-vertical configs exist.")
+
 
 if __name__ == "__main__":
     main()

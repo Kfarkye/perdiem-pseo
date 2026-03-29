@@ -301,9 +301,9 @@ def gate_deploy_config_transition() -> None:
 
     vertical_vercels = sorted(str(path.relative_to(REPO)) for path in REPO.glob("*-pseo/vercel.json"))
     if vertical_vercels:
-        warn(
-            "Per-vertical vercel.json files still exist (legacy paths). Root deploy uses only /vercel.json. "
-            f"Found {len(vertical_vercels)} files."
+        fail(
+            "Per-vertical vercel.json files found. Root deploy uses only /vercel.json. "
+            f"Remove legacy files: {vertical_vercels}"
         )
 
     if not DEPLOY_CHECKLIST_PATH.exists():
