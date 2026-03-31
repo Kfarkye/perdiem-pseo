@@ -21,7 +21,6 @@ STATE_IMAGES = json.loads(IMAGES_FILE.read_text(encoding="utf-8")) if IMAGES_FIL
 from consumer_db_overrides import (
     DB_SPECIALTY_BY_VERTICAL,
     apply_consumer_db_overrides,
-    fetch_state_hero_images,
     fetch_supabase_rows,
 )
 from reciprocity_index_builder import render_index
@@ -30,15 +29,6 @@ from site_linking import (
     build_same_state_specialties,
     load_vertical_catalog,
 )
-
-
-def fallback_hero_image(state_name: str) -> dict[str, str]:
-    query = state_name.replace(" ", "%20")
-    return {
-        "url": f"https://source.unsplash.com/1600x900/?{query},landscape",
-        "alt": f"{state_name} landscape",
-        "photographer": "Unsplash",
-    }
 
 JSON_DIR = ROOT / "database" / "json"
 DIST_DIR = ROOT / "dist"
@@ -70,17 +60,6 @@ records = [
 
 verify_fee_and_timing_with_board = VERTICAL_SLUG == "pharm"
 db_rows = fetch_supabase_rows(DB_SPECIALTY_BY_VERTICAL[VERTICAL_SLUG]) if VERTICAL_SLUG in DB_SPECIALTY_BY_VERTICAL else {}
-hero_rows = fetch_state_hero_images()
-fallback_images = {
-    str(state_abbr).upper(): {
-        "url": str(meta.get("url") or "").strip(),
-        "alt": str(meta.get("alt") or "").strip(),
-        "photographer": str(meta.get("photographer") or "").strip(),
-    }
-    for state_abbr, meta in STATE_IMAGES.items()
-    if isinstance(meta, dict)
-}
-hero_images = {**fallback_images, **hero_rows}
 
 for json_file, data in records:
     default_slug = data["state_slug"] if data["state_slug"].endswith(f"-{VERTICAL_SLUG}") else f"{data['state_slug']}-{VERTICAL_SLUG}"
@@ -96,15 +75,12 @@ for json_file, data in records:
     if out_name in tier2_files:
         shutil.copyfile(tier2_files[out_name], out_path)
     else:
-        hero_img = hero_images.get(abbr, {})
-        if not hero_img.get("url"):
-            hero_img = fallback_hero_image(data["state_name"])
+        hero_img = STATE_IMAGES.get(abbr, {})
         render_data = {
             **data,
             "site_domain": CANONICAL_HOST,
             "hero_image_url": hero_img.get("url", ""),
             "hero_image_alt": hero_img.get("alt", ""),
-            "hero_image_photographer": hero_img.get("photographer", ""),
             "same_state_specialties": build_same_state_specialties(
                 state_slug=data["state_slug"],
                 current_vertical_slug=VERTICAL_SLUG,
@@ -117,12 +93,6 @@ for json_file, data in records:
             "board_verification": data.get("board_verification", {}),
             "board_verification_sources": data.get("board_verification_sources", {}),
             "verify_fee_and_timing_with_board": verify_fee_and_timing_with_board,
-            "endorsement_cost_total": data.get("endorsement_cost_total"),
-            "endorsement_timeline_days": data.get("endorsement_timeline_days"),
-            "temp_license_fee": data.get("temp_license_fee"),
-            "national_exam_required": data.get("national_exam_required"),
-            "renewal_cycle_years": data.get("renewal_cycle_years"),
-            "renewal_fee": data.get("renewal_fee"),
         }
         out_path.write_text(
             template.render(**render_data),

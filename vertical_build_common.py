@@ -14,7 +14,6 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 from build_shared import STATE_NAME_TO_ABBR
-from consumer_db_overrides import fetch_state_hero_images
 from reciprocity_index_builder import render_index
 from site_linking import (
     build_nearby_state_links,
@@ -23,32 +22,12 @@ from site_linking import (
 )
 
 
-def _fallback_hero_image(state_name: str) -> dict[str, str]:
-    query = state_name.replace(" ", "%20")
-    return {
-        "url": f"https://source.unsplash.com/1600x900/?{query},landscape",
-        "alt": f"{state_name} landscape",
-        "photographer": "Unsplash",
-    }
-
-
 def build_vertical(vertical_root: Path) -> None:
     root = vertical_root.resolve()
     repo_root = root.parent
 
     images_file = repo_root / "state_images.json"
     state_images = json.loads(images_file.read_text(encoding="utf-8")) if images_file.exists() else {}
-    hero_rows = fetch_state_hero_images()
-    fallback_images = {
-        str(state_abbr).upper(): {
-            "url": str(meta.get("url") or "").strip(),
-            "alt": str(meta.get("alt") or "").strip(),
-            "photographer": str(meta.get("photographer") or "").strip(),
-        }
-        for state_abbr, meta in state_images.items()
-        if isinstance(meta, dict)
-    }
-    hero_images = {**fallback_images, **hero_rows}
 
     sys.path.insert(0, str(repo_root))
 
@@ -90,16 +69,13 @@ def build_vertical(vertical_root: Path) -> None:
         else:
             state_abbr = data.get("reciprocity", {}).get("state_abbr")
             abbr = state_abbr or STATE_NAME_TO_ABBR.get(data["state_name"], "") or data["state_slug"][:2].upper()
-            hero_img = hero_images.get(abbr, {})
-            if not hero_img.get("url"):
-                hero_img = _fallback_hero_image(data["state_name"])
+            hero_img = state_images.get(abbr, {})
             out_path.write_text(
                 template.render(
                     **data,
                     site_domain=canonical_host,
                     hero_image_url=hero_img.get("url", ""),
                     hero_image_alt=hero_img.get("alt", ""),
-                    hero_image_photographer=hero_img.get("photographer", ""),
                     same_state_specialties=build_same_state_specialties(
                         state_slug=data["state_slug"],
                         current_vertical_slug=vertical_slug,
@@ -112,12 +88,6 @@ def build_vertical(vertical_root: Path) -> None:
                     board_verification=data.get("board_verification", {}),
                     board_verification_sources=data.get("board_verification_sources", {}),
                     verify_fee_and_timing_with_board=verify_fee_and_timing_with_board,
-                    endorsement_cost_total=data.get("endorsement_cost_total"),
-                    endorsement_timeline_days=data.get("endorsement_timeline_days"),
-                    temp_license_fee=data.get("temp_license_fee"),
-                    national_exam_required=data.get("national_exam_required"),
-                    renewal_cycle_years=data.get("renewal_cycle_years"),
-                    renewal_fee=data.get("renewal_fee"),
                 ),
                 encoding="utf-8",
             )
