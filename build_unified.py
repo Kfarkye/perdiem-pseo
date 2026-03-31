@@ -16,6 +16,7 @@ from build_shared import STATE_NAME_TO_ABBR, format_fee_display
 from consumer_db_overrides import (
     DB_SPECIALTY_BY_VERTICAL,
     apply_consumer_db_overrides,
+    fetch_state_hero_images,
     fetch_supabase_rows,
 )
 from reciprocity_index_builder import render_index
@@ -63,6 +64,15 @@ def _parse_money(value: object) -> float | None:
         except ValueError:
             return None
     return None
+
+
+def _fallback_hero_image(state_name: str) -> dict[str, str]:
+    query = state_name.replace(" ", "%20")
+    return {
+        "url": f"https://source.unsplash.com/1600x900/?{query},landscape",
+        "alt": f"{state_name} landscape",
+        "photographer": "Unsplash",
+    }
 
 
 def build_api_payload(*, data: dict[str, Any], slug_value: str) -> dict[str, Any]:
@@ -222,6 +232,17 @@ def build_verticals() -> tuple[list[str], list[str]]:
         autoescape=False,
     )
     template = template_env.get_template("state-hub.html")
+    hero_image_rows = fetch_state_hero_images()
+    fallback_images = {
+        str(state_abbr).upper(): {
+            "url": str(meta.get("url") or "").strip(),
+            "alt": str(meta.get("alt") or "").strip(),
+            "photographer": str(meta.get("photographer") or "").strip(),
+        }
+        for state_abbr, meta in STATE_IMAGES.items()
+        if isinstance(meta, dict)
+    }
+    hero_images = {**fallback_images, **hero_image_rows}
 
     for slug in verticals:
         vertical_dir = REPO / f"{slug}-pseo"
@@ -254,12 +275,15 @@ def build_verticals() -> tuple[list[str], list[str]]:
             if out_name in tier2_files:
                 shutil.copyfile(tier2_files[out_name], out_path)
             else:
-                hero_img = STATE_IMAGES.get(abbr, {})
+                hero_img = hero_images.get(abbr, {})
+                if not hero_img.get("url"):
+                    hero_img = _fallback_hero_image(data["state_name"])
                 render_data = {
                     **data,
                     "site_domain": CANONICAL_HOST,
                     "hero_image_url": hero_img.get("url", ""),
                     "hero_image_alt": hero_img.get("alt", ""),
+                    "hero_image_photographer": hero_img.get("photographer", ""),
                     "same_state_specialties": build_same_state_specialties(
                         state_slug=data["state_slug"],
                         current_vertical_slug=slug,
@@ -272,6 +296,12 @@ def build_verticals() -> tuple[list[str], list[str]]:
                     "board_verification": data.get("board_verification", {}),
                     "board_verification_sources": data.get("board_verification_sources", {}),
                     "verify_fee_and_timing_with_board": verify_fee_and_timing_with_board,
+                    "endorsement_cost_total": data.get("endorsement_cost_total"),
+                    "endorsement_timeline_days": data.get("endorsement_timeline_days"),
+                    "temp_license_fee": data.get("temp_license_fee"),
+                    "national_exam_required": data.get("national_exam_required"),
+                    "renewal_cycle_years": data.get("renewal_cycle_years"),
+                    "renewal_fee": data.get("renewal_fee"),
                 }
                 out_path.write_text(
                     template.render(**render_data),

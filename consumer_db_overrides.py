@@ -10,6 +10,50 @@ DB_SPECIALTY_BY_VERTICAL = {
 }
 
 
+def fetch_state_hero_images() -> dict[str, dict[str, str]]:
+    """Fetch state hero image metadata keyed by state abbreviation."""
+    url = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    key = os.environ.get("SUPABASE_ANON_KEY", "")
+
+    if not url and not key:
+        return {}
+
+    if not url or not key:
+        print("WARNING: Incomplete Supabase env for hero images. Falling back to local state_images.json.")
+        return {}
+
+    if not url.startswith("http://") and not url.startswith("https://"):
+        print("WARNING: SUPABASE_URL is not a valid URL for hero-image fetch. Falling back to local state_images.json.")
+        return {}
+
+    endpoint = f"{url}/rest/v1/state_hero_images"
+    headers = {
+        "apikey": key,
+        "Authorization": f"Bearer {key}",
+    }
+    params = {
+        "select": "state_abbr,image_url,image_alt,photographer",
+    }
+
+    try:
+        response = requests.get(endpoint, params=params, headers=headers, timeout=15)
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        print(f"WARNING: Failed to fetch state_hero_images ({exc}). Falling back to local state_images.json.")
+        return {}
+
+    rows = response.json()
+    return {
+        str(row.get("state_abbr", "")).upper(): {
+            "url": str(row.get("image_url") or "").strip(),
+            "alt": str(row.get("image_alt") or "").strip(),
+            "photographer": str(row.get("photographer") or "").strip(),
+        }
+        for row in rows
+        if row.get("state_abbr") and row.get("image_url")
+    }
+
+
 def fetch_supabase_rows(db_specialty: str) -> dict[str, dict[str, Any]]:
     """Fetch consumer-safe licensing rows keyed by state abbreviation."""
     url = os.environ.get("SUPABASE_URL", "").rstrip("/")
@@ -102,6 +146,14 @@ def apply_consumer_db_overrides(data: dict[str, Any], db_row: dict[str, Any]) ->
     if last_verified:
         data["last_verified_date"] = str(last_verified)
         data["last_updated"] = str(last_verified)
+
+    data["endorsement_cost_total"] = _first_present(db_row, "endorsement_cost_total")
+    data["endorsement_timeline_days"] = _first_present(db_row, "endorsement_timeline_days")
+    data["temp_license_fee"] = _first_present(db_row, "temp_license_fee")
+    data["national_exam_required"] = _first_present(db_row, "national_exam_required")
+    data["renewal_cycle_years"] = _first_present(db_row, "renewal_cycle_years")
+    data["renewal_fee"] = _first_present(db_row, "renewal_fee")
+    data["source_urls"] = _source_urls(db_row)
 
     data["board_source_url"] = _primary_source_url(db_row) or data.get("board_source_url", "")
     data["board_verification"] = _build_board_verification(db_row)
