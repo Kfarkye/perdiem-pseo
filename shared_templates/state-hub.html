@@ -474,7 +474,8 @@
       box-shadow: 0 0 0 6px var(--paper);
     }
     .step-kicker { display: block; margin-bottom: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--soft); }
-    .step-title { margin-bottom: 8px; font-size: 19px; font-weight: 600; color: #191919; }
+    .step-title { margin-bottom: 8px; font-size: 19px; font-weight: 600; color: #191919; max-width: 34ch; }
+    .steps li > p:not(.step-kicker) { max-width: 58ch; line-height: 1.58; margin-bottom: 0; }
 
     .docs { list-style: none; display: grid; gap: 14px; }
     .docs li { position: relative; padding-left: 18px; color: #2e2e2e; }
