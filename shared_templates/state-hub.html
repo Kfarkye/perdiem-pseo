@@ -298,13 +298,11 @@
     }
 
     /* ==========================================================================
-       4b. Intent Selector (3-phase navigation)
+       4b. Intent Selector (underline-tab navigation)
        ========================================================================== */
     .intent-selector {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      background: #ffffff;
+      border-bottom: 1px solid #e5e2dd;
       position: sticky;
       top: 56px;
       z-index: 90;
@@ -312,45 +310,44 @@
     .intent-selector-inner {
       width: min(var(--shell), calc(100% - 48px));
       margin: 0 auto;
-      padding: 16px 0;
+      padding: 0;
     }
     .selector-list {
       display: inline-flex;
-      background: #f3f1ed;
-      border-radius: 10px;
-      padding: 4px;
-      gap: 2px;
+      gap: 0;
       list-style: none;
+      padding: 0;
+      margin: 0;
     }
     .selector-pill {
       font-family: 'Karla', sans-serif;
-      font-size: 14.5px;
+      font-size: 15px;
       font-weight: 500;
-      padding: 8px 20px;
-      border-radius: 8px;
+      padding: 16px 24px 14px;
       background: transparent;
-      color: #6a6054;
+      color: #9a9590;
       text-decoration: none;
-      transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 180ms ease;
       white-space: nowrap;
       display: block;
       cursor: pointer;
       border: none;
-      letter-spacing: 0.01em;
+      border-bottom: 2px solid transparent;
+      letter-spacing: 0.005em;
+      position: relative;
     }
     .selector-pill:hover {
-      color: var(--ink);
+      color: #555;
     }
     .selector-pill.is-active {
-      background: #ffffff;
       color: var(--ink);
-      font-weight: 700;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 2px 12px rgba(0,0,0,0.04);
-      letter-spacing: -0.005em;
+      font-weight: 600;
+      border-bottom-color: var(--ink);
     }
     .selector-pill:focus-visible {
       outline: 2px solid var(--link);
-      outline-offset: 2px;
+      outline-offset: -2px;
+      border-radius: 2px;
     }
     
     .variant-panel, .rail-variant { display: none; }
@@ -375,9 +372,9 @@
     }
     
     @media (max-width: 720px) {
-      .intent-selector-inner { width: calc(100% - 32px); padding: 12px 0; }
+      .intent-selector-inner { width: calc(100% - 32px); }
       .selector-list { width: 100%; display: flex; }
-      .selector-pill { flex: 1; padding: 10px 8px; font-size: 13.5px; text-align: center; }
+      .selector-pill { flex: 1; padding: 14px 8px 12px; font-size: 14px; text-align: center; }
     }
 
     /* ==========================================================================
@@ -611,6 +608,238 @@
         content: "Printed from State Licensing Reference - statelicensingreference.com";
         display: block; text-align: center; font-size: 9pt; color: #666; margin-top: 30px; padding-top: 10px; border-top: 1px solid #ccc;
       }
+    }
+
+    /* ==========================================================================
+       AI CHAT WIDGET
+       ========================================================================== */
+    .chat-fab {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18), 0 1px 4px rgba(0,0,0,0.1);
+      transition: transform 200ms ease, box-shadow 200ms ease;
+    }
+    .chat-fab:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(0,0,0,0.22); }
+    .chat-fab:active { transform: scale(0.96); }
+    .chat-fab svg { width: 24px; height: 24px; fill: currentColor; }
+    .chat-fab.is-hidden { display: none; }
+
+    .chat-panel {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 10000;
+      width: 400px;
+      max-height: 560px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.08);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: 'Karla', sans-serif;
+    }
+    .chat-panel.is-open {
+      display: flex;
+      animation: chatSlideUp 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes chatSlideUp {
+      from { opacity: 0; transform: translateY(16px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .chat-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-bottom: 1px solid #eae7e2;
+      background: #faf9f7;
+      border-radius: 16px 16px 0 0;
+    }
+    .chat-header-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+    .chat-header-sub {
+      font-size: 12px;
+      color: var(--soft);
+      margin-top: 2px;
+    }
+    .chat-close {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      transition: background 150ms, color 150ms;
+    }
+    .chat-close:hover { background: #f0ede8; color: var(--ink); }
+    .chat-close svg { width: 18px; height: 18px; }
+
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-height: 200px;
+      max-height: 360px;
+    }
+
+    .chat-msg {
+      max-width: 85%;
+      padding: 12px 16px;
+      border-radius: 14px;
+      font-size: 14px;
+      line-height: 1.55;
+      word-wrap: break-word;
+    }
+    .chat-msg--user {
+      align-self: flex-end;
+      background: var(--ink);
+      color: #fff;
+      border-bottom-right-radius: 4px;
+    }
+    .chat-msg--ai {
+      align-self: flex-start;
+      background: #f5f3ef;
+      color: #333;
+      border-bottom-left-radius: 4px;
+    }
+    .chat-msg--ai a { color: var(--link); text-decoration: underline; }
+
+    .chat-typing {
+      align-self: flex-start;
+      display: none;
+      gap: 5px;
+      padding: 14px 18px;
+      background: #f5f3ef;
+      border-radius: 14px;
+      border-bottom-left-radius: 4px;
+    }
+    .chat-typing.is-active { display: flex; }
+    .chat-typing-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #bbb;
+      animation: chatDotPulse 1.2s ease-in-out infinite;
+    }
+    .chat-typing-dot:nth-child(2) { animation-delay: 0.15s; }
+    .chat-typing-dot:nth-child(3) { animation-delay: 0.3s; }
+    @keyframes chatDotPulse {
+      0%, 60%, 100% { opacity: 0.3; transform: scale(0.85); }
+      30% { opacity: 1; transform: scale(1); }
+    }
+
+    .chat-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0 20px 12px;
+    }
+    .chat-chip {
+      font-family: 'Karla', sans-serif;
+      font-size: 13px;
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: 1px solid #e0dbd5;
+      background: #fff;
+      color: #555;
+      cursor: pointer;
+      transition: background 150ms, border-color 150ms, color 150ms;
+      white-space: nowrap;
+    }
+    .chat-chip:hover {
+      background: #f5f3ef;
+      border-color: #ccc;
+      color: var(--ink);
+    }
+
+    .chat-input-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      border-top: 1px solid #eae7e2;
+      background: #faf9f7;
+      border-radius: 0 0 16px 16px;
+    }
+    .chat-input {
+      flex: 1;
+      font-family: 'Karla', sans-serif;
+      font-size: 14px;
+      padding: 10px 14px;
+      border: 1px solid #e0dbd5;
+      border-radius: 10px;
+      background: #fff;
+      outline: none;
+      transition: border-color 150ms;
+      color: var(--ink);
+    }
+    .chat-input::placeholder { color: #b0a99e; }
+    .chat-input:focus { border-color: var(--ink); }
+    .chat-send {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      border: none;
+      background: var(--ink);
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 150ms;
+      flex-shrink: 0;
+    }
+    .chat-send:disabled { opacity: 0.4; cursor: not-allowed; }
+    .chat-send svg { width: 16px; height: 16px; fill: currentColor; }
+
+    .chat-disclaimer {
+      font-size: 11px;
+      color: #b0a99e;
+      text-align: center;
+      padding: 0 20px 10px;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 720px) {
+      .chat-panel {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        max-height: 100dvh;
+        border-radius: 16px 16px 0 0;
+      }
+      .chat-messages { max-height: calc(100dvh - 200px); }
+      .chat-fab { bottom: 16px; right: 16px; }
+    }
+
+    @media print {
+      .chat-fab, .chat-panel { display: none !important; }
     }
   </style>
 
@@ -1397,6 +1626,297 @@
   })();
   </script>
   {% endif %}
+
+  <!-- AI Chat Widget -->
+  <button class="chat-fab" id="chat-fab" aria-label="Ask about this license" title="Ask about this license">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/><path d="M7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+  </button>
+
+  <div class="chat-panel" id="chat-panel" role="dialog" aria-label="Licensing Assistant">
+    <div class="chat-header">
+      <div>
+        <div class="chat-header-title">Licensing Assistant</div>
+        <div class="chat-header-sub">{{ state_name }} {{ profession_name }}</div>
+      </div>
+      <button class="chat-close" id="chat-close" aria-label="Close chat">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/></svg>
+      </button>
+    </div>
+
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-msg chat-msg--ai">
+        Hi! I can answer questions about {{ profession_name | lower }} licensing in {{ state_name }}. What would you like to know?
+      </div>
+      <div class="chat-typing" id="chat-typing">
+        <span class="chat-typing-dot"></span>
+        <span class="chat-typing-dot"></span>
+        <span class="chat-typing-dot"></span>
+      </div>
+    </div>
+
+    <div class="chat-chips" id="chat-chips">
+      {%- if faqs and faqs | length > 0 %}
+      {%- for faq in faqs[:3] %}
+      <button class="chat-chip" data-question="{{ faq.question | default('', true) | string | striptags | trim | e }}">{{ faq.question | default('', true) | string | striptags | trim | truncate(45) | e }}</button>
+      {%- endfor %}
+      {%- else %}
+      <button class="chat-chip" data-question="How much does the license cost?">How much does it cost?</button>
+      <button class="chat-chip" data-question="What are the requirements?">What are the requirements?</button>
+      <button class="chat-chip" data-question="How long does it take?">How long does it take?</button>
+      {%- endif %}
+    </div>
+
+    <div class="chat-disclaimer">AI-generated · Always verify with the licensing board</div>
+
+    <div class="chat-input-bar">
+      <input class="chat-input" id="chat-input" type="text" placeholder="Ask about this license..." autocomplete="off" maxlength="500" />
+      <button class="chat-send" id="chat-send" aria-label="Send message" disabled>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Firebase AI Logic SDK (modular, via CDN) -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js';
+    import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.com/firebasejs/12.11.0/firebase-ai.js';
+
+    // --- Firebase Init ---
+    const firebaseConfig = {
+      apiKey: "AIzaSyDqwoFyyoJX6gdrb76FmQVYbLfeHs5Y9W0",
+      authDomain: "sportsync-evidence.firebaseapp.com",
+      projectId: "sportsync-evidence",
+      storageBucket: "sportsync-evidence.firebasestorage.app",
+      messagingSenderId: "219869490872",
+      appId: "1:219869490872:web:d13192ae3ce7b338cc4e4d"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const ai = getAI(app, { backend: new GoogleAIBackend() });
+
+    // --- State ---
+    const MAX_QUESTIONS = 15;
+    let questionCount = 0;
+    let isProcessing = false;
+    let model = null;
+    let chat = null;
+    let pageData = null;
+    let rateData = null;
+
+    // --- PerDiem grounding: URL pre-resolved by page packet (no parallel inference) ---
+    const PERDIEM_API_URL = '{{ perdiem_api_url | default("", true) | e }}';
+
+    async function fetchRateData() {
+      if (rateData !== null) return rateData;
+      if (!PERDIEM_API_URL) { rateData = false; return false; }
+      try {
+        const res = await fetch(PERDIEM_API_URL);
+        if (!res.ok) { rateData = false; return false; }
+        rateData = await res.json();
+        return rateData;
+      } catch { rateData = false; return false; }
+    }
+
+    // --- DOM ---
+    const fab = document.getElementById('chat-fab');
+    const panel = document.getElementById('chat-panel');
+    const closeBtn = document.getElementById('chat-close');
+    const messagesEl = document.getElementById('chat-messages');
+    const typingEl = document.getElementById('chat-typing');
+    const inputEl = document.getElementById('chat-input');
+    const sendBtn = document.getElementById('chat-send');
+    const chipsEl = document.getElementById('chat-chips');
+
+    // --- Fetch page SSOT JSON for grounding ---
+    function getApiUrl() {
+      const link = document.querySelector('link[rel="alternate"][type="application/json"]');
+      if (link) return link.href;
+      return '/api/{{ slug | e }}.json';
+    }
+
+    async function fetchPageData() {
+      if (pageData) return pageData;
+      try {
+        const res = await fetch(getApiUrl());
+        pageData = await res.json();
+        return pageData;
+      } catch {
+        return null;
+      }
+    }
+
+    // --- Init Gemini model + chat session ---
+    async function initChat(data) {
+      if (model) return;
+
+      const today = new Date().toISOString().split('T')[0];
+      const lastVerified = data?.sourceMetadata?.lastVerifiedDate || 'unknown';
+      const boardUrl = data?.provider?.url || '';
+      const stateName = '{{ state_name | e }}';
+      const profName = '{{ profession_name | e }}';
+
+      // Fetch perdiem rate data for grounding
+      const rates = await fetchRateData();
+      const rateBlock = rates ? `
+
+=== RATE INTELLIGENCE DATA (from perdiem.fyi) ===
+This data contains verified travel contract rates, market benchmarks, tax info, and housing costs.
+Use this to answer questions about pay, rates, stipends, bill rates, take-home pay, cost of living, and tax impact.
+${JSON.stringify(rates, null, 2)}
+=== END RATE DATA ===` : '';
+
+      const rateRules = rates ? `
+- You can also answer questions about ${profName} travel pay, contract rates, stipends, bill rates, housing costs, and tax impact in ${stateName} using the RATE INTELLIGENCE DATA.
+- When citing rate data, mention it comes from verified contract data via perdiem.fyi.
+- If asked about pay in a different state, say: "I have rate data for ${stateName} only. Visit perdiem.fyi for other states."` : '';
+
+      const systemPrompt = `You are a licensing and rate intelligence assistant for State Licensing Reference.
+
+RULES:
+- Answer about ${profName} licensing in ${stateName}.
+- If asked about a different state or profession, say: "I can only help with ${profName} in ${stateName}. Visit statelicensingreference.com to find other states."${rateRules}
+- Never invent fees, timelines, rates, or requirements. Use ONLY the data provided below.
+- When referencing the licensing board, include the board URL: ${boardUrl}
+- Keep answers concise (2-4 sentences unless detail is requested).
+- If the data says "See board" for a field, say you don't have that specific detail and link to the board website.
+- Format currency with dollar signs. Format durations naturally.
+
+=== LICENSE DATA (JSON) ===
+${JSON.stringify(data, null, 2)}
+=== END DATA ===${rateBlock}
+
+Today's date: ${today}
+Data last verified: ${lastVerified}`;
+
+      model = getGenerativeModel(ai, {
+        model: 'gemini-3.1-pro-preview',
+        systemInstruction: { parts: [{ text: systemPrompt }] },
+        generationConfig: {
+          maxOutputTokens: 1024,
+          temperature: 0.3
+        }
+      });
+
+      chat = model.startChat({ history: [] });
+    }
+
+    // --- UI Helpers ---
+    function addMessage(text, role) {
+      const div = document.createElement('div');
+      div.className = 'chat-msg chat-msg--' + (role === 'user' ? 'user' : 'ai');
+      div.textContent = text;
+      messagesEl.insertBefore(div, typingEl);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+      return div;
+    }
+
+    function showTyping() { typingEl.classList.add('is-active'); messagesEl.scrollTop = messagesEl.scrollHeight; }
+    function hideTyping() { typingEl.classList.remove('is-active'); }
+
+    function setInputEnabled(enabled) {
+      inputEl.disabled = !enabled;
+      sendBtn.disabled = !enabled || !inputEl.value.trim();
+      isProcessing = !enabled;
+    }
+
+    // --- Send message ---
+    async function sendMessage(text) {
+      text = text.trim();
+      if (!text || isProcessing) return;
+
+      if (questionCount >= MAX_QUESTIONS) {
+        addMessage('You\'ve reached the question limit for this session. Please refresh the page to start a new session.', 'ai');
+        return;
+      }
+
+      // Hide chips after first question
+      if (chipsEl) chipsEl.style.display = 'none';
+
+      addMessage(text, 'user');
+      questionCount++;
+      setInputEnabled(false);
+      showTyping();
+      inputEl.value = '';
+
+      const data = await fetchPageData();
+      if (!data) {
+        hideTyping();
+        addMessage('Sorry, I couldn\'t load the licensing data for this page. Please try refreshing.', 'ai');
+        setInputEnabled(true);
+        return;
+      }
+
+      await initChat(data);
+
+      try {
+        const result = await chat.sendMessageStream(text);
+        hideTyping();
+        const aiDiv = addMessage('', 'ai');
+        let fullText = '';
+
+        for await (const chunk of result.stream) {
+          const chunkText = chunk.text();
+          if (chunkText) {
+            fullText += chunkText;
+            aiDiv.textContent = fullText;
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+          }
+        }
+
+        setInputEnabled(true);
+        inputEl.focus();
+      } catch (err) {
+        hideTyping();
+        console.error('Chat error:', err);
+        addMessage('Sorry, I encountered an error. Please try again.', 'ai');
+        setInputEnabled(true);
+      }
+    }
+
+    // --- Event Listeners ---
+    fab.addEventListener('click', () => {
+      fab.classList.add('is-hidden');
+      panel.classList.add('is-open');
+      inputEl.focus();
+      fetchPageData(); // prefetch
+    });
+
+    closeBtn.addEventListener('click', () => {
+      panel.classList.remove('is-open');
+      fab.classList.remove('is-hidden');
+    });
+
+    inputEl.addEventListener('input', () => {
+      sendBtn.disabled = !inputEl.value.trim() || isProcessing;
+    });
+
+    inputEl.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage(inputEl.value);
+      }
+    });
+
+    sendBtn.addEventListener('click', () => {
+      sendMessage(inputEl.value);
+    });
+
+    // Suggestion chips
+    document.querySelectorAll('.chat-chip').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const q = chip.getAttribute('data-question');
+        if (q) sendMessage(q);
+      });
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && panel.classList.contains('is-open')) {
+        panel.classList.remove('is-open');
+        fab.classList.remove('is-hidden');
+      }
+    });
+  </script>
 
 </body>
 </html>

@@ -18,6 +18,7 @@ from consumer_db_overrides import (
     apply_consumer_db_overrides,
     fetch_supabase_rows,
 )
+from page_packet import build_route_context, build_page_packet
 from reciprocity_index_builder import render_index
 from site_linking import (
     build_nearby_state_links,
@@ -240,41 +241,39 @@ def build_verticals() -> tuple[list[str], list[str]]:
         db_rows = fetch_supabase_rows(DB_SPECIALTY_BY_VERTICAL[slug]) if slug in DB_SPECIALTY_BY_VERTICAL else {}
 
         for json_file, data in records:
-            vertical_slug = slug
-            default_slug = data["state_slug"] if data["state_slug"].endswith(f"-{vertical_slug}") else f"{data['state_slug']}-{vertical_slug}"
-            slug_value = data.get("slug") or default_slug
+            # ── ARCHITECTURE: object → route → packet → render ──
+
+            # 1. Build route context (replaces ad-hoc slug inference)
+            route = build_route_context(
+                state_slug=data["state_slug"],
+                profession_slug=slug,
+                state_name=data.get("state_name", ""),
+                state_abbr=data.get("reciprocity", {}).get("state_abbr", ""),
+                slug_override=data.get("slug", ""),
+            )
+            slug_value = route.slug
+            abbr = route.state_abbr
             out_name = f"{slug_value}.html"
             out_path = DIST_DIR / out_name
-            state_abbr = data.get("reciprocity", {}).get("state_abbr")
-            abbr = state_abbr or STATE_NAME_TO_ABBR.get(data["state_name"], "") or data["state_slug"][:2].upper()
 
+            # 2. Apply DB overrides to canonical object
             if abbr in db_rows:
                 data = apply_consumer_db_overrides(data, db_rows[abbr])
 
+            # 3. Render
             if out_name in tier2_files:
                 shutil.copyfile(tier2_files[out_name], out_path)
             else:
-                hero_img = STATE_IMAGES.get(abbr, {})
-                render_data = {
-                    **data,
-                    "site_domain": CANONICAL_HOST,
-                    "hero_image_url": hero_img.get("url", ""),
-                    "hero_image_alt": hero_img.get("alt", ""),
-                    "same_state_specialties": build_same_state_specialties(
-                        state_slug=data["state_slug"],
-                        current_vertical_slug=slug,
-                        vertical_catalog=VERTICAL_CATALOG,
-                    ),
-                    "nearby_state_links": build_nearby_state_links(
-                        state_name=data["state_name"],
-                        current_vertical_slug=slug,
-                    ),
-                    "board_verification": data.get("board_verification", {}),
-                    "board_verification_sources": data.get("board_verification_sources", {}),
-                    "verify_fee_and_timing_with_board": verify_fee_and_timing_with_board,
-                }
+                # Build page packet (sole contract to template)
+                packet = build_page_packet(
+                    canonical_object=data,
+                    route=route,
+                    vertical_catalog=VERTICAL_CATALOG,
+                    hero_image=STATE_IMAGES.get(abbr, {}),
+                    verify_fee_and_timing_with_board=verify_fee_and_timing_with_board,
+                )
                 out_path.write_text(
-                    template.render(**render_data),
+                    template.render(**packet),
                     encoding="utf-8",
                 )
 
