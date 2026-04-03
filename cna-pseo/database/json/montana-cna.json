@@ -12,23 +12,23 @@
   },
   "profession_name": "Certified Nursing Assistant",
   "credential_nomenclature": "CNA",
-  "last_updated": "2026-03-22",
+  "last_updated": "2026-04-03",
   "seo": {
     "title": "Montana CNA Certification Reciprocity - How to Transfer Your Certification (2026)",
     "description": "Already certified as a CNA? Here's whether your certification transfers to Montana - endorsement steps, fees, and processing time.",
     "keywords": "CNA license reciprocity montana, how to transfer CNA license to montana, montana CNA endorsement application"
   },
   "board": {
-    "name": "Montana Board of Nursing",
-    "parent_dept": "State Health Department",
+    "name": "Montana Nurse Aide Registry",
+    "parent_dept": "Montana Department of Public Health and Human Services (DPHHS)",
     "mailing_address": "Nurse Aide Registry, Licensure Bureau, P.O. Box 202953, Helena, MT 59620-2953",
     "physical_address": "See board website",
-    "phone": "(406) 444-4900",
+    "phone": "(406) 444-4980",
     "fax": "N/A (contact by phone)",
-    "email": "NAR@mt.gov",
-    "url": "https://boards.bsd.dli.mt.gov/nursing",
-    "contact_url": "https://dphhs.mt.gov/licensure/nursingassistant/",
-    "verify_url": "https://dphhs.mt.gov/licensure/nursingassistant/search"
+    "email": "cna@mt.gov",
+    "url": "https://dphhs.mt.gov/qad/Certification/cna",
+    "contact_url": "https://dphhs.mt.gov/qad/Certification/cna",
+    "verify_url": "https://mt-reports.com/portal/searchcertificate.aspx"
   },
   "quick_facts": {
     "total_fee": "$0",
@@ -53,20 +53,20 @@
       "description": "Successfully complete a Nurse Aide Training Program approved by the Montana Department of Public Health and Human Services (DPHHS)."
     },
     {
-      "title": "Create an Account with Headmaster LLP",
-      "description": "Navigate to the Headmaster LLP website (https://www.hdmaster.com/), click 'Candidate Login', select Montana, and register for a new candidate account."
+      "title": "Create an Account in BOUNDS",
+      "description": "Create an account in the Montana BOUNDS portal and start your Certified Nurse Aide application."
     },
     {
-      "title": "Apply for the Competency Examination",
-      "description": "Log into your Headmaster LLP account, select the 'Examination Application' option, and complete the application form, indicating your eligibility path."
+      "title": "Select the Correct Application Path",
+      "description": "If you are transferring from another state, select 'Certified Nurse Aide' and choose the 'CNA Interstate Endorsement Application' workflow in BOUNDS."
     },
     {
-      "title": "Schedule and Pass the Examination",
-      "description": "Pay the required examination fees through Headmaster LLP, then schedule and successfully pass both the written (or oral) and skills competency examinations."
+      "title": "Complete Fingerprinting / Background Screening",
+      "description": "Follow Montana instructions in BOUNDS for the required background screening and submit any fingerprint materials if requested."
     },
     {
-      "title": "Be Added to the Montana Nurse Aide Registry",
-      "description": "Upon successful completion of the competency examination, Headmaster LLP will notify the Montana Nurse Aide Registry, and your name will be added to the registry, granting you CNA certification."
+      "title": "Track Status and Registry Posting",
+      "description": "Monitor your application in BOUNDS until the Montana Nurse Aide Registry posts your active status."
     }
   ],
   "documents": [
@@ -92,7 +92,7 @@
     },
     {
       "question": "How long does it take to transfer my CNA certification to Montana?",
-      "answer": "Most endorsement applications take 4 to 8 Weeks."
+      "answer": "Most endorsement applications take 2 to 4 Weeks."
     },
     {
       "question": "Can I start working in Montana while waiting?",
@@ -117,8 +117,8 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-03-22",
-  "board_source_url": "https://boards.bsd.dli.mt.gov/nursing",
+  "last_verified_date": "2026-04-03",
+  "board_source_url": "https://dphhs.mt.gov/qad/Certification/cna",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -131,16 +131,16 @@
     "fingerprint_required": true,
     "temp_license_available": true,
     "jurisprudence_required": false,
-    "endorsement_fee": 35,
+    "endorsement_fee": 0,
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "slow",
-    "board_url": "https://boards.bsd.dli.mt.gov/nursing",
-    "endorsement_url": "https://www.hdmaster.com/testing/cnatesting/montana/MTEXAM.htm",
-    "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
+    "board_url": "https://dphhs.mt.gov/qad/Certification/cna",
+    "endorsement_url": "https://bounds-mt.powerappsportals.us/",
+    "notes": "Montana endorsement is managed through the BOUNDS portal. Create an account, select Certified Nurse Aide, then choose the CNA Interstate Endorsement Application workflow.",
     "requires_psv": true,
     "board_fee_verified": true,
     "board_timeline_verified": true,
-    "board_source_url": "https://boards.bsd.dli.mt.gov/nursing"
+    "board_source_url": "https://dphhs.mt.gov/qad/Certification/cna"
   },
   "slug": "montana-cna",
   "specialty": "cna",
@@ -180,7 +180,7 @@
     "new_applicant": {
       "hero": {
         "title": "Become a CNA in Montana",
-        "dek": "To apply for CNA certification in Montana, you must create an account and submit your application through the Headmaster LLP online system."
+        "dek": "To apply for CNA certification in Montana, create an account and submit your application through the BOUNDS portal."
       },
       "seo": {
         "title": "How to Become a CNA in Montana",
@@ -237,9 +237,9 @@
     "jurisprudence_fee_verified": true
   },
   "official_links": {
-    "portal_name": "Headmaster LLP",
-    "portal_url": "https://www.hdmaster.com/",
-    "registration_steps": "1. Go to https://www.hdmaster.com/.\n2. Click on 'Candidate Login' (usually in the top right corner).\n3. Select 'Montana' as your state from the dropdown menu.\n4. Click 'Register' if you are a new user to create a new account.\n5. Follow the prompts to complete your registration and log in to your account.\n6. Once logged in, you can proceed to apply for initial certification by examination or certification by endorsement.",
-    "provider_search": "https://dphhs.mt.gov/licensure/nursingassistant/search"
+    "portal_name": "Montana BOUNDS Portal",
+    "portal_url": "https://bounds-mt.powerappsportals.us/",
+    "registration_steps": "1. Go to https://bounds-mt.powerappsportals.us/.\n2. Create a new account and sign in.\n3. Select Certified Nurse Aide.\n4. Choose CNA Interstate Endorsement Application if you are transferring from another state.\n5. Complete each required step and monitor status updates in the portal.",
+    "provider_search": "https://mt-reports.com/portal/searchcertificate.aspx"
   }
 }
