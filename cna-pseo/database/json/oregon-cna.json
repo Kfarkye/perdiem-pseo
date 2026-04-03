@@ -27,8 +27,9 @@
     "fax": "N/A (contact by phone)",
     "email": "osbn.info@osbn.oregon.gov",
     "url": "https://www.oregon.gov/osbn/",
-    "contact_url": "https://www.oregon.gov/osbn/Pages/Contact-Us.aspx",
-    "verify_url": "https://osbn.oregon.gov/onlineservices/Pages/lookup.aspx"
+    "contact_url": "https://www.oregon.gov/osbn/Pages/Ask-Us-A-Question.aspx",
+    "location_url": "https://www.oregon.gov/osbn/Pages/map.aspx",
+    "verify_url": "https://osbn.boardsofnursing.org/licenselookup"
   },
   "quick_facts": {
     "total_fee": "$60",
@@ -139,7 +140,7 @@
     "processing_time": "1 to 4 Weeks",
     "processing_tier": "fast",
     "board_url": "https://www.oregon.gov/osbn/",
-    "endorsement_url": "https://www.oregon.gov/osbn/pages/cna-endorsement.aspx",
+    "endorsement_url": "https://www.oregon.gov/osbn/Documents/Resource_CNAEndorseAppDirections.pdf",
     "notes": "CNAs certified in another state can often apply via endorsement (reciprocity) by providing registry verification from their home state.",
     "requires_psv": true,
     "board_fee_verified": true,
@@ -244,6 +245,6 @@
     "portal_name": "OSBN Nurse Portal",
     "portal_url": "https://osbn.oregon.gov/onlineservices/Pages/default.aspx",
     "registration_steps": "Applicants must create an account on the OSBN Nurse Portal by clicking 'Register' and following the prompts to set up a username and password before starting an application.",
-    "provider_search": "https://osbn.oregon.gov/onlineservices/Pages/lookup.aspx"
+    "provider_search": "https://osbn.boardsofnursing.org/licenselookup"
   }
 }
