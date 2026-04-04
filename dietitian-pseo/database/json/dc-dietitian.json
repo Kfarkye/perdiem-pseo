@@ -12,7 +12,7 @@
   },
   "profession_name": "Dietitian",
   "credential_nomenclature": "Licensed Dietitian",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-04-03",
   "seo": {
     "title": "District of Columbia Dietitian License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a dietitian? Here's whether your license transfers to District of Columbia - compact status, endorsement steps, fees, and processing time.",
@@ -21,14 +21,14 @@
   "board": {
     "name": "Board of Dietetics & Nutrition",
     "parent_dept": "DC Department of Health, Health Regulation and Licensing Administration (HRLA)",
-    "mailing_address": "DC Department of Health, Health Regulation and Licensing Administration, 899 North Capitol Street NE, 3rd Floor, Washington, DC 20002",
-    "physical_address": "2201 Shannon Place SE<br>Washington, DC 20020",
-    "phone": "202-442-5955",
+    "mailing_address": "DC Board of Dietetics and Nutrition, 2201 Shannon Place SE, 1st Floor, Washington, DC 20020",
+    "physical_address": "2201 Shannon Place SE, 1st Floor<br>Washington, DC 20020",
+    "phone": "1 (877) 672-2174",
     "fax": "(202) 442-4795",
-    "email": "hpla.doh@dc.gov",
-    "url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-licensing",
-    "contact_url": "https://dchealth.dc.gov/page/contact-hrla",
-    "verify_url": "https://hrla.doh.dc.gov/hrla-portal/s/"
+    "email": "dcbodn@dc.gov",
+    "url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-initial-license-application-package",
+    "contact_url": "https://dchealth.dc.gov/service/dc-health-contact-directory",
+    "verify_url": "https://dohenterprise.my.site.com/ver/s/"
   },
   "quick_facts": {
     "total_fee": "$229",
@@ -57,15 +57,15 @@
     },
     {
       "title": "Create Account and Start Online Application",
-      "description": "Visit the HRLA Online Services Portal (hrla.doh.dc.gov/hrla-portal/s/) and sign up for an account. Once logged in, select 'Apply for a New License' and choose 'Dietitian/Nutritionist' to begin your application."
+      "description": "Visit the DC Health Professional Licensure Portal, register for an account, and sign in. Once logged in, select 'Apply for a New License' and choose 'Dietitian/Nutritionist' to begin your application."
     },
     {
       "title": "Complete Application Form and Upload Documents",
-      "description": "Fill out the comprehensive application form within the HRLA Online Services Portal. Upload all required supporting documents, including official transcripts, verification of supervised practice, CDR exam results, and a government-issued ID."
+      "description": "Fill out the full application in the DC Health Professional Licensure Portal and upload required documents, including official transcripts, supervised practice verification, CDR exam results, and government-issued ID."
     },
     {
       "title": "Submit Background Check and Pay Fees",
-      "description": "Complete the required criminal background check as instructed by the HRLA. Pay the non-refundable $85 application fee and the $155 initial licensure fee (due upon approval) through the HRLA Online Services Portal."
+      "description": "Complete the required criminal background check as instructed in the portal. Pay the non-refundable $85 application fee and the initial licensure fee through the DC Health Professional Licensure Portal."
     },
     {
       "title": "Board Review and License Issuance",
@@ -156,8 +156,8 @@
     "processing_time": "N/A",
     "duration": "N/A"
   },
-  "last_verified_date": "2026-02-25",
-  "board_source_url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-licensing",
+  "last_verified_date": "2026-04-03",
+  "board_source_url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-initial-license-application-package",
   "license_pathway": "endorsement",
   "profession_overrides": {},
   "reciprocity": {
@@ -173,8 +173,8 @@
     "endorsement_fee": 85,
     "processing_time": "4 to 6 Weeks",
     "processing_tier": "slow",
-    "board_url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-licensing",
-    "endorsement_url": "https://dchealth.dc.gov/service/board-dietetics-and-nutrition",
+    "board_url": "https://dchealth.dc.gov/service/dietetics-and-nutrition-initial-license-application-package",
+    "endorsement_url": "https://dohenterprise.my.site.com/dchealthrenewals/s/login/",
     "notes": "DC issues dietitian licenses by endorsement for those licensed in other jurisdictions at the same $229 fee. Applicants must still meet all DC requirements, submit a full application, provide letter(s) of good standing from each jurisdiction, and maintain current CDR registration.",
     "requires_psv": true
   },
@@ -227,9 +227,9 @@
     "jurisprudence_fee_verified": true
   },
   "official_links": {
-    "portal_name": "HRLA Online Services Portal",
-    "portal_url": "https://hrla.doh.dc.gov/hrla-portal/s/",
-    "registration_steps": "Navigate to the HRLA Online Services Portal and click 'Sign Up' in the upper right corner. Enter your name, email address, and create a password. Verify your account via the link sent to your email. Once verified, log in to the portal.",
-    "provider_search": "https://hrla.doh.dc.gov/hrla-portal/s/"
+    "portal_name": "DC Health Professional Licensure Portal",
+    "portal_url": "https://dohenterprise.my.site.com/dchealthrenewals/s/login/",
+    "registration_steps": "Navigate to the DC Health Professional Licensure Portal and click 'Register' to create an account. Verify your account through the email confirmation, then sign in and start your Dietitian/Nutritionist application.",
+    "provider_search": "https://dohenterprise.my.site.com/ver/s/"
   }
 }
