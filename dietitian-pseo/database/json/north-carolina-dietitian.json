@@ -12,7 +12,7 @@
   },
   "profession_name": "Dietitian",
   "credential_nomenclature": "Licensed Dietitian/Nutritionist (LDN)",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-04-03",
   "seo": {
     "title": "North Carolina Dietitian License Reciprocity - How to Transfer Your License (2026)",
     "description": "Already licensed as a dietitian? Here's whether your license transfers to North Carolina - compact status, endorsement steps, fees, and processing time.",
@@ -28,7 +28,7 @@
     "email": "info@ncbdn.org",
     "url": "https://www.ncbdn.org/",
     "contact_url": "https://www.ncbdn.org/contact",
-    "verify_url": "https://www.ncbdn.org/verify-a-license"
+    "verify_url": "https://ncbdn.org/license-verification/public-license-verification/"
   },
   "quick_facts": {
     "total_fee": "$248",
@@ -57,11 +57,11 @@
   "steps": [
     {
       "title": "Create an Account and Apply Online",
-      "description": "Create a new user account on the NCBDN Licensure Portal (https://ncbdn.elicensure.net/) and complete the online application for initial licensure."
+      "description": "Create an account in the NCBDN Gateway portal (https://gateway.ncbdn.org/) and complete your application online."
     },
     {
       "title": "Pay Application Fee",
-      "description": "Submit the non-refundable application fee of $130 through the NCBDN Licensure Portal as part of your online application."
+      "description": "Submit the required application fee through the NCBDN Gateway portal as part of your online application."
     },
     {
       "title": "Submit Education Verification",
@@ -99,7 +99,7 @@
     }
   ],
   "provisional_text": "North Carolina offers a Provisional Licensed Dietitian/Nutritionist (PLDN) credential under Category B. This is for individuals who have completed an ACEND-accredited academic program and supervised practice and have received an 'Authorization to Test' email from CDR. The provisional license is valid for 12 months, costs $133, and cannot be renewed. The applicant must pass the CDR exam within that period to upgrade to a full LDN license.",
-  "reciprocity_text": "North Carolina offers licensure by reciprocity under Category D for applicants currently licensed in another state whose qualifications do not fit into other categories (non-RD, non-CNS). Category D does not have an online application; applicants must contact the NCBDN directly. All RD/RDNs applying from out of state should apply under Category A, the standard pathway. The Board may grant a license if the other state's requirements are substantially the same as North Carolina's.",
+  "reciprocity_text": "North Carolina does not currently have an active reciprocity or compact agreement for dietitians. For most out-of-state RD/RDN applicants, NCBDN directs applicants to Category A and the NCBDN Gateway workflow. NCBDN continues to track compact progress.",
   "faqs": [
     {
       "question": "How much does a North Carolina dietitian license cost?",
@@ -115,7 +115,7 @@
     },
     {
       "question": "Does North Carolina have reciprocity for dietitians?",
-      "answer": "No interstate compact currently covers dietitian practice in North Carolina. To work in North Carolina, apply for licensure by endorsement through the state board."
+      "answer": "NCBDN indicates there is no current reciprocity or compact agreement in place. Most out-of-state RD/RDN applicants use the Category A application path through the NCBDN Gateway."
     },
     {
       "question": "How long does it take to transfer my dietitian license to North Carolina?",
@@ -144,7 +144,7 @@
     "processing_time": "See board",
     "duration": "See board"
   },
-  "last_verified_date": "2026-02-25",
+  "last_verified_date": "2026-04-03",
   "board_source_url": "https://www.ncbdn.org/",
   "license_pathway": "endorsement",
   "profession_overrides": {},
@@ -162,8 +162,8 @@
     "processing_time": "2 to 4 Weeks",
     "processing_tier": "slow",
     "board_url": "https://www.ncbdn.org/",
-    "endorsement_url": "https://www.ncbdn.org/licensure-by-endorsement",
-    "notes": "North Carolina offers licensure by reciprocity under Category D for applicants currently licensed in another state whose qualifications do not fit into other categories (non-RD, non-CNS). Category D does not have an online application; applicants must contact the NCBDN directly. All RD/RDNs applying from out of state should apply under Category A, the standard pathway. The Board may grant a license if the other state's requirements are substantially the same as North Carolina's.",
+    "endorsement_url": "https://ncbdn.org/application-guidance/",
+    "notes": "NCBDN uses Category A guidance and the NCBDN Gateway for most out-of-state RD/RDN applicants. NCBDN currently notes no active reciprocity or compact agreement is in place.",
     "requires_psv": true
   },
   "slug": "north-carolina-dietitian",
@@ -215,9 +215,9 @@
     "jurisprudence_fee_verified": true
   },
   "official_links": {
-    "portal_name": "NCBDN Licensure Portal",
-    "portal_url": "https://ncbdn.elicensure.net/",
-    "registration_steps": "Visit the NCBDN Licensure Portal, click 'Register' to create a new user account, then log in and select 'Apply for a New License' to start your application.",
-    "provider_search": "https://www.ncbdn.org/verify-a-license"
+    "portal_name": "NCBDN Gateway",
+    "portal_url": "https://gateway.ncbdn.org/",
+    "registration_steps": "Visit NCBDN Gateway, register for a new account, sign in, and select the appropriate application path. For most out-of-state RD/RDN applicants, use Category A guidance.",
+    "provider_search": "https://ncbdn.org/license-verification/public-license-verification/"
   }
 }
