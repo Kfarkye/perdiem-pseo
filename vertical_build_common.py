@@ -22,6 +22,18 @@ from site_linking import (
 )
 
 
+def _is_full_document_override(path: Path) -> bool:
+    """Detect legacy full HTML documents in content/ overrides.
+
+    These bypass shared template styling and should not replace unified pages.
+    """
+    try:
+        head = path.read_text(encoding="utf-8", errors="ignore")[:512].lstrip().lower()
+    except OSError:
+        return False
+    return head.startswith("<!doctype html") or head.startswith("<html")
+
+
 def build_vertical(vertical_root: Path) -> None:
     root = vertical_root.resolve()
     repo_root = root.parent
@@ -64,12 +76,17 @@ def build_vertical(vertical_root: Path) -> None:
         out_name = f"{slug_value}.html"
         out_path = dist_dir / out_name
 
-        if out_name in tier2_files:
-            shutil.copyfile(tier2_files[out_name], out_path)
+        tier2_override = tier2_files.get(out_name)
+        if tier2_override and not _is_full_document_override(tier2_override):
+            shutil.copyfile(tier2_override, out_path)
         else:
+            if tier2_override and _is_full_document_override(tier2_override):
+                print(f"Skipping legacy full-document override: {tier2_override}")
             state_abbr = data.get("reciprocity", {}).get("state_abbr")
             abbr = state_abbr or STATE_NAME_TO_ABBR.get(data["state_name"], "") or data["state_slug"][:2].upper()
             hero_img = state_images.get(abbr, {})
+            data.setdefault("board_verification", {})
+            data.setdefault("board_verification_sources", {})
             out_path.write_text(
                 template.render(
                     **data,
@@ -85,8 +102,6 @@ def build_vertical(vertical_root: Path) -> None:
                         state_name=data["state_name"],
                         current_vertical_slug=vertical_slug,
                     ),
-                    board_verification=data.get("board_verification", {}),
-                    board_verification_sources=data.get("board_verification_sources", {}),
                     verify_fee_and_timing_with_board=verify_fee_and_timing_with_board,
                 ),
                 encoding="utf-8",

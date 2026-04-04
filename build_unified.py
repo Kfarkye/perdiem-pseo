@@ -38,6 +38,19 @@ SHARED_TEMPLATES_DIR = REPO / "shared_templates"
 VERTICAL_CATALOG = load_vertical_catalog(REPO)
 
 
+def _is_full_document_override(path: Path) -> bool:
+    """Detect legacy full HTML documents in content/ overrides.
+
+    Unified pages should render through shared_templates/state-hub.html.
+    Legacy full-document overrides bypass the shared design system.
+    """
+    try:
+        head = path.read_text(encoding="utf-8", errors="ignore")[:512].lstrip().lower()
+    except OSError:
+        return False
+    return head.startswith("<!doctype html") or head.startswith("<html")
+
+
 def run_build(cwd: Path, script: str) -> None:
     previous_cwd = Path.cwd()
     try:
@@ -261,9 +274,12 @@ def build_verticals() -> tuple[list[str], list[str]]:
                 data = apply_consumer_db_overrides(data, db_rows[abbr])
 
             # 3. Render
-            if out_name in tier2_files:
-                shutil.copyfile(tier2_files[out_name], out_path)
+            tier2_override = tier2_files.get(out_name)
+            if tier2_override and not _is_full_document_override(tier2_override):
+                shutil.copyfile(tier2_override, out_path)
             else:
+                if tier2_override and _is_full_document_override(tier2_override):
+                    print(f"Skipping legacy full-document override: {tier2_override}")
                 # Build page packet (sole contract to template)
                 packet = build_page_packet(
                     canonical_object=data,
